@@ -1,0 +1,214 @@
+{
+    "incident_id": "40ff2e0a-dfdd-4196-8d59-0abe1c30cf0b",
+    "ticket_number": "0392917",
+    "title": "ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session",
+    "created_on": "2024-12-02T06:59:06Z",
+    "last_activity": "2025-12-16T14:03:28Z",
+    "age": "16465",
+    "description": "Reported behavior/issue:\nUnable to stop charging session\nRoot cause: FW related issue\nSolution: To be resolved in next FW.\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "BCP73l",
+    "stage": null,
+    "serial_number": "MP / R1 170001424",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b90c3fef-7ab0-ef11-b8e9-0022489bcff4",
+            "subject": "A new case manager was assigned to 0392917 CRM:00225132073",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0392917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=40ff2e0a-dfdd-4196-8d59-0abe1c30cf0b",
+            "date": "2024-12-02T06:59:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4e6c6e14-8eb0-ef11-b8e9-000d3a697eb1",
+            "subject": "A new case manager was assigned to 0392917 CRM:00225132176",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0392917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=40ff2e0a-dfdd-4196-8d59-0abe1c30cf0b",
+            "date": "2024-12-02T09:16:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8135a81-64b6-577d-9964-09c70658755a",
+            "subject": "Note from RC",
+            "body": "Location:\nKuressaare, Estonia\nReported behaviour/issue:\nCustomer stated that\nthey could not end their charging session one charger ID 170001424 [BCP73l]. They started the transaction from OCPP app at 2024-11-23 14:26:08 with connector 3.\nI can see there were to different remotestart transactions and then a stop transaction. But the status of the connector stayed as charging.\nThe client tried to stop charging from the app and also I tried to from our backend but nothing but a restart worked.\nIt seems that the car was charging from start of the transaction till the restart. The battery was at 23% at the start and after the restart the client started charging again and it shows 82% now.\nThe transaction before the restart showed 0 kW\nBelow is some screenshot from the time stamps:\nCloudWatch | eu-central-1\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nAction:",
+            "date": "2024-12-02T09:19:25Z",
+            "extra": {}
+        },
+        {
+            "id": "26675a4f-8fb0-ef11-b8e9-000d3ab4d5d3",
+            "subject": "ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Dear Sakari,\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nKuressaare\nChargerID/Serial No.\n:\nBCP73l\nProblem Description\n: Unable to stop charging session\nTroubleshooting\n: Please allow us sometime to analyze the logs & will get back to you shortly.\nTo assist you further, could you please clarify if the problem of being unable to stop the charging session occurs with a specific EV or multiple EV?\nFor future reference, your ticket number is\n0392917\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-02T09:25:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90b619d6-3ada-b340-9deb-425d9c7622cb",
+            "subject": "Note to L2",
+            "body": "Logs attached",
+            "date": "2024-12-02T09:49:35Z",
+            "extra": {}
+        },
+        {
+            "id": "306affcb-a2b0-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello,\nOur understanding is that it was from one specific user and their car.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-12-02T11:44:35Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a93772e3-9bb1-ef11-b8e8-7c1e5221104a",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nThanks for the response.\nWe are analyzing the logs and will get back to you shortly.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-03T17:27:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f59e1686-5bb2-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nHope you are doing well.\nBased on the logs for 23/11, it found that the issue occurred with a specific EV model. Could you please share the make and model of the EV involved?\nAdditionally, we have monitored other charging sessions recorded over the past 24 hours and did not observe any similar issue.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-04T16:19:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a5fb5ec9-27b3-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-05T16:41:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1cb48aa6-edb3-ef11-b8e8-000d3a649ca8",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Dear Sakari,\nHope you are doing well. We haven't heard back from you on ticket# 0392917 as of yet.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-06T16:18:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f072ec11-07b6-ef11-b8e8-7c1e52378e9b",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hi,\nUnfortunately we don’t know which specific make and model of EV was charging there.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-12-09T08:25:05Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c4c98c28-37b8-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nThanks for the response.\nWe are analyzing this issue with our expert team & once receive an update will get back to you shortly.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-12T03:14:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49f4eeb7-9c25-6a77-bd3d-9611a4fe80d6",
+            "subject": "Note to L2",
+            "body": "2024-11-23T12:55:57.411058+00:00 sicharge-cp [local0:info] sicharge-cp-backend/a242316a33c6[714]: OCPP: Send result: GetConfiguration (294854d1-ba44-44aa-a309-4711faf96a63) - {\"configurationKey\":[{\"key\":\"\nAllowOfflineTxForUnknownId\",\"value\":\"false\",\"readonly\":false},\n{\"key\":\"AllowOfflineTxForUnknownVehicleId\",\"value\":\"false\",\"readonly\":false},{\"key\":\"AuthorizationCacheEnabled\",\"value\":\"true\",\"readonly\":false},{\"key\":\"AuthorizeRemoteTxRequests\",\"value\":\"false\",\"readonly\":false},{\"key\":\"CardTxReportType\",\"value\":\"default\",\"readonly\":false},{\"key\":\"CertificateSignedMaxChain\",\"value\":\"0\",\"readonly\":true},{\"key\":\"CertificateStoreMaxLength\",\"value\":\"0\",\"readonly\":true},{\"key\":\"ChargeProfileMaxStackLevel\",\"value\":\"10\",\"readonly\":true},{\"key\":\"ChargingScheduleAllowedChargingRateUnit\",\"value\":\"Power\",\"readonly\":true},{\"key\":\"ChargingScheduleMaxPeriods\",\"value\":\"100\",\"readonly\":true},{\"key\":\"ClockAlignedDataInterval\",\"value\":\"0\",\"readonly\":false},{\"key\":\"ConnectionTimeOut\",\"value\":\"180\",\"readonly\":false},{\"key\":\"ConnectionTimeOutCountdown\",\"value\":\"10\",\"readonly\":false},{\"key\":\"ConnectorPhaseRotation\",\"value\":\"0.Unknown, 1.Unknown, 2.Unknown\",\"readonly\":false},{\"key\":\"ConnectorSwitch3to1PhaseSupported\",\"value\":\"false\",\"readonly\":true},{\"key\":\"CpoName\",\"value\":\"\",\"readonly\":false},{\"key\":\"DisplayTariffInformation\",\"value\":\"none\",\"readonly\":false},{\"key\":\"GetConfigurationMaxKeys\",\"value\":\"100\",\"readonly\":true},{\"key\":\"HeartbeatInterval\",\"value\":\"60\",\"readonly\":false},{\"key\":\"LightIntensity\",\"value\":\"100\",\"readonly\":false},{\"key\":\"LocalAuthListEnabled\",\"value\":\"true\",\"readonly\":false},{\"key\":\"LocalAuthListMaxLength\",\"value\":\"100\",\"readonly\":true},{\"key\":\"LocalAuthorizeOffline\",\"value\":\"true\",\"readonly\":false},{\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false},{\"key\":\"MaxChargingProfilesInstalled\",\"value\":\"100\",\"readonly\":true},{\"key\":\"MeterValuesAlignedData\",\"value\":\"\",\"readonly\":false},{\"key\":\"MeterValuesAlignedDataMaxLength\",\"value\":\"1\",\"readonly\":true},{\"key\":\"MeterValueSampleInterval\",\"value\":\"60\",\"readonly\":false},{\"key\":\"MeterValuesSampledData\",\"value\":\"SoC,Power.Offered,Current.Offered,Power.Active.Import,Energy.Active.Import.Register,Voltage,Temperature\",\"readonly\":false},{\"key\":\"MeterValuesSampledDataMaxLength\",\"value\":\"13\",\"readonly\":true},{\"key\":\"MinimumStatusDuration\",\"value\":\"1\",\"readonly\":false},{\"key\":\"NonAuthorizedTag\",\"value\":\"\",\"readonly\":false},{\"key\":\"NumberOfConnectors\",\"value\":\"3\",\"readonly\":true},{\"key\":\"PaymentCardIdTagPrefix\",\"value\":\"EMVS*\",\"readonly\":false},{\"key\":\"PaymentCurrency\",\"value\":\"EUR\",\"readonly\":false},{\"key\":\"PaymentDefaultLanguage\",\"value\":\"en\",\"readonly\":false},{\"key\":\"PaymentTXMaxAmount\",\"value\":\"5000\",\"readonly\":false},{\"key\":\"ReserveConnectorZeroSupported\",\"value\":\"false\",\"readonly\":true},{\"key\":\"ResetRetries\",\"value\":\"0\",\"readonly\":false},{\"key\":\"SecurityProfile\",\"value\":\"0\",\"readonly\":false},{\"key\":\"SendCardTxReport\",\"value\":\"false\",\"readonly\":false},{\"key\":\"SendLocalListMaxLength\",\"value\":\"100\",\"readonly\":true},{\"key\":\"StopAutoChargeOnHMI\",\"value\":\"false\",\"readonly\":false},{\"key\":\"StopRemoteChargeOnHMI\",\"value\":\"false\",\"readonly\":false},{\"key\":\"StopRFIDChargeOnHMI\",\"value\":\"false\",\"readonly\":false},{\"key\":\"StopTransactionOnEVSideDisconnect\",\"value\":\"true\",\"readonly\":false},{\"key\":\"StopTransactionOnInvalidId\",\"value\":\"true\",\"readonly\":false},{\"key\":\"StopTxnAlignedData\",\"value\":\"\",\"readonly\":false},{\"key\":\"StopTxnAlignedDataMaxLength\",\"value\":\"1\",\"readonly\":true},{\"key\":\"StopTxnSampledData\",\"value\":\"SoC,Energy.Active.Import.Interval\",\"readonly\":false},{\"key\":\"StopTxnSampledDataMaxLength\",\"value\":\"4\",\"readonly\":true},{\"key\":\"SupportedFeatureProfiles\",\"value\":\"Core,LocalAuthListManagement,Reservation,SmartCharging,RemoteTrigger\",\"readonly\":true},{\"key\":\"SupportedFeatureProfilesMaxLength\",\"value\":\"5\",\"readonly\":true},{\"key\":\"TransactionMessageAttempts\",\"value\":\"1\",\"readonly\":false},{\"key\":\"TransactionMessageRetryInterval\",\"value\":\"1\",\"readonly\":false},{\"key\":\"UnlockConnectorOnEVSideDisconnect\",\"value\":\"true\",\"readonly\":false},{\"key\":\"WebSocketPingInterval\",\"value\":\"20\",\"readonly\":false}]}",
+            "date": "2024-12-12T03:25:53Z",
+            "extra": {}
+        },
+        {
+            "id": "dd0d8a02-3bb9-ef11-b8e8-7c1e52210caa",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nHope you are doing well.\nAfter analyzing the issue with the expert team, we confirmed that it is related to poor EcoG firmware in that version. This is also one of the reasons why FW v5 was discontinued. We haven't observed this issue in version v4.0.11, and it did not appear during beta testing of v6.0.1. Therefore, the issue will be resolved in the upcoming v6.0.1 release.\nIf you need further assistance, please let us know.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-13T10:14:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d8967419-41b9-ef11-b8e8-000d3ab11939",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello,\nThank you for letting us know.\nSo as I understand there is nothing that we can do and we can only wait for the v6.0.1 FW to be released.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-12-13T10:57:53Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "60e04420-47b9-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello Sakari,\nThanks for the response.\nYes, we recommend waiting for the next firmware version release. Alternatively, you can downgrade the charger to version 4.0.11 if needed. The best solution would be to wait 1-2 weeks for the release of firmware version 6.0.3 and then upgrade.\nPlease suggest proceeding further on this case.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-13T11:41:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0410a7c-54b9-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Hello,\nOur infromation is that the AC socket does not work properly in 4.0.11 so we cannot do downgrade to that. We will wait 1-2 weeks for the new SW release.\nYou can close the ticket.\nBest regards\nSakari Harjunpäää",
+            "date": "2024-12-13T13:16:39Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d034b299-76b9-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: ID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session CRM:00921001347",
+            "body": "Dear Sakari,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0392917.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-13T17:20:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e07b3d6-76b9-ef11-b8e9-000d3ab4d5d3",
+            "subject": "Ticket 0392917 has been closed. Are you satisfied with our provided solution? CRM:00921001411",
+            "body": "Dear Sakari,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0392917\nwith the title:\nID0392917-DC/Si-D/FI-[MP / R1 170001424] Unable to stop charging session\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-13T17:22:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

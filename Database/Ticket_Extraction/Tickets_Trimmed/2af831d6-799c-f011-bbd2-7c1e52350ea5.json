@@ -1,0 +1,167 @@
+{
+    "incident_id": "2af831d6-799c-f011-bbd2-7c1e52350ea5",
+    "ticket_number": "0452507",
+    "title": "ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable",
+    "created_on": "2025-09-28T14:46:05Z",
+    "last_activity": "2025-10-07T12:41:34Z",
+    "age": "4234",
+    "description": "Reported behavior/issue:   Charger showing Unavailable\nSolution: NA\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / RD 170003090",
+    "case_nature_code": 580000001,
+    "chargerID": "xNKsKE",
+    "additional_info": [
+        {
+            "id": "1aa44cd2-799c-f011-bbd3-6045bddf3f78",
+            "subject": "Urgent Support Request: Si-charge D (Serial # 170003090)",
+            "body": "Dear Support Team,\nWe are experiencing an issue with our Si-charge D unit, serial number 170003090.\nThe charger has been showing as unavailable and disconnected from our back-end since September 26, 2025. We have attached a screenshot for your reference.\nCould you please investigate this issue and assist us with a resolution?\nThank you for your assistance.\nBest regards,\nIslam E. Dakroury\n| Services Manager\nPhone | (966) 553216466",
+            "date": "2025-09-28T14:45:54Z",
+            "extra": {
+                "sender": "islam.d@alsharifx.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "63d2ae56-839c-f011-bbd3-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0452507 CRM:00225263175",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0452507 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2af831d6-799c-f011-bbd2-7c1e52350ea5",
+            "date": "2025-09-28T15:54:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bb94de0-839c-f011-bbd3-6045bddf3123",
+            "subject": "ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear\nIslam Dakroury\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / RD 170003090\nChargerID/Serial No.\n:\nMP / RD 170003090\nProblem Description\n: Charger showing Unavailable\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0452507\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAnit Mukherjee\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-28T15:57:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5dbb4c3-61f1-c168-8ff9-fbe0521933ae",
+            "subject": "Error Flags and logs could not be found",
+            "body": "",
+            "date": "2025-09-28T16:06:16Z",
+            "extra": {}
+        },
+        {
+            "id": "21646eaa-0c9d-f011-bbd3-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0452507 CRM:00225263459",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0452507 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2af831d6-799c-f011-bbd2-7c1e52350ea5",
+            "date": "2025-09-29T08:17:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "762ab3db-f09d-f011-b41c-7c1e52fad806",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear colleagues,\nI am reaching out in regards of ticket\nID0452507.\nThe ticket has been opened by end customer Mr. Dakroury in regards of charger\nMP/RD 170003090\nbeing unavailable.\nMr. Dakroury reported that the charger is unavailable since 26.09.2025.\nI checked the charger on SCB, and the charger seems offline. However, some logs are arriving (not all of them).\nI checked the charger on AWS, and I see on 26.09.2025 the following error:\nThis is a sign of corruption of the container sicharge-cp-backend. This is a known bug related to FW v7.0.5: sometimes it can happen that, when the charger goes offline, the offline-error-flags.json file gets corrupted, resulting in an unavailable charger.\nThis bug was already identified in the month of August 2025, and it was communicated through several regular touchpoints from PLM and Product Champion.\nThe solution is to flash the CFast card to v8.0.5.\nPlease arrange an onsite visit in order to proceed with the CFast card flashing. What is required is:\nCFast card reader\nCompanion Tool with FW v8.0.5 downloaded\nLive Linux 2.1 USB stick - Please be aware that the configuration of the Live Linux stick can only be performed by Siemens personnel. IF this step is not possible, we will proceed with the creation of a new ChargerID on SCB.\nExternal keyboard with USB connection.\nLet me know if you require support for the onsite activity. In case yes, please plan the activity in advance coordinate with me for the remote availability.\nLooking forward to hearing form you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-30T11:30:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cf2a90c2-c69e-f011-b41b-7c1e52350ea5",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear colleagues,\nI am following up my previous email on case\nID0452507\nbringing positive news!\nToday R&D found a way to recover the\nchargers where the sicharge-cp-backend is in boot loop and the charger is not accessible via SCB but sending logs.\nAs long as the charger does not flood with \"Too many files open\", R&D is able now to reach the charger via server and restore the container.\nThe charger\nMP/RD 170003090\nis now back online after R&D's intervention, and we applied also the \"FileHandler\" Hotfix, so to prevent this corruption to happen again.\nIn conclusion, the charger is now back operative, and it is not necessary anymore to go onsite and flash the CFast card.\nSince the issue is solved, I will proceed to close this ticket.\nThank you!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-01T13:01:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e52453f7-c89e-f011-b41b-7c1e52350ea5",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear Fosco,\nThank you very much for sharing the positive news!\nI would like to confirm that the charger is also showing as back online on our backend system.\nWe appreciate your dedication and support in resolving this.",
+            "date": "2025-10-01T13:17:27Z",
+            "extra": {
+                "sender": "islam.d@alsharifx.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5bf93667-c99e-f011-b41c-000d3ab07fc1",
+            "subject": "Ticket 0452507 has been closed. Are you satisfied with our provided solution? CRM:00225265041",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0452507\nwith the title:\nID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-01T13:20:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0b3234b-6c9f-f011-bbd3-000d3addf8ce",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear Fosco,\nPlease close the ticket.\nRegards\nSyed Basheruddin",
+            "date": "2025-10-02T08:46:41Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fcacff58-6c9f-f011-b41c-7c1e52faf3c6",
+            "subject": "Email sent to a closed case 'ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable (0452507)' CRM:00225265429",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0452507\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-10-02T08:46:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f238aee-c9a1-f011-bbd2-7c1e52350ea5",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Dear Siemens Team,\nI hope this email finds you well.\nPlease be informed that station 170003090 has unfortunately gone offline again.\nCould you please investigate this matter urgently and provide us with an update on your findings?",
+            "date": "2025-10-05T09:02:00Z",
+            "extra": {
+                "sender": "islam.d@alsharifx.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d6dd11fa-c9a1-f011-bbd3-6045bddf3f78",
+            "subject": "Email sent to a closed case 'ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable (0452507)' CRM:00225266390",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0452507\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-10-05T09:02:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "362170ea-7aa3-f011-bbd2-002248a278fb",
+            "subject": "RE: ID0452507-DC/Si-D/SA-[MP / RD 170003090] Charger showing Unavailable CRM:02888000280",
+            "body": "Hello Fosco, Support Team,\nHope all is well.\nThanks for the usual support. Could you please update us on this case where the charger has failed again? In parallel, we are planning a site intervention, which is already scheduled in our plan.\nKind regards / Viele Grüße /\nمع أطيب التحيات\nMohannad Alkamal\nSIEMENS\n| Smart Infrastructure\nBaladia/ Binzager Street\nAl Azizia District, P.O Box 4621\nJeddah 21412, Saudi Arabia\nMobile: +966 56 448 0981 / +966 50 947 9159 |\nE-mail:\nmohannad.alkamal@siemens.com",
+            "date": "2025-10-07T12:41:27Z",
+            "extra": {
+                "sender": "mohannad.alkamal@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

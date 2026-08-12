@@ -1,0 +1,119 @@
+{
+    "incident_id": "cef6475f-a104-f011-bae3-7c1e52faf3c6",
+    "ticket_number": "0413655",
+    "title": "ID0413655-DC/SI-D/FR-[MP/R6 170002075] AC Socket always in used condition",
+    "created_on": "2025-03-19T09:06:05Z",
+    "last_activity": "2025-05-06T14:17:41Z",
+    "age": "69431",
+    "description": "Reported behaviour/issue: The charger on SCB seems to use the AC socket but in reality this socket is not used. The AC flag is always in use condition while the socket is not used\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "mSS9T9",
+    "stage": null,
+    "serial_number": "MP / R6 170002075",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "d20daf5d-a104-f011-bae3-000d3addf8ce",
+            "subject": "Webform_incident_SiCharge D_19-03-2025_SN: mSS9T9 - MP / R6 170002075",
+            "body": "Dear NEVO Emmanuel,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nmSS9T9 - MP / R6 170002075\nThank you\neMobility Technical Support Team\nSehr geehrte/r NEVO Emmanuel,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nmSS9T9 - MP / R6 170002075\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-19T09:06:00Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09c926d9-a504-f011-bae3-7c1e5236e32d",
+            "subject": "ID0413655-DC/SI-UC/FR-[MP/R6 170002075] Issue with socket CRM:02684000005",
+            "body": "Dear Emmanuel NEVO,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002075\nProblem Description\n:\nThe charger on SCB seems to use the AC socket but in reality this socket is not used. The AC flag is always in use condition while the socket is not used.\nFor future reference, your case number is\n0413655\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-19T09:38:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab306f37-5296-459f-8909-812a0d06eaaf",
+            "subject": "Analysis",
+            "body": "",
+            "date": "2025-03-19T14:35:33Z",
+            "extra": {}
+        },
+        {
+            "id": "d7db04e3-3b35-a5d2-bcfd-26e4e1e438af",
+            "subject": "L2-->L3 (Creating child case)",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nThe charger on SCB seems to use the AC socket but in reality this socket is not used. The AC flag is always in use condition while the socket is not used\nAction Performed (L2) :\nLog analysis. Found that no charging session was performed since 1 month. Last session was carried out on 21st Feb (refer logs mentioned in timeline). Still the symbol of AC socket is in used condition on SCB. Found\nModbus error of Meter_BC6_AC_Income\nin error flags.\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) :\nNeed to check further if its issue with SCB or hardware issue.\nLog analysis with timestamp :\nNA\nAction Required\nAction by HQ : Deeper analysis\nAttachement\n: refer notes in timeline.",
+            "date": "2025-03-24T23:43:57Z",
+            "extra": {}
+        },
+        {
+            "id": "3212a1cd-f419-f011-998a-7c1e5236cda4",
+            "subject": "RE: ID0413655-DC/SI-UC/FR-[MP/R6 170002075] Issue with socket CRM:02684000005",
+            "body": "Hello Emmanuel,\nGreetings of the day!\nWith reference to trailing mail, please note that Ecog has been restarted via SSH.\nAnd now we can see AC socket to be available on SCB and not in “in use condition” anymore. (Image attached below for your reference)\nKindly confirm the same from your end.\nDo let us know if you have any queries or should we proceed with the closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T12:26:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24af4608-8620-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0413655-DC/SI-UC/FR-[MP/R6 170002075] Issue with socket CRM:02684000005",
+            "body": "Hello Emmanuel,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nDo let us know if you have any queries or should we proceed with the closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-23T21:00:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "32ab5eb6-8b24-f011-8c4d-7c1e52361e39",
+            "subject": "RE: ID0413655-DC/SI-UC/FR-[MP/R6 170002075] Issue with socket CRM:02684000005",
+            "body": "Hello Emmanuel,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nDo let us know if you have any queries or should we proceed with the closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-28T23:51:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e63e9adf-8b24-f011-8c4d-000d3ad97a58",
+            "subject": "Réponse automatique : ID0413655-DC/SI-UC/FR-[MP/R6 170002075] Issue with socket CRM:02684000005",
+            "body": "Bonjour,\nJe suis actuellement absent, je prendrais connaissance de vos mails à mon retour Lundi 05/05 au matin.\nPour toute demandes urgentes veuillez contacter les personnes ci-dessous :\n- Antoine AULAY (Directeur commercial SIE) :\nantoine.aulay@siemens.com\n- Franck LEGALL (Expert technique SIE) :\nfranck.legal@siemens.com\nPour toute assistance technique veuillez compléter le formulaire sur le lien ci après :\nIncident report SI E (all products) | MoreApp\nJe vous remercie de votre compréhension,\nWith best regards,\nAvec mes meilleures salutations,\nEmmanuel Nevo\nResponsable business Développement\nSiemens SAS\nRC-FR SI E SAL S\nWTC - SIEMENS\n120 rue du Porteau\nBâtiment A, 2ème étage\n86000 Poitiers\n, France\nMobile: +33 621990429\nmailto:emmanuel.nevo@siemens.com\nwww.siemens.com",
+            "date": "2025-04-28T23:52:52Z",
+            "extra": {
+                "sender": "emmanuel.nevo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "576a58e4-832a-f011-8c4d-000d3ab4fe11",
+            "subject": "ID0413655-DC/SI-D/FR-[MP/R6 170002075] AC Socket always in used condition CRM:00579001625",
+            "body": "Dear Emmanuel NEVO,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0413655, the case is now closed.\nProblem Description\n: AC Socket always in used condition\nResolution\n: Ecog restarted via SSH\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-06T14:10:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cba86876-842a-f011-8c4d-000d3ab4fe11",
+            "subject": "Ticket 0413655 has been closed. Are you satisfied with our provided solution? CRM:00579001626",
+            "body": "Dear Emmanuel,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0413655\nwith the title:\nID0413655-DC/SI-D/FR-[MP/R6 170002075] AC Socket always in used condition\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-06T14:14:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

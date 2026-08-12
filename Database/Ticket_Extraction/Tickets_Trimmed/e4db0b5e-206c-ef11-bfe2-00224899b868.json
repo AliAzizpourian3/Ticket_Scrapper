@@ -1,0 +1,165 @@
+{
+    "incident_id": "e4db0b5e-206c-ef11-bfe2-00224899b868",
+    "ticket_number": "0378063",
+    "title": "ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging with less power.",
+    "created_on": "2024-09-06T07:19:40Z",
+    "last_activity": "2025-12-16T14:06:07Z",
+    "age": "5950",
+    "description": "Reported behavior/issue:  Charging with less power\nRoot cause:\nSolution: Query addressed\nOn DAMEX Sanctioned List:\nWarranty Status: 05/07/2026",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "STBpCB",
+    "stage": null,
+    "serial_number": "MP / S5 170003680",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "32181a57-206c-ef11-bfe2-000d3ab26cb1",
+            "subject": "FW: Laadsessies",
+            "body": "Hi colleagues,\nCharger STBpCB has a drop in power during charging sessions. Below you’ll find the exact timestamp of when this happened.\nCould you see in the logs why this happens?\nThomas",
+            "date": "2024-09-06T07:19:33Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10511b40-396c-ef11-bfe2-00224899b868",
+            "subject": "A new case manager was assigned to 0378063 CRM:00225092925",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0378063 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e4db0b5e-206c-ef11-bfe2-00224899b868",
+            "date": "2024-09-06T10:17:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "37591bd9-4e6c-ef11-a670-000d3ab7063f",
+            "subject": "ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Hello Thomas﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S5 170003680\nChargerID/Serial No.\n:\nSTBpCB\nProblem Description\n: Charging interruption.\nTroubleshooting:\nThank you for providing us with the background information from the backend provider. We will need some time to analyze the issue, and I will follow up with you shortly.\nFor future reference, your ticket number is\n0378063\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T12:52:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b98e5b25-4f6c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 5 hours, 34 minutes and 49 seconds.",
+            "date": "2024-09-06T12:54:31Z",
+            "extra": {}
+        },
+        {
+            "id": "e38e5b25-4f6c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-09-06T12:54:34Z",
+            "extra": {}
+        },
+        {
+            "id": "faa5df42-5b6c-ef11-bfe2-002248a155a0",
+            "subject": "RE: ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Hi Thomas,\nWe have analysed all the logs & below are some references snapshot form the charging session.  The logs I’ve shared below demonstrate that the EV functions as the Master & charger functions as Slave. The charger provided the current and voltage that the EV demanded.\nAs you can see from the multiple session logs, the EV’s target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to 80% SOC using CC, and then it switches to CV mode gradually based on EV requirements. During this phase, the EV's target current drops to protect the battery from thermal runaway and to ensure proper cell balancing.\nTransaction Id: 201271307\nThe charging session was started when EV SOC: 38% and ended around EV SOC was 100%.\nTransaction Id: 201671524\nThe charging session was started when EV SOC: 48% and ended around EV SOC was 100%. 7\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this addresses your concerns. If there are no further questions, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T14:21:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "63b3b6b5-5c6c-ef11-bfe2-002248a155a0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 1 hour, 36 minutes and 59 seconds.",
+            "date": "2024-09-06T14:31:33Z",
+            "extra": {}
+        },
+        {
+            "id": "fcec3aa9-666e-ef11-a670-000d3ab02502",
+            "subject": "RE: ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Hi Thomas,\nI am waiting for your response based on the previous email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-09T04:47:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "036b3c41-669a-7811-b7fe-344cfeb7801d",
+            "subject": "Update *09/09/2024*",
+            "body": "Discuss with Thomas, analysed shared to the customer, waiting for the feedback for closure.",
+            "date": "2024-09-09T10:40:59Z",
+            "extra": {}
+        },
+        {
+            "id": "44030858-576f-ef11-a670-000d3ab7063f",
+            "subject": "RE: ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Hi Thomas,\nI am waiting for your response regarding my earlier email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-10T09:30:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df205d02-5c6f-ef11-a670-000d3a69a8a0",
+            "subject": "RE: ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Hi Shrey,\nI didn’t hear back from the customer, but we can close this ticket for now. If they come up with follow-up questions I’ll reach out to you via Teams.\nThomas",
+            "date": "2024-09-10T10:04:07Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c3fe8507-5c6f-ef11-a670-0022489e1eb4",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 3 days, 19 hours, 32 minutes and 45 seconds.",
+            "date": "2024-09-10T10:04:18Z",
+            "extra": {}
+        },
+        {
+            "id": "f36a364d-5f6f-ef11-a670-000d3ab7063f",
+            "subject": "RE: ID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging interruption. CRM:00643000899",
+            "body": "Dear Thomas,\nSince your issue has been addressed, we will be proceeding with closing the service ticket# 0378063.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-10T10:27:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f95a4c6d-5f6f-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0378063 has been closed. Are you satisfied with our provided solution? CRM:00643000915",
+            "body": "Dear Thomas,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0378063\nwith the title:\nID0378063-DC/Si-D/NL-[MP / S5 170003680] Charging with less power.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-10T10:28:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b196a186-5f6f-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 25 minutes and 2 seconds.",
+            "date": "2024-09-10T10:29:20Z",
+            "extra": {}
+        },
+        {
+            "id": "43f70f99-5f6f-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 26 seconds.",
+            "date": "2024-09-10T10:29:46Z",
+            "extra": {}
+        }
+    ]
+}

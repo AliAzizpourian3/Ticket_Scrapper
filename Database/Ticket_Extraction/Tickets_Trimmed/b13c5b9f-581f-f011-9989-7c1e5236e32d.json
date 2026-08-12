@@ -1,0 +1,68 @@
+{
+    "incident_id": "b13c5b9f-581f-f011-9989-7c1e5236e32d",
+    "ticket_number": "0420082",
+    "title": "ID0420082-DC/Si-D/AE-[ MP / R8 170002516]Charger rebooting continously",
+    "created_on": "2025-04-22T09:03:24Z",
+    "last_activity": "2025-05-28T12:22:42Z",
+    "age": "10012",
+    "description": "Reported behaviour/issue:  Charger rebooting continously\nSolution: NA\nyyyy-mm-dd:\n2025/04/22",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "TOf9QH",
+    "stage": null,
+    "serial_number": "MP / R8 170002516",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "8c77329e-581f-f011-9989-000d3a66d8fd",
+            "subject": "170002516 Charger Rebooting continuously (UAEV)",
+            "body": "Dear Sadek,\nPlease be requested to create ticket for subject charger getting rebooting continuous.\nRegards\nSyed basheeruddin",
+            "date": "2025-04-22T09:03:15Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5424c40c-731f-f011-9989-7c1e5236eee4",
+            "subject": "ID0420082-DC/Si-D/AE-[ MP / R8 170002516]Charger rebooting continously CRM:02698000052",
+            "body": "Dear Basheer Thangal,\nThank you for reaching\nout\nto eMobility Support. My name is\nMeghna\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002516\nChargerID/Serial No.\n:\nTOf9QH\nProblem Description\n:  Charger rebooting continuously\nFor future reference, your case number is\n0420082\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-22T12:12:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa580149-020f-f601-8fde-0469ede980d0",
+            "subject": "Charger in Failsafe Mode",
+            "body": "SECC_KF11_GenData_MB_Problem\nPLC\nSYSTEM\ntrue\nloss of communication IMD data and pump\nChargerOperationMode\nPLC\nSYSTEM\ntrue\nFAILSAFE\nDC2_CableTempSensor_XD101\nPLC\nDEVICE\ntrue\nVIV:0 RNE:1 KON:1",
+            "date": "2025-04-23T09:36:36Z",
+            "extra": {}
+        },
+        {
+            "id": "e9448677-2620-f011-9989-6045bde0ae3f",
+            "subject": "RE: ID0420082-DC/Si-D/AE-[ MP / R8 170002516]Charger rebooting continously CRM:02698000052",
+            "body": "Hello Basheer,\nOn this charger, I can see the failsafe mode is active, and most probably it is due to lost communication with SECC KF11.\nChargerOperationMode\nPLC\nSYSTEM\ntrue\nFAILSAFE\ntrue\nSECC_KF11_GenData_MB_Problem\nPLC\nSYSTEM\ntrue\nloss of communication IMD data and pump\nDC2_CableTempSensor_XD101\nPLC\nDEVICE\ntrue\nVIV:0 RNE:1 KON:1\nDC1_StateMonitor_KF13\nPLC\nDEVICE\ntrue\nstatemonitor DC1\nPlease plan for site visit to inspect the KF11 and its connection. Kindly do carry a spare KF11 and KF13 module with you.\nHere are the recommended MLFB's\nSr. No.\nPart No.\nDescription\nDevice Tag\nQty\n1\n8EM5903-0AA00-6AA3\nSECC Charge Controller CCS2 CHAdeMO AC\nKF11\n1\n2\n8EM5903-0AA00-6AA1\nState Monitor 2x CCS, 1x AC, 1x CHAdeMO\nKF13\n1\nWe will transfer this case to RC-AE queue, kindly pick the case and arrange for site visit.\nPlease do refer the\nDC Spare Return process\nafter the site activity before filling for warranty claim, and if the spares are required to be returned to factory, kindly send them,\nIf you need, expert support while onsite, you can create a work order to ES team, Contact Rui Teodoso or Afonso Sousa.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-23T09:36:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a08e09c-f820-f011-9989-7c1e5236e32d",
+            "subject": "RE: ID0420082-DC/Si-D/AE-[ MP / R8 170002516]Charger rebooting continously CRM:02698000052",
+            "body": "Dear support,\nWe have cleared the issue please close the ticket.\nRegards\nSyed Basheerudin",
+            "date": "2025-04-24T10:41:11Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "incident_id": "0dccab53-1cd3-ef11-8eea-7c1e5235e725",
+    "ticket_number": "0400042",
+    "title": "ID0400042-DC/Si-D/BE[170003805] - EV issue",
+    "created_on": "2025-01-15T08:40:16Z",
+    "last_activity": "2025-12-16T14:02:05Z",
+    "age": "7329",
+    "description": "Reported behaviour/issue:\nAbrupt session stop in DC1\nRoot cause:\nEV issue\nSolution:\nThere is no issue with the contactors, the EV has somekind of fault that abruptly stopped the session but kept the CP signal, and caused the EcoG to conflict or error. (B-C-B PilotState while no session on going)\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "D5dYko",
+    "stage": null,
+    "serial_number": "MP / S6 170003805",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ae83584c-1cd3-ef11-8ee9-000d3ab41b62",
+            "subject": "Webform_incident_SiCharge D_15-01-2025_SN: 170003805",
+            "body": "Dear Marnic,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170003805\nThank you\neMobility Technical Support Team\nSehr geehrte/r Marnic,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170003805\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-15T08:40:06Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "474ca842-23d3-ef11-8eea-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0400042 CRM:00225148811",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0400042 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0dccab53-1cd3-ef11-8eea-7c1e5235e725",
+            "date": "2025-01-15T09:29:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c76172f-26d3-ef11-8ee9-000d3a691687",
+            "subject": "ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Dear Marnic,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S6 170003805\nChargerID/Serial No.\n:\nD5dYko\nProblem Description\n: Contactor errors during charging\nTroubleshooting\n: If you are not aware, in the latest FW version we get the Voltage transducer readings:\nIn any case I went in DebugStation to confirm it:\nFrom the logs (EcoG and SCB), it's clear that who stopped this session is the EV:\nIt seems that the logs you provided to me are normal as it says the PLC-Error-Flag is False:\nIn this case it doesn't seem to be a problem with QA09-10, this is just the normal operation that when the session stopped, it “confirmed” that the error-flag is false.\nI can confirm but it seems that they changed the metodology in how to report the errors and if there is no problem, then the report is that the Error Flag keeps in false. Here is an example:\nI don't think there is any problem. Is this the first time you got this reported? If yes, then I assume it's one time only due to the EV itself.\nFor future reference, your case number is\n0400042\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T09:50:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6edeac58-3ad3-ef11-8ee9-7c1e52378e9b",
+            "subject": "RE: ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Hello Francisco\nThe customer had this problem on the new 400 kW charger. The only thing that I found strange is that the customer was not able to start the session again after it stopped on DC1, socket was in “error”. I think he tried twice but DC1 was in out of order state. Later he tried on DC2 and there is started from the first try.\nBr.",
+            "date": "2025-01-15T12:15:06Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "29782806-3cd3-ef11-8ee9-000d3a691687",
+            "subject": "ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Hi Marnic,\nThank you for the feedback.\nIndeed, now I understand the issue, it seems that after this session the EcoG is somehow confused with what to do with this EV, from my point of view, it's very strange that the EV requested to stop at 12%:\nBut it's still strange that the EcoG had this behavior only after this specific session, since 1 week ago there were 47 sessions:\nBut I agree that something went wrong with the EcoG, we can see the PilotState going to B2, so my feeling is either the EcoG got some internal conflict/error that we can't see or the PP didn't went through, usually we see this when we get B2 but no P01_Authentication process going.\nThe only thing I can do remotely is restart the EcoG, but I would like to keep it like this until the next session. If it works then we have a faulty car as root cause that made some kind of problem in EcoG, if it doesn't work then I can restart the EcoG and retry.\nWhat do you think?\nBR,\nFrancisco",
+            "date": "2025-01-15T12:27:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "881c0fdf-e4d3-ef11-8ee9-000d3a691687",
+            "subject": "ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Hi Marnic, good morning.\nSince yesterday, I believe no one did a reboot, please confirm this to me.\nIf they didn't here is a session in the same outlet and it worked first time:\nAnd stopped at:\nUnfortunately, the QA09-10 was not in use so I cannot confirm if it has any kind of problem. I will keep this ticket until Monday proactively checking it. If nothing goes wrong I will close it and declare as an EV issue\nBest regards\nFrancisco",
+            "date": "2025-01-16T08:35:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4a6765a7-f3d3-ef11-8ee9-7c1e52378e9b",
+            "subject": "RE: ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Francisco\nOk thanks!\nBr.",
+            "date": "2025-01-16T10:21:39Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5b322576-17d7-ef11-8eea-000d3ab009dd",
+            "subject": "ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Hi Marnic, good morning.\nAfter checking the logs again I found a session in DC1 that used the QA09-10 and it still doesn't have any error.\nMy feeling stays the same since the beginning, there must be something wrong with the EV and caused the SECC to go into error/conflict, it's literally impossible for us to short circuit the EV otherwise there would be somekind of trip in our charger before that would happen.\nFrom our side, there is no problem. Please confirm to me if you agree and if you have any other questions/doubts before I close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-01-20T10:15:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab00b7c7-19d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0400042-DC/Si-D/BE[170003805] - Contactors error CRM:00315002257",
+            "body": "Hello Francisco\nOk, no problem, for now you can close the ticket.\nThanks!\nBr.",
+            "date": "2025-01-20T10:32:03Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "49da1102-1cd7-ef11-8ee9-000d3ab4a366",
+            "subject": "Ticket 0400042 has been closed. Are you satisfied with our provided solution? CRM:00315002268",
+            "body": "Dear Marnic,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0400042\nwith the title:\nID0400042-DC/Si-D/BE[170003805] - Contactors error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-20T10:48:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

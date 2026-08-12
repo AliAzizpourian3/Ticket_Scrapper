@@ -1,0 +1,163 @@
+{
+    "incident_id": "d2de8942-6d97-ef11-8a6a-000d3a682fc5",
+    "ticket_number": "0387468",
+    "title": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests",
+    "created_on": "2024-10-31T09:48:28Z",
+    "last_activity": "2025-12-16T14:04:32Z",
+    "age": "31734",
+    "description": "Reported behaviour/issue:\nNot charging at-20ºC ,  heater doesn't seem to be working\nRoot cause:\nAuthentication failed?\nSolution:\nNo update\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "qe4VuB",
+    "stage": null,
+    "serial_number": "MP / S3 170003392",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "043efa3f-6d97-ef11-8a69-0022489ac4be",
+            "subject": "Webform_incident_SiCharge D_31-10-2024_SN: MP / R6 170002001",
+            "body": "Dear Jessica MINA,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R6 170002001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jessica MINA,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R6 170002001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-10-31T09:48:20Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dad84a44-6f97-ef11-8a69-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0387468 CRM:00225117410",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387468 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d2de8942-6d97-ef11-8a6a-000d3a682fc5",
+            "date": "2024-10-31T10:02:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "64b8d3ef-6f97-ef11-8a69-0022489dc6eb",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 19 minutes and 7 seconds.",
+            "date": "2024-10-31T10:07:36Z",
+            "extra": {}
+        },
+        {
+            "id": "39ae39f6-6f97-ef11-8a69-0022489dc6eb",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 7 seconds.",
+            "date": "2024-10-31T10:07:43Z",
+            "extra": {}
+        },
+        {
+            "id": "aa717c82-9297-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Dear Jessica,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003392\nChargerID/Serial No.\n:\nqe4VuB\nProblem Description\n: Charger not working at -20ºC\nTroubleshooting\n:\nAs we already aligned, I will make a brief summary of what we discussed:\nSince the charger was offline during the tests, the logs are now very scrambled and very hard to troubleshoot since the timestamps are all random.\nSince the Debug Mode was also not enabled, it was not possible to check the status of the heater and temperature.\nWhat I could see in the logs from yesterday is that the charging sessions did not start because of the Backend not accepting the NULL idTag.\nThis happens when you have the OCPP connected URL but have the authentication disabled. The “free” sessions appear as “NULL” and since the backend doesn't accept this, it shows the result: “Invalid”\nAfter our session today with the customer, we were able to charge perfectly by removing the OCPP URL.\nWhat was reported was that the charger couldn't start charging with -20ºC and that the main circuit breaker of the room was tripped after the restart.\nFor this case, we already asked the customer for more information on the location such as all the devices that are connected to this breaker and what is his limit.\nWe also arranged for the test together to check the temperature while charging.\nPlease let me know when the date is and let's solve this!\nFor future reference, your ticket number is\n0387468\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-31T14:15:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac2da44f-9697-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "FYI the Temperature problem",
+            "date": "2024-10-31T14:42:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b25eb705-c69a-ef11-8a6a-002248a2b1bd",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hello Jessica, good afternoon. I hope you are doing well.\nDo you have any update for this topic?\nBest regards,\nFrancisco",
+            "date": "2024-11-04T16:01:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bfbb777-db9a-ef11-8a6a-0022489bcff4",
+            "subject": "Re: ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hi Francisco,\nNothing yet. I sent an email this morning. They will inform us if new tests will be done.\nBest regards,\nJessica\nDe:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnviado:\nMonday, November 4, 2024 5:02:21 PM\nPara:\nMINA, JESSICA (RC-FR SI E EXE) <jessica.mina@siemens.com>\nAsunto:\nID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987\nHello Jessica, good afternoon. I hope you are doing well.\nDo you have any update for this topic?\nBest regards,\nFrancisco",
+            "date": "2024-11-04T18:34:53Z",
+            "extra": {
+                "sender": "jessica.mina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b6b4fd2a-08a0-ef11-8a6a-000d3a6610b3",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hello Jessica, good morning. How are you doing?\nDo you have any news regarding this topic?\nThanks a lot and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-11-11T08:37:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "91e820b8-09a0-ef11-8a69-002248a26402",
+            "subject": "Automatic reply: ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "I’m out of office with no access to my emails until the 12th of November",
+            "date": "2024-11-11T08:48:37Z",
+            "extra": {
+                "sender": "jessica.mina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "881acd24-efa0-ef11-8a69-7c1e5234911a",
+            "subject": "RE: ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hi ,\nWe still didn’t get any news on the topic.\nI will keep you posted.\nBest Regards,\nJessica MINA\nProject Manager E-mobility\nSiemens Infrastructure\nRC FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 (0)7 50 69 95 63\nmailto:jessica.mina@siemens.com\nwww.siemens.com",
+            "date": "2024-11-12T12:10:45Z",
+            "extra": {
+                "sender": "jessica.mina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f910123e-87a5-ef11-b8e9-000d3a6610b3",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hello Jessica, good morning.\nDo you have any feedback from the customer?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2024-11-18T08:29:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0ff161e-19a7-ef11-b8e9-002248a2b1bd",
+            "subject": "ID0387468-DC/Si-D/FR[170003392] - Thermal tests CRM:00315001987",
+            "body": "Hello Jessica, good morning.\nSince we are not able to continue with this topic, my opinion would be to close the ticket and when we are able to restart this, you can reach out to me via M.Teams or email.\nWhat is your opinion?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-11-20T08:26:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bc28a34-bea8-ef11-b8e9-6045bdde0ce3",
+            "subject": "Ticket 0387468 has been closed. Are you satisfied with our provided solution? CRM:00315002089",
+            "body": "Dear Jessica, I will close the ticket since we don't have an update. Please reach out to me directly via Teams and we can continue investigating this when we are ready.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0387468\nwith the title:\nID0387468-DC/Si-D/FR[170003392] - Thermal tests\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-22T10:40:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

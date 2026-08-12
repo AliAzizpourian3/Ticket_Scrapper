@@ -1,0 +1,169 @@
+{
+    "incident_id": "e924c8f2-32ea-ef11-a81c-6045bddfc085",
+    "ticket_number": "0406672",
+    "title": "ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing",
+    "created_on": "2025-02-13T17:50:02Z",
+    "last_activity": "2026-04-29T07:02:35Z",
+    "age": "6487",
+    "description": "Reported behavior/issue: N\not transmit its serial number after reboot via OCPP BootNotification message to our CPMS.\nRoot cause: Serial numbers not added.\nSolution: Updated serial numbers and tested.\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "k6Nk5M",
+    "stage": null,
+    "serial_number": "MP / R0 170002550",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "872e2891-35ea-ef11-9341-7c1e5237e811",
+            "subject": "Note created on 2/13/2025 6:08:56 PM UTC by Marius Schneider [contact:698d91f6-5322-ee11-9967-0022489de400]",
+            "body": "*WEB*",
+            "date": "2025-02-13T18:08:56Z",
+            "extra": {}
+        },
+        {
+            "id": "0e93cc97-40ea-ef11-9341-7c1e52fbe252",
+            "subject": "A new case manager was assigned to 0406672 CRM:00225164241",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0406672 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e924c8f2-32ea-ef11-a81c-6045bddfc085",
+            "date": "2025-02-13T19:27:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b546989a-bc79-a451-b8e0-495f7f15e3a2",
+            "subject": "Note from customer",
+            "body": "Hi Siemens Support Team,\nthe charger k6Nk5M does not transmit its serial number after reboot via OCPP BootNotification message to our CPMS.\nAccording to firmware release note of firmware version 6.0.3, the charger should transmit this data to our CPMS.\nWe have identified this issue to several more chargers running on 6.0.3. Currently, only 2 of 16 Sicharge D chargers transmit this data, but all 16 are running on the same firmware version.\nPlease check the attachment. The JSON payload is from todays reboot. We expect chargers to behave identically in our CPMS.\nKind regards,\nMarius Schneider\nSoftware Version: v6.0.3-0-g215cb74 (PRODUCTION)\nOCPP Backend Connection: Yes",
+            "date": "2025-02-13T19:31:41Z",
+            "extra": {}
+        },
+        {
+            "id": "2e808ad4-43ea-ef11-9341-7c1e527622e8",
+            "subject": "ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Dear Marius Schneider,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nAH5057DC001\nChargerID/Serial No.\n:\nk6Nk5M\nProblem Description\n: Serial number in OCPP BootNotification missing\nTroubleshooting\n: Please allow us sometime to analyze the logs and we will get back to you soon.\nFor future reference, your case number is\n0406672\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-13T19:50:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea9bbe5d-58b7-82c3-8db0-b64d8bd5ba1e",
+            "subject": "Note to L2",
+            "body": "2025-02-13T09:09:49.695317+00:00 OCPP: Send command: BootNotification -\n\"\nchargePointModel\"\n: \"SICHARGE D\",\n\"\nchargePointVendor\"\n: \"Siemens AG\",\n\"\nfirmwareVersion\n\": \"v6.0.3-0-g215cb74 (PRODUCTION)\",\n\"iccid\n\": \"462038066009334676\"\nAlso checked for Charger id-aHNoZm, where it is showing charger SN in BootNotification.\nRelease Note v6.0.3-The charger serial number and the ICCID is part of the OCPP message BootNotification according to OCPP-J 1.6",
+            "date": "2025-02-13T20:24:00Z",
+            "extra": {}
+        },
+        {
+            "id": "af08bce6-90c4-0848-b177-fd418470667e",
+            "subject": "Case Update",
+            "body": "Checked OCPP Config File for charger id\naHNoZm, we are able to see Serial Number mentioned in the file.\nWhen we checked charger config file of charger id\nk6Nk5M, We are not able to see serial number mentioned in configuration file.",
+            "date": "2025-02-14T07:07:36Z",
+            "extra": {}
+        },
+        {
+            "id": "bfb2433a-675b-341a-af99-a93543ddc02a",
+            "subject": "Case Update",
+            "body": "After updating serial number again on SCB, we are getting Serial number in Boot Notification\n2025-02-14T10:45:59.476285+00:00 sicharge-cp [local0:info] sicharge-cp-backend/53141c0a39ca[730]: OCPP: Send command: BootNotification (76309c60-7d4a-4dd9-a005-145b7a473b5a) - {\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v6.0.3-0-g215cb74 (PRODUCTION)\",\"iccid\":\"462038066009334676\",\"chargePointSerialNumber\":\"MP/R0170002550\"}",
+            "date": "2025-02-14T11:08:01Z",
+            "extra": {}
+        },
+        {
+            "id": "15c1a022-c4ea-ef11-9341-0022489a2456",
+            "subject": "RE: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Hello Marius,\nGreetings of the day.\nWe have updated serial number on charger id k6Nk5M, and we tested after doing soft reboot and we have observed serial number in BootNotification message.\nAs you mentioned you are not receiving serial number on other chargers as well, please let us know the charger Ids or serial number so that we can update on that chargers as well.\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T11:09:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a866a534-c6ea-ef11-9341-6045bde1756e",
+            "subject": "AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Hi Saurav,\nthank you so much, the charger\nk6Nk5M is now transmitting serial number to our CPMS.\nOther affected chargers are:\nOCPP ID\nSerial Number\nCharger ID\nAH5020DC001\nMP P3 170000422\nuoQAdw\nAH5020DC002\nMP P3 170000420\ngrYPwb\nAH5020DC004\nMP R3 170001600\njX6vQY\nAH5036DC001\nMP R0 170002829\n9bNsBh\nAH5036DC002\nMP R0 170002831\nDKLyuA\nAH5036DC003\nMP R0 170002830\nfYEaPs\nAH5036DC004\nMP R0 170002551\nC4RAaL\nAH5052DC001\nMP R0 170002833\nywghBS\nAH5052DC002\nMP R0 170002832\nKRijNx\nAH5056DC001\nMP R0 170002777\nC7PWzv\nAH5056DC002\nMP / R0 170002778\nUU4Lub\nAH5057DC002\nMP R0 170002548\n17xsOj\nAH5057DC003\nMP R0 170002549\nugTWsO\nI hope you can add the serial number here as well.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 14. Februar 2025 12:16\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545\nHello Marius,\nGreetings of the day.\nWe have updated serial number on charger id k6Nk5M, and we tested after doing soft reboot and we have observed serial number in BootNotification message.\nAs you mentioned you are not receiving serial number on other chargers as well, please let us know the charger Ids or serial number so that we can update on that chargers as well.\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T11:24:11Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c93f24a9-10eb-ef11-9341-6045bddfbfba",
+            "subject": "RE: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Hello Marius,\nThanks for the response.\nWe have updated all the serial numbers as mentioned in your previous email and tested one of them (grYPwb) after performing a soft reboot. We observed the serial number in the BootNotification message.\nPlease check from your end and confirm. If you have no further queries, shall we proceed and close the ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-14T20:17:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4d92473c-f996-f31e-bd64-21a32535b4d7",
+            "subject": "Note to L2",
+            "body": "Caseid-grYPwb\n2025-02-14T20:06:24.638532+00:00 sicharge-cp [local0:info] sicharge-cp-backend/26edf1bb8d55[735]: OCPP: Send command: BootNotification (70208ce5-a2e7-485c-b030-0fcc4f683c14) - {\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v6.0.3-0-g215cb74 (PRODUCTION)\",\"iccid\":\"462038066001970295\",\"chargePointSerialNumber\":\"MP/P3170000420\"}",
+            "date": "2025-02-14T20:36:15Z",
+            "extra": {}
+        },
+        {
+            "id": "7c9c2c56-02ed-ef11-9341-7c1e527798b1",
+            "subject": "AW: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Good morning Beerpal,\nunfortunately, we have monitored not a single boot notification at all, except from grYPwb.\nFor testing purposes, the charger ugTWsO has been rebooted by me. But it seems that there is the wrong serial number implemented. Please check the photo of the type label, stating serial number “MP\nR0\n170002549”.\nCould you correct this to “R0”?\nAdditionally, there are serial numbers implemented with an “ERK” suffix – see attachment. Please keep the serial  numbers consistent.\nThanks and kind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 14. Februar 2025 21:35\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545\nHello Marius,\nThanks for the response.\nWe have updated all the serial numbers as mentioned in your previous email and tested one of them (grYPwb) after performing a soft reboot. We observed the serial number in the BootNotification message.\nPlease check from your end and confirm. If you have no further queries, shall we proceed and close the ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-17T07:39:39Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7752ff26-05ed-ef11-9341-7c1e527622e8",
+            "subject": "RE: AW: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Hello Marius,\nThanks for the response.\nWe have verified all the chargers and corrected the respective one (MP R0 170002549) on our end. Please check and confirm. If there are no further issues, shall we proceed and close this ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-17T07:59:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95adaa40-1bed-ef11-9341-7c1e5277807d",
+            "subject": "AW: AW: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Hi Beerpal,\nplease close this ticket.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 17. Februar 2025 09:03\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\ncpo <cpo@tank.rast.de>; cpo <cpo@tank.rast.de>; service-emobility.si.de@siemens.com; cpo <CPO@tank.rast.de>; cpo <cpo@tank.rast.de>\nBetreff:\nRE: AW: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545\nHello Marius,\nThanks for the response.\nWe have verified all the chargers and corrected the respective one (MP R0 170002549) on our end. Please check and confirm. If there are no further issues, shall we proceed and close this ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-17T10:38:06Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f2e2b86c-bced-ef11-9341-6045bddfbfba",
+            "subject": "RE: AW: AW: AW: ID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing CRM:00921001545",
+            "body": "Dear Marius Schneider,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406672, and the case is now closed.\nProblem Description\n: SN in OCPP BootNotification missing\nResolution\n: Updated the serial numbers of all chargers in the SCB backend.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-18T05:51:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e33e304-bded-ef11-9341-6045bddfbfba",
+            "subject": "Ticket 0406672 has been closed. Are you satisfied with our provided solution? CRM:00921001557",
+            "body": "Dear Marius Schneider,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406672\nwith the title:\nID0406672-DC/Si-D/DE-[MP / R0 170002550] SN in OCPP BootNotification missing\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-18T05:55:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

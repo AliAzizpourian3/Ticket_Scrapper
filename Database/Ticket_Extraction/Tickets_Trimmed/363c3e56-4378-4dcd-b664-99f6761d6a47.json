@@ -1,0 +1,97 @@
+{
+    "incident_id": "363c3e56-4378-4dcd-b664-99f6761d6a47",
+    "ticket_number": "0433007",
+    "title": "ID0433007-DC/Si-D/IT-[MP / RD 170003001] Charging session failed",
+    "created_on": "2025-06-24T06:28:52Z",
+    "last_activity": "2025-07-01T06:17:09Z",
+    "age": "10069",
+    "description": "Reported behaviour/issue:\nCharging session failed",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "63Vm6i",
+    "stage": null,
+    "serial_number": "MP / RD 170003001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "01d17e5a-1959-4c56-9c69-96815208496a",
+            "subject": "Note created on 06/24/2025 06:28:32 AM UTC by Filomena Carusone ",
+            "body": "",
+            "date": "2025-06-24T06:28:58Z",
+            "extra": {}
+        },
+        {
+            "id": "53cd01c2-c550-f011-877b-7c1e52fc0c57",
+            "subject": "A new case manager was assigned to 0433007 CRM:00225219101",
+            "body": "Jyoti Yadav was assigned as new Case Manager for case 0433007 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=363c3e56-4378-4dcd-b664-99f6761d6a47",
+            "date": "2025-06-24T06:37:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc0942fd-8511-be18-b99e-e615019cca52",
+            "subject": null,
+            "body": "is it possible to check logs on charger n.\n170003001\nat 6:17 of yesterday 23 June?\nA customer tried to charge but he said that plugs were off.\nI attached a print with recharge details.\nThank you in advance\nsoftware version\n: v6.1.3-0-gfb2eb75",
+            "date": "2025-06-24T06:38:45Z",
+            "extra": {}
+        },
+        {
+            "id": "f54386db-c650-f011-877b-6045bdde4786",
+            "subject": "ID0433007-DC/Si-D/IT-[MP / RD 170003001] Charging session failed CRM:02682000158",
+            "body": "Dear Filomena Carusone,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / RD 170003001\nChargerID/Serial No.\n:\n63Vm6i\nProblem Description\n:\nCharging session failed.\nFor future reference, your case number is\n0433007\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-24T06:45:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c07d0da-c750-f011-877b-6045bddf319c",
+            "subject": "A new case manager was assigned to 0433007 CRM:00225219123",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0433007 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=363c3e56-4378-4dcd-b664-99f6761d6a47",
+            "date": "2025-06-24T06:52:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "909c8c05-ce50-f011-877b-6045bdde4786",
+            "subject": "RE: ID0433007-DC/Si-D/IT-[MP / RD 170003001] Charging session failed CRM:02682000158",
+            "body": "Dear Filomena Carusone,\nAs per the shared time frame ,checked in logs & it is observed that session was interrupted due to Unsuccessful Authorization.\n2025-06-23T18:16:05.936053+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: PilotState \"A\" --> \"B2\"\n2025-06-23T18:16:07.476007+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/0840ecbbbffb[639]: OCPP: Send command: StatusNotification (256dd886-1dfd-44af-9c22-7d9edb0f1c87) - {\"\nconnectorId\":1\n,\"errorCode\":\"NoError\",\"status\":\"\nPreparing\n\"}\n2025-06-23T18:16:14.824150+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] |2025-06-23T18:16:14|\nDC2: CHARGING_SESSION_START\n2025-06-23T18:16:14.839933+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC2: Charging Phase \"\nP00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-06-23T18:16:14.856169+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] |2025-06-23T18:16:14|DC2: |EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=1|EV_TarCur[A]=0|EV_TarVol[V]=0|EV_SOC[%]=0|EVSE_DESpwr[kW]=0|Pilot=2\n2025-06-23T18:16:18.722360+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: PilotState \"B2\" --> \"E\"\n2025-06-23T18:16:18.737579+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2025-06-23T18:16:22.640083+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: PilotState \"E\" --> \"A\"\n2025-06-23T18:16:24.471939+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/0840ecbbbffb[639]: OCPP: Send command: StatusNotification (888e681c-fbe9-4d9d-8922-ed301472e330) -\n{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}\n2025-06-23T18:16:27.853010+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: PilotState \"A\" --> \"B2\"\n2025-06-23T18:16:29.473995+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/0840ecbbbffb[639]: OCPP: Send command: StatusNotification (db6c75d1-e3f4-4472-ac7d-f7a936085192) -\n{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\n2025-06-23T18:16:37.056590+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] |2025-06-23T18:16:37\n|DC2: CHARGING_SESSION_START\n2025-06-23T18:16:37.071998+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC2: Charging Phase\n\"P00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-06-23T18:16:44.825629+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] |2025-06-23T18:16:37|DC2: |EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=0|EV_TarCur[A]=0|EV_TarVol[V]=0|EV_SOC[%]=0|EVSE_DESpwr[kW]=0|Pilot=2\n2025-06-23T18:17:32.156525+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC]\nDC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2025-06-23T18:17:33.573190+00:00 [FW060103G1] sicharge-cp [local0:info] ecog-secc-adapter/df40175d3796[639]: {\"type\":\"session_stop\",\"timestamp\":1750702654412,\"chargerId\":\"secc2300-13244\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"error\":{\"code\":38,\"msg\":\"V2G - message processing (e.g invalid param, wrong internal state) V2G09MSGSequence_V2G09Session_V2G09Authorization\"},\"source\":\"\",\"start\":1750702588319,\"duration\":0,\"energy\":0,\"user\":\"internal\",\"EVCCID\":\"381f26364c89\",\"EVMAC\":\"38.1f.26.36.4c.89\"}}\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-24T07:37:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0a51960-4256-f011-877b-7c1e52faf3c6",
+            "subject": "ID0433007-DC/Si-D/IT-[MP / RD 170003001] Charging session failed CRM:01251001498",
+            "body": "Dear Filomena Carusone,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0433007, the case is now closed.\nProblem Description\n: Charging session failed\nResolution\n: Since your query is answered & multiple successful charging session are also performed so we are proceeding with closing the ticket.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-07-01T06:12:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "869306bb-4256-f011-877b-7c1e52faf3c6",
+            "subject": "Ticket 0433007 has been closed. Are you satisfied with our provided solution? CRM:01251001499",
+            "body": "Dear Filomena,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0433007\nwith the title:\nID0433007-DC/Si-D/IT-[MP / RD 170003001] Charging session failed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-01T06:15:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

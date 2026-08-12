@@ -1,0 +1,86 @@
+{
+    "incident_id": "59e030fd-c721-f011-9d47-7c1e52fce21e",
+    "ticket_number": "0420951",
+    "title": "ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message",
+    "created_on": "2025-04-25T11:25:28Z",
+    "last_activity": "2025-05-14T08:14:29Z",
+    "age": "27169",
+    "description": "Reported behavior/issue:\nCharging point 1 is unavailable and cannot be resolved even by rebooting (remotely).\nThe error history frequently displays the status \"unavailable\" and \"faulty.\"\nThe error code \"InternalError\" - \"Error in the internal hardware and software component\" - is regularly displayed.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / P2 170000123",
+    "case_nature_code": 580000001,
+    "chargerID": "MP / P2 170000123 ERK",
+    "additional_info": [
+        {
+            "id": "1749ed92-f721-f011-9989-7c1e52350ea5",
+            "subject": "ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message CRM:02679000164",
+            "body": "Hallo ﻿Kjell Schmidt\nVielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Amit und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center\nHauptanlage\n: MP / P2 170000123 ERK\nLadegerät-ID/Seriennr\n.: MP / P2 170000123 ERK\nProblembeschreibung\n: Fehlermeldung\nFür zukünftige Referenzen lautet Ihre Ticketummer 0420951\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nAmit Deswal\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-04-25T17:06:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "40397de9-4123-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message CRM:02679000164",
+            "body": "Dear Team\nI have checked the logs on SCB that you mentioned in the trailing mail, and after analyzing them,\nwe are encountering the following error:\n\"Error polling coap://10.20.17.101:5683/state Error: No reply in 4.25s,\"\nwhich indicates that the SECC Lite is unable to communicate with the controller.\nTo address this issue, we recommend planning a site intervention.\nPlease ensure to carry the following items during the visit:\nEthernet cable\nSECC Lite unit compatible with Charging Point 1\nInitially, please check the wiring and connections as per the schematics.\nIf replacing the Ethernet cable does not resolve the issue, you may proceed with replacing the SECC Lite.\nAdditionally, please note that the charger is an ERK (Electrical Room Kiosk) type,\nso it is mandatory to strictly follow all EHS (Environment, Health, and Safety) guidelines.\nPlease ensure that only trained and authorized technicians perform the work.\nso ,I am writing to formally inform that we are moving case 0420951 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-DE SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-DE SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-27T08:30:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "339a9f3e-0324-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message CRM:02679000164",
+            "body": "Hi Abhinav,\nthanks for making us aware of this.\nJust to be sure, when you say “SECC Lite” you mean KF12 8EM5903-0AA00-5AA6 -KF12 SECC Charge Controller 1x CCS2, correct? Please confirm.\n@Rudi: FYI. Unfortuinately, another ticket of SW Kiel which we need to order Yunex for.\nMaybe Dehn can handle it? Otherwise Yunex as per usual.\nThanks,\nSascha",
+            "date": "2025-04-28T07:34:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c28382e-1af7-34b1-a3f7-8a1dc64d50df",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-29T09:14:18Z",
+            "extra": {}
+        },
+        {
+            "id": "57f5b36b-8725-f011-8c4d-7c1e52768c07",
+            "subject": "ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message CRM:00439000774",
+            "body": "Hallo ﻿Kjell Schmidt\nDer ChargeController wurde mit einem Hotfix für den Out-of-Order Status aktualisiert. Dies soll verhindern, dass die Outlets sporadisch in den Status 'unavailable' wechseln.\nFür zukünftige Referenzen lautet Ihre Ticketummer 0420951\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nWith best regards,\neMobility Tech Support Team -\nSemih Sentuerk\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-30T05:53:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1618959e-f30d-b6e9-ac22-1cbcce303623",
+            "subject": "Semih ",
+            "body": "Sporadically errors showing up\nSl. No.\nSeverity\nEvent\nTime\nDuration\nDescription\nCleared at\n1\nError\nDC1_CableTempSensor_XD100\nMay 03, 2025, 12:11:27 PM\n57m 25s 257ms\nVIV:0 RNE:1 KON:1\nMay 03, 2025, 01:08:52 PM\n2\nError\nDC1_CableTempSensor_XD100\nMay 03, 2025, 12:11:17 PM\n5s 4ms\nVIV:0 PLE:1 KON:1\nMay 03, 2025, 12:11:22 PM\n3\nError\nDC1_CableTempSensor_XD100\nMay 03, 2025, 12:10:02 PM\n25s 4ms\nVIV:0 PLE:1 KON:1\nMay 03, 2025, 12:10:27 PM\n4\nError\nDC1_CableTempSensor_XD100\nMay 03, 2025, 10:05:56 AM\n1h 4m 35s 513ms\nVIV:0 PLE:1 KON:1\nMay 03, 2025, 11:10:31 AM\n5\nError\nDC1_CableTempSensor_XD100\nMay 03, 2025, 09:59:46 AM\n6m 24ms\nVIV:0 PLE:1 SOV:1 KON:1\nMay 03, 2025, 10:05:46 AM\n6\nError\nDC1_CableTempSensor_XD100\nMay 02, 2025, 01:49:18 PM\n5m 20s 15ms\nVIV:0 PLE:1 KON:1\nMay 02, 2025, 01:54:38 PM\n7\nError\nDC1_CableTempSensor_XD100\nMay 02, 2025, 10:37:57 AM\n14s 998ms\nVIV:0 PLE:1 KON:1\nMay 02, 2025, 10:38:12 AM\n8\nError\nDC1_CableTempSensor_XD100\nMay 02, 2025, 10:30:22 AM\n6m 29s 875ms\nVIV:0 PLE:1 SOV:1 KON:1\nMay 02, 2025, 10:36:52 AM\n9\nError\nDC1_CableTempSensor_XD100\nMay 02, 2025, 10:30:07 AM\n-4s -859ms\nVIV:0 PLE:1 KON:1\nMay 02, 2025, 10:30:02 AM",
+            "date": "2025-05-05T07:41:59Z",
+            "extra": {}
+        },
+        {
+            "id": "5bdcbdb9-c52f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0420951-DC/Si-D/DE-[MP / P2 170000123 ERK] Error Message CRM:00439000776",
+            "body": "Hallo Kjell Schmidt\nVielen Dank für Ihre Unterstützung und Geduld. Laut unseren Aufzeichnungen wurde Ihr Problem/Ihre Anfrage für den Fall Nr. 0420951 gelöst und der Fall ist nun abgeschlossen.\nWenn Sie weitere Hilfe benötigen, wenden Sie sich bitte erneut an uns, indem Sie eine neue Anfrage unter www.siemens.com/emobility-service-request senden.\nBitte beachten Sie, dass E-Mail-Antworten auf geschlossene Tickets nicht mehr überwacht werden.\nIch danke Ihnen.\nMit freundlichen Grüßen\neMobility Tech Support Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-05-13T06:44:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

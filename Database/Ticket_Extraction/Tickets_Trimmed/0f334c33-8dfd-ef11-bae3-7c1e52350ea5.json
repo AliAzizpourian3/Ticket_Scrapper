@@ -1,0 +1,162 @@
+{
+    "incident_id": "0f334c33-8dfd-ef11-bae3-7c1e52350ea5",
+    "ticket_number": "0411560",
+    "title": "ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible",
+    "created_on": "2025-03-10T08:53:57Z",
+    "last_activity": "2026-01-30T00:09:09Z",
+    "age": "Cancelled",
+    "description": "Reported behavior/issue:\nCharging not possible\nRoot cause:  Pre Charge Failure\nSolution:\nPrevious cases :\n0410217 - Created on 3 March - Precharge Failure\n0407046 -  Created on 16 Feb -\nDC_Fuse_DC2_FC9",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "O9ImPH",
+    "stage": null,
+    "serial_number": "MP / N7 160345959,MP / N7 160345959",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a010ed2c-8dfd-ef11-bae3-7c1e52768372",
+            "subject": "Webform_incident_SiCharge D_10-03-2025_SN: 160345959",
+            "body": "Dear Joseph Effiong ,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n160345959\nThank you\neMobility Technical Support Team\nSehr geehrte/r Joseph Effiong ,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n160345959\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-10T08:53:51Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3edd9b22-5ba7-edb7-b531-120be396b534",
+            "subject": "Failed during Precharge",
+            "body": "\"code\":37,\"msg\":\"V2G - message error (e.g. unexpected) V2G09MSGSequence_V2G09Session_V2G09Session_Charging_V2G09PreCharge\"}\nPrecharge not done in 5 Sec",
+            "date": "2025-03-10T09:27:50Z",
+            "extra": {}
+        },
+        {
+            "id": "78660a68-47bc-467d-9e36-ab560fd8e284",
+            "subject": "Video",
+            "body": "",
+            "date": "2025-03-10T09:31:25Z",
+            "extra": {}
+        },
+        {
+            "id": "ca59006d-cdfd-ef11-bae3-7c1e5236e32d",
+            "subject": "ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear Customer,\nThank you for reaching out to eMobility Support. We acknowledge the receipt of your inquiry regarding Charging not possible. Rest assured that a regional representative will promptly contact you to provide further information.\nBelow, you will find the relevant asset details:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / N7 160345959\nCharger ID/Serial No.:\nO9ImPH\nProblem Description:\nCharging not possible\nFor future reference, your case number is\n0411560\n. Please refer to this number in all further communication related to this issue.\nI would like to inform you that there is already an ongoing case for the same charger with the same issue. Kindly refer to case 0410217 & ID0407046 for further updates.\nWe appreciate your time and patience.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-03-10T16:33:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "099df8d5-0d4f-f105-8f94-350cb72b04b9",
+            "subject": "Notes",
+            "body": "We have analyzed the logs and found that the precharge voltage is not reaching the EV target voltage.\nSun, 02 Mar 2025 13:17:59 GMT\n2025-03-02, 13:17:59\n2025-03-02T13:17:59.260411+00:00 swcpu [user:debug] [4021] [DCC] |2025-03-02T13:17:22|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=250|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=99|EV_TarCur[A]=0|EV_TarVol[V]=391|EV_SOC[%]=38|EVSE_DESpwr[kW]=116|Pilot=4\nSun, 02 Mar 2025 13:17:59 GMT\n2025-03-02, 13:17:59\n2025-03-02T13:17:59.654664+00:00 swcpu [user:debug] [4021] [CGA] |T2|DPA.PwrRealign|0 0 0 0|CG.PreChrgReq|0 0 0 0|CG.MaxPwr|000 004 000 000|EV.Conn|0 1 0 0|EV.MaxPwr|000 162 000 000|DPA.cTyp|0 1 0 0|DPA.rPwr|000 015 000 000|DPA.aSrc|00 00 00 00|SMC.Req|0 0 0 0|\nSun, 02 Mar 2025 13:18:00 GMT\n2025-03-02, 13:17:59\n2025-03-02T13:17:59.764952+00:00 swcpu [user:debug] [4021] [DCC] |2025-03-02T13:17:22|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=250|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=109|EV_TarCur[A]=0|EV_TarVol[V]=391|EV_SOC[%]=38|EVSE_DESpwr[kW]=116|Pilot=4\nSun, 02 Mar 2025 13:18:01 GMT\n2025-03-02, 13:18:00\n2025-03-02T13:18:00.267292+00:00 swcpu [user:debug] [4021] [DCC] |2025-03-02T13:17:22|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=250|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=96|EV_TarCur[A]=0|EV_TarVol[V]=391|EV_SOC[%]=38|EVSE_DESpwr[kW]=116|Pilot=4\nSun, 02 Mar 2025 13:18:01 GMT\n2025-03-02, 13:18:01\n2025-03-02T13:18:01.379757+00:00 swcpu [user:debug] [4021] [DCC] |2025-03-02T13:17:22|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=250|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=81|EV_TarCur[A]=0|EV_TarVol[V]=391|EV_SOC[%]=38|EVSE_DESpwr[kW]=116|Pilot=4\nSun, 02 Mar 2025 13:17:41 GMT\n2025-03-02, 13:17:41\n2025-03-02T13:17:41.391460+00:00 swcpu [user:debug] [4021] [DCC] |2025-03-02T13:17:22|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=250|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=153|EV_TarCur[A]=0|EV_TarVol[V]=0|EV_SOC[%]=38|EVSE_DESpwr[kW]=4|Pilot=4",
+            "date": "2025-03-11T17:26:48Z",
+            "extra": {}
+        },
+        {
+            "id": "b38c5d66-0bff-ef11-bae3-6045bde117fc",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear Support.\nGentle Reminder\nThanks & Regards,\nJoseph Effiong\nEV Infra. Specialist Engineer\nAl Waab Commercial Complex\nP\n+974 4445 5226\nBldg. 2C Salwa Road, Al Waab Area, Street 55,\nM\n+974 5074 5295\nP.O.Box 3252, Doha, Qatar\nE\njeffiong@q-auto.com",
+            "date": "2025-03-12T06:29:51Z",
+            "extra": {
+                "sender": "jeffiong@q-auto.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "65a246e0-0cff-ef11-bae3-000d3adc93d1",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Hello Joseph,\nWe are still working on this case; our preliminary findings indicate the session was failed during pre-charge.\nHowever, to conclude the issue we are analyzing logs from previous days and months.\nPlease allow us some more time to work on it and we will get back to you.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-12T06:40:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c1782844-61ff-ef11-bae3-6045bddf3f78",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Hello Joseph,\nHope you are doing great.\nBased on our initial analysis, we have identified some abnormalities. We are currently discussing these findings with the regional team, and they will get back to you as soon as possible\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-12T16:44:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "51bb609e-abfd-b0cb-8284-ec55b116ad16",
+            "subject": "Notes",
+            "body": "Based on our initial analysis, we have identified some abnormalities",
+            "date": "2025-03-12T16:51:06Z",
+            "extra": {}
+        },
+        {
+            "id": "088efb3f-62ff-ef11-bae3-6045bddf3f78",
+            "subject": "ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002155",
+            "body": "Hello Basheer,\nHope you are doing great.\nI trust this email finds you in good health. We have received a technical support request from\nQ Auto LLC\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / N7 160345959\nCharger ID/Serial No.:\nO9ImPH\nProblem Description:\nCharging not possible\nUpon reviewing our asset database, we found that the product is no longer under warranty since 07/07/2023, as a result, we are transferring the case to the regional queue.\nFrom the logs, we found abnormalities with the pre-charge voltage not reaching the target voltage. We suspect this is due to the power converter or the DC fuse.\nAfter analyzing the last four weeks, we identified an error with the DC fuse. Therefore, we need to check fuse FC9. If it is found to be faulty, it needs to be replaced. Please find below attached MLFB for your reference.\n3NB1128-4KK11\nI have added the analysis to the case timeline for your reference.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-03-12T16:51:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd3c5b32-f5ff-ef11-bae2-6045bddd8e8a",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear Reetesh & Mohini,\nI hope this email finds you well.\nTo simplify the troubleshooting process, I would kindly request your earliest availability to conduct an EV charging session at the site. Please confirm a convenient date and time for you.\nThank you for your cooperation.\nBest regards,\nJoseph",
+            "date": "2025-03-13T10:23:27Z",
+            "extra": {
+                "sender": "jeffiong@q-auto.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dfb270ba-bb00-f011-bae2-6045bde13734",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear\nReetesh,\nI hope this mail finds you well.\nKindly note we perform a charging session yesterday after the new firmware update, and we still found the same issue isn’t resolved. Timestamp for the charging session: 2:44pm Qatar Time.\nBR,\nJoseph.",
+            "date": "2025-03-14T10:04:35Z",
+            "extra": {
+                "sender": "jeffiong@q-auto.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b99f4461-bc00-f011-bae3-000d3ad97a58",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear\nReetesh,\nI hope this mail finds you well.\nKindly note we perform a charging session yesterday after the new firmware update, and we still found that the same issue isn’t resolved. Timestamp for the charging session: 2:44pm Qatar Time.\nBR,\nJoseph.",
+            "date": "2025-03-14T10:09:23Z",
+            "extra": {
+                "sender": "jeffiong@q-auto.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "17e55661-1303-f011-bae3-6045bde0265d",
+            "subject": "RE: ID0411560-DC/Si-D/QA-[MP / N7 160345959] Charging not possible CRM:00642002143",
+            "body": "Dear\nReetesh,\nI hope this mail finds you well.\nGentle Reminder & follow up.\nThanks & Regards,\nJoseph Effiong\nEV Infra. Specialist Engineer\nAl Waab Commercial Complex\nP\n+974 4445 5226\nBldg. 2C Salwa Road, Al Waab Area, Street 55,\nM\n+974 5074 5295\nP.O.Box 3252, Doha, Qatar\nE\njeffiong@q-auto.com",
+            "date": "2025-03-17T09:37:08Z",
+            "extra": {
+                "sender": "jeffiong@q-auto.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7d3771de-708d-9dcf-aa58-7341a6c22930",
+            "subject": "Notes to RC-QA",
+            "body": "Since case 0411560 and case 0407046 have the same findings, they need to be merged with case 0410217. We will continue further communication under the present case ID 0410217.\nPlease merge cases 0411560 and 0407046 with case 0410217.",
+            "date": "2025-03-17T17:11:27Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "incident_id": "72b1d165-c4f9-ef11-bae2-6045bddf397a",
+    "ticket_number": "0410800",
+    "title": "ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB)",
+    "created_on": "2025-03-05T13:19:04Z",
+    "last_activity": "2025-06-13T02:57:46Z",
+    "age": "27169",
+    "description": "Reported behaviour/issue: Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB\nRoot cause: Network signal strength issue\nSolution: Technical information provided.\nPrevious case#\nID0394049",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "JsGBtI",
+    "stage": null,
+    "serial_number": "Y2 / S8 313854599002",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "782f055f-c4f9-ef11-bae2-7c1e5236eee4",
+            "subject": "Webform_incident_SiCharge D_05-03-2025_SN: Y2/S7 313854599/002",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/S7 313854599/002\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/S7 313854599/002\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-05T13:18:55Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c7ff3040-ccf9-ef11-bae2-6045bde0265d",
+            "subject": "A new case manager was assigned to 0410800 CRM:00225173453",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0410800 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=72b1d165-c4f9-ef11-bae2-6045bddf397a",
+            "date": "2025-03-05T14:15:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "667a5a11-dbf9-ef11-bae2-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0410800 CRM:00225173513",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0410800 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=72b1d165-c4f9-ef11-bae2-6045bddf397a",
+            "date": "2025-03-05T16:01:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8902a8ce-adfe-ef11-bae3-6045bdde4786",
+            "subject": "ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Dear Johannes,\nThank you for reaching\nout\nto eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S8 313854599002\nChargerID/Serial No.\n:\nJsGBtI\nProblem Description\n: Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB)\nCould you pls confirm when this charger was commissioned and\nCan You pls share the commissioning report.\nFor future reference, your case number is\n0410800\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T19:20:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bcff5b07-eafd-0c23-81bd-134d52a1fc14",
+            "subject": "Analysis ",
+            "body": "No Logging of Logs in SCB.\n2025-03-11T19:00:48.780034+00:00 sicharge-cp [daemon:info] systemd[1]: amazon-cloudwatch-agent-credentials.service: amazon-cloudwatch-agent-credentials.service: Deactivated successfully.\nCharger ID is\nY2 / S8 313854599002 while in SCB it is Y2 / S7 313854599002\nXF3 seems to be online, but cant able to fetch password from router. Need to check settings of the Router in site visit.\n[ensureMobileConnection] router1 - router is still disconnected, re-starting ppp-interface (5 / 5)...\nSeems to be CFast card issue.\n[ERROR] : SWUPDATE failed [0] ERROR : Channel get operation failed (28): ‘Timeout was reached’\nNeed to check whitelist .\nabort for request:\nhttps://api.sicharge.technology/register/JsGBtI\n6. Signal is weak, When charger comes online, Need to check setting of router via SSH.",
+            "date": "2025-03-11T19:24:54Z",
+            "extra": {}
+        },
+        {
+            "id": "64778362-b271-558c-b719-ef1b7d1e998e",
+            "subject": "Handover",
+            "body": "Background : Log analysis done and duly attached in notes.\nAI : Need to check with ES if charger ID can be changed by just edit in SCB?\nAnd remaining AI is in Notes.",
+            "date": "2025-03-12T00:10:26Z",
+            "extra": {}
+        },
+        {
+            "id": "71af24d1-fdfe-ef11-bae3-6045bdde4786",
+            "subject": "RE: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Hello\nJohannes,\nHope you are doing well.\nPlease find the answers to your queries below:\nWe have updated the serial number\nY2 / S8 313854599002\non SCB as per the serial number printed on the charger’s nameplate.\nAs per the previous ticket\n0394049\n, the CFast was to be reflash. Could you please confirm if this activity has been completed? If yes, the ticket can be closed. Additionally, we can refer the logs below.\n3.As we checked the signal strength in the logs, it shows poor signal strength. Due to this marginal data with drop-outs is possible, and performance will drop drastically.\nPlease consider the following points that may cause the charger to trip the SCB.\nThe data service of a mobile network operator may be unavailable.\n- SIM card disabled / expired\n- Monthly data volume exhausted\n- Signal strength got weak due to changed radio transmission conditions\n- In case of M2M contracts is IP not enabled\nBackend related issues\n- Backend changed the settings for the affected charger\n- OCPP server on Backend side unavailable\nTeltonika related issues\n- Router switches to a wrong network service (e.g. 3G instead of 4G)\n- Hardware failure of Router\n- Router software crash\n4.Based on the video shared in the Webform, we checked the logs for the given timestamp, where it is found that the EV SOC was 100% during the session start & due to the session was terminated.\nIf you have any further query, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-12T04:52:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd61f343-f042-cfd7-94d4-7c30f5bd8e46",
+            "subject": "Note to l2",
+            "body": "",
+            "date": "2025-03-12T05:14:45Z",
+            "extra": {}
+        },
+        {
+            "id": "795c4fed-4c2f-d34e-8203-4f731db28294",
+            "subject": "Note FW update history",
+            "body": "",
+            "date": "2025-03-12T05:29:32Z",
+            "extra": {}
+        },
+        {
+            "id": "f7d3d8c0-68ff-ef11-bae3-7c1e52faf3c6",
+            "subject": "AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "HI,\nno we could not reflash the CFAST Card.\nIs this problem still there ?\nSince it is far away, we cannot do it that easily.\nHow can charging interruptions occur then? I don't think the customer means the charging interruption at 100%\nWith best regards,\nDipl.-Ing.\nJohannes Dissauer\nSiemens Aktiengesellschaft Österreich\nAustria\nSmart Infrastructure\nCustomer\nRC-AT SI E C\nSiemensstr.\n90\n1210 Vienna, Austria\nMobile: +43 (664) 88557764\nmailto:johannes.dissauer@siemens.com\nwww.siemens.at\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 12. März 2025 07:16\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965\nHello Johannes,\nHope you are doing well.\nPlease find the answers to your queries below:\nWe have updated the serial number\nY2 / S8 313854599002\non SCB as per the serial number printed on the charger’s nameplate.\nAs per the previous ticket\n0394049\n, the CFast was to be reflash. Could you please confirm if this activity has been completed? If yes, the ticket can be closed. Additionally, we can refer the logs below.\n3.As we checked the signal strength in the logs, it shows poor signal strength. Due to this marginal data with drop-outs is possible, and performance will drop drastically.\nPlease consider the following points that may cause the charger to trip the SCB.\nThe data service of a mobile network operator may be unavailable.\n- SIM card disabled / expired\n- Monthly data volume exhausted\n- Signal strength got weak due to changed radio transmission conditions\n- In case of M2M contracts is IP not enabled\nBackend related issues\n- Backend changed the settings for the affected charger\n- OCPP server on Backend side unavailable\nTeltonika related issues\n- Router switches to a wrong network service (e.g. 3G instead of 4G)\n- Hardware failure of Router\n- Router software crash\n4.Based on the video shared in the Webform, we checked the logs for the given timestamp, where it is found that the EV SOC was 100% during the session start & due to the session was terminated.\nIf you have any further query, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-12T17:38:08Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aec32652-c1ff-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Hello Johannes,\nThanks for the response.\nWe stated in the previous mail regarding the ticket (#0394049) that the issue was reported, and it has now been resolved. We have attached the firmware update history logs also in the previous mail. You may now close ticket #0394049 as the issue is resolved.\nBased on the logs and the time mentioned in the shared video in the Webform, we found that the EV was at 100% SOC (battery full) when the charging session started. Energy management reason at EV, e.g. battery is full or charging is scheduled to start at a later point in time. Simultaneously, EvRequestedCurrent will be set to 0. It should be understood that, according to IEC61851-1, the only 'master' in this process is the \"EV\".\nIf this answers your query, shall we proceed and close the ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-13T04:12:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a6a27cb-8a00-f011-bae3-7c1e5236e32d",
+            "subject": "RE: AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Hello Johannes,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-14T04:14:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "63d06d34-1e03-f011-bae3-000d3ad97a58",
+            "subject": "RE: AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Dear Johannes Dissauer,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0410800\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-17T10:54:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80f7b7cb-8d05-f011-bae3-000d3ad97a58",
+            "subject": "RE: AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Dear Johannes Dissauer,\nI hope this email finds you well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-20T13:18:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf03a957-9408-f011-bae2-000d3ad990ba",
+            "subject": "RE: AW: ID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB) CRM:00798001965",
+            "body": "Dear Johannes Dissauer,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0410800\nbut have not received a response. As we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0410800\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-24T09:42:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b2d1793-9508-f011-bae2-000d3ad990ba",
+            "subject": "Ticket 0410800 has been closed. Are you satisfied with our provided solution? CRM:00921001648",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0410800\nwith the title:\nID0410800-DC/Si-D/AT-[Y2 / S8 313854599002]Connection Interruption from XF3+ Charging Not possible+ Serial no is wrong in SCB)\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-24T09:51:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "incident_id": "d1681559-2415-f011-a81b-002248a12796",
+    "ticket_number": "0417833",
+    "title": "ID0417833-DC/Si-D/IT-[Y2/S1 313508370032]Issue with shows a approved authorizations",
+    "created_on": "2025-04-09T09:23:51Z",
+    "last_activity": "2025-04-14T10:09:30Z",
+    "age": "7245",
+    "description": "Reported issue: I am writing to kindly request your support regarding a specific charging station. It shows a approved authorizations, of wich is marked as zero.\nOn the date 08/04/2025, cuold you please check if the issue is with the charging station or the vehicle?\nSolution:\nthe charger seems to be ok\nyyyy-mm-dd:",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "ThvN5S",
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370032",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "05f58fb5-2915-f011-9989-6045bdde52c5",
+            "subject": "Note created on 4/9/2025 10:02:22 AM UTC by Giuseppe Buffardi [contact:18dfe80f-ac0d-f011-998a-6045bde0265d]",
+            "body": "*WEB*",
+            "date": "2025-04-09T10:02:22Z",
+            "extra": {}
+        },
+        {
+            "id": "16ddc1e2-4615-f011-998a-7c1e52768c07",
+            "subject": "ID0417833-DC/Si-D/IT-[ Y2 / S1 313508370032 ] Issue with shows a approved authorizations CRM:02684000069",
+            "body": "Dear Giuseppe Buffardi,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370032\nChargerID/Serial No.\n:\nY2 / S1 313508370032\nProblem Description\n:\nIssue with regarding a specific charging station. It shows a approved authorizations, of wich is marked as zero.\nFor future reference, your case number is\n0417833\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T13:31:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "79bde664-e415-f011-9989-7c1e52361e39",
+            "subject": "RE: ID0417833-DC/Si-D/IT-[ Y2 / S1 313508370032 ] Issue with shows a approved authorizations CRM:02684000069",
+            "body": "Dear Giuseppe Buffardi,\nAs checked in Logs for the chargers as per the shared  time frame\n08/04/25 10:39:09\n2025-04-08T10:39:09.132219+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Received command:\nRemoteStartTransaction\n(53334802) - {\"\nconnectorId\":2,\"\nidTag\":\"DE-DMB-C00673298-G\"}\n2025-04-08T10:39:09.135905+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send result:\nRemoteStartTransaction\n(53334802) - {\"\nstatus\":\"Accepted\n\"}\n2025-04-08T10:39:09.139891+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nRemoteStartTransaction\n:\ncable not yet connected\n2025-04-08T10:39:10.940692+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send command:\nStatusNotification\n(4919792d-135b-4dc4-9574-ce374802defa) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"\nPreparing\n\"}\n2025-04-08T10:40:39.874622+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Received command:\nTriggerMessage\n(41759) - {\"connectorId\":2,\"\nrequestedMessage\":\"StatusNotification\n\"}\n2025-04-08T10:40:39.877382+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send result:\nTriggerMessage\n(41759) - {\"\nstatus\":\"Accepted\n\"}\n2025-04-08T10:40:40.982146+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send command:\nStatusNotification\n(320b8edf-cd79-4fe0-b824-946e9021a52f) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"\nstatus\n\":\"\nAvailable\n\"}\nReason: Gun Not connected in vehicle\n08/04/25 10:41:40\n2025-04-08T10:41:38.102856+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Received command:\nRemoteStartTransaction\n(53336133) - {\"\nconnectorId\":2,\"idTag\":\"DE-DMB-C00673298-G\"}\n2025-04-08T10:41:38.104439+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send result:\nRemoteStartTransaction\n(53336133) - {\"\nstatus\":\"Accepted\n\"}\n2025-04-08T10:41:38.106255+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nRemoteStartTransaction\n:\ncable not yet connected\n2025-04-08T10:41:40.009946+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send command: StatusNotification (e75cfa95-690c-47ee-8ed8-09e40e16d8a4) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"\nstatus\":\"Preparing\n\"}\n2025-04-08T10:42:26.249572+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP:\nReceived command: RemoteStopTransaction\n(53336443) - {\"transactionId\":475620298}\n2025-04-08T10:42:26.252643+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP: Send result:\nRemoteStopTransaction\n(53336443) -\n{\"status\":\"Rejected\n\"}\n2025-04-08T10:42:26.698409+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]: OCPP:\nReceived command: UnlockConnector\n(53336463) - {\"connectorId\":2}\n2025-04-08T10:42:26.700116+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send result: UnlockConnector (53336463) - {\"status\":\"NotSupported\"}\n2025-04-08T10:43:09.777627+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Received command: TriggerMessage (41760) - {\"connectorId\":2,\"requestedMessage\":\"StatusNotification\"}\n2025-04-08T10:43:09.778690+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send result: TriggerMessage (41760) - {\"status\":\"Accepted\"}\n025-04-08T10:43:09.780517+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send command: StatusNotification (d055fe38-e1d2-4aa1-aab1-5659e705f0c1) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nReason: Gun Not connected in vehicle\n08/04/25 10:44:04\n2025-04-08T10:44:04.813556+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Received command: RemoteStartTransaction (53337168) - {\"connectorId\":1,\"idTag\":\"DE-DMB-C00673298-G\"}\n2025-04-08T10:44:04.816750+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send result: RemoteStartTransaction (53337168) - {\"status\":\"Accepted\"}\n2025-04-08T10:44:04.817167+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nRemoteStartTransaction: cable not yet connected\n2025-04-08T10:44:06.076440+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send command: StatusNotification (636d8594-ff41-40a6-bac1-93483dded060) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\n2025-04-08T10:45:35.086408+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Received command: TriggerMessage (41761) - {\"connectorId\":1,\"requestedMessage\":\"StatusNotification\"}\n2025-04-08T10:45:35.089215+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send result: TriggerMessage (41761) - {\"status\":\"Accepted\"}\n2025-04-08T10:45:35.089575+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send command: StatusNotification (4f300be2-7659-47cd-bafe-68ff121f2e31) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\n2025-04-08T10:45:36.405159+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Received result: StatusNotification (1ed443d3-9ef4-4281-8bc0-d23f855d8b13) - {}\n2025-04-08T10:45:36.110538+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send command: StatusNotification (1ed443d3-9ef4-4281-8bc0-d23f855d8b13) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nReason: Gun Not connected in vehicle\n08/04/25 10:52:51\n2025-04-08T10:52:51.903686+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Received command: RemoteStartTransaction (53340686) - {\"connectorId\":2,\"idTag\":\"DE-DMB-C00673298-G\"}\n2025-04-08T10:52:51.906013+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send result: RemoteStartTransaction (53340686) - {\"status\":\"Accepted\"}\n2025-04-08T10:52:51.906574+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nRemoteStartTransaction: cable not yet connected\n2025-04-08T10:52:53.298197+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736\n]: OCPP: Send command: StatusNotification (5109529c-611b-4ffa-b94f-3509f8c15b77) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\n2025-04-08T10:54:22.898330+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736\n]: OCPP: Received command: TriggerMessage (41763) - {\"connectorId\":2,\"requestedMessage\":\"StatusNotification\"}\n2025-04-08T10:54:22.898705+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736\n]: OCPP: Send result: TriggerMessage (41763) - {\"status\":\"Accepted\"}\n2025-04-08T10:54:22.900103+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b00a03392863[736]:\nOCPP: Send command: StatusNotification (f57cf574-f58b-4222-8766-20e7fdab2c0c) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nReason: Gun Not connected in vehicle\nAfter further analysis it is observed that after 27/03/25 17:37:00 no charging session is performed till date.\nCould you please reboot the charger & try to perform charging session & let us know the status.\n(Note: need to confirm if vehicle is getting detected by EVSE)\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-10T08:18:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "67a145f9-b816-f011-998a-7c1e5236cda4",
+            "subject": "RE: ID0417833-DC/Si-D/IT-[ Y2 / S1 313508370032 ] Issue with shows a approved authorizations CRM:02684000069",
+            "body": "Hello,\nthe charger seems to be ok. The ticket can be closed.\nThank you,\nGiuseppe.",
+            "date": "2025-04-11T09:40:17Z",
+            "extra": {
+                "sender": "giuseppe.buffardi@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "19ea671f-1719-f011-998a-000d3adc93d1",
+            "subject": "RE: ID0417833-DC/Si-D/IT-[ Y2 / S1 313508370032 ] Issue with shows a approved authorizations CRM:02684000069",
+            "body": "Dear Giuseppe Buffardi,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417833, the case is now closed.\nProblem Description\n:  Issue with shows a approved authorizations\nResolution\n: Analysis provided to customer\n, t\nhe charger seems to be ok now.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-14T09:59:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "15f7031a-1819-f011-998a-000d3adc93d1",
+            "subject": "Ticket 0417833 has been closed. Are you satisfied with our provided solution? CRM:01251001324",
+            "body": "Dear Giuseppe,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0417833\nwith the title:\nID0417833-DC/Si-D/IT-[Y2/S1 313508370032]Issue with shows a approved authorizations\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-14T10:06:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

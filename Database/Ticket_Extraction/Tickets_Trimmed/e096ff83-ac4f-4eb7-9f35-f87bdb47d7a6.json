@@ -1,0 +1,349 @@
+{
+    "incident_id": "e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+    "ticket_number": "0375392",
+    "title": "ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update",
+    "created_on": "2024-08-21T13:25:04Z",
+    "last_activity": "2025-12-16T14:06:28Z",
+    "age": "18576",
+    "description": "Reported behavior/issue:\nSicharge_PLC_CPU_KF1 - Programming Error\nRoot cause: DC_Contactor_DC1_QA21-22, Description: CMD: 0, FBK: 0, WLE: 1, WDA: 0, WLD: 1, WIR: 0, WCD: 7\nSolution: FW update\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status: Active (6/8/2025)\nNotes from ES to NOC [ 30/08/2024]\nNotes from ES to NOC [ 03/09/2024]",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "HxY9Wi",
+    "stage": null,
+    "serial_number": "MP / R5 170001806",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "777b2dcd-c05f-ef11-bfe3-002248a44b33",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225085941",
+            "body": "Martin Koch Pedersen was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-21T13:25:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59c40842-c75f-ef11-bfe3-000d3a687981",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225085973",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-21T14:11:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "72b91d90-c75f-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 48 minutes and 39 seconds.",
+            "date": "2024-08-21T14:13:44Z",
+            "extra": {}
+        },
+        {
+            "id": "b4565f3d-48e8-37f9-be7c-d2f18ba4c097",
+            "subject": "Complaint",
+            "body": "Please forward this to L3\nIssue with FW v5.0.19 | \"Sicharge_PLC_CPU_KF1\"-Error-Flag after Update\nThis second time we have error after the update",
+            "date": "2024-08-21T14:16:23Z",
+            "extra": {}
+        },
+        {
+            "id": "66c4454d-c95f-ef11-bfe3-0022489966da",
+            "subject": "ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hello Martin﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170001806\nChargerID/Serial No.\n:\nHxY9Wi\nProblem Description\n:\nSicharge_PLC_CPU_KF1\"-Error-Flag after Update\nTroubleshooting\n:\nUpon reviewing the logs, we found that the charger was rebooted by someone and is currently offline on SCB.\nThe recommended workaround is to avoid rebooting the charger before ES intervenes via SSH. Rebooting the charger may cause the PLC to stop, potentially leading to a 'Charger OFF + SCB Offline' situation. Please note that this issue occurs only on systems running version v5.0.19 that have both chargers and dispensers\n.\nNote: If your Regional Service team is able to visit the impacted charger, please follow these steps for further troubleshooting:\nDo not reboot the charger.\nWhile the SiC D Unit is still on, open the front door, locate KF1, and restart the PLC using the mode switch.\nAfter restarting KF1 (PLC), reboot the SiC D unit either via SCB or the HMI.\nEnsure that all error flags on SCB disappear after the reboot.\nFor future reference, your ticket number is\n0375392\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-21T14:26:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44f59496-d75f-ef11-bfe3-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 hour, 54 minutes and 41 seconds.",
+            "date": "2024-08-21T16:08:26Z",
+            "extra": {}
+        },
+        {
+            "id": "6ff59496-d75f-ef11-bfe3-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 6 seconds.",
+            "date": "2024-08-21T16:08:31Z",
+            "extra": {}
+        },
+        {
+            "id": "a0ce5dd7-e15f-ef11-bfe3-0022489966da",
+            "subject": "SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "We tried to do the steps for trouble shooting earlier today, but the charger still have the issue, and I was online after the reboot.\nI think the charger reboot by itself, because I could see the same earlier today.\nWith best regards,\nMartin Koch Pedersen\nSiemens A/S\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nPhone: +45 43326104\nMobile: +45 30942000\nmailto:martin.k.pedersen@siemens.com\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFra:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSendt:\n21. august 2024 18:08\nTil:\nPedersen, Martin Koch (RC-DK SI E) <martin.k.pedersen@siemens.com>\nEmne:\nID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188\nHello Martin﻿,﻿\nThank you for reaching out to eMobility Support. My name is Sominath, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / R5 170001806\nChargerID/Serial No.\n: HxY9Wi\nProblem Description\n: Sicharge_PLC_CPU_KF1\"-Error-Flag after Update\nTroubleshooting\n: Upon reviewing the logs, we found that the charger was rebooted by someone and is currently offline on SCB.\nThe recommended workaround is to avoid rebooting the charger before ES intervenes via SSH. Rebooting the charger may cause the PLC to stop, potentially leading to a 'Charger OFF + SCB Offline' situation. Please note that this issue occurs only on systems running version v5.0.19 that have both chargers and dispensers\n.\nNote: If your Regional Service team is able to visit the impacted charger, please follow these steps for further troubleshooting:\nDo not reboot the charger.\nWhile the SiC D Unit is still on, open the front door, locate KF1, and restart the PLC using the mode switch.\nAfter restarting KF1 (PLC), reboot the SiC D unit either via SCB or the HMI.\nEnsure that all error flags on SCB disappear after the reboot.\nFor future reference, your ticket number is 0375392, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-21T17:21:52Z",
+            "extra": {
+                "sender": "martin.k.pedersen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dcc082dc-e15f-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 hour, 13 minutes and 31 seconds.",
+            "date": "2024-08-21T17:22:02Z",
+            "extra": {}
+        },
+        {
+            "id": "05362534-3934-520a-bbde-706b614d8e2d",
+            "subject": "Note to L2",
+            "body": "According to RC's last email, the charger was online after the physical reboot, but it subsequently rebooted automatically. Please check the reboot logs and work with the ES team or assign to L3 for further investigation.",
+            "date": "2024-08-21T17:31:14Z",
+            "extra": {}
+        },
+        {
+            "id": "a768416b-02c7-f665-99fe-b2a732555b87",
+            "subject": "Note to L3",
+            "body": "",
+            "date": "2024-08-21T17:39:09Z",
+            "extra": {}
+        },
+        {
+            "id": "f105df1a-f35f-ef11-bfe3-0022489a2913",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225086063",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-21T19:25:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eac89617-ba60-ef11-bfe3-002248a2f864",
+            "subject": "RE: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hi Martin,\nCharger is healthy now and all outlets are available. Is there anything else we can help you with?\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-08-22T19:09:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db9bd8ba-ba60-ef11-bfe3-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 1 day, 1 hour, 52 minutes and 19 seconds.",
+            "date": "2024-08-22T19:14:22Z",
+            "extra": {}
+        },
+        {
+            "id": "1728408f-9461-ef11-bfe2-0022489e5f22",
+            "subject": "RE: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hi Martin,\nI have analyzed the logs and found that the output contactors QA21-22 for Outlet 1 are welded, causing Outlet 1 to be out of order. Please plan a site visit to check the contactors, and if necessary, proceed with replacing contactors QA21-22.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-08-23T21:13:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a2daec28-9a61-ef11-bfe2-000d3ab1760d",
+            "subject": "RE: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hello  Martin,\nI am writing to formally inform that we are moving case 0375392 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDK\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nPlease plan a site visit to check the Outlet 1 output contactors QA21-22, and if required proceed with the replacement of the QA21-22.\nReason\nApplicable\nOnsite Repair (Component Exchange)\n✔\nOnsite Troubleshooting\n✔\nEnd Customer Communication\nSpare Part Ordering\n✔\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDK\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Vishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-23T21:53:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd575f77-9a61-ef11-bfe2-000d3ab1760d",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 2 hours, 41 minutes and 37 seconds.",
+            "date": "2024-08-23T21:56:00Z",
+            "extra": {}
+        },
+        {
+            "id": "defa657d-9a61-ef11-bfe2-000d3ab1760d",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 8 seconds.",
+            "date": "2024-08-23T21:56:07Z",
+            "extra": {}
+        },
+        {
+            "id": "30a5f703-e2a1-91ac-8d86-cc11cdc594de",
+            "subject": null,
+            "body": "Could you plase downgrade the charger to firmware\nv4.0.11+RETOPICS",
+            "date": "2024-08-26T07:10:11Z",
+            "extra": {}
+        },
+        {
+            "id": "77fbe135-8163-ef11-bfe2-002248a01c9f",
+            "subject": "SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "It is not the contactors it is the new firmware.\nWith best regards,\nMartin Koch Pedersen\nSiemens A/S\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nPhone: +45 43326104\nMobile: +45 30942000\nmailto:martin.k.pedersen@siemens.com\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFra:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSendt:\n23. august 2024 23:53\nTil:\nPedersen, Martin Koch (RC-DK SI E) <martin.k.pedersen@siemens.com>\nEmne:\nRE: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188\nHi Martin,\nI have analyzed the logs and found that the output contactors QA21-22 for Outlet 1 are welded, causing Outlet 1 to be out of order. Please plan a site visit to check the contactors, and if necessary, proceed with replacing contactors QA21-22.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-08-26T08:00:17Z",
+            "extra": {
+                "sender": "martin.k.pedersen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "90d963a7-8863-ef11-bfe2-000d3ab0ccca",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225087519",
+            "body": "Martin Koch Pedersen was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-26T08:53:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "50598d02-9463-ef11-bfe2-0022489d464a",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225087601",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-26T10:14:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d1a32bb-9663-ef11-bfe3-0022489a2913",
+            "subject": "RE: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hi Martin,\nWe are forwarding this ticket to the experts for the further investigation. Please do not plan a site visit for this charger. We will keep you posted on this topic.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-08-26T10:34:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd25280b-9e95-aef7-9a35-3a4061396269",
+            "subject": "Logs",
+            "body": "PLC Error Flag value: false->true, Name: DC_Contactor_DC1_QA21-22, Description: CMD: 0, FBK: 0, WLE: 1, WDA: 0, WLD: 1, WIR: 0, WCD: 7",
+            "date": "2024-08-26T10:36:26Z",
+            "extra": {}
+        },
+        {
+            "id": "081c29d6-ddb9-0eb2-94ee-523ddc6187a5",
+            "subject": "NOC > ES",
+            "body": "Problem Description :\nDC_Contactor_DC1_QA21-22, Description: CMD: 0, FBK: 0, WLE: 1, WDA: 0, WLD: 1, WIR: 0, WCD: 7\nSuspected Root Cause :\nfw bug\nCharger SW Version:\nV5.0.19\nReason for Handover (L3) :\nfurther investigation\nLog analysis with timestamp :\nLogs attached below\nAction Required\nAction by HQ : further investigation",
+            "date": "2024-08-26T11:18:17Z",
+            "extra": {}
+        },
+        {
+            "id": "80ffd47d-a063-ef11-bfe2-0022489f9aa3",
+            "subject": "SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Thank you.\nWith best regards,\nMartin Koch Pedersen\nSiemens A/S\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nPhone: +45 43326104\nMobile: +45 30942000\nmailto:martin.k.pedersen@siemens.com\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFra:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSendt:\n26. august 2024 12:36\nTil:\nPedersen, Martin Koch (RC-DK SI E) <martin.k.pedersen@siemens.com>\nEmne:\nRE: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188\nHi Martin,\nWe are forwarding this ticket to the experts for the further investigation. Please do not plan a site visit for this charger. We will keep you posted on this topic.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-08-26T11:44:05Z",
+            "extra": {
+                "sender": "martin.k.pedersen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "731a2102-4c64-ef11-bfe2-0022489d464a",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225088079",
+            "body": "Sambath KS was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-08-27T08:11:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44c846af-c866-ef11-bfe2-000d3ab02502",
+            "subject": "RE: SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Dear Emre,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As the charger is working fine now and the issue is already addressed by FW v 5.0.21, which is going to be released by CW 38, I am proceeding to close the ticket. Please be aware that this issue can be temporarily resolved by rebooting the charger (Error code:7).\nIn case this error becomes severe and affects the charger operation, please plan to downgrade the charger by either Cfast card flashing or request remote support to roll back the previous FW.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-08-30T12:09:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6eb4606c-0c06-9205-94a7-f976dd2bb240",
+            "subject": "Notes from ES to NOC [ 30/08/2024]",
+            "body": "a) Problem Description\n:\nDC1 Errorcode:7\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed: NA\nd) Charger SW Version\n: 5.0.19\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-08-30T12:12:13Z",
+            "extra": {}
+        },
+        {
+            "id": "8c3866ad-c966-ef11-bfe2-0022489eee94",
+            "subject": "SV: SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hi Sambath\nI hope this mail is not for me. Because in the ticket I asked you to please downgrade the charger.\nWith best regards,\nMartin Koch Pedersen\nSiemens A/S\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nPhone: +45 43326104\nMobile: +45 30942000\nmailto:martin.k.pedersen@siemens.com\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFra:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSendt:\n30. august 2024 14:11\nTil:\nPedersen, Martin Koch (RC-DK SI E) <martin.k.pedersen@siemens.com>\nEmne:\nRE: SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188\nDear Emre,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As the charger is working fine now and the issue is already addressed by FW v 5.0.21, which is going to be released by CW 38, I am proceeding to close the ticket. Please be aware that this issue can be temporarily resolved by rebooting the charger (Error code:7).\nIn case this error becomes severe and affects the charger operation, please plan to downgrade the charger by either Cfast card flashing or request remote support to roll back the previous FW.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-08-30T12:16:27Z",
+            "extra": {
+                "sender": "martin.k.pedersen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "58cddb03-ca66-ef11-bfe2-000d3ab02502",
+            "subject": "RE: SV: SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hi Martin,\nSorry it was a mistake. Thanks for the confirmation, I will update you once the charger is downgraded. Do you have any specific router settings ?\nThanks & Regards,\nSambath.K.S",
+            "date": "2024-08-30T12:18:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "908f285a-732a-404f-b7ad-6700ad69908d",
+            "subject": " Notes from ES to NOC [ 03/09/2024]",
+            "body": "a) Problem Description\n: Errorcode 7\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed:\nNA\nd) Charger SW Version\n:5.0.19\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-09-03T08:43:50Z",
+            "extra": {}
+        },
+        {
+            "id": "f3d79f44-db69-ef11-bfe2-000d3ab26cb1",
+            "subject": "A new case manager was assigned to 0375392 CRM:00225091164",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0375392 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e096ff83-ac4f-4eb7-9f35-f87bdb47d7a6",
+            "date": "2024-09-03T09:59:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dafd9370-e369-ef11-bfe2-000d3ab02502",
+            "subject": "RE: SV: SV: SV: SV: ID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update CRM:00797001188",
+            "body": "Hello Martin,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0375392.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-03T10:58:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "536b60b0-e369-ef11-bfe2-000d3ab02502",
+            "subject": "Ticket 0375392 has been closed. Are you satisfied with our provided solution? CRM:02023000115",
+            "body": "Dear Martin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0375392 with\nthe title:\nID0375392-DC/Si-D/DK-[MP / R5 170001806] Plc problem after firmware update\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically, it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-03T11:00:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "02dce0e1-e369-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L3) after 10 days, 13 hours, 5 minutes and 37 seconds.",
+            "date": "2024-09-03T11:01:43Z",
+            "extra": {}
+        }
+    ]
+}

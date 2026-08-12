@@ -1,0 +1,145 @@
+{
+    "incident_id": "6c3c000d-4677-f011-b4cc-6045bddf3f78",
+    "ticket_number": "0443321",
+    "title": "ID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request",
+    "created_on": "2025-08-12T06:32:03Z",
+    "last_activity": "2026-03-02T12:28:11Z",
+    "age": "291236",
+    "description": "Reported behavior/issue: The display is not working. With the help of Evosoft colleagues we\nhave checked that the data must be on display but it is not visible.\nCharger is still under warranty.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Enr06p",
+    "stage": "Resolved",
+    "serial_number": "MP / S2 170003362",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "c154d807-4677-f011-b4cc-7c1e52768c07",
+            "subject": "Webform_incident_SiCharge D_12-08-2025_SN: MP / S2 170003362",
+            "body": "Dear Szilard Negyesi,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003362\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szilard Negyesi,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003362\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-12T06:31:54Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a760cc4d-4977-f011-b4cb-7c1e5236e32d",
+            "subject": "ID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request CRM:02832000314",
+            "body": "Dear Szilard Negyesi,\nThank you for reaching\nout\nto eMobility Support. My name is\nTanya\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003362\nCharger ID/Serial No.\n:\nEnr06p\nProblem Description\n:\nDisplay Request\nFor future reference, your case number is\n0443321\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-12T06:55:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d51224d6-4f77-f011-b4cb-6045bdde4786",
+            "subject": "RE: ID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request CRM:02832000314",
+            "body": "Dear Tanya,\nFirst of all, thank you for your support in advance.\nWith the help of the Evosoft colleagues we have checked the charger remotely, and the colleagues could confirm that the data that should be visible on the screen is there.\nI said to the customer, who is operating the chargers in Kosovo, to check the HDMI cable and if possible the power supply for the display.\nThe HDMI cable can be tested easily, so they will do it during the upcoming days, but I need info where they can check the power supply of the display.\nIf those 2 checks wont be successful to identify the source of the error, we might to start the warranty replacement process of the screen. For that we need the new screen, RMA documentation, then the Serbian colleagues from the CEE region will be able to send that back.\nIf you have any question, please contact me.\nBR,\nSzilard",
+            "date": "2025-08-12T07:42:08Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bb6dceca-1a7c-f011-b4cc-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0443321 CRM:00225244222",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0443321 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6c3c000d-4677-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-18T10:05:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20c537e0-1a7c-f011-b4cb-7c1e5275c124",
+            "subject": "ID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request CRM:00315002908",
+            "body": "Hi Szilard, good morning.\nCan you please explain better in detail what do you mean that the screen is not working and should be showing data? Do you have a photo of the screen?\nIs it fully black or does it have a backlight?\nBe careful that it's a Display Port cable, not a HDMI. For the Power supply measurements:\nFor this Display controller:\nThe screen appeared to have a backlight and as such I recommended to update the Display driver because as stated, the DP cable was already the new one.\nAfter following the guide, when we got to the FW update, we could see that the LEDs on top were not light up, even though there were 24.6 V being applied to the controller and the firmware could not recognize the controller:\nInitially I believed that it might be a voltage drop from the power supply to the controller and as such we disconnected the cable from pin 4c of F11-XD21 and reconnect it.\nAfter this the voltage was 24.78 V and in the display terminal was 24.73 V:\nWe measured both sides of the connector to make sure it is not the connector that is faulty and concluded that the connector is not faulty.\nIf you measure the same exact things, then the PCB controller is faulty and needs replacement.\nI send the RMA in attachment. Since this charger was made in Leipzig, I assume that you need to fill in the _Leipzig.pdf\nI will send this ticket to the RC-HU queue please do the troubleshooting and repair if needed.\nI am writing to formally inform that we are moving case 0443321 ﻿from the\nTechnical Support\nto the\neMobility RC-\nHU\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nHU\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.\nBest regards,\nFrancisco",
+            "date": "2025-08-18T10:05:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f93ebf6-1b7c-f011-b4cc-7c1e52768372",
+            "subject": "A new case manager was assigned to 0443321 CRM:00225244229",
+            "body": "Szilard Negyesi was assigned as new Case Manager for case 0443321 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6c3c000d-4677-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-18T10:13:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a78a6a32-069e-f011-b41c-7c1e5236cda4",
+            "subject": "0443321 - ID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request CRM:00362000103",
+            "body": "Dear Szilard,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-09-30T14:03:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70b84fde-1d5c-d0fa-8b8b-9e8265e87b70",
+            "subject": "Status update",
+            "body": "Repair awaits, since charger is located far from regional unit (circa 1000km far) and although it's maintained by Hungary, it is located in Kosovo.\nNo service partner is available in Balkans at the moment",
+            "date": "2025-11-10T09:46:31Z",
+            "extra": {}
+        },
+        {
+            "id": "617fec28-1abe-f011-bbd3-7c1e52880288",
+            "subject": "Ticket 0443321 has been closed. Are you satisfied with our provided solution? CRM:00225285520",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0443321\nwith the title:\nID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-10T09:46:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4cf39d3b-1abe-f011-bbd3-7ced8d425bfe",
+            "subject": "Ticket 0443321 has been closed. Are you satisfied with our provided solution? CRM:00225285521",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0443321\nwith the title:\nID0443321-DC/Si-D/HU-[MP / S2 170003362] Display Request\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-10T09:47:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20e40395-1516-f111-8342-7ced8d44dfaf",
+            "subject": "Ticket 0443321 has been closed. How did we do? CRM:00225345325",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-02T08:55:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "84670542-3316-f111-8342-7ced8d44df3f",
+            "subject": "Ticket 0443321 has been closed. How did we do? CRM:00225345556",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-02T12:28:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

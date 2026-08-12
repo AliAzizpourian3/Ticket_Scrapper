@@ -1,0 +1,101 @@
+{
+    "incident_id": "8aa4a5a2-cfb0-f011-bbd2-7ced8d425658",
+    "ticket_number": "0457663",
+    "title": "ID0457663-DC/Si-D/IT-[MP / R9 170002652] High Volume of Logs in SCB",
+    "created_on": "2025-10-24T11:50:29Z",
+    "last_activity": "2025-10-24T14:33:19Z",
+    "age": "163",
+    "description": "Reported behavior/issue- High Volume of Logs in SCB (\nQapP46 & JquehSX)",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002652",
+    "case_nature_code": 580000001,
+    "chargerID": "QapP46",
+    "additional_info": [
+        {
+            "id": "7553e69e-cfb0-f011-bbd2-7ced8d2e1da0",
+            "subject": "RE: ALARM: \"High Volume of Logs in SCB\" in EU (Frankfurt)",
+            "body": "Hi Team,\nWe have received an alert indicating that the following chargers are transmitting unusually large volumes of data:\n•           QapP46\nJquehSX",
+            "date": "2025-10-24T11:50:23Z",
+            "extra": {
+                "sender": "vanshika.gupta.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09fe7069-d0b0-f011-bbd2-7ced8d41f0c5",
+            "subject": "A new case manager was assigned to 0457663 CRM:00225277130",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0457663 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8aa4a5a2-cfb0-f011-bbd2-7ced8d425658",
+            "date": "2025-10-24T11:56:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a53628f4-b945-6039-9219-923a2a8c0cc9",
+            "subject": "Case notes",
+            "body": "Hi Team,\nWe have received an alert indicating that the following chargers are\ntransmitting unusually large volumes of data:\n•           QapP46\nJquehSX\n-----Original Message-----\nFrom: SCB Prod Alarm Topic <no-reply@sns.amazonaws.com>\nSent: Friday, October 24, 2025 4:28 PM\nTo: SI Cloud_Support_eMobility <cloud_support.infra@siemens.com>\nSubject: ALARM: \"High Volume of Logs in SCB\" in EU (Frankfurt)\nYou are receiving this email because your Amazon CloudWatch Alarm \"High Volume\nof Logs in SCB\" in the EU (Frankfurt) region has entered the ALARM state,\nbecause \"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (24/10/25\n09:58:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK ->\nALARM transition).\" at \"Friday 24 October, 2025 10:58:23 UTC\".\nView this alarm in the AWS Management Console:\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Feu-central-1.console.aws.amazon.com%2Fcloudwatch%2Fdeeplink.js%3Fregion%3Deu-central-1%23alarmsV2%3Aalarm%2FHigh%2520Volume%2520of%2520Logs%2520in%2520SCB&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C24c11943b7d34b86611708de12ec4078%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638969003059549480%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ldaa%2FEOZn32FYdLgZd%2FX1AKL%2BrkAOXYrU6CrnNHc8TI%3D&reserved=0\nAlarm Details:\n- Name:                       High Volume of Logs in SCB\n- Description:                #................\nA high volume of logs has been detected in the SCB environment.\nAction Required:\nLog in to the SichargeD AWS account (689117314700).\nNavigate to CloudWatch > Logs Insights > Saved Queries > CloudOperations.\nIdentify the chargers generating more than one million log entries.\nCreate a support ticket using this email < emobility_support.si@siemens.com >\nand include the charger IDs in the description.\n#........................\n- State Change:               OK -> ALARM\n- Reason for State Change:    Threshold Crossed: 1 out of the last 1 datapoints\n[1.0 (24/10/25 09:58:00)] was greater than the threshold (0.0) (minimum 1\ndatapoint for OK -> ALARM transition).\n- Timestamp:                  Friday 24 October, 2025 10:58:23 UTC\n- AWS Account:                689117314700\n- Alarm Arn:\narn:aws:cloudwatch:eu-central-1:689117314700:alarm:High Volume of Logs in SCB\nThreshold:\n- The alarm is in the ALARM state when the metric is GreaterThanThreshold 0.0\nfor at least 1 of the last 1 period(s) of 3600 seconds.\nMonitored Metric:\n- MetricNamespace:                     Custom/LogInsights\n- MetricName:                          HighEventVolumeDetected\n- Dimensions:                          [LogGroup = messages]\n- Period:                              3600 seconds\n- Statistic:                           Average\n- Unit:                                not specified\n- TreatMissingData:                    missing\nState Change Actions:\n- OK:\n- ALARM: [arn:aws:sns:eu-central-1:689117314700:SCB_Prod_Alaram_Topic]\n- INSUFFICIENT_DATA:\n--\nIf you wish to stop receiving notifications from this topic, please click or\nvisit the link below to unsubscribe:\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsns.eu-central-1.amazonaws.com%2Funsubscribe.html%3FSubscriptionArn%3Darn%3Aaws%3Asns%3Aeu-central-1%3A689117314700%3ASCB_Prod_Alaram_Topic%3A17258578-7e63-426a-975c-e1565e45b3c2%26Endpoint%3Dcloud_support.infra%40siemens.com&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C24c11943b7d34b86611708de12ec4078%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638969003059583209%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=jdqD4L9dKIi5XBfR%2BufysuBcKsA3S2EUMVy76oiIfVA%3D&reserved=0\nPlease do not reply directly to this email. If you have any questions or\ncomments regarding this email, please contact us at\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Faws.amazon.com%2Fsupport&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C24c11943b7d34b86611708de12ec4078%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638969003059601496%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Pf%2BYxx7gVR6YUxamrkJrwjSyG2VfER0OIwXr3NnO%2F7g%3D&reserved=0",
+            "date": "2025-10-24T12:01:03Z",
+            "extra": {}
+        },
+        {
+            "id": "dea43222-d1b0-f011-bbd2-7ced8d425bfe",
+            "subject": "ID0457663-DC/Si-D/IT-[MP / R9 170002652] High volume og logs in SCB CRM:03056000308",
+            "body": "Dear\nVanshika\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002652\nChargerID\n:\nQapP46\nProblem Description\n: High volume og logs in SCB\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0457663\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-24T12:01:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44a5ca63-dfb0-f011-bbd2-7ced8d425d60",
+            "subject": "A new case manager was assigned to 0457663 CRM:00225277194",
+            "body": "Marcelo Kuester was assigned as new Case Manager for case 0457663 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8aa4a5a2-cfb0-f011-bbd2-7ced8d425658",
+            "date": "2025-10-24T13:43:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a16062c3-e5b0-f011-bbd2-7c1e523628c9",
+            "subject": "RE: A new case manager was assigned to 0457663 CRM:00225277194",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Oct 24 2025 14:43:20 GMT+0100 (British Summer Time)\nTo:\nMarcelo Kuester <marcelo.kuester.ext@siemens.com>;\nSubject:\nA new case manager was assigned to 0457663 CRM:00225277194\nMarcelo Kuester was assigned as new Case Manager for case 0457663 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8aa4a5a2-cfb0-f011-bbd2-7ced8d425658",
+            "date": "2025-10-24T14:28:58Z",
+            "extra": {
+                "sender": "marcelo.kuester.ext@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e6312443-e6b0-f011-bbd2-7c1e523628c9",
+            "subject": "0457663 - ID0457663-DC/Si-D/IT-[MP / R9 170002652] High Volume of Logs in SCB CRM:03044000042",
+            "body": "Dear Vanshika,\nI hope that You are well!\nWe have analyzed the SCB and everything is Ok with the Charger.\nWe will close the ticket.\nBest regards,\nMarcelo Küster",
+            "date": "2025-10-24T14:32:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5e98354-e6b0-f011-bbd2-7c1e52362b38",
+            "subject": "Ticket 0457663 has been closed. Are you satisfied with our provided solution? CRM:00225277220",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0457663\nwith the title:\nID0457663-DC/Si-D/IT-[MP / R9 170002652] High Volume of Logs in SCB\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-24T14:32:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

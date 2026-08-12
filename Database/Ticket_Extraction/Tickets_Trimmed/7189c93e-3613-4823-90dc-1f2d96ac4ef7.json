@@ -1,0 +1,96 @@
+{
+    "incident_id": "7189c93e-3613-4823-90dc-1f2d96ac4ef7",
+    "ticket_number": "0430668",
+    "title": "ID0429525-DC/Si-D/NZ-[MP / N5 160345946] Charging issue (C1)",
+    "created_on": "2025-06-12T03:30:40Z",
+    "last_activity": "2025-12-02T08:37:10Z",
+    "age": "Cancelled",
+    "description": "Reported issue:\nSeveral charging sessions have started normally but the bus drivers\nare reporting after about 40 minutes the power delivery from the\ncharger drops dramatically. The is means the buses are not\ncharging up overnight. Here are some session dates . Note the\ntimes are UTC + 12\n• from 6:20pm on 04 June to 4:00am on 05 June\n• from 6:20pm on 03 June to 4:00am on 04 June\n• 31 May, not sure the exact times but around midday to 3:00pm\nSolution:\nNA\nyyyy-mm-dd\n: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "QZBSqH",
+    "stage": null,
+    "serial_number": "MP / N5 160345946,MP / N5 160345946",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9d3f91a0-3d47-f011-877a-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0430668 CRM:00225214018",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0430668 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7189c93e-3613-4823-90dc-1f2d96ac4ef7",
+            "date": "2025-06-12T03:30:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73e28e36-6168-3849-b554-5d7067c33c13",
+            "subject": "Handover Notes to ES ",
+            "body": "Suspected Root Cause\n:\nThe charger begins delivering less power after CGA allocation occurs.\nProblem Description\n: power delivery from the charger drops dramatically.\nAction Performed (L2\n): Analyze the logs and discussed the Observation and logs with Sambath\nCharger SW Version\n:\nv6.0.3\nReason for Handover (L3)\n: Need further analysis to know the root cause\nFault history:\nRefer below timestamps\nSr No\nStart Time (UTC Time)\nStart SOC\nTransaction ID\nEnd time (UTC Time)\nEnd SOC\nReason\n1\n2025-06-04, 06:19:09\n42\n292421\n2025-06-04, 16:09:36\n84\nCharger starts delivering less power (20kW) from 2025-06-04, 06:27:59 till session end.\n2\n2025-06-05, 06:13:00\n34\n292691\n2025-06-05, 16:13:22\n74\ncharger starts delivering less power (20kW) From 2025-06-05, 06:15:36 till session end.\n3\n2025-06-03, 06:17:48\n42\n292133\n2025-06-03, 16:15:17\n94\ncharger starts delivering less power (20kW) 2025-06-03, 06:48:05 till session end.\nAction by HQ\n:\nNeed further support.\nAttachment\n: Refer Attached logs\nundefined\nQZBSqH-logs (1).csv\nQZBSqH-logs.csv\nKindly note that we were unable to fetch the complete session logs for the full duration. Therefore, I have downloaded the initial logs covering one hour or slightly more.",
+            "date": "2025-06-12T03:35:44Z",
+            "extra": {}
+        },
+        {
+            "id": "ebd3e067-1046-99b2-8b17-38399901a753",
+            "subject": "OCPP logs shared by customer.",
+            "body": "Attaching the log file shared by customer after creating a child case.\nPlease note that note the times are UTC + 12.",
+            "date": "2025-06-12T04:19:33Z",
+            "extra": {}
+        },
+        {
+            "id": "189c0c31-6447-f011-8779-7c1e5235e9b5",
+            "subject": "A new case manager was assigned to 0430668 CRM:00225214191",
+            "body": "Sambath KS was assigned as new Case Manager for case 0430668 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7189c93e-3613-4823-90dc-1f2d96ac4ef7",
+            "date": "2025-06-12T08:06:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7e174f4d-3d48-f011-8779-6045bddf319c",
+            "subject": "0430668 - ID0429525-DC/Si-D/NZ-[MP / N5 160345946] Charging issue (C1) CRM:00646000038",
+            "body": "Dear Ferdinand,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Please be aware that I am working on this case and can we have a call on next Monday (16.06.2025) regarding the same ?\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-13T10:00:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0569bb86-fc6e-5ee3-944f-43ef6de47b61",
+            "subject": "Status Update : 13/06/2025",
+            "body": "Planned to have a call with Rc by Monday ( 13.06.2025)",
+            "date": "2025-06-13T10:02:05Z",
+            "extra": {}
+        },
+        {
+            "id": "1bcec647-af4a-f011-8779-7c1e52350ea5",
+            "subject": "RE: 0430668 - ID0429525-DC/Si-D/NZ-[MP / N5 160345946] Charging issue (C1) CRM:00646000038",
+            "body": "Dear Ferdinand,\nAs we discussed today, I did some deeper analysis on the logs, and luckily, I was able to monitor a live charging session now (2025-06-16T12:45:11.181Z). Please be aware that the PowerConverter[6] behaves abnormally after the E17 error flag and is unable to build the battery voltage after error flags become false. This is leading to the abnormal behavior from the charger. As the affected converter is in DC2, the power reduction will not help us. Please plan to replace the power converter ASAP.\nUnfortunately, I could not observe the charging session from beginning but I would like to observe the same, incase if you are able to align with the customer (For record purpose).\nThank you very much for being understanding and patient.\nPlease find the power converter details for your reference:\n2102312VGQ10L6000024SA002200000000FW:DC108PF108H100,F:1 .\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-16T12:41:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b4184d53-bf36-c8bc-abde-71f89f56e542",
+            "subject": "Status update: 17/06/2025",
+            "body": "",
+            "date": "2025-06-17T02:47:42Z",
+            "extra": {}
+        },
+        {
+            "id": "46582155-6741-5686-88db-17106c93de13",
+            "subject": "Cancelling",
+            "body": "ID0429525-DC/Si-D/NZ-[MP / N5 160345946] Charging issue (C1",
+            "date": "2025-06-20T08:37:12Z",
+            "extra": {}
+        }
+    ]
+}

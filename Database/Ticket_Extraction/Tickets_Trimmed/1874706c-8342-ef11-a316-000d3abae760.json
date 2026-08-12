@@ -1,0 +1,96 @@
+{
+    "incident_id": "1874706c-8342-ef11-a316-000d3abae760",
+    "ticket_number": "0368865",
+    "title": "ID0368865-DC/Si-D/IE[170003301] - EcoG ERR69 patch request",
+    "created_on": "2024-07-15T08:22:52Z",
+    "last_activity": "2025-12-16T14:07:25Z",
+    "age": "5754",
+    "description": "Reported behaviour/issue: EcoG DC4 not working\nRoot cause:\nUpdate unsuccessfull\nSolution:\nReplace EcoG LE KF212\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO QM in Timeline (information in red requested from RC)\n-----------------------------//-----------------------------------\nReported behaviour/issue: ERR69 patch request\nRoot cause:\nModbus timeout → Specific EVs issue\nSolution:\nApply hotfix\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "E7gWMK",
+    "stage": null,
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fae20a60-8342-ef11-a316-000d3abae760",
+            "subject": "Webform_incident_SiCharge D_15-07-2024_SN: 170003301",
+            "body": "Dear Jason Stonier,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170003301\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jason Stonier,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170003301\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-07-15T08:22:33Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ad75fe83-8442-ef11-a316-6045bdde23a6",
+            "subject": "A new case manager was assigned to 0368865 CRM:00225069898",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0368865 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1874706c-8342-ef11-a316-000d3abae760",
+            "date": "2024-07-15T08:30:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "de816228-8742-ef11-a316-6045bddf7e10",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 26 minutes and 43 seconds.",
+            "date": "2024-07-15T08:49:35Z",
+            "extra": {}
+        },
+        {
+            "id": "fd816228-8742-ef11-a316-6045bddf7e10",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 3 seconds.",
+            "date": "2024-07-15T08:49:38Z",
+            "extra": {}
+        },
+        {
+            "id": "1d826228-8742-ef11-a316-6045bddf7e10",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 3 seconds.",
+            "date": "2024-07-15T08:49:41Z",
+            "extra": {}
+        },
+        {
+            "id": "fc62f429-4543-ef11-a316-000d3ab06f45",
+            "subject": "ID0368865-DC/Si-D/IE[170003301] - EcoG ERR69 patch request CRM:00315001593",
+            "body": "Hello ﻿Jason,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID/Serial No.\n:\nE7gWMK\nProblem Description\n: ERR 69 patch request\nTroubleshooting\n:\nYesterday I performed the patch update for every outlet.\nAll the outlets except the Disp2 outlet, worked completely fine\nFor Disp2 the FW wasn't applied successfully and as such it made the EcoG faulty.\nWith the assistance from R&D, we tried some remote commands to try and bring the EcoG back to operation.\nUnsuccessfully.\nAfter the engineer went on-site with a spare EcoG module, we still tested some scenarios to see if the EcoG module was really faulty.\nUnsuccessfully, we had to replace the EcoG module to have the outlet working again.\nAgain, I'm really sorry for the inconvience caused.\nDefective part name/MLFB: EcoG LE dispenser\nComponent serial number:\nPlease provide me this\nLogs with marked error (CSV format preferred):\nError polling coap://10.20.17.103:5683/state Error: No reply in 4.25s\nPLC-Dispenser-Error-Flag 'SECC_DC4_MB_Problem_KF212' initial value true - (loss of communication DC4 and SECC)\nPLC-Dispenser-Error-Flag 'DC4_CableTempSensor_XD240' initial value true - (VIV:0 RNE:1 KON:1)\nConsequence of not having SECC DC4 communication\nActive error flags before replacement:\nSECC_DC4_MB_Problem_KF212\nDevice-specific error code\n(if applicable): Error while fetching APIs\nOutcome of wiring checkup: Not an issue since the charger was completely fine, it only stopped working after a failed update\nCommissioning checklist:\nPlease provide me this\nCommissioning date:\nPlease provide me this\nField service report:\nPlease provide me this\nDate of failure: 15/July/2024 ~10am GMT\nDevice pingable y/n: No (10.20.17.103)\nSECC dump view logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not possible as we have information corrupted\nSECC state logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Same as above\nFor future reference, your ticket number is\n0368865\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-16T07:29:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a23f4da-a645-ef11-a316-002248a2f864",
+            "subject": "Ticket 0368865 has been closed. Are you satisfied with our provided solution? CRM:00315001602",
+            "body": "Dear  Jason\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0368865\nwith the title:\nID0368865-DC/Si-D/IE[170003301] - EcoG ERR69 patch request\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-19T08:14:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "89eec556-7df6-4b76-89b2-df36b508f3e8",
+            "subject": "NOTE TO QM",
+            "body": "Defective part name/MLFB: EcoG LE dispenser\nComponent serial number:\nPlease provide me this\nLogs with marked error (CSV format preferred):\nError polling coap://10.20.17.103:5683/state Error: No reply in 4.25s\nPLC-Dispenser-Error-Flag 'SECC_DC4_MB_Problem_KF212' initial value true - (loss of communication DC4 and SECC)\nPLC-Dispenser-Error-Flag 'DC4_CableTempSensor_XD240' initial value true - (VIV:0 RNE:1 KON:1)\nConsequence of not having SECC DC4 communication\nActive error flags before replacement:\nSECC_DC4_MB_Problem_KF212\nDevice-specific error code\n(if applicable): Error while fetching APIs\nOutcome of wiring checkup: Not an issue since the charger was completely fine, it only stopped working after a failed update\nCommissioning checklist:\nPlease provide me this\nCommissioning date:\nPlease provide me this\nField service report:\nPlease provide me this\nDate of failure: 15/July/2024 ~10am GMT\nDevice pingable y/n: No (10.20.17.103)\nSECC dump view logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not possible as we have information corrupted\nSECC state logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Same as above",
+            "date": "2024-07-19T08:15:22Z",
+            "extra": {}
+        },
+        {
+            "id": "10d8261e-a745-ef11-a316-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Incident Solved Via Remote (L2) after 3 days, 23 hours, 26 minutes and 21 seconds.",
+            "date": "2024-07-19T08:16:02Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "incident_id": "a6ec661e-75a0-f011-bbd3-7c1e5287f582",
+    "ticket_number": "0453645",
+    "title": "ID0453645-DC/Si-D/FR-[MP / R8 170002501] emergency stop fault",
+    "created_on": "2025-10-03T16:22:16Z",
+    "last_activity": "2025-11-12T14:58:51Z",
+    "age": "57060",
+    "description": "Reported behavior/issue -\nemergency stop fault",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R8 170002501",
+    "case_nature_code": 580000001,
+    "chargerID": "Xj0PX1",
+    "additional_info": [
+        {
+            "id": "b991d40f-75a0-f011-bbd3-6045bddece8c",
+            "subject": "Webform_incident_SiCharge D_03-10-2025_SN: MP / R8 170002501",
+            "body": "Dear FABIEN FERREIRA,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R8 170002501\nThank you\neMobility Technical Support Team\nSehr geehrte/r FABIEN FERREIRA,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R8 170002501\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-03T16:21:58Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dc0d8649-75a0-f011-b41c-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0453645 CRM:00225266255",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0453645 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6ec661e-75a0-f011-bbd3-7c1e5287f582",
+            "date": "2025-10-03T16:23:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b71fc1e4-8ba2-f011-bbd3-7c1e52768372",
+            "subject": "A new case manager was assigned to 0453645 CRM:00225266687",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0453645 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6ec661e-75a0-f011-bbd3-7c1e5287f582",
+            "date": "2025-10-06T08:10:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7ecd2812-b1a2-f011-bbd2-7c1e52379e11",
+            "subject": "ID0453645-DC/Si-D/FR-[MP / R8 170002501] emergency stop fault CRM:03056000101",
+            "body": "Dear\nFabien\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002501\nChargerID\n:\nXj0PX1\nProblem Description\n: emergency stop fault\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0453645\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-06T12:36:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "68d695bf-1ba5-f011-bbd3-6045bde0265d",
+            "subject": "RE: ID0453645-DC/Si-D/FR-[MP / R8 170002501] emergency stop fault CRM:03056000101",
+            "body": "Dear colleagues,\nI am reaching out in regards of ticket\nID0453645.\nThe ticket was opened by Mr. Ferreira for continuous activation of error flag \"\nEmergencyStopButton_SF2\n\", while the emergency stop button is bypassed.\nI had a quick look on AWS, and I can confirm that this error flag happened several times between 01.10.2025 and 03.10.2025. I believe it is necessary to go onsite and troubleshoot the error. It is necessary to check:\nif the emergency trip line has any false contact is present (especially in connectors XD9.1A/B and XD9.2A/B)\nif the QA26 is functioning and correctly receiving all signals\nif the bypass on the emergency stop button is properly done\nif the enable signal is arriving to the state monitor\nif FC15 is producing 24V, hence if XD3 has voltage and so the EcoGs\nTherefore, I am moving this ticket\nID0453645\nform the Technical Support Team to the\neMobility RC-FR SI E Queue\nfor onsite visit and onsite troubleshooting.\nPlease let me know in advance if you need remote support for the visit.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-09T14:25:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "111dbb23-e7a5-f011-bbd2-000d3ab04008",
+            "subject": "A new case manager was assigned to 0453645 CRM:00225269686",
+            "body": "ANTOINE BRUA was assigned as new Case Manager for case 0453645 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6ec661e-75a0-f011-bbd3-7c1e5287f582",
+            "date": "2025-10-10T14:41:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

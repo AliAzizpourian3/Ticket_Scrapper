@@ -1,0 +1,28 @@
+{
+    "incident_id": "3d3fcd29-99f3-ef11-be1f-6045bddf3f78",
+    "ticket_number": "0409229",
+    "title": "ID0409229-DC/Si-D/DE[Energu] - Volvo tests",
+    "created_on": "2025-02-25T16:54:27Z",
+    "last_activity": "2025-12-16T14:01:02Z",
+    "age": "924",
+    "description": "Reported behaviour/issue:\nCharging slowed at 80%\nSolution:\nUpdate Volvo FW",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "Jozhsr",
+    "stage": null,
+    "serial_number": "MP / R6 170002000",
+    "case_nature_code": 580000000,
+    "additional_info": [
+        {
+            "id": "aae5bb1e-99f3-ef11-be1f-6045bddf319c",
+            "subject": "AW: Volvo truck testing",
+            "body": "Hi Francisco,\nconcerning Volvo OAL-VM 69 we used our D300 Sicharges today in the morning at our branch in Pentling and during lunch at our depot. After the Volvo update on Monday the “frozen” power at SoC 80 % is history – a success for our drivers.\nPower status on D300 | MP R6 / 17000 2000 | outlet2\nSoC\nkW\n40\n224\n72\n226\n79\n219\n81\n220\n84\n225\n87\n225\n91\n201\n98\n136\n100\n0\nWhat you also can see:\n- the car did not get it’s max. power of 250 kW (today it’s a cloudy day, appr. 10°C)\n- no break / valley at SoC 80%, not for seconds or minutes\n- good power up to SoC 98 % …this problem is solved\nIn this case we could repeat an other issue, reported in Siemens Ticket CRM 02023000385. The re-allocation of the 4 power-united could/should more intelligent … you call it highflex\nJ\nAt Volvo’s SoC of 98% we plugged Iveco VM 300 on dispenser, Outlet 4.\ntime\nSoC Volvo #2\nkW\nSoC Iveco #4\nkW\nSum kW\n11:45\n98\n134\n29\n160\n294\n11:53\n100\n0\n32\n159\n160 + x\n13:12\nFree\nFree\n80\n234\nNot 300\na)\nAt the beginning, everything is fine: 140 + 160\nb)\nVolvo does not cut the connection at SoC 100, due to preconditioning batteries next day.\n-> But than it would be great, that Volvo gets the smallest power group of 60 kW and the busy Iveco get remaining the power group of 240 kW.\nc)\nonly when the connection to the Volvo was cut, the Iveco got a little more: 234 kW (max. loading power of 350 kW)\nd)\ndue to the missing flexibility the annoyed driver stopped at SoC 83 % and started his tour. We will see, if it was enough energy…\n…sorry, I just answered to the last email.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nGlöckner Martin\nGesendet:\nMontag, 24.\nFebruar 2025 17:00\nAn:\n'de Matos Joaquim, Francisco' <francisco.joaquim@siemens.com>\nCc:\nLogistik <logistik@v-markt.de>; Spannagl Andreas <aspannagl@v-markt.de>\nBetreff:\nAW: Volvo truck testing\nHi Francisco,\nsorry for the circumstances concering your name.\nI think it’s too late, because this morning at 8 o’clock this truck got this update. First observation of our driver was positive: at 80 % SoC a short reducing of power, after it power was increased.\nWe organized this update last week due to an advice of Volvo, that this bug was fixed and only on this truck it was missing.\nNevertheless we will have a closer look on VM69, if this problem is solved.\nSo on Thursday we have perhaps only one scenario left: missing power of D300 during one truck is loading (perhaps temperature of pins inside the css2-plug).\nViele Grüße\nMartin Glöckner\nVon:\nde Matos Joaquim, Francisco <\nfrancisco.joaquim@siemens.com\n>\nGesendet:\nMontag, 24. Februar 2025 15:05\nAn:\nGlöckner Martin <\nmgloeckner@v-markt.de\n>\nCc:\nLogistik <\nlogistik@v-markt.de\n>; Spannagl Andreas <\naspannagl@v-markt.de\n>\nBetreff:\nRE: Volvo truck testing\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nThank you for the fast reply.\nWhen you say Francesco, I believe you are talking about me, my last names are “de Matos Joaquim”\n😃\nI come requesting for the following: please do not update the Volvo truck as this is the one where we want to test. The other Volvos do not have this battery management logic, that’s why it doesn’t have any problem.\nIt’s up to you if you want to update the truck or not as it might disrupt operations, if you get this update, it will always give full power.\nPlease let us know if you updated the truck or not.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-02-25T16:54:12Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "incident_id": "89b1c9b3-e9c1-4674-92de-d448159eba60",
+    "ticket_number": "0421503",
+    "title": "ID0421503-DC/Si-D/DK-[MP / PD 170001311] TDK issue",
+    "created_on": "2025-04-29T09:38:50Z",
+    "last_activity": "2025-05-07T13:17:53Z",
+    "age": "11739",
+    "description": "Reported behaviour/issue: TDK issue\nSolution: NA\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "fuUDRK",
+    "stage": null,
+    "serial_number": "MP / PD 170001311",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "07a6e640-7e01-fc90-a572-b5a70f45ad66",
+            "subject": "Additional notes",
+            "body": "Charger is having TDK issues.\nDC_Contactor_MG1-MG2_QA9-10, Description: coontactor stuck at ON feedback\nDC_Contactor_MG4-MG3_QA17-18, Description: coontactor stuck at ON feedback\nI suspect contactors QA9-10 and QA17-18 is having issues in reference to Q-Feedback Info Q2303 and will replace them.\nWarranty for the issues have been extended to June 12, 2027.",
+            "date": "2025-04-29T11:30:02Z",
+            "extra": {}
+        },
+        {
+            "id": "e4cf7531-ee24-f011-8c4d-7c1e5236e32d",
+            "subject": "ID0421503-DC/Si-D/DK-[MP / PD 170001311] TDK issue CRM:02698000088",
+            "body": "Dear Rasmus Eksten,\nThank you for reaching\nout\nto eMobility Support. My name is\nMeghna\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PD 170001311\nChargerID/Serial No.\n:\nfuUDRK\nProblem Description\n: TDK issue\nFor future reference, your case number is\n0421503\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-29T11:36:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c6ebc36-fe24-f011-8c4d-6045bddf319c",
+            "subject": "ID0421503-DC/Si-D/DK-[MP / PD 170001311] TDK issue CRM:00642002241",
+            "body": "Hello Rasmus,\nI trust this email finds you in good health. We have received a technical support request from\nGodEnergi A/S\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / PD 170001311\nCharger ID/Serial No.:\nfuUDRK\nProblem Description:\nTDK issue\nAs per your reported issue, we have analyzed and found that the contactor has been in an abnormal operation state multiple time.\nPlease check the QA09-10 contactor and proceed with the replacement if necessary.\nAdditionally, a new feature has been implemented in the charger firmware for the self-check test of contactor operations.\nFor detailed information on how the test is performed, please follow the link in the wiki:\nMatrix Contactors/Coils Self Test - EV Charger Development - Confluence (siemens.cloud)\nAs per the fault code of the error:\nContactors in group 0 failed the test, and groups 1, 2, and 3 tests were skipped.\nAdding to the information provided earlier:\nStatus:\nfailed,\nReason:\nsmc[0,1,2,3]-[states]-[results]\nStatus:\nfailed,\nReason:\nsmc[0,1,2,3]-[P,P,P,S]-[0,0,0,0] : in charger\nSo, the details are as follows:\nSMC0: QA9/QA10\nSMC1: QA11/QA12\nSMC2: QA17/QA18\nSMC3: QA15/QA16\nIn the error code status [F,S,S,S], it denotes that the SMC0 contactor check failed, and SMC1, 2, and 3 were skipped. The [0,0,0,0] denotes that the feedback for contactor QA9/QA10 was not received.\nUpon reviewing our asset database, we found that the product is no longer under warranty since [\nFill in date manually\n], as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-04-29T13:31:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66cda36a-452b-f011-8c4e-7c1e5236cda4",
+            "subject": "RE: ID0421503-DC/Si-D/DK-[MP / PD 170001311] TDK issue CRM:00642002241",
+            "body": "Contactors QA9-10 and QA17-18 have been replaced and the charger is working now.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-07T13:16:08Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

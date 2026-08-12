@@ -1,0 +1,126 @@
+{
+    "incident_id": "de8bfdb0-8d8e-4d5f-abf6-382236ee42b2",
+    "ticket_number": "0377867",
+    "title": "ID0377867-DC/Si-D/FI [MP / R5 170002027] DC2 does not work due to bender failure",
+    "created_on": "2024-09-05T07:17:18Z",
+    "last_activity": "2025-12-16T14:06:08Z",
+    "age": "1644",
+    "description": "Location:  Porvoo, Finland\nReported behaviour/issue:\nDC2 does not work always. Socket is toggling between available and OoO due to bender modbus error. This started after FW was downgraded from 5.x.19 back to version 4.\nRoot cause: Faulty IMD_BC2\nSolution: Replace IMD\nOn DAMEX Sanctioned List:Siemens\nWarranty Status:Yes\nNOTE TO QM: RC is replying with the missing information.\nAction:\nSite visit 4.9.2024. Wirings check -→ Ok. Bender settings check -→ Ok. After bender replacement, issue was fixed.",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "hXcIv2",
+    "stage": null,
+    "serial_number": "MP / R5 170002027",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "83fdebea-566b-ef11-bfe2-000d3aba081f",
+            "subject": "A new case manager was assigned to 0377867 CRM:00225092272",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0377867 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de8bfdb0-8d8e-4d5f-abf6-382236ee42b2",
+            "date": "2024-09-05T07:17:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5bcd2b2-576b-ef11-bfe2-000d3ab2618c",
+            "subject": "A new case manager was assigned to 0377867 CRM:00225092275",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0377867 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de8bfdb0-8d8e-4d5f-abf6-382236ee42b2",
+            "date": "2024-09-05T07:23:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3e6da78-5c6b-ef11-bfe2-7c1e52212339",
+            "subject": "ID0377867-DC/Si-D/FI [MP / R5 170002027] DC3 does not work due to bender failure CRM:00315001725",
+            "body": "Hello Markus﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170002027\nChargerID/Serial No.\n:\nhXcIv2\nProblem Description\n: Outlet 3 out of order due to IMD_BC3 error Mb.Err:1\nTroubleshooting\n:\nAs you already mentioned, this error with DC3 has been solved with the replacement of the IMD. But now there is a new issue with DC4 which is preventing charging sessions.\nYou will be going to site today and we will align on what to do next together.\nFor future reference, your ticket number is\n0377867\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-05T07:57:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3467ee0-286c-ef11-a670-000d3ab7063f",
+            "subject": "ID0377867-DC/Si-D/FI [MP / R5 170002027] DC3 does not work due to bender failure CRM:00315001725",
+            "body": "Hi Markus, good morning. How are you doing?\nAfter yesterday's tests, we were able to successfully charge in both dispenser outlets.\nIs it possible that the previous charging issue with DC4 related to the MEB platform issue?\nSince they are both working properly, should I close the ticket?\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2024-09-06T08:20:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "38da3655-2f6c-ef11-bfe2-00224899b868",
+            "subject": "RE: ID0377867-DC/Si-D/FI [MP / R5 170002027] DC3 does not work due to bender failure CRM:00315001725",
+            "body": "Hi,\nMost likely the issue was related to MEB issue or EcoG was somehow “stuck”.\nClose this ticket.\nBR,\nMarkus",
+            "date": "2024-09-06T09:06:48Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "af5259a1-306c-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0377867 has been closed. Are you satisfied with our provided solution? CRM:00315001732",
+            "body": "Dear  Markus, I will close the ticket. Please reply to this email with the information below regarding the bender:\nDefective part name/MLFB: IMD_BC3\nComponent serial number:\nLogs with marked error (CSV format preferred): 67 occurrences of Error in last week\nActive error flags before replacement:\nMB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:3)\n(MB-Er:1 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:0 Init:0 SIS:0)\n(MB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:2)\n(MB-Er:1 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:0)\nDevice-specific error code\n(if applicable): Above\nOutcome of wiring checkup: Checked all the wirings related to the Bender\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note):\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0377867\nwith the title:\nID0377867-DC/Si-D/FI [MP / R5 170002027] DC3 does not work due to bender failure\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-06T09:16:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2af61819-3c6c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 day, 3 hours, 20 minutes and 46 seconds.",
+            "date": "2024-09-06T10:38:05Z",
+            "extra": {}
+        },
+        {
+            "id": "26aff163-3c6c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 2 minutes and 9 seconds.",
+            "date": "2024-09-06T10:40:14Z",
+            "extra": {}
+        },
+        {
+            "id": "60c51d83-3c6c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L3) after 58 seconds.",
+            "date": "2024-09-06T10:41:12Z",
+            "extra": {}
+        },
+        {
+            "id": "1738c2f2-556c-ef11-a670-000d3ab7063f",
+            "subject": "RE: Ticket 0377867 has been closed. Are you satisfied with our provided solution? CRM:00315001732",
+            "body": "Defective part name/MLFB: IMD_BC3\nComponent serial number: see picture\nLogs with marked error (CSV format preferred): 67 occurrences of Error in last week\nActive error flags before replacement:\nMB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:3)\n(MB-Er:1 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:0 Init:0 SIS:0)\n(MB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:2)\n(MB-Er:1 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:0)\nDevice-specific error code\n(if applicable): Above\nOutcome of wiring checkup: Checked all the wirings related to the Bender\nCommissioning checklist: not received yet\nCommissioning date: 29.8.2024\nField service report: added in ISP\nDate of failure\n(see side note):",
+            "date": "2024-09-06T13:43:13Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4bd1eef8-556c-ef11-bfe2-7c1e5233f636",
+            "subject": "Email sent to a closed case 'ID0377867-DC/Si-D/FI [MP / R5 170002027] DC2 does not work due to bender failure (0377867)' CRM:00225093064",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0377867\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-09-06T13:43:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

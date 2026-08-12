@@ -1,0 +1,156 @@
+{
+    "incident_id": "f04f7803-afb1-4dd1-bdc1-fc0e0c0947f6",
+    "ticket_number": "0474722",
+    "title": "ID0474722-DC/Si-D/SE- [Multi] Failsafemode",
+    "created_on": "2026-01-27T12:58:38Z",
+    "last_activity": "2026-01-28T11:46:49Z",
+    "age": "1368",
+    "description": "Reported behavior/issue: Both chargers in failsafemode\nSolution: Restart ocpp software",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "RVP/T5170004805,RVP/T5170004817",
+    "case_nature_code": 580000001,
+    "chargerID": "HTq143, Gp10Jq",
+    "additional_info": [
+        {
+            "id": "bf53f1fe-7ffb-f011-8407-000d3ab12a27",
+            "subject": "A new case manager was assigned to 0474722 CRM:00225325666",
+            "body": "Ayushi Bhatia was assigned as new Case Manager for case 0474722 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f04f7803-afb1-4dd1-bdc1-fc0e0c0947f6",
+            "date": "2026-01-27T12:59:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9de4ec17-029c-3b7c-a8b1-e3dba9c582f3",
+            "subject": null,
+            "body": "Hi,\nWe have had a power outage affecting all Cheap Charge Filipstad chargers. Power has now been restored to the chargers in Filipstad, however, leds were still red when the power was turned back on.\nInitially, according to our backend (ChargePanel), everything looked good, and the chargers were shown as green on the online EVSE status application (ChargeFinder). However, I noticed that the chargers still showed offline status in Sifinity Control. Since then, they have lost their connection completely according to our backend and now show an EVSE status unknown in the apps.\nIt has been about one hour and 30 minutes since power was restored. We have also been informed by Siemens that the chargers are in failsafe mode.\nCheap Charge Filipstad chargers:\nRVP/T5170004817\nRVP/T5170004805\nSincerely",
+            "date": "2026-01-27T13:01:04Z",
+            "extra": {}
+        },
+        {
+            "id": "32371b24-81fb-f011-8407-000d3ab12a27",
+            "subject": "ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Dear\nEtka,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nRVP/T5 170004817\nChargerID\n: HTq143, Gp10Jq\nProblem Description\n: Cheap Charge Filipstad\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0474722\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAyushi Bhatia\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-27T13:07:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "825407ed-81fb-f011-8406-000d3ab1199b",
+            "subject": "A new case manager was assigned to 0474722 CRM:00225325677",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0474722 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f04f7803-afb1-4dd1-bdc1-fc0e0c0947f6",
+            "date": "2026-01-27T13:13:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9ad22c5-86fb-f011-8406-000d3ab11366",
+            "subject": "ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Dear Etka,\nThank you for contacting eMobility Support.\nFollowing your report, we want to clarify what is the issue/ request that we can help or resolve for you.\nAs long as the SCB connection is offline, we are not able to see any updates regarding the charger.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-01-27T13:47:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fb59bcd1-8efb-f011-8407-7ced8d44d2c4",
+            "subject": "Sv: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Hi,\nAs I mentioned at the start, the chargers are in failsafe mode according to magnus.hellberg@siemens.com (who advised us to create the MSE case). Consequently, they appear connected in our backend even though they show as offline in Sifinity Control and display a faulted EVSE status in the apps. A hard reboot has not resolved the issue. So how can we take them out of failsafe mode? These chargers have had power restored and should not be disconnected, as the SIM cards are still functioning without issues. markus.roiha.ext@siemens.com wrote the following:\n\"Both chargers came back online but, in some reason, both are still in fail state. I continue investigating this and inform you when I have more information.\"\nWe have also received a photo from the site showing the charger screen, I am attaching that image.\nSincerely\nEtka Kocak\nek@gellgroup.se\n+46 73 382 8345\nVisit us at\nwww.cheapcharge.eu\nCheap Energy Charging Stations Sweden AB\nFrån:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSkickat:\nden 27 januari 2026 14:50\nTill:\nEtka Kocak <ek@gellgroup.se>\nÄmne:\nID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369\nDear Etka,\nThank you for contacting eMobility Support.\nFollowing your report, we want to clarify what is the issue/ request that we can help or resolve for you.\nAs long as the SCB connection is offline, we are not able to see any updates regarding the charger.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-01-27T14:45:36Z",
+            "extra": {
+                "sender": "ek@gellgroup.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7e1f3323-15fc-f011-8407-7ced8d44df3f",
+            "subject": "Re: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Hi,\nGood morning.\nWhat is the current status? We would like to bring the Filipstad chargers back into operation during the day today.\nSincerely\nEtka Kocak\nek@gellgroup.se\n+46 73 382 8345\nVisit us at\nwww.cheapcharge.eu\nCheap Energy Charging Stations Sweden AB",
+            "date": "2026-01-28T06:47:07Z",
+            "extra": {
+                "sender": "ek@gellgroup.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "47caec7c-22fc-f011-8407-000d3ab12a27",
+            "subject": "Re: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Hi Etka,\nAs previously stated, both chargers are still working perfectly. I am closing this support ticket.\nBr,\nMarkus Roiha",
+            "date": "2026-01-28T08:22:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "60825578-28fc-f011-8406-000d3ab11fcc",
+            "subject": "Re: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Hi Etka,\nAs previously stated, both chargers are still working perfectly. I am closing this support ticket.\nBr,\nMarkus Roiha",
+            "date": "2026-01-28T09:05:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9984a478-28fc-f011-8407-000d3ab127aa",
+            "subject": "Autosvar: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Dear sender,\nI hope this message finds you well.\nI am currently sick . During my absence, if you have any urgent matters, please send them to our Nordic shared email at emobilitynordic.si@siemens.com\nI will do my best to respond as soon as possible upon my return.\nWith best regards,\nMagnus Hellberg",
+            "date": "2026-01-28T09:05:27Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d542a7a8-28fc-f011-8407-000d3ab127aa",
+            "subject": "Sv: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369",
+            "body": "Yes, you can do that. markus.roiha.ext@siemens.com helped us.\nSincerely\nEtka Kocak\nek@gellgroup.se\n+46 73 382 8345\nVisit us at\nwww.cheapcharge.eu\nCheap Energy Charging Stations Sweden AB\nFrån:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSkickat:\nden 28 januari 2026 10:04\nTill:\nEtka Kocak <ek@gellgroup.se>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>; Hellberg, Magnus <magnus.hellberg@siemens.com>\nÄmne:\nRe: ID0474722-DC/Si-D/SE- [Multi] Cheap Charge Filipstad CRM:03289000369\nHi Etka,\nAs previously stated, both chargers are still working perfectly. I am closing this support ticket.\nBr,\nMarkus Roiha",
+            "date": "2026-01-28T09:06:51Z",
+            "extra": {
+                "sender": "ek@gellgroup.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9619caeb-3bfc-f011-8407-000d3ab12a39",
+            "subject": "A new case manager was assigned to 0474722 CRM:00225326396",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0474722 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f04f7803-afb1-4dd1-bdc1-fc0e0c0947f6",
+            "date": "2026-01-28T11:24:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b1f1f602-3ffc-f011-8406-000d3ab1149f",
+            "subject": "Ticket 0474722 has been closed. Are you satisfied with our provided solution? CRM:00225326413",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0474722\nwith the title:\nID0474722-DC/Si-D/SE- [Multi] Failsafemode\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-28T11:46:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

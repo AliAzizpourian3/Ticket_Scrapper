@@ -1,0 +1,137 @@
+{
+    "incident_id": "71ad855d-724e-ef11-bfe3-000d3abae760",
+    "ticket_number": "0371689",
+    "title": "ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions",
+    "created_on": "2024-07-30T12:51:02Z",
+    "last_activity": "2025-12-16T14:06:57Z",
+    "age": "1565",
+    "description": "Reported behaviour/issue:\ntried to charge DC multiple times, but every time it failed after approximately 3 minutes.\nRoot cause:\nOCPP disconnections → WAN Failover ON\nSolution:\nDisable WAN Wired Failover and Force LTE connection\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / P1 170000128",
+    "case_nature_code": null,
+    "chargerID": "cQKZW3",
+    "additional_info": [
+        {
+            "id": "1d501b58-724e-ef11-bfe2-0022489961b0",
+            "subject": "SiCharge D 170000128 DC Charge stops after ~3 minutes",
+            "body": "Hi,\nToday, a person tried to charge DC multiple times, but every time it failed after approximately 3 minutes.\nThe customer has provided the attached logs.\nThank you\nTraian Păun\nSiemens SRL\nRC-RO SI EA CS\nBulevardul Preciziei nr. 24\n062204 București, România\nTel.: +40 (21) 6296-408\nMobil: +40 (758) 017842\ntraian.paun@siemens.com\nwww.siemens.ro\nwww.siemens.com\nSiemens S.R.L.,\nStrada Preciziei nr. 24\nCUI J40/6775/1995, CIF RO 7614474",
+            "date": "2024-07-30T12:50:57Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6f371cf0-794e-ef11-bfe2-000d3a687981",
+            "subject": "A new case manager was assigned to 0371689 CRM:00225076791",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0371689 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=71ad855d-724e-ef11-bfe3-000d3abae760",
+            "date": "2024-07-30T13:45:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "68fd8c14-7b4e-ef11-bfe2-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 2 minutes and 27 seconds.",
+            "date": "2024-07-30T13:53:30Z",
+            "extra": {}
+        },
+        {
+            "id": "716d02f2-7c4e-ef11-bfe2-0022489966da",
+            "subject": "ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Hello Traian﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000128\nChargerID/Serial No.\n: cQKZW3\nProblem Description\n: Couldn't start charging sessions\nTroubleshooting\n:\nI searched the logs and found that the OCPP connection was not stable at that time\nSince the EV never got plugged out we didn't see the IMD Error disappear because it didn't perform the Isolation check properly since we only went through A→B2 and not forward.\nAfter a reboot the charger is back to operation since the OCPP connection was stable again.\nLet me know your thoughts.\nFor future reference, your ticket number is\n0371689\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-30T14:06:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c888e0d-a44e-ef11-bfe2-0022489966da",
+            "subject": "RE: ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Hello Francisco,\nThank you for your fast response.\nWhat do you think could be the cause of this instability?\nDo you think we should consider replacing the communication? (modem; sim)\nThank you\n-Traian",
+            "date": "2024-07-30T18:46:46Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13b98cac-0e4f-ef11-bfe2-0022489e9c81",
+            "subject": "ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Hi Traian, good morning. I hope you are doing fine today.\nI just accessed the charger remotely and found that the WAN failover was turned ON. I believe this shouldn't be turned ON but please confirm this.\nI also recommend to \"Force LTE\" which forces the connection to be 4G\nAlso the connection looks good.\nLet me know your thoughts. I will remove WAN Failover for now.\nBest regards,\nFrancisco",
+            "date": "2024-07-31T07:29:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb84e9e2-164f-ef11-bfe3-000d3aba9474",
+            "subject": "Re: ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Hello Francisco,\nThank you for your response.\nCan you modify the settings as suggested (force LTE and Failover disable) or do I need to go there?\nThank you\n-Traian",
+            "date": "2024-07-31T08:28:45Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e17dea4a-1a4f-ef11-bfe3-6045bde003e0",
+            "subject": "ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Hi Traian,\nOf course there is no need for you to do anything. I already performed this change, if you ever find yourself with OCPP connection issues you can reach out to me directly and I can check these settings again.\nIt's somewhat known that after a reboot, sometimes the OCPP router's WAN Failover is re-enabled. It's already in progress an implementation of log traces of these specific configurations. No ETA yet.\nIf you allow me, since the error has been found and resolved for now, I will close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-31T08:53:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "02117446-1b4f-ef11-bfe3-6045bde003e0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 19 hours, 6 minutes and 38 seconds.",
+            "date": "2024-07-31T09:00:07Z",
+            "extra": {}
+        },
+        {
+            "id": "49ba897f-334f-ef11-bfe2-0022489e9c81",
+            "subject": "Re: ID0371689-DC/Si-D/RO[170000128] - Failed charging sessions CRM:00315001653",
+            "body": "Thank you for your quick support, Francisco.\nFeel free to close it.\n-Traian",
+            "date": "2024-07-31T11:53:36Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "781b12a5-424f-ef11-bfe2-000d3a687981",
+            "subject": "Ticket 0371689 has been closed. Are you satisfied with our provided solution? CRM:00315001657",
+            "body": "Dear  Traian\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0371689\nwith the title:\nID0371689-DC/Si-D/RO[170000128] - Failed charging sessions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-31T13:42:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8da34b0f-4d4f-ef11-bfe2-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 5 hours, 56 minutes and 24 seconds.",
+            "date": "2024-07-31T14:56:32Z",
+            "extra": {}
+        }
+    ]
+}

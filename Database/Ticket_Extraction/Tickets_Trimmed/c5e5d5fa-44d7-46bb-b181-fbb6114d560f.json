@@ -1,0 +1,124 @@
+{
+    "incident_id": "c5e5d5fa-44d7-46bb-b181-fbb6114d560f",
+    "ticket_number": "0421739",
+    "title": "ID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session",
+    "created_on": "2025-04-30T08:57:36Z",
+    "last_activity": "2025-06-11T18:55:37Z",
+    "age": "61078",
+    "description": "Reported behavior/issue:\nWhen session is starting, charger sends 2 x StartTransaction to OCPP server and thus OCPP server will create 2 different “TransacionID” for same session.\nAWS query, screenshot and customer evidence from OCPP server (excel) can be find from timeline. Please check AWS 2-3 days backward.\nRemark:\nCustomer evidence → charger sent multiple time “PowerLoss” messages?\nDuplicated\nsecc events: {\"type\":\"SeccStartCharging\",\"outletId\":}\nSolution:\nChild case has been created-0421900",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "YX5xq0",
+    "stage": null,
+    "serial_number": "MP / P6 170000741",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1cfd712a-bd6f-0040-bd9c-f75a0ac73b25",
+            "subject": "AWS query",
+            "body": "fields\n@timestamp\n,\n@message\n,\n@logStream\n|\nfilter\n@message\nlike\n/OCPP/\nand\n@message\nlike\n/Transaction/\n|\nfilter\n@logStream\nlike\n/YX5xq0/\n|\nparse\n@message\n'OCPP:*:'\nas\ndirection\n|\nparse\n@message\n'command:*('\nas\nreason\n|\nparse\n@message\n'\"connectorId\":*,'\nas\nsocket\n|\nparse\n@message\n'\"idTag\":\"*\",'\nas\ntag\n|\nfilter\ndirection\nlike\n/Send command/\n|\nsort\nby\n@timestamp\ndesc\n|\nlimit\n10000",
+            "date": "2025-04-30T08:58:27Z",
+            "extra": {}
+        },
+        {
+            "id": "3d1198d4-9512-a1f3-8a64-385e2c5bdec2",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-30T08:58:41Z",
+            "extra": {}
+        },
+        {
+            "id": "052fd693-529f-9cd3-a380-2f66a0906fa0",
+            "subject": "Customer evidence",
+            "body": "",
+            "date": "2025-04-30T09:01:07Z",
+            "extra": {}
+        },
+        {
+            "id": "0f011c5b-af25-f011-8c4d-6045bde0da17",
+            "subject": "ID0421739 -DC/Si-D/FI - [MP / P6 170000741] - Duplicated OCPP StartTransaction for one session CRM:02679000187",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nEspoo\nChargerID/Serial No.\n:\nYX5xq0\nProblem Description\n: Duplicated OCPP StartTransaction for one session\nFor future reference, your case number is\n0421739\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-30T10:39:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6d83b2d-ba16-2095-9788-dd9609a872da",
+            "subject": "Note to L2",
+            "body": "In logs we can see that the SECC triggers 2 StartCharging Events within 5 ms. Required EcoG logs for further analysis-\n2025-04-29T12:09:18.712505+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: secc events: {\"type\":\"SeccStartCharging\",\"outletId\":2}\n2025-04-29T12:09:18.725452+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: secc events: {\"type\":\"SeccStartCharging\",\"outletId\":2}\n2025-04-29T12:09:18.733546+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Send command: StartTransaction (7e6fd271-3e6e-4be9-a090-c88fcd7b6919) - {\"connectorId\":2,\"idTag\":\"OXNIFS8HJ24Y0H3R\",\"meterStart\":129315128,\"timestamp\":\"2025-04-29T12:09:18.721Z\"}\n2025-04-29T12:09:18.735725+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Send command: StartTransaction (20475678-09c6-4df7-af12-c1eb54f70fe1) - {\"connectorId\":2,\"idTag\":\"OXNIFS8HJ24Y0H3R\",\"meterStart\":129315128,\"timestamp\":\"2025-04-29T12:09:18.726Z\"}\n2025-04-29T12:09:18.815795+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Received result: StartTransaction (7e6fd271-3e6e-4be9-a090-c88fcd7b6919) - {\n\"transactionId\":638944,\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-04-29T12:09:18.816897+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Received result: StartTransaction (20475678-09c6-4df7-af12-c1eb54f70fe1) - {\n\"transactionId\":427281,\"idTagInfo\":{\"status\":\"Accepted\"}}",
+            "date": "2025-04-30T13:00:32Z",
+            "extra": {}
+        },
+        {
+            "id": "f31ecbaa-b11c-6954-a78e-587dba7af538",
+            "subject": "EcoG Logs attached",
+            "body": "The timestamp is shifted due to the clock deviation in Ecog. But the session is started in EcoG only once . Error may be with sicharge-cp-backend",
+            "date": "2025-04-30T16:45:11Z",
+            "extra": {}
+        },
+        {
+            "id": "b247134b-e925-f011-8c4e-7c1e52fad806",
+            "subject": "RE: ID0421739 -DC/Si-D/FI - [MP / P6 170000741] - Duplicated OCPP StartTransaction for one session CRM:02679000187",
+            "body": "Hello Markus,\nHope you are doing well.\nPlease allow us sometime to analyze the logs and will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-30T17:34:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a06c7690-82c3-917b-a245-d699bc77a585",
+            "subject": "Internal note for NOC",
+            "body": "A child case has been created, and follow-up is required from the L3 expert for resolution.\nChild case has been created-0421900",
+            "date": "2025-05-01T09:35:02Z",
+            "extra": {}
+        },
+        {
+            "id": "22ccc73e-06dd-d44d-a3e1-c55585d7f8aa",
+            "subject": null,
+            "body": "As the charger was monitored from 15th @Fosco.\nPlease share the update",
+            "date": "2025-05-26T06:44:22Z",
+            "extra": {}
+        },
+        {
+            "id": "4eec75fc-de8a-5912-8445-00df967583b9",
+            "subject": null,
+            "body": "Communication from Fosco\nTo be worked on and closed by next week.",
+            "date": "2025-06-03T17:36:48Z",
+            "extra": {}
+        },
+        {
+            "id": "40d994d9-be46-f011-877a-7c1e52768c07",
+            "subject": "Child Case Resolved",
+            "body": "The Child Case 0421900 created on 5/1/2025 9:28:50 AM, for Product Sicharge D - Charging Center and End Customer Plugit Finland Oy was Closed and Resolved. Please take appropriate actions on this Case.",
+            "date": "2025-06-11T12:23:20Z",
+            "extra": {}
+        },
+        {
+            "id": "8aefab91-f346-f011-877a-7c1e5287c7df",
+            "subject": "RE: ID0421739 -DC/Si-D/FI - [MP / P6 170000741] - Duplicated OCPP StartTransaction for one session CRM:02679000187",
+            "body": "Hello,\nAs the issue has not reoccurred, the charger is healthy\nWe shall proceed with case closure.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-11T18:40:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b380069-f546-f011-877a-7c1e5287c7df",
+            "subject": "Ticket 0421739 has been closed. Are you satisfied with our provided solution? CRM:01282001015",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0421739\nwith the title:\nID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2025-06-11T18:53:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

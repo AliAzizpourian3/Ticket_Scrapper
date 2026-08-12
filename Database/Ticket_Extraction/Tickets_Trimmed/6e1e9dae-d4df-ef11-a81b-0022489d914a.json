@@ -1,0 +1,186 @@
+{
+    "incident_id": "6e1e9dae-d4df-ef11-a81b-0022489d914a",
+    "ticket_number": "0403381",
+    "title": "ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service",
+    "created_on": "2025-01-31T13:10:03Z",
+    "last_activity": "2025-12-16T14:01:32Z",
+    "age": "8936",
+    "description": "Reported behavior/issue:\nOut of service\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status: Active 12/20/2025",
+    "type": 4,
+    "priority": 3,
+    "chargerID": "63Vm6i",
+    "stage": null,
+    "serial_number": "MP / RD 170003001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8fe465fa-d5df-ef11-8eea-000d3aba081f",
+            "subject": "Note created on 1/31/2025 1:19:22 PM UTC by Luigi Iodice [contact:1fd59796-8cbb-ef11-b8e8-6045bddccb26]",
+            "body": "*WEB*",
+            "date": "2025-01-31T13:19:22Z",
+            "extra": {}
+        },
+        {
+            "id": "273ef60d-dcdf-ef11-8eea-000d3addcd64",
+            "subject": "A new case manager was assigned to 0403381 CRM:00225156758",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0403381 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6e1e9dae-d4df-ef11-a81b-0022489d914a",
+            "date": "2025-01-31T14:02:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac6b677c-7a46-1bca-98f2-534af014d7ea",
+            "subject": "Case creation notes",
+            "body": "Hello. The Charger in scope have several Warnings in the event list (\"Warning - Error causing out of service\"). The time period that warnings happened was today from 10:43:39 to 10:51:24 (GMT+1 time). In this period a customer tried to charge several times, but the charge not started. In my backend the CU is available at this moment. Could you do a check in your log system to watch what happened and to find the cause that has generated the warnings?\nThanks and Regards.\nSoftware Version: v4.0.11-0-g0b7d164\nOCPP Backend Connection: No",
+            "date": "2025-01-31T14:06:36Z",
+            "extra": {}
+        },
+        {
+            "id": "3c098a90-dddf-ef11-8eea-000d3ab009dd",
+            "subject": "ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Dear Luigi Iodice,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / RD 170003001\nChargerID/Serial No.\n:\n63Vm6i\nProblem Description\n: Out of service\nUpon investigating the issue, we identified that there was an authentication error affecting the charging session. We have since rebooted the charger, Could you please check again and let us know if the charger is working properly on your end?\nWe appreciate your patience and are here to assist further if needed.\nFor future reference, your case number is\n0403381\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T14:13:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d023ca7b-5cdb-99d7-964b-e061e3bf5862",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-31T14:38:57Z",
+            "extra": {}
+        },
+        {
+            "id": "dc8b8c2e-6e39-580c-8272-eb9ba7374064",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-31T14:50:15Z",
+            "extra": {}
+        },
+        {
+            "id": "d028de1e-0ae2-ef11-8ee9-7c1e5287e371",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Good Morning,\nthe issue happened 2 times yesterday. If you agree, I’ll check today if it happens again and I’ll give you more feedback tomorrow.\nThanks and regards,\nLuigi Iodice",
+            "date": "2025-02-03T08:37:38Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "729f0f09-d161-14d4-9d1d-4b0bb1db729f",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-03T20:15:32Z",
+            "extra": {}
+        },
+        {
+            "id": "3ed11fb8-7ae2-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Dear Luigi Iodice,\nAfter reviewing the logs, we found two errors during the charging stop:\n1. ERR_EVCOM (EV Communication Issue): A communication problem between the vehicle and the charger.\n2. Normal Shutdown\n:\nCharging stopped due to a timeout during the stop charge phase.\nCan you please provide details on the EV you're trying to charge (make/model), and let us know if the same EV has been charged previously without any issues?\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-03T22:03:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "40aea666-46e3-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0403381\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-04T22:21:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "afe3c638-90c8-dd80-a588-e5a79db94e44",
+            "subject": null,
+            "body": "2025-02-05, 00:08:02\n2025-02-05T00:08:02.000000+00:00 secc [daemon:notice] SECC[822]: {\"type\":\"session_stop\",\"timestamp\":1738714082715,\"chargerId\":\"secc2300-13244\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"source\":\"EV\",\"start\":1738713960752,\"duration\":0,\"energy\":0,\"EVCCID\":\"f896fe0bfd0b\",\"EVMAC\":\"f8.96.fe.0b.fd.0b\",\"user\":\"internal\",\"error\":{\"code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\"}}",
+            "date": "2025-02-05T21:34:31Z",
+            "extra": {}
+        },
+        {
+            "id": "64b07a75-c311-b659-9733-1ce0ec47ed6c",
+            "subject": null,
+            "body": "Wed, 05 Feb 2025 01:02:16 GMT\n2025-02-05, 01:02:16\n2025-02-05T01:02:16.000000+00:00 secc-le [daemon:notice] SECC[836]: {\"type\":\"session_stop\",\"timestamp\":1738717335959,\"chargerId\":\"secc2300-11049\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":false,\"source\":\"EV\",\"start\":1738714157523,\"duration\":3150,\"energy\":44300,\"EVCCID\":\"f896fe0bfd0b\",\"EVMAC\":\"f8.96.fe.0b.fd.0b\",\"user\":\"internal\",\"error\":{}}}",
+            "date": "2025-02-05T21:35:15Z",
+            "extra": {}
+        },
+        {
+            "id": "bbd4ad4d-b510-b2ea-b3c3-226b55dfe8d9",
+            "subject": null,
+            "body": "Wed, 05 Feb 2025 07:07:24 GMT\n2025-02-05, 07:07:23\n2025-02-05T07:07:23.842198+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b817b7861860[731]: OCPP: Send command: StatusNotification (5b4f6d44-a643-488b-abfd-83522fd2de7f) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\nWed, 05 Feb 2025 07:07:28 GMT\n2025-02-05, 07:07:24\n2025-02-05T07:07:24.034653+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b817b7861860[731]: OCPP: Received result: StatusNotification (5b4f6d44-a643-488b-abfd-83522fd2de7f) - {}\nWed, 05 Feb 2025 07:07:39 GMT\n2025-02-05, 07:07:38\n2025-02-05T07:07:38.994710+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b817b7861860[731]: OCPP: Send command: Heartbeat (e0cd7244-e083-46a8-a7a4-60a0d8a2d5d5) - {}\nWed, 05 Feb 2025 07:07:44 GMT\n2025-02-05, 07:07:39\n2025-02-05T07:07:39.274593+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b817b7861860[731]: OCPP: Received result: Heartbeat (e0cd7244-e083-46a8-a7a4-60a0d8a2d5d5) - {\"currentTime\":\"2025-02-05T07:07:39Z\"}\nWed, 05 Feb 2025 07:07:49 GMT\n2025-02-05, 07:07:49\n2025-02-05T07:07:49.000000+00:00 secc-le [daemon:notice] SECC[836]: {\"type\":\"session_stop\",\"timestamp\":1738739269137,\"chargerId\":\"secc2300-11049\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1738739240543,\"duration\":0,\"energy\":0,\"EVCCID\":\"98ed5ca8112a\",\"EVMAC\":\"98.ed.5c.a8.11.2a\",\"user\":\"internal\",\"error\":{}}}",
+            "date": "2025-02-05T21:37:13Z",
+            "extra": {}
+        },
+        {
+            "id": "bffdab26-d297-e876-916f-66af4cf47c6b",
+            "subject": null,
+            "body": "Wed, 05 Feb 2025 11:51:18 GMT\n2025-02-05, 11:51:17\n2025-02-05T11:51:17.000000+00:00 secc [daemon:notice] SECC[822]: {\"type\":\"session_stop\",\"timestamp\":1738756277540,\"chargerId\":\"secc2300-13244\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1738756161686,\"duration\":0,\"energy\":0,\"EVCCID\":\"04e77e70bac3\",\"EVMAC\":\"04.e7.7e.70.ba.c3\",\"user\":\"internal\",\"error\":{\"code\":37,\"msg\":\"V2G - message error (e.g. unexpected) V2G09MSGSequence_V2GDINSession_V2GDINSession_Charging_V2GDINCableCheck\"}}}",
+            "date": "2025-02-05T21:39:07Z",
+            "extra": {}
+        },
+        {
+            "id": "ab666f75-6e85-83d9-867b-12f0f9ed572d",
+            "subject": null,
+            "body": "Wed, 05 Feb 2025 12:37:39 GMT\n2025-02-05, 12:37:38\n2025-02-05T12:37:38.503860+00:00 sicharge-cp [local0:info] ecog-secc-adapter/5cba67af5261[731]: {\"type\":\"session_stop\",\"timestamp\":1738759058333,\"chargerId\":\"secc2300-13244\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":false,\"source\":\"App\",\"start\":1738757038198,\"duration\":1980,\"energy\":48540,\"user\":\"internal\",\"EVCCID\":\"04e77e70bac3\",\"EVMAC\":\"04.e7.7e.70.ba.c3\"}}",
+            "date": "2025-02-05T21:45:37Z",
+            "extra": {}
+        },
+        {
+            "id": "445441db-0ae4-ef11-8eea-000d3ab9a120",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Hello  Luigi Iodice,\nI hope you're doing well.\nWe have analyzed the logs for today, and here are the details of the failed sessions:\n2 sessions\nfailed from the EV side.\n1 session\nfailed during authentication.\n1 session\nfailed from the charger side.\n1 session\nfailed due to a normal shutdown.\n2 sessions\nfailed due to a V2G error.\nIf you could provide additional details about the EV, it would help us in further investigating the issue with experts.\nI hope this clarifies your query. Feel free to reach out if you have any further questions.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-05T21:48:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c608916f-ade4-ef11-9341-6045bdde1b10",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Hello Ankita,\nI understood the analysis. Unfortunately, we don’t have the details of the EV in our back-end.\nCould you do a reboot of the charger before the closing of the ticket? Today the charger had 2 sessions OK, 1 failed for a customer wrong operativity.\nThanks and regards,\nLuigi",
+            "date": "2025-02-06T17:11:45Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "14d98f65-b1e4-ef11-8eea-000d3ab41b62",
+            "subject": "RE: ID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service CRM:01811000644",
+            "body": "Hello  Luigi Iodice,\nAs per your request, I have rebooted the charger. We will now proceed with the closure of the case.\nIf you encounter the same issue in the future,  then\nplease do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\n.\nWe will investigate the matter further and assist you accordingly. W\ne shall be happy to assist you again.\nThank you for your understanding.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to i",
+            "date": "2025-02-06T17:40:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fc70d94d-b3e4-ef11-8eea-000d3ab41b62",
+            "subject": "Ticket 0403381 has been closed. Are you satisfied with our provided solution? CRM:01811000655",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0403381\nwith the title:\nID0403381-DC/Si-D/IT-[MP / RD 170003001] Out of service\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-06T17:53:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

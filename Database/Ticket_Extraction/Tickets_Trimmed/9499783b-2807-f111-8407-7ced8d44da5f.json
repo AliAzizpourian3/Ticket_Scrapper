@@ -1,0 +1,255 @@
+{
+    "incident_id": "9499783b-2807-f111-8407-7ced8d44da5f",
+    "ticket_number": "0477784",
+    "title": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue",
+    "created_on": "2026-02-11T09:01:21Z",
+    "last_activity": "2026-03-10T13:06:46Z",
+    "age": "39125",
+    "description": "Reported behavior/issue: Charging Station Issue",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hFhxt0",
+    "stage": "Resolved",
+    "serial_number": "Y2/R0300000002003",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1c413b33-2807-f111-8406-7c1e5237a53c",
+            "subject": "Stop Transaction after Error Message",
+            "body": "Hello Siemens e-mobility Team!\nWe get invalid charging sessions from multiple SICHARGE stations.\nThe Problem concerns the duration of the charging sessions.\nWhen a charging session is in progress and the Socket somehow gets the Fault “vendorErrorCode: SECC Status not updated”, then the charging session stops (no further energy transfer), but the charging time is still counting, until a reboot of the charger is done or another customer is trying to start a session. This leads to charging sessions with very long invalid duration.\nCan you implement the feature, that the Stop-Transaction will be generated when this kind of error occurs?\nHere is a charging session for you to take a closer look at the problem:\n300000002003 - Siemens SICHARGE D ERK, 09.02.2026 13:52:05 - 09.02.2026 19:30:37, 6,597 kWh, 5h 38m 31s (fault time:\n09.02.2026 14:03:02)\nThis phenomena happened at different chargers, also refers to case 0465088.\nBest Regards,\nFlorian Mak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103",
+            "date": "2026-02-11T09:01:13Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8593a774-2807-f111-8407-000d3ab11366",
+            "subject": "A new case manager was assigned to 0477784 CRM:00225335157",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0477784 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9499783b-2807-f111-8407-7ced8d44da5f",
+            "date": "2026-02-11T09:02:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1e1980c5-2807-f111-8407-000d3ab12cfa",
+            "subject": "A new case manager was assigned to 0477784 CRM:00225335162",
+            "body": "Ayushi Bhatia was assigned as new Case Manager for case 0477784 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9499783b-2807-f111-8407-7ced8d44da5f",
+            "date": "2026-02-11T09:05:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c4f5a1e-1d19-486e-a5ac-0829affb408c",
+            "subject": null,
+            "body": "Hello Siemens e-mobility Team!\nWe get invalid charging sessions from multiple SICHARGE stations.\nThe Problem concerns the duration of the charging sessions.\nWhen a charging session is in progress and the Socket somehow gets the Fault\n“vendorErrorCode: SECC Status not updated”, then the charging session stops (no\nfurther energy transfer), but the charging time is still counting, until a\nreboot of the charger is done or another customer is trying to start a session.\nThis leads to charging sessions with very long invalid duration.\nCan you implement the feature, that the Stop-Transaction will be generated when\nthis kind of error occurs?\nHere is a charging session for you to take a closer look at the problem:\n300000002003 - Siemens SICHARGE D ERK, 09.02.2026 13:52:05 - 09.02.2026\n19:30:37, 6,597 kWh, 5h 38m 31s (fault time: 09.02.2026 14:03:02)\nThis phenomena happened at different chargers, also refers to case 0465088.\nBest Regards,\nFlorian Mak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail: lsm@e-netze.at\nWebsite: www.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt.\nSind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich\nden Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder\nNutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist\nausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung,\nwelche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103",
+            "date": "2026-02-11T09:09:43Z",
+            "extra": {}
+        },
+        {
+            "id": "d62078c7-2907-f111-8406-7c1e5237a53c",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Dear\nLara,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/R0300000002003\nChargerID\n: hFhxt0\nProblem Description\n: Charging Station Issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0477784\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAyushi Bhatia\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-11T09:12:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0701589b-5307-f111-8407-000d3ab12a39",
+            "subject": "A new case manager was assigned to 0477784 CRM:00225335584",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0477784 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9499783b-2807-f111-8407-7ced8d44da5f",
+            "date": "2026-02-11T14:11:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ccc1d6ad-6707-f111-8407-000d3ab12a39",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Dear\nLara,\nFollowing your request and after our checks, we have identified that the error code encountered during your charging session\n“vendorErrorCode: SECC Status not updated”\nand that one its  related to the EcoG connection.\nWe will continue to monitor the charger, and if the issue appears again, we will arrange a site visit to carry out the necessary actions to resolve it.\nRegarding your second question about the EcoG connection: we understand your point. The charger waits until the EcoG connection is restored to continue the charging session, which can result in a longer session duration. I will double-check this with the team and get back to you with the confirmed solution.\nThank you for your patience.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-11T16:35:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef55c150-200b-f111-8407-000d3ab12a39",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000472",
+            "body": "Dear\nLara Anna Oblak,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0477784\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-16T10:14:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46d3d31b-e20b-f111-8407-000d3ab12a39",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000478",
+            "body": "Dear\nLara Anna Oblak,\nThis is another reminder regarding your support case\n0477784\n. We are still waiting for the following information to procee\nd:\nCharging Station Issue CRM:03289000533Charging\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-17T09:22:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2222aa1c-de0c-f111-8407-000d3ab11366",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000484",
+            "body": "Dear\nLara Anna Oblak\n,\nThis is our third and final reminder regarding your support case\n0477784.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\nCharging Station Issue\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-18T15:25:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "21a3ad2d-af0d-f111-8407-000d3ab11366",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Dear\nLara,\nFollowing your last question, and we apologize for the previous email. After monitoring the charger for some days, we understand that the issue occurs when the socket reports the fault “vendorErrorCode: SECC Status not updated,” which stops energy transfer but keeps the charging session active, resulting in unusually long session durations. This fault is related to the EcoG connection.\nThis phenomenon happened at different chargers. To properly investigate the root cause, we recommend e a site check so our field service team can verify the affected stations on-site.\nPlease share any additional logs or examples you may have, as they will assist the team during the site investigation. We are also waiting for your confirmation to proceed with the site check.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-19T16:22:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "61382bea-4b0e-f111-8407-000d3ab11366",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000499",
+            "body": "Dear\nLara Anna Oblak,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0477784\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-20T11:04:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aefe9608-4c0e-f111-8406-7ced8d7476d7",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000499",
+            "body": "Dear\nLara Anna Oblak,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0477784\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-20T11:05:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b35d6265-9710-f111-8407-000d3ab11366",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000507",
+            "body": "Dear\nLara Anna Oblak\n,\nThis is our third and final reminder regarding your support case\n0477784.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\nCharging Station Issue\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-23T09:09:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a28bbc1-a510-f111-8407-7ced8d77f39b",
+            "subject": "AW: ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Hello Siemens-Support-Team!\nDo you really think, an on-site check is sufficient to solve this problem?\nThis phenomena concerns to different chargers, which indicates a systematic software problem.\nTo solve this problem, I would suggest a firmware improvement, so the stop transaction is generated if the socket is faulted.\nBut if an on-site verification helps, you can of course do that.\nHere are more examples from other chargers.\nY2 / R0 300000002002, 13.12.2025 11:14:29 - 13.12.2025 14:58:12, 0,225 kWh\nFAULT: 11:16:06, SECC Status not updated\nMP/S5 170003609, 10.01.2026 15:42:16 - 10.01.2026 20:30:29, 18,194 kWh\nFAULT: 16:06:16, SECC Status not updated\nMP/R6 170001968, 21.11.2025 09:56:06 - 22.11.2025 22:07:57,\n36,335 kWh\nThank you!\nB\nest regards,\nFlorian Mak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 19.\nFebruar 2026 17:26\nAn:\nlsm@e-netze.at\nBetreff:\nID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533\nDear Lara,\nFollowing your last question, and we apologize for the previous email. After monitoring the charger for some days, we understand that the issue occurs when the socket reports the fault “vendorErrorCode: SECC Status not updated,” which stops energy transfer but keeps the charging session active, resulting in unusually long session durations. This fault is related to the EcoG connection.\nThis phenomenon happened at different chargers. To properly investigate the root cause, we recommend e a site check so our field service team can verify the affected stations on-site.\nPlease share any additional logs or examples you may have, as they will assist the team during the site investigation. We are also waiting for your confirmation to proceed with the site check.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-23T10:52:42Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ce2d9ad4-3412-f111-8407-000d3ab11366",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Dear\nLara,\nThank you for your detailed explanation and for providing the additional examples.\nI understand your point regarding the possibility of a systematic software issue, especially since this behavior is occurring on different chargers. Your suggestion about a firmware improvement to ensure that a stop transaction is generated when the socket is faulted is well noted.\nTo ensure we provide you with an accurate response, I will double-check this internally with our Level 3 team\nI will get back to you as soon as I have further feedback.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-25T10:29:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c015a50-a517-f111-8342-000d3ab12cf3",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03289000533",
+            "body": "Dear\nNikolaos\n,\nFollowing up on your request and after our check, we believe that the problem can be resolved with the new firmware version\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-03-04T08:37:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a7bc36de-a618-f111-8342-000d3ab12e50",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000538",
+            "body": "Dear\nLara Anna Oblak,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0477784\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-05T15:20:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d9c8b1a-7119-f111-8342-000d3ab12e50",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000544",
+            "body": "Dear\nLara Anna Oblak,\nThis is another reminder regarding your support case\n0477784\n. We are still waiting for the following information to\nproceed:\nCharging Station Issue CRM:03289000533\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-06T15:28:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be75f024-c21b-f111-8342-000d3ab12e50",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000551",
+            "body": "Dear\nLara Anna Oblak\n,\nThis is our third and final reminder regarding your support case\n0477784.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\nCharging Station Issue\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-09T14:13:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "84d468ac-811c-f111-8342-000d3ab12e50",
+            "subject": "ID0477784-DC/Si-D/AT- [Y2/R0300000002003] Charging Station Issue CRM:03042000554",
+            "body": "Dear\nLara Anna Oblak\nI would like to inform you that your support case\n0477784\nhas been resolved.\nHere is a summary of the actions taken:\nCharging Station Issue\nSince the reported issue has been resolved, I will proceed to close this case.\nThank you for your cooperation, and please don’t hesitate to reach out through our support form for any future requests:\nwww.siemens.com/emobility-service-request\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-10T13:04:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9186dcf5-811c-f111-8342-7ced8d44d2c4",
+            "subject": "Ticket 0477784 has been closed. How did we do? CRM:00225350170",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-10T13:06:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

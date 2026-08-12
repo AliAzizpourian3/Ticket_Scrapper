@@ -1,0 +1,75 @@
+{
+    "incident_id": "248f68d3-f280-4e54-a552-d3799fc521a6",
+    "ticket_number": "0434393",
+    "title": "ID0434393-DC/Si-D/FI-[Y2 / R5 313038805003] Converter E17 and dispenser roll cross set",
+    "created_on": "2025-06-30T12:28:24Z",
+    "last_activity": "2025-07-02T06:30:27Z",
+    "age": "2522",
+    "description": "Location:\nOrivesi, Finland\nReported behaviour/issue:\nConverter\n2102312VGQLUNB000357SA002204000204FW Error E:17. Reboot doesn't fix the issue\n. Issue has been there before warranty ended.\nDispenser roll cross ends need to be replaced.\nRoot cause:\nSolution:\nAction:  fixed 1.7.2025",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "LIjq41",
+    "stage": null,
+    "serial_number": "Y2 / R5 313038805003",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "26e846bc-ad55-f011-877b-6045bddf319c",
+            "subject": "A new case manager was assigned to 0434393 CRM:00225221870",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0434393 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=248f68d3-f280-4e54-a552-d3799fc521a6",
+            "date": "2025-06-30T12:28:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fbc299f8-0bcb-d185-a601-b83c5266e450",
+            "subject": "AWS log",
+            "body": "#konvertteri\nfields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/2102312VGQLUNB000357SA002204000204FW:DC116PF116H100,F:1,E17/\n|\nfilter\n@logStream\nlike\n/LIjq41/\n|\nparse\n@message\n'to true -*'\nas\ncode\n#| stats count(*) as Count by @logStream\n|\nsort\nby\n@timestamp\ndesc\n|\nlimit\n10000",
+            "date": "2025-06-30T12:29:05Z",
+            "extra": {}
+        },
+        {
+            "id": "a945550a-ae55-f011-877b-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0434393 CRM:00225221872",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0434393 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=248f68d3-f280-4e54-a552-d3799fc521a6",
+            "date": "2025-06-30T12:30:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "830087d4-b055-f011-877a-7c1e52768c07",
+            "subject": "ID0434393-DC/Si-D/FI-[Y2 / R5 313038805003] Converter E17 and dispenser roll cross set CRM:00315002762",
+            "body": "Dear Markus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nOrivesi\nChargerID/Serial No.\n: Y2 / R5 313038805003\nProblem Description\n: Converter E17 and dispenser roll cross\nTroubleshooting\n:\nFor the converter, I recommend you to test swapping this converter with another and if it still persists, replace it.\nFor the dispenser roll cross, please replace it.\nFor future reference, your case number is\n0434393\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-30T12:50:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0db2bf10-b155-f011-877a-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0434393 CRM:00225221884",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0434393 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=248f68d3-f280-4e54-a552-d3799fc521a6",
+            "date": "2025-06-30T12:52:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "141255da-14a0-f93b-a76d-936d69ef4f98",
+            "subject": null,
+            "body": "",
+            "date": "2025-07-02T06:28:06Z",
+            "extra": {}
+        }
+    ]
+}

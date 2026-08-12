@@ -1,0 +1,83 @@
+{
+    "incident_id": "e9ca40ec-03b4-f011-bbd2-7c1e523622b6",
+    "ticket_number": "0458261",
+    "title": "ID0458261-DC/Si-D/DE-[MP/P2 170000140] OCPP backend.",
+    "created_on": "2025-10-28T13:42:28Z",
+    "last_activity": "2025-11-04T08:31:02Z",
+    "age": "9769",
+    "description": "Reported behavior/issue- BootNotification rejected\nSolution: Changed FW version length name.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / P2 170000140",
+    "case_nature_code": 580000001,
+    "chargerID": "HqSFc0",
+    "additional_info": [
+        {
+            "id": "e309dfec-03b4-f011-bbd2-7c1e528800b0",
+            "subject": "Webform_incident_SiCharge D_03-07-2025_SN: MP/P2 170000140",
+            "body": "Dear Thomas Biedermann,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/P2 170000140\nThank you\neMobility Technical Support Team\nSehr geehrte/r Thomas Biedermann,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/P2 170000140\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-28T13:42:23Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9afa9912-04b4-f011-bbd2-6045bde13339",
+            "subject": "A new case manager was assigned to 0458261 CRM:00225278802",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0458261 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e9ca40ec-03b4-f011-bbd2-7c1e523622b6",
+            "date": "2025-10-28T13:43:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c3c5f08-05b4-f011-bbd2-7c1e5276d071",
+            "subject": "ID0458261-DC/Si-D/DE-[MP/P2 170000140] OCPP backend. CRM:03056000341",
+            "body": "Dear\nThomas\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / P2 170000140\nChargerID\n:\nHqSFc0\nProblem Description\n: OCPP backend.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0458261\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-28T13:50:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a9eaba07-71b5-f011-bbd2-7ced8d425b04",
+            "subject": "A new case manager was assigned to 0458261 CRM:00225280065",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0458261 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e9ca40ec-03b4-f011-bbd2-7c1e523622b6",
+            "date": "2025-10-30T09:15:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b604ff5-a8b5-f011-bbd2-7c1e52880288",
+            "subject": "RE: ID0458261-DC/Si-D/DE-[MP/P2 170000140] OCPP backend. CRM:03056000341",
+            "body": "Good evening Thomas,\nI am reaching out in regards of ticket\nID0458261\nfor charger\n170000140.\nI checked the charger's logs, and saw that the connection to the OCPP Backend was rejected at BootNotification, due to the exceeded length of the FW version name:\n2025-10-30T15:50:59.546524+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/2e82dd3b0f5e[737]: OCPP: Send command: BootNotification (385a4b97-0d71-4ce7-b8bb-b7962a4e91f6) - {\"chargePointModel\":\"SiCharger\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v7.0.5-0-gd66ba3a+ecog-1.4.12+FileHandlerHF (PRODUCTION)\",\"iccid\":\"882280000134422670\",\"chargePointSerialNumber\":\"MP/P2170000140ERK\"}\n2025-10-30T15:50:59.660769+00:00 [FW070005G1] sicharge-cp [local0:err] sicharge-cp-backend/2e82dd3b0f5e[737]: Failed to parse message: \"[4,\"385a4b97-0d71-4ce7-b8bb-b7962a4e91f6\",\"FormatViolation\",\"\"v7.0.5-0-gd66ba3a+ecog-1.4.12+FileHandlerHF (PRODUCTION)\" is longer than 50 characters\",{}]\", Expected ',' or ']' after array element in JSON at position 62\nI just connected via SSH to the charger, changed the firmwareVersion name, and now the charger BootNotification is accepted and the charger is connected again to the Backend.\nSince the issue is solved, I will proceed to close this ticket!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-30T15:56:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c940ed8f-58b9-f011-bbd2-7ced8d425d60",
+            "subject": "Ticket 0458261 has been closed. Are you satisfied with our provided solution? CRM:00225282277",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0458261\nwith the title:\nID0458261-DC/Si-D/DE-[MP/P2 170000140] OCPP backend.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-04T08:30:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

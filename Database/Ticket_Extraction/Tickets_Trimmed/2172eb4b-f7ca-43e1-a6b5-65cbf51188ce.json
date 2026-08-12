@@ -1,0 +1,53 @@
+{
+    "incident_id": "2172eb4b-f7ca-43e1-a6b5-65cbf51188ce",
+    "ticket_number": "0385055",
+    "title": "ID0385055-DC/Si-D/DE[jlxdQi] - EVSE not upscalling",
+    "created_on": "2024-10-17T08:40:03Z",
+    "last_activity": "2025-01-29T07:54:26Z",
+    "age": "61894",
+    "description": "Reported behaviour/issue:\nAfter EV reaches 80% SoC, it decreases the EV_TarCur from 216A to 94A for battery balancing (new function), and when it's finished (~1min), it wants to increase the EV_TarCur but the charger doesn't respond to the need because Upscalling is not included yet.\nRoot cause:\nFW issue\nSolution:\nPlanned in v6.2.X\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nhttps://jira.si.siemens.cloud/browse/EVC3-6896\n→ R&D Jira ticket\nUpdate from R&D 22/Oct/2024:\nUpscaling is part of DPA improvements which will come probably with FW v6.2.0. So it's on the roadmap but it will not be released sometime soon.\nUpdate 21/Nov/2024:\nStill to do, expected to be released in v5.2.X",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "jlxdQi",
+    "stage": null,
+    "serial_number": "MP / R6 170001953",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "80fb816f-638c-ef11-ac21-000d3a6610b3",
+            "subject": "A new case manager was assigned to 0385055 CRM:00225111317",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0385055 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2172eb4b-f7ca-43e1-a6b5-65cbf51188ce",
+            "date": "2024-10-17T08:40:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6cb4a678-638c-ef11-ac20-000d3ab41b62",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 33 seconds.",
+            "date": "2024-10-17T08:40:37Z",
+            "extra": {}
+        },
+        {
+            "id": "bbb4a678-638c-ef11-ac20-000d3ab41b62",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-10-17T08:40:41Z",
+            "extra": {}
+        },
+        {
+            "id": "3867aceb-638c-ef11-ac20-000d3ab41b62",
+            "subject": "0385055 - ID0385055-DC/Si-D/DE[jlxdQi] - EVSE not upscalling CRM:00315001928",
+            "body": "Property\nItem\nCharger ID\njlxdQi\nSerial Number\nMP / R6 170001953\nFirmware\nv4.0.11\nDate of Creating Service Desk Ticket\n17.10.2024\nDate of Closing Service Desk Ticket\nProblem/Symptoms\nProperty\nItem\nDate of Issue\n14/Oct/2024\nTime of Issue\n2024-10-14T09:33:39.119Z\nLink to L2 Ticket System (MS Dynamics)\nIssue Type:\nCharging\nConnectivity\nOther\nCurrent Behaviour:\nAfter the EV starts charging 09:05:04, it reaches the EVTarCur=216 after 50sec:\n[ STATE - 2024-10-14T09:05:53.101Z ] <request> CurrentDemandReq#67 SessionID=15 EVTargetCurrent=216 EVTargetVoltage=714 EVMaximumCurrentLimit 330 EVMaximumVoltageLimit 750 EVMaximumPowerLimit 248000 ChargingComplete=0\nAnd stays with the value until 09:33:37, where it starts decreasing the EV TarCur and reaches 94 A.\nSTATE - 2024-10-14T09:33:38.906Z ] <request> CurrentDemandReq#8138 SessionID=15 EVTargetCurrent=94 EVTargetVoltage=739 EVMaximumCurrentLimit 330 EVMaximumVoltageLimit 750 EVMaximumPowerLimit 248000 ChargingComplete=0\nAnd stays in this EVTarCur value for approx. 40secs. After this, the EV starts requesting more current:\nSTATE - 2024-10-14T09:34:17.909Z ] <request> CurrentDemandReq#8327 SessionID=15 EVTargetCurrent=111 EVTargetVoltage=735 EVMaximumCurrentLimit 330 EVMaximumVoltageLimit 750 EVMaximumPowerLimit 248000 ChargingComplete=0\nAs we can see, it starts ramping up the current but it stays with EVSEMaximumCurrentLimit=111 and cannot go further as the charger limits the current to this value and doesn't upscale.\nThis way, the EV takes much longer to charge as it should. In this case, it would need to be replugged to charge at the right amount of current as requested.\nExpected behaviour:\nWhen battery balancing is completed, the charger is able to upscale which means that he is able to return to the 216 A EV_TarCur.",
+            "date": "2024-10-17T08:43:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

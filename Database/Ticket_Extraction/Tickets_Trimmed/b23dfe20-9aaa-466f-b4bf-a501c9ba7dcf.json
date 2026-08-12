@@ -1,0 +1,72 @@
+{
+    "incident_id": "b23dfe20-9aaa-466f-b4bf-a501c9ba7dcf",
+    "ticket_number": "0452679",
+    "title": "ID0452679-DC/Si-D/IT-[MP/R9 170002726] Logs Check",
+    "created_on": "2025-09-29T10:46:28Z",
+    "last_activity": "2025-10-02T10:23:35Z",
+    "age": "4297",
+    "description": "Hello,\nA customer tried to charger on the charger 170002726 on the 27th of September, but he had 2 0 recharges. He tried at 08:00:36 p.m and at 08:05:29 p.m. Can you check logs, please?\nThank you in advance.\nsoftware version\n: v6.1.3-0-gfb2eb75",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R9 170002726",
+    "case_nature_code": 580000001,
+    "chargerID": "ycQiU5",
+    "additional_info": [
+        {
+            "id": "d1beb9c6-259d-f011-b41c-000d3ab07fc1",
+            "subject": "A new case manager was assigned to 0452679 CRM:00225263639",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0452679 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b23dfe20-9aaa-466f-b4bf-a501c9ba7dcf",
+            "date": "2025-09-29T11:16:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88c0560f-289d-f011-b41c-6045bddf3f78",
+            "subject": "ID0452679-DC/Si-D/IT-[MP/R9 170002726] Logs Check CRM:03056000036",
+            "body": "Dear\nFilomena\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002726\nChargerID/Serial No.\n:\nMP / R9 170002726\nProblem Description\n:\nLogs Check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0452679\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-29T11:33:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "41596ff4-289d-f011-b41b-7ced8d7236fd",
+            "subject": "A new case manager was assigned to 0452679 CRM:00225263661",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0452679 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b23dfe20-9aaa-466f-b4bf-a501c9ba7dcf",
+            "date": "2025-09-29T11:39:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80cb0010-3e9d-f011-b41b-7c1e5236eee4",
+            "subject": "RE: ID0452679-DC/Si-D/IT-[MP/R9 170002726] Logs Check CRM:03056000036",
+            "body": "Dear Filomena,\nI am reaching out in regards of ticket\nID0452679.\nThe ticket has been opened for a failed AC charging session on 27.09.2025 at charger\nMP/R9 170002726.\nI analyzed the logs, and I saw the following pattern:\nThe session is not a 0-session per se, as there is a transfer of current which lasts around 15 seconds.\nWe checked in the past the log message \"AC1: SECC not longer requires closed contactor: stop charging\" with R&D, and the answer provided is that such stop message is triggered by the EV, since the PilotState changes from C-->B at the same time as the above error message, instead of C2-->C1.\nAs such, I checked the the logs of AC charging sessions over the last 2 months, and\nonly this session seem to be interrupted in this way,\nwhich means that as per R&D said it could be stopped by the EV. Since EcoG logs are not generated for AC charging sessions, and the EVMAC is not communicated as well, there are no test possible to perform in order to understand which EV could have requested a stop.\nIn conclusion, the AC charging interruption seem to be a one time event, most likely caused by the EV.\nI hope my answer provided you clarity to your request. Please let me know if there are follow up questions on the logs. I will proceed to close the ticket if there are no further pending actions.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-29T14:10:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4d349cf-799f-f011-bbd3-6045bde0265d",
+            "subject": "Ticket 0452679 has been closed. Are you satisfied with our provided solution? CRM:00225265508",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0452679\nwith the title:\nID0452679-DC/Si-D/IT-[MP/R9 170002726] Logs Check\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-02T10:23:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

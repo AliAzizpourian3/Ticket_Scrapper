@@ -1,0 +1,60 @@
+{
+    "incident_id": "acf30bad-79d6-47de-89a8-b57470d69e60",
+    "ticket_number": "0419080",
+    "title": "ID0414855-DC/Si-D/FR-[MP / R8 170002501] can see errors on this charger (C1)",
+    "created_on": "2025-04-15T13:48:39Z",
+    "last_activity": "2025-04-22T08:55:54Z",
+    "age": "9787",
+    "description": "Reported behaviour/issue\n:\nI can see errors on this charger in the past days : secc pilot is E modbus0 is not connected secc is offline\nSolution:\nHi,\nI can see errors on this charger in the past days :\nsecc pilot is E\nmodbus0 is not connected\nsecc is offline\nWhat does it means?\nRegards\nFlorent",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "Xj0PX1",
+    "stage": null,
+    "serial_number": "MP / R8 170002501,MP / R8 170002501",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "31aa6644-7cbd-7f17-8552-cbb29937139d",
+            "subject": null,
+            "body": "before “secc pilot is E”\nbefore “secc is offline”",
+            "date": "2025-04-15T13:51:09Z",
+            "extra": {}
+        },
+        {
+            "id": "d6ee5bbf-fef0-1d2c-bc37-9fad207b487f",
+            "subject": null,
+            "body": "Upon checking the logs, I found these messages before the VendorErrorCodes:\nbefore “modbus0 is not connected”",
+            "date": "2025-04-15T13:51:29Z",
+            "extra": {}
+        },
+        {
+            "id": "fa259f92-1a47-09ad-bf38-a829d160eab1",
+            "subject": null,
+            "body": "Problem Description :\nCustomer wants to know info regarding New Vendor Error Codes (\nsecc pilot is E, modbus0 is not connected, secc is offline)\nSuspected Root Cause :\nn/a\nAction Performed (L2) :\nLog analysis\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\nInfo needed\nLog analysis with timestamp : See Notes below\nAction Required\nAction by HQ : Info required",
+            "date": "2025-04-15T13:52:20Z",
+            "extra": {}
+        },
+        {
+            "id": "60208264-c61a-f011-9989-7c1e52361e39",
+            "subject": "0419080 - ID0414855-DC/Si-D/FR-[MP / R8 170002501] can see errors on this charger (C1) CRM:00314000160",
+            "body": "Good afternoon Florent,\nMy name is Fosco, I am reaching out from the Expert Services team in regards of child case\n0419080\n. The ticket was opened to explain the new error messages observed on your end.\nFirst of all, everything is working as intended. With the latest FW version of Sicharge D v6.1.3,\nnew OCPP Vender Error Codes were introduced\n. These vendor codes are intended to provide more information to the Backend in terms of charger's behavior, but they are not referring to new errors per se, simply they were not reported to the Backend.\nIn details:\nThe VendorErrorCode “\nsecc pilot is E\n” just refers to the fact that the pilot state of one outlet changed to E. This vendor code is usually sent to the Backend when a attempted charging session fails, or if a charging session fails, hence the pilot state is E. This message is also sent during the booting phase or converter grouping phase.\nThe VendorErrorCode “\nmodbus0 is not connected\n” refers to a loss of communication to the SECC for 750ms. This event has no impact on the performance of the charger, even during a charging session. Only in rare case it could lead to outlets being unavailable for several seconds or interrupt a charging session.\nThe VendorErrorCode “\nsecc is offline\n” refers to the happening of the coap polling error, an internal communication to SECC lost for a small interval of time. The OpenController will reconnect to the SECC within 5 seconds. Also in this case, this event has no impact on the charger, even during charging session.\nIn case these losses of communication appear more and more often, we could install a Hotfix on the SECC of the charger, which includes hardening patches regarding Coap communication and a Modbus reconnection hardening.\nFurthermore, R&D team is planning, for the next FW release, to reduce the spamming of these error messages when they have no effect on the charger in terms of outlet unavailability.\nAs explained above, these are not new errors introduced by the new FW v6.1.3, but just new messages sent to the Backend. Unfortunately, we missed a proper communication to the CPOs in regards of the introduction of these new error messages. We apologize for that and we will communicate future new vendor codes within the Release Notes and Software Manual.\nIn case you have further questions, please do not hesitate to reply to this email.\nLooking forward to hearing your feedback soon\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-16T13:26:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a90ef4d-a31b-f011-998a-000d3adc93d1",
+            "subject": "RE: 0419080 - ID0414855-DC/Si-D/FR-[MP / R8 170002501] can see errors on this charger (C1) CRM:00314000160",
+            "body": "Hi,\nOk you can close this ticket\nCordialement,\nFlorent NICOLAS\nResponsable supervision plaque sud\nENGIE Mobilités Électriques\nflorent.nicolas@engie.com\n+33 7 87 84 21 41\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming\n69007 Lyon\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmercredi 16 avril 2025 15:28\nÀ :\nNICOLAS Florent (ENGIE Mobilités Electriques) <florent.nicolas@engie.com>\nObjet :\n0419080 - ID0414855-DC/Si-D/FR-[MP / R8 170002501] can see errors on this charger (C1) CRM:00314000160\nGood afternoon Florent, My name is Fosco, I am reaching out from the Expert Services team in regards of child case 0419080. The ticket was opened to explain the new error messages observed on your end. First of all, everything is working as\nGood afternoon Florent,\nMy name is Fosco, I am reaching out from the Expert Services team in regards of child case\n0419080\n. The ticket was opened to explain the new error messages observed on your end.\nFirst of all, everything is working as intended. With the latest FW version of Sicharge D v6.1.3,\nnew OCPP Vender Error Codes were introduced\n. These vendor codes are intended to provide more information to the Backend in terms of charger's behavior, but they are not referring to new errors per se, simply they were not reported to the Backend.\nIn details:\nThe VendorErrorCode “\nsecc pilot is E\n” just refers to the fact that the pilot state of one outlet changed to E. This vendor code is usually sent to the Backend when a attempted charging session fails, or if a charging session fails, hence the pilot state is E. This message is also sent during the booting phase or converter grouping phase.\nThe VendorErrorCode “\nmodbus0 is not connected\n” refers to a loss of communication to the SECC for 750ms. This event has no impact on the performance of the charger, even during a charging session. Only in rare case it could lead to outlets being unavailable for several seconds or interrupt a charging session.\nThe VendorErrorCode “\nsecc is offline\n” refers to the happening of the coap polling error, an internal communication to SECC lost for a small interval of time. The OpenController will reconnect to the SECC within 5 seconds. Also in this case, this event has no impact on the charger, even during charging session.\nIn case these losses of communication appear more and more often, we could install a Hotfix on the SECC of the charger, which includes hardening patches regarding Coap communication and a Modbus reconnection hardening.\nFurthermore, R&D team is planning, for the next FW release, to reduce the spamming of these error messages when they have no effect on the charger in terms of outlet unavailability.\nAs explained above, these are not new errors introduced by the new FW v6.1.3, but just new messages sent to the Backend. Unfortunately, we missed a proper communication to the CPOs in regards of the introduction of these new error messages. We apologize for that and we will communicate future new vendor codes within the Release Notes and Software Manual.\nIn case you have further questions, please do not hesitate to reply to this email.\nLooking forward to hearing your feedback soon\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2025-04-17T15:47:55Z",
+            "extra": {
+                "sender": "florent.nicolas@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

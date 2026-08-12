@@ -1,0 +1,167 @@
+{
+    "incident_id": "94c549d7-5432-f011-8c4d-7c1e5236eee4",
+    "ticket_number": "0425002",
+    "title": "ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue",
+    "created_on": "2025-05-16T12:54:12Z",
+    "last_activity": "2025-12-16T12:20:07Z",
+    "age": "58957",
+    "description": "Reported behavior/issue: Charging Issue\nSolution:\n23.05.2025: R&D Ticket EVC3-9495",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "PWnLON",
+    "stage": null,
+    "serial_number": "MP / P9 170000982",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "83e015d6-5432-f011-8c4d-7c1e522109d9",
+            "subject": "Webform_incident_SiCharge D_16-05-2025_SN: MP / P9 170000982",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / P9 170000982\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / P9 170000982\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-16T12:54:02Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2ffc4f8d-5b32-f011-8c4d-6045bddf319c",
+            "subject": "ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000982\nChargerID/Serial No.\n:\nPWnLON\nProblem Description\n:\nCharging Issue\nFor future reference, your case number is\n0425002\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-16T13:42:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17e44c2e-9432-f011-8c4d-7c1e52350ea5",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Dear Poland Service Team,\nPlease send the logs that you have mentioned in the ticket webform, it will help us in identity the root cause and if needed we will route the ticket to the Expert Service team they will directly connect with R&D if needed.\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-16T20:27:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0636ab36-9734-f011-8c4d-6045bdde2c8c",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Hi,\nI am attaching logs from backend provider.\nBR\nKonrad",
+            "date": "2025-05-19T09:54:12Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2e49a9c5-d334-f011-8c4d-000d3ab07fc1",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Hi Poland Team,\nThanks for sharing the backend logs and we have analysed the charging logs by taking the reference of the logs that you have provided. We see there are multiple charging session in which Status: SuspendedEV in the StatusNotification schema. The charging session was not aborted in multiple occasions while having the SuspendedEV. This is cause from the EV side and there is no issue from the EVSE. There are many reason by which the SuspendedEV arises which are stating below.\nThe EV battery is temporarily not accepting power (e.g., it's balancing cells).\nThe EV is regulating the charge current and has chosen to pause.\nThe vehicle software decided to stop charging due to temperature, voltage conditions, etc.\nPlease let me know if you have anu further query to discuss if not we shall proceed with closing this ticket by tomorrow EOD.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-19T17:07:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a28b34d2-4935-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Hi,\nYes, we well know everything about SuspendedEV, but the question was about behavior charging session authorized via RFID.\nError description:\nThe charging station went from the Finihing state to the Preparing\nstate after a completed charging session via RFID. This results in the inability to charge for parking.\nThe situation occurred during integration testing with an eMSP\noperator.\nBR\nKonrad",
+            "date": "2025-05-20T07:12:48Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6847ad6f-9d35-f011-8c4d-6045bddf319c",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Hi Konrad,\nAre you handling the backend integration testing/implementation with the eMSP operator? If so, it should be handled by the Backend Integration team.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-20T17:11:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c800283-1136-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:02699000109",
+            "body": "Hello,\nThe 7.0.6. software is already integrated into the backend. Here we have only two situations where the station changed its status from correct Finishing to incorrect, Preparing. If the case needs to be moved to a team other than NOC, please forward it to L3, R&D or other .\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2025-05-21T07:02:10Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8df18e2c-c4ef-0187-98fd-b98d1b59b444",
+            "subject": "Handover NOC-->Expert",
+            "body": "Problem Description : Charging Issue\nAction Performed (L2) : Logs analysed, but after having the discussion with the region over ISP, the issue is related to Backend Integration.\nCharger SW Version:\nV7.0.6\nReason for Handover (L3) : Issue related to Backend Integration.",
+            "date": "2025-05-21T12:21:27Z",
+            "extra": {}
+        },
+        {
+            "id": "9df26b8e-e336-f011-8c4e-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0425002 CRM:00225204220",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0425002 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=94c549d7-5432-f011-8c4d-7c1e5236eee4",
+            "date": "2025-05-22T08:05:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cbfcf9f7-aa37-f011-8c4d-7c1e523508ba",
+            "subject": "0425002 - ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:00314000169",
+            "body": "Good morning colleagues,\nI am reaching out in regards of ticket\nID0425002\n, which has been opened for wrong OCPP Status Notification transition on charger\nPWnLON.\nIn the ticket you forwarded me the logs from the Backend of a test session on 15.05. I see that the charger is running on FW\nv7.0.6\n, which I believe it is an ad-hoc FW for this charger. As I am not familiar with the features of this FW\nv7.0.6\n, I will escalate this analysis to R&D.\nI will provide you feedback as soon as I have news from them.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-23T07:53:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88d8def9-6952-f011-877b-7c1e52350ea5",
+            "subject": "RE: 0425002 - ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:00314000169",
+            "body": "Good morning colleagues,\nI am reaching out regarding ticket\nID0425002\nfor charger\nPWnLON.\nThe ticket was opened for wrong OCPP Status Notification transition on ad-hoc FW v7.0.6.\nAs per my previous email, I escalated the issue to R&D, and I received feedback that the topic is addressed, a solution has been implemented and it is in integration test phase right now.\nThe fix for this issue will be included in the FW release\nv8.1.X (\nex FW v9.X), which is gonna be released by end of September 2025.\nIf there are no further questions, and since the issue has been addressed and is in implementation by R&D, I would proceed to close this ticket.\nLooking forward to hearing from you soon.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-26T08:46:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb9881fa-7452-f011-877b-7c1e52faf3c6",
+            "subject": "RE: 0425002 - ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:00314000169",
+            "body": "Hi,\nYes, please close this ticket. We are waiting for v.8.1\n😊\nWith best regards, Z pozdrowieniami\nKonrad Frach\nExternal service provider at Siemens Sp. z o.o.\nPoland\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul. Zupnicza 11\n03-821 Warsaw, Poland\nTel. +48 880432592\nmailto:konrad.frach.ext@siemens.com\nSiemens Sp. z o.o. ul. Żupnicza 11, 03-821 Warszawa, Sąd Rejonowy dla m.st. Warszawy, XIV Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS 0000031854, Kapitał zakładowy: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\nWażne:\nTen mail i wszelkie załączniki do niego zawierają informacje będące własnością przedsiębiorcy. Jeśli otrzymaliście Państwo tego maila omyłkowo, prosimy o niezwłoczne poinformowanie nas poprzez odesłanie go do nadawcy oraz usunięcie całej korespondencji wraz załącznikami ze swojego systemu. Dziękujemy.",
+            "date": "2025-06-26T10:04:49Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "84f1429b-8052-f011-877b-7c1e523508ba",
+            "subject": "RE: 0425002 - ID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue CRM:00314000169",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0425002\nwith the title:\nID0425002-DC/Si-D/PL-[MP / P9 170000982] Charging Issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-26T11:28:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

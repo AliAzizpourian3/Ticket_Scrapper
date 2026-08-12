@@ -1,0 +1,398 @@
+{
+    "incident_id": "81bd7665-c048-ef11-bfe2-002248a2f864",
+    "ticket_number": "0370382",
+    "title": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel",
+    "created_on": "2024-07-23T06:54:27Z",
+    "last_activity": "2025-12-16T14:07:13Z",
+    "age": "79173",
+    "description": "Reported behaviour/issue:\nUnable to provide parallel charging sessions by DC outlets\nRoot cause:\nQA21-22 and QA13-14 feedback stuck in OFF\nSolution:\nReplaced the contactors with new one\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO L3 IN TIMELINE\nNotes from ES to NOC [ 16/09/2024]",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ilBhJ7",
+    "stage": null,
+    "serial_number": "MP / R2 170001506",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "13624163-c048-ef11-bfe3-002248a44b33",
+            "subject": "Webform_incident_SiCharge D_23-07-2024_SN: 170001506",
+            "body": "Dear Olympia Peratsaki,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001506\nThank you\neMobility Technical Support Team\nSehr geehrte/r Olympia Peratsaki,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001506\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-07-23T06:54:21Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7504bd57-c648-ef11-bfe3-000d3ab78c74",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225073388",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-07-23T07:37:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d88cd36b-c748-ef11-bfe3-0022489fc6bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 50 minutes and 25 seconds.",
+            "date": "2024-07-23T07:44:52Z",
+            "extra": {}
+        },
+        {
+            "id": "af093462-c848-ef11-bfe3-0022489fc6bd",
+            "subject": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Olympia﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001506\nChargerID/Serial No.\n:\nilBhJ7\nProblem Description\n: Unable to charge both outlets at the same time\nTroubleshooting\n:\nCan  you please provide me a timestamp of the occurrence?\nFor future reference, your ticket number is\n0370382\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-23T07:51:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53b07e85-cb48-ef11-bfe3-000d3ab78c74",
+            "subject": "RE: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Francisco and thank you for supporting.\nIt happens also yesterday two times. If a car is on a charging session and another EV connect to the 2\nnd\nDC plug either it can’t charge or stops the session for  the 1\nst\nEV.\nCould it be an issue from CPO backend ?",
+            "date": "2024-07-23T08:14:10Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "36c878f1-f448-ef11-bfe3-0022489fc6bd",
+            "subject": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Olympia,\nI have searched the logs and found the problem.\nAs you can see, there are several times where QA13-14 and QA21-22 are showing AbNormal state.\nPlease replace these contactors. This should bring the operation back to the charger completely fine.\nI will send this ticket to your queue (RC-IT, since this is a Italy charger), please pick it up and give me a call if needed on-site support. Also please warn me with at least 1 day notice. Or reach out to me via M.Teams\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-23T13:10:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "52411ebe-f848-ef11-bfe3-0022489fc6bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 5 hours, 52 minutes and 55 seconds.",
+            "date": "2024-07-23T13:37:47Z",
+            "extra": {}
+        },
+        {
+            "id": "ca5f447f-8149-ef11-bfe2-0022489961b0",
+            "subject": "RE: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Dear Francisco thank you for your support.\nCertified technician can take over this issue within today or tomorrow. Can you please send us in detail which is the needed information to provide .\nNeed equipment for any test to metering?\n2 contactors (any photo of those inside the charger)\nMain power off\n…\nLooking forward to your reply.\nOlympia",
+            "date": "2024-07-24T05:56:43Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e081b367-8c49-ef11-bfe2-0022489a2913",
+            "subject": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Olympia, good morning. I hope you are doing well.\nTake 4x contactor as spare parts, as we are not sure which contactors have the feedback faulty, it's better to replace both.\nFollow the 5 safety rules:\nDisconnect completely\nSecure agains reconnection\nVerify absence of operating voltage\nCarry out earthing and short-circuiting\nProvide protection against adjacent live parts\nFor the replacement of the contactors I send in attachment the repair instructions\nPlease pay close attention to this last sentence, mark the copper parts before dismounting so that you can reproduce the sequence when mounting again!\nIf you have any more question please do not hesitate to ask :)\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-24T07:14:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4bb44bd3-9149-ef11-bfe2-000d3a687981",
+            "subject": "R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Good morning All,\nwould these contactors fine : L2D0091400??\nKR\nLuca\nWith best regards,\nLuca RIZZI\nSiemens S.p.A.\nRC-IT SI E CS\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3406071453\nmailto:luca.rizzi@siemens.com\nwww.siemens.it\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmercoledì 24 luglio 2024 09:40\nA:\nPeratsaki, Olympia (RC-GR SI S) <olympia.peratsaki@siemens.com>\nCc:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nOggetto:\nID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615\nHello Olympia, good morning. I hope you are doing well.\nTake 4x contactor as spare parts, as we are not sure which contactors have the feedback faulty, it's better to replace both.\nFollow the 5 safety rules:\nDisconnect completely\nSecure agains reconnection\nVerify absence of operating voltage\nCarry out earthing and short-circuiting\nProvide protection against adjacent live parts\nFor the replacement of the contactors I send in attachment the repair instructions\nPlease pay close attention to this last sentence, mark the copper parts before dismounting so that you can reproduce the sequence when mounting again!\nIf you have any more question please do not hesitate to ask :)\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-24T07:53:37Z",
+            "extra": {
+                "sender": "luca.rizzi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "948ce7f0-9249-ef11-bfe2-0022489a2913",
+            "subject": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Luca,\nThe MLFB for the contactors is the following:\nFrom the UC spare parts list, where this is the code, the contactor is a bit different:\nAs you can see, SiD is 1000V and SiUC is 900V, I recommend you to only use the codes in the correct spare part list.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-24T08:01:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "32e41d80-8b4d-ef11-bfe2-000d3a697718",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225075964",
+            "body": "Valerio FILOCAMO was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-07-29T09:18:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db058b72-8e4d-ef11-bfe2-000d3ab1a5a5",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225075977",
+            "body": "Luca RIZZI was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-07-29T09:39:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b668cf15-6c9c-0b08-b1e7-bc82a34a97f5",
+            "subject": "NOTE TO L3",
+            "body": "Problem Description :\nQA13-14 and QA21-22 CMD:ON & FBK:OFF, delivery has somehow been delayed in case we needed to replace the contactors.\nSuggestion, replace QA13-14 and QA21-22 using QA19-20 and QA23-24\nsince it's high flex without dispenser (no DC3 nor DC4 used)\nAction Performed (L2) :\nError found and solution provided\nCharger SW Version: v4.0.11\nReason for Handover (L3) :\nRC-GR doesn't have training nor on-site technician\n. RC-IT which usually supports these activities will no be able to provide support for the next 2 weeks.\nAligned with Experts' manager, should be handled by L3 since they are not trained, should be emphasized to enroll in Trainings.\nRC is requesting support tomorrow since it fears escalation but already acknowledged that it was in very short notice so knows that tomorrow is probably not possible. Please align a date.\nFault history : Picture in attachment (only contactor errors, there is an AC outlet issue but is being handled in a different ticket separately)",
+            "date": "2024-08-07T15:11:29Z",
+            "extra": {}
+        },
+        {
+            "id": "27e4365c-5d55-ef11-bfe3-000d3ab1a5a5",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225080736",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-08-08T08:08:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "25d97f2f-1d56-ef11-bfe3-002248a44b33",
+            "subject": "RE: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Good morning Olympia,\nMy name is Sambath, I am supporting Fosco with the analysis of this issue and I will take over the ticket in the next days.\nI checked and analyzed the logs of the charger, and came to the following conclusions :\nOn 22.07, I noticed a failed parallel charging session. However, the reason of the failure does not stand in the OGC (outgoing coil/contactor)\nThe reason of the interruption during parallel charging seems to rely in the converter re-grouping phase, happening when the second outlet is in cable check phase. However, we need to investigate more on this and I will involve R&D to support me.\nBoth outlets are charging fine when performing single charging sessions (not in parallel)\nAbnormal feedbacks from the contactors DC13-14 and DC21-22 are normal to happen. I did not notice any reason why the outgoing contactors did not enable the parallel charging session.\nI attach to this email a report I did of the analysis of the failed parallel charging on 22.07.\nThe conclusion is that, at the moment, there is no need to replace QA13-14 and QA21-22.\nFosco informed me that today you scheduled an onsite visit to replace the contactors. If possible, we could use this timeframe to perform some parallel charging tests and record more data remotely.\nWith best regards,\neMobility Tech Support Team - Sambath.K.S",
+            "date": "2024-08-09T07:01:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fb67c8d5-2056-ef11-bfe2-0022489e9c81",
+            "subject": "RE: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Good morning Olympia,\nMy name is Sambath, I am supporting Fosco with the analysis of this issue and I will take over the ticket in the next days.\nI checked and analyzed the logs of the charger, and came to the following conclusions :\nOn 22.07, I noticed a failed parallel charging session. However, the reason of the failure does not stand in the OGC (outgoing coil/contactor)\nThe reason of the interruption during parallel charging seems to rely in the converter re-grouping phase, happening when the second outlet is in cable check phase. However, we need to investigate more on this and I will involve R&D to support me.\nBoth outlets are charging fine when performing single charging sessions (not in parallel)\nAbnormal feedbacks from the contactors DC13-14 and DC21-22 are normal to happen. I did not notice any reason why the outgoing contactors did not enable the parallel charging session.\nI attach to this email a report I did of the analysis of the failed parallel charging on 22.07.\nThe conclusion is that, at the moment, there is no need to replace QA13-14 and QA21-22.\nFosco informed me that today you scheduled an onsite visit to replace the contactors. If possible, we could use this timeframe to perform some parallel charging tests and record more data remotely.\nWith best regards,\neMobility Tech Support Team - Sambath.K.S",
+            "date": "2024-08-09T07:27:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3e0c85e3-2156-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Sambath and thank you for supporting.\nUnfortunately, It isn’t feasible to have 2 EVs for testing now. Now they don’t even have on site one EV.\nThis issue with parallel charging happens very often, almost every day. Shall I ask some report of failed sessions by CPO ?",
+            "date": "2024-08-09T07:35:09Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8319b3ca-2756-ef11-bfe3-002248a44b33",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225081244",
+            "body": "Sambath KS was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-08-09T08:17:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8dcf15d6-b458-ef11-bfe3-0022489966da",
+            "subject": "R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Sambath,\nThanking you for the support so far.\nI understood from Olympia that intervention is arranged for tomorrow morning.\nI kindly ask you to support as much as possible the technician at site to replace the contactors.\nIt’s important to solve the issue with this intervention and more avoid customer claims.\nPlease keep us informed for any support may be needed.\nAre you involved in the AC meter spare parts? Do you know what the status of the delivery ?\nWith best regards,\nAlex Cadei\nSiemens S.p.A.\nRC-IT SI E\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3666393898\nmailto:alex.cadei@siemens.com\nwww.siemens.it\nSiemens S.p.A., with registered office in Milan, Via Vipiteno no. 4, share capital of Euro 65,000,000.00, fully paid-in, fiscal code, VAT and filing number with the Companies Register of di Milano Monza Brianza Lodi no. 00751160151, company with a sole shareholder and subject to the direction and coordination of Siemens AG.",
+            "date": "2024-08-12T14:12:03Z",
+            "extra": {
+                "sender": "alex.cadei@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7d12d337-6659-ef11-bfe3-000d3a67b152",
+            "subject": "RE: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Dear Alex,\nI hope all is well with you. Please beware that yesterday we had an intervention to replace the contactor, but unfortunately, the same could not be completed. The spare part (contactor) received at site is not compatible with the 300 kW variant. I completely understand the pressure from the customer side and am trying to resolve this issue as soon as possible.\nI am requesting your support for the following spares:\nContactor\nState Monitor:\nSuggesting to procure one state monitor also after considering the pressure from the customer. There is a chance of state monitor failure, which can also lead to this abnormal behavior during a cable check. Yesterday also, we were unable to reproduce the error on site, and both outlets work normally.\nRegarding the AC outlet issue, I am not involved in spare parts ordering. Maybe I can check and update you on the status.\nPlease ensure the availability of two EVs during the next intervention so that we can test the parallel charging issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-08-13T11:21:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a5c7d8e-e759-ef11-bfe3-002248a44b33",
+            "subject": "Risposta automatica: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "﻿Sarò fuori ufficio sino al 23.08.2024 compreso.\nI will be out of office till 23.08.2024 included with limited access to my e-mail.\nThis e-mail will not be transmitted automatically.\nWith Best Regards\nAlex Cadei",
+            "date": "2024-08-14T02:47:44Z",
+            "extra": {
+                "sender": "alex.cadei@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "88b62eca-ff5d-ef11-bfe3-000d3abae760",
+            "subject": "Re: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hi Sambath,\nHi Olympia,\nWhich is the status of this trouble shooting?\nAre the spare parts on the way to the customer?\nWhen is planned the intervention?\nA. Cadei\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmercoledì, agosto 14, 2024 9:47 AM\nA:\nCadei, Alex (RC-IT SI E PROP&CP) <alex.cadei@siemens.com>; Peratsaki, Olympia (RC-GR SI S) <olympia.peratsaki@siemens.com>\nCc:\nPeratsaki, Olympia (RC-GR SI S) <olympia.peratsaki@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nOggetto:\nRE: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615\nDear Alex,\nI hope all is well with you. Please beware that yesterday we had an intervention to replace the contactor, but unfortunately, the same could not be completed. The spare part (contactor) received at site is not compatible with the 300 kW variant. I completely understand the pressure from the customer side and am trying to resolve this issue as soon as possible.\nI am requesting your support for the following spares:\nContactor\nState Monitor:\nSuggesting to procure one state monitor also after considering the pressure from the customer. There is a chance of state monitor failure, which can also lead to this abnormal behavior during a cable check. Yesterday also, we were unable to reproduce the error on site, and both outlets work normally.\nRegarding the AC outlet issue, I am not involved in spare parts ordering. Maybe I can check and update you on the status.\nPlease ensure the availability of two EVs during the next intervention so that we can test the parallel charging issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-08-19T07:51:15Z",
+            "extra": {
+                "sender": "alex.cadei@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "25750138-c85e-ef11-bfe3-0022489e9c81",
+            "subject": "FW: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Hello Sambath.\nBased on our intervention on August 13\nth\n, is it confirmed that contactors need to be replaced – right ? How many contactors do we need to order ?\nAs discussed yesterday, we are keeping monitoring the operation the last week and successful charging session are provided by both DC plugs.\nWe don’t know if parallel charging is available.\n@RIZZI, Luca (RC-IT SI E CS)\nDear Luca, I am preparing our reply to customer, requesting one more intervention with the availability of 2 EVs on site.\nI need to know the delivery date of spare parts (AC meter and contactors). Can you please support on this ?\nThank you.\nOlympia",
+            "date": "2024-08-20T07:45:55Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2f31b1b0-e45e-ef11-bfe3-0022489966da",
+            "subject": "RE: FW: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Dear Olympia,\nYes, we were planned to replace the contactors. Please order 4 Nos of contactors for both the outgoing contactors.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-08-20T11:09:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dbbc4c48-e55e-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 27 days, 21 hours, 36 minutes and 7 seconds.",
+            "date": "2024-08-20T11:13:57Z",
+            "extra": {}
+        },
+        {
+            "id": "d9fa504e-e55e-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 8 seconds.",
+            "date": "2024-08-20T11:14:04Z",
+            "extra": {}
+        },
+        {
+            "id": "4ab3be69-e85e-ef11-bfe3-002248a2f864",
+            "subject": "RE: FW: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "So, although DC sessions are provided by both plugs, we need to replace contactors.\nThank you Sambath.",
+            "date": "2024-08-20T11:36:19Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cfe91afa-a9a6-ccac-96e8-b35063010297",
+            "subject": "Status Update : 23/08/2024",
+            "body": "Waiting for spare availability and intervention",
+            "date": "2024-08-23T03:45:56Z",
+            "extra": {}
+        },
+        {
+            "id": "a409281e-9405-bb9f-aa51-8d9c1a9a7667",
+            "subject": "Status Update : 30/08/2024",
+            "body": "Waiting for spare availability and intervention",
+            "date": "2024-08-30T06:52:51Z",
+            "extra": {}
+        },
+        {
+            "id": "22eb0c97-38a7-a6d9-9a7c-7ac1e21fb162",
+            "subject": "Status Update : 06/09/2024",
+            "body": "Waiting for spare availability and intervention",
+            "date": "2024-09-06T03:07:20Z",
+            "extra": {}
+        },
+        {
+            "id": "241c9cb5-b871-ef11-a670-0022489d464a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 23 days, 22 hours, 58 minutes and 39 seconds.",
+            "date": "2024-09-13T10:12:43Z",
+            "extra": {}
+        },
+        {
+            "id": "c061ca98-abe5-66a2-9bd5-267de4c5dec3",
+            "subject": "Status Update : 13/09/2024",
+            "body": "Site intervention completed & Planned to observe the charger during the weekends",
+            "date": "2024-09-13T10:15:21Z",
+            "extra": {}
+        },
+        {
+            "id": "d1209346-bd71-ef11-a670-0022489e1eb4",
+            "subject": "RE: FW: R: ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00315001615",
+            "body": "Dear colleagues hello.\nFour contactors were replaced and charging stations is now available. There wasn’t any EV on site to test parallel charging session.\nWe can close the ticket and if needed we will request your support again by opening a new one.\nWishing you a pleasant weekend.\nBest regards,\nOlympia",
+            "date": "2024-09-13T10:45:30Z",
+            "extra": {
+                "sender": "olympia.peratsaki@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9ea6ad83-7985-60aa-a3ae-47ca29a0da53",
+            "subject": " Notes from ES to NOC [ 16/09/2024]",
+            "body": "a) Problem Description\n: Unable to charge parallel\nb) Suspected Root Cause\n: Contactor failure\nc\n) Action Performed:\nreplaced contactors\nd) Charger SW Version\n: v4.0.11\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-09-16T05:52:13Z",
+            "extra": {}
+        },
+        {
+            "id": "4cf32bcd-f073-ef11-a671-000d3a69a8a0",
+            "subject": "A new case manager was assigned to 0370382 CRM:00225096423",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0370382 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=81bd7665-c048-ef11-bfe2-002248a2f864",
+            "date": "2024-09-16T05:59:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "92b45520-f473-ef11-a670-000d3a67fb48",
+            "subject": "ID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel CRM:00798001277",
+            "body": "Hi Olympia,\nThanks for confirmation on closure of the case.\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0370382.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-16T06:23:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa2a8a7a-f473-ef11-a670-000d3a67fb48",
+            "subject": "Ticket 0370382 has been closed. Are you satisfied with our provided solution? CRM:00798001278",
+            "body": "Dear Olympia,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0370382\nwith the title:\nID0370382-DC/Si-D/IT[170001506] - Unable to charge parallel\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-16T06:25:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fff748b7-f473-ef11-a670-000d3a67fb48",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Field Service (RC-L2) after 2 days, 20 hours, 14 minutes and 39 seconds.",
+            "date": "2024-09-16T06:27:22Z",
+            "extra": {}
+        }
+    ]
+}

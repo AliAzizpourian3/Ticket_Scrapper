@@ -1,0 +1,90 @@
+{
+    "incident_id": "de677203-512d-45e9-bea1-156128dd9e92",
+    "ticket_number": "0427386",
+    "title": "ID0427386-DC/Si-D/TR-[Y2 / R7 313065117113] Charging sessions are aborted due to cable sensor fault error",
+    "created_on": "2025-05-27T15:31:38Z",
+    "last_activity": "2026-01-19T08:44:36Z",
+    "age": "294718",
+    "description": "Reported behavior/issue:  These two charging sessions are aborted. I observed  the \"XD101 error flag > true\" on these sessions but can you check it as well? They claim that they are having this issue too often. I added the history of XD101 fault logs from last month, aborted session in question csv files from SCB.",
+    "type": 1,
+    "priority": 596630000,
+    "stage": "Resolved",
+    "serial_number": "Y2 / R7 313065117113",
+    "case_nature_code": 580000001,
+    "chargerID": "Y2 / R7 313065117113",
+    "additional_info": [
+        {
+            "id": "5a66b3ae-0f3b-f011-b4cc-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0427386 CRM:00225206819",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0427386 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de677203-512d-45e9-bea1-156128dd9e92",
+            "date": "2025-05-27T15:31:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c689954e-733b-f011-b4cc-6045bde0265d",
+            "subject": "A new case manager was assigned to 0427386 CRM:00225206970",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0427386 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de677203-512d-45e9-bea1-156128dd9e92",
+            "date": "2025-05-28T03:24:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "894bb495-c44b-1570-b164-b13600369183",
+            "subject": "NOte",
+            "body": "DC2_CableTempSensor_XD101' initial value true - (VIV:0 PLE:1 KON:1)\nDC1_CableTempSensor_XD100' initial value true - (VIV:0 RNE:1 KON:1\nVIV:0 → in case of an invalid sensor reading\nKON:1: → in case the contact temperature sensors are not okay\nPLE:1→ in case of an plausibility error (temperature difference between +/- 25 deg C too high)\nRNE:1 → in case of an sensor reading outside the defined operation range",
+            "date": "2025-05-28T04:34:43Z",
+            "extra": {}
+        },
+        {
+            "id": "b9fd810b-843b-f011-b4cc-7c1e5236eee4",
+            "subject": "ID0427386-DC/Si-D/TR-[Y2 / R7 313065117113] Charging sessions are aborted due to cable sensor fault error CRM:01251001389",
+            "body": "Dear Furkan Ahmet Goren,\nThank you for reaching\nout\nto eMobility Support. My name is\nSunil\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R7 313065117113\nChargerID/Serial No.\n:\nY2 / R7 313065117113\nProblem Description\n:  Charging sessions are aborted due to cable sensor fault error\nTroubleshooting\n:\nAs checked in Logs of charger for\ntransactionId\":100861044 & 100861013\nSession was stopped due to\n(DC2 Errorcode:4) on further analysis it was observed that Temperature difference for PT1 & PT2 was more than 25deg C & error gets rectified by itself after sometime.\n4\nG_OUTLET_STAT_CODE_CHARGECABLE_TEMPERATURE_ERROR\nOutlet not ready - charging cable temperature sensor error, reason\nIt is also observed that difference in temperature has exceeded multiple times in the past on DC2\ntemperature error is also recorded in DC1 but difference in temperature between Pt1 & Pt2 is not available.\nCould you please check below points in DC2 :\n- Dirt on CCS pins\n-\nWater ingress on CCS Plug\n- Corrosion of connector blades\n- Other causes to be verified (Vehicle Sockets)\nIf above points found to be ok then Cable need to be replaced.\nPlease note currently there is can communication error in Charger please check the CAN connection with the converters.\nSpare part detail:\n8EM5903-0AA02-6AA2 : Charging Cable CCS2 250A 1000V 5,82m:Qty1\nFor future reference, your case number is\n0427386\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-28T05:24:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b14c52e-883b-f011-b4cc-7c1e5236eee4",
+            "subject": "0427386 - ID0427386-DC/Si-D/TR-[Y2 / R7 313065117113] Charging sessions are aborted due to cable sensor fault error CRM:01251001390",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0427386 ﻿from the\nTechnical Support\nto the\neMobility\nRC-TR SI\nE Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX(may be)\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nX(may be)\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobil\nity RC-TR SI\nE Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-28T05:54:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49c95b67-e13f-f011-877a-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0427386 CRM:00225209436",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0427386 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de677203-512d-45e9-bea1-156128dd9e92",
+            "date": "2025-06-02T18:43:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8798ec3d-e3db-f011-8543-7c1e52880fe1",
+            "subject": "Ticket 0427386 has been closed. Are you satisfied with our provided solution? CRM:00225306563",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0427386\nwith the title:\nID0427386-DC/Si-D/TR-[Y2 / R7 313065117113] Charging sessions are aborted due to cable sensor fault error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-18T07:29:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

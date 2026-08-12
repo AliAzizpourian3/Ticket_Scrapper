@@ -1,0 +1,716 @@
+{
+    "incident_id": "76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+    "ticket_number": "0390195",
+    "title": "ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption",
+    "created_on": "2024-11-15T14:35:06Z",
+    "last_activity": "2025-03-10T14:39:30Z",
+    "age": "148080",
+    "description": "Reported behaviour/issue:\nCharging processes but no consumption\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:  No\nWarranty Status: Active\nUpdate 11.12.2024\nWeiterhin kein Verbrauch über LP3. LP4 funktioniert im Vergleichszeitraum ohne Probleme.\nDas Problem besteht weiterhin an LP 3.",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "MCe2kQ",
+    "stage": null,
+    "serial_number": "MP / P1 170000111",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ed56da74-44a4-ef11-8a69-000d3ab71bc2",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225125177",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2024-11-16T17:59:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0f126c8-b07a-233e-bb5b-4ebe7288045b",
+            "subject": "Issue : EN",
+            "body": "Charging processes but no consumption\nNo charging process with consumption has taken place on the LP 3 on the dispenser since commissioning, although the LS has been used several times.\nLP 4 does not have these anomalies.\nIt affects the serial number F2R6455143.\nSoftware version: v5.0.21-0-g33832fc\nOCPP backend connection: Yes",
+            "date": "2024-11-16T18:00:14Z",
+            "extra": {}
+        },
+        {
+            "id": "5f5cc4fd-4ea4-ef11-8a6a-7c1e5235925f",
+            "subject": "ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Dear Kjell,\nThank you for reaching out to eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Dispenser D - ERK\nMain Asset\n:\nMP / P1 170000111\nChargerID/Serial No.\n:\nMCe2kQ\nProblem Description\n: Charging processes but no consumption\nWe are investigating logs based on same we will take further steps. Allow us some time for same.\nFor future reference, your ticket number is\n0390195\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBoddeda Giridhar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-16T19:14:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "10884ef6-8a26-6454-933c-76b23153b901",
+            "subject": null,
+            "body": "2024-11-16T16:56:07.759298+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'Outlet_DC4_codes' changed to true - (DC4 Errorcode:24)\n2024-11-14T05:13:51.343513+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'Outlet_DC4_codes' changed to true - (DC4 Errorcode:20)\n2024-11-03T17:03:43.412954+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'IMD_BC2' changed to true - (insulation resistance dropped: 474kOhm)\n2024-11-02T11:35:21.917252+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'Outlet_DC4_codes' changed to true - (DC4 Errorcode:24)\n2024-11-01T17:42:40.847622+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'Outlet_DC4_codes' changed to true - (DC4 Errorcode:7)\n2024-10-24T09:10:29.454389+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'Outlet_DC4_codes' changed to true - (DC4 Errorcode:1)",
+            "date": "2024-11-16T19:30:05Z",
+            "extra": {}
+        },
+        {
+            "id": "3bea0aec-9775-c08f-a0ce-89d6784284c0",
+            "subject": null,
+            "body": "Error flag value = true when error occurs and this results in outlet going out of order. This can occur in one of the two cases mentioned below:\n(a) Outgoing coils welded are detected when charging is OFF (this could happen in critical condition when power contacts are detected as welded with aux contact stuck {Fbk:1} or not stuck {Fbk:0} for long duration of time)\n(b) If weld detection cannot be enabled due to internal error or when weld detection feature has been disabled and make-break timeout has occurred (this occurs when CMD:0, FBK:1 for time duration of 1 sec)",
+            "date": "2024-11-17T00:48:23Z",
+            "extra": {}
+        },
+        {
+            "id": "7be380e4-06d4-6858-b020-c51d34956663",
+            "subject": null,
+            "body": "1\n2024-11-08T18:24:38.175Z\n2024-11-08T18:24:34.360687+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'DC_Contactor_MG1-MG2_QA9-10' changed to false\nMCe2kQ\n2\n2024-11-08T18:24:34.413Z\n2024-11-08T18:24:34.168932+00:00 swcpu [user:debug] [EFT] PLC Error Flag value: true->false, Name: DC_Contactor_MG1-MG2_QA9-10, Description: coontactor ok\nMCe2kQ\n3\n2024-11-08T17:55:06.816Z\n2024-11-08T17:55:06.181708+00:00 sicharge-cp [local0:err] sicharge-cp-backend/7ea0b56c97dc[713]: PLC-Error-Flag 'DC_Contactor_MG1-MG2_QA9-10' changed to true - (coontactor stuck at ON feedback)\nMCe2kQ\n4\n2024-11-08T17:55:06.316Z\n2024-11-08T17:55:06.188590+00:00 swcpu [user:debug] [EFT] PLC Error Flag value: false->true, Name: DC_Contactor_MG1-MG2_QA9-10, Description: coontactor stuck at ON feedback\nMCe2kQ\n5\n2024-11-08T05:08:46.424Z\n2024-11-08T05:08:46.304741+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors stuck after early timeout, CMD: 0, FBK: 1\nMCe2kQ\n6\n2024-11-08T05:08:46.424Z\n2024-11-08T05:08:46.325677+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors no longer stuck, CMD: 0, FBK: 0, EarlyTimeout: Reset, ExtendedTimeout: Reset\nMCe2kQ\n7\n2024-11-02T11:45:13.787Z\n2024-11-02T11:45:13.633764+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors stuck after early timeout, CMD: 0, FBK: 1\nMCe2kQ\n8\n2024-11-02T11:45:13.787Z\n2024-11-02T11:45:13.653117+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors no longer stuck, CMD: 0, FBK: 0, EarlyTimeout: Reset, ExtendedTimeout: Reset\nMCe2kQ\n9\n2024-10-30T15:30:16.830Z\n2024-10-30T15:30:16.792454+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors stuck after early timeout, CMD: 0, FBK: 1\nMCe2kQ\n10\n2024-10-30T15:30:16.830Z\n2024-10-30T15:30:16.811045+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors no longer stuck, CMD: 0, FBK: 0, EarlyTimeout: Reset, ExtendedTimeout: Reset\nMCe2kQ\n11\n2024-10-28T12:08:49.048Z\n2024-10-28T12:08:48.916270+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors stuck after early timeout, CMD: 0, FBK: 1\nMCe2kQ\n12\n2024-10-28T12:08:49.048Z\n2024-10-28T12:08:48.943119+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors no longer stuck, CMD: 0, FBK: 0, EarlyTimeout: Reset, ExtendedTimeout: Reset\nMCe2kQ\n13\n2024-10-27T08:23:05.211Z\n2024-10-27T08:23:05.075838+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors stuck after early timeout, CMD: 0, FBK: 1\nMCe2kQ\n14\n2024-10-27T08:23:05.211Z\n2024-10-27T08:23:05.095750+00:00 swcpu [user:debug] [OPL] DC_Contactor_DC3_QA231-232: 1st plausibilty check, Aux contact of contactors no longer stuck, CMD: 0, FBK: 0, EarlyTimeout: Reset, ExtendedTimeout: Reset",
+            "date": "2024-11-17T00:54:24Z",
+            "extra": {}
+        },
+        {
+            "id": "8cc99f2c-6d08-0811-8513-0ac078094bfd",
+            "subject": null,
+            "body": "",
+            "date": "2024-11-17T01:00:28Z",
+            "extra": {}
+        },
+        {
+            "id": "bff5e836-7819-a6e9-9e52-dbe3069fe9c0",
+            "subject": "Firmware updated from v4.0.11 to v5.0.21",
+            "body": "Will rollback the FW.",
+            "date": "2024-11-17T01:01:24Z",
+            "extra": {}
+        },
+        {
+            "id": "2b7c107b-07a6-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Hi Kjell,\nWe have identified the issue and took the necessary action.\nCould you pls confirm if you still facing the issue?\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-18T23:47:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aa6dd4a9-7ea6-ef11-b8e9-000d3ab4d5d3",
+            "subject": "AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Hi Giridhar,\nthanks for your quick response.\nThe CP3 of our Dispenser D -ERK (SN:F2R6455143) hasn’t been used since yesterday evening.\nFor a proper control, I will observe the charger for the next days.\nAfter that I can confirm or deny your question.\nBest Regards\nKjell Schmidt\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 19. November 2024 00:49\nAn:\nSchmidt, Kjell, KVE, SWK <kjell.schmidt@stadtwerke-kiel.de>\nCc:\nservice-emobility.si.de@siemens.com; Giridhar, Boddeda <boddeda.giridhar@siemens.com>\nBetreff:\nRE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487\nHi Kjell,\nWe have identified the issue and took the necessary action.\nCould you pls confirm if you still facing the issue?\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-19T14:00:48Z",
+            "extra": {
+                "sender": "kjell.schmidt@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b84d2349-b8a6-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Hi Kjell,\nThanks for Update.\nSure will wait for your response.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-19T20:53:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12c49d8b-cea6-ef11-b8e9-002248a2b1bd",
+            "subject": "Automatische Antwort: AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Sehr geehrte Damen und Herren,\nliebe Kolleginnen und Kollegen,\nvielen Dank für Ihre E-Mail. Ich bin ab dem 16 November bis einschließlich 24. November nicht im Büro.\nFalls Sie Fragen haben, rufen Sie gern Kjell Schmidt unter 0431 594-2016 an oder senden eine E-Mail an kjell.schmidt@stadtwerke-kiel.de.\nMit freundlichen Grüßen\nBjörn Grun",
+            "date": "2024-11-19T23:32:37Z",
+            "extra": {
+                "sender": "bjoern.grun@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "98d40fe4-1a51-40cb-88dc-e39a3141c966",
+            "subject": null,
+            "body": "Will followup on the case on saturday.",
+            "date": "2024-11-20T23:11:58Z",
+            "extra": {}
+        },
+        {
+            "id": "eb473489-8eaa-ef11-b8e8-7c1e5235925f",
+            "subject": "RE: AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Hi Kjell,\nWe could see couple of charging session on the DC4 Outlet.\nCould you pls confirm it from your side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-24T18:04:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "91f847ca-5e44-66b3-ba92-27052c062c0d",
+            "subject": "Successful charging session",
+            "body": "2024-11-24T18:02:12.639691+00:00 swcpu [user:debug] |2024-11-24T17:45:07|DC4|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=273|EVSE_NowPwr[kW]=91|EVSE_NowCur[A]=230|EVSE_NowVol[V]=395|EV_TarCur[A]=232|EV_TarVol[V]=408|EV_SOC[%]=68|EVSE_DESpwr[kW]=159.5|Pilot=4\nMCe2kQ\n13\n2024-11-24T18:02:07.412Z2024-11-24T18:02:02.637810+00:00 swcpu [user:debug] |2024-11-24T17:45:07|DC4|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=273|EVSE_NowPwr[kW]=91.8|EVSE_NowCur[A]=232|EVSE_NowVol[V]=395|EV_TarCur[A]=233.3|EV_TarVol[V]=408|EV_SOC[%]=68|EVSE_DESpwr[kW]=159.5|Pilot=4\nMCe2kQ\n14\n2024-11-24T18:01:56.413Z2024-11-24T18:01:51.640022+00:00 swcpu [user:debug] |2024-11-24T17:45:07|DC4|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=273|EVSE_NowPwr[kW]=93.5|EVSE_NowCur[A]=237|EVSE_NowVol[V]=395|EV_TarCur[A]=236.2|EV_TarVol[V]=408|EV_SOC[%]=68|EVSE_DESpwr[kW]=159.5|Pilot=4\nMCe2kQ\n15\n2024-11-24T18:01:46.412Z2024-11-24T18:01:41.639496+00:00 swcpu [user:debug] |2024-11-24T17:45:07|DC4|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=273|EVSE_NowPwr[kW]=94.2|EVSE_NowCur[A]=239|EVSE_NowVol[V]=395|EV_TarCur[A]=236.3|EV_TarVol[V]=408|EV_SOC[%]=67|EVSE_DESpwr[kW]=159.5|Pilot=4\nMCe2kQ\n16\n2024-11-24T18:01:36.412Z2024-11-24T18:01:31.639691+00:00 swcpu [user:debug] |2024-11-24T17:45:07|DC4|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=273|EVSE_NowPwr[kW]=94.8|EVSE_NowCur[A]=240|EVSE_NowVol[V]=395|EV_TarCur[A]=239.5|EV_TarVol[V]=408|EV_SOC[%]=67|EVSE_DESpwr[kW]=159.5|Pilot=4\nMCe2kQ\nError Flags over 1W Period.\n1\nPowerConverter[0]\n19\n2\nPowerConverter[1]\n18\n3\nOutlet_DC1_codes\n17\n4\nPowerConverter[2]\n13\n5\nOutlet_DC2_codes\n12\n6\nOutlet_DC4_codes\n11\n7\nPowerConverter[11]\n10\n8\nPowerConverter[13]\n10\n9\nPowerConverter[4]\n10\n10\nPowerConverter[14]\n9",
+            "date": "2024-11-24T18:44:40Z",
+            "extra": {}
+        },
+        {
+            "id": "6ccd0d38-ffaa-ef11-b8e9-000d3a6610b3",
+            "subject": "AW: AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487",
+            "body": "Hi Giridhar,\nYes - there were a couple of charging session on the DC4 Outlet.\nThese sessions look good and useable, but the problem is the DC3 Outlet.\nUnfortunately, there were no good charging session in the last days.\nDC3\nI think there is still a problem at DC3. Especially when you see the charging sessions at DC4 for the same time periode.\nDC4\nYour colleague Ramona tried to solve the problem last Wednesday on site. She restarted the Charger and took some changes at the router configuration.\nBest regards\nKjell\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nSonntag, 24. November 2024 19:33\nAn:\nSchmidt, Kjell, KVE, SWK <kjell.schmidt@stadtwerke-kiel.de>\nCc:\nGiridhar, Boddeda <boddeda.giridhar@siemens.com>; Grun, Björn, KVE, SWK <bjoern.grun@stadtwerke-kiel.de>; service-emobility.si.de@siemens.com\nBetreff:\nRE: AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001487\nHi Kjell,\nWe could see couple of charging session on the DC4 Outlet.\nCould you pls confirm it from your side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-25T07:31:03Z",
+            "extra": {
+                "sender": "kjell.schmidt@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f3a227a9-8077-600a-a33e-12a4c5aecebf",
+            "subject": null,
+            "body": "Reaching out to Ramona for details via Teams.",
+            "date": "2024-11-25T23:52:03Z",
+            "extra": {}
+        },
+        {
+            "id": "c6d15c96-cd68-a804-b32a-1d2d3cfcf860",
+            "subject": null,
+            "body": "1654\n2024-11-24T17:40:19.310Z2024-11-24T17:40:19.000000+00:00 secc-disp [daemon:notice] SECC[823]: {\"type\":\"stack_started\",\"timestamp\":1732470019933,\"outletType\":\"CCS\",\"payload\":null}\nMCe2kQ\n1655\n2024-11-24T17:40:19.059Z2024-11-24T17:40:16.915202+00:00 sicharge-cp [local0:info] ecog-secc-adapter/43168ed87c66[700]: attempt to start charge { outlet_id: 3, request_id: '593712b7-9073-44e8-b66c-71a797945675' }\nMCe2kQ\n1656\n2024-11-24T17:40:17.554Z2024-11-24T17:40:16.594524+00:00 sicharge-cp [local0:info] sicharge-cp-backend/4f8eeb147e16[700]: OCPP: Received result: StartTransaction (9841cfca-059a-4bf9-9197-3b5a80cd2e0e) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"transactionId\":54254095}\nMCe2kQ",
+            "date": "2024-11-26T00:12:59Z",
+            "extra": {}
+        },
+        {
+            "id": "6b9905df-9fad-4c21-a2a1-42ff72ff4600",
+            "subject": "2024-11-24T17:40:23.173168+00:00 sicharge-cp [local0:err] ecog-secc-adapter/43168ed87c66[700]: Error polling coap://10.20.17.102:5683/state Error: No reply in 4.25s",
+            "body": "2024-11-24T17:40:23.173168+00:00 sicharge-cp [local0:err] ecog-secc-adapter/43168ed87c66[700]: Error polling coap://10.20.17.102:5683/state Error: No reply in 4.25s",
+            "date": "2024-11-26T00:15:53Z",
+            "extra": {}
+        },
+        {
+            "id": "d13e12fb-ab21-abcd-9903-603101e045fe",
+            "subject": null,
+            "body": "OCPP: Received result: Authorize (411b2a65-4887-4484-9916-95568d082092) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\nDC3: Time taken for CGp Assignment: 0.5 sec, from P02_Phase: 9.9 sec\nIMD in correct measurment mode; continue with voltage check: \"DC3\"\nError: Converters apply voltage, but no measurement \"DC3\"\nOCPP: Received result: Authorize (0032e461-fa00-457c-b537-77c06aeb6b0a) - {\"idTagInfo\":{\"status\":\"Accepted\"}}",
+            "date": "2024-11-26T00:26:05Z",
+            "extra": {}
+        },
+        {
+            "id": "d115cbfd-ccae-ef11-b8e9-002248a29667",
+            "subject": "ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001556",
+            "body": "Hi RC-DE Team,\nWe need to plan for site intervention.\nUpon investigation of logs, We could see charging session terminated at Cable Check phase.\nWe need to check if the contactors QA19 and QA20 to be working fine.\nAlso, We suggest to have IMD as spare.\nWe suggest having couple of Charging sessions to simulate the reported issue.\nIf needed, We will get the ECoG logs to investigate further.\nI am writing to formally inform that we are moving case 0390195 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nmaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nMaybe\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-30T03:41:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "48dcb30c-81b0-ef11-b8e9-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225132111",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2024-12-02T07:43:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe39300a-c1b0-ef11-b8e9-6045bdde0ce3",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000329",
+            "body": "Hi Gary,\nthanks for making me aware of this.\nCan you please provide me with the suggested spare part MLFBs in plain text, so I can order them?\nThanks,\nSascha",
+            "date": "2024-12-02T15:21:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a91ec13-c1b0-ef11-b8e8-6045bddf98f2",
+            "subject": "Automatic reply: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000329",
+            "body": "I am OOO till 11th Dec , Pls expect late response, If urgent, Pls reach out to NOC Team.",
+            "date": "2024-12-02T15:21:24Z",
+            "extra": {
+                "sender": "boddeda.giridhar@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ef496b9-3e3c-f196-8377-e64f90ca551c",
+            "subject": "In Gary's absence, @Level 2: please advise.",
+            "body": "",
+            "date": "2024-12-02T15:26:18Z",
+            "extra": {}
+        },
+        {
+            "id": "f28a5340-dbb0-ef11-b8e9-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225132577",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2024-12-02T18:28:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46a6f4a5-e297-def2-96f0-c33eedeff0a4",
+            "subject": "Spares",
+            "body": "Recommended spares parts as suggested.\n8EM5903-0AA00-0AA1 : IMD",
+            "date": "2024-12-02T19:51:03Z",
+            "extra": {}
+        },
+        {
+            "id": "3bbd9be9-48b1-ef11-b8e8-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225132698",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2024-12-03T07:33:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b24d5e3-5bb1-ef11-b8e9-6045bdde0ce3",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000331",
+            "body": "Hi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Kiel\nMLFB / Bezeichnung\n8EM5903-0AA00-0AA1 : IMD\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse\nNL Hannover\nGWL?\nStörschreiben ist raus\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2024-12-03T09:49:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "61da4526-5cb1-ef11-b8e9-6045bdde0ce3",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000330",
+            "body": "Sehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen.\nOhne dies ist leider kein Technikereinsatz möglich.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0390195\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2024-12-03T09:51:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bec29a82-5fb1-ef11-b8e9-7c1e5237dbeb",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000331",
+            "body": "Hi Sascha,\nAuftrag 30727854 ist angelegt.\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Kiel\\A-30727854-Ticketnr. 0390195\\06_SV-Lieferant\\3314200689.PDF\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 3. Dezember 2024 10:52\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000331\nHi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Kiel\nMLFB / Bezeichnung\n8EM5903-0AA00-0AA1 : IMD\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse\nNL Hannover\nGWL?\nStörschreiben ist raus\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2024-12-03T10:15:34Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "327a2930-3dcb-fc72-ba13-56250b87e4a9",
+            "subject": "Semih ",
+            "body": "d-plc: TransducerDC3_TF203    Dispenser    DEVICE    true    dispenser DC3 Voltage transducer reading not plausible\nplease order one transducer\n8EM5903-0AA01-0AA5\nand the ECOG for outlet DC1 KF12\n8EM5903-0AA00-5AA6\nDC1 is sporadically ooo and in the logs we can see the coap polling showing up where we have no HF.",
+            "date": "2024-12-19T09:47:35Z",
+            "extra": {}
+        },
+        {
+            "id": "515634ad-13be-ef11-b8e8-000d3a68cce9",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00755000138",
+            "body": "Hi Denise,\nkönntest du auf die Nummer 30727854 folgende Teile bestellen?\n1 x 8EM5903-0AA00-5AA6 Charge Controller (1x CCS)\n1 x 8EM5903-0AA01-0AA5 Voltage Transducer\nLieferadresse:\nNiederlassung Hannover\nz.Hd. Ramona Hilse (ID0390195)\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nDanke dir!\nVG Rudi",
+            "date": "2024-12-19T14:15:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e69aa67-9abe-ef11-b8e8-000d3ab41b62",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00755000138",
+            "body": "Guten Morgen Rudi,\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Kiel\\A-30727854-Ticketnr. 0390195\\06_SV-Lieferant\\3314207271.PDF\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 19. Dezember 2024 15:16\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00755000138\nHi Denise,\nkönntest du auf die Nummer 30727854 folgende Teile bestellen?\n1 x 8EM5903-0AA00-5AA6 Charge Controller (1x CCS)\n1 x 8EM5903-0AA01-0AA5 Voltage Transducer\nLieferadresse:\nNiederlassung Hannover\nz.Hd. Ramona Hilse (ID0390195)\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nDanke dir!\nVG Rudi",
+            "date": "2024-12-20T06:19:48Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "da9afa34-4e38-b7e8-a8d6-5730d17c0621",
+            "subject": "Serviceeinsatz 06.01.2025",
+            "body": "IMD überprüft und getauscht → Testfunktion i.O., kein Error Code, Verdrahtung i.O., Voltage Transducer TF203 getauscht,  EcoG KF12 getauscht, HMI-Controller-Update auf Grund von Scrambled Screen durchgeführt, XF-3 getauscht. Fehler bleibt bestehen → kein Laden an DC3 möglich!! Anbei Logs der Ladetests.",
+            "date": "2025-01-06T17:47:26Z",
+            "extra": {}
+        },
+        {
+            "id": "1fdafcab-5fcc-ef11-b8e8-000d3ab11939",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225144719",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2025-01-06T18:54:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc7014c0-006c-087f-887a-97ab83949804",
+            "subject": "Translate",
+            "body": "Service call 06.01.2025\nIMD checked and replaced → test function OK, no error code, wiring OK, voltage transducer TF203 replaced, EcoG KF12 replaced, HMI controller update carried out due to scrambled screen, XF-3 replaced. Error remains → no charging possible on DC3!! Logs of the charging tests are attached.",
+            "date": "2025-01-06T23:48:01Z",
+            "extra": {}
+        },
+        {
+            "id": "bd61fa04-480a-30b0-82a0-4970a3c69f3b",
+            "subject": "Service report",
+            "body": "Ticket should remain open, since the issue was not 100% resolved. A second on-site operation will be planned.",
+            "date": "2025-01-07T10:06:47Z",
+            "extra": {}
+        },
+        {
+            "id": "7fad839b-03cd-ef11-b8e8-6045bde1171e",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000347",
+            "body": "Hi, ihr beiden,\nVielen lieben Dank, dass ihr euch während meiner Abwesenheit um das Ticket gekümmert habt. Gleiche Frage wie bei dem Ticket zuvor: könnt ihr mir bitte sagen, was hier der aktuelle Stand ist und ob wir das Ticket gegebenenfalls schon schließen können?\nViele Grüße\nSascha\nPS mit Microsoft COM Pilot erstellt",
+            "date": "2025-01-07T14:28:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9eb2125d-54cd-ef11-b8e8-000d3a68cce9",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001668",
+            "body": "Hi Rodrigo,\nCould you pls confirm if you have undertaken the second planned site intervention?\nIf So, Pls update.\nCharger is on v4.0.11 and Suggest to update it to latest v6.0.3.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-08T00:06:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ffc233b-6a6e-730b-8c45-8a536ed6882a",
+            "subject": "Analysis ",
+            "body": "Power converter are fast shutdown and serial number seems to be wrong.",
+            "date": "2025-01-08T00:08:40Z",
+            "extra": {}
+        },
+        {
+            "id": "a64b5483-78ce-ef11-8ee9-000d3ab79731",
+            "subject": "RE: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001668",
+            "body": "hi Boddeda,\nTaking over here again since Rodrigo thankfully picked this up for me during my vacation.\nI can certainly initiate a second on-site visit, but the question is what should be done then? Any spare part recommendations that you have for us?\nAs to the firmware update: we can certainly do that too. I just want to double check first with the customer that he agrees to that.\nI'll copy you in the email.\nSascha",
+            "date": "2025-01-09T10:57:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e167da7f-78ce-ef11-b8e8-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225146400",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2025-01-09T10:57:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b1d0a6fb-78ce-ef11-8ee9-0022489ad1e4",
+            "subject": "RE: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001668",
+            "body": "hi Boddeda,\nTaking over here again since Rodrigo thankfully picked this up for me during my vacation.\nI can certainly initiate a second on-site visit, but the question is what should be done then? Any spare part recommendations that you have for us?\nAs to the firmware update: we can certainly do that too. I just want to double check first with the customer that he agrees to that.\nI'll copy you in the email.\nSascha",
+            "date": "2025-01-09T11:00:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1eaa4239-7ace-ef11-8ee9-000d3ab79731",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "Hallo Herr Schmidt,\nIch habe soeben den Hinweis von unserem zentralen Support bekommen, dass wir die Ladesäule im Rahmen der Fehlerbehebung auf die neueste FW Version updaten sollen.\nKönnen Sie mir bitte kurz bestätigen, dass das in Ordnung ist? Ich würde dann sicherstellen, dass das Update nachts aufgespielt wird, wenn die Nachfrage an der Ladesäule vermutlich am geringsten ist. Parallel dazu kläre ich, inwieweit ein zweiter vor Ort Einsatz notwendig ist und was dort getan werden soll.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-01-09T11:09:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57a82cca-83ce-ef11-b8e8-000d3a68cce9",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "Hallo Herr Theil,\ndas können Sie gerne machen.\nDie aktuelle FW auf der Säule ist v6.0.3-0-g215cb74 (PRODUCTION).\nIch freue mich auf Ihre Rückmeldung.\nMit freundlichen Grüßen\nKjell Schmidt\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 9. Januar 2025 12:10\nAn:\nSchmidt, Kjell, KVE, SWK <kjell.schmidt@stadtwerke-kiel.de>\nCc:\nGiridhar, Boddeda <boddeda.giridhar@siemens.com>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353\nHallo Herr Schmidt,\nIch habe soeben den Hinweis von unserem zentralen Support bekommen, dass wir die Ladesäule im Rahmen der Fehlerbehebung auf die neueste FW Version updaten sollen.\nKönnen Sie mir bitte kurz bestätigen, dass das in Ordnung ist? Ich würde dann sicherstellen, dass das Update nachts aufgespielt wird, wenn die Nachfrage an der Ladesäule vermutlich am geringsten ist. Parallel dazu kläre ich, inwieweit ein zweiter vor Ort Einsatz notwendig ist und was dort getan werden soll.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-01-09T12:18:11Z",
+            "extra": {
+                "sender": "kjell.schmidt@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b2ec32b7-92ce-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "hi Boddeda,\nfollowing the customers feedback could you please make sure that the charger is updated to the newest firmware version tonight?\nI will make sure to initiate the firmware download now so that it can be updated.\nthanks so much,\nsascha",
+            "date": "2025-01-09T14:05:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "beccb208-93ce-ef11-b8e8-6045bde1171e",
+            "subject": "RE: AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "hi Boddeda,\nfollowing the customers feedback could you please make sure that the charger is updated to the newest firmware version tonight?\nI will make sure to initiate the firmware download now so that it can be updated.\nthanks so much,\nsascha",
+            "date": "2025-01-09T14:07:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d3daa80b-bfce-ef11-b8e9-0022489bcff4",
+            "subject": "RE: AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "Hi Sascha,\nThanks for confirmation about update from Customer.\nI am in Night Shift; I will get the activity done.\nWe will check for the all the outlets to be available, Before activating update, So that it won't hamper the active charging session.\nWill update you once activity is done.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T19:22:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f8e902e-c0ce-ef11-b8e9-0022489bcff4",
+            "subject": "RE: AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000353",
+            "body": "Hi Sacha,\nUpon investigation,\nWe could see the Charger is on v6.0.3.\nWe have checked configuration, Could you pls confirm if the Outlet is deliberately put inoperative? if So, Why?\nWe have following Active Error Flags:\nDC_Coils_MG1-MG4_SelfTest\nPLC\nSYSTEM\ntrue\nstatus: failed, reason: smc[0,1,2,3]-[F,P,P,P]-[0,0,0,0]\nfalse\noutlet3\nsicharge-cp\nOUTLET\ntrue\nOutlet 3: outoforder, LEMState: undefined\nWe could see the self test of SMC[0] is failed. We need to check the QA9-QA10 for proper functioning.\nWe need to apply external 24 Volt and check if they are operating properly.\nIf now, functioning properly, We need to consider replacing Contactor.\nIf they are functioning properly. We need to investigate as per following schematic:\nWe need to check for the loose connections ( XD6, XD42, XD10.3 ),\nAlso, We need to validate if we have 24v.\nDo let us know if you have any other query, I can assist with.\nAlso, Do let us know if needed our assistance in the site intervention.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T19:30:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac6cb94b-810c-7a55-be8d-4e95c488a14e",
+            "subject": null,
+            "body": "PLC-Error-Flag 'Outlet_DCX_codes' are having error flags.\n7.x\nG_OUTLET_STAT_CODE_CGP_ERROR_ACTIVE\nOutlet not ready - primary converter group has error, reason:\nxxx\n16\nG_OUTLET_STAT_CODE_DISPENSER_COMM_ERROR_MODBUS\nOutlet not ready - dispenser has communication error with PLC",
+            "date": "2025-01-09T20:30:08Z",
+            "extra": {}
+        },
+        {
+            "id": "e38eccc4-7c3f-5f24-bc09-97a73da81f0c",
+            "subject": null,
+            "body": "Over period of 1W,",
+            "date": "2025-01-09T20:30:52Z",
+            "extra": {}
+        },
+        {
+            "id": "daec3c96-2dcf-ef11-8ee9-7c1e5235ee6e",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000347",
+            "body": "Hi Sascha,\nTicket ist gepflegt-bleibt offen.\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nTel.: +4915252610569\nMobil: +4915252610569\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 7. Januar 2025 15:28\nAn:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>; Artes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000347\nHi, ihr beiden,\nVielen lieben Dank, dass ihr euch während meiner Abwesenheit um das Ticket gekümmert habt. Gleiche Frage wie bei dem Ticket zuvor: könnt ihr mir bitte sagen, was hier der aktuelle Stand ist und ob wir das Ticket gegebenenfalls schon schließen können?\nViele Grüße\nSascha\nPS mit Microsoft COM Pilot erstellt",
+            "date": "2025-01-10T08:33:45Z",
+            "extra": {
+                "sender": "ramona.hilse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "33fe9a2d-57cf-ef11-b8e8-6045bde1171e",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000357",
+            "body": "Hi Boddeda,\nThanks so much for analyzing this ticket again and also the extensive troubleshooting instructions.\nI will now order needed spare parts so that we can organize another on-site visit.\nJust to be sure though: you're suggesting for me to order the following part, correct?\n8EM5903-0AA00-7AA8 -QA9, -QA10, ... -QA24, -QA231 Contactor DC 2P 500A 1200VDC\nIf that were to be correct, do we need just one or a multiple contactors?\nI believe in the past, we had similar tickets where I ended up only ordering one contractor and we ultimately needed it multiple ones so just trying to be on the safe side here.\nPlease advise,\nSascha",
+            "date": "2025-01-10T13:31:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d3c6ee4-7095-82e6-860d-8f067883fd33",
+            "subject": "Semih",
+            "body": "we have to check the connection between SICD and DIspenser there are issues while sesion start\n16\nG_OUTLET_STAT_CODE_DISPENSER_COMM_ERROR_MODBUS\nOutlet not ready - dispenser has communication error with PLC\nSiD v5.0.23+\n7.7\nConverter group → Dispenser connection not okay\nso either the connection is wrongly connected or the wire is damaged",
+            "date": "2025-01-17T10:29:15Z",
+            "extra": {}
+        },
+        {
+            "id": "4872b9d9-25dd-ef11-8eea-0022489fb3e7",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225154406",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2025-01-28T03:13:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ccefbaa4-90df-ef11-8eea-000d3ab11939",
+            "subject": "ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00798001824",
+            "body": "Hi Sascha\nGreetings of the day,\nYes, You are right,\nWe need to order the contactor.\nAnd regarding Quantity, we can't suggest with precision, Based on the logs,\nWe can suggest troubleshooting first if respected wirings are loose/faulty. If they really need to be replaced.\nFeel free to reachout via Teams/call, If you need further assistance.\nI am writing to formally inform that we are moving case 0390195 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T05:03:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b59cc524-06e2-ef11-8ee9-002248a0b76d",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000385",
+            "body": "Hi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Kiel\nMLFB / Bezeichnung\n2x 8EM5903-0AA00-7AA8 DC Contactor\nAuftragsnummer\nMuss bitte noch angelegt werden\nTicketnummer\nSiehe oben\nLieferadresse\nNiederlassung Hannover\nGWL?\nTBD, Störschreiben ist raus\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-03T08:09:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ae46613f-0fe2-ef11-8eea-000d3ab4d5d3",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000385",
+            "body": "Hallo Sascha,\nAuftrag 30727854.\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Kiel\\A-30727854-Ticketnr. 0390195\\06_SV-Lieferant\\3314219158.PDF\nRequest RMA Nummer - 147\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 3. Februar 2025 09:12\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000385\nHi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Kiel\nMLFB / Bezeichnung\n2x 8EM5903-0AA00-7AA8 DC Contactor\nAuftragsnummer\nMuss bitte noch angelegt werden\nTicketnummer\nSiehe oben\nLieferadresse\nNiederlassung Hannover\nGWL?\nTBD, Störschreiben ist raus\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-03T09:14:20Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c06a1ab9-d0e2-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0390195 CRM:00225157869",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0390195 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76f138ce-5ea3-ef11-a81c-000d3ab3d155",
+            "date": "2025-02-04T08:19:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "937998f5-fe66-773a-956a-a802fe1c901a",
+            "subject": "Semih ",
+            "body": "Connection to DC3 is not attached on the charger side, only on dispenser side there is cables attached but on charger side there is nothing connected to B+ and B- so that has to be connected in the right order otherwise the DC3 will never work",
+            "date": "2025-02-04T12:59:20Z",
+            "extra": {}
+        },
+        {
+            "id": "9c4d077e-1c5b-e9c9-9e18-8c41fccf8bc2",
+            "subject": "Semih ",
+            "body": "",
+            "date": "2025-02-04T13:18:58Z",
+            "extra": {}
+        },
+        {
+            "id": "8ce378f2-7de4-ef11-8eea-000d3a67d7cb",
+            "subject": "ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Hallo\nWie steht es um diesen Dispenser, die DC3 Leitung war nicht angesteckt wie ich vom Einsatz der kollegen mitbekommen hatte. Wurde dies jetzt schon erfolgreich angebracht?\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nSemih Sentuerk\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-02-06T11:31:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a56d722-53f0-ef11-9341-7c1e527622e8",
+            "subject": "RE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Hi Ramona,\nlaut Work Order steht dieser Einsatz in Kiel noch aus, richtig?\nWeißt Du schon, wann Du den Einsatz in Angriff nehmen willst?\nIch sehe allerdings gerade, dass wir noch die Info der SW Kiel brauchen, dass die Ladesäule bereits bei der Bundesnetzagentur / dem Eichamt registriert wurde.\nIch frage noch mal nach & nehme Dich in CC.\nGrüße\nSascha",
+            "date": "2025-02-21T12:55:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9f52c76-53f0-ef11-9342-000d3aba081f",
+            "subject": "RE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Hi Ramona,\nlaut Work Order steht dieser Einsatz in Kiel noch aus, richtig?\nWeißt Du schon, wann Du den Einsatz in Angriff nehmen willst?\nIch sehe allerdings gerade, dass wir noch die Info der SW Kiel brauchen, dass die Ladesäule bereits bei der Bundesnetzagentur / dem Eichamt registriert wurde.\nIch frage noch mal nach & nehme Dich in CC.\nGrüße\nSascha",
+            "date": "2025-02-21T12:57:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "83bf01de-53f0-ef11-9341-7c1e527622e8",
+            "subject": "0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000410",
+            "body": "Hallo Herr Schmidt, hallo Björn,\nich bin soeben wieder auf dieses Ticket aufmerksam geworden. Demnach steht noch ein weiterer Einsatz von Ramona aus.\nDa es sich jedoch um eine ERK Ladesäule handelt und der Dispenser durch die SW Kiel installiert und angeschlossen wurde, würde ich erneut bitten, das Störschreiben zu bestätigen und zum anderen zu versichern, dass die Ladesäule beim Eichamt bzw. der Bundesnetzagentur registriert wurde.\nZuvor darf ich Ramona nicht vor Ort schicken.\nMit der Bitte um kurze Rückmeldung & sorry für die Umstände.\nMit freundlichen Grüßen\nSascha Theil\n#######\nSehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde.Ohne dies ist leider kein Technikereinsatz möglich.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0390195\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nSascha Theil\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-02-21T13:00:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc41f9b9-7af2-ef11-be1f-7c1e52350ea5",
+            "subject": "AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000410",
+            "body": "Guten Morgen Herr Theil,\ndas Störschreiben bestätigen wir Ihnen hiermit.\nDie Ladesäule ist bei der BNetzA gemeldet.\nMit freundlichen Grüßen\nKjell Schmidt\nKjell Schmidt\nKVE\nInnovationsmanager E-Mobilität\nM.Sc.\nTelefon\n0431 594-2016\nkjell.schmidt@stadtwerke-kiel.de\nFrische Energie für die Zukunft.\nFolgen Sie uns:\nDie gesetzlichen Pflichtangaben sowie die Informationen über die Verarbeitung Ihrer personenbezogenen Daten finden Sie unter\nwww.stadtwerke-kiel.de/pflichtangaben\nund\nwww.stadtwerke-kiel.de/datenschutz\n. Diese E-Mail könnte vertrauliche und/ oder rechtlich geschützte Informationen enthalten. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese E-Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser E-Mail ist nicht gestattet.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 21. Februar 2025 14:01\nAn:\nSchmidt, Kjell, KVE, SWK <kjell.schmidt@stadtwerke-kiel.de>; Grun, Björn, KVE, SWK <bjoern.grun@stadtwerke-kiel.de>\nBetreff:\n0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000410\nHallo Herr Schmidt, hallo Björn,\nich bin soeben wieder auf dieses Ticket aufmerksam geworden. Demnach steht noch ein weiterer Einsatz von Ramona aus.\nDa es sich jedoch um eine ERK Ladesäule handelt und der Dispenser durch die SW Kiel installiert und angeschlossen wurde, würde ich erneut bitten, das Störschreiben zu bestätigen und zum anderen zu versichern, dass die Ladesäule beim Eichamt bzw. der Bundesnetzagentur registriert wurde.\nZuvor darf ich Ramona nicht vor Ort schicken.\nMit der Bitte um kurze Rückmeldung & sorry für die Umstände.\nMit freundlichen Grüßen\nSascha Theil\n#######\nSehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde.Ohne dies ist leider kein Technikereinsatz möglich.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0390195, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nSascha Theil\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-02-24T06:44:00Z",
+            "extra": {
+                "sender": "kjell.schmidt@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2046f943-caf2-ef11-be1f-000d3ab015df",
+            "subject": "FW: AW: 0390195 - ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00373000410",
+            "body": "Zur Info für den Einsatz in Kiel. (WO 0003169)\nEine weitere WO haben wir in Kiel noch, die ist aber nicht Messkreis-relevant. (WO 0003462 - QA9, QA10 Contactor DC)\nGrüße\nSascha",
+            "date": "2025-02-24T16:13:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12f93f04-cbf2-ef11-be1f-7c1e52768c07",
+            "subject": "AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Hi Sascha,\nich denke es ist nicht unsere Aufgabe Kabel zu ziehen, die kundenseitig nicht verlegt wurden. Ich werde morgen QA9-10 an dem Parent-Charger tauschen. Der Anschluss von DC 3 muss jedoch kundenseitig nachgerüstet werden!\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nTel.: +4915252610569\nMobil: +4915252610569\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 21. Februar 2025 13:58\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Hilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nBetreff:\nRE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nHi Ramona,\nlaut Work Order steht dieser Einsatz in Kiel noch aus, richtig?\nWeißt Du schon, wann Du den Einsatz in Angriff nehmen willst?\nIch sehe allerdings gerade, dass wir noch die Info der SW Kiel brauchen, dass die Ladesäule bereits bei der Bundesnetzagentur / dem Eichamt registriert wurde.\nIch frage noch mal nach & nehme Dich in CC.\nGrüße\nSascha",
+            "date": "2025-02-24T16:18:49Z",
+            "extra": {
+                "sender": "ramona.hilse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bb29f38c-cbf2-ef11-be1f-6045bddf3ff8",
+            "subject": "AW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Recht hast Du! Wenn der Kunde noch nacharbeiten muss, dann soll er das bitte tun.\nWeise ihn bitte noch mal darauf hin, wenn Du vor Ort bist.\nFalls das nicht passiert, können wir auch nichts tun & wir schließen das Ticket.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nDatum:\nMontag, 24. Februar 2025 um 17:18\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nCc:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nHi Sascha,\nich denke es ist nicht unsere Aufgabe Kabel zu ziehen, die kundenseitig nicht verlegt wurden. Ich werde morgen QA9-10 an dem Parent-Charger tauschen. Der Anschluss von DC 3 muss jedoch kundenseitig nachgerüstet werden!\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nTel.: +4915252610569\nMobil: +4915252610569\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 21. Februar 2025 13:58\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Hilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nBetreff:\nRE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nHi Ramona,\nlaut Work Order steht dieser Einsatz in Kiel noch aus, richtig?\nWeißt Du schon, wann Du den Einsatz in Angriff nehmen willst?\nIch sehe allerdings gerade, dass wir noch die Info der SW Kiel brauchen, dass die Ladesäule bereits bei der Bundesnetzagentur / dem Eichamt registriert wurde.\nIch frage noch mal nach & nehme Dich in CC.\nGrüße\nSascha",
+            "date": "2025-02-24T16:22:38Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "52e42e6a-42a9-8e71-bea9-e19088b0be7e",
+            "subject": "Ticket wurde geschlossen. Kunde muss Anschluss des Dispensers noch abschließen.",
+            "body": "",
+            "date": "2025-02-25T08:34:42Z",
+            "extra": {}
+        },
+        {
+            "id": "b709256b-53f3-ef11-be1f-7c1e523508ba",
+            "subject": "WG: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732",
+            "body": "Zur Info.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nDatum:\nDienstag, 25. Februar 2025 um 06:53\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nBetreff:\nAW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nDer Kunde weiß Bescheid. Ich denke, das Ticket können wir schließen.\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nTel.: +4915252610569\nMobil: +4915252610569\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nGesendet:\nMontag, 24. Februar 2025 17:23\nAn:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nCc:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nRecht hast Du! Wenn der Kunde noch nacharbeiten muss, dann soll er das bitte tun.\nWeise ihn bitte noch mal darauf hin, wenn Du vor Ort bist.\nFalls das nicht passiert, können wir auch nichts tun & wir schließen das Ticket.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>\nDatum:\nMontag, 24. Februar 2025 um 17:18\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>\nCc:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nBetreff:\nAW: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nHi Sascha,\nich denke es ist nicht unsere Aufgabe Kabel zu ziehen, die kundenseitig nicht verlegt wurden. Ich werde morgen QA9-10 an dem Parent-Charger tauschen. Der Anschluss von DC 3 muss jedoch kundenseitig nachgerüstet werden!\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nTel.: +4915252610569\nMobil: +4915252610569\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 21. Februar 2025 13:58\nAn:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>; Hilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>\nBetreff:\nRE: ID0390195-DC/Dispenser/DE-[F2R6455143] Charging processes but no consumption CRM:00439000732\nHi Ramona,\nlaut Work Order steht dieser Einsatz in Kiel noch aus, richtig?\nWeißt Du schon, wann Du den Einsatz in Angriff nehmen willst?\nIch sehe allerdings gerade, dass wir noch die Info der SW Kiel brauchen, dass die Ladesäule bereits bei der Bundesnetzagentur / dem Eichamt registriert wurde.\nIch frage noch mal nach & nehme Dich in CC.\nGrüße\nSascha",
+            "date": "2025-02-25T08:35:12Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6372abfa-f62d-5058-af59-960a5ea27ff9",
+            "subject": "Wurde durch Ramona erledigt.",
+            "body": "",
+            "date": "2025-02-26T10:34:49Z",
+            "extra": {}
+        }
+    ]
+}

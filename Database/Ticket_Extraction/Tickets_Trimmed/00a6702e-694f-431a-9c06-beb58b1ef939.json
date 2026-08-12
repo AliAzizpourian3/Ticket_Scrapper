@@ -1,0 +1,71 @@
+{
+    "incident_id": "00a6702e-694f-431a-9c06-beb58b1ef939",
+    "ticket_number": "0415598",
+    "title": "ID0415598-DC/Si-D/TR-[Y2/RN 313392372011] DC1_StateMonitor_KF13",
+    "created_on": "2025-03-28T08:19:22Z",
+    "last_activity": "2025-10-06T08:12:12Z",
+    "age": "24734",
+    "description": "Reported behavior/issue:\nDC1_StateMonitor_KF13\nOutlets are out of service\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "aqeP4K",
+    "stage": null,
+    "serial_number": "Y2 / RN 313392372011",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "48d0457b-a2ba-f190-be57-5803019ed49a",
+            "subject": "Update ",
+            "body": "",
+            "date": "2025-03-28T17:41:04Z",
+            "extra": {}
+        },
+        {
+            "id": "d1e870e9-fb0b-f011-bae2-6045bddf319c",
+            "subject": "ID0415598-DC/Si-D/TR-[Y2/RN 313392372011] DC1_StateMonitor_KF13 CRM:00796001474",
+            "body": "Dear Yunus Emre Temel,\nThank you for reaching\nout\nto eMobility Support. My name is\nKaushik\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / RN 313392372011\nChargerID/Serial No.\n:\naqeP4K\nProblem Description\n: DC1_StateMonitor_KF13\nThere are additional error flags active in this charger related to the DC2 power converters, etc. Kindly allow us more time to work on this issue.\nFor future reference, your case number is\n0415598\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-28T17:41:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58aacaa6-09ae-45c3-ac4c-9243fb27c56e",
+            "subject": "Notes for L2",
+            "body": "Rebooted the charger to check the active error flags . Kindly analyze the logs as it seems to be issue KF 13 power supply.",
+            "date": "2025-03-28T18:05:38Z",
+            "extra": {}
+        },
+        {
+            "id": "b87ecb2e-79d0-e08f-9182-4bbf16148ad6",
+            "subject": "note for L2",
+            "body": "Performed Hard reboot but error still persist.\nIssue in KF14( State Monitor),Fast Shutdown issue\nDC1 Errorcode:3\nDC2 Errorcode:3\n2025-03-29T00:09:48.982851+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/ab5cf1fd35b9[640]:\nPLC-Error-Flag 'DC1_StateMonitor_KF13'\nchanged from true - ('SM_1_2_3_4_CLOSE: check logs') to true - ('SM_4_1_2_3_CLOSE: check logs')\n2025-03-29T00:10:06.083187+00:00 [FW060103G1] swcpu [user:debug] [4127] [ONR] DC2 : Outlet not ready\n- state monitor fastshutdown check error\nIn logs its KF13 BUT in SLD its KF14",
+            "date": "2025-03-29T00:29:46Z",
+            "extra": {}
+        },
+        {
+            "id": "ece8e56b-e70d-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0415598-DC/Si-D/TR-[Y2/RN 313392372011] DC1_StateMonitor_KF13 CRM:00796001474",
+            "body": "Dear Mr. Emre,\nI hope you are doing well.\nRegarding the reported issue, we have inspected the charger on SCB and identified some anomalies with the DC1_StateMonitor_KF14 and DC2_StateMonitor_KF14. Therefore, we recommend a site visit to troubleshoot the StateMonitor_KF14, as the schematic nomenclature differs from the respective SCB error flags.\nPlease follow the steps provided in the attached document and refer to the points below:\nCheck the areas marked in red for possible loose wiring.\nIf all the wiring is secure and configuration is ok, then need to be replace but check all the connections of the KF14 module before considering its replacement\nKindly refer the below KA for the reference.\nKnowledge Article: Knowledge Article for ISP: Emobility_SiCD_HW_KF13_ DC1_StateMonitor_KF13 error - Dynamics 365\nAnd please carry a spare\nKF13/14 module\nand the\ncontactors\nused in the fast shutdown system.\nPlease confirm based on the configuration.\nContactors 4Qty-: 3RQ3018-2AM08-0AA0\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-31T04:20:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "79ac65c6-e80d-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0415598-DC/Si-D/TR-[Y2/RN 313392372011] DC1_StateMonitor_KF13 CRM:00796001474",
+            "body": "Dear Emre\nI am writing to formally inform that we are moving case 0415598 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-TR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-TR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-31T04:29:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

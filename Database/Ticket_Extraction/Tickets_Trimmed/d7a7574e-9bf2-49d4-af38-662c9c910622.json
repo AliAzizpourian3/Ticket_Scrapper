@@ -1,0 +1,93 @@
+{
+    "incident_id": "d7a7574e-9bf2-49d4-af38-662c9c910622",
+    "ticket_number": "0417208",
+    "title": "ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1)",
+    "created_on": "2025-04-07T06:52:39Z",
+    "last_activity": "2025-05-22T12:01:43Z",
+    "age": "31686",
+    "description": "Reported behavior/issue:\n1 It seems to be that Automatically stop session when the available balance falls below this amount is not functioning properly\nRoot cause:\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "wRsIIZ",
+    "stage": null,
+    "serial_number": "MP / R8 170002526,MP / R8 170002526",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b3824292-e1a0-be2d-8acc-a187af81d550",
+            "subject": "Notes to L3",
+            "body": "Suspected Root Cause\n: Might be BEI issue as backend is not integrated.\nProblem Description:\nRemote stop not working after accepting the stop transaction id.\nAction Performed (L2)\n: Log analysis done\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nSession starts on DC 2 with {\"transactionId\":46204} however session did not stop after accepting the stop transaction command and charging was going on until the EV reaches the SOC 100%\nFault history:\n2025-03-28\nLog analysis with timestamp:\n2025-03-\n28\n, 10:00:40 to  2025-03-28, 11:03:15\nAction Required\nAction by HQ :  Need further analysis\nAttachement : refer attached logs",
+            "date": "2025-04-07T06:53:14Z",
+            "extra": {}
+        },
+        {
+            "id": "853e4dbd-2519-f011-998a-7c1e52768372",
+            "subject": "0417208 - ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1) CRM:00439000770",
+            "body": "Hello Nadeem,\nwhen I checked the logs it looks like remotestoptransaction didnt worked by checking the config of the charger the parameter you can see why:\n},\n\"AuthorizeRemoteTxRequests\": {\n\"readonly\": false,\n\"value\": false\n},\nyou can see that the value is false here so you will not be able to remote stop transaction without changing this value\nOCPP: Received command: RemoteStopTransaction (\n318ad1ed-d05f-487c-8f9f-c1156e362e0c\n) - {\n\"transactionId\"\n:\n46204\n}\n1743159463426\n38873754920336079661843217970699056421327934340257677313\nsince this Backend is also not implemented you can order, via the Local Siemenssupport and responsibles an Backend Integration Test with our Backendexperts please contact your Siemens Contact from your region if intended.\nWith best regards,\neMobility Tech Support Team\nSemih Sentuerk\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-14T11:43:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1facf1b3-2298-a823-8891-0ccc2ccaff57",
+            "subject": "Response from RC on parent case",
+            "body": "",
+            "date": "2025-04-19T08:50:02Z",
+            "extra": {}
+        },
+        {
+            "id": "33a026ae-dabf-8161-986e-5b8cce0d7666",
+            "subject": "Semih ",
+            "body": "solution provided to customer, changes on backend needs to be done",
+            "date": "2025-04-28T09:42:16Z",
+            "extra": {}
+        },
+        {
+            "id": "73086313-1524-f011-8c4d-6045bde0265d",
+            "subject": "RE: 0417208 - ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1) CRM:00439000770",
+            "body": "Hello Nadeem,\nCould you please update me on whether the solution I provided has resolved your issue?\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-28T09:42:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "37329719-c124-f011-8c4e-000d3adc93d1",
+            "subject": "RE: 0417208 - ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1) CRM:00439000770",
+            "body": "Hi Semih,\nThe issue mentioned below has been resolved as per your advice.\nThank you for your valuable support and guidance.\nRegards,\nNadeem\n​\n​\n​\n​\nنديم بانيكافيتيل عبد المناف\nدعم العمليات ‑ UAEV\nNadeem Panikkaveetil Abdul Manaf\nOperations Support ‑ UAEV\netihadwe.ae\n​971509623203\n04-2315587\n5587\nNadeem.Manaf@etihadwe.ae\n​",
+            "date": "2025-04-29T06:13:45Z",
+            "extra": {
+                "sender": "nadeem.manaf@etihadwe.ae",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b388c1a7-c624-f011-8c4e-6045bdde4786",
+            "subject": "ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1) CRM:00439000772",
+            "body": "Hi Nadeem,\nPerfect, happy to hear. Then i will proceed with closure.\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417208, the case is now closed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-29T06:53:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "06054b45-c724-f011-8c4e-7c1e52faf3c6",
+            "subject": "ID0416622-DC/Si-D/AE- [MP / R8 170002526] Remote stop not working (C1) CRM:00439000772",
+            "body": "Hi Nadeem,\nPerfect, happy to hear. Then i will proceed with closure.\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417208, the case is now closed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-29T06:57:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

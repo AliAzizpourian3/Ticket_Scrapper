@@ -1,0 +1,183 @@
+{
+    "incident_id": "1bae628d-57de-4315-9f38-7071f6703069",
+    "ticket_number": "0007328",
+    "title": "ID0007328 -DC/Si-D/DE - 0sessions",
+    "created_on": "2023-05-31T07:26:20Z",
+    "last_activity": "2023-07-11T06:54:47Z",
+    "age": "59008",
+    "description": "reported behaviour/issue: Charge sessions getting disrupted\nroot cause:\nsolution:\nFor GniUnx\nlooks okay charging meters are valid\nduration\":796,\"energy\":27751,\"EVCCID\":\"fcd6bd3f610c\",\"EVMAC\":\"fc.d6.bd.3f.61.0c\nduration\":666,\"energy\":23271,\"EVCCID\":\"007dfa072ef5\nhier wurde die Verbindung zwischen EV und EVSE unterbrochen\n67\nERR_EV_DROPP\nED\nERR_EV_DROPPED,\nvehicle ended with\nunexpected pilot\nstate B\nThe EV stops charging in an emergency\nshutdown manner.\nPossible cause could be that EV\ndecided to stop the session early as a\nresult of a v2g communication.\n38\nERR_V2GMSG_F\nAILED\nV2G - message\nprocessing (e.g\ninvalid param, wrong\ninternal state)\nThe state machine fails to process the\nmessage and abort the V2G\ncommunication.\n1 soft_plc_sicharge: 2023-05-16 17:15:43 - Error: \"FEC_DES_CGP_SMC_FEEDBACK_PLAUSIBILITY\"\ncode\":69,\"msg\":\"ERR_INTERNAL_COMM, internal communication error\"}}}\n\"src\":\"stack\",\"code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\"}}\ncommunication error PLC link lost (CCS)\noutlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"src\":\"stack\",\"code\":35,\"msg\":\"pilot stateC while stop charging\"}}'\nError: \"FEC_DES_CGP_SMC_FEEDBACK_PLAUSIBILITY\"\nafter log analysis:\nCable sensor:\nVIV:0 CCE:0 RNE:1 PLE:0 SOV:0 COV:0 CBL:0 KON:1 CAB:0 HOU:0\nIMD_BC1\nPLC-Error-Flag 'IMD_BC1' initial value true  - (MB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:0 Init:0 SIS:0)\nPLC-Error-Flag 'IMD_BC2' initial value true  - (MB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:0 Init:0 SIS:0)\nPLC-Error-Flag 'SECC_DC1_MB_Problem' initial value true  - ()\nPLC-Error-Flag 'SECC_DC2_MB_Problem' initial value true  - ()\nRNE:1\nRange Error (any sensor value out of range)\nKON:1\nError of Contact Sensor\nModbusTimeoutIMDandPumpData\n1 soft_plc_sicharge: IMD: DC connection with wrong polarity: \"LCU_DC_01\"\nNotes from semih\nPlease check the charger on the Polarity failure, the 0sessions are caused by chargesession interuptions",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / N8 160365552",
+    "case_nature_code": null,
+    "chargerID": "MP / N8 160365552",
+    "additional_info": [
+        {
+            "id": "2fa2ef81-84ff-ed11-8f6e-000d3aba3b1d",
+            "subject": "A new case manager was assigned to 0007328 CRM:0225605",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0007328 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1bae628d-57de-4315-9f38-7071f6703069",
+            "date": "2023-05-31T07:26:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2b4ef7d-98ff-ed11-8f6e-0022489de400",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 23 minutes and 34 seconds.",
+            "date": "2023-05-31T09:49:54Z",
+            "extra": {}
+        },
+        {
+            "id": "d2b4ef7d-98ff-ed11-8f6e-0022489de400",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 2 seconds.",
+            "date": "2023-05-31T09:49:56Z",
+            "extra": {}
+        },
+        {
+            "id": "dc930a66-6500-ee11-8f6e-000d3ad812b5",
+            "subject": "Uploaded document GniUnx-logs.csv.",
+            "body": "",
+            "date": "2023-06-01T10:16:43Z",
+            "extra": {}
+        },
+        {
+            "id": "3befeacb-6b00-ee11-8f6e-000d3ad812b5",
+            "subject": "0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hallo Ramona,\nalso hier bei dem Schulz Systemtechnik GmbH 49377 VechtaFalkenrotter Str. 163GermanyFelta Tankstelle\nGniUnx\nMP / N8 160365552\ncharger könnten wir erst mal versuchen mit der autoreboot funktion den charger wieder zum stabilen lauf zu bringen. Das modbus system verliert hier häufig die verbindung das muss ich mal intern in unserem meeting besprechen.\ndie autorebootfunktion könnten wir auf einen bestimmten zeitpunkt legen:\nMüsste man halt erst mit dem Kunden abstimmen.\nzu den Fehlern hier unten : es könnte sein das hier ein Fahrzeug versucht hat zu laden das noch nicht integriert ist oder es stimmt etwas mit den Outlets nicht. Welche Fahrzeuge werden hier normalerweise geladen?\nDadurch kommt es nicht zum laden und die session wird abgebrochen und sieht dann so aus als hätte man zero sessions\nFalls der autoreboot hier nicht hilft müssen wir einen vorort Einsatz organisieren am besten mit einem EV um zu sehen ob es wirklich am EV oder EVSE oder was anderem liegt. Kannst du das mit dem reboot  bitte mit dem Kunden klären und mir bescheid geben?\nsollen wir dann das ticket schließen, oder er beobachtet seinen charger und gibt dann rückmeldung.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2023-06-01T11:02:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a832ede7-6b00-ee11-8f6e-000d3ad812b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 1 day, 1 hour, 13 minutes and 22 seconds.",
+            "date": "2023-06-01T11:03:18Z",
+            "extra": {}
+        },
+        {
+            "id": "1c79cf31-6803-ee11-8f6e-000d3aba3b1d",
+            "subject": "AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hallo Semih,\nich kläre das mit dem Kunden und melde mich dann nochmal.\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\n015227964855\nTrautenaustr. 10\n38114 Braunschweig, Deutschland\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nWichtiger Hinweis: Diese E-Mail und etwaige Anlagen enthalten firmenvertrauliche Informationen. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte durch Antwort-Mail und löschen Sie diese E-Mail nebst Anlagen von Ihrem System. Vielen Dank.\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 1. Juni 2023 13:03\nAn:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nBetreff:\n0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373\nHallo Ramona,\nalso hier bei dem Schulz Systemtechnik GmbH 49377 VechtaFalkenrotter Str. 163GermanyFelta Tankstelle\nGniUnx\nMP / N8 160365552\ncharger könnten wir erst mal versuchen mit der autoreboot funktion den charger wieder zum stabilen lauf zu bringen. Das modbus system verliert hier häufig die verbindung das muss ich mal intern in unserem meeting besprechen.\ndie autorebootfunktion könnten wir auf einen bestimmten zeitpunkt legen:\nMüsste man halt erst mit dem Kunden abstimmen.\nzu den Fehlern hier unten : es könnte sein das hier ein Fahrzeug versucht hat zu laden das noch nicht integriert ist oder es stimmt etwas mit den Outlets nicht. Welche Fahrzeuge werden hier normalerweise geladen?\nDadurch kommt es nicht zum laden und die session wird abgebrochen und sieht dann so aus als hätte man zero sessions\nFalls der autoreboot hier nicht hilft müssen wir einen vorort Einsatz organisieren am besten mit einem EV um zu sehen ob es wirklich am EV oder EVSE oder was anderem liegt. Kannst du das mit dem reboot  bitte mit dem Kunden klären und mir bescheid geben?\nsollen wir dann das ticket schließen, oder er beobachtet seinen charger und gibt dann rückmeldung.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2023-06-05T06:14:15Z",
+            "extra": {
+                "sender": "ramona.hilse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d4be6735-6803-ee11-8f6e-0022489e66c0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 3 days, 19 hours, 11 minutes and 3 seconds.",
+            "date": "2023-06-05T06:14:21Z",
+            "extra": {}
+        },
+        {
+            "id": "04250378-6f03-ee11-8f6e-0022489cfed1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 52 minutes and 3 seconds.",
+            "date": "2023-06-05T07:06:28Z",
+            "extra": {}
+        },
+        {
+            "id": "813f7af5-7915-ee11-8f6d-000d3ade8d1f",
+            "subject": "RE: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hi Ramona,\nich habe hier mal nochmals reingeschaut in den charger und habe tatsächlich einen kleinen Fehler bei der letzten chargesession noch gefunden.\n1 soft_plc_sicharge: IMD:\nDC connection with wrong polarity\n: \"LCU_DC_01\"\ndas könnte das Problem gewesen sein das chargesession abgebrochen wurden mit 0 energy delivered, hier müsste mal ein Techniker vorort nachprüfen am bender was da los ist und die Kabel richtig anbinden.\nMon, 26 Jun 2023 14:37:39 GMT\n2023-06-26, 14:37:38\n2023-06-26T14:37:38.846974+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2023-06-26T13:46:48_LCU_DC_ID_1|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=68|EVSE_NowPwr[kW]=17.4|EVSE_NowCur[A]=39|EVSE_NowVol[V]=446|EV_TarCur[A]=38.9|EV_TarVol[V]=451|EV_SOC[%]=91|EVSE_DESpwr[kW]=39.5|Pilot=4\nduration\":2984,\"energy\":40356,\nLaden tut er und energy wird angegeben. Hat der Kunde hier sonst noch etwas angemerkt ?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2023-06-28T06:06:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b576780d-0717-ee11-8f6d-000d3ad812b5",
+            "subject": "A new case manager was assigned to 0007328 CRM:0225051",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0007328 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1bae628d-57de-4315-9f38-7071f6703069",
+            "date": "2023-06-30T05:29:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "673d9698-c61b-ee11-8f6d-000d3aba351f",
+            "subject": "RE: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hallo,\nKönnten Sie bitte die E-Mail von Semih beantworten, ich muss dieses Ticket eventuell an R&D weiterleiten, um dieses Problem zu prüfen.\nDanke\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2023-07-06T06:30:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cb9bca0a-d31b-ee11-8f6d-0022489de400",
+            "subject": "RE: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hello,\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease\nd\no not change the subject of this email when replying to it.",
+            "date": "2023-07-06T07:59:38Z",
+            "extra": {
+                "sender": "francois.winckel@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d09bca0a-d31b-ee11-8f6d-0022489de400",
+            "subject": "RE: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hello,\nBitte überprüfen Sie die Verbindung auf den Bildern unten, dies ist höchstwahrscheinlich das Problem hier\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2023-07-06T07:59:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "798f76c7-f51e-ee11-9966-0022489cfed1",
+            "subject": "AW: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373",
+            "body": "Hallo Francois,\ndas Problem ist behoben. Vielen Dank euch! Ihr könnt das Ticket schließen.\nViele Grüße\nRamona Hilse\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\n015227964855\nTrautenaustr. 10\n38114 Braunschweig, Deutschland\nmailto:ramona.hilse@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nWichtiger Hinweis: Diese E-Mail und etwaige Anlagen enthalten firmenvertrauliche Informationen. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte durch Antwort-Mail und löschen Sie diese E-Mail nebst Anlagen von Ihrem System. Vielen Dank.\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 6. Juli 2023 10:05\nAn:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>\nCc:\nSentuerk, Semih (SI E CS SD ICD) <semih.sentuerk@siemens.com>; Winckel, Francois (SI E CS SD ICD) <francois.winckel@siemens.com>\nBetreff:\nRE: AW: 0007328 - ID0007328 -DC/Si-D/DE - 0sessions CRM:0439373\nHello,\nBitte überprüfen Sie die Verbindung auf den Bildern unten, dies ist höchstwahrscheinlich das Problem hier\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease do not change the subject of this email when replying to it.",
+            "date": "2023-07-10T07:45:46Z",
+            "extra": {
+                "sender": "ramona.hilse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3a18af8e-b71f-ee11-9966-0022489cfed1",
+            "subject": "ID0007328 -DC/Si-D/DE - 0sessions CRM:0271512",
+            "body": "Hallo\nDa Ihr Problem gelöst wurde, werden wir das Service-Ticket# 0007328 schließen.\nWenn Sie weitere Unterstützung benötigen, wenden Sie sich bitte an uns, indem Sie eine neue E-Mail an\nemobility_support.si@siemens.com\nsenden.\nBitte beachten Sie, dass E-Mail-Antworten auf geschlossene Tickets nicht mehr überwacht werden.\nIch danke Ihnen.\nFrancois Winckel\neMobility Tech Support\nIhre Zufriedenheit mit unseren Produkten und Dienstleistungen hat für uns höchste Priorität.\nWie waren Ihre Erfahrungen mit dem Ladeservice, den Sie von uns erhalten haben?\nUm die Umfrage zu starten, klicken Sie bitte auf das Bild\nHello,\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2023-07-11T06:52:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4399c7b0-b71f-ee11-9966-0022489cfed1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 23 hours and 8 minutes.",
+            "date": "2023-07-11T06:53:51Z",
+            "extra": {}
+        },
+        {
+            "id": "22ecded1-b71f-ee11-9966-0022489cfed1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 56 seconds.",
+            "date": "2023-07-11T06:54:47Z",
+            "extra": {}
+        }
+    ]
+}

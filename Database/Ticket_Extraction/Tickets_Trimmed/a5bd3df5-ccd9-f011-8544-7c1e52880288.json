@@ -1,0 +1,90 @@
+{
+    "incident_id": "a5bd3df5-ccd9-f011-8544-7c1e52880288",
+    "ticket_number": "0467748",
+    "title": "ID0467748-DC/Si-D/NL-[MP / S7 170003820] MeterState: Unavailable and PaymentTerminalUnreachable_PZx",
+    "created_on": "2025-12-15T15:44:37Z",
+    "last_activity": "2025-12-23T15:00:18Z",
+    "age": "251542",
+    "description": "Reported behavior/issue-\nDisconnect of LEM and payment terminal",
+    "type": 1,
+    "priority": 2,
+    "stage": "In Progress",
+    "serial_number": "MP / S7 170003820",
+    "case_nature_code": 580000001,
+    "chargerID": "R7VjM6",
+    "additional_info": [
+        {
+            "id": "b617c4ef-ccd9-f011-8543-7ced8d407793",
+            "subject": "Webform_incident_SiCharge D_15-12-2025_SN: MP / S7 170003820",
+            "body": "Dear Peter Kulla,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S7 170003820\nThank you\neMobility Technical Support Team\nSehr geehrte/r Peter Kulla,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S7 170003820\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-12-15T15:44:30Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae599fe1-cfd9-f011-8543-6045bde05ea4",
+            "subject": "A new case manager was assigned to 0467748 CRM:00225304547",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0467748 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a5bd3df5-ccd9-f011-8544-7c1e52880288",
+            "date": "2025-12-15T16:05:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "41ec2b8a-d0d9-f011-8544-7c1e528800b0",
+            "subject": "A new case manager was assigned to 0467748 CRM:00225304553",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0467748 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a5bd3df5-ccd9-f011-8544-7c1e52880288",
+            "date": "2025-12-15T16:10:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c80bdb19-63da-f011-8544-7c1e52880b1b",
+            "subject": "RE: Webform_incident_SiCharge D_15-12-2025_SN: MP / S7 170003820 CRM:03208000078",
+            "body": "Dear Mr. Kulla,\nI hope you are doing well.\nThank you for raising the issue.\nI have already checked the charger. The charger is in used condition. Please do a reboot when its not in operation or let us know.\nWe can´t do any remote trouble shooting during a charging session.\nMoreover the charger is running with a very old firmware version (v6.0.3). It is also recommended to update the firmware to latest version (v8.1.4).\nIf the customer is unable to do that troubleshooting. Please let us know.\nWaiting for your valuable response.\nI wish you a happy holiday season to you and your family.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2025-12-16T09:39:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a271a6e-75a9-f28e-b53e-24e2329e4067",
+            "subject": "Recurring error,",
+            "body": "This is a recurring error. Can you please check further.",
+            "date": "2025-12-19T13:54:31Z",
+            "extra": {}
+        },
+        {
+            "id": "2cf64bfe-0ee0-f011-8544-7c1e52362ec6",
+            "subject": "ID0467748-DC/Si-D/NL-[MP / S7 170003820] Disconnect of LEM and payment terminal CRM:00315003105",
+            "body": "Hi Peter, good afternoon. I hope you are doing well.\nIn the case of the LEM I believe it can be a simple Ethernet cable issue, since it's \"toggling\". I would start from here, try to replace the cable or try to get the Ethernet cable from the other LEM to this one.\nWhat we want to make sure here is to prove whether the fault is on the LEM or the Ethernet cable.\nAnother thing you can try is swapping the Switch port of XF1, maybe the port is not good and you can use a spare one or even swap with the other LEM port.\nFor the Payment Terminal we should try the same thing, I believe in the terminal we should be able to see if there is any error but remotely it's not possible since i cannot reach it.\nPlease start by checking the Ethernet cable to XF4and if all the connections of 24V and such are properly inserted and providing the nominal value.\nIf everything fails, we might need to replace it.\nWhen going to site, I recommend taking a spare Payment Terminal but the LEM meter, in my opinion, looks like a cable issue.\nI will forward this ticket to the RC-NL queue, if you need support on site, please reach out to me directly via Teams or add me in this trend, at least with 1 day in advance.\nThank you very much and have a lovely holidays.\nBest regards,\nFrancisco",
+            "date": "2025-12-23T14:52:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "77642cca-0fe0-f011-8544-7c1e52362b38",
+            "subject": "A new case manager was assigned to 0467748 CRM:00225309382",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0467748 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a5bd3df5-ccd9-f011-8544-7c1e52880288",
+            "date": "2025-12-23T14:58:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

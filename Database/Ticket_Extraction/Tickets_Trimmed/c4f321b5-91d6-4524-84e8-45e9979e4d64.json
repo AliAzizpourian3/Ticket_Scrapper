@@ -1,0 +1,127 @@
+{
+    "incident_id": "c4f321b5-91d6-4524-84e8-45e9979e4d64",
+    "ticket_number": "0414780",
+    "title": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3",
+    "created_on": "2025-03-25T06:17:23Z",
+    "last_activity": "2026-03-26T15:30:31Z",
+    "age": "146224",
+    "description": "Reported behaviour/issue:\nMissing Converters in DC4,3\nSolution:\nPossible KF214 problem",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "3p0jka",
+    "stage": null,
+    "serial_number": "MP / S3 170003330",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "e655fc2e-5209-f011-bae2-7c1e52fb82d3",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002469",
+            "body": "Dear Emre-abi,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003330\nChargerID/Serial No.\n:\n3p0jka\nProblem Description\n: DC3 and DC4 converter groups are missing\nTroubleshooting\n:\nHere is how the fast shutdown works with (and for) the dispenser:\nThe StateMonitor of the main charger is constantly sending 12V to the dispenser (since we have a dispenser the QAs are not necessary for operation).\nWhen the StateMonitor from the dispenser has the 12V, he will send another 12V back to the main charger, via FA10 (DC4) and via FA11 (DC3), when requested to do the Fast shutdown.\nHere the problems seems that the 12V coming from the output of the dispenser's StateMonitor is constantly ON. Why do I say this? Because if you take a look at the error flags, we can see that the converters only have the CAN communication established. When you have F=0 it means that the converter is not “powered on”, which is a consequence of having the 12V in the Fast shutdown line.\nOne thing to note is that the dispenser schematic that it's on SCB is incorrect.\nWhat we need to measure is the following:\nIf we have 12V at the SuO of both sides. If we have 12V then please replace the KF214 (the SuC is the input from main charger).\nIf we don't have 12V at the output then that means that something is mis-wired in the FA10/FA11.\nFor future reference, your case number is\n0414780\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T08:21:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d6c95b30-280a-f011-bae3-7c1e5236e32d",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Dear Emre-abi,\nI am writing to formally inform that we are moving case 0414780 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nTR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nTR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T09:53:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1af92f09-552b-f011-8c4d-6045bddf319c",
+            "subject": "RE: ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Hi Francisco,\nAlthough there was no error message on the device (except for Power Converter-1), we experienced an unusual situation today. Two trucks were connected to both sockets of the charger, but neither of them could draw more than 20–30 kW.\nCould you please investigate this in more detail?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-07T15:07:49Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b5935635-552b-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Hi Francisco,\nAlthough there was no error message on the device (except for Power Converter-1), we experienced an unusual situation today. Two trucks were connected to both sockets of the charger, but neither of them could draw more than 20–30 kW.\nCould you please investigate this in more detail?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-07T15:09:12Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b8bd6454-e82b-f011-8c4d-6045bddf319c",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Hi Emre-abi, good afternoon.\nYou are correct, something is not right. I am assuming some kind of problem in the converters-line.\nI am proactively checking the Remote Debug Station for a session. I will bring news as soon as I have it.\nBest regards,\nFrancisco",
+            "date": "2025-05-08T08:42:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e7e4c077-de2c-f011-8c4e-6045bdde4786",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Hi Emre-abi, good afternoon.\nUnfortunately, with other tasks, I was not able to capture the error live. Next week I will proactively check it again.\nThank you for your patience so far.\nBest regards,\nFrancisco",
+            "date": "2025-05-09T14:04:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "001ca117-3d2f-f011-8c4d-7c1e52361e39",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002475",
+            "body": "Hi Emre-abi, good afternoon.\nI haven't been able to find a session live with this charger.\nPlease let me know what you think it's best, either I can send this ticket to your queue and when you find a live session, reach out to me immediately or close the ticket.\nUnfortunately, I am not able to be proactively checking this charger all the time.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T14:26:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd96da1e-d22f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00315002630",
+            "body": "Dear Emre,\nI am writing to formally inform that we are moving case 0414780 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nTR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nEnd Customer Communication\nX\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nTR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T08:13:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ded37f9a-2829-f111-8342-7ced8d44df3f",
+            "subject": "CASE CLOSED: ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00225359499",
+            "body": "Dear Yunus Emre Temel,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414780, the case is now closed. We hope that we have responded to your request in a timely and professional manner.\nIf the issue is not resolved, please click the button\nReactivate the Ticket\nIf you need further assistance later, you can always submit a new request via our support form:\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Technical Support Team",
+            "date": "2026-03-26T15:29:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e1452b2-2829-f111-8342-7ced8d44ddd4",
+            "subject": "CASE CLOSED: ID0414780-DC/Si-D/TR-[MP / S3 170003330] PowerConverters-Missing Converters in DC4,3 CRM:00225359502",
+            "body": "Dear Yunus Emre Temel,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414780, the case is now closed. We hope that we have responded to your request in a timely and professional manner.\nIf the issue is not resolved, please click the button\nReactivate the Ticket\nIf you need further assistance later, you can always submit a new request via our support form:\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Technical Support Team",
+            "date": "2026-03-26T15:30:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

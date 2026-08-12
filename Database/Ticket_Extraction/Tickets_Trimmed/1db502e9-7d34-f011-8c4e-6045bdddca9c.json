@@ -1,0 +1,68 @@
+{
+    "incident_id": "1db502e9-7d34-f011-8c4e-6045bdddca9c",
+    "ticket_number": "0425182",
+    "title": "ID0425182-DC/Si-D/GR-[MP / R6 170002080] Charging issue and CPO Error",
+    "created_on": "2025-05-19T06:53:04Z",
+    "last_activity": "2025-06-06T09:02:09Z",
+    "age": "26049",
+    "description": "Reported behaviour/issue: CPO noticed errors and failed charging sessions\nSolution: NA\nyyyy-mm-dd: 2025-05-19",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "pi6c2S",
+    "stage": null,
+    "serial_number": "MP / R6 170002080",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "56d938de-7d34-f011-8c4e-7c1e52768372",
+            "subject": "Webform_incident_SiCharge D_19-05-2025_SN: 170002080",
+            "body": "Dear Olympia Peratsaki,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002080\nThank you\neMobility Technical Support Team\nSehr geehrte/r Olympia Peratsaki,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002080\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-19T06:52:54Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "feddbb1d-8234-f011-8c4d-7c1e52768c07",
+            "subject": "ID0425182-DC/Si-D/GR-[MP / R6 170002080] Charging issue and CPO Error CRM:02698000156",
+            "body": "Dear Olympia Peratsaki,\nThank you for reaching\nout\nto eMobility Support. My name is\nMeghna\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002080\nChargerID/Serial No.\n:\npi6c2S\nProblem Description\n: Charging issue and CPO Error.\nFor future reference, your case number is\n0425182\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-19T07:23:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "16ee3e05-2f35-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: ID0425182-DC/Si-D/GR-[MP / R6 170002080] Charging issue and CPO Error CRM:02698000156",
+            "body": "Dear\nOlympia Peratsaki,\nHope you are doing well.\nWe have reviewed the logs based on the provided timestamp and identified that\nOutlet 2 went out of order\ndue to a communication issue. Specifically, the logs indicate the following:\nSECC: No communication for 750 ms\nImmediately after, the outlet showed the error:\n\"vendorErrorCode\": \"modbus0 is not connected\"\nHowever, communication was restored within a few seconds, and the outlet returned to\nAvailable\nmode.\n2025-05-10T05:22:14.953293+00:00 [FW060103G1] swcpu [user:debug] [4127] [MBC] DC2: SECC: no communication for 750ms\n2025-05-10T05:22:17.793897+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/45e34c7ac2ad[639]: OCPP: Send command: StatusNotification (b6054c8f-e553-492f-b676-9e6bd75172ad) - {\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"modbus0 is not connected\"}\n2025-05-10T05:22:19.797165+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/45e34c7ac2ad[639]: OCPP: Send command: StatusNotification (2c15a6d8-67aa-4065-b0e7-bd1f8bcfbe66) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nWe kindly request you to review the attached logs to observe the\nsequence of events\nthat led to this incident.\nAdditionally, we noticed that a few\nerror flags still persist\n, indicating potential underlying issues. Therefore, we recommend planning a\nsite intervention\nto address these residual errors and ensure system stability.\nAdditional Observations:\nWe also observed that the following error flags are still persisting:\nMCBs_FC18_FC20_FC20_FC21\nMainfan_GQ1 (Ok Signal Lost)\nGiven this, we recommend\ncarrying spares\nfor the following components during the site intervention, in case replacement is required:\nMainfan_GQ1\nMCBs: FC18, FC20, FC21\nAdditionally, kindly refer to the\nKnowledge Article (KA)\nrelated to\nMainfan_GQ1\nfor further guidance on diagnostics and replacement procedures.\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_FAN_Error Flag_OK Signal Lost -\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_Mainfan_GQ1_Ok Signal Lost-Fan rotation disabled -\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-20T04:00:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99d9d02c-3035-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: ID0425182-DC/Si-D/GR-[MP / R6 170002080] Charging issue and CPO Error CRM:02698000156",
+            "body": "Dear Olympia,\nI am writing to formally inform that we are moving case 0425182 ﻿from the\nTechnical Support\nto the\neMobility RC-GR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-GR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-20T04:09:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ac5296c-a570-9334-a49e-f4bab2971fae",
+            "subject": null,
+            "body": "After a remote support we fixed issues.\nNow the charger is operative and available.\nBye,\nGiuseppe",
+            "date": "2025-06-06T09:00:30Z",
+            "extra": {}
+        }
+    ]
+}

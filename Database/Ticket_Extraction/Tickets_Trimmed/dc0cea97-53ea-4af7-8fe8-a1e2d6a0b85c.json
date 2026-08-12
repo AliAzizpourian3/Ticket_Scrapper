@@ -1,0 +1,123 @@
+{
+    "incident_id": "dc0cea97-53ea-4af7-8fe8-a1e2d6a0b85c",
+    "ticket_number": "0476761",
+    "title": "ID0476761-DC/Si-D/TR-[Y2/T4314241502027]Physical charging continued after Stop Transaction",
+    "created_on": "2026-02-05T14:36:51Z",
+    "last_activity": "2026-03-05T17:06:48Z",
+    "age": "40470",
+    "description": "Reported behaviour/issue: The StopTransaction command is triggered by the device but the charging process continues.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "FV4ELh",
+    "stage": "Resolved",
+    "serial_number": "Y2/T4314241502027",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "c241741c-a002-f111-8407-7ced8d44df3f",
+            "subject": "A new case manager was assigned to 0476761 CRM:00225331823",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0476761 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc0cea97-53ea-4af7-8fe8-a1e2d6a0b85c",
+            "date": "2026-02-05T14:36:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cae88ba2-a16a-a5e6-a52d-80c69447f5f8",
+            "subject": "Error description",
+            "body": "The StopTransaction command is triggered by the device but the charging process continues\nWe received a customer complaint stating that although the charging session increased the SoC from 35% to 95% SOC, the billing was calculated based on a significantly lower energy consumption.\nObserved\nBilled energy: 3.63 kWh\nActual delivered energy: ~56 kWh\nPhysical charging continued after StopTransaction\nFindings (log analysis)\nDevice FW: v8.1.4\nStartTransaction sent correctly\nStopTransaction triggered by the device (no user stop request) while charging was still ongoing\nBilling finalized based on StopTransaction meter values\nCharging continued physically after StopTransaction\n⚠️ Observed sporadically on different charger, not on every session.\nThis represents a risk in terms of customer trust and transparency. As a result, the customer asked whether this behavior could potentially exist across approximately 200 devices.\nWhat exactly is the problem? We request urgent support. Is this problem a known problem?\nTHE LOG DATA IS AT THE ATTACHMENT... >> You can check 19:24 on the log.\nThanks in advance for your support and insights.",
+            "date": "2026-02-05T14:37:06Z",
+            "extra": {}
+        },
+        {
+            "id": "b7904dc6-af02-f111-8407-000d3ab1199b",
+            "subject": "A new case manager was assigned to 0476761 CRM:00225331930",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0476761 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc0cea97-53ea-4af7-8fe8-a1e2d6a0b85c",
+            "date": "2026-02-05T16:29:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "00edf560-b002-f111-8407-7ced8d44d2c4",
+            "subject": "ID0476761-DC/Si-D/TR-[Multi]Physical charging continued after Stop Transaction CRM:02681001394",
+            "body": "Dear\nYunus\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: Null\nCharger ID\n: Null\nProblem Description\n:  Physical charging continued after Stop Transaction\nBefore we move forward with your ticket, could you please provide us with the serial number of your charger? This information is essential for us to assist you effectively.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0476761\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-05T16:33:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c0a2304-3403-f111-8407-000d3ab12e50",
+            "subject": "RE: ID0476761-DC/Si-D/TR-[Multi]Physical charging continued after Stop Transaction CRM:02681001394",
+            "body": "Hi Jagmeet,\nThis is not an issue limited to a single charger. We have received similar notifications from the customer for multiple devices.\nThe problem is not continuously reproducible; however, it is a rare but critical behavior that poses a risk to reliability and customer trust.\nBelow are the details of one of the reported sessions:\nCharger Serial Number: 314241502027\nSession Details:\nStart: 12.01.2026 – 12:07\nStop (system): 12.01.2026 – 12:12\nDuration: 00:05:08\nBilled energy: 3.63 kWh\nObserved behavior: Physical charging continued after the StopTransaction was triggered\nYou can find the related log data for this session in the attachment. Additionally, the charger status and behavior can be reviewed via SCB.\nPlease let me know if you need any further information from our side.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nSI E EU TR\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2026-02-06T08:15:47Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e7b8ad41-b003-f111-8407-000d3ab12a39",
+            "subject": "RE: ID0476761-DC/Si-D/TR-[Multi]Physical charging continued after Stop Transaction CRM:02681001394",
+            "body": "Dear Yunus,\nThank you for reporting this incident.\nWe have collected the logs and have sent this topic to our expert team, for a deeper analysis.\nWe will update you as soon as possible.\nWith best regards,\neMobility Tech Support Team - Laura Martins,\nPlease do not change the subject of this email when replying to it.",
+            "date": "2026-02-06T23:04:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f4da43c3-b003-f111-8407-7ced8d44dcb4",
+            "subject": "RE: ID0476761-DC/Si-D/TR-[Multi]Physical charging continued after Stop Transaction CRM:02681001394",
+            "body": "Dear Yunus,\nThank you for reporting this incident.\nWe have collected the logs and have sent this topic to our expert team, for a deeper analysis.\nWe will update you as soon as possible.\nWith best regards,\neMobility Tech Support Team - Laura Martins,\nPlease do not change the subject of this email when replying to it.",
+            "date": "2026-02-06T23:08:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b8439047-9605-f111-8407-7ced8d44d1ac",
+            "subject": "A new case manager was assigned to 0476761 CRM:00225333341",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0476761 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc0cea97-53ea-4af7-8fe8-a1e2d6a0b85c",
+            "date": "2026-02-09T09:04:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0fd9f189-b518-f111-8342-7ced8d44dfaf",
+            "subject": "0476761 - ID0476761-DC/Si-D/TR-[Y2/T4314241502027]Physical charging continued after Stop Transaction CRM:00472000559",
+            "body": "Hello Emre,\nThe issue was escalated from service to R&D already and the fix was already identified.\nNext version is plan to bring the fix for it. If a hotfix is released before the new firmware I will let you know.\nSince the topic is on R&D side I will proceed to close this ticket.\nIf any additional info is needed, reach out to me via TEAMS.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2026-03-05T17:05:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eeab70aa-b518-f111-8341-70a8a52b517e",
+            "subject": "Ticket 0476761 has been closed. How did we do? CRM:00225348020",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-05T17:06:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

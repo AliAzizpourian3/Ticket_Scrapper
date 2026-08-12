@@ -1,0 +1,139 @@
+{
+    "incident_id": "c54849fa-7bfc-4e92-84ed-e8489147238e",
+    "ticket_number": "0385340",
+    "title": "ID0385340-DC/Si-D/DE[160355321] - DC2_CableTempSensor_XD101",
+    "created_on": "2024-10-18T13:51:52Z",
+    "last_activity": "2025-12-16T14:04:59Z",
+    "age": "5942",
+    "description": "Reported behaviour/issue: Stop sessions\nRoot cause:\nDC2_CableTempSensor_XD101\nSolution:\ninformation provided to RC from experts team.\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nExpired\nNOTE TO L3: As per PrCh notes, CableTempSensor, should be addressed by Experts. It's hard to proactively get the EcoG graph as it doesn't occur everyday but happens a lot.\nAlready asked for pictures of the Plug as this charger is one of the oldest ever made. Since the Warranty is Expired customer might not want to replace the plug.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cxGiFJ",
+    "stage": null,
+    "serial_number": "MP / N8 160355321",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "6b254123-588d-ef11-ac20-000d3a667a23",
+            "subject": "A new case manager was assigned to 0385340 CRM:00225111963",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0385340 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c54849fa-7bfc-4e92-84ed-e8489147238e",
+            "date": "2024-10-18T13:52:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1457643c-588d-ef11-ac20-000d3ab1804d",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 52 seconds.",
+            "date": "2024-10-18T13:52:45Z",
+            "extra": {}
+        },
+        {
+            "id": "4da45c42-588d-ef11-ac20-000d3ab1804d",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-10-18T13:52:49Z",
+            "extra": {}
+        },
+        {
+            "id": "a5770a92-588d-ef11-ac20-000d3ab1804d",
+            "subject": "ID0385340-DC/Si-D/DE[160355321] - DC2_CableTempSensor_XD101 CRM:00315001947",
+            "body": "Dear Rudi,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / N8 160355321\nChargerID/Serial No.\n:\ncxGiFJ\nProblem Description\n: DC2_CableTempSensor_XD101 → Sessions are aborted\nTroubleshooting\n:\nI've checked the AWS logs and found that we had 7 occurrences in the last 4 weeks:\nFrom our perspective, there has been few errors occuring so <2 occurrences/week.\nMe and Integration team have been involved in a topic regarding the eActros 600 PilotState drops, and this can also be a cause for this. The cable might not be in the best condition since this is also a test site for Daimler where they might plug out and plug in much more often than the regular usage.\nCan you tell me if this cable was ever replaced before? I believe this SiD is one of the first ever built, so the plug being faulty would not be surprising.\nSince this charger is out of warranty we need to align with them on what we should do, if they want to replace the cable or if we should first troubleshoot it and afterwards reach a plan.\nFrom my side, I would need the following:\nPhotos of the DC contacts of DC2 (something really close up like this:)\nAs you can see this is an example where we had DC2_CableTempSensor error.\nMake sure that all the wires reaching the StateMonitor are properly attached:\nYou can use the multimeter (before removing the cables and replugging) to measure between the several spots:\nXD12:3B/4D to XD12:10D\nXD12:3A/4C to XD12:10C\nCCS-B IN (J5) CP to CCS-B IN (J5) PP\nFor future reference, your ticket number is\n0385340\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-18T13:55:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec4c52fd-4c90-ef11-8a69-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0385340 CRM:00225113092",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0385340 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c54849fa-7bfc-4e92-84ed-e8489147238e",
+            "date": "2024-10-22T08:09:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6e27db1-403c-817a-a8d9-3ce0d43a6766",
+            "subject": "Check from ES",
+            "body": "Checked the Case and found out that the Overtemperature is with one specific EV.\nThat indicates that the Socket of the Car is Dirty or weak. Also we can see that other sessions with Differenz vehicles do not show that issue what indicates that our Plug is fine.\nI think there is no need from our side to check proactively the Plug.",
+            "date": "2024-10-22T12:29:27Z",
+            "extra": {}
+        },
+        {
+            "id": "414cb5a2-861d-af2d-8379-ae6a6f6d42b2",
+            "subject": "ES --> NOC",
+            "body": "Task from ES: Checked the Topic no action needed allready informed RC\nTask for NOC: Please close the Ticket",
+            "date": "2024-10-22T13:02:32Z",
+            "extra": {}
+        },
+        {
+            "id": "49d2b93a-7790-ef11-8a69-0022489e8f10",
+            "subject": "A new case manager was assigned to 0385340 CRM:00225113326",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0385340 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c54849fa-7bfc-4e92-84ed-e8489147238e",
+            "date": "2024-10-22T13:12:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "84003e6c-9490-ef11-8a6a-000d3ab4d5d3",
+            "subject": "RE: ID0385340-DC/Si-D/DE[160355321] - DC2_CableTempSensor_XD101 CRM:00315001947",
+            "body": "Dear Rudolf,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0385340.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-22T16:41:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a694219d-9590-ef11-8a6a-7c1e5235925f",
+            "subject": "0385340 - ID0385340-DC/Si-D/DE[160355321] - DC2_CableTempSensor_XD101 CRM:02023000233",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0385340\nwith the title:\nID0385340-DC/Si-D/DE[160355321] - DC2_CableTempSensor_XD101\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-10-22T16:49:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8794e7ec-9590-ef11-8a6a-7c1e5235925f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 4 days, 2 hours, 59 minutes and 4 seconds.",
+            "date": "2024-10-22T16:51:53Z",
+            "extra": {}
+        },
+        {
+            "id": "82c4e4f2-9590-ef11-8a6a-7c1e5235925f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 5 seconds.",
+            "date": "2024-10-22T16:51:58Z",
+            "extra": {}
+        },
+        {
+            "id": "a6c4e4f2-9590-ef11-8a6a-7c1e5235925f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 5 seconds.",
+            "date": "2024-10-22T16:52:03Z",
+            "extra": {}
+        },
+        {
+            "id": "91489d33-9690-ef11-8a6a-7c1e5235925f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L3) after 1 minute and 48 seconds.",
+            "date": "2024-10-22T16:53:51Z",
+            "extra": {}
+        }
+    ]
+}

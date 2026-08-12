@@ -1,0 +1,86 @@
+{
+    "incident_id": "763aecd9-3fe7-43ec-9f22-eca564f96cbd",
+    "ticket_number": "0447249",
+    "title": "ID0447249-DC/Si-D/TR-[Y2/R5 313065117001] Free of charge transactions",
+    "created_on": "2025-09-01T14:57:42Z",
+    "last_activity": "2025-09-02T09:56:49Z",
+    "age": "1139",
+    "description": "Reported behavior/issue:\nshown as Free of charge on the backend side.\nSolution: Update to v8.1\nyyyy-mm-dd:-\nhttps://jira.si.siemens.cloud/browse/EMOB-18034",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "S1qLc5",
+    "stage": null,
+    "serial_number": "Y2 / R5 313065117001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "d087982b-4487-f011-b4cc-7c1e52206585",
+            "subject": "A new case manager was assigned to 0447249 CRM:00225250686",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0447249 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=763aecd9-3fe7-43ec-9f22-eca564f96cbd",
+            "date": "2025-09-01T14:58:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e94ba854-88d8-ea6d-a361-7fa1e14a6dd7",
+            "subject": null,
+            "body": "In the charging session below, there is a case of a Free of charge transaction.\nWe are receiving similar feedback from different customers, so we kindly request a detailed investigation.\nIn this case, the user started charging at 34% and finished at 97%, with a total energy consumption of 34.13 kWh.\nHowever, the station sends the “StopTransaction” command only 20 seconds after the “StartTransaction” command. But the charging session is continue.\nBecause of this, it is shown as Free of charge on the backend side.\n2025-08-27T08:28:10.855291+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/16e5a3268aaa[738]: OCPP: Received result: StartTransaction (6ea1f02f-3f0c-499a-9df9-2fd1a918ed04) - {\"transactionId\":\n101255526\n,\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-08-27T08:28:36.337683+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/16e5a3268aaa[738]: OCPP: Send command: StopTransaction (9836c729-1373-4d7c-bda3-d36300c6f74f) - {\"meterStop\":139542285,\"timestamp\":\"2025-08-27T08:28:36.330Z\",\"transactionData\":[{\"timestamp\":\"2025-08-27T08:28:36.330Z\",\"sampledValue\":[{\"value\":\"35\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\n\"transactionId\":101255526\n}",
+            "date": "2025-09-01T15:32:42Z",
+            "extra": {}
+        },
+        {
+            "id": "401293a6-87a1-8057-9e46-e57fa9af514b",
+            "subject": null,
+            "body": "",
+            "date": "2025-09-01T15:38:08Z",
+            "extra": {}
+        },
+        {
+            "id": "80ada415-4a87-f011-b4cc-6045bdde4786",
+            "subject": "ID0447249-DC/Si-D/TR-[Y2/R5 313065117001] Free of charge transactions CRM:02889000564",
+            "body": "Dear\nYunus Emre Temel\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/R5 313065117001\nChargerID/Serial No.\n:\nS1qLc5\nProblem Description\n:\nFree of charge transactions\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0447249\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-01T15:41:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2bf14799-d487-f011-b4cc-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0447249 CRM:00225250957",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0447249 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=763aecd9-3fe7-43ec-9f22-eca564f96cbd",
+            "date": "2025-09-02T08:12:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08041d02-dd87-f011-b4cc-000d3ad97a58",
+            "subject": "ID0447249-DC/Si-D/TR-[Y2/R5 313065117001] Free of charge transactions CRM:02889000564",
+            "body": "Hello Emre-abi,\nThis error is already declared fixed in v8.1.\nFrom the service side, since there is no more action points, I will proceed to close the ticket.\nBest regards,\nFrancisco",
+            "date": "2025-09-02T09:12:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "671be71a-e387-f011-b4cb-7c1e52768c07",
+            "subject": "Ticket 0447249 has been closed. Are you satisfied with our provided solution? CRM:00225251045",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0447249\nwith the title:\nID0447249-DC/Si-D/TR-[Y2/R5 313065117001] Free of charge transactions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-02T09:56:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

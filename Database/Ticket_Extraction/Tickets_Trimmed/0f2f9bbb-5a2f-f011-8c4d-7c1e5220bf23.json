@@ -1,0 +1,90 @@
+{
+    "incident_id": "0f2f9bbb-5a2f-f011-8c4d-7c1e5220bf23",
+    "ticket_number": "0423937",
+    "title": "ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station",
+    "created_on": "2025-05-12T17:58:47Z",
+    "last_activity": "2025-07-03T17:14:51Z",
+    "age": "51207",
+    "description": "Reported behaviour/issue :\nI would like to request an investigation regarding a malfunction that occurred on\nMay 9th, 2025\non charging station, when both\nDC1\nand\nDC3\nconnectors were in use simultaneously.\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "4HIbKg",
+    "stage": null,
+    "serial_number": "MP / R6 170002001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "6fbaa1bb-5a2f-f011-8c4d-7c1e5236e32d",
+            "subject": "[Wheeltainer] Request for Investigation on Charging Station MP/R6 170002001 (Charger ID: 4HIbKg)",
+            "body": "Hello,\nI would like to request an investigation regarding a malfunction that occurred on\nMay 9th, 2025\non charging station\nMP/R6 170002001 (Charger ID: 4HIbKg)\n, when both\nDC1\nand\nDC3\nconnectors were in use simultaneously.\nThe client reported that while starting to charge a tractor, a vehicle identified as\nGM-752-YP\n, which was already charging on\nDC1\n, got\ndisconnected unexpectedly\n.\nBelow are the session details:\nDC1 Connector\nCharging Start\n: 09/05/2025 at 12:53:54\nCharging End\n: 09/05/2025 at 13:17:05\nCharging Duration\n: 00:23:11\nEnergy Consumed\n: 68.52 kWh\nSoC at End\n: 45%\nStop Reason\n:\nError occurred during charging\nDC3 Connector (tractor charged by the client)\nCharging Start\n: 09/05/2025 at 13:13:34\nCharging End\n: 09/05/2025 at 16:22:03\nCharging Duration\n: 03:08:28\nEnergy Consumed\n: 262.34 kWh\nThe session completed successfully\nIt appears that starting the session on DC3 caused the ongoing session on DC1 to be interrupted, although both connectors are expected to operate independently.\nCould you please analyze this incident and provide the following:\nThe exact cause of the interruption on DC1\nWhether a power management conflict or dynamic allocation error was involved\nCorrective actions to ensure that an active session is not interrupted by the start of another\nPlease let me know if you need any additional information.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-05-12T17:58:41Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c83ca20c-5e2f-f011-8c4e-7c1e52faf3c6",
+            "subject": "ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station CRM:02681000157",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002001\nCharger ID/Serial No.\n:\n4HIbKg\nProblem Description\n: Request for Investigation on Charging Station\nFor future reference, your case number is\n0423937\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-12T18:22:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44e0c59f-dc2f-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station CRM:02681000157",
+            "body": "Dear Malek Drif,\nHope you are doing well.\nAs per the timestamp provided, we have analyzed the charger logs and observed that the contactor was in an abnormal state, which led to the charging session being stopped.\nPlease refer to the logs below, where it is evident that the session was interrupted due to a contactor feedback issue:\n2025-05-09T11:13:11.646535+00:00 swcpu [user:debug] [4021] [SCO] OGC[0]: DC1-DC1_QA21-22, COMMAND: on, FEEDBACK: off, BLOCKING: yes, OPRSTATE: AbNormal(off FBK while on), CHRGOPRMODE: 6, CTRL_DC_UNIT: DC1\n2025-05-09T11:13:13.650253+00:00 swcpu [user:debug] [4021] [SCO] OGC[0]: DC1-DC1_QA21-22, COMMAND: on, FEEDBACK: off, BLOCKING: yes, OPRSTATE: AbNormal(on FBK Timeout), CHRGOPRMODE: 6, CTRL_DC_UNIT: DC1\n2025-05-09T11:13:15.897278+00:00 swcpu [user:debug] [4021] [DCC] DC1: Charging Phase \"P06_CHARGE\" --> \"P00_UNKNOWN\"\nAdditionally, the error logs indicate that PowerConverter[3] did not perform the expected fast shutdown.\nWe also observed error\nE17\n, which corresponds to an\nInternal Communication Error\n.\nAbout persisting error, we will reach out to regional team to take the further course of action.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T09:28:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "60e90e7f-93fd-516b-9797-bce9ad2374d4",
+            "subject": "Internal notes",
+            "body": "",
+            "date": "2025-05-13T09:34:52Z",
+            "extra": {}
+        },
+        {
+            "id": "295c2b25-de2f-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station CRM:02681000157",
+            "body": "Dear Team,\nHope you are doing well.\nAs per the timestamp provided, we have analyzed the charger logs and observed that the contactor was in an abnormal state, which led to the charging session being stopped.\nPlease refer to the logs below, where it is evident that the session was interrupted due to a contactor feedback issue:\nyaml\n2025-05-09T11:13:11.646535+00:00\nswcpu\n[\nuser:debug\n] [\n4021\n] [\nSCO\n]\nOGC[0]:\nDC1-DC1_QA21-22,\nCOMMAND:\non,\nFEEDBACK:\noff,\nBLOCKING:\nyes\n,\nOPRSTATE:\nAbNormal(off\nFBK\nwhile\non),\nCHRGOPRMODE:\n6\n,\nCTRL_DC_UNIT:\nDC1\n2025-05-09T11:13:13.650253+00:00\nswcpu\n[\nuser:debug\n] [\n4021\n] [\nSCO\n]\nOGC[0]:\nDC1-DC1_QA21-22,\nCOMMAND:\non,\nFEEDBACK:\noff,\nBLOCKING:\nyes\n,\nOPRSTATE:\nAbNormal(on\nFBK\nTimeout),\nCHRGOPRMODE:\n6\n,\nCTRL_DC_UNIT:\nDC1\n2025-05-09T11:13:15.897278+00:00\nswcpu\n[\nuser:debug\n] [\n4021\n] [\nDCC\n]\nDC1:\nCharging\nPhase\n\"P06_CHARGE\"\n-->\n\"P00_UNKNOWN\"\nAdditionally, the error logs indicate that\nPowerConverter[3]\ndid not perform the expected fast shutdown.\nWe also observed\nError E17\n, which corresponds to an\nInternal Communication Error\n.\nGiven the persistence of this error, we recommend planning a site intervention. Please ensure to carry the following spare parts:\nPower Converter module\nCommunication wiring\nRCD_FB3 unit (based on the observed error flags)\nIf all wiring checks out fine during inspection, we suggest proceeding with replacement of the suspected components.\nBefore plan for intervention, we suggest you upgrade the firmware with latest one.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T09:39:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9e3830e6-df2f-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station CRM:02681000157",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0423937 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly refer below KA for the reference.\nKnowledge Article: Knowledge Article for ISP: Emobility_Sicharge_D_Converter_ Missing converter in DC1,DC2,DC3,DC4 - Dynamics 365\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T09:52:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f6e1512-4c4b-f011-877a-7c1e52768c07",
+            "subject": "0423937 - ID0423937-DC/Si-D/FR-[MP / R6 170002001] Request for Investigation on Charging Station CRM:00752000888",
+            "body": "Bonjour ,\nVeuillez trouver ci joint le rapport d'intervention de la sociéte Resonance.\nLa borne est opérationnelle.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-06-17T07:24:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

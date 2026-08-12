@@ -1,0 +1,38 @@
+{
+    "incident_id": "c43238c2-e69e-4ab9-9e6d-371157a1e9de",
+    "ticket_number": "0415009",
+    "title": "ID0413655-DC/SI-D/FR-[MP/R6 170002075] AC Socket always in used condition (C1)",
+    "created_on": "2025-03-25T23:37:34Z",
+    "last_activity": "2025-04-10T14:13:44Z",
+    "age": "22476",
+    "description": "Reported behaviour/issue: The charger on SCB seems to use the AC socket but in reality this socket is not used. The AC flag is always in use condition while the socket is not used\nSolution:\nyyyy-mm-dd:\nHandover ES to NOC: 10.04.2025",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "mSS9T9",
+    "stage": null,
+    "serial_number": "MP / R6 170002075,MP / R6 170002075",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2f64e3b7-842c-3614-9233-a3c8420aee59",
+            "subject": "Analysis",
+            "body": "Error flag:\nLogs:",
+            "date": "2025-03-25T23:41:24Z",
+            "extra": {}
+        },
+        {
+            "id": "5bc2ce95-3bdd-885f-a7a4-2e12dd859849",
+            "subject": "Notes for L3:",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nThe charger on SCB seems to use the AC socket but in reality this socket is not used. The AC flag is always in use condition while the socket is not used\nAction Performed (L2) :\nLog analysis. Found that no charging session was performed since 1 month. Last session was carried out on 21st Feb (refer logs mentioned in timeline). Still the symbol of AC socket is in used condition on SCB. Found\nModbus error of Meter_BC6_AC_Income\nin error flags.\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) :\nNeed to check further if its issue with SCB or hardware issue.\nLog analysis with timestamp :\nNA\nAction Required\nAction by HQ : Deeper analysis\nAttachement\n: refer notes in timeline.",
+            "date": "2025-03-25T23:43:26Z",
+            "extra": {}
+        },
+        {
+            "id": "41796907-f51a-0de6-845e-6b34ba1e819d",
+            "subject": "Handover ES to NOC",
+            "body": "I rebooted via SSH the EcoG KF11 and on SCB the AC socket is available and not in “in use condition” anymore. Furthermore, I checked on AWS and there has not been any charging session on AC socket since September 2024 (only one attempt on 21.02.2025 but at the same time as a reboot request).\nRegarding the error flag:\nMeter_BC6_AC_Income\nPLC\nDEVICE\ntrue\nModbus Error\nThe PAC income meter is not reachable:\nFirstly, it has to be clarified with the RC if the BC6 meter is actually installed on the charger, otherwise please remove it from the SCB configuration.\nIf it is installed, an onsite visit is required to check the ETH cable to the BC6.\nHandover as no further action from ES is required.",
+            "date": "2025-04-10T14:11:53Z",
+            "extra": {}
+        }
+    ]
+}

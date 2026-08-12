@@ -1,0 +1,141 @@
+{
+    "incident_id": "bf382a63-8cfc-40ed-9be6-af2460b40e0c",
+    "ticket_number": "0397214",
+    "title": "ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error",
+    "created_on": "2024-12-25T13:04:57Z",
+    "last_activity": "2026-03-25T09:40:33Z",
+    "age": "7364",
+    "description": "Reported behaviour/issue:\n\"F0\" error on the PowerConverter[1]\nRoot cause:\nSolution:  Reboot\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "nBdkmt",
+    "stage": null,
+    "serial_number": "Y2 / RN 313405951029",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "39a649d6-c0c2-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0397214 CRM:00225142242",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0397214 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bf382a63-8cfc-40ed-9be6-af2460b40e0c",
+            "date": "2024-12-25T13:05:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab5e51f4-aae5-22a5-9d3f-086cd53fdaa4",
+            "subject": "Error photo",
+            "body": "",
+            "date": "2024-12-25T13:06:29Z",
+            "extra": {}
+        },
+        {
+            "id": "52bd8528-c2c2-ef11-b8ea-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0397214 CRM:00225142243",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0397214 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bf382a63-8cfc-40ed-9be6-af2460b40e0c",
+            "date": "2024-12-25T13:14:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f7ed8141-c7c2-ef11-b8e8-000d3ab009dd",
+            "subject": "ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Dear Mert,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / RN 313405951029\nChargerID/Serial No.\n:\nnBdkmt\nProblem Description\n: Error on power converter\nKindly Allow us some time; We will get back to you soon.\nFor future reference, your case number is\n0397214\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-25T13:51:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "34aa8ee0-d4c2-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Hello Mert,\nI hope you're doing well.\nUpon reviewing the logs, we found that the command\nOCPP: Received command: ChangeConfiguration \"key\":\"PowerSavingModeSchedule.\nwas executed, which has caused the charger to enter Power Saving Mode.\nWhen this mode is activated and no charging processes are active, the main switch (QA1) opens after 3 minutes, disconnecting the power line (including the converters) from the mains. This is the reason behind the converter error you've been experiencing.\nTo resolve this issue, please send disable the Power-Saving Mode. This will prevent the power line disconnection and eliminate the error.\nThank you for your attention to this matter. We look forward to your response.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-25T15:28:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09da1fba-73c3-ef11-b8e9-0022489bcff4",
+            "subject": "RE: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Hi Ankita,\nThank you for your reply. Yes I know when we use PSM all convertors will be disable but in this charger there are also convertor error. We did check the charger when PSM was disable.\nIf you want to check the charger we can reboot the charger and check without PSM being activated.\nBR,",
+            "date": "2024-12-26T10:25:32Z",
+            "extra": {
+                "sender": "mert.kanneci@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1d471278-1e1e-e7c1-bb75-0eb2ac77c95c",
+            "subject": "Note to L2",
+            "body": "Discussd with RC, He will contact with customer.",
+            "date": "2024-12-26T15:19:27Z",
+            "extra": {}
+        },
+        {
+            "id": "c7e2de86-74c4-ef11-b8e8-6045bde1171e",
+            "subject": "RE: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Hello Mert,\nI hope you are doing well.\nI wanted to check if you have reached out to the customer regarding the recent communication we had. Could you please confirm?\nLooking forward to your response.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-27T17:03:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cadd5913-76c6-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Hello Ankita,\nCould you please check again the issue? PSM was canceled at this charger.\nBR,",
+            "date": "2024-12-30T06:19:56Z",
+            "extra": {
+                "sender": "mert.kanneci@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "606efaf8-c2c6-ef11-8ee9-000d3ab98006",
+            "subject": "RE: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:01811000537",
+            "body": "Dear Mert,\nAs discussed on M.S.Team, that after performing a reboot, the charger is now functioning properly and is in good health.\nWe have confirmed that there are no active errors present at this time.\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0397214, and the case is now closed.\nProblem Description\n: Power converter error\nResolution\n: Reboot\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-30T15:30:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6db99e5b-c5c6-ef11-8ee9-000d3ab98006",
+            "subject": "Ticket 0397214 has been closed. Are you satisfied with our provided solution? CRM:01811000545",
+            "body": "Hello Mert,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0397214\nwith the title:\nID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-30T15:47:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a2fa2a5-2e28-f111-8341-6045bde08073",
+            "subject": "CASE CLOSED: ID0397214-DC/Si-D/TR-[Y2/RN 313405951029] Power converter error CRM:00225358258",
+            "body": "Dear Mert Kanneci,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0397214, the case is now closed. We hope that we have responded to your request in a timely and professional manner.\nIf the issue is not resolved, please click the button\nReactivate the Ticket\nIf you need further assistance later, you can always submit a new request via our support form:\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Technical Support Team",
+            "date": "2026-03-25T09:40:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

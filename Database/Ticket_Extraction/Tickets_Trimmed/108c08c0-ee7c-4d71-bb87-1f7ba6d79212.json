@@ -1,0 +1,77 @@
+{
+    "incident_id": "108c08c0-ee7c-4d71-bb87-1f7ba6d79212",
+    "ticket_number": "0417721",
+    "title": "ID0417631-DC/Si-D/AT-[MP / S3 170003317] SECC- error code (C1)",
+    "created_on": "2025-04-08T23:49:29Z",
+    "last_activity": "2025-10-01T14:20:37Z",
+    "age": "28256",
+    "description": "Reported behaviour/issue:\nwe already had a a Ticket that we closed after thinkin the Problem had been solved, I wrote the Information about it down in the comments section. There´s been some Alarms that have been sent to our backend since then, with the error code \"secc is offline\": -06.04.2025 22:38:09 -06.04.2025 20:53:18 -05.04.2025 15:45:33 -04.04.2025 02:38:54 Could you please check if everything is working as intended with this charger?\nWarranty:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "3Ji96w",
+    "stage": null,
+    "serial_number": "MP / S3 170003317,MP / S3 170003317,MP / S3 170003317",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fb3361cc-111c-dcb9-8646-9b3a664ab556",
+            "subject": "04.04.2025 02:38:54",
+            "body": "2025-04-04T00:38:52.474293+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/6f6d257b1e6f[641]:\nError polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-04-04T00:38:53.928855+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (9ac8a465-8f57-4a9a-873e-068b0828bbda) -\n{\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\n2025-04-04T00:38:54.956862+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (c71cae4c-3916-4251-b8bc-89f0e36c3441) -\n{\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}",
+            "date": "2025-04-09T00:04:23Z",
+            "extra": {}
+        },
+        {
+            "id": "761d9205-68c6-a149-b628-f37a277104d5",
+            "subject": "05.04.2025 15:45:33",
+            "body": "2025-04-05T13:45:31.814683+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/6f6d257b1e6f[641]:\nError polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-04-05T13:45:33.310422+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (4b7fa483-189f-4f59-bdc6-c683faffee97) -\n{\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\n2025-04-05T13:45:35.338438+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (61be97fe-42c1-40d9-a53c-02e116dee387) -\n{\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}",
+            "date": "2025-04-09T00:05:38Z",
+            "extra": {}
+        },
+        {
+            "id": "8c38bcd1-2456-1d52-937d-b51303ed09bb",
+            "subject": "06.04.2025 20:53:18",
+            "body": "2025-04-06T18:53:17.188241+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/6f6d257b1e6f[641]:\nError polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-04-06T18:53:18.947693+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (3238aad9-31dc-44f6-a698-2a5463ef00bb) -\n{\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\n2025-04-06T18:53:19.958962+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (1647b024-bd7b-4753-9ad5-1df3aea84d99) -\n{\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}",
+            "date": "2025-04-09T00:06:09Z",
+            "extra": {}
+        },
+        {
+            "id": "15ec362d-ecf5-49f5-b87d-95cf99f5c83f",
+            "subject": "06.04.2025 22:38:09",
+            "body": "2025-04-06T20:38:07.849236+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/6f6d257b1e6f[641]:\nError polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-04-06T20:38:09.082485+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (654df0c5-e4df-47f7-87f1-1a9567a1392e) -\n{\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\n2025-04-06T20:38:10.153077+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[641]: OCPP: Send command: StatusNotification (dc797062-c883-4ef2-9853-f52eda478c2b) -\n{\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}",
+            "date": "2025-04-09T00:06:41Z",
+            "extra": {}
+        },
+        {
+            "id": "78060708-2752-269c-8422-7d2a8f1aa4c2",
+            "subject": "Noticed that cop error does not interrupt the ongoing session.",
+            "body": "2025-04-07T07:07:25.886302+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/6f6d257b1e6f[641]: Error polling coap://10.20.17.100:5683/state Error: No reply in 4.25s",
+            "date": "2025-04-09T00:07:24Z",
+            "extra": {}
+        },
+        {
+            "id": "7252e86b-4670-93ce-937d-01d4d7201675",
+            "subject": "AWS Query",
+            "body": "CloudWatch | eu-central-1",
+            "date": "2025-04-09T00:11:49Z",
+            "extra": {}
+        },
+        {
+            "id": "b8766687-a4d9-6bbf-88a1-757b9fbf479f",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause\n: NA\nProblem Description\n: coap error polling was observed 54 times over the past 4 weeks on DC2 outlet.\nAction Performed (L2)\n: We analyzed the logs based on the timestamps provided by the customer and found that the coap error caused the outlet to go \"out of order\" for a few seconds, after which the outlet returned to a healthy state.\nCharger SW Version\n: v6.1.3\nReason for Handover (L3)\n: Further investigation is required, and if possible, an update to EcoG v1.4.11 should be considered.\nLog Analysis with Timestamp\n: Logs corresponding to the provided customer timestamp are attached in the note.\nAction Required by HQ\n: A deeper investigation is needed, and if feasible, an update to EcoG v1.4.11 should be applied.\nAttachment\n: Screenshot of the AWS coap error is attached in the note.",
+            "date": "2025-04-09T00:12:54Z",
+            "extra": {}
+        },
+        {
+            "id": "1d98627f-bb1a-f011-998a-7c1e5287f582",
+            "subject": "0417721 - ID0417631-DC/Si-D/AT-[MP / S3 170003317] SECC- error code (C1) CRM:00314000159",
+            "body": "Good afternoon Lara,\nMy name is Fosco, I am reaching out from the Expert Services team in regards of child case\n0417721\n. The ticket was opened to explain the new error messages observed on your end.\nFirst of all, everything is working as intended. With the latest FW version of Sicharge D v6.1.3,\nnew OCPP Vender Error Codes were introduced\n. These vendor codes are intended to provide more information to the Backend in terms of charger's behavior, but they are not referring to new errors per se. The charger has been experiencing these loss of communications also before, simply they were not reported to the Backend.\nIn details, as already explained by my colleague Sominath:\nThe VendorErrorCode “\nmodbus0 is not connected\n” refers to a loss of communication to the SECC for 750ms. This event has no impact on the performance of the charger, even during a charging session. Only in rare case it could lead to outlets being unavailable for several seconds or interrupt a charging session.\nThe VendorErrorCode “\nsecc is offline\n” refers to the happening of the coap polling error, an internal communication to SECC lost for a small interval of time. The OpenController will reconnect to the SECC within 5 seconds. Also in this case, this event has no impact on the charger, even during charging session.\nIn case these errors appear more and more often, we could install a Hotfix on the SECC of the charger, which includes hardening patches regarding Coap communication and a Modbus reconnection hardening.\nFurthermore, R&D team is planning, for the next FW release, to reduce the spamming of these error messages when they have no effect on the charger in terms of outlet unavailability.\nAs explained above, these are not new errors introduced by the new FW v6.1.3, but just new messages sent to the Backend. Unfortunately, we missed a proper communication to the CPOs in regards of the introduction of these new error messages. We apologize for that and we will communicate future new vendor codes within the Release Notes and Software Manual.\nIn case you have further questions, please do not hesitate to reply to this email.\nLooking forward to hearing your feedback soon.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-16T12:08:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

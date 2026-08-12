@@ -1,0 +1,42 @@
+{
+    "incident_id": "73ff9744-7d60-4a5d-b598-9f06249c26e3",
+    "ticket_number": "0415510",
+    "title": "ID0415491-DC/Si-D/IT-[MP/R9 170002566] Iplanet -Faulty plugs (C1)",
+    "created_on": "2025-03-27T16:45:02Z",
+    "last_activity": "2025-12-16T12:20:08Z",
+    "age": "76073",
+    "description": "Reported behaviour/issue:\nFaulty plugs,\nSolution:\nR&D ticket: EMOB-17016",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "G0UsEh",
+    "stage": null,
+    "serial_number": "MP / R9 170002566,MP / R9 170002566",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "22437a7e-e5f7-25bb-915e-5b6d2b015d76",
+            "subject": "Handover NOC-->ES",
+            "body": "Problem Description : Faulted plugs\nAction Performed (L2) : Logs analysis, Unexpected token 14 times occurrence in 4hr timestamp. Idle condition having Voltage transducer error as E005 & E006 means fastshut down is pending & minimum number of converter not found\nCharger SW Version:\nv6..0.3\nReason for Handover (L3) : Need deeper analysis.\nAttachement\n: refer attched logs",
+            "date": "2025-03-27T16:52:30Z",
+            "extra": {}
+        },
+        {
+            "id": "18bdca22-7b14-f011-998a-6045bdde4786",
+            "subject": "0415510 - ID0415491-DC/Si-D/IT-[MP/R9 170002566] Iplanet -Faulty plugs (C1) CRM:00314000157",
+            "body": "Ciao Luca,\nI am reaching out for this ticket\nID0415510\nfor the charger\nG0UsEh\nin Cantu.\nFollowing up our call today, here is the the analysis of the reported issue on the charger:\nThe Charger had #1 event of severe toggling of Pilotstate on 27.03.2025, both on DC1 and DC2\nThis toggling was caused by the EcoG, which randomly had an error in parsing one config JSON file.\nIn this particular case, the issue appeared when the charger was not in use, hence the symptom was only a severe toggling of the outlets from A to E. In case this issue happens during a charging session, the charging itself will not be affected, but most likely the StopTransaction command will not be sent to the CPO Backend, but it will be sent only after a reboot of the charger.\nAs per previous point, in case this behavior happens again, a reboot will restore the charger.\nAs per agreed, I will monitor the charger for the next two weeks. Until now, the charger showed only once this behavior. In case the issue on EcoG begins to appear more often, the next steps could be:\nSet an automatic reboot\nReplace the KF11\nThe issue is known to both R&D and EcoG, who are working for a RCA and to identify a bugfix.\nI will provide you an update as soon as possible.\nLooking forward to hearing from you soon!\nW\nith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-08T13:12:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b7a2ea50-6e1a-160c-b92d-2a602cc4e8fb",
+            "subject": null,
+            "body": "I'm closing this ticket because it's a duplicate.\nBye",
+            "date": "2025-05-19T12:37:35Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "incident_id": "64545cf4-dc2d-4ac0-879d-db6b41b3e789",
+    "ticket_number": "0440974",
+    "title": "ID0440974-DC/Si-D/EE-[Multiple]-OCPP: Received error: BootNotification",
+    "created_on": "2025-07-30T14:24:25Z",
+    "last_activity": "2025-07-30T16:01:19Z",
+    "age": "97",
+    "description": "Reported behavior/issue:\nfirmwareversion is too long. Standard states it should be max 50 character and customer OCPP backend follows the standard. OCPP sends \"Received error.\nSolution: Change FW version name to have less than 50 characters\nWed, 30 Jul 2025 14:19:00 GMT\n2025-07-30, 14:18:59\n2025-07-30T14:18:59.960511+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/c3b5242384e1[742]: OCPP: Received error: BootNotification (7246c5f3-be00-4a22-8dd3-f77dd3284720) - {\"code\":\"InternalError\",\"details\":{},\"stack\":\"Error: Unknown\\n at Connection.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:138:35)\\n at Generator.next (<anonymous>)\\n at /node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:31:71\\n at new Promise (<anonymous>)\\n at __awaiter (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:27:12)\\n at Connection.onMessage (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:68:16)\\n at WebSocket.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:57:44)\\n at WebSocket.emit (node:events:518:28)\\n at Receiver.receiverOnMessage (/node_modules/@sicharge-cp/ocpp-lib/node_modules/ws/lib/websocket.js:801:20)\\n at Receiver.emit (node:events:518:28)\"}\nWed, 30 Jul 2025 14:19:00 GMT\n2025-07-30, 14:18:59\n2025-07-30T14:18:59.709141+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/c3b5242384e1[742]: OCPP: Send command: BootNotification (7246c5f3-be00-4a22-8dd3-f77dd3284720) - {\"chargePointModel\":\"SiCharger\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v7.0.5-0-gd66ba3a+FileHandlerHF+tia-4.1.30 (PRODUCTION)\",\"iccid\":\"37201022060212533F\"}\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 596630000,
+    "stage": null,
+    "serial_number": "MP / NN 170000120",
+    "case_nature_code": 580000001,
+    "chargerID": "kDXszC, i0Nm72, kXcgUh",
+    "additional_info": [
+        {
+            "id": "ee8aa0ea-506d-f011-b4cc-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0440974 CRM:00225236256",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0440974 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=64545cf4-dc2d-4ac0-879d-db6b41b3e789",
+            "date": "2025-07-30T14:24:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4abca6c-516d-f011-bec2-7ced8d41ec51",
+            "subject": "A new case manager was assigned to 0440974 CRM:00225236259",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0440974 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=64545cf4-dc2d-4ac0-879d-db6b41b3e789",
+            "date": "2025-07-30T14:28:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "793f0062-5e6d-f011-b4cb-7c1e52350ea5",
+            "subject": "Ticket 0440974 has been closed. Are you satisfied with our provided solution? CRM:00225236304",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0440974\nwith the title:\nID0440974-DC/Si-D/EE-[Multiple]-OCPP: Received error: BootNotification\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-30T16:01:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

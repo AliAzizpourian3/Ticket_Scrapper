@@ -1,0 +1,112 @@
+{
+    "incident_id": "32b572c9-c0e7-ef11-9341-7c1e5234921b",
+    "ticket_number": "0405728",
+    "title": "ID0405728-DC/Si-D/SI-[Y2/SN 313975615001] Missing converter in DC2",
+    "created_on": "2025-02-10T15:07:56Z",
+    "last_activity": "2025-12-09T08:18:23Z",
+    "age": "434471",
+    "description": "Reported behavior/issue:\nMissing converter in DC2\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status: Active\n02/12/2025 : RC Handover",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "RE6ldm",
+    "stage": null,
+    "serial_number": "Y2/SN313975615001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "db1f87c5-c0e7-ef11-9341-000d3add0e90",
+            "subject": "missing converters, Slovenia",
+            "body": "Dear Support,\nI need your help regarding one of our new installation in Slovenia. Charger was commissioned last week.\nThe charger serial is: Y2/SN 313975615001, charger name: RE6Idm\nCharger was rebooted remotely from SCB.\nAnother topic with it is the payment terminal. It is configured by the description that we have from companion tool. Customer backend has a live contract with PSS (payment service provider) but the function is not working, it says invalid function.\nCan you please check these malfunctions and send a feedback for us?\nÜdvözlettel / With best regards,\nSzilard Negyesi\nSiemens Zrt.\nSI E\nGizella út 51-57.\n1143 Budapest\nmailto:\nszilard.negyesi@siemens.com\nwww.siemens.hu\nwww.siemens.com\nSiemens Zrt. cégjegyzékszám: 01-10-041548 (Fővárosi Törvényszék Cégbírósága)\nEz az e-mail (és minden melléklete) bizalmas, üzleti titkot és/vagy védett személyes adatokat tartalmaz. Ha ezt az e-mailt nem Önnek szánták (ill. tévedésből kapta meg), akkor kérjük, hogy haladéktalanul törölje, és értesítse a feladót. Az e-mail tartalmának jogosulatlan másolása vagy terjesztése szigorúan tilos.",
+            "date": "2025-02-10T15:07:43Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "afda0cec-d2e7-ef11-9341-000d3a6717e6",
+            "subject": "A new case manager was assigned to 0405728 CRM:00225162041",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0405728 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=32b572c9-c0e7-ef11-9341-7c1e5234921b",
+            "date": "2025-02-10T17:17:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f20a04e3-d3e7-ef11-9341-002248a28911",
+            "subject": "ID0405728-DC/Si-D/SI-[Y2/SN 313975615001] Missing converter CRM:00643001273",
+            "body": "Dear Szilard Negyesi,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2/SN313975615001\nChargerID/Serial No.\n:\nRE6ldm\nProblem Description\n: Missing converter\nPlease allow us some time to analyse the issue and we will get back to you shortly with an update.\nFor future reference, your case number is\n0405728\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-10T17:24:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ffd01c73-49e9-ef11-9342-0022489fb3e7",
+            "subject": "RE: ID0405728-DC/Si-D/SI-[Y2/SN 313975615001] Missing converter CRM:00643001273",
+            "body": "Dear Szilard,\nI am writing to formally inform that we are moving case 0405728 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-SI SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nMaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nMaybe\nPerformance monitoring by RC\nAs we analyzed the logs and after rebooting the charger, we noticed in the converter grouping that one of the power converters is not grouped. We need to align for a site intervention to check the following.\n1. Checked the converter grouping in the SCB, it looks fine as per the High Flex configuration.\n2. Please check if the power converter are properly connection to its shelf case.\n3. Check for any loose connection of any power cable or CAN communication cables of the converter and measured the voltage across it with the help of multimeter. Check the resistance across CAN communication cables.\n4. Please see to the display of the power converter whether it is OFF state or ON?\n5. Try swapping the power converter with the good one and if the error flag was changed to the replaced one then we can suspect that the converter is faulty.\n6. If all the steps are performed and you still see the power converter are faulty, we suggest you to replace it as we can't rework to it.\nMLFB : 8EM5903-0AA01-0AA2 (Power Converter)\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-SI SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T13:58:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a69f158d-7fe9-ef11-9341-7c1e52372dd0",
+            "subject": "RE: ID0405728-DC/Si-D/SI-[Y2/SN 313975615001] Missing converter CRM:00643001273",
+            "body": "Dear Shrey,\nthank you for the answer. We try to oranize a site visit soon. I will let you know if we could organize the day.\nI also mentioned the payment terminal issue as well and I need some guidline for it. Terminal become configured based on the mentioned official description.\nCan you please advise the next step to be sure that the problem is no ton our side?\nBR,\nSzilard",
+            "date": "2025-02-12T20:26:01Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "796ec24a-4753-f011-877b-6045bde0265d",
+            "subject": "0405728 - ID0405728-DC/Si-D/SI-[Y2/SN 313975615001] Missing converter in DC2 CRM:00362000022",
+            "body": "Dear Szilárd,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf any repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Deutschland\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-06-27T11:10:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ca3b27c-41ab-f011-bbd2-7c1e52880fe1",
+            "subject": "Global ISP Backlog Cleanup initiative - Help Us Update Your ISP Ticket Status CRM:00362000128",
+            "body": "Dear Szilard,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWe've also noticed that this particular ticket hasn't seen recent activity for an extended period. To help us keep our system streamlined and ensure we're focusing on active issues, please note that if we don't receive an update within one week from today, this ticket will be closed.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-10-17T10:10:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c74eaa6-41ab-f011-bbd2-7ced8d4259cd",
+            "subject": "Automatic reply: Global ISP Backlog Cleanup initiative - Help Us Update Your ISP Ticket Status CRM:00362000128",
+            "body": "Dear Sender,\nI'm out of office with limited access to my mailbox.\nI will return back to the office on 20th OCT 2025.\nIn case of urgent topic, please contact with my colleague, Norbert Szilagyi (norbert.szilagyi@siemens.com)\nBest Regards,\nSzilard Negyesi",
+            "date": "2025-10-17T10:11:38Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4061ea90-b951-37e6-af07-d9e926c31295",
+            "subject": "Closing Note",
+            "body": "After offline alignment with RC ticket can be closed.",
+            "date": "2025-12-09T08:17:28Z",
+            "extra": {}
+        }
+    ]
+}

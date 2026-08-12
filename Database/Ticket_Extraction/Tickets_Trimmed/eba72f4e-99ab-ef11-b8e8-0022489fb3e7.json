@@ -1,0 +1,115 @@
+{
+    "incident_id": "eba72f4e-99ab-ef11-b8e8-0022489fb3e7",
+    "ticket_number": "0391888",
+    "title": "ID0391888-DC/Si-D/FR [MP / R6 170002075] Fault Analysis of Outlet1",
+    "created_on": "2024-11-26T01:54:06Z",
+    "last_activity": "2025-05-22T12:03:31Z",
+    "age": "71308",
+    "description": "Reported behaviour/issue:\nFault Analysis of Outlet1\nRoot cause: Isolation Fault IMD not initialised\nSolution: Check if it is temporary, if permanent fault replace IMD. Check if this is coming from EV?\nOn DAMEX Sanctioned List: No\nWarranty Valid: Valid till June 2025",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R6 170002075",
+    "case_nature_code": null,
+    "chargerID": "MP / R6 170002075",
+    "additional_info": [
+        {
+            "id": "c0aa5b4c-99ab-ef11-b8e8-000d3ab41b62",
+            "subject": "[Tranports Duboc] Request for Ticket Creation for Sicharge D Station - Connector DC1",
+            "body": "Hello,\nI would like to report a recurring issue with the DC1 connector of the Sicharge D station, serial number MPR6170002075, and request the creation of a maintenance ticket. Below are the details of the recorded events, based on local Paris time (CET):\n1.    Status: Unavailable\n•     Start: 25/11/2024 at 12:43:30 (CET)\n•     End: 25/11/2024 at 12:50:30 (CET)\n2.    Status: Finishing\n•     Start: 25/11/2024 at 12:39:20 (CET)\n•     End: 25/11/2024 at 12:43:30 (CET)\n3.    Status: Unavailable\n•     Start: 25/11/2024 at 12:39:19 (CET)\n•     End: 25/11/2024 at 12:39:20 (CET)\n4.    Status: In Fault\n•     Start: 25/11/2024 at 11:45:32 (CET)\n•     End: 25/11/2024 at 11:45:33 (CET)\n5.    Status: In Fault\n•     Start: 25/11/2024 at 11:43:51 (CET)\n•     End: 25/11/2024 at 11:43:52 (CET)\nThese malfunctions impact the operability of the station and require urgent intervention. I kindly request your review of these incidents, identification of the root cause, and a proposal for corrective actions.\nPlease do not hesitate to contact me if further information is needed.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2024-11-26T01:54:00Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5dfd0cc2-adab-ef11-b8e8-000d3adc3b84",
+            "subject": "A new case manager was assigned to 0391888 CRM:00225129095",
+            "body": "Reetesh Kumar Sharma was assigned as new Case Manager for case 0391888 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eba72f4e-99ab-ef11-b8e8-0022489fb3e7",
+            "date": "2024-11-26T04:20:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70e79ece-a5b1-abf2-b800-5eae5f3ca1ea",
+            "subject": "Potential Root Cause",
+            "body": "2024-11-25T11:41:00.867891+00:00 swcpu [user:debug] IMD_FAULT_DC1 InsulationresistanceCombinedAlarm: Prewarning\n2024-11-25T11:41:00.904630+00:00 sicharge-cp [local0:err] sicharge-cp-backend/c61d394e0f96[697]: PLC-Error-Flag 'IMD_BC1' changed to true - (MB-Er:0 IsoWarn/Fail/PEConn:1 Capa:0 RlyConn:1 Init:1 SIS:1)\n2024-11-25T11:41:28.238576+00:00 swcpu [user:debug] IMD_FAULT_DC1 NotInitilized\n2024-11-25T11:41:28.278021+00:00 swcpu [user:debug] IMD_FAULT_DC1 RelayConnIdleBecauseOfMissingInit\n----------------------\n2024-11-25T11:41:56.948184+00:00 swcpu [user:debug] [ONR] DC1 : Outlet not ready - standby insulation monitor state is not valid\n2024-11-25T11:41:56.973862+00:00 sicharge-cp [local0:err] sicharge-cp-backend/c61d394e0f96[697]: PLC-Error-Flag 'IMD_BC1' changed to true - (MB-Er:0 IsoWarn/Fail/PEConn:5 Capa:0 RlyConn:1 Init:1 SIS:3)\n----------------------------\n2024-11-25T12:35:58.558227+00:00 swcpu [user:debug] IMD_FAULT_DC1 InsulationresistanceCombinedAlarm: Prewarning\n2024-11-25T12:35:58.592004+00:00 sicharge-cp [local0:err] sicharge-cp-backend/c61d394e0f96[697]: PLC-Error-Flag 'IMD_BC1' changed to true - (MB-Er:0 IsoWarn/Fail/PEConn:1 Capa:0 RlyConn:1 Init:1 SIS:1)\n-------------------\n2024-11-25T12:43:30.305326+00:00 sicharge-cp [local0:err] sicharge-cp-backend/c61d394e0f96[707]: PLC-Error-Flag 'IMD_BC1' initial value true - (MB-Er:0 IsoWarn/Fail/PEConn:5 Capa:0 RlyConn:1 Init:1 SIS:0)",
+            "date": "2024-11-26T04:40:05Z",
+            "extra": {}
+        },
+        {
+            "id": "92d95ddc-bbab-ef11-b8e8-000d3ab11939",
+            "subject": "A new case manager was assigned to 0391888 CRM:00225129151",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0391888 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eba72f4e-99ab-ef11-b8e8-0022489fb3e7",
+            "date": "2024-11-26T06:01:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "55fec146-c4ab-ef11-b8e9-002248a29667",
+            "subject": "RE: [Tranports Duboc] Request for Ticket Creation for Sicharge D Station - Connector DC1 CRM:02023000341",
+            "body": "Dear Malek,\nThank you for reaching out to eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002075\nCharger ID/Serial No.\n:\nMP / R6 170002075\nProblem Description\n:\nFault Analysis of Outlet1\nWe are forwarding this ticket to our regional service team for onsite\ntroubleshooting\n.\nFor future reference, your ticket number is\n0391888\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-26T07:01:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b2dee0a-c5ab-ef11-b8e9-002248a29667",
+            "subject": "RE: [Tranports Duboc] Request for Ticket Creation for Sicharge D Station - Connector DC1 CRM:02023000341",
+            "body": "Dear RC-FR Team,\nwe have reviewed the AWS logs and also from our possible root cause analysis indicates that there might be some issue with  Insulation Monitoring Device.\nPlease refer\nschematic with marked components.\nRecommended Actions:\nThoroughly inspect all\nIMD connections\nand components based on the schematic provided.\nAdditional Notes:\nPlease carry a spare\nInsulation Monitoring Device (IMD)\nduring the site visit in case a replacement is necessary.\nPlease refer MLFB No for ordering the spare\n8EM5903-0AA00-0AA1.\nI am writing to formally inform that we are moving case 0391888 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nMaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-26T07:07:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd820127-e5ab-ef11-b8e8-000d3adc3b84",
+            "subject": "A new case manager was assigned to 0391888 CRM:00225129444",
+            "body": "SEBASTIEN COLLET was assigned as new Case Manager for case 0391888 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eba72f4e-99ab-ef11-b8e8-0022489fb3e7",
+            "date": "2024-11-26T10:56:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d87ad469-86c4-a863-8069-c3ce3c26b1c6",
+            "subject": "Note to RC",
+            "body": "The customer reported this issue in another ticket for the same charger-→We had previously reported a similar issue under the ticket Request for Ticket Creation for Sicharge D Station - Connector DC1 CRM:02023000341.\nIn this specific case, the Volvo FH Electric truck fails to start charging sessions. After multiple attempts, one session eventually started but stopped prematurely. The truck was moved to the Volvo Trucks center in Le Havre, where it successfully charged on a 40 kW DC mobile charger without any issues.\nIt is critical to analyze the root cause of this malfunction, determine whether it originates from the charger, and implement the necessary corrective measures promptly.\nDetails of Failed Sessions:\n1.    Failed Session\n•     Duration: 00:00:20\n•     Start: 27/11/2024 13:54:32\n•     End: 27/11/2024 13:54:53\n•     Delivered Energy: 0.4 kWh\n2.    Failed Session\n•     Duration: 00:00:22\n•     Start: 27/11/2024 13:26:00\n•     End: 27/11/2024 13:26:22\n•     Delivered Energy: 0.4 kWh\nObservations of Recurring Errors:\n•     27/11/2024 14:30:38\n•     Error in internal hard- or software component\n•     Charger: FR*AU10058-01\n•     Connector: 3 (CCS plug)\nFollowing the advice of your colleague Emmanuel NEVO, we restarted the charger, but the issue persists, continuing to trigger errors.\nI would like to provide some additional information regarding the ongoing issue with the Sicharge D station.\nDavid, the director of the Trucks Center in Le Havre, shared some relevant details with us. Attached, you will find screenshots of the charger errors from Duboc. Additionally, please find below the active fault displayed in One View:\nSee attached file\nPlease let me know if you need any further information or clarification to expedite the resolution of this issue.\nI kindly request your immediate attention to this matter and look forward to your guidance on the next steps to resolve this critical issue.",
+            "date": "2024-12-03T16:51:28Z",
+            "extra": {}
+        },
+        {
+            "id": "ca6fe2e0-0fbb-fc92-a642-cfe6dea832b6",
+            "subject": "New Ticket ID0399688",
+            "body": "",
+            "date": "2025-01-14T14:11:01Z",
+            "extra": {}
+        },
+        {
+            "id": "3444d0e8-81d2-ef11-8eea-000d3addcd64",
+            "subject": "RE: [Tranports Duboc] Request for Ticket Creation for Sicharge D Station - Connector DC1 CRM:00271000895",
+            "body": "Bonjour Malek,\nSuite à notre discussion du 14/01, nous allons fermer le ticket initial. Le suivi de ce sujet se fera désormais sur le ticket numéro ID0399688.\nNous prenons ce sujet très au sérieux et nous vous assurons que l'analyse sera effectuée dans les plus brefs délais.\nMerci de votre compréhension.\nCordialement/\nMit freundlichen Grüßen/ Best regards,\nFrancois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-01-14T14:14:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "incident_id": "007ec0d0-2d2f-4a29-b27b-74924a7b0f3c",
+    "ticket_number": "0410696",
+    "title": "ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week (C1)",
+    "created_on": "2025-03-05T09:27:26Z",
+    "last_activity": "2025-03-14T16:14:45Z",
+    "age": "13367",
+    "description": "Reported behavior/issue:\nLast 4 weeks there has been 164 charging session on DC2 cable and 51 times CableTempSensor failures and 31 times where the difference has been > 15 degree celsius.\nRoot cause:\nBad or damaged CCS2 cable. NOTE: CMS is in use.\nSolution:\nOpen Ticket: No\nWarranty Status: Active\nPlease DO NOT ADD MAIN ASSET BEFORE FINAL JUDGEMENT",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hKzfTF",
+    "stage": null,
+    "serial_number": null,
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "99d51010-a4f9-ef11-bae2-6045bddf3f78",
+            "subject": "A new case manager was assigned to 0410696 CRM:00225173219",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0410696 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=007ec0d0-2d2f-4a29-b27b-74924a7b0f3c",
+            "date": "2025-03-05T09:27:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0407a0d2-6da8-1578-aff4-e13505b288a2",
+            "subject": "RC Note 1",
+            "body": "CableTempDiff >15 degree celsius\nfields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SeccStopCharging/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_Wh\":*,'\nas\nenergy\n|\nparse\n@message\n'\"source\":*,'\nas\nsource\n|\nparse\n@message\n'\"curr_ses_secs\":*,'\nas\nduration\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_endBy\":\"*\",'\nas\nend_by_source\n|\nparse\n@message\n'\"pt1000_1_T\":*,'\nas\npt1000_1_T\n|\nparse\n@message\n'\"pt1000_2_T\":*,'\nas\npt1000_2_T\n|\nparse\n@message\n'\"curr_ses_errMsg\":\"*\"'\nas\nerrorMsg\n|\ndisplay\n@logStream\n, outlet, energy, source, duration, end_by_source, EVMAC,\nabs\n(pt1000_2_T-pt1000_1_T)\nas\ndiff\n, errorMsg\n#| filter outlet = 3\n#| filter energy > 0\n|\nfilter\ndiff\n>\n15\n|\nlimit\n10000\n1 Inline Image",
+            "date": "2025-03-05T09:28:55Z",
+            "extra": {}
+        },
+        {
+            "id": "ce78b022-d209-6ff4-86f4-02ccddbd0e8e",
+            "subject": "RC Note 2",
+            "body": "Total sessions last 4 week\nfields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SeccStopCharging/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_Wh\":*,'\nas\nenergy\n|\nparse\n@message\n'\"source\":*,'\nas\nsource\n|\nparse\n@message\n'\"curr_ses_secs\":*,'\nas\nduration\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_endBy\":\"*\",'\nas\nend_by_source\n|\nparse\n@message\n'\"pt1000_1_T\":*,'\nas\npt1000_1_T\n|\nparse\n@message\n'\"pt1000_2_T\":*,'\nas\npt1000_2_T\n|\nparse\n@message\n'\"curr_ses_errMsg\":\"*\"'\nas\nerrorMsg\n|\ndisplay\n@logStream\n, outlet, energy, source, duration, end_by_source, EVMAC,\nabs\n(pt1000_2_T-pt1000_1_T)\nas\ndiff\n, errorMsg\n|\nfilter\noutlet =\n3\n|\nlimit\n10000\n1 Inline Image",
+            "date": "2025-03-05T09:29:28Z",
+            "extra": {}
+        },
+        {
+            "id": "4d950a9f-bb6a-befb-ab8e-c1be77f998d5",
+            "subject": "Rc Note 3",
+            "body": "DC2_CableTempSensor_XD101\nfields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/-Error-Flag\\s+'([^']+)'\\s+changed\\sto\\strue/\n|\nparse\n@message\n/-Error-Flag\\s+'(?<PLC_ERROR>[^']+)'\\s+changed\\sto\\s(?<DC_VALUE>true)/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nfilter\nPLC_ERROR\nlike\n/IMD_BC/\nor\n@message\nlike\n/CableTempSensor/\nor\n@message\nlike\n/DC_Co/\nor\n@message\nlike\n/OCPP/\nor\n@message\nlike\n/doorOpen_BG201/\nor\n@message\nlike\n/High voltage transducer/\nor\n@message\nlike\n/DoorPositionSwitch_BG3_BG4/\n|\nstats\ncount\n(*)\nas\nCount\nby\nPLC_ERROR,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000\n1 Inline Image",
+            "date": "2025-03-05T09:30:29Z",
+            "extra": {}
+        },
+        {
+            "id": "2ed664e9-9978-5b8e-b276-c325b8b669e7",
+            "subject": "Charger is reported CableTempSensor error 51 times in last 4 weeks",
+            "body": "",
+            "date": "2025-03-05T11:45:47Z",
+            "extra": {}
+        },
+        {
+            "id": "12ecaffe-6aa3-172c-abbb-fe9bef5a3f6f",
+            "subject": "Note to ES Team",
+            "body": "Suspected Root Cause:\nIt seems the PT1000 temperature sensor is faulty because the temperature difference appears to be more than 15°C.\nProblem Description:\nRC raised the case stating that the “CableTempSensor” error was reported 51 times in the last 4 weeks & the temperature difference appears to be more than 15°C.\nAction Performed (L2):\nI verified this error in AWS and also noticed that it is interrupting the charging session (refer to the timestamp: 2025-02-09T09:59). The charger is running FW v3.2.8, and I requested an update to the latest version, but they are not ready to update this unit because of\nThere is a reason for that why some chargers are running with old FW because known FW bug in AC charging.\nCharger SW Version:\nv3.2.8\nReason for Handover (L3):\nFurther investigation as per Field issue excel sheet.\nLog analysis with timestamp:\n2025-02-09T09:59. I checked one session for this time when the session was interrupted due to the cable temperature sensor error.\nAction Required\nby HQ:\nFurther investigation.\nAttachment\n: Refer to the attached AWS logs screenshot below.",
+            "date": "2025-03-05T12:01:36Z",
+            "extra": {}
+        },
+        {
+            "id": "8e6bd9d9-7f17-fded-9e75-44c05fd64add",
+            "subject": "Additional Comment",
+            "body": "The main asset is not added in the note due to the RC's request. If we add the main asset, the end customer will see the case description, and they may ask what this case is about it to RC. (It seems this issue is not known to the end customer, and the RC doesn't want them to know about it just yet.)",
+            "date": "2025-03-05T12:42:56Z",
+            "extra": {}
+        },
+        {
+            "id": "da381c01-6afa-ef11-bae2-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0410696 CRM:00225173888",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0410696 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=007ec0d0-2d2f-4a29-b27b-74924a7b0f3c",
+            "date": "2025-03-06T09:04:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "227401c7-94fe-ef11-bae3-7c1e52768c07",
+            "subject": "0410696 - ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week (C1) CRM:00472000276",
+            "body": "Hello Markus,\nPlease proceed to replace the CCS cable. Sessions with high current are ended due the temperature difference between DC+ and DC-. Solution is to replace the cable.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-03-11T16:20:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

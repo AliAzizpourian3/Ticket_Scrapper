@@ -1,0 +1,35 @@
+{
+    "incident_id": "2cf98f13-bd16-43fd-aa4d-671f8cdfece1",
+    "ticket_number": "0418822",
+    "title": "ID0417862 - DC/Si-D/FI - [acno33] - Charging suddenly stopping in DC2 (C1)",
+    "created_on": "2025-04-14T16:45:13Z",
+    "last_activity": "2025-05-19T15:41:18Z",
+    "age": "50336",
+    "description": "Customer states that DC2 (right main unit outlet) is cutting out middle of charging.\nSeems that it might be potentially QA13-14 getting stuck.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "acno33",
+    "stage": null,
+    "serial_number": "MP / P8 170000824,MP / P8 170000824",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "e1b8f8a3-a4ec-e01b-ade2-f0773e10648e",
+            "subject": "NOC > ES",
+            "body": "Problem Description :\nCharging suddenly stopping in DC2\nSuspected Root Cause :\nn/a\nAction Performed (L2) :\nLog analysis\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\ndetailed analysis needed\nLog analysis with timestamp :\nCharing timestamp: 2025-04-09T09:36:17\n2025-04-09T09:59:19, at 72% output contactor feedback changed to off and charging session stops.\nCharging Phases changed from \"P06_CHARGE\" --> \"P00_UNKNOWN\"\nAfter 2 minutes, there is alert message which shows error \"code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\".\nIn session_stop message we get source as EV and error \"code\":35,\"msg\":\"pilot stateC while stop charging\".\nNo QA13-14 AbNormal state message found.\nCustomer wants to know that root cause of it as it happened multiple times.\nAfterwards charging sessions happened successfully.\nAction Required\nAction by HQ : detailed analysis needed\nAttachement :\nlogs attached",
+            "date": "2025-04-14T16:46:05Z",
+            "extra": {}
+        },
+        {
+            "id": "fb91669a-4e20-f011-9989-6045bddec74d",
+            "subject": "0418822 - ID0417862 - DC/Si-D/FI - [acno33] - Charging suddenly stopping in DC2 (C1) CRM:00314000163",
+            "body": "Good evening colleagues,\nI am reaching out regarding child case\nID0418822\nopened for charging interruption on DC2 on charger\nacno33.\nI had a look at the logs of the event reported, as well as I conducted a quick investigation on AWS to see the frequency of occurrence of the issue. These are my findings:\nAt 2025-04-09T09:36:09 DC2 is connected\nAt 2025-04-09T09:36:43 DC2 starts charging\nAt 2025-04-09T09:59:19. DC2 stops charging\nEven if it seems that the OGCAuxFbk goes to off, from past experience I noticed that in those cases in which the TDK contactor really loses the FBK, we should see subsequently an “Abnormal” status on the FBK, as the charger commands again the contactor to be closed.\nIn this case, I believe that the OGCAuxFbk goes to off as a consequence of EcoG error 67 “ERR_EV_DROPPED, vehicle ended with unexpected pilot state B”. I have seen this behavior before. The EVMAC of the vehicle was “00.7d.fa.09.62.a52”.\nTo confirm this analysis, we see subsequently a EcoG Error 35 “pilot stateC while stop charging”, as a sign that the CP signal from the EV had a drop.\nI saw the same behavior on outlet DC2 on 2025-04-17, when DC2 started charging at 2025-04-17T10:18:18, then at 2025-04-17T10:44:15 the DC2 OGCAuxFbk goes to off, we see error code 67 and the charging stops. Also in this case, afterwards it comes a EcoG Error 35. The EVMAC in this case is\n“\n00.7d.fa.07.09.5d” (MEB Platform).\nIn conclusion, in my eyes I do not see a failure of QA13-14, but rather an incorrect behavior of the CP caused by the EV.\nI attach the logs to this email for your reference.\nShould you have further questions, please reply to this email.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-23T14:24:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+{
+    "incident_id": "9e9f754b-c8cc-ef11-b8e9-7c1e5237dbeb",
+    "ticket_number": "0398326",
+    "title": "ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS",
+    "created_on": "2025-01-07T07:23:36Z",
+    "last_activity": "2025-05-22T12:02:55Z",
+    "age": "161300",
+    "description": "Reported behavior/issue:\nDisconnections on the OCPP side from AWS\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R6 170002065,MP / R6 170002067,MP / R6 170002064,MP / R6 170002068,MP / R6 170002066",
+    "case_nature_code": null,
+    "chargerID": "Ly5YuF, dIa2Ty, QwSt1v, DTVyFK, 4JORRs",
+    "additional_info": [
+        {
+            "id": "74721346-c8cc-ef11-b8e9-000d3ab4d5d3",
+            "subject": "Reports amount of disconnections on the OCPP side from AWS",
+            "body": "Dear Team,\nI would like to receive reports for OCPP disconnections (offline) in the range of the last month from 01/12/24-07/01/25 for the following charging positions:\n1. 170002066\n2. 170002067\n3. 170002065\n4. 170002064\n5. 170002068\nThe customer claims that they have offline problems on the part of the OCPP on the SCB side, the number of disconnections they indicate is illogical and I have not seen a mention of talking to the SCB.\nI would love to receive an orderly report on the availability percentages of these charging stations, the number of disconnections that occurred in the time frame I specified with dates and hours.\nThank you for your support, it is very important.\nBr,\nOrel",
+            "date": "2025-01-07T07:23:29Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a3470185-decc-ef11-b8ea-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0398326 CRM:00225145044",
+            "body": "Shreyas Sathe was assigned as new Case Manager for case 0398326 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9e9f754b-c8cc-ef11-b8e9-7c1e5237dbeb",
+            "date": "2025-01-07T10:02:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78f3cb49-f5cc-ef11-b8e8-7c1e5235925f",
+            "subject": "ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Dear Orel,\nThank you for reaching\nout\nto eMobility Support. My name is\nShreyas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002066\nChargerID/Serial No.\n:\nLy5YuF, dIa2Ty, QwSt1v, DTVyFK, 4JORRs\nProblem Description\n:  Disconnections on the OCPP side from AWS\nTroubleshooting\n: As per our call with Saurav dt. 07/01/2025, I am summarizing it as follows:\nWe see that the charger\n170002066 goes offline multiple times in the logs, a\nfter doing analysis of the charger\n, we see a pattern that the charger is going offline for 30seconds and then coming back online (see attached photo1). Please change the “Websocket Timeout” of the charger from 0 to 30, to resolve this pattern.\nWe also see that the charger's status notification message is timing out after 15 seconds as we have set the OCPP timeout to 15 seconds (as per attached photo2), this indicates that either the OCPP is not sending/receiving the signal, or it is a network issue. In order for us to understand we would need the OCPP logs of the charger for the given time frame mentioned in the photo.\nWe wanted to know if, the charger when they are offline, do they stay offline for a long time or do they come back online immediately? If they have a considerable downtime, is it possible for you to share the OCPP logs of the charger during their downtime for us to analyze.\nFor all other chargers, the number of disconnections happened for the chargers in your mentioned date and time frame is as per photo attached 3.\nFor future reference, your case number is\n0398326\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-07T12:45:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b85c9dea-94cd-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Colleagues, good morning\nI want to update and refine the nature of the problem that exists\nThis is not an offline issue, but an unavailable issue that the SCB is sending to the client's backend\nI am attaching the log for illustration:\nAlthough the disconnections exist for a few seconds, but pay attention to how often it happens, which is a very unusual thing.\nHow can we provide a solution to the problem? This is quite unusual\nBr,\nOrel.",
+            "date": "2025-01-08T07:48:17Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "160dbd07-b0cd-ef11-8ee9-000d3ab834ba",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Colleagues,\nIn addition to everything described in the ticket\nWe would like to receive Excel reports for the load measurements that we specified in the ticket (not as a PNG image) as you have attached.\nPlease send us an Excel filter report according to OFFLINE in AWS that includes dates and times.\nMy managers asked me for organized reports for communication disconnections, meaning OFFLINE\nAlthough we are now aware that the problem is something other than Unavailable, we still request OFFLINE reports to show the stability of the SIM cards\nBr,\nOrel.",
+            "date": "2025-01-08T11:02:28Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "65591067-c6cd-ef11-8ee9-000d3ab207f1",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Orel,\nAttached are the OFFLINE date and times from AWS for the chargers that you have mentioned.\nFor\nLy5YuF, we see in logs that that the reason for status “Unavailable” for both the connector IDs is because there is a response time out for the LEM IP address\n. We see it for both, for connector ID1 and ID2 as per the attached Error1 and Error2 photos. As per our team's conversation, you have removed the LEM address from SCB, in order to test if the response timeout resolves. We will check the logs of the charger again after 24hrs to verify this.\nFor future reference, your case number is 0398326, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-08T13:42:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b88b8f90-a9ce-ef11-b8e8-000d3ab9a120",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Orel,\nI can see that for the charger Ly5YuF, the Unavailable status has appeared once in the last 24hrs (see attached photo).\nThe reason for the charger being unavailable is DC2 Errorcode:6 and DC2 Errorcode:20 (see 2nd photo). These both are insulation monitoring errors, which can generally occur after a charging session, which is the case here.\nSince the “Unavailable” has occurred only once, we can narrow down the issue is that of LEM meter. Hence, I would request you to check the LEM meter wiring on the charger for both meters. Photos 3 and 4 show the wiring which is to be checked. If the wiring was found ok, then please carry a spare LEM meter and install it instead of the old ones. After that we will monitor the charger again for 24hr to see if the fault re-appears.\nFor the remaining chargers, I will do the log analysis for “Unavailable” status and update you on the same as soon as I can.\nFor future reference, your case number is 0398326, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T16:48:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5db2f1f5-4647-8a5c-b73a-075652d5cee0",
+            "subject": "@NOC team",
+            "body": "For Ly5YuF, charger was getting unavailable status, because of response timeout to LEM address. We asked RC to remove the LEM address from the charger and test if the unavailable status re-occurs, in the 24hrs it did not reoccur, hence we concluded that both LEM meter wiring is to be checked and a spare LEM meter is to be test on the charger.\nFor the remaining dIa2Ty, QwSt1v, DTVyFK, 4JORRs chargers, please check if it is the same scenario where the LEM address response timeout is causing theCP status to become unavailable. If so please ask the RC to check wiring of LEM cables for these chargers as well.",
+            "date": "2025-01-10T16:55:24Z",
+            "extra": {}
+        },
+        {
+            "id": "4938f7d1-46d0-ef11-b8e9-000d3addcd64",
+            "subject": "A new case manager was assigned to 0398326 CRM:00225147299",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0398326 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9e9f754b-c8cc-ef11-b8e9-7c1e5237dbeb",
+            "date": "2025-01-11T18:06:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c0a0097-bed3-ef11-8ee9-000d3a691687",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Orel,\n1. Have you checked check the LEM meter wiring on the Ly5YuF charger for both meters yet?\n2.Are all the affected chargers on one fleet/ or placed nearby?\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T04:01:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a779dc8c-62d4-ef11-8ee9-000d3ab11939",
+            "subject": "A new case manager was assigned to 0398326 CRM:00225149791",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0398326 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9e9f754b-c8cc-ef11-b8e9-7c1e5237dbeb",
+            "date": "2025-01-16T23:35:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70f18a1a-f1d5-ef11-8eea-7c1e52378e9b",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Orel,\nI apologize for the delay in my response.\nI found in the logs that there were a few active error flags related to the power converter in the chargers Ly5YuF, DTVyFK7, and 4JORRs, whereas the chargers dIa2Ty and QwSt1v are healthy and working fine. Kindly allow me some time to identify the root cause of this issue/error occurrence.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-18T23:08:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0fc2c24-51d6-ef11-8eea-7c1e5235925f",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Vaishnavy,\nWe intend to do this in the middle of next week.\nWe had to coordinate our arrival with the client, since this is a site that requires prior coordination.\nBr,",
+            "date": "2025-01-19T10:35:51Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d0372b71-ded6-ef11-8eea-7c1e5235925f",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Orel,\nI found an issue with the converter where there is a critical error active. The charger DTVyFK is experiencing this issue: Power Converter [2] 2102312VGQKXN9000218SA042200000204FW:DC116PF116H100, F:1,E34 . Since Power Converter 2 is experiencing this error, I kindly request that you plan an intervention to replace this converter. The rest of the chargers do not have any critical errors and are in power save.\nI will create a child ticket for the charger DTVyFK (MP / R6 170002068).\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-20T03:27:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86b4998c-5fd8-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Orel,\nCould you please let me know when you are planning the site intervention? So, if any remote support is needed from us, we will be available.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-22T01:24:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a91f2033-a0d8-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Kaushik, good morning.\nI planned to do the swap of the LEM's today, but now it's raining in Israel so we can't do the swap today.\nThe replacement of the LEM's will be done tomorrow or Sunday if there is no rain. (In Israel we do not work on Friday)\nBr,",
+            "date": "2025-01-22T09:06:44Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c40e805-33d9-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hi Orel,\nGood morning!\nI recommend not swapping the LEM, as there is no active error related to the LEM in the SCB and the charger is on the latest firmware (v6.0.3). Could you please let me know if you are currently encountering an issue with the LEM? Kindly check the connections (DC power supply and Ethernet) as per the schematics below.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T02:37:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9db03661-5dd9-ef11-8eea-000d3ab41b62",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Dear Kaushik, good morning.\nPlease see the history of this ticket, it is charging station 170002066 that used to send Unavailable statuses very frequently.\nSaurav and Shrey found that the LEM'S send such statuses, and it affects the DISC on the client side.\nAfter a long-term test that turned off the LEM'S the wrong statuses stopped being sent.\nBr,",
+            "date": "2025-01-23T07:40:56Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1414beee-5ed9-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:01410001368",
+            "body": "Hello Orel,\nPlease troubleshoot the issue accordingly. If you find the LEM faulty, kindly replace it and provide the field service report.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T07:52:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0e337cd1-c2dc-ef11-8eea-6045bdde0ce3",
+            "subject": "ID0398326-DC/Si-D/IL-[Multiple] Disconnections on the OCPP side from AWS CRM:00796001221",
+            "body": "Hello Orel,\nI am writing to formally inform that we are moving case 0398326 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-IL SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYES\nEnd Customer Communication\nYES\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-IL SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Kaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-27T15:24:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2326ad7b-93dd-ef11-8eea-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0398326 CRM:00225154953",
+            "body": "Orel Lachiani was assigned as new Case Manager for case 0398326 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9e9f754b-c8cc-ef11-b8e9-7c1e5237dbeb",
+            "date": "2025-01-28T16:18:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

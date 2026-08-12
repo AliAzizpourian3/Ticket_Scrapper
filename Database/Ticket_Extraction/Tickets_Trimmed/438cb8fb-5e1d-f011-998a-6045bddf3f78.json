@@ -1,0 +1,93 @@
+{
+    "incident_id": "438cb8fb-5e1d-f011-998a-6045bddf3f78",
+    "ticket_number": "0419765",
+    "title": "ID0419765-DC/Si-D/IL-[Y2 / R2 312900727026] Cooling System Malfunction",
+    "created_on": "2025-04-19T20:43:44Z",
+    "last_activity": "2025-05-22T12:01:23Z",
+    "age": "13606",
+    "description": "Reported behavior/issue:\nCooling system runs continuously at full capacity\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status:  Inactive  (02/09/2025)",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "Y2 / R2 312900727002,Y2 / R2 312900727026",
+    "case_nature_code": 580000001,
+    "chargerID": "d9hQV4, xHSecz",
+    "additional_info": [
+        {
+            "id": "b4d623f3-5e1d-f011-9989-000d3addf8ce",
+            "subject": "Possible Cooling System Malfunction – Charging Stations 312900727026 & 312900727002",
+            "body": "Dear Siemens Support Team,\nI would like to report an unusual issue observed with two of our charging stations (IDs: 312900727026 and 312900727002). The cooling system appears to have been running continuously at full capacity for several weeks, despite the stations being in “power saving” mode and during nighttime hours when the outside temperature was below 16°C.\nThe cooling system only stopped after switching off breaker QA2. Once the breaker was turned back on, the system resumed normal operation.\nI would appreciate it if you could investigate whether this is a known issue or if there is a relevant firmware update that could help prevent this from recurring.\nThank you in advance,\nZiv Vinitzer\n​\n​\n​\n​\nHead of DC Charging\n*5619\n|\n+972523927323\nziv@zen-ev.com\nNetivei Hayam Blvd. 2 Ashdod",
+            "date": "2025-04-19T20:43:30Z",
+            "extra": {
+                "sender": "ziv@zen-ev.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2fd55e45-611d-f011-998a-7c1e52faf3c6",
+            "subject": "ID0419765-DC/Si-D/IL-[312900727026 & 312900727002] Cooling System Malfunction CRM:02679000128",
+            "body": "Dear Ziv Vinitzer,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R2 312900727026\nChargerID/Serial No.\n:\nY2 / R2 312900727026, 312900727002\nProblem Description\n: Cooling system malfunction\nFor future reference, your case number is\n0419765\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-19T21:00:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76bef25c-121e-f011-9989-7c1e52768c07",
+            "subject": "RE: ID0419765-DC/Si-D/IL-[312900727026 & 312900727002] Cooling System Malfunction CRM:02679000128",
+            "body": "Dear Ziv Vinitzer,\nHope you are doing well,\nWe are currently analyzing the chargers. Kindly allow us some time to complete our assessment or analysis.\nWe will get back to you shortly with an update.\nthank you,\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-20T18:07:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9ead32d-df52-9711-85c7-31d2164d9394",
+            "subject": "Internal Note",
+            "body": "",
+            "date": "2025-04-20T18:13:43Z",
+            "extra": {}
+        },
+        {
+            "id": "6b49e103-ca43-2036-bab8-048dcac3e09f",
+            "subject": "Internal Note for NOC",
+            "body": "Summary of the initial analysis.\nAffected Chargers\n:\n312900727026\nand\n312900727002\nObserved Behavior\n: Cooling system runs continuously at full capacity\nCondition\n:\nChargers were in\nPower Saving Mode\nAmbient temperature < 16°C\nIssue persisted for\nweeks\nCooling stopped\nonly after QA2 breaker reset\nPost-reset\n: System returned to\nnormal behavior\nLogs Checked\n:\nNo\ncritical error flags\n(e.g.,\nDC2 Outlet not ready\n,\nPLC DC2_CoolingUnit_EP1_Fan/Pump error\n)\nHowever, some\nCooling UNIT errors\nwere found in AWS logs (from last 15 days)\nNote:\nIf further investigation does not reveal the root cause, please escalate the case for expert analysis. In the event that the issue is confirmed to be related to the cooling unit, the EP1 should be replaced. Considering the charger’s manufacturing date is 03/02/2023, the replacement of EP1 will be covered accordingly.",
+            "date": "2025-04-21T13:28:15Z",
+            "extra": {}
+        },
+        {
+            "id": "a8539b73-a92a-48f2-a1bd-896a7b70340a",
+            "subject": "Note from customer",
+            "body": "Reported behavior/issue:\nI would like to report an unusual issue observed with two of our charging\nstations (IDs: 312900727026 and 312900727002). The cooling system appears to\nhave been running continuously at full capacity for several weeks, despite the\nstations being in “power saving” mode and during nighttime hours when the\noutside temperature was below 16°C.\nThe cooling system only stopped after switching off breaker QA2. Once the\nbreaker was turned back on, the system resumed normal operation.\nI would appreciate it if you could investigate whether this is a known issue or\nif there is a relevant firmware update that could help prevent this from\nrecurring.",
+            "date": "2025-04-21T14:28:11Z",
+            "extra": {}
+        },
+        {
+            "id": "6349d91e-3721-f011-9989-000d3addf8ce",
+            "subject": "RE: ID0419765-DC/Si-D/IL-[312900727026 & 312900727002] Cooling System Malfunction CRM:02679000128",
+            "body": "Hello Orel,\nHope you are doing well.\nAs customer reported an issue with two of our charging stations (IDs: 312900727026 and 312900727002). The cooling system appears to have been running continuously at full capacity for several weeks, despite the stations being in “power saving” mode and during night time hours when the outside temperature was below 16°C.\nAs we analyzed the logs where it was showing the non-critical active error flags\nDC2 Outlet not ready\n,\nPLC DC2_CoolingUnit_EP1_Fan/Pump error\n), but now it is cleared.  And no critical error flags are active on both the chargers.\nFor details of the above error please refer the KA link for troubleshooting-\nEmobility_SICD_HW_CoolingUnit_EP1_Fan_or_Pump and EVSE_TempLowerLimit_ low temperature - Knowledge - Microsoft Dynamics 365\nAdditionally, u\npon reviewing our asset database, we found that the product is no longer under warranty since 02/09/2025 as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-24T18:08:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4313f0f4-ca24-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0419765-DC/Si-D/IL-[312900727026 & 312900727002] Cooling System Malfunction CRM:02679000128",
+            "body": "Dear Ziv Vinitzer,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0419765, the case is now closed.\nProblem Description\n: Cooling System Malfunction\nResolution\n: Solution has been provided\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nOrel Lachiani\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-29T07:24:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

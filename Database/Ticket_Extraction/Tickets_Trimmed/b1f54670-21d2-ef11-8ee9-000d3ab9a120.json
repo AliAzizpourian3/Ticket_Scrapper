@@ -1,0 +1,178 @@
+{
+    "incident_id": "b1f54670-21d2-ef11-8ee9-000d3ab9a120",
+    "ticket_number": "0399714",
+    "title": "ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error",
+    "created_on": "2025-01-14T02:44:23Z",
+    "last_activity": "2025-11-26T05:54:07Z",
+    "age": "4922",
+    "description": "Reported behaviour/issue:\nIMD Modbus Error\nRoot cause:\nModbuss error\nSolution: Firmware updated 6.0.3\nOn DAMEX Sanctioned List: No\nWarranty Valid:\nValid",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "Dpyqsh",
+    "stage": null,
+    "serial_number": "MP / R4 170001684",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "046f3c6c-21d2-ef11-8ee9-002248a2b1bd",
+            "subject": "SiD 170001684/RC-SG/ Charger OOO due to IMD status unavailable ",
+            "body": "Dear Helpdesk,\nOn behalf of customer Total Energies,\nCountry: Singapore\nCharger Serial Number:\nMP / R4 170001684\nCharger ID: Dpyqsh\nFW version:\nv4.0.11-0-g0b7d164+SF-RETOPICS\nIssue date and time: 14\nth\nJan 2025 9.29am (GMT+8)\nIssue:\ncharge point 1 (left outlet) went out of order see attached image.\nCustomer did the following\nPlugged in EV\nInitiate charging\nCharging completed\nUnplugged\nA few minutes later, the outlet become unavailable\nCharger was able to temporary resolve via remote reboot through customer’s OCPP backend\nRC-SG Team: Preliminary investigation shows IMD BC1 MB-Er:1 SIS:0. IMD not providing insulation monitoring status to the charger\nPlease kindly investigate and advise the next steps.\nThank you\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2025-01-14T02:44:15Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "41eb75f3-32d2-ef11-8ee9-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0399714 CRM:00225148024",
+            "body": "Reetesh Kumar Sharma was assigned as new Case Manager for case 0399714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b1f54670-21d2-ef11-8ee9-000d3ab9a120",
+            "date": "2025-01-14T04:49:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "995481c2-36d2-ef11-8ee9-6045bde1171e",
+            "subject": "ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Dear Edna Seah,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R4 170001684\nChargerID/Serial No.\n:\nDpyqsh\nProblem Description\n: IMD Modbus Error / Unable to charger\nKindly allow us some time to investigate the logs, and we will get back to you.\nFor future reference, your case number is\n0399714\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T05:16:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "11a13e3b-82d2-ef11-8ee9-000d3ab009dd",
+            "subject": "RE: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hi Edna,\nUpon reviewing the logs thoroughly, I could only see one Error i.e.\nPLC-Error-Flag 'IMD_BC1' changed to true - (MB-Er:1 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:0)\n& the same is pointed by you in the trail email.\nThe error is because of the Modbus communication lost between the IMD (Insulation Monitoring Device) and the controller.\nUsually this is a self-recoverable fault, which is fixed after few seconds, however in this case the alarm was active for more than 20 min and got cleared only after a reboot.\nI also see this charger is running on the old FW version v4.0.11 and we have major bug fixes and features released in v6.0.3.\nRelease notes are available here:\nFirmware Release FW v6.0.3 for Sicharge D - ID: 109826752 - Industry Support Siemens\nI would recommend updating the charger to the latest version and observe the behavior of charger.\nDo I have your consent to update the charger to the latest Version? Please note that the update would require ~ 4 GB of data.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T14:17:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e103814-edd2-ef11-8eea-000d3a697eb1",
+            "subject": "RE: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hi Reetesh,\nNoted on your suggestion for FW update.\nWe are discussing with the customer Total Energies, for their internal FW update approval and procedure.\nPlease kindly wait for their confirmation.\nThank you\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2025-01-15T03:01:58Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "877d0d48-08d3-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hi Edna,\nThanks for the feedback, awaiting your confirmation to start the FW update.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T06:16:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e0cda7d0-1bd3-ef11-8ee9-7c1e5235925f",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Dear Reetesh,\nThe customer has confirmed to update the firmware on coming Friday 17 Jan 10am GMT+8.\nThe customer will have technician to perform testing on the spot after the FW update.\nWe can go ahead to download the firmware into the charger while the RC team can initiate the FW update at 1000H.\nPlease on standby if there is any issue.\nThank you\nEdna",
+            "date": "2025-01-15T08:36:32Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5bc01289-21d3-ef11-8ee9-6045bde1171e",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hi Edna,\nAs the charger is currently running on 4.0.11, and to have 6.0.3 activated, we must download an intermediate version 5.0.23.\nThe Update sequence will be like 4.011 → 5.0.23 → 6.0.3.\nHence, my recommendation is to upgrade the charger overnight after 17th Jan 2025, 00:00 Hrs  and you can test it at 10:00 AM local time, to avoid wait time on site.\nShall we update the charger on after midnight of 17th Jan 2025 and before 10:00 AM?\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T09:17:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "25cdb24f-32d3-ef11-8eea-7c1e5237dbeb",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hi Reetesh,\nNoted.\nCustomer is agreeable to perform the firmware updates in steps from Friday 17 Jan 2025, 0000H to 1000H (GMT+8)\nThank you\nEdna Seah",
+            "date": "2025-01-15T11:17:33Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "577c1949-0ff1-09e1-a59a-759af3e7e6a2",
+            "subject": "Next Action : Update FW ",
+            "body": "Update FW As per below schedule : (4.0.11 → 5.0.23 → 6.0.3)\nOnly between\n2025-01-16T21:30:00 & 2025-01-17T07:30:00 IST\nI.e\n2025-01-17T00:00:00 & 2025-01-17T10:00:00 SGT (GMT+8)\nMake sure there are no active charging sessions during FW Update.",
+            "date": "2025-01-15T11:43:16Z",
+            "extra": {}
+        },
+        {
+            "id": "22874802-c1d3-ef11-8eea-000d3addcd64",
+            "subject": "A new case manager was assigned to 0399714 CRM:00225149250",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0399714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b1f54670-21d2-ef11-8ee9-000d3ab9a120",
+            "date": "2025-01-16T04:19:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e68e45c7-2cd4-ef11-8ee9-7c1e52378e9b",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Hello Edna,\nThe firmware update 6.0.3 has been completed successfully.The charger is now fully operational, and there are no active error flags.\nKindly verify from your end to confirm everything is functioning as expected.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T17:10:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "538d1198-7dd4-ef11-8ee9-002248a2b1bd",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Dear Helpdesk,\nThank you for the support for FW update.\nThe customer has tested the charger on V6.0.3 and it is working fine now.\nWith the permission of the customer, please kindly close the case.\nThank you,\nEdna",
+            "date": "2025-01-17T02:49:07Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2fa791d0-cad4-ef11-8ee9-000d3ab009dd",
+            "subject": "Re: ID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error CRM:00251000428",
+            "body": "Dear Edna Seah,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0399714, and the case is now closed.\nProblem Description\n: IMD Error\nResolution\n: Firmware updated 6.0.3\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-17T12:01:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0694cd5c-cbd4-ef11-8ee9-000d3ab009dd",
+            "subject": "Ticket 0399714 has been closed. Are you satisfied with our provided solution? CRM:01811000596",
+            "body": "Dear Edna,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0399714\nwith the title:\nID0399714-DC/SIC-D/SG - [MP / R4 170001684] IMD Error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-17T12:05:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

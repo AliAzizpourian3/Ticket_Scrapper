@@ -1,0 +1,116 @@
+{
+    "incident_id": "263719ab-ac16-f011-9989-000d3addf8ce",
+    "ticket_number": "0418337",
+    "title": "ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging",
+    "created_on": "2025-04-11T08:12:11Z",
+    "last_activity": "2025-05-22T12:01:40Z",
+    "age": "5757",
+    "description": "Reported behavior/issue:\nI would like to report an issue that occurred during a charging session on 10/04/2025 at 19:03:06.607, at station No. 312900727025 in Yavne, with transaction number 109842.\nSolution: Most likely grid issue, charger went offline without any warning or errors from PLC\nDuring the charging process, the station simply shut down in the middle of the session. We would appreciate it if you could investigate the cause of this issue and advise on how to prevent similar occurrences in the future.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "Y2 / R2 312900727025",
+    "case_nature_code": 580000001,
+    "chargerID": "Y2 / R2 312900727025",
+    "additional_info": [
+        {
+            "id": "263841a2-ac16-f011-998a-6045bdde4786",
+            "subject": "Issue with Charging Station Shutdown – Station No. 312900727025",
+            "body": "Hello Siemens Support Team,\nI would like to report an issue that occurred during a charging session on 10/04/2025 at 19:03:06.607, at station No. 312900727025 in Yavne, with transaction number 109842.\nDuring the charging process, the station simply shut down in the middle of the session. We would appreciate it if you could investigate the cause of this issue and advise on how to prevent similar occurrences in the future.\nWe look forward to your prompt response.\nBest regards,\nZiv Vinitzer\n​\n​\n​\n​\nHead of DC Charging\n*5619\n|\n+972523927323\nziv@zen-ev.com\nNetivei Hayam Blvd. 2 Ashdod",
+            "date": "2025-04-11T08:12:02Z",
+            "extra": {
+                "sender": "ziv@zen-ev.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b29a7c0d-af16-f011-9989-7c1e52361e39",
+            "subject": "ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging CRM:02679000079",
+            "body": "Dear Ziv Vinitzer,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R2 312900727025\nChargerID/Serial No.\n:\nY2 / R2 312900727025\nProblem Description\n: error occured during charging\nFor future reference, your case number is\n0418337\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-11T08:29:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c43301d1-bb16-f011-9989-000d3a65e7f6",
+            "subject": "ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging CRM:02679000079",
+            "body": "Hi Orel, good afternoon. How are you doing?\nI got a ticket here from Ziv about a failed session, here is what I found:\nThe charger only returned at 8:51\nFor me either it was a grid issue or the PLC but it's definitely very unlikely that the PLC just crashed out of nowhere. How do you want to handle this?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-11T10:00:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eac887e8-bd16-f011-998a-7c1e52350ea5",
+            "subject": "ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging CRM:02679000079",
+            "body": "Hi Ziv, good afternoon.\nI checked the logs and there was a failure indeed. I'm trying to understand the root cause and will provide you a reply when I have a clear answer or if we need to send a field technician for further troubleshooting.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-11T10:15:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d5f04fe-fd18-f011-9989-7c1e52361e39",
+            "subject": "RE: ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging CRM:02679000079",
+            "body": "H\nello Francisco, good morning\nThank you! Hope you are well too.\nWe can tell him there was an error from the grid, and then we can close the ticket.\nI see that the charging station is now available.\nSorry I couldn't answer sooner, we're on holiday in Israel.\nBest regards,\nOrel.",
+            "date": "2025-04-14T06:59:23Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dc9a51cf-ff18-f011-998a-000d3adc93d1",
+            "subject": "ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging CRM:02679000079",
+            "body": "Hello Ziv, good morning. I hope you are doing well.\nI am showing you below a screenshot of the logs previous to the error and after the error (all times in GMT)\nHere as you can see, the time period from the logs stopped at 16:03 which means that the charger went offline at this period in time.\nAnd reconnected at 8:51 after a reboot locally\nFrom our side, it's not possible that the PLC shutdowns without any error or warning message. I can only think that this was a problem from the grid side, which cutoff the whole power supply to the charger. Also, if there was a problem with the PLC and we lost connection to the backend, when it would be recovered we would be able to see the error in the logs.\nBut here, we don't see, it's as if the power supply to the PLC was cutoff and no time to provide any message.\nThe charger is online again and running.\nSince I've answered to all your needs, please let me know if I can close the ticket or if you have any other questions or doubts.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-14T07:12:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88f2fd80-d019-f011-9989-7c1e5277d5a9",
+            "subject": "Ticket 0418337 has been closed. Are you satisfied with our provided solution? CRM:00315002561",
+            "body": "Dear Ziv,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0418337\nwith the title:\nID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-15T08:06:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17786d2d-da19-f011-9989-7c1e5236eee4",
+            "subject": "Re: Ticket 0418337 has been closed. Are you satisfied with our provided solution? CRM:00315002561",
+            "body": "Hello Francisco,\nThank you very much for the detailed and clear analysis. I appreciate the effort you put into reviewing the logs and explaining the situation.\nIndeed, there was an issue with the power grid, and I am glad to hear that the station resumed operation once the issue was resolved.\nIf we have any further questions or encounter a similar issue in the future, we will reach out.\nThanks again and have a great day!\nBest regards,\nקבל\n‏Outlook עבור Android‏\nZiv Vinitzer\n​\n​\n​\n​\nHead of DC Charging\n*5619\n|\n+972523927323\nziv@zen-ev.com\nNetivei Hayam Blvd. 2 Ashdod",
+            "date": "2025-04-15T09:15:32Z",
+            "extra": {
+                "sender": "ziv@zen-ev.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0839322c-da19-f011-9989-7c1e52364b43",
+            "subject": "Email sent to a closed case 'ID0418337-DC/Si-D/IL-[Y2 / R2 312900727025] Error during charging (0418337)' CRM:00225187532",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0418337\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-04-15T09:15:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

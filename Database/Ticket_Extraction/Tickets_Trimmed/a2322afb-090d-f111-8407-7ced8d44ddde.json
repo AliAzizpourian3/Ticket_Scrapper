@@ -1,0 +1,160 @@
+{
+    "incident_id": "a2322afb-090d-f111-8407-7ced8d44ddde",
+    "ticket_number": "0479235",
+    "title": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E",
+    "created_on": "2026-02-18T20:39:57Z",
+    "last_activity": "2026-02-25T10:41:37Z",
+    "age": "9482",
+    "description": "Reported behavior/issue- According to the Elocity system logs, after connecting the car, the charger switches to Preparing mode and then back to Available mode, finally returning Faulted with the error code “secc pilot is E.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "v3HnBw",
+    "stage": "Resolved",
+    "serial_number": "MP / R6 170002268",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "dde8cdf0-090d-f111-8407-000d3ab12cf3",
+            "subject": "Webform_incident_SiCharge D_18-02-2026_SN: MP / R6 170002268",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R6 170002268\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R6 170002268\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-02-18T20:39:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7a856771-0a0d-f111-8407-7ced8d44df3f",
+            "subject": "A new case manager was assigned to 0479235 CRM:00225339498",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0479235 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2322afb-090d-f111-8407-7ced8d44ddde",
+            "date": "2026-02-18T20:43:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "138f630e-0b0d-f111-8407-7ced8d44df3f",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:02889001130",
+            "body": "Dear\nSzymon\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/R6 170002268\nChargerID\n:\nv3HnBw\nProblem Description\n:\nError: secc pilot is E\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0479235\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-18T20:47:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a70882c4-670d-f111-8407-000d3ab12cfa",
+            "subject": "A new case manager was assigned to 0479235 CRM:00225339638",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0479235 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2322afb-090d-f111-8407-7ced8d44ddde",
+            "date": "2026-02-19T07:51:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "448b2da6-6b0d-f111-8407-000d3ab1149f",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:02889001130",
+            "body": "Dear Poland Service Team,\nThank you for contacting eMobility Support.\nFollowing your report, and after checking the charging session mentioned, we see that the charging session was interrupted as the car wasn`t able to communicate with the charger.\nSee following logs:\nIn the case where the communication between the car and the charger (SSL handshake) gets lost, the charger automatically respond by shutting down the Ecog (secc).\nThis means this is a communication error as a respond to the charger failing to communicate to the car and the network.\nWe do see that the charger is healthy and no error flags are showing.\nWe hope to have informed you enough. Please provide us with feedback regarding the charger.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-02-19T08:19:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8357cb5-470e-f111-8407-000d3ab11366",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000225",
+            "body": "Dear\nPoland Service Team,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0479235\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-20T10:34:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b9e7219d-2010-f111-8407-7ced8d44dfaf",
+            "subject": "ODP: ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000225",
+            "body": "Dear\nPriscilla van Wettum,\nAre you able to determine why communication failed?\nWhat could be the reason for the communication failure:\n- CP error?\n- Plug not inserted properly?\n- Delay in authorization?\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility\nPoland\nul.\nZupnicza 11\n03-821 Warsaw, POLAND\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl\nSiemens Sp. z o.o., 03-821 Warszawa, ul. Żupnicza 11, District Court: Sąd Rejonowy dla m.st. Warszawy, Commercial Court: XIII Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS No. 0000031854, Initial Capital: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\nOd:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nWysłano:\npiątek, 20 lutego 2026 11:35\nDo:\nRC-PL Serwis Emobility <serwis.emobility.pl@siemens.com>\nTemat:\nID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000225\nDear Poland Service Team,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case: 0479235\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team – Priscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-22T18:59:30Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "070448be-9310-f111-8407-000d3ab11366",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000225",
+            "body": "Dear Poland Service Team,\nThank you for your response.\nThe connection can get lost, because of an unstable network connection with the network provider, or because the router had trouble finding a signal.\nYou can check the following three casues:\n1. The sim card of the charger\n2. The internet cable of the charger.\n3. The router of the charger.\nWe also want to inform you that the charger has no-warranty, and for that reason, we are only able to provide you with one-hour of support.\nFor that reason we will close this ticket.\nWe hope to have informed you enough.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-02-23T08:43:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5dbb43e3-5d11-f111-8407-000d3ab11fb1",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000233",
+            "body": "Dear\nPoland Service Team,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0479235\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-24T08:50:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "496a5d9c-2312-f111-8407-7ced8d44db54",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000241",
+            "body": "Dear\nPoland Service Team,\nThis is another reminder regarding your support case\n0479235\n. We are still waiting for the following information to proceed:\nWe also want to inform you that the charger has no-warranty, and for that reason, we are only able to provide you with one-hour of support.  For that reason we will close this ticket.\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-25T08:26:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "decf2a41-3412-f111-8406-7ced8d739b82",
+            "subject": "ODP: ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000241",
+            "body": "Hello,\nPlease close the ticket. Thank you for your help.\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility\nPoland\nul.\nZupnicza 11\n03-821 Warsaw, POLAND\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl\nSiemens Sp. z o.o., 03-821 Warszawa, ul. Żupnicza 11, District Court: Sąd Rejonowy dla m.st. Warszawy, Commercial Court: XIII Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS No. 0000031854, Initial Capital: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\nOd:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nWysłano:\nśroda, 25 lutego 2026 09:27\nDo:\nRC-PL Serwis Emobility <serwis.emobility.pl@siemens.com>\nTemat:\nID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000241\nDear Poland Service Team,\nThis is another reminder regarding your support case 0479235. We are still waiting for the following information to proceed:\n·\nWe also want to inform you that the charger has no-warranty, and for that reason, we are only able to provide you with one-hour of support.  For that reason we will close this ticket.\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team – Priscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-25T10:25:09Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d531df68-3612-f111-8407-7ced8d44ddde",
+            "subject": "ID0479235-DC/Si-D/PL-[MP/R6 170002268] Error:secc pilot is E CRM:03209000248",
+            "body": "Dear\nPoland Service Team\nI would like to inform you that your support case\n0479235\nhas been resolved.\nHere is a summary of the actions taken:\nSince the reported issue has been resolved, I will proceed to close this case.\nThank you for your cooperation, and please don’t hesitate to reach out through our support form for any future requests:\nwww.siemens.com/emobility-service-request\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-25T10:40:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb112986-3612-f111-8407-7ced8d44ddd4",
+            "subject": "Ticket 0479235 has been closed. How did we do? CRM:00225343056",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-02-25T10:41:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

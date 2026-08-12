@@ -1,0 +1,577 @@
+{
+    "incident_id": "b454ec3e-0531-4864-a125-192a01d7ad41",
+    "ticket_number": "0428311",
+    "title": "ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1]",
+    "created_on": "2025-06-02T08:33:31Z",
+    "last_activity": "2026-01-22T23:37:26Z",
+    "age": "337864",
+    "description": "Reported behaviour/issue: Please upgrade to V7.0.5",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "NvDVO6",
+    "stage": "Resolved",
+    "serial_number": "Y2 / R5 313057100005,Y2 / R5 313057100005",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "abd0af48-8c3f-f011-877a-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225208961",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2025-06-02T08:33:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff21c0d9-9f18-49b8-8a82-1607bbaeb4c9",
+            "subject": "Notes from NOC to ES",
+            "body": "Reported issue from RC\n\"\nWe now have had 3/3 chargers updated from version 6.0.3, that have not shown as online after the firmware update, yet appear to functionally normally locally.\nIt should be noted that this is happening for the same customer, who has provided their SIM cards.\nFor this reason, it might be worthwhile understanding if there are any new certificates or FQDNs that have been added after 6.0.3, which are potentially being blocked.\n\"\nSuspected Root Cause :\nNeed to ascertain\nProblem Description :\nCharger goes Offline after FW update\nAction Performed (L2) :\nCollected information\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) : Need to check with R&D\nAction Required\nAction by HQ : Need to check with R&D, If issue is due to \"\nthere are any new certificates or FQDNs that have been added after 6.0.3, which are potentially being blocked. \"",
+            "date": "2025-06-02T08:40:04Z",
+            "extra": {}
+        },
+        {
+            "id": "b329ad67-4e5e-69d4-8f1b-426cf2b66c49",
+            "subject": "Charger goes Offline when updated to v7.0.5",
+            "body": "Parent Cases\nID0428565-DC/Si-D/NZ- [Y2 / R5 313057100006] Upgrade charger\nID0427041-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5",
+            "date": "2025-06-03T05:49:02Z",
+            "extra": {}
+        },
+        {
+            "id": "da0e13b9-5140-f011-8779-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225209695",
+            "body": "Sambath KS was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2025-06-03T08:07:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58e5b4c1-37d3-341f-af99-8217da617ec3",
+            "subject": null,
+            "body": "As per ferdi chat,\nremaining 2 chargers are 313059216001 and 313059216002",
+            "date": "2025-06-03T09:37:38Z",
+            "extra": {}
+        },
+        {
+            "id": "f4a7436e-edcc-3ad7-b4e5-0427816af6cb",
+            "subject": "Affected Chargers ",
+            "body": "ID0428946-DC/Si-D/NZ- [ Y2 / R5 313057100007] Upgrade the charger\nID0428565-DC/Si-D/NZ- [Y2 / R5 313057100006] Upgrade charger\nID0427041-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.\n5\n313059216001 and 313059216002",
+            "date": "2025-06-04T04:46:50Z",
+            "extra": {}
+        },
+        {
+            "id": "9e4a068b-9463-7506-aaf6-8ad35ef5d228",
+            "subject": "Note from RC",
+            "body": "relates to ID0413551 for\n313059216001 and 313059216002",
+            "date": "2025-06-04T05:26:10Z",
+            "extra": {}
+        },
+        {
+            "id": "885da1ed-4ed4-fda5-9b84-94fd85462eca",
+            "subject": "Note from RC",
+            "body": "Add on additional chargers on cases ID0427041 and ID0428565.\nTested with ethernet and same result.\nOnly SCB logs, no SCB functionality after OTA.",
+            "date": "2025-06-06T07:48:37Z",
+            "extra": {}
+        },
+        {
+            "id": "8a54f613-3f48-f011-8779-6045bddf319c",
+            "subject": "0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Dear Ferdinand,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Regarding the issue we have observed some abnormality from the config side. Can we have a call on Monday (16.06.2025) regarding the action plan to resolve the issue?\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-13T10:13:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b058f00c-5cc1-1723-8e2d-0e337c0d6c34",
+            "subject": "Status Update : 13.06.2025",
+            "body": "Status:\nSCB / AWS and it has only stored a config from 2.5.9.4. This config has cu.siemens.global stated as APN. It looks like the APN never got set on SCB for this charger. That way it got overwritten by the router update to emobility.siemens which is the wrong APN for a consumer SIM.",
+            "date": "2025-06-13T10:15:21Z",
+            "extra": {}
+        },
+        {
+            "id": "76dd44c1-c54f-f011-877b-7c1e52768c07",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Hello Sambath,\nLast we discussed, it was regarding the information around SCB saving the configuration information remotely for the routers (e.g. APN settings), which is required when performing the firmware update as this information is re-deployed onto the charger during the OTA.\nWhen we tried to test this out, we noted that we were unable to generate a new configuration files when saving the APN settings of router 1 via SCB.\nWould you happen to have any further information from R&D?\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-06-23T00:05:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "65093c95-d04f-f011-877b-7c1e52768372",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Hello Sambath,\nLast we discussed, it was regarding the information around SCB saving the configuration information remotely for the routers (e.g. APN settings), which is required when performing the firmware update as this information is re-deployed onto the charger during the OTA.\nWhen we tried to test this out, we noted that we were unable to generate a new configuration files when saving the APN settings of router 1 via SCB.\nWould you happen to have any further information from R&D?\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-06-23T01:22:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6d9c932b-8d51-f011-877b-7c1e52faf3c6",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Dear Ferdinand,\nI hope all is well with you. As we discussed, R&D confirm that they require a charger (one from the Region) to be FW updated and observe the root cause of the issue. Request your support for the same.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-25T06:25:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12b5aa8b-29c9-4222-87ce-e46afb5ead85",
+            "subject": "Status Update : 25/06/2025",
+            "body": "EVC3-9587\nStatus Update : Benjamin confirmed to update a charger from region to understand the root cause & action plane.\nIdea: compare the configuration changes before & after update",
+            "date": "2025-06-25T06:47:24Z",
+            "extra": {}
+        },
+        {
+            "id": "54523b35-2a6d-f011-bec2-7c1e52fb33af",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225235999",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2025-07-30T09:47:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "506c50cb-4973-f011-b4cb-7c1e52768c07",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Hello Joao,\nHope you are doing well.\nThe customer is wondering if expert services has been able to perform the upgrade to 7.0.3 on charger 170000345 to observe why charger status/error flags and configuration are not coming through to SCB.\nWhile they have the charger energised during the evening, I believe they wish to switch it off during the weekend.\nSo prompt action would be preferred, thank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-07T04:48:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b53eb2e-4a73-f011-b4cc-000d3adc93d1",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00646000040",
+            "body": "Hello Joao,\nHope you are doing well.\nThe customer is wondering if expert services has been able to perform the upgrade to 7.0.3 on charger 170000345 to observe why charger status/error flags and configuration are not coming through to SCB.\nWhile they have the charger energised during the evening, I believe they wish to switch it off during the weekend.\nSo prompt action would be preferred, thank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-07T04:51:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4c6c97ee-6b74-f011-b4cb-7c1e52fc8f4a",
+            "subject": "0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00472000369",
+            "body": "Hello Ferdinand,\nYesterday we tried together with R&D to update the charger without success. The router configuration was matching the file from charger and the cloud AWS, also the configuration was properly done.\nWe need to keep the troubleshooting. For this your support is needed to guide customer to collect data to us please.\nFirst step is to download the charger configuration.\nThis can be done accessing the router 1. Please support them providing the user \"admin\" and the password stored in SCB.\nalso this logs:\nStep 2 is to perform a TCP dump in router 1 for about 10 min.\nYou can make a SSH connection and run the command\n`tcpdump -w router1.dump -i any` or you can do it also in the router web-interface. But first you need to install the TCPdump package.\nFirst enable the TCP dump, wait 10 min and then download the file. After that you can sisable again the TCP dump.\nPlease, share this files with Fosco, he is in CC. He will handle the case from now on since I will be out for vacations next week.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-08-08T15:25:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4bfae10c-6c74-f011-b4cb-7c1e52206585",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225240578",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2025-08-08T15:26:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6ac204c-6376-f011-b4cc-7c1e52768c07",
+            "subject": "0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Liz,\nHope you are doing well.\nHQ have completed the update on the charger [170000345] and have been able to re-create the problem.\nThey have requested if the following TCPdumps can be extracted from the XF3 router.\nSteps below:\nFirst step is to download the charger configuration.\nThis can be done by accessing router XF3. Please let me know when you are planning to do this and I can provide you with the access code.\nalso the logs from the router:\nStep 2 is to perform a TCP dump on router XF3 for about 10 min.\nFirst you will need to install the TCPdump package.\nThen enable the TCP dump, wait 10 min and download the file. After that you can disable the TCP dump again.\nIf you could then reply to this email with the files, the global team will have access to them.\nThank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-11T03:28:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08949d1d-6476-f011-b4cb-7c1e5236e32d",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Thanks Ferdi\n@Aaron Gillon\nCan I book you in to do this please. Charger is powered up in Glen’s area. Note the serial number is\n170000345\nThanks\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2025-08-11T03:34:42Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c5ea9216-ba78-f011-b4cb-7c1e52206585",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hi Ferdi,\nCan you send me the router password for this unit and will get it done.\nCheers,\nAaron",
+            "date": "2025-08-14T02:55:11Z",
+            "extra": {
+                "sender": "aarong@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b139dd2a-c378-f011-b4cc-7c1e52350ea5",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hi Ferdi,\nPlease find log files attached.\nCheers,\nAaron",
+            "date": "2025-08-14T04:00:10Z",
+            "extra": {
+                "sender": "aarong@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b824cf18-ca78-f011-b4cc-7c1e52768c07",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hey Aaron,\nThank you for doing this so promptly.\nIll give you an update when I've heard back from the global team on this.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-14T04:49:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8fb8a555-ca78-f011-b4cb-7c1e5236eee4",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hey Aaron,\nThank you for doing this so promptly.\nIll give you an update when I've heard back from the global team on this.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-14T04:51:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "773402a5-df78-f011-b4cc-6045bddf3f78",
+            "subject": "FW: RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nHope you are doing well.\nPlease see attached the logs requested from the customer about this case.\nLet me know if you need anythign else.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-14T07:24:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e207740d-e078-f011-b4cc-7c1e52faf3c6",
+            "subject": "FW: RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nHope you are doing well.\nPlease see attached the logs requested from the customer about this case.\nLet me know if you need anythign else.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-14T07:26:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "56b1dc30-e078-f011-b4cc-000d3addf8ce",
+            "subject": "RE: FW: RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Ferdinand,\nThank you very much for the feedback and the logs! I just forwarded the files to R&D.\nI will update you as soon as I receive feedback from them.\nThank you again!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-14T07:28:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49e1738e-857c-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hi Ferdi\nAny news on this yet? Neil has a meeting this afternoon about it so he is keen for an update.\nThanks\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2025-08-18T22:49:16Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "38eb78c1-3881-f011-b4cc-7c1e523508ba",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Good Morning Liz,\nHope you are doing well.\nApologies for the delayed email, I've been giving product training all of last week.\nIt appears majority of the global team are off on summer vacation, so I am awaiting an update based on the logs Aaron provided.\nI recently spoke with the SG team and they have updated all chargers to version 7 via USB.\nIf we were to have a charger available on version 6 firmware, we could trial this method of updating and see if it yields a different result.\nI can also confirm that this is now also being seen in Australia, as demonstrated by our lab charger.\nAs soon as I get an update from the global team, I will inform you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-24T22:22:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "19594b12-3c81-f011-b4cb-7ced8d41ec51",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Good Morning Liz,\nHope you are doing well.\nApologies for the delayed email, I've been giving product training all of last week.\nIt appears majority of the global team are off on summer vacation, so I am awaiting an update based on the logs Aaron provided.\nI recently spoke with the SG team and they have updated all chargers to version 7 via USB.\nIf we were to have a charger available on version 6 firmware, we could trial this method of updating and see if it yields a different result.\nI can also confirm that this is now also being seen in Australia, as demonstrated by our lab charger.\nAs soon as I get an update from the global team, I will inform you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-08-24T22:45:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6763a9c7-4387-f011-b4cb-7c1e52768c07",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Good evening Ferdinand,\nHope this email finds you good! Apologies for the delayed answer.\nUnfortunately, as you also mentioned to the End Customer, due to summer vacations I was not able to receive a feedback from R&D yet.\nBy the end of this current week (CW36), the responsible colleagues from R&D should be back in office. I will ask to provide me a feedback asap.\nThank you again for your patience. I will update you as soon as I have news in the next days.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-01T14:56:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "beaa4a9a-4889-f011-b4cc-7c1e52fad806",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nThanks for the update.\nThere has been some development and appears we need some more information.\nWe have one charger (X9PrfQ), which unfortunately someone from L2 updated to version 7, not knowing that we locally have an issue with anything above version 6.0.3 with SCB connectivity.\nThis specific charger is a private charger and therefore is low risk to being offline for SCB.\nI just went to review it with version 7 and the error logs and it appears that everything is working as normal again, I can see error flags, get router configurations and also charger configurations.\nThen I noticed its version... it is\nWhat is this FileHandlerHF and how do we deploy it? I suspect someone did something globally, but we were never notified.\nThis is very promising though!\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-04T04:35:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab410a40-4989-f011-b4cc-000d3adc93d1",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nThanks for the update.\nThere has been some development and appears we need some more information.\nWe have one charger (X9PrfQ), which unfortunately someone from L2 updated to version 7, not knowing that we locally have an issue with anything above version 6.0.3 with SCB connectivity.\nThis specific charger is a private charger and therefore is low risk to being offline for SCB.\nI just went to review it with version 7 and the error logs and it appears that everything is working as normal again, I can see error flags, get router configurations and also charger configurations.\nThen I noticed its version... it is\nWhat is this FileHandlerHF and how do we deploy it? I suspect someone did something globally, but we were never notified.\nThis is very promising though!\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-04T04:40:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e16997bf-6489-f011-b4cc-7c1e5220bf23",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Ferdinand,\nI am sorry to hear that an unplanned update to FW v7.0.5 happened on the charger, but I am glad to hear that with the FileHandlerHotfix the communication seems to work fine.\nThe FileHandlerHotfix is a Hotfix included in v8.0.5, with the scope to avoid excessive log throttling and possible FW corruption, which were caused by an abnormal corruption of a JSON file within sicharge-cp-backend container.\nThis issue was identified during the month of July, and R&D performed a mass rollout of this Hotfix on the month of August on all chargers that were on v7.0.5. This rollout massive rollout was communicated during several regular touchpoint meetings, but it had no effect on the operation of the chargers.\nThe Hotfix is now included in v8.0.5, but now that I take a deeper look at the Release Notes, it is not clear that it is included.\nAs I mentioned in my previous email, I will ask R&D colleague to have a look at the files provided by you, as he is back in office, and I will report that now the charger seems to be updated fine. If this specific Hotfix had an effect to mitigate this issue, I cannot say. I will ask for explanation and will report it to you asap.\nThank you very much for the interesting feedback! I will get back to you with further information and updates from R&D.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-04T07:57:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc3981eb-fd8c-f011-b4cc-7c1e5236e32d",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nHope you are doing well.\nUnder the feedback from the team's chat that the FileHanlderHF was introduced into version 8, we requested that a charger which was previously on version 7 (not FileHandlerHF) was updated via USB to 8.0.5.\nReisch, Ferdinand (RC-AU SI EA CS): FileHandlerHF | Team eMobility > 07. Product chat SICHARGE D | Microsoft Teams\nYou can see this charger 170000345 says it is updated to version 8.0.5, but does not show any more data on Error flags, config, again only logs.\nThis raises 2 questions;\n1) Is the FileHandlerHF really in version 8.0.5?\n2) If the above is true, does it mean a charger that was previously not working on version 7, can not be recovered with updating to version 8?\nIs it possible to apply the FileHandlerHF to this charger?\nThanks and looking forward to your feedback,\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-08T21:51:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "43d93c7a-fe8c-f011-b4cb-7c1e5236eee4",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Fosco,\nHope you are doing well.\nUnder the feedback from the team's chat that the FileHanlderHF was introduced into version 8, we requested that a charger which was previously on version 7 (not FileHandlerHF) was updated via USB to 8.0.5.\nReisch, Ferdinand (RC-AU SI EA CS): FileHandlerHF | Team eMobility > 07. Product chat SICHARGE D | Microsoft Teams\nYou can see this charger 170000345 says it is updated to version 8.0.5, but does not show any more data on Error flags, config, again only logs.\nThis raises 2 questions;\n1) Is the FileHandlerHF really in version 8.0.5?\n2) If the above is true, does it mean a charger that was previously not working on version 7, can not be recovered with updating to version 8?\nIs it possible to apply the FileHandlerHF to this charger?\nThanks and looking forward to your feedback,\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-08T21:55:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "036e2c43-3d95-f011-b4cc-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225259394",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2025-09-19T09:44:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0a23179-679a-f011-b4cc-6045bddf3f78",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Michele,\nHope you're doing well.\nThis is relating to our discussion on a separate email chain for the inability to access SCB for chargers that are upgraded from version 6.0.3 onwards.\nWhat is common with all these is the inability to connect to AWS IoT.\nsicharge-cp [local0:err] sicharge-cp-backend/0938812aa1ee[836]: SiCharge-Configuration error. Could not connect to AWS IoT ablog0tk36tsd-ats.iot.eu-central-1.amazonaws.com    1757556230625\nAfter version 6.0.3, did R&D make a change with how AWS IoT service is accessed?\nSpecifically around using cross-regional access., or localised redirection?\nI ask, because the AWS IoT service is not available in Australia (Melbourne) or New Zealand.\nYet appears to be available in regions, such as Malaysia, Singapore and of course EU-Central (Frankfurt).\nYou can check which regions have these services here:\nAWS Services by Region\nI can see it as a very smart move to use the local AWS services for improved speed.\nIs there a way we can test this out? E.g. enable a VPN service on the Routers (XF3)?\nEither doing this on their own charger to point to New Zealand, or allowing us to make the change locally (providing this doesn't violate any cybersecurity topics).\nLooking forward to your feedback.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-25T23:29:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74997f33-6a9a-f011-b4cc-6045bddf319c",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Michele,\nHope you're doing well.\nThis is relating to our discussion on a separate email chain for the inability to access SCB for chargers that are upgraded from version 6.0.3 onwards.\nWhat is common with all these is the inability to connect to AWS IoT.\nsicharge-cp [local0:err] sicharge-cp-backend/0938812aa1ee[836]: SiCharge-Configuration error. Could not connect to AWS IoT ablog0tk36tsd-ats.iot.eu-central-1.amazonaws.com    1757556230625\nAfter version 6.0.3, did R&D make a change with how AWS IoT service is accessed?\nSpecifically around using cross-regional access., or localised redirection?\nI ask, because the AWS IoT service is not available in Australia (Melbourne) or New Zealand.\nYet appears to be available in regions, such as Malaysia, Singapore and of course EU-Central (Frankfurt).\nYou can check which regions have these services here:\nAWS Services by Region\nI can see it as a very smart move to use the local AWS services for improved speed.\nIs there a way we can test this out? E.g. enable a VPN service on the Routers (XF3)?\nEither doing this on their own charger to point to New Zealand, or allowing us to make the change locally (providing this doesn't violate any cybersecurity topics).\nLooking forward to your feedback.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-09-25T23:49:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f407ee5f-ad9a-f011-b4cc-6045bddece8c",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Dear Ferdinand,\nThank you for your message. My apologies for the delayed response to your detailed inquiry.\nRegarding the questions you've raised, this case is currently being managed by Joao, who will be reaching out to you directly to clarify these open points and discuss them further.\nI can confirm that the FileHandler is indeed included in Firmware version 8.0. We acknowledge that this was not explicitly noted in the firmware release notes, and we appreciate you bringing this to our attention.\nYour remaining queries, particularly concerning AWS IoT access and potential regional differences, will be thoroughly verified internally. At this moment, I am not aware of any specific changes made to how AWS IoT services are accessed in versions 6.0.3 onwards, especially regarding cross-regional access or localized redirection.\nHowever, this will be a verified internally by the case owner.\nShould your findings accurately reflect ongoing connection issues related to AWS IoT connectivity in your region, please be assured that this will be highlighted internally, and a clear path to a solution will be discussed with the relevant development teams.\nThank you for your detailed observations and proactive engagement.\nWe value your insights as we work to ensure optimal performance for our charging infrastructure.\nWith best regards,\nMichele Sambiagio\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nPhone: +49 15251561336\nMobile: +49 15251561336\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-09-26T07:49:57Z",
+            "extra": {
+                "sender": "michele.sambiagio@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bda9d1b6-3393-a282-ba9f-b50a89a89c23",
+            "subject": "Status update",
+            "body": "Alignment with Ferdinand to be planned\nGoal:\ncollect report of service actions on routers configuration\nCollect all reported failure scenarios, incl. Ethernet disconnection\ninvestigate on AWS-related limitation on locations (No AWS IoT service in AU and NZ)",
+            "date": "2025-10-10T09:22:59Z",
+            "extra": {}
+        },
+        {
+            "id": "fdede102-6eb4-f011-bbd2-7ced8d425b04",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Joao,\nHope you're doing well.\nWould you happen to have an update on this topic?\nSomething we observed... while there were global AWS server issues, it appeared that the one charger which was online and on version 7... appeared to be \"online\" for a longer period of time, at least longer than we had previously noticed.\nReally wonder if there is any conclusion that can be drawn about AWS load sheading, with all the global services being unavailable, less general load and therefore allowing this charger access?\nIt is offline again now, but looking forward to your next steps, thanks\nWith Kind regards,\nFerdinand Reisch\nSiemens Ltd. Australia\nSmart Infrastructure\nEnergy Automation\nCustomer Services\neMobility Technical Support:\nIncident report SI E (V2.0) | MoreApp\nwww.siemens.com",
+            "date": "2025-10-29T02:21:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "60fbaf75-6eb4-f011-bbd2-7ced8d425b04",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Joao,\nHope you're doing well.\nWould you happen to have an update on this topic?\nSomething we observed... while there were global AWS server issues, it appeared that the one charger which was online and on version 7... appeared to be \"online\" for a longer period of time, at least longer than we had previously noticed.\nReally wonder if there is any conclusion that can be drawn about AWS load sheading, with all the global services being unavailable, less general load and therefore allowing this charger access?\nIt is offline again now, but looking forward to your next steps, thanks\nWith Kind regards,\nFerdinand Reisch\nSiemens Ltd. Australia\nSmart Infrastructure\nEnergy Automation\nCustomer Services\neMobility Technical Support:\nIncident report SI E (V2.0) | MoreApp\nwww.siemens.com",
+            "date": "2025-10-29T02:25:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9be5b55d-72b8-f011-bbd2-7ced8d4251b1",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Joao and Michele,\nHope you are both doing well.\nI understand that you are busy with other topics, but would we please be able to get an update on this topic?\nThe customer is about to deploy 50 additional chargers into NZ and would like to have these running on the latest version.\nAs I'm sure we can all agree, there are huge benefits to deploying the latest version of firmware on chargers, e.g. security updates and bug fixes.\nWe do not want these to make a negative impact on Siemens' image because the updates were not able to be completed.\nIf not, the customer will continue to run version 6 and worse, downgrade any version 7 or 8 chargers as needed for the operational targets (something which was strictly advised against by the service team in the attention of resolving complex issues).\nPlease let me know if there is anything I can do.\nIf the customer is unable to get an update from us, they will take it to upper management within Siemens eMobility HQ, this is not desirable for any of us.\nWith Kind regards,\nFerdinand Reisch\nSiemens Ltd. Australia\nSmart Infrastructure\nEnergy Automation\nCustomer Services\neMobility Technical Support:\nIncident report SI E (V2.0) | MoreApp\nwww.siemens.com",
+            "date": "2025-11-03T05:03:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f71ba17-73b8-f011-bbd2-7ced8d4251a1",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hello Joao and Michele,\nHope you are both doing well.\nI understand that you are busy with other topics, but would we please be able to get an update on this topic?\nThe customer is about to deploy 50 additional chargers into NZ and would like to have these running on the latest version.\nAs I'm sure we can all agree, there are huge benefits to deploying the latest version of firmware on chargers, e.g. security updates and bug fixes.\nWe do not want these to make a negative impact on Siemens' image because the updates were not able to be completed.\nIf not, the customer will continue to run version 6 and worse, downgrade any version 7 or 8 chargers as needed for the operational targets (something which was strictly advised against by the service team in the attention of resolving complex issues).\nPlease let me know if there is anything I can do.\nIf the customer is unable to get an update from us, they will take it to upper management within Siemens eMobility HQ, this is not desirable for any of us.\nWith Kind regards,\nFerdinand Reisch\nSiemens Ltd. Australia\nSmart Infrastructure\nEnergy Automation\nCustomer Services\neMobility Technical Support:\nIncident report SI E (V2.0) | MoreApp\nwww.siemens.com",
+            "date": "2025-11-03T05:08:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "42a13287-b9b8-f011-bbd2-7c1e523622b6",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Hi Ferdinand,\nJust wanted to give you a quick update on the ongoing issue with AU/NZ chargers going offline after firmware updates.\nUnfortunately, we didn't see any significant progress last week, primarily because Benjamin from R&D was on vacation. This naturally slowed down our ability to get direct input from him.\nHowever, we haven't been idle! We've taken a proactive step and created a\nnew, dedicated R&D ticket specifically for the Ethernet-connected chargers\nthat are experiencing this offline issue. This is crucial because, as we discussed, it helps us isolate the problem beyond just APN/mobile connectivity concerns.\nWe are now actively pushing R&D to provide us with an update on this topic by the end of this week. We're keen to get some fresh eyes and momentum on it.\nThis approach, including the creation of the new ticket and the follow-up plan, was developed in close collaboration with our Product Champion, ensuring we're aligned on the best way forward.\nI'll keep you posted as soon as I hear anything back from R&D.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-11-03T13:32:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2564a20-2c51-ddcf-9d74-1d67294c1f2f",
+            "subject": "Status update - Escalation",
+            "body": "Investigation Status & Ownership:\nThis case is under investigation by our dedicated R&D team. All details, findings, and ongoing actions are thoroughly documented under\nticket EMOB-20853.\nOur R&D team is currently analysing the collected data, including router configurations and system logs, to identify the fundamental root cause.\nThe\nFirmware Product Owner\nhas been made aware of the severity and urgency of this issue, is included in the CC of this email, and has committed to supporting the investigation to expedite a resolution.\nWe are prioritizing this to restore reliable operation for our fleet and minimize customer impact.",
+            "date": "2025-11-04T11:58:51Z",
+            "extra": {}
+        },
+        {
+            "id": "4eef5ba5-a18f-4149-bfd5-c9a997909984",
+            "subject": "Status update - Feedback from R&D",
+            "body": "Our team together with R&D has been actively investigating and addressing connectivity issues with the impacted chargers, particularly those running Firmware 7, when connecting to AWS IoT Core. The core challenge identified is high latency impacting reliable communication.\nKey Findings & Troubleshooting:\nLatency Sensitivity\n: R&D team has determined that a latency exceeding +325 ms is problematic for AWS IoT Core (our MQTT service connecting chargers to SCB). Notably, Firmware 7 appears to be more sensitive to this latency compared to Firmware 6.\nTesting Environment\n: R&D team has successfully deployed a separate SSH tunnel on a charger in the YHI warehouse for testing purposes.\nAWS Region Impact:\nInitial tests showed high latency.\nCreating an AWS IoT Core endpoint in Sydney significantly reduced latency to approximately ~25 ms, which worked successfully with our test client.\nAWS Support & Alternatives:\nAn AWS support ticket was opened to explore solutions.\nAWS Global Accelerator was initially suggested, but it's deemed too complex for the given scopes.\nCurrent Approach & Next Steps:\nLightweight PoC (Proof of Concept): R&D team is moving forward with a more lightweight solution to address the latency.\nSolution Rollout: If this PoC is successful, we will have a viable solution ready for broader deployment.\nLatest Development & Status:\nSDK Re-implementation: After exploring and finding AWS infrastructure-side solutions too complex, R&D team opted to re-implement the aws-iot-device-sdk. This re-implementation is currently functional but requires further refinement.\nFirmware 7.0.5 Backport: R&D team is working on creating a production-ready backport for Firmware v7.0.5. The current fix is working locally (R&D test machine), and we might anticipate a proper release (either as a hotfix or a new v7 version) within a few days. This will also pave the way for a v8 release.\nDependency Resolution: We are addressing some dependency issues related to building the older v7 version, which are expected to be resolved very soon.\nFuture Alignment: Once a production-ready artifact is available, R&D teams will coordinate internally to plan the subsequent steps. These will be communicated to Service teams accordingly",
+            "date": "2025-11-26T13:00:29Z",
+            "extra": {}
+        },
+        {
+            "id": "14f87038-a427-528e-8a66-28b67ceef0e2",
+            "subject": "Status update - Feedback after cleanup session",
+            "body": "Solution has been identified by R&D team\nAlignment with regional team about solution delivery will follow",
+            "date": "2025-12-10T12:51:47Z",
+            "extra": {}
+        },
+        {
+            "id": "10f591a6-5f38-fac8-ab36-76e03c94fe62",
+            "subject": "Internal alignment",
+            "body": "- PrCh will check with R&D if solution can be delivered to customer. Solution should be available from R&D; unclear if it can be delivered\n- Next step: PrCh to verify if solution could be extended to rest of Tenant/rest of Region",
+            "date": "2026-01-02T10:46:06Z",
+            "extra": {}
+        },
+        {
+            "id": "e320d015-baf6-f011-8406-7ced8d44df3f",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Dear Team, dear Ferdinand\nWe would like to inform you that the reported issue observed in software versions\nv6.1.3\nand\nv7.0\nhas been thoroughly investigated by the\nSiemens eMobility R&D team\n.\nAs already communicated, R&D has provided a\nUSB image\nthat enables local teams to update the chargers to\nv7.0.7\nand\nv8.1.5\n, allowing the update to be performed locally. To my knowledge, you (Ferdinand) and\nMr. Aaron Gillon\nhave been included in the communication exchanged with the R&D team.\nThis USB image contains the fix addressing the ongoing\nconnection issue with SCB\n. Additionally, the\npermanent fix\nwill be included in\nsoftware version v9.0\n, which is planned to be available via\nover-the-air (OTA) update in calendar week 09 of this year\n.\nThis information applies to the following tickets:\nID0428311\nID0428565\nID0458597\nGiven the above, all listed tickets will now be\nmoved to the regional queue\n. Should any further support be required, please feel free to assign the tickets back to the\nTechnical Support team\n.\nThank you for your cooperation.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2026-01-21T11:12:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a948ac5e-baf6-f011-8406-000d3ab12e50",
+            "subject": "A new case manager was assigned to 0428311 CRM:00225322452",
+            "body": "Ferdinand Reisch was assigned as new Case Manager for case 0428311 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b454ec3e-0531-4864-a125-192a01d7ad41",
+            "date": "2026-01-21T11:14:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca648680-baf6-f011-8406-7ced8d44ddde",
+            "subject": "RE: 0428311 - ID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1] CRM:00312000100",
+            "body": "Dear Team, dear Ferdinand\nWe would like to inform you that the reported issue observed in software versions\nv6.1.3\nand\nv7.0\nhas been thoroughly investigated by the\nSiemens eMobility R&D team\n.\nAs already communicated, R&D has provided a\nUSB image\nthat enables local teams to update the chargers to\nv7.0.7\nand\nv8.1.5\n, allowing the update to be performed locally. To my knowledge, you (Ferdinand) and\nMr. Aaron Gillon\nhave been included in the communication exchanged with the R&D team.\nThis USB image contains the fix addressing the ongoing\nconnection issue with SCB\n. Additionally, the\npermanent fix\nwill be included in\nsoftware version v9.0\n, which is planned to be available via\nover-the-air (OTA) update in calendar week 09 of this year\n.\nThis information applies to the following tickets:\nID0428311\nID0428565\nID0458597\nGiven the above, all listed tickets will now be\nmoved to the regional queue\n. Should any further support be required, please feel free to assign the tickets back to the\nTechnical Support team\n.\nThank you for your cooperation.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2026-01-21T11:15:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "993ebb1b-281b-a582-930e-5914fe1d29ee",
+            "subject": "Notes;",
+            "body": "Child case;\nIntention as following for field deployment.\nWithin Warranty; required.\nOutside of Warranty, software update is recommended but optional.\nFor those within Warranty, identify from the customer, which are critical ASAP and don't have a pending PM and allow for immediate site visits to update USB and claim back costs from HQ.\nFor those within Warranty, but close to a PM date and not critical, schedule in with PM\nFor those outside of Warranty, offer firmware update to the customer and perform update as part of PM.",
+            "date": "2026-01-22T23:35:04Z",
+            "extra": {}
+        },
+        {
+            "id": "210a8505-ebf7-f011-8406-7ced8d44ddd4",
+            "subject": "Ticket 0428311 has been closed. Are you satisfied with our provided solution? CRM:00225323584",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0428311\nwith the title:\nID0428311-DC/Si-D/NZ-[Y2 / R5 313057100005] upgrade to V7.0.5 - [C1]\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-22T23:35:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

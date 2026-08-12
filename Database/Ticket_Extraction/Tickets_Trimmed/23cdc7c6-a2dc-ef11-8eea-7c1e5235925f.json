@@ -1,0 +1,207 @@
+{
+    "incident_id": "23cdc7c6-a2dc-ef11-8eea-7c1e5235925f",
+    "ticket_number": "0402308",
+    "title": "ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session (C1)",
+    "created_on": "2025-01-27T11:35:20Z",
+    "last_activity": "2025-05-22T12:02:30Z",
+    "age": "45012",
+    "description": "Reported behaviour/issue: 16 times attempt to complete successful charging session\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status:06/21/2025",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "JHrezS",
+    "stage": null,
+    "serial_number": "MP / R5 170001908",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "065b99c1-a2dc-ef11-8eea-000d3a68cce9",
+            "subject": "FW: SI-D 170001908 16 times attempt to complete successful charging session (UAEV)",
+            "body": "Dear Support,\nPlease be requested to create ticket for subject charger multiple attempt complete charging session as per below time stamp.\nEtihad WE Rashidiya Head Office – DC (MP/R5/170001908)\nTimestamp: 2025-01-20 8:46:44 AM - 2025-01-20 9:56:03 AM\nWe kindly request you to investigate the issue and determine what exactly happened with the chargers and why multiple sessions failed\nMoreover, please find attached email of backend team to further investigation.\nRegards\nSyed Basheeruddin",
+            "date": "2025-01-27T11:35:11Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8ad6c6fa-abdc-ef11-8ee9-000d3aba4901",
+            "subject": "A new case manager was assigned to 0402308 CRM:00225154159",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0402308 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23cdc7c6-a2dc-ef11-8eea-7c1e5235925f",
+            "date": "2025-01-27T12:41:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6da767ea-c5dc-ef11-8eea-000d3ab4d5d3",
+            "subject": "ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Dear Basheer Thangal,\nThank you for reaching\nout\nto eMobility Support. My name is\nSunil\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170001908\nChargerID/Serial No.\n:\nJHrezS\nProblem Description\n: 16 times attempt to complete successful charging session\nTroubleshooting\n: As checked in logs from 2024-12-20 04:52:41.938 to  06:41:16.656 UTC\n2024-12-20 04:52:41.938: Session was stopped as Vehicle SOC=100%, Source EV\n2024-12-20 04:52:41.938,\"2024-12-20T04:52:41.569886+00:00 swcpu [user:debug] 1 soft_plc_sicharge: <LCU_DC[1].PhasesUSInt> : \"\"P06_CHARGE\"\" --> \"\"P07_STOP_CHARGE\"\"\",JHrezS\n2024-12-20 04:52:41.688,\"2024-12-20T04:52:41.000000+00:00 secc [daemon:notice] SECC[836]: {\"\"type\"\":\"\"stop_charging\"\",\"\"timestamp\"\":1734670361281,\"\"chargerId\"\":\"\"secc2300-07429\"\",\"\"outlet\"\":\"\"2\"\",\"\"outletType\"\":\"\"CCS\"\",\"\"payload\"\":{\"\"\nsource\"\":\"\"EV\"\",\"\"user\"\":\"\"internal\n\"\"}}\",JHrezS\n2024-12-20 04:52:41.688,2024-12-20T04:52:41.544270+00:00 swcpu [user:debug] 1 soft_plc_sicharge: [MFC]  LOG: All Converters/ DC charging Outlets are OFF - Main Fan is Set to be Forced ON for delay time at last speed,JHrezS\n2024-12-20 04:52:39.426,2024-12-20T04:52:34.744532+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2024-12-20T03:43:35_LCU_DC_ID_2|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=75|EVSE_NowPwr[kW]=14.8|EVSE_NowCur[A]=36|EVSE_NowVol[V]=412|EV_TarCur[A]=36.6|\nEV_TarVol[V]=417|EV_SOC[%]=99\n|EVSE_DESpwr[kW]=39.5|Pilot=4,JHrezS\n2024-12-20 04:52:29.426,2024-12-20T04:52:24.746920+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2024-12-20T03:43:35_LCU_DC_ID_2|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=75|EVSE_NowPwr[kW]=14.8|EVSE_NowCur[A]=36|EVSE_NowVol[V]=412|EV_TarCur[A]=36.6|\nEV_TarVol[V]=417|EV_SOC[%]=99\n|EVSE_DESpwr[kW]=39.5|Pilot=4,JHrezS\n2024-12-20 04:52:19.426,\"2024-12-20T04:52:14.707060+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: [ensureOCPPConnection] OCPP is ONLINE, nothing to do here\",JHrezS\n2024-12-20 05:44:53.061:\nSession was stopped as Vehicle SOC=100%, Source EV\n2024-12-20 05:45:05.860,\"2024-12-20T05:45:05.455231+00:00 swcpu [user:debug] 1 soft_plc_sicharge: <LCU_DC[1].PhasesUSInt> : \"\"P06_CHARGE\"\" --> \"\"P07_STOP_CHARGE\"\"\",JHrezS\n2024-12-20 05:45:05.860,\"2024-12-20T05:45:05.635917+00:00 swcpu [user:debug] 1 soft_plc_sicharge: [SCO]  OGC[1]: DC2-DC2_QA13-14, COMMAND: on, FEEDBACK: off, BLOCKING: yes, OPRSTATE: Normal(all ok), CHRGOPRMODE: 6, CTRLLCUID: 2\",JHrezS\n2024-12-20 05:45:05.610,2024-12-20T05:45:03.921143+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: OCPP: Received result: MeterValues (f66bc1d5-f9e1-46aa-9998-3efc9cd1273e) - {},JHrezS\n2024-12-20 05:45:05.610,\"2024-12-20T05:45:05.000000+00:00 secc [daemon:notice] SECC[836]: {\"\"type\"\":\"\"stop_charging\"\",\"\"timestamp\"\":1734673505371,\"\"chargerId\"\":\"\"secc2300-07429\"\",\"\"outlet\"\":\"\"2\"\",\"\"outletType\"\":\"\"CCS\"\",\"\"payload\"\":{\n\"\"source\"\":\"\"EV\"\",\"\"user\"\":\"\"internal\"\n\"}}\",JHrezS\n2024-12-20 05:45:05.610,2024-12-20T05:45:05.430000+00:00 swcpu [user:debug] 1 soft_plc_sicharge: [MFC]  LOG: All Converters/ DC charging Outlets are OFF - Main Fan is Set to be Forced ON for delay time at last speed,JHrezS\n2024-12-20 05:45:04.106,2024-12-20T05:45:02.700094+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2024-12-20T04:54:31_LCU_DC_ID_2|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=67|EVSE_NowPwr[kW]=13.4|EVSE_NowCur[A]=23|EVSE_NowVol[V]=594|EV_TarCur[A]=23|EV_TarVol[V]=614\n|EV_SOC[%]=99\n|EVSE_DESpwr[kW]=39.5|Pilot=4,JHrezS\n2024-12-20 05:45:04.106,\"2024-12-20T05:45:03.669195+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2cf5436a6b18[706]: {\"\"errno\"\":-113,\"\"code\"\":\"\"EHOSTUNREACH\"\",\"\"syscall\"\":\"\"connect\"\",\"\"address\"\":\"\"10.20.17.30\"\",\"\"port\"\":502,\"\"stack\"\":\"\"Error: connect EHOSTUNREACH 10.20.17.30:502\\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)\"\"}\",JHrezS\n2024-12-20 06:35:59.426,:\nSession was stopped as Vehicle SOC=100%, Source EV\n2024-12-20 06:36:06.804,\"2024-12-20T06:36:06.358367+00:00 swcpu [user:debug] 1 soft_plc_sicharge: <LCU_DC[1].PhasesUSInt> : \"\"P06_CHARGE\"\" --> \"\"P07_STOP_CHARGE\"\"\",JHrezS\n2024-12-20 06:36:06.553,\"2024-12-20T06:36:06.000000+00:00 secc [daemon:notice] SECC[836]: {\"\"type\"\":\"\"stop_charging\"\",\"\"timestamp\"\":1734676566482,\"\"chargerId\"\":\"\"secc2300-07429\"\",\"\"outlet\"\":\"\"2\"\",\"\"outletType\"\":\"\"CCS\"\",\"\"payload\"\":{\"\"source\"\":\"\"EV\"\",\"\"user\"\":\"\"internal\"\"}}\",JHrezS\n2024-12-20 06:36:06.553,2024-12-20T06:36:06.331811+00:00 swcpu [user:debug] 1 soft_plc_sicharge: [MFC]  LOG: All Converters/ DC charging Outlets are OFF - Main Fan is Set to be Forced ON for delay time at last speed,JHrezS\n2024-12-20 06:36:06.302,2024-12-20T06:36:05.775510+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: OCPP: Received result: MeterValues (5b5a0b4c-c638-4dad-a4d1-594e810d8ea2) - {},JHrezS\n2024-12-20 06:36:06.051,\"2024-12-20T06:36:05.464425+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2cf5436a6b18[706]: {\"\"errno\"\":-113,\"\"code\"\":\"\"EHOSTUNREACH\"\",\"\"syscall\"\":\"\"connect\"\",\"\"address\"\":\"\"10.20.17.30\"\",\"\"port\"\":502,\"\"stack\"\":\"\"Error: connect EHOSTUNREACH 10.20.17.30:502\\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)\"\"}\",JHrezS\n2024-12-20 06:36:05.800,2024-12-20T06:36:04.661068+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2024-12-20T05:51:33_LCU_DC_ID_2|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=23|EVSE_NowPwr[kW]=0.2|EVSE_NowCur[A]=0|EVSE_NowVol[V]=591|EV_TarCur[A]=0|EV_TarVol[V]=614|EV_SOC[%]=100|EVSE_DESpwr[kW]=39.5|Pilot=4,JHrezS\n2024-12-20 06:36:05.800,\"2024-12-20T06:36:05.462971+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: OCPP: Send command: MeterValues (5b5a0b4c-c638-4dad-a4d1-594e810d8ea2) - {\"\"connectorId\"\":2,\"\"transactionId\"\":5685,\"\"meterValue\"\":[{\"\"timestamp\"\":\"\"2024-12-20T06:36:05.460Z\"\",\"\"sampledValue\"\":[{\"\"value\"\":\"\"99\"\",\"\"location\"\":\"\"EV\"\",\"\"unit\"\":\"\"Percent\"\",\"\"measurand\"\":\"\"SoC\"\"},{\"\"value\"\":\"\"13068\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"W\"\",\"\"measurand\"\":\"\"Power.Active.Import\"\"},{\"\"value\"\":\"\"594\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"V\"\",\"\"measurand\"\":\"\"Voltage\"\"},{\"\"value\"\":\"\"22\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"A\"\",\"\"measurand\"\":\"\"Current.Import\"\"},{\"\"value\"\":\"\"50555\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"Wh\"\",\"\"context\"\":\"\"Sample.Periodic\"\",\"\"measurand\"\":\"\"Energy.Active.Import.Interval\"\"},{\"\"value\"\":\"\"67\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"A\"\",\"\"measurand\"\":\"\"Current.Offered\"\"},{\"\"value\"\":\"\"160000\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"W\"\",\"\"measurand\"\":\"\"Power.Offered\"\"}]}]}\",JHrezS\n2024-12-20 06:35:59.426,2024-12-20T06:35:54.660962+00:00 swcpu [user:debug] 1 soft_plc_sicharge: 2024-12-20T05:51:33_LCU_DC_ID_2|EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=67|EVSE_NowPwr[kW]=13.3|EVSE_NowCur[A]=22|EVSE_NowVol[V]=593|EV_TarCur[A]=23|EV_TarVol[V]=6\n15|EV_SOC[%]=99\n|EVSE_DESpwr[kW]=39.5|Pilot=4,JHrezS\n2024-12-20 06:35:54.769,\"2024-12-20T06:35:51.666502+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: OCPP: Received result: Heartbeat (fc146926-e381-4eaa-9a0c-3b13e4e4a671) - {\"\"currentTime\"\":\"\"2024-12-20T06:35:51.637Z\"\"}\",JHrezS\n2024-12-20 06:35:52.011,2024-12-20T06:35:51.444189+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2cf5436a6b18[706]: OCPP: Send command: Heartbeat (fc146926-e381-4eaa-9a0c-3b13e4e4a671) - {},JHrezS\n2024-12-20 06:41:16.656: New Session started with SOC=34% & successful session was performed.\nI have attached the Logs for reference …\nFor future reference, your case number is\n0402308\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-27T15:46:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56cb0a1c-8edd-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Hello Basheer Thangal,\nCould you please reply us back in the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-28T15:39:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47a6aae5-0cde-ef11-8ee9-002248a0b76d",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Dear Sunil,\nI need to discuss this case with you briefly about the issue.\nPlease confirm your availability.\nRegards\nSyed Basheeruddin",
+            "date": "2025-01-29T06:47:28Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e311a256-08df-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Dear sunil,\nAs we discussed yesterday, please send us the clear explanation to send customer quickly.\nRegards\nSyed Basheeruddin",
+            "date": "2025-01-30T12:47:21Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "76c39df3-0bdf-ef11-8ee9-0022489affb0",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Hello Basheer,\nIn The previous email, I mistaken the date as 20/12/2024>\nPlease ignore the previous Log analysis which i have shared.\nI have checked the charger on AWS & it's quit strange that no log is captured from\n2025-01-05T20:49:19.228Z till\n2025-01-22T20:11:19.228Z\nOnly log that is visible on 20/01/2025 is\nTransaction started after\n2025-01-22T20:11:19.228Z\nWas the charger in Power off condition ??\nAlso in Configuration file  OCPP url is missing>\nSo Could you please confirm if charger was in off condition from 5/01 to 22/01/25 , IN off condition if customer send remote start till will be rejected.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-30T13:13:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0e53564-15e2-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Hello Basheer,\nCould you please reply us back on the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-03T09:58:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b64227dc-19e2-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:01251001182",
+            "body": "Dear Sunil.\nThis is to inform tha charger was working condition only.\nPlease check the SCB may be went offline.\nRegards\nSyed Basheeruddin",
+            "date": "2025-02-03T10:30:26Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "733e8ad0-fae2-ef11-9341-000d3a67f669",
+            "subject": "A new case manager was assigned to 0402308 CRM:00225158134",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0402308 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23cdc7c6-a2dc-ef11-8eea-7c1e5235925f",
+            "date": "2025-02-04T13:20:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "185ce27b-5b98-18fd-9d7f-bc9c009e7859",
+            "subject": "Notes from NOC to ES ",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nCustomer need RCA for Charging Abortion on\n2025-01-20 8:46:44 AM - 2025-01-20 9:56:03 AM UAE time.\nLogs missing at specified time.\nAction Performed (L2) :\nAnalysed Logs. Nothing conclusive found.\nCharger SW Version:\nv6.0.3-0-g215cb74\nReason for Handover (L3) :\nRCA of Charger Abortion, from ECoG session logs.\nAction Required\nAction by HQ :\nRCA of Charger Abortion, from ECoG session logs.\nAttachement\n: refer attached mail from customer.\nIn Photo in mail it is mentioned,  Current flow stopped from vehicle side. but they want the exact error.  reason for termination of session.",
+            "date": "2025-02-04T14:40:56Z",
+            "extra": {}
+        },
+        {
+            "id": "31f41ae8-a0e3-ef11-8eea-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0402308 CRM:00225158661",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0402308 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23cdc7c6-a2dc-ef11-8eea-7c1e5235925f",
+            "date": "2025-02-05T09:09:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e464e907-20c9-da38-a37b-d7b1c50ac1b4",
+            "subject": "Logs",
+            "body": "",
+            "date": "2025-02-10T17:29:55Z",
+            "extra": {}
+        },
+        {
+            "id": "47f3b23e-66e9-ef11-9341-000d3ab1a06e",
+            "subject": "0402308 - ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:00472000266",
+            "body": "Hello Basheer,\nI have a attached the logs on the ticket. There was a charging interruption due to plausibility check on the temperature sensors inside the plug. This can be related to a bad superficial contact between plug and car socket that lead to one DC pin get higher temperature that the other, specially in high current sessions.\nThe attempts to start the charging session are related to a huge amount of remote start transaction requests after the first one being accepted. The picture bellow shows exactly this.\nI don't see anything wrong here. Let me know if you need additional information or if we can proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-02-12T17:24:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8c8ce00-54fa-ef11-bae2-000d3addf8ce",
+            "subject": "RE: 0402308 - ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:00472000266",
+            "body": "Dear Joao.\nPlease find below today email from customer all the charging session got terminated as per below ocpp log screenshot.\nI attempted to charge a different EV yesterday, but the session was automatically terminated. Please find the session details below:\nKindly investigate the issue and let me know the cause of the termination. Looking forward to your feedback.\nRegards\nSyed Basheeruddin",
+            "date": "2025-03-06T06:27:00Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "33eac304-54fa-ef11-bae2-6045bddf397a",
+            "subject": "Email sent to a closed case 'ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session (C1) (0402308)' CRM:00225173717",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0402308\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-06T06:27:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "608b941c-54fa-ef11-bae2-7c1e52faf3c6",
+            "subject": "RE: 0402308 - ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session CRM:00472000266",
+            "body": "Dear Joao,\nPlease find again customer complaint email today we received as per below.\nDear Basheer,\nI attempted to charge a different EV yesterday, but the session was automatically terminated. Please find the session details below:\nKindly investigate the issue and let me know the cause of the termination. Looking forward to your feedback.\nRegards\nSyed Basheeruddin",
+            "date": "2025-03-06T06:27:49Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6f0bec21-54fa-ef11-bae2-002248a43921",
+            "subject": "Email sent to a closed case 'ID0402308-DC/Si-D/AE-[MP / R5 170001908]16 times attempt to complete successful charging session (C1) (0402308)' CRM:00225173718",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0402308\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-06T06:27:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

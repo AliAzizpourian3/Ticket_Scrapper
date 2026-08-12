@@ -1,0 +1,130 @@
+{
+    "incident_id": "25b1f590-8e46-4b0b-8e73-7def779b7310",
+    "ticket_number": "0443716",
+    "title": "ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger",
+    "created_on": "2025-08-13T13:46:41Z",
+    "last_activity": "2025-08-14T13:55:31Z",
+    "age": "1449",
+    "description": "Reported issue: Issue with the charger\nSolution:\nyyyy-mm-dd:",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "afJEBg",
+    "stage": null,
+    "serial_number": "MP / R9 170002732",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "5806a882-e59c-4468-9ab0-2b2a2fa6954d",
+            "subject": null,
+            "body": "Hi,\nIs it possible to check logs on the charger n. 170002732 between 4:45:59 p.m. and 4:47:30 p.m. (CU Time) and at  5:00:00 (CU time) of 9 of August?\nA customer tried to charge by using IPlanet App, but the recharge was always a 0 recharge. It seems to be for disconnected cable, can you give us a feedback on this?\nThank you in advance\nsoftware version\n: v6.0.3-0-g215cb74",
+            "date": "2025-08-13T13:53:52Z",
+            "extra": {}
+        },
+        {
+            "id": "cb0bca52-4d78-f011-b4cc-7c1e523508ba",
+            "subject": "ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger CRM:02684000488",
+            "body": "Dear Luigi Iodice,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002732\nChargerID/Serial No.\n:\nafJEBg\nProblem Description\n:\nIssue with the charger and It seems to be for disconnected cable\nFor future reference, your case number is\n0443716\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-13T13:56:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "678c39ec-c3fc-c093-83f2-161cc8a15fea",
+            "subject": null,
+            "body": "",
+            "date": "2025-08-13T13:59:07Z",
+            "extra": {}
+        },
+        {
+            "id": "e3cae1ea-5178-f011-b4cc-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0443716 CRM:00225242671",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0443716 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=25b1f590-8e46-4b0b-8e73-7def779b7310",
+            "date": "2025-08-13T14:29:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6059106e-5d78-f011-b4cb-000d3ad8ba5c",
+            "subject": "RE: ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger CRM:02684000488",
+            "body": "Dear Luigi,\nI am reaching out from the Expert Services team in regards of ticket\nID0443716.\nThe ticket is opened for a request of logs analysis on charger\nMP/R9 170002732\nin date 09.08.2025.\nHere are the results of my analysis at the timestamps provided:\nAt 2025-08-09T16:32:16 the charging session is authorized remotely via app on ConnectorID 2 (Chademo)\nAt 2025-08-09T16:32:23 DC2 (CCS) is plugged in ConnectorID: 1.\nThe session of course fails. This is the current configuration from Siemens Backend:\nAt 2025-08-09T16:45:59, a new session is remotely authorized via App, this time on ConnectorID 3 (AC). DC2 is then connected (CCS - ConnectorID: 1). Session of course fails.\nAt 2025-08-09T17:09:13 again, the remotestarttrasaction arrives for ConnectorID 3 (AC), but DC2 is plugged in.\nAgain at 2025-08-09T17:23:37\nThe issue here was clearly a wrong behavior of the end user to use the app and the charger. If possible, please instruct the end user on how to use the app and authenticate.\nIf any change needs to be done in terms of ConnectorID on the charger, please reach out to the colleagues from Siemens Italy.\nI will proceed to close this ticket.\nThank you and have a good evening!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-13T15:51:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46f9851c-6278-f011-b4cb-7ced8d2d6b02",
+            "subject": "Ticket 0443716 has been closed. Are you satisfied with our provided solution? CRM:00225242696",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0443716\nwith the title:\nID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFosco Servidei\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-13T16:25:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d6ec5029-0b79-f011-b4cc-7c1e52350ea5",
+            "subject": "RE: Ticket 0443716 has been closed. Are you satisfied with our provided solution? CRM:00225242696",
+            "body": "Hello,\nWe did not receive support on this ticket, could it be reopened?\nACN IPlanet – Control Room",
+            "date": "2025-08-14T12:35:35Z",
+            "extra": {
+                "sender": "acn.supporto.iplanet@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8c52de2e-0b79-f011-b4cb-7c1e52206585",
+            "subject": "Email sent to a closed case 'ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger (0443716)' CRM:00225243129",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0443716\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-08-14T12:35:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5444df73-0d79-f011-b4cc-7c1e52350ea5",
+            "subject": "Ticket 0443716 has been closed. Are you satisfied with our provided solution? CRM:00225243142",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0443716\nwith the title:\nID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFosco Servidei\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-14T12:52:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1afc1f79-0d79-f011-b4cc-000d3addf8ce",
+            "subject": "FW: RE: ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger CRM:02684000488",
+            "body": "Hello Luigi,\nI am forwarding to you the analysis that I sent yesterday in regards of ticket\nID0443716,\nmaybe it got lost and was not delivered.\nI closed the ticket as the issue was a wrong handling of the outlet selection by the end user.\nIf there are no further questions, I will proceed to re-close the case.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-14T12:52:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f332ad01-1579-f011-b4cb-6045bdde4786",
+            "subject": "RE: RE: ID0443716-DC/Si-D/IT-[MP / R9 170002732] Issue with the charger CRM:02684000488",
+            "body": "Hello,\nThank you, the ticket can be closed now.\nACN IPlanet – Control Room",
+            "date": "2025-08-14T13:46:00Z",
+            "extra": {
+                "sender": "acn.supporto.iplanet@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

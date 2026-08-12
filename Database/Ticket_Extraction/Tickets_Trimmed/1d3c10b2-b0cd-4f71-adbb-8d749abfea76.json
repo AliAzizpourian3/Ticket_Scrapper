@@ -1,0 +1,79 @@
+{
+    "incident_id": "1d3c10b2-b0cd-4f71-adbb-8d749abfea76",
+    "ticket_number": "0390117",
+    "title": "ID0390117-DC/Si-D/FI-[twlhzB] - Imatra Skoda Enyaq RS 2024 short charging sessions",
+    "created_on": "2024-11-15T09:09:56Z",
+    "last_activity": "2025-12-16T14:04:05Z",
+    "age": "10144",
+    "description": "Location:\nImatra\nReported behaviour/issue:\nSkoda Enyaq RS 2024 can charge only short time until session is aborted for unknown reasons. No clear reason from charger/SECC perspective. Looks like the car aborts the session in some reason.\nRoot cause: EV issue\nSolution:Provide info",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "twlhzB",
+    "stage": null,
+    "serial_number": "MP / P6 170000740",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9dc4186d-31a3-ef11-8a6a-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0390117 CRM:00225124866",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0390117 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1d3c10b2-b0cd-4f71-adbb-8d749abfea76",
+            "date": "2024-11-15T09:10:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8945227f-31a3-ef11-8a69-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0390117 CRM:00225124867",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0390117 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1d3c10b2-b0cd-4f71-adbb-8d749abfea76",
+            "date": "2024-11-15T09:10:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "32cee4d1-39a3-ef11-8a6a-000d3a697eb1",
+            "subject": "ID0390117-DC/Si-D/FI-[twlhzB] - Imatra Skoda Enyaq RS 2024 short charging sessions CRM:00315002060",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nImatra\nChargerID/Serial No.\n:\ntwlhzB\nProblem Description\n: Skoda Enyaq charges very low power\nTroubleshooting\n:\nAs we already discussed I will try to get all the logs and proceed to share with L3 colleagues to see if there any information regarding this EV.\nFor future reference, your ticket number is\n0390117\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-15T10:10:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a11baad-e106-4b0f-a3e4-88164eef7da4",
+            "subject": "NOTE FROM L2",
+            "body": "Managed to get 1 session from the Outlet 1 (SECC-LE)",
+            "date": "2024-11-18T10:31:12Z",
+            "extra": {}
+        },
+        {
+            "id": "403b4ac6-1da7-ef11-b8e9-002248a2b1bd",
+            "subject": "ID0390117-DC/Si-D/FI-[twlhzB] - Imatra Skoda Enyaq RS 2024 short charging sessions CRM:00315002060",
+            "body": "Hi Markus,\nAs we already aligned via Teams, I will show the information that I gathered regarding this Skoda Enyaq:\nIt seems that the EV sends a strange information to us regarding the RemainingTimeToFullSoC:\nThe first message is before the ParameterDiscovery phase so there is no value, and we get the 4500 (sec) during ParameterDiscovery, during charging we get another value 4200 and after 3mins we receive a 0 value. When we receive this value is when the charging starts to stop and ramp down.\nAt the end of the session we see that there is no problem with SECC or charger as there is no error reported.\nThe only thing that I believe that can be the issue since the sessions are 5-6mins, is that there is a Timeout for some kind of misbehavior like the fact that the TarVol - NowVol = ~50V.\nI can only theorize here since we don't have access to that kind of information.\nFrom our side, I believe there is nothing we can do as this seems to be this specific EV issue.\nLet me know if this is enough information and if I can close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-11-20T08:59:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1e4c047b-b0a8-ef11-b8e8-000d3ab009dd",
+            "subject": "Ticket 0390117 has been closed. Are you satisfied with our provided solution? CRM:00315002088",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0390117\nwith the title:\nID0390117-DC/Si-D/FI-[twlhzB] - Imatra Skoda Enyaq RS 2024 short charging sessions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-22T09:02:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

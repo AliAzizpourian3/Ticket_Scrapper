@@ -1,0 +1,149 @@
+{
+    "incident_id": "2470fe41-df88-f011-b4cc-6045bddf3f78",
+    "ticket_number": "0447749",
+    "title": "ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification is too long",
+    "created_on": "2025-09-03T16:01:41Z",
+    "last_activity": "2026-01-30T08:18:29Z",
+    "age": "1252",
+    "description": "Reported behaviour/issue: Invalid fw version name in bootnotification!\nSolution: change FW version to have <=50 characters\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / SN 170004204,MP / SN 170004210,MP / S0 170004169,MP / SD 170004182,MP / SD 170004184,MP / SN 170004203",
+    "case_nature_code": 580000001,
+    "chargerID": "Multiple",
+    "additional_info": [
+        {
+            "id": "58f92c41-df88-f011-b4cc-6045bde117fc",
+            "subject": "CRITICAL: SICHARGE D  invalid fw version name in bootnotification!",
+            "body": "Hi Support,\nThere is a critical issue found in ocpp communication of SICHARGE D (e.g. ID: GaT5ma).\nThe recently applied fw update from  v7.0.5-0-gd66ba3a+FileHandlerHF (PRODUCTION)  to v7.0.5-0-gd66ba3a+FileHandlerHF+RC-TR-Supp (PRODUCTION) is crashing ocpp communication during bootnotification.\nAccording to standard the firmware version in bootnotification should be of type\nCiString50Type\n.\nLooks like the firmware was recently changed on these chargers to this new one which is\n56 characters long\nDepotfinity is rejecting any boot notification from that SICHARGE D!\nPlease rollback FW immediately!\nThanks\nWith best regards,\nBenjamin Kuppler\nSiemens AG\nSmart Infrastructure\nDepotCo – Emerging Transportation Platform\nSI CTO ETP\nSiemenspromenade 10\n91058 Erlangen, Germany\nMobile: +49 1734297957\nmailto:benjamin.kuppler@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2025-09-03T16:01:33Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "39bf1975-e188-f011-b4cb-7c1e52882412",
+            "subject": "AW: CRITICAL: SICHARGE D  invalid fw version name in bootnotification!",
+            "body": "This seems to be the list of the chargers affected:\nPlease rollback all these chargers.\nVon:\nKuppler, Benjamin (SI CTO ETP PPM&MK)\nGesendet:\nMittwoch, 3. September 2025 18:01\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nAarre, Simen (RC-NO SI E) <simen.aarre@siemens.com>\nBetreff:\nCRITICAL: SICHARGE D invalid fw version name in bootnotification!\nPriorität:\nHoch\nHi Support,\nThere is a critical issue found in ocpp communication of SICHARGE D (e.g. ID: GaT5ma).\nThe recently applied fw update from  v7.0.5-0-gd66ba3a+FileHandlerHF (PRODUCTION)  to v7.0.5-0-gd66ba3a+FileHandlerHF+RC-TR-Supp (PRODUCTION) is crashing ocpp communication during bootnotification.\nAccording to standard the firmware version in bootnotification should be of type\nCiString50Type\n.\nLooks like the firmware was recently changed on these chargers to this new one which is\n56 characters long\nDepotfinity is rejecting any boot notification from that SICHARGE D!\nPlease rollback FW immediately!\nThanks\nWith best regards,\nBenjamin Kuppler\nSiemens AG\nSmart Infrastructure\nDepotCo – Emerging Transportation Platform\nSI CTO ETP\nSiemenspromenade 10\n91058 Erlangen, Germany\nMobile: +49 1734297957\nmailto:benjamin.kuppler@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2025-09-03T16:17:19Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ed22f110-e588-f011-b4cc-7c1e5287f582",
+            "subject": "A new case manager was assigned to 0447749 CRM:00225251901",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0447749 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2470fe41-df88-f011-b4cc-6045bddf3f78",
+            "date": "2025-09-03T16:43:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d100231-e988-f011-b4cc-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0447749 CRM:00225251910",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0447749 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2470fe41-df88-f011-b4cc-6045bddf3f78",
+            "date": "2025-09-03T17:12:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c0979298-eb88-f011-b4cc-7c1e52350ea5",
+            "subject": "ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Dear\nKuppler, Benjamin (SI E PR DC)\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / SN 170004203\nCharger ID/Serial No.\n:\nMultiple\nProblem Description\n: I\nnvalid fw version name in boot notification!\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0447749\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-03T17:29:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0aa1bf66-6789-f011-b4cc-6045bddf3f78",
+            "subject": "A new case manager was assigned to 0447749 CRM:00225252222",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0447749 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2470fe41-df88-f011-b4cc-6045bddf3f78",
+            "date": "2025-09-04T08:16:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "27bd8d6d-7489-f011-b4cc-6045bdde4786",
+            "subject": "ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Hi Benjamin, good morning. I hope you are doing well, long time no see.\nI can fix it right now, can you please confirm to me that there is only a problem with the 5 chargers you provided or is there more?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T09:49:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb063108-7a89-f011-b4cc-7c1e52350ea5",
+            "subject": "AW: ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Hi Francisco,\ngood morning! Nice to have you on this topic!\nYes as far as I am aware of only this\n6 chargers\nare affected\nPlease rollback to previous version.\nThanks!\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 4. September 2025 11:50\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755\nPriorität:\nHoch\nHi Benjamin, good morning. I hope you are doing well, long time no see.\nI can fix it right now, can you please confirm to me that there is only a problem with the 5 chargers you provided or is there more?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T10:29:33Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ecbead69-8d89-f011-b4cb-002248a29f7b",
+            "subject": "AW: ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Hi Francisco,\nI see that 4 chargers are already back. Two are pending, right?\nBR Benjamin\nVon:\nKuppler, Benjamin (SI CTO ETP PPM&MK)\nGesendet:\nDonnerstag, 4. September 2025 12:29\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755\nHi Francisco,\ngood morning! Nice to have you on this topic!\nYes as far as I am aware of only this\n6 chargers\nare affected\nPlease rollback to previous version.\nThanks!\nBR Benjamin\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nDonnerstag, 4. September 2025 11:50\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <\nbenjamin.kuppler@siemens.com\n>\nBetreff:\nID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755\nPriorität:\nHoch\nHi Benjamin, good morning. I hope you are doing well, long time no see.\nI can fix it right now, can you please confirm to me that there is only a problem with the 5 chargers you provided or is there more?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T12:48:16Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d7e216ad-8d89-f011-b4cc-6045bdde4786",
+            "subject": "ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Hi Benjamin,\nAll 6 chargers done. I said 5 but I still had 6 open, my bad :D\nSince the last 2 were charging, I went for lunch and as such, I only perform the changes now.\nIf you face this issue again, you can refer to me so I can rollback the version. Since it's been resolved, I will close the ticket.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T12:50:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "113d1910-8e89-f011-b4cc-7c1e5236e32d",
+            "subject": "Ticket 0447749 has been closed. Are you satisfied with our provided solution? CRM:00225252430",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0447749\nwith the title:\nID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification is too long\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-04T12:52:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dfb8d311-8e89-f011-b4cc-7c1e523508ba",
+            "subject": "AW: ID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755",
+            "body": "Hi Francisco,\nok understood! Thanks a lot for your fast response and support!\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 4. September 2025 14:51\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nID0447749-DC/Si-D/NO-[Multiple] Invalid fw version name in bootnotification! CRM:02681000755\nHi Benjamin,\nAll 6 chargers done. I said 5 but I still had 6 open, my bad :D\nSince the last 2 were charging, I went for lunch and as such, I only perform the changes now.\nIf you face this issue again, you can refer to me so I can rollback the version. Since it's been resolved, I will close the ticket.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T12:53:00Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

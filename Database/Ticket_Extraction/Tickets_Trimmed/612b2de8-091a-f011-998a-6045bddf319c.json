@@ -1,0 +1,83 @@
+{
+    "incident_id": "612b2de8-091a-f011-998a-6045bddf319c",
+    "ticket_number": "0419099",
+    "title": "ID0419099-DC/Si-D/FR-{MP / P6 170000692}Terminal candidate list empty",
+    "created_on": "2025-04-15T14:57:12Z",
+    "last_activity": "2025-12-01T10:39:22Z",
+    "age": "48520",
+    "description": "Reported behaviour/issue: My colleague was on site today around 12:38 (local time), and it appears that the terminal on this charger is no longer operational. The screen of the chargeris displaying the error: \"Terminal candidate list empty.\" It’s a bit surprising, since the charger was still working on March 30, 2025, when a transaction was successfully recorded. Based on previous similar situations, this issue is often linked to a faulty CORA10 — but do we have any idea what might have caused it to fail? To assist with the investigation, I have attached photos showing the error both in the logs and on the HMI. Could you please confirm if the CORA10 is indeed the cause of the issue? If so, can we move forward with a replacement?\nSolution: N/A\nyyyy-mm-dd: 2025-04-15",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Ofw44F",
+    "stage": null,
+    "serial_number": "MP / P6 170000692",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "d3702bd5-091a-f011-9989-7c1e5236eee4",
+            "subject": "Webform_incident_SiCharge D_15-04-2025_SN: Ofw44F",
+            "body": "Dear CHETOUAH HADJAR,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nOfw44F\nThank you\neMobility Technical Support Team\nSehr geehrte/r CHETOUAH HADJAR,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nOfw44F\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-15T14:56:39Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1ea353b4-171a-f011-9989-7c1e52361e39",
+            "subject": "ID0419099-DC/Si-D/FR-{MP / P6 170000692}Terminal candidate list empty CRM:02681000076",
+            "body": "Dear Chetouah Hadjar,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P6 170000692\nCharger ID/Serial No.\n:\nOfw44F\nProblem Description\n: “Terminal candidate list empty”\nFor future reference, your case number is\n0419099\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T16:36:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5da267f-3a1a-f011-998a-7c1e523508ba",
+            "subject": "RE: ID0419099-DC/Si-D/FR-{MP / P6 170000692}Terminal candidate list empty CRM:02681000076",
+            "body": "Hello Team\nIf we are getting \"Terminal Candidate List Empty\" this means either the card reader might be defective, or the terminal has wrong configuration.\nTol resolve this, the termina; must be forced to fetch configuration from host by either re-commissioning or by using diagnostics with TS3 tool.\nIf this does not resolve this issue, then please go ahead and replace the card reader.\nKindly refer the below mark schematic and check the connection.\nAdditionally, please carry the spare\nCard Reader COR-A10\nand\nOPM-C60\nin case a replacement is required during the visit.\nPZ2-: 8EM5903-0AA02-7AA1\nPZ3-:8EM5903-0AA02-5AA7 (Please confirm once as per the existing)\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T20:45:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "61a2d3bc-3b1a-f011-998a-7c1e523508ba",
+            "subject": "RE: ID0419099-DC/Si-D/FR-{MP / P6 170000692}Terminal candidate list empty CRM:02681000076",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0419099 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T20:53:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e24d1763-8334-f011-8c4d-7c1e5235fbdd",
+            "subject": "RE: Webform_incident_SiCharge D_15-04-2025_SN: Ofw44F CRM:02441000090",
+            "body": "Bonjour,\nL’incident signalé sur cette borne a été résolu. Le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-05-19T07:32:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39babedc-8334-f011-8c4d-7c1e5236e32d",
+            "subject": "RE: Webform_incident_SiCharge D_15-04-2025_SN: Ofw44F CRM:02441000090",
+            "body": "Bonjour,\nL’incident signalé sur cette borne a été résolu. Le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-05-19T07:35:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

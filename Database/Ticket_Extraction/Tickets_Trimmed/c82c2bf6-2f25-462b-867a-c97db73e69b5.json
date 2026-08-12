@@ -1,0 +1,119 @@
+{
+    "incident_id": "c82c2bf6-2f25-462b-867a-c97db73e69b5",
+    "ticket_number": "0469630",
+    "title": "ID0469630-DC/Si-D/IT-[ MP / S9 170004060] Customer billed too much due to OCPP offline",
+    "created_on": "2025-12-28T16:40:41Z",
+    "last_activity": "2026-01-02T18:00:23Z",
+    "age": "2393",
+    "description": "Reported Behaviour/ Issue: Customer was billed too much money due to the OCPP being offline, since there is some kind of blocking fee and the OCPP connection was only reestablished hours later, the OCPP calculated all those hours extra.\nSolution: Logic in the backend should compromise when the OCPP goes offline, since you cannot know how much time they spent there after the session is finished, they should only bill the StopTransaction kWh.",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "PbhKqD",
+    "stage": "Resolved",
+    "serial_number": "MP / S9 170004060",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "314e44e9-5a69-16ed-8459-b8d015bb353a",
+            "subject": null,
+            "body": "Hello,\na client charged his car today 28 of December between 9:41:39 AM and 10:12:40 AM CU TIME (10:41:39 and 11:12:40 Italy time) and he says he left right after, but on our portal we see that the cable was disconnected at 1:01:34 PM CU TIME (14:01:34 Italy time), so he was charged a penalty because of it. Also, on the events of the charger we see that from this morning at 7:09 AM CU TIME the alarms \"no error\" and \"CU up again\" are constantly repeating.\nCan you please check the logs?\nThank you\nsoftware version : v8.0.5-0-g33a6c1d",
+            "date": "2025-12-28T16:47:39Z",
+            "extra": {}
+        },
+        {
+            "id": "466e750d-0de4-f011-8544-7ced8d425d60",
+            "subject": "A new case manager was assigned to 0469630 CRM:00225310289",
+            "body": "Sumit Kumar was assigned as new Case Manager for case 0469630 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c82c2bf6-2f25-462b-867a-c97db73e69b5",
+            "date": "2025-12-28T16:48:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "356c1f1c-0de4-f011-8544-7ced8d4258c6",
+            "subject": "ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:03055000472",
+            "body": "Dear\nRosita\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S9 170004060\nChargerID\n: PbhKqD\nProblem Description\n: CU Logs Check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0469630\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-28T16:49:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "936af315-0ee4-f011-8544-7c1e523628c9",
+            "subject": "ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:00263000321",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nMP / S9 170004060\nwhich led to the opened ticket:\n0469630\n.\nProblem description:\n\"\na client charged his car today 28 of December between 9:41:39 AM and 10:12:40 AM CU TIME (10:41:39 and 11:12:40 Italy time) and he says he left right after, but on our portal we see that the cable was disconnected at 1:01:34 PM CU TIME (14:01:34 Italy time), so he was charged a penalty because of it. Also, on the events of the charger we see that from this morning at 7:09 AM CU TIME the alarms \"no error\" and \"CU up again\" are constantly repeating.\nCan you please check the logs?\nThank you\n\"\n2025-12-28T09:40:15.526704+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"A\" --> \"B2\"\n2025-12-28T09:41:26.602174+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"B2\" --> \"E\"\n2025-12-28T09:41:29.784892+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"E\" --> \"B1\"\n2025-12-28T09:41:58.416928+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\n2025-12-28T09:42:13.458276+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"C2\"\n2025-12-28T09:44:50.185232+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"B1\" --> \"A\"\n2025-12-28T10:12:10.504253+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"C2\" --> \"B2\"\n2025-12-28T10:12:13.509316+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\n2025-12-28T10:12:16.206024+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"E\" --> \"B1\"\n2025-12-28T10:12:17.961114+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nAccording to the logs it's possible to observe that a vehicle have been connected to the DC2 between 2025-12-28T09:41:58 and  2025-12-28T10:12:17.\nThe logs have been collected and this problem will be forward to our expert team that will investigate the problem and the reason why it's not matching with the information in your portal.\nIn the meanwhile could you please share with us a printscreen from your portal with this error?\nOnce you have this information, please forward to us. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-28T16:56:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d1159179-6c19-0412-9b32-68f8f8e2aed9",
+            "subject": "logs",
+            "body": "",
+            "date": "2025-12-28T17:27:40Z",
+            "extra": {}
+        },
+        {
+            "id": "8de25a95-12e4-f011-8543-7ced8d425658",
+            "subject": "ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:00263000321",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nMP / S9 170004060\nwhich led to the opened ticket:\n0469630\n.\nProblem description:\n\"\na client charged his car today 28 of December between 9:41:39 AM and 10:12:40 AM CU TIME (10:41:39 and 11:12:40 Italy time) and he says he left right after, but on our portal we see that the cable was disconnected at 1:01:34 PM CU TIME (14:01:34 Italy time), so he was charged a penalty because of it. Also, on the events of the charger we see that from this morning at 7:09 AM CU TIME the alarms \"no error\" and \"CU up again\" are constantly repeating.\nCan you please check the logs?\nThank you\n\"\n2025-12-28T09:40:15.526704+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"A\" --> \"B2\"\n2025-12-28T09:41:26.602174+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"B2\" --> \"E\"\n2025-12-28T09:41:29.784892+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"E\" --> \"B1\"\n2025-12-28T09:41:58.416928+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\n2025-12-28T09:42:13.458276+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"C2\"\n2025-12-28T09:44:50.185232+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"B1\" --> \"A\"\n2025-12-28T10:12:10.504253+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"C2\" --> \"B2\"\n2025-12-28T10:12:13.509316+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\n2025-12-28T10:12:16.206024+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"E\" --> \"B1\"\n2025-12-28T10:12:17.961114+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nAccording to the logs it's possible to observe that a vehicle have been connected to the DC2 between 2025-12-28T09:41:58 and  2025-12-28T10:12:17.\nThe logs have been collected and this problem will be forward to our expert team that will investigate the problem and the reason why it's not matching with the information in your portal.\nIn the meanwhile could you please share with us a printscreen from your portal with this error?\nOnce you have this information, please forward to us. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-28T17:28:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "eecb2975-20e4-f011-8544-7ced8d425bfe",
+            "subject": "RE: ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:00263000321",
+            "body": "Hello and thank you for your feedback,\nThis is what we see on our portal regarding the charging session:\nAs you can see it shows that the client removed the connector at 1:01:34 PM CU TIME (14:01:34 Italy time).\nWith best regards,\nRosita Abate",
+            "date": "2025-12-28T19:07:37Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fb8b1f9b-bde4-f011-8544-7ced8d425b04",
+            "subject": "ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:00263000321",
+            "body": "Hello Rosita, good afternoon.\nI checked the logs and at the point of the session stop, the OCPP connection was down but we are able to send the StopTransaction and it's received:\nBut the connector ID status is not transmitted due to connection offline:\nSince we were never able to convey this information to the backend, only when it got the information, he processed it.\nFrom our point of view, there should be a logic on the backend where if the connection is dropped, the customer only pays what is received in the StopTransaction, which was shared to the backend. Even for a complete offline scenario where we don't get the StopTransaction, as anyway, whenever the OCPP reestablishes the connection, the StopTransaction is sent regardless of the blocking fees, so the backend should obey that rule of, if OCPP offline, billing is the StopTransaction, as usually, only us can figure out how much time they stay there by checking the PilotState.\nplease let me know if this answered your questions and I can close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-12-29T13:52:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ca6d58d-bfe4-f011-8544-7c1e52362ec6",
+            "subject": "A new case manager was assigned to 0469630 CRM:00225310715",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0469630 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c82c2bf6-2f25-462b-867a-c97db73e69b5",
+            "date": "2025-12-29T14:06:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a3ad926-d1e4-f011-8544-7ced8d4251a1",
+            "subject": "RE: ID0469630-DC/Si-D/IT-[ MP / S9 170004060] CU Logs Check CRM:00263000321",
+            "body": "Hello,\nthank you for the feedback, you can close the ticket.\nWith best regards,\nRosita Abate",
+            "date": "2025-12-29T16:12:28Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

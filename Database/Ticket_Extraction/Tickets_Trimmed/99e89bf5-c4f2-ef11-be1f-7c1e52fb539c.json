@@ -1,0 +1,137 @@
+{
+    "incident_id": "99e89bf5-c4f2-ef11-be1f-7c1e52fb539c",
+    "ticket_number": "0408889",
+    "title": "ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline",
+    "created_on": "2025-02-24T15:35:23Z",
+    "last_activity": "2025-03-27T10:18:00Z",
+    "age": "44323",
+    "description": "Reported behavior/issue:  Frequent OCCP offline\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nExpired 6/8/2024",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "XiHDgt",
+    "stage": null,
+    "serial_number": "MP / P6 170000662",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b64cf5ef-c4f2-ef11-be1f-7c1e52768c07",
+            "subject": "Webform_incident_SiCharge D_24-02-2025_SN: MP / P6 170000662",
+            "body": "Dear Nils Christen,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / P6 170000662\nThank you\neMobility Technical Support Team\nSehr geehrte/r Nils Christen,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / P6 170000662\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-24T15:35:15Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b1c9b1d8-eaf2-ef11-be1f-6045bddf3f78",
+            "subject": "0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:02023000517",
+            "body": "Dear Nils Christen,\nThank you for reaching out to eMobility Support. We acknowledge the receipt of your inquiry regarding Frequent OCPP Disconnection messages. Rest assured that a regional representative will promptly contact you to provide further information.\nBelow, you will find the relevant asset details:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P6 170000662\nCharger ID/Serial No.:\nXiHDgt\nProblem Description:\nFrequent OCPP Disconnection messages.\nFor future reference, your case number is\n0408889\n. Please refer to this number in all further communication related to this issue.\nWe appreciate your time and patience.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-02-24T20:06:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3d359ff7-7fa8-af7b-9e6e-9426e9d9a8cb",
+            "subject": "Analysis",
+            "body": "OCPP is toggling frequently, need to check via SSH for OCPP router settings",
+            "date": "2025-02-24T20:42:53Z",
+            "extra": {}
+        },
+        {
+            "id": "505db709-7efd-22d3-9613-e4a0314bf1a9",
+            "subject": "Notes to L2",
+            "body": "reached out to Semih for checking the OCPP router setting via SSH",
+            "date": "2025-02-24T20:47:13Z",
+            "extra": {}
+        },
+        {
+            "id": "414e2dc2-395f-e8ee-a206-9969308f1a83",
+            "subject": "Notes to L2",
+            "body": "Semih will check the case, will co-ordinate with him once he is available.",
+            "date": "2025-02-25T21:51:45Z",
+            "extra": {}
+        },
+        {
+            "id": "261975f1-19f4-ef11-be1f-7c1e5220b93f",
+            "subject": "0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Hallo Nils Christen,\nAn diesem Verhalten ist nichts verkehrt, da die OCPP-Verbindung ständig abbricht und wiederhergestellt wird. Hier wird die StatusNotification nach jedem Verbindungsaufbau gesendet (kurzzeitig ist also kein Status der Outlets verfügbar). Der wahre Grund hierfür ist meiner Meinung nach, dass hier ein WebSocket-Ping auf 0 Sekunden eingestellt ist.\nHier ein Auszug aus der Konfiguration des Chargers, die durch das Backend eingestellt wird:\n\"WebSocketPingInterval\": {\n\"readonly\": false,\n\"value\": 0,\n\"unit\": \"seconds\"\nSie müssten das ändern auf einen Wert wie z.b. 30sec oder 60sec dann sollte das system auch stabiler laufen. Kann der Backend Operator den Wert bitte anpassen ?\nWith best regards,\neMobility Tech Support Team -\nSemih Sentuerk\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T08:16:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "25e698da-75fa-ef11-bae2-6045bddf319c",
+            "subject": "RE: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Hallo Nils Christen,\nwie ich sehe ist die Konfig angepasst, wie verhält sich die Performance? Falls keine größere ausfälle auftreten würde ich das Ticket schließen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-06T10:29:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1be5d493-77fa-ef11-bae2-7c1e5236e32d",
+            "subject": "Automatische Antwort: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Sehr geehrte(r) Absender(in),\nvielen Dank für Ihre E-Mail.\nDerzeit befinde ich mich nicht im Hause.\nBitte beachten Sie, dass Ihre E-Mail nicht weitergeleitet wird.\nIn dringenden Fällen wenden Sie sich gerne an\nelektromobilitaet@stawag.de\n.\nFreundliche Grüße\nNils Christen, M.Sc.\nVertrieb – Privat- und Gewerbekunden\nElektromobilität\nSTAWAG – Stadt- und Städteregionswerke Aachen AG\nLombardenstraße 12-22, 52070 Aachen\nTelefon: 0241 181-1246\nnils.christen@stawag.de\nWir für das Klima – Entdecken Sie jetzt unsere Klimaziele 2030:\nwirfuerdasklima.de\nstawag.de\n,\nfacebook.com/STAWAG\n,\ntwitter.com/StawagAachen\n,\ninstagram.com/stawag_aachen\nSitz der Gesellschaft: Aachen\nRegistergericht Aachen, HRB 560\nAufsichtsratsvorsitzender: Harald Baal\nVorstand: Dr. Christian Becker, Wilfried Ullrich\nInformationen zum Datenschutz:\nstawag.de/datenschutz\nDisclaimer:\nWenn diese E-Mail nicht für Sie bestimmt ist, bitten wir Sie, uns umgehend über den irrtümlichen Empfang zu informieren und diese E-Mail zu löschen.\nWir danken Ihnen für Ihre Unterstützung. If you are not the addressee, please inform us immediately that you have received this e-mail by mistake and delete it.\nWe thank you for your support.",
+            "date": "2025-03-06T10:41:45Z",
+            "extra": {
+                "sender": "nils.christen@stawag.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "02833dbc-79fa-ef11-bae2-6045bdde4786",
+            "subject": "AW: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Hallo Semih Sentürk,\nlaut unserem Backendbetreiber (smartlab) hat sich leider nichts an den häufigen Heartbeatsignalen geändert. Websocket-Ping und Heartbeat wären seiner Meinung nach unterschiedliche Parameter. Gibt es noch eine andere Lösung für das Problem?\nIch habe Herrn Orban vom smartlab nun in CC ergänzt, da ich hier nur vermitteln kann.\nViel Grüße\nNils Christen\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 6. März 2025 11:42\nAn:\nChristen, Nils (STAWAG) <Nils.Christen@stawag.de>\nBetreff:\nRE: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738\nHallo Nils Christen,\nwie ich sehe ist die Konfig angepasst, wie verhält sich die Performance? Falls keine größere ausfälle auftreten würde ich das Ticket schließen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-06T10:57:05Z",
+            "extra": {
+                "sender": "nils.christen@stawag.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae98cc62-19fb-ef11-bae2-6045bddf319c",
+            "subject": "RE: AW: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Hallo,\ndie Aussage stimmt leider nicht, denn der im Backend eingestellte Heartbeat intervall liegt bei 900s und wird je h vier mal gesendet:\nWas bei diesem Backend für instabilität gesorgt hat war das der Websocket ping auf 0s war. So sendet der  WebSocket-Client gar keine Ping-Nachrichten an den Server, um die Verbindung aufrechtzuerhalten. Manche Server trennen inaktive Verbindungen nach einer gewissen Zeit ohne Datenverkehr. Der SICD ist konfiguriert nach 30 sec verbindungsverlust einen reconnect auszuführen. Ohne Pings könnte der Server die Verbindung dann unerwartet beenden. Es kommt zu einem On / Offline toggle welcher dann jedesmal bei Verbindungsaufbau Statusnotification message triggert und die logs spamed. Damit kommt dann der Server nicht klar und schließt die Verbindung:\nOCPP-Central-System connection error: Unexpected server response: 503\nAlso aktuell sollte die Verbindung wieder in Ordnung sein so sehe ich das in den Logs.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-07T05:59:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a3d7a51f-22fb-ef11-bae2-7c1e52768c07",
+            "subject": "Automatische Antwort: AW: 0408889 - ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000738",
+            "body": "Sehr geehrte Damen und Herren,\nIch bin aktuell nicht zu erreichen.\nIhre Anfragen werden während dieser Zeit nicht weitergeleitet.\nBei dringenden Anliegen wenden Sie sich bitte an meine Team-Kollegen über das Service-Center:\nservice.smartlab-gmbh.com\n+49 241 / 916092 1919\nMit besten Grüßen aus Aachen\nBest regards\nDennis Orban\nTeamlead Support\nsmartlab Innovationsgesellschaft mbH\nKrefelder Str. 195, 52070 Aachen\nTelefon: +49 241 916092-1919\norban@smartlab-gmbh.de\nwww.smartlab-gmbh.de",
+            "date": "2025-03-07T07:02:33Z",
+            "extra": {
+                "sender": "orban@smartlab-gmbh.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d0ce04d1-560a-f011-bae3-7c1e52350ea5",
+            "subject": "ID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline CRM:00439000748",
+            "body": "Dear Nils Christen,\nThanks for your support and patience, Please let us now if the issue is persisting othervise this case will be closed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0408889\nwith the title:\nID0408889-DC/Si-D/DE-[MP / P6 170000662] Frequent OCCP offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T15:27:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

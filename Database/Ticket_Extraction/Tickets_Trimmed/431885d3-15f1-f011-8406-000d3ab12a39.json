@@ -1,0 +1,127 @@
+{
+    "incident_id": "431885d3-15f1-f011-8406-000d3ab12a39",
+    "ticket_number": "0472139",
+    "title": "ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss",
+    "created_on": "2026-01-14T06:54:20Z",
+    "last_activity": "2026-01-15T09:26:47Z",
+    "age": "1592",
+    "description": "Reported behaviour/issue: Power loss\nOn the logs we could find \"OCPP: Send command\" to stop charge session with the reason\":\"PowerLoss\".\nTime Stamp:\n2026-01-05T17:27:37\nSolution:\nAfter share the information to the client, we could confirm that we can close the ticket.",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "cNkABV",
+    "stage": "Resolved",
+    "serial_number": "MP / NN 170000049",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c4351bd2-15f1-f011-8406-000d3ab11fb1",
+            "subject": "Webform_incident_SiCharge D_14-01-2026_SN: 170000049",
+            "body": "Dear Tomas Cepicka,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000049\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tomas Cepicka,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000049\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-01-14T06:54:11Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "81b045d8-16f1-f011-8406-7ced8d44dfaf",
+            "subject": "A new case manager was assigned to 0472139 CRM:00225317857",
+            "body": "Meghna Bhardwaj was assigned as new Case Manager for case 0472139 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=431885d3-15f1-f011-8406-000d3ab12a39",
+            "date": "2026-01-14T07:01:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb237129-18f1-f011-8406-000d3ab124a4",
+            "subject": "ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Dear\nČepička, Tomáš\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / NN 170000049\nChargerID\n:\nMP / NN 170000049\nProblem Description\n: PowerLoss and RFID issue\nTroubleshooting\n: We are working on your case the case the concerned team will contact you very soon.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0472139\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nMeghna Bhardwaj\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-14T07:10:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6248159-1ef1-f011-8406-7ced8d44d1ac",
+            "subject": "A new case manager was assigned to 0472139 CRM:00225317909",
+            "body": "Felipe Moraes was assigned as new Case Manager for case 0472139 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=431885d3-15f1-f011-8406-000d3ab12a39",
+            "date": "2026-01-14T07:55:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "23b0917d-2ef1-f011-8406-7ced8d44dfaf",
+            "subject": "RE: ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Dear\nID0472139\n,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nWe have completed the technical analysis of the logs for the charging session you reported. Our data shows that the OCPP experienced a temporary\noffline status\nduring the session.\nAccording to the logs, once the connection was restored, the\nOCPP\nautomatically issued a\n'StopTransaction'\ncommand. This is why the session was terminated.\nAs there was no error flags detected on the unit itself, the charger is functioning as intended. We recommend checking with your\nBackend\nto verify if this '\nOCPP: Send command\n' .\nApart from this information, can we help you with anything else?\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-14T09:50:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "800f41d2-2ef1-f011-8406-7ced8d44dfaf",
+            "subject": "RE: Webform_incident_SiCharge D_14-01-2026_SN: 170000049",
+            "body": "------------------- Original Message -------------------\nFrom:\nna MoreApp <noreply@moreapp.com>;\nReceived:\nWed Jan 14 2026 06:54:08 GMT+0000 (Western European Standard Time)\nTo:\nČepička, Tomáš (RC-CZ DI CS SD SO LVD) <tomas.cepicka@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; eMobility Support Queue <emobility_support.si@siemens.com>; Tomas Cepicka <tomas.cepicka@siemens.com>;\nSubject:\nWebform_incident_SiCharge D_14-01-2026_SN: 170000049\nDear Tomas Cepicka,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000049\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tomas Cepicka,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000049\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-01-14T09:53:05Z",
+            "extra": {
+                "sender": "felipe.moraes.ext@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d280a9ba-e9f1-f011-8406-000d3ab12cf3",
+            "subject": "RE: ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Hello Felipe,\nThank you very much for the analysis of the problem. I informed the customer to check with their backend provider the reason why StopTransaction was sent after connectivity dropped with backend.\nHave a nice day\nBR\nTomas Cepicka",
+            "date": "2026-01-15T08:11:07Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a2ab3ac1-f0f1-f011-8406-000d3ad9b69d",
+            "subject": "RE: ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Hi Tomas,\nI hope this email finds you well.\nThank you for your response.\nFollowing your request, can I ask you to confirm if we can proceed closing this ticket?\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-15T09:01:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4f6b4be9-f1f1-f011-8406-7ced8d44da5f",
+            "subject": "RE: ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Hello Felipe,\nThank you. Yes I think we had our answers for the customer. We can close the ticket.\nHave a nice day\nBR Tomas Cepicka",
+            "date": "2026-01-15T09:09:40Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fabb24e6-f3f1-f011-8406-000d3ad9b69d",
+            "subject": "RE: ID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss CRM:02698000734",
+            "body": "Hi Tomas,\nThank you for the confirmation. We will now proceed with closing this ticket. Should you need any further assistance, please feel free to contact us again by opening a new ticket.\"\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-15T09:23:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

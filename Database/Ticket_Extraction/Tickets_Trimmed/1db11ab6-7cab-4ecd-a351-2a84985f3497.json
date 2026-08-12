@@ -1,0 +1,90 @@
+{
+    "incident_id": "1db11ab6-7cab-4ecd-a351-2a84985f3497",
+    "ticket_number": "0411291",
+    "title": "ID0411291-DC/Si-D/TR-[MP / R6 170002150] Outlet status change",
+    "created_on": "2025-03-07T10:37:15Z",
+    "last_activity": "2025-10-06T08:12:13Z",
+    "age": "6833",
+    "description": "Reported issue\n:  Technical Query on Outlet Status Change\nSolution\n:  Information shared",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "NG7mYV",
+    "stage": null,
+    "serial_number": "MP / R6 170002150",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "777f8527-40fb-ef11-bae2-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0411291 CRM:00225174639",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0411291 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1db11ab6-7cab-4ecd-a351-2a84985f3497",
+            "date": "2025-03-07T10:37:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b97b4e0-4efb-ef11-bae2-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0411291 CRM:00225174737",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0411291 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1db11ab6-7cab-4ecd-a351-2a84985f3497",
+            "date": "2025-03-07T12:22:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "634ae94b-6e01-8ad9-8047-42052f68e171",
+            "subject": "Case Opening Remark",
+            "body": "Borusan EnBW, one of the CPOs in Turkey, has started working with Monta. However, they are encountering numerous issues, one of which is outlet status…\nBorusan reported that outlet statuses are continuously switching between \"unavailable\" and \"available.\" When I checked one of the devices, I found the logs shown in the attached image. And also I shared the log files at the attachment.\nThey are encountering all devices. Why the outlets continuously switching between \"unavailable\" and \"available.\"?",
+            "date": "2025-03-10T06:12:27Z",
+            "extra": {}
+        },
+        {
+            "id": "8d85f442-77fd-ef11-bae3-7c1e52774092",
+            "subject": "ID0411291-DC/Si-D/TR-[MP / R6 170002150] Outlet status change CRM:00251000504",
+            "body": "Dear Emre,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002150\nChargerID/Serial No.\n:\nNG7mYV\nProblem Description\n: Technical query on Outlet Status Change\nUpon investigating the logs of 7th March between 08:50 to 09:30 UTC, here is my finding:\nThe outlet status was toggling between status “Available” & “Preparing” & “Available” as user was trying to start the session, but it failed because of delay in Authorization and power saving mode.\nThen there was a remote reboot, which set the outlet status to “Unavailable”, before setting it back to “Available”\n(refer Attached logs).\n2025-03-07T09:07:00.140094+00:00 sicharge-cp [local0:info] sicharge-cp-backend/ad606c64e791[740]: OCPP: Received command: Reset (d8113f41-aaf0-452d-8c1b-c1c1f00c5bf5) - {\"type\":\"Hard\"}\nI don't see any OCPP bug or abnormality in the charging logs\nFor future reference, your case number is\n0411291\n, please do refer to this in all further communication regarding this issue.  As your query is answered, shall I close the case now.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T06:16:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d6a8814-27fe-ef11-bae3-6045bddf3f78",
+            "subject": "RE: ID0411291-DC/Si-D/TR-[MP / R6 170002150] Outlet status change CRM:00251000504",
+            "body": "Hello Emre,\nAs your query has been answered, and you have explained this to Monta as well. If there are no more questions to it, shall I close the case now?\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T03:15:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ba0a20b5-63fe-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411291-DC/Si-D/TR-[MP / R6 170002150] Outlet status change CRM:00251000504",
+            "body": "Dear Yunus Emre Temel,\nReferring to our conversation over MS Teams, as your query has been resolved for case # 0411291, the case is now closed.\nProblem Description\n: Technical query on Outlet Status Change\nResolution\n: The outlet status was toggling between status “Available” & “Preparing” & “Available” as user was trying to start the session, but it failed because of delay in Authorization and power saving mode.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-11T10:29:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f9ae4584-fafe-ef11-bae3-000d3adc93d1",
+            "subject": "Ticket 0411291 has been closed. Are you satisfied with our provided solution? CRM:00251000505",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0411291\nwith the title:\nID0411291-DC/Si-D/TR-[MP / R6 170002150] Outlet status change\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-12T04:29:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

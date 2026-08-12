@@ -1,0 +1,123 @@
+{
+    "incident_id": "3ac089ab-1efd-42b2-9cf5-bd475dcaa2f1",
+    "ticket_number": "0378413",
+    "title": "ID0378413-DC/Si-D/FI[WJv88t] - SECC_DC1_MB_Problem_KF12",
+    "created_on": "2024-09-09T10:19:51Z",
+    "last_activity": "2025-07-21T09:20:00Z",
+    "age": "453540",
+    "description": "Reported behaviour/issue:\nSECC_DC1_MB_Problem_KF12\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: Siemens\nWarranty Status:\nAction: Hotfix did not fix the issue. When ccs2 was connected to the car, charger PilotState changed from A to B2 but display asked to connect charging cable. After KF12 was replaced, charging started to work.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "WJv88t",
+    "stage": null,
+    "serial_number": "MP / R6 170001969",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "6d558f17-956e-ef11-a670-7c1e5233f636",
+            "subject": "A new case manager was assigned to 0378413 CRM:00225093578",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0378413 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3ac089ab-1efd-42b2-9cf5-bd475dcaa2f1",
+            "date": "2024-09-09T10:20:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9fbea8ef-966e-ef11-a670-7c1e523674ae",
+            "subject": "A new case manager was assigned to 0378413 CRM:00225093587",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0378413 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3ac089ab-1efd-42b2-9cf5-bd475dcaa2f1",
+            "date": "2024-09-09T10:33:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09807f76-9c6e-ef11-a670-000d3ab7063f",
+            "subject": "ID0378413 - DC/Si-D/FI -  SECC_DC1_MB_Problem_KF12 CRM:00315001740",
+            "body": "Hello Sakari﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nWJv88t\nChargerID/Serial No.\n:\nWJv88t\nProblem Description\n: SECC_DC1_MB_Problem_KF12 and Outlet 1 is out of order.\nTroubleshooting\n:\nRemotely: Check if the communication is established correctly and the SECC is correctly working.\nOn-Site:\nCheck if the Ethernet cable is properly attached to the switch. It come from +F03-KF12 (J10) output through WD5 cable and it reaches the +F03-XF1:P5\nIf we cannot check the connectivity, we can test replacing the Ethernet cable.\nIf it doesn't work then try replacing the KF12 and see if it works.\nCheck if the 24V are being applied correctly to KF12 coming from the +F03-XD3:18C to the VDC input of the KF12\nIf there are no 24V being applied to KF12, please check if the XD3 connector is correctly fitted and there are no loose connections\nOtherweise please check if FC15 is tripped and having 24V output.\nFor future reference, your ticket number is\n0378413\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-09T11:12:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "161becee-b56e-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 hours, 55 minutes and 23 seconds.",
+            "date": "2024-09-09T14:15:15Z",
+            "extra": {}
+        },
+        {
+            "id": "d37712e3-b76e-ef11-a670-000d3ab7063f",
+            "subject": "ID0378413 - DC/Si-D/FI -  SECC_DC1_MB_Problem_KF12 CRM:00315001740",
+            "body": "Hello Sakari,\nAfter I accessed the charger remotely, I performed a docker restart on the EcoG and it's working again. I suspect that it can be just a simple communication problem, possibly the Ethernet cable.\nBut I can be wrong! At least for now the problem seems to be mitigated, we can align how to proceed with this ticket on how many times this happens and see if replacing the Ethernet cable is a permanent solution instead of replacing the EcoG.\nWhat is your opinion?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-09T14:29:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd5093bd-3e6f-ef11-a670-0022489e1eb4",
+            "subject": "RE: ID0378413 - DC/Si-D/FI -  SECC_DC1_MB_Problem_KF12 CRM:00315001740",
+            "body": "Hi!\nThanks, lets do like this.\nFirst, see if the issue comes back, if it does we will plan site visit.\nThen replace the Ethernet cable\nIf that does not work, replace the EcoG.\nIs the correct replacement Ethernet cable 0,5m, 1m, 2m or the 3m length?\nThank you for the support\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-09-10T06:34:40Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fe523f74-476f-ef11-a670-000d3ab02502",
+            "subject": "ID0378413 - DC/Si-D/FI -  SECC_DC1_MB_Problem_KF12 CRM:00315001740",
+            "body": "Hi Sakari! Good morning. How are you doing?\nThe cable length from the KF12 to the Switch is only 1m long.\nI will forward this ticket to your queue, but please reach out to me when you are going to site to perform this. In the meantime you can reach out to me so that I can restart the EcoG in case it fails again.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-10T07:37:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "84f90d27-496f-ef11-a670-000d3ab02502",
+            "subject": "ID0378413-DC/Si-D/FI[WJv88t] - SECC_DC1_MB_Problem_KF12 CRM:00315001746",
+            "body": "Dear Sakari,\nI am writing to formally inform that we are moving case 0378413 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFI\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nX\nPerformance monitoring by RC\nX\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFI\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-10T07:49:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a56bf22d-e170-ef11-a670-000d3a69a8a0",
+            "subject": "A new case manager was assigned to 0378413 CRM:00225095204",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0378413 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3ac089ab-1efd-42b2-9cf5-bd475dcaa2f1",
+            "date": "2024-09-12T08:29:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0ae818d-3f53-f011-877b-6045bde0265d",
+            "subject": "0378413 - ID0378413-DC/Si-D/FI[WJv88t] - SECC_DC1_MB_Problem_KF12 CRM:00362000009",
+            "body": "Dear Sakari,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Deutschland\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-06-27T10:14:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,423 @@
+{
+    "incident_id": "c62e2af4-2a3a-f011-b4cc-7c1e52fad806",
+    "ticket_number": "0426939",
+    "title": "ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors",
+    "created_on": "2025-05-26T12:14:26Z",
+    "last_activity": "2026-03-06T09:52:25Z",
+    "age": "70319",
+    "description": "Reported behaviour/issue: Multiple Errors\nSolution: NA\nyyyy-mm-dd: 2025-05-25",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "P8F40w",
+    "stage": null,
+    "serial_number": "MP / P8 170000921",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "787713ef-2a3a-f011-b4cb-000d3ab07fc1",
+            "subject": "Webform_incident_SiCharge D_26-05-2025_SN: Not reported by charger",
+            "body": "Dear Juuso Englund,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nNot reported by charger\nThank you\neMobility Technical Support Team\nSehr geehrte/r Juuso Englund,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nNot reported by charger\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-26T12:14:19Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ca5f6a97-2b3a-f011-b4cb-6045bde12d6b",
+            "subject": "A new case manager was assigned to 0426939 CRM:00225205994",
+            "body": "Meghna Bhardwaj was assigned as new Case Manager for case 0426939 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c62e2af4-2a3a-f011-b4cc-7c1e52fad806",
+            "date": "2025-05-26T12:18:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "71a98765-343a-f011-b4cc-6045bdde4786",
+            "subject": "ID0426939-DC/Si-D/DE-[Null]Multiple Errors CRM:02698000181",
+            "body": "Dear Juuso Englund,\nThank you for reaching\nout\nto eMobility Support. My name is\nMeghna\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge AC22 - ERK\nMain Asset\n: NA\nChargerID/Serial No.\n: NA\nProblem Description\n: Multiple Errors\nKindly provide the Serial Number of the affected Dispenser and Charger for us to proceed further to resolving the issue.\nFor future reference, your case number is\n0426939\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-26T13:22:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a51e2e4b-bb3a-f011-b4cc-6045bde0265d",
+            "subject": "Re: [EXT]ID0426939-DC/Si-D/DE-[Null]Multiple Errors CRM:02698000181",
+            "body": "Hello,\nThe charger is not reporting it’s serial number in the it’s OCPP messages so we don’t know the serial, I attached the diagnostic file / logs in this email. Can you see it from there?\nThe issue we are having is that on connector 3 / ID\n4773 we are having issues with charging events not starting.\nThe flow seems to be always the same, user does authoriziation and charger responds with this error:\n>>> 2025-05-25T12:03:47+02:00 by-device: status-update\n{\n\"Id\": \"1e520e8f-fb66-4ff6-a12f-e96def58b8af\",\n\"RequestTraceId\": \"d590b703-12b6-484a-956f-109bb978d4fa\",\n\"ClusterEnumId\": \"backup-1\",\n\"ContainerId\": \"5cf6707e-1bdb-4258-9e83-25456b1d6afd\",\n\"Type\": \"status-update\",\n\"InsertDate\": \"2025-05-25T10:03:47.542Z\",\n\"ChargerId\": \"17481066\",\n\"LowerCaseChargerId\": \"17481066\",\n\"ChargerProtocol\": \"ocpp-j-1-6\",\n\"LoadBalancerEnumId\": \"dedicated\",\n\"ChargerIp\": \"10.11.140.115\",\n\"ChargerEndpoint\": \"\",\n\"ChargerEndpointPort\": null,\n\"CsmsConnectionHost\": \"ocpp-j-15-16-vpn.device.virta-ev.com\",\n\"CsmsConnectionUrl\": \"/17481066\",\n\"CsmsConnectionProtocol\": \"http\",\n\"RawInput\": \"[2,\\\"bb35f171-0ebc-4e84-a581-73e33a1b51f6\\\",\\\"StatusNotification\\\",{\\\"connectorId\\\":3,\\\"errorCode\\\":\\\"OtherError\\\",\\\"status\\\":\\\"Faulted\\\",\\\"vendorId\\\":\\\"SICHARGE D\\\",\\\"vendorErrorCode\\\":\\\"evse is not ready\\\"}]\",\n\"Payload\": {\n\"ConnectorId\": 3,\n\"StatusEnumId\": \"faulted\",\n\"ErrorEnumId\": \"\",\n\"VendorId\": \"SICHARGE D\",\n\"VendorErrorCode\": \"evse is not ready\",\n\"Info\": \"\",\n\"ErrorRaw\": \"OtherError\",\n\"StatusRaw\": \"Faulted\",\n\"Timestamp\": \"2025-05-25T10:03:47.542Z\"\n}\n}\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nMonday, 26. May 2025 at 16.26\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\n[EXT]ID0426939-DC/Si-D/DE-[Null]Multiple Errors CRM:02698000181\nYou don't often get email from emobility_support.si@siemens.com.\nLearn why this is important\nDear Juuso Englund,\nThank you for reaching out to eMobility Support. My name is Meghna, and I will be assisting you with your following query today:\nProduct\n: Sicharge AC22 - ERK\nMain Asset\n: NA\nChargerID/Serial No.\n: NA\nProblem Description\n: Multiple Errors\nKindly provide the Serial Number of the affected Dispenser and Charger for us to proceed further to resolving the issue.\nFor future reference, your case number is 0426939, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-27T05:27:44Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "56803614-ee3a-f011-b4cb-0022489c658e",
+            "subject": "Re: [EXT]ID0426939-DC/Si-D/DE-[Null]Multiple Errors CRM:02698000181",
+            "body": "Hello Juuso Englund,\nKindly\nshare a photo of the charger nameplate for serial number verification, for us to proceed further to resolve the issue.\nWe thank you for your time and patience in advance.\nBest Regards,\nMeghna Bhardwaj",
+            "date": "2025-05-27T11:31:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a646cfd0-1942-2c98-bd4d-a707b1aa508f",
+            "subject": "Imp Notes",
+            "body": "Kindly ignore the latest mail sent to customer as now we have got the serial number and charger ID.",
+            "date": "2025-05-27T11:55:56Z",
+            "extra": {}
+        },
+        {
+            "id": "6a554b8a-023b-f011-b4cb-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0426939 CRM:00225206716",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0426939 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c62e2af4-2a3a-f011-b4cc-7c1e52fad806",
+            "date": "2025-05-27T13:57:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4df5f968-c9fc-8ea2-99b5-04e77a99426a",
+            "subject": "Active Error Flag",
+            "body": "IMD_BC2\nPLC\nPROTECTION\ntrue\nPE connection interrupted\nfalse\noutlet3\nsicharge-cp\nOUTLET\ntrue\nOutlet 3: outoforder, MeterState: undefined\nfalse",
+            "date": "2025-05-27T14:29:07Z",
+            "extra": {}
+        },
+        {
+            "id": "b2b9d05a-c55f-6170-9465-236a2e6c43d7",
+            "subject": null,
+            "body": "OoO\nRC To Customer Warranty End Date:\n12/16/2024",
+            "date": "2025-05-27T14:44:52Z",
+            "extra": {}
+        },
+        {
+            "id": "7bfa6aee-143b-f011-b4cc-6045bdde4786",
+            "subject": "ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00797001893",
+            "body": "Hi Juuso Englund,\nThe serial number of the charger is\nMP / P8 170000921\n.\nWe are now handing over the case to the regional team for further processing. They will be in touch with you shortly.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-05-27T16:09:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d29a0ec6-153b-f011-b4cc-6045bdde4786",
+            "subject": "RE: ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00797001893",
+            "body": "Hello RC-DE Team\n,\nI trust this email finds you in good health. We have received a technical support request from\nEFA Tankstellen GmbH\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P8 170000921 ERK\nCharger ID/Serial No.:\nP8F40w\nProblem Description:\nIMD_BC2 - PE connection interrupted\nUpon reviewing our asset database, we found that the product is no longer under warranty since\n12/16/2024\n, as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nUpon reviewing the active error flags, we noticed that the charger has an IMD_BC2 active error. This indicates a potential issue with the PE (Protective Earth) connection related to the IMD_BC2.\nWe recommend checking the tightness of the IMD_BC2 connections, particularly the Earth connection, as well as verifying communication lines. Kindly refer to the diagram below for troubleshooting guidance.\nIf the issue persists after tightening the cables, we suggest swapping the IMD with a spare unit to determine whether the problem lies with the component itself.\nMLFB:\n8EM5903-0AA00-0AA1\nIMD_BC2\nPLC\nPROTECTION\ntrue\nPE connection interrupted\nfalse\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-05-27T16:15:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7162db2e-913b-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0426939 CRM:00225207097",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0426939 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c62e2af4-2a3a-f011-b4cc-7c1e52fad806",
+            "date": "2025-05-28T06:58:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b07b447-a73b-f011-b4cb-7ced8d40e4a4",
+            "subject": "ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Sehr geehrter Herr Englund,\nWir konnten einen Fehler am Isolations überwachungs Gerät feststellen. Dieser führt dazu das der Ladepunkt nicht funktional ist.\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0426939\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nLukas Berger\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-28T09:36:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f642860-933f-f011-8779-7c1e5236e32d",
+            "subject": "Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Sehr geehrter Herr Berger,\nvielen Dank für Ihre Nachricht sowie das übersandte Störschreiben.\nHiermit bestätigen wir, dass wir das Störschreiben zur Kenntnis genommen haben. Unsere Ladestation ist ERK-zertifiziert und wurde bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert.\nBitte führen Sie den Servicetermin unter Berücksichtigung dieser Informationen durch. Für weitere Rückfragen stehen wir Ihnen gerne zur Verfügung.\nMit freundlichen Grüßen\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nWednesday, 28. May 2025 at 12.39\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\n[EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nYou don't often get email from emobility_support.si@siemens.com.\nLearn why this is important\nSehr geehrter Herr Englund,\nWir konnten einen Fehler am Isolations überwachungs Gerät feststellen. Dieser führt dazu das der Ladepunkt nicht funktional ist.\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0426939, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nLukas Berger\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-02T09:24:29Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13d67889-4f40-f011-877a-7c1e52faf3c6",
+            "subject": "0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415",
+            "body": "Hallo Holger,\nKannst du bitte eine Auftragsnummer zu diesem Ticket anlegen und mir mitteilen?\nLadegerät ist außerhalb der GWL Kunde ist\nBayWA r.e. Operation Service GmbH\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-03T07:51:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca25b895-4f40-f011-877a-7c1e52faf3c6",
+            "subject": "Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Guten Tag Herr Englund,\nWir werden den Serviceeinsatz vermutlich nächste Woche Dienstag durchführen.\nWer ist der Ansprechpartner vor Ort?\nHat das Ladegerät eine individuelle Schließung oder noch die Siemens Schließung?\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-03T07:51:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "528669fc-7440-f011-877a-000d3ad97a58",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hallo,\nIch habe den CPO kontaktiert und folgende Rückmeldung erhalten:\nSoweit ihm bekannt ist, verwendet die Ladestation noch das Siemens-Schloss.\nEs befindet sich jedoch auch ein Schlüssel hinterlegt an der Tankstelle.\nDer Siemens-Techniker sollte bitte etwa eine Stunde vor Ankunft Herrn Ralph Benz unter +49 175 5225212 kontaktieren.\nBitte lassen Sie mich wissen, falls weitere Informationen benötigt werden.\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nTuesday, 3. June 2025 at 10.54\nTo:\nJuuso Englund <juuso.englund@virta.global>\nCc:\nDolce, Domenico <domenico.dolce@siemens.com>\nSubject:\n[EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nWir werden den Serviceeinsatz vermutlich nächste Woche Dienstag durchführen.\nWer ist der Ansprechpartner vor Ort?\nHat das Ladegerät eine individuelle Schließung oder noch die Siemens Schließung?\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-03T12:19:30Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "22800ed6-a242-f011-877a-6045bdde4786",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Guten Tag Herr Englund,\nVielen dank für die Informationen.\nDer Techniker wird Herrn Benz kontaktieren.\nWir werden jedoch aufgrund eines Verspäteten Ersatzteils den Serviceeinsatz erst am Mittwoch den 11.06.2025 durchführen können.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-06T06:52:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44e71455-7f47-f011-877a-7c1e5236eee4",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hallo,\ngibt es bereits einen Servicebericht? Wissen Sie, ob der Vor-Ort-Einsatz gestern wie geplant durchgeführt wurde?\nIch habe gesehen, dass heute (am 12.06.2025 um 12:52:49) ein Ladevorgang über Anschluss 4773 versucht wurde, aber leider wieder ohne geladene kWh endete.\nVielen Dank im Voraus für Ihre Rückmeldung!\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nFriday, 6. June 2025 at 9.55\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nVielen dank für die Informationen.\nDer Techniker wird Herrn Benz kontaktieren.\nWir werden jedoch aufgrund eines Verspäteten Ersatzteils den Serviceeinsatz erst am Mittwoch den 11.06.2025 durchführen können.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-12T11:21:07Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "eadcb212-9147-f011-877a-7c1e5236e32d",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hallo,\nich habe gesehen, dass inzwischen erfolgreiche Ladevorgänge stattgefunden haben – damit kann dieser Teil des Falls als abgeschlossen betrachtet werden.\nVielen Dank!\nDer Kunde hat uns jedoch mitgeteilt, dass der Techniker erwähnt habe, die Filtermatten sollten ausgetauscht werden. Der Kunde fragt nun, ob es möglich wäre, ihm zwei Sätze Filter zuzusenden.\nHier sind die Lieferdetails:\nHolger Chemnitz\nEFA Tankstellenbetriebe GmbH\nHertzstr. 27\n76275 Ettlingen\nTel: +49 7243 5427-11\nE-Mail:\nh.chemnitz@efa-gmbh.de\nMit freundlichen Grüßen\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nJuuso Englund <juuso.englund@virta.global>\nDate:\nThursday, 12. June 2025 at 14.20\nTo:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nHallo,\ngibt es bereits einen Servicebericht? Wissen Sie, ob der Vor-Ort-Einsatz gestern wie geplant durchgeführt wurde?\nIch habe gesehen, dass heute (am 12.06.2025 um 12:52:49) ein Ladevorgang über Anschluss 4773 versucht wurde, aber leider wieder ohne geladene kWh endete.\nVielen Dank im Voraus für Ihre Rückmeldung!\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nFriday, 6. June 2025 at 9.55\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nVielen dank für die Informationen.\nDer Techniker wird Herrn Benz kontaktieren.\nWir werden jedoch aufgrund eines Verspäteten Ersatzteils den Serviceeinsatz erst am Mittwoch den 11.06.2025 durchführen können.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-12T13:28:07Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "917c4443-3a48-f011-877a-7c1e52350ea5",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Guten Tag Herr Englund,\nWenn sie bei uns die Wartungsschulung und das passende Zertifikat erworben haben, können sie den Filtermatten tausch gerne selbst durchführen.\nSollte dies nicht der Fall sein und sie tauschen die Matten selbst erlischt die Gewährleistung für das Gerät.\nSollten sie Interesse an einer Wartung durch uns haben schicken sie bitte eine Mail mit der Anfrage an folgende Mailadresse:\nservice-emobility.si.de@siemens.com\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-13T09:39:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6055053-3b48-f011-877a-7c1e52350ea5",
+            "subject": "RE: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415",
+            "body": "Hi Julian,\nHatte Holger dir das übergeben?\nBräuchte noch die Auftragsnummer um das abzuschließen.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-13T09:46:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aed1e02f-814a-f011-877a-6045bddf3f78",
+            "subject": "AW: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415",
+            "body": "Moin Julian,\nda fehlt ja noch alles.\nViele Grüße,\nHolger\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 13. Juni 2025 11:49\nBis:\nWerner, Julian (SI E SCM FIN OEX) <Julian.Werner@siemens.com>\nCc:\nDorka, Holger (RC-DE SI E OX&PM) <holger.dorka@siemens.com>\nBetreff:\nRE: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415\nHi Julian,\nHatte Holger dir das übergeben?\nBräuchte noch die Auftragsnummer um das abzuschließen.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-16T07:11:59Z",
+            "extra": {
+                "sender": "holger.dorka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a4e803de-214c-f011-877a-7c1e52768c07",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Sehr geehrtes Siemens-Team,\nvielen Dank für Ihre Rückmeldung.\nWir möchten gerne anfragen, was die Wartung kosten würde, wenn wir den Service direkt über Siemens beauftragen. Könnten Sie uns bitte ein Preisangebot oder eine Kostenschätzung zukommen lassen?\nVielen Dank im Voraus!\nMit freundlichen Grüßen\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nFriday, 13. June 2025 at 12.42\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nWenn sie bei uns die Wartungsschulung und das passende Zertifikat erworben haben, können sie den Filtermatten tausch gerne selbst durchführen.\nSollte dies nicht der Fall sein und sie tauschen die Matten selbst erlischt die Gewährleistung für das Gerät.\nSollten sie Interesse an einer Wartung durch uns haben schicken sie bitte eine Mail mit der Anfrage an folgende Mailadresse:\nservice-emobility.si.de@siemens.com\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-18T08:54:45Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0b9ff9aa-4753-f011-877a-7ced8d2e04e0",
+            "subject": "Re: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hallo,\nich habe seit meiner letzten Nachricht noch keine Rückmeldung von Ihnen erhalten. Da ich bis zum 28. Juli im Urlaub bin, füge ich Noemie in diesen E-Mail-Verlauf ein (Noemie – this is related to ticket 297246 in Zendesk).\nBitte nehmen Sie sie in die weitere Kommunikation mit auf.\nZu unserer offenen Frage:\nWir würden gerne wissen, was die Wartung kosten würde, wenn wir den Service direkt über Siemens beauftragen.\nKönnten Sie uns hierzu bitte ein Angebot oder zumindest eine grobe Kostenschätzung zukommen lassen?\nVielen Dank im Voraus!\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nJuuso Englund <juuso.englund@virta.global>\nDate:\nWednesday, 18. June 2025 at 11.54\nTo:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nSehr geehrtes Siemens-Team,\nvielen Dank für Ihre Rückmeldung.\nWir möchten gerne anfragen, was die Wartung kosten würde, wenn wir den Service direkt über Siemens beauftragen. Könnten Sie uns bitte ein Preisangebot oder eine Kostenschätzung zukommen lassen?\nVielen Dank im Voraus!\nMit freundlichen Grüßen\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nFriday, 13. June 2025 at 12.42\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nWenn sie bei uns die Wartungsschulung und das passende Zertifikat erworben haben, können sie den Filtermatten tausch gerne selbst durchführen.\nSollte dies nicht der Fall sein und sie tauschen die Matten selbst erlischt die Gewährleistung für das Gerät.\nSollten sie Interesse an einer Wartung durch uns haben schicken sie bitte eine Mail mit der Anfrage an folgende Mailadresse:\nservice-emobility.si.de@siemens.com\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-06-27T11:12:53Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "490a9eee-8555-f011-877a-7c1e5236eee4",
+            "subject": "RE: AW: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415",
+            "body": "Hallo Julian und Xenia,\nGibt es hier mittlerweile eine Auftragsnummer?\nIch kann im Laufwerk nichts dazu finden.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-30T07:43:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dc97dc62-3657-f011-877a-7c1e52206585",
+            "subject": "AW: AW: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415",
+            "body": "Auftragsnummer ist angelegt:\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\BayWa r.e. Operation Services GmbH\\A-30768726_Ticketnr.0426939\nVG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 30. Juni 2025 09:46\nAn:\nDorka, Holger (RC-DE SI E OX&PM) <holger.dorka@siemens.com>; Werner, Julian (SI E SCM FIN OEX) <Julian.Werner@siemens.com>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\nRE: AW: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000415\nHallo Julian und Xenia,\nGibt es hier mittlerweile eine Auftragsnummer?\nIch kann im Laufwerk nichts dazu finden.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-02T11:19:17Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f3c74bd8-1458-f011-877a-7c1e52768c07",
+            "subject": "0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00755000273",
+            "body": "Guten Tag Herr Englund,\nanbei erhalten Sie unser Angebot für die Wartung Ihrer Ladesäule.\nFür die Bestellung und Realisierung der Wartung wenden Sie sich gerne an Herrn Berger.\nVielen Dank!\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland",
+            "date": "2025-07-03T13:51:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2fc78122-1558-f011-877a-7c1e52350ea5",
+            "subject": "Automatische Antwort: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00755000273",
+            "body": "Thank you for your message.\nI am currently out of the office and will be back on <06.07.25>.\nYour e-mail will not be read during my absence.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\n>\n------------------------------------------------------\nVielen Dank für Ihre Nachricht.\nIch bin bis einschließlich <09.01.2023> nicht erreichbar und habe keinen Zugriff auf meine E-Mails.\nNachrichten werden nach meiner Rückkehr bearbeitet.\nMit freundlichen Grüßen,\nLukas  Berger\nSiemens Mobility GmbH\nSMO CS LS EH 3 4\nSiemenspromenade 5\n91058 Erlangen, Germany\nMobile: +49 (152) 26215187\nmailto:berger.lukas@siemens.com\nwww.siemens.com",
+            "date": "2025-07-03T13:53:46Z",
+            "extra": {
+                "sender": "berger.lukas@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1c30fb22-1558-f011-877b-7c1e5287f582",
+            "subject": "Automatic reply: [EXT]0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00755000273",
+            "body": "Out of office, back on the 28th July\nBr,\nJuuso",
+            "date": "2025-07-03T13:53:47Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "433b1399-2c69-f011-bec2-7ced8d2be968",
+            "subject": "RE: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hello,\nWe it be possible to look into our request below as we haven’t received any update so far.\nThank you\nBest regards,\nTechnical Support Hardware Specialist\nNoëmie Sorel\nnoemie.sorel@virta.global\nTel. +358\n406\n620\n763\nEnergiakuja 4, FI-00180 Helsinki\nwww.virta.global",
+            "date": "2025-07-25T07:54:33Z",
+            "extra": {
+                "sender": "noemie.sorel@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "de84f29b-2c69-f011-bec2-7c1e52206585",
+            "subject": "Email sent to a closed case 'ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors (0426939)' CRM:00225233760",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0426939\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-25T07:54:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "447843b5-2d69-f011-bec2-7c1e52768c07",
+            "subject": "RE: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hi Noemie,\nUnfortunately we havn´t recived a mail to the Following mail adress.\nI looked up and the Mail adress the request has been sent to was written wit an _ instead of a -\nPlease send the request again as this Ticket is already closed and will not be followed.\nservice-emobility.si.de@siemens.com\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-25T08:02:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "98dc0e16-2f69-f011-bec2-6045bde117fc",
+            "subject": "Automatic reply: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Out of office, back on the 28th July\nBr,\nJuuso",
+            "date": "2025-07-25T08:12:28Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3181a6ea-a181-f011-b4cb-7ced8d41ec51",
+            "subject": "FW: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409",
+            "body": "Hello,\nCan you please address the below questions, thank you!\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nJuuso Englund <juuso.englund@virta.global>\nDate:\nTuesday, 29. July 2025 at 16.51\nTo:\nservice-emobility.si.de@siemens.com <service-emobility.si.de@siemens.com>\nSubject:\nFW: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nHello,\nCan you please address the below questions? Thank you\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nJuuso Englund <juuso.englund@virta.global>\nDate:\nFriday, 27. June 2025 at 14.12\nTo:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nCc:\nNoemie Sorel <noemie.sorel@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nHallo,\nich habe seit meiner letzten Nachricht noch keine Rückmeldung von Ihnen erhalten. Da ich bis zum 28. Juli im Urlaub bin, füge ich Noemie in diesen E-Mail-Verlauf ein (Noemie – this is related to ticket 297246 in Zendesk).\nBitte nehmen Sie sie in die weitere Kommunikation mit auf.\nZu unserer offenen Frage:\nWir würden gerne wissen, was die Wartung kosten würde, wenn wir den Service direkt über Siemens beauftragen.\nKönnten Sie uns hierzu bitte ein Angebot oder zumindest eine grobe Kostenschätzung zukommen lassen?\nVielen Dank im Voraus!\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nJuuso Englund <juuso.englund@virta.global>\nDate:\nWednesday, 18. June 2025 at 11.54\nTo:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nSehr geehrtes Siemens-Team,\nvielen Dank für Ihre Rückmeldung.\nWir möchten gerne anfragen, was die Wartung kosten würde, wenn wir den Service direkt über Siemens beauftragen. Könnten Sie uns bitte ein Preisangebot oder eine Kostenschätzung zukommen lassen?\nVielen Dank im Voraus!\nMit freundlichen Grüßen\nJuuso Englund | Senior Hardware Specialist | Virta Ltd.\nEnergiakuja 3, FI-00180 Helsinki\nThe Electric Vehicle Charging Company\nwww.virta.global\nFrom:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nDate:\nFriday, 13. June 2025 at 12.42\nTo:\nJuuso Englund <juuso.englund@virta.global>\nSubject:\nRe: [EXT]Re: [EXT]ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00440000409\nGuten Tag Herr Englund,\nWenn sie bei uns die Wartungsschulung und das passende Zertifikat erworben haben, können sie den Filtermatten tausch gerne selbst durchführen.\nSollte dies nicht der Fall sein und sie tauschen die Matten selbst erlischt die Gewährleistung für das Gerät.\nSollten sie Interesse an einer Wartung durch uns haben schicken sie bitte eine Mail mit der Anfrage an folgende Mailadresse:\nservice-emobility.si.de@siemens.com\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-08-25T10:54:53Z",
+            "extra": {
+                "sender": "juuso.englund@virta.global",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5b0678ee-a181-f011-b4cb-7c1e52760de8",
+            "subject": "Email sent to a closed case 'ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors (0426939)' CRM:00225247270",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0426939\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-08-25T10:54:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d7c9ee7b-6c82-f011-b4cb-7c1e523438d9",
+            "subject": "0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00373000727",
+            "body": "Hallo Herr Englung,\nmein Kollege Lukas Berger hat mich gebeten ob eines Wartungsangebots auf Sie zuzukommen.\nIm Anhang sende ich Ihnen unser Servicepreisliste, der Sie auch das Wartungsangebot entnehmen können - wäre das für Sie in der Form interessant?\nFalls ja, hätten Sie einen Ansprechpartner und ein Unternehmen in Deutschland, mithilfe dessen wir beauftragt werden können?\nMeines Wissens nach ist es nicht möglich bzw. erlaubt, dass Sie uns aus Finnland heraus beauftragen.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-08-26T11:05:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c006654c-7482-f011-b4cc-000d3adc93d1",
+            "subject": "RE: 0426939 - ID0426939-DC/Si-D/DE-[P8F40w] Multiple Errors CRM:00373000727",
+            "body": "Hi Sascha,\nIch denke in Zukunft wäre es gut für so etwas ein neues Ticket zu eröffnen.\nDas aktuelle Ticket ist bereits geschlossen und befasst sich mit einem anderen Thema.\nSo könnten wir dann die Themen besser voneinander Trennen und nachvollziehen.\nGruß\nLukas",
+            "date": "2025-08-26T12:00:52Z",
+            "extra": {
+                "sender": "berger.lukas@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

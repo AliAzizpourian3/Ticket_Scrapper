@@ -1,0 +1,31 @@
+{
+    "incident_id": "2aeff001-a0f0-45c4-9215-f9aa49384c3c",
+    "ticket_number": "0418852",
+    "title": "ID0415886-DC/Si-D/DE-[MP / P1 170000139] Session failed in cable check (C1)",
+    "created_on": "2025-04-14T21:17:45Z",
+    "last_activity": "2026-01-30T09:43:33Z",
+    "age": "960",
+    "description": "Reported behavior/issue:\nSession failed in cable check\nOpen Ticket: No\nRoot cause:\nSolution:\nWarranty Status:\nInactive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "deQvCG",
+    "stage": null,
+    "serial_number": "MP / P1 170000139,MP / P1 170000139,MP / P1 170000139",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8836b7ea-7de6-f4e3-8128-83b123078c9c",
+            "subject": "Logs",
+            "body": "2025-03-14T15:56:43.000000+00:00 secc-le [daemon:warning] SECC[842]: {\"type\":\"alert\",\"timestamp\":1741967803520,\"chargerId\":\"secc2300-01489\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\"}}\n2025-03-14T15:57:04.000000+00:00 secc-le [daemon:warning] SECC[842]: {\"type\":\"alert\",\"timestamp\":1741967824557,\"chargerId\":\"secc2300-01489\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\"}}\n2025-03-14T15:59:14.000000+00:00 secc-le [daemon:notice] SECC[842]: {\"type\":\"alert\",\"timestamp\":1741967953997,\"chargerId\":\"secc2300-01489\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\"}}",
+            "date": "2025-04-14T21:19:15Z",
+            "extra": {}
+        },
+        {
+            "id": "13da5c93-ec3b-5485-817f-6a0ba3237759",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nSession failed in cable check\nAction Performed (L2):\nWe have analyzed the logs for the provided timestamp and observed that the session failed during the cable check with the error:\n\"code\": 67, \"msg\": \"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\"\n.\nWe informed the customer that the session was aborted by the vehicle; however, they do not agree with this explanation and saying that\n“Charging Statemachine CCU is 40s in \"CableCheck\" - PLC statemachine BSW in cablecheck too - it looks like the cable check was not fullfilled - I could also see that during cable check there was never any voltage at VoltageDirectCurrentChargingInput - so it looks like no Voltage from Charging Station applied.”\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nDeeper investigation\nFault history:\nNA\nLog analysis with timestamp:\nTimestamp attached in the below note\nAction Required by HQ:\nDeeper investigation",
+            "date": "2025-04-14T21:30:41Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "incident_id": "65111a8a-a620-4b25-bb18-d6394595fa84",
+    "ticket_number": "0441323",
+    "title": "ID0441323-DC/Si-D/AT-[MP / S5 170003620] LEM DC Meter error",
+    "created_on": "2025-08-01T06:18:53Z",
+    "last_activity": "2025-08-26T09:11:05Z",
+    "age": "35080",
+    "description": "Reported behavior/issue:   Charging voltage issue\nSolution:  Update to v8.1\nyyyy-mm-dd:  NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "nfeVUo",
+    "stage": null,
+    "serial_number": "MP / S5 170003620",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "069c98c6-a06e-f011-b4cc-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0441323 CRM:00225237071",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0441323 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=65111a8a-a620-4b25-bb18-d6394595fa84",
+            "date": "2025-08-01T06:28:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d3cc5f2-52cd-c56b-9777-83f8aeb16642",
+            "subject": "Case Description",
+            "body": "Dear colleagues, please check the charging process ##127303125 | 26.07.2025 12:35 (51,88 kWh) at charging station A8022 #2 OMV S1 Ost KM 38,5 Deutsch-Wagram and contact Siemens.\nSerial:\nMP/S5170003620\nThe charging process is without cost and consumption. The same meter values have been sent at transaction stop.\nsoftware version\n: v7.0.5-0-gd66ba3a+ecog-1.4.12 (PRODUCTION)",
+            "date": "2025-08-01T06:42:29Z",
+            "extra": {}
+        },
+        {
+            "id": "14812caf-8aea-7545-b1e2-dab0a4bb19d3",
+            "subject": "Logs",
+            "body": "No error flag is detected / logs attached",
+            "date": "2025-08-01T06:50:16Z",
+            "extra": {}
+        },
+        {
+            "id": "825263fb-a46e-f011-b4cb-7c1e5236e32d",
+            "subject": "ID0441323-DC/Si-D/AU-[MP / S5 170003620] Charging voltage issue CRM:02888000169",
+            "body": "Dear Cenoiu Catalin George,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S5 170003620\nChargerID/Serial No.\n:\nnfeVUo\nProblem Description\n:\nCharging voltage issue\nFor future reference, your case number is\n0441323\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-01T06:59:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2b609f3-b36e-f011-bec2-7c1e52fcbd10",
+            "subject": "A new case manager was assigned to 0441323 CRM:00225237162",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0441323 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=65111a8a-a620-4b25-bb18-d6394595fa84",
+            "date": "2025-08-01T08:46:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f065d56c-6f42-5b14-81e8-3f3b972dd1f3",
+            "subject": "Note to L2",
+            "body": "1. Charging session started at 10:35 hrs\n2025-07-26T10:35:00.956419+00:00 [FW070005G2] sicharge-cp [local0:info] sicharge-cp-backend/3093cdfa0fcf[741]: OCPP: Send command: MeterValues (09d124b5-3c1a-4df8-b3a7-63130f01bd0a) - {\"connectorId\":2,\"transactionId\":\n127303125\n,\"meterValue\":[{\"timestamp\":\"2025-07-26T10:35:00.955Z\",\"sampledValue\":[{\"value\":\"49288585\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"measurand\":\"Energy.Active.Import.Register\",\"context\":\"Trigger\"},{\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\",\"context\":\"Trigger\"}]}]}\n2025-07-26T10:35:00.281210+00:00 [FW070005G2] sicharge-cp [local0:info] sicharge-cp-backend/3093cdfa0fcf[741]: OCPP: Send command: StartTransaction (bf5f7754-bed5-4615-a16a-02f881a8bc6d) - {\"connectorId\":2,\"idTag\":\"05859006C10300\",\"meterStart\":\n49288585\n,\"timestamp\":\"2025-07-26T10:35:00.274Z\"}\n2. Stop charge-\n2025-07-26T10:52:35.631759+00:00 [FW070005G2] sicharge-cp [local0:info] sicharge-cp-backend/3093cdfa0fcf[741]: OCPP: Send command: StopTransaction (1168378f-5166-4169-8836-a38138f989fa) - {\"meterStop\":\n49288585\n,\"timestamp\":\"2025-07-26T10:52:35.619Z\",\"transactionData\":[{\"timestamp\":\"2025-07-26T10:52:35.620Z\",\"sampledValue\":[{\"value\":\"74\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"reason\":\"Local\",\"idTag\":\"05859006C10300\",\"transactionId\":127303125}",
+            "date": "2025-08-01T09:06:18Z",
+            "extra": {}
+        },
+        {
+            "id": "a4c3e7e1-c2e9-42af-a9cc-957b0b5790f5",
+            "subject": "Note -Error",
+            "body": "2025-07-26T10:52:44.762807+00:00 [FW070005G2] sicharge-cp [local0:info] sicharge-cp-backend/3093cdfa0fcf[741]: OCPP: Send command: StatusNotification (a3bfa4c7-63d0-42e5-aa8f-d3c11bc021f3) - {\"connectorId\":2,\"errorCode\":\"PowerMeterFailure\",\"status\":\"Faulted\",\"info\":\"Error on LEM DC Meter (meter id: 1240230912 status\"}\n2025-07-26T10:52:43.761840+00:00 [FW070005G2] sicharge-cp [local0:err] sicharge-cp-backend/3093cdfa0fcf[741]: Error on LEM DC Meter (meter id: 1240230912 status: {\"value\":81,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":false,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\"reversedVoltage\":true,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})",
+            "date": "2025-08-01T09:10:21Z",
+            "extra": {}
+        },
+        {
+            "id": "4df7fc55-b86e-f011-b4cc-000d3ad97a58",
+            "subject": "RE: ID0441323-DC/Si-D/AU-[MP / S5 170003620] Charging voltage issue CRM:02888000169",
+            "body": "Hello Cenoiu Catalin George,\nHope you are doing well.\nWe have analyzed the logs and suspect an issue with the DC meter. We will inform this to our regional team for further troubleshooting. They will reach out to you shortly\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-08-01T09:17:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a8f342ac-bb6e-f011-b4cc-000d3ad97a58",
+            "subject": "RE: ID0441323-DC/Si-D/AT-[MP / S5 170003620] Charging voltage issue CRM:02888000169",
+            "body": "Dear Johannes,\nI am writing to formally inform that we are moving case 0441323 ﻿from the\nTechnical Support\nto the\neMobility RC-\nAT\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nNote:\nThe meter value remains the same during the start and stop of the charging session due to an error in the LEM meter.\nPlease check below points in charger:\n1) Check IP address of LEM FOR DC2\n2) As per error message\n2025-07-26T10:52:43.761840+00:00 [FW070005G2] sicharge-cp [local0:err] sicharge-cp-backend/3093cdfa0fcf[741]: Error on LEM DC Meter (meter id: 1240230912 status: {\"value\":81,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":false,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\n\"reversedVoltage\":true\n,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})\nr\neversedVoltage\":true,\nit should be false.\nAdditionally, please refer the KA link attached below for further troubleshooting at the site.\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&forceUCI=1&pagetype=entityrecord&etn=knowledgearticle&id=4844fec3-af06-ef11-9f89-7c1e5220684b\nWhen you visit the site please carry a spare DC meter with you.\nMLFB: 8EM5903-0AA05-2AA7\nReason\nApplicable\nOnsite Repair (Component Exchange)\nx\nOnsite Troubleshooting\nx\nEnd Customer Communication\nSpare Part Ordering\nx\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nAT\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-01T09:41:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24bf4042-0c71-f011-b4cb-7ced8d7730fb",
+            "subject": "AW: ID0441323-DC/Si-D/AT-[MP / S5 170003620] Charging voltage issue CRM:02888000169",
+            "body": "Hi Beerpal,\nAs noted in the other tickets, we've repeatedly faced the reverse voltage issue with the chargers.\nTo verify the IP address on the LEM, we would need to break the seal since it's an ERK charger.\nBest regards,\nJohannes Dissauer\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 1. August 2025 12:26\nAn:\nDissauer, Johannes (RC-AT SI E CS) <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0441323-DC/Si-D/AT-[MP / S5 170003620] Charging voltage issue CRM:02888000169\nDear Johannes,\nI am writing to formally inform that we are moving case 0441323 ﻿from the\nTechnical Support\nto the\neMobility RC-\nAT\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nNote:\nThe meter value remains the same during the start and stop of the charging session due to an error in the LEM meter.\nPlease check below points in charger:\n1) Check IP address of LEM FOR DC2\n2) As per error message\n2025-07-26T10:52:43.761840+00:00 [FW070005G2] sicharge-cp [local0:err] sicharge-cp-backend/3093cdfa0fcf[741]: Error on LEM DC Meter (meter id: 1240230912 status: {\"value\":81,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":false,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\n\"reversedVoltage\":true\n,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})\nr\neversedVoltage\":true,\nit should be false.\nAdditionally, please refer the KA link attached below for further troubleshooting at the site.\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&forceUCI=1&pagetype=entityrecord&etn=knowledgearticle&id=4844fec3-af06-ef11-9f89-7c1e5220684b\nWhen you visit the site please carry a spare DC meter with you.\nMLFB: 8EM5903-0AA05-2AA7\nReason\nApplicable\nOnsite Repair (Component Exchange)\nx\nOnsite Troubleshooting\nx\nEnd Customer Communication\nSpare Part Ordering\nx\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nAT\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-04T08:23:13Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "94222c68-b781-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0441323 CRM:00225247350",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0441323 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=65111a8a-a620-4b25-bb18-d6394595fa84",
+            "date": "2025-08-25T13:28:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "064f3998-b981-f011-b4cb-7c1e52768c07",
+            "subject": "ID0441323-DC/Si-D/AT-[MP / S5 170003620] Charging voltage issue CRM:02888000169",
+            "body": "Hello Johannes, good afternoon.\nThis error has been declared solved in v8.1 by R&D. Please install it as soon as it comes out and retest it.\nFor now, there is nothing from service side to provide.\nI will close the ticket.\nTHank you!\nBest regards,\nFrancisco",
+            "date": "2025-08-25T13:44:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c3f7efa-c381-f011-b4cc-7c1e523508ba",
+            "subject": "Ticket 0441323 has been closed. Are you satisfied with our provided solution? CRM:00225247405",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0441323\nwith the title:\nID0441323-DC/Si-D/AT-[MP / S5 170003620] LEM DC Meter error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-25T14:58:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

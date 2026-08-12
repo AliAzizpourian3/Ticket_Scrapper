@@ -1,0 +1,119 @@
+{
+    "incident_id": "0e0df6ba-725f-4994-b631-73e46e6f7b60",
+    "ticket_number": "0380429",
+    "title": "ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start",
+    "created_on": "2024-09-20T09:03:16Z",
+    "last_activity": "2025-12-16T14:05:49Z",
+    "age": "7421",
+    "description": "Reported behaviour/issue: VW e-Up not charging\nRoot cause:\nPossible EV issue\nSolution:\nClose ticket, customer tested another VW and it was working\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nLocation: Kuusalu.\nUser driving with VW E-Up, complained that the session never started even if the charger is running with 5.0.19 FW version.\nIn somereasong connection drops from P02 -→ P00. DO we have compatibility issue with E-Up? EVMAC for this car is static 00.7d.fa.01.21.10",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "4dPEzi",
+    "stage": null,
+    "serial_number": "MP / R1 170001421",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "98369234-2f77-ef11-a670-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0380429 CRM:00225100282",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0380429 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0e0df6ba-725f-4994-b631-73e46e6f7b60",
+            "date": "2024-09-20T09:03:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "023c9aa1-5477-ef11-a670-0022489ec7b5",
+            "subject": "A new case manager was assigned to 0380429 CRM:00225100425",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0380429 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0e0df6ba-725f-4994-b631-73e46e6f7b60",
+            "date": "2024-09-20T13:31:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d7d15858-5777-ef11-a670-000d3a69f86a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 4 hours, 47 minutes and 35 seconds.",
+            "date": "2024-09-20T13:50:52Z",
+            "extra": {}
+        },
+        {
+            "id": "a794ff3e-6077-ef11-a670-000d3ab4d5d3",
+            "subject": "ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start CRM:00315001811",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001421\nChargerID/Serial No.\n: 4dPEzi\nProblem Description\n: VW e-UP cannot charge\nTroubleshooting\n:\nAs you can see, in the logs we see a insulation drop when the EV is connected. As such it will never go to Isolation Monitor.\nI will see what is possible to do here. In the meantime I would suggest to ask if the customer can update their EVs, we had a similar issue with Jaguar iPace which was solved by updating the FW.\nIf the FW is already updated then we must see how to reach out to Volkswagen to see if the error is possible to resolve.\nFor future reference, your ticket number is\n0380429\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-20T14:54:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f55c585e-7279-ef11-ac20-000d3ab08c0a",
+            "subject": "RE: ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start CRM:00315001811",
+            "body": "Hi,\nInsulation pre-alarm limit is 500kOhm which is much lower than 1629 or 1644kOhm?\nMarkus",
+            "date": "2024-09-23T06:09:23Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f1ee8abc-8279-ef11-ac20-000d3ab4d5d3",
+            "subject": "ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start CRM:00315001816",
+            "body": "Hi Markus,\nSorry for the wrong information. I mistook with one less number and thought it was less than 200kOhm.\nFrom our side, I don't see any problem on why the session is not starting. There are no EcoG logs from this date so I cannot confirm.\nI don't see a charger/plug related problems since we performed 9 sessions properly since last 2 weeks:\nIs it possible to schedule a session together with this specific EV so that we can collect EcoG logs? I believe that this might be an EV issue but it's always hard to prove without the right evidence. In our defense, we can only say that there are some charging sessions without problem and only this one had.\nI will wait for your feedback.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-23T08:06:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b46e9cc-8b7a-ef11-ac20-002248a29667",
+            "subject": "ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start CRM:00315001816",
+            "body": "Hi Markus,\nJust a quick feedback.\nWe cannot rent cars for testing, unless you can align with the customer we are stuck here. From the general sessions, the outlet and charger seems to be working.\nMy recommendation is to wait for v5.0.21 and try again to charge. There shouldn't be a big difference but it might work.\nIf you are not able to schedule it, then I believe we should close the ticket since we are not able to progress\nPlease let me know your thoughts.\nBest regards,\nFrancisco",
+            "date": "2024-09-24T15:43:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f7a78ce8-387b-ef11-ac20-000d3ab4d5d3",
+            "subject": "RE: ID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start CRM:00315001816",
+            "body": "Hi\nCustomer tested another VW and it was working. Lets stop investigation and close the ticket.\nMarkus",
+            "date": "2024-09-25T12:23:06Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "34e4bc61-3a7b-ef11-ac20-0022489b937d",
+            "subject": "Ticket 0380429 has been closed. Are you satisfied with our provided solution? CRM:00315001827",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0380429\nwith the title:\nID0380429-DC/Si-D/EE- [MP / R1 170001421] - VW E-Up charging won't start\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-25T12:33:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57b1b9d9-3b7b-ef11-ac20-0022489b937d",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Incident Solved Via Remote (L2) after 4 days, 22 hours, 53 minutes and 18 seconds.",
+            "date": "2024-09-25T12:44:11Z",
+            "extra": {}
+        }
+    ]
+}

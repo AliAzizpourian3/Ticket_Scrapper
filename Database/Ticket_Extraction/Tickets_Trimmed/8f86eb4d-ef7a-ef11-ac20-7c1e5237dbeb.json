@@ -1,0 +1,136 @@
+{
+    "incident_id": "8f86eb4d-ef7a-ef11-ac20-7c1e5237dbeb",
+    "ticket_number": "0381179",
+    "title": "ID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication.",
+    "created_on": "2024-09-25T03:36:10Z",
+    "last_activity": "2025-12-16T14:05:43Z",
+    "age": "1356",
+    "description": "Reported behavior/issue:\nAuthentication issue in charging\nRoot cause:\nSolution: Query addressed, OCPP was offline that time while authentication.\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "qhDPeN",
+    "stage": null,
+    "serial_number": "MP / P3 170000342",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c09d7c43-ef7a-ef11-a670-002248a3c318",
+            "subject": "Webform_incident_SiCharge D_25-09-2024_SN: 170000342",
+            "body": "Dear Liz Hatton ,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000342\nThank you\neMobility Technical Support Team\nSehr geehrte/r Liz Hatton ,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000342\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-09-25T03:35:56Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bc6a90bd-f57a-ef11-ac20-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0381179 CRM:00225102187",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0381179 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8f86eb4d-ef7a-ef11-ac20-7c1e5237dbeb",
+            "date": "2024-09-25T04:22:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a9eb64e6-f97a-ef11-ac20-000d3ab121b3",
+            "subject": "ID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication. CRM:00643000931",
+            "body": "Dear Liz,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P3 170000342\nChargerID/Serial No.\n:\nqhDPeN\nProblem Description\n: Charger lost communication.\nTroubleshooting\n: After analyzing the logs, it was identified that there was a 20-minute downtime in OCPP connectivity. Additionally, during this period, the mobile connection was disconnected, possibly due to network issues. It was observed that while the OCPP backend was offline, a charging session was initiated. The authentication method in place is RFID and PIN for all outlets, where the tag is scanned and transmitted to the broker. Subsequently, the charge point should send an authorization request with the tag ID to the central system (backend) for confirmation. However, due to the OCPP disconnection, the charging attempt was unsuccessful. But after reboot it comes online and charging session was attempted and successful.\nPlease inform us if you have any additional questions to address. If not, we can proceed with closing this ticket.\nFor future reference, your ticket number is\n0381179\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-25T04:52:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "52f631fb-fb7a-ef11-ac20-000d3ab121b3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 30 minutes and 44 seconds.",
+            "date": "2024-09-25T05:06:56Z",
+            "extra": {}
+        },
+        {
+            "id": "e66a3101-fc7a-ef11-ac20-000d3ab121b3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 11 seconds.",
+            "date": "2024-09-25T05:07:08Z",
+            "extra": {}
+        },
+        {
+            "id": "136b3101-fc7a-ef11-ac20-000d3ab121b3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 6 seconds.",
+            "date": "2024-09-25T05:07:12Z",
+            "extra": {}
+        },
+        {
+            "id": "01f9bbd0-a87b-ef11-ac20-6045bdde0ce3",
+            "subject": "RE: ID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication. CRM:00643000931",
+            "body": "Hi Liz,\nI am waiting for your reply regarding the previous email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-26T01:44:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22b4a6eb-aa7b-ef11-ac20-6045bdde0ce3",
+            "subject": "RE: ID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication. CRM:00643000931",
+            "body": "Hi Shrey\nThanks for the update. Please close the ticket.\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2024-09-26T01:59:13Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cbf665ed-aa7b-ef11-ac20-000d3ab08c0a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 20 hours, 52 minutes and 9 seconds.",
+            "date": "2024-09-26T01:59:22Z",
+            "extra": {}
+        },
+        {
+            "id": "750f895e-ac7b-ef11-ac20-6045bdde0ce3",
+            "subject": "RE: ID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication. CRM:00643000931",
+            "body": "Dear Liz,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0381179.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-26T02:09:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5fd39e8e-ac7b-ef11-ac20-6045bdde0ce3",
+            "subject": "Ticket 0381179 has been closed. Are you satisfied with our provided solution? CRM:00643000938",
+            "body": "Dear Liz,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0381179\nwith the title:\nID0381179-DC/Si-D/NZ-[MP / P3 170000342] Charger lost communication.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-26T02:10:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b15caa6-ac7b-ef11-ac20-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 12 minutes and 13 seconds.",
+            "date": "2024-09-26T02:11:34Z",
+            "extra": {}
+        },
+        {
+            "id": "89f01fbf-ac7b-ef11-ac20-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 46 seconds.",
+            "date": "2024-09-26T02:12:20Z",
+            "extra": {}
+        }
+    ]
+}

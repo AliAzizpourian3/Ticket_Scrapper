@@ -1,0 +1,147 @@
+{
+    "incident_id": "8a761859-2f31-f011-8c4d-7c1e52768c07",
+    "ticket_number": "0424524",
+    "title": "ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update",
+    "created_on": "2025-05-15T01:53:15Z",
+    "last_activity": "2025-07-23T06:59:09Z",
+    "age": "99666",
+    "description": "Reported behaviour/issue:  Sicharge D fail to perform software update via USB",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "sruJwD",
+    "stage": null,
+    "serial_number": "MP / ND 170000121",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "36b75c4c-2f31-f011-8c4e-7c1e52fad806",
+            "subject": "SiD/MY/ MP ND 170000121: USB Firmware Update failure",
+            "body": "Dear Helpdesk,\nSicharge D\nSerial Number: MP / ND 170000121\nCharger ID: sruJwD\nCountry: Malaysia\nCurrent FW: V4.0.11\nProblem statement:\nSicharge D fail to perform software update via USB\nWe are attempting to upgrade the Sicharge D from V4.0.11 to V5.0.23 using the SanDisk Flair USB 132GB\nThe charger is online all the time..\nWe had done the following: from 6pm to 730pm (GMT+8)\n1) On site, plug into X50 -> failed\n2) Plug into X51 -> failed\n3) reformat USB and HDD burn again\n4) Plug into X50 - failed\nAttached is the log files where we saw the SWupdate was aborted.\nPlease kindly troubleshoot and let us know why the SWupdate is aborted as the USB was previously used to update the same charger.\nThank you\nEdna",
+            "date": "2025-05-15T01:52:52Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3452f4a9-51d1-bb5c-bee6-6ebe1caf2065",
+            "subject": null,
+            "body": "Dear Helpdesk,\nSicharge D\nSerial Number: MP / ND 170000121\nCharger ID: sruJwD\nCountry: Malaysia\nCurrent FW: V4.0.11\nProblem statement:\nSicharge D fail to perform software update via USB\nWe are attempting to upgrade the Sicharge D from V4.0.11 to V5.0.23 using the\nSanDisk Flair USB 132GB\nThe charger is online all the time..\nWe had done the following: from 6pm to 730pm (GMT+8)\n1) On site, plug into X50 -> failed\n2) Plug into X51 -> failed\n3) reformat USB and HDD burn again\n4) Plug into X50 - failed\nAttached is the log files where we saw the SWupdate was aborted.\nPlease kindly troubleshoot and let us know why the SWupdate is aborted as the\nUSB was previously used to update the same charger.\nThank you\nEdna",
+            "date": "2025-05-15T02:16:38Z",
+            "extra": {}
+        },
+        {
+            "id": "4ef2e8b7-3331-f011-8c4e-7c1e5236cda4",
+            "subject": "ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Dear Edna Seah,\nThank you for reaching\nout\nto eMobility Support. My name is\nTanya\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / ND 170000121\nChargerID/Serial No.\n:\nMP / ND 170000121\nProblem Description\n: Sicharge D fail to perform software update via USB\nFor future reference, your case number is\n0424524\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-15T02:24:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d78a544a-1cdf-1044-abc9-36042352f55c",
+            "subject": "Handover to ES",
+            "body": "USB update failed, most likely due to corrupt SW.",
+            "date": "2025-05-15T07:43:37Z",
+            "extra": {}
+        },
+        {
+            "id": "94b2498d-64b5-116c-aa29-90901175fcd5",
+            "subject": "Status Update: 04/06/2025",
+            "body": "Awaiting for confirmation from Edna to utilize approx. 1.5 GB for FW download",
+            "date": "2025-06-04T04:22:47Z",
+            "extra": {}
+        },
+        {
+            "id": "e5bf8e7f-2149-f011-877a-7c1e523508ba",
+            "subject": "RE: ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Dear Edna,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As we discussed, I have tried multiple times to initiate a manual FW update via SSH, unfortunately every time I failed due to a slow internet connectivity. Is it possible for you to update the charger by flashing the Cfast card ?\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-14T13:14:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "729e209b-7fd5-41db-9e9f-91d06364b3b7",
+            "subject": "Status Update : 14/06/2025",
+            "body": "Issue : Unable to update the charger via OTA or SSH\nObservation : Internet speed is very low and unable to completely copy the file to charger\nAction Plan : Cfast card flashing\n10:57:46.931,2025-05-14T10:49:20.962185+00:00 sicharge-cp [daemon:info] healthservice[472]: swupdate-usb@sdc1.service loaded failed failed usb media swupdate service,2025-05-14 10:58:14.146,",
+            "date": "2025-06-14T13:20:45Z",
+            "extra": {}
+        },
+        {
+            "id": "ff5aa635-8849-f011-877a-7c1e523508ba",
+            "subject": "Re: ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Hi Sambath,\nIn this case, LG-SG will do a USB exchange (on 20june) with KVC to attempt USB update again. Meanwhile, we can do CF card update but given it is their first time doing it they will need support from L2\nedna",
+            "date": "2025-06-15T01:29:46Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a6b3c932-6992-8aa5-b805-e8566b81d73f",
+            "subject": "Status Update : 18.06.2025",
+            "body": "Action taken:\nDiscussed the issue with Benjamin and worked on charger via remote ssh.\nObservation\n: 2025-05-14T10:49:20.619055+00:00 sicharge-cp [daemon:info] sh[7504]: swupdate_async_start returns -1\nAction Plan:\nTry USB update again & incase if it is not working- Let us flash the Cfast card and update the charger",
+            "date": "2025-06-18T08:10:10Z",
+            "extra": {}
+        },
+        {
+            "id": "ea9ec091-6957-54ea-9705-64d81f465513",
+            "subject": "Status Update: 25/06/2025",
+            "body": "Awaiting for RC visit",
+            "date": "2025-06-25T07:59:45Z",
+            "extra": {}
+        },
+        {
+            "id": "f7e9e129-db66-f011-bec2-7ced8d4169c0",
+            "subject": "Re: ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Dear Edna,\nI am writing to formally inform that we are moving case 0424524 ﻿from the\nTechnical Support\nto the\neMobility RC-\nMY S\nI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobilit\ny RC-MY\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sambath KS\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-22T09:06:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5df517e2-9167-f011-bec3-7c1e523508ba",
+            "subject": "Re: ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Dear Sanjeef,\nAs the LC-SG team has passed our set of configured thumbdrive for V5, V6 and V7 FW version to you,\nwe will be closing this case while you arrange for the next site visit to update the charger.\nShould you face any issue with the FW update via USB again.\nPlease email int\no the SI Emobility Technical Support <emobility_support.si@siemens.com> for more support.\nThis case will be closed, please do not reply to this email\nThank you\nEdna Seah",
+            "date": "2025-07-23T06:54:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8f2a0a6f-9267-f011-bec2-7c1e52350ea5",
+            "subject": "Re: ID0424524-DC/Si-D/MY-[MP / ND 170000121] Fail to perform software update CRM:02832000015",
+            "body": "Dear Sanjeef,\nAs the LC-SG team has passed our set of configured thumbdrive for V5, V6 and V7 FW version to you,\nwe will be closing this case while you arrange for the next site visit to update the charger.\nShould you face any issue with the FW update via USB again.\nPlease email int\no the SI Emobility Technical Support <emobility_support.si@siemens.com> for more support.\nThis case will be closed, please do not reply to this email\nThank you\nEdna Seah",
+            "date": "2025-07-23T06:58:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f8d9fc7d-9267-f011-bec1-7ced8d2ec04c",
+            "subject": "A new case manager was assigned to 0424524 CRM:00225232536",
+            "body": "Wei Qi Seah was assigned as new Case Manager for case 0424524 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8a761859-2f31-f011-8c4d-7c1e52768c07",
+            "date": "2025-07-23T06:58:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

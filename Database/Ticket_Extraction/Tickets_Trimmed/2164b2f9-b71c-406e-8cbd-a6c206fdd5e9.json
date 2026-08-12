@@ -1,0 +1,158 @@
+{
+    "incident_id": "2164b2f9-b71c-406e-8cbd-a6c206fdd5e9",
+    "ticket_number": "0399580",
+    "title": "ID0399580-DC/Si-D/TR-[MP / PN 170001120]Charging Disruption",
+    "created_on": "2025-01-13T11:34:41Z",
+    "last_activity": "2025-07-11T07:26:29Z",
+    "age": "83696",
+    "description": "Reported behavior/issue: Charging Disruption One Socket Causes 'Out of Service' Status on Another\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 3,
+    "priority": 596630000,
+    "chargerID": "1MWgs6",
+    "stage": null,
+    "serial_number": "MP / PN 170001120",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8d580466-a2d1-ef11-8eea-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0399580 CRM:00225147727",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0399580 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2164b2f9-b71c-406e-8cbd-a6c206fdd5e9",
+            "date": "2025-01-13T11:34:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "397dba29-b3d1-ef11-8ee9-000d3a6695e0",
+            "subject": "A new case manager was assigned to 0399580 CRM:00225147800",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0399580 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2164b2f9-b71c-406e-8cbd-a6c206fdd5e9",
+            "date": "2025-01-13T13:34:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aebfbfd3-d418-5f11-9108-a351e0687fdd",
+            "subject": "Note from RC",
+            "body": "According to the customer's claim, while charging is being done on one socket, the other socket goes into 'Out of service' status. You can see the errors in the AWS data for the last two weeks below, I request a detailed review of the problem.",
+            "date": "2025-01-13T13:47:04Z",
+            "extra": {}
+        },
+        {
+            "id": "d3ff86ed-b5d1-ef11-8ee9-6045bde1171e",
+            "subject": "ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Dear Yunus,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PN 170001120\nChargerID/Serial No.\n:\n1MWgs6\nProblem Description\n: One outlet OOO\nWe have investigated the issue you reported regarding one socket going into 'Out of service' status while charging on the other. We are pleased to inform you that both Outlet 1 and Outlet 3 are now successfully charging without any issues. Please refer to the attached image for confirmation that neither of the outlets is currently in 'Out of service' status.\nWhile the issue appears to be resolved, we will still analyze the logs to identify the root cause and prevent any recurrence.\nFor future reference, your case number is\n0399580\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T13:54:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4a0f8ca8-6200-438c-a633-0a4a26eea21a",
+            "subject": "On DC1 charging stopped from EV side at 2025-01-13, 10:44:23",
+            "body": "",
+            "date": "2025-01-14T11:22:22Z",
+            "extra": {}
+        },
+        {
+            "id": "c6fe6aff-c17b-c98b-af70-3d0fd86c013f",
+            "subject": "On DC1 Charging stopped at 2025-01-13, 10:27:39, with Error code \"40\"",
+            "body": "",
+            "date": "2025-01-14T11:27:04Z",
+            "extra": {}
+        },
+        {
+            "id": "b2ac8c2a-6823-ad03-ba46-97b8eee4382a",
+            "subject": "Successfully started charging session on both outlets 2025-01-13, 10:56:10",
+            "body": "",
+            "date": "2025-01-14T11:32:33Z",
+            "extra": {}
+        },
+        {
+            "id": "fdb8e9d2-96d2-ef11-8ee9-6045bde06ff7",
+            "subject": "RE: ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Hello Yunus,\nI checked the logs from January 11th, and observed that the charging was occasionally stopped due to a V2G error, and sometimes from the EV side. I didn’t find any significant issues, and the charging sessions over the past two days have been functioning correctly.\nCould you please provide the specific timestamps for these events? It would be helpful for further analysis.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T16:44:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7a39761-3fd3-ef11-8ee9-6045bde1171e",
+            "subject": "RE: ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Dear Yunus,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0399580\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-15T12:51:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd8afc0e-f5d3-ef11-8ee9-000d3ab41b62",
+            "subject": "RE: ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Hi Ankita,\nWe received a notification from the customer yesterday that there was a problem again. They stated that the charging was terminated 1 minute after starting the charging process.\nWhen we looked at the last 2 days of data for this device, we saw the following errors. We kindly ask you to examine it in detail and inform us accordingly.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-01-16T10:31:40Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "00536e81-b4c9-6bf1-80d0-8377791122e7",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-16T16:22:56Z",
+            "extra": {}
+        },
+        {
+            "id": "7b5852b9-fedf-ddac-8da0-a621a54a092f",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-16T16:31:01Z",
+            "extra": {}
+        },
+        {
+            "id": "2df9f750-28d4-ef11-8ee9-7c1e52378e9b",
+            "subject": "RE: ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Hello Yunus,\nWe have analyzed the logs and observed that the IMD BC2 error is intermittently appearing and disappearing, which is likely the cause of the issue you are experiencing. The logs indicate an error related to \"no new data from IMD received within 5s via Modbus,\" suggesting there may be some loose connections that we need to investigate.\nIt is less likely that the IMD itself is faulty, as there is no error in the error flag, meaning the issue is not continuous. However, we recommend carrying a spare IMD in case a replacement is needed during troubleshooting.\nMLFB N0.\n8EM5903-0AA00-0AA1 -BC1, -BC2, -BC3, -BC4 Insulation Monitoring Device\nAdditionally, we have reviewed the charging sessions and found that some sessions failed due to authentication issues, while others encountered a temporary V2G error.\nIf the issue persists or if you need any assistance during site intervention, please don’t hesitate to reach out. We are here to support you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T16:38:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "816c48ca-29d4-ef11-8ee9-7c1e52378e9b",
+            "subject": "RE: ID0399580-DC/Si-D/TR-[MP / PN 170001120] One outlet is OoO CRM:01811000574",
+            "body": "Hello Yunus,\nI am writing to formally inform that we are moving case 0399580 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-TR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYES\nOnsite Troubleshooting\nYES\nEnd Customer Communication\nYES\nSpare Part Ordering\nYES\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-TR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Ankita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T16:49:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0247212c-f7d6-ef11-8eea-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0399580 CRM:00225150527",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0399580 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2164b2f9-b71c-406e-8cbd-a6c206fdd5e9",
+            "date": "2025-01-20T06:24:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

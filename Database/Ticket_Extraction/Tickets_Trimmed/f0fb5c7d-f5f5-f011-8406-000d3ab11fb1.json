@@ -1,0 +1,101 @@
+{
+    "incident_id": "f0fb5c7d-f5f5-f011-8406-000d3ab11fb1",
+    "ticket_number": "0473365",
+    "title": "ID0473365-DC/Si-D/AT- [RVP/T4170004624] Too many files open",
+    "created_on": "2026-01-20T11:45:25Z",
+    "last_activity": "2026-01-21T10:32:01Z",
+    "age": "1366",
+    "description": "Reported behavior/issue: Too many files open\nSolution: Flash CFAST and restore config",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Do9qMX",
+    "stage": "Resolved",
+    "serial_number": "RVP/T4170004624",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9aac84f0-f3f5-f011-8406-000d3ab11366",
+            "subject": "Webform_incident_SiCharge D_20-01-2026_SN: RVP/T4170004624",
+            "body": "Dear Laurenz Stelzl,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nRVP/T4170004624\nThank you\neMobility Technical Support Team\nSehr geehrte/r Laurenz Stelzl,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nRVP/T4170004624\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-01-20T11:34:16Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "625a6603-f8f5-f011-8406-7ced8d2d8e74",
+            "subject": "A new case manager was assigned to 0473365 CRM:00225321671",
+            "body": "Ayushi Bhatia was assigned as new Case Manager for case 0473365 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f0fb5c7d-f5f5-f011-8406-000d3ab11fb1",
+            "date": "2026-01-20T12:03:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "98275293-f8f5-f011-8406-000d3ab124a4",
+            "subject": "ID0473365-DC/Si-D/AT- [RVP/T4170004624] Charger is offline in SCB CRM:03289000299",
+            "body": "Dear\nLaurenz,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nRVP/T4170004624\nChargerID\n: Do9qMX\nProblem Description\n: Charger is offline in SCB\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0473365\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAyushi Bhatia\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-20T12:07:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "feb49b4f-f9f5-f011-8406-000d3ab124a4",
+            "subject": "A new case manager was assigned to 0473365 CRM:00225321681",
+            "body": "Ivan Perotto was assigned as new Case Manager for case 0473365 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f0fb5c7d-f5f5-f011-8406-000d3ab11fb1",
+            "date": "2026-01-20T12:12:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "beaf98b9-cc7b-5671-93f5-45c858e85c05",
+            "subject": null,
+            "body": "Suspected Root Cause:\nConfig file might be corrupted due to unsuccesful write operations.\nHowever, such event is rare and what could look like file corruption might be another type of bug, which needs to be investigated.\nProblem Description:\nGeneral malfunctioning of the charger, resulting in multiple failures or boot issues\nAction Performed (L2):\ncollect the charger logs\nCharger SW Version:\nv8.1.4-0-g5b0f2d0\nReason for Handover (L3):\nRestore Config file - Flash Cfast card\nFault history:\n---\nAttachement:\nrefer attached charger logs",
+            "date": "2026-01-20T14:03:24Z",
+            "extra": {}
+        },
+        {
+            "id": "ad1d49a6-a8f6-f011-8406-000d3ab124a4",
+            "subject": "A new case manager was assigned to 0473365 CRM:00225322323",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0473365 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f0fb5c7d-f5f5-f011-8406-000d3ab11fb1",
+            "date": "2026-01-21T09:07:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c623edb-b3f6-f011-8406-000d3ab11fb1",
+            "subject": "ID0473365-DC/Si-D/AT- [RVP/T4170004624] Charger is offline in SCB CRM:03289000299",
+            "body": "Hi Laurenz, good morning. How are you doing?\nI see that the charger is already operational, when I last spoke with Johannes last Thursday about it, they were already on the move to site.\nI will proceed to close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-01-21T10:28:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74349368-b4f6-f011-8406-000d3ab11366",
+            "subject": "Ticket 0473365 has been closed. Are you satisfied with our provided solution? CRM:00225322407",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0473365\nwith the title:\nID0473365-DC/Si-D/AT- [RVP/T4170004624] Too many files open\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-21T10:31:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

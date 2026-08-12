@@ -1,0 +1,155 @@
+{
+    "incident_id": "acf597d6-fa82-4041-af1c-5e467185fe10",
+    "ticket_number": "0408247",
+    "title": "ID0408247 - DC/Si-D/EE - [MP / R2 170001448] - Charger losing OCPP connection",
+    "created_on": "2025-02-20T14:20:40Z",
+    "last_activity": "2025-04-01T09:33:09Z",
+    "age": "57313",
+    "description": "Location:\nAlexela Võru\nReported behaviour/issue:\nCharger is losing connection to OCPP backend frequently for 30 seconds. Rebooting did not fix the issue.\nSolution:\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status: Active\nAction:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "SqgCtw",
+    "stage": null,
+    "serial_number": "MP / R2 170001448",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "2797070a-a7ef-ef11-9341-000d3add0e90",
+            "subject": "ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Dear Harjunpaa, Sakari (RC-FI SI E),\nThank you for reaching\nout\nto eMobility Support. My name is\nKaushik\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nVeho Võru\nChargerID/Serial No.\n:\nMP / R2 170001448\nProblem Description\n: Charger losing OCPP connection\nCan you please verify the 'WebSocketPingInterval' with the value '20' for this charger in the customer's backend?\nFor future reference, your case number is\n0408247\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T16:23:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3883c8f6-ccef-ef11-9341-7c1e527622e8",
+            "subject": "FW: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Hi Kaushik Kumar,\nANswer from customer.\nMarkus",
+            "date": "2025-02-20T20:55:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "67cf6659-23f0-ef11-9342-6045bdde1b10",
+            "subject": "Re: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Added Markus to the email chain\n-Sakari",
+            "date": "2025-02-21T07:13:34Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "27b836ef-26f0-ef11-9341-0022489a2456",
+            "subject": "RE: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Hi Kumar,\nCustomer just informed me that now this problem covers all Alexela chargers in Estonia. Time to time OCPP connection goes offline and then back online.\nI will also investigate this more.\nMarkus",
+            "date": "2025-02-21T07:39:19Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0fac63dd-46f0-ef11-9341-7c1e52372dd0",
+            "subject": "RE: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Hi all,\nFrom OCPP provider they proved us some information about the issue,",
+            "date": "2025-02-21T11:27:44Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cb756440-47f0-ef11-9341-0022489bc8e2",
+            "subject": "RE: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Hi Markus Roiha,\nThanks for your prompt reply. I kindly request you to ask the customer to set the OCPP WebSocket ping interval to 30 seconds. This should resolve the issue. We will monitor the charger’s connection to OCPP, and if the issue reoccurs, I will assign this ticket to the concerned team for further troubleshooting.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-21T11:30:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a39a0163-fb73-645b-b090-373240d2bd8d",
+            "subject": "Handover to L2",
+            "body": "Work Done:\nChecked in AWS, and found that the websocket ping interval was set to 20 seconds. Requested to have it updated to 30 seconds.\nWork to Be Done:\nWait for RC’s reply to see if the issue is resolved. If so, request to close the ticket. If the issue persists, please reach out to the OCPP team.",
+            "date": "2025-02-22T18:32:11Z",
+            "extra": {}
+        },
+        {
+            "id": "4e0aaa1f-5f39-c1a0-bcd8-2ca8aaebb545",
+            "subject": "Note to L2",
+            "body": "Discussed with RC, RC will confirm with customer and provide the case closure confirmation tomorrow.",
+            "date": "2025-02-24T11:18:24Z",
+            "extra": {}
+        },
+        {
+            "id": "82fe7eb7-53f3-ef11-be1f-7c1e52768372",
+            "subject": "RE: ID0408247 - DC/Si-D/EE - [SqgCtw] - Charger losing OCPP connection CRM:00796001399",
+            "body": "Hi,\nSetting change done and problem still exists. Please see message below.\nMarkus",
+            "date": "2025-02-25T08:37:18Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae389d86-6a9d-e9b5-a59f-3e2faa6b8cfd",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-25T13:21:59Z",
+            "extra": {}
+        },
+        {
+            "id": "2150688f-4d6b-9993-bdf6-b32237053d2a",
+            "subject": "Handover note",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\ncharger loosing OCPP connection\nAction Performed (L2)\n: Checked the heartbeat-60sec, changed the\nWebsocket ping interval-30sec, checked the signal strength seems to be ok.\nReason for Handover\n: Further analysis",
+            "date": "2025-02-25T14:01:42Z",
+            "extra": {}
+        },
+        {
+            "id": "61dd6057-e8f4-ef11-be1f-7c1e52fb544d",
+            "subject": "0408247 - ID0408247 - DC/Si-D/EE - [MP / R2 170001448] - Charger losing OCPP connection CRM:00439000739",
+            "body": "Hello Sakari,\nby checking the logs for recent Time find this entry in the logs:\nConnection closed because of missing Pong\nThis does mean that the WebSocket ping from the WebSocketPing didn't receive a Pong response in the expected time (typically around 2 seconds). This is likely the cause of the frequent connection interruptions you're experiencing.\nYou'll need to investigate why the OCPP Server is not sending the Pong response, or why it's sending the response too late. So i think this is the root cause of the connection issues.\nAWS StatusLogs:\nWith best regards,\neMobility Tech Support Team -\nSemih Sentuerk\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T08:53:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aa3a6dad-40f5-ef11-be1f-6045bde0265d",
+            "subject": "RE: 0408247 - ID0408247 - DC/Si-D/EE - [MP / R2 170001448] - Charger losing OCPP connection CRM:00439000739",
+            "body": "Hi Semih,\nThank you for the analysis. I will contact customer.\nBR,\nMarkus",
+            "date": "2025-02-27T19:26:02Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7edf9e6d-1200-f011-bae3-7c1e52774092",
+            "subject": "RE: 0408247 - ID0408247 - DC/Si-D/EE - [MP / R2 170001448] - Charger losing OCPP connection CRM:00439000739",
+            "body": "Hello Sakari,\ndid the customer provides any infos about the issue ?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-13T13:52:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "incident_id": "75a9df40-9835-f011-8c4e-000d3adc93d1",
+    "ticket_number": "0425700",
+    "title": "ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online",
+    "created_on": "2025-05-20T16:34:15Z",
+    "last_activity": "2025-06-03T10:40:22Z",
+    "age": "19495",
+    "description": "Reported behaviour/issue:\nwe have the problem, that the Sicharge D from our customer ÖAMTC with ID\nRl17yi\nis pending from offline to online in OCPP Backend.\nIn SCB it stays online permanently.\nWe have been on site and had very good signal strength with all common network providers on our phones. And the charger is also installed outdoors.\nThe Router Configuration (APN, Pin etc.) is configured correctly\nWe also tried different SIM cards.\nIs it maybe possible, that the antennas were not installed correctly in the factory??\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Rl17yi",
+    "stage": null,
+    "serial_number": "Y2/R0300000002001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "5411ae3a-9835-f011-8c4e-000d3adc93d1",
+            "subject": "ÖAMTC ECO PLUS Sicharge D Rl17yi OCPP pending from offline to online",
+            "body": "Hello,\nwe have the problem, that the Sicharge D from our customer ÖAMTC with ID\nRl17yi\nis pending from offline to online in OCPP Backend.\nIn SCB it stays online permanently.\nWe have been on site and had very good signal strength with all common network providers on our phones. And the charger is also installed outdoors.\nThe Router Configuration (APN, Pin etc.) is configured correctly\nWe also tried different SIM cards.\nIs it maybe possible, that the antennas were not installed correctly in the factory??\nCould you please help us here?\nBR Nenad",
+            "date": "2025-05-20T16:34:02Z",
+            "extra": {
+                "sender": "nenad.nikolic@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bdab2fc3-9835-f011-8c4d-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0425700 CRM:00225203117",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0425700 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=75a9df40-9835-f011-8c4e-000d3adc93d1",
+            "date": "2025-05-20T16:37:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53184e68-9b35-f011-8c4d-6045bddf319c",
+            "subject": "ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2/R0300000002001\nCharger ID/Serial No.\n:\nRl17yi\nProblem Description\n: OCPP pending from offline to online\nFor future reference, your case number is\n0425700\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-20T16:56:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78c5bf28-ec35-f011-8c4e-6045bdde4786",
+            "subject": "A new case manager was assigned to 0425700 CRM:00225203219",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0425700 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=75a9df40-9835-f011-8c4e-000d3adc93d1",
+            "date": "2025-05-21T02:34:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99aedcd5-5643-1046-be08-108a0e0daf3d",
+            "subject": "Analysis",
+            "body": "OCPP reconnect to wss://oeamtc.public.ocpp-broker.com:443/ocpp/cp/socket/16 in 30 seconds.\nConnection closed because of missing Pong from server.",
+            "date": "2025-05-23T03:38:41Z",
+            "extra": {}
+        },
+        {
+            "id": "acfc6ee1-8b37-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Hi Johannes,\nPardon for Late response.\nWe have investigated the logs for over a period of 4weeks, and We have couple of observations.\nIn the logs, We could see that OCPP connection is requested from the Charger side. But ping from charger is not responded by pong from OCPP server.\nAlso, We could see it is connecting to OCPP after every 5 mins.\nWe need following information from your side.\nCould you pls confirm if\n'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nWhat is the name of the Backend?\nCould you pls confirm if Successful backend Intergration with SichargeD have been performed?\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-23T04:10:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c457777-573b-f011-b4cc-7c1e52faf3c6",
+            "subject": "RE: ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Hi Johannes,\nGentle Follow-up on the case.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-28T00:05:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7ee28282-c63c-f011-b4cc-6045bddf319c",
+            "subject": "RE: ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Hi Johannes,\nGentle Follow-up on the case.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-29T19:53:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66d6dfad-503f-f011-877a-7c1e52768372",
+            "subject": "RE: ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Hi Johannes,\nGentle Follow-up on the case\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-02T01:27:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f2a7fc14-3b40-f011-877a-7c1e52faf3c6",
+            "subject": "RE: ID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online CRM:02681000192",
+            "body": "Dear Johannes,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0425700\nbut have not received a response.\nAs we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0425700\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-03T05:25:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e307937d-3b40-f011-877a-7c1e52faf3c6",
+            "subject": "Ticket 0425700 has been closed. Are you satisfied with our provided solution? CRM:00798002175",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0425700\nwith the title:\nID0425700-DC/Si-D/AT-[Y2/R0 300000002001]OCPP pending from offline to online\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-03T05:27:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

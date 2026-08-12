@@ -1,0 +1,115 @@
+{
+    "incident_id": "c6a22533-bf75-ef11-a671-000d3ab7063f",
+    "ticket_number": "0380046",
+    "title": "ID0380046-DC/Si-D/AR[DzTyqp] - OCPP message",
+    "created_on": "2024-09-18T13:09:22Z",
+    "last_activity": "2025-12-16T14:05:51Z",
+    "age": "8380",
+    "description": "Reported behaviour/issue:\nmissing a message within the OCPP (Energy.Active.Import.Register)\nRoot cause:\nSolution:\nBackend needs to send a command from OCPP:\n\"MeterValuesSampledData\": {\n\"readonly\": false,\n\"value\": \"SoC,Power.Offered,Current.Offered,\nEnergy.Active.Import.Register\n\"\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "DzTyqp",
+    "stage": null,
+    "serial_number": "MP / P9 170000993",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b3fdcf2f-bf75-ef11-a670-6045bddd6c37",
+            "subject": "Request- Sicharge D - Message during charging",
+            "body": "Good morning,\nI´m the new project manager asigned to the e-Mobility projects replacing\n@Galizia Alfano, Mariano (RC-AR SI EA AR SO)\nI have a topic:\nA client that uses a platform developed by the company Volbras.\nThe client says that it is missing a message within the OCPP (Energy.Active.Import.Register) protocol.\nThe charger sends this message when starting and ending charging.\nThe client requests that the charger send that message\nduring charging\n.\nExample of the requested log taken from the SCB at the end of a load\nTue, 17 Sep 2024 18:44:55 GMT\n2024-09-17, 18:44:54\n2024-09-17T18:44:54.189278+00:00 sicharge-cp [local0:info] sicharge-cp-backend/20f765c96437[698]: OCPP: Send command: StopTransaction (e899f4c3-8534-4f73-93a2-dbd64308a9e4) - {\"meterStop\":891,\"timestamp\":\"2024-09-17T18:44:54.171Z\",\"transactionData\":[{\"timestamp\":\"2024-09-17T18:44:54.172Z\",\"sampledValue\":[{\"value\":\"891\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Register\"},{\"value\":\"94\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"}]}],\"reason\":\"Local\",\"idTag\":\"04114A4A806280\",\"transactionId\":948735947}\nThanks,\nI await your comments,\nBest Regards.\nSofia A. Lezcano\nProject Manager\nSiemens SA\nParque Industrial Newton\nCalle Cuba 4870, Ruta 8 - Km. 18\n(B1653KBM) Villa Ballester\nProvincia de Buenos Aires - Argentina\ne-mail:\nsofia.lezcano@siemens.com\nWeb:\nhttps://www.siemens.com/ar/es.html",
+            "date": "2024-09-18T13:09:10Z",
+            "extra": {
+                "sender": "sofia.lezcano@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c345fc8d-c475-ef11-a670-0022489b851f",
+            "subject": "A new case manager was assigned to 0380046 CRM:00225099235",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0380046 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c6a22533-bf75-ef11-a671-000d3ab7063f",
+            "date": "2024-09-18T13:47:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76f837b9-c475-ef11-a671-000d3ab2618c",
+            "subject": "ID0380046-DC/Si-D/AR  -  OCPP message CRM:00315001792",
+            "body": "Dear Sofia,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: ?\nChargerID/Serial No.\n: ?\nProblem Description\n: Missing Energy.Active.Import.Register\nTroubleshooting\n:\nCan you please provide me the ID or SN of the charger/s? This is something that the Backend needs to perform via OCPP, the command is \"GetConfiguration\" and this is the parameter with the example on how it looks like:\n\"MeterValuesSampledData\": {\n\"readonly\": false,\n\"value\": \"SoC,Power.Offered,Current.Offered,\nEnergy.Active.Import.Register\n\"\nIf you need anything you can always reach out to me via M.Teams.\nFor future reference, your ticket number is\n0380046\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-18T13:48:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aab4406e-b276-ef11-a670-7c1e521fb0a2",
+            "subject": "RV: ID0380046-DC/Si-D/AR  -  OCPP message CRM:00315001792",
+            "body": "Hi Francisco,\nUpdate the information:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: ? I don’t have this information. Where can I find it?\nChargerID/Serial No.\n: ?\nMP / P9 170000993\nProblem Description\n: Missing Energy.Active.Import.Register\nTroubleshooting:\nI don´t have this information. Where can I find it?\nBest Regards\nSofia A. Lezcano\nProject Manager\nSiemens SA\nParque Industrial Newton\nCalle Cuba 4870, Ruta 8 - Km. 18\n(B1653KBM) Villa Ballester\nProvincia de Buenos Aires - Argentina\ne-mail:\nsofia.lezcano@siemens.com\nWeb:\nhttps://www.siemens.com/ar/es.html\nDe:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnviado el:\nmiércoles, 18 de septiembre de 2024 10:52\nPara:\nLezcano, Sofia (RC-AR SI EA AR SO) <sofia.lezcano@siemens.com>\nAsunto:\nID0380046-DC/Si-D/AR - OCPP message CRM:00315001792\nDear Sofia,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: ?\nChargerID/Serial No.\n: ?\nProblem Description\n: Missing Energy.Active.Import.Register\nTroubleshooting\n:\nCan you please provide me the ID or SN of the charger/s? This is something that the Backend needs to perform via OCPP, the command is \"GetConfiguration\" and this is the parameter with the example on how it looks like:\n\"MeterValuesSampledData\": {\n\"readonly\": false,\n\"value\": \"SoC,Power.Offered,Current.Offered,\nEnergy.Active.Import.Register\n\"\nIf you need anything you can always reach out to me via M.Teams.\nFor future reference, your ticket number is 0380046, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-19T18:10:27Z",
+            "extra": {
+                "sender": "sofia.lezcano@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f84b952f-2277-ef11-a671-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 day, 18 hours, 21 minutes and 2 seconds.",
+            "date": "2024-09-20T07:30:25Z",
+            "extra": {}
+        },
+        {
+            "id": "8c988d35-2277-ef11-a671-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 8 seconds.",
+            "date": "2024-09-20T07:30:33Z",
+            "extra": {}
+        },
+        {
+            "id": "1990410c-6177-ef11-a670-000d3ab4d5d3",
+            "subject": "ID0380046-DC/Si-D/AR[DzTyqp] - OCPP message (Energy.Active.Import.Register) CRM:00315001792",
+            "body": "Hi Sofia, good morning. I hope you are doing well.\nJust for clarification, since I didn't fully understand, you are taking over Mariano's role.\nWhenever you open a ticket, please always include the Serial Number of the charger since I assume you don't have access to the charger's Siemens backend since you don't have the training.\nI would recommend doing the basic training at least so that you can have access to the backend. If you have any questions you can ask to the Trainer's Head:\nguilherme.nascimento-ferreira@siemens.com\nFor the ticket, whenever you open a ticket you will receive an email just like the first one, but since you didn't provide the charger's information I left it with a “?”.\nEvery detail that I sent except for the Troubleshooting is automatically filled with the charger's information that you provide. So you never have to write in anything.\nThe troubleshooting is my recommendation of steps to take next from your side. So in this case, you need to ask the backend colleague to send a “GetConfiguration” command with the change of the parameter that they requested. It must look like this\n:\n\"MeterValuesSampledData\": {\n\"readonly\": false,\n\"value\": \"SoC,Power.Offered,Current.Offered,\nEnergy.Active.Import.Register\n\"\nIf I change this value by myself, after a restart of the charger, this value will disappear as we are not supposed to change this value from our side. The backend will always upload their version of the configuration.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2024-09-20T15:00:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7526359d-517a-ef11-ac20-000d3ab4d5d3",
+            "subject": "ID0380046-DC/Si-D/AR[DzTyqp] - OCPP message (Energy.Active.Import.Register) CRM:00315001792",
+            "body": "Hi Sofia, good morning.\nSince I provided the answer to you, I will proceed to close the ticket.\nIf you need assistance from my side to implement the value please reach out to me via M.Teams.\nRemember that I can apply the change but only temporarily, if there is a reboot, the configuration will be reverted.\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-09-24T08:47:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "526752d0-517a-ef11-ac20-000d3ab4d5d3",
+            "subject": "Ticket 0380046 has been closed. Are you satisfied with our provided solution? CRM:00315001821",
+            "body": "Dear Sofia,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0380046\nwith the title:\nID0380046-DC/Si-D/AR[DzTyqp] - OCPP message\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-24T08:48:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e62284ee-517a-ef11-ac20-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 4 days, 1 hour, 19 minutes and 13 seconds.",
+            "date": "2024-09-24T08:49:47Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,398 @@
+{
+    "incident_id": "2c18be69-c619-f011-9989-6045bde0265d",
+    "ticket_number": "0418911",
+    "title": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted",
+    "created_on": "2025-04-15T06:54:12Z",
+    "last_activity": "2025-09-29T11:15:49Z",
+    "age": "240741",
+    "description": "Reported behaviour/issue : Charging process at transaction 4340566 interrupted, so we had to\ndrive to Salzgitter to put the cable out and in again. What was the reason for the interruption?\nUpdate 16/Apr - Vehicle Integration is in close contact with Volvo to know what they see from their side.\nUpdate 2/Sept - Arthur from Volvo DE is not replying to us, maybe vacation? In Switzerland they changed the communication unit in the Volvo and it hasn't had any problems ever since\nUpdate 9/Sept - Volvo in Switzerland is declared resolved, more than 1 month without ERR67 while all the other have it. RC-DE to contact Volvo DE HQ to implement the same solution.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "LSurCD",
+    "stage": null,
+    "serial_number": "Y2 / S5 313651774001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a2661267-c619-f011-998a-7c1e52faf3c6",
+            "subject": "Webform_incident_SiCharge D_15-04-2025_SN: Y2 / S5 313651774001",
+            "body": "Dear Jepsen,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / S5 313651774001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jepsen,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / S5 313651774001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-15T06:54:07Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "efce0249-ca19-f011-998a-7c1e5236e32d",
+            "subject": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] CRM:02682000046",
+            "body": "Dear Nils Jepsen,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S5 313651774001\nChargerID/Serial No.\n: Y2 / S5 313651774001\nProblem Description\n: Charging process at transaction 4340566 interrupted, so we had to\ndrive to Salzgitter to put the cable out and in again. What was the\nreason for the interruption?\nFor future reference, your case number is\n0418911\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T07:21:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58fcf2c6-d519-f011-9989-7c1e5277d5a9",
+            "subject": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging interruption CRM:02682000046",
+            "body": "Hello Nils, good morning. I hope you are doing well.\nThank you for sharing the date.\nI have acknowledged the error. I made a restart on the SECCs in order to download the logs for this session. You should see in your backend all the outlets out of order by this hour 11:41 CET. Please ignore them as it was this reboot.\nI will investigate the logs and come back to you.\nI have another remark that is not related to this topic, recently our colleagues from Germany requested to install a hotfix for wake-up function for the Volvo trucks. To have this working, you need to change a configuration from your backend, this is what you currently have:\nYou need to request the change from \"EnergyTransfer\" to “PowerPathClosed”\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-15T08:44:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4d51f12-ac1a-f011-9989-7c1e52361e39",
+            "subject": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging interruption CRM:02682000046",
+            "body": "Hi Maximilian,\nJust for documentation purposes, I will do a short summary of our talk.\nThere are 2 problems here:\nAfter the hotfix installation, it is required to change the OCPP parameter to PowerPathClosed, in order to have the wake-up function to work with Volvos\nYou will discuss with Judit for next steps\nFor this charging interruption, we see a PilotState drop from C to B during charging. At first sight, it seems like the Volvo changed this value since we don't have any other error from charger-side.\nIt's possible that there is a interference on the CP line, but we would need to prove it with an osciloscope.\nAs I mentioned, in the Vehicle Integration team, we keep a close contact with Volvo germany and have requested them to have a look.\nFor now, we can tell the customer that we are investigating the issue closely with Volvo to understand the root cause.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-16T10:18:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "562bebcf-ae1a-f011-998a-7c1e523508ba",
+            "subject": "AW: ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging interruption CRM:02682000046",
+            "body": "Thanks for the Information Francisco!\nI informed the Customer and contacted Judith and the Service Team to help with the Value Change.\nBR,\nMax\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nE-Car Germany\nRC-DE SI E C EC\nNonnendammallee 101\n13629 Berlin, Deutschland\nMobil: +49 (173) 5934331\nmailto:maximilian.brosche@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzende\nVeronika Biernert, Peter Körte,\nCedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 16. April 2025 12:21\nAn:\nBrosche, Maximilian (RC-DE SI E C EC) <maximilian.brosche@siemens.com>\nCc:\nNarten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nBetreff:\nID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging interruption CRM:02682000046\nHi Maximilian,\nJust for documentation purposes, I will do a short summary of our talk.\nThere are 2 problems here:\nAfter the hotfix installation, it is required to change the OCPP parameter to PowerPathClosed, in order to have the wake-up function to work with Volvos\nYou will discuss with Judit for next steps\nFor this charging interruption, we see a PilotState drop from C to B during charging. At first sight, it seems like the Volvo changed this value since we don't have any other error from charger-side.\nIt's possible that there is a interference on the CP line, but we would need to prove it with an osciloscope.\nAs I mentioned, in the Vehicle Integration team, we keep a close contact with Volvo germany and have requested them to have a look.\nFor now, we can tell the customer that we are investigating the issue closely with Volvo to understand the root cause.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-16T10:37:43Z",
+            "extra": {
+                "sender": "maximilian.brosche@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "566b35c0-c534-e6c5-bba1-2f712b1da736",
+            "subject": "Logs from the date",
+            "body": "",
+            "date": "2025-04-16T10:55:42Z",
+            "extra": {}
+        },
+        {
+            "id": "9ae271b8-382f-f011-8c4d-7c1e52361e39",
+            "subject": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging interruption CRM:02682000046",
+            "body": "Hi Maximilian, good afternoon. I hope you are doing well.\nWe checked with Volvo R&D and they couldn't find the session that was reported by the customer, but they found another session which had the same error and gave us this information for you to test:\nPlease also check if our Outlet is also not dirty or damaged. We also have this issue in another sites in Germany, so we need to find a common enemy.\nFor now, the charger does not seem to be the problem since there are multiple sessions with other EVs and they do not have this kind of error.\nI will send this ticket to your queue for a follow up.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-05-12T13:55:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eab99024-3b2f-f011-8c4d-7c1e52361e39",
+            "subject": "ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00315002626",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0418911 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-12T14:12:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e0f6028e-d52f-f011-8c4d-7c1e523508ba",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\nthanks for handing this over to us.\nJust to be sure… no action item for us just yet, right? We still want the customer to check the plug first, correct?\nIn case an on-site visit is needed - any spare part recommendations?\nThanks,\nSascha",
+            "date": "2025-05-13T08:37:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a7003989-d72f-f011-8c4d-6045bde0265d",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha! Good morning.\nIt would be easier if the customer could do the checks themselves since we would only have to go on site to check the plug of the SID.\nPlease ask the customer to check the plug from the SID and take photos and also check the inlet of the EV. Just like the photo I sent, this is directly from Volvo. Please follow the instructions and communicate with the customer.\nThere is no spare parts recommendation since any other EV works fine except for the Volvo. This is a clear problem from their side so I would follow their instructions.\nThanks!\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-05-13T08:52:08Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "72f1ffa4-bf30-f011-8c4d-7c1e52771025",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\nthanks for your response - I just noticed that you have not been in touch with the customer yet, but rather with Max Brosche, so…\nI'll get back to the customer then.\nSascha",
+            "date": "2025-05-14T12:33:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0182ae0-bf30-f011-8c4e-7c1e5236cda4",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\nthanks for your response - I just noticed that you have not been in touch with the customer yet, but rather with Max Brosche, so…\nI'll get back to the customer then.\nSascha",
+            "date": "2025-05-14T12:35:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ce2fe708-c030-f011-8c4d-7c1e52771025",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000572",
+            "body": "Hallo Herr Jespen,\nkönnten Sie bitte im Rahmen dieses Tickets überprüfen, ob die Ladestecker in einwandfreiem Zustand sind?\nWenn Sie uns im besten Fall Fotos der Stecker zukommen lassen könnte, wäre das super.\nHier noch der Vollständigkeit halber die detaillierten Anweisungen unseres zentralen Supports / Volvo:\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-05-14T12:36:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f7372930-c030-f011-8c4d-7c1e52771025",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000573",
+            "body": "Hi Lukas,\nhier schon mal ein Ticket, das ich vor meinem Urlaub höchstwahrscheinlich nicht mehr koordiniert kriege.\nFalls es zu Fragen gibt, gerne morgen. Alle Infos stehen aber auch im Ticket.\nGrüße\nSascha",
+            "date": "2025-05-14T12:37:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a61d42a3-0237-f011-8c4e-7c1e5236cda4",
+            "subject": "AW: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000572",
+            "body": "Guten Tag Herr Theil,\nanbei die Fotos der 6 Ladestecker.\nReicht Ihnen das so oder benötigen Sie noch weitere Fotos?\nMit freundlichen Grüßen\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 14. Mai 2025 14:36\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nBetreff:\n0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000572\nHallo Herr Jespen,\nkönnten Sie bitte im Rahmen dieses Tickets überprüfen, ob die Ladestecker in einwandfreiem Zustand sind?\nWenn Sie uns im besten Fall Fotos der Stecker zukommen lassen könnte, wäre das super.\nHier noch der Vollständigkeit halber die detaillierten Anweisungen unseres zentralen Supports / Volvo:\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-05-22T11:48:22Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9d1b8b16-c53a-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0418911 CRM:00225206300",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0418911 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2c18be69-c619-f011-9989-6045bde0265d",
+            "date": "2025-05-27T06:37:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7502e5a6-db3a-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\ncustomer sent pictures of the charging plugs.\nCould you please take a look at it and provide feedback if any of them need to be replaced?\nTo me they look fine, but not an expert. :)\nSascha",
+            "date": "2025-05-27T09:19:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "feb4a7a2-dd3a-f011-b4cc-000d3ad97a58",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha,\nThanks for the feedback.\nThe photos from our charger I would request a more close up photo of the CP+PP\nI cannot clearly see if there is any damage on the Pins.\nAlso the requested photos was from the EV itself to share with Volvo. We can also show that our plug is fine, but that should've been a given since only the Volvos are having this issue, no other EV is having this problem.\nPlease check it with customer and let's continue working on it.\nBest regards,\nFrancisco",
+            "date": "2025-05-27T09:33:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "604506e9-e63a-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hallo Herr Jepsen,\nvielen Dank für die Zusendung der Fotos. Mein Kollege Francisco hat sich diese angeschaut und erbittet nun noch ein mal eine Nahaufnahme des unten stehenden Steckers - können Sie noch nachvollziehen, welcher Ladepunkt das war?\nEntschuldigen Sie bitte die Umstände.\nAbgesehen davon erbittet Francisco noch ein Foto der Ladebuchse des Volvos, da es aus seiner Sicht auffällig ist, dass nur dieser nicht problemlos laden kann. Wäre dies möglich?\nErneut vielen Dank für ihre Mithilfe.\nSascha Theil",
+            "date": "2025-05-27T10:39:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "97edb5a0-1641-f011-877a-7c1e52faf3c6",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hallo Herr Jepsen,\nhier noch mal die Rückfrage nach dem Ladestecker bzw. der Ladebuchse des Volvos.\nHaben Sie die Möglichkeit, hier noch mal Fotos zu liefern?\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-06-04T07:36:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eae887e4-1941-f011-877a-7c1e52faf3c6",
+            "subject": "AW: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hallo Herr Theil,\nich werde es heute versuchen.\nMit freundlichen Grüßen\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 4. Juni 2025 09:37\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nCc:\nde Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nBetreff:\nRE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563\nHallo Herr Jepsen,\nhier noch mal die Rückfrage nach dem Ladestecker bzw. der Ladebuchse des Volvos.\nHaben Sie die Möglichkeit, hier noch mal Fotos zu liefern?\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-06-04T07:59:53Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "49165a00-1a41-f011-8779-7c1e5234c711",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha, good morning.\nI already sent an email to our contact in Volvo Germany for a follow up, since he is on vacation, we won’t get a reply until earliest, next week.\nThere are other customers complaining and we need to understand the root cause.\nI proposed having a test day with Volvo Sweden because they have a SiD in their Test Center which also happens this error. I will wait for the Volvo colleague’s reply before scheduling.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-06-04T08:00:39Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "82666ef7-e67c-f011-b4cc-7c1e52faf3c6",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\nthis ticket has been open for 4 months now.\nCan we close it?\nPlease advise,\nSascha",
+            "date": "2025-08-19T10:26:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db8469c5-f47c-f011-b4cb-000d3ab07fc1",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha,\nWe have been performing some experiments with Volvo in Switzerland, and after 1 month, the experiment has been successful.\nYou can assign me this ticket since we are already in discussion with Volvo Germany to understand if the same experiment can be performed and how, since we don’t have much more information than that they replaced their communication unit CCCM.\nAs soon as I have feedback I will reply again to the ticket.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-08-19T12:05:28Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e5e8e426-0683-f011-b4cc-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0418911 CRM:00225248244",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0418911 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2c18be69-c619-f011-9989-6045bde0265d",
+            "date": "2025-08-27T05:24:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7132bf7f-418a-f011-b4cb-6045bddf319c",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha, I hope you are doing well.\nFrom our monitoring of the Volvo in Switzerland, the problem has been declared resolved. There is no problem for more than 1 month.\nSince the solution comes from the EV side, there is no more action points from Technical Support.\nPlease reach out to the Volvo colleague in Germany\narthur.jahn@volvo.com\nfor the solution, I am sending in attachment the email exchanged with Volvo Switzerland to help you. As you can see they replaced the \"\ncommunication unit CCCM\".\nI will assign this ticket back to you.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-05T10:17:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6c689666-428a-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0418911 CRM:00225252878",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0418911 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2c18be69-c619-f011-9989-6045bde0265d",
+            "date": "2025-09-05T10:23:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "62b668d0-e88e-f011-b4cc-6045bddece8c",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Francisco,\nthanks for letting me know about this.\nUnfortunately, I cannot open attached email.\nCould you please do me the favor and advise specifically what needs to be done here?\nI need to understand if a field service intervention is needed and if so, if spare parts are required and what needs to be done on site.\nThanks,\nSascha",
+            "date": "2025-09-11T08:25:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d84b78a1-059a-f011-b4cb-000d3addf551",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Once again, asking for your support here, Francisco.\nPlease advise,\nSascha",
+            "date": "2025-09-25T11:49:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3fd65fc1-059a-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Once again, asking for your support here, Francisco.\nPlease advise,\nSascha",
+            "date": "2025-09-25T11:50:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2a318d3c-089a-f011-b4cb-000d3addf551",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha, as I mentioned before:\nPlease reach out to the Volvo colleague in Germany\narthur.jahn@volvo.com\nfor the solution. In Switzerland they replaced the \"\ncommunication unit CCCM\".\nWe don’t have any information besides this. Here is the email from the CH Volvo colleague:\n<\ndaniel.hofstetter@volvo.com\n>\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-09-25T12:07:50Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "28861828-b19a-f011-b4cc-6045bde12d6b",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Ok, will do. Just to be sure: is the mentioned communication kit a component that is part of the vehicle?\nI would so assume so, right?\nIn that case, I will simply tell the customer to reach out to Volvo directly.\nPlease advise,\nSascha",
+            "date": "2025-09-26T08:17:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f4c72858-b19a-f011-b4cc-7c1e52768372",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Ok, will do. Just to be sure: is the mentioned communication kit a component that is part of the vehicle?\nI would so assume so, right?\nIn that case, I will simply tell the customer to reach out to Volvo directly.\nPlease advise,\nSascha",
+            "date": "2025-09-26T08:18:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1490c3db-039d-f011-b41c-7c1e52fad806",
+            "subject": "RE: 0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000563",
+            "body": "Hi Sascha,\nYes, it’s a component on the EV side and that’s pretty much all we know, unfortunately. They didn’t share anything else besides the “replaced the communication unit CCCM”.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-09-29T07:13:58Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "df5f4384-259d-f011-b41c-6045bddf3123",
+            "subject": "0418911 - ID0418911-DC/Si-D/DE-[Y2 / S5 313651774001] Charging process interrupted CRM:00373000778",
+            "body": "Hallo Herr Jespen,\nunsere Kollegen der Fahrzeugintegration haben zu diesem Ticket nach langer Zeit noch mal eine Rückmeldung gegeben, die gerne an Sie weitergeben möchte:\nDemnach hat Volvo uns die Information mitgegeben, dass bei den vorliegenden Problemen fahrzeugseitig die Kommunikation mit dem \"CCCM\" ersetzt werden muss.\nBei Fragen möchten Sie sich bitte an einen der beiden folgenden Kontakte wenden:\narthur.jahn@volvo.com\n,\ndaniel.hofstetter@volvo.com\n.\nLetzterer hat offenbar einen entsprechenden Tausch in der Schweiz bereits veranlasst / durchgeführt.\nDa es sich hier um ein Fahrzeugthema handelt, würde ich dieses Ticket nun auf unserer Seite schließen.\nIch hoffe, das ist in Ordnung.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-09-29T11:14:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

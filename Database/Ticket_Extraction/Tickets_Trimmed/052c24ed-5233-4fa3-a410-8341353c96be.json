@@ -1,0 +1,156 @@
+{
+    "incident_id": "052c24ed-5233-4fa3-a410-8341353c96be",
+    "ticket_number": "0483786",
+    "title": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs",
+    "created_on": "2026-03-11T19:08:48Z",
+    "last_activity": "2026-05-15T10:32:35Z",
+    "age": "10921",
+    "description": "Reported behavior/Issue: Check on Logs",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "UKKHCT",
+    "stage": "Resolved",
+    "serial_number": "Y2 / S1 313508370011",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "97cccdea-7d1d-f111-8342-7ced8d44ddd4",
+            "subject": "A new case manager was assigned to 0483786 CRM:00225351208",
+            "body": "Sajid Hussain was assigned as new Case Manager for case 0483786 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=052c24ed-5233-4fa3-a410-8341353c96be",
+            "date": "2026-03-11T19:10:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1c46f3e9-86da-614b-88bf-85882df652b4",
+            "subject": "Description",
+            "body": "Hello,\nToday 11 of March a client charged his vehicle between 4\n:23:49 PM and 4:55:19 PM CU TIME but couldn't interrupt the charging session. When he attempted to stop charging he saw on the POS' screen \"generic error 100\".\nWe were able to stop the charging session only by rebooting the charger.\nWe also saw that on the Sifinity portal the charger is in status \"Unavailable\".\nCan you please check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d",
+            "date": "2026-03-11T19:12:24Z",
+            "extra": {}
+        },
+        {
+            "id": "c3f70743-7f1d-f111-8342-7ced8d44db54",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Dear\nRosita\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370011\nChargerID\n: UKKHCT\nProblem Description\n: Check on Logs\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0483786\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSajid Hussain\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-03-11T19:19:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "727f85f6-831d-f111-8342-7ced8d44dfaf",
+            "subject": "A new case manager was assigned to 0483786 CRM:00225351215",
+            "body": "Felipe Moraes was assigned as new Case Manager for case 0483786 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=052c24ed-5233-4fa3-a410-8341353c96be",
+            "date": "2026-03-11T19:53:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fc2b3a3b-851d-f111-8342-7ced8d44ddd4",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Dear Rosita,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nStop Attempt via POS:\nAt approximately 4:55 PM, the user attempted to terminate the session using the credit card terminal (POS). The terminal displayed\n\"Generic Error 100\"\n.\nOn screenshot we can see the end of the charging session.\nThe Meaning of \"Error 100\":\nThis specific error indicates a\ncommunication timeout\nbetween the payment terminal and the Management System (CSMS/Cloud). When a user presses \"Stop\" on the POS, the terminal sends a request to the payment provider to finalize the transaction. If the network signal is weak or if the backend takes too long to respond, the terminal \"gives up\" and shows this generic error.\nFollowing the end of the session we see \"\nconnection to a payment terminal never established\"\nSuccessful Termination via soft reboot:\nSince the command via the physical terminal failed due to the timeout, the session remained active for a few more minutes. Our logs show that the session was finally closed successfully at\n4:57:27 PM\nthrough a command sent via the\nsoft reboot\n. This command bypassed the POS communication loop and successfully unlocked the charger.\nConclusion\n:\nThe charging process itself was successful, and the correct amount of energy was delivered. The \"Error 100\" was a localized communication failure at the terminal, which was resolved by the secondary stop command from your side \"\nSoft Reboot\n\"\nI hope all the information shared could explain exactly what happened at the end of the session.\nApart from all the information shared, do you have any other questions or if I may proceed with closing this ticket?\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-11T20:02:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73007a4f-191e-f111-8342-7ced8d44ddd4",
+            "subject": "RE: ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Hello and thank you for the feedback,\nSo, the client couldn’t stop the charging session because of a communication problem? Is the problem still occurring?\nAlso, the charger is currently in status “Unavailable” on the Sifinity portal.\nCan you please monitor the charger to see if there are still issues?\nThank you,\nRosita Abate",
+            "date": "2026-03-12T13:42:37Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "189ae8c8-ac1f-f111-8342-7ced8d44dcb4",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Hi Rosita ,\nI hope this email finds you well.\nRegarding this kind of disconnection in the charger, it usually occurs because of the internet signal in the OCPP router.\nChecking the logs I don't see any information showing OCPP offline.\nBut if needed you can contact us in case you have any issue with charging sessions and we can check the signal in the OCPP router for you.\nAt the moment I suggest you active the outlets again and keep using the charger as normal because that issue doesn't makes the charger inoperative but can happens sometimes.\nTo check the route cause we need to have the charger being used and with this we can suggest a better way to avoid it happen again.\nWith best regar\nds,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-14T13:50:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12503bd4-bc1f-f111-8342-000d3ab1199b",
+            "subject": "RE: ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Hello and thank you for the feedback,\nWe didn’t deactivate the outlets. The charger is also available, and people charged correctly after I opened this ticket:\nThe charger is Unavailable only on the Sifinity portal, it might be a visualization problem on your side.\nCan you please check again ang give us more details about the communication problem that occurred during the client’s charging sessions?\nCan you check also if there are display issues with the Sifinity portal?\nThank you,\nRosita Abate",
+            "date": "2026-03-14T15:45:32Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "26a69c3f-cf1f-f111-8342-7ced8d44d1ac",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03097000508",
+            "body": "Dear Rosita,\nI hope this email finds you well.\nOn our side we can see the charger healthy with no issues to work.\nAs you could also see on the above screenshot both outlets shows unavailable to use.\nChecking the configuration it shows that is deactivated on purpose.\nWith bes\nt regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-14T17:57:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2084c7f8-1a21-f111-8342-000d3ab12a39",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03276000197",
+            "body": "Dear\nRosita Abate,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0483786\nRegarding this charger do you need any change or information from our side or can we proceed closing the ticket?\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-16T09:32:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "26b0849e-cb22-f111-8342-000d3ab12e50",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03276000207",
+            "body": "Dear\nRosita Abate\n,\nThis is our third and final reminder regarding your support case\n0483786.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\n[Apart from all the information shared, do you have any other questions or if I may proceed with closing this ticket?\n]\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-18T13:09:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d92482f-7323-f111-8342-7ced8d44dcb4",
+            "subject": "ID0483786-DC/Si-D/IT-[Y2 / S1 313508370011] Check on Logs CRM:03276000216",
+            "body": "Dear\nRosita Abate,\nThank you for your time and cooperation regarding case\n0483786.\nWe have been working on your request, but in order to proceed further we require additional input from your side. As we did not receive the requested information, we are unable to continue the investigation and will now close this case.\nYou can submit a new request once the missing information is available via:\nwww.siemens.com/emobility-service-request\nWe appreciate your understanding.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-19T09:08:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45f4725b-7323-f111-8342-000d3ab12e50",
+            "subject": "Ticket 0483786 has been closed. How did we do? CRM:00225355124",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-19T09:09:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

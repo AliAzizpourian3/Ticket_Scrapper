@@ -1,0 +1,158 @@
+{
+    "incident_id": "15efaf05-8542-ef11-a316-000d3ab1340c",
+    "ticket_number": "0368870",
+    "title": "ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated",
+    "created_on": "2024-07-15T08:34:18Z",
+    "last_activity": "2025-12-16T14:07:25Z",
+    "age": "2990",
+    "description": "Reported behaviour/issue:\nCharging Session has been terminated with no reason (RFID card activation with backend connection)\nRoot cause:\nLocal\nauthorization is not enabled on this charger\nSolution: Answer provided\nOn DAMEX Sanctioned List: No\nWarranty Status: 12/07/2023 (No)",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "K5YipH",
+    "stage": null,
+    "serial_number": "MP / ND 170000126",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "59be3f00-8542-ef11-a316-000d3abae445",
+            "subject": "Charger K5YipH(170000126) - charging Session has been terminated with no reason(RFID card activation with backend connection)",
+            "body": "Hello colleagues,\nWe have unfortunate case were the CEO of Afcon electrical transportation was trying to charge is EV with no luck - Charger K5YipH(170000126) - charging Session has been terminated with no reason(RFID card activation with backend connection)\nPlease see time stamp\nBest Regards,\nItai Zitan\nSiemens Ltd.\nRC-IL SI DS S\nKannot Industrial Area\n70750 Gedera, Israel\nMobile: +972 53 8644306\nmailto:itai.zitan@siemens.com",
+            "date": "2024-07-15T08:34:11Z",
+            "extra": {
+                "sender": "itai.zitan@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aaf135a4-9842-ef11-a316-000d3a6964b9",
+            "subject": "A new case manager was assigned to 0368870 CRM:00225070000",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0368870 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=15efaf05-8542-ef11-a316-000d3ab1340c",
+            "date": "2024-07-15T10:54:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bfbc5eda-9942-ef11-a316-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 29 minutes and 14 seconds.",
+            "date": "2024-07-15T11:03:32Z",
+            "extra": {}
+        },
+        {
+            "id": "3310681e-9a42-ef11-a316-000d3a64c042",
+            "subject": "ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello ﻿Itai,﻿\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / ND 170000126\nChargerID/Serial No.\n:\nK5YipH\nProblem Description\n: Charging Session terminated\nTroubleshooting\n: Please allow us sometime to analyze this issue & will get back to you soon.\nFor future reference, your ticket number is\n0368870\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-15T11:05:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab431282-9a42-ef11-a316-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 minutes and 33 seconds.",
+            "date": "2024-07-15T11:08:05Z",
+            "extra": {}
+        },
+        {
+            "id": "6c538607-a542-ef11-a316-000d3a64c042",
+            "subject": "RE: ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello Itai,\nHope you are doing well.\nAs we have checked the logs & SCB backend where it is showing authentication failed due to OCPP was offline- for this charging session.\nAnd Controls if authorization at the OCPP backend is required to charge with this outlet\n. So, this is the reason\nthe charging session was interrupted. Logs attached below FYI please.\nIf you need any further assistance, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-07-15T12:23:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "275f3e41-ac42-ef11-a316-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 2 hours, 7 minutes and 9 seconds.",
+            "date": "2024-07-15T13:15:15Z",
+            "extra": {}
+        },
+        {
+            "id": "60dcaec5-c842-ef11-a316-0022489b9a7d",
+            "subject": "RE: ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello Itai,\nGreetings of the day!\nWhen we checked this charger logs, we found that local authorization is not enabled on this charger.\nBackend has to make all these highlighted parameters \"True\" and then he has to send list of all whitelisted RFID list through backend, Maximum supported length is 100.\nWhen we checked the list of whitelisted RFIDs, we did not find any because list is empty.\nThat's the reason the authorization did not happen when charger is offline.\nLet us know if this backend has already been integrated with Sicharge D or not, if not, need to do backend integration for more detailed troubleshooting. And the charger is also out of warranty.\nPlease let us know if you have any other queries or can we close this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-15T16:39:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "72ce7cc4-7443-ef11-a316-000d3abae445",
+            "subject": "RE: ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello ﻿Itai,\nHope you are doing well. We haven't heard back from you on ticket# 0368870 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-16T13:10:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f17c391-9d43-ef11-a316-000d3ab1340c",
+            "subject": "RE: ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello colleagues,\nI just received feedback from client, we are on the safe side and changes has been made by back end provider\nThank you for the support, you did great job! You can close the ticket\nBr,\nItai",
+            "date": "2024-07-16T18:02:37Z",
+            "extra": {
+                "sender": "itai.zitan@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1b18b795-9d43-ef11-a316-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 4 hours, 47 minutes and 28 seconds.",
+            "date": "2024-07-16T18:02:43Z",
+            "extra": {}
+        },
+        {
+            "id": "707fa016-2644-ef11-a316-000d3abae760",
+            "subject": "RE: ID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated CRM:00921000974",
+            "body": "Hello Itai,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0368870.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-17T10:19:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac3cce76-2644-ef11-a316-000d3abae445",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Answer Provided after 16 hours, 19 minutes and 53 seconds.",
+            "date": "2024-07-17T10:22:35Z",
+            "extra": {}
+        },
+        {
+            "id": "9fa66e8f-2644-ef11-a316-000d3abae445",
+            "subject": "Ticket 0368870 has been closed. Are you satisfied with our provided solution? CRM:00921000984",
+            "body": "Dear Itai,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0368870\nwith the title:\nID0368870-DC/Si-D/IL-[MP / ND 170000126] Charging Session terminated.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-17T10:23:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb8a2ecc-2644-ef11-a316-000d3abae445",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Answer Provided to Incident Solved Via Remote (L2) after 2 minutes and 17 seconds.",
+            "date": "2024-07-17T10:24:53Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "incident_id": "1744efc9-5534-4cf2-a945-eaa7829d3232",
+    "ticket_number": "0379375",
+    "title": "ID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02",
+    "created_on": "2024-09-13T09:57:44Z",
+    "last_activity": "2025-12-16T14:05:55Z",
+    "age": "78040",
+    "description": "Reported behavior\n/\nissue:\nWe only have 90 seconds between P01 --> P02 then we go to P00. Is there a reason for this?\nI think this is a big reason why we have a lot of failed charging attempts. Especially when using an external payment kiosk.\nI have tested some other chargers and they have the following times.\nABB Terra has 2 minutes.\nTesla has 2 minutes.\nAlpitronic hypercharger has 4 minutes.\nI think we should increase the timeout to at least 3 minutes, preferably 5 minutes.\nOne other thing is also that for this charger we have not selected any  authorization option because it uses a external payment kiosk.\nThis means when the customer selects an outlet on the screen then they will see an empty screen and this causes confusion.\nRoot cause:  R&D ticket created\nSolution: Update on a future FW version. As of now it's on R&D side - No need for Support tikcet.\nIssue reported on Ecog on ticket\nSASW-1562 (*Parallel topic)\nparameter “performanceTimeout” has the new default value 5 minutes\nplanned in 1.6.0 scope (SiD v6.2.0)\nCreated Jira Ticket EVC3-7066 requesting to display a message when no authorization method is selected on SCB.",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "0Ea2no",
+    "stage": null,
+    "serial_number": "MP / S3 170003435",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "2ce682a8-b671-ef11-a670-000d3ab02502",
+            "subject": "A new case manager was assigned to 0379375 CRM:00225095925",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0379375 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1744efc9-5534-4cf2-a945-eaa7829d3232",
+            "date": "2024-09-13T09:58:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c587774c-1672-ef11-a671-000d3ab26cb1",
+            "subject": "A new case manager was assigned to 0379375 CRM:00225096210",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0379375 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1744efc9-5534-4cf2-a945-eaa7829d3232",
+            "date": "2024-09-13T21:22:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7f7da3d-1c72-ef11-a671-7c1e5233f636",
+            "subject": "ID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02 CRM:00641000669",
+            "body": "Dear Mr.Magnus,\nThank you for reaching out to eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003435\nChargerID/Serial No.\n:\n0Ea2no\nProblem Description\n:\nTimeout P01 --> P02\nWe are sending this ticket to\nLouro Cardoso, Joao Francisco as per the mentioned not in the time.\nFor future reference, your ticket number is\n0379375\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-13T22:05:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bbaefbdc-1c72-ef11-a671-7c1e5233f636",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 12 hours, 11 minutes and 57 seconds.",
+            "date": "2024-09-13T22:09:43Z",
+            "extra": {}
+        },
+        {
+            "id": "8b66ae54-ed06-23d5-985a-3f64d7d03991",
+            "subject": "Case handed over from L2-->L3",
+            "body": "Problem Description:\nTimeout P01 --> P02\nCharger SW Version:\nV4.0.11\nReason for Handover (L3) :\nRC mentioned in the timeline\nPlease send this ticket to Louro Cardoso, Joao Francisco (SI E CS SD ES).",
+            "date": "2024-09-16T14:14:23Z",
+            "extra": {}
+        },
+        {
+            "id": "80c48b0c-3674-ef11-a670-000d3a65d428",
+            "subject": "A new case manager was assigned to 0379375 CRM:00225097038",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0379375 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1744efc9-5534-4cf2-a945-eaa7829d3232",
+            "date": "2024-09-16T14:14:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd7bf632-3674-ef11-a671-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 2 days, 16 hours, 6 minutes and 19 seconds.",
+            "date": "2024-09-16T14:16:01Z",
+            "extra": {}
+        },
+        {
+            "id": "35be42d0-8802-bd5d-bf83-5ddc7e5a12ea",
+            "subject": "Status update:",
+            "body": "I have informed RC about the increase timeout schedule for SiD v6.2.0. Pending feedback on ticket EVC3-7066 to inform RC.",
+            "date": "2024-10-25T16:17:51Z",
+            "extra": {}
+        },
+        {
+            "id": "584cde8a-469c-ef11-8a6a-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0379375 CRM:00225120063",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0379375 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1744efc9-5534-4cf2-a945-eaa7829d3232",
+            "date": "2024-11-06T13:53:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f69aa9ed-469c-ef11-8a69-7c1e5236c031",
+            "subject": "ID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02 CRM:00641000669",
+            "body": "Hi Magnus,\nI have checked the Jira ticket of R&D and there is not update so far since it's a low priority topic. The Product Champion left a note there today asking for feedback from R&D.\nWhat do you prefer to do here? Should we close the ticket and I will keep you updated since there is nothing we can do anymore?\nOr do you prefer that I assign this ticket to you?\nBest regards,\nFrancisco",
+            "date": "2024-11-06T13:56:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44ce0bb9-479c-ef11-8a6a-000d3ab4d5d3",
+            "subject": "Sv: ID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02 CRM:00641000669",
+            "body": "We can close the ticket. The information I got is that It will come in maybe fw6.2\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 6 november 2024 14:58\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02 CRM:00641000669\nHi Magnus,\nI have checked the Jira ticket of R&D and there is not update so far since it's a low priority topic. The Product Champion left a note there today asking for feedback from R&D.\nWhat do you prefer to do here? Should we close the ticket and I will keep you updated since there is nothing we can do anymore?\nOr do you prefer that I assign this ticket to you?\nBest regards,\nFrancisco",
+            "date": "2024-11-06T14:02:22Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "225ddce4-4b9c-ef11-8a69-7c1e5236c031",
+            "subject": "Ticket 0379375 has been closed. Are you satisfied with our provided solution? CRM:00315002012",
+            "body": "Dear Magnus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0379375\nwith the title:\nID0379375-DC/Si-D/SE [MP / S3 170003435] Timeout P01 --> P02\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-06T14:32:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "37e7f6ac-4c9c-ef11-8a69-7c1e5236c031",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Solved by R&D / Product Care after 51 days, 21 minutes and 42 seconds.",
+            "date": "2024-11-06T14:37:43Z",
+            "extra": {}
+        }
+    ]
+}

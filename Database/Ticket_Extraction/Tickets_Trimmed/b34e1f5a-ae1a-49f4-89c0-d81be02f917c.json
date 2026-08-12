@@ -1,0 +1,311 @@
+{
+    "incident_id": "b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+    "ticket_number": "0370319",
+    "title": "ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running",
+    "created_on": "2024-07-22T19:57:32Z",
+    "last_activity": "2025-12-16T14:07:14Z",
+    "age": "170873",
+    "description": "Reported behavior/issue:\nConnector stuck in Finishing mode\nRoot cause: FW Bug\nSolution: FW update to v6.0.x\nOn DAMEX Sanctioned List:\nSiemens Employee\nWarranty Status:\nActive (7tt sept. 2024)\n2024-23-07 : Notes from L2 to L3\nR&D Ticket\nR&D Ticket\nEVC3-6442\nand\nEVC3-6439\nJira Ticket ( If Any)\nEMOB-15360 | EMOB-15110\nEcoG Ticket (If Any)\n1949\nNotes from ES to NOC [ 15/11/2024]",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "1p1SHV",
+    "stage": null,
+    "serial_number": "MP / P9 170000984",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c36f63aa-6448-ef11-bfe2-0022489961b0",
+            "subject": "A new case manager was assigned to 0370319 CRM:00225073193",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0370319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+            "date": "2024-07-22T19:57:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e07f37c3-6848-ef11-bfe2-000d3adef1bc",
+            "subject": "A new case manager was assigned to 0370319 CRM:00225073199",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0370319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+            "date": "2024-07-22T20:27:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8f9a0b7-1de8-6db7-b777-2755bdf2f7a0",
+            "subject": "Issue:",
+            "body": "Location\n:\nAlexela Jõhvi\nReported behavior/issue:\nCustomer reported that the charger socket was stuck in “Finishing”-mode 5h 26min after user left from site. This causes “penalty fee” for users even if their car is not anymore connected. This happens also elsewhere in Estonia and users are complaining about penalty fee due to socket stuck. Please see attached images.\nI assume this is EcoG related FW issue? Do we have a fix for this?\nRoot cause:\nSolution:",
+            "date": "2024-07-22T20:27:53Z",
+            "extra": {}
+        },
+        {
+            "id": "9da33a16-977d-8f1f-b933-6a48bb377db0",
+            "subject": "Below OCPP logs timestamp is in Estonia time",
+            "body": "SCB logs from\n2024-07-16T08:55 to 2024-07-16T14:22",
+            "date": "2024-07-22T21:12:33Z",
+            "extra": {}
+        },
+        {
+            "id": "b99c03fa-6f48-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 21 minutes and 18 seconds.",
+            "date": "2024-07-22T21:18:51Z",
+            "extra": {}
+        },
+        {
+            "id": "f0154e07-7048-ef11-bfe2-0022489961b0",
+            "subject": "ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Hello Markus﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000984\nChargerID/Serial No.\n:\n1p1SHV\nProblem Description\n: Socket stuck in finishing - penalty fee running.\nTroubleshooting\n: We have analyzed the logs for the provided timestamp:\nThe charging session was stopped by pressing the Emergency Stop button when the State of Charge (SoC) was at 97%. However, Connector 3 remained stuck in the Finishing state instead of transitioning to the Faulted/Unavailable state until the emergency button was released. After releasing the emergency button, the charging session state changed to completed.\nWe are handing over this issue to our expert team, they will contact you shortly on this.\nFor future reference, your ticket number is\n0370319\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-22T21:19:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aec0523f-7348-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 23 minutes and 18 seconds.",
+            "date": "2024-07-22T21:42:10Z",
+            "extra": {}
+        },
+        {
+            "id": "22f0e06e-0dd8-ed02-856e-3a815e3437c3",
+            "subject": "Handover Note from L2 to ES",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nSocket stuck in finishing - penalty fee running\nAction Performed (L2) :\nLog analysis >>\nThe charging session was stopped by pressing the Emergency Stop button when the State of Charge (SoC) was at 97%. However, Connector 3 remained stuck in the Finishing state instead of transitioning to the Faulted/Unavailable state until the emergency button was released. After releasing the emergency button, the charging session state changed to completed.\nCharger SW Version:\nv3.2.8\nReason for Handover (L3) :\nDeeper analysis\nFault history :\nNA\nLog analysis with timestamp :\nSCB logs from 2024-07-16T08:55 to 2024-07-16T14:25\nAction Required\nAction by HQ : Deeper analysis\nAttachment\n: refer attached logs",
+            "date": "2024-07-22T21:50:11Z",
+            "extra": {}
+        },
+        {
+            "id": "bdbe6770-ca48-ef11-bfe2-6045bddf6876",
+            "subject": "A new case manager was assigned to 0370319 CRM:00225073417",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0370319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+            "date": "2024-07-23T08:06:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07bae734-584b-ef11-bfe2-000d3adef1bc",
+            "subject": "ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Hello,\nPlease add this also to the case\nSCB - Details (8SZY9F) (sicharge.technology)\nMP / P9 170000985\nLogs from SCB are in attachment\nDetails see below\nWith best regards,\nAnton Verner\nSiemens Osakeyhtiö Estonian Branch Office\nRC-FI SI E\nVaeike-Paala 1\n11415 Tallinn, Estonia\nMobile: +372 5213904\nmailto:anton.verner@siemens.com\nwww.siemens.com",
+            "date": "2024-07-26T14:06:18Z",
+            "extra": {
+                "sender": "anton.verner@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4f7505aa-364f-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 8 days, 14 hours, 34 minutes and 2 seconds.",
+            "date": "2024-07-31T12:16:11Z",
+            "extra": {}
+        },
+        {
+            "id": "c9a6f491-da4f-ef11-bfe2-0022489961b0",
+            "subject": "ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Hello,\nNew input from customer\nSee below\nRegards\nAnton",
+            "date": "2024-08-01T07:49:33Z",
+            "extra": {
+                "sender": "anton.verner@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8af60a99-da4f-ef11-bfe2-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 19 hours, 33 minutes and 29 seconds.",
+            "date": "2024-08-01T07:49:40Z",
+            "extra": {}
+        },
+        {
+            "id": "776227ca-e34f-ef11-bfe3-002248a44b33",
+            "subject": "RE: ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Good morning Anton,\nThank you very much for the further logs. I will analyze the root cause and bring the results to R&D. I will get back to you as soon as I have a feedback, or if I have findings for which R&D investigation is not needed.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-08-01T08:55:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df0c93f4-8554-ef11-bfe2-0022489e9c81",
+            "subject": "FW: ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Hello,\nForwarding customers status request\nBee email below.\nWith best regards,\nAnton Verner\nSiemens Osakeyhtiö Estonian Branch Office\nRC-FI SI E\nVaeike-Paala 1\n11415 Tallinn, Estonia\nMobile: +372 5213904\nmailto:anton.verner@siemens.com\nwww.siemens.com",
+            "date": "2024-08-07T06:26:21Z",
+            "extra": {
+                "sender": "anton.verner@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2d2fe0b9-9054-ef11-bfe3-000d3abae760",
+            "subject": "RE: FW: ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Good morning Anton,\nUnfortunately I did not receive a feedback from R&D yet, so I believe the root cause is still under analysis.\nI am escalating through SiCharge D Product Champion in order to have a faster resolution. I will keep you posted as soon as possible.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-08-07T07:43:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d04b6a09-9154-ef11-bfe3-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 5 days, 23 hours, 56 minutes and 3 seconds.",
+            "date": "2024-08-07T07:45:43Z",
+            "extra": {}
+        },
+        {
+            "id": "543ba688-2256-ef11-bfe3-002248a2f864",
+            "subject": "A new case manager was assigned to 0370319 CRM:00225081227",
+            "body": "Sambath KS was assigned as new Case Manager for case 0370319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+            "date": "2024-08-09T07:39:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ced3a6b-e18b-941d-af4c-4cd8a225e783",
+            "subject": "Status Update : 23/08/2024",
+            "body": "Planned to Discuss with Martin",
+            "date": "2024-08-23T03:44:00Z",
+            "extra": {}
+        },
+        {
+            "id": "f1460f7e-991d-4d55-b44d-76be17b2ed0f",
+            "subject": "Status Update :: 30/08/2024",
+            "body": "Discussed during the Refinement meeting (28/08/2024)\nAwaiting for the input from R&D",
+            "date": "2024-08-30T06:50:59Z",
+            "extra": {}
+        },
+        {
+            "id": "e5a5c03b-9c66-ef11-bfe2-6045bddf3b74",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 22 days, 23 hours, 5 minutes and 29 seconds.",
+            "date": "2024-08-30T06:51:12Z",
+            "extra": {}
+        },
+        {
+            "id": "71d078ce-a466-9ab7-b9d9-21787a3e0857",
+            "subject": "Status Update : 13/09/2024",
+            "body": "Discussed with Selmar and planned to discuss during the next refinement Meeting",
+            "date": "2024-09-13T05:48:37Z",
+            "extra": {}
+        },
+        {
+            "id": "85234d6d-eb1e-768d-9e10-d92c350d2168",
+            "subject": "Status Update : 20/09/2024",
+            "body": "Escalated to EcoG regarding the abnormal behavior after the emergency button press.\nStatus -→ In Progress",
+            "date": "2024-09-20T05:01:18Z",
+            "extra": {}
+        },
+        {
+            "id": "79351387-0d77-ef11-a670-7c1e52215614",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 20 days, 22 hours, 11 minutes and 23 seconds.",
+            "date": "2024-09-20T05:02:35Z",
+            "extra": {}
+        },
+        {
+            "id": "241780ce-6f48-3e1b-866b-7cee0e1c7eba",
+            "subject": "Status Update : 27/09/2024",
+            "body": "Unable to get update from EcoG as Weekily meeting did not occurred | Parallel Global call",
+            "date": "2024-09-27T03:41:55Z",
+            "extra": {}
+        },
+        {
+            "id": "a12ed7f8-8f8f-397f-99ad-32193b769a6e",
+            "subject": "Status Update : 04/10/2024",
+            "body": "Unable to get update from EcoG as Weekily meeting did not occurred | Holiday in Germany",
+            "date": "2024-10-04T04:00:54Z",
+            "extra": {}
+        },
+        {
+            "id": "30561387-d781-a8e8-89b3-28e57d401016",
+            "subject": "Status Update : 18/10/2024",
+            "body": "Awaiting for R&D update",
+            "date": "2024-10-18T03:32:54Z",
+            "extra": {}
+        },
+        {
+            "id": "e2052778-fd39-0c6e-9256-2166835bca5f",
+            "subject": "Status update",
+            "body": "Reason for stuck\nIssue does not seems to be a bug, but rather a problem with Chademo → Chademo cannot send a disconnect by default.  There is a parameter for this in SCB",
+            "date": "2024-10-25T04:22:49Z",
+            "extra": {}
+        },
+        {
+            "id": "273f062d-a146-e9e1-bc9c-fe82d57c87d8",
+            "subject": "Status Update : 08/11/2024",
+            "body": "Fix version -→ v6.0.0\nPlanned to have a discussion with R&D to understand the root cause and how its going to be mitigated",
+            "date": "2024-11-08T05:24:49Z",
+            "extra": {}
+        },
+        {
+            "id": "577e9b4a-20a3-ef11-8a6a-002248a2b1bd",
+            "subject": "RE: FW: ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00797001116",
+            "body": "Dear Markus,\nI hope all is well with you. As we discussed yesterday, the issue is already addressed by FW v 6.0.x, which is going to be released by CW 02 - 2025, I am proceeding to close the ticket.\nThank you very much for being understanding and patient.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-11-15T07:07:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12dfac92-13b5-61d5-ab4b-ecf5008f34bd",
+            "subject": " Notes from ES to NOC [ 15/11/2024]",
+            "body": "a) Problem Description\n:\nSocket stuck in finishing\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed:\nFW need to update to v6.0.x\nd) Charger SW Version\n: v4.0.11\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-11-15T07:54:57Z",
+            "extra": {}
+        },
+        {
+            "id": "a98c2a6a-29a3-ef11-8a69-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0370319 CRM:00225124823",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0370319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b34e1f5a-ae1a-49f4-89c0-d81be02f917c",
+            "date": "2024-11-15T08:12:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f749b94-a2a5-ef11-b8e8-6045bddf8bef",
+            "subject": "ID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running CRM:00579001315",
+            "body": "Hello Markus,\nWith reference to trailing mail, we will be proceeding with closing the service ticket# 0370319.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-18T11:45:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca26f1fb-a2a5-ef11-b8e8-6045bddf8bef",
+            "subject": "Ticket 0370319 has been closed. Are you satisfied with our provided solution? CRM:00579001316",
+            "body": "Hello Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0370319\nwith the title:\nID0370319-DC/Si-D/EE-[MP / P9 170000984] -Socket stuck in finishing - penalty fee running\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-18T11:48:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

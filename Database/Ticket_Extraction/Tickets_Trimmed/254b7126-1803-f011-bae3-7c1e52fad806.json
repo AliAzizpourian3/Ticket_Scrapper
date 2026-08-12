@@ -1,0 +1,90 @@
+{
+    "incident_id": "254b7126-1803-f011-bae3-7c1e52fad806",
+    "ticket_number": "0413085",
+    "title": "ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available",
+    "created_on": "2025-03-17T10:11:21Z",
+    "last_activity": "2025-03-18T14:41:02Z",
+    "age": "1710",
+    "description": "Reported behavior/issue:\nSystem no longer available\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nno\nWarranty Status:\nOut of warranty since 9/1/2024",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "jZrCsy",
+    "stage": null,
+    "serial_number": "MP / N9 160381803",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "e8a6cf27-1803-f011-bae3-7c1e5287f582",
+            "subject": "Webform_incident_SiCharge D_17-03-2025_SN: MP/N9160381803ERK",
+            "body": "Dear Tom Rehfeld,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/N9160381803ERK\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tom Rehfeld,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/N9160381803ERK\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-17T10:11:15Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "835a3b1d-2503-f011-bae2-000d3ad990ba",
+            "subject": "ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available CRM:00579001593",
+            "body": "Dear Tom Sebastian,\nThank you for reaching out to eMobility Support. We acknowledge the receipt of your inquiry regarding System no longer available. Rest assured that a regional representative will promptly contact you to provide further information.\nBelow, you will find the relevant asset details:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / N9 160381803\nCharger ID/Serial No.:\njZrCsy\nProblem Description:\nSystem no longer available\nFor future reference, your case number is\n0413085\n. Please refer to this number in all further communication related to this issue.\nWe appreciate your time and patience.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-03-17T11:44:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c35718b-5a03-f011-bae2-000d3ad990ba",
+            "subject": "RE: ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available CRM:00579001593",
+            "body": "Dear Tom Sebastian,\nGreetings of the day!\nRegarding the previous email, could you please clarify what you mean by 'System no longer available'?\nPlease let us know the exact issue you are facing so we can analyze the problem more effectively. If possible, provide us with the specific timestamp.\nBecause we checked the logs and found that the charger is available on both backends, and there were successful charging sessions on both outlets.\nLooking forward to your response.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T18:06:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a6a19255-4451-8206-9756-80bb195b286e",
+            "subject": "Analysis",
+            "body": "Sun, 16 Mar 2025 16:54:47 GMT\n2025-03-16, 16:54:46\n2025-03-16T16:54:46.914252+00:00 swcpu [user:debug] [4021] [DCC] DC1: PilotState \"A\" --> \"E\"\nSun, 16 Mar 2025 16:54:47 GMT\n2025-03-16, 16:54:46\n2025-03-16T16:54:46.898999+00:00 swcpu [user:debug] [4021] [VTL] DC1: Voltage transducer log event, Reading: 0V, OGCAuxFbk: off, PilotState: E, ChargingPhase: P00, DCstatus: NotReady, CGpMaxVoltsNow: 0V, CGpUsedBy: None(idle), CGallotted: 0\nSun, 16 Mar 2025 16:54:47 GMT\n2025-03-16, 16:54:46\n2025-03-16T16:54:46.023245+00:00 sicharge-cp [local0:info] sicharge-cp-backend/542faafb8853[737]: PLC-Error-Flag 'Outlet_DC1_codes' changed from false - ('DC1 Errorcode:0') to true - ('DC1 Errorcode:7.4')\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:46\n2025-03-16T16:54:46.022490+00:00 sicharge-cp [local0:info] sicharge-cp-backend/542faafb8853[737]: PLC-Error-Flag 'Converter_Group_DC1' changed from false - ('CG okay') to true - ('switching matrix fault')\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.966075+00:00 swcpu [user:debug] [4021] [ONR] DC1 : Outlet not ready - primary converter group has error, reason: One or more connected SMC have feedback faults\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.950697+00:00 swcpu [user:debug] [4021] [DCC] DC1: StatusCode \"READY\" --> \"NOT_READY\"\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.935118+00:00 swcpu [user:debug] [4021] [VTL] DC1: Voltage transducer log event, Reading: 0V, OGCAuxFbk: off, PilotState: A, ChargingPhase: P00, DCstatus: NotReady, CGpMaxVoltsNow: 16V, CGpUsedBy: None(idle), CGallotted: 0\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.919964+00:00 swcpu [user:debug] [4021] [SCO] SMC[0]: MG1-MG2_QA09-10, COMMAND: off, FEEDBACK: on, BLOCKING: no, OPRSTATE: AbNormal(on FBK while off), CHRGOPRMODE: 6, CTRL_DC_UNIT:\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.904660+00:00 swcpu [user:debug] [4021] [CGA] |T2|DPA.PwrRealign|0 0 0 0|CG.PreChrgReq|0 0 0 0|CG.MaxPwr|000 080 000 000|EV.Conn|0 1 0 0|EV.MaxPwr|000 162 000 000|DPA.cTyp|0 1 0 0|DPA.rPwr|000 080 000 000|DPA.aSrc|00 01 00 00|SMC.Req|0 0 0 0|\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.889497+00:00 swcpu [user:debug] [4021] [CGA] |T1|CG.UseID|000 002 000 000|CG.Share|E004 00 E005 E006|DCx.ChrgPh|00 06 00 00|DCx.Pilot| A C2 A A|DCx.SMbyp|1 0 1 1|OGC.Fbk|0 1 0 0|SMC.Fbk|2 0 0 0|DPA.aPwr|000 080 000 000|EV.TarPwr|000 053 000 000|DPA.Opt|0N 3E 0N 0N|\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.873919+00:00 swcpu [user:debug] [4021] [DES] [00061] SMC_MG1_MG2: Feedback Error States Info - Command: Yes, Feedback: No, WasBlocked: No, RetryBlocked: No, RetriesDone: Yes\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.858193+00:00 swcpu [user:debug] [4021] [DES] [00060] SMC_MG1_MG2: FeedbackErrorActive = True\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.842616+00:00 swcpu [user:debug] [4021] [DES] [00059] MG1: Error Info - IDVal: 0, IDMiss: 0, CoolErr: 0, MinConvErr: 0, NoFastShut: 0, DispErr: 0, DirOGCweld: 0, AdjOGCSMCweld: 0, VtransFlt: 0, SMCfbkErr: 1 (Code 2)\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.827283+00:00 swcpu [user:debug] [4021] [DES] [00058] MG1: ErrorActive = True\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.811698+00:00 swcpu [user:debug] [4021] [CEL] MG1: Error set - Converter group has one or more connected SMC in feedback fault, ErrorCode: 2, Reason: CG at one end of faulty SMC is allotted to that outlet in CGp role, hence this CG is deactivated, CG Last used by: None\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.806290+00:00 sicharge-cp [local0:info] sicharge-cp-backend/542faafb8853[737]: PLC-Error-Flag 'DC_Contactor_MG1-MG2_QA9-10' changed from false - ('coontactor ok') to true - ('coontactor stuck at ON feedback')\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.795306+00:00 swcpu [user:debug] [4021] [CEL] MG1: Converter Group summary error flag set hence it would be de-activated, CG.ErrorActive=true, refer other logs for more info\nSun, 16 Mar 2025 16:54:46 GMT\n2025-03-16, 16:54:45\n2025-03-16T16:54:45.779259+00:00 swcpu [user:debug] [4021] [EFT] PLC Error Flag value: false->true, Name: DC_Contactor_MG1-MG2_QA9-10, Description: coontactor stuck at ON feedback",
+            "date": "2025-03-17T18:15:48Z",
+            "extra": {}
+        },
+        {
+            "id": "2f3ca028-ba03-f011-bae3-7c1e52768372",
+            "subject": "AW: ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available CRM:00579001593",
+            "body": "Charger get fixed on is own, so you can close the case\nHamburg Verkehrsanlagen GmbH, Amtsgericht Hamburg – HRB 111080\nGeschäftsführer: Volker Rech, Harald Dinger\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 17. März 2025 19:15\nAn:\nRehfeld Tom Sebastian (HHVA S2) <TomSebastian.Rehfeld@hhva.de>\nCc:\nservice-emobility.si.de@siemens.com; Salamon, Marius <marius.salamon@siemens.com>\nBetreff:\nRE: ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available CRM:00579001593\nAchtung:\nDiese Nachricht kommt von einem\nEXTERNEN ABSENDER\n- seien Sie unbedingt\nVORSICHTIG\n, insbesondere bei enthaltenen Links, angefügten Anhängen oder kritischen Anweisungen.\nDear Tom Sebastian,\nGreetings of the day!\nRegarding the previous email, could you please clarify what you mean by 'System no longer available'?\nPlease let us know the exact issue you are facing so we can analyze the problem more effectively. If possible, provide us with the specific timestamp.\nBecause we checked the logs and found that the charger is available on both backends, and there were successful charging sessions on both outlets.\nLooking forward to your response.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T05:30:54Z",
+            "extra": {
+                "sender": "tomsebastian.rehfeld@hhva.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "74f85b32-0604-f011-bae3-000d3ad97a58",
+            "subject": "ID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available CRM:00579001596",
+            "body": "Dear Tom Sebastian Rehfeld,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0413085, the case is now closed.\nProblem Description\n: System no longer available\nResolution\n:\nCharger got fixed on its own.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-18T14:35:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ceb79a0-0604-f011-bae3-000d3ad97a58",
+            "subject": "Ticket 0413085 has been closed. Are you satisfied with our provided solution? CRM:00579001597",
+            "body": "Dear Tom Sebastian,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0413085\nwith the title:\nID0413085-DC/Si-D/DE-[MP / N9 160381803] System no longer available\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-18T14:38:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "incident_id": "4663791a-c2e3-f011-8544-7ced8d425bfe",
+    "ticket_number": "0469614",
+    "title": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue",
+    "created_on": "2025-12-28T07:52:10Z",
+    "last_activity": "2026-01-07T11:38:03Z",
+    "age": "14626",
+    "description": "Reported Behaviour/ Issue: DC Contactor Issue",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "q1Mu9c",
+    "stage": "Resolved",
+    "serial_number": "MP / P4 170000447",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "785f150d-c2e3-f011-8544-7c1e523628c9",
+            "subject": "DC Contactor Problem- 170000447",
+            "body": "Hello Team,\nI would appreciate your request for your inspection at the next charging station, whether the existing fault is QFeedback 2303, indicating a DC Contactor problem.\nI am attaching the details from the station; I would be happy If you can check whether this is QFeedback.\nError flag from SCB:\nDeeper Logs:\nBest regards,\nOrel Lachiani\nGSW Integration Engineer & E-Mobility Expert\nRC-IL SI EA S PA\nKannot Industrial Area\n70750 Gedera, Israel\nMobile: +972 52 5309923\nMailto:Orel.lachiani@siemens.com\nhttps://siemens-si.forms-wizard.biz/users/new\nלהרשמה לכנס \"בונים עתיד חכם\" -",
+            "date": "2025-12-28T07:51:44Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3043d981-c2e3-f011-8544-7c1e52880288",
+            "subject": "A new case manager was assigned to 0469614 CRM:00225310248",
+            "body": "Sumit Kumar was assigned as new Case Manager for case 0469614 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4663791a-c2e3-f011-8544-7ced8d425bfe",
+            "date": "2025-12-28T07:55:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "174bccc6-c2e3-f011-8544-7c1e52880288",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03055000471",
+            "body": "Dear\nOrel\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / P4 170000447\nChargerID\n: q1Mu9c\nProblem Description\n: DC Contactor Issue\nFor your reference, this support request has been assigned the following case number:\n0469614\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-28T07:56:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d7fe101-89e4-f011-8544-7c1e523628c9",
+            "subject": "A new case manager was assigned to 0469614 CRM:00225310454",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0469614 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4663791a-c2e3-f011-8544-7ced8d425bfe",
+            "date": "2025-12-29T07:35:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc32085d-2cf0-5576-b211-63cf7174bcbd",
+            "subject": " firmware bug",
+            "body": "Suspected Root Cause :\nThe problem is related to a firmware bug.\nProblem Description :\nAfter checking the error flags, we can see that the same error flag reported by Francisco appears, which is related to the firmware bug.\nAction Performed (L2) :\nCharger FW Version:\nv8.1.4-0-g5b0f2d0\nReason for Handover (L3) :\nFault history :\nLog analysis with timestamp :\nAttachement\n:",
+            "date": "2025-12-29T09:21:26Z",
+            "extra": {}
+        },
+        {
+            "id": "f81c7482-1c7a-548d-846c-73c6cf989615",
+            "subject": "NOTE FROM L3",
+            "body": "RC is asking for DC2 QA13-14 error not Meter_BC5_AC_Charging error.\nCheck the timeframe he provided, this is typical replace contactor.\nIf there was a parallel session, e.g, it was charging DC2 and someone went to charge DC1 and we get CMD=ON and FBK=OFF right after, then it's replace it.\nIf the error is just there, then you need to check if the Voltage Transducer is reading correctly, after ~15V in the output of QA13-14 the error is triggered as FBK=ON (when in idle or one charging session only), in this case, the easiest is to check the XDsomething loose connector and try swapping TF1 with TF2, if the error persists in the same, then it's possible that the transducer needs replacement, if it's in the working one then it's something on that circuit.",
+            "date": "2025-12-29T14:14:59Z",
+            "extra": {}
+        },
+        {
+            "id": "1eb4dad9-c0e4-f011-8544-7c1e52880b1b",
+            "subject": "A new case manager was assigned to 0469614 CRM:00225310725",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0469614 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4663791a-c2e3-f011-8544-7ced8d425bfe",
+            "date": "2025-12-29T14:15:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66aa0088-c2e4-f011-8544-7c1e52880b1b",
+            "subject": "A new case manager was assigned to 0469614 CRM:00225310734",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0469614 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4663791a-c2e3-f011-8544-7ced8d425bfe",
+            "date": "2025-12-29T14:27:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cb81594a-d3e4-f011-8544-7c1e523625c2",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0469614\n﻿from the Technical Support to the eMobility RC-IL SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P4 170000447\nCharger ID / Serial No.:\nq1Mu9c\nCharger address/functional location:\nPriority:\nMedium\nHandover reason:\nFollowing the report and after our checks, we confirmed that the problem is related to QA 13 -14. After reviewing the logs, as shown in the screenshot, QA 13-14 do not provide feedback when they receive the command. Because of this, we need to proceed with a replacement.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-IL SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-29T16:27:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3ebc7e1-fde6-f011-8544-7c1e52880b1b",
+            "subject": "RE: ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Hello Younes,\nI am returning the ticket because I asked if this is QFeedback as I listed. If it is QFeedback, we can file a warranty claim, so I am asking if this is what it is.\nBest regards,\nOrel",
+            "date": "2026-01-01T10:37:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ef0a1ed-fde6-f011-8544-7ced8d425b04",
+            "subject": "A new case manager was assigned to 0469614 CRM:00225311465",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0469614 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4663791a-c2e3-f011-8544-7ced8d425bfe",
+            "date": "2026-01-01T10:38:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d5f013b-fee6-f011-8544-7ced8d425b04",
+            "subject": "RE: ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Hello Younes,\nI am returning the ticket because I asked if this is QFeedback as I listed. If it is QFeedback, we can file a warranty claim, so I am asking if this is what it is.\nBest regards,\nOrel",
+            "date": "2026-01-01T10:40:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8fdf25dd-1eea-f011-8543-7ced8d425658",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03055000471",
+            "body": "Dear\nOrel\n,\nCould you please confirm if we can close this ticket?\nthe issue is out of warranty, so it is no longer covered by our support.\nThank you for your confirmation.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-05T10:11:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c6619e1-32ea-f011-8544-7ced8d4259cd",
+            "subject": "RE: ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03055000471",
+            "body": "Dear Younes,\nPlease note what I sent as soon as I opened the ticket and in my last email.\nI want to know if this is Qfeedback according to the details I sent.\nIf it is Qfeedback, it is possible to file a warranty claim for the spare parts even if the warranty for the charging station has expired.\nLooking forward to your reply\nBr,\nOrel",
+            "date": "2026-01-05T12:34:38Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0956ad9b-e0ea-f011-8544-7c1e523628c9",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Dear Orel,\nthe issue is out of warranty, so it is no longer covered by our support.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-06T09:18:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fae64016-f0ea-f011-8544-7c1e523628c9",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Dear Service Coordinator / RC,\nAfter our review of the files, we can confirm that this is part of the Q feedback, and you may proceed with replacing the contactor.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-06T11:09:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c59ccc1b-10eb-f011-8544-7c1e523622b6",
+            "subject": "RE: ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000308",
+            "body": "Dear Younes,\nMany thanks, we can close this ticket.\nBest regards,\nOrel",
+            "date": "2026-01-06T14:58:12Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "99f3f3a2-bceb-f011-8544-7ced8d4258c6",
+            "subject": "ID0469614-DC/Si-D/IL-[MP / P4 170000447] DC Contactor Issue CRM:03042000353",
+            "body": "Dear\nOrel Lachiani\nI would like to inform you that your support case\n0469614\nhas been resolved.\nHere is a summary of the actions taken:\n[Briefly describe what was done, e.g. “Updated the configuration settings to restore functionality.”]\n[Add any important details or follow-up instructions if needed.]\nSince the reported issue has been resolved, I will proceed to close this case.\nThank you for your cooperation, and please don’t hesitate to reach out through our support form for any future requests:\nwww.siemens.com/emobility-service-request\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-07T11:33:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

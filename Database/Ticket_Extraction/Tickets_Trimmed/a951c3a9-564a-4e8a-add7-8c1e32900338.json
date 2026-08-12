@@ -1,0 +1,31 @@
+{
+    "incident_id": "a951c3a9-564a-4e8a-add7-8c1e32900338",
+    "ticket_number": "0420338",
+    "title": "ID0420248-DC/Si-D/NZ-[Y2 / R5 313059216001]Charger is offline (C1)",
+    "created_on": "2025-04-23T07:07:17Z",
+    "last_activity": "2025-12-02T08:38:08Z",
+    "age": "41955",
+    "description": "Reported Issue: Charger is offline for OCPP. Can you check it is online for SCB and do a remote restart if possible\nSolution: N/A\nUnable to recreate",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "5nlchV",
+    "stage": null,
+    "serial_number": "Y2 / R5 313059216001,Y2 / R5 313059216001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b517deda-e42e-db90-8ba8-e584dcd4d1d9",
+            "subject": "Notes for ES",
+            "body": "Problem Description: OCPP Offline\nAction Performed: Analyzed logs in SCb and AWS\nCharger SW Version: v6.0.3\nReason for Handover: Possible defect, after trip line from ELMS, charger rebooted, and OCPP service didn;t start. After reboot the charger was connected on SCB, however only logs were visible and no Error flags, or router password could be fetched\nFault history: Charger is connected with BESS and ELMS, had an active case of missing meterstop due to power loss\nType of Installation: Old\nRecurrence of fault: Once\nWhen does faut occurs: after reboot\nSee below analysis :\n2025-04-22T15:56:00.885596+00:00 swcpu [user:debug] [4021] [ELM] ELMS -> SICHARGE (control): Trip Line ok = true\nAfter this charger rebooted, however charger should not have rebooted.\n2025-04-22T16:01:33.741524+00:00 sicharge-cp [daemon:info] router-update.sh[735]: router2 update: already up to date (RUT2_R_00.07.06.3)\nAfter this there was no OCPP service logs observed in SCB/AWS until 2025-04-23T02:28:00.0\n2025-04-22T16:02:29.305200+00:00 swcpu [user:debug] [4021] [GRP] DC1: Converters grouped 2 / 8 -> Converters[3].Adr = 4\nCharger lost connection to SCB and was recovered after 3 min,\nCharger rebooted:\n2025-04-23, 02:25:48\nOCPP services was started at after reboot\n2025-04-23T02:25:48.690715+00:00 sicharge-cp [kern:info] kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.158-cip22-rt9+ind4 root=UUID=311ad1cf-4f3f-4a21-8191-530e09dd16ca ro fbcon=rotate:1 dis_ucode_ldr cpuidle.off=1 quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0\n2025-04-23T02:28:00.003858+00:00 sicharge-cp [local0:info] sicharge-cp-backend/36515aa64f5b[730]: [runMobileConnectionWatchdog] START OCPP Connection Watchdog {\"routerIp\":\"10.20.17.2\"}\nSuspect:OCPPservices was not running after reboot at 22/4/25 16:01:00 UTC\nLogs are attached in parent case",
+            "date": "2025-04-23T07:14:51Z",
+            "extra": {}
+        },
+        {
+            "id": "b2c38786-f666-d3df-91a2-256826817858",
+            "subject": "Unable to re-create",
+            "body": "Closing case as unable to re-create the issue",
+            "date": "2025-05-22T06:34:27Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,288 @@
+{
+    "incident_id": "13266273-2ad9-447e-acde-e8f272e42c08",
+    "ticket_number": "0402537",
+    "title": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge",
+    "created_on": "2025-01-28T09:43:04Z",
+    "last_activity": "2026-01-20T13:02:15Z",
+    "age": "42205",
+    "description": "Reported behaviour/issue:\nCharging stopped at P04_Pre_Charge\nRoot cause:\nCharger issue\nSolution:\nUpdate EcoG to 1.4.11\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nR&D ticket: EVC3-8576\nUpdate 17/Feb/2025 - Installed hotfix for bucVuF\nUpdate 19/Feb/2025 - Installed hotfix in\n63EuY4 and BAobBx",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "64n1W8",
+    "stage": null,
+    "serial_number": "MP / S0 170004169",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "206d6a45-5cdd-ef11-8ee9-002248a0b76d",
+            "subject": "A new case manager was assigned to 0402537 CRM:00225154613",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0402537 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=13266273-2ad9-447e-acde-e8f272e42c08",
+            "date": "2025-01-28T09:43:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ccf46b5c-5cdd-ef11-8eea-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0402537 CRM:00225154615",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0402537 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=13266273-2ad9-447e-acde-e8f272e42c08",
+            "date": "2025-01-28T09:43:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aaf93f6d-2cde-ef11-8eea-000d3ab9a120",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Toggling between B1-B2-E and charging did not start until cable was unplugged. CRM:00315002300",
+            "body": "Dear Markus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S0 170004169\nChargerID/Serial No.\n:\n64n1W8\nProblem Description\n: Charging sessions are stopping during PreCharge\nTroubleshooting\n: I have checked the EcoG logs and it seems the PreCharge response is not reaching properly or getting ignored somehow. I have created a ticket to EcoG for further investigation.\nFor future reference, your case number is\n0402537\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-29T10:33:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "29d03479-19e2-ef11-8eea-000d3a68cce9",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hello guys, good morning.\nRegarding this topic of failing charging sessions during PreCharge here is the latest reply from EcoG.\n“\nThe log message about “Error setting TCP_QUICKACK” is pointing to a sudden closing of the TCP connection from EV side.”\nPlease let me know when you find this error to have the customer not charge so that I can just gather a few logs. In AWS you can search for P04_PreCharge → P00_Unknown\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-03T10:27:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3726f7df-73e4-ef11-8eea-0022489bcff4",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hello Simen, good afternoon.\nI have discussed with EcoG and I forwarded all the information regarding our logs for them to check again.\nBut from my side I have a request. It seems that after 31th Jan we haven't got this error again, ist it possible that the buses had any firmware update that we were not aware?\nPlease check this information.\nThank you.\nBest regards,\nFrancisco",
+            "date": "2025-02-06T10:19:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a330923-75e4-ef11-8eea-000d3ab11939",
+            "subject": "Automatic reply: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Dear sender,﻿\n﻿\nI am currently hosting a training, i will return 07.02\nFor emobility support please reach out to my\ncolleagues\n:\nemobilitynordic.si@siemens.com\nWith best regards,\nSimen Aarre\n+47 97424543\nSiemens AS\nRC-NO SI E\nSluppenvegen 23\n7037 Trondheim, Norway\nmailto:simen.aarre@siemens.com\nwww.siemens.no\nSiemens AS. Headquarter: Oestre Aker Vei 88, PO Box 1, NO-0613 Oslo. ORG NR 923 009 108 MVA.\nImportant. This e-mail is intended exclusively for the addressee(s), and may not be forwarded or made available for use to any person other than the addressee(s). If you are not the intended recipient, please notify the sender thereof and destroy/delete the message. The sender disclaims any liability as regards (the content of) this e-mail.",
+            "date": "2025-02-06T10:28:45Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2fb19935-80e4-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi,\nI know Solaris have been on site and performed some testing yesterday and today.\nNot aware if any updates have been made. I have forwarded all the findings from the testing to Catalina.\nI can send you the report also.\n/Simen",
+            "date": "2025-02-06T11:48:04Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8f5542f4-80e4-ef11-9341-000d3adecb49",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Simen,\nThanks for the feedback, but is this related to the charger in our ticket? 170004169 - 64n1W8?\nBest regards,\nFrancisco",
+            "date": "2025-02-06T11:53:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "623585d9-98e4-ef11-8eea-000d3a67d7cb",
+            "subject": "RE: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "I don’t think the reason they are testing is directly related to this topic.\nSolaris informed me that after we did an integration test this summer Catalina had some findings we wanted to bring to Solaris.\nSomeone in Siemens centrally and Solaris have had some dialog after the test, and they wanted to do some testing on site.\nI have forwarded the findings they had so let’s see what the outcome will be.\nBut a question from my side, is this ticket/error the reason Depo 360 see chargers “stuck in preparing”?\nThey notify the costumer every time they see this fault and the costumer/D360 is now digging why they see charger getting stuck in preparing.\nI have never seen it live myself but according to D360 its happening a lot.\n/Simen",
+            "date": "2025-02-06T14:44:29Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "35ba15e0-9ce4-ef11-8eea-000d3a67d7cb",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Simen,\nIf there is already discussion with Catalina then I am not aware, I will check with her tomorrow in our daily call.\nFor the chargers that are stuck in preparing, I am not sure since I don't proactively check the chargers, I would recommend to use AWS and confirm the timestamps of these occurrences and align with the P04→P00. But from what I checked, after the P04→P00, they usually try charging again for a few more times, so I don't think it's stuck in preparing otherwise it wouldn't go through CableCheck.\nBest regards,\nFrancisco",
+            "date": "2025-02-06T15:13:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a398c75-a0e4-ef11-8eea-000d3addcd64",
+            "subject": "RE: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Thanks Francisco.\nAs I mentioned on teams I think a lot of noise will come from D360 team and the Unibuss depo in the coming weeks.\nNOC from D360 is monitoring all the chargers 24/7 and will report internally and to the costumer.\nThey have this proactive monitoring service and basically just spams the costumer with all the faults they see..\n/Simen",
+            "date": "2025-02-06T15:38:50Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "219c8eaf-9e47-4677-b51f-786cdd857323",
+            "subject": "Charger 64n1W8 P04 -> P00",
+            "body": "2025-02-10T11:40:26.624411+00:00 swcpu [user:debug] [4021] [DCC] DC2: Charging Phase \"P04_PRE_CHARGE\" --> \"P00_UNKNOWN\"\n64n1W8-logs.csv",
+            "date": "2025-02-10T12:25:30Z",
+            "extra": {}
+        },
+        {
+            "id": "139428a4-b4e7-ef11-9341-000d3a655e87",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi guys,\nIt seems we found the root cause for this, it's on our charger, apparently it's not giving the Requested Voltage on the right time (7sec) we see these drops after always 7sec and the NowVol ≠ TarVol.\nAs such I will create a ticket to R&D for analysis.\nThank you\nBest regards,\nFrancisco",
+            "date": "2025-02-10T13:40:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e6d1c278-bfe7-ef11-9341-002248a28911",
+            "subject": "RE: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi, good that you found the root cause!\nUnfortunately, it’s in our charger.. was hoping the bus was the issue haha.\nLet hope there is a quick fix.\n/Simen",
+            "date": "2025-02-10T14:58:32Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "97ca7c57-21e9-ef11-9342-6045bdde1b10",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi guys,\nQuick feedback that we applied EcoG layer 1.4.11 to charger T241QR and see how it behaves regarding this PreCharge voltage.\nI will be monitoring the chargers and bring you results.\nBest regards,\nFrancisco",
+            "date": "2025-02-12T09:11:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45a62e6c-37e9-ef11-9342-0022489fb3e7",
+            "subject": "RE: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Thak you Francisco, lets hope for some positive results.\n/Simen",
+            "date": "2025-02-12T11:49:36Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "292d0222-22ed-ef11-9342-6045bdde1b10",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Just to update the ticket:\nSince I updated the charger with version 1.4.11 on 12th Feb, until now, there were 105 successfull sessions and 0 PreCharge errors.\nFor now, as we agreed, I will install the same hotfix in bucVuF since it's the next charger with the most occurrences at 3pm my time.\nBR,\nFrancisco",
+            "date": "2025-02-17T11:27:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "903f9d23-4aed-ef11-9341-002248a2968e",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Simen,\nbucVuF updated as we aligned. I will monitor the charger and bring you news.\nThank you.\nBR,\nFrancisco",
+            "date": "2025-02-17T16:13:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56e7197e-6aef-ef11-9341-7c1e527622e8",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hello colleagues, good morning. I hope you are doing well.\nJust a quick feedback regarding this topic of the failures during PreCharge that lead to some occurrences of “Stuck in Preparing”. I applied a hotfix on 3 chargers\nT241QR|bucVuF|64n1W8\nAnd everything looks completely okay, there hasn't been this error since then.\nWould you like me to apply this hotfix for all the chargers? I need your permission since this is an experimental upgrade, so it hasn't been tested in more than 10 chargers. If you rather, we can keep doing it like I've been doing so far with Simen, update 1, check for 1 week and keep doing until every charger has the update.\nLet me know your feedback.\nThanks a lot!\nBest regards,\nFrancisco",
+            "date": "2025-02-20T09:10:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c73f664-6def-ef11-9341-000d3ab1a06e",
+            "subject": "AW: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Francisco,\nwhen was the Hotfix applied? We should have some days of monitoring the chargers before a rollout to whole depot.\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 20. Februar 2025 10:14\nAn:\nAarre, Simen (RC-NO SI E) <simen.aarre@siemens.com>; Kuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>; J, Melba Suji (FT D IN SGI DET MAS EA) <melba.suji@siemens.com>\nBetreff:\nID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313\nHello colleagues, good morning. I hope you are doing well.\nJust a quick feedback regarding this topic of the failures during PreCharge that lead to some occurrences of “Stuck in Preparing”. I applied a hotfix on 3 chargers\nT241QR|bucVuF|64n1W8\nAnd everything looks completely okay, there hasn't been this error since then.\nWould you like me to apply this hotfix for all the chargers? I need your permission since this is an experimental upgrade, so it hasn't been tested in more than 10 chargers. If you rather, we can keep doing it like I've been doing so far with Simen, update 1, check for 1 week and keep doing until every charger has the update.\nLet me know your feedback.\nThanks a lot!\nBest regards,\nFrancisco",
+            "date": "2025-02-20T09:31:06Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "364bcbbe-6eef-ef11-9342-000d3aba081f",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Benjamin,\nFor T241QR it was applied on the 12th Feb\nFor bucVuF it was applied on the 17th Feb\nFor\n63EuY4 and BAobBx was applied yesterday. I made a mistake we didn't apply to 64n1W8.\nAll this way aligned with Simen.\nBest regards,\nFrancisco",
+            "date": "2025-02-20T09:40:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d65512e-85ef-ef11-9341-6045bddfbfba",
+            "subject": "AW: ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Francisco,\nlet me align with our NOC and CSM. I will be back asap.\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 20. Februar 2025 10:54\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>; J, Melba Suji (FT D IN SGI DET MAS EA) <melba.suji@siemens.com>; Aarre, Simen (RC-NO SI E) <simen.aarre@siemens.com>; J, Melba Suji (FT D IN SGI DET MAS EA) <melba.suji@siemens.com>\nBetreff:\nID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313\nHi Benjamin,\nFor T241QR it was applied on the 12th Feb\nFor bucVuF it was applied on the 17th Feb\nFor 63EuY4 and BAobBx was applied yesterday. I made a mistake we didn't apply to 64n1W8.\nAll this way aligned with Simen.\nBest regards,\nFrancisco",
+            "date": "2025-02-20T12:21:23Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4f18e98d-9bf2-ef11-be1f-7c1e5287625a",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Benjamin, good morning.\nIs there any other charger where you want to apply this hotfix?\nI searched since last week and we haven't gotten the PreCharge failure.\nToday we had a failure in PreCharge in bucVuF but it's due to a different problem:\nWhen we have parallel sessions, we cannot ignore the feedback from the contactors\n, to avoid any problems. So in this case you should replace QA21-22 so that it doesn't happen again.\nFor me this issue has been resolved with the hotfix, so there is no need to keep this ticket open. If you would like I can just apply this to every charger and close the ticket.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-02-24T10:39:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "480ba7e7-63f4-ef11-be1f-7c1e52350ea5",
+            "subject": "ID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge CRM:00315002313",
+            "body": "Hi Benjamin, good afternoon.\nSince this issue has been resolved I will close the ticket. If you wish to have more chargers with the hotfix please reach out to Simen and I will do it.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-26T17:05:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9e26523-64f4-ef11-be1f-7c1e52350ea5",
+            "subject": "Ticket 0402537 has been closed. Are you satisfied with our provided solution? CRM:00315002400",
+            "body": "Dear Benjamin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0402537\nwith the title:\nID0402537-DC/Si-D/NO-[MP / S0 170004169] - Charging session stopped at PreCharge\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-26T17:07:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

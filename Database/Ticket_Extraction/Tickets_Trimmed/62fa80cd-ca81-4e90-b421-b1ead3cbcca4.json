@@ -1,0 +1,35 @@
+{
+    "incident_id": "62fa80cd-ca81-4e90-b421-b1ead3cbcca4",
+    "ticket_number": "0407477",
+    "title": "ID0407477-DC/Si-D/DK [Y2/S3 300000007004] Transaction pending",
+    "created_on": "2025-02-18T08:32:48Z",
+    "last_activity": "2025-02-27T12:03:10Z",
+    "age": "4190",
+    "description": "Reported behavior/issue:\nTransaction pending on this charger. Please remove the transaction that is causing this.\nRoot cause:\nTransaction stuck\nSolution:\nRemove the transaction from the transaction-list.json\nNote from TS: Sambath is already working on it (aligned yesterday) → Ticket to be opened to R&D\nNote to QM [21/02/2025]",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "oZabeX",
+    "stage": null,
+    "serial_number": "Y2 / S3 300000007004,Y2 / S3 300000007004",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fcfed902-19f0-ef11-9341-7c1e527622e8",
+            "subject": "0407477 - ID0407477-DC/Si-D/DK [Y2/S3 300000007004] Transaction pending CRM:00646000017",
+            "body": "Dear Team,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Please be aware that the payment list has been cleared from the charger's side, and the charger is no longer stuck in “Pending Transaction.” Unfortunately, during the charger reboot after clearing the payment list, the state monitor faulted and needed to be replaced. Rasmus, Thank you so much for your coordination and support in replacing the state monitor yesterday. The root cause of the “Transaction Pending” is the final cost exceeding the preauthorized amount. Please be aware that I am proceeding to close the ticket.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-02-21T05:59:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "808e70d9-c1f8-9ffd-9abd-f7f26dd39de8",
+            "subject": "Note to QM",
+            "body": "Dispenser state Monitor faulted after the remote Reboot (2025-02-19T05:30:04.418025)\nParticular\nRemarks\nDefective part name/MLFB\n8EM5903-0AA03-2AA6\nComponent serial number\nRC need to share\nLogs with marked error (CSV format preferred)\nSCB Log:\n<<oZabeX-logs (1).csv>>\nActive error flags before replacement\nPLC-Error-Flag 'NoConverters_CGp_DC3' changed to true\n- (DC3 has 0 converters in its primary group)\nPLC-Error-Flag 'NoConverters_CGp_DC4' changed to true\n- (DC4 has 0 converters in its primary group)\nPLC-Error-Flag 'PowerConverters' changed to true\n- (Missing Converters in DC4,3)\nDevice-specific error code (if applicable)\nNo specific error codes for state Monitor\nOutcome of wiring checkup\nAll Good - Found 12V fast shutdown signal is always enabled\nCommissioning checklist\nOkay\nCommissioning date\nNA\nField service report\nRC will be attaching\nDate of failure (see side note)\n2025-02-19T05:30:04.418025 --> State Monitor faulter after the charger reboot initiated by Me(Sambath.K.S)\nComplementary information\nDevice pingable : Not Applicable\nSECC dump view logs\n: Not required aas issue is associated with state Monitor\nSECC state logs  : Not Required\nComplementary procedures\nNo extra procedure needed",
+            "date": "2025-02-21T06:20:03Z",
+            "extra": {}
+        }
+    ]
+}

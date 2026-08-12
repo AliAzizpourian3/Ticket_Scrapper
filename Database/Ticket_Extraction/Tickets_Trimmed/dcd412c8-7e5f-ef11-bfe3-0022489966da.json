@@ -1,0 +1,154 @@
+{
+    "incident_id": "dcd412c8-7e5f-ef11-bfe3-0022489966da",
+    "ticket_number": "0375235",
+    "title": "ID0375235-DC/Si-D/SG-[MP / R4 170001840] Not able to charge MG ZS",
+    "created_on": "2024-08-21T05:32:50Z",
+    "last_activity": "2025-12-16T14:06:29Z",
+    "age": "198958",
+    "description": "Reported behavior/issue:\nNot able to charge MG ZS\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "nNWYn2",
+    "stage": null,
+    "serial_number": "MP / R4 170001840",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "d527f3c2-7e5f-ef11-bfe3-0022489e9c81",
+            "subject": "SG-SiD: EV Compataibility with MG ZS",
+            "body": "Dear Helpdesk,\nCountry: Singapore\nCharger ID: nNWYn2\nCharger Serial No: MP / R4 170001840\nVehicle : MG ZS\nIssue Date and Time: 2024-08-20 UTC 04:15:18 to 05:09 (There is only 1 vehicle MG ZS on site and we were testing on both DC1 and DC2)\nProblem statement: We are unable to initate charging using this process flow of Plug In vehicle and then Authenticate the RemoteStartTransaction via OCPP. The charger always indicate a fault when the vehicle is plug in first before authentication and we will require to unplug to re-initate the charging session.\nUpon checking the SiD logs, we had found this. It is unusual as there is no charging being intiated yet.\nnNWYn2           1724127319273            2024-08-20T04:15:18.974589+00:00 swcpu [user:debug] [ONR]  DC2 : Outlet not ready - output voltage is too high to begin charging         1724127324368          38449324036932829457698537644531889465651219015698087941\nIt is also logged that the reverse voltage is detect, but it will be self corrected by the vehicle.\nnNWYn2           1724129012309            2024-08-20T04:43:30.546687+00:00 swcpu [user:debug] IMD: DC connection with wrong polarity:  \"DC1\"    1724129015687          38449361792897277397190620742277172559805242664738291713\nnNWYn2           1724129013311 2024-08-20T04:43:32.085864+00:00 swcpu [user:debug] Cablecheck: Testvoltage reached:  \"DC1\"    1724129015687           38449361815242624086118305130095962268998900893730668546\nnNWYn2           1724129017325            2024-08-20T04:43:33.090751+00:00 swcpu [user:debug] IMD: DC connection established:  \"DC1\"        1724129023162          38449361904757815313020226429256784918910572000700203008\nTherefore, we would like to understand instead of identifying as a fault, to allow for more buffer timing for vehicle to react to the initiation of the charging session, for the vehicle to correct itself on the revser voltage.\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2024-08-21T05:32:38Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2bec857e-885f-ef11-bfe3-002248a44b33",
+            "subject": "A new case manager was assigned to 0375235 CRM:00225085506",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0375235 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcd412c8-7e5f-ef11-bfe3-0022489966da",
+            "date": "2024-08-21T06:42:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "818546ca-9c5f-ef11-bfe3-6045bde003e0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 hours, 34 minutes and 40 seconds.",
+            "date": "2024-08-21T09:07:31Z",
+            "extra": {}
+        },
+        {
+            "id": "5271205d-9d5f-ef11-bfe3-6045bde003e0",
+            "subject": "0375235 - ID0375235-DC/Si-D/SG-[MP / R4 170001840] Not able to charge MG ZS CRM:00658000703",
+            "body": "Hello﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R4 170001840\nChargerID/Serial No.\n:\nnNWYn2\nProblem Description\n: Not able to charge MG ZS\nTroubleshooting\n: Analyzing logs\nFor future reference, your ticket number is\n0375235\n, please do refer to this in all further communication regarding this issue.\nWe can see a charging session on outlet 1 starting at 8:00 AM UTC time. Please let us know whether you are facing issue only with MG ZS or any other EV as well.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-21T09:11:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a54456b7-9f5f-ef11-bfe3-6045bde003e0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 20 minutes and 55 seconds.",
+            "date": "2024-08-21T09:28:26Z",
+            "extra": {}
+        },
+        {
+            "id": "ea4456b7-9f5f-ef11-bfe3-6045bde003e0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 5 seconds.",
+            "date": "2024-08-21T09:28:30Z",
+            "extra": {}
+        },
+        {
+            "id": "11cd56db-5460-ef11-bfe3-0022489fc6bd",
+            "subject": "RE: 0375235 - ID0375235-DC/Si-D/SG-[MP / R4 170001840] Not able to charge MG ZS CRM:00658000703",
+            "body": "Hello ﻿,\nHope you are doing well. We haven't heard back from you on ticket# 0375235 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-22T07:05:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4b23983-0561-ef11-bfe3-000d3a687981",
+            "subject": "RE: 0375235 - ID0375235-DC/Si-D/SG-[MP / R4 170001840] Not able to charge MG ZS CRM:00658000703",
+            "body": "Hello,\nI am writing to formally inform that we are moving case 0375235 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-SG SI E Queue (Level 2)\n, due to one or more following reason (s) :\nAs Intervention date and time is not finalized, we are moving this ticket to your queue.\nOnce intervention details are finalized, please contact us.\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-SG SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-23T04:09:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76101010-0761-ef11-bfe3-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 18 hours, 52 minutes and 16 seconds.",
+            "date": "2024-08-23T04:20:47Z",
+            "extra": {}
+        },
+        {
+            "id": "b1101010-0761-ef11-bfe3-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 6 seconds.",
+            "date": "2024-08-23T04:20:53Z",
+            "extra": {}
+        },
+        {
+            "id": "cf492dab-d217-62d6-8142-53b3b7aa7845",
+            "subject": "Update",
+            "body": "Need to test why MG ZS is not working when plugged in first and authenticated later, it works when plugged in later after authentication.\nOn previous logs we received authentication issue.",
+            "date": "2024-08-23T04:22:17Z",
+            "extra": {}
+        },
+        {
+            "id": "a25c858e-6263-ef11-bfe2-0022489d464a",
+            "subject": "A new case manager was assigned to 0375235 CRM:00225087336",
+            "body": "Wei Qi Seah was assigned as new Case Manager for case 0375235 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcd412c8-7e5f-ef11-bfe3-0022489966da",
+            "date": "2024-08-26T04:20:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a3a08897-5bae-57f9-bf1d-6a84f7e239dc",
+            "subject": "case can be resolved",
+            "body": "Case can be resolved as vehicle is not available for testing. Will reopen once the vehicle is available.",
+            "date": "2025-01-06T06:10:57Z",
+            "extra": {}
+        },
+        {
+            "id": "3055f5ea-0ecc-ef11-8ee9-000d3ab45f85",
+            "subject": "A new case manager was assigned to 0375235 CRM:00225144460",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0375235 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcd412c8-7e5f-ef11-bfe3-0022489966da",
+            "date": "2025-01-06T09:16:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cc8d1c39-0fcc-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: 0375235 - ID0375235-DC/Si-D/SG-[MP / R4 170001840] Not able to charge MG ZS CRM:00658000703",
+            "body": "Dear Edna Seah,\nI hope you're doing well.\nWe are proceeding with the closure of the case as the vehicle is not available for testing at this time. If the error persists once the vehicle becomes available, please open a new ticket, and we will address the issue accordingly.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-06T09:18:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

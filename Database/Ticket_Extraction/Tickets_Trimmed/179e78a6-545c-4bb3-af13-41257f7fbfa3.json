@@ -1,0 +1,137 @@
+{
+    "incident_id": "179e78a6-545c-4bb3-af13-41257f7fbfa3",
+    "ticket_number": "0392319",
+    "title": "ID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power",
+    "created_on": "2024-11-27T14:19:31Z",
+    "last_activity": "2026-03-24T20:33:33Z",
+    "age": "88531",
+    "description": "Location:\nIvalo\nReported behaviour/issue:\nAll outlets OoO after phaseloss during full run with full power.\nPLease see DC1 and DC2 MAC address. Both were\n02.00.00.00.00.20\nRoot cause:\nSolution:  Onsite troubleshooting was done",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "Qu2jTM",
+    "stage": null,
+    "serial_number": "MP / R8 170002225",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7a6b209c-2c92-6cdb-90c7-2d4293d875db",
+            "subject": "SCB fault flags",
+            "body": "",
+            "date": "2024-11-27T14:19:57Z",
+            "extra": {}
+        },
+        {
+            "id": "d54629b1-caac-ef11-b8e8-000d3a64f00f",
+            "subject": "A new case manager was assigned to 0392319 CRM:00225130597",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0392319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=179e78a6-545c-4bb3-af13-41257f7fbfa3",
+            "date": "2024-11-27T14:20:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "efd4b8b7-caac-ef11-b8e9-002248a29667",
+            "subject": "A new case manager was assigned to 0392319 CRM:00225130599",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0392319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=179e78a6-545c-4bb3-af13-41257f7fbfa3",
+            "date": "2024-11-27T14:20:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "65985531-5e17-7a44-adb4-458b09ad38fe",
+            "subject": "Logs from AWS",
+            "body": "",
+            "date": "2024-11-27T14:34:20Z",
+            "extra": {}
+        },
+        {
+            "id": "5fed02b0-8826-e443-89d1-c30b7111ab43",
+            "subject": "NOTE FROM L2",
+            "body": "Ecog Logs",
+            "date": "2024-11-27T15:02:47Z",
+            "extra": {}
+        },
+        {
+            "id": "4de665b7-d2ac-ef11-b8e8-7c1e5277f55b",
+            "subject": "ID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power CRM:00315002115",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nIvalo\nChargerID/Serial No.\n:\nQu2jTM\nProblem Description\n: Income_PhaseLoss\nTroubleshooting\n:\nLet's make a timeline of events to make it easier to process:\nEVMAC\":\"02.00.00.00.00.20\"\nDC1 was successfully established and charging\nWhile it was doing these steps someone tried to charge in DC4 (this one I cannot confirm that it's this specific EVMAC but it should be)\nBut failed with\n\"no PLC link\"\nWhile DC1 was charging and DC4 was with B PilotState\nTried to charge in DC3\nAnd failed during PreCharge since there was no voltage\nWhile DC1 was charging and DC3 in B State, DC4 was unplugged\nAnd another DC4 was retried\nAgain with\n\"no PLC link\"\n, so I cannot confirm the EVMAC\nAnd DC3 was plugged out\nWhile DC1 was charging and DC4 was B State\nAnother DC3 test\nAnd this time it worked:\nBut failed a few seconds later due to Error 67\nIn between DC4 was plugged out\nAnother test on DC4 and DC2 simultaneosly\nMeanwhile DC3 was unplugged\nDC2 is charging with that EVMAC\nDC4 fails authentication\nWhile DC1 and DC2 are charging the same EVMAC, another test with DC4:\nThis one with a different EVMAC =\nEVMAC\":\"00.18.23.96.e8.28\nAnd it's charging\nWhile DC1/2/4 are charging, another test with DC3:\nAlso successfull\nAt the end it seems like this\nEVMAC\":\"02.00.00.00.00.20\"\n, is able to charge in 3 different outlets and they were possibly trying 4. The other EV might be random or not as it's very different from this very specific one.\nAs you just told me\nyesterday there was similar MAC in different location in Finland and ALSO 1 week backwards 3 location in Germany with same MAC.\nFrom my perspective it seems the thing where they took the eActros 600 around Europe and tested many chargers, it can be a similar kind of thing and this EV on DC3 is just a normal passenger EV that they have it besides the truck or battery, or whatever it is.\nWhat do you think?\nRegarding the error is very unclear, it all started with the DC2 going to error and then all the others followed. It's a bit difficult to understand what caused it since it just failed in the Converter group which can be one of the following:\nConfig - CG ID is invalid\nConfig - CG ID is missing in LCU Converter Group Priorities\nLogic - CG is stuck in cooldown state\nLogic - SMC connected to CG has Feedback Fault\nLogic - EV connection is requested on CGp having less than min converter count\nLogic - Priorities evaluated for this CG to be alloted as error during connected SMC feedback fault\nLogic - Fast Shutdown check was not done\nFor future reference, your ticket number is\n0392319\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-27T15:17:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "de9455df-8eb0-ef11-b8e8-000d3a68cce9",
+            "subject": "ID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power CRM:00315002115",
+            "body": "Hello Markus, good morning.\nAs we already aligned last week, from the VI team, I got information that there are 2 brands which use the same EVMAC for their trucks, which are Volvo and VW.\nIt seems that Volvo accidentally did this while VW is supposed to be intended, since there is nothing in the standard that mentions a obligatory unique MAC address.\nFrom the vehicle investigation point of view there is nothing we can do, let's check if there is any fuse blown upstream like the other charger we saw. Otherwise we need to see if there is any problem with the MCCB, please measure the input before and after the MCCB:\nIf the problem is from before the MCCB, then we have a problem upstream\nIf the problem is after the MCCB then we might have a damaged MCCB.\nI will send this to the RC-FI queue for further troubleshooting, please reach out to me if you need any assistance.\nBest regards\nFrancisco",
+            "date": "2024-12-02T09:21:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "693f34a1-a2b0-ef11-b8e8-002248a40965",
+            "subject": "ID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power CRM:00315002129",
+            "body": "Dear Markus,\nI am writing to formally inform that we are moving case 0392319 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFI\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFI\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-02T11:43:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33af87d6-36da-ef11-8eea-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0392319 CRM:00225153399",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0392319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=179e78a6-545c-4bb3-af13-41257f7fbfa3",
+            "date": "2025-01-24T09:37:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f48566c-19dd-ef11-8eea-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0392319 CRM:00225154391",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0392319 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=179e78a6-545c-4bb3-af13-41257f7fbfa3",
+            "date": "2025-01-28T01:44:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ce0ebc9e-19dd-ef11-8eea-000d3a68cce9",
+            "subject": "ID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power CRM:00796001236",
+            "body": "Dear Markus Roiha,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0392319, and the case is now closed.\nKindly attach the field service report to this ticket for the further claim process if any site activity was performed on this charger.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-28T01:45:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f024110f-1add-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0392319 has been closed. Are you satisfied with our provided solution? CRM:00796001237",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0392319\nwith the title:\nID0392319-DC/Si-D/FI-[Qu2jTM] - Phaseloss during run of with full power\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nKaushik Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-28T01:49:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

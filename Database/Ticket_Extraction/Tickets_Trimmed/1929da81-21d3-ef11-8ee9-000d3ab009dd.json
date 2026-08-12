@@ -1,0 +1,178 @@
+{
+    "incident_id": "1929da81-21d3-ef11-8ee9-000d3ab009dd",
+    "ticket_number": "0400060",
+    "title": "ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session",
+    "created_on": "2025-01-15T09:17:23Z",
+    "last_activity": "2026-01-20T12:56:04Z",
+    "age": "40293",
+    "description": "Reported behavior/issue:\nNo energy Delivered\nRoot cause: QA13-14 CMD:OFF & FBK:ON\nSolution: One time occurrence, didn't happen again. If contactor's error is active again, replace contactor\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\n23.01.2025: Analysis on going\n07.02.2025: Handover from ES to NOC",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "BAobBx",
+    "stage": null,
+    "serial_number": null,
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8717ce82-21d3-ef11-8ee9-6045bde1171e",
+            "subject": "WG: reasons for charging session with 0kW",
+            "body": "Hi SI E Support,\nplease check on your end. Bus manufactor says SID is not delivering energy even if current it offered and in state C.\nCharger ID:\nBAobBx\nBR Benjamin\nVon:\nHubert Dreger <hubert.dreger@solarisbus.com>\nGesendet:\nMittwoch, 15. Januar 2025 09:52\nAn:\nSebastian Skotak <sebastian.skotak@solarisbus.no>; Kuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>; PL_BOL_E-Mobility_AfterSales <ebus@solarisbus.com>; Tomasz Szyniszewski <tomasz.szyniszewski@solarisbus.com>; Rafał Burkowski <rafal.burkowski@solarisbus.com>\nCc:\nBjørn Atle Emilsen <bjornatle.emilsen@solarisbus.no>; Gaalaas, Glenn-Ivar <glenn-ivar.gaalaas@unibuss.no>; Lorimer, Martin (SI CTO ETP PPM&MK) <martin.lorimer@siemens.com>; Haass, Stefan (SI CTO ETP R&D PRM) <stefan.haass@siemens.com>; Johansen, Kjetil <kjetil.johansen@unibuss.no>\nBetreff:\nODP: reasons for charging session with 0kW (+precond?)\nHello,\nIn this case, during this session, the charger did not supply energy to the vehicle and the vehicle self-discharged 2 KW/h from 18% to 14% SOC.\nVehicle status and charging is Status C Current demand  but no current flows - problem on the charger side\nWere two dispensers connected from one charger in this case? Is Sequential charging active with 2 - Dispensers ?\nI saw such behavior of the Siemens charger during sequential charging in Switzerland.\nBoth Plug-INs are in the C current demand state, but only dispenser 1 - current flows and the second is also in the C current demand state, but current does not flow.\nPlug-in no. 2 waits until the Vehicle connected to Plug-in no. 1 finishes charging.\nHubert Dreger\nStarszy Inżynier Serwisowy ds. e-Mobility | Senior Service Engineer for e-Mobility\nE-Mobility After Sales |\nM: +48 691997345\nhubert.dreger@solarisbus.com",
+            "date": "2025-01-15T09:17:16Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8195f2e0-25d3-ef11-8ee9-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0400060 CRM:00225148830",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0400060 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1929da81-21d3-ef11-8ee9-000d3ab009dd",
+            "date": "2025-01-15T09:48:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8efac256-5ed3-ef11-8ee9-000d3ab009dd",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00658000843",
+            "body": "Dear Benjamin,\nThank you for reaching\nout\nto eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nChargerID/Serial No.\n:\nBAobBx\nProblem Description\n: 0kWh Session\nTroubleshooting\n: One time issue, Contractor feedback issue\nWe have analyzed the logs of this charger for the timestamp you mentioned, and we can see in this particular charging session output current was 0 A as we did not receive contractor (QA13-14) feedback.\nWe have checked other charging session on this outlet on 14th Jan and it was successful. We can not determine whether contractor QA13-14 are faulty. It looks like a one time issue.\nPlease check with customer whether they have observed this issue on any other charging session or not?\nAwaiting your response\nFor future reference, your case number is\n0400060\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T16:32:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "93042b7f-ba7c-f5aa-890e-cd7f278f07f9",
+            "subject": "Case Handover Notes",
+            "body": "Suspected Root Cause : Bug\nProblem Description :\nWe have contractor feedback error but charging session did not stop\nAction Performed (L2) : Logs analyzed\nCharger SW Version: 4.0.11\nReason for Handover (L3) : Need ES and R&D team support\nFault history : NA\nLog analysis with timestamp : 13/01/2025 Transaction ID: 664181268\nAction Required\nAction by HQ : Reason for charging session not stopping after contractor feedback error",
+            "date": "2025-01-20T23:30:20Z",
+            "extra": {}
+        },
+        {
+            "id": "7e08eff2-d6d7-ef11-8eea-6045bde1171e",
+            "subject": "A new case manager was assigned to 0400060 CRM:00225151359",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0400060 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1929da81-21d3-ef11-8ee9-000d3ab009dd",
+            "date": "2025-01-21T09:06:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "67f214ab-4be5-ef11-9341-6045bdde1b10",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Good evening Benjamin,\nI am reaching out from ES Team in regards of ticket\nID0400060.\nThe ticket was opened regarding charger\nBAobBx\n, for an event of no current flow with a Solaris eBus.\nI analyzed the logs of the event with\nTransactionID: 664181268.\nHere is a summary of my findings:\nOutlet DC2 was connected at 2025-01-13T11:58:38 and the charging process initialization started.\nAt 2025-01-13T11:59:15, the OCPP Start Transaction command was sent, with TransactionID: 664181268\nHowever, right after the beginning of the charging session, at 2025-01-13T11:59:20 the charger reported an issue on the feedback of the auxiliary contactor of the outgoing coils QA13-14, which went to off while the command was off.\nDue to this failure, the charger was not able to deliver current.\nOnly at 2025-01-13T13:50:46 the session was stopped by the EV.\nI performed a screening of the charger and this failure of OutgoingCoil QA13-14 happened only in that occasion, so it is considered from our side a single failure event.\nEven if the charger was unable to deliver current, it is the EV that can stop the charging session if, as in this case, no current is delivered by the Charger after Current demand from the EV. This is regulated by the standards in regards of output current regulation. As a matter of fact, if the Charger cannot follow the request of current coming from the EV, it is the EV that should stop the charging session.\nI hope my reply has provided clarification. If you do not require any further information, I will proceed to close this ticket then.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-02-07T12:04:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6ab5f24a-5de5-ef11-9341-002248993953",
+            "subject": "AW: 0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hi\nFosco,\nthanks for your feedback. Understood but if charger recognize that outgoing contactor did not work the charger should went to a faulted state and not continuing charging with 0kW. Improvement suggestion only.\nWe will continue monitor the charger about that contactor topic.\n@NOC: as discussed please keep that on your radar. Thanks.\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 7. Februar 2025 14:20\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\n0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142\nGood evening Benjamin,\nI am reaching out from ES Team in regards of ticket\nID0400060.\nThe ticket was opened regarding charger\nBAobBx\n, for an event of no current flow with a Solaris eBus.\nI analyzed the logs of the event with\nTransactionID: 664181268.\nHere is a summary of my findings:\nOutlet DC2 was connected at 2025-01-13T11:58:38 and the charging process initialization started.\nAt 2025-01-13T11:59:15, the OCPP Start Transaction command was sent, with TransactionID: 664181268\nHowever, right after the beginning of the charging session, at 2025-01-13T11:59:20 the charger reported an issue on the feedback of the auxiliary contactor of the outgoing coils QA13-14, which went to off while the command was off.\nDue to this failure, the charger was not able to deliver current.\nOnly at 2025-01-13T13:50:46 the session was stopped by the EV.\nI performed a screening of the charger and this failure of OutgoingCoil QA13-14 happened only in that occasion, so it is considered from our side a single failure event.\nEven if the charger was unable to deliver current, it is the EV that can stop the charging session if, as in this case, no current is delivered by the Charger after Current demand from the EV. This is regulated by the standards in regards of output current regulation. As a matter of fact, if the Charger cannot follow the request of current coming from the EV, it is the EV that should stop the charging session.\nI hope my reply has provided clarification. If you do not require any further information, I will proceed to close this ticket then.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-02-07T14:10:40Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a2361696-60e5-ef11-9341-000d3aba98df",
+            "subject": "A new case manager was assigned to 0400060 CRM:00225161003",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0400060 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1929da81-21d3-ef11-8ee9-000d3ab009dd",
+            "date": "2025-02-07T14:34:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7205842f-6ce8-ef11-9341-0022489bc8e2",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hello colleagues, good afternoon.\nAny chance you found this 0-sessions again?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-11T11:34:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "732520e3-6ce8-ef11-9341-7c1e5277807d",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hello colleagues, good afternoon.\nAny chance you found this 0-sessions again?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-11T11:39:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ea31b9a2-76e8-ef11-9341-6045bddd1864",
+            "subject": "RE: 0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hi\nFrancisco,\nWe have not had much similar issues in past 2-3 days. Also, since the customer is aware of this, they noticed it and tried re plugging the vehicle which solved the issue before we could notify it to you.\nWe will certainly notify you as we have our next issue.\njust one question, Is it okay to notify you even if the session which had the issue just ended or it is required that the session is in progress for you to investigate?\nThank you for your support and patience.\nRegards\nSiemens Depot360 NOC Team",
+            "date": "2025-02-11T12:49:35Z",
+            "extra": {
+                "sender": "depot360.support@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4c9888a4-7de8-ef11-9341-0022489bc8e2",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hello colleague,\nThank you for the feedback.\nThe Experts' team analyzed a specific session provided to us where we found a one time only problem with QA13-14. Unless you find a lot of these errors, this issue seems to be one of a kind event and we can close the ticket.\nIf there are more events where QA13-14 has an error then we can proceed to ask the region to change these contactors.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-02-11T13:39:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "18ce0a46-7ee8-ef11-9341-6045bddf2ae8",
+            "subject": "0400060 - ID0400060-DC/Si-D/NO-[BAobBx] 0kWh session CRM:00314000142",
+            "body": "Hello colleague,\nThank you for the feedback.\nThe Experts' team analyzed a specific session provided to us where we found a one time only problem with QA13-14. Unless you find a lot of these errors, this issue seems to be one of a kind event and we can close the ticket.\nIf there are more events where QA13-14 has an error then we can proceed to ask the region to change these contactors.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-02-11T13:44:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dbe879b6-1de9-ef11-9342-6045bdde1b10",
+            "subject": "Ticket 0400060 has been closed. Are you satisfied with our provided solution? CRM:00315002341",
+            "body": "Dear colleagues,\nSince the error hasn't appeared again, I will proceed to close the ticket as a one time occurrence. If the QA13-14 error flag appears again, please proactively confirm with the regional colleagues to replace it.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0400060\nwith the title:\nID0400060-DC/Si-D/NO-[BAobBx] 0kWh session\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-12T08:45:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ab9e156-1ee9-ef11-9341-7c1e52fbe252",
+            "subject": "Ticket 0400060 has been closed. Are you satisfied with our provided solution? CRM:00315002341",
+            "body": "Dear colleagues,\nSince the error hasn't appeared again, I will proceed to close the ticket as a one time occurrence. If the QA13-14 error flag appears again, please proactively confirm with the regional colleagues to replace it.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0400060\nwith the title:\nID0400060-DC/Si-D/NO-[BAobBx] 0kWh session\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-12T08:50:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

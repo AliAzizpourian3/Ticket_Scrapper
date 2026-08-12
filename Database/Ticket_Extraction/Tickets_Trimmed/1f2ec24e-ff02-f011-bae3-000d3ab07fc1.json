@@ -1,0 +1,232 @@
+{
+    "incident_id": "1f2ec24e-ff02-f011-bae3-000d3ab07fc1",
+    "ticket_number": "0413001",
+    "title": "ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend",
+    "created_on": "2025-03-17T07:13:25Z",
+    "last_activity": "2025-10-01T14:20:33Z",
+    "age": "25763",
+    "description": "Reported behaviour/issue: Some messages with the error code “Internal error” were sent to our backend.\nsent to our backend. In addition, we have noticed that there are\nsome charging processes with 0.000kWh and canceled in our\nbackend (e.g. 14.03.2025 09:26:41 - Aborted,\n14.03.2025 07:38:49 0,000kWh, 13.03.2025 06:49:13 0,000kWh,\n10.03.2025 14:53:43 0.000kWh, 10.03.2025 07:27:37 0.000kWh,\n02.03.2025 15:04:17 0.000kWh.\nIs this possibly a similar error to the ticket “ID0412989-\nDC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue\n‘Authorization’ CRM:00643001355”\nTranslated with DeepL.com (free version)\nRoot cause:\nSolution: F.W update to V 6.1.3",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "3Ji96w",
+    "stage": null,
+    "serial_number": "MP / S3 170003317,MP / S3 170003317",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ea179b49-ff02-f011-bae3-7c1e5236cda4",
+            "subject": "Webform_incident_SiCharge D_17-03-2025_SN: 170003317",
+            "body": "Dear Lara-Anna Oblak,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170003317\nThank you\neMobility Technical Support Team\nSehr geehrte/r Lara-Anna Oblak,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170003317\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-17T07:13:20Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b719f745-0e03-f011-bae2-000d3ad990ba",
+            "subject": "ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nvielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Aniket und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center\nHauptanlage\n: Äänekoski\nLadegerät-ID/Seriennr\n.:\n170003317\nProblembeschreibung\n: Es wurden einige Meldungen mit dem Errorcode \"Interner Fehler\" an unser Backend gesendet. zusätzlich ist uns aufgefallen dass es einige Ladevorgänge mit 0,000kWh und abgebrochene in unserem Backend gibt (bspw. 14.03.2025 09:26:41 - Abgebrochen, 14.03.2025 07:38:49 0,000kWh, 13.03.2025 06:49:13 0,000kWh, 10.03.2025 14:53:43 0,000kWh, 10.03.2025 07:27:37 0,000kWh, 02.03.2025 15:04:17 0,000kWh. Ist dies evtl. ein ähnlicher Fehler wie bei dem Ticket \"ID0412989- DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355\"\nFür zukünftige Referenzen lautet Ihre Ticketummer 0413001\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nAniket Sharma\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-03-17T09:00:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c9562d3-dbc2-a6bb-ac52-53abf1c6fd03",
+            "subject": "nOTE",
+            "body": "10.03.2025 14:53:43 0.000kWh\nMeter Start\n2025-03-10T13:53:43.986009+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StartTransaction (c3c2ce3a-fe6c-4a69-b9b2-0134c043af07) - {\"connectorId\":2,\"idTag\":\"05813C57C10300\",\"\nmeterStart\n\":\n12349679\n,\"timestamp\":\"2025-03-10T13:53:43.978Z\"}\nMeter Stop\n2025-03-10T14:23:04.772843+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command:\nStopTransaction\n(ba9447f6-6363-49e0-b943-256da4e7463a) - {\"\nmeterStop\n\":\n12349679\n,\"timestamp\":\"2025-03-10T14:23:04.756Z\",\"transactionData\":[{\"timestamp\":\"2025-03-10T14:23:04.757Z\",\"sampledValue\":[{\"value\":\"100\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"\nvalue\":\"0\",\"\nlocation\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":657}\n10.03.2025 07:27:37 0.000kWh,\nMeter Start\n2025-03-10T06:27:37.291683+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command:\nStartTransaction\n(290d10a7-9575-4599-b58b-cb036e41d662) - {\"connectorId\":2,\"idTag\":\"05813C57C10300\",\"\nmeterStart\n\":\n12298040\n,\"timestamp\":\"2025-03-10T06:27:37.283Z\"}\nMeter Stop\n2025-03-10T07:17:31.447264+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StopTransaction (e2a053ca-6a0b-4e73-a72a-ef614c18bb17) - {\"\nmeterStop\n\":\n12298040\n,\"timestamp\":\"2025-03-10T07:17:31.430Z\",\"transactionData\":[{\"timestamp\":\"2025-03-10T07:17:31.431Z\",\"sampledValue\":[{\"value\":\"100\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"\nvalue\n\":\"\n0\",\"\nlocation\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":656}\n13.03.2025 06:49:13 0,000kWh,\nMeter Start\n2025-03-13T05:49:13.966850+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StartTransaction (33385234-76e0-496d-81a6-885d0174b8c5) - {\"connectorId\":2,\"idTag\":\"05813C57C10300\",\"\nmeterStart\n\":\n12375507\n,\"timestamp\":\"2025-03-13T05:49:13.960Z\"}\nMeter Stop\n2025-03-13T06:34:08.335439+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StopTransaction (f5f8b00c-c0d7-4e1c-940c-45da42a370ae) - {\"\nmeterStop\n\":\n12375507\n,\"timestamp\":\"2025-03-13T06:34:08.321Z\",\"transactionData\":[{\"timestamp\":\"2025-03-13T06:34:08.322Z\",\"sampledValue\":[{\"value\":\"100\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":659}\nMeter Start\n2025-03-13T06:46:41.319314+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StartTransaction (144f776e-e276-40fd-8341-df4c79c27c0b) - {\"connectorId\":1,\"idTag\":\"04A543E2F91390\",\"\nmeterStart\n\":\n5034194\n,\"timestamp\":\"2025-03-13T06:46:41.311Z\"}\nMeter Stop\n2025-03-13T07:48:07.662929+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StopTransaction (0e843240-bc89-40db-801f-4aff2eb2beb7) - {\"\nmeterStop\n\":\n5113872\n,\"timestamp\":\"2025-03-13T07:48:07.648Z\",\"transactionData\":[{\"timestamp\":\"2025-03-13T07:48:07.648Z\",\"sampledValue\":[{\"value\":\"98\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"\n79678\n\",\"location\":\"Outlet\",\"unit\":\"\nWh\n\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"},{\"value\":\"OCMF|{\\\"FV\\\":\\\"1.0\\\",\\\"GI\\\":\\\"LEM DCBM\\\",\\\"GS\\\":\\\"1230521746\\\",\\\"GV\\\":\\\"v1\\\",\\\"PG\\\":\\\"T781\\\",\\\"MV\\\":\\\"LEM\\\",\\\"MS\\\":\\\"1230521746\\\",\\\"MF\\\":\\\"MU-0.1.4.0_SU-0.0.8.0\\\",\\\"IS\\\":true,\\\"IL\\\":\\\"TRUSTED\\\",\\\"IF\\\":[\\\"RFID_NONE\\\",\\\"OCPP_AUTH\\\",\\\"ISO15118_NONE\\\",\\\"PLMN_NONE\\\"],\\\"IT\\\":\\\"LOCAL\\\",\\\"ID\\\":\\\"ae55afec75f94f29,04A543E2F91390\\\",\\\"CT\\\":\\\"EVSEID\\\",\\\"CI\\\":\\\"contract based,v4.0.11-0-g0b7d164+SF-\\\",\\\"RD\\\":[{\\\"TM\\\":\\\"2025-03-13T07:46:41,000+0100 R\\\",\\\"TX\\\":\\\"B\\\",\\\"RV\\\":5034.194,\\\"RI\\\":\\\"1-0:1.8.0\\\",\\\"RU\\\":\\\"kWh\\\",\\\"RT\\\":\\\"DC\\\",\\\"EF\\\":\\\"\\\",\\\"ST\\\":\\\"G\\\",\\\"UC\\\":{\\\"UN\\\":\\\"4mR_Comp\\\",\\\"UI\\\":2,\\\"UR\\\":4}},{\\\"RV\\\":1.034,\\\"RI\\\":\\\"1-0:2.8.0\\\",\\\"RU\\\":\\\"kWh\\\",\\\"ST\\\":\\\"G\\\"},{\\\"TM\\\":\\\"2025-03-13T08:48:06,000+0100 R\\\",\\\"TX\\\":\\\"E\\\",\\\"RV\\\":5113.872,\\\"RI\\\":\\\"1-0:1.8.0\\\",\\\"RU\\\":\\\"kWh\\\",\\\"ST\\\":\\\"G\\\"},{\\\"RV\\\":1.034,\\\"RI\\\":\\\"1-0:2.8.0\\\",\\\"RU\\\":\\\"kWh\\\",\\\"ST\\\":\\\"G\\\"}]}|{\\\"SA\\\":\\\"ECDSA-secp256r1-SHA256\\\",\\\"SD\\\":\\\"30440220016D643AD45B2F5905D67BEAA8B02F010B5269044060C220A4E00CCE99DF262C02206BF079E3F9A597FA90F2A96205DC9A1DFE8ED9497E0E5EE28C224B55159A5FC6\\\"}\",\"format\":\"SignedData\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Register\"}]}],\"reason\":\"Local\",\"idTag\":\"04A543E2F91390\",\"transactionId\":660}\n14.03.2025 07:38:49 0,000kWh,\nMeter Start\n2025-03-14T06:38:49.615395+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StartTransaction (d6a916de-4d7a-4b65-b2ff-52462bee7ba9) - {\"connectorId\":2,\"idTag\":\"05813C57C10300\",\"\nmeterStart\n\":\n12418839\n,\"timestamp\":\"2025-03-14T06:38:49.609Z\"}\nMeter Stop\n2025-03-14T07:30:14.237171+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StopTransaction (d773ff17-9d8a-4f2d-8bb6-a82e260493ae) - {\"\nmeterStop\n\":\n12418839\n,\"timestamp\":\"2025-03-14T07:30:14.220Z\",\"transactionData\":[{\"timestamp\":\"2025-03-14T07:30:14.220Z\",\"sampledValue\":[{\"value\":\"100\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"\nvalue\":\"0\n\",\"location\":\"Outlet\",\"unit\":\"\nWh\n\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":661}\n02.03.2025 15:04:17 0.000kWh.\nMeter Start\n2025-03-02T14:04:17.901968+00:00 sicharge-cp [local0:info] sicharge-cp-backend/449b311a6292[699]: OCPP: Send command: StartTransaction (4d13ae3e-ab25-4a74-9efd-3f4c2cd2975d) - {\"connectorId\":2,\"idTag\":\"041B837A4C1C90\",\"\nmeterStart\n\":\n11949180\n,\"timestamp\":\"2025-03-02T14:04:17.894Z\"}\nSession Stop:\n2025-03-02T14:04:48.000000+00:00 secc [daemon:warning] SECC[839]: {\"type\":\"alert\",\"timestamp\":1740924288616,\"chargerId\":\"secc2300-13529\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\n\":{\"code\":67,\"msg\":\"ERR_EV_DROPPED,\nvehicle ended with unexpected pilot state B\"}}\n2025-03-02T14:04:48.000000+00:00 secc [daemon:notice] SECC[839]: {\"type\":\"stop_charging\",\"timestamp\":1740924288616,\"chargerId\":\"secc2300-13529\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"\nsource\":\"EV\",\"user\":\"internal\n\"}}",
+            "date": "2025-03-17T19:17:40Z",
+            "extra": {}
+        },
+        {
+            "id": "c61a4ec4-ee03-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nAs checked in Logs for the charger for particular date & time mentioned from your side.\nthe issue of 0KWh at backend is due to meter start & meter stop has same value observed in charger which resulted in 0KWH energy displayed even though successful charging session were performed.\n{ Date & time frame:14.03.2025 07:38:49 0,000kWh, 13.03.2025 06:49:13 0,000kWh,10.03.2025 14:53:43 0.000kWh, 10.03.2025 07:27:37 0.000kWh\non 02.03.2025 the session was stopped from EV Side }\nWe have new F.W release for Sicharge-D V6.1.3\nCould you please confirm us if we can procced with updating the charger, which will resolve the issue of 0KWh session.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T11:47:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb95d6f8-af05-f011-bae2-7c1e52768c07",
+            "subject": "RE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nCould you please reply us back on the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-20T17:23:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dcd9552f-5406-f011-bae2-6045bdde4786",
+            "subject": "RE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nCould you please reply us back on the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-21T12:58:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "945e359b-f308-f011-bae3-7c1e52350ea5",
+            "subject": "RE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nFinal reminder\nWe are waiting for reply from your side to proceed with the action>\nWe are taking multiple follow-up's but we are not getting, after 3 follow-ups if we don't get any reply we will procced with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-24T21:04:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f8bca71d-6309-f011-bae3-000d3adc93d1",
+            "subject": "AW: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hello,\nwe´re very sorry for the delayed answer.\nYes, you can proceed with updating the charger.\nThank you and kind regards,\nLara Oblak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 24. März 2025 22:10\nAn:\nlsm@e-netze.at\nCc:\nDissauer, Johannes <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006\nHallo ﻿Lara Anna Oblak,\nFinal reminder\nWe are waiting for reply from your side to proceed with the action>\nWe are taking multiple follow-up's but we are not getting, after 3 follow-ups if we don't get any reply we will procced with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T10:22:56Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ecd84c01-a709-f011-bae2-7c1e52768c07",
+            "subject": "AW: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hi Sunil Sharma,\ncan you please perform the FW update to 6.1.3.\nI start now the download for FW 5.x.\nKind regards,\nJohannes Dissauer\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 24. März 2025 22:10\nAn:\nLara Anna Oblak <lsm@e-netze.at>\nCc:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006\nHallo ﻿Lara Anna Oblak,\nFinal reminder\nWe are waiting for reply from your side to proceed with the action>\nWe are taking multiple follow-up's but we are not getting, after 3 follow-ups if we don't get any reply we will procced with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T18:28:56Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0804871c-e4e6-db52-9c90-0069cf9c73a7",
+            "subject": "Note",
+            "body": "",
+            "date": "2025-03-26T19:08:29Z",
+            "extra": {}
+        },
+        {
+            "id": "449c9c42-850a-f011-bae3-7c1e5236e32d",
+            "subject": "RE: AW: ID0413001-DC/Si-D/AT-[170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nCharger is updated to V6.1.3, Please observe the charger from your side & let us if issue is still persist or is resolved.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T20:59:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "16563392-1994-5ec6-ae75-f8e33e9fdc93",
+            "subject": "note",
+            "body": "",
+            "date": "2025-03-26T21:36:23Z",
+            "extra": {}
+        },
+        {
+            "id": "c87331c3-490b-f011-bae2-7c1e52350ea5",
+            "subject": "RE: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nCould you please update us on the ticket .\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-03-27T20:26:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53c55fcb-a30b-f011-bae2-000d3addf8ce",
+            "subject": "AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hello Sunil Sharma!\nWe didn´t have that many charging sessions since you wrote us, but most of them have 0kWh consumed energy and were only a few minutes long too. The newest only has a consumption of 0,903kWh. (See screenshot below)\nWe´ve also got 3 new alarms in our backend, of which 2 were from the same kind:\n“secc pilot is E” -> 27.03.2025 22:02:02 + 27.03.2025 22:00:57\n“secc is initializing” -> 27.03.2025 22:00:54\nCan you recheck if everything is okay?\nThank you and kind regards,\nLara Oblak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 27. März 2025 21:28\nAn:\nlsm@e-netze.at\nCc:\nDissauer, Johannes <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006\nHallo ﻿Lara Anna Oblak,\nCould you please update us on the ticket .\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-03-28T07:10:58Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "79a6473e-190c-f011-9989-7c1e52768c07",
+            "subject": "RE: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nThanks for the reply.\nAs checked in logs for the specific time interval as per the shared screenshot.\nThe session is getting stopped because Ecog LE controller for\nDC1\nIp address (10.11.20.101) is not accessible\nLast successful session on DC1 was\n2025-03-27, 20:51:57\n2025-03-27T20:52:00.082540+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-error-reporting-proxy/6144f33c45ce[640]: 2025/03/27 20:52:00 [error] 22#22: *59 connect() to [2600:9000:262a:8200:5:e77e:65c0:93a1]:443 failed (101: Network unreachable) while connecting to upstream, client: 10.20.17.101, server: , request: \"POST /log-upload HTTP/1.1\", upstream: \"https://[2600:9000:262a:8200:5:e77e:65c0:93a1]:443/v1/log-upload\", host: \"10.20.17.14:8444\"\nAfter that there was continuous issue with Ecog LE observed for which session is interrupting every time.\nSuspected root cause:\n1) Ethernet cable from Ecog LE may be loose\n2) Fault in Ecog LE(KF12)\n3) Ecog LE in Error state as per Log\n2025-03-27T21:02:02.097691+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6bd623b1f1d0[640]: OCPP: Send command: StatusNotification (08d27539-c3aa-4a38-be72-8eb8bd6cd835) - {\"connectorId\":1,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"s\necc pilot is E\"}\nSolution:\n1) Reboot the charger once & check if Outlet 1 is working or not by trying charging session:\nplease let us know the status\n(Currently charging session is going on in DC2)\n2) I will be requesting for SSH access for the charger to check if Ecog LE Ip address is accessible or not\n3) If Ip address not accessible i will inform region to check the Charger with required Spare parts\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-03-28T21:11:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6c056730-557f-ee00-ab7b-4b52409a039f",
+            "subject": "Note",
+            "body": "Created child ticket",
+            "date": "2025-03-28T21:51:23Z",
+            "extra": {}
+        },
+        {
+            "id": "e71b2bd5-6a0f-f011-998a-7c1e5287f582",
+            "subject": "RE: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nHope you are fine..\nCould you please perform charging session in DC1 & confirm us if it is working or not.\nW\ne have restarted ECog LE remotely & Ip is accessible Now,DC1 is also healthy.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-04-02T02:33:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "42e8e101-4710-f011-998a-7c1e5236eee4",
+            "subject": "RE: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hallo ﻿Lara Anna Oblak,\nAs checked in logs , Multiple successful charging session in  performed in DC1 & DC2 simultaneously on 02/04/2025\nCould you please confirm if there is no other points then can we can proceed with closing the ticket\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-04-03T04:49:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09812dc0-5a10-f011-9989-7c1e52771f40",
+            "subject": "AW: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Hello Sunil Sharma!\nOne of our colleagues was on site yesterday and rebooted/tested the charger.\nThe charger seems to be operational now, so you can proceed with closing the ticket.\nThank you so much for your help!\nBest regards,\nLara Oblak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 3. April 2025 06:56\nAn:\nlsm@e-netze.at\nCc:\nDissauer, Johannes <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006\nHallo ﻿Lara Anna Oblak,\nAs checked in logs , Multiple successful charging session in  performed in DC1 & DC2 simultaneously on 02/04/2025\nCould you please confirm if there is no other points then can we can proceed with closing the ticket\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it",
+            "date": "2025-04-03T07:10:49Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b39aab24-0d11-f011-9989-7c1e52768c07",
+            "subject": "RE: AW: AW: AW: ID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend CRM:02678000006",
+            "body": "Dear Lara Anna Oblak,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0413001, the case is now closed.\nProblem Description\n: ssue with backend\nResolution\n:\nReboot of\necog-secc-adapter brings DC1 back to webservice available\nCharging session is also successful in DC1 , checked multiple times\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-04T04:27:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70828529-0e11-f011-9989-7c1e52768c07",
+            "subject": "Ticket 0413001 has been closed. Are you satisfied with our provided solution? CRM:01251001322",
+            "body": "Dear Lara Anna Oblak,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0413001\nwith the title:\nID0413001-DC/Si-D/AT-[MP / S3 170003317] Issue with backend\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-04T04:35:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "incident_id": "684de9e6-a17e-4d78-9834-6ac1d5bd27f1",
+    "ticket_number": "0400892",
+    "title": "ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working.",
+    "created_on": "2025-01-20T07:48:27Z",
+    "last_activity": "2025-12-16T14:01:56Z",
+    "age": "82208",
+    "description": "Reported behavior/issue:\nDemo charger. We found that we are not able to charge on outlet two and there is an error flag saying no converters in DC3. The charger will only be in Sweden one more week. So please plan an on site check with the nessasary spare part for the next country/site.  Got this from Ingo. D\nemo charger at Outlet 2: THe Cable-check in precharge is done there with 5-8 Volt only. But it must be 500 Volt.\nRoot cause:\nSolution:",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "OMut7b",
+    "stage": null,
+    "serial_number": "MP / S3 170003392",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "2c5b5ef2-02d7-ef11-8eea-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0400892 CRM:00225150610",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0400892 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=684de9e6-a17e-4d78-9834-6ac1d5bd27f1",
+            "date": "2025-01-20T07:48:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7963e711-13d7-ef11-8eea-000d3a691687",
+            "subject": "A new case manager was assigned to 0400892 CRM:00225150761",
+            "body": "Shreyas Sathe was assigned as new Case Manager for case 0400892 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=684de9e6-a17e-4d78-9834-6ac1d5bd27f1",
+            "date": "2025-01-20T09:43:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f28c2a7c-1ed7-ef11-8eea-7c1e5235925f",
+            "subject": "ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Dear Magnus Hellberg,\nThank you for reaching\nout\nto eMobility Support. My name is\nShreyas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003392\nChargerID/Serial No.\n:\nOMut7b\nProblem Description\n: Outlet two not working/ Converter_Group_DC3 error\nTroubleshooting\n: We are currently going through the logs, we will update you with the investigations as soon as we can.\nFor future reference, your case number is\n0400892\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-20T11:05:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "71f4dbac-4fd7-ef11-8eea-000d3a691687",
+            "subject": "RE: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Dear Magnus Hellberg,\nWe have tried resetting the converter groupings of the charger, however, we can still see the error that DC3 is missing converters. In the logs as well, we have seen that only 8/10 charger converters grouped, so we are suspecting that the converters are having some issue with its wiring. We request you to please check the wirings to TB9 and TB10 converters, and let us know if they are powering up or not.  For 400kW Si-D, the placement of TB9 and TB10 will be as per the 2nd image (orange converters).\nRegarding your 2nd observation for precharge, we can see in the old logs that the precharge voltage value is going upto 300V, and not staying at 5-8V, so I am not sure about this. Could you please let me know the exact timeline when you observed this?\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-20T16:57:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5cb139c2-b89b-3b38-a30f-838f3d08b28c",
+            "subject": "Only 8/10 converters grouped after reboot",
+            "body": "",
+            "date": "2025-01-20T17:12:51Z",
+            "extra": {}
+        },
+        {
+            "id": "3d5a549b-d9d7-ef11-8eea-000d3ab009dd",
+            "subject": "Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "The charger will only be in Sweden a couple of days and I don’t have anyone that can check the charger within this timeline.\nThis must be checked on the next place.\nPlease check these timestamps.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 20 januari 2025 18:19\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nRE: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391\nDear Magnus Hellberg,\nWe have tried resetting the converter groupings of the charger, however, we can still see the error that DC3 is missing converters. In the logs as well, we have seen that only 8/10 charger converters grouped, so we are suspecting that the converters are having some issue with its wiring. We request you to please check the wirings to TB9 and TB10 converters, and let us know if they are powering up or not.  For 400kW Si-D, the placement of TB9 and TB10 will be as per the 2nd image (orange converters).\nRegarding your 2nd observation for precharge, we can see in the old logs that the precharge voltage value is going upto 300V, and not staying at 5-8V, so I am not sure about this. Could you please let me know the exact timeline when you observed this?\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-21T09:25:13Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3313fcc4-dddd-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Dear Magnus Hellberg,\nCould you please include the email of the contact person who can coordinate with technicians, once the charger is back online at its new location?\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T01:10:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3aaef3e6-11de-ef11-8eea-7c1e5235e725",
+            "subject": "Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Sorry I don’t have that information. Only know that it will go to Germany later.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 29 januari 2025 02:17\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nRE: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391\nDear Magnus Hellberg,\nCould you please include the email of the contact person who can coordinate with technicians, once the charger is back online at its new location?\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T07:23:19Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c630455d-f0de-ef11-8eea-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0400892 CRM:00225156009",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0400892 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=684de9e6-a17e-4d78-9834-6ac1d5bd27f1",
+            "date": "2025-01-30T09:55:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6a6b3d83-f0de-ef11-8eea-000d3a68cce9",
+            "subject": "RE: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Hallo zusammen\nweiß hier jemand bescheid, was ist das für ein Charger der aus Schweden nach Deutschland geschickt wird?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-30T09:56:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47109caf-bcdf-ef11-8ee9-0022489affb0",
+            "subject": "AW: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Ich hab leider keine Ahnung und finde auch in der ISP nichts dazu. Sehr seltsam\nMit freundlichen Grüßen\nSascha Theil\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nDonnerstag, 30. Januar 2025 um 11:02\nAn:\nJakitsch, Thomas (RC-DE SI E CS) <thomas.jakitsch@siemens.com>, Artes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>, Theil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>, Bost, Patrick (RC-DE SI E CS) <patrick.bost@siemens.com>\nBetreff:\nRE: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391\nHallo zusammen\nweiß hier jemand bescheid, was ist das für ein Charger der aus Schweden nach Deutschland geschickt wird?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-31T10:18:27Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bfdc63bc-dee2-ef11-8eea-000d3a68cce9",
+            "subject": "RE: AW: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Hello,\nThis is a case created by RC Sweden for the Demo charger. According to the colleagues in Sweden, there is a need for repair on this device, which will be sent to Germany. Who is the responsible person for this charger, and who will organize and coordinate the Field Service? From my point of view, there is nothing I can do, and this case will be closed if there is no senseful solution.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-04T09:59:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ae86a48a-fce2-ef11-8eea-7c1e52378e9b",
+            "subject": "Re: AW: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Dear All\nIt is a\ndemo charger\nwhich was purchase by the Headquarter in Leipzig Factory mid of 2024 (so probably still under warranty).\nThe charger is currently at a customer site Sweden and needed next by another customer in the Netherland.\nAt this time, we are investigating with Patrick Landrock. the best solution for a repair, considering the \"level\" of the technical issue(s), and other constraints.\nIf anything is unclear, we can also have a short call.\nThanks.\nBest Regards, Othmane",
+            "date": "2025-02-04T13:32:58Z",
+            "extra": {
+                "sender": "othmane.benazouz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d09c8de9-de03-f011-bae3-000d3ad97a58",
+            "subject": "Re: AW: Sv: Sv: ID0400892-DC/Si-D/SE [MP / S3 170003392] Outlet two not working. CRM:01410001391",
+            "body": "Hello,\nthis case will be closed, please open a new case when the repair of the charger is sucsessfully organized and planned. Actually there is no sense in keeping this case open.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T09:54:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

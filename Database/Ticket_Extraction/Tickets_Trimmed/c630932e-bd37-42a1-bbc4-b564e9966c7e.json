@@ -1,0 +1,67 @@
+{
+    "incident_id": "c630932e-bd37-42a1-bbc4-b564e9966c7e",
+    "ticket_number": "0421855",
+    "title": "ID0421362-DC/Si-D/NL/ [MP / R2 170001542] Live Linux Image required",
+    "created_on": "2025-04-30T16:58:01Z",
+    "last_activity": "2025-12-16T14:00:52Z",
+    "age": "12352",
+    "description": "Reported Issue: Live Linux Image required\nSolution: Booted charger with the help of external Keyboard",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "c0BYGi",
+    "stage": null,
+    "serial_number": "MP / R2 170001542,MP / R2 170001542",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8e331d00-0bb7-b15a-bf94-7d536927f288",
+            "subject": "Note",
+            "body": "We prepared the USB Live Linux stick and set the router password to\nadmin01\n, then proceeded with the configuration restore process.\nDuring the restore attempt, we initially encountered a\n\"No Bootable Device\"\nerror. To investigate further, we performed an IP scan using MobaXterm and noticed that the PLC, Linux, and Logo IPs were not reachable. Upon checking, we confirmed that all devices were powered on, but there were no blinking LEDs on the LAN cables connected to those devices.\nWe replaced the LAN cables, tried multiple reboots, connected the Live Linux USB stick to different USB ports on the Linux device, and navigated the boot menu using a USB keyboard—but each time, the system continued to show the same\n\"No Bootable Device\"\nerror.",
+            "date": "2025-04-30T17:00:41Z",
+            "extra": {}
+        },
+        {
+            "id": "3779e714-f5c4-fcd9-b2a7-d2108f87cf54",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nSeems issue related to the PLC or its communication module.\nProblem Description:\nUnable to restore configuration – system displays “No Bootable Device Found”.\nAction Performed (L2):\nPlease refer to the below note for steps taken.\nCharger Software Version:\n4.0.11\nReason for Handover (L3):\nFurther support is required to successfully restore the configuration.\nAction Required by HQ:\nFurther support to RC team for the configuration restore process.",
+            "date": "2025-04-30T17:02:04Z",
+            "extra": {}
+        },
+        {
+            "id": "ba7e1886-59f7-cfa7-a651-6beb3309ddd5",
+            "subject": "Status Update : 06/05/2025",
+            "body": "Action taken : Created new charger ID\nOld charger ID : c0BYGi\nNew charger ID : 1Y9xGI\nFound hardware fault with the charger -",
+            "date": "2025-05-06T05:36:35Z",
+            "extra": {}
+        },
+        {
+            "id": "17a97a24-82c7-ae63-b18e-2da1bcc60d0d",
+            "subject": "Notes from ES to NOC [ 09/05/2025]",
+            "body": "a) Problem Description\n:\nUnable to Boot the charger with Live Linux\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed: Created new charger ID and configured\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey | RC is working on ID0412517 ticket for the hardware fault\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2025-05-09T03:54:06Z",
+            "extra": {}
+        },
+        {
+            "id": "4058a524-a12c-f011-8c4e-7c1e5236cda4",
+            "subject": "0421855 - ID0421362-DC/Si-D/NL/ [MP / R2 170001542] Live Linux Image required CRM:02023000620",
+            "body": "Dear Bas Jeurissen,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0421855, the case is now closed.\nProblem Description\n:  Live Linux Image required\nResolution\n:\nCreated new charger ID and configured\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-09T06:45:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2831a9b-a12c-f011-8c4e-7c1e5236cda4",
+            "subject": "Ticket 0421855 has been closed. Are you satisfied with our provided solution? CRM:02023000621",
+            "body": "Dear Bas,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0421855\nwith the title:\nID0421362-DC/Si-D/NL/ [MP / R2 170001542] Live Linux Image required\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-09T06:48:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

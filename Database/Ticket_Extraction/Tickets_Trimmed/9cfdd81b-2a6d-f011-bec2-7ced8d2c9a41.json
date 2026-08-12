@@ -1,0 +1,222 @@
+{
+    "incident_id": "9cfdd81b-2a6d-f011-bec2-7ced8d2c9a41",
+    "ticket_number": "0440863",
+    "title": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently",
+    "created_on": "2025-07-30T09:46:49Z",
+    "last_activity": "2025-08-04T09:45:13Z",
+    "age": "7198",
+    "description": "Reported behavior/issue:Charger charging intermittently\nSolution: Install EcoG 1.4.12\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "McqdJC",
+    "stage": null,
+    "serial_number": "Y2/S9 313897079/001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "0b13dc16-2a6d-f011-bec2-7ced8d7251ce",
+            "subject": "Webform_incident_SiCharge D_30-07-2025_SN: Y2/S9 313873507001",
+            "body": "Dear Erik-Jan Voogt,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/S9 313873507001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Erik-Jan Voogt,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/S9 313873507001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-07-30T09:46:42Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7871ba16-2c6d-f011-b4cb-6045bdde4786",
+            "subject": "A new case manager was assigned to 0440863 CRM:00225236014",
+            "body": "Anupama Srivastava was assigned as new Case Manager for case 0440863 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9cfdd81b-2a6d-f011-bec2-7ced8d2c9a41",
+            "date": "2025-07-30T10:01:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6679d92e-0c0b-d06c-9dac-6b74273d0262",
+            "subject": "Issue description",
+            "body": "Customer is experiencing unintended stops and non-starting\ncharging sessions in vehicles. Heliox has resolved this issue for its\nFLEX chargers with an automatic restart function. The customer\nwas promised the same functionality for their SiCharger. Could you\ntell me the status of the new firmware for this charger? When can\nthe customer expect it?",
+            "date": "2025-07-30T10:11:44Z",
+            "extra": {}
+        },
+        {
+            "id": "ad34bf39-316d-f011-b4cc-000d3ad97a58",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:02919000234",
+            "body": "Dear Erik Jan Voogt,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnupama\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nNorbert Szilagyi\nChargerID/Serial No.\n:\nMcqdJC\nProblem Description\n:\nCharger charging intermittently\nFor future reference, your case number is\n0440863\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnupama Srivastava\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-30T10:37:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2333fdf0-596d-f011-b4cc-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0440863 CRM:00225236292",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0440863 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9cfdd81b-2a6d-f011-bec2-7ced8d2c9a41",
+            "date": "2025-07-30T15:29:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31c84bf9-596d-f011-b4cb-7c1e5236e32d",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:02919000234",
+            "body": "Hello Erik, good afternoon. I hope you are doing well.\nIf I understood correctly, what you want is the wake-up function or BCB toggle enabled in the SiD, correct?\nIf yes, then we have already a solution and can be applied on v6 onwards.\nStarting from v8 it's as default, for now I need to install it directly on the charger.\nAlso, to have this working, we must have a backend connection and send this configuration:\nTxStopPoint=PowerPathClosed.\nIf you don't have a backend please let me know as we need to see the possibilities.\nThis charger SN that you provided is offline so I cannot update it.\nLet me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-07-30T15:29:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b963c6f-c26e-f011-b4cc-6045bde0265d",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Dear Erik Jan Voogt,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0440863\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-08-01T10:29:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1825448-c76e-f011-b4cb-7c1e52206585",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Thank you for your emails. I am in contact with the customer to agree a moment for next week to update their system. They have trained engineers, and I want one of them nearby during updating. I'll come back to you with time slots.\nIs that okay?\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T11:04:31Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09663676-ca6e-f011-b4cc-000d3addf8ce",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Hi Francisco,\nFaster than expected. Do you have an engineer available who can update the charger next Monday at 9 a.m.?\nI'll check the serial number. After your response, I have my doubts. The customer will have the system connected to the grid on Monday.\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T11:27:17Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "67288cb2-ca6e-f011-b4cc-000d3addf8ce",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Hi Erik!\nThanks for the quick feedback.\nYes I am available on Monday to update it but please confirm my previous questions:\n\"\nIf I understood correctly, what you want is the wake-up function or BCB toggle enabled in the SiD, correct?\nIf yes, then we have already a solution and can be applied on v6 onwards.\nStarting from v8 it's as default, for now I need to install it directly on the charger.\nAlso, to have this working, we must have a backend connection and send this configuration:\nTxStopPoint=PowerPathClosed.\nIf you don't have a backend please let me know as we need to see the possibilities.\nThis charger SN that you provided is offline so I cannot update it.\n\"\nWe can schedule a meeting in Teams to allocate my hours.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-08-01T11:28:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "caba85ac-cb6e-f011-b4cb-7c1e52350ea5",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "If I understood correctly, what you want is the wake-up function or BCB toggle enabled in the SiD, correct?\nDon't know what BCB toggle is. Customer is facing start-up and unintended stop problems with their vehicles. Wake-up functionality sounds like solving the problem.\nIf yes, then we have already a solution and can be applied on v6 onwards.\nI'm not familiar with versions of SiCharge D yet. You have to advise me on it\nStarting from v8 it's as default, for now I need to install it directly on the charger.\nDon't know what you mean. Can't see a relation to the topic.\nAlso, to have this working, we must have a backend connection and send this configuration:\nTxStopPoint=PowerPathClosed.\nHow can I support you on that?\nIf you don't have a backend please let me know as we need to see the possibilities.\nThis charger SN that you provided is offline so I cannot update it.\nI discussed with the customer. He'll come back to it\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T11:36:01Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fbea41f7-ce6e-f011-b4cc-000d3addf8ce",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Hello Erik,\nThanks for the feedback.\nBCB toggle is known as Wakeup function. BCB comes from how the vehicle handles the PilotState to reattempt the charging.\nTo apply the Wake-up hotfix, we must have v6.1.3 or newer as it has been tested on these versions. Previous to that, we are not allowed to do it.\nFrom v8.X onwards, the hotfix is already installed by default, so we don't have to install it again in case we need it.\nRegarding the\nTxStopPoint=PowerPathClosed, we need to ask the OCPP backend provider to send this configuration remotely.\nI will wait for your feedback next week.\nThanks and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-08-01T11:59:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7aafda74-cf6e-f011-bec2-000d3addbd19",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Hi Francisco,\nThis is a copy of the system. I am not familair with this picture and haven''t noticed a serial number. Hope you have. System is connected to the net.\nThe customer has moved the time frame to 10 a.m.\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T12:03:00Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f5da87eb-cf6e-f011-b4cb-7c1e52350ea5",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "It is not clear to me which feedback you're waiting for. Can you give me a call?\nIt seems to me; you have all information you need.\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T12:06:16Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7ab92e75-d06e-f011-b4cc-7c1e52768372",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "These are the outlets of the SiCharger in question. Firmware version 6.1.3\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T12:10:15Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f521edb6-d06e-f011-b4cc-000d3ad97a58",
+            "subject": "Re: ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Do yo have access to Chargesight?\nhttps://van-den-haak.chargesight.app/ocpp-targets\nKind regards, Vriendelijke groet,\nErik-Jan Voogt\nAccount Manager Truck\n+31 6 82 29 46 82",
+            "date": "2025-08-01T12:12:04Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ab81651c-d36e-f011-b4cc-000d3addf8ce",
+            "subject": "ID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently CRM:00315002876",
+            "body": "Hello Erik,\nThe feedback I waiting for is the backend and SN related.\nSeems like we have everything but I don't have access:\nI have an account to Chargesight but not to the URL you sent me.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-08-01T12:29:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3906f63c-1771-f011-b4cb-7ced8d455870",
+            "subject": "Ticket 0440863 has been closed. Are you satisfied with our provided solution? CRM:00315002882",
+            "body": "Dear Erik, wake-up function is installed and TxStopPoint=PowerPathClosed. I will install the v7.0.5 and the hotfix again as planned.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0440863\nwith the title:\nID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-04T09:41:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b1c597d-1771-f011-b4cb-7ced8d455870",
+            "subject": "Ticket 0440863 has been closed. Are you satisfied with our provided solution? CRM:00225237889",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0440863\nwith the title:\nID0440863-DC/Si-D/NL-[Y2/S9 313873507001] Charger charging intermittently\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-04T09:43:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

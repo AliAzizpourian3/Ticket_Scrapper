@@ -1,0 +1,224 @@
+{
+    "incident_id": "7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+    "ticket_number": "0396334",
+    "title": "ID0396334/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging",
+    "created_on": "2024-12-18T13:23:11Z",
+    "last_activity": "2025-12-16T14:02:50Z",
+    "age": "49172",
+    "description": "Reported behaviour/issue:  Customer seems to start charging with creditcard but as soon as he plugs in the car it also starts on autocharge. The charging starts but then the autocharge stops the transaction and we send that the session cost is 0 DKK but charging session keeps going and the customer ends up charging for free.\nSee timestamps between  2024-12-18T09:25 >2024-12-18T09:50. This is on connector 2.\nRoot cause:\nPossible\nncorrect processing of the Seitatech payment terminal message towards the OCPP Backend. within  FW v4.0.11\nSolution: FW Updated\nOn DAMEX Sanctioned List: No\nWarranty Status: Active\n2024.01.21: Handover from ES to NOC",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "qntu3k",
+    "stage": null,
+    "serial_number": "MP/SN170004220",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "18d0d83e-43bd-ef11-b8e8-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225140317",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2024-12-18T13:23:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2253631f-4cbd-ef11-b8e9-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225140351",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2024-12-18T14:27:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57a48628-62bd-ef11-b8e9-000d3ab4d5d3",
+            "subject": "ID0396334-DC/Si-D/DK-[MP / SN 170004220] - Customer got free charging CRM:00645000899",
+            "body": "Dear Customer,\nThank you for reaching out to eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / SN 170004220\nChargerID/Serial No.\n:\nqntu3k\nProblem Description\n: Customer got free charging\nWe will analyze the logs and get back to you.\nFor future reference, your ticket number is\n0396334\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-18T17:04:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9891f4f-aa44-bbe2-9216-c5a72397cd1f",
+            "subject": "Analysis",
+            "body": "There were 2 charging sessions:\n@9:26, started with VID, and I suspect there might be some issue with setting Charging Profile for DC2.\n@9:50, started with CC and went fine without any issue.\nI will check further in detail",
+            "date": "2024-12-19T15:37:40Z",
+            "extra": {}
+        },
+        {
+            "id": "0f1813a6-50c3-ef11-b8e8-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225142329",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2024-12-26T06:14:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6bb9e8f4-379d-455a-878b-cca4a9be88fe",
+            "subject": "Note to L2",
+            "body": "For \"txId\\\":27377820-",
+            "date": "2024-12-26T12:53:19Z",
+            "extra": {}
+        },
+        {
+            "id": "2b342029-ebc3-ef11-b8e8-7c1e52378e9b",
+            "subject": "RE: ID0396334-DC/Si-D/DK-[MP / SN 170004220] - Customer got free charging CRM:00645000899",
+            "body": "Hello Magnus,\nHope you are doing well.\nWe are still analyzing the issue & will get back to you soon with update.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-27T00:40:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56651c8f-ebc3-ef11-b8e8-7c1e5237e33d",
+            "subject": "Autosvar: ID0396334-DC/Si-D/DK-[MP / SN 170004220] - Customer got free charging CRM:00645000899",
+            "body": "Dear sender,\nI hope this message finds you well.\nI am writing to inform you that I will be out of the office from 20 december to 13 January due to vacation.\nI will do my best to respond as soon as possible upon my return.\nWith best regards,\nMagnus Hellberg",
+            "date": "2024-12-27T00:43:23Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "822f9404-28f9-f1f3-bfad-b4dc282dfcf8",
+            "subject": "Note toL2",
+            "body": "For\ntxId\\\":27377820-\n:\nHere it was reported\nClearChargingProfile with status Unknown.\nOCPP: Received command: DataTransfer (eb811a24-428a-43c6-b0b3-7593209e33c0) - {\"vendorId\":\"AdhocPayment\",\"messageId\":\"FinalCost\",\"data\":\"{\\\"txId\\\":27377820,\\\"cost\\\":0,\\\"description\\\":{\\\"en\\\":\\\"Total: 0 dkk\\\"}}\"}\n2024-12-18T09:27:51.516918+00:00 sicharge-cp [local0:info] sicharge-cp-backend/8d63a38fbd43[690]: OCPP: Received command:\nClearChargingProfile\n(79d65312-a31b-462a-afa3-7de0cc0c2951) - {\"connectorId\":2}\n2024-12-18T09:27:51.519488+00:00 sicharge-cp [local0:info] sicharge-cp-backend/8d63a38fbd43[690]: OCPP: Send result:\nClearChargingProfile\n(79d65312-a31b-462a-afa3-7de0cc0c2951) - {\"status\":\"Unknown\"}",
+            "date": "2024-12-28T12:45:57Z",
+            "extra": {}
+        },
+        {
+            "id": "b5bcd34c-143e-35ed-99f1-67b495134d82",
+            "subject": "Note to L2",
+            "body": "",
+            "date": "2024-12-30T05:38:49Z",
+            "extra": {}
+        },
+        {
+            "id": "fda77495-91c6-ef11-b8e8-6045bde1171e",
+            "subject": "0396334 - ID0396334-DC/Si-D/DK-[MP / SN 170004220] - Customer got free charging CRM:00921001441",
+            "body": "Hello Miguel,\nGreetings of the day!\nWe are unable to find the asset details for the charger with Serial No. MP / SN 170004220 on the ISP. Kindly assist with this.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-30T09:36:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "438900b6-96c6-ef11-b8e8-000d3ab41b62",
+            "subject": "RE: 0396334 - ID0396334-DC/Si-D/DK-[MP / SN 170004220] - Customer got free charging CRM:00921001441",
+            "body": "Good morning Beerpal\nThe asset is on ISP. Please search with “contains” on the serial number, the new assets Sicharge D are automatically from SAP into ISP so there is no “asset missing”.\nThe new serial numbers are all together as the 2\nnd\nasset in the image as you can see.\nIt is now even duplicated\n@Bermudez Hernandez, Alberto Jose (SI E CS DS)\nplease check for similar duplicates from the most recent data ingestion\nFor further issues like this, please do not reach out to me. Reach out to Alberto or Xiyou (SME for Asset management on ISP) both in CC, thank you\nObrigado / Thank you\nMelhores cumprimentos / Best regards\nMiguel Paiva\nSiemens S.A.\nSI E FIN IT\nAv. 25 de Abril 201,\n2845-547 Amora, Portugal\nMobile:\n+351\n912431922\nmailto:miguel.moreno-de-paiva@siemens.com",
+            "date": "2024-12-30T10:13:35Z",
+            "extra": {
+                "sender": "miguel.moreno-de-paiva@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "20564f29-9a36-8b74-8606-a6a16936addb",
+            "subject": "Handover note from L2 to ES",
+            "body": "Problem Description:\nCustomer seems to start charging with creditcard but as soon as he plugs in the car it also starts on autocharge. The charging starts but then the autocharge stops the transaction and we send that the session cost is 0 DKK but charging session keeps going and the customer ends up charging for free.\nSuspected root cause :\nNA\nReason of Handover (L3): Deeper analysis\nAction Performed (L2) : Logs analysis\nCharger SW Version:\nv4.0.11-0-g0b7d164+SF-RETOPICS\nDate of the issue: reported:\n2024-12-18T09:27hrs (UTC)\nFault history:\nNA\nLog analysis with timestamp: Logs attached -\n2024-12-18T09:27:38hrs (UTC)",
+            "date": "2024-12-30T11:19:32Z",
+            "extra": {}
+        },
+        {
+            "id": "a34a11ec-eac7-ef11-b8e8-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225143427",
+            "body": "Sambath KS was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2025-01-01T02:48:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7a7d29a-dbcc-ef11-b8e9-000d3a697eb1",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225145018",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2025-01-07T09:41:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aad210e1-35d7-ef11-8eea-6045bdde0ce3",
+            "subject": "0396334 - ID039633C/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging CRM:00314000136",
+            "body": "Good evening Magnus,\nI am reaching out regarding ticket\nID0396334.\nThe ticket was opened for an event of free charging session with  FW\nv4.0.11-0-g0b7d164+SF-RETOPICS\n.\nAs per the analysis, it seems that from Seitatech we have an undefined command to abort the transaction with payload, and an error on the preauthorize.\nJust after this, the charger sends an OCPP command to Stop the session, and the response is empty.\nThe charging session on DC2 starts at 2024-12-18T09:26:55, and it finishes only at 2024-12-18T09:49:44 from vehicle side, with no other OCPP message. It looks to me as this issue might be related to an incorrect processing of the Seitatech payment terminal message towards the OCPP Backend.\nMy question is:\nhas this behavior happened again with FW6.0.3\n? IF this event happened only in this occasion and on v4.0.11, it might be the case that no further investigation is required.\nI am looking forward to hearing your feedback and opinion soon. Please reach out to me if you have more information or if you want to discuss the topic further.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-20T13:53:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1f07c3a8-d7d7-ef11-8eea-000d3ab66b74",
+            "subject": "Sv: 0396334 - ID039633C/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging CRM:00314000136",
+            "body": "Hello\nThis was the only time this happened that I know of.\nThe charger is on the latest fw now. I think we can close the ticket and we will keep an eye on it to see if it happens again.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 20 januari 2025 17:14\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\n0396334 - ID039633C/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging CRM:00314000136\nGood evening Magnus,\nI am reaching out regarding ticket\nID0396334.\nThe ticket was opened for an event of free charging session with  FW\nv4.0.11-0-g0b7d164+SF-RETOPICS\n.\nAs per the analysis, it seems that from Seitatech we have an undefined command to abort the transaction with payload, and an error on the preauthorize.\nJust after this, the charger sends an OCPP command to Stop the session, and the response is empty.\nThe charging session on DC2 starts at 2024-12-18T09:26:55, and it finishes only at 2024-12-18T09:49:44 from vehicle side, with no other OCPP message. It looks to me as this issue might be related to an incorrect processing of the Seitatech payment terminal message towards the OCPP Backend.\nMy question is:\nhas this behavior happened again with FW6.0.3\n? IF this event happened only in this occasion and on v4.0.11, it might be the case that no further investigation is required.\nI am looking forward to hearing your feedback and opinion soon. Please reach out to me if you have more information or if you want to discuss the topic further.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-21T09:11:20Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f8340ce8-b476-18ea-8bf6-27061f916cfc",
+            "subject": "Handover from ES to NOC",
+            "body": "Problem Description\n:\nundefined command to abort the transaction with payload from Seitatech, and an error on the preauthorize, caused charging session not to stop and without billing\nSuspected Root Cause\n: Possible\nncorrect processing of the Seitatech payment terminal message towards the OCPP Backend. within  FW v4.0.11\nAction Performed (ES)\n: Logs analysis\nCharger SW Version\n: v6.0.3\nReason for Handover (ES/NOC\n): Charger has been updated to v6.0.3 and since then issue did not appear again. Issue appeared only once with v4.0.11. Ticket can be closed as no further investigation will be conducted on an issue related ot v4.0.11. If issue will appear on v6.03, a new ticket will be opened.",
+            "date": "2025-01-21T10:22:22Z",
+            "extra": {}
+        },
+        {
+            "id": "286253e7-e1d7-ef11-8eea-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0396334 CRM:00225151441",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0396334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7d90e63a-d6e7-4969-a1c4-cf78a949d12e",
+            "date": "2025-01-21T10:24:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f75b17f5-17d8-ef11-8eea-000d3a68cce9",
+            "subject": "ID039633C/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging CRM:00798001783",
+            "body": "Dear Magnus Hellberg,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0396334, and the case is now closed.\nProblem Description\n: Customer got free charging\nResolution\n: FW related bug\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-21T16:51:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd341d51-18d8-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0396334 has been closed. Are you satisfied with our provided solution? CRM:00798001784",
+            "body": "Dear Magnus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0396334\nwith the title:\nID0396334/Si-D/DK-4-D[MP / SN 170004220]-Customer got free charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-21T16:54:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

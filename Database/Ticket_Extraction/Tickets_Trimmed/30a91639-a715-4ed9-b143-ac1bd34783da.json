@@ -1,0 +1,193 @@
+{
+    "incident_id": "30a91639-a715-4ed9-b143-ac1bd34783da",
+    "ticket_number": "0399052",
+    "title": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped",
+    "created_on": "2025-01-09T12:21:35Z",
+    "last_activity": "2025-12-16T14:02:20Z",
+    "age": "28738",
+    "description": "Reported behaviour/issue:\nFC16 is tripping\nRoot cause:\nold FW bug - all contactors enabled at same time creates a surge\nSolution:\nupdate to v6.0.3\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 596630000,
+    "stage": null,
+    "serial_number": "MP / S3 170003386",
+    "case_nature_code": null,
+    "chargerID": "Xdc81P, tujg9j",
+    "additional_info": [
+        {
+            "id": "0376c747-84ce-ef11-b8e8-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0399052 CRM:00225146457",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0399052 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=30a91639-a715-4ed9-b143-ac1bd34783da",
+            "date": "2025-01-09T12:21:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dc798ba4-84ce-ef11-8ee9-0022489ad1e4",
+            "subject": "A new case manager was assigned to 0399052 CRM:00225146461",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0399052 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=30a91639-a715-4ed9-b143-ac1bd34783da",
+            "date": "2025-01-09T12:24:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04e9916c-4ccf-ef11-8ee9-000d3adbcd09",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Dear Rasmus Eksten,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003386\nChargerID/Serial No.\n:\nXdc81P\nProblem Description\n: FC16 is tripping randomly during start charge\nTroubleshooting\n:\nI will share with you the tests with did today with Simen from RC-NO, for now, it would be best to wait for the result of the FC16 result (please check below).\nThe problem seems to be related to the Contactor or the Fuse itself.\nWhat we tested was, removing the cables from the XD441 and XD442:\nQA09 - XD441:8C\nQA10 - XD442:14C\nQA11 - XD441:10C\nQA12 - XD442:16C\nAll of them showed around 300-400kOhm which is correct with our values in TC.\nWe checked XD9.1B/A, removed and plugged back in → no issues it seems\nChecked XD12.1 and also all properly attached.\nWe changed FC16 with FC17 to see if there is any problem with FC16.\nIf we have an error in FC16 (which is now in FC17), then we have a faulty fuse\nIf we have an error in the new FC16 (FC17), then it means we still have a problem in the circuit.\nPlease let me know your feedback if you want to send someone on-site to check this or if you want to wait for the news.\nFor future reference, your case number is\n0399052\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-10T12:14:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f302aebd-a8d1-ef11-8ee9-000d3a691687",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good afternoon.\nI checked your charger again and compared with the Norway. The root cause is definitely different, in your charger the problem occurs during the closing of the Main circuit breaker, whereas the Norway it's during charging.\nThis is what happens:\nWe have tested this in our test charger just now (me and L3) and found the exact same issue.\nWe will create a ticket to R&D since this is not something we are aware of. I will bring you feedback soon.\nBest regards,\nFrancisco",
+            "date": "2025-01-13T12:20:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9bd9b76d-19d3-ef11-8ee9-000d3a691687",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning.\nI hope you are doing well. Before I create the R&D ticket, I request the update to v6.0.3 to understand if there is any kind of firmware fault and if it reoccurs I can just copy the new information for the ticket.\nIf you prefer to stay in v4.0.11, I will proceed to create the ticket then.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-01-15T08:19:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bbea211a-1ad3-ef11-8eea-000d3ab4d5d3",
+            "subject": "Automatic reply: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Jeg er ude af huset og har begrænste adgang til min mail.",
+            "date": "2025-01-15T08:24:14Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3723690d-b4d4-ef11-8ee9-7c1e52378e9b",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning.\nIt seems that after this last review, the charger hasn't had any more errors related to the SPD:\nAnd also I checked for the FC12-17 errors and since last week the errors only triggered when a reboot was requested:\nI checked all these instances myself and they all go to true after a reboot.\nFrom my side, I would say that I keep this ticket until Monday and if there is no errors since today until Monday, I will close the ticket.\nWhat is your opinion?\nBest regards,\nFrancisco",
+            "date": "2025-01-17T09:18:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74e13768-c0d4-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "I agree with you. Do we know if anything has been changed in the order of the switching of the contactors/breaker in FW 6 that can be the reason for the change?\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-17T10:47:15Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "300dd99b-10d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning. I hope you had a nice weekend.\nUnfortunately, the problem happened this morning with charger Xdc81P:\nIt seems that someone started the update, that's good, let's update to v6.0.3 and get the error again. Hopefully there is no need to go to site but from my perspective, it's impossible that the SPD is faulty since the SPD when it goes to Error, it should never come back and needs to be replaced. Here we see that the SPD comes back after the error during a reboot or similar, so I would assume there is something similar to this one I found previously:\nIf you have time to check it on-site or if there is any trained technician that can check this connection if it's damaged or just plug out and plug back in to see if it was indeed loose.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-01-20T09:26:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2fc520d4-11d7-ef11-8eea-7c1e52378e9b",
+            "subject": "RE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Yes, we noticed. I have started the update, and a technician will visit the charger this afternoon.\nWill report back..\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-20T09:35:11Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f1c921f3-6cd9-ef11-8eea-000d3ab009dd",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning.\nSince the update, there were no errors, and there were 106 charging sessions in total.\nI will do the same as last time, keep the ticket until Monday and let's see.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-01-23T09:32:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c12b608c-98dc-ef11-8eea-0022489bcff4",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning. I hope you are doing well.\nFor the tujg9j charger it seems that has been no error since the first update. But for Xdc81P it occurred again yesterday.\nI already forwarded this information to R&D as it's currently being analysed by them. It has the highest priority so we should have information sooner.\nI will bring you feedback as soon as I get it.\nBest regards,\nFrancisco",
+            "date": "2025-01-27T10:22:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ad5f5db-2dde-ef11-8eea-000d3ab9a120",
+            "subject": "ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Hi Rasmus, good morning.\nWe got feedback from R&D that mentions that for the chargers where FC16 is tripped during the start charging is a bug from the previous FW. If you update to v6.0.3 it is resolved, we already have this confirmation from Norway.\nFor the other issue with the MCCB, I will create a new ticket for you since it's a different topic. In Norway they have the same issue and are replacing the MCCB today and checking if it is resolved. If yes, then I can recommend to you in the new ticket.\nI will only open the ticket when I have the solution.\nI will then close this ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-01-29T10:43:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ed5f5db-2dde-ef11-8eea-000d3ab9a120",
+            "subject": "RE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nMon Jan 27 2025 10:25:00 GMT+0000 (Western European Standard Time)\nTo:\nRasmus Eksten <rasmus.eksten@siemens.com>;\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good morning. I hope you are doing well.\nFor the tujg9j charger it seems that has been no error since the first update. But for Xdc81P it occurred again yesterday.\nI already forwarded this information to R&D as it's currently being analysed by them. It has the highest priority so we should have information sooner.\nI will bring you feedback as soon as I get it.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nThu Jan 23 2025 09:48:47 GMT+0000 (Western European Standard Time)\nTo:\nRasmus Eksten <rasmus.eksten@siemens.com>;\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good morning.\nSince the update, there were no errors, and there were 106 charging sessions in total.\nI will do the same as last time, keep the ticket until Monday and let's see.\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\nRasmus Eksten <rasmus.eksten@siemens.com>;\nReceived:\nMon Jan 20 2025 09:35:08 GMT+0000 (Western European Standard Time)\nTo:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; eMobility Support Queue <emobility_support.si@siemens.com>;\nSubject:\nRE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nYes, we noticed. I have started the update, and a technician will visit the charger this afternoon.\nWill report back..\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately\nby reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFrom:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSent:\n20. januar 2025 10:32\nTo:\nEksten, Rasmus (RC-DK SI E) <rasmus.eksten@siemens.com>\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good morning. I hope you had a nice weekend.\nUnfortunately, the problem happened this morning with charger Xdc81P:\nIt seems that someone started the update, that's good, let's update to v6.0.3 and get the error again. Hopefully there is no need to go to site but from my perspective, it's impossible that the\nSPD is faulty since the SPD when it goes to Error, it should never come back and needs to be replaced. Here we see that the SPD comes back after the error during a reboot or similar, so I would assume there is something similar to this one I found previously:\nIf you have time to check it on-site or if there is any trained technician that can check this connection if it's damaged or just plug out and plug back in to see if it\nwas indeed loose.\nI will wait for your feedback.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\nRasmus Eksten <\nrasmus.eksten@siemens.com\n>;\nReceived:\nFri Jan 17 2025 10:47:12 GMT+0000 (Western European Standard Time)\nTo:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>;\neMobility Support Queue <\nemobility_support.si@siemens.com\n>;\nSubject:\nRE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nI agree with you. Do we know if anything has been changed in the order of the switching of the contactors/breaker in FW 6 that can be the\nreason for the change?\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately\nby reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nFrom:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nSent:\n17. januar 2025 11:36\nTo:\nEksten, Rasmus (RC-DK SI E) <\nrasmus.eksten@siemens.com\n>\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good morning.\nIt seems that after this last review, the charger hasn't had any more errors related to the SPD:\nAnd also I checked for the FC12-17 errors and since last week the errors only triggered when a reboot was requested:\nI checked all these instances myself and they all go to true after a reboot.\nFrom my side, I would say that I keep this ticket until Monday and if there is no errors since today until Monday, I will close the ticket.\nWhat is your opinion?\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <\nemobility_support.si@siemens.com\n>;\nReceived:\nWed Jan 15 2025 08:24:03 GMT+0000 (Western European Standard Time)\nTo:\nRasmus Eksten <\nrasmus.eksten@siemens.com\n>;\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good morning.\nI hope you are doing well. Before I create the R&D ticket, I request the update to v6.0.3 to understand if there is any kind of firmware fault and if it reoccurs I can just\ncopy the new information for the ticket.\nIf you prefer to stay in v4.0.11, I will proceed to create the ticket then.\nI will wait for your feedback.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <\nemobility_support.si@siemens.com\n>;\nReceived:\nMon Jan 13 2025 16:17:42 GMT+0000 (Western European Standard Time)\nTo:\nRasmus Eksten <\nrasmus.eksten@siemens.com\n>;\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nHi Rasmus, good afternoon.\nI checked your charger again and compared with the Norway. The root cause is definitely different, in your charger the problem occurs during the closing of the Main circuit\nbreaker, whereas the Norway it's during charging.\nThis is what happens:\nWe have tested this in our test charger just now (me and L3) and found the exact same issue.\nWe will create a ticket to R&D since this is not something we are aware of. I will bring you feedback soon.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <\nemobility_support.si@siemens.com\n>;\nReceived:\nFri Jan 10 2025 12:16:56 GMT+0000 (Western European Standard Time)\nTo:\nRasmus Eksten <\nrasmus.eksten@siemens.com\n>;\nSubject:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241\nDear Rasmus Eksten,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / S3 170003386\nChargerID/Serial No.\n: Xdc81P\nProblem Description\n: FC16 is tripping randomly during start charge\nTroubleshooting\n:\nI will share with you the tests with did today with Simen from RC-NO, for now, it would be best to wait for the result of the FC16 result (please check below).\nThe problem seems to be related to the Contactor or the Fuse itself.\nWhat we tested was, removing the cables from the XD441 and XD442:\nQA09 - XD441:8C\nQA10 - XD442:14C\nQA11 - XD441:10C\nQA12 - XD442:16C\nAll of them showed around 300-400kOhm which is correct with our values in TC.\nWe checked XD9.1B/A, removed and plugged back in → no issues it seems\nChecked XD12.1 and also all properly attached.\nWe changed FC16 with FC17 to see if there is any problem with FC16.\nIf we have an error in FC16 (which is now in FC17), then we have a faulty fuse\nIf we have an error in the new FC16 (FC17), then it means we still have a problem in the circuit.\nPlease let me know your feedback if you want to send someone on-site to check this or if you want to wait for the news.\nFor future reference, your case number is 0399052, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-29T10:43:27Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aea2c242-30de-ef11-8ee9-7c1e52352b22",
+            "subject": "RE: ID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped CRM:00315002241",
+            "body": "Thanks for the feedback..\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-29T11:00:40Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3440403e-32de-ef11-8ee9-6045bde065fa",
+            "subject": "Ticket 0399052 has been closed. Are you satisfied with our provided solution? CRM:00315002301",
+            "body": "Dear Rasmus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0399052\nwith the title:\nID0399052-DC/Si-D/DK[Xdc81P] - FC16 tripped\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-29T11:14:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

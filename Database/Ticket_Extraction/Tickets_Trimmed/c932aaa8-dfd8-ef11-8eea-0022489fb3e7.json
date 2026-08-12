@@ -1,0 +1,144 @@
+{
+    "incident_id": "c932aaa8-dfd8-ef11-8eea-0022489fb3e7",
+    "ticket_number": "0401610",
+    "title": "ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message",
+    "created_on": "2025-01-22T16:41:10Z",
+    "last_activity": "2025-03-21T06:52:15Z",
+    "age": "26845",
+    "description": "Reported behavior/issue:   Configured Meter values not seen in OCPP message\nRoot cause:\nSolution:",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "OEAo0a",
+    "stage": null,
+    "serial_number": "MP / P0 170001102",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "e0ab3aa4-dfd8-ef11-8eea-000d3a691687",
+            "subject": "Webform_incident_SiCharge D_22-01-2025_SN: OEAo0a",
+            "body": "Dear Olivier THIERY,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nOEAo0a\nThank you\neMobility Technical Support Team\nSehr geehrte/r Olivier THIERY,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nOEAo0a\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-22T16:40:57Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "54f62022-e2d8-ef11-8ee9-7c1e52362b70",
+            "subject": "A new case manager was assigned to 0401610 CRM:00225152360",
+            "body": "Shreyas Sathe was assigned as new Case Manager for case 0401610 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c932aaa8-dfd8-ef11-8eea-0022489fb3e7",
+            "date": "2025-01-22T16:58:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "730a8d76-e3d8-ef11-8ee9-7c1e5275ee58",
+            "subject": "ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:01410001410",
+            "body": "Dear Olivier Thiery,\nThank you for reaching\nout\nto eMobility Support. My name is\nShreyas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P0 170001102\nChargerID/Serial No.\n:\nOEAo0a\nProblem Description\n: Configured Meter values not seen in OCPP message\nTroubleshooting\n: We will go through the OCPP logs of the charger and investigate the issue. We will get back to you as soon as we can.\nFor future reference, your case number is\n0401610\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-22T17:08:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a57528b-6225-19d8-9340-db23712701bd",
+            "subject": "For connector (AC)",
+            "body": "2025-01-22T14:50:47.052037+00:00 sicharge-cp [local0:info] sicharge-cp-backend/e614e2505ede[739]: OCPP: Send command: MeterValues (bdb94e0b-5f8b-405a-b2ab-ab3df6d14b5d) - {\"connectorId\":2,\"transactionId\":40639061,\"meterValue\":[{\"timestamp\":\"2025-01-22T14:50:47.049Z\",\"sampledValue\":[{\"value\":\"32\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Offered\"},{\"value\":\"5902\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\"},{\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\"}]}]}\nCurrent is non-zero, but voltage is 0. Also Ac charging is not sending “Energy.Active.Import.Register”",
+            "date": "2025-01-23T12:48:59Z",
+            "extra": {}
+        },
+        {
+            "id": "e3af7dce-92d9-ef11-8ee9-000d3ad9431b",
+            "subject": "RE: ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:01410001410",
+            "body": "Dear Olivier Thiery,\nI have gone through the logs, and I have observed some discrepancies with the voltage values as well during an active AC charging session. We will further do a deep dive into the logs and update you with our analysis as soon as possible.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T14:03:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac327d72-3960-e2a2-943f-c2241a7b5365",
+            "subject": "Handover to ES",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nThe customer complains that during AC charging session, the MeterValue msg is skipping “Energy.Active.Import.Register”. I have also seen that during a charging session, the current value is non zero however the voltage value is 0.\nAction Performed (L2):\nLog analyzed, but no conclusive root cause for the reported issue was found. I also understand that an R&D ticket\nEVC3 - 8226 is created, however, only the 2nd issue of the ticket is seen in the logs. The meterstop value is non 0.\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nno conclusive root cause found in the log\nLog analysis with timestamp:\n2025-01-22T14:57\nAction Required\nby HQ:\nFurther investigation\nAttachment\n:  Logs in the Agent notes.",
+            "date": "2025-01-23T14:09:39Z",
+            "extra": {}
+        },
+        {
+            "id": "7396b333-aea0-9d71-ae97-abb7e6d22d37",
+            "subject": null,
+            "body": "Please note that this issue is not only related to one charger",
+            "date": "2025-01-23T14:52:39Z",
+            "extra": {}
+        },
+        {
+            "id": "9a2e5b49-9893-c16e-a6bf-9e93e5584e86",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-29T12:07:21Z",
+            "extra": {}
+        },
+        {
+            "id": "6acca242-3ade-ef11-8eea-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0401610 CRM:00225155437",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0401610 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c932aaa8-dfd8-ef11-8eea-0022489fb3e7",
+            "date": "2025-01-29T12:12:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07e02842-3cde-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:01410001410",
+            "body": "Hello Olivier,\nas OCPP 1.6 section 7.31. Measurands\nEnergy.Active.Import.Register:\nNumerical value read from the \"active electrical energy\" (Wh or kWh) register of the (most authoritative)\nelectrical meter measuring energy imported\n(from the grid supply). As i can see in your chargers configuration there is no Bauer meter on this charger. So therefore there will be no reported values on\nEnergy.Active.Import.Register\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T12:26:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7ead97c5-d6e2-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:01410001410",
+            "body": "Hello,\nif there is no more querys regarding this topic i will close the case\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-04T09:02:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9a39519a-85e7-ef11-9341-0022489a2456",
+            "subject": "ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:00439000734",
+            "body": "Hello\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0401610.\nIf you need any further assistance, please do reach back out to us by sending a new email to\ndepot360.support@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0401610\nwith the title:\nID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-10T08:04:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12021601-2106-f011-bae2-6045bdde4786",
+            "subject": "0401610 - ID0401610-DC/Si-D/FR [MP / P0 170001102] Configured Meter values not seen in OCPP message CRM:00334000003",
+            "body": "",
+            "date": "2025-03-21T06:52:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

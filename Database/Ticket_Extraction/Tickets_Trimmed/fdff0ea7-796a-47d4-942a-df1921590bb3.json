@@ -1,0 +1,375 @@
+{
+    "incident_id": "fdff0ea7-796a-47d4-942a-df1921590bb3",
+    "ticket_number": "0428824",
+    "title": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge",
+    "created_on": "2025-06-03T13:17:33Z",
+    "last_activity": "2025-11-12T09:42:29Z",
+    "age": "135135",
+    "description": "Reported behaviour/issue:\nMAN truck not charging properly and Volvo ERR67\nSolution:\nUpdate 26/Jun - RC swapped charger ID: 0bJm6K , with a warehouse charger ID: 3J90YB\nFor warranty purposes, we as TS, did not recommend such action. It was purely done by RC and not consulted with us before hand. We are not sure if this accounts as warranty anymore. Please do as you wish with this information.\nCharger seems to have the same problem, so it's not fixed.\nUpdate 2/Jul - Unfortunately we were not able to reproduce the error today. We will wait for feedback from the customer\nUpdate 6/Jul - No errors again\nUpdate 19/Aug - The new EVCC is working without any error (\n00.16.81.0e.fa.50\n) and the rest still have the problem\nUpdate 28/Aug - Call with EcoG - discussions ongoing about being able to develop the SECC to be more robust to CP state changes. If VOlvo has a solution, we should go for it.\nUpdate 9/Sep - No issues again with the Volvo that had the replacement. Since the solution is clear,",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "3J90YB",
+    "stage": null,
+    "serial_number": "MP / S9 170004103",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "f51a1720-7d40-f011-877a-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0428824 CRM:00225210043",
+            "body": "Naim Kasami was assigned as new Case Manager for case 0428824 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fdff0ea7-796a-47d4-942a-df1921590bb3",
+            "date": "2025-06-03T13:17:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5619e671-7d40-f011-877a-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0428824 CRM:00225210047",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0428824 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fdff0ea7-796a-47d4-942a-df1921590bb3",
+            "date": "2025-06-03T13:20:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e987e3c0-7e40-f011-8779-7c1e5220587e",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Dear Naim,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S9 170004103\nChargerID/Serial No.\n:\n0bJm6K\nProblem Description\n: Volvo and MAN trucks having interruptions with ERR67. PilotState C to B during charging.\nTroubleshooting\n:\nI've checked this charger for the past week and here are my findings for the MAN truck:\n​​​​​​​\n​​​​​​​During the 30th March we were able to charge 3 times, with 2 of them transfering ~7kWh.\n​​​​​​​\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​I would like to schedule with the customer to do stress testing - test a lot of charging sessions to find a common point.\n​​​​​​​The only session I could recover the EcoG logs was from yesterday and it wasn't able to pass ParameterDiscovery\nFor the Volvo trucks, we are already waiting for the feedback from one the colleagues from Volvo. He is on vacation so we won't get a reply until earliest next week.\n​​​​​​​If you want to test this scenario, we would require an osciloscope to measure the CP and PP signal to understand where the drop is coming from, if it's the charger or the EV.\n​​​​​​​The message we got from Volvo is that they are seeing a emergency shutdown from the charger side and we are stopping because the EV changes the PilotState to B during C-state.\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​\nLet me know when it's possible to arrange some tests.\nFor future reference, your case number is\n0428824\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-03T13:29:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e0f3c57-1241-f011-877a-7c1e5236eee4",
+            "subject": "AW: ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi Francisco\nHere you get some more logs.\nWhich truck you want to use for testing so i can arrange something.\nDo it make sense maybe to change the ecoG?\nBR Naim\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 3. Juni 2025 16:50\nAn:\nKasami, Naim (RC-CH SI E OX&PM) <naim.kasami@siemens.com>\nBetreff:\nID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706\nDear Naim,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / S9 170004103\nChargerID/Serial No.\n: 0bJm6K\nProblem Description\n: Volvo and MAN trucks having interruptions with ERR67. PilotState C to B during charging.\nTroubleshooting\n:\nI've checked this charger for the past week and here are my findings for the MAN truck:\n​​​​​​​\n​​​​​​​During the 30th March we were able to charge 3 times, with 2 of them transfering ~7kWh.\n​​​​​​​\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​I would like to schedule with the customer to do stress testing - test a lot of charging sessions to find a common point.\n​​​​​​​The only session I could recover the EcoG logs was from yesterday and it wasn't able to pass ParameterDiscovery\nFor the Volvo trucks, we are already waiting for the feedback from one the colleagues from Volvo. He is on vacation so we won't get a reply until earliest next week.\n​​​​​​​If you want to test this scenario, we would require an osciloscope to measure the CP and PP signal to understand where the drop is coming from, if it's the charger or the EV.\n​​​​​​​The message we got from Volvo is that they are seeing a emergency shutdown from the charger side and we are stopping because the EV changes the PilotState to B during C-state.​​​​​​​​​​​​​​​​​​​​​​​​​​​​\nLet me know when it's possible to arrange some tests.\nFor future reference, your case number is 0428824, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-04T07:05:59Z",
+            "extra": {
+                "sender": "naim.kasami@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "44a013fe-1241-f011-8779-7c1e523663cd",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi Naim, good morning.\nLet's separate the issues here:\nfor the Volvo, since we are not able to get any feedback from Volvo HQ until next week, we will postpone it.\nfor the MAN truck, I would like to test it several sessions.\nis it possible to get a regular EV?\nThe purpose is to show that any regular EV charges properly and only MAN has this issue, because then, we can only assume that it's a compatibility issue and would require assistance from EcoG and MAN, to understand the root cause.\nFor this I need EcoG logs from several sessions.\nI can recommend to take a spare EcoG\nif we have a regular EV to take to site\n, since we see no reason for faulty behaviour from our side, in the logs.\n​​​​​​​​​​​​​​​​​​​​​Let me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-06-04T07:10:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e644104e-06ad-e757-a5cd-62a37bc85afc",
+            "subject": "MAN truck session OK",
+            "body": "",
+            "date": "2025-06-05T11:00:14Z",
+            "extra": {}
+        },
+        {
+            "id": "8b8908ee-8a04-f358-b0a2-77f544366cf4",
+            "subject": "MAN truck session NOK",
+            "body": "",
+            "date": "2025-06-05T11:00:27Z",
+            "extra": {}
+        },
+        {
+            "id": "d414d939-0542-f011-8779-6045bddf319c",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi Naim,\nTomorrow I won't have time to schedule since I already have other tasks to do.\nAs such, I will pass this ticket to my colleague François and he will support you next week.\nPlease schedule a day in advance so that he is prepared and available to do it.\nThank you.\nBest regards,\nFrancisco",
+            "date": "2025-06-05T12:04:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "79212239-aa42-f011-8779-7ced8d45426a",
+            "subject": "A new case manager was assigned to 0428824 CRM:00225211774",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0428824 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fdff0ea7-796a-47d4-942a-df1921590bb3",
+            "date": "2025-06-06T07:45:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d80c65df-7b4b-f011-8779-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0428824 CRM:00225216544",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0428824 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fdff0ea7-796a-47d4-942a-df1921590bb3",
+            "date": "2025-06-17T13:06:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a9ce7232-7730-08db-a4ca-68a1d8b4e521",
+            "subject": "NOTE FROM TS before intervention",
+            "body": "Note from TS:\nVolvo trucks is a known issue, email trend sent. When Volvo HQ is back they will reply.\nConfirm with Cata from VI.\nMAN truck needs to be clarified. It seems there were some tests with Heliox chargers where they are indeed monitoring the PP signal whereas we don't. Can it be that the PP signal voltage dropped?\nTable from MAN:\nMAN truck charged 1 time successfully, logs in timeline and one time failed. All the other sessions we are not able to know the root cause since there is no EcoG logs.\nThe session that failed, we can see that there is no response from the EVCC. In the pcap we see no requests",
+            "date": "2025-06-18T11:56:22Z",
+            "extra": {}
+        },
+        {
+            "id": "9faab2c6-e4fe-47bc-a2ea-fd0ac92d33ba",
+            "subject": "NOTE FROM VI (intervention)",
+            "body": "Tested with Volvo only - No MAN trucks available for test.\nResults show that there is an interference in the ground during charging. This causes the CP state to drop - has a lot of peaks, which results in a failed session that mentions PilotState C dropped to B while charging - Err67.\nWe changed the TxStopPoint from EnergyTransfer to PowerPathClosed in order to mitigate the problem, as when the session fails, the Volvo will automatically attempt to restart the session and will charge again.\nAlignment with Volvo needed for further analysis. Volvo colleague in Switzerland is able to go on-site since it's close to the office but not able today. He is to go and reproduce the issue and make the necessary measurements.\nAll files are shared in the ticket. Pico measurements, EcoG/State logs and SCB logs",
+            "date": "2025-06-18T12:05:28Z",
+            "extra": {}
+        },
+        {
+            "id": "89fbc771-9652-f011-877b-7c1e52faf3c6",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi Naim,\nWe checked the new charger that you replaced and we found an instance today of the same problem with the Volvo truck.\nAs you can see we are still facing the same error.\nWe were discussing and I believe we are available for a site test on Wednesday. Does this suit you and the customer?\nWe are also in contact with Volvo to do more tests.\nLet me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-06-26T14:04:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a3dca0ad-b258-f011-877b-000d3ad97a58",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hi all\nwe replaced the charger on site in order to keep the customer operations going. However, the error still persists on the \"original\" charger and the charger that we replaced (though there is no canceled sessions with this one).\nI understand that this error also occurs in other regions. Could you please follow this topic and provide a solution to roll out when we reinstall the charger at a later point in time.\nThanks\nJulian",
+            "date": "2025-07-04T08:41:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5528ff3d-b758-f011-877a-7c1e52768c07",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hi Julian, good morning.\nSince a few months (almost a year already), we have had the same issues that you are facing with Volvos, in several customers in Germany.\nThe problem with this error is that it's very sporadic and hard to reproduce, just like this week, we went on site and, unfortunately, didn't get any results from it.\nFrom these same customers, we have this error since version v3.2.8, sometimes we have a full month of occurrences, and sometimes a full month without 1 single failed session.\nFrom a discussion we had with a Volvo colleague from Germany (without any picoscope tests) is that the Volvo is requesting a stop due to a EVSE EmergencyShutdown, but the chargers clearly do not enter any emergency state.\nThat's why 2 weeks ago we planned to make measurements to bring to Volvo's attention and we got them, there is a noise on the signal which causes the CP line to drop and causes the session to stop.\nUnfortunately, in that week when we got the error, there was no chance that the colleague from Volvo R&D to join us, so there was only a technician, which couldn't support us.\nWe already asked our R&D to give us any indications of measurements or ideas, to proceed with this topic.\nNow, moving on to your message where the \"original\" charger still persists the error.\nIn this \"\nnew\n\" charger there was already\n12 occurrences\nof the same error, that we saw in the \"original\" charger, which it has been monitored for the last 2 weeks:\nAs you can see, this problem is not solved with the new charger, it was just unfortunate that on the day of the tests, we were not able to reproduce it together with the support from Volvo R&D and the customer is not complaining, for now.\nSince the \"original\" charger has been offline since it has been replaced we cannot say if the error persists or not. Please see here the last update from SCB\nAs always, let's keep each other updated on this ticket in order to have a smooth operation and support.\nThank you as always and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-07-04T09:14:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e7343470-c158-f011-877a-7c1e52350ea5",
+            "subject": "RE: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "HI Julian\nGood morning, i just wanted to add to francisco email that the plan is to\ncontinue monitoring this charger for the next couple of days and if you receive any complain from the customer that the charger is not working please get in contact with us ASAP. Also, in paralell we are in contcat already with R&D about this issue and we are collaborating on the investigation.\nKind regards\nCatalina",
+            "date": "2025-07-04T10:27:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3cadea1-c158-f011-877b-000d3ad97a58",
+            "subject": "RE: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "HI Julian\nGood morning, i just wanted to add to francisco email that the plan is to\ncontinue monitoring this charger for the next couple of days and if you receive any complain from the customer that the charger is not working please get in contact with us ASAP. Also, in paralell we are in contcat already with R&D about this issue and we are collaborating on the investigation.\nKind regards\nCatalina",
+            "date": "2025-07-04T10:28:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8b75c7e2-db58-f011-877a-7c1e5236eee4",
+            "subject": "RE: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Thank you both for your responses. I appreciate the support on this topic.\nIf you need additional information or support from our side to accelerate the process in any way, please reach out.\nThanks, and have a great weekend!\nJulian",
+            "date": "2025-07-04T13:36:33Z",
+            "extra": {
+                "sender": "julian.galonska@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dbb23f15-9c5d-f011-bec2-000d3ad97a58",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hi everyone, good afternoon.\nAs we agreed today with Naim, we will update the charger in order to have the wakeup function.\nI checked today the sessions again and here what I meant with the error is very sporadic and hard to troubleshoot:\nSince the last 7 days, there was only 4 occurrences and it was just today and yesterday, so the other 5 days before, nothing happened wrong.\nIt was not possible to update the charger today as it has a file missing. Since the charger is in v4.0.11 I don't have default SSH access, tomorrow I will request and do the updates.\nThanks and let me know if you have any information from the customer.\nBest regards,\nFrancisco",
+            "date": "2025-07-10T14:42:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a9e6bf8-1362-f011-bec1-7c1e52fc583c",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues, good morning. I hope you are doing well today.\nSorry for the delay, I was only able to update this charger to the latest version with the EcoG hotfix since the charger was being constantly used.\nAs you might have already seen, Catalina requested to the backend for the Wake-up function configuration to be reapplied. Unfortunately, the colleague is on vacation until 28/Jul.\nWe will keep monitoring the charger for the same errors as before and keep you posted.\nThanks and have a nice day ahead.\nBest regards,\nFrancisco",
+            "date": "2025-07-16T07:10:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2730de80-1562-f011-bec3-7c1e52768372",
+            "subject": "RE: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "+\n@Müller, Alexander (RC-CH SI E OX&PM)\n– please keep Alex in the loop on this.\nThanks for the update!",
+            "date": "2025-07-16T07:21:37Z",
+            "extra": {
+                "sender": "julian.galonska@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73219170-1766-f011-bec3-6045bde0265d",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues, good morning. I hope you are doing well.\n@Alexander we can talk about this in detail in Teams if you prefer.\nWe have received an email from Volvo colleague mentioning that they replaced a EVCC from a Volvo and we are now proactively monitoring the EVs.\nFrom the 17th July, which is when they replaced it, we have not faced any issue so far.\nI will keep you posted with weekly updates, if the truck that has the new EVCC doesn't have the error again.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-07-21T09:45:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5ac992f1-2f69-f011-bec2-6045bddf319c",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues, good morning.\nGreat news so far, no charging interruptions, but as I mentioned before this is what we see also in other regions. We will keep monitoring this charger for at least one month since this replacement from Volvo to be 100% sure there is no problem.\nLet me know what you think.\nIf we don't talk today, have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-07-25T08:18:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d8ccbe3a-1a6e-f011-b4cb-6045bdde4786",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues, good afternoon.\nAnother week, no problems at all.\nWe will keep monitoring and come back to you every week.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-31T14:25:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4838e21-5074-f011-b4cc-6045bddf3f78",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues,\nAgain, another week without any issues with dropping of session in ANY vehicle.\nI will be going on vacation, so I will report back again in the other week.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-08-08T12:06:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ecc46c5b-cf7c-f011-b4cb-7ced8d457a9c",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hi colleagues, good morning. I hope you are doing well.\nI have checked once again, for the past 1 month, the Volvo truck where they implemented the new communication unit CCCM, and it still hasn't had any error since the replacement date, which was on the 17th July (EVCCID=\n00.16.81.0e.fa.50)\n.\nFor the rest of the fleet, we still see some errors from the same time period (past 1 month), which is 25 occurrences.\nWe will also convey this information to our Volvo colleague.\nIf we have any news, we will let you know.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-08-19T07:37:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c853c64-0084-f011-b4cc-7c1e52350ea5",
+            "subject": "0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hello colleagues, good afternoon. How are you doing?\nWe checked this charger again and for the past 2 weeks, we are still not facing any interruptions with the Volvo that has the new communication module.\nFor the other EVs we are still facing this issue:\nWe've had 7 occurrences since the past 2 weeks.\nWe will also convey this message to the colleague from Volvo in Switzerland and bring you news.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-08-28T11:16:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a328ac7-0184-f011-b4cc-000d3ad97a58",
+            "subject": "AW: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Good day Francisco\nThanks for the update.\nYesterday the old charger was installed again.\nWe will send a technician next Tuesday to check the Charger on site.\nNaim opened a ticket and request to update the Charger on the latest version.\nSo, let’s see what Volvo will tell us.\nAppreciate your support for this case.\nBest Greetings\nAlex\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 28. August 2025 13:20\nAn:\nKasami, Naim (RC-CH SI E OX&PM) <naim.kasami@siemens.com>; Müller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nCc:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>\nBetreff:\n0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001\nHello colleagues, good afternoon. How are you doing?\nWe checked this charger again and for the past 2 weeks, we are still not facing any interruptions with the Volvo that has the new communication module.\nFor the other EVs we are still facing this issue:\nWe've had 7 occurrences since the past 2 weeks.\nWe will also convey this message to the colleague from Volvo in Switzerland and bring you news.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-08-28T11:26:13Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1bc8dffe-c684-f011-b4cb-6045bddf319c",
+            "subject": "AW: ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi everyone,\nWe have installed the old charger and would like to send our technician over on Tuesday for testing. Could you please update the charger to version 8.x to ensure the EcoG is up to date?\nFrancisco, I apologize for giving the incorrect number on Teams earlier. The correct ticket number is CRM:00315002706, and the charger's serial number is 170004103.\nThank you and best regards,\nNaim\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 26. Juni 2025 16:09\nAn:\nKasami, Naim (RC-CH SI E OX&PM) <naim.kasami@siemens.com>\nCc:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>; De Verissimo Dias, Guilherme Andre (SI E CS SD ES) <guilherme-andre.dias@siemens.com>; de Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>\nBetreff:\nID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706\nHi Naim,\nWe checked the new charger that you replaced and we found an instance today of the same problem with the Volvo truck.\nAs you can see we are still facing the same error.\nWe were discussing and I believe we are available for a site test on Wednesday. Does this suit you and the customer?\nWe are also in contact with Volvo to do more tests.\nLet me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-08-29T10:57:55Z",
+            "extra": {
+                "sender": "naim.kasami@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f211f09f-cb84-f011-b4cb-7c1e52768c07",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hi Naim,\nCharger is not actively in SCB, please reboot it locally and it will work.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-08-29T11:31:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0de168fa-378a-f011-b4cb-6045bddf319c",
+            "subject": "ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:00315002706",
+            "body": "Hello colleagues, good morning.\nFrom our side, again, we do not see any ERR67 from the Volvo that had the change. Since there is no more topics to be handled from us, we leave you here the email from the Volvo Switzerland colleague that handled this:\n<\ndaniel.hofstetter@volvo.com\n>\nFor the first charger, the download is ongoing but seems to be very slow. The remote connection is also very slow.\nAs such I will close the ticket.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-09-05T09:09:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1096e623-3b8a-f011-b4cc-6045bde0265d",
+            "subject": "Ticket 0428824 has been closed. Are you satisfied with our provided solution? CRM:00225252841",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0428824\nwith the title:\nID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-05T09:31:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70b0fdb4-07a5-f011-bbd3-7c1e52fad806",
+            "subject": "AW: 0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001",
+            "body": "Hi together\nWe mounted the Charger again and we have again charging problems, do you have time to check the logs.\nBR Naim\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 31. Juli 2025 16:27\nAn:\nKasami, Naim (RC-CH SI E OX&PM) <naim.kasami@siemens.com>; Müller, Alexander (RC-CH SI E OX&PM) <alexander.mueller@siemens.com>\nCc:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>\nBetreff:\n0428824 - ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge CRM:02867000001\nHello colleagues, good afternoon.\nAnother week, no problems at all.\nWe will keep monitoring and come back to you every week.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-10-09T12:01:47Z",
+            "extra": {
+                "sender": "naim.kasami@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b7fe77bc-07a5-f011-bbd3-6045bddece8c",
+            "subject": "Email sent to a closed case 'ID0428824-DC/Si-D/CH[0bJm6K] - Volvo and MAN dont charge (0428824)' CRM:00225268914",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0428824\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-10-09T12:01:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

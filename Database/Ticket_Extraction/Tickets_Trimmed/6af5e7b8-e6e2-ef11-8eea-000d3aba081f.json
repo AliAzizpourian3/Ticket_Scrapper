@@ -1,0 +1,239 @@
+{
+    "incident_id": "6af5e7b8-e6e2-ef11-8eea-000d3aba081f",
+    "ticket_number": "0404102",
+    "title": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails",
+    "created_on": "2025-02-04T10:56:53Z",
+    "last_activity": "2025-05-13T09:22:07Z",
+    "age": "54601",
+    "description": "Reported behavior/issue:\nCharging session fails\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "V3noQJ",
+    "stage": null,
+    "serial_number": "MP / P9 170000893",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "868701b2-e6e2-ef11-9341-002248a3ab5e",
+            "subject": "Webform_incident_SiCharge D_04-02-2025_SN: MP/P9 1700000893",
+            "body": "Dear Hurand Thibaut,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/P9 1700000893\nThank you\neMobility Technical Support Team\nSehr geehrte/r Hurand Thibaut,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/P9 1700000893\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-04T10:56:41Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "83eec927-efe2-ef11-8ee9-002248a0b76d",
+            "subject": "A new case manager was assigned to 0404102 CRM:00225158082",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0404102 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6af5e7b8-e6e2-ef11-8eea-000d3aba081f",
+            "date": "2025-02-04T11:57:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a14ef77-fbe2-ef11-8eea-0022489bcff4",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Dear Thibaut Hurand,\nThank you for reaching\nout\nto eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000893\nChargerID/Serial No.\n:\nV3noQJ\nProblem Description\n: Charging session fails\nTroubleshooting\n:\nWe have checked the charger logs for the same timestamp you have provided, but didn't find the same logs showing in the snapshot.\nBut upon reviewing the logs, we find out that the charging session is getting stopped because OCPP backend is sending Invalid status in the StartTransaction response.\n2025-02-04T10:20:20.900195+00:00 sicharge-cp [local0:info] sicharge-cp-backend/46b724e26080[739]: OCPP: Received result: StartTransaction (95abbd77-75b2-4ba8-8d1a-0d8c157ebebf) - {\"idTagInfo\":{\"status\":\"Invalid\",\"expiryDate\":\"2025-02-11T10:20:00Z\",\"parentIdTag\":\"\"},\"transactionId\":41537524}\n2025-02-04T10:22:46.474997+00:00 sicharge-cp [local0:info] sicharge-cp-backend/46b724e26080[739]: OCPP: Received result: StartTransaction (234164e6-1983-4b59-add2-42ce0a2afa7a) - {\"idTagInfo\":{\"status\":\"Invalid\",\"expiryDate\":\"2025-02-11T10:22:00Z\",\"parentIdTag\":\"\"},\"transactionId\":41537465}\nFor future reference, your case number is\n0404102\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-04T13:25:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "89c6edcf-c5e3-ef11-9341-000d3aba0fde",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nAs per the log analysis shared yesterday, OCPP backend is sending Invalid response to the IDTag in StartTransaction.\nCould you please let us know if you have any further queries?\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-05T13:33:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd0cad01-ace4-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nAwaiting for your response.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-06T17:01:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e35307c4-57e5-ef11-8eea-000d3ab41b62",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nHope you're doing great.\nHere's a friendly reminder to answer this ticket, if we do not get any response from your end by tomorrow, we will consider this ticket is handled and proceed with the closure of this ticket.\nI wish you a happy day.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-07T13:31:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c885285e-58e5-ef11-9341-7c1e521fced2",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi,\nThank you for your return regarding this issue. Please do not close the ticket. The problem is not resolve yet. I will see with my colleagues if we can resolve that by ourselves or if we will need SIEMENS.\nThank you,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 7 février 2025 14:32\nÀ :\nHURAND Thibaut <thibaut.hurand@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nHi Thibaut, Hope you're doing great. Here's a friendly reminder to answer this ticket, if we do not get any response from your end by tomorrow, we will consider this ticket is handled and proceed with the closure of this ticket. I wish you a\nHi Thibaut,\nHope you're doing great.\nHere's a friendly reminder to answer this ticket, if we do not get any response from your end by tomorrow, we will consider this ticket is handled and proceed with the closure of this ticket.\nI wish you a happy day.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-07T13:35:20Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "881d65ae-5ae5-ef11-9341-000d3aba98df",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nSure, we will keep this ticket open. Please discuss with the team and let us know if you need any further assistance from our end.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-07T13:51:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44dc2e61-e5e7-ef11-9341-000d3a6717e6",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nHave you discussed with your team?\nPlease let us know if you require any support from our end.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-10T19:29:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd81fd1f-58e8-ef11-9341-000d3add0e90",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi,\nYes, we can not access to the logs of the past week via SCB. We are not able to see if the charger is working correctly or not.\nCan you please see what’s wrong with the logs?\nRegards,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 10 février 2025 20:31\nÀ :\nHURAND Thibaut <thibaut.hurand@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nHi Thibaut, Have you discussed with your team? Please let us know if you require any support from our end. Thank you Best Regards, Vishal Dhiman eMobility Support Team Please do not change the subject line with replying back to this email. -------------------\nHi Thibaut,\nHave you discussed with your team?\nPlease let us know if you require any support from our end.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-11T09:11:08Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1a5f5314-c7e8-ef11-9341-6045bddd1864",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nThis is not a charger-specific issue, it could be an issue with the SCB portal. Sometimes, when there are too many logs within the selected timeframe, this message appears. Please try fetching the logs for a shorter timeframe.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-11T22:25:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e7a02e3-1be9-ef11-9341-0022489bc8e2",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi,\nMy colleague took a timeframe of 24 hours and was not able to see the logs. So I think it is not a problem of a long timeframe.\nI think we also have a charging problem because all the attempt of charging at the point n°1 of the charger failed. The charge is beginning and stop after 10 seconds.\nCan you please investigate a little bit more?\nRegards\n,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 11 février 2025 23:28\nÀ :\nHURAND Thibaut <thibaut.hurand@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nHi Thibaut, This is not a charger-specific issue, it could be an issue with the SCB portal. Sometimes, when there are too many logs within the selected timeframe, this message appears. Please try fetching the logs for a shorter timeframe. Thank\nHi Thibaut,\nThis is not a charger-specific issue, it could be an issue with the SCB portal. Sometimes, when there are too many logs within the selected timeframe, this message appears. Please try fetching the logs for a shorter timeframe.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-12T08:32:26Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8b269304-a2e9-ef11-9342-000d3a67d7cb",
+            "subject": "RE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Hi Thibaut,\nIt is an issue with the SCB portal recently, please try 3hrs, 6hrs or 9hrs timeframe. This issue will be fixed soon. Apologies for the inconvenience.\nRegarding the charging sessions failed, we will get back to you with the analysis.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-13T00:32:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "159a4c03-872b-4ec2-864f-1f689fe2a4e5",
+            "subject": "Notes for NOC",
+            "body": "Issue:\nCustomer first raised the ticket for charigng sessions getting failed. But in the logs we found that it is getting failed because OCPP is sending Invalid response to StartTransaction. Then customer had raised another issue regarding charging session. In the logs I found that IMD is having issues, just after the charging starts, IMD error appears, but in ideal condition, IMD is working fine. Other DC outlet is working fine.\nIMD Error > Relay connection to PLC not checked\nit is occurring just after the charging starts.\nAI:\nNeed further log analysis. Please check the attached logs and the new logs from the charger if it is related to one specific EV or with all, to find if it is EV related to charger related issue.\nlogs-insights-results (5).csv\nV3noQJ-logs.csv",
+            "date": "2025-02-14T01:04:02Z",
+            "extra": {}
+        },
+        {
+            "id": "0254e4e4-9aa5-d63d-9964-07be15527e78",
+            "subject": "Notes",
+            "body": "Analysis conducted so far, as per the logs attached by Vishal in his timeline.\n'IMD_BC2' changed from true – > 11 times\nThe IMD is experiencing issues where an error appears just after charging starts. However, under normal conditions, the IMD functions correctly.",
+            "date": "2025-02-16T17:27:53Z",
+            "extra": {}
+        },
+        {
+            "id": "9c5ed1fd-429d-89a2-903a-84b824d3769e",
+            "subject": "Case Update",
+            "body": "2025-02-04T09:55:18.571946+00:00 swcpu [user:debug] [4021] [DCC] DC1: Iso fault by IMD output relay\n2025-02-04T09:55:18.600783+00:00 sicharge-cp [local0:info] sicharge-cp-backend/46b724e26080[739]: PLC-Error-Flag 'IMD_BC1' changed from false - ('IMD ok') to true - (' not initilized')\n2025-02-04T09:55:18.642160+00:00 swcpu [user:debug] [4021] [IMD] DC1: Relay connection to PLC not checked\n2025-02-04T09:55:18.820068+00:00 sicharge-cp [local0:info] sicharge-cp-backend/46b724e26080[739]: PLC-Error-Flag 'IMD_BC1' changed from true - (' not initilized') to true - (' Relay connection to PLC not checked')\nIssue is with outlet 1 only, outlet 2 is working fine, many successful charging sessions observed on outlet 2",
+            "date": "2025-02-18T10:03:26Z",
+            "extra": {}
+        },
+        {
+            "id": "830a512f-68f0-ef11-9341-7c1e52372dd0",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Bonjour,\nJe me permets de revenir vers vous à propos de cette borne de recharge. Je suis repassé sur place et n’ai pas pu charger sur les 2 connecteurs CCS.\nLa borne indique que le véhicule a arrêté la charge.\nCela est très handicapant pour notre station qui ne possède que 4 bornes au total dont 1 hors service.\nPouvez-vous svp me fournir un diagnostic pour le début de semaine prochaine ?\nMerci d’avance,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 13 février 2025 01:36\nÀ :\nHURAND Thibaut <thibaut.hurand@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nHi Thibaut, It is an issue with the SCB portal recently, please try 3hrs, 6hrs or 9hrs timeframe. This issue will be fixed soon. Apologies for the inconvenience. Regarding the charging sessions failed, we will get back to you with the analysis.\nHi Thibaut,\nIt is an issue with the SCB portal recently, please try 3hrs, 6hrs or 9hrs timeframe. This issue will be fixed soon. Apologies for the inconvenience.\nRegarding the charging sessions failed, we will get back to you with the analysis.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-21T15:26:15Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d83030d5-0676-6a6d-a46a-76e4244c681b",
+            "subject": "Note to RC",
+            "body": "Issue is comming pobably from a convertisseur cavle touching the metal plate. this happen during the power upgrate. check with Antoine BRUA",
+            "date": "2025-02-27T14:05:50Z",
+            "extra": {}
+        },
+        {
+            "id": "ec7cf3a5-acf5-ef11-be1f-7c1e52fb544d",
+            "subject": "ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945",
+            "body": "Bonjour,\nJe me permets de revenir vers vous car le problème est toujours présent sur le point de charge 1 de cette borne.\nPouvez-vous svp me confirmer que le ticket n’est pas fermé ? Est-il possible de transférer le ticket sous la responsabilité de l’équipe support Siemens France ?\nMerci d’avance,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nHURAND Thibaut\nEnvoyé :\nvendredi 21 février 2025 16:26\nÀ :\nemobility_support.si@siemens.com\nCc :\nemobility_support.si.fr@siemens.com; ROSE-ELIE Gregory (ENGIE Solutions) <gregory.rose-elie@engie.com>\nObjet :\nID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nBonjour,\nJe me permets de revenir vers vous à propos de cette borne de recharge. Je suis repassé sur place et n’ai pas pu charger sur les 2 connecteurs CCS.\nLa borne indique que le véhicule a arrêté la charge.\nCela est très handicapant pour notre station qui ne possède que 4 bornes au total dont 1 hors service.\nPouvez-vous svp me fournir un diagnostic pour le début de semaine prochaine ?\nMerci d’avance,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nEnvoyé :\njeudi 13 février 2025 01:36\nÀ :\nHURAND Thibaut <\nthibaut.hurand@engie.com\n>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0404102-DC/Si-D/FR-[V3noQJ]- Charging session fails CRM:00645000945\nHi Thibaut, It is an issue with the SCB portal recently, please try 3hrs, 6hrs or 9hrs timeframe. This issue will be fixed soon. Apologies for the inconvenience. Regarding the charging sessions failed, we will get back to you with the analysis.\nHi Thibaut,\nIt is an issue with the SCB portal recently, please try 3hrs, 6hrs or 9hrs timeframe. This issue will be fixed soon. Apologies for the inconvenience.\nRegarding the charging sessions failed, we will get back to you with the analysis.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-28T08:18:58Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f860ef99-e2e3-f1c9-ad6b-617250b61833",
+            "subject": null,
+            "body": "Hello,\nThe issue reported on this charging station has been resolved, and the ticket will therefore be closed.\nBest regards,\nRamdane",
+            "date": "2025-03-14T08:53:59Z",
+            "extra": {}
+        },
+        {
+            "id": "4b815df5-b100-f011-bae2-6045bde13734",
+            "subject": "RE: Webform_incident_SiCharge D_04-02-2025_SN: MP/P9 1700000893 CRM:02441000040",
+            "body": "Bonjour,\nL'incident signalé sur cette borne a été résolu et le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-03-14T08:54:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8484a43-b200-f011-bae3-7c1e5220bf23",
+            "subject": "RE: Webform_incident_SiCharge D_04-02-2025_SN: MP/P9 1700000893 CRM:02441000040",
+            "body": "Bonjour,\nL'incident signalé sur cette borne a été résolu et le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-03-14T08:56:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

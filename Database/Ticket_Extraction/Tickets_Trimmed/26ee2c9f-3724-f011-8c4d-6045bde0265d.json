@@ -1,0 +1,57 @@
+{
+    "incident_id": "26ee2c9f-3724-f011-8c4d-6045bde0265d",
+    "ticket_number": "0421333",
+    "title": "ID0421333-DC/Si-D/BE-[MP / R1 170001392] Outlet1 unavailable",
+    "created_on": "2025-04-28T13:49:40Z",
+    "last_activity": "2026-01-30T07:54:42Z",
+    "age": "112232",
+    "description": "Reported behavior/issue:  Outlet1 unavailable\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cLJFPH",
+    "stage": null,
+    "serial_number": "MP / R1 170001392,MP / R1 170001392",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "12f71992-3724-f011-8c4d-002248a1ab9b",
+            "subject": "Webform_incident_SiCharge D_28-04-2025_SN: 170001392",
+            "body": "Dear Chloë D'hose,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001392\nThank you\neMobility Technical Support Team\nSehr geehrte/r Chloë D'hose,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001392\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-28T13:49:21Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "06a18871-89be-9195-8fe8-f59c9f807351",
+            "subject": "Case Issue",
+            "body": "It is already not the first time that plug 1 of the 170001392 goes offline and stays offline after reboot. Rebooted today at 3:16 pm, please look at the logs from this time.\nThe last time I created a ticket for this I got the response that the loader is fully online with no errors. Which is good, but now I would still like this issue to be investigated further so we can figure out the cause and if necessary, replace the necessary pieces.",
+            "date": "2025-04-28T14:33:06Z",
+            "extra": {}
+        },
+        {
+            "id": "2c2cfc7d-3e24-f011-8c4d-7c1e52350ea5",
+            "subject": "ID0421333-DC/Si-D/BE-[MP / R1 170001392] Charger Is Offline CRM:02699000057",
+            "body": "Dear Chloë D'hose,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001392\nChargerID/Serial No.\n:\ncLJFPH\nProblem Description\n: Charger Is Offline\nFor future reference, your case number is\n0421333\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-28T14:38:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "11ba259b-e824-f011-8c4d-7c1e52350ea5",
+            "subject": "RE: ID0421333-DC/Si-D/BE-[MP / R1 170001392] Charger Is Offline CRM:02699000057",
+            "body": "Hi Marnic/Team,\nWe have analyzed the logs and found that Outlet1 has been unavailable multiple times due to an IMD_BC1 issue. This appears to be caused by interrupted Modbus connection, as no new data from IMD was received within 5 seconds via Modbus. Attaching the logs for your reference.\nWe need to arrange a site intervention to:\nCheck the wiring\nInspect the IMD component\nVerify all respective connections related to IMD.\nPlease bring:\nOne spare IMD\nMultiple ethernet cables\nThis will ensure we can perform any necessary replacements during the same visit. Please find the MLFB reference below.\n8EM5903-0AA00-0AA1 : Insulation Monitoring Device\nI am writing to formally inform that we are moving case 0421333 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-BE SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nMaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nMaybe\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-BE SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-29T10:56:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

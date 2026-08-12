@@ -1,0 +1,86 @@
+{
+    "incident_id": "8c5ef476-816f-ef11-a670-000d3ab8e04e",
+    "ticket_number": "0378743",
+    "title": "ID0378743-DC/Si-D/UK[170000136] - Router 2 Signal Strength",
+    "created_on": "2024-09-10T14:32:21Z",
+    "last_activity": "2025-12-16T14:06:02Z",
+    "age": "1320",
+    "description": "Technical Query:\nWhat is the value in the logs regarding Signal Strength?\nRoot cause:\nN/A\nSolution:\nCode below for the AWS, only for Router 1. Raise a request to the RM for a feature request to PLM.\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nfields\n@timestamp\n,\n@logStream\n| filter\n@message\nlike /signal strength/\n| filter\n@logStream\nlike /acno33/\n| parse\n@message\n'\"stdout\":*'\nas Signal\n| parse Signal\n'\"LTE\\\",'\nas RSSI\n| parse RSSI\n'*,'\nas temp\n| parse RSSI\n',*'\nas RSRP\n| parse RSRP\n',*'\nas SINR\n| parse RSRP\n'*,'\nas temp2\n| parse SINR\n'*,'\nas temp3\n| stats min(temp) as minRSSI, max(temp) as maxRSSI,min(temp2) as minRSRP, max(temp2) as maxRSRP,min(temp3) as minSINR, max(temp3) as maxSINR by\n@logStream\n| sort by\n@timestamp\ndesc\n| limit\n10000",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "GctVQV",
+    "stage": null,
+    "serial_number": "MP / P1 170000136",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c75ae074-816f-ef11-a670-0022489e1eb4",
+            "subject": "Webform_incident_SiCharge D_10-09-2024_SN: 17000136",
+            "body": "Dear Jason Stonier,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n17000136\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jason Stonier,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n17000136\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-09-10T14:32:17Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "05bf97ca-856f-ef11-a670-000d3adea690",
+            "subject": "A new case manager was assigned to 0378743 CRM:00225094377",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0378743 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8c5ef476-816f-ef11-a670-000d3ab8e04e",
+            "date": "2024-09-10T15:03:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07b5ac4b-866f-ef11-a670-0022489d464a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 34 minutes and 24 seconds.",
+            "date": "2024-09-10T15:06:46Z",
+            "extra": {}
+        },
+        {
+            "id": "ac8054f2-886f-ef11-a670-0022489d464a",
+            "subject": "ID0378743-DC/Si-D/UK[170000136] - Router 2 Signal Strength CRM:00315001748",
+            "body": "Dear Jason,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000136\nChargerID/Serial No.\n:\nGctVQV\nQuery\n: If Router2 has logs related to the Signal Strength\nAnswer\n:\nAt the moment, there are no logs related to Signal Strength of Router2. I believe this is already on the roadmap.\nTomorrow I can ask my OCPP colleague to see if he has a different answer.\nEither way, you can use this code in AWS to check the signal strength always:\nfields\n@timestamp\n,\n@logStream\n| filter\n@message\nlike /signal strength/\n| filter\n@logStream\nlike /chargerID/\n| parse\n@message\n'\"stdout\":*'\nas Signal\n| parse Signal\n'\"LTE\\\",'\nas RSSI\n| parse RSSI\n'*,'\nas temp\n| parse RSSI\n',*'\nas RSRP\n| parse RSRP\n',*'\nas SINR\n| parse RSRP\n'*,'\nas temp2\n| parse SINR\n'*,'\nas temp3\n| stats min(temp) as minRSSI, max(temp) as maxRSSI,min(temp2) as minRSRP, max(temp2) as maxRSRP,min(temp3) as minSINR, max(temp3) as maxSINR by\n@logStream\n| sort by\n@timestamp\ndesc\n| limit\n10000\nI will let you know tomorrow morning the answer and proceed to close the ticket.\nFor future reference, your ticket number is\n0378743\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-10T15:25:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7fe2a561-3970-ef11-a670-000d3ab7063f",
+            "subject": "ID0378743-DC/Si-D/UK[170000136] - Router 2 Signal Strength CRM:00315001748",
+            "body": "Hi Jason, good afternoon. I hope you are doing well.\nUnfortunately, you need to raise this feature to your RM for a feature request to the PLM.\nFrom TechSupport's side there is nothing we can do. I will proceed to close the ticket since the information has been provided.\nIf you have any other doubts or questions you can always reach out to me.\nBest regards,\nFrancisco",
+            "date": "2024-09-11T12:28:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f15831ba-3970-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0378743 has been closed. Are you satisfied with our provided solution? CRM:00315001752",
+            "body": "Dear Jason,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0378743\nwith the title:\nID0378743-DC/Si-D/UK[170000136] - Router 2 Signal Strength\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-11T12:31:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "781236e5-3970-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Incident Solved Via Remote (L2) after 21 hours, 25 minutes and 43 seconds.",
+            "date": "2024-09-11T12:32:29Z",
+            "extra": {}
+        }
+    ]
+}

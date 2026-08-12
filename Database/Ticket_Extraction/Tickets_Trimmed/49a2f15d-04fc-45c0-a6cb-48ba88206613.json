@@ -1,0 +1,515 @@
+{
+    "incident_id": "49a2f15d-04fc-45c0-a6cb-48ba88206613",
+    "ticket_number": "0367525",
+    "title": "ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order",
+    "created_on": "2024-07-07T08:08:35Z",
+    "last_activity": "2025-12-16T14:07:34Z",
+    "age": "207226",
+    "description": "Reported behavior/issue: Charger out of order\nRoot cause:\nLEM DC meters losing their timesync status \"ok\" after 48 hours\nSolution:  Active SCB connection till the time of FW release | Permanent solution : charger update to v6.1.x\nOn DAMEX Sanctioned List: No\nWarranty Status: 06/08/2027\nR&D Ticket\nEVC3-6438\nEcoG Ticket (If Any)\nNA\nNotes from ES to NOC [ 28/11/2024]",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "n64eiM",
+    "stage": null,
+    "serial_number": "MP / P6 170000724",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "afb97526-383c-ef11-8409-6045bdddacb7",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225066536",
+            "body": "Ferdinand Reisch was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-07T08:09:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d166efe-b96f-4d18-925f-d092fa28d7d1",
+            "subject": "Entry to NOC",
+            "body": "This charger has again gone out of order.\nHistory of ticket was ID0360604\nL2/L3 Advised to upgrade to 4.0.11 to see if it resolve the issue, but when the data plan expired on the 05/07/2024, the charger has gone offline again.\nSee logs added of the charger, you can see the connectors are set to unavailable.",
+            "date": "2024-07-07T08:20:26Z",
+            "extra": {}
+        },
+        {
+            "id": "6654eeff-393c-ef11-8409-000d3a66e9e3",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225066540",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-07T08:22:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f111110d-3a3c-ef11-8409-0022489bbd8f",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225066540",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-07T08:22:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "391ad315-3b3c-ef11-840a-002248a11eba",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 21 minutes and 21 seconds.",
+            "date": "2024-07-07T08:29:56Z",
+            "extra": {}
+        },
+        {
+            "id": "505f784e-3b3c-ef11-840a-002248a11eba",
+            "subject": "ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello ﻿Andrew Britt,﻿\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P6 170000724\nChargerID/Serial No.\n:\nn64eiM\nProblem Description\n: Charger out of order\nTroubleshooting\n: Please allow us sometime to analyze the logs and will get back to you soon.\nFor future reference, your ticket number is\n0367525\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-07T08:31:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef8eda8b-3b3c-ef11-840a-002248a11eba",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 3 minutes and 24 seconds.",
+            "date": "2024-07-07T08:33:20Z",
+            "extra": {}
+        },
+        {
+            "id": "937150fe-8c11-547d-8ae0-29568700d3e5",
+            "subject": "Note--to L2",
+            "body": "Previous resolved case--->ID0360604-DC/Si-D/AU-[MP / P6 170000724] Charger out of order\n2024-07-07T04:26:15.562276+00:00 sicharge-cp [local0:err] sicharge-cp-backend/db61988ea68d[698]: {\"type\":\"aborted\",\"message\":\"The user aborted a request.\",\"stack\":\"AbortError: The user aborted a request.\\n    at abort (/node_modules/node-fetch/lib/index.js:1412:16)\\n    at AbortSignal.abortAndFinalize (/node_modules/node-fetch/lib/index.js:1427:4)\\n    at AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:643:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:585:26)\\n    at abortSignal (node:internal/abort_controller:284:10)\\n    at AbortController.abort (node:internal/abort_controller:315:5)\\n    at Timeout.<anonymous> (/dist/core/utils.js:1:2039)\\n    at listOnTimeout (node:internal/timers:559:17)\\n    at processTimers (node:internal/timers:502:7)\"}\n2024-07-07T04:25:53.565565+00:00 sicharge-cp [daemon:err] ntpd[2023]: error resolving pool 0.debian.pool.ntp.org: Temporary failure in name resolution (-3)\n2024-07-07T03:57:23.565625+00:00 sicharge-cp [daemon:err] ntpd[2023]: error resolving pool 2.debian.pool.ntp.org: Temporary failure in name resolution (-3)\nSCB logs-->\n2024-07-07T02:51:51.489264+00:00 swcpu [user:debug] 12VPowerSupplyFailure\n2024-07-07T02:51:51.504137+00:00 swcpu [user:debug] [MBC] SECC: no comm for 750ms \"DC2\"\n2024-07-07T02:51:51.519818+00:00 swcpu [user:debug] [MBC] ModbusTimeoutIMDandPumpData",
+            "date": "2024-07-07T09:20:06Z",
+            "extra": {}
+        },
+        {
+            "id": "13512c83-ed3c-ef11-8409-6045bdddacb7",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello Ferdinand,\nHope you are doing well.\nWe are still analyzing this issue with expert team. Once receive an update will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-07-08T05:47:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a45bddd6-ed3c-ef11-8409-6045bdddacb7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 21 hours, 16 minutes and 14 seconds.",
+            "date": "2024-07-08T05:49:35Z",
+            "extra": {}
+        },
+        {
+            "id": "b455c318-ef97-40fb-951a-002f3938462c",
+            "subject": "Note to L2",
+            "body": "Case in discussion with expert support-@Sambath",
+            "date": "2024-07-09T11:01:57Z",
+            "extra": {}
+        },
+        {
+            "id": "bba2cd54-973e-ef11-8409-6045bdddfe8e",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello Andrew,\nHope you are doing well.\nI just wanted to let you know that we are planning for one of our team members to drop off an electronic component required for replacement within the charger. The replacement of this part will occur at a later date (planned for the same time as the screen topic).\nIn addition, we are looking to make the necessary network configuration changes within the charger to make use of the ethernet connection that you have provided to us for the SCB connection.\nThis is planned for this Friday 12/07, arriving ~11:30AM.\nIf everything is straight forward, we will be at the charger for ~1 hour, does this work in alignment with your operational team? (e.g. charger not in use).\nIf you could provide us the details of your IT team, we can also get in contact with them for validation of connection.\nIf we exceed the hour due to the network connection not being available/ready or we need to diagnose the connection provided to the charger, we will need to schedule another appointment for which the hours may be chargeable.\nPrior to this however, we will present our findings and next steps and send through the schedule of rates for your review.\nPlease let me know if anything is unclear, or if this time does not suit.\nIn the meantime, the global team are also still reviewing this case in detail.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-07-10T08:35:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0963a09-993e-ef11-840a-002248a11eba",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello Andrew,\nHope you are doing well.\nI just wanted to let you know that we are planning for one of our team members to drop off an electronic component required for replacement within the charger. The replacement of this part will occur at a later date (planned for the same time as the screen topic).\nIn addition, we are looking to make the necessary network configuration changes within the charger to make use of the ethernet connection that you have provided to us for the SCB connection.\nThis is planned for this Friday 12/07, arriving ~11:30AM.\nIf everything is straight forward, we will be at the charger for ~1 hour, does this work in alignment with your operational team? (e.g. charger not in use).\nIf you could provide us the details of your IT team, we can also get in contact with them for validation of connection.\nIf we exceed the hour due to the network connection not being available/ready or we need to diagnose the connection provided to the charger, we will need to schedule another appointment for which the hours may be chargeable.\nPrior to this however, we will present our findings and next steps and send through the schedule of rates for your review.\nPlease let me know if anything is unclear, or if this time does not suit.\nIn the meantime, the global team are also still reviewing this case in detail.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-07-10T08:47:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7001380f-993e-ef11-840a-002248a11eba",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 2 days, 2 hours, 58 minutes and 4 seconds.",
+            "date": "2024-07-10T08:47:38Z",
+            "extra": {}
+        },
+        {
+            "id": "cce802f9-9b3e-ef11-8409-6045bdddacb7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 20 minutes and 55 seconds.",
+            "date": "2024-07-10T09:08:33Z",
+            "extra": {}
+        },
+        {
+            "id": "ddda48d7-0119-1fd5-867e-0514733c539c",
+            "subject": "Note to L2",
+            "body": "Need to check with expert support. As discussed with ES team-Sambath & Lukas & waiting their response.",
+            "date": "2024-07-10T10:00:30Z",
+            "extra": {}
+        },
+        {
+            "id": "7a7a6062-e03e-ef11-8409-0022489bbd8f",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225068334",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-10T17:18:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cce2f56b-e03e-ef11-8409-002248a0f9d9",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225068334",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-10T17:18:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "24d5db6b-e03e-ef11-8409-0022489ef309",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 8 hours, 10 minutes and 1 second.",
+            "date": "2024-07-10T17:18:34Z",
+            "extra": {}
+        },
+        {
+            "id": "5f864291-e03e-ef11-8409-00224899cc47",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 57 seconds.",
+            "date": "2024-07-10T17:19:31Z",
+            "extra": {}
+        },
+        {
+            "id": "d1449b81-f93e-ef11-8409-000d3ab1340c",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hi Ferdinand,\nI will be on site tomorrow and our contact for I.T is Steve Pickham his details are below if needed.\nSteve Siemens may need your help at 11:30am tomorrow I will be on-site I’ll give you a call if required.\nSteven Pickham\nService Delivery Manager\nKelsian Group Limited\nLevel 3, 26 Flinders Street, Adelaide SA 5000\nE:\nsteven.pickham@kelsian.com\nM: +61 (0)425 811 326\nThanks\nAndrew Britt\nWorkshop Manager Kingsgrove.\nPh\n02 81187154\nM\n:  0409 283 280\nA\n:\n17-23 Richland St Kingsgrove 2208\nE:\nabritt@transitsystems.com.au\nI acknowledge the traditional owners of the land on which we live and work, and pay my respects to elders past, present and emerging\n.\nTransit Systems NSW Reconciliation Action Plan\nArtwork by Allan Mckenzie - Gamilaroi/Wiradjuri Man\nwww.transitsystems.com.au\nTransit Systems Confidential communication. Please Note: This email and any attached files may be confidential, privileged and intended solely for the addressee. It may not be reviewed, acted upon, filed or communicated to or by any other person. If you have received this email in error please delete it and notify the sender immediately. Although our system is regularly checked by virus scanning software, updated daily, Transit Systems does not guarantee that emails or attachments are free of viruses or interference. Please check for viruses and defects before opening or using attachments. Our liability is limited to resupplying any affected attachments.",
+            "date": "2024-07-10T20:18:10Z",
+            "extra": {
+                "sender": "abritt@transitsystems.com.au",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d29eb387-f93e-ef11-8409-0022489bbd8f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 2 hours, 58 minutes and 49 seconds.",
+            "date": "2024-07-10T20:18:21Z",
+            "extra": {}
+        },
+        {
+            "id": "635855ec-a03f-ef11-8409-6045bdddfe8e",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 19 hours, 58 minutes and 9 seconds.",
+            "date": "2024-07-11T16:16:29Z",
+            "extra": {}
+        },
+        {
+            "id": "fd41e38a-0340-ef11-8409-00224899cc47",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello Andrew,\nThank you for guiding Joon through your depot this afternoon.\nWe have reconfigured the charger to operate on your network via the ethernet connection and I can see the charger online through this connection and operational.\nThe underlying root cause for the out of order state due to network loss is still being investigated by our global support team, but from here on it will be on your network, thank you through this process.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-07-12T04:02:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "321e3c43-0440-ef11-8409-000d3abaec50",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Hello Andrew,\nThank you for guiding Joon through your depot this afternoon.\nWe have reconfigured the charger to operate on your network via the ethernet connection and I can see the charger online through this connection and operational.\nThe underlying root cause for the out of order state due to network loss is still being investigated by our global support team, but from here on it will be on your network, thank you through this process.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-07-12T04:07:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "75709745-0440-ef11-8409-6045bde16a82",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 11 hours, 51 minutes and 14 seconds.",
+            "date": "2024-07-12T04:07:43Z",
+            "extra": {}
+        },
+        {
+            "id": "c014aa66-d8a0-dbf7-8877-9b8e00ea013e",
+            "subject": "Note to NOC",
+            "body": "We have still not received an update on this topic. Please follow up with L3 ASAP.\nThe conversation below is to implement a workaround solution with the customer, but we still want to know the root cause. Logs are attached in the first entry.",
+            "date": "2024-07-12T04:16:01Z",
+            "extra": {}
+        },
+        {
+            "id": "883bf7a3-1f40-ef11-8409-6045bde003e0",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225069159",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-12T07:23:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6edddeaa-1f40-ef11-8409-6045bdde23a6",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225069159",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-12T07:23:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b784a2a9-76f8-cc33-a397-cf909144241c",
+            "subject": "Notes for NOC",
+            "body": "Please find attached today's notes from RC\nAs I had done conversation today with Lukas, he will check and let us know. B shift colleague Kindly contact with him.",
+            "date": "2024-07-12T08:49:05Z",
+            "extra": {}
+        },
+        {
+            "id": "6d217aae-b240-ef11-8409-000d3a679015",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225069520",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-13T00:56:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f29d4004-28ff-646f-85c5-de0c4058d974",
+            "subject": "Update",
+            "body": "Need to discuss this ticket with experts on 15/07/24",
+            "date": "2024-07-14T08:56:39Z",
+            "extra": {}
+        },
+        {
+            "id": "bda48a3b-e4dd-5176-a6b9-e5240636469f",
+            "subject": "Note to NOC",
+            "body": "Hello Team,\nIs there any update on this ticket?",
+            "date": "2024-07-16T04:44:40Z",
+            "extra": {}
+        },
+        {
+            "id": "8aa1d583-d539-545d-8703-ba7fe8f23197",
+            "subject": "Notes for L3",
+            "body": "Suspected Root Cause: N/A\nProblem Description: Outlet goes OoO when the SCB goes offline.\nAction Performed (L2): Required logs collected / analysis done\nCharger SW Version: v4.0.11\nReason for Handover (L3): Need further analysis",
+            "date": "2024-07-16T08:49:45Z",
+            "extra": {}
+        },
+        {
+            "id": "ebd25bbf-1544-ef11-a316-6045bdde23a6",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225071068",
+            "body": "Sambath KS was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-17T08:22:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a17e2239-1644-ef11-a316-002248a44b33",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225071068",
+            "body": "Sambath KS was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-07-17T08:26:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "18af5cb7-8b45-ef11-a316-002248a2f864",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Dear Ferdinand,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. We have checked the logs and understand that the charger is going out of order after the SCB goes offline because of LEM. Because the SIM card is going to expire, Router 1 connectivity gets lost and no reconnection happens. This leads to the LEM DC meters losing their timesync status \"ok\" after 48 hours. This, in turn, makes the DC outlets go out of order.\nAs per the existing FW it is an expected behavior and please be aware that I am checking other option to route it via Router 2.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-07-19T04:59:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab3b2f99-8e45-ef11-a316-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 7 days, 1 hour, 12 minutes and 49 seconds.",
+            "date": "2024-07-19T05:20:32Z",
+            "extra": {}
+        },
+        {
+            "id": "8455785e-5180-71c5-9c74-9f5efb8f857a",
+            "subject": "Status Update - 19/07/2024",
+            "body": "Root cause for the issue has been identified. Planned to check further possibility of a feature request as the Customer is affected.",
+            "date": "2024-07-19T05:22:32Z",
+            "extra": {}
+        },
+        {
+            "id": "0350c5d5-9f5f-dd78-b5e1-a2af0f4cd733",
+            "subject": "Status Update : 23/08/2024",
+            "body": "R&D is working to get the TimeSync via OC2 and activities are inline",
+            "date": "2024-08-23T03:40:33Z",
+            "extra": {}
+        },
+        {
+            "id": "7a786c21-931e-5ce7-832b-2eaa50cbee0b",
+            "subject": "Status Update : 30/08/2024",
+            "body": "Awaiting for R&D update\nLast update → Team had a meeting on 29th August & will get the update during the refinement meeting",
+            "date": "2024-08-30T06:49:12Z",
+            "extra": {}
+        },
+        {
+            "id": "a0c3940b-85d7-ee33-aa81-c91959347016",
+            "subject": "Status Update : 11/09/2024",
+            "body": "EMOB ticket is created :\nEMOB - 14261",
+            "date": "2024-09-11T04:44:08Z",
+            "extra": {}
+        },
+        {
+            "id": "ec62218d-5982-feb4-8455-ce85ccdbc122",
+            "subject": "Status Update : 13/09/2024",
+            "body": "Awaiting for R&D update\nPlanned fix version : v6.1.0",
+            "date": "2024-09-13T05:43:11Z",
+            "extra": {}
+        },
+        {
+            "id": "a2b59ae4-36a2-f095-b38b-0c4b9cb73e65",
+            "subject": "Status Update : 20/09/2024",
+            "body": "Awaiting for R&D update\nWIP & expected fix version -→ v6.1.0",
+            "date": "2024-09-20T04:57:12Z",
+            "extra": {}
+        },
+        {
+            "id": "62a12922-0545-9a76-a90e-1a5a0a547297",
+            "subject": "Status Update : 27/09/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x",
+            "date": "2024-09-27T03:39:46Z",
+            "extra": {}
+        },
+        {
+            "id": "44df350e-7769-50b5-a282-794e9a3b6170",
+            "subject": "Status Update : 04/10/2024",
+            "body": "Status Update : 27/09/2024\nAwaiting for R&D update; current target is v6.1.x",
+            "date": "2024-10-04T03:59:58Z",
+            "extra": {}
+        },
+        {
+            "id": "6c051dcd-277f-b862-9e12-23cb02325c20",
+            "subject": "Status Update : 18/10/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x",
+            "date": "2024-10-18T03:27:53Z",
+            "extra": {}
+        },
+        {
+            "id": "4a731f25-018d-ef11-ac21-000d3addcd64",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Dear Ferdinand,\nI hope all is well with you.  Please be aware that we are working on FW solutions to mitigate the issue, and I will keep you updated about the progress. Thank you so much for your patience and understanding.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-10-18T03:29:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e17cef79-a956-d4b9-9704-0fc5d49763b3",
+            "subject": "Status Update : 25/10/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x\nStatus →\nIn Testing",
+            "date": "2024-10-25T04:10:31Z",
+            "extra": {}
+        },
+        {
+            "id": "5d50f118-ab58-8385-8ecd-b461af32305c",
+            "subject": "Status Update : 30/10/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x\nStatus →\nIn Testing",
+            "date": "2024-10-30T05:18:03Z",
+            "extra": {}
+        },
+        {
+            "id": "8b2edddf-d87f-7464-9f37-fd34bcb82961",
+            "subject": "Status Update : 08/11/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x\nStatus →\nIn Testing",
+            "date": "2024-11-08T05:02:44Z",
+            "extra": {}
+        },
+        {
+            "id": "30d62aaa-8f0a-035f-b7db-500fa0755660",
+            "subject": "Status Update : 15/11/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x\nStatus →\nIn Testing",
+            "date": "2024-11-15T07:04:49Z",
+            "extra": {}
+        },
+        {
+            "id": "71348a2d-a66e-620d-a053-5df047a1fbb4",
+            "subject": "Status Update : 22/11/2024",
+            "body": "Awaiting for R&D update; current target is v6.1.x\nStatus →\nIn Testing",
+            "date": "2024-11-22T03:25:11Z",
+            "extra": {}
+        },
+        {
+            "id": "b894ca89-3fad-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Dear Ferdinand,\nI hope all is well with you. Please be aware that the issue is already addressed by FW v 6.1.x, which is going to be released by CW 08, 2025.  Root cause of the issue was LEM DC meters losing their timesync status \"ok\" after 48 hours of SCB offline. Until the FW fix is completed, we have to make sure the chargers (Equipped with LEMs) are connected to SCB at least once in every 48 hours.\nRequest your support to communicate the same to the CPO about issue resolution. Thank you so much for your patience and understanding.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-11-28T04:16:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "06c098d0-323d-bdf8-ba6b-cb3d2d50e1be",
+            "subject": "Notes from ES to NOC [ 28/11/2024",
+            "body": ") Problem Description\n:\nCharger out of order after 48 Hrs of SCB offline\nb) Suspected Root Cause\n:\nLEM DC meters losing their timesync status \"ok\" after 48 hours\nc\n) Action Performed:\nFeature request and fix will be implemented on FW 6.1.x\nd) Charger SW Version\n: v4.0.11\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-11-28T04:41:20Z",
+            "extra": {}
+        },
+        {
+            "id": "c3c0aeda-44ad-ef11-b8e8-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0367525 CRM:00225130781",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0367525 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49a2f15d-04fc-45c0-a6cb-48ba88206613",
+            "date": "2024-11-28T04:54:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c28f00b-4cad-ef11-b8e9-7c1e5235e725",
+            "subject": "RE: ID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order CRM:00921000961",
+            "body": "Dear\nFerdinand,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0367525.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-28T05:46:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac6618f8-4cad-ef11-b8e9-7c1e5235e725",
+            "subject": "Ticket 0367525 has been closed. Are you satisfied with our provided solution? CRM:02023000349",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0367525\nwith the title:\nID0367525-DC/Si-D/AU-[MP / P6 170000724] Charger out of order\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-28T05:52:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

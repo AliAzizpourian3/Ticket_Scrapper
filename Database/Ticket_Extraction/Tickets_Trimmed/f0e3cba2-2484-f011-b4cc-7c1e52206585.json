@@ -1,0 +1,138 @@
+{
+    "incident_id": "f0e3cba2-2484-f011-b4cc-7c1e52206585",
+    "ticket_number": "0446689",
+    "title": "ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues",
+    "created_on": "2025-08-28T15:35:42Z",
+    "last_activity": "2025-09-01T10:29:22Z",
+    "age": "5454",
+    "description": "Reported behaviour/issue: Intermittent Charging Issues with Mercedes eActros 600 Show Truck\nSolution: eActros has a airpump system causing CP noise\nyyyy-mm-dd: 2025-08-25",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "Jozhsr",
+    "stage": null,
+    "serial_number": "MP / R6 170002000",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "829889a1-2484-f011-b4cc-6045bde0265d",
+            "subject": "Webform_incident_SiCharge D_28-08-2025_SN: Jozhsr",
+            "body": "Dear Martin Glöckner,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nJozhsr\nThank you\neMobility Technical Support Team\nSehr geehrte/r Martin Glöckner,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nJozhsr\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-28T15:35:35Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4e602425-3084-f011-b4cc-6045bde0265d",
+            "subject": "A new case manager was assigned to 0446689 CRM:00225249413",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0446689 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f0e3cba2-2484-f011-b4cc-7c1e52206585",
+            "date": "2025-08-28T16:58:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c9b4cf49-3284-f011-b4cc-7c1e52350ea5",
+            "subject": "ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Dear\nMartin Glöckner\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center - ERK\nMain Asset\n: {\nMP / R6 170002000\nCharger ID/Serial No.\n:\nJozhsr\nProblem Description\n: Intermittent Charging Issues\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0446689\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-08-28T17:13:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54fc9196-ae84-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0446689 CRM:00225249647",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0446689 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f0e3cba2-2484-f011-b4cc-7c1e52206585",
+            "date": "2025-08-29T08:03:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "00059324-df84-f011-b4cb-7c1e52768c07",
+            "subject": "ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Hi Martin,\nMe and Catalina checked all the sessions today and here are our findings:\nFor these charging sessions, it's not related to the Mercedes eActros, it's with the Volvo, where we see that the EV is not establishing the connection:\n00.16.81.0e.e8.48\nSince this is the only time where we have a problem with the Volvo, we will move forward to the main topic which is the eActros:\nIn the logs, all the failed sessions with Mercedes, this is the root cause, the EV is creating noise on the PilotState and changing from C (charging) to B (ready). All occur with this EV:\nec9468000d35\nThis topic is already under investigation from Mercedes, they acknowledged their problem which is caused by the Air pump.\nWe are working together to find a solution for this.\nFor the moment, we can enable the Wake up function via OCPP, I checked the configuration and it's not correct, from the backend the following configuration must be:\nTxStopPoint=EnergyTransfer (default)\nTxStopPoint=PowerPathClosed (correct one)\nWith the wakeup function, if the sessions fail, the truck restarts it by itself.\nLet me know your feedback.\nHave a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-08-29T13:50:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0b32e39-fb86-f011-b4cc-6045bddf3f78",
+            "subject": "AW: ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Good Morning Francisco,\nI think you can enable the wakeup function – negative effects should not occur…It’s not an major update\nJ\nAlso thank you very much for explanation of eActros. For us it was also an interesting week.\nThe show truck left us last Friday\nL\n. Now we have our functioning trio: Volvo + Iveco + Siemens.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 29. August 2025 16:33\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nBetreff:\nID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nMe and Catalina checked all the sessions today and here are our findings:\nFor these charging sessions, it's not related to the Mercedes eActros, it's with the Volvo, where we see that the EV is not establishing the connection:\n00.16.81.0e.e8.48\nSince this is the only time where we have a problem with the Volvo, we will move forward to the main topic which is the eActros:\nIn the logs, all the failed sessions with Mercedes, this is the root cause, the EV is creating noise on the PilotState and changing from C (charging) to B (ready). All occur with this EV: ec9468000d35\nThis topic is already under investigation from Mercedes, they acknowledged their problem which is caused by the Air pump.\nWe are working together to find a solution for this.\nFor the moment, we can enable the Wake up function via OCPP, I checked the configuration and it's not correct, from the backend the following configuration must be:\nTxStopPoint=EnergyTransfer (default)\nTxStopPoint=PowerPathClosed (correct one)\nWith the wakeup function, if the sessions fail, the truck restarts it by itself.\nLet me know your feedback.\nHave a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-09-01T06:16:46Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5e2c9e83-0987-f011-b4cc-6045bddf397a",
+            "subject": "ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Hello Martin, good morning :) I hope you had a nice weekend.\nFrom our side it's ready. I just need you to reach out to your backend provider and ask them to change the configuration:\nTxStopPoint=EnergyTransfer (default)\nTxStopPoint=PowerPathClosed (correct one)\nCan I ask, why you don't allow the installation of the new FW? This FW includes the fix for the Volvo's update where the battery balancing is done, which improves the EVs battery life and quality.\nI understand that if it's working, you don't want to touch it, but feel free to share your doubts and questions.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-01T07:58:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ce7b5820-0a87-f011-b4cc-7c1e52206585",
+            "subject": "Automatische Antwort: ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Sehr geehrte Damen und Herren,\nIhre E-Mail wird nicht weiter geleitet und bearbeitet.\nIch bin ab dem 15.09.2025 wieder im Haus.\nMit freundlichen Grüßen\nAndreas Spannagl",
+            "date": "2025-09-01T08:03:31Z",
+            "extra": {
+                "sender": "aspannagl@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "488ea432-0e87-f011-b4cb-7ced8d4155b7",
+            "subject": "AW: ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Hi Francisco,\nAfter some unexplained \"incidence,\" we were no longer able to charge our Ivecos – they stayed unused for several weeks – with all the negative consequences for our logistics. As an outsider, it was difficult for us to distinguish between Iveco and Siemens...the result from the user's perspective was simple: the truck could not be used.\nWe've learned from this, of course. Currently, the charging processes are working quite reliably at D300 and D160. Therefore, we don't have necessity to adjust anything in the system.\nWe still have to discuss with our partner Energu, whether to update our public stations to V8. Some improvements to the SECC could improve availability and the charging experience for our customers.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 1. September 2025 10:03\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Mora, Catalina <maria-catalina.mora-suarez@siemens.com>\nBetreff:\nID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709\nHello Martin, good morning :) I hope you had a nice weekend.\nFrom our side it's ready. I just need you to reach out to your backend provider and ask them to change the configuration:\nTxStopPoint=EnergyTransfer (default)\nTxStopPoint=PowerPathClosed (correct one)\nCan I ask, why you don't allow the installation of the new FW? This FW includes the fix for the Volvo's update where the battery balancing is done, which improves the EVs battery life and quality.\nI understand that if it's working, you don't want to touch it, but feel free to share your doubts and questions.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-01T08:32:38Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2ba02f90-0f87-f011-b4cc-6045bddf397a",
+            "subject": "ID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues CRM:02681000709",
+            "body": "Hi Martin,\nThanks for sharing.\nNow I completely understand why you don't want to update.\nIf you ever change your mind, do not hesitate to contact us, we will help you in any way possible.\nSince now the only part missing is from \"your\" side (backend provider), which is the configuration change, we will close the ticket.\nThank you very much and have a nice start of the week.\nBest regards,\nFrancisco",
+            "date": "2025-09-01T08:42:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e9f8682-1e87-f011-b4cc-000d3addf8ce",
+            "subject": "Ticket 0446689 has been closed. Are you satisfied with our provided solution? CRM:00225250466",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0446689\nwith the title:\nID0446689-DC/Si-D/DE-[MP / R6 170002000]Intermittent Charging Issues\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-01T10:29:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

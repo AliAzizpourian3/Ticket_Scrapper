@@ -1,0 +1,291 @@
+{
+    "incident_id": "c8166422-1255-4274-9ac3-ed7026d8c92f",
+    "ticket_number": "0455118",
+    "title": "ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted",
+    "created_on": "2025-10-13T05:45:59Z",
+    "last_activity": "2026-03-30T13:09:11Z",
+    "age": "95078",
+    "description": "Dear Support Team,\nplease take a look at the Charger.\nOutlet 1 faulted OCPP Errorcode: \"evse not ready\"\nThank you and best regards,\nFelix",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "MP / S6 170003726",
+    "case_nature_code": 580000001,
+    "chargerID": "3vXyTq",
+    "additional_info": [
+        {
+            "id": "585688bb-69d3-45a3-90b3-fe2668efbef8",
+            "subject": "Note created on 10/13/2025 05:45:47 AM UTC by Felix Fuchs ",
+            "body": "",
+            "date": "2025-10-13T05:46:02Z",
+            "extra": {}
+        },
+        {
+            "id": "6919762b-f8a7-f011-bbd2-7c1e52880288",
+            "subject": "A new case manager was assigned to 0455118 CRM:00225270149",
+            "body": "Tanya Meghani was assigned as new Case Manager for case 0455118 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c8166422-1255-4274-9ac3-ed7026d8c92f",
+            "date": "2025-10-13T05:48:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be77a173-f8a7-f011-bbd2-7ced8d4259cd",
+            "subject": "ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:02832000578",
+            "body": "Dear\nFelix Fuchs\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center - ERK\nMain Asset\n:\nAH5065DC011\nCharger ID\n:\n3vXyTq\nProblem Description\n:\nOutlet 1 faulted\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0455118\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\ne Mobility Technical Support Team –\nTanya Meghani\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-13T05:50:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd7dda78-0ba8-f011-bbd2-7c1e523622b6",
+            "subject": "A new case manager was assigned to 0455118 CRM:00225270278",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0455118 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c8166422-1255-4274-9ac3-ed7026d8c92f",
+            "date": "2025-10-13T08:06:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "879cf885-1d5a-f442-a404-5a647ea47f0a",
+            "subject": "Status update",
+            "body": "DC1 has permanent CableTempSensor error. DC1 is Phoenix Cable 375A 5m, possible detachment of PT1000 for quality issue.\nOnsite visit required for PT1000 measurements and cable replacement.\nWaiting on Prod Care to know which spare part needs to be ordered in replacement of Phoenix 375A 5m (Q-Feedback release blocked).",
+            "date": "2025-10-17T10:37:40Z",
+            "extra": {}
+        },
+        {
+            "id": "df30cb14-29b3-f011-bbd2-7c1e523628c9",
+            "subject": "0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00314000236",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0455118\n﻿from the Technical Support to the\neMobility RC-DE SI E Queue:\nCustomer: Tank&Rast\nProduct:\nSicharge D - Charging Center - ERK\nMain Asset:\nAH5065DC011\nCharger ID / Serial No.:\nMP / S6 170003726\nCharger address/functional location:\nPriority:\nMedium\nReason to Handover\n: The charger sends to the OCPP Backend the following vendor code: \"evse is not ready\" referred to outlet 1. I checked on AWS, and outlet 1 has been OoO since few weeks with CableTempSensor error on DC1. I checked the configuration, and the cable of DC1 should be a Phoenix 375A 5m. On this type of cable, there is an ongoing quality issue, where one or both PT1000 are detaching when the cable is fully extended, resulting in a permanent error flag (as it is).\nLast week, the\nQ-Feedback\nQ2512\nrelated to this topic has been released.\nTherefore, it is required to go onsite, verify that the case is the one described by the Q-Feedback,  and perform the repair instructions according to the Q-Feedback. Here is the link:\nhttps://support.industry.siemens.com/cs/document/109987903\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-DE  SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nWith kind regards,\nFosco Servidei\nTechnical Support Engineer\nSI E EU CS TS\neMobility Customer Service\nSiemens AG\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-27T11:35:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7798cf26-a1b4-f011-bbd2-7c1e523625c2",
+            "subject": "A new case manager was assigned to 0455118 CRM:00225279319",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0455118 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c8166422-1255-4274-9ac3-ed7026d8c92f",
+            "date": "2025-10-29T08:27:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4d518380-49ba-f011-bbd2-7ced8d40c291",
+            "subject": "0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Felix,\nWir werden am 13.11 das Defekte Kabel tauschen.\nIst aktuell die Siemens Standart schließung verbaut oder benötigen wir einen gesonderten schlüssel?\nWer ist der Ansprechpartner vor Ort?\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-05T13:15:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b71e271f-b8bb-f011-bbd2-7c1e52880b1b",
+            "subject": "AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Lukas,\nan der Säule ist noch das Standard Schließsystem verbaut.\nEuer Techniker kann es ohne Probleme öffnen.\nAn dem Autohof ist personal vor Ort.\nFalls dennoch was sein sollte, könnt ihr gerne meine Kollegen.\nAlexandra Becker +49 151 15191549\no.\nJulian Behrmann +49 175 6490854\nerreichen.\nIch bin in dieser Woche im Urlaub und daher schwer telefonisch erreichbar.\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 5. November 2025 14:15\nAn:\nFuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nCc:\nDolce, Domenico <domenico.dolce@siemens.com>\nBetreff:\n0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Felix,\nWir werden am 13.11 das Defekte Kabel tauschen.\nIst aktuell die Siemens Standart schließung verbaut oder benötigen wir einen gesonderten schlüssel?\nWer ist der Ansprechpartner vor Ort?\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-11-07T08:59:53Z",
+            "extra": {
+                "sender": "felix.fuchs@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fd3f68a7-f4bf-f011-bbd3-7c1e52880fe1",
+            "subject": "RE: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Julian,\nLeider haben wir das Kabel noch nicht bekommen.\nDaher muss ich den Termin um eine Woche verschieben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-12T18:23:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "96909530-20c1-f011-bbd3-7ced8d4251b1",
+            "subject": "AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Lukas,\ndanke für die Info.\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 12. November 2025 19:24\nAn:\nFuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nCc:\nDolce, Domenico <domenico.dolce@siemens.com>\nBetreff:\nRE: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Julian,\nLeider haben wir das Kabel noch nicht bekommen.\nDaher muss ich den Termin um eine Woche verschieben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-11-14T06:07:35Z",
+            "extra": {
+                "sender": "felix.fuchs@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0c673487-93ca-f011-bbd3-7c1e52362b38",
+            "subject": "RE: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Guten Tag Herr Fuchs,\nDas Kabel wurde getauscht und die Säule ist wieder betriebsbereit.\nAußerdem war einer der Kabelhalter an einer weiteren Säule ausgebrochen.\nWir haben diesen mit ersetzt.\nIch werde dieses Ticket schließen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-26T06:45:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17b6464c-9aca-f011-bbd3-7c1e52362b38",
+            "subject": "RE: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Guten Tag Herr Fuchs,\nNoch ein Nachtrag den ich fast vergessen hätte.\nAnbei das Protokoll zur Instandsetzung des Ladekabels.\nIch bitte sie mir das Protokoll unterschrieben zurückzusenden.\nBitte beachten sie das dieses Formular nur eine Instandsetzungsmeldung und nicht der eigentliche Eichantrag ist.\nDen Eichantrag können sie entweder Online bei ihrem zuständigen Eichamt einreichen oder die 2te Seite des Protokolls ausfüllen.\nDadurch wird automatisch durch sie der Eichantrag beim zuständigen Eichamt gestellt sobald wir die Instandsetzung gemeldet haben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-26T07:34:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "98f43b9a-9aca-f011-bbd3-7ced8d4259cd",
+            "subject": "RE: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Guten Tag Herr Fuchs,\nNoch ein Nachtrag den ich fast vergessen hätte.\nAnbei das Protokoll zur Instandsetzung des Ladekabels.\nIch bitte sie mir das Protokoll unterschrieben zurückzusenden.\nBitte beachten sie das dieses Formular nur eine Instandsetzungsmeldung und nicht der eigentliche Eichantrag ist.\nDen Eichantrag können sie entweder Online bei ihrem zuständigen Eichamt einreichen oder die 2te Seite des Protokolls ausfüllen.\nDadurch wird automatisch durch sie der Eichantrag beim zuständigen Eichamt gestellt sobald wir die Instandsetzung gemeldet haben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-26T07:36:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ebb01e81-a4ca-f011-bbd2-7c1e52377f66",
+            "subject": "AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Herr Berger,\ndanke für das zusenden.\nLeider fehlt hier die zweite Seite.\nWir hatten das jetzt immer mit Herstellern gehabt, dass wir eine Vollmacht ausgestellt haben.\nFunktioniert das bei euch auch?\nBesten Grüße\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 26. November 2025 08:35\nAn:\nFuchs, Felix (T&R) <felix.fuchs@tank.rast.de>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>\nBetreff:\nRE: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nGuten Tag Herr Fuchs,\nNoch ein Nachtrag den ich fast vergessen hätte.\nAnbei das Protokoll zur Instandsetzung des Ladekabels.\nIch bitte sie mir das Protokoll unterschrieben zurückzusenden.\nBitte beachten sie das dieses Formular nur eine Instandsetzungsmeldung und nicht der eigentliche Eichantrag ist.\nDen Eichantrag können sie entweder Online bei ihrem zuständigen Eichamt einreichen oder die 2te Seite des Protokolls ausfüllen.\nDadurch wird automatisch durch sie der Eichantrag beim zuständigen Eichamt gestellt sobald wir die Instandsetzung gemeldet haben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-11-26T08:47:17Z",
+            "extra": {
+                "sender": "felix.fuchs@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "da166435-60cf-f011-8543-7ced8d4adcb0",
+            "subject": "AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Lukas,\nkannst du mir bitte hierzu noch Rückmeldung geben?\nIch danke dir!\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nFuchs, Felix (T&R) <Felix.Fuchs@tank.rast.de>\nGesendet:\nMittwoch, 26. November 2025 09:46\nBis:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>; Fuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nBetreff:\nAW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Herr Berger,\ndanke für das zusenden.\nLeider fehlt hier die zweite Seite.\nWir hatten das jetzt immer mit Herstellern gehabt, dass wir eine Vollmacht ausgestellt haben.\nFunktioniert das bei euch auch?\nBesten Grüße\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 26. November 2025 08:35\nAn:\nFuchs, Felix (T&R) <felix.fuchs@tank.rast.de>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>\nBetreff:\nRE: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nGuten Tag Herr Fuchs,\nNoch ein Nachtrag den ich fast vergessen hätte.\nAnbei das Protokoll zur Instandsetzung des Ladekabels.\nIch bitte sie mir das Protokoll unterschrieben zurückzusenden.\nBitte beachten sie das dieses Formular nur eine Instandsetzungsmeldung und nicht der eigentliche Eichantrag ist.\nDen Eichantrag können sie entweder Online bei ihrem zuständigen Eichamt einreichen oder die 2te Seite des Protokolls ausfüllen.\nDadurch wird automatisch durch sie der Eichantrag beim zuständigen Eichamt gestellt sobald wir die Instandsetzung gemeldet haben.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-12-02T09:21:00Z",
+            "extra": {
+                "sender": "felix.fuchs@mblty.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "08534d8d-28d0-f011-bbd3-7c1e52880288",
+            "subject": "RE: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Felix,\nDas ist bei mir untergegangen Sorry.\nAnbei nochmal das Protokoll mit Seite 2.\nJa ihr könnt uns auch gerne eine Vollmacht schicken dann können wir den Antrag direkt einreichen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-03T09:15:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb8f00f4-28d0-f011-bbd3-7ced8d425bfe",
+            "subject": "RE: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Felix,\nDas ist bei mir untergegangen Sorry.\nAnbei nochmal das Protokoll mit Seite 2.\nJa ihr könnt uns auch gerne eine Vollmacht schicken dann können wir den Antrag direkt einreichen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-03T09:18:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9b711943-3ed0-f011-8543-002248a1728a",
+            "subject": "AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Lukas,\ndanke dir.\nHabt ihr da eine Vorlage?\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 3. Dezember 2025 10:17\nAn:\nFuchs, Felix (mblty) <felix.fuchs@mblty.de>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>; Fuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nBetreff:\nRE: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Felix,\nDas ist bei mir untergegangen Sorry.\nAnbei nochmal das Protokoll mit Seite 2.\nJa ihr könnt uns auch gerne eine Vollmacht schicken dann können wir den Antrag direkt einreichen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-03T11:50:31Z",
+            "extra": {
+                "sender": "felix.fuchs@mblty.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c001f473-5ed0-f011-bbd3-7c1e52880288",
+            "subject": "RE: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Felix,\nich habe mar rumgefragt aber wir haben leider Keine Vorlage.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-03T15:40:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "683b7f9c-47da-f011-8543-7ced8d425658",
+            "subject": "RE: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Hallo Felix,\nKannst du mir bitte noch das Dokument zukommen lassen.\nIch muss die Instandsetzung bei der Eichbehörde melden.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-16T06:22:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b7b0cf3-48da-f011-8544-7ced8d4258c6",
+            "subject": "AW: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Morgen Lukas,\nich habe es schon intern zu unserer Rechtsabteilung weitergeleitet.\nIch frage dort nochmal nach.\nDanke für deine Erinnerung!\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 16. Dezember 2025 07:24\nAn:\nFuchs, Felix (mblty) <felix.fuchs@mblty.de>; Fuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nBetreff:\nRE: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Felix,\nKannst du mir bitte noch das Dokument zukommen lassen.\nIch muss die Instandsetzung bei der Eichbehörde melden.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-16T06:32:11Z",
+            "extra": {
+                "sender": "felix.fuchs@mblty.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ea23e96b-2adb-f011-8544-7ced8d4259cd",
+            "subject": "AW: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596",
+            "body": "Guten Morgen Lukas,\nanbei die Vollmacht.\nWünsche dir schöne Feiertage!\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nFuchs, Felix (mblty) <felix.fuchs@mblty.de>\nGesendet:\nDienstag, 16. Dezember 2025 07:31\nAn:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>; Fuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nBetreff:\nAW: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nMorgen Lukas,\nich habe es schon intern zu unserer Rechtsabteilung weitergeleitet.\nIch frage dort nochmal nach.\nDanke für deine Erinnerung!\nMit freundlichen Grüßen\nFelix Fuchs\nTechnical Operations Manager\n(M)\n+49 (0) 160 94405081\n(E)\nfelix.fuchs@mblty.de\n(W)\nwww.mblty.de\nmblty GmbH,\nAndreas-Hermes-Str. 7-9, 53175 Bonn, Telefon: +49 (0) 228 922-0, Telefax: +49 (0) 228 922-4110\nSitz: Bonn, Amtsgericht Bonn, HRB 29356, Geschäftsführung: Ralf Rothkamp\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 16. Dezember 2025 07:24\nAn:\nFuchs, Felix (mblty) <felix.fuchs@mblty.de>; Fuchs, Felix (T&R) <felix.fuchs@tank.rast.de>\nBetreff:\nRE: AW: AW: AW: AW: 0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000596\nHallo Felix,\nKannst du mir bitte noch das Dokument zukommen lassen.\nIch muss die Instandsetzung bei der Eichbehörde melden.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-17T09:26:12Z",
+            "extra": {
+                "sender": "felix.fuchs@mblty.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3038e697-d9db-f011-8544-7ced8d425bfe",
+            "subject": "0455118 - ID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted CRM:00440000668",
+            "body": "Sehr geehrte Damen und Herren,\nHiermit benachrichtigen wir sie im Angehängten Instandsetzungsnachweis über die Instandsetzung einer Schnelladesäule.\nZusätzlich beantragen wir mit der Vollmacht unseres Kunden die ebenfalls angehängt ist, die Nacheichung der Ladesäule.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-18T06:20:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee47d402-dadb-f011-8543-7c1e52362ec6",
+            "subject": "Ticket 0455118 has been closed. Are you satisfied with our provided solution? CRM:00225306504",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0455118\nwith the title:\nID0455118-DC/Si-D/DE- [MP / S6 170003726] Outlet 1 faulted\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-18T06:23:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49d7a709-91fe-f688-b057-f6fae88c8db9",
+            "subject": null,
+            "body": "FS_Report_RC_DEV4 3-30-2026 3-08-46 PM.docx",
+            "date": "2026-03-30T13:09:10Z",
+            "extra": {}
+        }
+    ]
+}

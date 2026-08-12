@@ -1,0 +1,90 @@
+{
+    "incident_id": "d263c45a-d62e-4b81-9828-3d86ae07b9f2",
+    "ticket_number": "0453176",
+    "title": "ID0453176-DC/Si-D/TR-[MP / P9 170000775] Charging is unsuccessful at Outlet-2",
+    "created_on": "2025-10-01T11:50:43Z",
+    "last_activity": "2025-10-09T13:22:58Z",
+    "age": "11612",
+    "description": "Reported behaviour: Charging is unsuccessful at Outlet-2. As can be seen in the logs I received from AWS, there is no successful charging at Outlet-2.\nThe latest logs I received from the device are attached.\nSolution: Possibly replace QA13-14",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / P9 170000775",
+    "case_nature_code": 580000001,
+    "chargerID": "vgcKOK",
+    "additional_info": [
+        {
+            "id": "9ed93fe4-bc9e-f011-b41b-7ced8d4161d1",
+            "subject": "A new case manager was assigned to 0453176 CRM:00225264948",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0453176 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d263c45a-d62e-4b81-9828-3d86ae07b9f2",
+            "date": "2025-10-01T11:51:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "507177f1-bd9e-f011-b41c-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0453176 CRM:00225264954",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0453176 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d263c45a-d62e-4b81-9828-3d86ae07b9f2",
+            "date": "2025-10-01T11:58:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "220497a0-147d-3fe9-8fc2-bdaeafd7f610",
+            "subject": "Case description",
+            "body": "Charging is unsuccessful at Outlet-2. As can be seen in the logs I received from AWS, there is no successful charging at Outlet-2.\nThe latest logs I received from the device are attached.",
+            "date": "2025-10-01T12:10:42Z",
+            "extra": {}
+        },
+        {
+            "id": "716fdcba-bf9e-f011-b41c-000d3ab07fc1",
+            "subject": "ID0453176-DC/Si-D/TR-[MP / P9 170000775] Charging is unsuccessful at Outlet-2 CRM:03056000064",
+            "body": "Dear\nYunus\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000775\nChargerID/Serial No.\n:\nvgcKOK\nProblem Description\n: Charging is unsuccessful at Outlet-2\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0453176\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-01T12:11:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a8566167-c29e-f011-b41b-7ced8d4760fe",
+            "subject": "A new case manager was assigned to 0453176 CRM:00225264981",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0453176 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d263c45a-d62e-4b81-9828-3d86ae07b9f2",
+            "date": "2025-10-01T12:30:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "40fd68b8-c29e-f011-b41b-7ced8d73e569",
+            "subject": "ID0453176-DC/Si-D/TR-[MP / P9 170000775] Charging is unsuccessful at Outlet-2 CRM:03056000064",
+            "body": "Hi Emre-abi,\nI rebooted the EcoG and restarted the whole service. I will proactively check this charger for a few days and see if it persists.\nIf yes, then I will prepare the next steps.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-10-01T12:32:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8f1f8229-809f-f011-b41c-6045bde117fc",
+            "subject": "ID0453176-DC/Si-D/TR-[MP / P9 170000775] Charging is unsuccessful at Outlet-2 CRM:03056000064",
+            "body": "Hi Emre-abi,\nI checked the charger and found that the CableCheck voltage is not being noticed and as such it's not going forward, but we have the voltage reading from the converters.\nPlease check the following:\nTF2's 2...10V output is not being read properly.\nQA13-14 is not closing\nCheck the 24V supply to the C1-C2. It's possible that XD10.3 is loose.\nCheck with crocodile tips the busbar directly after the contactors.\nI recommend you to measure on the roof busbars as they are much easier to access instead of the busbars which are deeply inside the charger.\nIf we don't have voltage then that means that the contactor is not closing.\nIf the 24V are applied to C1-C2 and it's not closing, replace the contactors.\nIf you don't see 24V please measure from the KF13 until there, if the KF13 is not sending the 24V please trial replacing it.\nSo please take spare QA13-14, TF2 and KF13 to site.\nI will forward this ticket to your RC-TR queue. If you require assistance please schedule it with at least 2 days in advance as I need prepare my calendar.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-10-02T11:08:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

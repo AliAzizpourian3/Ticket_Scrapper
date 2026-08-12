@@ -1,0 +1,101 @@
+{
+    "incident_id": "e5b299d9-6f25-42c4-a88b-590302e650e0",
+    "ticket_number": "0412887",
+    "title": "ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed",
+    "created_on": "2025-03-15T09:16:10Z",
+    "last_activity": "2025-05-05T12:30:33Z",
+    "age": "3317",
+    "description": "Reported behavior/issue:\nThe charger was reported as not working and charging sessions cut out after 10 seconds. I arrived to site and observed the charging session starting but then cutting out multiple times. A note came up on the screen that showed “the current flow was stopped from the vehicle side”.\nI checked inside the charger and found the AC socket to be a little lose. I tightened it back up to how it should be.\nI rebooted the charger and done another charging session which lasted for 10 mins but then cut out again. I tried multiple times but still couldn't get the charger to function correctly\nRoot cause:\ncharger was set to no authentication, but with OCPP active & FW updated to 6.1.3\nSolution:\nRemoved the OCPP active from charger configuration & Charger set to RFID authentication, with FreeVend (automatic authorisation) on the backend, and the problem is resolved.\nOn DAMEX Sanctioned List:\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "taffWX",
+    "stage": null,
+    "serial_number": "MP / R1 170001463",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ca151705-71d1-2a0e-b1bc-7e758f7ecbb9",
+            "subject": "Reported Issue",
+            "body": "The charger was reported as not working and charging sessions cut out after 10 seconds. I arrived to site and observed the charging session starting but then cutting out multiple times. A note came up on the screen that showed “the current flow was stopped from the vehicle side”.\nI checked inside the charger and found the AC socket to be a little lose. I tightened it back up to how it should be.\nI rebooted the charger and done another charging session which lasted for 10 mins but then cut out again. I tried multiple times but still couldn't get the charger to function correctly.",
+            "date": "2025-03-15T10:07:03Z",
+            "extra": {}
+        },
+        {
+            "id": "915b4935-9401-f011-bae3-7c1e523508ba",
+            "subject": "0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Dear Samuel Goodger,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001463\nCharger ID/Serial No.\n:\ntaffWX\nProblem Description\n: Multiple Charging session failed.\nTroubleshooting\n:  We have reviewed the logs from 08:00 AM UTC to 11:30 AM UTC and identified that the \"transactionId\": -1,\"idTagInfo\":{\"status\":\"Invalid\". Additionally, we observed that the EV was unplugged during this period. Kindly attempt to initiate the charging process again using either the RFID card or the mobile app and ensure that the EV is unplugged before starting the charging session.\nDo let me know if you have any questions or need any assistance from our side.\nFor future reference, your case number is\n0412887\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-15T11:54:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8759a9db-4503-f011-bae3-7c1e52768c07",
+            "subject": "RE: 0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Dear Samuel & Jason,\nWishing you a great start to the week!\nWe performed a few remote configurations/activities, as outlined below, which helped resolve the issue.\nOn site technician has updated the charger from FW V3.2.8→ 4.0.11→ 5.0.23→FW V 6.1.3\nCharger was examined by RC support and NOC, and it was noted that the charger was set to no authentication, but with OCPP active. The OCPP backed was set to authenticate on RFID, and at the status/heartbeat interval of 5 minutes the backend was sending an \"unauthorised session\" termination, which stopped the charge. Charger set to RFID authentication, with FreeVend (automatic authorisation) on the backend, and the problem is resolved.\nCould you send a site report here so we can proceed with closing this ticket?\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T15:38:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ae79a1fd-4603-f011-bae3-7c1e52350ea5",
+            "subject": "RE: 0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Dear Samuel & Jason,\nWishing you a great start to the week!\nWe performed a few remote configurations/activities, as outlined below, which helped resolve the issue.\nOn site technician has updated the charger from FW V3.2.8→ 4.0.11→ 5.0.23→FW V 6.1.3\nCharger was examined by RC support and NOC, and it was noted that the charger was set to no authentication, but with OCPP active. The OCPP backed was set to authenticate on RFID, and at the status/heartbeat interval of 5 minutes the backend was sending an \"unauthorised session\" termination, which stopped the charge. Charger set to RFID authentication, with FreeVend (automatic authorisation) on the backend, and the problem is resolved.\nCould you send a site report here so we can proceed with closing this ticket?\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T15:46:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fadf578f-4a03-f011-bae3-000d3ab07fc1",
+            "subject": "RE: 0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Hi Vikas,\nNothing really to add with a site report – the technician just connected vehicles for testing.\nThe firmware update was done by me remotely, and proceeded without issues.\nYou can please close the ticket.\nThanks,\nJason",
+            "date": "2025-03-17T16:12:04Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b2ad1b81-4c03-f011-bae3-7c1e523508ba",
+            "subject": "RE: 0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Dear Samuel Goodger,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0412887, the case is now closed.\nProblem Description\n:\nMultiple charging session failed\nResolution\n:\nRemoved the OCPP active from charger configuration & Charger set to RFID authentication, with FreeVend (automatic authorisation) on the backend, and the problem is resolved.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-17T16:26:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c53302f-4d03-f011-bae3-7c1e52768372",
+            "subject": "RE: 0412887 - ID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed CRM:02023000544",
+            "body": "Dear Samuel Goodger,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0412887, the case is now closed.\nProblem Description\n:\nMultiple charging session failed\nResolution\n:\nRemoved the OCPP active from charger configuration & Charger set to RFID authentication, with FreeVend (automatic authorisation) on the backend, and the problem is resolved.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-17T16:30:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "07bc8835-4d03-f011-bae3-7c1e523508ba",
+            "subject": "Ticket 0412887 has been closed. Are you satisfied with our provided solution? CRM:02023000548",
+            "body": "Dear Sam & Jason,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0412887\nwith the title:\nID0412887-DC/Si-D/GB- [MP / R1 170001463] Multiple charging session failed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-17T16:31:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

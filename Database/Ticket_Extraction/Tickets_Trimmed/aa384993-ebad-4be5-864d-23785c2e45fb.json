@@ -1,0 +1,176 @@
+{
+    "incident_id": "aa384993-ebad-4be5-864d-23785c2e45fb",
+    "ticket_number": "0380458",
+    "title": "ID0380458-DC/Si-D/EE- [MP / P9 170000984] - Chademo stuck 45min in Finishing",
+    "created_on": "2024-09-20T10:56:27Z",
+    "last_activity": "2025-12-16T14:05:48Z",
+    "age": "85086",
+    "description": "Reported behaviour/issue:\nConnector unavailable for 45mins after finished successfull session\nRoot cause:\nFW Bug\nSolution:\nFW update to v6.0.x\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO L3 in timeline 24/Sep 4:50pm GMT\nUser was charging his vehicle with Chademo. After session was over, socket went to B1 -→ A -→ B1 -→ A. Charger sent OCPP StopTransaction data but no status available. After some time charger sent status info “finishing” when OCPP asked status state.\nCharger\n170000984 timestamp 2024-09-13, 18:23:07 - 19:26:21.\nCharger 170000985 timestamp 2024-09-12, 11:09:09 - 12:06:44.\nPlease be aware this is local time. In SCB/AWS you have to minus 3 hours.\nStatus Operation: Waiting RD Feedback\nJira Ticket ( If Any)\nhttps://jira.si.siemens.cloud/browse/EVC3-6530\n| EMOB-15360\nEcoG Ticket (If Any)\nNA\nNotes from ES to NOC [ 15/11/2024]",
+    "type": 1,
+    "priority": 3,
+    "stage": null,
+    "serial_number": "MP / P9 170000984",
+    "case_nature_code": null,
+    "chargerID": "1p1SHV, 8SZY9F",
+    "additional_info": [
+        {
+            "id": "ca943f01-3f77-ef11-a670-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0380458 CRM:00225100361",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0380458 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=aa384993-ebad-4be5-864d-23785c2e45fb",
+            "date": "2024-09-20T10:56:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eefd232c-3f77-ef11-a671-000d3ab7063f",
+            "subject": "A new case manager was assigned to 0380458 CRM:00225100364",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0380458 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=aa384993-ebad-4be5-864d-23785c2e45fb",
+            "date": "2024-09-20T10:57:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf0156ca-8279-ef11-ac20-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 days, 21 hours, 10 minutes and 33 seconds.",
+            "date": "2024-09-23T08:07:02Z",
+            "extra": {}
+        },
+        {
+            "id": "fa4d4ed0-8279-ef11-ac20-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 5 seconds.",
+            "date": "2024-09-23T08:07:07Z",
+            "extra": {}
+        },
+        {
+            "id": "c46a6b20-a379-ef11-ac20-6045bdde0ce3",
+            "subject": "ID0380458-DC/Si-D/EE- [MP / P9 170000984] - After chademo session OCPP stuck in finishing CRM:00315001817",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000984\nChargerID/Serial No.\n:\n1p1SHV, 8SZY9F\nProblem Description\n: Connector 1 stays in Finishing for 45mins, this makes the outlet unavailable to charge during this time.\nTroubleshooting\n:\nAs we already aligned last week, these 2 chargers are having problems with the connector availability.\nI cross-checked the logs from DC1 and DC2, it appears that this is only happening in DC1 with Chademo. It's clear that the problem is the SECC since it's the one that sends these notifications.\nIf possible, let's schedule a charging session with the customer where I can live check the EcoG state logs. From the logs, the only permanent solution I can offer is to replace the EcoG.\nMy suggestion would be to schedule the test session and have a EcoG on-site to replace in case necessary. What is your opinion?\nFor future reference, your ticket number is\n0380458\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-23T11:58:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a26d633c-a879-ef11-ac20-7c1e52357cad",
+            "subject": "RE: ID0380458-DC/Si-D/EE- [MP / P9 170000984] - After chademo session OCPP stuck in finishing CRM:00315001817",
+            "body": "Hi,\nScheduling charging session is difficult and more difficult because it is Chademo. This has happened now already in two locations, so I think it’s more software related topic?\nBut anyway, I think the easiest solution is just to replace EcoG and continue monitoring after that if the problem was solved or not.\nMarkus",
+            "date": "2024-09-23T12:35:05Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4dbb4ad3-8b7a-ef11-ac20-002248a29667",
+            "subject": "ID0380458-DC/Si-D/EE- [MP / P9 170000984] - After chademo session OCPP stuck in finishing CRM:00315001817",
+            "body": "Hi Markus, good afternoon.\nQuick feedback on this topic.\nThere is a docker that is responsible for sending this information from EcoG. As such, I will forward this to the Experts for further analysis.\nFor now, let's not replace the EcoG yet. They will align with you for further tests.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-24T15:44:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4933d01c-ba9c-34c9-beb8-7c0cd5484227",
+            "subject": "NOTE TO L3",
+            "body": "1. Problem Description :  Connector is unavailable for 45mins after a good charging session in DC1\n2. Action Performed (L2) : Collected all the logs.\n3. Charger SW Version: v5.0.19\n4. Reason for Handover (L3) : Needs to be reported within R&D, seems to be either a SW issue related to the docker responsible for this message exchange or EcoG related\n5. Fault history : None\n6. Log analysis with timestamp : 4 logs attached from several sessions:\n1p1SHV:\nSession Finish (Pilotstate C1→B1→A)\nLine 565: 1p1SHV    1726242071589    2024-09-13T15:41:10.900418+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d59f00b30777[714]: OCPP: Send command: StatusNotification (ee362128-cdb8-4450-8be6-c6456e3e6e89) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Finishing\"}    1726242072860    38496484589489947972786580074599137606474395943249379348\nAvailability 45mins later\nLine 884: 1p1SHV    1726244781379    2024-09-13T16:26:20.989541+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d59f00b30777[714]: OCPP: Send command: StatusNotification (187302cb-1a31-4bb9-96b3-0e807fcc272d) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}    1726244782653    38496545019826279499083866052611999927375629053768761369\n8SZY9F:\nSession Finish with PilotState C1→B1→A\nLine 349: 8SZY9F    1726129291034    2024-09-12T08:21:28.085614+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[715]: OCPP: Send command: StatusNotification (bc9beaa9-4669-4cd7-9124-a52f4dafc380) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Finishing\"}    1726129296138    38493969499069544103924045494049026381141922241384087572\nAvailability only 45mins afterwards\nLine 527: 8SZY9F    1726132004743    2024-09-12T09:06:44.145074+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[715]: OCPP: Send command: StatusNotification (4906dd22-b258-4a6a-96af-1a40e5e4e70f) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}    1726132009632    38494030016802496063262843568214706732772529897951199253\n8SZY9F(1):\nSession ended with PilotState C1→A (stopped by SECC maybe customer plugged out before it could even get to B1?)\nLine 1010: 8SZY9F    1726573749559    2024-09-17T11:49:09.016977+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[717]: OCPP: Send command: StatusNotification (6936c6c9-c09e-40b6-9c7b-773728ab9bde) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Finishing\"}    1726573750568    38503881255386883856853400638063599179539545330417401891\nAvailable after 45mins\nLine 1159: 8SZY9F    1726576456665    2024-09-17T12:34:16.086515+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[717]: OCPP: Send command: StatusNotification (25c1dd51-e8e5-4e95-88ea-00b64ed7ee52) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}    1726576460770    38503941625868015270294494104688913477166341919533629465\n8SZY9F(2):\nSession ended with PilotState C1→A (same behaviour as above?)\nLine  964: 8SZY9F    1726757031405    2024-09-19T14:43:51.065754+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[715]: OCPP: Send command: StatusNotification (cb5abff4-788a-4465-b323-b61cb8fc962e) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Finishing\"}    1726757033051    38507968577134046185950533198709266031137912990191845414\nAvailability in 45mins\nLine 2303: 8SZY9F    1726759736863    2024-09-19T15:28:56.175218+00:00 sicharge-cp [local0:info] sicharge-cp-backend/702fddf271dc[715]: OCPP: Send command: StatusNotification (02db5ca1-3f0e-4d6a-a7ba-44a5f0fdd30f) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Available\"}    1726759741708    38508028910863549512213159726216003401129782175000231958\n7. Action Required: Report to R&D\nAttachement : refer attched logs",
+            "date": "2024-09-24T16:04:19Z",
+            "extra": {}
+        },
+        {
+            "id": "273fd788-147b-ef11-ac20-002248a29667",
+            "subject": "A new case manager was assigned to 0380458 CRM:00225102348",
+            "body": "Sambath KS was assigned as new Case Manager for case 0380458 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=aa384993-ebad-4be5-864d-23785c2e45fb",
+            "date": "2024-09-25T08:02:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d6285d08-87a5-7f14-aea9-a32c0c5df9df",
+            "subject": "Status Update : 18/10/2024",
+            "body": "Awaiting for R&D update on the ticket\nhttps://jira.si.siemens.cloud/browse/EVC3-6530",
+            "date": "2024-10-18T04:03:24Z",
+            "extra": {}
+        },
+        {
+            "id": "7051f00f-ceab-92ef-a07e-be9d020e9261",
+            "subject": "Status update : 25/10/2024",
+            "body": "Reason for stuck & update\nIssue does not seems to be a bug, but rather a problem with Chademo → Chademo cannot send a disconnect by default.  There is a parameter for this in SCB",
+            "date": "2024-10-25T04:53:15Z",
+            "extra": {}
+        },
+        {
+            "id": "81be9490-735b-5e81-aafd-ecb76a16d9ad",
+            "subject": "status update : 08/11/2024",
+            "body": "Fix version -→ v6.0.0\nPlanned to have a discussion with R&D to understand the root cause and how its going to be mitigated",
+            "date": "2024-11-08T05:25:44Z",
+            "extra": {}
+        },
+        {
+            "id": "8c256e6c-27a3-ef11-8a6a-002248a2b1bd",
+            "subject": "RE: ID0380458-DC/Si-D/EE- [MP / P9 170000984] - After chademo session OCPP stuck in finishing CRM:00315001817",
+            "body": "Dear Markus,\nI hope all is well with you. As we discussed yesterday, the issue is already addressed by FW v 6.0.x, which is going to be released by CW 02 - 2025, I am proceeding to close the ticket.\nThank you very much for being understanding and patient.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-11-15T07:58:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f367783-13b2-bca8-bad9-d66d3e36b6e0",
+            "subject": "Notes from ES to NOC [ 15/11/2024]",
+            "body": "a) Problem Description\n:\nSocket stuck in finishing\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed:\nFW need to update to v6.0.x\nd) Charger SW Version\n: v4.0.11\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-11-15T08:00:34Z",
+            "extra": {}
+        },
+        {
+            "id": "2ccb3b43-29a3-ef11-8a69-000d3ab71bc2",
+            "subject": "A new case manager was assigned to 0380458 CRM:00225124821",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0380458 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=aa384993-ebad-4be5-864d-23785c2e45fb",
+            "date": "2024-11-15T08:11:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b3cc90d8-aba5-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0380458-DC/Si-D/EE- [MP / P9 170000984] - Chademo stuck 45min in Finishing CRM:00579001319",
+            "body": "Hello Markus,\nWith reference to trailing mail, we will be proceeding with closing the service ticket# 0380458.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-18T12:51:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "25d688f9-aca5-ef11-b8e8-000d3ab41b62",
+            "subject": "Ticket 0380458 has been closed. Are you satisfied with our provided solution? CRM:00579001320",
+            "body": "Hello Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0380458\nwith the title:\nID0380458-DC/Si-D/EE- [MP / P9 170000984] - Chademo stuck 45min in Finishing\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-18T12:59:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

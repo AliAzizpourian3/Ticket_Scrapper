@@ -1,0 +1,90 @@
+{
+    "incident_id": "eaee7033-dac0-4886-b879-f52b07250890",
+    "ticket_number": "0442416",
+    "title": "ID0442416-DC/Si-D/TR-[Y2 / R6 313053966013] Mainbreaker_QA1",
+    "created_on": "2025-08-07T07:00:12Z",
+    "last_activity": "2026-01-16T11:11:12Z",
+    "age": "27394",
+    "description": "Reported behavior/issue: Mainbreaker_QA1\nSolution: MA1 is replaced\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "VAEJHd",
+    "stage": null,
+    "serial_number": "Y2 / R6 313053966013",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a5453b32-5c73-f011-b4cc-000d3adc93d1",
+            "subject": "A new case manager was assigned to 0442416 CRM:00225239557",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0442416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eaee7033-dac0-4886-b879-f52b07250890",
+            "date": "2025-08-07T07:00:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c664ac4-6873-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0442416 CRM:00225239655",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0442416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eaee7033-dac0-4886-b879-f52b07250890",
+            "date": "2025-08-07T08:30:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "709f925f-4de3-6b66-9a77-60416b318ae3",
+            "subject": null,
+            "body": "",
+            "date": "2025-08-07T08:32:57Z",
+            "extra": {}
+        },
+        {
+            "id": "eb4c8d3c-6973-f011-b4cb-6045bddf319c",
+            "subject": "ID0442416-DC/Si-D/TR-[Y2 / R6 313053966013] Mainbreaker_QA1 CRM:02889000386",
+            "body": "Dear Mert Kanneci,\nThank you for reaching\nout\nto eMobility Support. My name is\nSakshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nO3 Tesisleri-1\nChargerID/Serial No.\n:\nVAEJHd\nProblem Description\n:\nMainbreaker_QA1\nFor future reference, your case number is\n0442416\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSakshi Rawat",
+            "date": "2025-08-07T08:33:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a7d4868-4874-f011-b4cc-7c1e52faf3c6",
+            "subject": "ID0442416-DC/Si-D/TR-[Y2 / R6 313053966013] Mainbreaker_QA1 CRM:02889000386",
+            "body": "Hi Mert,\nTo troubleshoot the QA1 we have to check these steps:\nMy first as always is to check if the XD9.1 is inserted tightly. These are those loose connectors.\nSecond is by applying (or checking) 24V on the QA28 and then QA29, we should be able to get 230V until the input of both L+ and ON in the MA1, from the logic below:\nIf we apply 24V on the A1-A2 and the contact 11-14 doesn't close then we need to replace QA29, same process with QA28\nNext thing is to check 24V on the Under voltage relay, the QA1 feedback should not be closing so you must not have 24V between .1 and .4\nThe 24V to the UVR are supplied by QA26:\nNext question, when you reach the site, what is the LED color of the ACT and TRIP in the QA1? (seen from the front)\nIf both LEDs are on then that means MA1 is faulty and needs replacement.\nIf everything above checks out properly and it still doesn't work (230V in MA1, QA26 sending 24V, 24V in KF5 - first photo and KF2, for QA29 and QA28 - second photo). Please measure on the output of the QA1 if any phase is not having the 230/380V:\nIf we don't have a phase or multiple phases then we need to replace the QA1 but MA1 should not be necessary or the UVR.\nIf QA26 is not sending the 24V for the UVR, then we need to check which of these lines is not getting 24V:\nIf all of them checks out fine and we still don't have 24V in the output (24) then we need to replace the QA26.\nI don't think it's the feedback of the QA1 since we don't have the error called \"Failure in Feedback line\".\nUsually when we have these kind of problems it's the MA1 but let's prove it.\nMy recommendation is to take a spare QA1, MA1, QA26, QA28/29 (they are the same) and UVR.\nI will send this ticket to your queue.\nThanks and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-08-08T11:11:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f8cbd11c-5074-f011-b4cb-7ced8d4694db",
+            "subject": "A new case manager was assigned to 0442416 CRM:00225240475",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0442416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=eaee7033-dac0-4886-b879-f52b07250890",
+            "date": "2025-08-08T12:06:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04529017-4f82-f011-b4cc-000d3ad97a58",
+            "subject": "Ticket 0442416 has been closed. Are you satisfied with our provided solution? CRM:00225247710",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0442416\nwith the title:\nID0442416-DC/Si-D/TR-[Y2 / R6 313053966013] Mainbreaker_QA1\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-26T07:34:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

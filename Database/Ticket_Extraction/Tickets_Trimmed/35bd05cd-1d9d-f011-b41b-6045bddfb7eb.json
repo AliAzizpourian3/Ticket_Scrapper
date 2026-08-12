@@ -1,0 +1,269 @@
+{
+    "incident_id": "35bd05cd-1d9d-f011-b41b-6045bddfb7eb",
+    "ticket_number": "0452671",
+    "title": "ID0452671-DC/Si-D/DE-[Multi] Charging points out of service",
+    "created_on": "2025-09-29T10:19:46Z",
+    "last_activity": "2026-02-06T05:14:22Z",
+    "age": "93708",
+    "description": "Reported Behavior/Issue:- Charging points out of service\nChargers:\nMP / P6 170000665 and MP / P6 170000666",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / P6 170000666,MP / P6 170000665",
+    "case_nature_code": 580000001,
+    "chargerID": "1bhhGK",
+    "additional_info": [
+        {
+            "id": "9b8c66cb-1d9d-f011-b41b-7ced8d41a80c",
+            "subject": "Webform_incident_SiCharge D_29-09-2025_SN: 170000665 u. 170000666",
+            "body": "Dear Marcel Doods,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000665 u. 170000666\nThank you\neMobility Technical Support Team\nSehr geehrte/r Marcel Doods,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000665 u. 170000666\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-29T10:19:40Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b6f13cfb-1d9d-f011-b41c-6045bdde4786",
+            "subject": "A new case manager was assigned to 0452671 CRM:00225263592",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0452671 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35bd05cd-1d9d-f011-b41b-6045bddfb7eb",
+            "date": "2025-09-29T10:20:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b79d0b2-219d-f011-b41c-6045bddf3f78",
+            "subject": "ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Dear\nMarcel\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / P6 170000665 & MP / P6 170000666\nChargerID/Serial No.\n:\nMP / P6 170000665 & MP / P6 170000666\nProblem Description\n:\nCharging points out of service\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0452671\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-29T10:47:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c00e08f6-d49d-f011-bbd3-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0452671 CRM:00225264154",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0452671 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35bd05cd-1d9d-f011-b41b-6045bddfb7eb",
+            "date": "2025-09-30T08:10:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5177616-b8a2-f011-bbd3-000d3ab07fc1",
+            "subject": "RE: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Dear Marcel Doods,\nI am reaching out in regards of ticket\nID0452671\n. The ticket has been opened on your end for outlets being Out of Order in the morning of 25.09.2025 on chargers\n170000665\nand\n170000666.\nI analyzed the logs corresponding at the timestamps of your photos, and these are my findings:\nCharger\n170000666:\nThe charger had DC2 out of order while DC1 was charging.\nFrom the logs, I could see a severe event of \"error coap polling\". This is an internal communication interruption between SECC and PLC. SiC D will reconnect to SECC within 5 seconds. While SECC is not reachable, the outlet will be set as unavailable or preparing.\nThis error is solved in the latest Sicharge D FW v8.0.5. I see from SCB that the charger is running on v6.0.3 (so 3 FW versions older). I would recommend to update the charger to the latest v8.0.5, in order to avoid this error coap polling to appear again.\nIf the update cannot be performed, in alternative a Hotfix can be installed upon the actual FW version.\nCharger\n170000665:\nBoth DC outlets were OoO since the previous time the charger booted up. Error flags in the logs showed:\nThe voltage transducer TF5 had an error and the charger could not configure the converter groups.\nI performed a reserch in the logs over the last 2 weeks, and it seems that the error flags related to TF5 are appearing daily, setting the charger unable to configure.\nFor this reason, it is necessary to go onsite, verify the status of the High Voltage Transducer (power supply, connections, status of the clamps), and in case replace it.\nIn conclusion:\n​​​​​​​\nMr. Doods: please provide me feedback in regards of the update of the charger to v8.0.5, or in case of the Hotfix if not possible. I will proceed with the update as soon as I will have the green light from your side.\nColleagues of RC-DE: it is necessary to go onsite and check for charger\nMP / P6 170000665\naccording to the following scheme:\nthe connection of clamps WC10 and WC11\n24V power supply to TF5\nSignal between TF5 and PLC.\nIn case TF5 is defective, please procced with replacement\nLooking forward to hearing feedback from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-06T13:26:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2c569a3-c0a2-f011-bbd2-7c1e52fb8e2e",
+            "subject": "AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Sehr geehrte Damen und Herren,\ndas Update kann durchgeführt werden.\nDie Überprüfung der anderen Ladesäule wird durch Siemens durchgeführt?\nBitte teilen Sie mir den Termin mit, wann die zweite Ladesäule vor Ort von Ihnen überprüft wird.\nDanke!\nDear Sir or Madam,\nThe update can be performed.\nWill Siemens be inspecting the other charging station?\nPlease let me know when you will be inspecting the second charging station on-site.\nThank you!\nMit freundlichen Grüßen\nMarcel Doods\nAW Automatisierungstechnik GmbH\nPorschestr. 8\n48703 Stadtlohn\nTelefon:\n+49 2563 97209\nMobil:\n+49 1725685426\nE-Mail:\nm.doods@aw-elektro.de\nInternet:\nwww.aw-elektro.de\nRechtsform: GmbH ǀ USt-IdNr.: DE 251716291 ǀ Handelsregister: Amtsgericht Coesfeld, HRB 10109\nSteuer-Nr.: 301/5800/0628\nǀ Geschäftsführer: Andreas Wellner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 6. Oktober 2025 16:19\nAn:\nMarcel Doods <M.Doods@aw-elektro.de>\nCc:\nservice-emobility.si.de@siemens.com <service-emobility.si.de@siemens.com>\nBetreff:\nRE: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032\nDear Marcel Doods,\nI am reaching out in regards of ticket\nID0452671\n. The ticket has been opened on your end for outlets being Out of Order in the morning of 25.09.2025 on chargers\n170000665\nand\n170000666.\nI analyzed the logs corresponding at the timestamps of your photos, and these are my findings:\nCharger\n170000666:\nThe charger had DC2 out of order while DC1 was charging.\nFrom the logs, I could see a severe event of \"error coap polling\". This is an internal communication interruption between SECC and PLC. SiC D will reconnect to SECC within 5 seconds. While SECC is not reachable, the outlet will be set as unavailable or preparing.\nThis error is solved in the latest Sicharge D FW v8.0.5. I see from SCB that the charger is running on v6.0.3 (so 3 FW versions older). I would recommend to update the charger to the latest v8.0.5, in order to avoid this error coap polling to appear again.\nIf the update cannot be performed, in alternative a Hotfix can be installed upon the actual FW version.\nCharger\n170000665:\nBoth DC outlets were OoO since the previous time the charger booted up. Error flags in the logs showed:\nThe voltage transducer TF5 had an error and the charger could not configure the converter groups.\nI performed a reserch in the logs over the last 2 weeks, and it seems that the error flags related to TF5 are appearing daily, setting the charger unable to configure.\nFor this reason, it is necessary to go onsite, verify the status of the High Voltage Transducer (power supply, connections, status of the clamps), and in case replace it.\nIn conclusion:\n​​​​​​​\nMr. Doods: please provide me feedback in regards of the update of the charger to v8.0.5, or in case of the Hotfix if not possible. I will proceed with the update as soon as I will have the green light from your side.\nColleagues of RC-DE: it is necessary to go onsite and check for charger\nMP / P6 170000665\naccording to the following scheme:\nthe connection of clamps WC10 and WC11\n24V power supply to TF5\nSignal between TF5 and PLC.\nIn case TF5 is defective, please procced with replacement\nLooking forward to hearing feedback from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-06T14:27:55Z",
+            "extra": {
+                "sender": "m.doods@aw-elektro.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6dbb9d1b-75a3-f011-bbd3-7c1e523508ba",
+            "subject": "RE: AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Good afternoon Mr. Doods,\nThank you for the prompt feedback!\nThis morning I completed the update process for charger\n170000666.\nIt is now running on v8.0.5 and unavailability of outlets due to error coap polling won't happen anymore.\nFor what concern charger\n170000665\n,\nI am forwarding now this ticket\nID0452671\nto our regional colleagues form Germany. They will get in touch with you and carry-on the onsite visit.\nThank you!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-07T11:59:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f9062894-75a3-f011-bbd3-7c1e523508ba",
+            "subject": "RE: AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0452671\n﻿from the Technical Support to the\neMobility RC-DE SI E Queue\n. The first response has been sent to the customer, and we kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer: AW Automatisierungstechnik GmbH\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P6 170000665\nCharger ID / Serial No.:\nCharger address/functional location:\nPriority:\nMedium\nReason for Handover\n:\nit is necessary to go onsite and check for charger\nMP / P6 170000665\naccording to the following scheme:\nthe connection of clamps WC10 and WC11\n24V power supply to TF5\nSignal between TF5 and PLC.\nIn case TF5 is defective, please procced with replacement\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-DE SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-07T12:03:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8c1fb7a-0da4-f011-bbd3-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0452671 CRM:00225267959",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0452671 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35bd05cd-1d9d-f011-b41b-6045bddfb7eb",
+            "date": "2025-10-08T06:10:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "225b2a7d-f035-6ff4-a77a-57d45abe7e64",
+            "subject": "Semih ",
+            "body": "bei: 170000665\n+F04-TF5 8EM5903-0AA01-0AA5\nF03-KF13 8EM5903-0AA00-6AA1 STATE MONITOR CCS / AC / CHA CPPP2300 SERIES-2\nmitführen und die Verbindungen im Schaltplan wie vom Fosco beschrieben prüfen.\nDa beide outlets blockiert waren denke ich eher das es am statemonitor oder an:\nliegt\nbei 170000666\nabwarten und tee trinken und prüfen ob 8.0.5 coap polling gelöst hat! wenn nicht dann ecog tauschen",
+            "date": "2025-10-09T09:26:57Z",
+            "extra": {}
+        },
+        {
+            "id": "2363377f-a0a5-f011-bbd3-7c1e5236cda4",
+            "subject": "ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559",
+            "body": "Sehr geehrter Herr Doods,\nDa sich die Ladesäule Außerhalb der Gewährleistung befindet, müssten sie mir bitte das Angehängte Stör schreiben bestätigen damit ich einen Techniker beauftragen kann.\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0452671\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nLukas Berger\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-10T06:15:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c02e3c2-e0a5-f011-bbd2-000d3ab04008",
+            "subject": "AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559",
+            "body": "Sehr geehrte Damen und Herren,\nhiermit bestätigen wir Ihr Angebot.\nDie betroffene Ladesäule ist nicht öffentlich.\nMit freundlichen Grüßen\nMarcel Doods\nAW Automatisierungstechnik GmbH\nPorschestr. 8\n48703 Stadtlohn\nTelefon:\n+49 2563 97209\nMobil:\n+49 1725685426\nE-Mail:\nm.doods@aw-elektro.de\nInternet:\nwww.aw-elektro.de\nRechtsform: GmbH ǀ USt-IdNr.: DE 251716291 ǀ Handelsregister: Amtsgericht Coesfeld, HRB 10109\nSteuer-Nr.: 301/5800/0628\nǀ Geschäftsführer: Andreas Wellner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 10. Oktober 2025 08:18\nAn:\nMarcel Doods <M.Doods@aw-elektro.de>\nBetreff:\nID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559\nSehr geehrter Herr Doods,\nDa sich die Ladesäule Außerhalb der Gewährleistung befindet, müssten sie mir bitte das Angehängte Stör schreiben bestätigen damit ich einen Techniker beauftragen kann.\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0452671\n,\nbitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team - ﻿\nLukas Berger\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-10-10T13:55:28Z",
+            "extra": {
+                "sender": "m.doods@aw-elektro.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e66d990a-6cae-f011-bbd2-7ced8d425bfe",
+            "subject": "RE: AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559",
+            "body": "Guten Tag Herr Doods,\nVielen dank für den Auftrag.\nIch habe bereits einen Servicetechniker beauftragt.\nEr wird sich zwecks des Entstörungstermins bei ihnen melden.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-21T10:52:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "663bf83b-192d-66a0-8dd0-89ced66cf8bc",
+            "subject": null,
+            "body": "Bestellung im planner angelegt",
+            "date": "2025-10-21T10:55:45Z",
+            "extra": {}
+        },
+        {
+            "id": "6bca66a7-9ab0-f011-bbd2-7c1e5236229d",
+            "subject": "AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Sehr geehrte Damen und Herren,\nheute ist eine der Ladesäulen erneut ausgefallen.\nWir bitten dringend um Support.\nMit freundlichen Grüßen\nMarcel Doods\nAW Automatisierungstechnik GmbH\nPorschestr. 8\n48703 Stadtlohn\nTelefon:\n+49 2563 97209\nMobil:\n+49 1725685426\nE-Mail:\nm.doods@aw-elektro.de\nInternet:\nwww.aw-elektro.de\nRechtsform: GmbH ǀ USt-IdNr.: DE 251716291 ǀ Handelsregister: Amtsgericht Coesfeld, HRB 10109\nSteuer-Nr.: 301/5800/0628\nǀ Geschäftsführer: Andreas Wellner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 6. Oktober 2025 16:19\nAn:\nMarcel Doods <M.Doods@aw-elektro.de>\nCc:\nservice-emobility.si.de@siemens.com <service-emobility.si.de@siemens.com>\nBetreff:\nRE: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032\nDear Marcel Doods,\nI am reaching out in regards of ticket\nID0452671\n. The ticket has been opened on your end for outlets being Out of Order in the morning of 25.09.2025 on chargers\n170000665\nand\n170000666.\nI analyzed the logs corresponding at the timestamps of your photos, and these are my findings:\nCharger\n170000666:\nThe charger had DC2 out of order while DC1 was charging.\nFrom the logs, I could see a severe event of \"error coap polling\". This is an internal communication interruption between SECC and PLC. SiC D will reconnect to SECC within 5 seconds. While SECC is not reachable, the outlet will be set as unavailable or preparing.\nThis error is solved in the latest Sicharge D FW v8.0.5. I see from SCB that the charger is running on v6.0.3 (so 3 FW versions older). I would recommend to update the charger to the latest v8.0.5, in order to avoid this error coap polling to appear again.\nIf the update cannot be performed, in alternative a Hotfix can be installed upon the actual FW version.\nCharger\n170000665:\nBoth DC outlets were OoO since the previous time the charger booted up. Error flags in the logs showed:\nThe voltage transducer TF5 had an error and the charger could not configure the converter groups.\nI performed a reserch in the logs over the last 2 weeks, and it seems that the error flags related to TF5 are appearing daily, setting the charger unable to configure.\nFor this reason, it is necessary to go onsite, verify the status of the High Voltage Transducer (power supply, connections, status of the clamps), and in case replace it.\nIn conclusion:\n​​​​​​​\nMr. Doods: please provide me feedback in regards of the update of the charger to v8.0.5, or in case of the Hotfix if not possible. I will proceed with the update as soon as I will have the green light from your side.\nColleagues of RC-DE: it is necessary to go onsite and check for charger\nMP / P6 170000665\naccording to the following scheme:\nthe connection of clamps WC10 and WC11\n24V power supply to TF5\nSignal between TF5 and PLC.\nIn case TF5 is defective, please procced with replacement\nLooking forward to hearing feedback from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-24T05:31:18Z",
+            "extra": {
+                "sender": "m.doods@aw-elektro.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b291cddf-9ab0-f011-bbd2-7c1e52880fe1",
+            "subject": "AW: AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559",
+            "body": "Sehr geehrte Damen und Herren,\nich möchte Sie bitten uns schnellstmöglich einen Termin für den Einsatz des Technikers mitzuteilen.\nEine der Ladesäulen ist heute morgen erneut ausgefallen. (siehe Bilder)\nMit freundlichen Grüßen\nMarcel Doods\nAW Automatisierungstechnik GmbH\nPorschestr. 8\n48703 Stadtlohn\nTelefon:\n+49 2563 97209\nMobil:\n+49 1725685426\nE-Mail:\nm.doods@aw-elektro.de\nInternet:\nwww.aw-elektro.de\nRechtsform: GmbH ǀ USt-IdNr.: DE 251716291 ǀ Handelsregister: Amtsgericht Coesfeld, HRB 10109\nSteuer-Nr.: 301/5800/0628\nǀ Geschäftsführer: Andreas Wellner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 21. Oktober 2025 12:53\nBis:\nMarcel Doods <M.Doods@aw-elektro.de>\nBetreff:\nRE: AW: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000559\nGuten Tag Herr Doods,\nVielen dank für den Auftrag.\nIch habe bereits einen Servicetechniker beauftragt.\nEr wird sich zwecks des Entstörungstermins bei ihnen melden.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.",
+            "date": "2025-10-24T05:32:48Z",
+            "extra": {
+                "sender": "m.doods@aw-elektro.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "92d58e80-b6b0-f011-bbd2-7ced8d425658",
+            "subject": "0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578",
+            "body": "Hallo Yunex Team,\nAnbei eine Beauftragung.\nBitte teilt uns und dem Kunden bis spätestens Montag den geplanten Einsatztermin mit\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-24T08:50:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46b167ba-33b3-f011-bbd2-6045bddf6b2b",
+            "subject": "RE: ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:03056000032",
+            "body": "Guten Tag Herr Doods,\nDamit unser Service Team ihnen schnellstmöglich behilflich sein kann bitte ich sie ein Separates Ticket unter folgendem Link zu dem Fehler zu eröffnen.\nParallel bitte ich unser Serviceteam sich den fall bereits anzusehen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nCustomer Services\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322",
+            "date": "2025-10-27T12:52:04Z",
+            "extra": {
+                "sender": "service-emobility.si.de@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "faaeda33-5eb5-f011-bbd2-7ced8d425b04",
+            "subject": "WG: 0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578",
+            "body": "@Jonas André Keller\nAnbei ein weiterer Auftrag von Siemens, auch wenn das Material noch nicht da ist, schicke ich ihn dir schon da ich ab morgen in Urlaub bin.\nBitte wie gewohnt bearbeiten.\nDokumente findest du anbei.\nGruß\nSteffen\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 24. Oktober 2025 10:53\nAn:\nYU e-Mobility Germany <e-mobility.de@yunextraffic.com>\nBetreff:\n0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578\nHallo Yunex Team,\nAnbei eine Beauftragung.\nBitte teilt uns und dem Kunden bis spätestens Montag den geplanten Einsatztermin mit\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nWichtiger Hinweis: Diese E-Mail und etwaige Anlagen enthalten firmenvertrauliche Informationen. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte durch eine Antwort-Mail und löschen Sie diese E-Mail nebst Anlagen von Ihrem System. Vielen Dank!\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you!\nYunex GmbH: Vorsitzende des Aufsichtsrats / Chair of the Supervisory Board: Susanna Schneeberger Geschäftsführer / Management Board: Jon Newhard, Jan Villwock, Elisabetta De Bernardi Di Valserra. Sitz der Gesellschaft / Registered Office: München / Munich, Deutschland / Germany; Amtsgericht München / Commercial Registry (Munich), HRB 250768; WEEE-Reg.-Nr. DE 16050050",
+            "date": "2025-10-30T07:01:08Z",
+            "extra": {
+                "sender": "e-mobility.de@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dcd47f36-44b6-f011-bbd2-7c1e52362ec6",
+            "subject": "AW: 0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578",
+            "body": "Hallo zusammen,\nich habe das Material zu der Störung eben erst erhalten. Ich habe mit dem Kunden ein Termin für Montag abgestimmt\nVon:\nYU e-Mobility Germany <e-mobility.de@yunextraffic.com>\nGesendet:\nDonnerstag, 30. Oktober 2025 08:00\nAn:\nKeller, Jonas André (YU GER CS WEST DTM) <jonas.keller@yunextraffic.com>\nCc:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nWG: 0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578\n@Jonas André Keller\nAnbei ein weiterer Auftrag von Siemens, auch wenn das Material noch nicht da ist, schicke ich ihn dir schon da ich ab morgen in Urlaub bin.\nBitte wie gewohnt bearbeiten.\nDokumente findest du anbei.\nGruß\nSteffen\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 24. Oktober 2025 10:53\nAn:\nYU e-Mobility Germany <\ne-mobility.de@yunextraffic.com\n>\nBetreff:\n0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578\nHallo Yunex Team,\nAnbei eine Beauftragung.\nBitte teilt uns und dem Kunden bis spätestens Montag den geplanten Einsatztermin mit\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nWichtiger Hinweis: Diese E-Mail und etwaige Anlagen enthalten firmenvertrauliche Informationen. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte durch eine Antwort-Mail und löschen Sie diese E-Mail nebst Anlagen von Ihrem System. Vielen Dank!\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you!\nYunex GmbH: Vorsitzende des Aufsichtsrats / Chair of the Supervisory Board: Susanna Schneeberger Geschäftsführer / Management Board: Jon Newhard, Jan Villwock, Elisabetta De Bernardi Di Valserra. Sitz der Gesellschaft / Registered Office: München / Munich, Deutschland / Germany; Amtsgericht München / Commercial Registry (Munich), HRB 250768; WEEE-Reg.-Nr. DE 16050050",
+            "date": "2025-10-31T10:27:42Z",
+            "extra": {
+                "sender": "jonas.keller@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "55a5d770-d222-d3c6-ae2a-5928bd5af4f9",
+            "subject": null,
+            "body": "",
+            "date": "2025-12-03T11:25:36Z",
+            "extra": {}
+        },
+        {
+            "id": "fe8f3d84-40d0-f011-8543-002248a1728a",
+            "subject": "Ticket 0452671 has been closed. Are you satisfied with our provided solution? CRM:00225297778",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0452671\nwith the title:\nID0452671-DC/Si-D/DE-[Multi] Charging points out of service\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-03T12:06:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "043aa2a9-1a03-f111-8407-7ced8d44db54",
+            "subject": "AW: 0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578",
+            "body": "Anbei der report\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nFreitag, 24. Oktober 2025 um 10:53\nAn:\nYU e-Mobility Germany <e-mobility.de@yunextraffic.com>\nBetreff:\n0452671 - ID0452671-DC/Si-D/DE-[Multi] Charging points out of service CRM:00440000578\nHallo Yunex Team,\nAnbei eine Beauftragung.\nBitte teilt uns und dem Kunden bis spätestens Montag den geplanten Einsatztermin mit\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSI E EU DE CS\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you.\nWichtiger Hinweis: Diese E-Mail und etwaige Anlagen enthalten firmenvertrauliche Informationen. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte durch eine Antwort-Mail und löschen Sie diese E-Mail nebst Anlagen von Ihrem System. Vielen Dank!\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system. Thank you!\nYunex GmbH: Vorsitzende des Aufsichtsrats / Chair of the Supervisory Board: Susanna Schneeberger Geschäftsführer / Management Board: Jon Newhard, Jan Villwock, Elisabetta De Bernardi Di Valserra. Sitz der Gesellschaft / Registered Office: München / Munich, Deutschland / Germany; Amtsgericht München / Commercial Registry (Munich), HRB 250768; WEEE-Reg.-Nr. DE 16050050",
+            "date": "2026-02-06T05:14:18Z",
+            "extra": {
+                "sender": "e-mobility.de@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "625976ad-1a03-f111-8407-7ced8d44df3f",
+            "subject": "Email sent to a closed case 'ID0452671-DC/Si-D/DE-[Multi] Charging points out of service (0452671)' CRM:00225332130",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0452671\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2026-02-06T05:14:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,235 @@
+{
+    "incident_id": "c4eaaa94-cdea-ef11-a81c-6045bddfc085",
+    "ticket_number": "0406871",
+    "title": "ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards",
+    "created_on": "2025-02-14T12:16:56Z",
+    "last_activity": "2025-12-16T14:01:10Z",
+    "age": "24445",
+    "description": "Reported behavior/issue:\nunable to charge with 2 different debit cards\nRoot cause: I\nssue was caused by a malfunctioning of the POS device.\nSolution:\nAnswer provided\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002562,MP / R9 170002725",
+    "case_nature_code": null,
+    "chargerID": "X2zaVZ & 1jxU6Y",
+    "additional_info": [
+        {
+            "id": "c39f9c71-d0ea-ef11-9341-6045bde1756e",
+            "subject": "A new case manager was assigned to 0406871 CRM:00225164691",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0406871 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c4eaaa94-cdea-ef11-a81c-6045bddfc085",
+            "date": "2025-02-14T12:37:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea7535f4-e671-caf8-a6a0-56d88d708154",
+            "subject": "Case Creation Notes",
+            "body": "Hello, we had a customer that tried to charge in last 30 minutes. He tried to pay with pos, but the chargers don't work. He tried with 2 different debit cards (2 different bank). The problem is that in our backend we don't see any message about this (No authorization failed, no recharges with error, no events). Could you check in your backend it is all ok and in your log system if you see the various tentative in these 2 chargers?\nThanks, and regards.\nSoftware Version: v6.0.3-0-g215cb74\nOCPP Backend Connection: No",
+            "date": "2025-02-14T12:48:26Z",
+            "extra": {}
+        },
+        {
+            "id": "0f1af48a-d8ea-ef11-9341-000d3aba98df",
+            "subject": "0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Dear Luigi Iodice,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002562\nCharger ID/Serial No.\n:\nX2zaVZ & 1jxU6Y\nProblem Description\n:  Unable to charge with debit cards\nTroubleshooting\n: We have reviewed the logs from the past 3 hours for both chargers and found no sessions initiated by the customer. There was only one charging attempt on each charger, but it was unsuccessful due to a delay in authorization. Could you please confirm whether the customer tried to charge using a credit card? Additionally, if possible, could you provide the timestamp of the attempt?\nFor future reference, your case number is\n0406871\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T13:35:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cccb91fd-e7ea-ef11-9341-0022489bc8e2",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Dear Vikas Khiladkar,\nthe customer tryed with 2 different debit card of 2 different bank (Bper and Izybank). He tried 7/8 times between 12:45 and 13:15. He followed the correct steps shown on the display, when he used the card for the payments the display shown the message of the payment rejected, but on our backend we don’t have any message or event in this period.\nRegards,\nLuigi iodice",
+            "date": "2025-02-14T15:26:02Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "21ddf392-084a-a91a-81d0-b6b6551e48f7",
+            "subject": "Notes to L2",
+            "body": "Need to check the charger logs of X2zaVZ & 1jxU6Y between 12:45 and 13:15 Local Time of Italy.\nIn Si-D we have Payment options of Credit Card, but customer is saying he tried via Debit cards need to check that also.",
+            "date": "2025-02-14T17:15:00Z",
+            "extra": {}
+        },
+        {
+            "id": "7c5de527-6d77-9038-819d-6516009b817e",
+            "subject": null,
+            "body": "Charger: X2zaVZ\nConnection to terminal was lost just before the session starts, so I believe that's the reason that charger didn't scanned the card.\nCharger:\n1jxU6Y\nSame with this charger,\nConnection to terminal was lost just before the session starts.",
+            "date": "2025-02-15T02:38:38Z",
+            "extra": {}
+        },
+        {
+            "id": "e45ee908-518c-c6c7-a72c-aee093e6af82",
+            "subject": "Notes for NOC",
+            "body": "Issue:\nCustomer is unable to use their cards for Authorization.\nRoot cause:\nCredit card terminal is unreachable.\nAI\n: Please discuss with ES team if they can check or access the terminal via SSH (I can't check, I don't have access to this charger and I'm not allowed to do this activity). If can't solve remotely, send RC on site.",
+            "date": "2025-02-15T02:42:13Z",
+            "extra": {}
+        },
+        {
+            "id": "a3e98d7c-46eb-ef11-9341-0022489a2456",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hi Luigi,\nWe checked the logs and found some communication issue between the charger and the payment terminal. We will check with the experts and accordingly inform the service team to visit the site if required and investigate it.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-15T02:42:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0ab7b83-36ed-ef11-9341-7c1e527798b1",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Vikas Khiladkar,\nI would inform you that yesterday (16/2/2025) from 17:30 to 19:30 (Italy time zone) a customer tried to recharge the EV. He tried several times. In my backend I found some charge request from app that the CU has stopped like below\nAnd a warning like this\nCould you check if the problems of yesterday were caused by client or by the CU?\nThanks and regards,\nLuigi Iodice",
+            "date": "2025-02-17T13:53:16Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "12f7f2dc-b1ed-ef11-9341-6045bddfbfba",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Luigi,\nThaks for the response.\nCould you kindly confirm how the payment terminal is connected to the charger? Is it connected internally or externally?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-18T04:36:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f36aefc0-cded-ef11-9341-7c1e5277807d",
+            "subject": "R: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Dear Beerpal,\nas already mentioned, the connection situation is like to follow:\nCharger is connected OCPP to the backend;\nPOS is connected OCPI to the payment system, so we don’t have any integrated payment system in the charger.\nThe charger receives via OCPP from the back-end the charging authorization only if the payment system agreed to do that.\nWhenever the payment system doesn’t receive any credit card authorization the charger would not start to charge.\nBR\nLuca\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmartedì 18 febbraio 2025 06:10\nA:\nLuigi Iodice <luigi.a.iodice@accenture.com>\nCc:\nRC-IT Emobility Technical Support <emobility.customerservice.rc-it@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nOggetto:\nRE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512\nHello Luigi,\nThaks for the response.\nCould you kindly confirm how the payment terminal is connected to the charger? Is it connected internally or externally?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-18T07:55:49Z",
+            "extra": {
+                "sender": "luca.rizzi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1a6e9c61-3b96-dfce-aace-bd1424f4ef9a",
+            "subject": "Note from RC",
+            "body": "Dear All, just to inform u that the POS is not connected to the charger.\nThe POS has only internet connection via XF3 router and is connected to external payment system.\nPls close the ticket being not pertaining to the charger",
+            "date": "2025-02-18T08:05:31Z",
+            "extra": {}
+        },
+        {
+            "id": "9a5f3a27-a4ee-ef11-9341-6045bdde82d9",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Beerpal,\nthe issue of the previous email was not linked to the issue of POS (that is reported to our POS provider after we opened this case). In the previous mail I reported 2 situations:\nA charge regularly authorized but stopped by the charger\nAn “out of service error” message\nThanks,\nLuigi Iodice",
+            "date": "2025-02-19T09:30:34Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "60926d11-20f0-ef11-9342-6045bdde1b10",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Luigi,\nThaks for the response.\nTo your questions:\nA charge regularly authorized but stopped by the charger--→\nAs we checked the logs in the given timestamp where it is showing no authorization request received by the charger & meanwhile the charging session was terminated due to authorization not completed in the given time.\nAn “out of service error” message-→\nThe authorization was not completed in the given time, so the outlet went in error.\nAs we have attached the logs for charger-X2zaVZ below, we can see that the charging session started but failed due to no authorization being received.\nIf you have any further query, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-21T06:50:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "352aca42-8df2-ef11-be1f-7c1e52350ea5",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Beerpal,\nin the print that you sent I see that the date is 14-02-2025. In my print (previous email) the date was 16-02-2025.\nI’ll write the questions with more details:\n1)  CU\n170002725\n: a recharge that was approved by the POS provider and was sent to CU (16-02-2025 16:42:01 UTC); the customer plugged in the outlet (16-02-2025 16:42:02 UTC), but the recharge stopped (16-02-2025 16:43:21 UTC).\n2) CU\n170002562\n: The\n“out of service error” message was at 16-02-2025 17:45:15 UTC, after a customer plugged in the outlet at 17:44:58 UTC, without an authorization of charge (due to POS issue). The last auth registered from the CU was 1 hour before the error message.\nCould you check in the logs if the sequence of messages was correct, or could there be a malfunction of the CU?\nThanks and regards,\nLuigi Iodice",
+            "date": "2025-02-24T08:56:41Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5439b189-ca86-46b1-ba2a-8ea8ee52de8e",
+            "subject": "Note to L2",
+            "body": "Charger-\n170002725",
+            "date": "2025-02-26T09:13:24Z",
+            "extra": {}
+        },
+        {
+            "id": "f8a979ef-21f4-ef11-be1f-7c1e5236eee4",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Luigi,\nThaks for the response.\nAs we checked the logs for the given timestamp, below are our observations:\n1.\nCU 170002725→\nAs we can see from the logs, the remote authorization was done at 16:41:31hrs. Until 16:43 hrs, no cable was connected to the EV. After that, the connector became available again at 2025-02-16T16:43:21 so the session was not completed.\n2. CU\n170002562-\nIn this case as we can see, the authorization was not completed because the 'IdTag': '02347CE8862000' was not authorized at 17:46hrs due to the Id tag is not whitelisted.\nId Tags are\nto be whitelisted by CPO's Backend.\nAlso, I checked the logs for one hour prior on the same day, where a similar pattern is shown. At that time, the idTag: 'A626EB8D' was also not whitelisted, and the authorization failed.\nIf this answers your queries, shall we proceed and close this ticket?\nRegards,\nBeerpal\nSingh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-26T09:13:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d83c4f11-32f5-ef11-be1f-7c1e5220b93f",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on Case# 0406871. Your prompt response would be greatly appreciated to ensure we can proceed without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T17:41:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a53ad9da-def5-ef11-be1f-7c1e52350ea5",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello Luigi Iodice,\nHope you are doing well.\nW\ne hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-28T14:18:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f56b3c8-10f8-ef11-bae2-7c1e5236e32d",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Hello,\nthe issue was caused by a malfunctioning of the POS device. It was solved by the provider. In our backend the Charger are working now and I don’t see any other issue. If your checks are ok, you could close the ticket.\nThanks and regards,\nLuigi Iodice",
+            "date": "2025-03-03T09:20:52Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ac8f43d6-23f8-ef11-bae2-002248a3e866",
+            "subject": "RE: 0406871 - ID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards CRM:02023000512",
+            "body": "Dear Luigi Iodice,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406871, the case is now closed.\nProblem Description\n: Unable to charge with 2 different debit cards\nResolution\n:\nMalfunctioning caused by POS device. It was solved by the provider.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-03T11:37:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8c60b46-24f8-ef11-bae2-002248a3e866",
+            "subject": "Ticket 0406871 has been closed. Are you satisfied with our provided solution? CRM:00921001599",
+            "body": "Dear Luigi Iodice,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406871\nwith the title:\nID0406871-DC/Si-D/IT-[Multi] Iplanet unable to charge with 2 different debit cards\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically, it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-03T11:40:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

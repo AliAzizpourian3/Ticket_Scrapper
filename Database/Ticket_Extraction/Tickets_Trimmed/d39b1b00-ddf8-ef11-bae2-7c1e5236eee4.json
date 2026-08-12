@@ -1,0 +1,75 @@
+{
+    "incident_id": "d39b1b00-ddf8-ef11-bae2-7c1e5236eee4",
+    "ticket_number": "0410453",
+    "title": "ID0410453-DC/Si-D/PL-[MP / R2 170001503] Missing Converters in DC4",
+    "created_on": "2025-03-04T09:42:44Z",
+    "last_activity": "2025-04-23T17:00:27Z",
+    "age": "59027",
+    "description": "Reported behavior/issue:\nMissing Converters in DC4\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status:  Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "dwszYn",
+    "stage": null,
+    "serial_number": "MP / R2 170001503",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "30eedaff-dcf8-ef11-bae2-6045bde117fc",
+            "subject": "Webform_incident_SiCharge D_04-03-2025_SN: MP / R2 170001503",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R2 170001503\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R2 170001503\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-04T09:42:37Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a0da35f4-def8-ef11-bae2-000d3ab07fc1",
+            "subject": "A new case manager was assigned to 0410453 CRM:00225172531",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0410453 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d39b1b00-ddf8-ef11-bae2-7c1e5236eee4",
+            "date": "2025-03-04T09:56:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cc0e16bb-63c5-fcda-b306-7af4b2dda669",
+            "subject": "Note from ticket",
+            "body": "The station indicates a module error 2102312VGQLUN5000160SA002200000200FW. The problem is currently with FastShutDown F:0, but until just now the problem in SCB is F:17 - that is, internal communication error. The plugs (CAN/ FS) were corrected; however, the problem persists - please support what we can additionally check.",
+            "date": "2025-03-04T10:38:27Z",
+            "extra": {}
+        },
+        {
+            "id": "d5c28c2a-e6f8-ef11-bae2-7c1e5236cda4",
+            "subject": "ID0410453-DC/Si-D/PL-[MP / R2 170001503] Missing Converters in DC4 CRM:00921001602",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001503\nChargerID/Serial No.\n:\ndwszYn\nProblem Description\n: Missing Converters in DC4\nTroubleshooting\n: Please allow us sometime to analyze the logs and we will get back to you soon.\nFor future reference, your case number is\n0410453\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-04T10:48:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7dde86bb-7f41-657e-b74a-adca97f193e6",
+            "subject": "Note to l2",
+            "body": "Logs attached",
+            "date": "2025-03-04T11:14:12Z",
+            "extra": {}
+        },
+        {
+            "id": "7aba40dc-ddf9-ef11-bae2-7c1e52774092",
+            "subject": "RE: ID0410453-DC/Si-D/PL-[MP / R2 170001503] Missing Converters in DC4 CRM:00921001602",
+            "body": "Hello Team,\nHope you are doing well.\nAs we checked charger for further troubleshooting, but it is showing Offline on SCB. We analysed the logs where it is showing\nPLC-Error-Flag 'SafetyRelay_QA26' changed from false - ('emergencystop button is pressed') to true - ('Opened Doors tripped 3SK').\nAs it is showing emergency stop button is pressed & please check & release it.\nFor the missing converter in DC4, please follow the troubleshooting steps mentioned in the KA below-\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&forceUCI=1&newWindow=true&pagetype=entityrecord&etn=knowledgearticle&id=549f0b2c-381f-ee11-9966-000d3aba351f\nI am writing to formally inform that we are moving case 0410453 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nPL\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nPL\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-05T16:21:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

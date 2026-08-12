@@ -1,0 +1,94 @@
+{
+    "incident_id": "494a027f-4982-f011-b4cc-7c1e5236e32d",
+    "ticket_number": "0445951",
+    "title": "ID0445951-DC/Si-D/IL-[Y2 / R2 312900727026] SECC cannot initialize",
+    "created_on": "2025-08-26T06:54:31Z",
+    "last_activity": "2025-10-20T12:03:22Z",
+    "age": "79509",
+    "description": "Reported issue:\nFaulted DC Outputs\nSolution: Provided\nyyyy-mm-dd: NA\nNote: RC stated reboot already done and issue persist.\nDC2 sensor is damaged (might be occuring due to the main issue)\nCheck the logs on Status monitor (reports issues from DC1 and DC2)",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "d9hQV4",
+    "stage": null,
+    "serial_number": "Y2 / R2 312900727026",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "54dfba79-4982-f011-b4cc-000d3ad97a58",
+            "subject": "Faulted DC Outputs – Charger 312900727026",
+            "body": "Dear Siemens Support,\nOn charger 312900727026, both DC outputs have transitioned to Faulted state.\nThe error message displayed is: “SECC is initializing.”\nActions already taken:\nPerformed a reboot of the charger.\nIssue persists, the error reappears after restart.\nPlease advise on next troubleshooting steps.\nThank you,\nZiv\n​\n​\n​\n​\nZiv Vinitzer\nHead of DC Charging\n*5619\n|\n+972523927323\nziv@zen-ev.com\nNetivei Hayam Blvd. 2 Ashdod",
+            "date": "2025-08-26T06:54:20Z",
+            "extra": {
+                "sender": "ziv@zen-ev.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e763e43d-5582-f011-b4cc-000d3adc93d1",
+            "subject": "A new case manager was assigned to 0445951 CRM:00225247776",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0445951 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=494a027f-4982-f011-b4cc-7c1e5236e32d",
+            "date": "2025-08-26T08:18:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ba6373fc-5582-f011-b4cb-7c1e52768c07",
+            "subject": "ID0445951-DC/Si-D/IL-[Y2 / R2 312900727026] Faulted DC Outputs CRM:02678000229",
+            "body": "Dear Ziv Vinitzer,\nThank you for reaching\nout\nto eMobility Support. My name is\nAniket\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R2 312900727026\nChargerID/Serial No.\n:\nd9hQV4\nProblem Description\n:\nFaulted DC Outputs\nFor future reference, your case number is\n0445951\n, please do refer to this in all further communications regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAniket Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-26T08:23:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b684fe09-4e83-f011-b4cc-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0445951 CRM:00225248697",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0445951 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=494a027f-4982-f011-b4cc-7c1e5236e32d",
+            "date": "2025-08-27T13:59:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2547bc2e-1084-f011-b4cc-000d3adc93d1",
+            "subject": "ID0445951-DC/Si-D/IL-[Y2 / R2 312900727026] Faulted DC Outputs CRM:02678000229",
+            "body": "Hi Orel, good afternoon.\nI recommend checking where the AC voltage is getting lost. We only have 3 reasons why the converters are completely off.\nEither the voltage after the MCCB is less than expected or lost\nFastshutdown signal is applied to all the converters. (very unlikely since it has several QAs in between)\nOne converter is shortcircuited and causing all of the others to fail.\nI recommend you taking a spare KF13/14 and a converter to site.\nCheck the output of the MCCB to the filter and see if there is a grid issue or even MCCB.\nThank you and let me know your feedback. I will put this in the RC-IL queue but feel free to reach out to me when you need support.\nPlease schedule a meeting if necessary but with a 2 day advance since we have a lot of tickets.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-08-28T13:09:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd602997-1284-f011-b4cc-000d3adc93d1",
+            "subject": "ID0445951-DC/Si-D/IL-[Y2 / R2 312900727026] Faulted DC Outputs CRM:02678000229",
+            "body": "Also, this charger is out of warranty ;)\nBR,\nFrancisco",
+            "date": "2025-08-28T13:26:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "baf31457-1584-f011-b4cc-000d3ad97a58",
+            "subject": "RE: ID0445951-DC/Si-D/IL-[Y2 / R2 312900727026] Faulted DC Outputs CRM:02678000229",
+            "body": "Hi Francisco,\nThank you very much, I appreciate it a lot!\nHave a nice weekend,\nOrel",
+            "date": "2025-08-28T13:46:05Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

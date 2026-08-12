@@ -1,0 +1,178 @@
+{
+    "incident_id": "2cb99202-5032-4fbf-a940-c1c3f08c5f1c",
+    "ticket_number": "0391928",
+    "title": "ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic",
+    "created_on": "2024-11-26T05:32:55Z",
+    "last_activity": "2025-12-16T14:03:45Z",
+    "age": "11834",
+    "description": "Reported behavior/issue:\nCustomer uses a LAN connection for internet. Router 1 is sharing the IPs to the WAN port of the customer's factory so it affects the other devices who connects the Internet. We have to connect the Teltonika UI remotely and change the configurations that causes the outgoing traffic.\nPS: They operate the charger offline most of the day due to this issue so we have to request them to make charger online before the access.\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "stPia2",
+    "stage": null,
+    "serial_number": "MP / RD 170003113",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9b89e4e7-b7ab-ef11-b8e9-000d3a682fc5",
+            "subject": "A new case manager was assigned to 0391928 CRM:00225129134",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0391928 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2cb99202-5032-4fbf-a940-c1c3f08c5f1c",
+            "date": "2024-11-26T05:33:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c0542976-e6ab-ef11-b8e8-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0391928 CRM:00225129449",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0391928 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2cb99202-5032-4fbf-a940-c1c3f08c5f1c",
+            "date": "2024-11-26T11:06:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ede05052-edab-ef11-b8e9-000d3ab4d5d3",
+            "subject": "ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Dear Furkan,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / RD 170003113\nChargerID/Serial No.\n:\nstPia2\nProblem Description\n: Router shares the IPs outside and causes outgoing traffic\nTroubleshooting\n: Could you please let me know specifically which router is experiencing the issue: XF3 or XF4? Since the charger is offline on SCB, we are unable to perform any remote actions. We will need to arrange for a site intervention.\nTo clarify:\nThe XF3 (Siemens Router) should use the M2M SIM card provided by the factory.\nFor the XF4 (Backend Router), if the backend uses a LAN connection, the customer’s Ethernet cable should be connected to the WAN port of the router, while the LAN port of the router should be connected to the Ethernet switch of our charger.\nPlease provide more details about the issue you're facing so we can assist you better.\nFor future reference, your ticket number is\n0391928\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-26T11:55:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "38992555-bbac-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi Furkan,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-27T12:30:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4504cd1b-c2ac-ef11-b8e8-7c1e52762e1c",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi Shrey,\nTo clarify:\nThe XF3 (Siemens Router) should use the M2M SIM card provided by the factory.\nNo, they don’t do that because they have to use a local sim-card to follow the official procedures. But this customer is using the LAN connection to get the charger online and it works.\nFor the XF4 (Backend Router), if the backend uses a LAN connection, the customer’s Ethernet cable should be connected to the WAN port of the router, while the LAN port of the router should be connected to the Ethernet switch of our charger.\nNo, they don’t have a problem with XF4, because they don’t use that with the reason of not having a backend. They only use the XF3 and it connects to internet via LAN.\nThe charger is working fine. Issue is with more like router configurations which causes the outgoing traffic to other IoT devices in the factory. I created a ticket so NOC or L3 team can get an SSH access and we can check the Teltonika UI remotely, without a need to visit the site for this.\nSincerely,\nFurkan Ahmet Gören\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E\nYakacik Caddesi No 111\n34870 Istanbul, Turkey\nMobile: +90 (537) 3185412\nmailto:furkan.goren@siemens.com\nwww.siemens.com",
+            "date": "2024-11-27T13:18:46Z",
+            "extra": {
+                "sender": "furkan.goren@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b64c4251-6ead-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi Furkan,\nThank you for sharing the information with us. Before we begin troubleshooting the router remotely, we need the XF3 Siemens router to be online. Currently, we see that the charger is offline on SCB, and without this, we cannot proceed with remote diagnostics. We will need to arrange for site intervention to bring the Siemens router back online, which will allow us to access the charger and analyze the issue remotely.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-28T09:51:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c915e7ff-6ead-ef11-b8e8-000d3ab41b62",
+            "subject": "Otomatik yanıt: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Merhaba,\nE-posta’nız için teşekkürler. Şu anda yıllık izindeyim ve e-posta’ma erişimim yok;\n02.12.2024\ntarihinde ofise döneceğim\n.\nİyi g\nü\nnler,\nFurkan Ahmet G\nö\nren\nHi,\nThank you for your e-mail.\nI am currently on annual leave with no access to my emails. I will be back at work on\n02.12.2024\n.\nBR\n,\nFurkan Ahmet G\nö\nren",
+            "date": "2024-11-28T09:56:19Z",
+            "extra": {
+                "sender": "furkan.goren@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "71af837e-36ae-ef11-b8e9-002248a29667",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi Yunus,\nCould you please help us out in returning back the charger online as Furkan is on leave, so that we can analyse the charger remotely?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-29T09:44:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d52d9323-a3b0-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi Shrey,\nThe customer side cannot always provide internet to the device due to the reasons explained by\n@Gören, Furkan Ahmet (RC-TR SI E CS)\n. If you can provide a date and time range that you can review, the customer will connect the device to the internet on that date and time.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2024-12-02T11:47:03Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "756bb36d-ea5f-be3c-833e-d9141178dcb0",
+            "subject": "Handover Notes for NOC",
+            "body": "@NOC Team,\nPlease share the time & date to Yunus, so that the customer internet will be connected and the charger will be online. Request to take the SSH access for this charger, already discussed this issue with Fosco. Once the charger is online, need to discuss with Fosco along with Semih for remote troubleshooting the router.",
+            "date": "2024-12-02T19:54:31Z",
+            "extra": {}
+        },
+        {
+            "id": "f8f484b0-58b1-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0391928 CRM:00225132792",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0391928 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2cb99202-5032-4fbf-a940-c1c3f08c5f1c",
+            "date": "2024-12-03T09:26:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "971c1df4-87b1-ef11-b8e8-0022489d6ca7",
+            "subject": "RE: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hello,\nCan you bring the charger online tomorrow on 12th December at 12:30 PM?\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-03T15:04:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04fc9a15-a2b1-ef11-b8e8-000d3adc3b84",
+            "subject": "Re: ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:00643001108",
+            "body": "Hi,\nThe issue is solved today, we re-configured the LAN settings on Teltonika UI. We can move the ticket for closure.\nThanks.\nBest regards,\nFurkan.",
+            "date": "2024-12-03T18:12:03Z",
+            "extra": {
+                "sender": "furkan.goren@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1f09666c-24b2-ef11-b8e8-000d3a691687",
+            "subject": "ID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic CRM:01282000687",
+            "body": "Dear Customer,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0391928.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-04T09:45:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58086829-2ab2-ef11-b8e8-000d3a691687",
+            "subject": "Ticket 0391928 has been closed. Are you satisfied with our provided solution? CRM:01282000688",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0391928\nwith the title:\nID0391928-DC/Si-D/TR-[MP / RD 170003113] Router shares the IPs outside and causes outgoing traffic\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-04T10:26:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

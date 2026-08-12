@@ -1,0 +1,151 @@
+{
+    "incident_id": "93291b57-1509-4f7f-ab61-88933a05d688",
+    "ticket_number": "0415507",
+    "title": "ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1)",
+    "created_on": "2025-03-27T15:51:38Z",
+    "last_activity": "2025-04-24T06:58:38Z",
+    "age": "39787",
+    "description": "Reported behavior/issue:\nThe outlet DC2 on charger ugTWsO shows the error flag \"DC2_CableTempSensor_XD101\".\nPlease check from your side.\nOpen Ticket:\nNo\nRoot cause:\nSolution:\nSoftware Version: v6.0.3-0-g215cb74+APN (PRODUCTION)\nOCPP Backend Connection: Yes\nWO 4338",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ugTWsO",
+    "stage": null,
+    "serial_number": "MP / R0 170002549,MP / R0 170002549",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "0e4804a7-b172-d2b5-b769-36b7374a78fb",
+            "subject": "Action carried",
+            "body": "The charger has been rebooted, but the CableTempSensor error has reoccurred.\nWe Checked the temperature via SSH, and it appears to be abnormal.\nDC2\nDC1",
+            "date": "2025-03-27T15:53:54Z",
+            "extra": {}
+        },
+        {
+            "id": "21688e06-9d7b-8e64-bf14-da979b4d04d0",
+            "subject": "Checked the logs from the last 4 weeks, and the issue has been persistent during that time as well",
+            "body": "",
+            "date": "2025-03-27T15:55:38Z",
+            "extra": {}
+        },
+        {
+            "id": "c75d5c8c-db2a-4d24-9001-51496754b074",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nSeems issue with temperature sensor or its connections\nProblem Description:\nDC2_CableTempSensor_XD101\nAction Performed (L2):\nI rebooted the charger, but the issue reoccurs even after the reboot. I checked the key\n‘DC2_CableTempSensor’\non AWS for the last 4 months and noticed that the issue has been recurring for the past 4 months as well.\nI also checked the temperature readings of\nDC1\nand\nDC2\n. DC1 is showing normal readings, but\nDC2\nis displaying a temperature of\n-273°C\n(please refer to the note below).\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nAs per the instructions in the Field Issue Tracker Excel sheet\nFault history:\nNA\nAction Required by HQ:\nFurther investigation",
+            "date": "2025-03-27T16:10:32Z",
+            "extra": {}
+        },
+        {
+            "id": "74fcd467-b70b-f011-bae2-000d3adc93d1",
+            "subject": "0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000339",
+            "body": "Guten Tag Herr Schneider,\nMein Kollege Herr Frank wird sich das gestörte Kabel am Montag im Laufe des Tages ansehen.\nFür mich sieht es remote nach einem Lockeren Kabel aus.\nSollte dies nicht der Fall sein werde ich sie Informieren und ihnen einen Termin zum Tausch des Kabels mitteilen.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2025-03-28T09:31:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d82df44-b80b-f011-bae2-000d3ad97a58",
+            "subject": "AW: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000339",
+            "body": "Hallo Herr Berger,\nAlles klar!\nVielen Dank und schönes Wochende,\nMarius Schneider\nProjektmanager E-Mobility\nm +49 (0) 171-5628529\ne\nmarius.schneider@tank.rast.de\nAutobahn Tank & Rast Gruppe GmbH & Co.\nKG, Andreas-Hermes-Str. 7-9, 53175 Bonn,\nwww.tank.rast.de\n,\nSitz der Gesellschaft: Bonn, Amtsgericht Bonn HRA 8655,\nPersönlich haftende Gesellschafterin Autobahn Tank & Rast Management GmbH mit Sitz in Bonn, Amtsgericht Bonn, HRB 21964, Geschäftsführung: Peter M. Löw (Vors.), Lutz Scharpe, Peter Krosta\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 28. März 2025 10:32\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nFrank, Martin <martin.frank@siemens.com>\nBetreff:\n0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000339\nGuten Tag Herr Schneider,\nMein Kollege Herr Frank wird sich das gestörte Kabel am Montag im Laufe des Tages ansehen.\nFür mich sieht es remote nach einem Lockeren Kabel aus.\nSollte dies nicht der Fall sein werde ich sie Informieren und ihnen einen Termin zum Tausch des Kabels mitteilen.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2025-03-28T09:37:36Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3df976f6-f70d-f011-998a-7c1e5236eee4",
+            "subject": "0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000341",
+            "body": "Guten Morgen Denise,\nKannst du bitte folgendes Ladekabel zu Martin nach hause bestellen?\n8EM5903-0AA02-6AA2\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-31T06:18:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "deab1f3a-500e-f011-998a-7c1e5236eee4",
+            "subject": "RE: AW: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000339",
+            "body": "Guten Tag herr schneider,\nEs handelt sich leider doch um einen Hardware defekt.\nNeues Kabel ist bestellt sollte ende dieser Anfang nächste Woche getauscht werden. Sobald ich einen genaue Termin habe melde ich mich.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-31T16:50:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "635dff49-03f2-0e76-be49-6afd13e6fea0",
+            "subject": null,
+            "body": "",
+            "date": "2025-03-31T17:01:33Z",
+            "extra": {}
+        },
+        {
+            "id": "4f8c89f2-b40e-f011-998a-7c1e52350ea5",
+            "subject": "AW: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000341",
+            "body": "Guten Morgen Lukas,\nAuftrag 30750837 ist angelegt.\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\Tank & Rast\\A-30750837-Ticketnr. 0415427\\06_SV-Lieferant\\3314239387.PDF\nDenise Sommerer\nViele Grüße\nDenise\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 31. März 2025 08:19\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000341\nGuten Morgen Denise,\nKannst du bitte folgendes Ladekabel zu Martin nach hause bestellen?\n8EM5903-0AA02-6AA2\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-01T04:51:21Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "963352b4-1416-f011-998a-7c1e5236cda4",
+            "subject": "0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000372",
+            "body": "Guten Tag Herr Schneider,\nWir haben die Ladesäule in Lederhose instand gesetzt.\nAnbei finden sie den ausgefüllten Instandsetzungs Bogen.\nDamit die Ladesäule weiterhin Eichrechtskonform betrieben werden darf, müssen sie die Nacheichung bei dem zuständigen Eichamt beantragen.\nIch bitte sie mir das Angehängte Dokument im Punkt 11 zu unterschreiben damit ich dem Eichamt die Instandsetzung melden kann.\nMitfreundlichen Grüßen\n,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-10T14:04:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "703fe366-1516-f011-998a-7c1e52350ea5",
+            "subject": "Automatische Antwort: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000372",
+            "body": "﻿\nDear sender of this mail,\nI'm currently out of office.\nI will be back on the 11\nth\nof April 2025.\nYour mail will neither be forwared nor read.\nThanks for your understanding!\nKind regards,\nMarius Schneider",
+            "date": "2025-04-10T14:09:29Z",
+            "extra": {
+                "sender": "marius.schneider@tankundrast.mail.onmicrosoft.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "752d027c-3219-f011-9989-7c1e5236eee4",
+            "subject": "RE: Automatische Antwort: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000372",
+            "body": "Hallo Herr Schneider,\nKönnten sie mir bitte noch auf die vorangegangene Mail antworten?\nWir müssen das Instandsetzungsprotokoll an das Zuständige Eichamt weiterleiten.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-14T13:15:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b252ccbd-3319-f011-9989-6045bde0265d",
+            "subject": "AW: Automatische Antwort: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000372",
+            "body": "Hi Herr Berger,\ntechnische Instandsetzungen übernimmt seit Kurzem mein Kollege Herr Behrmann.\nIch habe Ihre Mail heute Morgen weitergereicht – er wird sich sicherlich dazu zurückmelden.\nLG,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 14. April 2025 15:17\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tankundrast.mail.onmicrosoft.com>\nBetreff:\nRE: Automatische Antwort: 0415507 - ID0415427-DC/Si-D/DE-[MP / R0 170002549] DC2_CableTempSensor (C1) CRM:00440000372\nHallo Herr Schneider,\nKönnten sie mir bitte noch auf die vorangegangene Mail antworten?\nWir müssen das Instandsetzungsprotokoll an das Zuständige Eichamt weiterleiten.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-14T13:24:12Z",
+            "extra": {
+                "sender": "marius.schneider@tankundrast.mail.onmicrosoft.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bc604180-5418-f600-8d11-89c951855619",
+            "subject": "Note",
+            "body": "Instandsetzungsnachweiß wurde am 22.04.2025 an das Zuständige Eichamt Ost Thüringen übermittelt.",
+            "date": "2025-04-23T11:45:04Z",
+            "extra": {}
+        }
+    ]
+}

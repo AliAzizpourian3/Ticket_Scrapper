@@ -1,0 +1,112 @@
+{
+    "incident_id": "e4f7846f-88ea-4ca4-a465-468a9c61b7cf",
+    "ticket_number": "0402433",
+    "title": "ID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest",
+    "created_on": "2025-01-27T19:55:36Z",
+    "last_activity": "2025-12-16T14:01:41Z",
+    "age": "2285",
+    "description": "Reported behavior/issue:\nDC_Coils_MG1-MG4_SelfTest\nRoot cause:\nSolution: R\neplaced the QA9 and QA10\nOn DAMEX Sanctioned List:\nWarranty Status:\n02/07/2026",
+    "type": 3,
+    "priority": 596630000,
+    "chargerID": "QQcmzb",
+    "stage": null,
+    "serial_number": "Y2 / R7 313065117150",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "a6cc24b1-e8dc-ef11-8eea-000d3aba081f",
+            "subject": "A new case manager was assigned to 0402433 CRM:00225154355",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0402433 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e4f7846f-88ea-4ca4-a465-468a9c61b7cf",
+            "date": "2025-01-27T19:55:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f7843640-e9dc-ef11-8eea-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0402433 CRM:00225154356",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0402433 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e4f7846f-88ea-4ca4-a465-468a9c61b7cf",
+            "date": "2025-01-27T19:59:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aa48bfe5-aae9-d99c-b4fb-151ff4e2bcd8",
+            "subject": "Case creation Notes",
+            "body": "Reported behavior/issue:\nDC_Coils_MG1-MG4_SelfTest\nPLC\nSYSTEM\ntrue\nstatus: failed, reason: smc[0,1,2,3]-[F,P,P,P]-[1,0,0,0]",
+            "date": "2025-01-27T20:29:19Z",
+            "extra": {}
+        },
+        {
+            "id": "2b1264b9-eddc-ef11-8eea-000d3a67d7cb",
+            "subject": "ID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest CRM:00642001980",
+            "body": "Dear Furkan,\nThank you for reaching\nout\nto eMobility Support. My name is\nMohini\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R7 313065117150\nChargerID/Serial No.\n:\nQQcmzb\nProblem Description\n: DC_Coils_MG1-MG4_SelfTest\nFor future reference, your case number is\n0402433\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-27T20:31:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "953b44aa-efdc-ef11-8eea-000d3a67d7cb",
+            "subject": "ID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest true CRM:00642001981",
+            "body": "Hello Furkan,\nHope you are doing great.\nAs per your reported issue, we have analyzed and found that the contactor has been in an abnormal operation state multiple time.\nMon, 27 Jan 2025 09:26:29 GMT\n2025-01-27, 09:26:29\n2025-01-27T09:26:29.200530+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6a6d0d1dbd48[732]: PLC-Error-Flag 'DC_Contactor_MG1-MG2_QA9-10' changed from true - ('coontactor stuck at ON feedback') to true - ('coontactor stuck at ON feedback, waiting for reset')\nMon, 27 Jan 2025 08:39:22 GMT\n2025-01-27, 08:39:22\n2025-01-27T08:39:22.190866+00:00 swcpu [user:debug] [4021] [SCO] SMC[0]: MG1-MG2_QA09-10, COMMAND: off, FEEDBACK: on, BLOCKING: no, OPRSTATE: AbNormal(off FBK Timeout), CHRGOPRMODE: 6, CTRL_DC_UNIT:\nPlease check the QA09-10 contactor and proceed with the replacement if necessary.\nLet us know if you have further queries.\nAdditionally, a new feature has been implemented in the charger firmware for the self-check test of contactor operations.\nFor detailed information on how the test is performed, please follow the link in the wiki:\nMatrix Contactors/Coils Self Test - EV Charger Development - Confluence (siemens.cloud)\nAs per the fault code of the error:\nContactors in group 0 failed the test, and groups 1, 2, and 3 tests were skipped.\nAdding to the information provided earlier:\nStatus:\nfailed,\nReason:\nsmc[0,1,2,3]-[states]-[results]\nStatus:\nfailed,\nReason:\nsmc[0,1,2,3]-[P,P,P,S]-[0,0,0,0] : in charger\nSo, the details are as follows:\nSMC0: QA9/QA10\nSMC1: QA11/QA12\nSMC2: QA17/QA18\nSMC3: QA15/QA16\nIn the error code status [F,S,S,S], it denotes that the SMC0 contactor check failed, and SMC1, 2, and 3 were skipped. The [0,0,0,0] denotes that the feedback for contactor QA9/QA10 was not received.\nI hope this clarifies your query.\nI am writing to formally inform that we are moving case 0402433 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nTR\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nTR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Mohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-27T20:45:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8f0ef917-12de-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest true CRM:00642001981",
+            "body": "Hi,\nWe didn’t found anything abnormal by visual check and following this, we replaced the QA9 and QA10. Now, error flags are cleared. You can find the service report.\nPS: We still are not able to add the report or pictures on the ISP attachments section.\nThank you for the support. Have a nice day.\nSincerely,\nFurkan Ahmet Gören",
+            "date": "2025-01-29T07:24:45Z",
+            "extra": {
+                "sender": "furkan.goren@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a4d436d0-26de-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0402433 CRM:00225155293",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0402433 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e4f7846f-88ea-4ca4-a465-468a9c61b7cf",
+            "date": "2025-01-29T09:53:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "073ae038-27de-ef11-8eea-6045bdde0ce3",
+            "subject": "ID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest CRM:00796001254",
+            "body": "Dear Furkan Ahmet Goren,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0402433, and the case is now closed.\nProblem Description\n: DC_Coils_MG1-MG4_SelfTest\nResolution\n: R\neplaced the QA9 and QA10\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T09:55:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2fb31d7f-27de-ef11-8eea-6045bdde0ce3",
+            "subject": "Ticket 0402433 has been closed. Are you satisfied with our provided solution? CRM:00796001255",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0402433\nwith the title:\nID0402433-DC/Si-D/TR-[Y2 / R7 313065117150] DC_Coils_MG1-MG4_SelfTest\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nKaushik Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-29T09:57:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "incident_id": "863bb1e2-4f87-4e7e-8748-801717316580",
+    "ticket_number": "0369501",
+    "title": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue",
+    "created_on": "2024-07-17T15:08:26Z",
+    "last_activity": "2025-12-16T14:07:19Z",
+    "age": "16857",
+    "description": "Location\n: Sauga, Estonia\nReported behavior/issue:\nCustomer complain about power allocation. It is 300kw charger with air cooled ccs2 cables. After first car hit SOC 70%, charger did not allocate more power to second user.\nPlease see attached picture in the timeline.\nWe have an issue with converter(s) or DC contactor(s)?\nRoot cause: When an EV with lower than 60% SoC, the charger will allocate as many groups as it's asked in Parameter Discovery, here the EV requested maximum of 162kW → 3 groups. Only after 60% SoC it will reallocate.\nSolution: Request to have more steps in the way until 60%. It's already in the roadmap, ETA in November",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "hKzfTF",
+    "stage": null,
+    "serial_number": "MP / R2 170001450",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8b8f1072-4e44-ef11-a316-6045bdde23a6",
+            "subject": "A new case manager was assigned to 0369501 CRM:00225071369",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0369501 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=863bb1e2-4f87-4e7e-8748-801717316580",
+            "date": "2024-07-17T15:08:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fdf1ad5b-d2df-0f70-864e-ba9e7312cd44",
+            "subject": "Screenshot",
+            "body": "",
+            "date": "2024-07-17T15:08:46Z",
+            "extra": {}
+        },
+        {
+            "id": "203057a7-4e44-ef11-a316-6045bde003e0",
+            "subject": "A new case manager was assigned to 0369501 CRM:00225071370",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0369501 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=863bb1e2-4f87-4e7e-8748-801717316580",
+            "date": "2024-07-17T15:10:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a6717a2-d245-ef11-a316-002248a2f864",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hello ﻿Markus,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001450\nChargerID/Serial No.\n:\nhKzfTF\nProblem Description\n: Sessions provide less power than expected\nTroubleshooting\n:\nI am proactively looking for any session that comes up at the moment and will use the RemoteDebugStation to see if I find any problem in the allocation of the groups.\nFor future reference, your ticket number is\n0369501\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-19T13:27:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "41c0a641-0248-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 4 days, 17 hours, 5 minutes and 2 seconds.",
+            "date": "2024-07-22T08:13:28Z",
+            "extra": {}
+        },
+        {
+            "id": "a781a147-0248-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 3 seconds.",
+            "date": "2024-07-22T08:13:31Z",
+            "extra": {}
+        },
+        {
+            "id": "b681a147-0248-ef11-bfe2-0022489961b0",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hi Markus, good morning.\nI have made a remote Debug Station just a few minutes ago with DC2 and it worked fine.\nI will keep the remote debug station open until we have some sessions from different outlets.\nI will report back to you when I have performed all the detailed analysis.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-22T08:13:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cf061419-3048-ef11-bfe2-000d3a687981",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hi Markus,\nI was the whole day connected to the charger and could only get sessions in DC2 single, there were not 2 simultaneous sessions.\nI believe we should align with the customer to see the possibility to schedule a date and time to trial this.\nI can also be everyday performing this task and check.\nWhat do you think it's best?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-22T13:41:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f3dfb6e-ac49-ef11-bfe3-000d3aba9474",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hello Markus,\nI have the RemoteDebugStation connected right now and found 2 sessions at the same time.\nUnfortunately, the SoC are high and as such I cannot see if the groups are working properly.\nI will keep monitoring and come back to you.\nThank you for your patience.\nBest regards,\nFrancisco",
+            "date": "2024-07-24T11:04:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56bd0316-234b-ef11-bfe2-000d3adef1bc",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hi Anton, good afternoon.\nAfter you reached out to me via Teams, we were able to successfully get the issue and record it.\nAs you can see from the photos below, here is the explanation of how it works:\nDuring Parameter Discovery of the DC4 (LCU_ID_3) the EV requested a maximum of 162.4kW",
+            "date": "2024-07-26T07:46:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7e27d228-4d4b-ef11-bfe2-000d3adef1bc",
+            "subject": "ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "Hi Anton, good afternoon.\nAfter you reached out to me via Teams, we were able to successfully get the issue and record it.\nAs you can see from the photos below, here is the explanation of how it works:\nDuring Parameter Discovery of the DC4 (LCU_ID_3) the EV requested a maximum of 162.4kW (464x350)\nAs such, we need to allocate 3 DC groups, which were, DC4, DC3 and DC1.\nAs you can see, even though the EV only needed 148kW, it requested a maximum of 162.4kW.\nWhen the 2nd EV came to charge, it only got 80kW due to only having DC2 group available.\nBut after we get the SoC of the first EV to 60%, the DC1 is reallocated to the 2nd EV.\nThis is due to how the programming is done:\nOnly after 60% we reallocate the group.\nThis feature is already in the roadmap to be implemented in a estimated date of November.\nSince this is not a service topic but a feature request, I will proceed to close the ticket. When this fix is done we should get a global notification.\nOtherwise I would suggest contacting your Regional Management contact for further support.\nI will wait for your feedback before closing the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-26T12:47:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "28e28546-7e4d-ef11-bfe3-000d3aba9474",
+            "subject": "Ticket 0369501 has been closed. Are you satisfied with our provided solution? CRM:00315001641",
+            "body": "Dear  Anton\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0369501\nwith the title:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-29T07:43:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2ae28546-7e4d-ef11-bfe3-000d3aba9474",
+            "subject": "RE: ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Jul 26 2024 13:54:15 GMT+0100 (Western European Summer Time)\nTo:\nAnton Verner <anton.verner@siemens.com>;\nCc:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Anton, good afternoon.\nAfter you reached out to me via Teams, we were able to successfully get the issue and record it.\nAs you can see from the photos below, here is the explanation of how it works:\nDuring Parameter Discovery of the DC4 (LCU_ID_3) the EV requested a maximum of 162.4kW (464x350)\nAs such, we need to allocate 3 DC groups, which were, DC4, DC3 and DC1.\nAs you can see, even though the EV only needed 148kW, it requested a maximum of 162.4kW.\nWhen the 2nd EV came to charge, it only got 80kW due to only having DC2 group available.\nBut after we get the SoC of the first EV to 60%, the DC1 is reallocated to the 2nd EV.\nThis is due to how the programming is done:\nOnly after 60% we reallocate the group.\nThis feature is already in the roadmap to be implemented in a estimated date of November.\nSince this is not a service topic but a feature request, I will proceed to close the ticket. When this fix is done we should get a global notification.\nOtherwise I would suggest contacting your Regional Management contact for further support.\nI will wait for your feedback before closing the ticket.\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nWed Jul 24 2024 12:05:52 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHello Markus,\nI have the RemoteDebugStation connected right now and found 2 sessions at the same time.\nUnfortunately, the SoC are high and as such I cannot see if the groups are working properly.\nI will keep monitoring and come back to you.\nThank you for your patience.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nMon Jul 22 2024 14:44:01 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Markus,\nI was the whole day connected to the charger and could only get sessions in DC2 single, there were not 2 simultaneous sessions.\nI believe we should align with the customer to see the possibility to schedule a date and time to trial this.\nI can also be everyday performing this task and check.\nWhat do you think it's best?\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nMon Jul 22 2024 09:16:17 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Markus, good morning.\nI have made a remote Debug Station just a few minutes ago with DC2 and it worked fine.\nI will keep the remote debug station open until we have some sessions from different outlets.\nI will report back to you when I have performed all the detailed analysis.\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Jul 19 2024 14:28:23 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHello ﻿Markus,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n,\nand I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001450\nChargerID/Serial No.\n:\nhKzfTF\nProblem Description\n: Sessions provide less power than expected\nTroubleshooting\n:\nI am proactively looking for any session that comes up at the moment and will use the RemoteDebugStation\nto see if I find any problem in the allocation of the groups.\nFor future reference, your ticket number is\n0369501\n,\nplease do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-29T07:43:46Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2be28546-7e4d-ef11-bfe3-000d3aba9474",
+            "subject": "RE: ID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Jul 26 2024 13:46:55 GMT+0100 (Western European Summer Time)\nTo:\nAnton Verner <anton.verner@siemens.com>;\nCc:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Anton, good afternoon.\nAfter you reached out to me via Teams, we were able to successfully get the issue and record it.\nAs you can see from the photos below, here is the explanation of how it works:\nDuring Parameter Discovery of the DC4 (LCU_ID_3) the EV requested a maximum of 162.4kW\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nWed Jul 24 2024 12:05:52 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHello Markus,\nI have the RemoteDebugStation connected right now and found 2 sessions at the same time.\nUnfortunately, the SoC are high and as such I cannot see if the groups are working properly.\nI will keep monitoring and come back to you.\nThank you for your patience.\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nMon Jul 22 2024 14:44:01 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Markus,\nI was the whole day connected to the charger and could only get sessions in DC2 single, there were not 2 simultaneous sessions.\nI believe we should align with the customer to see the possibility to schedule a date and time to trial this.\nI can also be everyday performing this task and check.\nWhat do you think it's best?\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nMon Jul 22 2024 09:16:17 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHi Markus, good morning.\nI have made a remote Debug Station just a few minutes ago with DC2 and it worked fine.\nI will keep the remote debug station open until we have some sessions from different outlets.\nI will report back to you when I have performed all the detailed analysis.\nThank you!\nBest regards,\nFrancisco\n------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Jul 19 2024 14:28:23 GMT+0100 (Western European Summer Time)\nTo:\nMarkus Roiha <markus.roiha@siemens.com>;\nSubject:\nID0369501-DC/Si-D/EE-[MP / R2 170001450] -PowerAllocationIssue CRM:00315001604\nHello ﻿Markus,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n,\nand I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001450\nChargerID/Serial No.\n:\nhKzfTF\nProblem Description\n: Sessions provide less power than expected\nTroubleshooting\n:\nI am proactively looking for any session that comes up at the moment and will use the RemoteDebugStation\nto see if I find any problem in the allocation of the groups.\nFor future reference, your ticket number is\n0369501\n,\nplease do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-29T07:43:46Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0d1323f-814d-ef11-bfe3-0022489fc6bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 6 days, 23 hours, 51 minutes and 31 seconds.",
+            "date": "2024-07-29T08:05:03Z",
+            "extra": {}
+        }
+    ]
+}

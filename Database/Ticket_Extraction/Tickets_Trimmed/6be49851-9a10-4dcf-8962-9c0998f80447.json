@@ -1,0 +1,151 @@
+{
+    "incident_id": "6be49851-9a10-4dcf-8962-9c0998f80447",
+    "ticket_number": "0432958",
+    "title": "ID0432958-DC/Si-D/FI-[MP / P9 170001031]-EVSE_TempUpperLimit",
+    "created_on": "2025-06-23T21:13:43Z",
+    "last_activity": "2025-06-26T21:06:29Z",
+    "age": "4014",
+    "description": "Reported behaviour/issue:\nCharger offline in both backends. Before going offline, last OCPP message was\nEVSE_TempUpperLimit and SafetyRelay_QA26.\nRoot Cause\n:\n-BT3 temp and humid sensor connection were cross connected in terminal block +F03-XD6 2D and 4D.\nThis has happened in factory -->\nlatent fault -->\nWarranty case.\nSolution:\nUpon arriving at the site 23.6.2025 and opening the front door, the heater was operational. I turned off the power from the charger and turned it back on, but the heater started working again. I repeated this numerous times, but the charger did not start. I began examining the temperature and humidity sensors connected to the Siemens LOGO and noticed that the wiring of one sensor was crossed. The temperature was connected to the humidity input and the humidity sensor to the temperature input. After correcting the wiring, the charger started.\nThe cause was therefore incorrect wiring done at the factory, resulting in a latent fault. The site had been visited previously for the same fault, during which the LOGO was updated and the charger started.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "foRGhQ",
+    "stage": null,
+    "serial_number": "MP / P9 170001031",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "d27167f6-7650-f011-877a-7ced8d45d025",
+            "subject": "A new case manager was assigned to 0432958 CRM:00225218962",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0432958 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6be49851-9a10-4dcf-8962-9c0998f80447",
+            "date": "2025-06-23T21:13:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4528ef0d-7750-f011-877b-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0432958 CRM:00225218963",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0432958 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6be49851-9a10-4dcf-8962-9c0998f80447",
+            "date": "2025-06-23T21:14:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cac0083c-fc08-2461-b644-20d9d7974527",
+            "subject": "repair report",
+            "body": "",
+            "date": "2025-06-23T21:17:05Z",
+            "extra": {}
+        },
+        {
+            "id": "f222063e-c235-a387-8264-20bd86d34c0a",
+            "subject": "before fix",
+            "body": "",
+            "date": "2025-06-23T21:17:28Z",
+            "extra": {}
+        },
+        {
+            "id": "775fd3d3-91a8-3548-96e4-da28909be743",
+            "subject": "During fix",
+            "body": "",
+            "date": "2025-06-23T21:17:50Z",
+            "extra": {}
+        },
+        {
+            "id": "1b63beb9-67ca-02fc-814c-6799ebc04c80",
+            "subject": "After fix",
+            "body": "",
+            "date": "2025-06-23T21:18:04Z",
+            "extra": {}
+        },
+        {
+            "id": "350bc96f-8b50-f011-877b-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0432958 CRM:00225218974",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0432958 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6be49851-9a10-4dcf-8962-9c0998f80447",
+            "date": "2025-06-23T23:40:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "52437eb9-86b5-c26a-8380-38c667cdee7a",
+            "subject": "Error Description",
+            "body": "Reported behaviour/issue:\nCharger offline in both backends. Before going offline, last OCPP message was\nEVSE_TempUpperLimit and SafetyRelay_QA26.\nRoot Cause\n: -BT3 temp and humid sensor connection were cross connected in terminal block +F03-XD6 2D and 4D.\nThis has happened in factory -->\nlatent fault -->\nWarranty case.\nSolution:\nUpon arriving at the site 23.6.2025 and opening the front door, the heater was operational. I turned off the power from the charger and turned it back on, but the heater started working again. I repeated this numerous times, but the charger did not start. I began examining the temperature and humidity sensors connected to the Siemens LOGO and noticed that the wiring of one sensor was crossed. The temperature was connected to the humidity input and the humidity sensor to the temperature input. After correcting the wiring, the charger started.\nThe cause was therefore incorrect wiring done at the factory, resulting in a latent fault. The site had been visited previously for the same fault, during which the LOGO was updated and the charger started.",
+            "date": "2025-06-23T23:43:28Z",
+            "extra": {}
+        },
+        {
+            "id": "9e123e1e-8c50-f011-877b-000d3ad97a58",
+            "subject": "ID0432958-DC/Si-D/FI-[MP / P9 170001031]-EVSE_TempUpperLimit CRM:02888000101",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMikkeli\nChargerID/Serial No.\n:\nfoRGhQ\nProblem Description\n:\nEVSE_TempUpperLimit\nFor future reference, your case number is\n0432958\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-23T23:45:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "001ecd97-8e50-f011-877b-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0432958 CRM:00225218982",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0432958 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6be49851-9a10-4dcf-8962-9c0998f80447",
+            "date": "2025-06-24T00:03:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bab365d6-1f52-f011-877b-6045bdde4786",
+            "subject": "RE: ID0432958-DC/Si-D/FI-[MP / P9 170001031]-EVSE_TempUpperLimit CRM:02888000101",
+            "body": "Hi Markus,\nWe have analyzed the charger.\nAnd found charger to be Healthy and Working fine.\nCould you pls validate and confirm of closure of the case.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-25T23:55:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59223d44-5652-f011-877b-7c1e52faf3c6",
+            "subject": "RE: ID0432958-DC/Si-D/FI-[MP / P9 170001031]-EVSE_TempUpperLimit CRM:02888000101",
+            "body": "Hi,\nThis case was done when ticket opened. Ticket opened for warranty purposes so please close it.\nMarkus",
+            "date": "2025-06-26T06:24:53Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ebb20562-a752-f011-877b-000d3ab07fc1",
+            "subject": "A new case manager was assigned to 0432958 CRM:00225220626",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0432958 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6be49851-9a10-4dcf-8962-9c0998f80447",
+            "date": "2025-06-26T16:05:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ad339c66-d152-f011-877a-7ced8d417adb",
+            "subject": "ID0432958-DC/Si-D/FI-[MP / P9 170001031]-EVSE_TempUpperLimit CRM:00798002256",
+            "body": "Hi Markus,\nThanks for confirmation on closure of the case.\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0432958, the case is now closed.\nProblem Description\n: EVSE_TempUpperLimit\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-26T21:06:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

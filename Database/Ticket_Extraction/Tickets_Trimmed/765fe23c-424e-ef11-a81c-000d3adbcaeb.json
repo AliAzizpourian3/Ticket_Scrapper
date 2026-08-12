@@ -1,0 +1,463 @@
+{
+    "incident_id": "765fe23c-424e-ef11-a81c-000d3adbcaeb",
+    "ticket_number": "0371567",
+    "title": "ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active",
+    "created_on": "2024-07-30T07:06:27Z",
+    "last_activity": "2025-12-16T14:06:59Z",
+    "age": "28882",
+    "description": "Reported behavior/issue:\nThe charger shows \"Failsafe Mode Active\", first error notification on 30/07/2024 02:44 AM.\nOCPP is online, charger has been rebooted remotely. No changes, mode still active.\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nActive (8th Nov 2025)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "9bNsBh",
+    "stage": null,
+    "serial_number": "MP / R0 170002829",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1634800a-434e-ef11-bfe2-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Active/Draft to New Enquiry after 5 minutes and 47 seconds.",
+            "date": "2024-07-30T07:12:16Z",
+            "extra": {}
+        },
+        {
+            "id": "034e440d-434e-ef11-bfe3-002248a44b33",
+            "subject": "Note created on 7/30/2024 7:12:17 AM UTC by Marius Schneider [contact:698d91f6-5322-ee11-9967-0022489de400]",
+            "body": "*WEB*",
+            "date": "2024-07-30T07:12:17Z",
+            "extra": {}
+        },
+        {
+            "id": "bfc9e290-474e-ef11-bfe3-7c1e52209b57",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225076488",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-07-30T07:44:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e95e94e6-474e-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 34 minutes and 49 seconds.",
+            "date": "2024-07-30T07:47:04Z",
+            "extra": {}
+        },
+        {
+            "id": "7f11694d-967c-bdce-a164-65d638f41df6",
+            "subject": "Complaint",
+            "body": "Hi Siemens Support Team,\nThe charger shows \"Failsafe Mode Active\", first error notification on 30/07/2024 02:44 AM.\nOCPP is online, charger has been rebooted remotely. No changes, mode still active.\nPlease analyze the charger.\nKind regards,\nMarius Schneider\nSoftware Version: v4.0.11-0-g0b7d164 (PRODUCTION)\nOCPP Backend Connection: Yes",
+            "date": "2024-07-30T07:48:21Z",
+            "extra": {}
+        },
+        {
+            "id": "fae2f6de-e301-e47a-ae9a-76f901c4fb2e",
+            "subject": null,
+            "body": "Tue, 30 Jul 2024 00:44:33 GMT\n2024-07-30, 00:44:32\n2024-07-30T00:44:32.720814+00:00 sicharge-cp [local0:err] sicharge-cp-backend/42e417459f5c[706]: PLC-Error-Flag 'FailsafeMode_Active' changed to true - (FailsafeMode is active. Charger is out of order.)\nTue, 30 Jul 2024 00:44:34 GMT\n2024-07-30, 00:44:33\n2024-07-30T00:44:33.355234+00:00 sicharge-cp [local0:info] sicharge-cp-backend/42e417459f5c[706]: OCPP: Send command: StatusNotification (3bc13ce9-e934-4237-ad77-36bd599117a2) - {\"connectorId\":0,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"FailsafeMode_Active\"}\nTue, 30 Jul 2024 00:44:35 GMT\n2024-07-30, 00:44:33\n2024-07-30T00:44:33.491549+00:00 sicharge-cp [local0:info] sicharge-cp-backend/42e417459f5c[706]: OCPP: Received result: StatusNotification (3bc13ce9-e934-4237-ad77-36bd599117a2) - {}\nTue, 30 Jul 2024 00:44:35 GMT\n2024-07-30, 00:44:35\n2024-07-30T00:44:35.254453+00:00 swcpu [user:debug] [SmartCharging] Power setpoint received: {\"msgId\":\"6e73fa59-fdb5-44ac-848a-a2c64775672b\",\"connector\":\"Charger\",\"maxValue\":\"320000\"}\nTue, 30 Jul 2024 00:44:35 GMT\n2024-07-30, 00:44:35\n2024-07-30T00:44:35.456554+00:00 swcpu [user:debug] [SmartCharging] Power setpoint received: {\"msgId\":\"14d22098-799c-4e28-9430-3453e50d45fc\",\"connector\":\"101:611\",\"maxValue\":\"300000\"}\nTue, 30 Jul 2024 00:44:40 GMT\n2024-07-30, 00:44:35\n2024-07-30T00:44:35.655173+00:00 swcpu [user:debug] [SmartCharging] Power setpoint received: {\"msgId\":\"6f5496b6-2276-4e5a-b02e-1fc4d4ec9e1e\",\"connector\":\"100:610\",\"maxValue\":\"300000\"}\nTue, 30 Jul 2024 00:44:41 GMT\n2024-07-30, 00:44:41\n2024-07-30T00:44:41.231596+00:00 sicharge-cp [local0:info] sicharge-cp-backend/42e417459f5c[706]: OCPP: Received command: TriggerMessage (638578970810670761-106d8) - {\"requestedMessage\":\"StatusNotification\"}\nTue, 30 Jul 2024 00:44:41 GMT\n2024-07-30, 00:44:41\n2024-07-30T00:44:41.237436+00:00 sicharge-cp [local0:info] sicharge-cp-backend/42e417459f5c[706]: OCPP: Send result: TriggerMessage (638578970810670761-106d8) - {\"status\":\"Accepted\"}\nTue, 30 Jul 2024 00:44:41 GMT\n2024-07-30, 00:44:41\n2024-07-30T00:44:41.239751+00:00 sicharge-cp [local0:info] sicharge-cp-backend/42e417459f5c[706]: OCPP: Send command: StatusNotification (bbed9816-34d2-4da5-a098-3953959c24c6) - {\"connectorId\":0,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"FailsafeMode_Active\"}",
+            "date": "2024-07-30T08:26:06Z",
+            "extra": {}
+        },
+        {
+            "id": "b3de172a-4f4e-ef11-bfe2-002248a2f864",
+            "subject": "ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hello Marius﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R0 170002829\nChargerID/Serial No.\n:\n9bNsBh\nProblem Description\n: Failsafe Mode Active\nTroubleshooting\n: This charger is currently offline on SCB. Could you please check if it is online on the OCPP backend? If so, could you reboot it from the OCPP backend? This may help bring the charger online on SCB and allow us to fetch the latest logs for investigation.\nFor future reference, your ticket number is\n0371567\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-30T08:39:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "019d7788-524e-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 hour, 16 minutes and 3 seconds.",
+            "date": "2024-07-30T09:03:07Z",
+            "extra": {}
+        },
+        {
+            "id": "2a9d7788-524e-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 5 seconds.",
+            "date": "2024-07-30T09:03:12Z",
+            "extra": {}
+        },
+        {
+            "id": "2dc12b29-067e-2309-9030-284c1d7fdafa",
+            "subject": "Note to L2",
+            "body": "The charger is offline on SCB. An OCPP reboot has been requested to bring the charger back online. Once feedback is received, please check the error flags and logs to identify the failed device.",
+            "date": "2024-07-30T09:16:41Z",
+            "extra": {}
+        },
+        {
+            "id": "0ad92597-564e-ef11-bfe2-0022489966da",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225076577",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-07-30T09:32:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b3976c4-5b4e-ef11-bfe2-0022489a2913",
+            "subject": "AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Sominath,\nI’ve already rebooted the charger twice, OCPP is always coming back online, but SCB does not.\nThe charger is currently performing another reboot. I’ll keep you posted when it’s done.\nBut if there is no SCB connection then, we need a local solution.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 30. Juli 2024 11:02\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello Marius﻿,﻿\nThank you for reaching out to eMobility Support. My name is Sominath, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / R0 170002829\nChargerID/Serial No.\n: 9bNsBh\nProblem Description\n: Failsafe Mode Active\nTroubleshooting\n: This charger is currently offline on SCB. Could you please check if it is online on the OCPP backend? If so, could you reboot it from the OCPP backend? This may help bring the charger online on SCB and allow us to fetch the latest logs for investigation.\nFor future reference, your ticket number is 0371567, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-30T10:09:16Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b5f78bc5-5b4e-ef11-bfe3-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 hour, 6 minutes and 10 seconds.",
+            "date": "2024-07-30T10:09:22Z",
+            "extra": {}
+        },
+        {
+            "id": "aa89a095-5e4e-ef11-bfe3-002248a44b33",
+            "subject": "AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Sominath,\nthe charger has performed a reboot for three times now. I assume there is still no SCB connection, right?\nI will be on location tomorrow and will perform a local reboot then. Hope this helps.\nPlease keep this ticket on standby until you receive an update from myself.\nKind regards,\nMarius Schneider\nVon:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nGesendet:\nDienstag, 30. Juli 2024 12:09\nAn:\nemobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nAW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHi Sominath,\nI’ve already rebooted the charger twice, OCPP is always coming back online, but SCB does not.\nThe charger is currently performing another reboot. I’ll keep you posted when it’s done.\nBut if there is no SCB connection then, we need a local solution.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nDienstag, 30. Juli 2024 11:02\nAn:\nSchneider, Marius (Tank&Rast) <\nmarius.schneider@tank.rast.de\n>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello Marius﻿,﻿\nThank you for reaching out to eMobility Support. My name is Sominath, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / R0 170002829\nChargerID/Serial No.\n: 9bNsBh\nProblem Description\n: Failsafe Mode Active\nTroubleshooting\n: This charger is currently offline on SCB. Could you please check if it is online on the OCPP backend? If so, could you reboot it from the OCPP backend? This may help bring the charger online on SCB and allow us to fetch the latest logs for investigation.\nFor future reference, your ticket number is 0371567, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-30T10:29:30Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "00666acc-274f-ef11-bfe2-0022489a2913",
+            "subject": "AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Sominath,\nI'm currently on location and did some investigation on the charger.\nThe charger got rebooted locally with all components being voltage removed.\nDuring restart, the charger gets stuck in boot-up process 30% \"Loading images\".\nI can not do anything here on my own for now. I think this needs to be raised to field service.\nKind regards,\nMarius Schneider\nVon:\nSchneider, Marius (Tank&Rast)\nGesendet:\nDienstag, 30. Juli 2024 12:29\nAn:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nCc:\nservice-emobility.si.de@siemens.com <service-emobility.si.de@siemens.com>\nBetreff:\nAW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHi Sominath,\nthe charger has performed a reboot for three times now. I assume there is still no SCB connection, right?\nI will be on location tomorrow and will perform a local reboot then. Hope this helps.\nPlease keep this ticket on standby until you receive an update from myself.\nKind regards,\nMarius Schneider\nVon:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nGesendet:\nDienstag, 30. Juli 2024 12:09\nAn:\nemobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nAW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHi Sominath,\nI’ve already rebooted the charger twice, OCPP is always coming back online, but SCB does not.\nThe charger is currently performing another reboot. I’ll keep you posted when it’s done.\nBut if there is no SCB connection then, we need a local solution.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nDienstag, 30. Juli 2024 11:02\nAn:\nSchneider, Marius (Tank&Rast) <\nmarius.schneider@tank.rast.de\n>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello Marius﻿,﻿\nThank you for reaching out to eMobility Support. My name is Sominath, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / R0 170002829\nChargerID/Serial No.\n: 9bNsBh\nProblem Description\n: Failsafe Mode Active\nTroubleshooting\n: This charger is currently offline on SCB. Could you please check if it is online on the OCPP backend? If so, could you reboot it from the OCPP backend? This may help bring the charger online on SCB and allow us to fetch the latest logs for investigation.\nFor future reference, your ticket number is 0371567, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-31T10:29:51Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a6beea76-614f-ef11-bfe3-000d3abae760",
+            "subject": "RE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hello Marius,\nHope you are doing great.\nThank you for your response.\nWe will examine the issue and if necessary, will arrange a field service engineer as soon as possible.\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-31T17:22:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3799e6df-614f-ef11-bfe3-000d3aba9474",
+            "subject": "RE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hello Marius,\nHope you are doing great.\nThank you for your response.\nWe will examine the issue and if necessary, will arrange a field service engineer as soon as possible.\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-31T17:25:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8527b3e5-614f-ef11-bfe3-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 1 day, 7 hours, 16 minutes and 23 seconds.",
+            "date": "2024-07-31T17:25:45Z",
+            "extra": {}
+        },
+        {
+            "id": "46668137-0850-ef11-bfe3-6045bde003e0",
+            "subject": "ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385",
+            "body": "Hello Team,\nHope you are doing great.\nWe have received a response from the customer indicating that during restart, the charger becomes stuck at the 30% mark during the \"Loading images\" phase.\nA site intervention is necessary for the charger that is stuck in a booting loop. Please coordinate with the customer and inform us of a convenient date and time in advance.\nPlease verify the following IPs with MobaXterm. If any of following missing IPs, we will need to check the specific device along with proper wiring and connections are connected or not\n10.20.17.1 SiemensRouter XF3\n10.20.17.2 Customer Router XF4\n10.20.17.10 PLC\n10.20.17.11 LOGO\n10.20.17.14 LINUX in PLC\n10.20.17.100 KF11\n10.20.17.101 KF12\nHello\nI am writing to formally inform that we are moving case 0371567 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nIf you require any assistance, please inform us one to two days in advance.\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-01T13:16:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c59ae108-1150-ef11-bfe2-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 20 hours, 53 minutes and 36 seconds.",
+            "date": "2024-08-01T14:19:21Z",
+            "extra": {}
+        },
+        {
+            "id": "af90652e-1150-ef11-bfe2-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 59 seconds.",
+            "date": "2024-08-01T14:20:21Z",
+            "extra": {}
+        },
+        {
+            "id": "6ffbff6c-5ba9-4a20-b8f1-d2562c757b1e",
+            "subject": "Notes for RC & L2",
+            "body": "At 30%, charger mostly check for LOGO and PLC/ Linux. Please connect your system to the charger and try to ping the following IPs via your system:\n- 10.20.17.10\n- 10.20.17.11\n- 10.20.17.14\n- 10.20.17.1\n(Make sure you put your laptop in the same IP range like 10.20.17.251)",
+            "date": "2024-08-01T14:40:21Z",
+            "extra": {}
+        },
+        {
+            "id": "f705f2f2-1e50-ef11-bfe2-0022489a2913",
+            "subject": "AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385",
+            "body": "Hi Mohini,\nthanks so much for handing this over.\nAny spare parts suggested for this FS intervention?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nDonnerstag, 1. August 2024 um 16:19\nAn:\nRC-DE SI Service eMobility <service-emobility.si.de@siemens.com>\nCc:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nBetreff:\nID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385\nHello Team,\nHope you are doing great.\nWe have received a response from the customer indicating that during restart, the charger becomes stuck at the 30% mark during the \"Loading images\" phase.\nA site intervention is necessary for the charger that is stuck in a booting loop. Please coordinate with the customer and inform us of a convenient date and time in advance.\nPlease verify the following IPs with MobaXterm. If any of following missing IPs, we will need to check the specific device along with proper wiring and connections are connected or not\n10.20.17.1 SiemensRouter XF3\n10.20.17.2 Customer Router XF4\n10.20.17.10 PLC\n10.20.17.11 LOGO\n10.20.17.14 LINUX in PLC\n10.20.17.100 KF11\n10.20.17.101 KF12\nHello\nI am writing to formally inform that we are moving case 0371567 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nIf you require any assistance, please inform us one to two days in advance.\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-01T15:58:58Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9306b19-1f50-ef11-bfe3-000d3aba9474",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225077901",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-08-01T15:59:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f013804-2150-ef11-bfe2-000d3a687981",
+            "subject": "RE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385",
+            "body": "Hello Sascha,\nThank you for your quick response.\nEnsure you bring a Siemens laptop with a Companion tool, Ethernet cable, a SIM card with an active data plan, and a router to the site. Additionally, carry a Linux bootable USB drive and a CFast card reader in case the CFast card and firmware are found to be corrupted.\nIf you have any queries let us know.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-01T16:13:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a887b483-2550-ef11-bfe3-002248a44b33",
+            "subject": "AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385",
+            "body": "Ok, great. Thanks Mohini.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nDonnerstag, 1. August 2024 um 18:22\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>, RC-DE SI Service eMobility <service-emobility.si.de@siemens.com>\nBetreff:\nRE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00642001385\nHello Sascha,\nThank you for your quick response.\nEnsure you bring a Siemens laptop with a Companion tool, Ethernet cable, a SIM card with an active data plan, and a router to the site. Additionally, carry a Linux bootable USB drive and a CFast card reader in case the CFast card and firmware are found to be corrupted.\nIf you have any queries let us know.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-01T16:46:00Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "633e508a-2550-ef11-bfe3-000d3abae760",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225077911",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-08-01T16:46:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56e01e90-2550-ef11-bfe3-002248a44b33",
+            "subject": "0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000159",
+            "body": "Hi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nMLFB / Bezeichnung / GA Preis\n8EM5903-0AA01-3AA8 Router\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse\nNL Hannover\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2024-08-01T16:46:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b1978e5-8f50-ef11-bfe3-000d3a687981",
+            "subject": "AW: 0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000159",
+            "body": "Guten Morgen Sascha,\nAuftrag 30702829 ist angelegt.\nMaterial ist bestellt.\nLieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\Tank & Rast\\A-30702829-Ticketnr. 0371567\\06_SV-Lieferant\\3314162751.PDF\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 1. August 2024 18:48\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000159\nHi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nMLFB / Bezeichnung / GA Preis\n8EM5903-0AA01-3AA8 Router\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse\nNL Hannover\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2024-08-02T05:27:24Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3f99ea17-e750-ef11-bfe3-000d3ad8de7a",
+            "subject": "0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000164",
+            "body": "Hi Rodrigo,\nkannst Du hierfür bitte noch einen Eintrag in der Einsatzplanungsliste einfügen?\nDanke Dir vielmals!\nSascha",
+            "date": "2024-08-02T15:51:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8f9c20b8-0e53-ef11-bfe3-0022489a2913",
+            "subject": "AW: 0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000164",
+            "body": "Hey Sascha,\nist eingetragen.\nMit freundlichen Grüßen\nRodrigo Rumpf\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nLöwenstr. 11A\n44135 Dortmund, Deutschland\nmailto:rodrigo.monnerat-rumpf@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 2. August 2024 17:52\nAn:\nMonnerat Rumpf, Rodrigo (RC-DE SI E CS) <rodrigo.monnerat-rumpf@siemens.com>\nBetreff:\n0371567 - ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00373000164\nHi Rodrigo,\nkannst Du hierfür bitte noch einen Eintrag in der Einsatzplanungsliste einfügen?\nDanke Dir vielmals!\nSascha",
+            "date": "2024-08-05T09:40:20Z",
+            "extra": {
+                "sender": "rodrigo.monnerat-rumpf@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10ae1389-4c55-ef11-bfe2-0022489e9c81",
+            "subject": "AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Good Morning Mohini,\nwhat is the status of this case now? When will a site visit take place?\nThis ticket is now open for nearly 10 days and there has not yet any site interventation taken place.\nWe expect an urgent solution for this case now.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 31. Juli 2024 19:25\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>; emobility_support.si@siemens.com; emobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello Marius,\nHope you are doing great.\nThank you for your response.\nWe will examine the issue and if necessary, will arrange a field service engineer as soon as possible.\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-08T06:07:53Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "388a4af8-c158-ef11-bfe3-000d3a67b152",
+            "subject": "RE: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hello,\nPlease share the site intervention plan with the customer, they are waiting for the planned date and no communication has been shared yet.\nCheck the latest email from customer on this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-12T15:46:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "105dcb2b-c358-ef11-bfe2-0022489e9c81",
+            "subject": "AW: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Rodrigo,\nkannst Du bitte den FS Report bei Ramona ggf. noch einholen und dann ablegen?\nDanke Dir vielmals!\nMit freundlichen Grüßen\nSascha Theil\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nMontag, 12. August 2024 um 17:53\nAn:\nRC-DE SI Service eMobility <service-emobility.si.de@siemens.com>\nCc:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nBetreff:\nRE: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello,\nPlease share the site intervention plan with the customer, they are waiting for the planned date and no communication has been shared yet.\nCheck the latest email from customer on this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-12T15:54:41Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cb112415-3d59-ef11-bfe3-000d3aba9474",
+            "subject": "AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Good Morning Mohini,\nthe charger is now online and running again.\nHas there been any site intervention? What has happened?\nKind regards,\nMarius Schneider\nVon:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nGesendet:\nDonnerstag, 8. August 2024 08:07\nAn:\nemobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nAW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nGood Morning Mohini,\nwhat is the status of this case now? When will a site visit take place?\nThis ticket is now open for nearly 10 days and there has not yet any site interventation taken place.\nWe expect an urgent solution for this case now.\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMittwoch, 31. Juli 2024 19:25\nAn:\nSchneider, Marius (Tank&Rast) <\nmarius.schneider@tank.rast.de\n>;\nemobility_support.si@siemens.com\n;\nemobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHello Marius,\nHope you are doing great.\nThank you for your response.\nWe will examine the issue and if necessary, will arrange a field service engineer as soon as possible.\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-13T06:27:22Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ca4cf0f-4459-ef11-bfe3-000d3a67b152",
+            "subject": "RE: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Marius,\nRamona war vergangene Woche vor Ort und hat den Charger wieder in Gang gesetzt.\nGrüße\nSascha",
+            "date": "2024-08-13T07:17:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22d9ed27-4459-ef11-bfe3-0022489a2913",
+            "subject": "RE: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Marius,\nRamona war vergangene Woche vor Ort und hat den Charger wieder in Gang gesetzt.\nGrüße\nSascha",
+            "date": "2024-08-13T07:18:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3fe71a9d-7e59-ef11-bfe3-000d3a67b152",
+            "subject": "AW: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Sascha,\ndanke für die Info! Wir freuen uns, dass Ramona das Problem behoben konnte.\nIst die Kreditkartenzahlung an der Säule 9bNsBh auf beiden Ladepunkten aktiviert? OCPP-backendseitig ist alles dafür aktiv.\nLG, Marius\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 13. August 2024 09:18\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>; emobility_support.si@siemens.com; emobility_support.si@siemens.com\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128\nHi Marius,\nRamona war vergangene Woche vor Ort und hat den Charger wieder in Gang gesetzt.\nGrüße\nSascha",
+            "date": "2024-08-13T14:16:22Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dd9681f8-395a-ef11-bfe3-002248a44b33",
+            "subject": "RE: AW: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Marius,\nhabe gerade noch mal KKT-Einbidnung überprüft - offenbar wurde das beim letzten Mal nicht korrekt übernommen. Sorry dafür!\nIst jetzt erfolgt. Und habe sicherheitshalber noch mal alle Charger in Lehrte überprüft. Dort waren die KKT Terminals bereits eingebunden.\nGibt bitte noch mal Bescheid, sobald es hier zu Unstimmigkeiten / auffällig wenigen KK-Zahlungen kommen sollte.\nGrüße\nSascha",
+            "date": "2024-08-14T12:37:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f207ff91-3a5a-ef11-bfe3-0022489a2913",
+            "subject": "RE: AW: AW: AW: ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:00797001128",
+            "body": "Hi Marius,\nhabe gerade noch mal KKT-Einbidnung überprüft - offenbar wurde das beim letzten Mal nicht korrekt übernommen. Sorry dafür!\nIst jetzt erfolgt. Und habe sicherheitshalber noch mal alle Charger in Lehrte überprüft. Dort waren die KKT Terminals bereits eingebunden.\nGibt bitte noch mal Bescheid, sobald es hier zu Unstimmigkeiten / auffällig wenigen KK-Zahlungen kommen sollte.\nGrüße\nSascha",
+            "date": "2024-08-14T12:41:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "289a9cb0-a15b-ef11-bfe3-0022489966da",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225083849",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-08-16T07:32:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f41fe652-be09-bf10-8bf4-454a2b8431a7",
+            "subject": null,
+            "body": "Internal discussion is going on with Mr.Sascha",
+            "date": "2024-08-16T07:34:05Z",
+            "extra": {}
+        },
+        {
+            "id": "4efe2d66-e15b-ef11-bfe2-0022489e9c81",
+            "subject": "A new case manager was assigned to 0371567 CRM:00225084055",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0371567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=765fe23c-424e-ef11-a81c-000d3adbcaeb",
+            "date": "2024-08-16T15:08:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b4871d1e-045e-ef11-bfe3-0022489a2913",
+            "subject": "ID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active CRM:01282000478",
+            "body": "Hello,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0371567.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-19T08:22:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70d302ce-045e-ef11-bfe3-0022489a2913",
+            "subject": "Ticket 0371567 has been closed. Are you satisfied with our provided solution? CRM:01282000479",
+            "body": "Hello,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0371567\nwith the title:\nID0371567-DC/Si-D/DE-[MP / R0 170002829] Failsafe Mode Active\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-19T08:27:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "36c56b0c-055e-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 17 days, 18 hours, 8 minutes and 34 seconds.",
+            "date": "2024-08-19T08:28:55Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "incident_id": "e6572cec-2a01-4d19-be9e-4787ff01f5c2",
+    "ticket_number": "0419524",
+    "title": "ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0",
+    "created_on": "2025-04-17T11:09:59Z",
+    "last_activity": "2025-05-07T16:53:46Z",
+    "age": "29144",
+    "description": "Reported behaviour/issue:\nAfter backend change AC lifetime energy starts from 0\nSolution:\nCharger has no AC Bauer Meter. In FW 6.1.3 is a virtual meter implemented that accumulate the energy consuption at this outlet. It is used as Meter Value in StartTransaction and StopTransaction.\nThe virtual Meter is set to 0 when the charger is restarted and then increased by every charging session.\nChild ticket created#0420692",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Bk40RC",
+    "stage": null,
+    "serial_number": "MP / P6 170000660",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b9f2d66f-b933-fb33-9704-a7559572938a",
+            "subject": "timestamp 1",
+            "body": "",
+            "date": "2025-04-17T11:12:55Z",
+            "extra": {}
+        },
+        {
+            "id": "6aab7d25-e91e-7d17-a0d6-e2daa5ed7d76",
+            "subject": "Timestamp 2",
+            "body": "",
+            "date": "2025-04-17T11:13:19Z",
+            "extra": {}
+        },
+        {
+            "id": "feca4e22-0b30-5781-a833-728e386a45ab",
+            "subject": "EnergyMeters",
+            "body": "",
+            "date": "2025-04-17T11:15:26Z",
+            "extra": {}
+        },
+        {
+            "id": "29bee8ef-9a1b-f011-9989-7c1e52361e39",
+            "subject": "ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nViljandi\nChargerID/Serial No.\n:\nBk40RC\nProblem Description\n: After backend change AC lifetime energy starts from 0\nTroubleshooting\n: Please allow us sometime to analyse the logs and we will get back to you soon with update.\nFor future reference, your case number is\n0419524\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-17T14:47:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "61d99582-168d-ec0f-a016-305fd64ad480",
+            "subject": "Note to L2",
+            "body": "Logs-\n2025-04-16T13:05:29.278099+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/9a39e1f06dfa[641]: OCPP: Send command: MeterValues (05540566-c539-43a5-ad31-dfe697e668f6) - {\"connectorId\":2,\"transactionId\":4278,\"meterValue\":[{\"timestamp\":\"2025-04-16T13:05:29.276Z\",\"sampledValue\":[{\"value\":\"402\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"measurand\":\"Energy.Active.Import.Register\"},{\"value\":\"10411\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\"},\n{\"value\":\"0\",\n\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\"}]}]}",
+            "date": "2025-04-17T18:32:45Z",
+            "extra": {}
+        },
+        {
+            "id": "53d8d513-5e1f-f011-9989-7c1e523508ba",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Hello Markus,\nHope you are doing well.\nWe are analyzing the issue with our expert team. Once we receive an update will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-22T09:42:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "85e107cf-1527-014c-a470-5e1e2cb29b57",
+            "subject": "Note to L2",
+            "body": "Currently active error flag-",
+            "date": "2025-04-22T17:46:28Z",
+            "extra": {}
+        },
+        {
+            "id": "aff9b179-f3f1-7c15-9ec3-222dc6b973ee",
+            "subject": "Note from RC",
+            "body": "Location:\nCharger backend provider was changed and after change was done, AC\nEnergy.Active.Import.Register started from 0 when physical display shows lifetime consumption around 2700kWh. Why lifetime consumption is not visible in Energy.Active.Import.Register? Software feature, bug or what?\nMessage from customer:\nI noticed that the first time CP sent it's MeterValues for each connector the #1 and #3 values for Energy.Active.Import.Register matched what their physical meters were displaying but #2 reported\nEnergy.Active.Import.Register value as 0 (meter display was showing around 2700kWh). Later when testing the AC charging the StartTransaction also reported meterStart=0 on first transaction and on later transactions the meterStart value matched what the last transaction ended at so it was not a transaction based reading but cumulative value.",
+            "date": "2025-04-22T17:49:31Z",
+            "extra": {}
+        },
+        {
+            "id": "72c7dfb8-f421-f011-998a-000d3adc93d1",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Hello Markus,\nHope you are doing well.\nThe Charger has no AC Bauer Meter. In FW 6.1.3 is a virtual meter implemented that accumulate the energy consumption at this outlet. It is used as Meter Value in StartTransaction and StopTransaction.\nThe virtual Meter is set to 0 when the charger is restarted and then increased by every charging session.\nIf this answers your query, shall we move ahead and close this ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-25T16:45:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d7120fbb-fc21-f011-998a-6045bddf3f78",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Hi,\nThank you for your response. Let’s keep the ticket still open, I will inform the customer so if the answer satisfies, then we can close the ticket.\nBR,\nMarkus",
+            "date": "2025-04-25T17:43:01Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73247b39-e024-f011-8c4d-6045bde0265d",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Dear Markus Roiha,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0419524\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-29T09:56:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c29ac88-b225-f011-8c4e-6045bdde4786",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Dear Markus Roiha,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0419524\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-30T11:02:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39102a4b-632b-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0 CRM:00921001678",
+            "body": "Dear Markus Roiha,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0419524\nbut have not received a response.\nAs we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0419524\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-07T16:49:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5de49f95-632b-f011-8c4e-7c1e52faf3c6",
+            "subject": "Ticket 0419524 has been closed. Are you satisfied with our provided solution? CRM:00921001692",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0419524\nwith the title:\nID0419524-DC/Si-D/EE-[Bk40RC]-After backend change AC lifetime energy starts from 0\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-07T16:51:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

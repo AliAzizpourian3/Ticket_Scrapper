@@ -1,0 +1,79 @@
+{
+    "incident_id": "6eff7698-ef0f-4c4d-be82-34c066a5b61d",
+    "ticket_number": "0443668",
+    "title": "ID0443668-DC/Si-D/TR-[Y2/RN 313392372015] Blackscreen issue",
+    "created_on": "2025-08-13T10:43:31Z",
+    "last_activity": "2026-02-09T12:25:26Z",
+    "age": "259302",
+    "description": "Reported behavior/issue: Blackscreen issue\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "yl1yJz",
+    "stage": "Resolved",
+    "serial_number": "Y2 / RN 313392372015",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "f124675a-3278-f011-b4cb-7ced8d41ec51",
+            "subject": "A new case manager was assigned to 0443668 CRM:00225242478",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0443668 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6eff7698-ef0f-4c4d-be82-34c066a5b61d",
+            "date": "2025-08-13T10:43:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31a5bb34-3378-f011-b4cb-7ced8d41ec51",
+            "subject": "A new case manager was assigned to 0443668 CRM:00225242484",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0443668 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6eff7698-ef0f-4c4d-be82-34c066a5b61d",
+            "date": "2025-08-13T10:49:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87feec47-b20e-474a-8bda-9e9689470c70",
+            "subject": null,
+            "body": "There is Blackscreen issue",
+            "date": "2025-08-13T10:50:23Z",
+            "extra": {}
+        },
+        {
+            "id": "2a937f73-3378-f011-b4cb-7c1e5236eee4",
+            "subject": "ID0443668-DC/Si-D/TR-[Y2/RN 313392372015] Blackscreen issue CRM:02889000423",
+            "body": "Dear Yunus Emre Temel,\nThank you for reaching\nout\nto eMobility Support. My name is\nSakshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nCevat Salın PO\nChargerID/Serial No.\n:\nyl1yJz\nProblem Description\n:\nBlackscreen issue\nFor future reference, your case number is\n0443668\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSakshi Rawat",
+            "date": "2025-08-13T10:51:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6816c777-447c-f011-b4cb-6045bddf319c",
+            "subject": "A new case manager was assigned to 0443668 CRM:00225244385",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0443668 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6eff7698-ef0f-4c4d-be82-34c066a5b61d",
+            "date": "2025-08-18T15:03:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "866395ac-457c-f011-b4cb-7c1e5275c124",
+            "subject": "ID0443668-DC/Si-D/TR-[Y2/RN 313392372015] Blackscreen issue CRM:02889000423",
+            "body": "Hi Emre-abi,\nPlease follow the guide on assuring that the problem comes from the HMI. If the chargers are already coming from factory updated, you can skip the update step.\nFor this Display controller:\nThe screen appeared to have a backlight and as such I recommended to update the Display driver because as stated, the DP cable was already the new one.\nAfter following the guide, when we got to the FW update, we could see that the LEDs on top were not light up, even though there were 24.6 V being applied to the controller and the firmware could not recognize the controller:\nInitially I believed that it might be a voltage drop from the power supply to the controller and as such we disconnected the cable from pin 4c of F11-XD21 and reconnect it.\nAfter this the voltage was 24.78 V and in the display terminal was 24.73 V:\nWe measured both sides of the connector to make sure it is not the connector that is faulty and concluded that the connector is not faulty.\nAfter you measure ~25V on the input to the controller and still not working please replace the HMI.\nI will send this to RC-TR queue.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-08-18T15:12:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

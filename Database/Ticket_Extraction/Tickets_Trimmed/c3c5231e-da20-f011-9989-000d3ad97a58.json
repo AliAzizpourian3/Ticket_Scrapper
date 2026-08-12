@@ -1,0 +1,118 @@
+{
+    "incident_id": "c3c5231e-da20-f011-9989-000d3ad97a58",
+    "ticket_number": "0420616",
+    "title": "ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session",
+    "created_on": "2025-04-24T07:02:51Z",
+    "last_activity": "2025-09-29T07:16:46Z",
+    "age": "89347",
+    "description": "Reported behavior/issue: customer was unable to stop his charging session\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "bM0EQk",
+    "stage": null,
+    "serial_number": "MP / P0 170001110",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ce580a0f-da20-f011-998a-000d3adc93d1",
+            "subject": "Webform_incident_SiCharge D_23-04-2025_SN: bM0EQk",
+            "body": "Dear bonhomme,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nbM0EQk\nThank you\neMobility Technical Support Team\nSehr geehrte/r bonhomme,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nbM0EQk\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-24T07:02:27Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "539d40a3-2074-0740-b3c8-88f7a2ba1aa8",
+            "subject": "Error Description",
+            "body": "A customer was unable to stop his charging session. In SCB i saw that the charger sent a StopTransaction to our backend, i dont know why, the car was at 29%. And after the StopTransaction we can see that the car was charging until it reach 100%, the customer couldnt stop the charging session, for our backend the transaction was stopped so we couldnt stop the session on Greenflux, no more metervalues came from the charger and we will be not paid for this transaction. OCPP: Send command: Stop Transaction (c2cc574b-de45-466e-9217-5076c984b123) - {\"meterStop\":146743487,\"timestamp\":\"2025-04- 23T13:35:09.054Z\",\"transactionData\":[{\"timestamp\":\"2025-04-23T13:35:09.055Z\",\"sampledValue\": [{\"value\":\"29\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"}, {\"value\":\"0\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":47243909}\nCould you investigate please ?",
+            "date": "2025-04-24T07:25:18Z",
+            "extra": {}
+        },
+        {
+            "id": "63ef742a-df20-f011-9989-7c1e5220227c",
+            "subject": "ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session CRM:02699000045",
+            "body": "Dear Bastien Bonhomme,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P0 170001110\nChargerID/Serial No.\n:\nbM0EQk\nProblem Description\n: Customer unable to stop his charging session\nFor future reference, your case number is\n0420616\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-24T07:38:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "05e2628b-500d-d4db-8398-e1703021ef71",
+            "subject": null,
+            "body": "Tue, 29 Apr 2025 14:26:01 GMT\n2025-04-29, 14:25:57\n2025-04-29T14:25:57.058623+00:00 [FW060103G1] sicharge-cp [local0:err] sicharge-cp-backend/4e55c64b6faa[643]: {\"stack\":\"Error: Transaction Status was: error\\n at /dist/services/paymentTerminal.js:362:35\\n at Generator.next (<anonymous>)\\n at fulfilled (/dist/services/paymentTerminal.js:5:58)\\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\"}\nTue, 29 Apr 2025 14:25:57 GMT\n2025-04-29, 14:25:57\n2025-04-29T14:25:57.057651+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/4e55c64b6faa[643]: Partial reversal returned with {\"status\":\"error\",\"message\":\"Could not convert receipt number to TA number\",\"details\":\"Could not convert receipt number to TA number\"}\nTue, 29 Apr 2025 14:25:57 GMT\n2025-04-29, 14:25:57\n2025-04-29T14:25:57.056384+00:00 [FW060103G1] sicharge-cp [local0:err] sicharge-cp-backend/4e55c64b6faa[643]: mqtt: pt/partialreversal/response {\"status\":\"error\",\"message\":\"Could not convert receipt number to TA number\",\"details\":\"Could not convert receipt number to TA number\"}\nTue, 29 Apr 2025 14:25:57 GMT\n2025-04-29, 14:25:56\n2025-04-29T14:25:56.868838+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-ccv/eab7b27c1856[643]: Requested ZVT Partial-Reversal 06 23: amount 4861, and currency EUR, receipt 2754",
+            "date": "2025-04-29T14:41:51Z",
+            "extra": {}
+        },
+        {
+            "id": "ae99fdb2-fd31-488c-943b-5c19462e0375",
+            "subject": "Handover from NOC to ES ",
+            "body": "Suspected Root Cause : Payment settlement issue\nProblem Description : customer unable to stop his charging session\nAction Performed (L2) :\nAnalysed the Logs\nCharger SW Version:\nv6.1.3\nReason for Handover (L3) :\nTerminate session with SSH\nLog analysis with timestamp :\nAttached in Notes\nAction Required\nAction by HQ : Terminate session",
+            "date": "2025-04-29T15:39:19Z",
+            "extra": {}
+        },
+        {
+            "id": "65ac68af-c7dc-9374-bf19-80afd8bfd2c3",
+            "subject": "Status Update: 13/05/2025",
+            "body": "Observed the abnormal behaviour -",
+            "date": "2025-05-13T06:36:52Z",
+            "extra": {}
+        },
+        {
+            "id": "43810a81-043b-f011-b4cb-7c1e52fc49d5",
+            "subject": "RE: ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session CRM:02699000045",
+            "body": "Hello,\nI dont know if I missed something, but I think I didn’t have answer about this issue.\nThank you\nBest regards\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 24 avril 2025 09:40\nÀ :\nBONHOMME Bastien (ENGIE Mobilités Electriques) <bastien.bonhomme@engie.com>\nObjet :\nID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session CRM:02699000045\nDear Bastien Bonhomme, Thank you for reaching out to eMobility Support. My name is Shashank, and I will be assisting you with your following query today: Product: Sicharge D - Charging Center Main Asset: MP / P0 170001110 ChargerID/Serial No.\n:\nDear Bastien Bonhomme,\nThank you for reaching out to eMobility Support. My name is Shashank, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / P0 170001110\nChargerID/Serial No.\n: bM0EQk\nProblem Description\n: Customer unable to stop his charging session\nFor future reference, your case number is 0420616, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2025-05-27T14:11:46Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4d5cd4bc-5948-f011-877a-000d3ad97a58",
+            "subject": "RE: ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session CRM:02699000045",
+            "body": "Dear Bastien,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Please be aware that I am working on this case and update you the status shortly.\nAdding Jessica in Loop\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-13T13:24:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da0f6af1-7489-1e14-96e4-5189dd24807c",
+            "subject": "Status update : 13/06/2025",
+            "body": "Planned to create a EVC3 ticket for the identified Bug",
+            "date": "2025-06-13T13:29:58Z",
+            "extra": {}
+        },
+        {
+            "id": "57c99235-049d-f011-b41b-7ced8d7236fd",
+            "subject": "RE: ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session CRM:02699000045",
+            "body": "Hello, do you have some news about this please ?\nThank you\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nENGIE VIANEO\nbastien.bonhomme@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-09-29T07:16:27Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a051e03d-049d-f011-b41b-7c1e5236eee4",
+            "subject": "Email sent to a closed case 'ID0420616-DC/Si-D/FR-[MP / P0 170001110] customer unable to stop his charging session (0420616)' CRM:00225263404",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0420616\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-09-29T07:16:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

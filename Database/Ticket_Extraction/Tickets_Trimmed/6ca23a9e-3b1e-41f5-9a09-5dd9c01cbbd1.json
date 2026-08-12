@@ -1,0 +1,94 @@
+{
+    "incident_id": "6ca23a9e-3b1e-41f5-9a09-5dd9c01cbbd1",
+    "ticket_number": "0452627",
+    "title": "ID0452627-DC/Si-D/DK-[MP/S3 170003353] Zero Sessions on DC1",
+    "created_on": "2025-09-29T08:39:06Z",
+    "last_activity": "2025-10-17T16:14:34Z",
+    "age": "26375",
+    "description": "We need help to identify why there are so many zero sessions on DC1 only. DC2 is running fine.\nWhat can be the reason for this, can we look in the EcoG log in any other way identify the reason.\nIt is a 5 hour drive to the charger, so we need to have a clear picture before we make the journey to the charger.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S3 170003353",
+    "case_nature_code": 580000001,
+    "chargerID": "3AHqra",
+    "additional_info": [
+        {
+            "id": "6ae93ccd-0f9d-f011-b41c-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0452627 CRM:00225263483",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0452627 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6ca23a9e-3b1e-41f5-9a09-5dd9c01cbbd1",
+            "date": "2025-09-29T08:39:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1f4aaf83-259d-f011-b41c-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0452627 CRM:00225263635",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0452627 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6ca23a9e-3b1e-41f5-9a09-5dd9c01cbbd1",
+            "date": "2025-09-29T11:14:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f093cff-d49d-f011-b41c-6045bde117fc",
+            "subject": "A new case manager was assigned to 0452627 CRM:00225264155",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0452627 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6ca23a9e-3b1e-41f5-9a09-5dd9c01cbbd1",
+            "date": "2025-09-30T08:11:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b6873a7d-1aa9-f011-bbd2-7ced8d425d60",
+            "subject": "0452627 - ID0452627-DC/Si-D/DK-[MP/S3 170003353] Zero Sessions on DC1 CRM:00472000418",
+            "body": "Hello Rasmus,\nCan you share the query used to track this issue? From the query I'm using I don't see any problem on DC1.\nI'm using this one:\nfields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SECC/\nand\n@message\nlike\n/session_stop/\n|\nfilter\n@logStream\nlike\n/3AHqra/\n|\nparse\n@message\n'*.*\"timestamp\":*,\"*'\nas\ntime\n,\nrest0\n,\nstop\n,\nrest1\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"energy\":*,'\nas\nenergy\n|\nparse\n@message\n'\"duration\":*,'\nas\nduration\n|\nparse\n@message\n'\"start\":*,'\nas\nstart\n|\nparse\n@message\n'\"source\":*,'\nas\nsource\n|\nparse\n@message\n'\"error\":*,'\nas\nerror\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n|\ndisplay\n@logStream\n,\ntime\n,\nstart\n,\nstop\n,\noutlet\n,\nEVMAC\n,\nenergy\n,\nduration\n,\nenergy/duration\nas\npower\n,\nsource\n,\nerror\n|\nlimit\n10000\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-10-14T16:26:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "761c2fef-98a9-f011-bbd2-7ced8d4259cd",
+            "subject": "RE: 0452627 - ID0452627-DC/Si-D/DK-[MP/S3 170003353] Zero Sessions on DC1 CRM:00472000418",
+            "body": "Hi Joao\nI do not know what and why, however the issue is not there anymore.\nIf you use, you filter at the data the case was made (15 days ago) you can see there was a lot of zero sessions.\nI ant explain why it is working now.\nSo for now, if you don’t have an explanation, then I don’t think  we need to do anything.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nSI E EU DK\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-15T07:31:26Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ba89fbe4-70ab-f011-bbd2-7c1e52362ec6",
+            "subject": "RE: 0452627 - ID0452627-DC/Si-D/DK-[MP/S3 170003353] Zero Sessions on DC1 CRM:00472000418",
+            "body": "Hello Rasmus,\nYou are correct, going back some weeks, we see many failed attempts. It's not single fault, we see failed session in different charging phases.\nFor what I see the major issue is during P02 Parameter Discovery, and this can be a fault on the ecog but also from the EV.\nThis case is the EV not requesting to proceed to go for the cable check and we end a session due timeout for this operation.\nIt's not easy to search now for a past issue. I will close the ticket since we have no activity to do here, if you have again bad performance on this charger let me know so that we can take a immediate actions.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-10-17T15:49:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6a2bd35a-74ab-f011-bbd2-7c1e52880fe1",
+            "subject": "Ticket 0452627 has been closed. Are you satisfied with our provided solution? CRM:00225273801",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0452627\nwith the title:\nID0452627-DC/Si-D/DK-[MP/S3 170003353] Zero Sessions on DC1\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-17T16:14:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

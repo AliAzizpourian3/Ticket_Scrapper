@@ -1,0 +1,389 @@
+{
+    "incident_id": "536deb3c-51e8-ef11-9342-000d3a697eb1",
+    "ticket_number": "0405858",
+    "title": "ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked",
+    "created_on": "2025-02-11T08:21:51Z",
+    "last_activity": "2025-12-16T14:01:16Z",
+    "age": "14429",
+    "description": "Reported behavior/issue:\nT\nhe charger was blocked. Both the hard and soft reset did not work. We restarted the charger ourselves by opening the door and give the reboot command then the charger worked again.\nOpen Ticket:\nNo\nRoot cause:  Main breaker 24V DC signal line noise issue, touch not working\nSolution:  HMI calibrated, Hotfix applied",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "STBpCB",
+    "stage": null,
+    "serial_number": "MP / S5 170003680",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "020bf336-51e8-ef11-9342-000d3a697eb1",
+            "subject": "Problem Sicharge D400 at Van Dijk. ",
+            "body": "Good morning,\nWe had a problem with our SichargeD400, the charger was blocked.\nBoth the hard and soft reset did not work. We restarted the charger ourselves by opening the\ndoor and give the reboot command then the charger worked again. Can you check the data from the charger\nto see what error message there was?\nThe serial number is shown in the photo in the attachment.\nMet vriendelijke groet,\nWith kind regards,\nJordy Keimes\nChief Sustainability Officer\n0345-544642\n|\n06-89921185\nJordy.Keimes@dijkauto.nl\ndijkauto.nl\nVAN DIJK WOERDEN\nRosmolenlaan 5\n3447 GL Woerden",
+            "date": "2025-02-11T08:21:43Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "27642fad-54e8-ef11-9342-0022489f383f",
+            "subject": "A new case manager was assigned to 0405858 CRM:00225162418",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0405858 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=536deb3c-51e8-ef11-9342-000d3a697eb1",
+            "date": "2025-02-11T08:46:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a43690f6-59e8-ef11-9342-000d3a697eb1",
+            "subject": "ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Dear Jordy Keimes,\nThank you for reaching\nout\nto eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S5 170003680\nChargerID/Serial No.\n:\nSTBpCB\nProblem Description\n: Hard & Soft reset not worked\nTroubleshooting\n: We've checked the logs, and the charger accepted both the hard and soft resets. We will thoroughly analyze the sequence of events in the logs and get back to you.\nFor future reference, your case number is\n0405858\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-11T09:24:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bdb0cbdd-9ad1-cb6b-b6a8-1b0680f92521",
+            "subject": null,
+            "body": "Tue, 11 Feb 2025 07:05:26 GMT\n2025-02-11, 07:05:26\n2025-02-11T07:05:26.584963+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[674]: OCPP: Received command: Reset (19a35552-3a47-43f7-928b-df3863011cd8) - {\"type\":\"Hard\"}\nTue, 11 Feb 2025 07:05:26 GMT\n2025-02-11, 07:05:26\n2025-02-11T07:05:26.647736+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[674]: OCPP: Send result: Reset (19a35552-3a47-43f7-928b-df3863011cd8) - {\"status\":\"Accepted\"}",
+            "date": "2025-02-12T03:47:30Z",
+            "extra": {}
+        },
+        {
+            "id": "e1afb01a-f4e8-ef11-9342-000d3a67d7cb",
+            "subject": "RE: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Dear Jordy Keimes,\nThank you for your time and patience.\nFollowing our analysis of the logs, we have observed the following sequence of events:\nThe charger underwent a\nhard reboot\nat 2025-02-11T07:05:26, successfully processed the reboot, and was back online on OCPP at 2025-02-11T07:09:42.\nUpon coming online, the charger remained in the\n\"Startup Test\"\nphase. Shortly after, at 2025-02-11T07:09:57, the charger received a\nsoft reboot command\nfrom the OCPP backend.\nIt appears that the reset commands are being sent immediately after the charger reconnects to OCPP, resulting in it being rebooted before completing the necessary startup tests.\nWe recommend allowing a brief delay after the charger is back online to ensure it has sufficient time to complete the\nstartup test\nprocess before initiating any reset commands. This will help prevent unnecessary reboots during the initialization phase.\nPlease let us know if you require further clarification or assistance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T03:47:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5fc90950-17e9-ef11-9341-0022489a2456",
+            "subject": "RE: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Goodmorning,\nThanks for the recommendation, but the charger also had a hard reset on February 10, 2025 at 5:41 PM and that did not solve the problem.\nThe charger has had more than enough time to come online. Can you look again in the data to see where the error came from?\nThe status in the backend was: blocked instead of ready to load.\nThanks in advance. Kind regards, Jordy\nMet vriendelijke groet,\nWith kind regards,\nJordy Keimes\nChief Sustainability Officer\n0345-544642\n|\n06-89921185\nJordy.Keimes@dijkauto.nl\ndijkauto.nl\nVAN DIJK WOERDEN\nRosmolenlaan 5\n3447 GL Woerden\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\nwoensdag 12 februari 2025 06:03\nAan:\nJordy Keimes <Jordy.Keimes@dijkauto.nl>\nCC:\nLuuk Laponder <Luuk.Laponder@vandijkenergy.nl>; Bruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nDear Jordy Keimes,\nThank you for your time and patience.\nFollowing our analysis of the logs, we have observed the following sequence of events:\nThe charger underwent a\nhard reboot\nat 2025-02-11T07:05:26, successfully processed the reboot, and was back online on OCPP at 2025-02-11T07:09:42.\nUpon coming online, the charger remained in the\n\"Startup Test\"\nphase. Shortly after, at 2025-02-11T07:09:57, the charger received a\nsoft reboot command\nfrom the OCPP backend.\nIt appears that the reset commands are being sent immediately after the charger reconnects to OCPP, resulting in it being rebooted before completing the necessary startup tests.\nWe recommend allowing a brief delay after the charger is back online to ensure it has sufficient time to complete the\nstartup test\nprocess before initiating any reset commands. This will help prevent unnecessary reboots during the initialization phase.\nPlease let us know if you require further clarification or assistance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T07:59:42Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b9086819-5ee9-ef11-9341-7c1e5237e811",
+            "subject": "FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hi,\nIn addition to the previous e-mail. Today again the same problem. Fortunately after the second hard reset the charger came back online. After the first hard reset the charger was blocked and did not switch to the ready status. Following your previous advice we have kept a longer time for the second reset. We would like to know the cause based on the data and what action to take.\nVan:\nJordy Keimes\nVerzonden:\nwoensdag 12 februari 2025 08:59\nAan:\nemobility_support.si@siemens.com\nCC:\nLuuk Laponder <Luuk.Laponder@vandijkenergy.nl>; Bruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nGoodmorning,\nThanks for the recommendation, but the charger also had a hard reset on February 10, 2025 at 5:41 PM and that did not solve the problem.\nThe charger has had more than enough time to come online. Can you look again in the data to see where the error came from?\nThe status in the backend was: blocked instead of ready to load.\nThanks in advance. Kind regards, Jordy\nMet vriendelijke groet,\nWith kind regards,\nJordy Keimes\nChief Sustainability Officer\n0345-544642\n|\n06-89921185\nJordy.Keimes@dijkauto.nl\ndijkauto.nl\nVAN DIJK WOERDEN\nRosmolenlaan 5\n3447 GL Woerden\nVan:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nVerzonden:\nwoensdag 12 februari 2025 06:03\nAan:\nJordy Keimes <\nJordy.Keimes@dijkauto.nl\n>\nCC:\nLuuk Laponder <\nLuuk.Laponder@vandijkenergy.nl\n>; Bruin, Erik <\nerik.bruin@siemens.com\n>; Iovine, Monica <\nmonica.iovine@siemens.com\n>\nOnderwerp:\nRE: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nDear Jordy Keimes,\nThank you for your time and patience.\nFollowing our analysis of the logs, we have observed the following sequence of events:\nThe charger underwent a\nhard reboot\nat 2025-02-11T07:05:26, successfully processed the reboot, and was back online on OCPP at 2025-02-11T07:09:42.\nUpon coming online, the charger remained in the\n\"Startup Test\"\nphase. Shortly after, at 2025-02-11T07:09:57, the charger received a\nsoft reboot command\nfrom the OCPP backend.\nIt appears that the reset commands are being sent immediately after the charger reconnects to OCPP, resulting in it being rebooted before completing the necessary startup tests.\nWe recommend allowing a brief delay after the charger is back online to ensure it has sufficient time to complete the\nstartup test\nprocess before initiating any reset commands. This will help prevent unnecessary reboots during the initialization phase.\nPlease let us know if you require further clarification or assistance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T16:26:25Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "64e53aec-60e9-ef11-9341-000d3ab1a06e",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Dear Jordy Keimes,\nThank you for your feedback.\nWe will review the details and get back to you shortly. Please allow us some time to investigate.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-12T16:46:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec5a13d2-f60c-2a0a-8dc0-d4532321fac2",
+            "subject": "Log Analysis of 12th Feb 15:30 to 16:30 UTC",
+            "body": "First hard reset from the OCPP backend was accepted by the charger, but it seems the main breaker wasn’t turned on after the reboot, causing Fast Shutdown and grouping to fail.\n2025-02-12T15:47:27.355755+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[636]: OCPP: Received command: Reset (213a3e92-3fa7-4091-9663-84520ad46e16) -\n{\"type\":\"Hard\"}\n025-02-12T15:50:49.297122+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"ERROR\"t\nIn the second attempt of the hard reset from the OCPP backend, the main breaker was turned on, the charger reached the next stage, and successfully rebooted with no errors.\n2025-02-12T16:06:18.527410+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[666]: OCPP: Received command: Reset (acfa7607-5e19-42b5-b8f3-a8b8f039fdeb) -\n{\"type\":\"Hard\"}\n2025-02-12T16:11:55.097854+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"REQUEST CONVERTER SERIALNUMBERS\"",
+            "date": "2025-02-15T06:58:43Z",
+            "extra": {}
+        },
+        {
+            "id": "b4fa9c56-2dcf-2699-9bf1-57d0074d08a2",
+            "subject": "Log analysis: 11th Feb, from 07:00 to 08:00",
+            "body": "On 11th Feb, from 07:00 to 08:00, after a reboot from the OCPP backend, it seems the main breaker was not turned on. The customer sent the reset command four times consecutively, but the charger did not become healthy, as the logs show the main breaker was not turned on.\n2025-02-11T07:05:26.584963+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[674]: OCPP: Received command: Reset (19a35552-3a47-43f7-928b-df3863011cd8) -\n{\"type\":\"Hard\"}\n2025-02-11T07:08:48.943153+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"ERROR\"\n2025-02-11T07:09:57.707836+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[673]: OCPP: Received command: Reset (c0e52433-fdbb-4331-a0b9-a61533b0e99b) -\n{\"type\":\"Soft\"}\n2025-02-11T07:13:20.416063+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"ERROR\"\n2025-02-11T07:17:48.229184+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[678]: OCPP: Received command: Reset (fe351c5d-c8f4-42e9-8f60-a1122772faad) -\n{\"type\":\"Hard\"}\n2025-02-11T07:21:10.422544+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"ERROR\"\n2025-02-11T07:28:26.232057+00:00 sicharge-cp [local0:info] sicharge-cp-backend/44e5d31a9326[668]: OCPP: Received command: Reset (69536dfb-18d8-4810-8307-551931128e42) -\n{\"type\":\"Soft\"}\n2025-02-11T07:31:50.360911+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"ERROR\"\n2025-02-11T07:37:51.030124+00:00 swcpu [user:debug] [CRS] Reboot command ... received from ISAR >>\nPhysical Power cycle\n2025-02-11T07:43:09.374477+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> “ERROR”\n2025-02-11T07:43:23.403290+00:00 swcpu [user:debug] [CGR] OperationMode\n\"SWITCH_MAIN_BREAKER_ON\"\" --> \"REQUEST CONVERTER SERIALNUMBERS\"\nAfter a physical power cycle, the main breaker was turned on, and the charger became healthy. The logs are attached for reference.",
+            "date": "2025-02-15T07:30:07Z",
+            "extra": {}
+        },
+        {
+            "id": "6d72b3e6-75eb-ef11-9341-6045bddd1864",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hi Jordy Keimes,\nI hope you are doing well.\nWe are currently working on the issue and kindly request some additional time to get back to you. In the meantime, we have noticed that the charger is running an older firmware version. Updating to the latest firmware could bring significant improvements.\nIf you would like to proceed with the update, please let us know your preferred date and time, and we will be happy to schedule the upgrade at your convenience.\nThank you for your time and patience in advance.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-15T08:21:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47961e08-0a80-ce8c-8c0b-2b7c4cb454cc",
+            "subject": "Note to L2",
+            "body": "Issue:\nThe Si-D 400 kW charger did not become healthy after both soft and hard resets from the OCPP backend.\nAnalysis:\nAfter rebooting the charger from the OCPP backend, the logs indicate that the main breaker was not turning on. Detailed logs for the 11th and 12th of February are attached. Please review the summary in the notes.\nNext Steps:\nCheck the issue with the ES team and address it.\nAdditionally, the charger is currently running on FW v4.0.11. We have requested an update to the latest version, so please proceed based on customer feedback.",
+            "date": "2025-02-15T08:49:06Z",
+            "extra": {}
+        },
+        {
+            "id": "f707341b-cbc1-e5d1-84cd-a70ba2f15737",
+            "subject": "Notes",
+            "body": "Awaiting response from Sambath, scheduled call on Monday",
+            "date": "2025-02-15T15:44:51Z",
+            "extra": {}
+        },
+        {
+            "id": "d7010297-07ed-ef11-9342-6045bdde1b10",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Good morning,\nHow long does the firmware update take? Our preference is around 9:00 PM local time.\nPlease schedule the update as soon as possible.\nThe same problem has occurred on February 14\nth\n, the charger is in blocked status.\nThe charger cannot be brought online with a hard reset.\nWe must open the charger and switch it off and on completely.\nThe charger will then function again for a few days until the problem occurs again.\nThis morning there was a problem with the right-side connection number 2. This showed an internal error in the back end and the customer could not charge. Lucky for us, the other side nr 1 worked in this case.\nCan you give the problem a higher priority? We have been having the same problem for days!\nThanks.\nRegards,\nJordy\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\nzaterdag 15 februari 2025 09:42\nAan:\nJordy Keimes <Jordy.Keimes@dijkauto.nl>\nCC:\nBruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nHi Jordy Keimes,\nI hope you are doing well.\nWe are currently working on the issue and kindly request some additional time to get back to you. In the meantime, we have noticed that the charger is running an older firmware version. Updating to the latest firmware could bring significant improvements.\nIf you would like to proceed with the update, please let us know your preferred date and time, and we will be happy to schedule the upgrade at your convenience.\nThank you for your time and patience in advance.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-17T08:17:15Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7269191c-91cf-d71a-8df2-ed34752635df",
+            "subject": "Notes for L2",
+            "body": "Background:\nRefer notes from Sominath.\nThe charger did not become healthy with a hard reset from OCPP backend. Charger needs to switch off and on completely physically. The charger will then function again for a few days until the problem occurs again. Also Outlet 2 does not work as per customer (On SCB it seems to be available).\nAI:\nneed to update to latest FW version at 9:00 PM local time (approx 1:30 am IST).\nCase background is explained to Sambath, he will be discussing/analyzing the case after sometime today (in B shift). Kindly contact him whoever picks the case and revert customer urgently.",
+            "date": "2025-02-17T08:48:10Z",
+            "extra": {}
+        },
+        {
+            "id": "a684d7e5-4aed-ef11-9341-7c1e52fbe252",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Jordy,\nThank you for your patience. We will proceed with the firmware update at your requested time.The update process should be completed as efficiently as possible.\nWe hope this update resolves the issue you’ve been experiencing. However, if the problem persists, we will continue to analyze it further with the assistance of our experts to ensure a resolution.\nPlease don’t hesitate to reach out if you have any questions or concerns.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-17T16:19:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "341bbd0c-7c09-f0a9-aaab-73d623a3c215",
+            "subject": "Note to L2",
+            "body": "Background:\nRefer notes from Sominath and Vaishnavi.\nAI:\nDiscussed the issue with Sambath, and he was not aware of the error. He advised updating the firmware  to the latest version. If further analysis is needed, he is available to support. Please proceed with the firmware update\nversion at 9:00 PM local time (approx 1:30 am IST).",
+            "date": "2025-02-17T16:33:07Z",
+            "extra": {}
+        },
+        {
+            "id": "d6e2c0cd-cfed-ef11-9341-000d3a6717e6",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Another malfunction last night, we really need an update soon!  It's been a week, I can't imagine that reading data takes that long!\nWe need an answer as soon as possible!\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\nmaandag 17 februari 2025 17:26\nAan:\nJordy Keimes <Jordy.Keimes@dijkauto.nl>\nCC:\nBruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nHello Jordy,\nThank you for your patience. We will proceed with the firmware update at your requested time.The update process should be completed as efficiently as possible.\nWe hope this update resolves the issue you’ve been experiencing. However, if the problem persists, we will continue to analyze it further with the assistance of our experts to ensure a resolution.\nPlease don’t hesitate to reach out if you have any questions or concerns.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-18T08:10:29Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "306f0148-e9ed-ef11-9341-7c1e52fb452c",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Jordy,\nI hope you're doing well.\nWe have made remote configuration changes. The charger is now healthy, with no active error flags, and all outlets are available.\nCould you kindly verify from your side and confirm that everything is functioning as expected?\nIf you have any questions or encounter any issues, please feel free to let us know.\nLooking forward to your confirmation.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-18T11:12:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53223a36-1697-0a7e-b2f5-978de64c8b0c",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-18T14:20:18Z",
+            "extra": {}
+        },
+        {
+            "id": "d5689852-9f9c-0ac5-933a-64ff05981b11",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-18T14:20:52Z",
+            "extra": {}
+        },
+        {
+            "id": "196bfcad-333a-b79b-9018-711609615705",
+            "subject": "Note from Erik",
+            "body": "Unfortunately, it is not working as it should yet.\nThe customer just gave the following feedback:\nThe charger is charging, but the display doesn’t seem to work properly\nThe screen switches on, but buttons cannot be clicked or seem to be in the wrong place\nSoft reset has been conducted, but the charger is blocked again, same as before\nHe will physically hard reset the charger",
+            "date": "2025-02-18T14:32:57Z",
+            "extra": {}
+        },
+        {
+            "id": "8cdceae9-689d-a7aa-9ae2-033d17cccf02",
+            "subject": "AWS",
+            "body": "",
+            "date": "2025-02-18T14:41:20Z",
+            "extra": {}
+        },
+        {
+            "id": "65290b35-9e0f-8310-907d-254ba30904f5",
+            "subject": "Note from Customer",
+            "body": "Unfortunately, the charger is not working again. On channels 1 and 2, no charging sessions are possible despite the charger being ready and the LED showing green. Additionally, after the firmware update, the screen is malfunctioning, making it impossible to select what you want. I will send you a video of the screen via WhatsApp.\nWe urgently need a solution for this. This morning, we had to send away two trucks that have almost no alternatives. Even after more than a week, we have not received a concrete solution. Our backend shows so many error messages that I can't imagine there are no issues when Siemens logs in.\nI also don't dare to perform a reset because then the charger will not come back online.\nLooking forward to hearing from you. Thanks in advance.",
+            "date": "2025-02-19T09:43:10Z",
+            "extra": {}
+        },
+        {
+            "id": "a9847047-4810-6424-bb46-f6acbfadf2d0",
+            "subject": "Errors on customer backend",
+            "body": "",
+            "date": "2025-02-19T09:48:03Z",
+            "extra": {}
+        },
+        {
+            "id": "eee27e1c-4202-90c6-8716-94fdab90ed1c",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-19T09:48:30Z",
+            "extra": {}
+        },
+        {
+            "id": "3a6fe64b-c4ad-d72e-b702-e1618429dc22",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-19T09:57:30Z",
+            "extra": {}
+        },
+        {
+            "id": "2e248b6e-afee-ef11-9341-7c1e5237e811",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Erik and Jordy,\nI hope this message finds you well.\nWe need someone on-site to check the connections for QA1(mainbreaker).\nCould you please confirm your availability?\nLooking forward to your response.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T10:51:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cbd138d2-afee-ef11-9341-0022489a2456",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Erik and Jordy,\nI hope this message finds you well.\nWe need someone on-site to check the connections for QA1(mainbreaker).\nCould you please confirm your availability?\nLooking forward to your response.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T10:54:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d5f5e49b-c6ee-ef11-9342-6045bdde1b10",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Jordy,\nWe wanted to inform you that a hotfix has been successfully implemented from our R&D team. To ensure everything functions properly, we kindly request a reboot of the charger.\nCould you please let us know when it would be most convenient for you to perform the reboot? so we can avoid any disruption to your operations,\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T13:37:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aa37175a-c9ee-ef11-9341-000d3ab1a06e",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Jordy,\nWe wanted to inform you that a hotfix has been successfully implemented from our R&D team. To ensure everything functions properly, we kindly request a reboot of the charger.\nCould you please let us know when it would be most convenient for you to perform the reboot? so we can avoid any disruption to your operations,\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T13:56:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "29e88cb9-2cf0-d8d0-a5ec-7b4b59360789",
+            "subject": "Note to L2",
+            "body": "Hotfix done from R&D, Rebooted the charger.\nNow charger is in healthy condition.\nCustomer will check the charger tomorrow at 8AM CET.If issue persist technician will go on site to check the connections of QA1.",
+            "date": "2025-02-19T16:03:49Z",
+            "extra": {}
+        },
+        {
+            "id": "47313321-81ef-ef11-9341-000d3add0e90",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hi Jordy,\nTrust all is well,\nMay I know, if you have any feedback about the charger, hopefully after yesterday's fix everything is working as it should be.\nLooking forward to hearing from you.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T11:52:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6ed01cf-feef-ef11-9342-000d3a67d7cb",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hello Jodry,\nGreetings of the day!\nMay you please give us an update on the charger's health. From the siemens backend the charger is healthy, also there was couple of charging sessions conducted in last 24 hours.\nIf there are no more issues, shall be close this case now?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-21T02:52:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5061c45-2ef0-ef11-9341-000d3add0e90",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hi Support team,\nThe charger works great again! Thanks for the support!\nRegards,\nJordy\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\ndonderdag 20 februari 2025 12:55\nAan:\nLuuk Laponder <Luuk.Laponder@vandijkenergy.nl>; Jordy Keimes <Jordy.Keimes@dijkauto.nl>\nCC:\nBruin, Erik <erik.bruin@siemens.com>\nOnderwerp:\nRE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716\nHi Jordy,\nTrust all is well,\nMay I know, if you have any feedback about the charger, hopefully after yesterday's fix everything is working as it should be.\nLooking forward to hearing from you.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-21T08:31:42Z",
+            "extra": {
+                "sender": "jordy.keimes@dijkauto.nl",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "81bd0fbc-2ff0-ef11-9341-7c1e527622e8",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Dear Jordy,\nThanks for your confirmation, as your issue has been resolved for case # 0405858, the case is now closed.\nProblem Description\n:  Hard & Soft reset not worked\nResolution\n: Charger FW updated to v6.0.3, HMI Calibrated, & Hot fix applied.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-21T08:42:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6cc55d46-fff9-84d8-a800-06baaf76635d",
+            "subject": "Summary",
+            "body": "V6.0.3 installed remotely by NOC\nHMI Calibrated by Sambath remotely\nBreaker (PLC hotfix ) applied by Lukas",
+            "date": "2025-02-21T08:48:56Z",
+            "extra": {}
+        },
+        {
+            "id": "4f8623b4-30f0-ef11-9341-7c1e527622e8",
+            "subject": "Ticket 0405858 has been closed. Are you satisfied with our provided solution? CRM:00251000482",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0405858\nwith the title:\nID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-21T08:49:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f20e068e-9dfa-ef11-bae2-000d3adda3e1",
+            "subject": "RE: FW: ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked CRM:00797001716",
+            "body": "Hi Reetesh,\nThe customer (in cc) just reached out again that there seems to be another error. Please find his translated message below.\nCould this be related? How best to proceed?\nKind regards,\nErik\nSee below. Yesterday, again an error message. Customer could not charge. Everything was functioning, but the charging session did not take place. Tried with multiple charging cards and with both cables. We performed a reset and the charger worked well afterwards. In our backend, it says \"internal error\", so I think there must also be an error message visible from Siemens' side. Could you please inquire what the error message was? And whether it is related to the previous issue.",
+            "date": "2025-03-06T15:13:35Z",
+            "extra": {
+                "sender": "erik.bruin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2d848a94-9dfa-ef11-bae2-7c1e52faf3c6",
+            "subject": "Email sent to a closed case 'ID0405858-DC/Si-D/NL-[MP / S5 170003680] Hard & Soft reset not worked (0405858)' CRM:00225174177",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0405858\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-06T15:13:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

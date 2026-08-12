@@ -1,0 +1,112 @@
+{
+    "incident_id": "747a3d26-1ff0-48bf-b19d-27f0ec22153b",
+    "ticket_number": "0413011",
+    "title": "ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline",
+    "created_on": "2025-03-17T07:42:42Z",
+    "last_activity": "2026-01-20T12:57:03Z",
+    "age": "3376",
+    "description": "Reported behavior/issue:\nOCPP offline\nRoot cause: NA\nSolution:\nInserted the sim in and out again.\nOn DAMEX Sanctioned List:\nno\nWarranty Status:\nnot visible on dashboard",
+    "type": 3,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S0 170004167",
+    "case_nature_code": 580000001,
+    "chargerID": "bucVuF",
+    "additional_info": [
+        {
+            "id": "46b772f8-8adc-8bff-9434-05a209c69324",
+            "subject": "From RC",
+            "body": "Charger keeps going OCPP offline during operations. OCPP backend is D360, please check if this is a charger/router issue, or backend issue.\nMon, 17 Mar 2025 07:42:36 GMT\n2025-03-17, 07:42:36\n2025-03-17T07:42:36.233380+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: OCPP-Central-System connection closed.\nMon, 17 Mar 2025 07:42:40 GMT\n2025-03-17, 07:42:36\n2025-03-17T07:42:36.233798+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: OCPP connection: OFFLINE\nMon, 17 Mar 2025 07:42:36 GMT\n2025-03-17, 07:42:36\n2025-03-17T07:42:36.232222+00:00 sicharge-cp [local0:err] sicharge-cp-backend/0bb5d40d0c20[705]: OCPP-Central-System connection error: Unexpected server response: 404\nMon, 17 Mar 2025 07:42:36 GMT\n2025-03-17, 07:42:36\n2025-03-17T07:42:36.230609+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: OCPP connection: OFFLINE\nMon, 17 Mar 2025 07:42:36 GMT\n2025-03-17, 07:42:32\n2025-03-17T07:42:32.064748+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: [ensureOCPPConnection] router2 - [fixGsmControl] sucessfully retrieved network information via gsmctl, we're done here\nMon, 17 Mar 2025 07:42:32 GMT\n2025-03-17, 07:42:32\n2025-03-17T07:42:32.063797+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: [ensureOCPPConnection] router2 - connection info: {\"stdout\":\"+QNWINFO: \\\"GSM\\\",\\\"24201\\\",\\\"GSM 900\\\",66\\r\\n\\r\\n\",\"stderr\":\"\"}\nMon, 17 Mar 2025 07:42:32 GMT\n2025-03-17, 07:42:31\n2025-03-17T07:42:31.415460+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: [ensureOCPPConnection] router2 - signal strength: {\"stdout\":\"+QCSQ: \\\"GSM\\\",48\\r\\n\\r\\n\",\"stderr\":\"\"}\nMon, 17 Mar 2025 07:42:31 GMT\n2025-03-17, 07:42:31\n2025-03-17T07:42:31.049184+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: Connecting to OCPP-Central-System \"wss://api.eu.depot360.siemens.com/ChargingStations/ocpp/170004167\"\nMon, 17 Mar 2025 07:42:31 GMT\n2025-03-17, 07:42:30\n2025-03-17T07:42:30.814898+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0bb5d40d0c20[705]: [ensureOCPPConnection] router2 - current operator: {\"stdout\":\"ERROR\\r\\n\",\"stderr\":\"\"}",
+            "date": "2025-03-17T10:57:03Z",
+            "extra": {}
+        },
+        {
+            "id": "36fe33f4-2103-f011-bae2-000d3ad990ba",
+            "subject": "ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Dear Simen Aarre,\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nALN 222\nChargerID/Serial No.\n:\nMP / S0 170004167\nProblem Description\n:\nOCPP offline\nCould you please allow us some time to check the issue. We will get back to you shortly.\nFor future reference, your case number is\n0413011\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T11:21:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a72f4594-4703-f011-bae2-000d3ad990ba",
+            "subject": "RE: ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Hello Simen,\nGreetings of the day!\nWe have checked Router settings and found that-\nIt shows SIM card not inserted\nWe suspect that- either SIM is not working or SIM port in Router is not working. Hence, need to check the both.\nWe recommend you to visit the site with working SIM and spare router. And your laptop should have working Companion tool to configure router if required.\nFirst you need to take out and check if SIM is working, and then you need to insert it properly (Not upside down).\nAlso check if it has active data plan.\nIf its not working, then check with the new SIM.\nEven if it does not work, need to replace router.\nDo let us know if you have any queries?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T15:50:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d0ee9c0-cc03-f011-bae3-6045bde0265d",
+            "subject": "RE: ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Hi,\nThanks we will check onsite.\n/Simen",
+            "date": "2025-03-18T07:44:05Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "01587085-e203-f011-bae2-7c1e5275fbd2",
+            "subject": "RE: ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Hi, router is okay again.\nBad connection with SIM card. Inserted the sim in and out again.\n/Simen",
+            "date": "2025-03-18T10:19:52Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2912c257-1204-f011-bae3-000d3ad97a58",
+            "subject": "RE: ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Hi Simen,\nThanks for the response.\nPlease let us know, if we can close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T16:02:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec3a986d-9b04-f011-bae3-000d3ad97a58",
+            "subject": "RE: ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001592",
+            "body": "Hi, yes you can close this ticket.\n/Simen",
+            "date": "2025-03-19T08:23:29Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9d57cae4-d904-f011-bae3-7c1e52768c07",
+            "subject": "ID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline CRM:00579001598",
+            "body": "Dear Simen Aarre,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0413011, the case is now closed.\nProblem Description\n: OCPP offline\nResolution\n:\nInserted the sim in and out again.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-19T15:50:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2595401e-da04-f011-bae3-7c1e52768c07",
+            "subject": "Ticket 0413011 has been closed. Are you satisfied with our provided solution? CRM:00579001599",
+            "body": "Dear Simen,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0413011\nwith the title:\nID0413011-DC/Si-D/NO-[MP / P8 170004167] OCPP offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-19T15:52:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

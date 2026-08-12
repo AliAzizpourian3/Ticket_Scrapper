@@ -1,0 +1,171 @@
+{
+    "incident_id": "adc54b23-2c60-49b2-bc89-8e7e3d2407a7",
+    "ticket_number": "0373043",
+    "title": "ID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed",
+    "created_on": "2024-08-07T07:07:54Z",
+    "last_activity": "2025-12-16T14:06:50Z",
+    "age": "2520",
+    "description": "Reported behavior/ issue:\nCharging failed\nRoot cause:\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "oGWeFq",
+    "stage": null,
+    "serial_number": "MP / P3 170000340,MP / P3 170000343",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f5dc53ca-8b54-ef11-bfe3-0022489961b0",
+            "subject": "A new case manager was assigned to 0373043 CRM:00225079966",
+            "body": "Ferdinand Reisch was assigned as new Case Manager for case 0373043 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=adc54b23-2c60-49b2-bc89-8e7e3d2407a7",
+            "date": "2024-08-07T07:08:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f3c1359-7978-274f-9e99-1f08238235f2",
+            "subject": "First Entry",
+            "body": "We would like to have the EcoG logs retrived from these chargers for further investigation.\nThis is a public charger, so any vehicle can charger.\nWe had a Scania P25 Gen1 (truck ) try to charge at a public SiCharge D, but it failed, was wondering if you would be able to retrieve the EcoG logs? Chargers are 170000340 and 170000343\nWe already have assess the following, thus requires V2G logs to confirm beliefs.\nCharger:  170000343\nVehicle plugged in at 2024-08-05T22:16 UTC\n2024-08-05T22:16 OCPP: Received command: RemoteStartTransaction - idTag:0027009,connectorId:3\nRemote start was received and session starting its checks, but failed with communication between vehicle and charger (requested additional logs) PreCharge Voltage too low/high\nAnother remote start was sent.\n2024-08-05T22:17 OCPP: Received command: RemoteStartTransaction - idTag:0027010,connectorId:3\nThis was accepted and started charging, then a remotestoptransaction was received from the OCPP backend.\n2024-08-05T22:18OCPP: Received command: RemoteStopTransaction - transactionId:27011\nThis stopped the charger session.\nWe need to check with CPO what triggered this remotestop from their side.\nCharger:170000340\nVehicle was plugged in at 2024-08-05T22:25:54 UTC\nThen the vehicle sent through the MAC address for autocharge, this was blocked and did not start the session and no remote session was requested.\n2024-08-05T22:26 OCPP:Send command: Authorize - IdTag:VID:[Dummy MAC]\n2024-08-05T22:26 OCPP: Received result: Authorize idTagInfo:status:Blocked,parentIdTag:U0001529",
+            "date": "2024-08-07T07:10:08Z",
+            "extra": {}
+        },
+        {
+            "id": "f8a6472a-8c54-ef11-bfe3-0022489961b0",
+            "subject": "Uploaded document oGWeFq-06082024.csv.",
+            "body": "",
+            "date": "2024-08-07T07:10:50Z",
+            "extra": {}
+        },
+        {
+            "id": "0da7472a-8c54-ef11-bfe3-0022489961b0",
+            "subject": "Uploaded document oiCW7u-06082021.csv.",
+            "body": "",
+            "date": "2024-08-07T07:10:52Z",
+            "extra": {}
+        },
+        {
+            "id": "82a1c11b-c6f9-7bd6-a01f-b26c0cd1d6f7",
+            "subject": "Entry from RC",
+            "body": "Logs attached for your review (from which the below summary was drawn).",
+            "date": "2024-08-07T07:11:18Z",
+            "extra": {}
+        },
+        {
+            "id": "4588bdc3-8c54-ef11-bfe3-000d3a67b152",
+            "subject": "A new case manager was assigned to 0373043 CRM:00225079970",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0373043 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=adc54b23-2c60-49b2-bc89-8e7e3d2407a7",
+            "date": "2024-08-07T07:15:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "038dcd7b-8d54-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 12 minutes and 21 seconds.",
+            "date": "2024-08-07T07:20:16Z",
+            "extra": {}
+        },
+        {
+            "id": "cae45594-8d54-ef11-bfe3-002248a44b33",
+            "subject": "ID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed CRM:01282000444",
+            "body": "Hello ﻿Mark Wilson,﻿\nThank you for reaching out to eMobility Support. My name is\nVaishnavy\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P3 170000340\nChargerID/Serial No.\n:\noGWeFq\nProblem Description\n: Charing failed\nTroubleshooting\n: We will look into the logs and get back to you soon.\nFor future reference, your ticket number is\n0373043\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-07T07:20:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "288881ff-203a-6675-99c1-978950ed1bd5",
+            "subject": "ECOG Logs for both chargers",
+            "body": "14_SCANIA_P25",
+            "date": "2024-08-07T07:22:07Z",
+            "extra": {}
+        },
+        {
+            "id": "065dc37c-7e55-ef11-bfe3-000d3a687981",
+            "subject": "RE: ID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed CRM:01282000444",
+            "body": "Hello,\nFor oiCW7u, as EVMAC ID is shown blocked, please check the same with the backend, if the charger about the integration details.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-08T12:05:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "81785ba4-7f55-ef11-bfe3-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 day, 4 hours, 53 minutes and 23 seconds.",
+            "date": "2024-08-08T12:13:39Z",
+            "extra": {}
+        },
+        {
+            "id": "b74d3b74-ea55-ef11-bfe3-000d3a687981",
+            "subject": "ID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed CRM:01282000448",
+            "body": "Hello Aaron Gillon\nSince your issue is to taken up with OCPP backend, we will be proceeding with closing the service ticket# 0373043.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-09T00:58:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0bb07172-eb55-ef11-bfe3-0022489966da",
+            "subject": "Ticket 0373043 has been closed. Are you satisfied with our provided solution? CRM:01282000449",
+            "body": "Dear Aaron Gillon,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0373043\nwith the title:\nID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-09T01:05:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b81908c-eb55-ef11-bfe3-000d3a67b152",
+            "subject": "Automatic reply: ID0373043 - DC/Si-D/NZ - [MP / P3 170000340]- Charging failed CRM:01282000448",
+            "body": "Hi\nToday is my RDO, for techinical questions or support please contact Antonio.\nAntonio\nAntonio.Garais@wel.co.nz\nRegards\nMark Wilson",
+            "date": "2024-08-09T01:06:07Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0ccfa991-eb55-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 12 hours, 52 minutes and 33 seconds.",
+            "date": "2024-08-09T01:06:14Z",
+            "extra": {}
+        },
+        {
+            "id": "20a6ba94-eb55-ef11-bfe3-000d3aba9474",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 6 seconds.",
+            "date": "2024-08-09T01:06:18Z",
+            "extra": {}
+        },
+        {
+            "id": "58a4c79d-eb55-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 18 seconds.",
+            "date": "2024-08-09T01:06:37Z",
+            "extra": {}
+        },
+        {
+            "id": "6273a8b0-eb55-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 38 seconds.",
+            "date": "2024-08-09T01:07:15Z",
+            "extra": {}
+        }
+    ]
+}

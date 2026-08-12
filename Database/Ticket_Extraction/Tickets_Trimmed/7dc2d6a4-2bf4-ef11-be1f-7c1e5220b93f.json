@@ -1,0 +1,137 @@
+{
+    "incident_id": "7dc2d6a4-2bf4-ef11-be1f-7c1e5220b93f",
+    "ticket_number": "0409380",
+    "title": "ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power",
+    "created_on": "2025-02-26T10:23:01Z",
+    "last_activity": "2025-03-11T01:30:10Z",
+    "age": "18187",
+    "description": "Reported behavior/issue:\nWe are several Engie employees with Tesla Model 3 or Model Y cars. When we charge using the Sicharge D charger, we never exceed 150 kW of power, regardless of the car's battery level.\nRoot cause:\nSolution: Answer provided\nOn DAMEX Sanctioned List: No\nWarranty Status:\nNot active (08/07/2024)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "LViRwu",
+    "stage": null,
+    "serial_number": "MP / P8 170001007",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "79ad379d-2bf4-ef11-be1f-7c1e523508ba",
+            "subject": "Webform_incident_SiCharge D_26-02-2025_SN: MP/ P8 170001007",
+            "body": "Dear florent nicolas,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/ P8 170001007\nThank you\neMobility Technical Support Team\nSehr geehrte/r florent nicolas,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/ P8 170001007\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-26T10:22:53Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f89c79dd-3bf4-ef11-be1f-6045bde0265d",
+            "subject": "ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Dear Florent Nicolas,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170001007\nChargerID/Serial No.\n:\nLViRwu\nProblem Description\n: Not exceed 150kW of power\nTroubleshooting\n: Based on our initial analysis, we have reviewed the recent logs of this charger, and I will explain this using the following examples:\nAs you can see in this log, what matters here is that the\nEV_TarCur[A]\nmatches the\nEVSE_NowCur[A]\nas much as possible.\nThe EV (vehicle) is requesting the charger to provide 330 Amp, in accordance with ISO and DIN standards. The EVSE (charger) will attempt to supply as much current as possible.\nFor further analysis, could you please confirm if the issue is occurring only with this charger, or with other Si-D chargers as well? Also, please let us know the timestamp when the issue occurred.\nFor future reference, your case number is\n0409380\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T12:19:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f88d259-011e-99f1-adbf-199fff227483",
+            "subject": "Note to L2",
+            "body": "Recent logs attached.",
+            "date": "2025-02-26T13:20:28Z",
+            "extra": {}
+        },
+        {
+            "id": "67ba9ef3-4df4-ef11-be1f-7c1e523508ba",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Hello,\nThis issue occurs on all our chargers Sicharge D, every time with tesla cars and probably other brand cars.\nHere the timestamp of my example on LViRwu :\nLViRwu      1740561320341     2025-02-26T09:15:19.437183+00:00 swcpu [user:debug] [4021] [DCC]  |2025-02-26T09:13:18|DC1: |\nEVSE_MaxPwr[kW]=\n172\n|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=\n150.2\n|EVSE_NowCur[A]=398|\nEVSE_NowVol[V]=377.3\n|EV_TarCur[A]=399|\nE\nV_TarVol[V]=430\n|EV_SOC[%]=21|EVSE_DESpwr[kW]=172|Pilot=4  1740561324030     38815814507342677590457108640295409335926985975903223809\nWe can see that target current is very close to now current.\nBut Target voltage is far away from now voltage.\nThanks for help,\nCordialement,\nFlorent NICOLAS\nResponsable supervision plaque sud\nENGIE Mobilités Électriques\nflorent.nicolas@engie.com\n+33 7 87 84 21 41\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming\n69007 Lyon\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmercredi 26 février 2025 14:18\nÀ :\nNICOLAS Florent (ENGIE Mobilités Electriques) <florent.nicolas@engie.com>\nCc :\nemobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>\nObjet :\nID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581\n⚠️ Ce message provient d'un expéditeur externe\nCe message vient de l'extérieur de votre organisation. Soyez particulièrement vigilant avec les liens hypertexte et les pièces jointes.\nDear Florent Nicolas,\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170001007\nChargerID/Serial No.\n:\nLViRwu\nProblem Description\n: Not exceed 150kW of power\nTroubleshooting\n: Based on our initial analysis, we have reviewed the recent logs of this charger, and I will explain this using the following examples:\nAs you can see in this log, what matters here is that the\nEV_TarCur[A]\nmatches the\nEVSE_NowCur[A]\nas much as possible.\nThe EV (vehicle) is requesting the charger to provide 330 Amp, in accordance with ISO and DIN standards. The EVSE (charger) will attempt to supply as much current as possible.\nFor further analysis, could you please confirm if the issue is occurring only with this charger, or with other Si-D chargers as well? Also, please let us know the timestamp when the issue occurred.\nFor future reference, your case number is\n0409380\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2025-02-26T14:28:41Z",
+            "extra": {
+                "sender": "florent.nicolas@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5edbd4af-3f0a-cb0f-8686-173fcd93b1e3",
+            "subject": "Note to l2",
+            "body": "EV_TarVol  set with the same value 430V as the \"MaxVoltage\" communicated by the car during the Parameter Discovery and left like that during the entire charging session.\n2025-02-26T09:13:18.884866+00:00 swcpu [user:debug] [4021] [DCC] DC1: EV connected: V_Max: 430[V], I_Max:499[A], P_Max:214[kW], SoC:15[%];",
+            "date": "2025-02-28T05:39:24Z",
+            "extra": {}
+        },
+        {
+            "id": "458d4ca6-c23e-83c0-aa8a-be111c2bb82c",
+            "subject": "Note to L2",
+            "body": "Observations:-\nA. Charging sequences & cable check are according to standard and no deviation found (349V for low voltage demand & 430V continuously for high voltage demand).\nB. During charging sessions Current demand is varying & charger tries to meet the value.\nC. Ev volage demand remain unchanged during the whole charging session-430V\nDuring pre-charge=EV_Tr voltage\n2025-02-26T09:13:35.612771+00:00 swcpu [user:debug] [4021] [DCC] |2025-02-26T09:13:18|DC1: |EVSE_MaxPwr[kW]=300|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0\n|EVSE_NowVol[V]=242.8|\nEV_TarCur[A]=0\n|EV_TarVol[V]=349\n|EV_SOC[%]=15|EVSE_DESpwr[kW]=172|Pilot=4\n2.\nAfter charging session start EV_Tr voltage increase to 430V and become constant during the whole charging session.\n2025-02-26T09:15:19.437183+00:00 swcpu [user:debug] [4021] [DCC] |2025-02-26T09:13:18|DC1: |EVSE_MaxPwr[kW]=172|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=150.2|EVSE_NowCur[A]=398|\nEVSE_NowVol[V]=377.3\n|EV_TarCur[A]=399\n|EV_TarVol[V]=430\n|EV_SOC[%]=21|EVSE_DESpwr[kW]=172|Pilot=4\n3. The charging session stop -SOC 81%\n2025-02-26T09:35:49.046454+00:00 swcpu [user:debug] [4021] [DCC] |2025-02-26T09:13:18|DC1: |EVSE_MaxPwr[kW]=120|EVSE_MaxCur[A]=186|EVSE_NowPwr[kW]=55|EVSE_NowCur[A]=148\n|EVSE_NowVol[V]=373\n|EV_TarCur[A]=146\n|EV_TarVol[V]=430\n|EV_SOC[%]=81|EVSE_DESpwr[kW]=119.5|Pilot=4",
+            "date": "2025-02-28T08:16:38Z",
+            "extra": {}
+        },
+        {
+            "id": "0c70ca16-c7f8-ef11-bae2-6045bddf3f78",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Hello\nFlorent Nicolas\n,\nHope you are doing well.\nWe apologize for the delayed reply. The voltage reflected in the logs represents the maximum battery voltage of the EV. As the state of charge (SOC) of the EV increases, the charger gradually increases the voltage to match the battery's requirements.\n2025-02-26T09:16:01.442240+00:00 swcpu [user:debug] [4021] [DCC] |2025-02-26T09:13:18|DC1: |EVSE_MaxPwr[kW]=172|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=148.6|EVSE_NowCur[A]=393|\nEVSE_NowVol[V]=377.6|\nEV_TarCur[A]=395|\nEV_TarVol[V]=430|\nEV_SOC[%]=24|EVSE_DESpwr[kW]=172|Pilot=4\nAdditionally, I will explain this using the examples you provided in previous mail:\n|\nEVSE_MaxPwr[kW]=\n172\n|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=\n150.2\n|EVSE_NowCur[A]=398|\nEVSE_NowVol[V]=377.3\n|EV_TarCur[A]=399|\nE\nV_TarVol[V]=430\n|EV_SOC[%]=21|EVSE_DESpwr[kW]=172|Pilot=4\n1.The V-request represents a voltage target that can't be overshot. The EVSE_NowVol represents the output voltage of the converters, which corresponds to the battery voltage, excluding a small voltage drop due to the CCS cable resistance multiplied by the output current. Here, EV_TarVol[V] = 430 is the maximum voltage of the EV. The EVSE_NowVol[V] could be somewhere between the EV_TarVol[V] and the Battery Voltage.  If no issues occur during the entire charging session, then there is no problem. The EV requests, and the EVSE provides. Additionally, it depends on the nature of the EV to reduce charging power as the state of charge (SOC) increases.\n2. As you can see in this log, what matters here is that the\nEV_TarCur[A]\nmatches the\nEVSE_NowCur[A]\nas much as possible.\nSo, what is happening here?\nThe EV (vehicle) is requesting the charger to provide 399 amperes, in accordance with ISO and DIN standards. The EVSE (charger) will attempt to supply as much current as possible.\nIf you need further clarification on anything, please feel free to ask.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-04T07:05:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d964b54a-8efa-ef11-bae2-6045bdde4786",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Hello\nFlorent Nicolas\n,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-06T13:24:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4186f81d-38fb-ef11-bae2-7c1e52774092",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Dear Florent Nicolas,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0409380\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-07T09:39:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e39de4a7-85fd-ef11-bae3-7c1e5236e32d",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Dear Florent Nicolas,\nI hope this email finds you well.\nW\ne hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-10T08:00:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da3f247d-17fe-ef11-bae3-7c1e5220bf23",
+            "subject": "Re: ID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power CRM:00921001581",
+            "body": "Dear Florent Nicolas,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0409380\nbut have not received a response. As we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0409380\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T01:23:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "399797e8-17fe-ef11-bae3-7c1e5220bf23",
+            "subject": "Ticket 0409380 has been closed. Are you satisfied with our provided solution? CRM:00921001617",
+            "body": "Dear Florent Nocolas,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0409380\nwith the title:\nID0409380-DC/Si-D/FR-[MP/ P8 170001007] Not exceed 150kW of power\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-11T01:26:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

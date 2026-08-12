@@ -1,0 +1,104 @@
+{
+    "incident_id": "07c95dcb-c3ef-ef11-9341-0022489bc8e2",
+    "ticket_number": "0408294",
+    "title": "ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2",
+    "created_on": "2025-02-20T19:49:30Z",
+    "last_activity": "2025-02-26T19:57:51Z",
+    "age": "8648",
+    "description": "Reported behavior/issue:\nCharging issue on DC2\nRoot cause:\nC\nontactor MG1-MG2_QA9-10 being stuck.\nSolution:\nInternal Note -: Case need to be hand over for the troubleshooting for contactor\nMG1-MG2_QA9-10",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "mtSXKB",
+    "stage": null,
+    "serial_number": "MP / R1 170001369",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b63d3fc6-c3ef-ef11-9341-000d3ab1a06e",
+            "subject": "Webform_incident_SiCharge D_20-02-2025_SN: MP / R1 170001369",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R1 170001369\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R1 170001369\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-20T19:49:23Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bf24b658-1016-f5f9-a0ff-4d4aa1a5b665",
+            "subject": "Reported issue from the RC",
+            "body": "Station 2025-02-19, 07:51:55 reported a problem with DC2. According to the logs, the problem was the result of a contactor. Why did this problem arise at this point? Does the contactor qualify for replacement? The session was in progress on DC1, and it has not yet started on DC2. why did the error occur?",
+            "date": "2025-02-20T20:20:23Z",
+            "extra": {}
+        },
+        {
+            "id": "9e21059f-c8ef-ef11-9341-000d3add0e90",
+            "subject": "ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2 CRM:00641001125",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001369\nChargerID/Serial No.\n:\nmtSXKB\nProblem Description\n: Charging issue on DC2\nFor future reference, your case number is\n0408294\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T20:24:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c8ea05b-4021-d672-9b4f-46df5e381bb1",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-20T20:26:09Z",
+            "extra": {}
+        },
+        {
+            "id": "224ade3a-d1f1-ef11-be1f-7c1e52fb539c",
+            "subject": "RE: ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2 CRM:00641001125",
+            "body": "Dear Team,\nHope you are doing well,\nAs per the reported issue, we have reviewed the logs and identified that the outlet went into an out-of-order state due to a switching matrix fault. This fault was triggered by the feedback from contactor\nMG1-MG2_QA9-10\nbeing stuck.\nPlease refer to the error flags below, which indicate that the switching matrix fault was caused by the\nDC_Contactor_MG1-MG2_QA9-10\n:\n2025-02-19T07:51:54.962362+00:00\n– PLC-Error-Flag 'Converter_Group_DC2' changed from\nfalse\n('CG okay') to\ntrue\n('switching matrix fault').\n2025-02-19T07:51:55.718170+00:00\n– PLC-Error-Flag 'DC_Contactor_MG1-MG2_QA9-10' changed from\ntrue\n('contactor stuck at ON feedback') to\ntrue\n('contactor stuck at ON feedback, waiting for reset').\nAdditionally, another error was logged at the same time:\n2025-02-19T07:51:54.963920+00:00\n– PLC-Error-Flag 'Outlet_DC2_codes' changed from\nfalse\n('DC2 Errorcode:0') to\ntrue\n('DC2 Errorcode:7.4').\nThis error indicates that the outlet was not ready due to a\nprimary converter group error\n. However, after some time, the error reset, and the outlet became operational again.\nSequence of Error Resolution:\n2025-02-19T08:15:05.149030+00:00\n– 'Converter_Group_DC2' changed from\ntrue\n('switching matrix fault') to\nfalse\n('CG okay').\n2025-02-19T08:15:05.169950+00:00\n– 'DC2 StatusCode' changed from\n\"NOT_READY\"\nto\n\"READY\"\n.\n2025-02-19T08:15:44.439447+00:00\n– 'setOutletLedState' changed to\nready 2\n.\nWe have reviewed the recent logs and confirmed that\nDC2 is now ready for the charger\n. However, upon analyzing logs from the past month, we found that\ncontactor QA09-10\nhas repeatedly reported abnormal behavior.\nRecommendation:\nBased on the overall analysis, we recommend checking the\ncontactors\nthoroughly, and if necessary, replacing them to prevent further issues.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-23T10:30:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0e2470f9-24f2-ef11-be1f-7c1e52fb544d",
+            "subject": "RE: ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2 CRM:00641001125",
+            "body": "Hi,\nThank you very much for the extensive analysis. Very good answer, thank you! We will replace the contactors, because the customer reports problems to us. If the problems continue, we will create a new ticket, because there were also problems with the DC2 charging controller.\nZ wyrazami szacunku\nZespół Smart Infrastructure\nBest regards\nSmart Infrastructures Team\neMobility - Poland\nul.\nŻupnicza 11\n03-821 Warszawa\nwww.siemens.pl/emobility\nSiemens Sp. z o.o. ul. Żupnicza 11, 03-821 Warszawa, Sąd Rejonowy dla m.st. Warszawy, XIV Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS 0000031854, Kapitał zakładowy: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\n“Ten dokument zawiera informacje poufne, które mogą być również objęte tajemnicą handlową lub służbową. Jest on przeznaczony do wyłącznego użytku adresata. Jeśli nie są Państwo jego adresatem lub jeśli otrzymaliście Państwo ten dokument omyłkowo, to wszelkie rozpowszechnianie, dystrybucja, reprodukcja, kopiowanie, publikacja lub wykorzystanie tego dokumentu czy też zawartych w nim informacji jest zabronione. Jeśli otrzymali Państwo tę wiadomość przez pomyłkę, prosimy o bezzwłoczne skontaktowanie się z nami oraz usunięcie tej wiadomości z Państwa komputera.Zwracamy Państwa uwagę na fakt, że takie wiadomości mogą zostać utracone, zmienione lub zafałszowane nawet bez udziału stron trzecich. Zwykłe maile nie są chronione przed dostępem osób trzecich i dlatego ich poufność nie może być w pewnych okolicznościach zagwarantowana. Nie możemy ponosić odpowiedzialności za integralność maili, które wyszły poza strefę kontrolowaną przez nas.\"\n“This document contains confidential information that may also constitute commercial or business secrets. It is destined for the exclusive use by the addressee. If you are not the intended addressee or if you receive this message by mistake then be advised that any distribution, multiplication, reproduction, copying or use of this document or the information contained herein is forbidden. If you have received this message by mistake please contact us immediately and remove it from your computer.We draw your attention to the fact that such messages can be lost, changed or falsified, with or without any interference by third persons. Normal e-mails are not protected against access by third persons and, therefore, their confidentiality may not be assured in certain circumstances. We cannot be responsible for the integrity of emails after they have left our sphere of control.\"",
+            "date": "2025-02-23T20:30:13Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ac432afd-7bdc-9cfa-8617-87f5a0dc310f",
+            "subject": "Internal Note",
+            "body": "Internal Note:\nThis case needs to be handed over for troubleshooting\nContactor MG1-MG2_QA9-10\n.",
+            "date": "2025-02-25T14:25:29Z",
+            "extra": {}
+        },
+        {
+            "id": "5dd214e5-29f4-ef11-be1f-7c1e52768c07",
+            "subject": "RE: ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2 CRM:00641001125",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0408294 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-PL SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-PL SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T10:10:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "34548990-7bf4-ef11-be1f-6045bde0265d",
+            "subject": "RE: ID0408294-DC/Si-D/PL-[MP / R1 170001369] Charging issue on DC2 CRM:00641001125",
+            "body": "Hi,\nQA9 and QA10 contactors have been replaced. After the replacement, several charging sessions were performed and the station was found to be working properly.\nI am closing the topic.\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2025-02-26T19:55:03Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

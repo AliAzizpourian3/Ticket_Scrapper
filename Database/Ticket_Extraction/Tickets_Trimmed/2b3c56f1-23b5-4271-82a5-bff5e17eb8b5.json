@@ -1,0 +1,31 @@
+{
+    "incident_id": "2b3c56f1-23b5-4271-82a5-bff5e17eb8b5",
+    "ticket_number": "0411807",
+    "title": "ID0409429-DC/Si-D/IL-[multiple] High power consumption in Standby (C1)",
+    "created_on": "2025-03-11T03:09:32Z",
+    "last_activity": "2025-05-22T12:02:00Z",
+    "age": "40773",
+    "description": "Reported behavior/issue:\nHigh current/power consumption from charging stations in\nStandby mode\nRoot cause:\nMonitoring / calculation issue from customer side\nSolution:\nRC clarified the abnormal connection and cleared the issue\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "dIa2Ty",
+    "stage": null,
+    "serial_number": "MP / R6 170002067,MP / R6 170002070,MP / R6 170002066,MP / R6 170002068,MP / R6 170002067",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "cf2aa04b-aab2-618c-b908-2d97fbd27510",
+            "subject": "Handover Note from L2 to ES",
+            "body": "Problem Description\n:\nHigh power consumption in Standby mode\n•\nAction Performed\n: T\nhe power consumption in standby mode should be approximately 260W,\nWe put the charger in the Debug mode and checked Temp. it found to be fine.\n•\nCharger SW Version:\nv6.0.3-0-g215cb74\n•\nReason for Handover:\nAs discussed.\n• Action by RC\n:\nThe station was measured in several states during measurements:\nthey attach a measurement from a charging station that shows at least 10A in each phase, which is almost 10 times what is specified. Also, they checked it on all his charging stations and in all of them the consumption is the same and higher than what is specified in the Datasheet.\n•\nAction by L3: Deeper analysis\n•\nAttachment\n: Attached picture of measurement.\nThe customer's name is: Nofar Energy\nThe charging stations he owns are:",
+            "date": "2025-03-11T03:32:42Z",
+            "extra": {}
+        },
+        {
+            "id": "bd80d8fb-08dc-44f1-bce1-2605f9e8b57f",
+            "subject": "Notes from ES to NOC [ 08/04/2025]",
+            "body": "Problem Description\n: Customer complained high power consumption during standby\nSuspected Root Cause\n: Monitoring / calculation issue from customer side\nAction Performed: RC clarified the abnormal connection and cleared the issue\nCharger SW Version\n: 6.0.3\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-04-08T10:40:40Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "incident_id": "365776a9-6610-49f9-a4be-5d6cec2cf185",
+    "ticket_number": "0379415",
+    "title": "ID0379415-DC/Si-D/FI-[GcIKxl] Not able to stop charging session",
+    "created_on": "2024-09-13T13:56:56Z",
+    "last_activity": "2024-11-27T08:58:55Z",
+    "age": "107702",
+    "description": "Location:  Tampere Turtola\nReported behaviour/issue:\nOn DC1 (outlet number 11864) You are able to start charging session with the App but not end it. This has caused problems for many costumer. Other outlets you are able to start and stop the session. With RFID you are able to start and stop the session. Customer stated that the issue happened around 13.00 (UTC+3) at 13.9.2024, and then they tested again at 15.00 (UTC+3)\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nAction:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "GcIKxl",
+    "stage": null,
+    "serial_number": "MP / P8 170000826",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c2a1ed12-d871-ef11-a670-000d3ab8e04e",
+            "subject": "A new case manager was assigned to 0379415 CRM:00225096108",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0379415 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=365776a9-6610-49f9-a4be-5d6cec2cf185",
+            "date": "2024-09-13T13:57:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "81bda747-d871-ef11-a670-00224899b868",
+            "subject": "A new case manager was assigned to 0379415 CRM:00225096111",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0379415 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=365776a9-6610-49f9-a4be-5d6cec2cf185",
+            "date": "2024-09-13T13:58:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17e848fb-d971-ef11-a670-002248a155a0",
+            "subject": "ID0379415 - DC/Si-D/FI - Not able to stop charging session CRM:00315001769",
+            "body": "Dear Sakari,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nGcIKxl\nChargerID/Serial No.\n:\nProblem Description\n: DC1 is not able to stop sessions\nTroubleshooting\n:\nI tried to reach out to you but you were already OoO.\nFrom what we can see in the logs I assume it's something similar to this situation:\nThis is for DC3 where, after the Stop Charging request made from the backend as RemoteStopTransaction\nAnd here is a session from DC1\nAs such, I believe the backend must not have the correct ID number of the outlet or something similar. Can you please align with them?\nThank you!\nBest regards,\nFrancisco\nFor future reference, your ticket number is\n0379415\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-13T14:10:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c52239a5-0474-ef11-a671-7c1e523674ae",
+            "subject": "ID0379415 - DC/Si-D/FI - Not able to stop charging session CRM:00315001769",
+            "body": "Hi Sakari, good morning.\nHave you had time to check this investigation I did?\nI think it always aligns with the timestamps you provided to me via Teams.\nWhat is your opinion?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-16T08:21:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "126384f1-0474-ef11-a670-000d3a65d428",
+            "subject": "RE: ID0379415 - DC/Si-D/FI - Not able to stop charging session CRM:00315001769",
+            "body": "Hello Francisco!\nThank you for the replay.\nWe went through these with costumer. They were able to confirm that\nDC1 is the main unit right outlet (ID 11864 in their backend)\nDC2 is the main unit left outlet (ID 11865 in their backend)\nDC3 is the dispenser right outlet (ID 16621 in their backend)\nDC4 is the dispenser left outlet (ID 16622 in their backend)\nCould this issue be related to something still wrong with their backend?\nAlso what I found weird is that starting and stopping with RFID works fine. As I have understood for the charger it is basically the same if you start and stop with RFID or with APP.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-09-16T08:23:27Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a57d408c-0574-ef11-a671-7c1e523674ae",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 days, 18 hours, 30 minutes and 53 seconds.",
+            "date": "2024-09-16T08:27:52Z",
+            "extra": {}
+        },
+        {
+            "id": "b9607d81-0674-ef11-a671-7c1e523674ae",
+            "subject": "ID0379415-DC/Si-D/FI-Not able to stop charging session CRM:00315001769",
+            "body": "Hi Sakari,\nThanks for the prompt response.\nI have checked a session on DC1 that worked today with the RFID:\nI believe this session ended correctly, if so, then the problem is somewhere in the RemoteStopTransaction. If this is the case, then the problem is not charger related.\nWe can still align if the problem is not indeed coming from the backend. If that is the case maybe I can bring some expertise from OCPP colleagues.\nLet me know your thoughts.\nBest regards,\nFrancisco",
+            "date": "2024-09-16T08:34:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "938e4214-f374-ef11-a671-000d3ab7063f",
+            "subject": "ID0379415-DC/Si-D/FI-Not able to stop charging session CRM:00315001769",
+            "body": "Hi Sakari, good afternoon.\nAs we already discussed this seems to be a backend issue. From our side everything points to the fact that the charger is not receiving the RemoteStopTransaction for the Remote sessions.\nFrom RFID everything works, so it's impossible that it's a charger issue and all other outlets work perfectly.\nWhat do you want do here ? Should I forward this ticket to you and you discuss with the backend? From our side there is really not much I do anymore :\\\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-17T12:48:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5550711f-f474-ef11-a670-6045bde0603d",
+            "subject": "RE: ID0379415-DC/Si-D/FI-Not able to stop charging session CRM:00315001769",
+            "body": "Hello!\nYes, you can put it in our RC-FI queue!\nCostumer is investigating the issue.\nThank you for your support!\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-09-17T12:55:42Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6b90b40a-5b77-ef11-a670-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0379415 CRM:00225100439",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0379415 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=365776a9-6610-49f9-a4be-5d6cec2cf185",
+            "date": "2024-09-20T14:17:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

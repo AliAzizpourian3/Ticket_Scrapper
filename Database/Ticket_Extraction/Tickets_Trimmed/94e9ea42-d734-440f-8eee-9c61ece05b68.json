@@ -1,0 +1,50 @@
+{
+    "incident_id": "94e9ea42-d734-440f-8eee-9c61ece05b68",
+    "ticket_number": "0411110",
+    "title": "ID0411110-DC/Si-D/DK[170001811] - Converter_Group_DC3 & DC4 (C1)",
+    "created_on": "2025-03-06T15:16:23Z",
+    "last_activity": "2025-03-06T15:37:46Z",
+    "age": "21",
+    "description": "Reported behaviour/issue:\nDC3 and DC4 Converters not Found → E52 → Fast shutdown not performed correctly\nSolution:\nDC3 and DC4 wiring coming to FA10/FA11 were swapped → rewire correctly\nNote to Warranty Manager → we didn't confirm if KF214 was actually faulty or not, so not elegible for warranty",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "U9Dn7E",
+    "stage": null,
+    "serial_number": "MP / R5 170001811,MP / R5 170001811",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "4e6e96f9-9dfa-ef11-bae2-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0411110 CRM:00225174179",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0411110 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=94e9ea42-d734-440f-8eee-9c61ece05b68",
+            "date": "2025-03-06T15:16:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "de7a3009-9efa-ef11-bae2-6045bddcc0ac",
+            "subject": "A new case manager was assigned to 0411110 CRM:00225174181",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0411110 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=94e9ea42-d734-440f-8eee-9c61ece05b68",
+            "date": "2025-03-06T15:16:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be7601aa-a0fa-ef11-bae2-6045bddf319c",
+            "subject": "0411110 - ID0411110-DC/Si-D/DK[170001811] - Converter_Group_DC3 & DC4 (C1) CRM:00472000271",
+            "body": "Hello Martin,\nAfter the request from Francisco to check what was happening with the dispenser I have looked at remote debug station and found that while fast shutdown from DC4 was pending to go from 150V to 0V the DC3 was already in 0V.\nAfter checking with him if this was a newly commissioned dispenser, I ask him to check with you if DC3 and DC4 shutdown lines were not swapped. It turn out that was the case. After fixing it the charger was back in operation.\nThis ticket will be closed.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-03-06T15:35:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

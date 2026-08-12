@@ -1,0 +1,2425 @@
+ErrorCodes:
+  SECC_KF11_GenData_MB_Problem:
+    errorCode: SECC_KF11_GenData_MB_Problem
+    errorName: loss of communication to SECC for IMD data
+    classification: Maintenance
+    severity: Critical
+    description: Loss of communication to SECC for IMD data.
+    potentialRootCause: ""
+    potentialResolution: ""
+  ocppConnectionLost:
+    errorCode: ocppConnectionLost
+    errorName: Is OCPP connection lost if configured
+    classification: Maintenance
+    severity: Minor
+    description: The OCPP connection is lost if it is configured.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Meter_BC5_AC_Charging:
+    errorCode: Meter_BC5_AC_Charging
+    errorName: meter AC charging
+    classification: Maintenance
+    severity: Major
+    description: The AC charging meter is unavailable.
+    potentialRootCause: It is not available or powered off.
+    potentialResolution: Check the FC5 fuse and power supply.
+  Meter_BC7_AC_Charging:
+    errorCode: Meter_BC7_AC_Charging
+    errorName: meter AC charging
+    classification: Maintenance
+    severity: Major
+    description: The AC charging meter is unavailable.
+    potentialRootCause: It is not available or powered off.
+    potentialResolution: Check the FC5 fuse and power supply.
+  METER_UNAVAILABLE:
+    errorCode: METER_UNAVAILABLE
+    errorName: Meter unavailable
+    classification: Maintenance
+    severity: Major
+    description: The meter is not available.
+    potentialRootCause: It is not available or powered off.
+    potentialResolution: ""
+  METER_ERROR:
+    errorCode: METER_ERROR
+    errorName: Meter error
+    classification: Maintenance
+    severity: Major
+    description: The meter is reporting an error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Contactor_QA8_AC_Charging:
+    errorCode: Contactor_QA8_AC_Charging
+    errorName: Contactor AC charging
+    classification: Maintenance
+    severity: Critical
+    description: Closing or opening the contactor failed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  LockRelease_CA1_AC_Charging:
+    errorCode: LockRelease_CA1_AC_Charging
+    errorName: LockRelease_CA1_AC_Charging
+    classification: Maintenance
+    severity: Major
+    description: The release is uncontrolled or unsuccessful.
+    potentialRootCause: ""
+    potentialResolution: ""
+  AC_SocketActuator_XD102:
+    errorCode: AC_SocketActuator_XD102
+    errorName: charging cable locking failed
+    classification: Maintenance
+    severity: Minor
+    description: Charging cable locking failed.
+    potentialRootCause: ""
+    potentialResolution: Reconnect the cable.
+  DC1_CableLock_XD100:
+    errorCode: DC1_CableLock_XD100
+    errorName: CHAdeMO locking failed
+    classification: Maintenance
+    severity: Minor
+    description: CHAdeMO locking failed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC1_CableTempSensor_XD100:
+    errorCode: DC1_CableTempSensor_XD100
+    errorName: DC1_CableTempSensor_XD100
+    classification: Safety
+    severity: Major
+    description: DC1 cable temperature sensor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC2_CableTempSensor_XD101:
+    errorCode: DC2_CableTempSensor_XD101
+    errorName: DC2_CableTempSensor_XD101
+    classification: Safety
+    severity: Major
+    description: DC2 cable temperature sensor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC3_CableTempSensor_XD230:
+    errorCode: DC3_CableTempSensor_XD230
+    errorName: DC3_CableTempSensor_XD230
+    classification: Safety
+    severity: Major
+    description: DC3 cable temperature sensor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC4_CableTempSensor_XD240:
+    errorCode: DC4_CableTempSensor_XD240
+    errorName: DC4_CableTempSensor_XD240
+    classification: Safety
+    severity: Major
+    description: DC4 cable temperature sensor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC1_StateMonitor_KF13:
+    errorCode: DC1_StateMonitor_KF13
+    errorName: DC1_StateMonitor_KF13
+    classification: Maintenance
+    severity: Major
+    description: DC1 state monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC2_StateMonitor_KF13:
+    errorCode: DC2_StateMonitor_KF13
+    errorName: DC2_StateMonitor_KF13
+    classification: Maintenance
+    severity: Major
+    description: DC2 state monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  AC1_StateMonitor_KF13:
+    errorCode: AC1_StateMonitor_KF13
+    errorName: AC1_StateMonitor_KF13
+    classification: Maintenance
+    severity: Major
+    description: AC1 state monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC3_StateMonitor_KF214:
+    errorCode: DC3_StateMonitor_KF214
+    errorName: DC3_StateMonitor_KF214
+    classification: Maintenance
+    severity: Major
+    description: DC3 state monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC4_StateMonitor_KF214:
+    errorCode: DC4_StateMonitor_KF214
+    errorName: DC4_StateMonitor_KF214
+    classification: Maintenance
+    severity: Major
+    description: DC4 state monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC1_QA21-22:
+    errorCode: DC_Contactor_DC1_QA21-22
+    errorName: DC_Contactor_DC1_QA21-22
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC2_QA13-14:
+    errorCode: DC_Contactor_DC2_QA13-14
+    errorName: DC_Contactor_DC2_QA13-14
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC3_QA19-20:
+    errorCode: DC_Contactor_DC3_QA19-20
+    errorName: DC_Contactor_DC3_QA19-20
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC4_QA23-24:
+    errorCode: DC_Contactor_DC4_QA23-24
+    errorName: DC_Contactor_DC4_QA23-24
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC3_QA231-232:
+    errorCode: DC_Contactor_DC3_QA231-232
+    errorName: DC_Contactor_DC3_QA231-232
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Contactor_DC4_QA241-242:
+    errorCode: DC_Contactor_DC4_QA241-242
+    errorName: DC_Contactor_DC4_QA241-242
+    classification: Maintenance
+    severity: Major
+    description: Outgoing contactor coils error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  HVT_TF1:
+    errorCode: HVT_TF1
+    errorName: HVT_TF1
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC1 error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  HVT_TF2:
+    errorCode: HVT_TF2
+    errorName: HVT_TF2
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC2 error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  HVT_TF203:
+    errorCode: HVT_TF203
+    errorName: HVT_TF203
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC3 has a life sign fault.
+    potentialRootCause: ""
+    potentialResolution: "check if transducer power supply 24V is ok AND/OR check by replacing the voltage transducer"
+  HVT_TF204:
+    errorCode: HVT_TF204
+    errorName: HVT_TF204
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC4 error.
+    potentialRootCause: ""
+    potentialResolution: "check if transducer power supply 24V is ok AND/OR check by replacing the voltage transducer"
+  "d-plc: TransducerDC3_TF203":
+    errorCode: "d-plc: TransducerDC3_TF203"
+    errorName: "d-plc: TransducerDC3_TF203"
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC3 has a life sign fault.
+    potentialRootCause: ""
+    potentialResolution: Check if the transducer power supply 24V is ok and/or check by replacing the voltage transducer.
+  "d-plc: TransducerDC4_TF204":
+    errorCode: "d-plc: TransducerDC4_TF204"
+    errorName: "d-plc: TransducerDC4_TF204"
+    classification: Maintenance
+    severity: Major
+    description: Voltage transducer of DC4 has a life sign fault.
+    potentialRootCause: ""
+    potentialResolution: Check if the transducer power supply 24V is ok and/or check by replacing the voltage transducer.
+  "d-plc: sumVTransducers":
+    errorCode: "d-plc: sumVTransducers"
+    errorName: "d-plc: sumVTransducers"
+    classification: Maintenance
+    severity: Major
+    description: Both voltage transducer readings are implausible.
+    potentialRootCause: ""
+    potentialResolution: ""
+  HVT_TF5:
+    errorCode: HVT_TF5
+    errorName: HVT_TF5
+    classification: Maintenance
+    severity: Critical
+    description: Voltage transducer for converter grouping error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (unknown):
+    errorCode: PowerConverter (unknown)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: PowerConverter in error state but no error code detected.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (CanCommLoss):
+    errorCode: PowerConverter (CanCommLoss)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Loss of communication.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (1):
+    errorCode: PowerConverter (1)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module powered off due to Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (2):
+    errorCode: PowerConverter (2)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module powered off due to Protection.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (3):
+    errorCode: PowerConverter (3)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Low Temperature powered off.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (4):
+    errorCode: PowerConverter (4)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: AC Open Phase.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (5):
+    errorCode: PowerConverter (5)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: AC Imbalance.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (6):
+    errorCode: PowerConverter (6)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Input Over voltage.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (7):
+    errorCode: PowerConverter (7)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Input Power Failure.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (8):
+    errorCode: PowerConverter (8)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Input Under voltage.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (9):
+    errorCode: PowerConverter (9)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: PFC Bus Imbalance.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (10):
+    errorCode: PowerConverter (10)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: PFC Bus Overvoltage Protection.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (11):
+    errorCode: PowerConverter (11)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Over temperature powered off.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (12):
+    errorCode: PowerConverter (12)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Output Over current.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (13):
+    errorCode: PowerConverter (13)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Output Over voltage Protection.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (14):
+    errorCode: PowerConverter (14)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Output Under voltage.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (15):
+    errorCode: PowerConverter (15)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module Lockout due to Overvoltage.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (16):
+    errorCode: PowerConverter (16)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Shutdown due to Communication Failure between PLC and Converter.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (17):
+    errorCode: PowerConverter (17)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Internal Communication Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (18):
+    errorCode: PowerConverter (18)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Internal Over temperature.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (19):
+    errorCode: PowerConverter (19)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Internal Relay Circuit Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (20):
+    errorCode: PowerConverter (20)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: powered off due to duplicated Serialnumbers.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (21):
+    errorCode: PowerConverter (21)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module is not properly connected.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (22):
+    errorCode: PowerConverter (22)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Hardware Address Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (23):
+    errorCode: PowerConverter (23)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module OFF by Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (24):
+    errorCode: PowerConverter (24)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: EEPROM Read/Write Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (25):
+    errorCode: PowerConverter (25)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Severely Imbalanced.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (26):
+    errorCode: PowerConverter (26)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Power off due to duplicated Serialnumbers.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (27):
+    errorCode: PowerConverter (27)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Imbalanced Output Cap Volts.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (28):
+    errorCode: PowerConverter (28)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Output Load Flapping.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (29):
+    errorCode: PowerConverter (29)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Hardware Address Conflict.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (30):
+    errorCode: PowerConverter (30)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Reserved.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (31):
+    errorCode: PowerConverter (31)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module Fan Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (32):
+    errorCode: PowerConverter (32)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Discharge Circuit Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (33):
+    errorCode: PowerConverter (33)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Discharge Circuit Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (34):
+    errorCode: PowerConverter (34)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Lockout Due To Short Circuit.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (35):
+    errorCode: PowerConverter (35)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Output Relay Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (36):
+    errorCode: PowerConverter (36)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: PFC Fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (51):
+    errorCode: PowerConverter (51)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Converter is reporting DC output voltage while its turned OFF + all DC outlet off.
+    potentialRootCause: ""
+    potentialResolution: Converters with active 51 should be replaced if the output voltage persists for 40s or more.
+  PowerConverter (52):
+    errorCode: PowerConverter (52)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Fast Shutdown check failed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (53):
+    errorCode: PowerConverter (53)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: CAN bus Comm Error detected.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (54):
+    errorCode: PowerConverter (54)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Incorrect output control mode.
+    potentialRootCause: ""
+    potentialResolution: Most likely a FW update of the converter is necessary.
+  PowerConverter (55):
+    errorCode: PowerConverter (55)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Converter is not able to apply a DC voltage when turned on.
+    potentialRootCause: ""
+    potentialResolution: Replacement.
+  PowerConverter (61):
+    errorCode: PowerConverter (61)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Module OFF by Protection (fast shutdown activated).
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (63):
+    errorCode: PowerConverter (63)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Imbalanced Flow.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (64):
+    errorCode: PowerConverter (64)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Fixed to full fan speed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (65):
+    errorCode: PowerConverter (65)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Software address rearrangement active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (66):
+    errorCode: PowerConverter (66)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Automatic switch of output mode - wrong setting.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (67):
+    errorCode: PowerConverter (67)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Poor communication quality.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter (68):
+    errorCode: PowerConverter (68)
+    errorName: PowerConverter Error
+    classification: Maintenance
+    severity: Minor
+    description: Test mode active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverters:
+    errorCode: PowerConverters
+    errorName: General power converter error.
+    classification: Maintenance
+    severity: Minor
+    description: One or more power converters are in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  ColdStartPLC_KF10:
+    errorCode: ColdStartPLC_KF10
+    errorName: ColdStartPLC_KF10
+    classification: Maintenance
+    severity: Critical
+    description: Modbus TCP communication between automation and LOGO PLC is down or firmware version of LOGO is not compatible with this firmware.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Temp/HumiSensor_BT1_Automation:
+    errorCode: Temp/HumiSensor_BT1_Automation
+    errorName: Temp/HumiSensor_BT1_Automation
+    classification: Safety
+    severity: Minor
+    description: Automation area sensor error (humidity or temperature).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Temp/HumiSensor_BT2_DC-Part:
+    errorCode: Temp/HumiSensor_BT2_DC-Part
+    errorName: Temp/HumiSensor_BT2_DC-Part
+    classification: Safety
+    severity: Minor
+    description: DC area sensor error (humidity or temperature).
+    potentialRootCause: ""
+    potentialResolution: ""
+  PT1000_BT3_Automation:
+    errorCode: PT1000_BT3_Automation
+    errorName: PT1000_BT3_Automation
+    classification: Safety
+    severity: Minor
+    description: Automation area sensor error (temperature).
+    potentialRootCause: ""
+    potentialResolution: ""
+  PT1000_BT4_Chimney:
+    errorCode: PT1000_BT4_Chimney
+    errorName: PT1000_BT4_Chimney
+    classification: Safety
+    severity: Minor
+    description: Chimney area sensor error (temperature).
+    potentialRootCause: ""
+    potentialResolution: ""
+  PT1000_BT5_AC-Income:
+    errorCode: PT1000_BT5_AC-Income
+    errorName: PT1000_BT5_AC-Income
+    classification: Safety
+    severity: Minor
+    description: AC income area sensor error (temperature).
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Fuse_DC1_FC8:
+    errorCode: DC_Fuse_DC1_FC8
+    errorName: DC_Fuse_DC1_FC8
+    classification: Safety
+    severity: Major
+    description: DC1 fuse error.
+    potentialRootCause: Charging cable is disconnected from the converter, or the Isolation Monitoring Device (IMD) and voltage transducer are unable to measure the converter's output voltage.
+    potentialResolution: ""
+  DC_Fuse_DC2_FC9:
+    errorCode: DC_Fuse_DC2_FC9
+    errorName: DC_Fuse_DC2_FC9
+    classification: Safety
+    severity: Major
+    description: DC1 fuse error.
+    potentialRootCause: Charging cable is disconnected from the converter, or the Isolation Monitoring Device (IMD) and voltage transducer are unable to measure the converter's output voltage.
+    potentialResolution: ""
+  SPD_FA1_or_Fuse_FC1_AC_Income:
+    errorCode: SPD_FA1_or_Fuse_FC1_AC_Income
+    errorName: SPD_FA1_or_Fuse_FC1_AC_Income
+    classification: Safety
+    severity: Critical
+    description: Error with either the SPD or the fuse in the AC input area.
+    potentialRootCause: ""
+    potentialResolution: ""
+  12VDC_Supply_TB18_FC23:
+    errorCode: 12VDC_Supply_TB18_FC23
+    errorName: 12VDC_Supply_TB18_FC23
+    classification: Maintenance
+    severity: Critical
+    description: LOGO cannot measure 12V at its digital input I6.
+    potentialRootCause: Power supply failure or tripped 12V fuse.
+    potentialResolution: ""
+  12VDC_Supply_TB19_FC23:
+    errorCode: 12VDC_Supply_TB19_FC23
+    errorName: 12VDC_Supply_TB19_FC23
+    classification: Maintenance
+    severity: Critical
+    description: LOGO cannot measure 12V at its digital input I6.
+    potentialRootCause: Power supply failure or tripped 12V fuse.
+    potentialResolution: ""
+  24VDC_Fuse_FC12_to_FC17:
+    errorCode: 24VDC_Fuse_FC12_to_FC17
+    errorName: Trip of one of the fuses FC12 to FC17
+    classification: Maintenance
+    severity: Critical
+    description: Trip of one of the fuses FC12 to FC17.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Meter_BC6_AC_Income:
+    errorCode: Meter_BC6_AC_Income
+    errorName: Meter_BC6_AC_Income
+    classification: Maintenance
+    severity: Minor
+    description: System has detected an income meter error.
+    potentialRootCause: Modbus communication error or incorrectly connected transformers.
+    potentialResolution: ""
+  Mainfan_GQ1:
+    errorCode: Mainfan_GQ1
+    errorName: Mainfan_GQ1
+    classification: Maintenance
+    severity: Major
+    description: System has detected an error in the main fan.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Fans_GQ2:
+    errorCode: Fans_GQ2
+    errorName: Fans_GQ2
+    classification: Maintenance
+    severity: Minor
+    description: System has detected an error in the automation fan.
+    potentialRootCause: "THe fan is not able to rotate"
+    potentialResolution: ""
+  Fans_GQ2-3:
+    errorCode: Fans_GQ2-3
+    errorName: Fans_GQ2-3
+    classification: Maintenance
+    severity: Major
+    description: System has detected an error in the automation fan.
+    potentialRootCause: "The fan is not able to rotate."
+    potentialResolution: ""
+  Heater_EB1:
+    errorCode: Heater_EB1
+    errorName: main heater
+    classification: Maintenance
+    severity: Information
+    description: System has detected an error in the main heater.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PLC_HW_Fault:
+    errorCode: PLC_HW_Fault
+    errorName: Error in one or more i/o modules
+    classification: Maintenance
+    severity: Critical
+    description: System has detected an error in one ore more I/O modules.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PLC_HW_Fault:KF7:AI:
+    errorCode: PLC_HW_Fault:KF7:AI
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the analog input module 4xU/I 2-wire ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF8:AI:
+    errorCode: PLC_HW_Fault:KF8:AI
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the analog input module 4xU/I 2-wire ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF3:AQ:
+    errorCode: PLC_HW_Fault:KF3:AQ
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the analog input module 4xU/I ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF9:CAN:
+    errorCode: PLC_HW_Fault:KF9:CAN
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the communication module 1xCAN.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF4:DI:
+    errorCode: PLC_HW_Fault:KF4:DI
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the digital input module 16x24VDC ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF5:DI:
+    errorCode: PLC_HW_Fault (KF5:DI)
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the digital input module 16x24VDC ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF2:DQ:
+    errorCode: PLC_HW_Fault:KF2:DQ
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the digital output module 16x24VDC/0,5A ST.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  PLC_HW_Fault:KF6:RTD:
+    errorCode: PLC_HW_Fault:KF6:RTD
+    errorName: PLC I/O Interface Error
+    classification: Maintenance
+    severity: Critical
+    description: System detected a critical fault in the analog input module 4xRTD/TC 2-/3-4-wire HF.
+    potentialRootCause: ""
+    potentialResolution: Exchange interface.
+  Sicharge_PLC_CPU_KF1:
+    errorCode: Sicharge_PLC_CPU_KF1
+    errorName: Sicharge_PLC_CPU_KF1
+    classification: Maintenance
+    severity: Critical
+    description: System identified a critical fault within the Sicharge PLC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (1):
+    errorCode: Outlet_DC_codes (1)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Electric Vehicle Supply Equipment (EVSE) is not currently in the operating mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (2):
+    errorCode: Outlet_DC_codes (2)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Indicates that the outlet is not ready due to a major issue with the voltage transducer, which has stopped signaling activity (life sign zero check fault).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (3):
+    errorCode: Outlet_DC_codes (3)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a major issue with the state monitor, which has encountered an error during a fast shutdown check.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (4):
+    errorCode: Outlet_DC_codes (4)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a major issue with the charging cable's temperature sensor, which is experiencing an error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (5):
+    errorCode: Outlet_DC_codes (5)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a cooling error in the HPC (High Power Charging) cable.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (6):
+    errorCode: Outlet_DC_codes (6)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the insulation monitor has not yet been initialized.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7):
+    errorCode: Outlet_DC_codes (7)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.0):
+    errorCode: Outlet_DC_codes (7.0)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because a previous error condition is no longer active, but the system is waiting for a charging session abort command from the SECC (Supply Equipment Communication Controller).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.1):
+    errorCode: Outlet_DC_codes (7.1)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (ID number is invalid).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.2):
+    errorCode: Outlet_DC_codes (7.2)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (ID number configuration error).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.3):
+    errorCode: Outlet_DC_codes (7.3)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (stuck in cooldown state even after timeout).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.4):
+    errorCode: Outlet_DC_codes (7.4)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (one or more connected SMC has ON or OFF feedback fault).
+    potentialRootCause: This converter group is disabled and converter group at another end of faulty SMC is probably enabled.
+    potentialResolution: ""
+  Outlet_DC_codes (7.5):
+    errorCode: Outlet_DC_codes (7.5)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (fast shutdown check not done).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.6):
+    errorCode: Outlet_DC_codes (7.6)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (minimum converters count not found or all converters report OFF feedback or global converter count in charger is zero).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.7):
+    errorCode: Outlet_DC_codes (7.7)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (dispenser connection not okay).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.8):
+    errorCode: Outlet_DC_codes (7.8)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (output voltage transducer reading 'implausible').
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.9):
+    errorCode: Outlet_DC_codes (7.9)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (deactivated for further use, forced by aux contact stuck in directly connected outgoing contactor).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (7.10):
+    errorCode: Outlet_DC_codes (7.10)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (deactivated for further use, forced by possible weld in directly connected outgoing contacto).
+    potentialRootCause: Output of software-based weld detection when aux fbk stuck ON + direct CGp in use.
+    potentialResolution: ""
+  Outlet_DC_codes (7.11):
+    errorCode: Outlet_DC_codes (7.11)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: System detected an error in the primary converter group (deactivated for further use, forced by possible weld in adjacent OGC+SMC).
+    potentialRootCause: Output of software-based weld detection when adjacent outlet OGC+SMC aux fbk stuck ON + this CG in use.
+    potentialResolution: ""
+  Outlet_DC_codes (8):
+    errorCode: Outlet_DC_codes (8)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because no converters within the charger are currently available/ready for charging use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (9):
+    errorCode: Outlet_DC_codes (9)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because primary converter group has no converters ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (10):
+    errorCode: Outlet_DC_codes (10)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a major issue of mains AC phase loss detected
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (11):
+    errorCode: Outlet_DC_codes (11)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: SECC has communication error with PLC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (12):
+    errorCode: Outlet_DC_codes (12)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to an issue with the 12V power supply, which is not functioning correctly.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (13):
+    errorCode: Outlet_DC_codes (13)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outgoing coils not responding.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (14):
+    errorCode: Outlet_DC_codes (14)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a fault in the DC fuse.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (15):
+    errorCode: Outlet_DC_codes (15)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Charger main cooling fan fault detected.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (16):
+    errorCode: Outlet_DC_codes (16)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Dispenser has communication error with PLC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (17):
+    errorCode: Outlet_DC_codes (17)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the dispenser is currently not in operating mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (18):
+    errorCode: Outlet_DC_codes (18)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Dispenser configuration is not correctly set.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (19):
+    errorCode: Outlet_DC_codes (19)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not in charging state (not ready).
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (20):
+    errorCode: Outlet_DC_codes (20)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Standby insulation monitor state is invalid.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (21):
+    errorCode: Outlet_DC_codes (21)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outgoing coils seem to be stuck.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (22):
+    errorCode: Outlet_DC_codes (22)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready due to a major fault in the surge protection device.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (23):
+    errorCode: Outlet_DC_codes (23)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Output voltage is too high to begin charging.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (24):
+    errorCode: Outlet_DC_codes (24)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the Electric Vehicle Supply Equipment (EVSE) has triggered an overheat shutdown.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (25):
+    errorCode: Outlet_DC_codes (25)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the dispenser is experiencing overheating, and a charging permit is not present.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (26):
+    errorCode: Outlet_DC_codes (26)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the dispenser has activated a critical overheat shutdown.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (27):
+    errorCode: Outlet_DC_codes (27)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the firmware version of the dispenser PLC does not match that of the Sicharge PLC
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (28):
+    errorCode: Outlet_DC_codes (28)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because the Insulation Monitoring Devices (IMD) for the dispenser are currently undergoing testing.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (29):
+    errorCode: Outlet_DC_codes (29)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet is not ready because a custom firmware version has been detected in the LOGO PLC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (30):
+    errorCode: Outlet_DC_codes (30)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: IMD connection check failed for 5 consecutive attempts.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (31):
+    errorCode: Outlet_DC_codes (31)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Incompatible Firmware version found in LOGO PLC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (32):
+    errorCode: Outlet_DC_codes (32)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: All automation area temperature sensors lost after timeout.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (33):
+    errorCode: Outlet_DC_codes (33)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: ELMS configured but inactive.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC_codes (34):
+    errorCode: Outlet_DC_codes (34)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet blocked by priority mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (1):
+    errorCode: Outlet_AC_codes (1)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Charger not in operating mode and not ready to charge.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (2):
+    errorCode: Outlet_AC_codes (2)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Main breaker is open.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (3):
+    errorCode: Outlet_AC_codes (3)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: AC contactor fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (4):
+    errorCode: Outlet_AC_codes (4)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Modbus error SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (5):
+    errorCode: Outlet_AC_codes (5)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Modbus error AC meter.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (6):
+    errorCode: Outlet_AC_codes (6)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: No meter is found.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (7):
+    errorCode: Outlet_AC_codes (7)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: One or more incoming phases are lost.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (8):
+    errorCode: Outlet_AC_codes (8)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: State monitor error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (9):
+    errorCode: Outlet_AC_codes (9)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Retrigger unlocking active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (10):
+    errorCode: Outlet_AC_codes (10)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Shutdown active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (11):
+    errorCode: Outlet_AC_codes (11)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Reboot active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (12):
+    errorCode: Outlet_AC_codes (12)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Failsafe mode active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (13):
+    errorCode: Outlet_AC_codes (13)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Fuse or RCD tripped.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (14):
+    errorCode: Outlet_AC_codes (14)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Income SPD not okay.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (15):
+    errorCode: Outlet_AC_codes (15)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: LOGO custom test firmware found.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (16):
+    errorCode: Outlet_AC_codes (16)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: 12V power supply error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (17):
+    errorCode: Outlet_AC_codes (17)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Unintentional unlocking.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (18):
+    errorCode: Outlet_AC_codes (18)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: No breaker current is configured.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (19):
+    errorCode: Outlet_AC_codes (19)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: The max current is configured.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (20):
+    errorCode: Outlet_AC_codes (20)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Wrong socket is configured.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (21):
+    errorCode: Outlet_AC_codes (21)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: State monitor check has not passed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (22):
+    errorCode: Outlet_AC_codes (22)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: Contactor fault.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_AC_codes (23):
+    errorCode: Outlet_AC_codes (23)
+    errorName: Outlet not ready
+    classification: Maintenance
+    severity: Major
+    description: ELMS is configured but inactive.
+    potentialRootCause: ""
+    potentialResolution: ""
+  fwupdateSECC_DC1:
+    errorCode: fwupdateSECC_DC1
+    errorName: Firmware update SECC_DC1
+    classification: Maintenance
+    severity: Information
+    description: SECC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  fwupdateSECC_DC2:
+    errorCode: fwupdateSECC_DC2
+    errorName: Firmware update SECC_DC2
+    classification: Maintenance
+    severity: Information
+    description: SECC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  fwupdateSECC_DC3:
+    errorCode: fwupdateSECC_DC3
+    errorName: Firmware update SECC_DC3
+    classification: Maintenance
+    severity: Information
+    description: SECC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  fwupdateSECC_DC4:
+    errorCode: fwupdateSECC_DC4
+    errorName: Firmware update SECC_DC4
+    classification: Maintenance
+    severity: Information
+    description: SECC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  fwupdateSECC_DC5:
+    errorCode: fwupdateSECC_DC5
+    errorName: Firmware update SECC_DC5
+    classification: Maintenance
+    severity: Information
+    description: SECC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  RCD_FB1_or_MCB_FC5_AC_Charging:
+    errorCode: RCD_FB1_or_MCB_FC5_AC_Charging
+    errorName: RCD and/or MCB AC charging
+    classification: Maintenance
+    severity: Major
+    description: Trip at RCD or MCB in AC charging circuit.
+    potentialRootCause: ""
+    potentialResolution: ""
+  RCD_FB1_AC_Charging:
+    errorCode: RCD_FB1_AC_Charging
+    errorName: RCD AC charging
+    classification: Maintenance
+    severity: Major
+    description: Trip at RCD in AC charging circuit.
+    potentialRootCause: ""
+    potentialResolution: ""
+  RCBO_FB3.2_Automation:
+    errorCode: RCBO_FB3.2_Automation
+    errorName: RCD Automation
+    classification: Maintenance
+    severity: Minor
+    description: Trip at RCD in automation.
+    potentialRootCause: ""
+    potentialResolution: ""
+  RCD_FB3_Automation:
+    errorCode: RCD_FB3_Automation
+    errorName: RCD Automation
+    classification: Maintenance
+    severity: Minor
+    description: Trip at RCD in automation.
+    potentialRootCause: ""
+    potentialResolution: ""
+  IMD_BC1:
+    errorCode: IMD_BC1
+    errorName: IMD error
+    classification: Safety
+    severity: Major
+    description: IMD error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  IMD_BC2:
+    errorCode: IMD_BC2
+    errorName: IMD error
+    classification: Safety
+    severity: Major
+    description: IMD error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  IMD_BC3:
+    errorCode: IMD_BC3
+    errorName: IMD error
+    classification: Safety
+    severity: Major
+    description: IMD error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  IMD_BC4:
+    errorCode: IMD_BC4
+    errorName: IMD error
+    classification: Safety
+    severity: Major
+    description: IMD error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SPD_FA2_or_FA3_DispenserConn:
+    errorCode: SPD_FA2_or_FA3_DispenserConn
+    errorName: SPD_FA2_or_FA3_DispenserConn
+    classification: Safety
+    severity: Major
+    description: Surge protection or fuse of DC3 or DC4 tripped.
+    potentialRootCause: ""
+    potentialResolution: ""
+  MCBs_FC18_FC20_FC20_FC21:
+    errorCode: MCBs_FC18_FC20_FC20_FC21
+    errorName: MCBs for 230VAC devices
+    classification: Maintenance
+    severity: Minor
+    description: MCBs for 230V AC devices.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Mainbreaker_QA1:
+    errorCode: Mainbreaker_QA1
+    errorName: Main circuit breaker
+    classification: Maintenance
+    severity: Critical
+    description: Main circuit breaker.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SPD_FA1_or_Fuse_FC1_AC-Income:
+    errorCode: SPD_FA1_or_Fuse_FC1_AC-Income
+    errorName: Surge protection income
+    classification: Safety
+    severity: Critical
+    description: Surge protection income.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Income_Phaseloss:
+    errorCode: Income_Phaseloss
+    errorName: Phase loss of the feeding grid
+    classification: Maintenance
+    severity: Critical
+    description: Phase loss of the feeding grid.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SECC_KF11_AC1_MB_Problem:
+    errorCode: SECC_KF11_AC1_MB_Problem
+    errorName: Loss of communication AC1 and SECC
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication between AC1 and SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  NoConverters_CGp_DC1:
+    errorCode: NoConverters_CGp_DC1
+    errorName: DC1 has 0 converters in its primary group
+    classification: Maintenance
+    severity: Major
+    description: DC1 has 0 converters in its primary group.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SECC_DC1_MB_Problem_KF12:
+    errorCode: SECC_DC1_MB_Problem_KF12
+    errorName: Loss of communication DC1 and SECC
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication between DC1 and SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  NoConverters_CGp_DC2:
+    errorCode: NoConverters_CGp_DC2
+    errorName: DC2 has 0 converters in its primary group
+    classification: Maintenance
+    severity: Major
+    description: DC2 has 0 converters in its primary group.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SECC_DC2_MB_Problem_KF11:
+    errorCode: SECC_DC2_MB_Problem_KF11
+    errorName: Loss of communication DC2 and SECC
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication between DC2 and SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SECC_DC3_MB_Problem_KF211:
+    errorCode: SECC_DC3_MB_Problem_KF211
+    errorName: Loss of communication DC3 and SECC
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication between DC3 and SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SECC_DC4_MB_Problem_KF212:
+    errorCode: SECC_DC4_MB_Problem_KF212
+    errorName: SECC_DC4_MB_Problem_KF212
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication between DC4 and SECC.
+    potentialRootCause: ""
+    potentialResolution: ""
+  NoConverters_CGp_DC3:
+    errorCode: NoConverters_CGp_DC3
+    errorName: DC3 has 0 converters in its primary group
+    classification: Maintenance
+    severity: Major
+    description: DC3 has 0 converters in its primary group.
+    potentialRootCause: ""
+    potentialResolution: ""
+  NoConverters_CGp_DC4:
+    errorCode: NoConverters_CGp_DC4
+    errorName: DC4 has 0 converters in its primary group
+    classification: Maintenance
+    severity: Major
+    description: DC4 has 0 converters in its primary group.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Converter_Group_DC1:
+    errorCode: Converter_Group_DC1
+    errorName: Converter_Group_DC1
+    classification: Maintenance
+    severity: Major
+    description: The converter group is in an error state and cannot be used.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Converter_Group_DC2:
+    errorCode: Converter_Group_DC2
+    errorName: Converter_Group_DC2
+    classification: Maintenance
+    severity: Major
+    description: The converter group is in an error state and cannot be used.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Converter_Group_DC3:
+    errorCode: Converter_Group_DC3
+    errorName: Converter_Group_DC3
+    classification: Maintenance
+    severity: Major
+    description: The converter group is in an error state and cannot be used.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Converter_Group_DC4:
+    errorCode: Converter_Group_DC4
+    errorName: Converter_Group_DC4
+    classification: Maintenance
+    severity: Major
+    description: The converter group is in an error state and cannot be used.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PLC Configuration Error:
+    errorCode: PLC Configuration Error
+    errorName: PLC Configuration Error
+    classification: Maintenance
+    severity: Major
+    description: PLC Configuration Error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DoorPositionSwitch_BG3_BG4:
+    errorCode: DoorPositionSwitch_BG3_BG4
+    errorName: One or both doors are open
+    classification: Security
+    severity: Critical
+    description: One or both doors are open.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: doorOpen_BG201":
+    errorCode: "d-plc: doorOpen_BG201"
+    errorName: One or both doors are open.
+    classification: Security
+    severity: Critical
+    description: One or both doors are open.
+    potentialRootCause: ""
+    potentialResolution: ""
+  EmergencyStopButton_SF2:
+    errorCode: EmergencyStopButton_SF2
+    errorName: Emergency stop button is pressed
+    classification: Security
+    severity: Critical
+    description: The emergency stop button is pressed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  SafetyRelay_QA26:
+    errorCode: SafetyRelay_QA26
+    errorName: Emergency stop button is pressed
+    classification: Security
+    severity: Critical
+    description: Emergency stop button is pressed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  EVSE_TempUpperLimit:
+    errorCode: EVSE_TempUpperLimit
+    errorName: Internal EVSE temperature exceeded upper limit
+    classification: Security
+    severity: Critical
+    description: Internal EVSE temperature exceeded upper limit.
+    potentialRootCause: ""
+    potentialResolution: ""
+  EVSE_TempLowerLimit:
+    errorCode: EVSE_TempLowerLimit
+    errorName: Internal EVSE temperature exceeded lower limit
+    classification: Security
+    severity: Minor
+    description: Internal EVSE temperature exceeded lower limit.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PerformingCollaboratedReboot:
+    errorCode: PerformingCollaboratedReboot
+    errorName: Performing collaborated reboot
+    classification: Maintenance
+    severity: Information
+    description: Reboot is in progress.
+    potentialRootCause: Reboot was triggered.
+    potentialResolution: ""
+  PerformingCollaboratedShutdown:
+    errorCode: PerformingCollaboratedShutdown
+    errorName: Shutdown inactive
+    classification: Maintenance
+    severity: Information
+    description: Shutdown is in progress.
+    potentialRootCause: Shutdown was triggered.
+    potentialResolution: ""
+  FailsafeMode_Active:
+    errorCode: FailsafeMode_Active
+    errorName: Failsafe mode is active. Charger is out of order.
+    classification: Maintenance
+    severity: Critical
+    description: Failsafe mode is active. The charger is out of order.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DebugMode:
+    errorCode: DebugMode
+    errorName: Debugmode active for 150 minutes
+    classification: Maintenance
+    severity: Information
+    description: Debug mode is active for 150 minutes.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC_Coils_MG1-MG4_SelfTest:
+    errorCode: DC_Coils_MG1-MG4_SelfTest
+    errorName: DC coils self-test
+    classification: Maintenance
+    severity: Information
+    description: DC coils self-test evaluation failed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalUnreachable_PZx:
+    errorCode: PaymentTerminalUnreachable_PZx
+    errorName: Payment terminal unreachable PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal connection is lost.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentHostUnreachable_PZx:
+    errorCode: PaymentHostUnreachable_PZx
+    errorName: Payment host unreachable PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment host connection is lost.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalInServiceMode_PZx:
+    errorCode: PaymentTerminalInServiceMode_PZx
+    errorName: Payment terminal in service mode PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal is in service mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalRemoteMaintenanceActive_PZx:
+    errorCode: PaymentTerminalRemoteMaintenanceActive_PZx
+    errorName: PaymentTerminalRemoteMaintenanceActive_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal remote maintenance is active.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalSystemMalfunction_PZx:
+    errorCode: PaymentTerminalSystemMalfunction_PZx
+    errorName: PaymentTerminalSystemMalfunction_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal system malfunction.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalOutOfOrder_PZx:
+    errorCode: PaymentTerminalOutOfOrder_PZx
+    errorName: PaymentTerminalOutOfOrder_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal is out of order.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalInitialisationRequired_PZx:
+    errorCode: PaymentTerminalInitialisationRequired_PZx
+    errorName: PaymentTerminalInitialisationRequired_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal initialization is required.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalActivationRequired_PZx:
+    errorCode: PaymentTerminalActivationRequired_PZx
+    errorName: PaymentTerminalActivationRequired_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal activation is required.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalLowVoltageSupply_PZx:
+    errorCode: PaymentTerminalLowVoltageSupply_PZx
+    errorName: PaymentTerminalLowVoltageSupply_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal has low voltage supply.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalCardLockingMechanismDefect_PZx:
+    errorCode: PaymentTerminalCardLockingMechanismDefect_PZx
+    errorName: PaymentTerminalCardLockingMechanismDefect_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal card locking mechanism is not working.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PaymentTerminalCardReaderDefect_PZx:
+    errorCode: PaymentTerminalCardReaderDefect_PZx
+    errorName: PaymentTerminalCardReaderDefect_PZx
+    classification: Maintenance
+    severity: Major
+    description: Payment terminal card reader is is not working.
+    potentialRootCause: ""
+    potentialResolution: ""
+  outlet1:
+    errorCode: outlet1
+    errorName: outlet1
+    classification: Maintenance
+    severity: Major
+    description: Outlet 1 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  outlet2:
+    errorCode: outlet2
+    errorName: outlet2
+    classification: Maintenance
+    severity: Major
+    description: Outlet 2 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  outlet3:
+    errorCode: outlet3
+    errorName: outlet3
+    classification: Maintenance
+    severity: Major
+    description: Outlet 3 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  outlet4:
+    errorCode: outlet4
+    errorName: outlet4
+    classification: Maintenance
+    severity: Major
+    description: Outlet 4 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  outlet5:
+    errorCode: outlet5
+    errorName: outlet5
+    classification: Maintenance
+    severity: Major
+    description: Outlet 5 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  allOutletsUnavailable:
+    errorCode: allOutletsUnavailable
+    errorName: allOutletsUnavailable
+    classification: Maintenance
+    severity: Critical
+    description: No outlet is currently ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC2_CoolingUnit_EP1_Fan/Pump:
+    errorCode: DC2_CoolingUnit_EP1_Fan/Pump
+    errorName: DC2_CoolingUnit_EP1_Fan/Pump
+    classification: Maintenance
+    severity: Major
+    description: DC2 cooling unit error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC1-2_CoolingUnit_EP1:
+    errorCode: DC1-2_CoolingUnit_EP1
+    errorName: DC1-2_CoolingUnit_EP1
+    classification: Maintenance
+    severity: Major
+    description: DC1 and DC2 cooling unit error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  DC2_CoolingUnit_EP1_Lvlswitch:
+    errorCode: DC2_CoolingUnit_EP1_Lvlswitch
+    errorName: DC2_CoolingUnit_EP1_Lvlswitch
+    classification: Maintenance
+    severity: Minor
+    description: DC2 coolant tank level is below threshold.
+    potentialRootCause: ""
+    potentialResolution: Fill coolant tank.
+  DC1-2_CoolingUnit_EP1_Lvlswitch:
+    errorCode: DC1-2_CoolingUnit_EP1_Lvlswitch
+    errorName: DC1-2_CoolingUnit_EP1_Lvlswitch
+    classification: Maintenance
+    severity: Minor
+    description: DC1 and DC2 coolant tank level is below threshold.
+    potentialRootCause: ""
+    potentialResolution: Fill coolant tank.
+  OpMode (ERROR):
+    errorCode: OpMode (ERROR)
+    errorName: Charger not ready (ERROR)
+    classification: Maintenance
+    severity: Critical
+    description: Charger is in error mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (POWER_SAVE):
+    errorCode: OpMode (POWER_SAVE)
+    errorName: Charger not ready (POWER_SAVE)
+    classification: Maintenance
+    severity: Information
+    description: Charger is in power save mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (INIT):
+    errorCode: OpMode (INIT)
+    errorName: Charger not ready (INIT)
+    classification: Maintenance
+    severity: Information
+    description: Charger is in initialization mode.
+    potentialRootCause: Charger is in boot phase.
+    potentialResolution: ""
+  OpMode (CLOSE_MAINBREAKER):
+    errorCode: OpMode (CLOSE_MAINBREAKER)
+    errorName: Charger not ready (CLOSE_MAINBREAKER)
+    classification: Maintenance
+    severity: Information
+    description: Charger main breaker is closed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (RETRY_MAINBREAKER_CLOSING):
+    errorCode: OpMode (RETRY_MAINBREAKER_CLOSING)
+    errorName: Charger not ready (RETRY_MAINBREAKER_CLOSING)
+    classification: Maintenance
+    severity: Major
+    description: Charger is retrying to close main breaker.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (CONVERTER_GROUPING):
+    errorCode: OpMode (CONVERTER_GROUPING)
+    errorName: Charger not ready (CONVERTER_GROUPING)
+    classification: Maintenance
+    severity: Information
+    description: Charger is in converter grouping mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (COOLDOWN_OF_UVR_OF_QA1):
+    errorCode: OpMode (COOLDOWN_OF_UVR_OF_QA1)
+    errorName: Charger not ready (COOLDOWN_OF_UVR_OF_QA1)
+    classification: Maintenance
+    severity: Information
+    description: Charger is in cooldown of undervoltage release of the main breaker.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (CHANGE_CONFIG):
+    errorCode: OpMode (CHANGE_CONFIG)
+    errorName: Charger not ready (CHANGE_CONFIG)
+    classification: Maintenance
+    severity: Information
+    description: Charger is in configuration change mode.
+    potentialRootCause: The PLC has been put into configuration change mode.
+    potentialResolution: ""
+  OpMode (REALLOCATION_CAN_ADDRESSES):
+    errorCode: OpMode (REALLOCATION_CAN_ADDRESSES)
+    errorName: Charger not ready (REALLOCATION_CAN_ADDRESSES)
+    classification: Maintenance
+    severity: Information
+    description: Charger is reallocating CAN addresses.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (FASTSHUTDOWN_CHECK):
+    errorCode: OpMode (FASTSHUTDOWN_CHECK)
+    errorName: Charger not ready (FASTSHUTDOWN_CHECK)
+    classification: Maintenance
+    severity: Information
+    description: Charger is performing fast shutdown check.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (REQUEST_CONVERTER_SERIALNUMBER):
+    errorCode: OpMode (REQUEST_CONVERTER_SERIALNUMBER)
+    errorName: Charger not ready (REQUEST_CONVERTER_SERIALNUMBER)
+    classification: Maintenance
+    severity: Information
+    description: Charger is requesting converter serial numbers.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (DISPENSER_PREPARATION_CHECK):
+    errorCode: OpMode (DISPENSER_PREPARATION_CHECK)
+    errorName: Charger not ready (DISPENSER_PREPARATION_CHECK)
+    classification: Maintenance
+    severity: Information
+    description: Charger is performing dispenser preparation check.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (CONVERTER_FIRMWARE_UPDATE):
+    errorCode: OpMode (CONVERTER_FIRMWARE_UPDATE)
+    errorName: Charger not ready (CONVERTER_FIRMWARE_UPDATE)
+    classification: Maintenance
+    severity: Information
+    description: Charger is updating converter firmware.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (CONVERTER_REFRESH):
+    errorCode: OpMode (CONVERTER_REFRESH)
+    errorName: Charger not ready (CONVERTER_REFRESH)
+    classification: Maintenance
+    severity: Information
+    description: Charger is refreshing the converters.
+    potentialRootCause: ""
+    potentialResolution: ""
+  OpMode (FAILSAFE):
+    errorCode: OpMode (FAILSAFE)
+    errorName: Charger not ready (FAILSAFE)
+    classification: Maintenance
+    severity: Critical
+    description: Charger is in failsafe mode.
+    potentialRootCause: A faulty service or component prevented the successful startup.
+    potentialResolution: ""
+  ReactivePowerControl:
+    errorCode: ReactivePowerControl
+    errorName: ReactivePowerControl
+    classification: Maintenance
+    severity: Minor
+    description: Reactive power control problem.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Dispenser_PLC_A_KF201:
+    errorCode: Dispenser_PLC_A_KF201
+    errorName: Dispenser_PLC_A_KF201
+    classification: Maintenance
+    severity: Major
+    description: Dispenser PLC error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: fansBlock_GQ202_203":
+    errorCode: "d-plc: fansBlock_GQ202_203"
+    errorName: "d-plc: fansBlock_GQ202_203"
+    classification: Maintenance
+    severity: Minor
+    description: Dispenser fans are lost.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: triplinePwrLoss":
+    errorCode: "d-plc: triplinePwrLoss"
+    errorName: "d-plc: triplinePwrLoss"
+    classification: Maintenance
+    severity: Critical
+    description: Dispenser does not detect 24V incoming from external trip line.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: fuses24V_FC212to214":
+    errorCode: "d-plc: fuses24V_FC212to214"
+    errorName: "d-plc: fuses24V_FC212to214"
+    classification: Maintenance
+    severity: Major
+    description: One or more 24V fuses are tripped.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: pwrsupply24V_TB210":
+    errorCode: "d-plc: pwrsupply24V_TB210"
+    errorName: "d-plc: pwrsupply24V_TB210"
+    classification: Maintenance
+    severity: Major
+    description: Power supply reports error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: humiditySense_BT201":
+    errorCode: "d-plc: humiditySense_BT201"
+    errorName: "d-plc: humiditySense_BT201"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser humidity sensor readings are out of the plausibility range.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: tempSensor_BT201":
+    errorCode: "d-plc: tempSensor_BT201"
+    errorName: "d-plc: tempSensor_BT201"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser temperature sensor readings are out of the plausibility range.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: stateMachineErr":
+    errorCode: "d-plc: stateMachineErr"
+    errorName: "d-plc: stateMachineErr"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser PLC is in error operating state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: coolingError":
+    errorCode: "d-plc: coolingError"
+    errorName: "d-plc: coolingError"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser cooling system reports error.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: selftestError":
+    errorCode: "d-plc: selftestError"
+    errorName: "d-plc: selftestError"
+    classification: Maintenance
+    severity: Major
+    description: Early warning of possible dispenser PLC cooling fans malfunctioning.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: overheatWarning":
+    errorCode: "d-plc: overheatWarning"
+    errorName: "d-plc: overheatWarning"
+    classification: Maintenance
+    severity: Major
+    description: Overheat warning limit is exceeded.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: shutdown24V":
+    errorCode: "d-plc: shutdown24V"
+    errorName: "d-plc: shutdown24V"
+    classification: Maintenance
+    severity: Information
+    description: Dispenser 24V shutdown is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: reboot24V":
+    errorCode: "d-plc: reboot24V"
+    errorName: "d-plc: reboot24V"
+    classification: Maintenance
+    severity: Information
+    description: Dispenser 24V power cycle is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: fwupdatePLC":
+    errorCode: "d-plc: fwupdatePLC"
+    errorName: "d-plc: fwupdatePLC"
+    classification: Maintenance
+    severity: Information
+    description: Dispenser PLC firmware update is in progress.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: humidityWarning":
+    errorCode: "d-plc: humidityWarning"
+    errorName: "d-plc: humidityWarning"
+    classification: Maintenance
+    severity: Major
+    description: High humidity inside dispenser detected.
+    potentialRootCause: ""
+    potentialResolution: ""
+  "d-plc: overheatShutdown":
+    errorCode: "d-plc: overheatShutdown"
+    errorName: "d-plc: overheatShutdown"
+    classification: Maintenance
+    severity: Major
+    description: Overheat shutdown limit is exceeded.
+    potentialRootCause: ""
+    potentialResolution: ""
+  ScreensaverImageMissing:
+    errorCode: ScreensaverImageMissing
+    errorName: ScreensaverImageMissing
+    classification: Maintenance
+    severity: Minor
+    description: A configured image is missing and cannot be displayed.
+    potentialRootCause: ""
+    potentialResolution: ""
+  ScreensaverDisplayError:
+    errorCode: ScreensaverDisplayError
+    errorName: ScreensaverDisplayError
+    classification: Maintenance
+    severity: Minor
+    description: All images are missing, screensaver is disabled.
+    potentialRootCause: ""
+    potentialResolution: ""
+  ScreensaverDownloadError:
+    errorCode: ScreensaverDownloadError
+    errorName: ScreensaverDownloadError
+    classification: Maintenance
+    severity: Minor
+    description: A configured image could not be downloaded.
+    potentialRootCause: ""
+    potentialResolution: ""
+  sichargeConfigurationBackendConnectionLost:
+    errorCode: sichargeConfigurationBackendConnectionLost
+    errorName: sichargeConfigurationBackendConnectionLost
+    classification: Maintenance
+    severity: Minor
+    description: Sicharge Configuration Backend connection lost.
+    potentialRootCause: ""
+    potentialResolution: ""
+  bufferModule_TB28:
+    errorCode: bufferModule_TB28
+    errorName: bufferModule_TB28
+    classification: Maintenance
+    severity: Minor
+    description: Voltage buffer not ok.
+    potentialRootCause: "Buffer module does not work or is not installed but configured"
+    potentialResolution: "1. Check the circuit diagram to confirm whether the buffer module is installed. 2. If the buffer module is not installed and OCPP 'GridCodeAustria' is true, this indicates a misconfiguration. Set GridCodeAustria to false. 3. Replace the buffer module if steps 1 and 2 do not identify the root cause."
+
+  ############################
+  #                          #
+  #    Cloud 2 Cloud only    #
+  #                          #
+  ############################
+
+  ChargerOperationMode:
+    errorCode: ChargerOperationMode
+    errorName: Charger not ready
+    classification: Maintenance
+    severity: Critical
+    description: Charger is not in running mode.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC1_codes:
+    errorCode: Outlet_DC1_codes
+    errorName: Outlet DC1 not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet DC1 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC2_codes:
+    errorCode: Outlet_DC2_codes
+    errorName: Outlet DC2 not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet DC2 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC3_codes:
+    errorCode: Outlet_DC3_codes
+    errorName: Outlet DC3 not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet DC3 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  Outlet_DC4_codes:
+    errorCode: Outlet_DC4_codes
+    errorName: Outlet DC4 not ready
+    classification: Maintenance
+    severity: Major
+    description: Outlet DC4 is not ready for use.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[0]:
+    errorCode: PowerConverter[0]
+    errorName: PowerConverter[0] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[1]:
+    errorCode: PowerConverter[1]
+    errorName: PowerConverter[1] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[2]:
+    errorCode: PowerConverter[2]
+    errorName: PowerConverter[2] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[3]:
+    errorCode: PowerConverter[3]
+    errorName: PowerConverter[3] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[4]:
+    errorCode: PowerConverter[4]
+    errorName: PowerConverter[4] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[5]:
+    errorCode: PowerConverter[5]
+    errorName: PowerConverter[5] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[6]:
+    errorCode: PowerConverter[6]
+    errorName: PowerConverter[6] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[7]:
+    errorCode: PowerConverter[7]
+    errorName: PowerConverter[7] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[8]:
+    errorCode: PowerConverter[8]
+    errorName: PowerConverter[8] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[9]:
+    errorCode: PowerConverter[9]
+    errorName: PowerConverter[9] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[10]:
+    errorCode: PowerConverter[10]
+    errorName: PowerConverter[10] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[11]:
+    errorCode: PowerConverter[11]
+    errorName: PowerConverter[11] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[12]:
+    errorCode: PowerConverter[12]
+    errorName: PowerConverter[12] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[13]:
+    errorCode: PowerConverter[13]
+    errorName: PowerConverter[13] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  PowerConverter[14]:
+    errorCode: PowerConverter[14]
+    errorName: PowerConverter[14] Error
+    classification: Maintenance
+    severity: Minor
+    description: Power converter is in error state.
+    potentialRootCause: ""
+    potentialResolution: ""
+  # The backend uses this default code when an error is notified by the firmware without an error code. NOT TO BE USED as a default error code while sending error events.
+  "UnknownError": # Internal error code used by cloud, when techCode is missing.
+    errorCode: "UnknownError"
+    errorName: "Unknown error"
+    description: "An unspecified error has occurred."
+    classification: "Maintenance"
+    severity: "Information"
+    potentialRootCause: "An error occurred but the charger failed to communicate the error code."
+    potentialResolution: "Please check the firmware logs"

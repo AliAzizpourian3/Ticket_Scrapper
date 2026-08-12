@@ -1,0 +1,104 @@
+{
+    "incident_id": "e900906d-2ab8-4c58-bd48-d671242b0a91",
+    "ticket_number": "0420136",
+    "title": "ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Payment Terminal Transaction Issue",
+    "created_on": "2025-04-22T11:05:39Z",
+    "last_activity": "2025-05-20T11:27:31Z",
+    "age": "40342",
+    "description": "Reported issue: Pending Transaction in payment terminal, unable to use Credit card\nSolution:\nPlease clear “Transaction pending” on the Seitatech/Casteles terminals for the following chargers:\noZabeX\ngFOeWR\nXJWVVt\n5/6/2025: L2 → L3\nUnable to create child case due to ISP bug.",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "Y2 / S3 300000007004,Y2 / S3 300000007001,Y2 / S3 300000007003",
+    "case_nature_code": 580000001,
+    "chargerID": "oZabeX, gFOeWR, XJWVVt",
+    "additional_info": [
+        {
+            "id": "1fc58ff8-941f-f011-9989-6045bddf319c",
+            "subject": "ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "Dear Rasmus Eksten,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S3 300000007004\nChargerID/Serial No.\n:\noZabeX, gFOeWR, XJWVVt\nProblem Description\n:  Transaction Issue\nFor future reference, your case number is\n0420136\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-22T16:15:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d8c2be17-951f-f011-9989-000d3ab353e4",
+            "subject": "Automatic reply: ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "Jeg er ude af huset og har begrænste adgang til min mail.",
+            "date": "2025-04-22T16:16:09Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "47ba83c3-3482-d0c6-965e-d1059451f498",
+            "subject": "Analysis",
+            "body": "Found that -JIRA ticket was created for this issue. However, in the internal release notes for FW 6.0.3 and 6.1.3, this JIRA ticket is listed under bug fixes.",
+            "date": "2025-04-22T23:51:53Z",
+            "extra": {}
+        },
+        {
+            "id": "19291e84-470d-72a8-b553-5916ef06f372",
+            "subject": "Notes for NOC",
+            "body": "Create Child case\nrequest ES to manually delete the pending transaction from\noZabeX, gFOeWR, XJWVVt",
+            "date": "2025-04-23T03:36:28Z",
+            "extra": {}
+        },
+        {
+            "id": "fafbba89-8820-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "Hello Rasmus,\nGreetings of the day!\nFollowing action has been taken:\nDeleted pending transaction on XJWVVt\noZabeX and gFOeWR had no pending transaction\nCould you please confirm the same from your end?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-23T21:18:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0985f82e-0c24-f011-8c4d-6045bde0265d",
+            "subject": "RE: ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "I still see transaction pending on:\n3AHqra:\noZabeX:\nAnd now also on:\nXdc81P:\nXJWVVt:\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-28T08:38:40Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a849483b-e3d0-e6b2-85ff-e2159bfc7382",
+            "subject": "L2-->L3",
+            "body": "Problem Description :\nThere are still pending transaction error messages on following chargers-\n3AHqra, oZabeX, Xdc81P, XJWVVt.\nAction Performed (L2) :\nNA\nReason for Handover (L3) :\nto manually delete the pending transaction from above chargers\nLog analysis with timestamp :\nRefer the below mail",
+            "date": "2025-05-06T14:28:29Z",
+            "extra": {}
+        },
+        {
+            "id": "b57ebb83-b630-f011-8c4d-7c1e52768372",
+            "subject": "RE: ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "Hi Joao\nI still have transaction pending on oZabeX, Xdc81P, XJWVVt\nCan you help clear them.\nWill FW7 fix this?\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmobil: +45 21 67 85 18\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark. Tel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-14T11:28:20Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5586fec7-6c35-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0420136-DC/Si-D/DK-[Y2/S3 300000007001] Transaction Issue CRM:02699000036",
+            "body": "Hello Rasmus,\nI have clear the transactions pending on the IDs requested. As I told you before a fix for this issue is plan for FW v8.\nI will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-05-20T11:23:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

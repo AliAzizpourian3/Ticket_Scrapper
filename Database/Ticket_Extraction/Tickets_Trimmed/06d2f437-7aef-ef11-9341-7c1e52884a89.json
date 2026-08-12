@@ -1,0 +1,97 @@
+{
+    "incident_id": "06d2f437-7aef-ef11-9341-7c1e52884a89",
+    "ticket_number": "0408173",
+    "title": "ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues",
+    "created_on": "2025-02-20T11:02:51Z",
+    "last_activity": "2025-06-16T08:58:14Z",
+    "age": "Cancelled",
+    "description": "Reported issue: incorrect meter values during an unauthorized charging error at the Stoptransaction\nSolution:",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "1jbRCQ",
+    "stage": null,
+    "serial_number": "MP / S4 170003530",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "934bc730-7aef-ef11-9341-002248a2968e",
+            "subject": "Webform_incident_SiCharge D_20-02-2025_SN: MP / S4 170003530",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S4 170003530\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S4 170003530\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-20T11:02:44Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7983b8df-5835-c404-b923-45b395c9c871",
+            "subject": "Notes : Refer Images shared by Johannes during case creation",
+            "body": "The station sends incorrect meter values during an unauthorized\ncharging error at the Stoptransaction, resulting in the charged\nenergy content being incorrectly displayed in the backend\ndepfointy.\nis this fixed in the new 6.x FW?\nImages shared by Johannes has timestamp of 2024",
+            "date": "2025-02-20T12:46:19Z",
+            "extra": {}
+        },
+        {
+            "id": "c10bcfda-88ef-ef11-9341-000d3add0e90",
+            "subject": "ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00251000478",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S4 170003530\nChargerID/Serial No.\n:\n1jbRCQ\nProblem Description\n:\nThe station sends incorrect meter values during an unauthorized charging error at the Stoptransaction\nAllow us some time to check the logs and review the release notes of v6.0.3. We will get back to you soon.\nFor future reference, your case number is\n0408173\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T12:47:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c00c15db-44f0-ef11-9341-7c1e52771133",
+            "subject": "0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737",
+            "body": "Hallo Johannes,\nder Logeintrag ist ziemlich lange her aber es ich habe es mir mal angeschaut. Ich finde in deiner liste keine passende Transaction ID mir liegt 3911927534 vor mit dem DeAuthorized stamp. Wenn wir in den OCPP 1.6 schauen:\nDeAuthorized:\nThe transaction was stopped because of the authorization status in a StartTransaction.conf\n3.5.2. Local Authorization List\nThe Local Authorization List is a list of identifiers that can be synchronized with the Central System.\nThe list contains the authorization status of all (or a selection of) identifiers and the authorization status/expiration date.\nIdentifiers in the Local Authorization list can be marked as valid, expired, (temporarily) blocked, or blacklisted, corresponding to IdTagInfo status values Accepted/ConcurrentTx, Expired, Blocked, and Invalid, respectively.\nThese values may be used to provide more fine grained information to users (e.g. by display message) during local authorization.\nThe Local Authorization List SHOULD be maintained by the Charge Point in non-volatile memory, and SHOULD be persisted across reboots and power outages\nDas passt alles soweit hier kam die Authentication nicht durch. Es lief also kein strom\n2024-11-30T07:20:24.721289+00:00 sicharge-cp [local0:info] sicharge-cp-backend/41e65e731012[701]: OCPP: Send command: StartTransaction (\n272d8385-509b-4a12-b62f-1f72a3701bf5\n) - {\"connectorId\":1,\"idTag\":\"\",\"meterStart\":9446312,\"timestamp\":\"2024-11-30T07:20:24.712Z\"}\n2024-11-30T07:20:25.008508+00:00 sicharge-cp [local0:info] sicharge-cp-backend/41e65e731012[701]: OCPP: Received result: StartTransaction (\n272d8385-509b-4a12-b62f-1f72a3701bf5\n) - {\"idTagInfo\n\":{\"status\":\"Blocked\"},\"\ntransactionId\":391927481}\n2024-11-30T07:20:55.886768+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2024-11-30T07:20:56.000000+00:00 secc-le [daemon:notice] SECC[844]: {\"type\":\"session_stop\",\"timestamp\":1732951256067,\"chargerId\":\"secc2300-04859\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1732951208327,\"duration\":0,\"energy\":0,\"EVCCID\":\"9c36f80073fb\",\"EVMAC\":\"9c.36.f8.00.73.fb\",\"user\":\"internal\",\"error\":{}}}\n{\"connectorId\":1,\"idTag\":\"\",\"\nmeterStart\":9446312,\"timestamp\":\"2024-11-30T07:21:17.686Z\"}\nAlso wurde hier versucht per Invalid ID Token zu verifizieren was aber nur dann funktioniert wenn man die OCPP Konfiguration dementsprechend einstellt.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-21T11:13:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c701c2e-56f0-ef11-9342-000d3aba081f",
+            "subject": "AW: 0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737",
+            "body": "Hi,\nGenau, die Autorisierung wurde blockiert, da jemand eine falsche ID hingehalten hat.\nIch habe nur das Problem, dass in Depofinity die falsche Energiemenge angezeigt wurde.\nBeutet der Wert bei StopTransaction meterStop den letztgültigen Zählerwert oder den geladenen Energieinhalt?\nLaut Depfinity Team schickt der Charger falsche Zählerwerte, daher auch mein Ticket.\nAus meiner Sicht wurde der Inhalt von Depofinity fehlerhaft interpretieret.\nWie siehst du das?\nMit freundlichen Grüßen\nDipl.-Ing. Johannes Dißauer\nSiemens Aktiengesellschaft Österreich\nAustria\nSmart Infrastructure\nCustomer\nRC-AT SI E C\nSiemensstr. 90\n1210 Wien, Österreich\nMobil: +43 (664) 88557764\nmailto:johannes.dissauer@siemens.com\nwww.siemens.at\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 21. Februar 2025 12:14\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\n0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737\nHallo Johannes,\nder Logeintrag ist ziemlich lange her aber es ich habe es mir mal angeschaut. Ich finde in deiner liste keine passende Transaction ID mir liegt 3911927534 vor mit dem DeAuthorized stamp. Wenn wir in den OCPP 1.6 schauen:\nDeAuthorized:  The transaction was stopped because of the authorization status in a StartTransaction.conf\n3.5.2. Local Authorization List\nThe Local Authorization List is a list of identifiers that can be synchronized with the Central System.\nThe list contains the authorization status of all (or a selection of) identifiers and the authorization status/expiration date.\nIdentifiers in the Local Authorization list can be marked as valid, expired, (temporarily) blocked, or blacklisted, corresponding to IdTagInfo status values Accepted/ConcurrentTx, Expired, Blocked, and Invalid, respectively.\nThese values may be used to provide more fine grained information to users (e.g. by display message) during local authorization.\nThe Local Authorization List SHOULD be maintained by the Charge Point in non-volatile memory, and SHOULD be persisted across reboots and power outages\nDas passt alles soweit hier kam die Authentication nicht durch. Es lief also kein strom\n2024-11-30T07:20:24.721289+00:00 sicharge-cp [local0:info] sicharge-cp-backend/41e65e731012[701]: OCPP: Send command: StartTransaction (\n272d8385-509b-4a12-b62f-1f72a3701bf5\n) - {\"connectorId\":1,\"idTag\":\"\",\"meterStart\":9446312,\"timestamp\":\"2024-11-30T07:20:24.712Z\"}\n2024-11-30T07:20:25.008508+00:00 sicharge-cp [local0:info] sicharge-cp-backend/41e65e731012[701]: OCPP: Received result: StartTransaction (\n272d8385-509b-4a12-b62f-1f72a3701bf5\n) - {\"idTagInfo\n\":{\"status\":\"Blocked\"},\"\ntransactionId\":391927481}\n2024-11-30T07:20:55.886768+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2024-11-30T07:20:56.000000+00:00 secc-le [daemon:notice] SECC[844]: {\"type\":\"session_stop\",\"timestamp\":1732951256067,\"chargerId\":\"secc2300-04859\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1732951208327,\"duration\":0,\"energy\":0,\"EVCCID\":\"9c36f80073fb\",\"EVMAC\":\"9c.36.f8.00.73.fb\",\"user\":\"internal\",\"error\":{}}}\n{\"connectorId\":1,\"idTag\":\"\",\"\nmeterStart\":9446312,\"timestamp\":\"2024-11-30T07:21:17.686Z\"}\nAlso wurde hier versucht per Invalid ID Token zu verifizieren was aber nur dann funktioniert wenn man die OCPP Konfiguration dementsprechend einstellt.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-21T13:17:28Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fefad8b7-80f2-ef11-be1f-6045bddd587e",
+            "subject": "RE: AW: 0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737",
+            "body": "Hallo Johannes,\nNein, das ist der Meterwert zum Start/Stop-Zeitpunkt.\nOCPP 1.6\n6.49. StopTransaction.req\nmeterStart | integer | 1..1 | Required. | Dieser Wert enthält den Zählerstand in Wh für den Anschluss zu Beginn der Transaktion.\nmeterStop | integer | 1..1 | Required. | Dieser Wert enthält den Zählerstand in Wh für den Anschluss am Ende der Transaktion.\nDaran kann man sich dann orientieren.\nAuch im OCMF (ERK) Record wird der Meterwert eingefügt und übermittelt, z.B.:\n\"TX\":\"B\",\"RV\":47934.079, \"TX\":\"E\",\"RV\":47934.079,\nAlso wurde keine Energie zum Fahrzeug zugeführt. In deiner Liste ist die Transaktion nicht enthalten, somit kann ich auch nicht sagen, was da passiert ist. Es fehlt die TransaktionsID mit 391927XXXX.\nIch check das mal intern it der R&D aber das die Meterwerte Falsch vom Ladegerät gesendet werden halte ich für eine Falschinformation. Es ist eine einfache logik auslesen zusammenpacken senden mehr passiert da nicht, Die gesendete Energiemende zur ermitteln ist dann Sache vom Backend.\nHast du auch aktuelle Daten?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-24T07:26:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "97ae8c66-1ef9-ef11-bae2-7c1e5236cda4",
+            "subject": "AW: AW: 0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737",
+            "body": "Leider habe ich keine aktuellen Daten.\nDas Problem wird auch gerade im Depofinity Team geprüft.\nLG,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 24. Februar 2025 08:51\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: 0408173 - ID0408173-DC/Si-D/AT [MP / S4 170003530] Incorrect Metervalues CRM:00439000737\nHallo Johannes,\nNein, das ist der Meterwert zum Start/Stop-Zeitpunkt.\nOCPP 1.6\n6.49. StopTransaction.req\nmeterStart | integer | 1..1 | Required. | Dieser Wert enthält den Zählerstand in Wh für den Anschluss zu Beginn der Transaktion.\nmeterStop | integer | 1..1 | Required. | Dieser Wert enthält den Zählerstand in Wh für den Anschluss am Ende der Transaktion.\nDaran kann man sich dann orientieren.\nAuch im OCMF (ERK) Record wird der Meterwert eingefügt und übermittelt, z.B.:\n\"TX\":\"B\",\"RV\":47934.079, \"TX\":\"E\",\"RV\":47934.079,\nAlso wurde keine Energie zum Fahrzeug zugeführt. In deiner Liste ist die Transaktion nicht enthalten, somit kann ich auch nicht sagen, was da passiert ist. Es fehlt die TransaktionsID mit 391927XXXX.\nIch check das mal intern it der R&D aber das die Meterwerte Falsch vom Ladegerät gesendet werden halte ich für eine Falschinformation. Es ist eine einfache logik auslesen zusammenpacken senden mehr passiert da nicht, Die gesendete Energiemende zur ermitteln ist dann Sache vom Backend.\nHast du auch aktuelle Daten?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-04T17:30:47Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8ce82d62-8bd7-8978-8a89-bbb5dd30eae1",
+            "subject": "Semih ",
+            "body": "EMOB-17981\nFollow-up: OCMF record is invalid\nAs im moving to RC-DE i will release this case and send to L3 queue please also check the EVC case",
+            "date": "2025-06-16T08:57:25Z",
+            "extra": {}
+        }
+    ]
+}

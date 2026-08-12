@@ -1,0 +1,108 @@
+{
+    "incident_id": "94c318d3-d1df-48e5-852c-7d11c96314e0",
+    "ticket_number": "0467260",
+    "title": "ID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs",
+    "created_on": "2025-12-11T18:47:43Z",
+    "last_activity": "2026-01-19T08:26:59Z",
+    "age": "17097",
+    "description": "Reported behaviour/issue: Check on logs.",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "Y2/T3314176150001",
+    "case_nature_code": 580000001,
+    "chargerID": "aB6POl",
+    "additional_info": [
+        {
+            "id": "84b26e14-c2d6-f011-8544-7ced8d425d60",
+            "subject": "A new case manager was assigned to 0467260 CRM:00225302637",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0467260 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=94c318d3-d1df-48e5-852c-7d11c96314e0",
+            "date": "2025-12-11T18:49:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ea57059-acaa-3ded-bd1a-aed354b73ba8",
+            "subject": "Additional description:",
+            "body": "Hello,\nA client tried to charge two times today December 11 between 5\n:51:22 PM and 6:15:20 PM CU TIME (18:51:22 and 19:15:20 Italy time) but the charger didn't deliver energy. Also, when the client tried to stop the charge and removed the cable it didn't stop on the system so I had to reboot the charger to make it available again.\nCan you check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d",
+            "date": "2025-12-11T18:51:39Z",
+            "extra": {}
+        },
+        {
+            "id": "3b5c6aaf-c2d6-f011-8544-7ced8d425b04",
+            "subject": "ID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs CRM:02681001208",
+            "body": "Dear\nRosita\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/T3314176150001\nCharger ID\n: aB6POl\nProblem Description\n: Check on logs\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0467260\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-11T18:53:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5632ff9b-cbd6-f011-8544-7ced8d4251b1",
+            "subject": "ID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs CRM:00263000261",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nY2/T3314176150001\nwhich led to the opened ticket:\n0467260\n.\nError description: \"A\nclient tried to charge two times today December 11 between 5:51:22 PM and 6:15:20 PM CU TIME (18:51:22 and 19:15:20 Italy time) but the charger didn't deliver energy. Also, when the client tried to stop the charge and removed the cable it didn't stop on the system so I had to reboot the charger to make it available again.\n\"\nThe charger have been checked on SCB and it's charging in 2 outlets at the moment:\nThe logs have been collect between that time and it was possible to find different sessions with error, the first session was this one\n2025-12-11T17:48:50.798700+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\n2025-12-11T17:49:03.738274+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: Charging Phase \"P00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-12-11T17:50:03.720374+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  |ID=613|DC2: |EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=0.1|EV_TarCur[A]=0|EV_TarVol[V]=0|EV_SOC[%]=0|EVSE_DESpwr[kW]=0|Cable_Max[A]=400|Phase=1\n2025-12-11T17:51:29.615683+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2025-12-11T17:51:31.663216+00:00 [FW080005G1] swcpu [user:debug] [4322] [VTL]  DC2: Voltage transducer log event, Reading: 0V, OGCAuxFbk: off, PilotState: E, ChargingPhase: P00, DCstatus: Ready, CGpMaxVoltsNow: 0V, CGpUsedBy: None(idle), CGallotted: 0\n2025-12-11T17:51:31.680439+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\n2025-12-11T17:51:34.698281+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"E\" --> \"C1\"\n2025-12-11T17:51:34.906952+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"C1\" --> \"B1\"\n2025-12-11T17:51:35.412582+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"B2\"\n2025-12-11T17:52:02.543742+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\nThe logs will be shared with the expert team that will provide feedback as soon as possible\n. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-11T19:57:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1fa6ce22-e4e3-2d80-9a67-aee403ebbf03",
+            "subject": "Logs",
+            "body": "",
+            "date": "2025-12-11T20:26:34Z",
+            "extra": {}
+        },
+        {
+            "id": "b143d8da-41d7-f011-8544-7ced8d4258c6",
+            "subject": "A new case manager was assigned to 0467260 CRM:00225303050",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0467260 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=94c318d3-d1df-48e5-852c-7d11c96314e0",
+            "date": "2025-12-12T10:03:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "235f6482-4dd7-f011-8544-7c1e523628c9",
+            "subject": "0467260 - ID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs CRM:00472000468",
+            "body": "Dear Rosita,\nThe failed attempts to charge yesterday, were related for the OCPP being toggling between OFFLINE and ONLINE. Most probably related with a problem on the network provider.\nThe charger couldn't process the authorization because the OCPP server was not reachable. Without it, the session can not start. Today I see no instability and everything looks fine in the charger.\nSince there is no action to be done, I will proceed to close this ticket if you agree.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-12-12T11:27:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12305bde-5ad7-f011-8544-7ced8d4251b1",
+            "subject": "RE: 0467260 - ID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs CRM:00472000468",
+            "body": "Hello,\nThank you for the analysis, you can close the ticket.\nWith best regards,\nRosita Abate",
+            "date": "2025-12-12T13:03:01Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "52588d31-16e0-f011-8543-7ced8d75e70f",
+            "subject": "Ticket 0467260 has been closed. Are you satisfied with our provided solution? CRM:00225309432",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0467260\nwith the title:\nID0467260/DC/Si-D/IT-[Y2/T3314176150001] Check on logs\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-23T15:44:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

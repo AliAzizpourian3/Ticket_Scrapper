@@ -1,0 +1,38 @@
+{
+    "incident_id": "7bc82bfb-a370-47f1-b1ea-7af7afd9e1ce",
+    "ticket_number": "0418463",
+    "title": "ID0418463-DC/Si-D/FR-[MP / P8 170000839] ENGIE EME- Issue with HMI-C1",
+    "created_on": "2025-04-11T16:36:51Z",
+    "last_activity": "2025-05-20T14:17:08Z",
+    "age": "56021",
+    "description": "Reported issue: My colleague tested the payment terminal on-site. Upon selecting the \"Pay by terminal\" option from the HMI, the charger displayed “Please wait” with the usual spinning circle animation. However, the process didn’t progress, and the terminal remained unresponsive. The only temporary solution so far has been to reboot the charger. What’s concerning is that there are no error flags indicating that the terminal is disconnected. We only become aware of the issue when someone is on-site and confirms that the terminal is not functioning. As I have highlighted in other tickets, this issue appears to be affecting multiple SI chargeD chargers equipped with CCV terminals, and seems to be spreading. For that reason, I would really appreciate it if this issue could be treated as high priority.\nSolution:\nyyyy-mm-dd:\nR&D Ticket: EVC3-9297 and EMOB-18177",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "T3MKpQ",
+    "stage": null,
+    "serial_number": "MP / P8 170000839,MP / P8 170000839",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8130456d-67c2-24a5-935a-fe4bc4559e61",
+            "subject": "Reason for handover",
+            "body": "Customer reports after selecting payment terminal there is loading However, it doesn’t proceed further after a few moments, it returns to the home screen, and the terminal remains unresponsive.\nNo error flags active\nAttaching the logs for your reference.",
+            "date": "2025-04-11T16:40:36Z",
+            "extra": {}
+        },
+        {
+            "id": "867091eb-8164-93d3-bc12-8810a2da0df7",
+            "subject": null,
+            "body": "Issue cannot be reproduced remotely so far.",
+            "date": "2025-04-22T09:55:55Z",
+            "extra": {}
+        },
+        {
+            "id": "46a216db-f317-223d-83b7-e4d08eb26f84",
+            "subject": "Status update",
+            "body": "The issue is the following: CCV not responding, but no error flag is raised and no other error is logged.\nHowever, payment selection is pending and client onsite is just waiting.\nThe issue\nit is solved by R&D (see EMOB-18177) and it will be included in\nFW v8.X\n. Release date for the FW v8.X is currently CW31. A beta test of v8.X will also be released earlier, possibly CW24/25.",
+            "date": "2025-05-20T14:14:00Z",
+            "extra": {}
+        }
+    ]
+}

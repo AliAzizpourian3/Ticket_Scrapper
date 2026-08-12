@@ -1,0 +1,145 @@
+{
+    "incident_id": "ae372b1c-deb6-ef11-b8e9-000d3aba081f",
+    "ticket_number": "0394642",
+    "title": "ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10",
+    "created_on": "2024-12-10T10:04:25Z",
+    "last_activity": "2025-12-16T14:03:07Z",
+    "age": "33474",
+    "description": "Reported behaviour/issue:\nDC_Coils_MG1-MG2_QA09-10 CMD: OFF & FBK:ON\nRoot cause:\nFaulty contactor → if CMD = OFF and we still have FBK:ON that means that the measure still shows voltage as if the contactor is still closed and didn't open as it should\nSolution:\nReplaced contactor\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "fOfSrq",
+    "stage": null,
+    "serial_number": "MP / PD 170001323",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b00a2c1b-deb6-ef11-b8e8-000d3ab41b62",
+            "subject": "Webform_incident_SiCharge D_10-12-2024_SN: 170001323",
+            "body": "Dear Marnic,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001323\nThank you\neMobility Technical Support Team\nSehr geehrte/r Marnic,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001323\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-12-10T10:04:14Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "488ec0a7-0cb7-ef11-b8e8-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0394642 CRM:00225136412",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0394642 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ae372b1c-deb6-ef11-b8e9-000d3aba081f",
+            "date": "2024-12-10T15:37:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea256d16-0db7-ef11-b8e9-002248a2b1bd",
+            "subject": "ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002185",
+            "body": "Dear Marnic,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PD 170001323\nChargerID/Serial No.\n:\nfOfSrq\nProblem Description\n: Contactor CMD=Off during sessions making it abort\nTroubleshooting\n:\nFrom what I see from the logs, we need to evaluate the situation, since we are not checking the feedback from the contactor's itself it might be that there is still voltage in QA09-10 read from the IMD.\nIn these logs you showed me, here is what happens:\nThey scan the RFID tag to stop the session and the contactor goes to CMD:OFF but FBK:ON because we might see some voltage being measured afterwards.\nIf this only happens after a P06_Charge → P07_Stop then it is fine since it's only showing from a timeout point of view, the voltage will decrease eventually. This can also be a problem with TF5 or the similar case where we found ~15V oscilating.\nUnless I check via DebugStation I cannot confirm this but if it only happens at the end session there is no need to replace the contactor.\nWhat is your opinion?\nFor future reference, your ticket number is\n0394642\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-10T15:40:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "267dfc5f-94b7-ef11-b8e9-0022489bcff4",
+            "subject": "RE: ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002185",
+            "body": "Hello Francisco\nThanks for the analysis, yes indeed I see only problems after ending charging sessions and not during sessions. What I see is that also during sessions we have converter grouping error caused by contactors 9&10 not functioning properly. It is indeed possible that we have the similar problem like a few weeks ago that the contactors are “leaking”. But then I expect that we also see this error even when there are no charging sessions.\nI think we first need to check via the debug tool and monitor if we see any small voltages running. If not we need to replace 9&10 I think.\nBr.",
+            "date": "2024-12-11T07:48:57Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d749398a-d4b7-ef11-b8e8-000d3a68cce9",
+            "subject": "ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002185",
+            "body": "Hi Marnic,\nI've checked the DebugStation in Idle because I wasn't able to get a charging session live. It's indeed hard to capture while having other tasks.\nFor me, it's clear that there is something wrong with the contact that is not responding to the CMD: OFF which means that it's stuck. For me you can proceed with the replacement, if the error still persists we need to re-evaluate the situation.\nI will send this ticket to your queue.\nBest regards,\nFrancisco",
+            "date": "2024-12-11T15:28:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "82f86603-d5b7-ef11-b8e8-000d3a68cce9",
+            "subject": "ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002196",
+            "body": "Dear Marnic,\nI am writing to formally inform that we are moving case 0394642 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nBE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nBE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-11T15:31:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "91b06302-d5b7-ef11-b8e8-0022489bbca1",
+            "subject": "ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002185",
+            "body": "Hi Marnic,\nI've checked the DebugStation in Idle because I wasn't able to get a charging session live. It's indeed hard to capture while having other tasks.\nFor me, it's clear that there is something wrong with the contact that is not responding to the CMD: OFF which means that it's stuck. For me you can proceed with the replacement, if the error still persists we need to re-evaluate the situation.\nI will send this ticket to your queue.\nBest regards,\nFrancisco",
+            "date": "2024-12-11T15:31:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2128350c-1ac9-ef11-b8e9-7c1e5235e725",
+            "subject": "RE: ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002196",
+            "body": "Dear\nThe contactors are changed the error is gone now. Since the issue is resolved the ticket can be closed.\nBr.",
+            "date": "2025-01-02T14:58:40Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2a4dfde7-1ac9-ef11-b8ea-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0394642 CRM:00225143770",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0394642 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ae372b1c-deb6-ef11-b8e9-000d3aba081f",
+            "date": "2025-01-02T15:04:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a85dc74a-21c9-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10 CRM:00315002196",
+            "body": "Dear Marnic Segers,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0394642, and the case is now closed.\nProblem Description\n:\nFaulty contactor → if CMD = OFF and we still have FBK:ON that means that the measure still shows voltage as if the contactor is still closed and didn't open as it should\nResolution\n: Replace contactor\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-02T15:50:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5ba66500-22c9-ef11-b8e8-000d3a691687",
+            "subject": "Ticket 0394642 has been closed. Are you satisfied with our provided solution? CRM:00921001447",
+            "body": "Dear Marnic,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0394642\nwith the title:\nID0394642-DC/Si-D/BE[fOfSrq] - DC_Coils_MG1-MG2_QA09-10\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-02T15:55:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5536cdc3-6be4-ccda-a7eb-59c1193b92e1",
+            "subject": "Note-",
+            "body": "As informed RC that field service report is missing, and he confirmed that he will attach the same.",
+            "date": "2025-01-02T15:57:47Z",
+            "extra": {}
+        }
+    ]
+}

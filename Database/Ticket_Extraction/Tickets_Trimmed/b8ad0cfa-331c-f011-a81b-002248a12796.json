@@ -1,0 +1,60 @@
+{
+    "incident_id": "b8ad0cfa-331c-f011-a81b-002248a12796",
+    "ticket_number": "0419667",
+    "title": "ID0419667-DC/Si-D/IT-[Y2/S1 313508370011] Iplanet-allOutletsUnavailable",
+    "created_on": "2025-04-18T09:03:22Z",
+    "last_activity": "2025-04-28T15:26:52Z",
+    "age": "14783",
+    "description": "Reported behavior/issue:\nDoorPositionSwitch_BG3_BG4 &\nSafetyRelay_QA26\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:  No\nWarranty Status:  Active",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "UKKHCT",
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370011",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f9790b3d-ce4e-526a-822a-01b19c5b98ea",
+            "subject": "Note from customer ",
+            "body": "Hello,\nthe charger is not reachable. It seems to be a problem of connectivity.\nCan you check?\nThank you\nSoftware Version: v4.0.11-0-g0b7d164\nOCPP Backend Connection: No",
+            "date": "2025-04-18T10:21:40Z",
+            "extra": {}
+        },
+        {
+            "id": "d0e53832-ceb3-ec5c-b130-81004fad012c",
+            "subject": "Note to L2",
+            "body": "",
+            "date": "2025-04-18T10:26:03Z",
+            "extra": {}
+        },
+        {
+            "id": "9a234a99-401c-f011-9989-7c1e52361e39",
+            "subject": "ID0419667-DC/Si-D/IT-[Y2/S1 313508370011] Iplanet-allOutletsUnavailable CRM:00921001680",
+            "body": "Dear Giuseppe Buffardi,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370011\nChargerID/Serial No.\n:\nUKKHCT\nProblem Description\n: allOutletsUnavailable\nTroubleshooting\n:\nWe have reviewed the logs and will inform the regional team to connect with you soon.\nFor future reference, your case number is\n0419667\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-18T10:33:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6060ac1c-441c-f011-998a-000d3adc93d1",
+            "subject": "RE: ID0419667-DC/Si-D/IT-[Y2/S1 313508370011] Iplanet-allOutletsUnavailable CRM:00921001680",
+            "body": "Hello Team,\nHope you are doing well.\nI checked the logs from this day that you provided and found that in these several times, someone pressed the Emergency button on the charger:\nFirst the E-stop is pressed and as a consequence, the QA26 is tripped. At 10:05 hrs someone rebooted the charger-\n2025-04-18T10:05:52.318895+00:00 sicharge-cp [local0:info] sicharge-cp-backend/76699ec3e24c[739]: PLC-Error-Flag 'PerformingCollaboratedReboot' changed from true - ('Reboot active...EMG stop to all outlets') to true - ('Reboot active...Open CMD to Main Breaker')\nBut still in the SCB the error flags are active.\nI would like to inform you that this error indicates the door may not be properly closed. Could you please confirm if the door is closed? If not, kindly try opening and closing it again. Should the door still not open, it is possible that the sensor is malfunctioning.\nFYI-Please find below attached\nMLFB-3SE5232-0HC05\nfor door position switch if it's found faulty.\nI am writing to formally inform that we are moving case 0419667 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nIT\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nIT\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-18T10:58:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "68aa18fe-7ca8-a645-9cd1-8fcd4606f271",
+            "subject": null,
+            "body": "The Charger is now available after the flash of Sifast Card\nI'm proceeding to close the ticket\nReport attached:\nReport.pdf",
+            "date": "2025-04-28T15:24:49Z",
+            "extra": {}
+        }
+    ]
+}

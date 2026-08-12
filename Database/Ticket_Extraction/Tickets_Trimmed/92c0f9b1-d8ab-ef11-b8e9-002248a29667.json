@@ -1,0 +1,298 @@
+{
+    "incident_id": "92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+    "ticket_number": "0392001",
+    "title": "ID0392001-DC/Si-D/DE[170003340] - ELMS configuration",
+    "created_on": "2024-11-26T09:27:51Z",
+    "last_activity": "2025-12-16T14:03:44Z",
+    "age": "110919",
+    "description": "Reported behaviour/issue:\nELMS config not completed\nRoot cause:\nEthernet cable in XF4 not XF3\nSolution:\nRedirect Ethernet cable from XF4 to XF3\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "TtvcAx",
+    "stage": null,
+    "serial_number": "MP / S2 170003340",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b56bb7a6-d8ab-ef11-b8e8-0022489fb3e7",
+            "subject": "Webform_incident_SiCharge D_26-11-2024_SN: MP / S2 170003340",
+            "body": "Dear Jose Cortes,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003340\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jose Cortes,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003340\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-11-26T09:27:37Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5042e155-02ac-ef11-b8e8-6045bdddef64",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225129594",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2024-11-26T14:25:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d7cf4c35-04ac-ef11-b8e9-0022489bcff4",
+            "subject": "ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107",
+            "body": "Dear Jose,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003340\nChargerID/Serial No.\n: TtvcAx\nProblem Description\n: ELMS configuration\nTroubleshooting\n:\nThe IP address that was provided to your network was 192.168.1.20. Can you please confirm if IP is the controller or if it's a empty address (no other device with this IP).\nAlso confirm if the Ports are 400. This value is by default but there can be specific ports for the network.\nI can also confirm from our side that we are transmitting via Modbus\nAlso from the router:\nFor future reference, your ticket number is\n0392001\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-26T14:39:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d1bc998b-91ac-ef11-b8e8-0022489dc6eb",
+            "subject": "AW: ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107",
+            "body": "Hello.\nBefore I respond to your questions, some Info.\nI program the ELSM using a Siemens PLC 1500.This program and the communication with SichargeD has worked properly at least 14 times.\nNow to your questions.\nThe IP Address 192.168.1.20 has not a conflict with other Devices in network. Port is OK\nIf your config is Ok, then we need to take other approach to our problem.\nNormally and during the commissioning is someone from SiD on site with us and we check together if the communication cable is OK and put in the right connector.\nSadly, this time no one from SiD was on Site and I myself am not allowed to open the Sid cabinet to do a check. In this case I program mi EMLS and the people from SiD do the rest (Addressing and release from EMLS). As far the communication is OK, then everything goes automatic.\nWe had the same problem in our last project (Bremen) and the support found out the cable was connected in the wrong port. They sent someone from yunextraffic to check this out. We worked together online and then everything ran OK. Maybe this time the same is happening.\nPlease confirm to me, which steps we take now and if you have some questions, please let me know about this.\nWith best regards,\nJose Emilio Cortes Pastrana\nSiemens AG\nSmart Infrastructure\neMobility\nSolutions\nSI E C SOL EN\nSiemenspromenade 10\n91058 Erlangen, Germany\nPhone: +49 (1520) 9930894\nMobile: +49 (1520) 9930894\nmailto:jose.cortes-pastrana@siemens.com\nwww.siemens.com\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 26. November 2024 15:52\nAn:\nCortes Pastrana, Jose Emilio (SI E C SOL EN) <jose.cortes-pastrana@siemens.com>\nBetreff:\nID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107\nDear Jose,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / S2 170003340\nChargerID/Serial No.\n: TtvcAx\nProblem Description\n: ELMS configuration\nTroubleshooting\n:\nThe IP address that was provided to your network was 192.168.1.20. Can you please confirm if IP is the controller or if it's a empty address (no other device with this IP).\nAlso confirm if the Ports are 400. This value is by default but there can be specific ports for the network.\nI can also confirm from our side that we are transmitting via Modbus\nAlso from the router:\nFor future reference, your ticket number is 0392001, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-27T07:31:01Z",
+            "extra": {
+                "sender": "jose.cortes-pastrana@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1768b099-9aac-ef11-b8e8-7c1e5235925f",
+            "subject": "ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107",
+            "body": "Hi Jose,\nThank you for the feedback.\nBefore I send this ticket to the Germany colleagues, can you please tell me the IP of the controller? I want to see if it's pingable from our side (probably not but definitely worth to check).\nIs it 192.168.1.1?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-11-27T08:35:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca80b84d-9cac-ef11-b8e8-7c1e52205073",
+            "subject": "AW: ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107",
+            "body": "Hallo.\nOur Controller has the IP Addresse: 192.168.1.30 (see screenshot in last email), This is our local Address\n192.168.1.1 is our Scalance router. You can try too to ping this device if you want.\nI think this is not possible, we try to ping the sichargeD from our side and never get a successful answer.\nRegards,\nJose\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 27. November 2024 09:38\nAn:\nCortes Pastrana, Jose Emilio (SI E C SOL EN) <jose.cortes-pastrana@siemens.com>\nBetreff:\nID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107\nHi Jose,\nThank you for the feedback.\nBefore I send this ticket to the Germany colleagues, can you please tell me the IP of the controller? I want to see if it's pingable from our side (probably not but definitely worth to check).\nIs it 192.168.1.1?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-11-27T08:48:05Z",
+            "extra": {
+                "sender": "jose.cortes-pastrana@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a2684b92-a5ac-ef11-b8e8-7c1e5235925f",
+            "subject": "ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002110",
+            "body": "Dear colleagues,\nJosé Cortes Pastrana raised a ticket regarding ELMS that is not able to reach the Sicharge D. I check everything remotely and it looks fine as it also worked for other chargers as well.\nWe need to confirm if the LAN connection is made directly to XF3 WAN Port\nbecause this is the only way it would work.\nHe mentions that this already happened once or twice and that the cable is in the wrong position.\nI am writing to formally inform that we are moving case 0392001 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nPerformance monitoring by RC\nX\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-27T09:54:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "439ca4b7-5fad-ef11-b8e9-000d3addcd64",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225130905",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2024-11-28T08:06:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7821601a-9bad-ef11-b8e8-000d3adc3b84",
+            "subject": "0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000324",
+            "body": "Hi Rudi,\nkannst Du für diesen Einsatz in Osnabrück bitte einen Servicepartner beauftragen?\nMit Ramona oder Jan kann ich den Einsatz leider nicht fahren, da zu weit weg / die beiden schon anderweitig verplant sind.\nDanke & Grüße\nSascha",
+            "date": "2024-11-28T15:12:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1320ee42-9bad-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225131251",
+            "body": "Rudolf Artes was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2024-11-28T15:13:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22ef584a-40ae-ef11-b8e8-6045bde01b73",
+            "subject": "0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00755000101",
+            "body": "Hi Denise,\nkönntest du eine BEstellung an Yunex auslösen? Ersatzteile brauchen wir nicht\nNummer muss erstellt werden für Zeile 448 (Hellmann)\nDAnke dir !\nVG Rudi",
+            "date": "2024-11-29T10:54:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8a668ab-72b0-ef11-b8e9-6045bdde0ce3",
+            "subject": "AW: 0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00755000101",
+            "body": "Guten Morgen Rudi,\nAuftrag 30727508 ist angelegt.\nHier die Bestellung für Yunex.\nSorry am Freitag ging bei mir kein SAP mehr\n😑\nGuten Start in die Woche\nDenise\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 29. November 2024 11:55\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00755000101\nHi Denise,\nkönntest du eine BEstellung an Yunex auslösen? Ersatzteile brauchen wir nicht\nNummer muss erstellt werden für Zeile 448 (Hellmann)\nDAnke dir !\nVG Rudi",
+            "date": "2024-12-02T06:00:03Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4a2de1a5-804a-0c41-a5f6-06bced64646f",
+            "subject": "Update",
+            "body": "Hier versucht der HQ Kollegen José noch mit dem Kunden zu klären, inwieweit wir wirklich jemanden vor Ort schicken müssen.",
+            "date": "2024-12-03T14:40:55Z",
+            "extra": {}
+        },
+        {
+            "id": "27f0f6fc-4cd2-ef11-8ee9-000d3ab009dd",
+            "subject": "AW: ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107",
+            "body": "Hi Francisco,\nSince your telephone call in December, we do not receive any other feedback from your side about the stand from this ticket.\nPlease give us some info about this, because the clock is ticking in thei sproject\nRegards,\nJose\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 27. November 2024 09:38\nAn:\nCortes Pastrana, Jose Emilio (SI E C SOL EN) <jose.cortes-pastrana@siemens.com>\nBetreff:\nID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00315002107\nHi Jose,\nThank you for the feedback.\nBefore I send this ticket to the Germany colleagues, can you please tell me the IP of the controller? I want to see if it's pingable from our side (probably not but definitely worth to check).\nIs it 192.168.1.1?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-01-14T07:56:02Z",
+            "extra": {
+                "sender": "jose.cortes-pastrana@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "72d2f5ca-b0e0-4b19-9d3a-bbf35c308718",
+            "subject": "Please check",
+            "body": "Please take care of the issue and involve us if itrs necessary",
+            "date": "2025-01-22T09:29:44Z",
+            "extra": {}
+        },
+        {
+            "id": "9043fd00-add8-ef11-8ee9-7c1e52364c4b",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225152103",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2025-01-22T10:38:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "249cc5d4-5c22-c022-868f-23f81a83f124",
+            "subject": "Update",
+            "body": "Had call with Jose, requested some details, he will get back tomorrow.",
+            "date": "2025-01-23T14:18:39Z",
+            "extra": {}
+        },
+        {
+            "id": "fbb73a03-43da-ef11-8eea-7c1e5235925f",
+            "subject": "ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00798001805",
+            "body": "Dear Jose,\nThanks for the Teams call at the short notice,\nAs discussed,\nForwarding the case to your queue, As site intervention is planned after 3 weeks,\nAnd Physical inspection will be carried out. Inform if issue persists and need troubleshooting.\nIf needed support, Pls let us know tentative dates/timing of site intervention.\nI am writing to formally inform that we are moving case 0392001 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-24T11:04:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd060564-8cdc-ef11-8eea-000d3a691687",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225153987",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2025-01-27T08:55:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39802d12-92dc-ef11-8eea-000d3ab4d5d3",
+            "subject": "0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000378",
+            "body": "Hi Jose and Francisco,\nThanks for forwarding this to our region queue. I am, however, unsure as to what needs to be done here.\nCould you please advise what the “physical inspection on site” should be about?\nIs that something that a service partner of ours can take care of or do we need one of our own service technicians on site?\nSascha",
+            "date": "2025-01-27T09:35:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5c182cfd-4fe8-ef11-9342-6045bdde1b10",
+            "subject": "0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000397",
+            "body": "Hi José,\nam I right to assume that you will go on-site for this ticket, once you completed the training in Portugal?\nIf so, could you please approach the customer directly to inform about the next steps?\nYour approval provided, I will also go ahead and assign this ticket to you then.\nPlease advise,\nSascha",
+            "date": "2025-02-11T08:12:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fbaab369-58e8-ef11-9341-7c1e5277807d",
+            "subject": "Re: 0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000397",
+            "body": "Hello.\nI informed the Client about the steps we wanted to Follow.\nI already  solved the Problem (the Cable Was in the wrong Port in SiD).\nDo Not assign the case to me. You can close it right now.\nRegards\nJose",
+            "date": "2025-02-11T09:13:14Z",
+            "extra": {
+                "sender": "jose.cortes-pastrana@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "804334fb-5ee8-ef11-9342-000d3a697eb1",
+            "subject": "Re: 0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000397",
+            "body": "Hello Jose\nThank you for your support i will send this case to our NOC for closure\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-11T10:00:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bdef129-5fe8-ef11-9341-7c1e527829ce",
+            "subject": "Re: 0392001 - ID0392001-DC/Si-D/DE[170003340] - ELMS configuration CRM:00373000397",
+            "body": "Hello Jose\nThank you for your support i will send this case to our NOC for closure\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-11T10:01:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "822f07b6-9fea-30a6-853a-4b71e24f9563",
+            "subject": "Semih ",
+            "body": "Please close case and send the closure and survey Mail Thank you",
+            "date": "2025-02-11T10:02:12Z",
+            "extra": {}
+        },
+        {
+            "id": "4b54e59e-5fe8-ef11-9341-7c1e5237e811",
+            "subject": "A new case manager was assigned to 0392001 CRM:00225162501",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0392001 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=92c0f9b1-d8ab-ef11-b8e9-002248a29667",
+            "date": "2025-02-11T10:04:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2ef669c-5fe8-ef11-9341-002248a28911",
+            "subject": "Ticket 0392001 has been closed. Are you satisfied with our provided solution? CRM:00315002336",
+            "body": "Dear José,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0392001\nwith the title:\nID0392001-DC/Si-D/DE[170003340] - ELMS configuration\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-11T10:04:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

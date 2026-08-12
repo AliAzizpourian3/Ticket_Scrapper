@@ -1,0 +1,134 @@
+{
+    "incident_id": "37ccb821-99ce-f011-bbd3-7ced8d425bfe",
+    "ticket_number": "0465020",
+    "title": "ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error",
+    "created_on": "2025-12-01T09:35:54Z",
+    "last_activity": "2025-12-05T10:29:53Z",
+    "age": "5814",
+    "description": "Reported behavior/issue- Modbus Comm Error",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002653",
+    "case_nature_code": 580000001,
+    "chargerID": "ISBcmF",
+    "additional_info": [
+        {
+            "id": "f120be1d-99ce-f011-bbd3-7ced8d425b04",
+            "subject": "Webform_incident_SiCharge D_03-11-2025_SN: 170002653",
+            "body": "Dear Valerio,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002653\nThank you\neMobility Technical Support Team\nSehr geehrte/r Valerio,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002653\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-12-01T09:35:49Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fb11932e-99ce-f011-bbd2-7ced8d425658",
+            "subject": "A new case manager was assigned to 0465020 CRM:00225296302",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0465020 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=37ccb821-99ce-f011-bbd3-7ced8d425bfe",
+            "date": "2025-12-01T09:36:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c180677d-99ce-f011-bbd3-7ced8d40d9c4",
+            "subject": "ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Dear\nValerio\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002653\nChargerID\n:\nISBcmF\nProblem Description\n:  Modbus Comm Error\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0465020\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-01T09:38:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e421e069-9bce-f011-bbd3-7c1e52362b38",
+            "subject": "A new case manager was assigned to 0465020 CRM:00225296316",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0465020 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=37ccb821-99ce-f011-bbd3-7ced8d425bfe",
+            "date": "2025-12-01T09:52:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78fe941e-b0ce-f011-bbd3-7ced8d425d60",
+            "subject": "RE: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Buongiorno Valerio,\nI am reaching out in regards of ticket\nID0465020.\nThe ticket was opened for an ELMS error appearing on charger\nMP/R9 170002653\n: \"SICHARGE -> ELMS (error): Modbus Comm Error = true, Comm Status Word: 16#7002\".\nEven though I do not have an explanation for the error message itself, I checked the charger on AWS, and I noticed that the error started on 28.11.2025 at 16:22:\nSince then, the Modbus Comm error is appearing all the time, as if the ELMS is trying on and on to set the value.\nIn my eyes, the trigger of the error is the following:\nWarning !! G_ActPwrLimit_SP < G_Min_ActPwr (from EVSE), G_ActPwrLimit_SP = 0 kW, G_Min_ActPwr = 1.5 kW\nFrom the \"External Load Management System manual - 8EM5907-0AA00-1AA8.02\", I found the following statement:\nI believe then that the error is generated by an invalid value communicated by the ELMS to the charger.\nCould you please verify this with the customer, and see if the new values are accepted and no ELMS error is appearing anymore?\nLooking forward to hearing your feedback soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-01T12:20:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b05a00b-62cf-f011-bbd2-7c1e52880fe1",
+            "subject": "RE: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Ciao Fosco,\nThank you very much for your response.\nCan you confirm that the register 17 is only possible to read this parameter only if the input AC meter installed into the charger ?\nThank you,\nValerio Filocamo",
+            "date": "2025-12-02T09:34:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0fcd0273-62cf-f011-bbd2-7c1e52362ec6",
+            "subject": "RE: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Ciao Fosco,\nThank you very much for your response.\nCan you confirm that the register 17 is only possible to read this parameter only if the input AC meter installed into the charger ?\nThank you,\nValerio Filocamo",
+            "date": "2025-12-02T09:37:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fe0e8f5e-8d13-bd5d-9a36-97ac9f09fc4c",
+            "subject": "Status update",
+            "body": "Waiting for info from R&D",
+            "date": "2025-12-04T15:55:17Z",
+            "extra": {}
+        },
+        {
+            "id": "dc4d3ec3-b3d1-f011-bbd3-6045bddfa04d",
+            "subject": "RE: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Ciao Valerio,\nThank you for your patience. I got confirmation today from R&D that in the ELMS manual there is a typo. The two registers mentioned\n,\nG_ActPwr\nand\nG_ActPwr_Present\n, are the same register, so number 17.\nTo have such register it is therefore required the AC input meter:\nFirmware team will adjust the ELMS manual as soon as possible.\nPlease let me know if any further support is required or we can close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-05T08:24:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8a7d771-c4d1-f011-bbd3-7c1e523628c9",
+            "subject": "R: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641",
+            "body": "Ciao Fosco,\nThank you very much.\nYou can close the ticket.\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nSI E EU IT\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nvenerdì 5 dicembre 2025 09:30\nA:\nFILOCAMO, Valerio (SI E EU IT) <valerio.filocamo@siemens.com>\nOggetto:\nRE: ID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error CRM:03056000641\nCiao Valerio,\nThank you for your patience. I got confirmation today from R&D that in the ELMS manual there is a typo. The two registers mentioned\n, G_ActPwr\nand\nG_ActPwr_Present\n, are the same register, so number 17.\nTo have such register it is therefore required the AC input meter:\nFirmware team will adjust the ELMS manual as soon as possible.\nPlease let me know if any further support is required or we can close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-05T10:23:38Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2d2adc49-c5d1-f011-bbd3-000d3addfd1c",
+            "subject": "Ticket 0465020 has been closed. Are you satisfied with our provided solution? CRM:00225298975",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0465020\nwith the title:\nID0465020-DC/Si-D/IT-[MP / R9 170002653] Modbus Comm Error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-05T10:29:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

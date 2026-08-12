@@ -1,0 +1,57 @@
+{
+    "incident_id": "b1b7263a-c3f7-4cc9-9069-c05ec34b1ef9",
+    "ticket_number": "0412005",
+    "title": "ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session",
+    "created_on": "2025-03-11T14:05:20Z",
+    "last_activity": "2025-03-18T20:26:43Z",
+    "age": "10363",
+    "description": "Reported behavior/issue:\n0kWh charging session\nRoot cause:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620,MP / S5 170003620",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "da5d2c6f-5e8f-cbf9-8ac3-4fb37fdbfead",
+            "subject": "Handover to ES",
+            "body": "Handover to ES\na) Problem Description: 0kW charging session seen. Session seen only once on 03/03/25. In the OCPP logs on SCB, we see that the meterStart and meterStop transcation values are exactly the same 29587869 for the charging session.\nb) Suspected Root Cause: Charger FW on 6.1.2, also we see that just before the charging session ended. We saw an LEM related log, which is suspected to be the reason for the 0kW session:\n{\"stack\":\"Error: PUT\nhttp://10.20.17.20/v2/legal?transactionId=92674d2640ec4177\nreturned: 412 - Precondition Failed\\n at /dist/services/lem-meter.js:418:19\\n at Generator.next (<anonymous>)\\n at fulfilled (/dist/services/lem-meter.js:5:58)\\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\"}\nc) Action Performed: Log analysis\nd) Charger SW Version: 6.1.2\ne) Reason for Handover: Troubleshooting / We dont have enough information to process cases on 6.1.2 issues.\nf) Fault history: NA\ng) Log analysis with timestamp:\n2025-03-03, 10:56:41 For meterStart\n2025-03-03, 11:15:56 for meterStop\nand LEM error.\nh) Action Required: Troublshooting.\ni) Attachment: log screenshots in the agent notes.",
+            "date": "2025-03-11T14:05:51Z",
+            "extra": {}
+        },
+        {
+            "id": "b4ae76d2-2704-f011-bae3-7c1e5236eee4",
+            "subject": "0412005 - ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00472000282",
+            "body": "Hello Johannes,\nThis issue was related to beta version FW v6.1.2, it's fixed already on version v6.1.3.\nI confirmed in the logs that the issue is not present anymore.\nI will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-03-18T18:35:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a7cef44-3704-f011-bae3-6045bddf319c",
+            "subject": "AW: 0412005 - ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00472000282",
+            "body": "Hi Francisco,\nso there was a bug in 6.1.2?\nI could found a bugfix in our changelog.\nStrange that R&D didn’t know it:\nkind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 18. März 2025 19:36\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nCc:\nLouro Cardoso, Joao Francisco (SI E CS SD ES) <joao.louro-cardoso@siemens.com>\nBetreff:\n0412005 - ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00472000282\nHello Johannes,\nThis issue was related to beta version FW v6.1.2, it's fixed already on version v6.1.3.\nI confirmed in the logs that the issue is not present anymore.\nI will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-03-18T20:26:35Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2a088248-3704-f011-bae3-7c1e52768c07",
+            "subject": "Email sent to a closed case 'ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session (0412005)' CRM:00225178697",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0412005\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-18T20:26:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

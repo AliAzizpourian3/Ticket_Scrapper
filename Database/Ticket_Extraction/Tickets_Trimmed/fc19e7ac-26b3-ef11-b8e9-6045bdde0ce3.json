@@ -1,0 +1,83 @@
+{
+    "incident_id": "fc19e7ac-26b3-ef11-b8e9-6045bdde0ce3",
+    "ticket_number": "0393925",
+    "title": "ID0393925-DC/Si-D/FR-[MP/P8 170000886]Charger out of order",
+    "created_on": "2024-12-05T16:33:39Z",
+    "last_activity": "2024-12-09T13:49:26Z",
+    "age": "5440",
+    "description": "Reported behavior/issue:\nCharger out of order\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "omhYq8",
+    "stage": null,
+    "serial_number": "MP / P8 170000886",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "abad65a7-26b3-ef11-b8e9-000d3aba081f",
+            "subject": "Webform_incident_SiCharge D_05-12-2024_SN: MP/P8170000886",
+            "body": "Dear Mura Florian ,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/P8170000886\nThank you\neMobility Technical Support Team\nSehr geehrte/r Mura Florian ,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/P8170000886\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-12-05T16:33:28Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "eb915c4c-60b3-ef11-b8e8-000d3adc3b84",
+            "subject": "A new case manager was assigned to 0393925 CRM:00225134646",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0393925 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fc19e7ac-26b3-ef11-b8e9-6045bdde0ce3",
+            "date": "2024-12-05T23:26:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "414caea6-60b3-ef11-b8e9-000d3ab4d5d3",
+            "subject": "ID0393925-DC/Si-D/FR-[MP/P8 170000886]Charger out of order CRM:00643001146",
+            "body": "Dear Mura,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170000886\nChargerID/Serial No.\n:\nomhYq8\nProblem Description\n: Charger out of order\nTroubleshooting\n: Please allow us some time to analyse the issue and we will get back to you shortly with an update. Apart from it we have done some changes in the PLC configuration related to converter group as the charger is low flex with power rating of 160kW.\nFor future reference, your ticket number is\n0393925\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-05T23:28:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "82f085f9-f3b3-ef11-b8e9-7c1e5235e725",
+            "subject": "RE: ID0393925-DC/Si-D/FR-[MP/P8 170000886]Charger out of order CRM:00643001146",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0393925 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nMaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nMaybe\nPerformance monitoring by RC\nPlease align for a site intervention to check the Fast Shutdown wiring, as the converter grouping is not initializing. We have made changes to the PLC configuration related to the power converter, as per the charger configuration, but the issue persists after reboot. We need to check the wiring on the power converter pins 7 & 8 and 11 & 12 in all power converters. Additionally, please inspect the QA32 contactor and +F03 XD6 terminals for any loose connections. Also, verify the TB18 12VDC power supply and +F03 FC23 circuit breaker, and check the +F03 XD5 terminal pins for any loose connections. Please check wiring connections to KF13 also that are connected to 4 & 5 pin of SuC and suO of the KF13.\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-06T17:03:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a2fe48fa-02b6-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0393925 CRM:00225135414",
+            "body": "ANTOINE BRUA was assigned as new Case Manager for case 0393925 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fc19e7ac-26b3-ef11-b8e9-6045bdde0ce3",
+            "date": "2024-12-09T07:55:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe0eebf0-1db6-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: ID0393925-DC/Si-D/FR-[MP/P8 170000886]Charger out of order CRM:00643001146",
+            "body": "Bonjour,\nJe viens de changer les paramètres du chargeur. Le convertisseur était mal paramétré, ce qui bloquait le fast shutdown. Le chargeur est maintenant opérationnel. Je vais donc fermer le ticket.\nMerci de votre patience.\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2024-12-09T11:08:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

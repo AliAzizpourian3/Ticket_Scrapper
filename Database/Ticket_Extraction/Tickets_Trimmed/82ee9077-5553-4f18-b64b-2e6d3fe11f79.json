@@ -1,0 +1,186 @@
+{
+    "incident_id": "82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+    "ticket_number": "0377416",
+    "title": "ID0377416-DC/Si-D/NO-[MP / P3 160373407] False emergency stop error",
+    "created_on": "2024-09-03T09:17:13Z",
+    "last_activity": "2025-12-16T14:06:12Z",
+    "age": "21809",
+    "description": "Charger does not have emergency stop button.\nThis happens random on this charger but maybe once every 2 weeks.\nSeveral reboots often fixes the issue.\nSee picture from HMI\nReported behavior/issue:\nFalse emergency stop error\nRoot cause:\nPLC head and base unit module not connected properly\nSolution:\nThere is a poor connection between the PLC and the modules KF2 to KF9\n.\nOn DAMEX Sanctioned List:\nWarranty Status: 8/7/2023",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "0x3JyV",
+    "stage": null,
+    "serial_number": "MP / N8 160373407",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7cef694f-d569-ef11-bfe2-0022489d464a",
+            "subject": "A new case manager was assigned to 0377416 CRM:00225091135",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0377416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+            "date": "2024-09-03T09:17:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9e6197f1-d569-ef11-bfe2-7c1e5233f636",
+            "subject": "Uploaded document Image (17).jfif.",
+            "body": "",
+            "date": "2024-09-03T09:21:53Z",
+            "extra": {}
+        },
+        {
+            "id": "c8bf30e1-d969-ef11-bfe2-000d3ab02502",
+            "subject": "A new case manager was assigned to 0377416 CRM:00225091158",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0377416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+            "date": "2024-09-03T09:50:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "610c6367-e869-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 16 minutes and 49 seconds.",
+            "date": "2024-09-03T11:34:04Z",
+            "extra": {}
+        },
+        {
+            "id": "e19aaf7b-f169-ef11-bfe2-000d3ab02502",
+            "subject": "0377416 - ID0377411-DC/Si-D/NO-[MP / P3 160373407] False emergency stop error CRM:02023000116",
+            "body": "Hello Simen Aarre,\nI trust this email finds you in good health. We have received a technical support request from\nKople AS\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / N8 160373407\nCharger ID/Serial No.:\n0x3JyV\nProblem Description:\nFalse emergency stop error\nCould you please provide the front-end picture of the charger.\nUpon reviewing our asset database, we found that the product is no longer under warranty since [8/7/2023], as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it",
+            "date": "2024-09-03T12:39:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "48b4e501-f369-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 hour, 15 minutes and 54 seconds.",
+            "date": "2024-09-03T12:49:57Z",
+            "extra": {}
+        },
+        {
+            "id": "7a06de07-f369-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 5 seconds.",
+            "date": "2024-09-03T12:50:03Z",
+            "extra": {}
+        },
+        {
+            "id": "33690d4a-0e6a-ef11-bfe2-000d3ab02502",
+            "subject": "RE: 0377416 - ID0377411-DC/Si-D/NO-[MP / P3 160373407] False emergency stop error CRM:02023000116",
+            "body": "Hello Simen Aarre,\nWe recommend you follow the below steps to troubleshoot the issue.\nTrace the 24V Source:\nStart from the QA26 input and trace the 24V power supply path backwards through the circuit.\nIdentify the origin of the 24V supply by examining each component and connection from the end point (QA26) to its source.\nComponent Examination:\nFocus on the FA7 and FA8 components to determine their role in supplying 24V to QA26.\nVerify the functionality of FA7 and FA8 to ensure they are operating correctly and supplying the required voltage\nVoltage Check at XD34:19A:\nMeasure the voltage at XD34:19A.\nIf 24V is present at XD34:19A, this indicates that the sensors are closed, which implies that the doors are open.\nIf 24V is not present at XD34:19A, investigate potential issues with FA7 and FA8, as they may be causing the problem.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it",
+            "date": "2024-09-03T16:05:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e7aacd1-106a-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 3 hours, 33 minutes and 13 seconds.",
+            "date": "2024-09-03T16:23:15Z",
+            "extra": {}
+        },
+        {
+            "id": "c97aacd1-106a-ef11-bfe2-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Answer Provided after 6 seconds.",
+            "date": "2024-09-03T16:23:21Z",
+            "extra": {}
+        },
+        {
+            "id": "c9563a0e-116a-ef11-bfe2-000d3aba081f",
+            "subject": "A new case manager was assigned to 0377416 CRM:00225091425",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0377416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+            "date": "2024-09-03T16:25:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b11bb9a-bf88-7f73-b8da-5b2bb9fffe73",
+            "subject": "Troubleshooting on site 2024-09-18",
+            "body": "We checked the complete chain off emergency stop and found nothing wrong. We checked the QA26 and same there, nothing wrong. We then checked the plc and it modules. The technincan on site found a bad connection between the plc and the modules KF2…KF9. He fixed it and did a reboot. After that the error disappered.",
+            "date": "2024-09-18T08:55:26Z",
+            "extra": {}
+        },
+        {
+            "id": "fec47b01-9e52-c590-9d66-981920db7e57",
+            "subject": "Close ticket.",
+            "body": "",
+            "date": "2024-09-18T08:57:27Z",
+            "extra": {}
+        },
+        {
+            "id": "820ac115-9e75-ef11-a671-000d3ab7063f",
+            "subject": "A new case manager was assigned to 0377416 CRM:00225098404",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0377416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+            "date": "2024-09-18T09:12:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "98f0319d-b875-ef11-a671-00224899b868",
+            "subject": "A new case manager was assigned to 0377416 CRM:00225099124",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0377416 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=82ee9077-5553-4f18-b64b-2e6d3fe11f79",
+            "date": "2024-09-18T12:22:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee390963-bb75-ef11-a670-0022489ec7b5",
+            "subject": "RE: 0377416 - ID0377411-DC/Si-D/NO-[MP / P3 160373407] False emergency stop error CRM:02023000116",
+            "body": "Dear Customer,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0377416.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-18T12:42:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c9c4dd9b-bb75-ef11-a670-0022489ec7b5",
+            "subject": "Ticket 0377416 has been closed. Are you satisfied with our provided solution? CRM:02023000149",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0377416 with\nthe title:\nID0377416-DC/Si-D/NO- [MP / P3 160373407] False emergency stop error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically, it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-18T12:43:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db139dfc-bb75-ef11-a670-0022489ec7b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Answer Provided to Incident Solved Via Field Service (RC-L2) after 14 days, 20 hours, 22 minutes and 54 seconds.",
+            "date": "2024-09-18T12:46:16Z",
+            "extra": {}
+        },
+        {
+            "id": "a09a9d1e-3b7b-ef11-a670-002248a2b1bd",
+            "subject": "Uploaded document Work Order  Kople AS 160373407.pdf.",
+            "body": "",
+            "date": "2024-09-25T12:38:55Z",
+            "extra": {}
+        }
+    ]
+}

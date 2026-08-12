@@ -1,0 +1,108 @@
+{
+    "incident_id": "d366e3ed-d870-40a1-8b22-6f801ef71814",
+    "ticket_number": "0478505",
+    "title": "ID0478505-DC/Si-D/IT- [MP / R9 170002732] Log Check",
+    "created_on": "2026-02-15T09:23:28Z",
+    "last_activity": "2026-02-16T14:25:16Z",
+    "age": "1742",
+    "description": "Reported Behavior/Issue: Log Check",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "afJEBg",
+    "stage": "Resolved",
+    "serial_number": "MP / R9 170002732",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9ee8bc82-500a-f111-8407-000d3ab124a4",
+            "subject": "A new case manager was assigned to 0478505 CRM:00225337456",
+            "body": "Faizal Khan was assigned as new Case Manager for case 0478505 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d366e3ed-d870-40a1-8b22-6f801ef71814",
+            "date": "2026-02-15T09:27:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "91d7e530-57b5-b22e-9683-b2a8ce6950a9",
+            "subject": "Case Note",
+            "body": "Hello\nA client called us because of a chargin session that didin't work on charger 170002732 (I can't find it in the asset)\nHe tried on February, 15th\nStarting session at 8.54.11 (CU time)\nEnding session at 8.55.32 (CU time)\nIs it possible check the logs to understand what happened?\nThank you in advance\nRegards\nsoftware version : v8.0.5-0-g33a6c1d+APN",
+            "date": "2026-02-15T09:31:48Z",
+            "extra": {}
+        },
+        {
+            "id": "496e3254-510a-f111-8407-7ced8d44ddde",
+            "subject": "ID0478505-DC/Si-D/IT- [MP / R9 170002732] Log Check CRM:03288000316",
+            "body": "Dear\nMaria\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002732\nCharger ID\n: afJEBg\nProblem Description\n: Log Check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0478505\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nFaizal Khan\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-15T09:33:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78e31ca3-560a-f111-8407-7ced8d44db54",
+            "subject": "ID0478505-DC/Si-D/IT- [MP / R9 170002732] Log Check CRM:00263000458",
+            "body": "Dear\nMaria Borrelli\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002732\nwhich led to the opened ticket:\n0478505\n.\nProblem description: \"\nA client called us because of a chargin session that didin't work on charger 170002732 (I can't find it in the asset)\nHe tried on February, 15th Starting session at 8.54.11 (CU time) Ending session at 8.55.32 (CU time) Is it possible check the logs to understand what happened?\"\nInvestigation:\nThe charger have been checked and it's healthy at the moment:\nInvestigation:\nIt was possible to find that during the attempt to start the cable was not yet connected:\n2026-02-15T08:54:11.763227+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Received command: RemoteStartTransaction (3723270) - {\"connectorId\":1,\"idTag\":\"4dcf33f0a5244e218a6d\"}\n2026-02-15T08:54:11.764910+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Send result: RemoteStartTransaction (3723270) - {\"status\":\"Accepted\"}\n2026-02-15T08:54:11.766570+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Send command: Authorize (f817464f-9c2d-4e04-9cc1-95578eb62e4b) - {\"idTag\":\"4DCF33F0A5244E218A6D\"}\n2026-02-15T08:54:11.846104+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Received result: Authorize (f817464f-9c2d-4e04-9cc1-95578eb62e4b) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2026-02-15T08:54:11.847289+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: RemoteStartTransaction:\ncable not yet connected\nThe logs have been collected and it will be shared with our expert team that will analyze and provide an answer as soon as possible.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-15T10:11:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4ba21e96-bd83-d81f-9845-14b59e2a3fd2",
+            "subject": "Logs",
+            "body": "",
+            "date": "2026-02-15T10:34:57Z",
+            "extra": {}
+        },
+        {
+            "id": "5a2de607-5a0a-f111-8407-7ced8d44d2c4",
+            "subject": "ID0478505-DC/Si-D/IT- [MP / R9 170002732] Log Check CRM:00263000458",
+            "body": "Dear\nMaria Borrelli\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002732\nwhich led to the opened ticket:\n0478505\n.\nProblem description: \"\nA client called us because of a chargin session that didin't work on charger 170002732 (I can't find it in the asset)\nHe tried on February, 15th Starting session at 8.54.11 (CU time) Ending session at 8.55.32 (CU time) Is it possible check the logs to understand what happened?\"\nInvestigation:\nThe charger have been checked and it's healthy at the moment:\nInvestigation:\nIt was possible to find that during the attempt to start the cable was not yet connected:\n2026-02-15T08:54:11.763227+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Received command: RemoteStartTransaction (3723270) - {\"connectorId\":1,\"idTag\":\"4dcf33f0a5244e218a6d\"}\n2026-02-15T08:54:11.764910+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Send result: RemoteStartTransaction (3723270) - {\"status\":\"Accepted\"}\n2026-02-15T08:54:11.766570+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Send command: Authorize (f817464f-9c2d-4e04-9cc1-95578eb62e4b) - {\"idTag\":\"4DCF33F0A5244E218A6D\"}\n2026-02-15T08:54:11.846104+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: OCPP: Received result: Authorize (f817464f-9c2d-4e04-9cc1-95578eb62e4b) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2026-02-15T08:54:11.847289+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/0fcfd14ececd[828]: RemoteStartTransaction:\ncable not yet connected\nThe logs have been collected and it will be shared with our expert team that will analyze and provide an answer as soon as possible.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-15T10:35:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a72e427e-160b-f111-8407-000d3ab11fb1",
+            "subject": "A new case manager was assigned to 0478505 CRM:00225337708",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0478505 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d366e3ed-d870-40a1-8b22-6f801ef71814",
+            "date": "2026-02-16T09:04:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "422cc594-420b-f111-8407-7ced8d44ddde",
+            "subject": "RE: ID0478505-DC/Si-D/IT- [MP / R9 170002732] Log Check CRM:00263000458",
+            "body": "Dear Maria,\nI am reaching out in regards of ticket\nID0478505.\nTicket has been opened to analyze a session failed at authentication on charger MP/R9 170002732 on 15.02.2026.\nI analyzed the logs, and here are my findings:\nThis is the outlet configuration of the charger:\nCustomer at 2026-02-15T08:50:09 authorized via app for outlet 2, but connected DC2 (which is outlet 3)\nSession failed\nAt 2026-02-15T08:54:11 he authorized via app for outlet 1, but again connected DC2.\nAt 2026-02-15T09:00:25 a reboot was sent to the charger, but there was no problem with the charger.\nIn conclusion, sessions failed because the user authenticated and connected different outlets.\nSince there is no issue on the charger and logs analysis has been provided, I will proceed to close this ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-02-16T14:20:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "517aa34c-430b-f111-8407-7ced8d44ddde",
+            "subject": "Ticket 0478505 has been closed. How did we do? CRM:00225338010",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-02-16T14:25:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

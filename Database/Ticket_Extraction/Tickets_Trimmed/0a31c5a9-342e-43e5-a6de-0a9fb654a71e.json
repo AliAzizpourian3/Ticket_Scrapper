@@ -1,0 +1,126 @@
+{
+    "incident_id": "0a31c5a9-342e-43e5-a6de-0a9fb654a71e",
+    "ticket_number": "0436126",
+    "title": "ID0436126-DC/Si-D/IT-[MP / R9 170002560]  Error polling coap://10.20.17.101",
+    "created_on": "2025-07-08T06:48:47Z",
+    "last_activity": "2025-07-09T07:00:18Z",
+    "age": "213",
+    "description": "Reported behavior/issue: Outlet 1 unavailable due to coap polling error\nSolution: Install EcoG 1.4.12\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "wlTf48",
+    "stage": null,
+    "serial_number": "MP / R9 170002560",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "8321fcfb-698c-4636-86b3-e25617e483ab",
+            "subject": "Note created on 07/08/2025 06:48:38 AM UTC by Giuseppe Buffardi ",
+            "body": "",
+            "date": "2025-07-08T06:48:53Z",
+            "extra": {}
+        },
+        {
+            "id": "c6e921eb-cc5b-f011-bec2-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0436126 CRM:00225225493",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0436126 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0a31c5a9-342e-43e5-a6de-0a9fb654a71e",
+            "date": "2025-07-08T07:27:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5fd2056e-d5ec-01e2-9cdf-0c6aa8906352",
+            "subject": "Error Note",
+            "body": "The charging station is currently not operational and cannot be reached remotely. Could you please perform a remote check to verify the status of the unit and restore its functionality if possible?",
+            "date": "2025-07-08T07:41:17Z",
+            "extra": {}
+        },
+        {
+            "id": "21ee393d-cf5b-f011-bec2-6045bdde4786",
+            "subject": "0436126-DC/Si-D/IT-[MP / R9 170002560]  Charger Issue CRM:02888000130",
+            "body": "Dear Giuseppe Buffardi,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002560\nChargerID/Serial No.\n:\nwlTf48\nProblem Description\n:\nCharger Issue\nTroubleshooting\n:  We are fetching the logs and if required we will inform the regional team to visit the site .\nFor future reference, your case number is\n0436126\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-08T07:43:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8ec77b2-41a0-9a40-9ded-dd1ddf0141bd",
+            "subject": "Error Faults",
+            "body": "I fetched the logs and found this error manytimes.\nI have checked the error flags aswell. 2025-07-07T14:27:47.774541+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/462fb78b40c9[642]: Error polling coap://10.20.17.101:5683/state Error: No reply in 4.25s\n792/795 times failed\nSharing this to L2 for further other analysis.",
+            "date": "2025-07-08T09:06:58Z",
+            "extra": {}
+        },
+        {
+            "id": "0e4dce21-dd5b-f011-bec1-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0436126 CRM:00225225582",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0436126 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0a31c5a9-342e-43e5-a6de-0a9fb654a71e",
+            "date": "2025-07-08T09:23:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "18247b47-dd5b-f011-bec2-7ced8d40e4a4",
+            "subject": "ID0436126-DC/Si-D/IT-[MP / R9 170002560]  Charger Issue CRM:02888000130",
+            "body": "Hi Giuseppe, good morning. I hope you are doing well.\nRegarding the OCPP connection, it's back online. Regarding the Outlet being unavailable, there is a hotfix for this particular issue where we are having a communication timeout.\nThis hotfix mitigates the error completely unless there is really a hardware issue.\nIf I have your permission, I can install the hotfix when no one is charging and it will take around 5-10mins to install, you will see the outlets unavailable in the backend.\nPlease provide me your feedback.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-08T09:24:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "442fbbbb-e45b-f011-bec1-6045bddf319c",
+            "subject": "ID0436126-DC/Si-D/IT-[MP / R9 170002560]  Charger Issue CRM:02888000130",
+            "body": "Hi Giuseppe,\nI installed the hotfix since no one was using the charger.\nHere is the connection from the backend:\nEverything looks good.\nAs such I will close the ticket.\nThanks and have a nice day.\nBest regards,\nFrancisco",
+            "date": "2025-07-08T10:17:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ae06431d-e55b-f011-bec1-6045bddf319c",
+            "subject": "Ticket 0436126 has been closed. Are you satisfied with our provided solution? CRM:00315002791",
+            "body": "Dear Giuseppe,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0436126\nwith the title:\nID0436126-DC/Si-D/IT-[MP / R9 170002560] Error polling coap://10.20.17.101\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-08T10:20:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df4797ac-ea5b-f011-bec2-6045bdde4786",
+            "subject": "RE: ID0436126-DC/Si-D/IT-[MP / R9 170002560]  Charger Issue CRM:02888000130",
+            "body": "Hi Francisco,\nThank you for your support. The charging station is now operational again.\nI appreciate your assistance.\nBest regards,\nGiuseppe",
+            "date": "2025-07-08T11:00:00Z",
+            "extra": {
+                "sender": "giuseppe.buffardi@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9179d0b4-ea5b-f011-bec1-7c1e5236e32d",
+            "subject": "Email sent to a closed case 'ID0436126-DC/Si-D/IT-[MP / R9 170002560]  Error polling coap://10.20.17.101 (0436126)' CRM:00225225687",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0436126\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-08T11:00:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

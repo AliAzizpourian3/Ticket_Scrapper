@@ -1,0 +1,233 @@
+{
+    "incident_id": "a8bae386-7129-f011-8c4d-7c1e523508ba",
+    "ticket_number": "0422203",
+    "title": "ID0422203-DC/Si-D/MY-[MP / ND 170000121] charging failure with remotestart",
+    "created_on": "2025-05-05T05:26:44Z",
+    "last_activity": "2026-02-03T13:44:38Z",
+    "age": "11614",
+    "description": "Reported behavior/issue: We have been encountering issues where generally remotestart accepted but\ncharging session was not initiated. Need this to be troubleshot and identified\nif this is a software or hardware issues.\nResolution\n: In\ncrease the ConnectionTimeOut, Authorize first and plug in later. Update charger to latest FW.",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "sruJwD",
+    "stage": null,
+    "serial_number": "MP / ND 170000121",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "79323e81-7129-f011-8c4d-7c1e52350ea5",
+            "subject": "Intermittent Issues of Initiating Charging Session at TNB Electron Tapah, Malaysia",
+            "body": "Dear Emobility Support,\nI am Syabil, from a EV CPO company based in Malaysia. I operate one of your charger with details as below:\nModel: Sicharge D\nCharger ID: sruJwD\nSite: Malaysia\nWe have been encountering issues where generally remotestart accepted but charging session was not initiated. Need this to be troubleshot and identified if this is a software or hardware issues.\nAttached are some logs we extracted from our backend.\nBest regards,\nSyabil\nTNBX Sdn Bhd\n********************************************************************************************\nNOTIFICATION:\nThe personal data and other information contained in this email is confidential and only for the use of the intended recipient. If you are not the intended recipient, you must not read, copy, deliver or disclose this email to anyone. If you have received this email in error, please notify the sender immediately or call 1300 80 2323 or TNB CareLine at 1300 88 5454 and permanently delete all copies of this email. TNB disclaims all liability for any error, loss or damage arising from this email being infected by computer virus or other malicious software.\n********************************************************************************************",
+            "date": "2025-05-05T05:26:36Z",
+            "extra": {
+                "sender": "syabil.aqwa@tnb.com.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5dab74d7-737f-ec8a-9873-636dd9dbbbb2",
+            "subject": null,
+            "body": "Dear Helpdesk team, based on the report sent by customer, I had looked into the details. (see attached)\nIt seems to be DC1 having IMD issue while DC2 having EV communication issue with the EVCC. (vehicle integration issue). They have mention that they are charging vehicles like BYD, Proton EMAS, Teslas.\nI have also another vehicle integration issue with Cases number 0421675 for BYD E6.",
+            "date": "2025-05-05T05:38:25Z",
+            "extra": {}
+        },
+        {
+            "id": "b245d89c-8929-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Dear Wan Syabil Aqwa bin Wan Shamsudin,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / ND 170000121\nChargerID/Serial No.\n:\nsruJwD\nProblem Description\n:  Intermittent Issues\nFor future reference, your case number is\n0422203\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T08:19:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39c15cc7-9d29-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Syabil,\nUpon checking the logs, I see there are 3 reasons for charging session failure, with RemoteStart.\nIt happens only when there is a parallel charging (Both outlets being used).\nThere was >30 sec delay between RemoteStartTransaction command and plugging EV or vice-versa.\nOn Outlet 1 there was Insulation monitoring device error as well (Can be beucase of parallel charging or timeout).\nI have noticed that the charger is running on very old FW version v4.0.11, however the latest release is v7.0.5.\nTo perform the detailed, analysis, I would recommend updating the charger to the latest version and test the RemoteStart functionality again.\nThe update path to 7.0.5 will, 4.0.11 > 5.0.23 > 6.1.3 > 7.0.5, i.e. there will be 3 updates.\nTo update the charger remotely, it will require ~ 6GB of data, may you please confirm if the SIM card inside the charger has adequate data plan to update the charger and troubleshoot further.\nAdditionally, we would like to know the list of EV's that you are experiencing issue with.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T10:43:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d5f31bd1-442a-f011-8c4d-000d3addf8ce",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Dear Reetesh,\nFor this case, please kindly keep the CC emails to be in the communication loop too.\nAs for the FW update, their XF3 sim card has a monthly 1GB limit. Thus they are not able to perform over the air update. They are pending their next bi-annual maintenance to update to V6.1.3 first.\nCustomer is asking if the CCS2 timeout, why would the charger still continue to accept the remotestart transaction knowing that the charging session will not be able to intiate?\n@bryan@paidchain.my\nyou can ask your queries here too.\nThank you\nEdna Seah",
+            "date": "2025-05-06T06:39:13Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "320a1d1a-4d2a-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello All,\nI will wait for your confirmation before staring any FW update on this charger due to data limit.\nTo answer your question about the timeout, there are two communication process that works in parallel while EV Charging.\nEVSE-EV\n: CCS communication, it start from SLAC process, immediately after the cable is plugged in, and reaches to “\nAuthorization\n” or “\nContractAuthentication\n” state, where EVSE is awaiting an Authentication from user/OCPP. It can be a local Authorization or remote.\nEVSE-CS\n(Central System): OCPP, All messages related to charger status, User Authentication, Start/Stop Transaction Metervalues etc.\nCCS and OCPP messages have their independent timeouts, the most common is the one which is at the “\nAuthorization\n” stage.\nCharger cannot Reject the\nRemoteStartTransaction\n, simply because the EV-EVSE communication is timed out in absence of user authentication, which can be a local or remote.\nAs EVSE-EV and EVSE-CS communication are separate.\nI hope the above answer helps. Let me know if you need further clarification.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-06T07:38:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd4224c3-8b2c-f011-8c4d-6045bde0265d",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello All,\nI hope the information shared in the previous mail, has answered your questions.\nIf there are no more questions, shall I proceed to close the case.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T04:12:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd212143-9b2c-f011-8c4e-7c1e52faf3c6",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hi\nReetesh Sharma,\nI have a few questions:\n1. Does Authorize message help on this method? some charger we meet it will send Authorize massage after we send RemoteStart.\n2. Besides to check the time from Status Notification \"Preparing\".is there a way to know that.. the EVSE-EV communication already timeout?\n3. Can the  EVSE-EV communication timeout be configurable?\n4. What is the definition of the \"ConnectionTimeOutCountdown\" key from GetConfiguration?\nWarm regards,\nBryan Lee\nSenior Software Engineer\nMobile: +60122386025 | Tel: 03-79715660\nPAIDCHAIN SDN. BHD.\n(200501006300)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.paidchain.my\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\nJUICE UP EV GRID SDN. BHD.\n(202301038519)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.juiceuptoday.com\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\n|\nYouTube\nOn Fri, 9 May 2025 at 12:13,\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello All,\nI hope the information shared in the previous mail, has answered your questions.\nIf there are no more questions, shall I proceed to close the case.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T06:03:11Z",
+            "extra": {
+                "sender": "bryan.lee@paidchain.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6ea24adc-b02c-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Bryan,\nPlease find my answers here:\n1. Does Authorize message help on this method? some charger we meet it will send Authorize massage after we send RemoteStart.\n[RS]: No, sending Authorize.req after RemoteStartTransaction is optional, it will not make any difference in this scenario.\n2. Besides to check the time from Status Notification \"Preparing\".is there a way to know that, the EVSE-EV communication already timeout?\n[RS]: No, the charger will change status notification only when the communication has failed and the CP state is changed to “F”\n3. Can the  EVSE-EV communication timeout be configurable?\n[RS]: No, as this is related to DIN/ISO communication protocol performance timing messages and not related to OCPP.\n4. What is the definition of the \"ConnectionTimeOutCountdown\" key from GetConfiguration?\n[RS]: This key additional parameter for displaying when the timeout will be reached.\nYou can try to follow these steps to mitigate the Authorization delay.\nSet the ConnectionTimeOut key to 90\nAsk user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\nHope this helps, Let me know if you need additional information, looking forward to received your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T08:37:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bcf55c08-b82c-f011-8c4e-000d3adc93d1",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Reetesh Sharma,\nThanks for your suggestions.\nPlease find my query according to your suggestion:\n1. Set the ConnectionTimeOut key to 90\n[Bryan]: We had tried to set it to 0 and 86400, but still the same. Can you help to test this configuration key on your lab unit to see whether it can mitigate the problem?\n2. Ask user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\n[Bryan]: Just want to be sure, this charger can accept RemoteStart when not only in \"Preparing\", it can also do on \"Available\". How about \"Finishing\" ?\nWarm regards,\nBryan Lee\nSenior Software Engineer\nMobile: +60122386025 | Tel: 03-79715660\nPAIDCHAIN SDN. BHD.\n(200501006300)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.paidchain.my\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\nJUICE UP EV GRID SDN. BHD.\n(202301038519)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.juiceuptoday.com\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\n|\nYouTube\nOn Fri, 9 May 2025 at 16:49,\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Bryan,\nPlease find my answers here:\n1. Does Authorize message help on this method? some charger we meet it will send Authorize massage after we send RemoteStart.\n[RS]: No, sending Authorize.req after RemoteStartTransaction is optional, it will not make any difference in this scenario.\n2. Besides to check the time from Status Notification \"Preparing\".is there a way to know that, the EVSE-EV communication already timeout?\n[RS]: No, the charger will change status notification only when the communication has failed and the CP state is changed to “F”\n3. Can the  EVSE-EV communication timeout be configurable?\n[RS]: No, as this is related to DIN/ISO communication protocol performance timing messages and not related to OCPP.\n4. What is the definition of the \"ConnectionTimeOutCountdown\" key from GetConfiguration?\n[RS]: This key additional parameter for displaying when the timeout will be reached.\nYou can try to follow these steps to mitigate the Authorization delay.\n1.\nSet the ConnectionTimeOut key to 90\n2.\nAsk user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\nHope this helps, Let me know if you need additional information, looking forward to received your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team - Reetesh Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-09T09:29:07Z",
+            "extra": {
+                "sender": "bryan.lee@paidchain.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "272b72c9-b82c-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Bryan,\n1. Set the ConnectionTimeOut key to 90\n[Bryan]: We had tried to set it to 0 and 86400, but still the same. Can you help to test this configuration key on your lab unit to see whether it can mitigate the problem?\n[RS]: We have tested and verified this configuration change previously in different version with different CPO's and it works. Please try setting it between 90 to 120.\n2. Ask user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\n[Bryan]: Just want to be sure, this charger can accept RemoteStart when not only in \"Preparing\", it can also do on \"Available\". How about “Finishing”?\n[\nRS]: Yes, it accepts the RemoteStartTransaction.req even if the EV is not plugged and Status is Available. Not in “Finishing”.\nIf you need, support in testing the interoperability of Sicharge D and the OCPP backend, it can be ordered through Siemens Singapore, my colleague Edna can help you with the offer and scope of work.\nLet me know if you need additional information, looking forward to receiving your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T09:34:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33e29e79-bb2c-f011-8c4d-000d3addf8ce",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Reetesh Sharma,\n1. Set the ConnectionTimeOut key to 90\n[Bryan]: We had tried to set it to 0 and 86400, but still the same. Can you help to test this configuration key on your lab unit to see whether it can mitigate the problem?\n[RS]: We have tested and verified this configuration change previously in different\nversion\nwith different CPO's and it works. Please try setting it between 90 to 120.\n[Bryan]: The reason we set 0 or 86400, is because we don't want the connector status going back to \"Available\" from \"Preparing\" / \"Finishing\" while it is still connected, we need the connector status to follow the actual status to indicate it is \"Connected\" / \"Disconnected\" with EV.\n2. Ask user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\n[Bryan]: Just want to be sure, this charger can accept RemoteStart when not only in \"Preparing\", it can also do on \"Available\". How about “Finishing”?\n[\nRS]: Yes, it accepts the RemoteStartTransaction.req even if the EV is not plugged and Status is Available. Not in “Finishing”.\n[Bryan]: ok, got it.\nWarm regards,\nBryan Lee\nSenior Software Engineer\nMobile: +60122386025 | Tel: 03-79715660\nPAIDCHAIN SDN. BHD.\n(200501006300)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.paidchain.my\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\nJUICE UP EV GRID SDN. BHD.\n(202301038519)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.juiceuptoday.com\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\n|\nYouTube\nOn Fri, 9 May 2025 at 17:43,\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Bryan,\n1. Set the ConnectionTimeOut key to 90\n[Bryan]: We had tried to set it to 0 and 86400, but still the same. Can you help to test this configuration key on your lab unit to see whether it can mitigate the problem?\n[RS]: We have tested and verified this configuration change previously in different version with different CPO's and it works. Please try setting it between 90 to 120.\n2. Ask user to Authorize RemoteStart first and then plug in the EV within 90 Sec.\n[Bryan]: Just want to be sure, this charger can accept RemoteStart when not only in \"Preparing\", it can also do on \"Available\". How about “Finishing”?\n[\nRS]: Yes, it accepts the RemoteStartTransaction.req even if the EV is not plugged and Status is Available. Not in “Finishing”.\nIf you need, support in testing the interoperability of Sicharge D and the OCPP backend, it can be ordered through Siemens Singapore, my colleague Edna can help you with the offer and scope of work.\nLet me know if you need additional information, looking forward to receiving your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T09:53:41Z",
+            "extra": {
+                "sender": "bryan.lee@paidchain.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "93445162-c52c-f011-8c4d-000d3ad97a58",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Bryan,\nPlease see my response as:\n1. Set the ConnectionTimeOut key to 90\n[Bryan]: We had tried to set it to 0 and 86400, but still the same. Can you help to test this configuration key on your lab unit to see whether it can mitigate the problem?\n[RS]: We have tested and verified this configuration change previously in different\nversion\nwith different CPO's and it works. Please try setting it between 90 to 120.\n[Bryan]: The reason we set 0 or 86400, is because we don't want the connector status going back to \"Available\" from \"Preparing\" / \"Finishing\" while it is still connected, we need the connector status to follow the actual status to indicate it is \"Connected\" / \"Disconnected\" with EV.\n[RS]: This configuration key is of most importance, when use Authorize first and plug in EV later. Not When the EV is plugged in first and Authorized later.\nHence, my recommendation is to set it between 90 to 120 and test again. This will for sure resolve the timeout issue caused due to delay in Authorization.\nLet me know if you need additional information, looking forward to receiving your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T11:04:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "14585053-4a2f-f011-8c4e-7c1e5236cda4",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Bryan,\nI hope all your queries have been now answered, if there are no more questions, do I have your confirmation to close the case?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-12T16:01:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a006d37b-9e2f-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hi Reetesh Sharma,\nI don't have any questions at the moment.\nThanks\nHi Syabil,\nAny other questions from your side? If not, may Reetesh process to close the case?\nWarm regards,\nBryan Lee\nSenior Software Engineer\nMobile: +60122386025 | Tel: 03-79715660\nPAIDCHAIN SDN. BHD.\n(200501006300)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.paidchain.my\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\nJUICE UP EV GRID SDN. BHD.\n(202301038519)\nBlock E, Level 4, Unit 9,\nLorong 4/137C, Batu 5, Jalan Klang Lama,\n58200, Kuala Lumpur\nwww.juiceuptoday.com\nConnect with us on:\nLinkedIn\n|\nFacebook\n|\nInstagram\n|\nYouTube\nOn Tue, 13 May 2025 at 00:02,\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Bryan,\nI hope all your queries have been now answered, if there are no more questions, do I have your confirmation to close the case?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T02:03:47Z",
+            "extra": {
+                "sender": "bryan.lee@paidchain.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "72a0f20f-aa2f-f011-8c4e-7c1e52fad806",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hi Reetesh,\nAs for the IMD issue, we will be performing a OTA and USB update to V7.0.3",
+            "date": "2025-05-13T03:26:35Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bb000121-ab2f-f011-8c4d-7c1e52361e39",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Hello Edna,\nMy suggestion is to close this case.\nFW update can be done on any preferred date and later you can test the charger. If you still observe the IMD issue, let's first check the wiring of IMD for any loose connection, if everything is intact then IMD replacement will be required. For that we would prefer to have a new case to track the issue separately.\nHope this is okay with you\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T03:34:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d4fa757e-ad2f-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Dear Reetesh,\nAppreciate your inputs. Thank you Bryan and Edna for contributions of the discussion.\nWe shall perform FW update, monitor IMD comm issue further, and discuss further on connectortimeout internally.\nYou may close the case.\nBest regards,\nWan Syabil Aqwa Wan Shamsudin\nLead (EV), TNBX Sdn. Bhd.\nEmail :\nsyabil.aqwa@tnb.com.my\nAddress:  Level 13, Wisma TNB Jalan Timur 46200 Petaling Jaya, Selangor Malaysia\nwww.tnbx.com.my\nwww.tnb.com.my",
+            "date": "2025-05-13T03:51:07Z",
+            "extra": {
+                "sender": "syabil.aqwa@tnb.com.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a3f2b422-c72f-f011-8c4d-7c1e52361e39",
+            "subject": "RE: ID0422203-DC/Si-D/MY-[MP / ND 170000121] Intermittent Issues CRM:02679000212",
+            "body": "Dear Wan Syabil Aqwa bin Wan Shamsudin,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0422203, the case is now closed.\nProblem Description\n: Intermittent Issues, charging session failure.\nResolution\n: In\ncrease the ConnectionTimeOut, Authorize first and plug in later. Update charger to latest FW.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-13T06:54:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "13ec1aa9-c72f-f011-8c4d-7c1e52361e39",
+            "subject": "Ticket 0422203 has been closed. Are you satisfied with our provided solution? CRM:00251000546",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0422203\nwith the title:\nID0422203-DC/Si-D/MY-[MP / ND 170000121] charging failure with remotestart\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-13T06:58:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

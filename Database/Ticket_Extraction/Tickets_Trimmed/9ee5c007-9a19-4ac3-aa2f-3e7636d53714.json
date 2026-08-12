@@ -1,0 +1,586 @@
+{
+    "incident_id": "9ee5c007-9a19-4ac3-aa2f-3e7636d53714",
+    "ticket_number": "0484204",
+    "title": "ID0484204-DC/Si-D/SE-[RVP/T4 170004780] Failing in PreCharge",
+    "created_on": "2026-03-13T12:36:57Z",
+    "last_activity": "2026-05-28T13:25:47Z",
+    "age": "110816",
+    "description": "Reported behaviour/issue: Charging Station Operational Issues\nTS2RD-86",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "73wjnq",
+    "stage": "In Progress",
+    "serial_number": "RVP/T4170004780",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "983520cb-d91e-f111-8342-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0484204 CRM:00225352385",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0484204 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9ee5c007-9a19-4ac3-aa2f-3e7636d53714",
+            "date": "2026-03-13T12:40:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ecd14a15-44e0-9685-ae7d-7908d13f48de",
+            "subject": "Additional description:",
+            "body": "The night foreman went out and checked the charger, and charger 1 gave 200kw and charger 2 was out of order. When Helena took out charger 1, charger 2 started but it only ran for a while so I took charger 1 and stopped in car 61 so it could be charged.\nBetween 02.00 and 04.23 there was movement of vehicles in the charging station last night.\nContact person on site/customer: Joachim Åkerström 070-6160000.",
+            "date": "2026-03-13T12:47:49Z",
+            "extra": {}
+        },
+        {
+            "id": "7d459be8-da1e-f111-8342-000d3ab127aa",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear\nJohan\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nRVP/T4 170004780\nCharger ID\n: 73wjnq\nProblem Description\n: Charging Station Operational Issues\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0484204\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-03-13T12:48:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "75a464d8-7384-6aeb-a20e-9e1d5211ea7d",
+            "subject": "Strange behavior",
+            "body": "I connected with ssh to run debug station.\nWhen doing a converter grouping I notice some strange thing in the logs.\nIt is reporting on coil that are not installed. This charger is a low flex and not a high flex.",
+            "date": "2026-03-13T13:12:20Z",
+            "extra": {}
+        },
+        {
+            "id": "427d47e7-e81e-f111-8341-7ced8d4866c5",
+            "subject": "A new case manager was assigned to 0484204 CRM:00225352463",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0484204 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9ee5c007-9a19-4ac3-aa2f-3e7636d53714",
+            "date": "2026-03-13T14:28:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76a4b340-ea1e-f111-8342-000d3ab12a39",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear Johan,\nThank you for contacting eMobility Support.\nFollowing your report, and after our check, we see that the problem of the charging session had to do with the group converting.\nIn the following log you are able to see that during the charging session mentioned, the charger had troubles with the group converter, and this made the charging session fail.\nAfter this error, we see that the charger was able to find the group converter, and the charger reset itself.\nRight now there is no error appearing.\nWe will monitor the charger for the next three days to see if the issue appears again, and after that we will close the ticket.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-13T14:38:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74982e93-3a21-f111-8342-7ced8d44dcb4",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hi,\nWe will test the chargers the next days, please do not close the ticket before consulting me.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-16T13:18:14Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7aaa8163-c721-f111-8342-000d3ab12a27",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hello,\nAccording to the customer, the same problem persists.\nSee attached pictures.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-17T06:06:10Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7a59b424-0a22-f111-8342-7ced8d44d2c4",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hi,\nHave you had time to check this out?\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-17T14:04:06Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c55f913-a322-f111-8342-7ced8d44db54",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear Johan,\nThank you for your patience regarding this issue.\nWe have been monitoring the charger for the last couple of days, but we don`t see the same errorcode appearing.\nCould you please provide us with a timestamp of the new charging session that performed issues?\nIf i understand it correctly, the charging session stopped charging at 66%?\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-18T08:18:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "63307155-c022-f111-8342-7ced8d44dfaf",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hi,\nIt seems like the charging worked last night.\nCan we leave this issue open for a couple more days so we can monitor that it continues to work?\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-18T11:48:14Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d0053f9d-5a23-f111-8342-7ced8d44db54",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hi,\nLast night the charging stopped working again.\nCan you read if there are any error codes?\nFor information, the customer has checked with the supplier of the car to ensure that there is nothing wrong with it.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-19T06:12:42Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4b11aab4-7923-f111-8342-7ced8d44d2c4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear Johan,\nThank you for your email back.\nFollowing your request, and after checking the charger, we indeed saw that both outlets were out of order.\nAfter rebooting the charger, we now see that both outlets are working again, and a new charging session is started on outlet 1.\nThis could be a bug from the new firmware version.\nWe will monitor the charger for the next three days to see if this error happens again.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-19T09:55:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2e2b65e4-9626-f111-8341-0022489c85f3",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear Johan,\nThank you for your patience regarding this ticket.\nFollowing your report, and after monitoring the charger for the last couple of days, we haven`t seen the error coming back, and the outlets stayed operational.\nPlease provide us with feedback so we can close this ticket.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-23T09:01:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f97fc6c-a826-f111-8342-000d3ab12a27",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Hello,\nCharging status this weekend:\nThe car is fully charged, but the display says charging interrupted.\nCar 60 left 21/3 at 02.15 it arrived home, left 23/3 at 04.15\nCar 61 left 21/3 at 09.10 arrived home 22/3 at 11.10\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-23T11:07:07Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9a27e909-6327-f111-8342-7ced8d44d2c4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:02681001635",
+            "body": "Dear Johan,\nThank you for your feedback regarding the charger.\nWe have checked the charging sessions you have mentioned, and see that the charging sessions stopped normally, because the battery of the car was 100%.\nThe issue you are mentioning, is a communication problem between the EV and the charger. The charger has a delay of communication at that moment, and receives updates from inside the charger, which has no effect on the charging session going on. This also shows in the logs.\nA delay of communication inside the charger, shows this message.\nWe hope to have informed you enough.\nPlease provide us with feedback, so we can close the ticket.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-24T09:23:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aa8ea848-2f28-f111-8342-7ced8d44dfaf",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Dear\nJohan Wennerstrand,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0484204\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-25T09:45:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4fb6ff68-3128-f111-8341-6045bddf6e3d",
+            "subject": "Re: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Hello,\nThis is the latest charge, see attached picture.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-25T10:00:17Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1112654e-3728-f111-8342-7ced8d44dfaf",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Dear Johan,\nThank you for your email back.\nAfter carefully checking the charging session you are mentioning, we also see that the charging session stopped normally at 100%\nWe don`t see any further errors or logs interrupting the charging session.\nWe hope this is clear for you.\nPlease provide us with feedback, so we can close this ticket.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-25T10:42:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3dd5d5fa-4528-f111-8341-000d3a66d79e",
+            "subject": "Re: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Hello,\nYes, but it was slow?\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-25T12:27:28Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8dcdc118-4828-f111-8342-7ced8d44db54",
+            "subject": "Re: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Hello,\nThe charging stopped at 66% and they started it again and it charged to 100%\nIt’s only problem with cable nr 2, never nr 1.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-25T12:42:38Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ffa6c8db-fd28-f111-8342-7ced8d44dfaf",
+            "subject": "Re: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Hello,\nAttached is from Mercedes fail-codes.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-03-26T10:23:50Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0401c71f-0e2c-f111-88b4-7ced8d44d1ac",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000360",
+            "body": "Dear Johan,\nThank you for your email back.\nFollowing your report, we want to clarify the issues.\nFollowing the report regarding the charging session being stuck on 66%, we see that the EV was not requesting any kw from the charger.\nIn the following picture you are able to see that the EV was requesting 0:\nIn the following picture you are able to see that after 2 minutes, the EV started to request power from the charger, and so the charging session continued:\nWe also see that during the charging sessions the group converter contacters sometimes get stuck, but after a while they restore:\nRegarding the picture you have send, about the charging session being complete on dc2, we can`t find a charging session in the logs that was ongoing or completed on dc2 in the timestamp. And we are unable to clarify from the picture that this was regarding the same charger ID.\nWe hope this clarified your questions, and issues.\nPlease provide us with feedback, so we are able to close this ticket.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-03-30T07:57:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e1d38798-d22c-f111-88b4-7ced8d44db54",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000370",
+            "body": "Dear\nJohan Wennerstrand,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0484204\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-31T07:24:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4a6fa7b9-a12d-f111-88b3-7c1e52350825",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Dear\nJohan Wennerstrand,\nThis is another reminder regarding your support case\n0484204\n. We are still waiting for the following information to proceed:\nPlease provide us with feedback, so we are able to close this ticket.\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nPriscilla van Wettum\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-04-01T08:06:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90a3836b-b62d-f111-88b4-000d3ab1199b",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nThe customer is checking the cars together with Mercedes.\nAt the same time Magnus Hellberg (Siemens) would check a few things from his side.\nI will get back to you as soon as I hear anything more.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-01T10:34:57Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d25a6dc8-9231-f111-88b4-000d3ab12a39",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Dear Johan,\nThank you for the update.\nA couple of days has past, do you have any update, regarding the operational state of the charger?\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2026-04-06T08:29:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9d286d4-4c32-f111-88b4-000d3ab12a39",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nThe charging last Saturday didn't work, it said \"charging interrupted\" and after moving the car and connecting again it worked.\nThe problems only apply to outlet 2 (right side).\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-07T06:41:48Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "72f59f8a-1902-d7d0-a1f3-9bc309573f2e",
+            "subject": "EcoG logs failed sessions",
+            "body": "",
+            "date": "2026-04-07T07:38:31Z",
+            "extra": {}
+        },
+        {
+            "id": "e4596be0-4755-7b87-a90d-6503668e2343",
+            "subject": "EcoG logs failed sessions",
+            "body": "",
+            "date": "2026-04-07T07:38:53Z",
+            "extra": {}
+        },
+        {
+            "id": "3005a600-39ef-bfff-a707-0120068d1fa2",
+            "subject": "EcoG logs failed sessions",
+            "body": "",
+            "date": "2026-04-07T07:39:04Z",
+            "extra": {}
+        },
+        {
+            "id": "1f411e3f-269c-097b-a707-81d8ed20ef18",
+            "subject": "L3 escalation",
+            "body": "talked with fransisco regarding this case. Client send reports about ecog failed session, but i am unable to read this, and i can`t find any back in the charger regarding this.",
+            "date": "2026-04-07T08:51:33Z",
+            "extra": {}
+        },
+        {
+            "id": "8434a125-1f33-f111-88b4-000d3ab11fb1",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nlast night neither socket 1 nor 2 worked, after several attempts the car was able to charge.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-08T07:47:17Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "22046395-2133-f111-88b3-6045bde0c971",
+            "subject": "A new case manager was assigned to 0484204 CRM:00225365351",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0484204 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9ee5c007-9a19-4ac3-aa2f-3e7636d53714",
+            "date": "2026-04-08T08:04:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac30353e-f1f9-ac76-ad70-f8d8baacaca7",
+            "subject": "NOTE FROM L3",
+            "body": "Already aligned with RC, it seems that the TargetVoltageDiff <10V to PresentVoltage",
+            "date": "2026-04-08T09:37:43Z",
+            "extra": {}
+        },
+        {
+            "id": "076472f7-be34-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi Magnus,\nLet me know if you have any feedback for me.\nThanks\nBest regards,\nFrancisco",
+            "date": "2026-04-10T09:23:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ba86c988-d737-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan, good morning. I hope you are doing well.\nApologies for the delay as this issue was a bit complicated and I have been discussing with Magnus about the scenarios that you provided to us.\nThe last 3 days, I checked all the sessions that failed during PreCharge and all of them are always the same EV →\nec.94.68.00.1b.d6.\nWould it be possible for you to schedule a time and date with us, with this vehicle, for us to confirm remotely where the root cause lies?\nThank you very much for your patience and support.\nBest regards,\nFrancisco",
+            "date": "2026-04-14T07:57:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "addc29f6-fa37-f111-88b4-000d3ab11366",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nThe car is home tomorrow Wednesday 2026-04-15 at 14.00 approx\nAlternative 2026-04-21 same time 14.00 approx\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-14T12:10:48Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c1a5c944-0a38-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan,\nThanks for the feedback.\nIs there any point of contact that we can call or invite for a meeting to do the tests? Phone number or email for example.\nBest regards,\nFrancisco",
+            "date": "2026-04-14T14:00:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d842cef-8a38-f111-88b3-7ced8d44dfaf",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nContact details for customer:\nVagngatan 19, 702 27 Örebro\nMobil: +46 (0)70 616 00 00\nE-post:\nJoachim.Akerstrom@bengtsakeri.se\nNiklas Johansson\nVagngatan 19, 702 27 Örebro\nMobil: +46 (0)70 2316094\nE-post:\nNiklas@bengtsakeri.se\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-15T05:21:23Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0c9ac58d-9938-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Joachim and Niklas, good morning. I hope you are doing well.\nMy name is Francisco, I'm from the Support team for the Siemens DC chargers and Johan reached out to us due to some failures you have starting charging with your eActros600.\nAs he informed me, today you will be on the charging station at around 14:00. Is it possible for us to create a Microsoft Teams meeting or can I give you a call, so that we can make some tests, to find the root cause?\nPlease let me know what is best for you.\nThank you very much for your help.\nBest regards,\nFrancisco",
+            "date": "2026-04-15T07:06:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cde8781c-a338-f111-88b4-7ced8d44db54",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi Francisco,\nWe will be there to assist.\nPlease send me and helmer.lundeklint@wani.se a Teams invite.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-15T08:14:27Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cae81031-323a-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi Johan, good morning.\nHere is the analysis from Wednesday with the EV:\nec.94.68.00.1b.d6 - keeping in mind we used the same connector for all sessions.\nThese tests below were performed always in the same EV Inlet which we will call Inlet1.\nAt 12:00 (UTC) we started a session succesfully right at the start, without any issues:\nAs you can see we have a difference of ~8V and still go through with it without any drop.\nWe stopped the session and started a new one. When we reach PreCharge, we reach the Voltage in <3sec:\nAfter we reach the voltage, the EV doesn't move to PowerDeliveryReq and we see a voltage drop:\nThe 3rd attempt was the same behaviour.\nAt the 4th attempt the charging worked perfectly again and from there onwards for the next 3 sessions, no session were failed.\nNow, we moved to the 2nd Inlet of the EV and could only do 2 sessions due to the necessity of operations.\nThe first session is the same behaviour of the drop of voltage:\nFor these sessions we enabled the .pcap traces collection and from the logs we keep seeing PreChargeRequests even though we reach the voltage:\nAnd then the TCP connection drop from EV side.\nThe 2nd session worked perfectly well.\nFrom our point of view, using our remote software to check the hardware faults and the logs, the fault doesn't seem to lie on our side. What we believe is that the EV is not closing the contactors properly, or not reading the PreCharge voltage correctly and stopping the session.\nCan you please reach out to Mercedes with this information? We are open to discussion and if needed another remote session, it's just a matter of aligning a date. You can reply to this email with their email or contact for us to reach out.\nThank you very much for your help on site and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2026-04-17T07:51:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "62ae8a62-c968-1233-ab74-c8840646625c",
+            "subject": "EcoG and SCB logs",
+            "body": "logs.7z",
+            "date": "2026-04-17T09:58:29Z",
+            "extra": {}
+        },
+        {
+            "id": "1c0580a2-eb3e-f111-88b4-7ced8d44ddde",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello,\nWe have received a follow-up question from a technician in Germany that we would like you to look into.\nPlease see below:\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-04-23T08:08:41Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fa92a7c9-a93f-f111-88b4-7ced8d44dcb4",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan, good morning.\nHere you go several files in attachment.\nLooking forward to their reply, if they would like, we can schedule a chat with them.\nHave a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2026-04-24T06:49:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46bd7fb0-6a48-f111-bec6-000d3ab45a17",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan, good morning.\nDo you have any feedback from the technician? I need some kind of feedback to keep the ticket opened.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-05-05T10:10:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b05a1158-6b48-f111-bec6-000d3aba0dbf",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nI spoke to the customer last week, they were waiting for a response from Mercedes.\nIt has apparently worked better since we last tested it, but not completely flawless.\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-05-05T10:15:41Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5e2b93f3-f049-f111-bec7-7ced8d752a7e",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hi,\nThis is the answer from Mercedes Germany:\nThe following was determined during this process:\nThe charger fails to stabilize the voltage at our EV target voltage of 761 V or 762 V during pre-charge and at times drops\n(The minimum value was approximately 680 V)\nAs a result, EV-Ready then switches from TRUE to FALSE and charging is aborted.\nThis means that the power supply on the charger fluctuates too much\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-05-07T08:44:26Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c2a0b8ea-244d-f111-bec6-002248a275a0",
+            "subject": "ID0484204-DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan, good afternoon.\nThanks for the reply.\nFor the last month it seems I only find this problem with this specific EV:\nec.94.68.00.1b.d6 and ec.94.68.00.1c.b0\nWhat I find strange is that only these 2 EVs stop the sessions regularly, we have this EV\nec.94.68.00.1c.b4\nthat never fails any session either in DC1 and DC2.\nI will request support from R&D since I am not able to understand fully why our voltage doesn't stabilize like the Mercedes colleagues mention.\nThanks a lot for your time and support so far.\nBest regards,\nFrancisco",
+            "date": "2026-05-11T10:34:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3551b250-be55-f111-bec6-70a8a57bf366",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hej,\nJag pratade med Pär Hildestrand från Mercedes och fick ny info samt några frågor, läs nedan.\nFrån:\nHildestrand Pär <par.hildestrand@veho.se>\nSkickat:\nFredag, 22 maj 2026 10:22\nTill:\nJohan Wennerstrand <johan.wennerstrand@wani.se>\nKopia:\nBlomberg Bengt <bengt.blomberg@veho.se>\nÄmne:\nUtmaningen med avbruten laddning på Bengts Åkeri\nHej Johan,\nHoppas allt väl!\nTack för trevligt samtal.\nSe mina kommentarer nedan…\nUtmaningen med kompabilitet mellan Siemens och eActros är inte isolerat till Sverige och Bengts Åkeris laddare och fordon i Örebro. Utmaningarna mellan just Siemens laddare och eActros existerar på många europeiska marknader och är idag välkänt hos både Siemens och Daimler Trucks\nDet pågår felsökning och analys både gemensamt och individuellt hos både Siemens och Daimler Trucks\nUtmaningen med felsökningsarbetet just nu är att laddproblemen uppstår inte hela tiden. Därför är det svårt att hitta mönster avseende fel/orsaker\nVi kommer inom kort att montera en ”data-logger” på en av Bengts Åkeris fordon för att ännu bättre extrahera fordonsdata och.., med support av Damiler Trucks.., analysera större mängder data och den vägen se om vi kan finna möjliga orsaker tillsammans med Siemens\nJag har fått information från ansvarig säljare på Veho Truck Retail att ni varit i kontakt med Bengts Åkeri vid flertalet tillfällen och eventuellt gjort uppdateringar på laddaren. Jag är intresserad av att veta mer exakt vad ni har gjort? Era insatser blir en viktig del i den interna dialogen med Daimler Trucks\noch den externa dialogen med Siemens.\nHälsningar / Best Regards,\nPär Hildestrand\nMercedes-Benz Lastbilar | FUSO Lastbilar\neMobility Manager Veho Import AB | “The Point”, Hyllie Stationsväg 31 | 215 32 Malmö | Sweden | M + 46(0)70 569 48 22\n|\npar.hildestrand@veho.se\n|\nvehocompany.com\n|\nhub.mercedes-benz-trucks.com\nMed vänlig hälsning,\nJohan Wennerstrand\nKalkyl",
+            "date": "2026-05-22T09:12:17Z",
+            "extra": {
+                "sender": "johan.wennerstrand@wani.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0410a87d-15b3-c65f-b4e3-c7fe4672f109",
+            "subject": "NOTE FROM L3 - Translation",
+            "body": "The challenge with compatibility between Siemens and eActros is not isolated to Sweden and Bengts Åkeris' charger and vehicle in Örebro. The challenges between Siemens chargers and eActros exist in many European markets and are now well known to both Siemens and Daimler Trucks\nTroubleshooting and analysis are ongoing both jointly and individually at both Siemens and Daimler Trucks\nThe challenge with the troubleshooting work right now is that the charging problems do not occur all the time. Therefore, it is difficult to find patterns regarding errors/causes\nWe will soon install a \"data logger\" on one of Bengts Åkeri's vehicles to even better extract vehicle data and.., with support from Damiler Trucks.., analyze larger amounts of data and that way see if we can find possible causes together with Siemens\nI have received information from the responsible salesperson at Veho Truck Retail that you have been in contact with Bengts Åkeri on several occasions and possibly made updates to the charger. I am interested in knowing more exactly what you have done? Your efforts will be an important part of the internal dialogue with Daimler Trucks and the external dialogue with Siemens.",
+            "date": "2026-05-22T12:40:42Z",
+            "extra": {}
+        },
+        {
+            "id": "b0f94396-db55-f111-bec6-7ced8d76ef99",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Pär, good afternoon. I hope you are doing well today!\nMy name is Francisco and I'm from the Technical Support team for the Sicharge D\n, working on this case\n. If you don't mind I will write in English :)\nThank you very much for your detailed answer, I will write on it below, after translation, please let me know if the translation is correct or if there is something wrong.\nThe challenge with compatibility between Siemens and eActros is not isolated to Sweden and Bengts Åkeris' charger and vehicle in Örebro. The challenges between Siemens chargers and eActros exist in many European markets and are now well known to both Siemens and Daimler Trucks\nYes this is true but the symptom and root cause are very different - this “known issue” is related to a noise in the CP line created by the EV due to the air pump used to cool the batteries during high power charging which has been acknowledged by Daimler, we also developed a hotfix for this where we are less strict with the PilotState measurements and so far, the tests show good results, as you say, below, the tests are being performed together with Daimler HQ themselves.\nTroubleshooting and analysis are ongoing both jointly and individually at both Siemens and Daimler Trucks\nSee above - correct\nThe challenge with the troubleshooting work right now is that the charging problems do not occur all the time. Therefore, it is difficult to find patterns regarding errors/causes\nWell this is true for a specific set of EVs, I did a pre analysis a couple of weeks ago and found that there is one EV which has many more failures than others which is this EVCCID:\nec.94.68.00.1b.d6\n, which is also the one we used for testing, and in the first attempts we fail 2 or 3 times before the rest of the times work fine. We can use this one for testing in my opinion.\nWe will soon install a \"data logger\" on one of Bengts Åkeri's vehicles to even better extract vehicle data and.., with support from Damiler Trucks.., analyze larger amounts of data and that way see if we can find possible causes together with Siemens\nWe also have involved our R&D team for further support. I already discussed this with the colleague that got assigned and let's align on a date to test and collect every information possible.\nI have received information from the responsible salesperson at Veho Truck Retail that you have been in contact with Bengts Åkeri on several occasions and possibly made updates to the charger. I am interested in knowing more exactly what you have done? Your efforts will be an important part of the internal dialogue with Daimler Trucks and the external dialogue with Siemens.\nAs far as I know, we only updated the charger to the latest version and included the hotfix about the PilotState above, since in the beginning of the report, we weren't able to record the .pcap files and as such, we didn't have a clear understanding of what was wrong.\nNow that we have the .pcap files and some recordings of our own hardware system, we can confirm that the problem seems to lie in the PreCharge phase like Daimler previously mentioned where the voltage of the charger doesn't stabilize.\nRight now, we don't have a clear root cause on why the voltage is not stabilizing and I have 2 theories at the moment:\nThe charger is not keeping the voltage on the required value → I need R&D support to find the root cause and how to fix it.\nEV is not closing the contactors properly → that's why we wanted Daimler to support us as well.\nI am just thinking of all the possibilities since in PreCharge there are not too many participants, since we are able to pass CableCheck as well, if the problem is within our charger we will gladly provide a fix.\nThank you very much for your time and availability and feel free to answer to this email if you have any questions or doubts.\nHave a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2026-05-22T12:41:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6dddb8be-0758-f111-bec6-6045bde009ea",
+            "subject": "Sv: ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Dear Francisco,\nHope all is well!\nBig thanks for your quick input and additional sharing of information.\nTo summarize your last point (see below in blue)….\nAs I interpret your comments…, we either have an issue with the charger, or we have an issue with the eTruck (or maybe both) – correct..?\nHope our data-logger will give us some more input supporting us to find the root causes\nPlease keep us up-dated on any development on your side\nI have received information from the responsible salesperson at Veho Truck Retail that you have been in contact with Bengts Åkeri on several occasions and possibly made updates to the charger. I am interested in knowing more exactly what you have done? Your efforts will be an important part of the internal dialogue with Daimler Trucks and the external dialogue with Siemens.\nAs far as I know, we only updated the charger to the latest version and included the hotfix about the PilotState above, since in the beginning of the report, we weren't able to record the .pcap files and as such, we didn't have a clear understanding of what was wrong.\nNow that we have the .pcap files and some recordings of our own hardware system, we can confirm that the problem seems to lie in the PreCharge phase like Daimler previously mentioned where the voltage of the charger doesn't stabilize.\nRight now, we don't have a clear root cause on why the voltage is not stabilizing and I have 2 theories at the moment:\nThe charger is not keeping the voltage on the required value → I need R&D support to find the root cause and how to fix it.\nEV is not closing the contactors properly → that's why we wanted Daimler to support us as well.\nI am just thinking of all the possibilities since in PreCharge there are not too many participants, since we are able to pass CableCheck as well, if the problem is within our charger we will gladly provide a fix.\nHälsningar / Best Regards,\nPär Hildestrand\nMercedes-Benz Lastbilar | FUSO Lastbilar\neMobility Manager Veho Import AB | “The Point”, Hyllie Stationsväg 31 | 215 32 Malmö | Sweden | M + 46(0)70 569 48 22\n|\npar.hildestrand@veho.se\n|\nvehocompany.com\n|\nhub.mercedes-benz-trucks.com\nFrån:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nSkickat:\nden 22 maj 2026 17:46\nTill:\nHildestrand Pär <par.hildestrand@veho.se>; Johan Wennerstrand <johan.wennerstrand@wani.se>\nKopia:\nBlomberg Bengt <bengt.blomberg@veho.se>; Hellberg, Magnus <magnus.hellberg@siemens.com>; Hellberg, Magnus <magnus.hellberg@siemens.com>\nÄmne:\nID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375\nSome people who received this message don't often get email from\nemobility_support.si@siemens.com\n.\nLearn why this is important\nHello Pär, good afternoon. I hope you are doing well today!\nMy name is Francisco and I'm from the Technical Support team for the Sicharge D, working on this case. If you don't mind I will write in English :)\nThank you very much for your detailed answer, I will write on it below, after translation, please let me know if the translation is correct or if there is something wrong.\nThe challenge with compatibility between Siemens and eActros is not isolated to Sweden and Bengts Åkeris' charger and vehicle in Örebro. The challenges between Siemens chargers and eActros exist in many European markets and are now well known to both Siemens and Daimler Trucks\nYes this is true but the symptom and root cause are very different - this “known issue” is related to a noise in the CP line created by the EV due to the air pump used to cool the batteries during high power charging which has been acknowledged by Daimler, we also developed a hotfix for this where we are less strict with the PilotState measurements and so far, the tests show good results, as you say, below, the tests are being performed together with Daimler HQ themselves.\nTroubleshooting and analysis are ongoing both jointly and individually at both Siemens and Daimler Trucks\nSee above - correct\nThe challenge with the troubleshooting work right now is that the charging problems do not occur all the time. Therefore, it is difficult to find patterns regarding errors/causes\nWell this is true for a specific set of EVs, I did a pre analysis a couple of weeks ago and found that there is one EV which has many more failures than others which is this EVCCID:\nec.94.68.00.1b.d6\n, which is also the one we used for testing, and in the first attempts we fail 2 or 3 times before the rest of the times work fine. We can use this one for testing in my opinion.\nWe will soon install a \"data logger\" on one of Bengts Åkeri's vehicles to even better extract vehicle data and.., with support from Damiler Trucks.., analyze larger amounts of data and that way see if we can find possible causes together with Siemens\nWe also have involved our R&D team for further support. I already discussed this with the colleague that got assigned and let's align on a date to test and collect every information possible.\nI have received information from the responsible salesperson at Veho Truck Retail that you have been in contact with Bengts Åkeri on several occasions and possibly made updates to the charger. I am interested in knowing more exactly what you have done? Your efforts will be an important part of the internal dialogue with Daimler Trucks and the external dialogue with Siemens.\nAs far as I know, we only updated the charger to the latest version and included the hotfix about the PilotState above, since in the beginning of the report, we weren't able to record the .pcap files and as such, we didn't have a clear understanding of what was wrong.\nNow that we have the .pcap files and some recordings of our own hardware system, we can confirm that the problem seems to lie in the PreCharge phase like Daimler previously mentioned where the voltage of the charger doesn't stabilize.\nRight now, we don't have a clear root cause on why the voltage is not stabilizing and I have 2 theories at the moment:\nThe charger is not keeping the voltage on the required value → I need R&D support to find the root cause and how to fix it.\nEV is not closing the contactors properly → that's why we wanted Daimler to support us as well.\nI am just thinking of all the possibilities since in PreCharge there are not too many participants, since we are able to pass CableCheck as well, if the problem is within our charger we will gladly provide a fix.\nThank you very much for your time and availability and feel free to answer to this email if you have any questions or doubts.\nHave a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2026-05-25T07:02:55Z",
+            "extra": {
+                "sender": "par.hildestrand@veho.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "54334ab7-985a-f111-bec6-70a8a57bf144",
+            "subject": "ID0484204/DC/Si-D/SE-[RVP/T4 170004780] Charging Station Operational Issues CRM:03209000375",
+            "body": "Hello Johan, good afternoon.\nDid you face any issues recently that you can share? That way I can collect all our logs and Pär can collect their logs and we can reach a root cause.\nWe are willing to do any request if you need a site intervention to check the logs together.\nI will wait for your feedback\nThanks a lot for your support so far.\nBest regards,\nFrancisco",
+            "date": "2026-05-28T13:25:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

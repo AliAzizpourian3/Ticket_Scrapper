@@ -1,0 +1,140 @@
+{
+    "incident_id": "5566e97f-79c7-ef11-b8e8-000d3ab009dd",
+    "ticket_number": "0397698",
+    "title": "ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize",
+    "created_on": "2024-12-31T13:16:53Z",
+    "last_activity": "2025-12-16T14:02:39Z",
+    "age": "8094",
+    "description": "Reported behavior/issue: Customer is claiming that as per the OCPP Protocol the EVC must support sending TagID in case of free vend mode.\nRoot cause: Configuration keys was not enabled.\nSolution: Set recommended Configure keys.\nOn DAMEX Sanctioned List: No\nWarranty Status: Not active",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "xw4sSB",
+    "stage": null,
+    "serial_number": "MP / N0 170000002",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f42e1477-79c7-ef11-8ee9-7c1e5287f495",
+            "subject": "Webform_incident_SiCharge D_31-12-2024_SN: NA",
+            "body": "Dear Sadek Hassanien,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nNA\nThank you\neMobility Technical Support Team\nSehr geehrte/r Sadek Hassanien,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nNA\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-12-31T13:16:46Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ea54b7a6-79c7-ef11-b8ea-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0397698 CRM:00225143382",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0397698 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=5566e97f-79c7-ef11-b8e8-000d3ab009dd",
+            "date": "2024-12-31T13:18:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d51ff7fb-7a8e-b052-ba07-c67f87237713",
+            "subject": "Note from RC",
+            "body": "The EVC is connected to the backend: -Customer is claiming that as per the OCPP Protocol the EVC must support sending TagID in case of free vend mode. -Customer needs the below setting to be enabled/true as it showing false \"\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false\"",
+            "date": "2024-12-31T13:33:23Z",
+            "extra": {}
+        },
+        {
+            "id": "fd56ef2f-7fc7-ef11-8ee9-000d3ab66b74",
+            "subject": "ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize CRM:00921001445",
+            "body": "Dear Sadek Hassanien,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / N0 170000002\nChargerID/Serial No.\n:\nxw4sSB\nProblem Description\n: LocalPreAuthorize\nTroubleshooting\n:\nI can see that the charger is on the OCPP backend “ alfacharge”. Could you please make sure that the backend successfully integrated for Sicharge D?\nFor future reference, your case number is\n0397698\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-31T13:57:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1cef8d5f-83c7-ef11-b8e9-0022489bcff4",
+            "subject": "Re: ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize CRM:00921001445",
+            "body": "Dear Beerpal,\nThanks for your email.\nKindly be informed that;\n1-In free vend mode; Customer is claiming that sending Dummy Token (i.e.: IDTag:\"\") is not as per the OCPP standard and the EVC must send an IDTag to the backend not Dummy one.\n2\n-Customer needs the below setting to be enabled/true as it showing false \"\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false\", so please advise if the same is related to the authorization key in the SCB or it is a command to be sent from the OCPP? , if it is a command, please share the address for the same.\nKindly be informed that this ticket has been initially assigned as technical inquiry not incident.\nBR,\nSadek",
+            "date": "2024-12-31T14:27:34Z",
+            "extra": {
+                "sender": "sadek.hassanien@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a62798a1-9fc7-ef11-b8e8-000d3a68cce9",
+            "subject": "Re: ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize CRM:00921001445",
+            "body": "Hello Sadek,\nThanks for the response.\nWhen checked the charger logs, we found that local authorization is not enabled on this charger.\nThe backend needs to set all the highlighted parameters to \"True\" and then send the list of all whitelisted RFID IDs through the backend. The maximum supported length for the list is 100.\nThis is why authorization did not occur when the charger was offline.\nPlease let us know if this backend has already been integrated with Sicharge D. If it has not, backend integration will be required for further troubleshooting.\nAdditionally, please note that the charger is now out of warranty.\nFor more details, please refer to the KA via the following\nlink\n.\nLet us know if you have any other questions, or if we can proceed with closing this ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-12-31T17:49:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "559dd5bf-0bc8-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize CRM:00921001445",
+            "body": "Dear Beerpal,\nThanks for the below clarification.\nKindly be informed that and still requesting further clarification for the below;\n1-Customer is claiming that sending dummy tagID in case of freevend mode is not as per the OCPP protocol.\n2-“LocalPreAuthorize” is a parameter that can be enabled/disabled from the OCPP back end\nonly ?\nKindly be informed that the ticket falls under technical inquiry.\nBR,\nSadek",
+            "date": "2025-01-01T06:43:47Z",
+            "extra": {
+                "sender": "sadek.hassanien@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3142b4c2-cec3-0adc-909c-27977cb16f1a",
+            "subject": "Note-Logs",
+            "body": "",
+            "date": "2025-01-01T16:25:52Z",
+            "extra": {}
+        },
+        {
+            "id": "f5b1395a-5e6e-95ba-bb8e-787d5931c0da",
+            "subject": null,
+            "body": "the TagID must be configured with Configuraton key '\nNonAuthorizedTag\n'\n2024-12-31T11:15:45.521090+00:00 sicharge-cp [local0:info] sicharge-cp-backend/08a0453ee7b7[701]: OCPP: Send result: GetConfiguration (082d06d4-cbc0-4075-ad49-e01c434ee87c) - {\"configurationKey\":[{\"key\":\"AllowOfflineTxForUnknownId\",\"value\":\"true\",\"readonly\":false},{\"key\":\"AllowOfflineTxForUnknownVehicleId\",\"value\":\"false\",\"readonly\":false},{\"key\":\"AuthorizationCacheEnabled\",\"value\":\"false\",\"readonly\":false},{\"key\":\"AuthorizeRemoteTxRequests\",\"value\":\"false\",\"readonly\":false},{\"key\":\"CardTxReportType\",\"value\":\"default\",\"readonly\":false},{\"key\":\"CertificateSignedMaxChain\",\"value\":\"0\",\"readonly\":true},{\"key\":\"CertificateStoreMaxLength\",\"value\":\"0\",\"readonly\":true},{\"key\":\"ChargeProfileMaxStackLevel\",\"value\":\"10\",\"readonly\":true},{\"key\":\"ChargingScheduleAllowedChargingRateUnit\",\"value\":\"Power\",\"readonly\":true},{\"key\":\"ChargingScheduleMaxPeriods\",\"value\":\"100\",\"readonly\":true},{\"key\":\"ClockAlignedDataInterval\",\"value\":\"0\",\"readonly\":false},{\"key\":\"ConnectionTimeOut\",\"value\":\"240\",\"readonly\":false},{\"key\":\"ConnectionTimeOutCountdown\",\"value\":\"10\",\"readonly\":false},{\"key\":\"ConnectorPhaseRotation\",\"value\":\"0.Unknown, 1.Unknown, 2.Unknown\",\"readonly\":false},{\"key\":\"ConnectorSwitch3to1PhaseSupported\",\"value\":\"false\",\"readonly\":true},{\"key\":\"CpoName\",\"value\":\"\",\"readonly\":false},{\"key\":\"DisplayTariffInformation\",\"value\":\"none\",\"readonly\":false},{\"key\":\"GetConfigurationMaxKeys\",\"value\":\"100\",\"readonly\":true},{\"key\":\"HeartbeatInterval\",\"value\":\"300\",\"readonly\":false},{\"key\":\"LightIntensity\",\"value\":\"100\",\"readonly\":false},{\"key\":\"LocalAuthListEnabled\",\"value\":\"false\",\"readonly\":false},{\"key\":\"LocalAuthListMaxLength\",\"value\":\"100\",\"readonly\":true},{\"key\":\"LocalAuthorizeOffline\",\"value\":\"true\",\"readonly\":false},{\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false},{\"key\":\"MaxChargingProfilesInstalled\",\"value\":\"100\",\"readonly\":true},{\"key\":\"MeterValuesAlignedData\",\"value\":\"\",\"readonly\":false},{\"key\":\"MeterValuesAlignedDataMaxLength\",\"value\":\"0\",\"readonly\":true},{\"key\":\"MeterValueSampleInterval\",\"value\":\"60\",\"readonly\":false},{\"key\":\"MeterValuesSampledData\",\"value\":\"Current.Import,Current.Offered,Energy.Active.Import.Interval,Energy.Active.Import.Register,Energy.Reactive.Import.Register,Frequency,Power.Offered,Power.Active.Import,Power.Factor,SoC,Voltage,Temperature\",\"readonly\":false},{\"key\":\"MeterValuesSampledDataMaxLength\",\"value\":\"13\",\"readonly\":true},{\"key\":\"MinimumStatusDuration\",\"value\":\"1\",\"readonly\":false},{\"key\":\"NonAuthorizedTag\",\"value\":\"\",\"readonly\":false},{\"key\":\"NumberOfConnectors\",\"value\":\"3\",\"readonly\":true},{\"key\":\"PaymentCardIdTagPrefix\",\"value\":\"EMVS*\",\"readonly\":false},{\"key\":\"PaymentCurrency\",\"value\":\"EUR\",\"readonly\":false},{\"key\":\"PaymentDefaultLanguage\",\"value\":\"en\",\"readonly\":false},{\"key\":\"PaymentTXMaxAmount\",\"value\":\"5000\",\"readonly\":false},{\"key\":\"ReserveConnectorZeroSupported\",\"value\":\"false\",\"readonly\":true},{\"key\":\"ResetRetries\",\"value\":\"0\",\"readonly\":false},{\"key\":\"SecurityProfile\",\"value\":\"0\",\"readonly\":false},{\"key\":\"SendCardTxReport\",\"value\":\"false\",\"readonly\":false},{\"key\":\"SendLocalListMaxLength\",\"value\":\"100\",\"readonly\":true},{\"key\":\"StopAutoChargeOnHMI\",\"value\":\"false\",\"readonly\":false},{\"key\":\"StopTransactionOnEVSideDisconnect\",\"value\":\"true\",\"readonly\":false},{\"key\":\"StopTransactionOnInvalidId\",\"value\":\"true\",\"readonly\":false},{\"key\":\"StopTxnAlignedData\",\"value\":\"\",\"readonly\":false},{\"key\":\"StopTxnAlignedDataMaxLength\",\"value\":\"0\",\"readonly\":true},{\"key\":\"StopTxnSampledData\",\"value\":\"SoC,Energy.Active.Import.Interval\",\"readonly\":false},{\"key\":\"StopTxnSampledDataMaxLength\",\"value\":\"4\",\"readonly\":true},{\"key\":\"SupportedFeatureProfiles\",\"value\":\"Core,LocalAuthListManagement,Reservation,SmartCharging,RemoteTrigger\",\"readonly\":true},{\"key\":\"SupportedFeatureProfilesMaxLength\",\"value\":\"5\",\"readonly\":true},{\"key\":\"TransactionMessageAttempts\",\"value\":\"1\",\"readonly\":false},{\"key\":\"TransactionMessageRetryInterval\",\"value\":\"1\",\"readonly\":false},{\"key\":\"UnlockConnectorOnEVSideDisconnect\",\"value\":\"true\",\"readonly\":false},{\"key\":\"WebSocketPingInterval\",\"value\":\"0\",\"readonly\":false}]}",
+            "date": "2025-01-02T09:00:11Z",
+            "extra": {}
+        },
+        {
+            "id": "16d6a793-f673-ceb7-9fa0-04969e8e2611",
+            "subject": "Note to L2",
+            "body": "As jointly discussed with the RC and ES teams, the customer's inquiry is regarding the OCPP feature introduced in FW4.0.11. We will provide an explanation of the functionality only.\nRC will discuss this with the customer and inform us by Tuesday about the next steps.",
+            "date": "2025-01-03T15:45:36Z",
+            "extra": {}
+        },
+        {
+            "id": "14ad0934-4c3e-19f8-8d47-7aff05ffbfde",
+            "subject": "Note from RC",
+            "body": "The issue for the backend has been resolved.\nPlease close the ticket mentioning that the issue has been resolved after using the recommended parameter.",
+            "date": "2025-01-06T04:04:21Z",
+            "extra": {}
+        },
+        {
+            "id": "5490a357-e3cb-ef11-b8ea-002248a2b1bd",
+            "subject": "RE: ID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize CRM:00921001445",
+            "body": "Dear Sadek Hassanien,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0397698, and the case is now closed.\nProblem Description\n: Empty Tag id in freevend mode.\nResolution\n: Set the recommended parameter.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-06T04:04:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33fcd6d1-e3cb-ef11-b8ea-002248a2b1bd",
+            "subject": "Ticket 0397698 has been closed. Are you satisfied with our provided solution? CRM:00921001455",
+            "body": "Dear Sadek,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0397698\nwith the title:\nID0397698-DC/Si-D/SA-[MP / N0 170000002] LocalPreAuthorize\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-06T04:08:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

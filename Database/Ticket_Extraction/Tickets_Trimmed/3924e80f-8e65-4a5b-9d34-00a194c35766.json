@@ -1,0 +1,78 @@
+{
+    "incident_id": "3924e80f-8e65-4a5b-9d34-00a194c35766",
+    "ticket_number": "0421900",
+    "title": "ID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session [C1]",
+    "created_on": "2025-05-01T09:28:50Z",
+    "last_activity": "2025-06-11T12:23:21Z",
+    "age": "59215",
+    "description": "Reported behavior/issue:\nWhen session is starting, charger sends 2 x StartTransaction to OCPP server and thus OCPP server will create 2 different “TransacionID” for same session.\nAWS query, screenshot and customer evidence from OCPP server (excel) can be find from timeline. Please check AWS 2-3 days backward.\nRemark:\nCustomer evidence → charger sent multiple time “PowerLoss” messages?\nDuplicated\nsecc events: {\"type\":\"SeccStartCharging\",\"outletId\":}\nSolution:\n11.06.2025: Handover from ES to NOC",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "YX5xq0",
+    "stage": null,
+    "serial_number": "MP / P6 170000741,MP / P6 170000741",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "4243fd23-5437-f3c9-a379-9fa86da35e82",
+            "subject": "Case handed over from L2 -->L3 Expert",
+            "body": "Case Summary for L3 Handover\nProblem Description:\nDuplicated OCPP\nStartTransaction\nfor one session.\nAction Performed (L2):\nQueried AWS logs\nCollected customer evidence (OCPP server Excel log)\nCaptured relevant screenshots\nCharger SW Version:\nV6.1.3\nSuspected Root Cause:\nUnder analysis (xyz)\nReason for Handover (L3):\nFurther analysis required to determine the root cause of the duplicate\nStartTransaction\nFault History:\nAsad\nXYZ date (please specify if known)\nLog Analysis with Timestamp:\nNotable event observed on:\n2025-04-29T12:09:18.712505+00:00\nAction Required:\nAction by HQ:\nFurther investigation to determine the root cause of duplicated transactions\nAttachment:\nRefer to the attached logs and Excel evidence\nAnalysis Note-:\nIn logs we can see that the SECC triggers 2 StartCharging Events within 5 ms. Required EcoG logs for further analysis-\n2025-04-29T12:09:18.712505+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: secc events: {\"type\":\"SeccStartCharging\",\"outletId\":2}\n2025-04-29T12:09:18.725452+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: secc events: {\"type\":\"SeccStartCharging\",\"outletId\":2}\n2025-04-29T12:09:18.733546+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Send command: StartTransaction (7e6fd271-3e6e-4be9-a090-c88fcd7b6919) - {\"connectorId\":2,\"idTag\":\"OXNIFS8HJ24Y0H3R\",\"meterStart\":129315128,\"timestamp\":\"2025-04-29T12:09:18.721Z\"}\n2025-04-29T12:09:18.735725+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Send command: StartTransaction (20475678-09c6-4df7-af12-c1eb54f70fe1) - {\"connectorId\":2,\"idTag\":\"OXNIFS8HJ24Y0H3R\",\"meterStart\":129315128,\"timestamp\":\"2025-04-29T12:09:18.726Z\"}\n2025-04-29T12:09:18.815795+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Received result: StartTransaction (7e6fd271-3e6e-4be9-a090-c88fcd7b6919) - {\n\"transactionId\":638944,\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-04-29T12:09:18.816897+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/6c9572e61510[638]: OCPP: Received result: StartTransaction (20475678-09c6-4df7-af12-c1eb54f70fe1) - {\n\"transactionId\":427281,\"idTagInfo\":{\"status\":\"Accepted\"}}",
+            "date": "2025-05-01T09:31:54Z",
+            "extra": {}
+        },
+        {
+            "id": "15afe09e-cf91-6025-87b4-9a30bba9f317",
+            "subject": "follow up",
+            "body": "Please provide update.",
+            "date": "2025-05-14T04:20:23Z",
+            "extra": {}
+        },
+        {
+            "id": "d1eaf5a3-cf30-f011-8c4d-7c1e523508ba",
+            "subject": "0421900 - ID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session [C1] CRM:00314000166",
+            "body": "Hi Markus,\nI am reaching out in regards of ticket\nID0421900,\nopened for charger\nYX5xq0,\nwhich on 29.04.2025 experienced #16 sessions which had the OCPP StartTransaction command duplicated.\nI had an overview on AWS if this behavior happened other times, and I confirm it happened only on 29.04.2025. In the last 2 weeks (30.04 - 14.05) and in the 2 weeks before the event, it never happened.\nI analyzed the logs, and these are my findings:\nIn correlation to the duplicated StartTransaction message, I see duplicated “secc events” coming from the sicharge-cp-backend.\nThe two StartTransaction messages have two different TransactionIDs\nNot only the StartTransaction message is duplicated, but also the MeterValues messages are duplicated. In this case, they both refer to a single TransactionID.\nThe StopTransaction message is instead unique, not duplicated.\nIn #11 cases, the charging session was stopped immediately.\nIn #5 duplicated cases, the charging session was possible, and the pattern was the following:\nOCPP: Received result: StartTransaction (transactionID:\nA\n)\nOCPP: Received result: StartTransaction (transactionID:\nB\n)\nOCPP: Send command: MeterValues (transactionID:\nB\n)\nOCPP: Send command: StartTransatcion (transactionID:\nB\n)\nAt 2025-04-29T14:38:44 a reboot was performed.\nAfter the reboot, the charger received all the 16 StopTransaction messages that were sent as duplicated. You can verify that in the excel sheet attached.\nCan you please let me know what were the messages seen from OCPP Backend side? Did they see a duplication of messages?\nI suspect a temporary issue on the communication between EcoG and FW, since a reboot cleared the situation and all the StopTransaction messages of the duplicated sessions were sent afterwards.\nAt the same time, this behavior happened only in a single day over the past month, so if it was a bug I would expect to see it more often, but I would rather consider it as a single event of failure.\nThank you in advance for your feedback with the data from the Backend.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-14T14:28:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d64abf5-8231-f011-8c4d-7c1e523600d9",
+            "subject": "RE: 0421900 - ID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session [C1] CRM:00314000166",
+            "body": "Hi Fosco,\nThank you for the analyses!\nCustomer saw duplicated messages coming from charger and due to that OCPP server created 2 session Id for same charging session.\nI was also thinking of single failure but better to keep under radar if this happened again in the future so then it is better to investigate more. I will inform the customer!\nBR,\nMarkus",
+            "date": "2025-05-15T11:51:47Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "173d6f1a-8631-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: 0421900 - ID0421739 -DC/Si-D/FI-[MP / P6 170000741]-Duplicated OCPP StartTransaction for one session [C1] CRM:00314000166",
+            "body": "Hi Markus,\nSince I believe it was a single failure event, and in the past 2 weeks it did not appear again, I would suggest to keep this ticket open and I will monitor the charger for the next 2 weeks.\nIf no further duplicated OCPP StartTransaction appears, I will proceed to close the ticket.\nW\nith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-15T12:14:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e38a6ccf-c153-aa8b-b03a-c78b3ecfa1fe",
+            "subject": null,
+            "body": "Hello Fosco\nAny update on this?",
+            "date": "2025-06-02T16:13:05Z",
+            "extra": {}
+        },
+        {
+            "id": "28aacbf4-fc13-bc40-8c27-729065d0662b",
+            "subject": "Handover form ES to NOC",
+            "body": "Problem Description\n: On 29.04, 16 charging sessions got OCPP StartTransaction duplicated. Stop transaction arrived only after reboot.\nSuspected Root Cause\n: One time event.\nAction Performed (ES)\n: Logs analysis and monitoring of the charger.\nCharger SW Version\n: v6.1.3\nReason for Handover (ES/NOC\n): Charger monitored, and since 29.04 never happened again. Considered as a one time event. Please close the ticket",
+            "date": "2025-06-11T12:21:50Z",
+            "extra": {}
+        }
+    ]
+}

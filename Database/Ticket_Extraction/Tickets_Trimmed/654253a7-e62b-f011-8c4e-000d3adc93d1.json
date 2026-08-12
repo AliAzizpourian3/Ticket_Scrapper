@@ -1,0 +1,74 @@
+{
+    "incident_id": "654253a7-e62b-f011-8c4e-000d3adc93d1",
+    "ticket_number": "0423182",
+    "title": "ID0423182-DC/Si-D/AT-[  MP / S3 170003430 ] error code at Hubject",
+    "created_on": "2025-05-08T08:30:11Z",
+    "last_activity": "2025-05-27T07:04:46Z",
+    "age": "27274",
+    "description": "Reported issue: Customer has talked about the Hubject error on the phone. They only had 10 good transactions in April, and most of the time they see this error code between Driivz and Hubject. And only the SichargeD chargers are affected.\n{\"Result\":false,\"StatusCode\":{\"Code\":\"022\",\"Description\":\"DATA_ERROR\",\"AdditionalInfo\":\"Data Inconsistency found: When an EvseID has a \"CalibrationLawDataAvailability\" of type \"EXTERNAL\", the sent CDR must contain the \"SignedMeteringValues\".\"},\"SessionID\":null,\"CPOPartnerSessionID\":null,\"EMPPartnerSessionID\":null}\nWhat they noticed in the case of SichargeD is that where the MeterValueStart value is 0, the transaction goes through to Hubject fine; where the MeterValueStart does not start from 0, the transaction runs into an error everywhere at Hubject, but otherwise the transaction is correct in Driivz. Customer thinks when it does not start from 0, the charger takes the current meter reading.\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "6koRpR",
+    "stage": null,
+    "serial_number": "MP / S3 170003430",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a8e6fda2-e62b-f011-8c4d-7c1e5236e32d",
+            "subject": "Webform_incident_SiCharge D_08-05-2025_SN: MP / S3 170003430",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S3 170003430\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S3 170003430\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-08T08:30:06Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "66ba9821-ed2b-f011-8c4e-6045bdddca9c",
+            "subject": "ID0423182-DC/Si-D/AT-[  MP / S3 170003430 ] error code at Hubject CRM:02684000214",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003430\nChargerID/Serial No.\n:\n6koRpR\nProblem Description\n: Facing error code with SichargeD chargers\nFor future reference, your case number is\n0423182\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-08T09:16:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e396a21-94e5-2ad4-b54e-d49a8f999d61",
+            "subject": null,
+            "body": "Mikor frissítetted be pontosan? Sajnos nincs változás ez alapján.\nCDR ID: 745764 - HUMOL0159 - Kerekharaszt M3 50 S MOL 3\n/ Combo CCS – 2\nvolt egy töltés, ami most fejeződött be nem régen: End date: 08/05/2025 17:06:29\nKüldöm alább a detailed log-ot is.\nlogSOAP.direction.Header - 08-May-2025 15:06:39.115\nOP parse error:\nPOST POST\nhttps://service.hubject.com/api/oicp/cdrmgmt/v22/operators/HU*MOL/charge-detail-record\nHTTP/1.1\nOutgoing - 08-May-2025 15:06:39.115\n{\n\"ChargingStart\": \"2025-05-08T16: 49: 59.371+02: 00\",\n\"ChargingEnd\": \"2025-05-08T17: 06: 29.610+02: 00\",\n\"SessionStart\": \"2025-05-08T16: 49: 59.371+02: 00\",\n\"SessionEnd\": \"2025-05-08T17: 06: 29.610+02: 00\",\n\"ConsumedEnergy\": 25.948,\n\"EvseID\": \"HU*MOL*E967*2\",\n\"HubOperatorID\": \"HU*MOL\",\n\"Identification\": {\n\"RemoteIdentification\": {\n\"EvcoID\": \"HU*DCS*00032J*0\"\n}\n},\n\"MeterValueStart\": 1435.403,\n\"MeterValueEnd\": 1461.351,\n\"PartnerProductID\": \"MOL-MOL-DE*DCS-DC\",\n\"SessionID\": \"445d9ec5-f3d3-49a2-ab08-9cd96a684c5e\"\n}\nIncoming - 08-May-2025 15:06:39.167 - Response code: 200\nOP parse error:\n{\"Result\":false,\"StatusCode\":{\"Code\":\"022\",\"Description\":\"DATA_ERROR\",\"AdditionalInfo\":\"Data Inconsistency found: When an EvseID has a \"CalibrationLawDataAvailability\" of type \"EXTERNAL\", the sent CDR must contain the \"SignedMeteringValues\".\"},\"SessionID\":null,\"CPOPartnerSessionID\":null,\"EMPPartnerSessionID\":null}",
+            "date": "2025-05-08T15:46:56Z",
+            "extra": {}
+        },
+        {
+            "id": "a044682b-edee-204e-912e-a872bed68247",
+            "subject": null,
+            "body": "Istán has found this description. His question is, can we set the CalibrationLawDataAvailabilityType somehow?",
+            "date": "2025-05-08T15:47:53Z",
+            "extra": {}
+        },
+        {
+            "id": "4fe04033-eb8e-c484-9b56-bdd2775fa017",
+            "subject": null,
+            "body": "HUMOL0158 charger is\n6koRpR\nIstvan ha wrote to following:\nHere are more logs as we discussed. I have realized that the correct transactions are on the connector 2, the faulty ones are on the connector 1. Ont he excel sheet you can find the correct transactions with white and the wrong ones with red.\nWe can save the detalied logs individually, buti f you need more logs, please contact us.",
+            "date": "2025-05-08T15:55:52Z",
+            "extra": {}
+        },
+        {
+            "id": "09ac0aeb-2ae4-9817-a68b-9ceb6d89d71d",
+            "subject": "Ecog no reply",
+            "body": "6koRpR\n1746714528161\n2025-05-08T14:28:43.874810+00:00\n[FW070005G1] swcpu [user:debug] [\n4129\n] [MBC]  DC2: SECC: no communication for 750ms\n1746714533843\n38953035627090103673288517962996728896642388961899053056\n6koRpR\n1746714528161\n2025-05-08T14:28:47.796258+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:\nError\n: No reply in\n4\n.25s\n1746714533843\n38953035627090103673288517962996728896642388961899053057\n6koRpR\n1746714528161\n2025-05-08T14:28:47.797286+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at\nTimeout._onTimeout\n(/app/node_modules/coap/lib/retry_send.js:\n74:16\n)\n1746714533843\n38953035627090103673288517962996728896642388961899053058\n6koRpR\n1746714528161\n2025-05-08T14:28:47.797513+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at listOnTimeout (node:internal/timers:\n569:17\n)\n1746714533843\n38953035627090103673288517962996728896642388961899053059\n6koRpR\n1746714528161\n2025-05-08T14:28:47.797644+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at\nprocess.processTimers\n(node:internal/timers:\n512\n:\n7\n) {\n1746714533843\n38953035627090103673288517962996728896642388961899053060\n6koRpR\n1746714528161\n2025-05-08T14:28:47.797765+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:   retransmitTimeout:\n4\n.\n25\n1746714533843\n38953035627090103673288517962996728896642388961899053061\n6koRpR\n1746714528161\n2025-05-08T14:28:47.797889+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]: }\n1746714533843\n38953035627090103673288517962996728896642388961899053062\n6koRpR\n1746714528161\n2025-05-08T14:28:47.799497+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:\nError\npolling\ncoap://10.20.17.100:5683/state\nError\n: No reply in\n4\n.25s\n1746714533843\n38953035627090103673288517962996728896642388961899053063\n6koRpR\n1746714528161\n2025-05-08T14:28:47.799850+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at\nTimeout._onTimeout\n(/app/node_modules/coap/lib/retry_send.js:\n74:16\n)\n1746714533843\n38953035627090103673288517962996728896642388961899053064\n6koRpR\n1746714528161\n2025-05-08T14:28:47.800013+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at listOnTimeout (node:internal/timers:\n569:17\n)\n1746714533843\n38953035627090103673288517962996728896642388961899053065\n6koRpR\n1746714528161\n2025-05-08T14:28:47.800170+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:     at\nprocess.processTimers\n(node:internal/timers:\n512\n:\n7\n) {\n1746714533843\n38953035627090103673288517962996728896642388961899053066\n6koRpR\n1746714528161\n2025-05-08T14:28:47.800344+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]:   retransmitTimeout:\n4\n.\n25\n1746714533843\n38953035627090103673288517962996728896642388961899053067\n6koRpR\n1746714529415\n2025-05-08T14:28:47.800501+00:00\n[FW070005G1] sicharge-cp [local0:err] ecog-secc-adapter/2a6e5639e459[\n788\n]: }\n1746714533843\n38953035655055238152245919382482519610543434290398494732\n6koRpR\n1746714529415\n2025-05-08T14:28:48.890766+00:00\n[FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/d2d20d450777[\n788\n]: setOutletLedState outoforder\n2\n174671453384",
+            "date": "2025-05-08T16:05:22Z",
+            "extra": {}
+        },
+        {
+            "id": "12628c00-9086-72db-b3fa-44e7b7db804d",
+            "subject": "Semih",
+            "body": "Connector ID 2 is always starting with the 0",
+            "date": "2025-05-09T06:42:10Z",
+            "extra": {}
+        }
+    ]
+}

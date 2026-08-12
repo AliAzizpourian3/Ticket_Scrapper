@@ -1,0 +1,90 @@
+{
+    "incident_id": "7e2b7207-2879-f011-b4cb-7c1e52368001",
+    "ticket_number": "0444030",
+    "title": "ID0444030-DC/Si-D/CH-[MP / R7 170002201]Charger issue",
+    "created_on": "2025-08-14T16:02:09Z",
+    "last_activity": "2026-01-15T10:02:47Z",
+    "age": "45689",
+    "description": "Reported behaviour/issue: The customer is complaining about short loads, assuming that there is an error.\nI request an error analysis of the following charge sessions:\n99000000014 August 13, 3:15–3:15 p.m. CEST\n99000000019 August 13, 3:06-3:06 p.m. CEST\n99000000020 August 13, 3:02-3:05 p.m. CEST\nSolution: N/A\nyyyy-mm-dd: 2025-08-13",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "VqE7xu",
+    "stage": null,
+    "serial_number": "MP / R7 170002201",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "27620700-2879-f011-b4cb-6045bddf319c",
+            "subject": "Webform_incident_SiCharge D_14-08-2025_SN: MP / R7 170002201",
+            "body": "Dear Alexander Müller,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R7 170002201\nThank you\neMobility Technical Support Team\nSehr geehrte/r Alexander Müller,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R7 170002201\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-14T16:01:59Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f4ee5a95-2e79-f011-b4cb-7c1e52206585",
+            "subject": "A new case manager was assigned to 0444030 CRM:00225243265",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0444030 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7e2b7207-2879-f011-b4cb-7c1e52368001",
+            "date": "2025-08-14T16:49:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ee3216a-2f79-f011-b4cb-7c1e52206585",
+            "subject": "ID0444030-DC/Si-D/CH-[MP / R7 170002201]Charger issue CRM:02681000640",
+            "body": "Dear Alexander Müller,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nManor Chavannes-de-Bogis\nCharger ID/Serial No.\n:\nVqE7xu\nProblem Description\n: Charger issue\nFor future reference, your case number is\n0444030\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-14T16:55:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee02ae7a-967d-f011-b4cc-6045bde0265d",
+            "subject": "A new case manager was assigned to 0444030 CRM:00225245351",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0444030 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7e2b7207-2879-f011-b4cb-7c1e52368001",
+            "date": "2025-08-20T07:22:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31df9886-9d7d-f011-b4cc-7c1e523508ba",
+            "subject": "ID0444030-DC/Si-D/CH-[MP / R7 170002201]Charger issue CRM:02681000640",
+            "body": "Hi Alexander! Good morning, how are you doing today?\nI checked this charger and found the error:\nThis happened 2 times, during charging and during CableCheck.\nWe need to understand where the root cause lies, I suspect one of 3 bad guys:\nSince we are in v6, when we are single charging (there is no parallel charging), the Feedback is acknowledged by the Voltage Transducer where he measures the busbar and says \"yes I have voltage = fbk:ON\"\nOne of the first things to check is if this connector can be loose, these can get loose very easily with vibrations:\nHere we can also measure this value 2...10V OUT while charging and when the error occurs, records the multimeter values:\nIf we lose the voltage in XD41, then that means that the QA21-22 is not closing physically, if we have crocodile tips, we can measure directly on the busbar to be 100% sure it's the contactor fault and can replace it.\nIf we have voltage in XD41 but the session closes then we need to see where it drops until the KF7.\nThe third bad guy is the KF14. There are some rare events where the StateMonitor which is the responsible for closing the QA21-22, doesn't work properly and the feedback is always OFF. This one has no chance of troubleshooting, except replacing.\nI recommend you to bring a spare TF1, KF14 and QA21-22. My recommendation is to start with the previous order of components from easiest to hardest.\nI will send this to RC-CH queue for follow up. If you need my support please schedule with at least 2 days in advance as we are facing a lot of tickets these past days.\nLet me know if everything was understood correctly, you can ping me via Teams if you have any doubts.\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2025-08-20T08:13:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2dbf2c3-630b-fb1b-9dec-7304cb987e0d",
+            "subject": "measure this value 2...10V OUT",
+            "body": "Here we can also measure this value 2...10V OUT while charging and when the error occurs, records the multimeter values:",
+            "date": "2025-08-20T11:02:02Z",
+            "extra": {}
+        },
+        {
+            "id": "eed3f3f1-cb7d-f011-b4cc-7c1e52350ea5",
+            "subject": "RE: ID0444030-DC/Si-D/CH-[MP / R7 170002201]Charger issue CRM:02681000640",
+            "body": "Good day,\nI have checked all the points in the ticket and could not find any errors or defects. At the TF1 output, we can measure >4 V (see video in the case).\nAll connections and terminals are correct and show no signs of corrosion.\nThe charger is charging the vehicles with the required power!\nWould you like help drafting this as a formal update for a customer or internal report?\nBr Simon",
+            "date": "2025-08-20T13:45:38Z",
+            "extra": {
+                "sender": "simon.wirth@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

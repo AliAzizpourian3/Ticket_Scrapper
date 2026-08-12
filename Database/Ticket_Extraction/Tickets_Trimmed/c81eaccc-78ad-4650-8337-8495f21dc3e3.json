@@ -1,0 +1,67 @@
+{
+    "incident_id": "c81eaccc-78ad-4650-8337-8495f21dc3e3",
+    "ticket_number": "0408900",
+    "title": "ID0406824-DC/Si-D/PL-[MP / R2 170001500] Charger takes around 7kW in standby. (C1)",
+    "created_on": "2025-02-24T16:24:37Z",
+    "last_activity": "2025-03-28T17:44:57Z",
+    "age": "46146",
+    "description": "Charger takes around 7kW in standby.RC measured it, also with main heater and fan was of by fuse. attaching pictures.RC measure every phase and every one take 1A on phase.",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "k7iriT",
+    "stage": null,
+    "serial_number": "MP / R2 170001500,MP / R2 170001500",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "21fdbb86-9711-71c2-84a3-b92df69393da",
+            "subject": "NOC TO L3",
+            "body": "•\nProblem Description\n: Charger takes around 7kW in standby.RC measured it, also with main heater and fan was of by fuse. attaching pictures.RC measure every phase and every one take 1A on phase.\n•\nAction Performed\n: Idle power should be 200W while 7.5KW is actual measured active power.\nWe put the charger in the Debug mode and checked Temp. it found to be fine.\n•\nCharger SW Version:\nv6.0.3-0-g215cb74\n•\nReason for Handover:\nDoes not have the necessary knowledge or information to properly diagnose and resolve the issue.\n• Action by RC\n:\nThe station was measured in several states during measurements:\n•\nAction by L3:\n• Attachment: Attach the relevant Trace/log files (pcap file, dualstack protocol, S7 trace, etc.) or any site report, images etc.",
+            "date": "2025-02-24T16:40:42Z",
+            "extra": {}
+        },
+        {
+            "id": "de5e6386-e9c2-a51a-838c-a65a3e2fe339",
+            "subject": "Action by RC:",
+            "body": "The station was measured in several states during measurements:\n- open,\n- closed,\n- closed with off: FC18, FC20, FC21, FC22,\n- closed with the emergency button pressed,\nThe measurement was made on the charger's power supply inside before 3VA. Rogowski coils were salivated on the power cables and voltage probes on the 3VA buses.\nOpen state::\n- the station has a consumption of 300-400 watts,\nClosed state:\n- the station has a consumption of 7558 W,\nClosed station with circuits turned off:\n- consumption not much less 7500 W,\nStation closed with emergency button pressed:\n- consumption like an open station - 300-400W,\nThe stations were checked on the power supply of the power modules:\n- each phase of the modules consume between 0.9 - 1.1 A. I attached is a video.",
+            "date": "2025-02-24T17:17:48Z",
+            "extra": {}
+        },
+        {
+            "id": "6f8ffdc1-4ddd-e296-9858-6e346fcb9ae2",
+            "subject": "Test TC charger 26-02-2025",
+            "body": "",
+            "date": "2025-02-26T16:49:56Z",
+            "extra": {}
+        },
+        {
+            "id": "042c4ee1-14bf-76c4-a921-b6ebb88e040d",
+            "subject": "Customer audit",
+            "body": "I don't know if this note will be helpful to you, but I am attaching it along with a power consumption analysis file.\nI am additionally interested in whether the increased active power consumption also occurs during an ongoing charging session.\n(As of February 21, we activated PowerSave mode to reduce excessive power consumption.)\nI checked one charging session from 23.02. after midnight. The maximum consumption of the car is about 151.7 kW DC, according to the power consumption analyzer it was about 160kW.\nThe station in a normal system would not draw nearly 8 kW of power for its own needs and power transformation. I assume that upgrading the charger from 4.0 to 6.0.3 did not change the active power consumption.",
+            "date": "2025-02-28T07:53:18Z",
+            "extra": {}
+        },
+        {
+            "id": "2b38e4fe-f90b-f011-bae2-000d3ad97a58",
+            "subject": "0408900 - ID0406824-DC/Si-D/PL-[MP / R2 170001500] Charger takes around 7kW in standby. (C1) CRM:00472000287",
+            "body": "Hello Szymon,\nAnswering to your last note left on this ticket, I didn't observe any fault on your measurements or charger issue. Note that the charger efficiency is not 100%. So when you are measuring from the grid 160kW of power, it doesn't mean you are delivering 160kW to the car.\nThe internal consumption plus the converter efficiency will consume that difference in the power measured and delivered.\nSince we already had a chat to clarify this topic and since there is no activity from service side in this case I will proceed to close this ticket.\nAny additional questions that you still may have, feel free to approach me or any of my colleagues for clarification.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-03-28T17:28:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4dbc9c06-fa0b-f011-9988-7c1e523559ee",
+            "subject": "Automatyczna odpowiedź: 0408900 - ID0406824-DC/Si-D/PL-[MP / R2 170001500] Charger takes around 7kW in standby. (C1) CRM:00472000287",
+            "body": "Szanowni Państwo,\nw dniach 28.03.2025 do 31.04.2025 przebywam na urlopie.\nW sprawach pilnych uprzejmię proszę o kontakt z:\nKonrad Frach\nkonrad.frach.ext@siemens.com\n+48 880432592\nZ wyrazami szacunku\nSzymon Brodowicz\nPhone: +48 882490147\nHello,\nI am on vacation from 2\n28.03.2025 to 31.04.2025\n. Please kindly contact with urgent cases:\nKonrad Frach\nkonrad.frach.ext@siemens.com\n+48 880432592\nWith best regards\nSzymon Brodowicz\nPhone: +48 882490147",
+            "date": "2025-03-28T17:28:15Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

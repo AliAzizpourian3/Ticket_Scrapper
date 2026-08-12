@@ -1,0 +1,213 @@
+{
+    "incident_id": "e2b05e3a-7458-477b-9d15-3d832f817bd6",
+    "ticket_number": "0376545",
+    "title": "ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO",
+    "created_on": "2024-08-28T12:03:08Z",
+    "last_activity": "2025-12-16T14:06:19Z",
+    "age": "13084",
+    "description": "Location:\nKalajoki MP / P7 170000678\nReported behaviour/issue:\nNo converter in multiple groups and other flags error flags.  All 10 converter seems to be found. Doing the converter grouping again and restarting the charger has no effect.\nRoot cause:\nKF214's output has constant 12V in the fastshutdown causing the Converters to be permanently off\nSolution: Replace KF214\nOn DAMEX Sanctioned List: Siemens\nWarranty Status: Active\nAction:  Fixed 4.9.2024. -KF214 replaced.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "ZgwY7b",
+    "stage": null,
+    "serial_number": "MP / P7 170000678",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "bc246f8a-3565-ef11-bfe2-002248a155a0",
+            "subject": "A new case manager was assigned to 0376545 CRM:00225088857",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0376545 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e2b05e3a-7458-477b-9d15-3d832f817bd6",
+            "date": "2024-08-28T12:03:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "215ecf13-3665-ef11-bfe2-7c1e5233f636",
+            "subject": "A new case manager was assigned to 0376545 CRM:00225088858",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0376545 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e2b05e3a-7458-477b-9d15-3d832f817bd6",
+            "date": "2024-08-28T12:07:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4bb75f86-3c65-ef11-bfe2-000d3adea690",
+            "subject": "ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hello ﻿Sakari,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P7 170000678\nChargerID/Serial No.\n:\nZgwY7b\nProblem Description\n: All outlets out of order and some converters are cannot be turned on\nTroubleshooting\n:\nThis must be fate, this week I've had 2 similar tickets.\nHere are the steps that I request of you to do during the site visit:\nThe converters from DC3 and DC4 are not being found but we can see the Serial Number\nThis means that something is preventing the converters from starting, the StateMonitor of the Dispenser is the responsible for this, as the Fast shutdown signal is constantly with 12 V and as such the converters are always in shutdown state.\nPlease measure in these arrows in red, if we have 12 V, you can measure it to the housing if the probes are short.\nIf you find the 12V in these points, then that means that the KF214 should be sending these 12V\nAs such, please measure in these points as well for the 12V in the dispenser\nIf we have 12V in these outputs from the KF214, that means that the internal switch/contactor is probably broken and cannot open and KF214 needs replacement.\nPlease take a spare KF214 with you in case we need to replace it.\nFor future reference, your ticket number is\n0376545\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-28T12:53:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2849f8d7-3d65-ef11-bfe2-000d3adea690",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 59 minutes and 50 seconds.",
+            "date": "2024-08-28T13:03:01Z",
+            "extra": {}
+        },
+        {
+            "id": "6549f8d7-3d65-ef11-bfe2-000d3adea690",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 7 seconds.",
+            "date": "2024-08-28T13:03:06Z",
+            "extra": {}
+        },
+        {
+            "id": "524973e4-3d65-ef11-bfe2-000d3adea690",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 12 seconds.",
+            "date": "2024-08-28T13:03:18Z",
+            "extra": {}
+        },
+        {
+            "id": "6ff57372-4765-ef11-bfe2-002248a3a07b",
+            "subject": "RE: ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hi Francisco!\nThank you for the fast replay and investigation.\nIt really must be fate! (Lets also hope so it is not something that will slowly happened to all chargers)\nWe need to order the spare KF214 and plan the site visit since the location is over 6 hours away.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-08-28T14:11:51Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "190d537c-4765-ef11-bfe2-000d3aba081f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 hour, 8 minutes and 40 seconds.",
+            "date": "2024-08-28T14:12:00Z",
+            "extra": {}
+        },
+        {
+            "id": "09a72e57-d765-ef11-bfe2-000d3ab0ae6a",
+            "subject": "ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hello Sakari, good morning. I hope you are doing well.\nI want to request you to do one more thing.\nAfter you measure all the point mentioned below, I would like to confirm that there is nothing wrong with also the converter and contactors.\nWhat you need to do is, remove these 2 connections:\nAnd let the converter grouping be performed again.\nWhat I want to see is this difference:\nThis difference is due to the fact that the converter is not being powered on. Now we have a error flag = 52, that means that the converter is turned ON but fastshutdown check is failed. When we remove these 2 connections above this is what we should see.\nPlease let me know when you have the date scheduled so that I can provide you support remotely.\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-08-29T07:21:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d540599-de65-ef11-bfe2-6045bddce356",
+            "subject": "RE: ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hi,\nThank you for suggestion! We are now ordering spare part is there any other spare part that could be useful?\nSince the site is located very far away we would rather order more spare parts than needed and use them later rather than have to go there twice.\nSo if there is any other parts that could be needed let us know! Otherwise we will only order new “8EM5903-0AA03-2AA6 -KF14, -KF214 Statemonitor Lite 2x CCS 1x AC Basic”\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-08-29T08:13:43Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7b3148c5-e065-ef11-bfe2-000d3ab0ae6a",
+            "subject": "ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hi Sakari,\nEverything points to the fact that the KF214 is the problem but I can\nsuggest\nsome components to take such as:\npair of contactors\n2x QA35\n2x FA10\n1 converter\nDo you agree? Do you have any other components in mind that we can take? I can recommend as always.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-29T08:29:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6999b605-0466-ef11-bfe2-0022489eee94",
+            "subject": "RE: ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hello Francisco!\nFor the issue you described that seems to be safe bet for spare parts!\nBut by QA36 do you mean QA26 (3SK1121-1CB41 -QA26 Safety Relay 24VDC 2xNO inst 2xNO delay)\nThanks for the support!\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-08-29T12:41:38Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "394baaf0-0966-ef11-bfe2-6045bddce356",
+            "subject": "RE: ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hi Sakari!\nIt's QA3\n5\n, which are these ones:\nWhen I mentioned 2x QA35 was because it means QA34 and QA35, sorry if it was misleading.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-29T13:23:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87784264-0a66-ef11-bfe3-000d3ab7b851",
+            "subject": "RE: ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001696",
+            "body": "Hi Sakari!\nIt's QA3\n5\n, which are these ones:\nWhen I mentioned 2x QA35 was because it means QA34 and QA35, sorry if it was misleading.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-29T13:27:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13af3a34-bd66-ef11-bfe2-00224899b868",
+            "subject": "ID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO CRM:00315001707",
+            "body": "Hello  Sakari, just for the process, reach out to me when you have the date planned and schedule a meeting.\nI am writing to formally inform that we are moving case 0376545 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFI\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFI\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-30T10:47:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6c0782de-ce66-ef11-bfe2-7c1e523674ae",
+            "subject": "A new case manager was assigned to 0376545 CRM:00225089894",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0376545 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e2b05e3a-7458-477b-9d15-3d832f817bd6",
+            "date": "2024-08-30T12:53:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "72e48e8c-566c-ef11-bfe2-000d3ab26cb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 8 days, 23 hours, 35 minutes and 26 seconds.",
+            "date": "2024-09-06T13:47:26Z",
+            "extra": {}
+        },
+        {
+            "id": "0fb2da89-576c-ef11-a670-0022489e1eb4",
+            "subject": "A new case manager was assigned to 0376545 CRM:00225093071",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0376545 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e2b05e3a-7458-477b-9d15-3d832f817bd6",
+            "date": "2024-09-06T13:54:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea2d6fb8-586c-ef11-bfe2-7c1e5233f636",
+            "subject": "Ticket 0376545 has been closed. Are you satisfied with our provided solution? CRM:00315001735",
+            "body": "Dear  Markus, please fill in this information:\nDefective part name/MLFB: KF214\nComponent serial number:\nLogs with marked error (CSV format preferred): Several “Converter cannot be turned on” during Converter Grouping\nActive error flags before replacement: All powerconverters in DC3 and DC4 group had Fastshutdown=0\nDevice-specific error code\n(if applicable): 12V output constantly on from KF214. Suspected internal switch/contactor is welded\nOutcome of wiring checkup: Nothing noted\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note)\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0376545\nwith the title:\nID0376545-DC/Si-D/FI[ZgwY7b] - All outlets OoO\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-06T14:03:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f56785b-596c-ef11-bfe2-7c1e5233f636",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 20 minutes and 13 seconds.",
+            "date": "2024-09-06T14:07:37Z",
+            "extra": {}
+        }
+    ]
+}

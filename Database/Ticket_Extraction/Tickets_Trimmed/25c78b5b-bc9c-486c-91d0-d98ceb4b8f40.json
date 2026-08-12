@@ -1,0 +1,49 @@
+{
+    "incident_id": "25c78b5b-bc9c-486c-91d0-d98ceb4b8f40",
+    "ticket_number": "0411385",
+    "title": "ID0411121-DC/Si-D/CH-[MP / S4 170003534] Logs required & wakeup function (C1)",
+    "created_on": "2025-03-07T17:45:09Z",
+    "last_activity": "2025-12-30T09:43:33Z",
+    "age": "29715",
+    "description": "Reported behavior/issue:\nLogs required & wakeup function\nRoot cause:",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "ar7enH",
+    "stage": null,
+    "serial_number": "MP / S4 170003534,MP / S4 170003534",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7e6aec3c-4971-2d47-b316-9f4d8a24c76b",
+            "subject": "Charger logs_05th March",
+            "body": "",
+            "date": "2025-03-07T17:45:37Z",
+            "extra": {}
+        },
+        {
+            "id": "93bbcc17-48c5-c70f-8466-21ed8c1e0ef3",
+            "subject": "Customer query",
+            "body": "The customer wants to have the logs from yesterday 5th march 2025. The Sany Dumper Team wants to analyse it, regarding the limitation of 40% battery charging. Does the Sicharge D do precondissionning? if yes, can you activate it? Does the Sicharge D have the \"wake-up function\" if yes, can you activate it?",
+            "date": "2025-03-07T17:47:18Z",
+            "extra": {}
+        },
+        {
+            "id": "20402824-9436-8a22-aad8-caee3aaa28a5",
+            "subject": "Handover NOC-->Experts",
+            "body": "Problem Description : Wakeup & Preconditioning function\nAction Performed (L2) : As reqyested logs has been shared to the region for 05th March and regarding the wake up function, I have checked the Si-D Field Issue tracker related to this.\nCharger SW Version:\nv6.0.3\nReason for Handover (L3) : Query needs to be addressed for Wakeup & Preconditioning function.\nAction Required\nAction by HQ : Wakeup function, there is a workaround related to EcoG v1.4.11.",
+            "date": "2025-03-07T17:51:07Z",
+            "extra": {}
+        },
+        {
+            "id": "8ecab6f9-5d06-f011-bae2-7c1e523508ba",
+            "subject": "0411385 - ID0411121-DC/Si-D/CH-[MP / S4 170003534] Logs required & wakeup function (C1) CRM:00314000150",
+            "body": "Good evening Jose,\nI am reaching out regarding child case\nID0411385\nregarding Wake-up & preconditioning functions on Sicharge D. Apologies for the delayed answer.\nThe Wake-up function (BCB toggle) is supported in the EcoG version v1.4.11, which is available as Hotfix.\nHowever, we have currently two open issues, on which R&D is investigating, related to the Wake-up function:\nNot possible to do a BCB Toggle on chargers without OCPP Backend\nIt seems that BCB Toggle needs physical interaction on the HMI\nIn regards of Preconditioning, could you please clarify which type of preconditioning are you referring to?\nIf you refer to preconditioning according to VDV261, it is not supported and it is not in the Sicharge D roadmap at the moment.\nIf you refer to preconditioning as a customized scenario, this has to be checked in detail and most likely through a\nVehicle Integration activity\n.\nHope I provided you with an answer to your questions. Looking forward to hearing your feedback soon and if you have further questions.\nHave a nice weekend!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-21T14:08:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

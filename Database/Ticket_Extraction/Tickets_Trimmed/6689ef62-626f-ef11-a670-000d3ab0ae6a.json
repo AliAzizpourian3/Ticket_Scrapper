@@ -1,0 +1,177 @@
+{
+    "incident_id": "6689ef62-626f-ef11-a670-000d3ab0ae6a",
+    "ticket_number": "0378656",
+    "title": "ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working",
+    "created_on": "2024-09-10T10:49:53Z",
+    "last_activity": "2025-12-16T14:06:03Z",
+    "age": "8433",
+    "description": "Reported behaviour/issue:\nDC outlets are not working\nRoot cause:\n12VDC_Supply_TB18_FC23 → FC23 was tripped\nSolution:\nReplace FC23\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\nExpired\nNOTE TO QM: (the missing info is to be provided by RC)",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "HIGaDj",
+    "stage": null,
+    "serial_number": "MP / P4 170000454",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "99146064-626f-ef11-a670-002248a155a0",
+            "subject": "Charging station faulty - 170000454",
+            "body": "Charging station faulty - 170000454\ncharger is not working\nZiv Vinitzer\n​\n​\n​\n​\nProject Manager\n*5619\n|\n+972523927323\nziv@zen-ev.com\nBa'alei Hamelacha 4  , Ramla",
+            "date": "2024-09-10T10:49:47Z",
+            "extra": {
+                "sender": "ziv@zen-ev.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "86fe8ac0-626f-ef11-a670-000d3ab0ae6a",
+            "subject": "A new case manager was assigned to 0378656 CRM:00225094175",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0378656 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6689ef62-626f-ef11-a670-000d3ab0ae6a",
+            "date": "2024-09-10T10:52:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4be21632-646f-ef11-a670-000d3ab02502",
+            "subject": "ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "Dear Ziv,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P4 170000454\nChargerID/Serial No.\n:\nHIGaDj\nProblem Description\n: DC outlets are not working\nTroubleshooting\n:\nWe will align with the regional colleagues for further troubleshooting.\nFor future reference, your ticket number is\n0378656\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-10T11:02:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dff965d0-646f-ef11-a670-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 17 minutes and 16 seconds.",
+            "date": "2024-09-10T11:07:10Z",
+            "extra": {}
+        },
+        {
+            "id": "fab701e9-646f-ef11-a670-000d3ab02502",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 40 seconds.",
+            "date": "2024-09-10T11:07:50Z",
+            "extra": {}
+        },
+        {
+            "id": "57b801e9-646f-ef11-a670-000d3ab02502",
+            "subject": "ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "Hello Orel, good afternoon. How are you doing? Long time no see. I hope you are doing well.\nZiv raised a ticket for this charger HIGaDj where the DC outlets are not working due to the Error:\n12VDC_Supply_TB18_FC23 this error is\ntrue\n: if LOGO cannot measure 12V at its digital input I6 in case of a power supply failure or tripped 12V fuse.\nPlease check the following:\n12V in the output 1+ of the TB18\nIf FC23 is tripped → continuity check between 1 and 2\nIf it's not tripped then it's possible that feedback is not working properly\nCheck continuity between 13-14\nIf we have continuity, then please check in the cartridge if we are getting the 12V.\nCheck for any damage on KF10 pins\nIf we are getting 12V at the end of the cable reaching the KF10 and the error is not disappering then we should try and replace KF10.\nAs such, I recommend you to bring to site a spare TB18, FC23 and KF10.\nWhat is your opinion?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-10T11:07:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e2f7940-ef70-ef11-a670-000d3ab02502",
+            "subject": "ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "Hi Orel, good afternoon.\nAs you explained to me this morning:\nThe FC23 was tripped and after he rearmed it, everything was working properly.\nWe performed two tests.\nFirst test charging using DC CCS in both connectors everything was fine the charging worked correctly.\nIn the second test he tried to charge using the AC, at the moment of the attempt FC23 tripped again.\nWe replaced the FC23 with a new one and then everything worked fine.\nFor me the problem is fixed and we can close the ticket.\nHave you already communicated this to Ziv or should I write an email excluding all of these informations?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-12T10:10:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6efaf276-1071-ef11-a671-000d3ab7a79b",
+            "subject": "RE: ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "Hi Francisco, good afternoon.\nFirst, thank you very much for your support.\nBefore we close the ticket, I would like to receive a short update from you from the charging station. There is a new log\nDo you happen to know what this log is?\nAnd that's fine. I'll update Ziv. He's aware that the charging station is active.\nMany thanks!\nBr,\nOrel.",
+            "date": "2024-09-12T14:08:23Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c98fe260-1e71-ef11-a670-000d3ab02502",
+            "subject": "ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "Hi Orel, good afternoon.\nThis error's description is t\nrue if:\na) at the last unlocking of the AC cable was not detected as successful\nb) an unlocking of the charging cable was detected which was not controlled by the PLC. this can occur if the 12V supply to CA1 is interrupted\nHave you tried rebooting? This might've happened because of the change we performed. Otherwise I will make a short troubleshooting guide on how to fix this.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2024-09-12T15:47:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f981462d-9a73-ef11-a671-00224899b868",
+            "subject": "RE: ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working CRM:00315001747",
+            "body": "H\ni Francisco, good evening.\nMany thanks for the explanation, I rebooted, and the problem went away.\nAs far as I'm concerned, the ticket can be closed.\nThanks for all the support!\nBr,\nOrel.",
+            "date": "2024-09-15T19:39:15Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d4b46465-fb73-ef11-a670-0022489e1eb4",
+            "subject": "Ticket 0378656 has been closed. Are you satisfied with our provided solution? CRM:00315001777",
+            "body": "Dear Orel,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0378656\nwith the title:\nID0378656-DC/SI-D/IL[170000454] - DC outlets are not working\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-16T07:15:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46f4dade-fb73-ef11-a670-0022489e1eb4",
+            "subject": "RE: Ticket 0378656 has been closed. Are you satisfied with our provided solution? CRM:00315001777",
+            "body": "PS:\nPlease help me fill in this information:\nDefective part name/MLFB: FC23\nComponent serial number\nLogs with marked error (CSV format preferred): Outlet2 is unavailable\nActive error flags before replacement:\n12VDC_Supply_TB18_FC23\nDevice-specific error code\n(if applicable): N/A\nOutcome of wiring checkup: Found FC23 tripped\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note)",
+            "date": "2024-09-16T07:18:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c932618-d0ba-6e28-a549-8ff9413b01bb",
+            "subject": "NOTE TO QM",
+            "body": "Defective part name/MLFB: FC23\nComponent serial number\nLogs with marked error (CSV format preferred): Outlet2 is unavailable\nActive error flags before replacement:\n12VDC_Supply_TB18_FC23\nDevice-specific error code\n(if applicable): N/A\nOutcome of wiring checkup: Found FC23 tripped\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note)",
+            "date": "2024-09-16T07:22:02Z",
+            "extra": {}
+        },
+        {
+            "id": "1bfbe063-fc73-ef11-a670-0022489e1eb4",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 5 days, 20 hours, 14 minutes and 27 seconds.",
+            "date": "2024-09-16T07:22:17Z",
+            "extra": {}
+        },
+        {
+            "id": "aff51cab-1374-ef11-a670-7c1e5236f7e7",
+            "subject": "RE: Ticket 0378656 has been closed. Are you satisfied with our provided solution? CRM:00315001777",
+            "body": "Hi Francisco, how are you?\nDefective part name/MLFB:\nFC23 5SY1704-2\nComponent serial number\n-\n10413UIS3821FA\nLogs with marked error (CSV format preferred):\nallOutletsUnavailable\nActive error flags before replacement:\n12VDC_Supply_TB18_FC23\nDevice-specific error code\n(if applicable):\nN/A\nOutcome of wiring checkup:\nFound FC23 tripped\nCommissioning checklist\n-\nmiss\nCommissioning date-\n24.12.23\nField service report-\nattached\nDate of failure\n(see side note)\nIf anything, else is needed I will be happy to help.\nBr,\nOrel.",
+            "date": "2024-09-16T10:09:00Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6558bdb2-1374-ef11-a671-000d3ab7f4b2",
+            "subject": "Email sent to a closed case 'ID0378656-DC/SI-D/IL[170000454] - DC outlets are not working (0378656)' CRM:00225096894",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0378656\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-09-16T10:09:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

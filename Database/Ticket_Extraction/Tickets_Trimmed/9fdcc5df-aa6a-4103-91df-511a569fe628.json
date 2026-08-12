@@ -1,0 +1,112 @@
+{
+    "incident_id": "9fdcc5df-aa6a-4103-91df-511a569fe628",
+    "ticket_number": "0395279",
+    "title": "ID0395279-DC/Si-D/FI-[MP / R2 170001449]-Unable to charge with either outlet",
+    "created_on": "2024-12-12T13:41:13Z",
+    "last_activity": "2025-05-13T06:38:27Z",
+    "age": "218457",
+    "description": "Reported behavior/issue:\nUnable to charge with either outlet\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status:3/21/2025_Active",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "V6nFZ1",
+    "stage": null,
+    "serial_number": "MP / R2 170001449",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "213ff6c8-8eb8-ef11-b8e8-7c1e5220883b",
+            "subject": "A new case manager was assigned to 0395279 CRM:00225137570",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0395279 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fdcc5df-aa6a-4103-91df-511a569fe628",
+            "date": "2024-12-12T13:41:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d2fa3af7-a3b8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0395279 CRM:00225137699",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0395279 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fdcc5df-aa6a-4103-91df-511a569fe628",
+            "date": "2024-12-12T16:13:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "77d9570f-a4b8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "ID0395279 - DC/Si-D/FI - [MP / R2 170001449] - Unable to charge with either outlet CRM:00641000877",
+            "body": "Dear Harjunpaa Sakari,\nThank you for reaching out to eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nAlexela Aegviidu\nChargerID/Serial No.\n:\nMP / R2 170001449\nProblem Description\n: Unable to charge with either outlet\nFor future reference, your ticket number is\n0395279\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-12T16:13:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f622c69-b1b8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: ID0395279 - DC/Si-D/FI - [MP / R2 170001449] - Unable to charge with either outlet CRM:00641000877",
+            "body": "Dear Harjunpaa Sakari,\nI hope this message finds you well.\nRegarding the reported issue, we analyzed the logs and observed some anomalies during the analysis. Specifically, we identified the following error:\n\"Error polling coap://10.20.17.100:5683/state Error: No reply in 4.25s.\"\nThis indicates that the SECC is unable to communicate with the controller.\nBased on our findings, we recommend the following steps to address the issue. As an initial step, try rebooting the SECC.\nAdditionally, verify all wirings and connections as per the schematics, and replace the Ethernet cable if necessary. If the issue persists after performing these steps, we suggest proceeding with replacing the SECC2300.and keep in mind that please carry the spare of SECC 2300 and ethernet cable in case replacement is needed.\nKindly refer the below AWS logs where we can see error:\n\"Error polling coap://10.20.17.100:5683/state Error: No reply in 4.25s.\nUpon reviewing the logs on SCB, I've detected anomalies related to the CableTempSensor error of the DC1 cable. This error has recurred 2 times since week. Therefore, we suggest examining the cable temperature sensor of outlet DC1 and, if necessary, replacing the cable.\nKindly refer mentioned steps to be followed to trouble shoot the fault which is leading to this error flags.\nStep 1:\nTurn off the power supply to the charger.\nStep 2:\nIdentify the cables P1, P2, N1 & N2 associated to Pt1000 refer below picture for your ref.\nStep 3:\nCheck the ambient temperature and note it, then using multimeter measure the resistance of P1, P2, N1 & N2.\nStep 4: Click on the following link to see the resistance table of Pt 1000 pertaining to the temperature and its corresponding resistance.\nhttps://www.sterlingsensors.co.uk/pt1000-resistance-table\nKindly refer the below knowledge article to check the cable sensor,\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_DC2_CableTempSensor_XD101 and EVSE_TempLowerLimit_ low temperature - Dynamics 365\n,,\nNote-; Additionally, we noticed that the charger firmware is old. To mitigate the errors you’ve encountered, we strongly recommend upgrading your charger’s firmware. Firmware updates often include bug fixes, performance enhancements, and improved compatibility with electric vehicle communication protocols, ensuring better system stability and functionality. (First recommendation to upgrade the charger with latest firmware version)\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-12T17:49:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a617ebd-b2b8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "ID0395279 - DC/Si-D/FI - [MP / R2 170001449] - Unable to charge with either outlet CRM:00641000878",
+            "body": "Dear Harjunpaa,\nI am writing to formally inform that we are moving case 0395279 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FI SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nFirmware upgradation recommendation\nyes\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FI SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-12T17:58:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "753813b1-8556-3933-9058-e894aa6792e9",
+            "subject": "reported from customer",
+            "body": "Location:\nAlexela Aegviidu\nReported behaviour/issue:\nAfter commission customer was unable to charger with either outlet. Charging test started “Thu, 12 Dec 2024 12:44:55 GMT”\nCar used: Hyundai Ioniq 5\nCharger show two error flags:\nSECC_DC1_MB_Problem_KF11_KF12\nPLC\nSYSTEM\ntrue\nloss of communication DC1 and SECC\nand Cable temp even though succesful charging is done after installation\nDC1_CableTempSensor_XD100\nPLC\nDEVICE\ntrue\nVIV:0 CCE:0 RNE:1 PLE:0 SOV:0 COV:0 CBL:0 KON:1 CAB:0 HOU:0\nfalse\nBoth outlets were tested but AWS shows only right outlet",
+            "date": "2024-12-12T18:02:04Z",
+            "extra": {}
+        },
+        {
+            "id": "0ea5fde1-54b9-ef11-b8e8-000d3ab9a120",
+            "subject": "RE: ID0395279 - DC/Si-D/FI - [MP / R2 170001449] - Unable to charge with either outlet CRM:00641000877",
+            "body": "Thank you,\nI updated the charger to the latest FW as you suggested. Issues are still present.\nCharger is now on 4.0.11, can we send the SECC\n2300\n(-KF11) to customer without pre configuration and if we need to configurate it which layer we need to put in it? I could not find clear answer for this question.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2024-12-13T13:19:32Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "01461a5d-86bb-ef11-b8e9-000d3a697eb1",
+            "subject": "RE: ID0395279 - DC/Si-D/FI - [MP / R2 170001449] - Unable to charge with either outlet CRM:00641000877",
+            "body": "HI,\nI have checked DC1 configuration and there was a mistake in SCB configuration. Now CableTemp error is gone and ready for testing. DC2 is still a mystery.\nMarkus",
+            "date": "2024-12-16T08:18:47Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9c3521d7-36da-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0395279 CRM:00225153398",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0395279 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fdcc5df-aa6a-4103-91df-511a569fe628",
+            "date": "2025-01-24T09:37:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

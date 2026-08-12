@@ -1,0 +1,141 @@
+{
+    "incident_id": "1963861c-f502-4598-b24b-026b3e09451d",
+    "ticket_number": "0402464",
+    "title": "ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost",
+    "created_on": "2025-01-28T06:36:26Z",
+    "last_activity": "2025-12-16T14:01:40Z",
+    "age": "10088",
+    "description": "Reported behavior/issue:\nOCPP Connection lost\nRoot cause: Server issue\nSolution: Explanation provided\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "CuiPEi",
+    "stage": null,
+    "serial_number": "Y2 / RD 300000004027",
+    "case_nature_code": 580000000,
+    "additional_info": [
+        {
+            "id": "aef9ba37-42dd-ef11-8ee9-000d3a69648d",
+            "subject": "A new case manager was assigned to 0402464 CRM:00225154466",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0402464 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1963861c-f502-4598-b24b-026b3e09451d",
+            "date": "2025-01-28T06:36:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "23a078a3-75d0-75b0-bd7b-69e8a42bf33f",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-28T06:37:34Z",
+            "extra": {}
+        },
+        {
+            "id": "47411af5-3eca-ded2-b569-ca332992f2b6",
+            "subject": null,
+            "body": "",
+            "date": "2025-01-28T06:38:01Z",
+            "extra": {}
+        },
+        {
+            "id": "3604a007-44dd-ef11-8ee9-000d3a69648d",
+            "subject": "A new case manager was assigned to 0402464 CRM:00225154475",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0402464 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1963861c-f502-4598-b24b-026b3e09451d",
+            "date": "2025-01-28T06:49:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "16ad71eb-4bdd-ef11-8eea-000d3ab4d5d3",
+            "subject": "0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Dear Mert Kanneci,\nThank you for reaching\nout\nto eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / RD 300000004027\nChargerID/Serial No.\n:\nCuiPEi\nProblem Description\n: OCPP offline\nTroubleshooting\n: Looks like issue from the server side, Internet is connected.\nFor future reference, your case number is\n0402464\n, please do refer to this in all further communication regarding this issue.\nWe have analyzed the logs and found that whenever the charger went offline on OCPP, we received\nConnection closed because of missing Pong from server.\nAnd we have internet connection at that time.\n2025-01-28T06:21:35.300818+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[737]: [ensureOCPPConnection] router2 - [isMobileConnected] routerIp: 10.20.17.2 connstate: {\"stdout\":\"Connected\\n\",\"stderr\":\"\"}\n2025-01-28T06:21:35.303174+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[737]: [ensureOCPPConnection] router2 - router is connected via mobile connection, but OCPP is disconected. Restarting PPP interface to reset network setting from mobile provider.\nOn the backend WebSocketPingInterval is set for 30 sec, that means charger and server will communicate with each other at every 30 sec with Ping and Pong, and if Pong is not received then charger will go offline.\n\"WebSocketPingInterval\": {\n\"readonly\": false,\n\"value\": 30,\n\"unit\": “seconds”\nPlease check with backend team whether they are experiencing any server issue at their side? And what error code they are receiving at server when charger is going offline on OCPP?\nAwaiting your response.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-28T07:46:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3a28a59-21de-ef11-8ee9-002248a0b76d",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Dear Mert Kanneci,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0402464\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T09:13:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b297be4-22de-ef11-8ee9-0022489affb0",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Hi Saurav,\nFirst of all, thank you for your valuable information.\nI told the CPO to check their server side with their backend team but I haven’t received a response yet.\nIf there is nothing else we need to check on our side, we can close the ticket\nBR,\nMert Kanneci",
+            "date": "2025-01-29T09:25:00Z",
+            "extra": {
+                "sender": "mert.kanneci@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f7b6064f-cdde-ef11-8eea-6045bdde0ce3",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Hello Mert,\nThank you for the update.\nAs we can see that charger is still going offline and online continuously. And charger is coming online agter 30 sec every time.\n2025-01-30T05:06:02.837621+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: OFFLINE\n2025-01-30T05:06:33.202387+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: ONLINE\n2025-01-30T05:11:02.864313+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: OFFLINE\n2025-01-30T05:11:33.210397+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: ONLINE\n2025-01-30T05:16:02.886322+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: OFFLINE\n2025-01-30T05:16:33.232292+00:00 sicharge-cp [local0:info] sicharge-cp-backend/6ca3e1e1b8b3[735]: OCPP connection: ONLINE\nWe checked the signal strength also. which says its fair.\nIssue is still not resolved, and we need input from backend team whether they have anything on their server side.\nIf we do not receive any input from backend team, then we need to change SIM card on OCPP router with better connectivity to improve this situation.\nLet us know if you still want to proceed with closing this case or you want to discuss this with backend team again.\nAwaiting your response,\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-30T05:44:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73e4ee22-0ce2-ef11-8eea-0022489bcff4",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Dear Mert Kanneci,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0402464\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-03T08:52:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eed0058f-35e2-ef11-8ee9-0022489affb0",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Hi Saurav,\nCPO will check signal strength and backend side. We will expect return from them as a result of the actions they did so we can proceed with closing ticket.\nThank you for your support.\nBR,",
+            "date": "2025-02-03T13:48:42Z",
+            "extra": {
+                "sender": "mert.kanneci@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "34313d09-c3e2-ef11-8eea-000d3ab009dd",
+            "subject": "RE: 0402464 - ID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost CRM:00658000855",
+            "body": "Dear Mert Kanneci,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0402464, and the case is now closed.\nProblem Description\n: OCPP Offline\nResolution\n: Explanation provided\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-04T06:41:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2ce74e61-c3e2-ef11-8eea-000d3ab009dd",
+            "subject": "Ticket 0402464 has been closed. Are you satisfied with our provided solution? CRM:00658000863",
+            "body": "Dear Mert,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0402464\nwith the title:\nID0402464-DC/Si-D/TR-[Y2/RD 300000004027] OCPP Connection lost\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSaurav Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-04T06:43:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

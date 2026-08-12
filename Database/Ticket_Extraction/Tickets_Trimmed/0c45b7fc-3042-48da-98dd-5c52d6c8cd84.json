@@ -1,0 +1,126 @@
+{
+    "incident_id": "0c45b7fc-3042-48da-98dd-5c52d6c8cd84",
+    "ticket_number": "0406667",
+    "title": "ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance",
+    "created_on": "2025-02-13T16:25:14Z",
+    "last_activity": "2025-12-16T14:01:11Z",
+    "age": "19193",
+    "description": "Location:\nLahti Karisma.\nRoot cause:\nDC3 has numerous CableTempSensor different exceedance last 4 week.\nSolution:  DC3 cable replaced 26.2.2025",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "acno33",
+    "stage": null,
+    "serial_number": "MP / P8 170000824",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "05d6691c-27ea-ef11-9341-000d3aba98df",
+            "subject": "A new case manager was assigned to 0406667 CRM:00225164196",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0406667 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0c45b7fc-3042-48da-98dd-5c52d6c8cd84",
+            "date": "2025-02-13T16:25:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6b33687-a807-ca96-aa28-38fbdb67ca47",
+            "subject": "Logs from AWS",
+            "body": "",
+            "date": "2025-02-13T16:25:55Z",
+            "extra": {}
+        },
+        {
+            "id": "d0db2138-5ab6-2e3c-b897-6abf81790787",
+            "subject": "AWS Querie",
+            "body": "fields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SeccSessionStop/\n#or @message like /CableTemp/\n|\nfilter\n@logStream\nlike\n/acno33/\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n/\n\\\n\"outletType\n\\\n\":\n\\\n\"(?<outlettype>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_Wh\":*,'\nas\nenergy\n|\nparse\n@message\n'\"pt1000_1_T\":*,'\nas\npt1000_1_T\n|\nparse\n@message\n'\"pt1000_2_T\":*,'\nas\npt1000_2_T\n#| parse @message '\"evsestat\":*,' as evsestat\n#| parse @message '\"source\":*,' as source\n|\nparse\n@message\n'\"curr_ses_secs\":*,'\nas\nduration\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n#| filter outlettype not like /CCS/\n#| filter energy > 0\n|\nfilter\noutlet =\n3\n|\ndisplay\n@logStream\n,\n@timestamp\n, pt1000_1_T, pt1000_2_T,\nabs\n(pt1000_2_T-pt1000_1_T)\nas\ndiff\n, energy, duration, EVMAC\n|\nfilter\ndiff\n>\n13\n#| filter evsestat > 2\n#| stats count(*) as Count, avg(pt1000_2_T-pt1000_1_T) as diff by @logStream, outlet\n#| filter diff < 100\n#| filter diff > -100\n#| filter Count > 10\n|\nsort\nby\n@timestamp\ndesc\n|\nlimit\n10000",
+            "date": "2025-02-13T16:26:17Z",
+            "extra": {}
+        },
+        {
+            "id": "32ab4e3a-35ea-ef11-9341-002248a28911",
+            "subject": "A new case manager was assigned to 0406667 CRM:00225164224",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0406667 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0c45b7fc-3042-48da-98dd-5c52d6c8cd84",
+            "date": "2025-02-13T18:06:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "91cde590-4aea-ef11-9342-6045bdde1b10",
+            "subject": "ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance CRM:00645000964",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nLahti - Karisma\nChargerID/Serial No.\n:\nacno33\nProblem Description\n: DC3 numerous CableTempSensor different exceedance\nThank you for the analysis. We see a 15-16 degree differences, which is not a good sign. Could you confirm if the cable was replaced earlier, when it was replaced, and how many sessions have been performed with it so far?\nAlso we will discuss it with the team and get back to you with the update.\nFor future reference, your case number is\n0406667\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-13T20:39:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b7e8761-4dea-ef11-9341-0022489bc8e2",
+            "subject": "RE: ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance CRM:00645000964",
+            "body": "Hi,\nDC3 ccs2 cable is original and has not been replaced yet. DC4 cable has been replaced 6month ago. DC3 cable has been in use around 1 year.\nMarkus",
+            "date": "2025-02-13T20:59:15Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7ab848f0-5cea-ef11-9341-7c1e527622e8",
+            "subject": "RE: ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance CRM:00645000964",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0406667 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FI SI E Queue (Level 2)\n, due to one or more following reason (s) :\nFor DC1, we haven't seen many errors, just 4-5 times in the last 4 weeks.\nHowever, for DC3, errors are much more frequent and are interrupting charging sessions. Please proceed with replacing the DC3 cable.\n8EM5903-0AA03-5AA5 > Charging Cable CCS2 250A 5m Disp\nReason\nApplicable\nOnsite Repair (Component Exchange)\n✔\nOnsite Troubleshooting\n✔\nEnd Customer Communication\nSpare Part Ordering\n✔\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FI SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Vishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-13T22:50:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54c73040-d8f6-ec28-b669-083323349739",
+            "subject": "repair report 26.2.2025",
+            "body": "",
+            "date": "2025-02-26T14:14:40Z",
+            "extra": {}
+        },
+        {
+            "id": "5773c0b0-9ff4-ef11-be1f-6045bddd587e",
+            "subject": "RE: ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance CRM:00645000964",
+            "body": "Dear Markus Roiha,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406667, the case is now closed.\nProblem Description\n:\nDC3 numerous CableTempSensor different exceedance\nResolution\n: cable replaced.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T00:13:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9cdc8e08-a0f4-ef11-be1f-6045bddd587e",
+            "subject": "Ticket 0406667 has been closed. Are you satisfied with our provided solution? CRM:02023000532",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406667\nwith the title:\nID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-27T00:16:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54e2460e-a0f4-ef11-be1f-7c1e5236ec45",
+            "subject": "RE: ID0406667-DC/Si-D/FI[acno33] - DC3 numerous CableTempSensor different exceedance CRM:00645000964",
+            "body": "Dear Markus Roiha,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406667, the case is now closed.\nProblem Description\n:\nDC3 numerous CableTempSensor different exceedance\nResolution\n: cable replaced.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T00:16:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

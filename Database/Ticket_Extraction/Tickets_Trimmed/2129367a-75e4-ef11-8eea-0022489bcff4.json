@@ -1,0 +1,101 @@
+{
+    "incident_id": "2129367a-75e4-ef11-8eea-0022489bcff4",
+    "ticket_number": "0404912",
+    "title": "ID0404912-DC/Si-D/FR-[Y2 / PN 312569868/07] SCB Offline",
+    "created_on": "2025-02-06T10:31:15Z",
+    "last_activity": "2025-03-12T08:27:57Z",
+    "age": "48836",
+    "description": "Reported behaviour/issue:\nT\nhere seems to be a problem on terminal 4 I can figure it out connect to the router I have data connection however it remains unavailable and reboot permanently after discussion with Franck Le Gal it will be necessary to replace the router\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status:  Not active (12/01/2024)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "r3RdXT",
+    "stage": null,
+    "serial_number": "Y2 / PN 312569868/07",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "48febf65-75e4-ef11-8eea-000d3ab4d5d3",
+            "subject": "Webform_incident_SiCharge D_06-02-2025_SN: r3RdXT 3122569868-07",
+            "body": "Dear Bilel,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nr3RdXT 3122569868-07\nThank you\neMobility Technical Support Team\nSehr geehrte/r Bilel,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nr3RdXT 3122569868-07\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-06T10:30:39Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cbfffe20-82e4-ef11-8eea-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0404912 CRM:00225160234",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0404912 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2129367a-75e4-ef11-8eea-0022489bcff4",
+            "date": "2025-02-06T12:01:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e05bf8d1-84e4-ef11-8eea-000d3addcd64",
+            "subject": "ID0404912-DC/Si-D/FR-[Y2 / PN 312569868/07] SCB Offline CRM:00921001514",
+            "body": "Dear Bilel Khelil,\nThank you for reaching out to eMobility Support. We acknowledge the receipt of your inquiry regarding\nrouter issue\n. Rest assured that a regional representative will promptly contact you to provide further information.\nBelow, you will find the relevant asset details:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / PN 312569868/07\nChargerID/Serial No.\n:\nr3RdXT\nProblem Description\n: SCB Offline\nFor future reference, your case number is\n0404912\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-06T12:21:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4cc6a7c4-89e4-ef11-8eea-000d3addcd64",
+            "subject": "RE: ID0404912-DC/Si-D/FR-[Y2 / PN 312569868/07] SCB Offline CRM:00921001514",
+            "body": "Dear Team,\nUnfortunately, we cannot do much remotely when we don't have SCB connection. The best would be to have someone on site to check:\nThe router is connected to internet.\nThe charger is powered.\nAnd kindly refer the below points which might be the reason to out the charger on SCB.\nThen there might be Internet issue with the Siemens router and probably because of failover function the WAN is switched from Cellular to Ethernet.\nI would recommend doing a Hard reset from \"OCPP\" (If charger is connected to OCPP server) or a local reboot will bring them up again.\nData service of mobile network operator might not be available.\n- SIM card might be disabled / expired (Please check if the SIM card is inserted incorrectly by cleaning and then reinserting it into the XF3 and XF4 router.)\n- monthly data volume exhausted\n- signal strength got weak due to changed radio transmission conditions\n- in case of M2M contracts is IP not enabled\nThere might be backend related issues.\n- Backend changed the settings for the affected charger\n- OCPP server on Backend side unavailable\nIt could be Teltonika related issues.\n- Router switches to a wrong network service (e.g. 3G instead of 4G)\n- Hardware failure of Router\n- Router software crash\nAlso please refer the KA-\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_Hardware_XF3_ SCB Disconnection - Dynamics 365\nPlease carry a spare router and SIM card with you when you plan to visit the site for intervention.\nI am writing to formally inform that we are moving case 0404912 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-06T12:56:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4e340ae-53e5-ef11-9341-000d3add0e90",
+            "subject": "A new case manager was assigned to 0404912 CRM:00225160939",
+            "body": "Franck Le Gal was assigned as new Case Manager for case 0404912 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2129367a-75e4-ef11-8eea-0022489bcff4",
+            "date": "2025-02-07T13:01:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ade965b2-6526-bc9a-a404-bcde110fd36c",
+            "subject": "Attention second ticket créé",
+            "body": "ID0409530",
+            "date": "2025-02-27T09:43:56Z",
+            "extra": {}
+        },
+        {
+            "id": "d27a3a4e-bafd-ef11-bae3-7c1e52faf3c6",
+            "subject": "0404912 - ID0404912-DC/Si-D/FR-[Y2 / PN 312569868/07] SCB Offline CRM:00752000780",
+            "body": "Bonjour  ,\nvoici le rapport d'intervention.\nLa borne est opérationnelle.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-03-10T14:16:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59ae8db4-1bff-ef11-bae3-000d3addf8ce",
+            "subject": "0404912 - ID0404912-DC/Si-D/FR-[Y2 / PN 312569868/07] SCB Offline CRM:00752000787",
+            "body": "Bonjour ,\nVoici le rapport d'intervention pour la borne 4.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-03-12T08:26:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

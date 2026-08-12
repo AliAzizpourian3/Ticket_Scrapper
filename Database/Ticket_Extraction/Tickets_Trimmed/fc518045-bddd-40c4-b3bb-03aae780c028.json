@@ -1,0 +1,163 @@
+{
+    "incident_id": "fc518045-bddd-40c4-b3bb-03aae780c028",
+    "ticket_number": "0414360",
+    "title": "ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1)",
+    "created_on": "2025-03-21T20:31:53Z",
+    "last_activity": "2025-04-22T07:24:28Z",
+    "age": "45293",
+    "description": "Reported behavior/issue:\nCard reader is defect\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nHello,\nWe tested the V6.1.3 version of the SichargeD and when we\nselected credit cards, aborted, selceted credit card again it leads\nthat payment terminal no more responding.\n2025-03-20T08:45:17.225558+00:00 [FW060103G1] sicharge-cp\n[local0:err] sicharge-cp-backend/cec4d4081956[640]: PaymentTerminal-Error-Flag 'PaymentTerminalCardReaderDefect_PZx'\nchanged to true - (Card reader is defect.)\nSometime, we have to reboot charger to solve payment terminal\nissue.\nThank you\nBest regards.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "jRLjhx",
+    "stage": null,
+    "serial_number": "Y2 / P9 312561850/01,Y2 / P9 312561850/01",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "39e438cf-4ec3-f1bc-bb5f-7ed8f0f10eaa",
+            "subject": "NOC > ES",
+            "body": "Problem Description :\nwhen selected credit cards, aborted, selceted credit card again it shows\nCard reader is defect\nSuspected Root Cause :\nn/a\nAction Performed (L2) :\nn/a\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\ninvestigate it further, might be firmware bug\nAction Required\nAction by HQ : investigation needed by ES",
+            "date": "2025-03-21T20:34:38Z",
+            "extra": {}
+        },
+        {
+            "id": "fc9ddbb3-be0b-f011-bae2-7c1e5236cda4",
+            "subject": "0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Good morning Bastien,\nI am reaching out from the Expert Services Team in regards of child ticket\nID0414360\n. The ticket was opened for the error flag ‘PaymentTerminalCardReaderDefect_PZx’ changed to true - (Card reader is defect.), on charger\njRLjhx.\nFrom your email, I understood that the issue appears when, on the HMI, the credit card payment option is selected, it is aborted, and when selected again the terminal is not reachable anymore.\nCould you please clarify what do you mean with “the payment option is aborted”? Today I remotely connected to the charger via ssh, I reproduced the steps that you described by interacting with the HMI remotely several times, but I was not able to reproduce the issue. In particular:\nWhen I select the credit card option, cancel the selection and select it again, I have the log line saying: Cashier canceled  while waiting for card insertion.\nWhen I select the credit card option, wait for the authentication timeout and select it again, I have the log line saying: terminal communication timeout.\nAs you can see, these actions do not trigger an error flag “PaymentTerminalCardReaderDefect_PZx”, so please clarify how the error flag is triggered.\nI had a look at the timestamp that you reported, and what I notice is the activation of the error flag but without any interaction in terms of credit card terminal selection. So, I believe in this case, that the error flag appeared because for an instance the reader was non communicating with the payment terminal.\nAs last point, I also had a look on AWS to monitor the activation of the error flag, as you mentioned that you noticed it since the installation of FW 6.1.3.\nI saw that the FW 6.1.3 was installed on 17.03.2025, but I see that this error flag appeared also before the installation of FW 6.1.3, so I would exclude it was introduced by the new FW.\nLooking forward to hearing your feedback soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-28T10:23:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "40999793-e30b-f011-bae2-7c1e523508ba",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Hello,\nI was on site this morning and I made a video on the charger wuhEnE.\nPXL_20250328_084030394.TS.mp4\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-03-28T14:47:37Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e630709c-220e-f011-9989-7c1e52771f40",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Good morning Bastien,\nUnfortunately I am not able to see the video in the link you provided us. The video is uploaded in Engie environment, for which I do not have access.\nCould you please send the video as an attachment to your email? Thank you!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-31T11:23:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39e414b6-240e-f011-998a-6045bde0265d",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Hello,\nAre you able to download ?\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-03-31T11:38:55Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10f874be-2b0e-f011-9989-7c1e52771f40",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Hello Bastien,\nUnfortunately no.  It says that the zip file is 0Bytes and it is not possible to download it.\n@Jessica and @Sebastien, could you please step in and support me to collect the video from Bastien? Thank you in advance!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-31T12:29:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0113b7e7-c00e-f011-998a-7c1e5236cda4",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Hello,\nI sent it on this email:\nfosco.servidei@siemens.com\nCard-reader-ID0414343.zip\nCould you try again please ?\nThank you\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-01T06:17:00Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "84fc44b2-7048-ae59-ab45-05e594c9f054",
+            "subject": "Note",
+            "body": "Customer has created one more ticket for same charger , with Drive link which is not working for me\nID0416066-DC/Si-D/FR-[jRLjhx]- Card reader is defect\nI will close the ticket:ID0416066\nand all communication should continue in parent ticket:0414343",
+            "date": "2025-04-01T07:54:21Z",
+            "extra": {}
+        },
+        {
+            "id": "938767b9-ca0f-f011-9989-6045bddf319c",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Good afternoon Bastien,\nI had the chance to watch the video you sent me and to analyze the related logs on charger\nwuhEnE.\nIn the video I saw for two times that, when aborting the payment option, it took nearly one minute for the HMI to recover from the de-selection of the payment option.\nHowever, from the logs on SCB, I cannot see anything wrong:\nAll the aborted pre-authorization are processed correctly. Two Parsing errors appeared, corresponding to the two times the charger took a little longer to recover from the abortion. These errors appeared because of the high solicitation of the terminal and charger to process the requested authorization and abortion. However, no error flag related to the Payment terminal was raised.\nTherefore, I believe that the error flag “\nPaymentTerminalCardReaderDefect_PZx”, for which this ticket was opened, does not appear when the payment option is stressfully selected and aborted, as per the video, but it appears due to a temporary interruption of communication between the payment terminal and the payment reader.\nAs per my first analysis and email, for example, the error flag on the terminal was active for circa 13 seconds, and it is reported that “the card reader does not answer”:\nLooking forward to hearing your feedback soon.\nW\nith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-02T13:59:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eacfa7b6-ce0f-f011-998a-7c1e5236cda4",
+            "subject": "Automatic reply: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "﻿\nHi,\nThank you for your email. I’m currently out of office with no access to my emails until the 7th of April.\nFor technical queries please open a ticket via the following link :\nIncident report SI E (all products) | MoreApp\nBest Regards,\nJessica",
+            "date": "2025-04-02T14:28:17Z",
+            "extra": {
+                "sender": "jessica.mina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "abeffa0b-5a11-f011-9989-7ced8d2cb6af",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Hello,\nIs it possible to reduce this time due to high solicitation of the terminal please ?\nThank you\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-04T13:38:13Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1bfde815-431f-f011-9989-7c1e5236e32d",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Bonjour Bastien,\nFosco m'a transmis les informations concernant ce ticket. Nous allons faire une  “Feature request” à ce sujet, mais le problème vient d'une utilisation inhabituelle du chargeur et, pour cela, la priorité sera basse.\nPuis-je vous demander si cette erreur apparaît uniquement lorsque vous \"stressez\" la fonction ? Ou cela apparait aussi en situation normal ?\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-04-22T06:29:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b55465ef-461f-f011-9989-7c1e5236eee4",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Bonjour,\nSur la vidéo oui je stresse un peu le l’écran, mais ça arrive aussi lorsque le client fait plusieurs tentatives repidement.\nMerci\nBonne jounée\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-22T06:56:44Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e97b959-491f-f011-9989-7c1e5236e32d",
+            "subject": "RE: 0414360 - ID0414343-DC/Si-D/FR-[jRLjhx]- Card reader is defect (C1) CRM:00314000153",
+            "body": "Bonjour,\nMerci pour l'information. Je viens de faire la demande. Je vais fermer le ticket, mais je vous tiendrai au courant de l'avancement de cette feature request. Je reste à votre disposition pour toute information complémentaire.\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-04-22T07:14:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

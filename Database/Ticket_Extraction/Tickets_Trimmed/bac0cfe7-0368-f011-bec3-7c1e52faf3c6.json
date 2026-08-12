@@ -1,0 +1,189 @@
+{
+    "incident_id": "bac0cfe7-0368-f011-bec3-7c1e52faf3c6",
+    "ticket_number": "0439554",
+    "title": "ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity",
+    "created_on": "2025-07-23T20:30:53Z",
+    "last_activity": "2025-09-08T13:42:45Z",
+    "age": "67272",
+    "description": "Reported behaviour/issue: Charging Irregularity on Sicharge D\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "sKCWgE",
+    "stage": null,
+    "serial_number": "Y2 / R6 313033014001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "aa73dadf-0368-f011-bec2-7c1e52350ea5",
+            "subject": "Incident Report – Charging Irregularity on Sicharge D Station R6 313033014001 (22/07/2025)",
+            "body": "Hello,\nPlease create a ticket for a detailed technical analysis regarding an incident on charging station Sicharge D – R6 313033014001.\nIncident context:\n•     Charging started: 22/07/2025 at 18:48:05\n•     Charging ended: 22/07/2025 at 22:34:18\n•     Vehicle connection: From 18:47:19 to 22:34:20\nA driver reported abnormal behavior from the station:\n“Last night, before going to bed, I noticed via the app that the truck wasn’t charging. I went back at 10:30 p.m. to restart the charge, which seemed to start correctly.\nI had plugged it in at 6:45 p.m. with 33% battery, and it was stuck at 38%. The station showed ‘charging in progress’, but there was no power reading in kW. Did you get any alerts on your side? Definitely something to monitor.”\nExtract from the log message:\n•     Final SoC: 38%\n•     Energy delivered: 26.13 Wh\n•     Stop reason: EVDisconnected\n•     Server timestamp: 22/07/2025\n•     Transaction ID: 20874496\nRequest:\nPlease carry out a thorough technical analysis to identify the possible causes of this issue (no charging power despite “in progress” status, SoC stuck, etc.) and suggest corrective actions if needed.\nI remain available for any further information.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-07-23T20:30:40Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e1114424-0668-f011-bec3-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0439554 CRM:00225232975",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0439554 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bac0cfe7-0368-f011-bec3-7c1e52faf3c6",
+            "date": "2025-07-23T20:46:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a16a5873-0a68-f011-bec2-7c1e52206585",
+            "subject": "ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R6 313033014001\nCharger ID/Serial No.\n:\nsKCWgE\nProblem Description\n: Charging Irregularity\nFor future reference, your case number is\n0439554\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-23T21:17:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "603c878b-8568-f011-bec1-7c1e52fcd1fb",
+            "subject": "A new case manager was assigned to 0439554 CRM:00225233362",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0439554 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bac0cfe7-0368-f011-bec3-7c1e52faf3c6",
+            "date": "2025-07-24T11:58:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2e202104-9d68-f011-bec2-7c1e52768c07",
+            "subject": "RE: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Dear Malek DRIF,\nWe have analyzed the logs for the provided timestamp and observed repeated interruptions in the charging sessions. These interruptions were caused by the\n\"SuspendedEV\" error\n, indicating that the charging process was starting and stopping repeatedly.\nFurther investigation suggests a possible issue with the converter. We also noticed that the charger is currently running on an older firmware version.\nAs a first step, we recommend performing a\nfirmware update\nto address this issue. If the problem persists after the update, we will plan for an on-site intervention to further diagnose and resolve the issue.\nKindly provide your permission to proceed with the firmware update at your earliest convenience.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-24T14:46:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fee56c27-c068-f011-bec2-7c1e52350ea5",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Dear Ankita,\nThank you for your detailed analysis.\nYou have our full authorization to proceed with the firmware update as suggested. Please go ahead and implement this first corrective action.\nIf the issue persists following the update, we agree with your proposed plan for an on-site intervention to investigate and resolve the problem further.\nLooking forward to your update once the firmware upgrade is completed.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nThursday, July 24, 2025 7:14:28 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nObjet :\nRE: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525\nDear Malek DRIF,\nWe have analyzed the logs for the provided timestamp and observed repeated interruptions in the charging sessions. These interruptions were caused by the\n\"SuspendedEV\" error\n, indicating that the charging process was starting and stopping repeatedly.\nFurther investigation suggests a possible issue with the converter. We also noticed that the charger is currently running on an older firmware version.\nAs a first step, we recommend performing a\nfirmware update\nto address this issue. If the problem persists after the update, we will plan for an on-site intervention to further diagnose and resolve the issue.\nKindly provide your permission to proceed with the firmware update at your earliest convenience.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-24T18:58:23Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bdeefb68-4069-f011-bec2-7c1e52350ea5",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Hello Malek,\nThanks for the confirmation.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T10:16:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c3a5d21d-5a69-f011-bec2-7ced8d4946b4",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Hello Malek,\nWe would like to inform you that the charger has been successfully updated to the latest firmware version. As of now, there are no errors, and charging sessions are running smoothly.\nWe will continue to monitor the charger's performance over the next 24 hours to ensure everything remains stable.\nPlease feel free to reach out if you have any questions or notice anything unusual.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T13:20:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53f24919-4f03-311c-831e-dfa268b179e8",
+            "subject": null,
+            "body": "",
+            "date": "2025-07-28T13:35:40Z",
+            "extra": {}
+        },
+        {
+            "id": "7d704dda-946c-f011-b4cb-6045bddf319c",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Hello Malek,\nWe have reviewed the charger logs, and unfortunately, the issue is still persisting.\nTo proceed further, we are escalating this case to our regional team for on-site intervention. They will coordinate with you shortly to investigate and resolve the matter effectively.\nPlease feel free to reach out if you have any questions.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-29T15:58:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0df83d6f-956c-f011-b4cb-6045bddf319c",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Dear Colleagues,\nindly plan a site intervention to inspect the power converters of outlet  1. Please ensure a thorough check of all associated wirings and perform the following troubleshooting steps:\nTroubleshooting Steps:\nCheck for any loose connections to all the power converters.\nUse a multimeter to verify that the input voltage to each power converter is within the permissible range.\nIdentify the missing converter(s) using their serial numbers and confirm if they are powered on.\nIf any converter is missing or not powering on, please swap it with a known working unit and verify if it powers on.\nExamine the power converter display for any error messages or indicator lights.\nIf all the above steps have been performed and the power converter still does not power on, please proceed with replacing it.\nMLFB No.\n8EM5903-0AA01-0AA2 -TB1, -TB2, ... -TB15 Power Converter AC/DC 20kW\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_PowerConverter_ Fastshutdown not performed - Dynamics 365\nI am writing to formally inform that we are moving case 0439554 ﻿from the\nTechnical Support\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYES\nOnsite Troubleshooting\nYES\nEnd Customer Communication\nYES\nSpare Part Ordering\nYES\nPerformance monitoring by RC\nYES\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Ankita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-29T16:02:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af5c78ab-a96c-f011-b4cb-7c1e5236eee4",
+            "subject": "Re: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525",
+            "body": "Good evening Ankita,\nThank you for this very detailed analysis. It provides valuable insights that should help schedule an intervention promptly and effectively address the root causes of the issues.\n@CHERGUI, Ramdane\nyou’ll find in Ankita’s message a thorough technical summary regarding the affected chargers. Don’t hesitate to reach out if you need any clarification or operational support moving forward.\nBest wishes,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi, juillet 29, 2025 6:00 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nAntoine HERBRICH <aherbrich@herbrich.fr>; Janusan ESVARANATHAN <j.esvaranathan@autorecharge.fr>\nObjet :\nRe: ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:02681000525\nHello Malek,\nWe have reviewed the charger logs, and unfortunately, the issue is still persisting.\nTo proceed further, we are escalating this case to our regional team for on-site intervention. They will coordinate with you shortly to investigate and resolve the matter effectively.\nPlease feel free to reach out if you have any questions.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-07-29T18:27:34Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "52fbd406-a76e-f011-b4cc-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0439554 CRM:00225237108",
+            "body": "SEBASTIEN COLLET was assigned as new Case Manager for case 0439554 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bac0cfe7-0368-f011-bec3-7c1e52faf3c6",
+            "date": "2025-08-01T07:13:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a787e2a-e888-f011-b4cb-7c1e52768c07",
+            "subject": "0439554 - ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:00568000327",
+            "body": "Hello Malek,\nI don't see any problem on this charger now, no flags raised and charge on going seems ok ( please find the logs).\nCan you request to the final supplier if the issue is occured again since the update to 8.0.5 ?\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-09-03T17:05:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f71ba80a-ac8c-f011-b4cc-7c1e52768c07",
+            "subject": "0439554 - ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:00568000348",
+            "body": "Bonjour Malek,\nMerci de nous confirmer le bon fonctionnement du chargeur, sans réponse de ta part nous cloturerons le ticket d'ici mercredi 10/09/2025\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-09-08T12:05:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "833960f5-af8c-f011-b4cc-000d3ad97a58",
+            "subject": "RE: 0439554 - ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:00568000348",
+            "body": "Bonjour Sébastien,\nJe te remercie encore une fois. Tu peux clôturer le ticket, car, de votre côté comme du nôtre, nous avons déjà établi un CR et transmis les éléments à Camille, qui attend de son côté le feedback de Neotruck.\nBien à toi,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 8 septembre 2025 14:05\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nBRUA, ANTOINE <antoine.brua@siemens.com>; Le Gal, Franck <franck.legal@siemens.com>; MBONGO, Naina <naina.mbongo@siemens.com>\nObjet :\n0439554 - ID0439554-DC/Si-D/FR-[Y2 / R6 313033014001]Charging Irregularity CRM:00568000348\nBonjour Malek,\nMerci de nous confirmer le bon fonctionnement du chargeur, sans réponse de ta part nous cloturerons le ticket d'ici mercredi 10/09/2025\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-09-08T12:33:05Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,505 @@
+{
+    "incident_id": "a5109a23-57cd-45d5-baad-578dcc83ec2a",
+    "ticket_number": "0411427",
+    "title": "ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta",
+    "created_on": "2025-03-08T19:38:52Z",
+    "last_activity": "2025-12-16T12:20:08Z",
+    "age": "153381",
+    "description": "Reported behavior/issue:\nCharging Issues with Monta\nSolution:\n2025-03-11 : Skipping child Ticket , due to critical ticket and escalation.\nEV Used for testing on charger :\"HHSCSk\"  is\nPeugeot e2008\n13.03.2025: EVC3-8926\n14.03.2025: Status Update\n17.03.2025: EcoG Hotfix installation\n19.03.2025: EcoG Hotfix installation\n24.03.2025: EVC3-9025 for mass update of EcoG Hotfix\n26.03.2025: 98 chargers running on v6.1.3+ecog_v1.4.11\n15.04.2025: EcoG ticket SASW-2575",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "HHSCSk",
+    "stage": null,
+    "serial_number": "Y2 / S3 300000004078",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9e4dc6b0-2e36-1a2d-9d18-4f6295e26cba",
+            "subject": "Case note from Yunus",
+            "body": "Monta's Claim:\nThey observed that during the sequence StatusNotification → RemoteStartTransaction → Authorize → StartTransaction, the StartTransaction command is missing along with the metervalue data. As a result, the Transaction ID is not generated, and the charging session does not start.\nWhen I checked device\nHHSCSk\n, I found that on 08.03.2025 at 11:05, a charging attempt was made, but I could not find the StartTransaction command in the logs. However, for another outlet on the same charger, a charging session was successfully initiated at 11:12 without any issues.\nI have attached relevant log screenshots for reference.",
+            "date": "2025-03-08T20:32:15Z",
+            "extra": {}
+        },
+        {
+            "id": "b6f445e5-6d3c-d217-8097-108db53f5594",
+            "subject": "Another Session",
+            "body": "StartTransaction has not been sent in the same charger again. The issue is very urgent and important. We request a quick review. This StartTransaction is sent in some transactions, but not in others. Why?\nCharger ID:\nHHSCSk",
+            "date": "2025-03-08T20:52:04Z",
+            "extra": {}
+        },
+        {
+            "id": "da75ff70-62fc-ef11-bae3-7c1e52774092",
+            "subject": "ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Dear Yunus Emre Temel,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S3 300000004078\nChargerID/Serial No.\n:\nHHSCSk\nProblem Description\n: Charging Issues with Monta\nWe have analyzed the logs for the time you mentioned, and here’s what we found:\nTwo charging sessions occurred on Outlet 1.\nThe first session failed due to an EV communication error.\nThe second session failed because the\ninsulation resistance dropped.\nWe have observed the same error regarding the insulation resistance drop and its automatic recovery. Additionally, some of the sessions failed after this error. We rebooted the charger from our side, but the charger is currently in power-saving mode.\nCould you kindly confirm with the end customer whether they have sent a command or manually activated this mode? As per the system’s behavior, when the power-saving mode is activated and no charging processes are active.\nTo resolve the issue, we recommend disabling the Power-Saving Mode. This will prevent the disconnection of the power line and should eliminate the error.\nIf the session fails again and the resistance drops, we will need to plan a site visit to check the IMD.\nIf you need further details or assistance, please don’t hesitate to contact us. We're here to help!\nBest regards,\nFor future reference, your case number is\n0411427\n, please do refer to this in all further communication regarding this issue.\nWe tha\nnk you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-08T21:15:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1f9f9efe-cafc-ef11-bae3-000d3ad97a58",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Ankita,\nThank you for your quick response.\nI don't think the problem I stated is related to IMD or PowerSavingMode, since it is not only present on this device.\nThe important thing here is why we don't send the 'StartTransaction' command to OCPP. Or what is happening on the backend side that we don't send it. Do you think this is where we should look?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-09T09:43:51Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ea2f5a74-b0a6-917d-9bcd-e9954e02d415",
+            "subject": "Note to L2",
+            "body": "I informed Yunus about this on Teams and need to discuss it with the experts",
+            "date": "2025-03-09T17:48:25Z",
+            "extra": {}
+        },
+        {
+            "id": "856b71b7-23fd-ef11-bae3-6045bdde4786",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Ankita,\nI observed a similar issue with\nChargerID: qShfXt\n, and I have attached the log data related to this error.\nThe device sends the following command:\nOCPP: Send command: StatusNotification (f6c835a6-75fd-41a9-aa8a-bc3a9757a126) - {\"connectorId\":1,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"modbus0 is not connected\"}\nAfter this command, the device reports the outlet status as \"unavailable,\" preventing the charging session from starting.\nWhat does it mean,\n\"errorCode\":\"OtherError\"?\n\"vendorErrorCode\":\"modbus0 is not connected\"?\nThis issue is critical level for this CPO, as it is occurring on almost all of their devices. Could you please provide a detailed explanation urgently?\nLooking forward to your prompt response.\n2025-03-09T19:35:37.077475+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[638]: OCPP: Send command: StatusNotification (c4439d5d-350d-4b80-95b1-724c11f0ba63) -\n{\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\n2025-03-09T19:35:35.316674+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[638]: OCPP: Received result: StatusNotification (f6c835a6-75fd-41a9-aa8a-bc3a9757a126) - {}\n2025-03-09T19:35:35.074915+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[638]: OCPP: Send command: StatusNotification (f6c835a6-75fd-41a9-aa8a-bc3a9757a126) - {\"connectorId\":1,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"modbus0 is not connected\"}\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-09T20:18:58Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b52d868f-31fd-ef11-bae3-7c1e52350ea5",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hello Yunus,\nWe’re currently analyzing the logs and will get back to you shortly with an update.\nThank you for your patience.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-09T21:58:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "adedebda-9e7e-17ce-89ca-084e93cc49a9",
+            "subject": "StartTransaction on ConnectorID 2",
+            "body": "OCPP: Send command: StartTransaction (b8dc745f-ce75-458a-bd14-1380701a5855) - {\"connectorId\":2,\"idTag\":\"F0F00BAF25D695\",\"meterStart\":7398269,\"timestamp\":\"2025-03-08T11:12:31.187Z\"}\nOCPP: Received result: StartTransaction (b8dc745f-ce75-458a-bd14-1380701a5855) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"transactionId\":33494357}\nCharger send Start Transaction when the Energy Transfer begins",
+            "date": "2025-03-10T03:30:35Z",
+            "extra": {}
+        },
+        {
+            "id": "60585807-ca5d-8010-b6ff-8fde2419139e",
+            "subject": "LOgs qShfXt",
+            "body": "OCPP: Send command: StartTransaction (df193ae5-a5e6-4aa3-bad7-ec8e0d28fba0) - {\"connectorId\":1,\"idTag\":\"F0F07381C58450\",\"meterStart\":1530381,\"timestamp\":\"2025-03-09T19:39:14.060Z\"}\nOCPP: Received result: StartTransaction (df193ae5-a5e6-4aa3-bad7-ec8e0d28fba0) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"transactionId\":33597794}",
+            "date": "2025-03-10T05:24:43Z",
+            "extra": {}
+        },
+        {
+            "id": "d6a15a94-79fd-ef11-bae3-7c1e52774092",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Yunus, Rifki\n95/97 chargers (\nexcept uiPwl3 and 5ynz8F)\nare updated to v6.1.3 yesterday. Appreciate the support of R&D to do this, especially Benjamin Biedermann to update chargers in short time over weekend.\nUpon analyzing the logs of these two chargers, I have an opinion, that this issue has nothing to do with Monta or OCPP running inside the charger.\nMonta's expectation is that charger should follow below sequence, which is true\nsequence StatusNotification → RemoteStartTransaction → Authorize → StartTransaction → StatusNotification (Charging)\nHowever, please understand that the charger will send\nStartTransaction o\nnly when there is a successful start of charging i.e. energy transfer or Pilot state getting into “C2” and Charging Phase “\nP06 Charge\n”.\nI have attached logs for charger “\nHHSCSk\n” and “\nqShfXt\n” and I will explain, them here.\nCHARGER ID - HHSCSk\nFor Outlet 1, where it is claimed that the charger didn't send the StartTransaction for a session at 11:03 CET, the reason is the failure in the communication between EV and charger and the session never started\n2025-03-08T11:03:23 - EV Plugged in DC1: PilotState \"A\" --> \"B2\"\n2025-03-08T11:03:25 - Charger send StatusNotification “Preparing”\n2025-03-08T11:04:57 - For more than a minute there was no Authroization hence the DC1: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"\n2025-03-08T11:04:59 - DC1: PilotState \"B2\" --> \"E\"\n2025-03-08T11:05:02 - DC1: PilotState \"E\" --> \"B1\"\n2025-03-08T11:05:03 - Charger send StatusNotification “Faulted” & then “Preparing”\n2025-03-08T11:05:18 - Received OCPP Remote StartTransaction\n2025-03-08T11:05:18 - OCPP: Send command: Authorize\n2025-03-08T11:09:35 - user unplugs EV DC1: PilotState \"B1\" --> \"A\"\nSummary : Due to delay in the Authentication the session was failed and hence there was no energy transfer to EV so no StartTransaction. The current SECC SW version doesn't support BEB toggle, hence the later RemoteStartTransaction request has no impact on starting a charging session.\n2. The second session on outlet 2 at 2025-03-08T11:11:21 was successful as RemoteStartTransaction was received in time and energy transfer was done. [To Know more, refer attached logs]\nCHARGER ID - qShfXt\nQuery on:\n\"errorCode\":\"OtherError\"?\n\"vendorErrorCode\":\"modbus0 is not connected\"?\nCharger sends the above Errocode in StatusNotifcation, because there was communication loss with SECC for ~ 750ms., once it was restored the Status was set correctly. see below:\n2025-03-09T19:35:32.000447+00:00 [FW060103G1] swcpu [user:debug] [4127] [MBC]  DC1: SECC: no communication for 750ms\nOCPP: Send command: StatusNotification (f6c835a6-75fd-41a9-aa8a-bc3a9757a126) - {\"connectorId\":1,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"modbus0 is not connected\"}\nOCPP: Send command: StatusNotification (572ac6e7-42e4-463d-b5eb-f61162b778ac) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\nKindly note, this message is available in FW v6.1.3 onwards.\nSummary from NOC: We don't see any incorrect sequence of OCPP messages being sent by charger to OCPP backend (Monta). The StartTransaction was not send because the charging session was not initiated due to failed communication with EV mainly because of delay in Authorization after an EV was plugged in.\nI my opinion updating to v6.1.3 will help or support here, because it has same SECC FW version as in v6.0.3 and that doesn't support BEB toggle. @michele, correct me if I am wrong here.\nP.S.: I have marked the R&D colleagues and CS head in Bcc of this email to summarize the findings and update the progress. I will request all to follow the conversation here in ISP to track the issue with transparency and close other email conversations.\nFeel free to give me a call if you need further clarifications.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T06:33:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "464e4ab2-7efd-ef11-bae3-000d3ad97a58",
+            "subject": "Automatische Antwort: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "I am out of office during the following times:\n03.03. on vacation\n04.03. - 05.03. on business trip with limited access\n06.03. on vacation\n07.03. - 12.03. on business trip with limited access",
+            "date": "2025-03-10T07:10:13Z",
+            "extra": {
+                "sender": "christian.feininger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aea1331c-bafd-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Sorry to barge in, I was copied on this by Perikles. A few questions:\nIs this happening only with a certain vehicle type?\nAre we sure this is not a Monta configuration after-all? There is a parameter in OCPP, ConnectionTimeOut, which determines how much time the\ndriver has to plug the vehicle in before the transaction times out. Could it be that the parameter set by Monta is different (lower) than the parameter set by the previous backend, and this is triggering the issue? Still could indicate a vehicle compatibility\nissue, not a Monta issue, but changing this parameter could be the band-aid we need.\nIf there is a delay in authorization sent by Monta to the charger compared to the previous backend, then this is for sure, 100%, a Monta issue.\nPlease confirm\nDaniel Feldman\n神判遊子\nM: +1 (678) 232-8141\nBook time to meet with me",
+            "date": "2025-03-10T14:15:29Z",
+            "extra": {
+                "sender": "daniel.feldman@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13fa9b1c-c0fd-ef11-bae3-7c1e5236e32d",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Reetesh,\nThank you for your prompt action, thorough analysis, and detailed response.\nJust to clarify my understanding: In one case, communication with eCog was lost for 750ms, preventing the charging session from starting. In another, the failure was due to delayed authorization after the EV was plugged in. These are minor issues that can occasionally occur. However, the customer claims that 3 out of every 10 charging sessions fail across all devices. I believe we cannot attribute all these failures solely to eCog communication loss or EV-related issues.\nTo dig deeper into the root cause, I analyzed different chargers and observed multiple instances where charging sessions did not start. I have attached the log data for further investigation.\nCharger ID: IXd7OC\nTime: 09:11 - 09:16 - 09:28 - 09:35\nAt these times there is a 'Secc pilot is E' error and charging sessions have not started\nCharger ID: tN5gcc\nTime: 14:42\nAt this times there is a 'Secc pilot is E' error and charging sessions have not started\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-10T14:58:23Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bbeb7ae4-f0fd-ef11-bae3-000d3adc93d1",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Reetesh,\nI have reviewed some datas via AWS.\nDespite the v6.1.3 firmware update, failed charging sessions are still occurring on March 10, 2025. I have attached the following files:\nTotal charging session logs\nSECC error\n‘Secc pilot is E’ errors\nCharger IDs for Borusan's 97 devices\nToday, There are 63 pcs ‘Secc pilot is E’ error on the Borusan's chargers. Could you clarify what this error specifically indicates?\nThere are still too many failed charging attempts. While it may not be feasible to analyze all of them, could you review a selection of these cases to identify the root cause?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-10T20:47:42Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ac4e52cf-36fe-ef11-bae3-7c1e52350ea5",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Reetesh,\nWe have received another email from the CPO regarding an SECC error, but with a different error content. You can find their email below.\nCould you investigate this new error? In addition to the previous SECC errors, understanding the root cause of this issue and developing a solution proposal could be critical.\nI am attaching a sample charging process. Here the reason “stopreason” says “othererror”. What does it mean?\n#\nstop_reason\nstart_time_trimmed\nstation_name\nMonta Charger id\nMonta charge transaction id\nid\nstarting_charge_percentage\nending_charge_percentage\nstart_time\nstop_time\nrelease_time\ncomplete_time\n1\nOtherError\n09/03/2025\nPO Kartal DC-1\n300000004078\nCharge #\n686443532211927222\n6875\n17\n85\n'2025-03-09 05:21:31.000'\n'2025-03-09 06:02:08.000'\n'2025-03-09 06:02:15.000'\n'2025-03-09 06:02:08.000'\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-11T05:08:10Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6370d334-3cfe-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hello Daniel,\nPlease find my answers to your questions below :\nIs this happening only with a certain vehicle type?\n[RS]: No\nAre we sure this is not a Monta configuration after-all? There is a parameter in OCPP, ConnectionTimeOut, which determines how much time the driver has to plug the vehicle in before the transaction times out. Could it be that the parameter set by Monta is different (lower) than the parameter set by the previous backend, and this is triggering the issue? Still could indicate a vehicle compatibility issue, not a Monta issue, but changing this parameter could be the band-aid we need.\n[RS]: Prima facia, it doesn't appear to be a configuration issue. But yes, the OCPP parameter ConnectionTimeOut can be increased to before the session times out. This has been set to 180 Sec, however this will only support user if they Authorize first and connect EV later. However the sessions I have analyzed so far has user plugging in EV first and Authorizing later, in this scenario the EV-EVSE communication start and goes to “Authentication” Stage as per ISO 15118 and here we have 59 sec timeouts as per standard. So it's a BEB toggeling case.\nIf there is a delay in authorization sent by Monta to the charger compared to the previous backend, then this is for sure, 100%, a Monta issue. Please confirm\n[RS]: May be, it can also be because of user (delay in scanning App or initiating RemoteStartTransaction) or can be from Monta Backend. Still to be analyzed.\nWe have received additional inputs from Emre, I will keep you in the conversations.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T05:46:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ade708f3-3efe-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hello Emre,\nI gave a quick analysis to couple of failed session on charger ID “\nIXd7OC\n”. Here is my feedback on it :\n2025-03-10, 09:08:00 Session Start\n2025-03-10, 09:08:01 DC2: PilotState \"A\" --> \"B2\"\n2025-03-10, 09:08:03 StatusNotification “Preparing”\n2025-03-10, 09:08:06\nDC2: Charging Phase \"P00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-03-10, 09:09:16  DC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P00_UNKNOWN\"    [\nNo Authentication from User Local or Remote\n]\n2025-03-10, 09:09:16\nDC2: PilotState \"B2\" --> “E” //  [SECC Error - unexpected\":true,\"start\":1741597681172,\"duration\":0,\"energy\":0,\"EVCCID\":\"001887043366\",\"EVMAC\":\"00.18.87.04.33.66\",\"user\":\"internal\",\"error\":]\n2025-03-10, 09:09:19 DC2: PilotState \"E\" --> \"A\"\n2025-03-10, 09:09:22 StatusNotification “Available”\n2025-03-10, 09:09:29\nDC2: PilotState \"A\" --> \"B2\" [\nSecond Attempt\n]\n2025-03-10, 09:09:32  StatusNotification “Preparing”\n2025-03-10, 09:09:33 DC2: Charging Phase \"P00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-03-10, 09:10:30 RemoteStartTransaction (2272d391-695c-4077-bfe8-988ffe3fa68f) - {\"connectorId\":2,\"idTag\":\"F0F0644F8B9E27\"} , it was accepted\n2025-03-10, 09:10:30 Authorize (36d30b62-f155-4bce-931f-e97b82a77cb5) - {\"idTag\":\"F0F0644F8B9E27\"}  it was accepted\n2025-03-10, 09:10:31 DC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P02_PARAMETER_DISCOVERY\"\n2025-03-10, 09:11:31 DC2: Charging Phase \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\"\n[Session was failed by SECC \"src\":\"stack\",\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2GDINSession_V2GDINSession_Charging_V2GDINCableCheck\"]\n2025-03-10, 09:11:34  DC2: PilotState \"B2\" --> \"E\"\n2025-03-10, 09:11:37 DC2: PilotState \"E\" --> \"B1\"\n2025-03-10, 09:11:38\nStatusNotification (bbe23368-9c1b-4fd8-b76a-61f8e09d14be) - {\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc pilot is E\"}\nSummary of analysis for IXd7OC\n:\nFirst session didn't had Authorization in time.\nSecond session had authorization, however at 61 sec.\nBoth sessions had different reason for EV-EVSE communication timeout.\nvendorErrorCode\":\"secc pilot is E\", is a new OCPP vendor codes in v6.1.3. Unfortunately, I don't have much information here as the v6.1.3. is still a beta release and not much documentation are available. However, I feel it is related to CP state E, whenever the SECC CP state goes to error, this message will be sent to OCPP server., but let's wait for documentation.\nNow analysis of\n300000004078 i.e. HHSCSk,\nI cannot find anything in logs for last 3 days for a transaction ID\n33543446\n, in this charger.\nRegarding the error “Secc if Offline” in status notificaiton.\nStatusNotification (beb1dab7-ca83-4c52-ac4d-45a759a1f5c7) - {\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\nAgain, it is a newly implemented CPP vendor codes in v6.1.3.\nHere is the technical explanation for you:\nat\n2025-03-09, 23:46:37 , there was communication lost with ECOG, Error: No reply in 4.25s\nand thus charger sends the status notification at\n2025-03-09, 23:46:38\nSatusNotification (beb1dab7-ca83-4c52-ac4d-45a759a1f5c7) - {\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"secc is offline\"}\nAs v6.1.3 is still not officially released, I am sure there will be multiple questions coming from Monta on OCPP integration and compatibility, due to limited information on v6.1.3 release note, we might not be able to answer or troubleshoot all the questions.\nIf you are facing severe issues related to OCPP integration, may I suggest scheduling an integration test between Monta and Siemens.\nAt the end, at present I cannot find anything related to OCPP causing these sessions to fail, all these error codes are newly implemented, and the failed sessions are because of Authentication delay and/or EV-EVSE communication failure due to ECOG.\nI hope this clarifies your questions.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T06:06:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d3a86f3-4efe-ef11-bae3-6045bdde4786",
+            "subject": "Automatic reply: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "I am on a business trip until March 13, so please expect some delay in my response. In urgent cases, please send me a text message.",
+            "date": "2025-03-11T08:00:54Z",
+            "extra": {
+                "sender": "meta.van-veghel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dabde7ab-5ffe-ef11-bae2-0022489d7182",
+            "subject": "Re: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "@Feininger, Christian (SI E R&D IOT)\ncan we add someone from the R&D team to this chat to address the support questions on what he new codes mean?",
+            "date": "2025-03-11T10:00:43Z",
+            "extra": {
+                "sender": "daniel.feldman@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "84621de0-b2fe-ef11-bae3-000d3ad97a58",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi colleagues,\nDuring the meeting today, Rıfkı was unable to charge his vehicle despite trying 6-7 times at\nchargerID: AACJj2\n. However, when another vehicle arrived at the same charger, the charging process started immediately.\nThis issue occurred between 13:00 and 16:00 (UTC). Additionally, feedback from the CPO indicates that 80% of charging attempts at this station on March 11 were unsuccessful. Therefore, I believe an inspection of this charger would be beneficial.\nFurthermore, the CPO shared details about another charger,\nChargerID: 3TsBts\n. They mentioned that the error rate at this location was 8% on Saturday but has increased to 65% today.\nAdditionally, Rıfkı was able to directly charge his vehicle at another location of the same CPO, which is 20 minutes away.\nAs a result, these failed charging attempts seem to indicate a different issue, rather than something specific or apparent.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-11T19:56:19Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "81ea7b91-33c8-3317-9ff9-e9cf2d84dd14",
+            "subject": "Status Update",
+            "body": "On 12.03.2025, alignment between RC-TR, R&D, CS, Monta and Borusan EnBW, to clarify the escalation topics and to address the issues reported.\nMOnta and Borusan provided data of failed charging sessions. Analysis has been done and monitoring is still ongoing. Results communicated to Borusan on 14.03.2024.\nAction Items:\nRC-TR to report in the ticket session failures and questions coming from Borusan.\nR&D and ES to proceed with the monitoring and analysis of reported issue.\nR&D and ES to proactively investigate and monitor the fleet. Goal is to find common failre patterns and address them if possible.\nCW12, installation of EcoG v1.4.11 Hotfix on selected chargers. RC-TR to coordinate the activity with end customer.",
+            "date": "2025-03-14T16:02:13Z",
+            "extra": {}
+        },
+        {
+            "id": "2f2e61c9-9bb7-c97a-bfe2-f6a4b64fa1ac",
+            "subject": "EcoG Hotfix Installation",
+            "body": "EcoG Hotfix v1.4.11 installed today (17.03.2025) on the following chargers:\nHHSCSk\ntN5gcc\nHcQOFj\nVmKAeN\nm5DaZZ\nhpcrTh\nAACJj2\nHotfix already installed on 10.03.2025 by R&D on charger:\nqShfXt",
+            "date": "2025-03-17T10:49:06Z",
+            "extra": {}
+        },
+        {
+            "id": "465ac466-f4b6-ff17-81ec-c827ec1771c4",
+            "subject": "Mail from Yunus Emre Temel",
+            "body": "Hi Colleagues,\nOn March 10, a patch update was applied to ecoG on\nchargerID: qShfXt\n. After this date, on some days, there have been frequent instances where charging sessions failed to start. Below is the graph provided by Borusan.\nToday, I observed that a charging session did not start. Based on my analysis, it appears that the ecoG issue persists. I am sharing the log file as an attachment.\n2025-03-16T10:15:07.726516+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: secc events: {\"type\":\"SeccEvConnect\",\"outletId\":1}\n2025-03-16T10:15:10.726532+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: secc events: {\"type\":\"SeccSessionStart\",\"outletId\":1}\n2025-03-16T10:15:12.904054+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC1: Charging Phase \"P00_UNKNOWN\" --> \"P01_AUTHENTICATION\"\n2025-03-16T10:15:37.216Z\nqShfXt\n2025-03-16T10:15:36.859116+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: OCPP: Send command: Authorize (3da2f0f8-afa0-486f-9903-bd77feeb9d4a) - {\"idTag\":\"F0F014284972E4\"}\n2025-03-16T10:15:37.143568+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: RemoteStartTransaction: start charging\n2025-03-16T10:15:37.783168+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC1: Charging Phase \"P01_AUTHENTICATION\" --> \"P02_PARAMETER_DISCOVERY\"\nm2025-03-16T10:15:39.296117+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC1: PilotState \"B2\" --> \"C2\"\n2025-03-16T10:16:31.409735+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC1: PilotState \"B2\" --> \"E\"\n2025-03-16T10:16:32.250975+00:00 [FW060103G1] sicharge-cp [daemon:info] bash[8410]: EcoG Error Reporting request: 10.20.17.101 - [16/Mar/2025:10:16:32 +0000] \"POST /log-upload HTTP/1.1\" 201 891 \"\" \"Go-http-client/1.1\" \"{\\\"chargerID\\\":\\\"secc2300-14759\\\",\\\"logType\\\":\\\"logstate\\\",\\\"outletType\\\":\\\"ccs\\\"}\"\n2025-03-16T10:16:32.250588+00:00 [FW060103G1] sicharge-cp [local0:info] ecog-error-reporting-proxy/534b3672cf89[640]: EcoG Error Reporting request: 10.20.17.101 - [16/Mar/2025:10:16:32 +0000] \"POST /log-upload HTTP/1.1\" 201 891 \"\" \"Go-http-client/1.1\" \"{\\\"chargerID\\\":\\\"secc2300-14759\\\",\\\"logType\\\":\\\"logstate\\\",\\\"outletType\\\":\\\"ccs\\\"}\"\n2025-03-16T10:16:34.721068+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: secc events: {\"type\":\"SeccEvDisconnect\",\"outletId\":1}\n2025-03-16T10:16:34.747740+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC1: PilotState \"E\" --> \"A\"\nI would appreciate your detailed review.\nAdditionally,\nI compared the charging start processes of Monta with Trugo and Astor, both of which have more than 1000 charging transactions per day in Turkey.\nIn Monta, the sequence is as follows:\nStatusNotification → RemoteStartTransaction → Authorize → StartTransaction → StatusNotification (Charging)\nIn Trugo and Astor, the sequence is:\nStatusNotification → RemoteStartTransaction → StartTransaction → StatusNotification (Charging)\nOther CPOs do not use the\n\"Authorize\"\ncommand, and based on my log analysis, it appears that other CPOs have not experienced charging failure issues on SichargeD devices.\nCould there be a delay in the authorization process? If so, could this cause communication issues with ecoG?",
+            "date": "2025-03-17T12:17:04Z",
+            "extra": {}
+        },
+        {
+            "id": "b0e036d5-5203-f011-bae2-000d3ad990ba",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hello Emre,\nI am following up on our conversation via Teams and summarizing the findings from today's analysis in written form.\nI am referring to the analysis on charger\nqShfXt\n, as per the attached email. According to the criteria that Monta uses to calculate failed sessions, they consider a session failed if it starts with a “RemoteStartTransaction” and “Authorize” command but does not receive a “StartTransaction”.\nHow does this reflect on our charger? Since the “StartTransaction” is sent from the charger to the Backend only when the current flow begins (Charging Phase P06_Charge), whatever happens in the meantime is considered by Monta as a failed session. This includes issues with the charger, failures during CableCheck, issues with the EV, and improper conduct by the end user.\nBelow are the details of the cases analyzed today:\nCase 1:\nIt was reported a failed session today (17.03.2025). In the logs you can see that:\n- DC2 is plugged in.\n2025-03-17T13:34:37.728173+00:00 [FW060103G1] swcpu [user:debug] [4127] [DCC] DC2: PilotState \"A\" --> \"B2\"\n- The RemoteStartTransaction arrives for Connector 1:\n2025-03-17T13:35:28.816483+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/529a33145bcd[640]: OCPP: Received command: RemoteStartTransaction (9755896e-0047-45cc-8811-759832179fe9) -\n{\n\"connectorId\":\n1\n,\n\"idTag\":\n\"F0F0259C3BF622\"\n}\nThis is clearly an example of improper conduct of the end user, which results into a failed session considered by Monta.\nCase 2:\nSession failed on DC1 on 2025-03-16T10:15:07. In this case, I noticed a wrong behavior of the charger during CableCheck and PreCharge phase. I can see how the TF1 voltage transducer detects some voltage on the outlet since the moment of plug in (the voltage transducer is connected after the OutGoingCoil contactor, so it measures the voltage on the cable/plug). During CableCheck and PreCharge, the voltage looks oscillating, and the session fails because the charegr is not able to build the voltage during pre-charge within the precharge timeout.\nI believe that in this case we are having an HW issue in the charger.\nAs per agreed via call, please open another ticket specifically for this charger, so not to mix the topics.\nAction items for this specific charger:\nThe issue could be either in the TDK contactor QA21-22, or in the Voltage transducer TF1 and the connection in XD10.1A.\nNext step is to monitor remotely the charger via debug station during charging sessions on DC1.\nGoal is to see if we have voltage drops or not. This analysis could distinct between a TDK issue or a TF1/XD10.1A issue.\nAs per agreed\n, let's proceed to use this Ticket\nID0411427\nto monitor the 8 chargers from Borusan EnBW with the EcoG version v1.4.11 installed today.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-17T17:11:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fbf0bf49-1404-f011-bae3-6045bddf319c",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nThe customer has confirmed that the last 24-hour data from the 8 patched devices looks good and has requested to proceed with the update for all devices. We suggested conducting an 1-2 days of analysis before rolling out the update to all chargers.\nHowever, the customer is insisting on updating the following devices today at the very least.\nWe need your support and approval on this matter.\nLocation\nCharger ID\nBorusan Oto İstinye\nvK6bNu\nPO Tekstilkent\ndCamkr\nWell Club Açık Otopark\nnBdkmt\nBi-Mola Ömerli\n2FlbdJ\nBorusan Oto Esenboğa\nDoKVBP\nPO Maltepe\ntN5gcc\nBaşak Petrol\nSSYNon\nÖztorun Oto Kocaeli\n5muwOd\nBorusan Oto Avcılar\nG4oxRv\nPO Zeytinburnu\nPuwzq8\nPO Büyükçekmece\nIXd7OC\nPO Kartal\n3TsBts\nBorusan Oto Avcılar\nG4oxRv\nBi-Mola Poyraz Kuzey\nqucoaa\nBi-Mola Poyraz Güney\n6P4l0M\nKosifler Oto Bostancı\n7t8v7K\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-18T16:16:05Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c3af1c68-1a04-f011-bae3-000d3adc93d1",
+            "subject": "AW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Emre,\nnot sure if I’m the right person to give a final approval on this patch rollout.\nNevertheless,\nmy recommendation is to go with this request and update those 16 more chargers mentioned in the table\n. Then let’s compare data on patched chargers against the chargers without the patch.\nBackground information:\nIf we face unexpected issues with the patch, we can revert the change and go back to the unpatched v6.1.3 firmware\nThis patch is already in a piloting phase and we see good results in other locations\nThe patch will be most probably fixed part of the upcoming firmware release 8.0 which is currently under development\nThe further experience we gather here in your region will even increase the confidence to do this\n@Sambiagio, Michele (SI E CS SD ES)\n,\n@Servidei, Fosco (SI E CS SD ES)\n: will you take care of this extended rollout of the patch?\nBest,\nAlexander\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nGesendet:\nDienstag, 18. März 2025 17:12\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Pinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; Çolak, Rıfkı (SI E) <colak.rifki@siemens.com>\nBetreff:\nRE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Alex,\nThe customer has confirmed that the last 24-hour data from the 8 patched devices looks good and has requested to proceed with the update for all devices. We suggested conducting an 1-2 days of analysis before rolling out the update to all chargers.\nHowever, the customer is insisting on updating the following devices today at the very least.\nWe need your support and approval on this matter.\nLocation\nCharger ID\nBorusan Oto İstinye\nvK6bNu\nPO Tekstilkent\ndCamkr\nWell Club Açık Otopark\nnBdkmt\nBi-Mola Ömerli\n2FlbdJ\nBorusan Oto Esenboğa\nDoKVBP\nPO Maltepe\ntN5gcc\nBaşak Petrol\nSSYNon\nÖztorun Oto Kocaeli\n5muwOd\nBorusan Oto Avcılar\nG4oxRv\nPO Zeytinburnu\nPuwzq8\nPO Büyükçekmece\nIXd7OC\nPO Kartal\n3TsBts\nBorusan Oto Avcılar\nG4oxRv\nBi-Mola Poyraz Kuzey\nqucoaa\nBi-Mola Poyraz Güney\n6P4l0M\nKosifler Oto Bostancı\n7t8v7K\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-18T16:59:58Z",
+            "extra": {
+                "sender": "alexander.pinnau@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "629df7f3-4aa9-5e5f-aa10-70ebf28dd5b0",
+            "subject": "EcoG Hotfix Installation 19.03.2025",
+            "body": "Hotfix proven to bring benefits and reduce failure rate.\nPower converter replaced on charger\ndCamkr\nHotfix installed on 14 chargers on 19.03.2025.\nvK6bNu\ndCamkr\nnBdkmt\n2FlbdJ\nDoKVBP\nSSYNon\n5muwOd\nPuwzq8\nIXd7OC\n3TsBts\nG4oxRv\nqucoaa\n6P4l0M\n7t8v7K",
+            "date": "2025-03-24T08:54:01Z",
+            "extra": {}
+        },
+        {
+            "id": "426fbbdf-a708-f011-bae2-7ced8d2d1473",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nSo far, 22 out of 98 deployed Borusan chargers have received the patch update, and we have observed positive results.\nBorusan has now requested that the update be applied to the remaining chargers as well. I am sharing the list as an attachment, with the updated chargers marked.\nFor future, should we open a ticket for the update after each commissioning?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-24T12:02:42Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6ceb06a6-ae08-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Dear Yunus,\nThank you for the feedback. I discussed the topic this morning with Product Champion and I will proceed to forward the request to R&D for EcoG Hotfix v1.4.11 update on the remaining chargers, as per established process. I will notify you with and provide you a feedback in the next days on the Hotfix installation. Please consider that this process will take some time.\nDo you have any data/statistics coming from Borusan and Monta in regards of the decreased failure rate on the chargers with the EcoG Hotfix v1.4.11? It is important for us to have this data, also to see if further activities or corrective measures has to be put in place.\nPlease collect these statistics from Borusan and forward them to us.\nFor future reference, yes, please create a ticket if you require a Hotfix installation on any charger.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-24T12:51:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a106c9be-af08-f011-bae2-6045bdde284b",
+            "subject": "Automatische Antwort: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "I'm out of office and back on 25.03.2025. In urgent cases please contact Stephan Leinert (Product Owner SICHARGE D) or Christian Feininger (Head of Software & Firmware IOT).",
+            "date": "2025-03-24T12:59:04Z",
+            "extra": {
+                "sender": "alexander.pinnau@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "31c46f5b-230b-f011-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Fosco,\nAfter patch update, as an initial report, Mr.\n@Çolak, Rıfkı (SI E)\njust experienced a failed charging session at ChargerID: 3TsBts. You can review the failure by checking the session between 15:10 - 15:25.\nHere’s what I observed during my analysis:\nTime\nLog events\n2025-03-27T15:17:13\nDC2: Statemonitor-Bypass active: converter will not enter fastshutdown state\n2025-03-27T15:17:14\nDC2: Charging Phase \"P03_CABLE_CHECK\" --> \"P00_UNKNOWN\"\n2025-03-27T15:17:14\nMG2: VoltagePrechargeRequired = True, not ready for power delivery\nCould you please conduct a detailed analysis on this issue and update us accordingly?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-27T15:51:34Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d21fbccc-3a0e-f011-9989-6045bdddca9c",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Good evening Yunus,\nI analyzed the logs reported in your previous email.\nI got to know that the vehicle used is a TOGG vehicle, with EVMAC: “00.18.87.ff.ff.ff”.\nThe session started at 2025-03-27T15:16:35.\nAt 2025-03-27T15:16:44, the P03_Cable_Check phase started, with change of pilot state from \"B2\" --> \"C2\".\nCG2 was already allocated to DC1, and we see “DC2: Time taken for CGp Assignment: 17.5 sec, from P02_Phase: 18.4 sec”.\nOGC is commanded correctly to close, voltage is increasedfor cable check, cablecheck testvoltage is reached. OGC is opened.\nAt 2025-03-27T15:17:14,  we receive a stop session from the EV with error code 67 \"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\". This is exactly 30 seconds after starting the CableCheck phase (timeout is 38 seconds).\n\"DC2: Statemonitor-Bypass active: converter will not enter fastshutdown state\" is a normal message, saying that the converters do not need to be shutdown.\n“MG2: VoltagePrechargeRequired = True, not ready for power delivery” is not an error message as well. CG2 is immediately allocated back to DC1.\nBefore going to error, we receive also an alert message from SECC on outlet 2 with error code 54 “ERR_EVCOM, EV communication problem detected”.\nAt first glance, it looks like the session didn't start due to an action from the EV, which resulted in a communication error between EV and Charger.\nFor this reason, as I already anticipated to you via Teams, this week I will conduct an analysis over the Borusan's chargers, to look for other failed sessions with TOGG and to look for a possible failure pattern between our charger and TOGG EVs. In case of successful findings, I will report them to R&D and EcoG for further analysis.\nI will update you in the next days in regards of this analysis.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-31T14:17:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b93c1c1-850f-f011-9989-6045bdddca9c",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Fosco,\nThank you for the detailed analysis.\nTOGG is not only an EV brand in Turkey but also a Charging Point Operator (CPO) with approximately 2000 charging sockets, including SichargeD units.\nOver the past four days, Turkey had a national holiday, and TOGG offered free charging sessions for its own vehicles during this period. Considering this, you might want to extend your analysis to include SichargeD used by TOGG. There should be a significant number of charging sessions available for review.\nI've attached the list of TOGG's SichargeD charger IDs for your reference.\nLet me know if you need any further details.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-04-02T05:46:07Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5ca24ac2-960f-f011-998a-000d3addf8ce",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Good morning Yunus,\nThank you for the clarification and the information. However, please let's not mix up the topics and the customers. This ticket, and its ongoing escalation, is related only to failure rate of Borusan's chargers with Monta Backend, whose FW and configuration are different from the chargers at CPO TOGG. I will proceed to investigate possible failures between Sicharge D and TOGG EVs on Borusan's chargers, as per my last email.\nIf you have findings or timestamps of failed sessions between TOGG EVs and Sicharge D on other CPOs chargers, rather than Borusan, please report them in a different ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-02T07:47:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c03fa0ef-5b2a-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Dear Emre,\nI am writing you to provide you feedback and details regarding the investigation on failed sessions with TOGG EVs and related EcoG errors.\nThe analysis was based on the timestamps and logs of CW15, and focused on:\nError code 40 (180 appearances)\nError code 54 (90 appearances)\nThe investigation focused on TOGG EVs, which can have two different EVMAC addresses: “00.18.87.ff.ff.ff” or “00.01.02.03.04.05”. Timestamps and logs have been provided and analyzed by EcoG support, and h\nere follows a detailed overview of the errors and explanation:\nEcoG Error 40:\nThe error message is the following: “\nmessage response sending failed V2G09MSGSequence_V2G09Session_V2G09Authorization_V2G09AUTProcessRequest_V2G09AUTProcessRequest_OK”\nThe error is confirmed to be due to a\nTimeout for Authorization implemented on the EV side.\nBecause on the charger the EcoG Hotfix 1.4.11 is installed, we have an Authorization timeout on the charger side of 5 minutes. Here we see that the EV is dropping the TCP communication exactly after 1 minute in the Authorization phase.\nEcoG Error 54:\nThe error message is the following: “ERR_EVCOM, EV communication problem detected”.\nAlso in this case, it is confirmed that the\nEV is dropping the TCP communication,\nin 2 different scenarios:\nSession reported from charger\ndCamkr\n: the charger is sending “AuthorizationRes” and we never receive again AuthorizationReq from EV.\nSession reported from charger\nse6CVO\n: the charger is sending “ChargeParameterDiscoveryRes”, but we never receive CableCheckReq from the EV.\nI attach to this email the logs for your convenience.\n@Alexander: Since these communication issues between charger and TOGG EVs seem to be caused only by the vehicles, and in order to improve the overall performance of Borusan chargers and in general Sicharge D, can we enforce from R&D side that EcoG performs further integration tests with TOGG to possibly solve these communication problems?\nAs this analysis proved that the issue under investigation is caused entirely by the EV, I believe the next step would be to collect Borusan's and Monta's feedback on the progresses from their side. If you notice different type of issues on the Borusan fleet, please send me the timestamps on this ticket and I will proceed with analyzing them.\nLooking forward to hearing from you soon.\nW\nith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-06T09:24:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "55711b63-562b-f011-8c4d-002248a19d62",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Fosco, Hi Alex,\nThank you very much for your detailed reviews and support throughout this issue.\nI had a phone call with the Borusan team and shared the topics with them in general terms.\n1. v7.0.5 Firmware Rollout\nAs discussed with Fosco, after the v7.0.5 firmware updated that the patch to requeires be reinstalled. The Borusan team is not in favor of rolling it out to all devices immediately. Instead, they prefer to install it on two locations first, apply the patch, and run some tests before proceeding with a full rollout.\nWe plan to perform this together with Fosco next week, on Wednesday or Thursday.\n2. TOGG issue\nI also mentioned TOGG topic and suggested a meeting to share more details. Borusan asked for 2–3 possible dates and times next week when you are available, so they can align internally and schedule the meeting.\n@Pinnau, Alexander (SI E R&D IOT LPZ)\n– I would appreciate it if you could lead this meeting from our side. Could you please share a few time slots that work for you next week?\nAlso, I’d like to hear your thoughts on whether we should also discuss this matter directly with TOGG and what kind of actions we should consider.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-07T15:17:36Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3630562a-cd2c-f011-8c4d-7c1e52361e39",
+            "subject": "AW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Emre,\nsorry for late answer due to my visit of the The smarter E fair in Munich.\nI would also recommend all the time such a rollout strategy to every costumer > fine for me\nMy calendar is up-to-date for free time slots / Monday 14:00 – 17:00 CET would work great or Thursday 13:30 – 16:00 CET as well.\nI was not directly involved in any observations related to TOGG but I reached out to EcoG (our SECC supplier) during the fair in Munich. They mentioned tests with TOGG they already performed and that with latest software on the TOGG vehicles everything should work fine. I asked them to share further information with us about tested software versions.\nI expect an answer from them beginning of next week (just out of that it would be better to have an alignment with Borusan end of next week as soon as I have those additional information).\nIf you have contacts to TOGG it would be great to have a further talk to them as well.\nBest,\nAlex\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nGesendet:\nMittwoch, 7.\nMai 2025 17:17\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Pinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; Çolak, Rıfkı (SI E) <colak.rifki@siemens.com>\nBetreff:\nRE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Fosco, Hi Alex,\nThank you very much for your detailed reviews and support throughout this issue.\nI had a phone call with the Borusan team and shared the topics with them in general terms.\n1. v7.0.5 Firmware Rollout\nAs discussed with Fosco, after the v7.0.5 firmware updated that the patch to requeires be reinstalled. The Borusan team is not in favor of rolling it out to all devices immediately. Instead, they prefer to install it on two locations first, apply the patch, and run some tests before proceeding with a full rollout.\nWe plan to perform this together with Fosco next week, on Wednesday or Thursday.\n2. TOGG issue\nI also mentioned TOGG topic and suggested a meeting to share more details. Borusan asked for 2–3 possible dates and times next week when you are available, so they can align internally and schedule the meeting.\n@Pinnau, Alexander (SI E R&D IOT LPZ)\n– I would appreciate it if you could lead this meeting from our side. Could you please share a few time slots that work for you next week?\nAlso, I’d like to hear your thoughts on whether we should also discuss this matter directly with TOGG and what kind of actions we should consider.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-09T12:00:22Z",
+            "extra": {
+                "sender": "alexander.pinnau@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a639c510-e02c-f011-8c4d-000d3addf8ce",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nThanks for your feedback!\nThe information from EcoG is reassuring to hear :) We'll also reach out to TOGG at the beginning of next week to discuss the topic on our side.\nConsidering you also expect to have further insights from EcoG, Thursday between 13:30 – 16:00 CET seems like the better option for our alignment meeting with Borusan.\nHappy weekends.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-09T14:15:33Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "53768571-5531-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nI talked with TOGG and explained the situation. In order to follow up and escalate the issue internally on their side, they are requesting an official email outlining the problem.\nWould it be okay for us to send an email?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-15T06:25:52Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d6e2e8d6-5a31-f011-8c4d-000d3addf8ce",
+            "subject": "AW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Emre,\nfine from my side.\nI’ve already received first information but still missing (and requested again) the information about the software versions on the TOGG EV that was tested (as our supplier stated that issued was already solved after an update on TOGG side). I think further information on this would be sufficient for the communication with TOGG.\nAs a short summary:\nEcoG had detailed observations on the SECC logs and in all cases the EV dropped the connection.\nMore detailed answer from EcoG:\nRegarding the sessions with Error Code 40:\nThis seems to be due to a Timeout for Authorization implemented on the EV side. As you mentioned, on 1.4.11 we have an Authorization timeout on EVSE side of 5 minutes. Here we see that the EV is dropping the TCP communication exactly after 1 minute in Auth phase.\nRegarding the sessions with Error Code 54:\nHere again the EV is dropping the TCP communication in 2 different scenarios:\nSession “dCamkr”: We are sending “AuthorizationRes” and we never receive again AuthorizationReq from EV.\nSession “se6CVO”: We are sending “ChargeParameterDiscoveryRes”, but we never receive CableCheckReq from the EV.\nBest,\nAlex\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nGesendet:\nDonnerstag, 15. Mai 2025 08:25\nAn:\nPinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; Çolak, Rıfkı (SI E) <colak.rifki@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; Servidei, Fosco (SI E CS SD ES) <fosco.servidei@siemens.com>\nBetreff:\nRE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Alex,\nI talked with TOGG and explained the situation. In order to follow up and escalate the issue internally on their side, they are requesting an official email outlining the problem.\nWould it be okay for us to send an email?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-15T07:04:29Z",
+            "extra": {
+                "sender": "alexander.pinnau@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0294bac4-895b-d7bd-a717-9a110e314077",
+            "subject": "ISP Clean-up session",
+            "body": "Waiting for feedback round together with RC-TR and end-customer.\nRC-TR to organize feedback round.\nGoal of the meeting is to close the escalation and the ticket",
+            "date": "2025-06-02T09:51:36Z",
+            "extra": {}
+        },
+        {
+            "id": "54bae8dc-d94d-f011-877a-7c1e523508ba",
+            "subject": "RE: AW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Good evening colleagues,\nToday I had an alignment with Emre, and we jointly agreed to close this ticket and the escalation from Monta and Borusan EnBW.\nOver the past months, Siemens HQ supported the colleagues from Turkey to face the escalation coming from client Borusan EnBW. Several topics were addressed and supported from Siemens service and R&D side:\nAnalysis of claimed increase of charging failure rate from Monta.\n®\nIdentified that no increase in charging failure rate happened, just the onboarding of Monta on the Borusan chargers and the notice of a high failure rate.\nAnalysis of the\nhigh failure rate of charging session due to “Start Transaction Timeout” claimed by Monta.\n®\nclarified that\nMonta reported as failed sessions all the sessions failing between Authorization and actual Charging. This criterion includes all possible scenarios of failure: issues on the charger, issues on the EVs, communication issues between EV and charger, improper conduct by the end customer in using the charger, authorization timeout, etc.\nBecause of this broad scenario, specific failure patterns have been identified, excluded and mitigated.\n®\nSupported Monta to identify issues on the transmitted data from Backend and issues between Backend and App provider.\nMitigation form Service and R&D side consisted in supporting the fleet with FW updates to the most stable version, and installation of EcoG HotFix v1.4.11.\nThe Hotfix provided clear benefits to the fleet, such as an increase of the Authorization Timeout form EcoG point of view.\nHigh failure rate with TOGG EVs.\n®\nAnalyzed logs and fleet behavior. Found out that the high failure rate with TOGG EVs is due to issues from the EV side.\nRC-TR and R&D, together with EcoG, supported the communication towards TOGG.\n®\nTOGG stated that they are running an update to overcome the issues.\nAt this stage, no further topics are pending on Siemens' side, from either service or R&D side, and this has been the case for over a month.\nTherefore, it has been mutually decided to close the ticket and the escalation. For any future issues related to the Borusan EnBW chargers, it was agreed to follow the standard process by opening tickets on ISP, per issue or per charger.\nFrom service side, we will ensure that tickets and topics are prioritized and that you will receive prompt support, especially considering the importance of the client.\nI thank you for your collaboration and support!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-20T13:24:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5273b7be-405e-f011-bec2-000d3addf8ce",
+            "subject": "Re: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nI hpoe you are doing well.\nWe’ve discussed up on error40 and 54 error with the TOGG side. However, according to their feedback, they have not had any direct communication with EcoG so far. In fact, they statd that they would like to get in touch with EcoG to further discuss the matter.\nCould you please check with EcoG and let us know who from TOGG they have been in contact with?\nThank you in advance for your support.\nGönderen:\nPinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nGönderildi:\nThursday, May 15, 2025 10:04:09 AM\nKime:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nBilgi:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; Çolak, Rıfkı (SI E) <colak.rifki@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; Servidei, Fosco (SI E CS SD ES) <fosco.servidei@siemens.com>\nKonu:\nAW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Emre,\nfine from my side.\nI’ve already received first information but still missing (and requested again) the information about the software versions on the TOGG EV that was tested (as our supplier stated that issued was already solved after an update on TOGG side). I think further information on this would be sufficient for the communication with TOGG.\nAs a short summary:\nEcoG had detailed observations on the SECC logs and in all cases the EV dropped the connection.\nMore detailed answer from EcoG:\nRegarding the sessions with Error Code 40:\nThis seems to be due to a Timeout for Authorization implemented on the EV side. As you mentioned, on 1.4.11 we have an Authorization timeout on EVSE side of 5 minutes. Here we see that the EV is dropping the TCP communication exactly after 1 minute in Auth phase.\nRegarding the sessions with Error Code 54:\nHere again the EV is dropping the TCP communication in 2 different scenarios:\nSession “dCamkr”: We are sending “AuthorizationRes” and we never receive again AuthorizationReq from EV.\nSession “se6CVO”: We are sending “ChargeParameterDiscoveryRes”, but we never receive CableCheckReq from the EV.\nBest,\nAlex\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nGesendet:\nDonnerstag, 15. Mai 2025 08:25\nAn:\nPinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; Çolak, Rıfkı (SI E) <colak.rifki@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; Servidei, Fosco (SI E CS SD ES) <fosco.servidei@siemens.com>\nBetreff:\nRE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Alex,\nI talked with TOGG and explained the situation. In order to follow up and escalate the issue internally on their side, they are requesting an official email outlining the problem.\nWould it be okay for us to send an email?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-07-11T10:21:09Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c8bab1c3-405e-f011-bec1-6045bddf319c",
+            "subject": "Email sent to a closed case 'ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta (0411427)' CRM:00225227282",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0411427\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-11T10:21:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b91635e-575e-f011-bec2-6045bde0207e",
+            "subject": "AW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Emre,\nI’ve sent a message to EcoG and included you. Please align further with them as I’m on vacation for the next two weeks and then on a business trip to Portugal.\nBest,\nAlex\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <emre.temel@siemens.com>\nGesendet:\nFreitag, 11. Juli 2025 12:21\nAn:\nPinnau, Alexander (SI E R&D IOT LPZ) <alexander.pinnau@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; Servidei, Fosco (SI E CS SD ES) <fosco.servidei@siemens.com>; Çolak, Rıfkı (RC-TR SI E) <colak.rifki@siemens.com>\nBetreff:\nRe: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Alex,\nI hpoe you are doing well.\nWe’ve discussed up on error40 and 54 error with the TOGG side. However, according to their feedback, they have not had any direct communication with EcoG so far. In fact, they statd that they would like to get in touch with EcoG to further discuss the matter.\nCould you please check with EcoG and let us know who from TOGG they have been in contact with?\nThank you in advance for your support.\nGönderen:\nPinnau, Alexander (SI E R&D IOT LPZ) <\nalexander.pinnau@siemens.com\n>\nGönderildi:\nThursday, May 15, 2025 10:04:09 AM\nKime:\nTemel, Yunus Emre (RC-TR SI E CS) <\nemre.temel@siemens.com\n>\nBilgi:\nSambiagio, Michele (SI E CS SD ES) <\nmichele.sambiagio@siemens.com\n>; Çolak, Rıfkı (SI E) <\ncolak.rifki@siemens.com\n>; SI Emobility Technical Support <\nemobility_support.si@siemens.com\n>; Servidei, Fosco (SI E CS SD ES) <\nfosco.servidei@siemens.com\n>\nKonu:\nAW: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Emre,\nfine from my side.\nI’ve already received first information but still missing (and requested again) the information about the software versions on the TOGG EV that was tested (as our supplier stated that issued was already solved after an update on TOGG side). I think further information on this would be sufficient for the communication with TOGG.\nAs a short summary:\nEcoG had detailed observations on the SECC logs and in all cases the EV dropped the connection.\nMore detailed answer from EcoG:\nRegarding the sessions with Error Code 40:\nThis seems to be due to a Timeout for Authorization implemented on the EV side. As you mentioned, on 1.4.11 we have an Authorization timeout on EVSE side of 5 minutes. Here we see that the EV is dropping the TCP communication exactly after 1 minute in Auth phase.\nRegarding the sessions with Error Code 54:\nHere again the EV is dropping the TCP communication in 2 different scenarios:\nSession “dCamkr”: We are sending “AuthorizationRes” and we never receive again AuthorizationReq from EV.\nSession “se6CVO”: We are sending “ChargeParameterDiscoveryRes”, but we never receive CableCheckReq from the EV.\nBest,\nAlex\nVon:\nTemel, Yunus Emre (RC-TR SI E CS) <\nemre.temel@siemens.com\n>\nGesendet:\nDonnerstag, 15. Mai 2025 08:25\nAn:\nPinnau, Alexander (SI E R&D IOT LPZ) <\nalexander.pinnau@siemens.com\n>\nCc:\nSambiagio, Michele (SI E CS SD ES) <\nmichele.sambiagio@siemens.com\n>; Çolak, Rıfkı (SI E) <\ncolak.rifki@siemens.com\n>; SI Emobility Technical Support <\nemobility_support.si@siemens.com\n>; Servidei, Fosco (SI E CS SD ES) <\nfosco.servidei@siemens.com\n>\nBetreff:\nRE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714\nHi Alex,\nI talked with TOGG and explained the situation. In order to follow up and escalate the issue internally on their side, they are requesting an official email outlining the problem.\nWould it be okay for us to send an email?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-07-11T13:03:00Z",
+            "extra": {
+                "sender": "alexander.pinnau@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c06f4461-575e-f011-bec2-7c1e52346d5a",
+            "subject": "Email sent to a closed case 'ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta (0411427)' CRM:00225227390",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0411427\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-11T13:03:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca77968d-386d-f011-bec2-6045bddebc96",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nWe had a meeting with TOGG and ecoG, and the key outcomes are summarized below:\nError Code: 40 and Error Code: 54 issues were discussed. TOGG has been informed about the timeouts and TCP communication errors. They took notes and mentioned they would work on the matter.\nIn order to better understand the impact of Error Code: 40, would it be possible for you to share statistics such as error occurrence rates, VIN numbers, timestamps, and station locations with TOGG?\nWe also discussed the insulation resistance values frequently observed to be below 1000 kΩ on the TOGG side. TOGG confirmed that their vehicle insulation resistance is above 500 kΩ, which complies with the standards.\nThey also recommended checking the Bender IMD firmware, as the latest version reportedly solves many bugs.\nWould it be possible to configure the Bender devices to accept values below 500 kΩ? We’d appreciate your suggestions on this point.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-07-30T11:30:18Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8b99389c-1984-f011-b4cc-6045bdde4786",
+            "subject": "RE: ID0411427-DC/Si-D/TR-[Y2/S3 300000004078] Charging Issues with Monta CRM:01811000714",
+            "body": "Hi Alex,\nWere you able to review the following topic? Customer is requesting feedback from us.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-08-28T14:16:41Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

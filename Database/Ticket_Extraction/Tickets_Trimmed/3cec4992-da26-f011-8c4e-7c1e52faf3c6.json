@@ -1,0 +1,123 @@
+{
+    "incident_id": "3cec4992-da26-f011-8c4e-7c1e52faf3c6",
+    "ticket_number": "0421988",
+    "title": "ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader",
+    "created_on": "2025-05-01T22:21:12Z",
+    "last_activity": "2025-12-02T08:38:00Z",
+    "age": "34771",
+    "description": "Reported behaviour/issue: Please provide logs for charging sessions both successful and unsuccessful from Tuesday 29th April to Thursday 1st May. We have an issues with a Volvo Loader we are trying to troubleshoot\nSolution: N/A\n2025-05-02 :  Notes from Reetesh/EcoG Logs",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "SoIYac",
+    "stage": null,
+    "serial_number": "Y2 / R3 313057296006",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "823dea92-da26-f011-8c4d-7c1e52361e39",
+            "subject": "Webform_incident_SiCharge D_01-05-2025_SN: 313057296006",
+            "body": "Dear Liz Hatton,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n313057296006\nThank you\neMobility Technical Support Team\nSehr geehrte/r Liz Hatton,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n313057296006\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-01T22:21:06Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "91ea1342-df26-f011-8c4d-7c1e52768c07",
+            "subject": "ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Dear Liz Hatton,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R3 313057296006\nCharger ID/Serial No.\n:\nSoIYac\nProblem Description\n: Issues with a Volvo Loader\nFor future reference, your case number is\n0421988\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-01T22:54:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "43a38fe8-0227-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Hello Liz Hatton,\nPlease see the attached logs of charger from 290425 to 010525\nplease let us know if have any other query.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-02T03:09:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f4a6e935-aae4-0c81-bda5-1fa3e2004518",
+            "subject": "Notes from Reetesh/EcoG Logs",
+            "body": "Charger not sendling logs to SCB for last 25 days, however it is online.\nDownloaded ECoG logs, No session on DC2 since Feb 2025 (May be sessions are performed by due to date time issue logs are not captured correctly.\nOn outlet 1 session are failed during ChargeParameterDiscovery, as EV is sending max Current and Voltage value as 0.\nSoIYac_0421988",
+            "date": "2025-05-02T05:54:30Z",
+            "extra": {}
+        },
+        {
+            "id": "c64cf9bd-1b27-f011-8c4d-6045bddf319c",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Hello Liz Hatton,\nPlease discard the previous email & attached logs which were shared, Apologies for sharing logs from different charger.\nAs checked no logs are available on SCB for the month of April except limited logs on 8th April,25.\nWe will escalated the issue of no logs available in SCB but charger is online , we will reply you back.\nMeanwhile we have checked the charger remotely & below are the observations.\n1) In Outlet 1\nOn 290425 at 18:04 UTC\nEVCCID:9cf6dd9247fb\nSession stopped in charge parameter discovery stage\nReason: wrong parameter shared by EV\nDC_EVSEMinimumVoltageLimit=0 DC_EVSEMaximumVoltageLimit=0 DC_EVSEMaximumPowerLimit=0 EVSEProcessing=Finished\n2)\nIn Outlet 1\nOn 290425 at 18:04 UTC\nEVCCID:9cf6dd9247fb\nCharging session was successful form 91% SOC to 100% SOC\n3)\nIn Outlet 1\nOn 290425 at 18:04 UTC\nEVCCID:9cf6dd9247fb\nSession stopped in charge parameter discovery stage\nReason: wrong parameter shared by EV\nDC_EVSEMinimumVoltageLimit=0 DC_EVSEMaximumVoltageLimit=0 DC_EVSEMaximumPowerLimit=0 EVSEProcessing=Finished\n4)\nNo session on DC2 since Feb 2025 (May be sessions are performed by due to date time issue logs are not captured correctly.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-02T06:07:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f35975ee-ec29-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Hello Liz Hatton,\nCould you please reply us back in the ticket, if any further information is required .\nIf not also let us know if we can proceed with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T20:10:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "63f98ec1-c237-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Hello Liz Hatton,\nCould you please reply us back in the ticket, if any further information is required .\nIf not also let us know if we can proceed with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-23T10:43:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47e6641b-cb39-f011-b4cb-7c1e52768c07",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Hi Sunil\nPlease close the ticket.\nThanks\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2025-05-26T00:48:16Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2dc3cda2-d339-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: ID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader CRM:02681000133",
+            "body": "Dear\nLiz Hatton\n,\naccording to our records, your request has been fulfilled and the case #\n0421988\nis now closed. We hope that we have responded to your request in a timely and professional manner.\nProblem Description\n: Issues with a Volvo Loader\nResolution\n: Information provided\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKind regards,\nHeliox Service Department-\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-26T01:49:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4fd50cde-d339-f011-b4cc-7c1e5236eee4",
+            "subject": "Ticket 0421988 has been closed. Are you satisfied with our provided solution? CRM:01251001378",
+            "body": "Dear Liz,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0421988\nwith the title:\nID0421988-DC/Si-D/NZ-[Y2 / R3 313057296006]Issues with a Volvo Loader\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-26T01:51:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

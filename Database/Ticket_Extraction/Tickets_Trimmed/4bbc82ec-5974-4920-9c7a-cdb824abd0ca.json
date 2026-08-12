@@ -1,0 +1,129 @@
+{
+    "incident_id": "4bbc82ec-5974-4920-9c7a-cdb824abd0ca",
+    "ticket_number": "0412115",
+    "title": "ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1)",
+    "created_on": "2025-03-12T05:25:34Z",
+    "last_activity": "2025-04-09T07:32:02Z",
+    "age": "10001",
+    "description": "Reported behavior/issue:  Firmware Update\nRoot cause: Router Issue\nSolution: Manually updated the router\nOn DAMEX Sanctioned List:\nWarranty Status: Expired -tgv",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "yrTycA",
+    "stage": null,
+    "serial_number": "Y2 / PD 312571675/22,Y2 / PD 312571675/22",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2d629b74-8c1b-ae4e-97d8-f297b95bb102",
+            "subject": "Handover notes L2 to ES",
+            "body": "Problem Description\n: Unable to update the firmware.\nAction Performed (L2)\n: Rolled out the charger FW 5.0.23 and activated the update but firmware update failed.\ndisccused the issue with Sambath and observed that router is unable to update the FW\nyrTycA  1741752889459  2025-03-12T03:58:14.178897+00:00 sicharge-cp [daemon:info] healthservice[707]:\nrouter-update.service loaded failed failed router-update.service\n1741752891713\nCharger SW Version:\nv4.0.11\nReason for Handover (L3)\n: Need to check why charger is not updating to the new FW version after we are activating the update.\nFault history\n11/03/2025\nLog analysis with timestamp:\nWed, 12 Mar 2025 01:03:58 GMT to   Wed, 12 Mar 2025 05:03:58 GMT\nActivated the FW update but it failed so rolled out to FW 5.0.23 and again activated the update see 2nd highlighted entry\nAction Required\nAction by HQ: Need further support\nAttachement\n: refer attched logs",
+            "date": "2025-03-12T05:48:16Z",
+            "extra": {}
+        },
+        {
+            "id": "52608389-b21f-372f-bbaa-d1df97cfc93d",
+            "subject": "Charger FW rolled out and activate Update timestamps ",
+            "body": "",
+            "date": "2025-03-12T05:58:04Z",
+            "extra": {}
+        },
+        {
+            "id": "63930a23-e3ff-ef11-bae3-7c1e5236e32d",
+            "subject": "0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026",
+            "body": "Dear Thibaut Hurand,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Can you please confirm the charger is online to OCPP backend? If yes, can you please remotely reboot the charger from OCPP backend.\nAdding Jessica in Loop.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-13T08:14:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a12dc08-1600-f011-bae3-000d3adc93d1",
+            "subject": "0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026",
+            "body": "Hi Sambath,\nI went on site this afternoon to look at the problem. The OCPP connection is ok from our side but it is the scb connection that has problem.\nThe siemens routeur is almost all the time out. It is not possible to see it in ethernet connection. During my 1h30 intervention, it went on once.\nThe charger tries to reboot but it is stuck at 30%, that means router problem? I think that the update creates a problem inside the charger.\nCan you please ask for an on-site intervention with the needed spare parts? I think, the siemens router can be replaced.\nHere are some pictures that I took.\nSiemens routeur (on once during 1h30)\nOCPP routeur (on all the time during 1h30)\nState blocked during reboot\nBest regards,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 13 mars 2025 09:16\nÀ :\nHURAND Thibaut (ENGIE Mobilités Electriques) <thibaut.hurand@engie.com>\nCc :\nMINA, JESSICA (RC-FR SI E) <jessica.mina@siemens.com>\nObjet :\n0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026\nDear Thibaut Hurand, I hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Can you please confirm the charger is online to OCPP backend? If yes, can you please remotely reboot the charger from OCPP\nDear Thibaut Hurand,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Can you please confirm the charger is online to OCPP backend? If yes, can you please remotely reboot the charger from OCPP backend.\nAdding Jessica in Loop.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2025-03-13T14:18:35Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a6556ebf-e502-f011-bae3-6045bddf3123",
+            "subject": "RE: 0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026",
+            "body": "Dear Thibaut Hurand,\nThank you so much for the update. Please be aware that I will be coordinating with Jessica for site intervention and resolution of the issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-17T04:10:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e7d7fa9c-cf97-6bd7-bf26-81fa0cf6a7e5",
+            "subject": "Status Update: 17/03/2025",
+            "body": "Charger is updated to FW 5.0.23 & there seems to be an issue with router1 connectivity,\nIt can be either LAN cable or router failure\nNeed to have an intervention.\nCharger FW update :\n2025-03-13T05:57:11.053522\n+00:00 sicharge-cp [daemon:info] sh[491]: booted image version: v5.0.23-0-ga7b036a 2024-12-05 08:47:27+00:00,2025-03-13 13:43:39.058,",
+            "date": "2025-03-17T04:25:59Z",
+            "extra": {}
+        },
+        {
+            "id": "94b047f0-118c-b873-82c1-e47736510b7c",
+            "subject": "Notes from ES to NOC [ 19/03/2025]",
+            "body": "Problem Description\n: XF3 ( SCB router) Faulty or LAN cable problem\nSuspected Root Cause\n: Router failure\nAction Performed: Analyzed the log & communication to RC\nCharger SW Version\n: 5.0.23\nFault history: Charger had an issue with XF4 FW update - Manually updated the router and solved the issue. But during the FW update connection with XF3 lost.\nLog analysis with timestamp:\nAttachment:\nAction Required by NOC: Please move the parent case to Rc queue for site intervention & share the Trouble shooting steps",
+            "date": "2025-03-19T04:04:13Z",
+            "extra": {}
+        },
+        {
+            "id": "fe29b3ee-6009-f011-bae3-6045bddf319c",
+            "subject": "0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026",
+            "body": "Bonjour Franck,\nJ’ai appris que tu interviendras sur la borne 2 de Brumath Est ce mercredi 26/03. La borne est toujours dans le même état.\nJe suis passé sur site et ai remarqué que la porte ne ferme pas très bien. Une fois la porte fermée, l’espacement entre la porte et le bâtis est plus important que sur les bornes voisines.\nPourras-tu stp vérifier que la borne ne se met pas en erreur à cause du capteur de porte lors de ton départ et faire le nécessaire en cas de besoin ?\nMerci d’avance,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 17 mars 2025 05:14\nÀ :\nHURAND Thibaut (ENGIE Mobilités Electriques) <thibaut.hurand@engie.com>\nCc :\nMINA, JESSICA (RC-FR SI E) <jessica.mina@siemens.com>\nObjet :\nRE: 0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026\nDear Thibaut Hurand, Thank you so much for the update. Please be aware that I will be coordinating with Jessica for site intervention and resolution of the issue. With best regards, eMobility Tech Support Team - Sambath.\nK.\nS -------------------\nDear Thibaut Hurand,\nThank you so much for the update. Please be aware that I will be coordinating with Jessica for site intervention and resolution of the issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-25T10:07:23Z",
+            "extra": {
+                "sender": "thibaut.hurand@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "830439f4-6009-f011-bae2-7c1e52fb366d",
+            "subject": "Email sent to a closed case 'ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) (0412115)' CRM:00225180859",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0412115\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-25T10:07:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a9171d6-6a09-f011-bae2-7c1e528740ed",
+            "subject": "RE: 0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026",
+            "body": "Salut thibaut\nJe n’interviendrai pas demain j’ai du décaler mon intervention.\nMais je regarderai la porte.\nfranck\nDe :\nthibaut.hurand@engie.com <thibaut.hurand@engie.com>\nEnvoyé :\nmardi 25 mars 2025 11:07\nÀ :\nLe Gal, Franck (RC-FR SI E SAL SVC) <franck.legal@siemens.com>\nCc :\nMINA, JESSICA (RC-FR SI E EXE) <jessica.mina@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; BRUA, ANTOINE (RC-FR SI E SAL SVC) <antoine.brua@siemens.com>\nObjet :\n0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026\nBonjour Franck,\nJ’ai appris que tu interviendras sur la borne 2 de Brumath Est ce mercredi 26/03. La borne est toujours dans le même état.\nJe suis passé sur site et ai remarqué que la porte ne ferme pas très bien. Une fois la porte fermée, l’espacement entre la porte et le bâtis est plus important que sur les bornes voisines.\nPourras-tu stp vérifier que la borne ne se met pas en erreur à cause du capteur de porte lors de ton départ et faire le nécessaire en cas de besoin ?\nMerci d’avance,\nCordialement,\nThibaut HURAND\nIngénieur d’Exploitation\n06.65.69.29.42\nthibaut.hurand@engie.com\nengie-vianeo.com\n16 avenue de l'Europe\nImmeuble SXB1\n67300 Schiltigheim\nDe :\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nEnvoyé :\nlundi 17 mars 2025 05:14\nÀ :\nHURAND Thibaut (ENGIE Mobilités Electriques) <\nthibaut.hurand@engie.com\n>\nCc :\nMINA, JESSICA (RC-FR SI E) <\njessica.mina@siemens.com\n>\nObjet :\nRE: 0412115 - ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) CRM:00646000026\nDear Thibaut Hurand, Thank you so much for the update. Please be aware that I will be coordinating with Jessica for site intervention and resolution of the issue. With best regards, eMobility Tech Support Team - Sambath.\nK.\nS -------------------\nDear Thibaut Hurand,\nThank you so much for the update. Please be aware that I will be coordinating with Jessica for site intervention and resolution of the issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-25T11:18:15Z",
+            "extra": {
+                "sender": "franck.legal@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "900950da-6a09-f011-bae3-7c1e5236eee4",
+            "subject": "Email sent to a closed case 'ID0411877-DC/Si-D/FR- [ Y2 / PD 312571675/22] Firmware Update (C1) (0412115)' CRM:00225180892",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0412115\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-25T11:18:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "859947e0-ca8a-9b2b-95cb-b81c5a3480e9",
+            "subject": "Rapport d'intervnetion ",
+            "body": "",
+            "date": "2025-04-09T07:32:00Z",
+            "extra": {}
+        }
+    ]
+}

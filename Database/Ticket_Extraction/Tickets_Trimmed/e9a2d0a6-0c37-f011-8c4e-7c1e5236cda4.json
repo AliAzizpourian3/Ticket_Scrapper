@@ -1,0 +1,270 @@
+{
+    "incident_id": "e9a2d0a6-0c37-f011-8c4e-7c1e5236cda4",
+    "ticket_number": "0426308",
+    "title": "ID0426308-DC/Si-D/IT[ATAC] - DNS server in XF4",
+    "created_on": "2025-05-22T13:00:02Z",
+    "last_activity": "2025-12-16T14:00:50Z",
+    "age": "15482",
+    "description": "Reported behaviour/issue:\nInsert DNS server configuration in XF4\nSolution:\nInsert 8.8.8.8 in WAN configuration of Wired",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "x60oJ5",
+    "stage": null,
+    "serial_number": "MP/SNT1170004337",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "3198aea7-0c37-f011-8c4e-6045bdde4786",
+            "subject": "ATAC Roma - XF4 check",
+            "body": "Ciao Reetesh,\nCan you please double check the configuration of the following charger on the XF4?\n4375\n4323\n4329\n4328\n4337\n4325\n4360\nThe technician is not able to ping them.\nThank you.\nWith best regards,\nMatteo Malacrida\nSIEMENS S.p.A.\nRC-IT SI E CS\nVia Privata Vipiteno, 4\n20128 Milano MI, Italy\nMobile: +39 3499876816\nMail:\nmatteo.malacrida@siemens.com",
+            "date": "2025-05-22T12:59:57Z",
+            "extra": {
+                "sender": "matteo.malacrida@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "52b67e03-0d37-f011-b4cb-7c1e52fb7baa",
+            "subject": "Re: ATAC Roma - XF4 check",
+            "body": "From:\nMALACRIDA, Matteo (RC-IT SI E CS) <matteo.malacrida@siemens.com>\nSent:\nThursday, May 22, 2025 6:29:37 PM\nTo:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nSharma, Reetesh Kumar (SI E CS TS NOC) <sharma.reetesh@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nSubject:\nATAC Roma - XF4 check\nCiao Reetesh,\nCan you please double check the configuration of the following charger on the XF4?\n4375\n4323\n4329\n4328\n4337\n4325\n4360\nThe technician is not able to ping them.\nThank you.\nWith best regards,\nMatteo Malacrida\nSIEMENS S.p.A.\nRC-IT SI E CS\nVia Privata Vipiteno, 4\n20128 Milano MI, Italy\nMobile: +39 3499876816\nMail:\nmatteo.malacrida@siemens.com",
+            "date": "2025-05-22T13:02:33Z",
+            "extra": {
+                "sender": "sharma.reetesh@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e4e7bbca-1137-f011-b4cb-7c1e523701e3",
+            "subject": "A new case manager was assigned to 0426308 CRM:00225204550",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0426308 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e9a2d0a6-0c37-f011-8c4e-7c1e5236cda4",
+            "date": "2025-05-22T13:36:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1afa823e-1637-f011-8c4d-000d3ad97a58",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002674",
+            "body": "Hi guys, sending via ISP because I answered to the email directly\n4375 is up\n4323 is correct but not coming up\n4329 same history:\n4328 same\n4337 same\n4325 same\n4360 same\nI double checked and reapplied all the configs but doesn’t seem to improve. It seems everything is correct, please let me know if I missed anything.",
+            "date": "2025-05-22T14:08:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b6581bf3-1637-f011-8c4d-000d3ad97a58",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002674",
+            "body": "Ciao Luca,\nI would advise comparing on site what is the difference between 4375 and the others, since this one is online it must have the same kind of configuration and access as the others.\nBest regards,\nFrancisco",
+            "date": "2025-05-22T14:13:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "29fd2391-be37-f011-8c4d-7c1e523508ba",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002674",
+            "body": "Ciao guys, good morning.\nFrom our side, there is nothing else we can provide. I would recommend you to go to site and bring a spare router to test if the problem is related to HW.\nUnlike the old version, we cannot ascertain if the WAN port is faulty or similar.\nThere are only 3 things to check:\nEthernet cable to the correct router in the WAN port\nAny damage on the cable\nTry swapping the cable\nRouter is faulty\nCustomer's configurations are not correct or IP is already in use in the network.\nSince I am not able to provide more support I will forward this ticket to your queue. As always, if you need support just reach out to me via M.Teams.\nThanks and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-05-23T10:13:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "378b6991-bf37-f011-8c4d-7c1e523508ba",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Dear Colleagues, please follow the instructions on the previous email.\nI am writing to formally inform that we are moving case 0426308 ﻿from the\nTechnical Support\nto the\neMobility RC-\nIT\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nIT\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-23T10:20:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0803b0eb-ec3a-f011-b4cb-6045bde12d6b",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello,\nWe performed a backup restore configuration to the following chargers and the issue has been fixed:\n- 170004323: ok\n- 170004329: ok\n- 170004328: we must to check it\n- 170004337: we must to check it\n- 170004325:ok\n- 170004360: we must to check it\nFurthermore, please we have to update the WAN configuration of each -XF4 for all of the chargers with DNS: 8.8.8.8\nThank you very much,\nValerio Filocamo",
+            "date": "2025-05-27T11:22:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c6bc8f9-ee3a-f011-b4cc-7c1e52faf3c6",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello,\nWe performed a backup restore configuration to the following chargers and the issue has been fixed:\n- 170004323: ok\n- 170004329: ok\n- 170004328: we must to check it\n- 170004337: we must to check it\n- 170004325:ok\n- 170004360: we must to check it\nFurthermore, please we have to update the WAN configuration of each -XF4 for all of the chargers with DNS: 8.8.8.8\nThank you very much,\nValerio Filocamo",
+            "date": "2025-05-27T11:37:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "285de412-ef3a-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0426308 CRM:00225206582",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0426308 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e9a2d0a6-0c37-f011-8c4e-7c1e5236cda4",
+            "date": "2025-05-27T11:38:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd801207-983b-f011-b4cb-7c1e52343e60",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello Francisco,\nThank you very much for supporting  on the first batch of -XF4 configuration of the DNS.\nPlease, insert the DNS 8.8.8.8 into the following chargers:\n- 170004363\n-170004324\n-170004330\n-170004366\n-170004368\n-170004371\n-170004369\n-170004374\n-170004367\n-170004364\nThank you,\nValerio Filocamo",
+            "date": "2025-05-28T07:47:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "75558abc-983b-f011-b4cc-6045bddf319c",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello Francisco,\nThank you very much for supporting  on the first batch of -XF4 configuration of the DNS.\nPlease, insert the DNS 8.8.8.8 into the following chargers:\n- 170004363\n-170004324\n-170004330\n-170004366\n-170004368\n-170004371\n-170004369\n-170004374\n-170004367\n-170004364\nThank you,\nValerio Filocamo",
+            "date": "2025-05-28T07:52:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e8db2097-9e3b-f011-b4cb-7c1e52350ea5",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hi Valerio,\nAll chargers done. Will wait for the next list.\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-28T08:34:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df9aad1e-a73b-f011-b4cc-6045bddf319c",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello,\nThanks a lot for your support.\nPlease, update the DNS 8.8.8.8 for the following chargers:\n-170004362\n-170004334\n-170004339\n-170004331\n-170004300\n-170004328\n-170004337\n-170004325\n-170004338\n-170004336\n-170004360\nThank you very much.\nThen it will be the last batch of chargers.\nThanks,\nValerio Filocamo",
+            "date": "2025-05-28T09:35:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dfc3c3b3-a73b-f011-b4cb-7c1e52768c07",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello,\nThanks a lot for your support.\nPlease, update the DNS 8.8.8.8 for the following chargers:\n-170004362\n-170004334\n-170004339\n-170004331\n-170004300\n-170004328\n-170004337\n-170004325\n-170004338\n-170004336\n-170004360\nThank you very much.\nThen it will be the last batch of chargers.\nThanks,\nValerio Filocamo",
+            "date": "2025-05-28T09:39:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae562f46-af3b-f011-b4cb-7c1e52350ea5",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hi Valerio,\nChanges done, waiting for the next batch.\nBR,\nFrancisco",
+            "date": "2025-05-28T10:34:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f14d84f0-5f3c-f011-b4cc-7c1e5236e32d",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hi Valerio, good morning.\nDo you have more chargers to do?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-05-29T07:38:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1d6fafb-243d-f011-b4cc-6045bde0265d",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello Francisco,\nYou find below the last list of chargers:\n-170004372\n-170004373\n-170004375\n-170004379\n-170004376\n-170004380\n-170004365\n-170004370\n-170004377\n-170004326\n-170004378\nThank you very much,\nValerio Filocamo",
+            "date": "2025-05-30T07:09:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9138844f-253d-f011-b4cb-6045bde12d6b",
+            "subject": "RE: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello Francisco,\nYou find below the last list of chargers:\n-170004372\n-170004373\n-170004375\n-170004379\n-170004376\n-170004380\n-170004365\n-170004370\n-170004377\n-170004326\n-170004378\nThank you very much,\nValerio Filocamo",
+            "date": "2025-05-30T07:11:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "40c598e1-373d-f011-b4cc-6045bde0265d",
+            "subject": "ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hi Valerio,\nAll the chargers are offline, do you know if anything happened?\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-30T09:24:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "251c242b-383d-f011-b4cc-7c1e5236eee4",
+            "subject": "R: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello Francisco,\nI think they switched off the cabinet.\nI will let you know when they are online again.\nThank you very much,\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nItaly\nSmart Infrastructure\nProposal & Channel Partners\nRC-IT SI E PROP&CP\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nvenerdì 30 maggio 2025 11:25\nA:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>\nOggetto:\nID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681\nHi Valerio,\nAll the chargers are offline, do you know if anything happened?\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-30T09:26:32Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "00a5257f-5d3d-f011-b4cc-6045bde0265d",
+            "subject": "R: ID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681",
+            "body": "Hello,\nThey are online again.\nThank you,\nValerio Filocamo\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nvenerdì 30 maggio 2025 11:25\nA:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>\nOggetto:\nID0426308-DC/Si-D/IT[ATAC] - XF4 config CRM:00315002681\nHi Valerio,\nAll the chargers are offline, do you know if anything happened?\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-30T13:53:49Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "34e8527c-693d-f011-b4cc-6045bde0265d",
+            "subject": "Ticket 0426308 has been closed. Are you satisfied with our provided solution? CRM:00315002700",
+            "body": "Dear Valerio, all changes have been applied.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0426308\nwith the title:\nID0426308-DC/Si-D/IT[ATAC] - DNS server in XF4\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-30T15:19:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

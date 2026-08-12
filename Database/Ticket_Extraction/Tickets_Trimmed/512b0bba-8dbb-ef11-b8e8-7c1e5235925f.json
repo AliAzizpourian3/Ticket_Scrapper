@@ -1,0 +1,475 @@
+{
+    "incident_id": "512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+    "ticket_number": "0395699",
+    "title": "ID0395699-DC/Si-D/NO-[MP / S0 170004167] Charger power limitation issue.",
+    "created_on": "2024-12-16T09:11:34Z",
+    "last_activity": "2026-01-20T12:58:52Z",
+    "age": "145490",
+    "description": "Reported behavior/issue:\nCharger power limitation issue.\nRoot cause: EV_TarVol is\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status: Active\nMP / S0 170004167\nMP / S0 170004170\nNote from L3:\nCase reported to R&D EVC3-8398 - EMOB-16855",
+    "type": 3,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S0 170004167,MP / S0 170004170,MP / S0 170004167",
+    "case_nature_code": 580000001,
+    "chargerID": "bucVuF, BAobBx",
+    "additional_info": [
+        {
+            "id": "9d91c8b6-8dbb-ef11-b8e9-0022489bcff4",
+            "subject": "SID  limiting to 100A ID: bucVuF and ID: BAobBx",
+            "body": "HI Support,\nWe have seen a hard limitation in charging current at SID in customer project. SID is limiting the charging to 100A both outlets in parallel, first case (vehicle can not be root cause). We have also seen that effect once if only one vehicle was charging (second case). The chargers are located in Oslo/Norway. Temperature was around -3 degree. Vehicles we were charging are busses with up to 280kW charging power. At that point in time vehicle was not limiting, see also charging session directly after affected session (first case).\nFirst case (parallel charging)\nTimestamp: Dec 11, 11:00am GMT or alternative: Dec 13, 9:01 AM GMT\nSID ID: bucVuF\nSecond case (single charging)\nTimestamp: Dec 13, 11:59am GMT  or alternative: Dec 16, 8:28 AM GMT\nSID ID: BAobBx\nWith best regards,\nBenjamin Kuppler\nSiemens AG\nSmart Infrastructure\nDepotCo – Emerging Transportation Platform\nSI CTO ETP\nSiemenspromenade 10\n91058 Erlangen, Germany\nMobile: +49 1734297957\nmailto:benjamin.kuppler@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2024-12-16T09:11:26Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1b79ab2a-9cbb-ef11-b8e8-7c1e5237815f",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225138917",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2024-12-16T10:54:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a226a33c-a0bb-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Dear Benjamin,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S0 170004167\nChargerID/Serial No.\n:\nbucVuF, BAobBx\nProblem Description\n: Charger power limitation issue.\nPlease allow us some time to analyze the issue, and we will get back to you shortly.\nFor future reference, your ticket number is\n0395699\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T11:23:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d533e89-adbb-ef11-b8e8-000d3ab41b62",
+            "subject": "RE: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Benjamin,\nGreetings of the day!\nWe have analyzed the logs for the specific date and time you provided, and we appreciate you sharing the precise details, as it has helped us analyze the logs more efficiently. The log snapshots I’ve shared below show that the EV functions as the Master, while the charger functions as the Slave. The charger provided the current and voltage that the EV demanded.\nAs observed in the multiple session logs, the EV's target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to 80% State of Charge (SOC) using CC, and then it gradually switches to CV mode based on the EV's requirements. During this phase, the EV's target current decreases to protect the battery from thermal runaway and to ensure proper cell balancing.\nIt is charging, but at a very low power, which is causing it to take much longer, since the EV is not adjusting the current and is sticking to 100A. As you can see, the EV's SOC is changing, but very slowly.\nCharger : bucVuF\nCharger : BAobBx\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this resolves your concerns. If you have no further questions, may we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T12:59:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3fb755c3-57bc-ef11-b8e8-7c1e52365989",
+            "subject": "RE: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Benjamin,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T09:17:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56f173b7-58bc-ef11-b8e8-000d3ab41b62",
+            "subject": "AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi,\nthanks for detailed explanation.\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A?\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr?\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur?\nWhere do you see that charger operates in CC or CV mode?\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC?\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below…\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?\nAppreciate your feedback!\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 16. Dezember 2024 14:26\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHi Benjamin,\nGreetings of the day!\nWe have analyzed the logs for the specific date and time you provided, and we appreciate you sharing the precise details, as it has helped us analyze the logs more efficiently. The log snapshots I’ve shared below show that the EV functions as the Master, while the charger functions as the Slave. The charger provided the current and voltage that the EV demanded.\nAs observed in the multiple session logs, the EV's target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to 80% State of Charge (SOC) using CC, and then it gradually switches to CV mode based on the EV's requirements. During this phase, the EV's target current decreases to protect the battery from thermal runaway and to ensure proper cell balancing.\nIt is charging, but at a very low power, which is causing it to take much longer, since the EV is not adjusting the current and is sticking to 100A. As you can see, the EV's SOC is changing, but very slowly.\nCharger : bucVuF\nCharger : BAobBx\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this resolves your concerns. If you have no further questions, may we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T09:24:30Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "38808945-7cbc-ef11-b8e8-7c1e52365989",
+            "subject": "RE: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Benjamin,\nPlease find the reponses to the questions asked.\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A? :\nIt happens quite often with EVs that the continuous current demand for the charging session is limited.\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr? :\nThe charger can deliver more current only if the EV demands it. Since the EV is demanding 100A, the charger does not increase its power. If there is parallel charging, the charger will automatically reduce the power on one outlet and increase it on the other.\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur? :\nNo\nWhere do you see that charger operates in CC or CV mode?\nThe CC and CV modes I explained in my previous email represent the ideal way of charging any EV in the mobility business. The percentage should vary accordingly, but the ideal condition is 80%. This is theoretical, not practical.\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC? I\ncan't comment on it, as it varies from vehicle to vehicle, battery SOC, and the ambient temperature inside and outside the EV.\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below… :\nAfter re-plugging, the increased current demand is purely from the EV side. If the EV is demanding higher current and our charger (EVSE) is delivering lower current, then that would be an issue.\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?  :\nIf it’s a limitation from the EV side, we can’t address it. As we can see, there is no issue from the EVSE side.\nMaybe you have sent two more timestamps in your previous email. I'll analyze both of them and check if there is an issue from the EVSE side or if the EVSE is delivering low power.\nSID ID: bucVuF, Dec 13, 9:01 AM GMT\nSID ID: BAobBx, Dec 16, 8:28 AM GMT\nPlease give me some time to analyze the above timestamps as well.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T13:39:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ad8cf87e-8fbc-ef11-b8e8-7c1e52378e9b",
+            "subject": "AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "HI Shrey,\nAdditional feedback/questions:\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A? :\nIt happens quite often with EVs that the continuous current demand for the charging session is limited.\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr? :\nThe charger can deliver more current only if the EV demands it. Since the EV is demanding 100A, the charger does not increase its power. If there is parallel charging, the charger will automatically reduce the power on one outlet and increase it on the other.\nYES charger will NOT increase power by delivering more current (\nEVSE_NowCurr will be stable). BUT\nabout\nEVSE_MaxCur:\nthat’s not correct if you see the example below -> first charger is increasing\nEVSE_MaxCur EVEN if EV requires less, and then vehicle follows -> means charger was limiting\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur? :\nNo\nWhere do you see that charger operates in CC or CV mode?\nThe CC and CV modes I explained in my previous email represent the ideal way of charging any EV in the mobility business. The percentage should vary accordingly, but the ideal condition is 80%. This is theoretical, not practical.\nYou don’t get myx point, question was if there is any signal in the SCB logs where you can see in which mode the charging happens, CC or CV?\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC? I\ncan't comment on it, as it varies from vehicle to vehicle, battery SOC, and the ambient temperature inside and outside the EV.\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below… :\nAfter re-plugging, the increased current demand is purely from the EV side. If the EV is demanding higher current and our charger (EVSE) is delivering lower current, then that would be an issue.\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?  :\nIf it’s a limitation from the EV side, we can’t address it. As we can see, there is no issue from the EVSE side.\nSure, if vehicle is limiting it is not our topic BUT this is also not the point. Again, please see first screenshot.\nfirst charger is increasing\nEVSE_MaxCur EVEN if EV requires less, and then vehicle follows -> means charger was limiting. This is not according your logic you stated above!\nAppreciate your feedback and results\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 17. Dezember 2024 14:59\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nCc:\nLorimer, Martin (SI CTO ETP PPM&MK) <martin.lorimer@siemens.com>\nBetreff:\nRE: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHi Benjamin,\nPlease find the reponses to the questions asked.\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A? :\nIt happens quite often with EVs that the continuous current demand for the charging session is limited.\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr? :\nThe charger can deliver more current only if the EV demands it. Since the EV is demanding 100A, the charger does not increase its power. If there is parallel charging, the charger will automatically reduce the power on one outlet and increase it on the other.\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur? :\nNo\nWhere do you see that charger operates in CC or CV mode?\nThe CC and CV modes I explained in my previous email represent the ideal way of charging any EV in the mobility business. The percentage should vary accordingly, but the ideal condition is 80%. This is theoretical, not practical.\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC? I\ncan't comment on it, as it varies from vehicle to vehicle, battery SOC, and the ambient temperature inside and outside the EV.\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below… :\nAfter re-plugging, the increased current demand is purely from the EV side. If the EV is demanding higher current and our charger (EVSE) is delivering lower current, then that would be an issue.\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?  :\nIf it’s a limitation from the EV side, we can’t address it. As we can see, there is no issue from the EVSE side.\nMaybe you have sent two more timestamps in your previous email. I'll analyze both of them and check if there is an issue from the EVSE side or if the EVSE is delivering low power.\nSID ID: bucVuF, Dec 13, 9:01 AM GMT\nSID ID: BAobBx, Dec 16, 8:28 AM GMT\nPlease give me some time to analyze the above timestamps as well.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T15:56:38Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e4da5377-39bd-ef11-b8e9-002248a2b1bd",
+            "subject": "AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Support,\nplease check also this session from bucVuF\nrunning on DC2 at around 2024-12-18, 08:39:20\nThanks.\nVon:\nKuppler, Benjamin (SI CTO ETP PPM&MK)\nGesendet:\nDienstag, 17. Dezember 2024 16:57\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nLorimer, Martin (SI CTO ETP PPM&MK) <martin.lorimer@siemens.com>\nBetreff:\nAW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHI Shrey,\nAdditional feedback/questions:\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A? :\nIt happens quite often with EVs that the continuous current demand for the charging session is limited.\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr? :\nThe charger can deliver more current only if the EV demands it. Since the EV is demanding 100A, the charger does not increase its power. If there is parallel charging, the charger will automatically reduce the power on one outlet and increase it on the other.\nYES charger will NOT increase power by delivering more current (\nEVSE_NowCurr will be stable). BUT\nabout\nEVSE_MaxCur:\nthat’s not correct if you see the example below -> first charger is increasing\nEVSE_MaxCur EVEN if EV requires less, and then vehicle follows -> means charger was limiting\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur? :\nNo\nWhere do you see that charger operates in CC or CV mode?\nThe CC and CV modes I explained in my previous email represent the ideal way of charging any EV in the mobility business. The percentage should vary accordingly, but the ideal condition is 80%. This is theoretical, not practical.\nYou don’t get myx point, question was if there is any signal in the SCB logs where you can see in which mode the charging happens, CC or CV?\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC? I\ncan't comment on it, as it varies from vehicle to vehicle, battery SOC, and the ambient temperature inside and outside the EV.\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below… :\nAfter re-plugging, the increased current demand is purely from the EV side. If the EV is demanding higher current and our charger (EVSE) is delivering lower current, then that would be an issue.\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?  :\nIf it’s a limitation from the EV side, we can’t address it. As we can see, there is no issue from the EVSE side.\nSure, if vehicle is limiting it is not our topic BUT this is also not the point. Again, please see first screenshot. first charger is increasing\nEVSE_MaxCur EVEN if EV requires less, and then vehicle follows -> means charger was limiting. This is not according your logic you stated above!\nAppreciate your feedback and results\nBR Benjamin\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nDienstag, 17. Dezember 2024 14:59\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <\nbenjamin.kuppler@siemens.com\n>\nCc:\nLorimer, Martin (SI CTO ETP PPM&MK) <\nmartin.lorimer@siemens.com\n>\nBetreff:\nRE: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHi Benjamin,\nPlease find the reponses to the questions asked.\nI am a little bit skeptical about that because there are two different vehicles with 19% SOC and 50%SOC limiting both to exactly 100A? :\nIt happens quite often with EVs that the continuous current demand for the charging session is limited.\nAnd why is EVSE_MaxCur then set to 100A as well. Charger could offer more and giving 100A in CC mode via EVSE_NowCurr? :\nThe charger can deliver more current only if the EV demands it. Since the EV is demanding 100A, the charger does not increase its power. If there is parallel charging, the charger will automatically reduce the power on one outlet and increase it on the other.\nOr is it the case that in CC the values of: EVSE_MaxCur= EVSE_NowCurr=EV_TarCur? :\nNo\nWhere do you see that charger operates in CC or CV mode?\nThe CC and CV modes I explained in my previous email represent the ideal way of charging any EV in the mobility business. The percentage should vary accordingly, but the ideal condition is 80%. This is theoretical, not practical.\nWould you say that this type of vehicle is always charging in CC until 80%SOC and charging in CV after 80% SOC? I\ncan't comment on it, as it varies from vehicle to vehicle, battery SOC, and the ambient temperature inside and outside the EV.\nI am also wondering, if you check the charging session after the mentioned one of bucVuF, we unplugged the vehicle and plugged it again. Then vehicle was charging with full power. So, why should vehicle jump to much higher current demand after re-plug? But maybe better example see below… :\nAfter re-plugging, the increased current demand is purely from the EV side. If the EV is demanding higher current and our charger (EVSE) is delivering lower current, then that would be an issue.\nPlease see also log below from BAobBx, charging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target! And see second screenshot at same charging session, there is a clear limitation from EV. This two sequences does contradict your statements that vehicle is limiting factor in the “100A case”, agree?  :\nIf it’s a limitation from the EV side, we can’t address it. As we can see, there is no issue from the EVSE side.\nMaybe you have sent two more timestamps in your previous email. I'll analyze both of them and check if there is an issue from the EVSE side or if the EVSE is delivering low power.\nSID ID: bucVuF, Dec 13, 9:01 AM GMT\nSID ID: BAobBx, Dec 16, 8:28 AM GMT\nPlease give me some time to analyze the above timestamps as well.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-18T12:13:22Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1a9be79f-5abd-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Benjamin,\nCould you please let us know if the same vehicle was used in all the charging sessions? If not, please provide the EV manufacturers along with their models.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-18T16:10:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6fa621d3-251f-2c49-8e49-7e1eb3d94b2f",
+            "subject": null,
+            "body": "AI :  This needs to be discussed with the ES team to determine if there are any differences in charging the EVs on the 400kW charger. Attached are the specific logs for both chargers. I have also asked the customer to provide the EV details.",
+            "date": "2024-12-18T16:10:53Z",
+            "extra": {}
+        },
+        {
+            "id": "abe67202-89fd-cebe-a307-4d471a4f38af",
+            "subject": null,
+            "body": "",
+            "date": "2024-12-18T16:13:31Z",
+            "extra": {}
+        },
+        {
+            "id": "8842a422-b8ef-3713-beeb-a0d325fbe6e6",
+            "subject": null,
+            "body": "",
+            "date": "2024-12-18T16:13:54Z",
+            "extra": {}
+        },
+        {
+            "id": "ebd0f905-40a5-e7d8-a3e5-125a902caf3a",
+            "subject": null,
+            "body": "",
+            "date": "2024-12-18T16:14:18Z",
+            "extra": {}
+        },
+        {
+            "id": "ee2d6f06-497f-806c-be22-13de2ef000c9",
+            "subject": null,
+            "body": "",
+            "date": "2024-12-18T16:14:45Z",
+            "extra": {}
+        },
+        {
+            "id": "6a298c9d-5bbd-ef11-b8e8-000d3a691687",
+            "subject": "AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi,\nthe depot operates Solaris busses type Urbino nE18. The sessions were done with different busses  from same typ. To be sure please check MAC address we used for authorization.\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 18. Dezember 2024 17:13\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nCc:\nLorimer, Martin (SI CTO ETP PPM&MK) <martin.lorimer@siemens.com>\nBetreff:\nRE: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHi Benjamin,\nCould you please let us know if the same vehicle was used in all the charging sessions? If not, please provide the EV manufacturers along with their models.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-18T16:17:54Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e518e33f-03be-ef11-b8e9-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225140807",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2024-12-19T12:17:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "afebb064-2ebe-ef11-b8e9-7c1e5235e725",
+            "subject": "RE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello Benjamin,\nThank you for the information.\nWe will discuss this with experts and will get back to you as soon as possible with an update.\nThank you.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-19T17:26:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b22206e9-19c0-ef11-b8e9-0022489bcff4",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225141529",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2024-12-22T04:05:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8fad96d-7ec5-ef11-b8e9-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225142840",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2024-12-29T00:47:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74110b3c-1ccc-ef11-8ee9-000d3ad8afdd",
+            "subject": "RE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello,\nThank you for your patience, we are working your ticket with the experts.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-06T10:51:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "94040c6e-57cc-ef11-b8e9-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225144697",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2025-01-06T17:55:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f12c84bb-afcc-ef11-b8e8-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225144805",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2025-01-07T04:27:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "126ae1fb-6de3-119e-9ea1-7c9efe86c745",
+            "subject": "Note to L2",
+            "body": "",
+            "date": "2025-01-07T04:37:31Z",
+            "extra": {}
+        },
+        {
+            "id": "8b68cd3e-83cd-ef11-b8e8-000d3ab009dd",
+            "subject": "0395699 - ID0395699-DC/Si-D/NO-[MP / S0 170004167] Charger power limitation issue. CRM:00921001464",
+            "body": "Dear\nXiyou Zeng,\nGreetings of the day!\nAs discussed, could you please check and confirm the asset details for charger serial numbers-\nMP / S0 170004167\nand\nMP / S0 170004170\nin the ISP database?\nThanks & Regards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-08T05:41:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07264e30-6cc6-b6d1-afce-672a2e836058",
+            "subject": "Note to L2",
+            "body": "Checked charging sessions in both Parallel & single charging-Both are different MAC id. (\nDC2 at around 2024-12-18, 08:39:20)\nFor charger id (bucVuF) in parallel charging→\nIt observed that where the current (EVSE_NowCur[A]) is not varying as expected, dropping significantly, and the voltage (EVSE_NowVol[V]) is constant. Additionally, the target current (EV_TarCur[A]) is not being met. But no issue on DC1.\n2024-12-18T08:40:11.261277+00:00 swcpu [user:debug] |2024-12-18T08:23:28|\nDC2\n|EVSE_MaxPwr[kW]=200|EVSE_MaxCur[A]=300\n|EVSE_NowPwr[kW]=49.4\n|EVSE_NowCur[A]=74|\nEVSE_NowVol[V]=666\n|EV_TarCur[A]=299\n|\nEV_TarVol[V]=755|EV_SOC[%]=46|EVSE_DESpwr[kW]=310|Pilot=4\n2.\nFor charger id (bucVuF) in single charging→\nIn this case, it was observed that\nEV_TarCur[A]\nwas at its maximum level, but\nEVSE_NowVol[V]\nremained constant, and\nEVSE_NowCur[A]\ndropped drastically.\n2024-12-18T09:19:00.213231+00:00 swcpu [user:debug] |2024-12-18T08:23:28|\nDC2\n|EVSE_MaxPwr[kW]=388|EVSE_MaxCur[A]=444|EVSE_NowPwr[kW]=12\n|EVSE_NowCur[A]=18\n|EVSE_NowVol[V]=667\n|EV_TarCur[A]=400|\nEV_TarVol[V]=755|EV_SOC[%]=48|EVSE_DESpwr[kW]=310|Pilot=4",
+            "date": "2025-01-09T05:56:20Z",
+            "extra": {}
+        },
+        {
+            "id": "473ea867-9642-5062-96a8-4fa5f1ddc46d",
+            "subject": "Note to l2",
+            "body": "Charging session for BAobBx-→ EV was different MAC ID than previous analysis.\nCharging at fix 100A, then the Charger starts to increase EVSE_MaxCurr and after that vehicle set higher target!  (Required EcoG logs)",
+            "date": "2025-01-09T06:33:30Z",
+            "extra": {}
+        },
+        {
+            "id": "a4c448b8-53ce-ef11-b8ea-002248a2b1bd",
+            "subject": "RE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello Benjamin,\nHope you are doing well.\nWe apologize for the delayed response. Have you observed the same issue in recent days? If so, please provide the timestamp so we can retrieve the EcoG logs for further analysis. Unfortunately, the logs for Dec'24 month are not available.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-09T06:34:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04ed5cfc-26b6-94be-9318-630ec0f572b9",
+            "subject": "Note to L2",
+            "body": "Parallel charging-\n18-12-2024, [DC2] EV MAC Id-001681036c1e\n18-12-2024, [DC1]-EV MAC ID-00.16.81.08.ee.cc\n16-12-2024, [DC2] Single charging -EV MAC id-00.16.81.03.6d.48",
+            "date": "2025-01-09T06:56:13Z",
+            "extra": {}
+        },
+        {
+            "id": "97e9aaad-39cf-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Dear Benjamin,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0395699\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-10T10:00:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "907b13ed-1e6c-9730-8c57-8ea0de2ca418",
+            "subject": "Note to L2",
+            "body": "Asked to RC for timestamp of recent charging session when the similar issue reported. EcoG logs may require for further analysis. For details, please go through the mentioned timelines.\nAdditional info\n-Regarding asset data missing, please refer OneNote on JF-NOC.",
+            "date": "2025-01-10T10:03:55Z",
+            "extra": {}
+        },
+        {
+            "id": "6cbf4eb1-65cf-ef11-b8e9-6045bdde0ce3",
+            "subject": "AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi,\nSorry for late response, took some time to filter out the sessions.\nChargerID: bucVuF   at 03-01-25 was the session with longest duration. But there are several others with shorter duration. Please find table below.\ndepot_name\ndepot_id\ncharger_id\ncharger_transaction_id\nmeasurand\nunit\nvalue\nN_records\nEarliest_ts_utc\nAlnabru\n0J54Mdqi\n170004167\n663307953\nCurrent.Offered\nA\n100\n172\n2025-01-03 09:25:04\nAlnabru\n0J54Mdqi\n170004167\n663307953\nCurrent.Import\nA\n100\n79\n2025-01-03 10:58:05\nAlnabru\n0J54Mdqi\n170004167\n663318647\nCurrent.Offered\nA\n100\n75\n2025-01-03 12:23:19\nAlnabru\n0J54Mdqi\n170004167\n663318647\nCurrent.Import\nA\n100\n24\n2025-01-03 12:23:19\nAlnabru\n0J54Mdqi\n170004170\n395353281\nCurrent.Offered\nA\n100\n14\n2025-01-09 00:06:09\nAlnabru\n0J54Mdqi\n170004170\n395298767\nCurrent.Offered\nA\n100\n13\n2025-01-08 08:38:34\nAlnabru\n0J54Mdqi\n170004167\n395327714\nCurrent.Offered\nA\n100\n13\n2025-01-08 17:03:02\nAlnabru\n0J54Mdqi\n170004167\n394792934\nCurrent.Import\nA\n100\n11\n2025-01-02 13:10:01\nAlnabru\n0J54Mdqi\n170004169\n395355663\nCurrent.Offered\nA\n100\n11\n2025-01-09 00:54:50\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 10. Januar 2025 11:02\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nDear Benjamin,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0395699\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-10T15:15:16Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1575898d-64d0-ef11-8ee9-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225147303",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2025-01-11T21:39:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f20b3c2a-95d1-ef11-8ee9-000d3a66f576",
+            "subject": "AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi,\nnew session observed on Saturday 01-11.\nCharger ID:\n63EuY4\nVon:\nKuppler, Benjamin (SI CTO ETP PPM&MK)\nGesendet:\nFreitag, 10. Januar 2025 16:15\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHi,\nSorry for late response, took some time to filter out the sessions.\nChargerID: bucVuF   at 03-01-25 was the session with longest duration. But there are several others with shorter duration. Please find table below.\ndepot_name\ndepot_id\ncharger_id\ncharger_transaction_id\nmeasurand\nunit\nvalue\nN_records\nEarliest_ts_utc\nAlnabru\n0J54Mdqi\n170004167\n663307953\nCurrent.Offered\nA\n100\n172\n2025-01-03 09:25:04\nAlnabru\n0J54Mdqi\n170004167\n663307953\nCurrent.Import\nA\n100\n79\n2025-01-03 10:58:05\nAlnabru\n0J54Mdqi\n170004167\n663318647\nCurrent.Offered\nA\n100\n75\n2025-01-03 12:23:19\nAlnabru\n0J54Mdqi\n170004167\n663318647\nCurrent.Import\nA\n100\n24\n2025-01-03 12:23:19\nAlnabru\n0J54Mdqi\n170004170\n395353281\nCurrent.Offered\nA\n100\n14\n2025-01-09 00:06:09\nAlnabru\n0J54Mdqi\n170004170\n395298767\nCurrent.Offered\nA\n100\n13\n2025-01-08 08:38:34\nAlnabru\n0J54Mdqi\n170004167\n395327714\nCurrent.Offered\nA\n100\n13\n2025-01-08 17:03:02\nAlnabru\n0J54Mdqi\n170004167\n394792934\nCurrent.Import\nA\n100\n11\n2025-01-02 13:10:01\nAlnabru\n0J54Mdqi\n170004169\n395355663\nCurrent.Offered\nA\n100\n11\n2025-01-09 00:54:50\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 10. Januar 2025 11:02\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <\nbenjamin.kuppler@siemens.com\n>\nBetreff:\nRE: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nDear Benjamin,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0395699\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-13T10:00:13Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e5463468-acd1-ef11-8ee9-000d3ab009dd",
+            "subject": "RE: AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello,\nThank you for the update\nWe have requested for the EcoG logs, we will analyse them and get back to you\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T12:46:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e78cf6ea-61d3-ef11-8ee9-000d3a691687",
+            "subject": "AW: AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Team,\nany update on that?\nThanks\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 13. Januar 2025 13:49\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHello,\nThank you for the update\nWe have requested for the EcoG logs, we will analyse them and get back to you\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T16:58:28Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2903d695-bfd3-ef11-8ee9-000d3a691687",
+            "subject": "RE: AW: AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello,\nWe understand your concern; we are working your query yet.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T04:08:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "26995ec0-86cc-18aa-b5df-a9006c6fbacd",
+            "subject": "L2 to L3 ",
+            "body": "Reason to handover:  Requested for EcoG logs, and its analyses to ES joao.",
+            "date": "2025-01-16T04:13:02Z",
+            "extra": {}
+        },
+        {
+            "id": "35e85ec5-e8d3-ef11-8ee9-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0395699 CRM:00225149411",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0395699 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=512b0bba-8dbb-ef11-b8e8-7c1e5235925f",
+            "date": "2025-01-16T09:03:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fb851ad8-690f-ad8d-ac0a-a37d9d21fe77",
+            "subject": "New Case : ID0400611-DC/Si-D/NO-[bucVuF] SID Derates Power",
+            "body": "Please check behavior of ID: bucVuF\nPower should be at 120kW\nBR Benjamin",
+            "date": "2025-01-17T10:29:02Z",
+            "extra": {}
+        },
+        {
+            "id": "3521654b-5cdd-ef11-8ee9-002248a0b76d",
+            "subject": "[Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Team Emobility,\nWe have to escalate this issue since we have zero progress since 6 weeks!\nSecond ticket with similar but not same behavior:  ID0400611-DC/Si-D/NO-[bucVuF] SID Derates Power CRM:00798001739\n@Juelg, Markus (SI E CS TS)\n: We can see these two issues every day at customer site, please could you help here. Thanks\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 16. Januar 2025 05:11\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: AW: AW: AW: AW: AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nHello,\nWe understand your concern; we are working your query yet.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-28T09:43:20Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6d2edadf-2dde-ef11-8eea-000d3ab11939",
+            "subject": "RE: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello Benjamin,\nWe have identified the limitation to 100A as fault from the cooling unit. It's difficult to understand the issue because even in debug level, the logs don't provide the full information. We observed that this is affecting multiple chargers.\nI reported the case to R&D and 2 tickets were opened. First one is to identify the root cause for the limitation from the cooling unit and the second one is to improve the log register in those cases.\nI'm now waiting from automation team (R&D), to see what is needed from our side to fix the cooling pump.\nI will reach out to you as soon as I have news. If you need additional information, fell free to reach out to me by ISP email or by teams chat.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-01-29T10:43:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2135d7df-2fde-ef11-8eea-6045bdde0ce3",
+            "subject": "Automatische Antwort: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Thank you for your email. I'm sick.I will have only limited access to emails and mobile phone, and will respond to you as soon as possible.\nSorry for any inconvinience that might cause.",
+            "date": "2025-01-29T10:57:50Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "32abd911-2ff5-ef11-be1f-7c1e5236ec45",
+            "subject": "RE: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello Benjamin,\nThe issue about current limitation to 100A was fixed already on the new FW. R&D found some issues in the logic that a failure in the cooling pump would lead to a current limitation but even if the issue was not present anymore would not take out that limitation. Also, some improvement was done in the logic behind the liquid temperature readings from the cooling system and most important the new firmware have clear messages in the log reporting this current limitation reasons. That said I would suggest to close this ticket since there is no other activities needed from our side.\nLet me know if we can close it or additional information is needed.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-02-27T17:20:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b1a725e1-d2f5-ef11-be1f-7c1e52fb539c",
+            "subject": "AW: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hi Francisco,\nthanks for information and to fix that issue. One questions:\nWhich is the FW version where the fix is included? Is it in same hoxfix version applied for the “stuck in preparing” issue?\nHow can we see which charger the hotfix has applied? v6.0.3-0-g215cb74 give no indication, right?\nCould you please deploy the hotfix on our internal test charger ID: Ltik0e as well that we have it as a reference?\nThanks for good collaboration!!\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 27. Februar 2025 18:29\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nCc:\nLouro Cardoso, Joao Francisco (SI E CS SD ES) <joao.louro-cardoso@siemens.com>\nBetreff:\nRE: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165\nPriorität:\nHoch\nHello Benjamin,\nThe issue about current limitation to 100A was fixed already on the new FW. R&D found some issues in the logic that a failure in the cooling pump would lead to a current limitation but even if the issue was not present anymore would not take out that limitation. Also, some improvement was done in the logic behind the liquid temperature readings from the cooling system and most important the new firmware have clear messages in the log reporting this current limitation reasons. That said I would suggest to close this ticket since there is no other activities needed from our side.\nLet me know if we can close it or additional information is needed.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-02-28T12:52:39Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "421c2cf1-f9f5-ef11-be1f-7c1e523508ba",
+            "subject": "RE: AW: [Escalation needed] AW: ID0395699-DC/Si-D/DE-[MP / S0 170004167] Charger power limitation issue. CRM:00643001165",
+            "body": "Hello Benjamin,\nAnswering to your questions,\nWhich is the FW version where the fix is included?\nv6.1.3\nIs it in same hoxfix version applied for the “stuck in preparing” issue?\nNo, Hotfix include TIA v4.1.22, fix is done on TIA version 4.1.23 part of the new FWv6.1.3.\nHow can we see which charger the hotfix has applied?\nHotfixes are only installed with RC requests. Usually R&D and ES Team share a file to track those installations.\nv6.0.3-0-g215cb74 give no indication, right?\nCorrect, sometimes we leave a txt note on charger SCB page.\nCould you please deploy the hotfix on our internal test charger ID: Ltik0e as well that we have it as a reference?\nWe can install the hotfix but would make sense to test v6.1.3. (Hotfix is also included here) Let me know what you prefer.\nSince information is provided I think this ticket can be close. The test charger work doesn't need to be on this ticket and can be handle by TEAMS chat. I will be out until 6 of March, if you want to test this earlier check with ES team if they can do the installation otherwise I will do it on my return.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-02-28T17:32:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

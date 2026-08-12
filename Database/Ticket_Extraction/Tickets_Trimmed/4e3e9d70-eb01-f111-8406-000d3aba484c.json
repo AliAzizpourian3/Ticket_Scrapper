@@ -1,0 +1,185 @@
+{
+    "incident_id": "4e3e9d70-eb01-f111-8406-000d3aba484c",
+    "ticket_number": "0476510",
+    "title": "ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault",
+    "created_on": "2026-02-04T17:03:38Z",
+    "last_activity": "2026-05-20T11:12:37Z",
+    "age": "163921",
+    "description": "Reported behavior/issue: OCPP Fault\nOCPP Sending command\nStopTransaction\nSolution: NA\n2026-01-21T16:37:54\nreason\":\"PowerLoss",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cNkABV",
+    "stage": "In Progress",
+    "serial_number": "MP / NN 170000049",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7d17e76b-eb01-f111-8406-7ced8d2cafa9",
+            "subject": "Webform_incident_SiCharge D_04-02-2026_SN: MP / NN 170000049",
+            "body": "Dear Milan Klempay,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / NN 170000049\nThank you\neMobility Technical Support Team\nSehr geehrte/r Milan Klempay,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / NN 170000049\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-02-04T17:03:30Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5f64750b-ee01-f111-8407-7ced8d44dcb4",
+            "subject": "A new case manager was assigned to 0476510 CRM:00225331141",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0476510 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e3e9d70-eb01-f111-8406-000d3aba484c",
+            "date": "2026-02-04T17:22:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ce1b2814-ef01-f111-8407-7ced8d44d2c4",
+            "subject": "ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Dear\nMilan Klempay\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / NN 170000049\nChargerID\n:\ncNkABV\nProblem Description\n:\nOCPP Fault\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0476510\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAnit Mukherjee\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-04T17:29:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80624c9f-ef01-f111-8407-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0476510 CRM:00225331144",
+            "body": "Felipe Moraes was assigned as new Case Manager for case 0476510 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e3e9d70-eb01-f111-8406-000d3aba484c",
+            "date": "2026-02-04T17:33:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dedda3cb-f101-f111-8407-7ced8d44df3f",
+            "subject": "ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Dear Milan,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nWe have completed the technical analysis of the logs for the charging session you reported. Our data shows that the\nOCPP\nexperienced a temporary\noffline status\nduring the session.\nAccording to the logs, once the connection was restored, the\nOCPP\nautomatically issued a\n'StopTransaction'\ncommand.\nAs there was no error flags detected on the unit itself, the charger is functioning as intended.\nWe recommend checking with the\nBackend\nto verify this situation because on the logs, the \"\nStopTransaction\n\" is a command sent by the\nOCPP\n.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-04T17:49:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "42dbb77e-f301-f111-8407-7ced8d44df3f",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hello Felipe,\nCould you please check one more time?\nDriivz (backend) is claiming that the StopTransaction is coming from us and to me it seems like it as well.\nPlease see attached file\n20260121_LogInterpretation\n. It would be very much appreciated if you could add to my comments.\nThank you very much for the prompt response.\nKind regards,\nMilan",
+            "date": "2026-02-04T18:01:15Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "08079d53-d289-3807-b00e-aaf035b518cd",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause\n: OCPP\nProblem Description\n: The client had many sessions dropped because of a message showing power loss.\nCharger SW Version\n:\n-\nv8.0.5-0-g33a6c1d\nReason for Handover (L3)\n: XXXXX\nFault history\n:\n- After share the information for the technician on this ticket. the information was accepted and we could close the ticket but the client said that it is not OCPP on their side causing it.\nID0472139-DC/Si-D/CZ-[MP / NN 170000049]PowerLoss\nOn this ticket we also have more screenshots about the same problem.\nLog analysis with timestamp\n:\n2026-01-21T16:37:54\nAction Required\nhttps://configuration.sicharge.technology/chargers/cNkABV/logs",
+            "date": "2026-02-06T10:55:56Z",
+            "extra": {}
+        },
+        {
+            "id": "7eede221-9605-f111-8407-000d3ab12cf3",
+            "subject": "A new case manager was assigned to 0476510 CRM:00225333336",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0476510 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e3e9d70-eb01-f111-8406-000d3aba484c",
+            "date": "2026-02-09T09:03:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33f28dd3-be08-f111-8407-000d3ab11fb1",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Dear Milan,\nI am reaching out in regards of ticket\nID0476510.\nI was handed over the ticket this week and took some time to analyze this complex case.\nLet me start by saying that I agree with your analysis shared in the Loginterpretation file:\nI checked on AWS, and this behavior happened 18 times between January and February.\nThe behavior is systematic, and I believe it is a combination of different issues:\nThe charger sends the StartTransaction when entering in P06.\nSystematically, we do not receive a response from the Backend, and the connection to the Backend drops off.\nIn my opinion, this could be generated by the Backend and not by the charger.\nAfter this, it starts what I believe the incorrect behavior of our charger:\nOnce the connection is re-established, we send again the start transaction and we receive the confirmation.\nThen we send the StopTransaction which includes the reason \"PowerLoss\". I checked on the OCPP 1.6 protocol, and the reason \"PowerLoss\" it is mentioned only in reference to a loss of power from the charger, while it seems we use it as if in relation with the loss of communication.\nAlso, we do not increase the metervalues, even though we have a clear energy transfer.\nI checked several sessions, and always found the same pattern. I believe the questions now are:\nWhy the connection to the Backend always drops after sending the StartTransaction and if this is a fault of the Backend.\nWhy we send another StartTransaction\nWhy we give as a reason to stop the \"PowerLoss\"\nWhy we do not increase the meter values.\nI am creating now a R&D ticket and escalate the issue to them. I will inform you as soon as I have updates.\nIn your opening email you stated that this behavior is happening only on this charger. Could you please confirm if no other charger is experiencing this?\nMany thanks in advance for your feedback.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-02-13T09:31:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "631cdc3b-8f0c-f111-8407-7ced8d44dfaf",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Dear Fosco,\nDo you have any update on this behaviour?\nWhy the connection to the Backend always drops after sending the StartTransaction and if this is a fault of the Backend.\nWhy we send another StartTransaction\nWhy we give as a reason to stop the \"PowerLoss\"\nWhy we do not increase the meter values.\nI can confirm that no similar complaints have been reported for other SichargeD units, either from this customer or any others\nBest regards,\nMilan",
+            "date": "2026-02-18T06:01:22Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4626d09f-c80c-f111-8407-7ced8d77f39b",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hi Milan,\nNo unfortunately I do not have developments yet. The topic was handed over to R&D on Friday and during this week it will be reviewed and assigned to R&D for first analysis.\nIt will take some time unfortunately but I will push to get a feedback at the soonest.\nI will come back to you as soon as possible with updates from R&D.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-02-18T12:52:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1c3f1d0d-7511-f111-8407-7ced8d44db54",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hello Fosco,\nThank you for pushing this topic forward. Looking forward to see what can bet he source of the issue in this case.\nThanks for coming back to me when once R&D comes with investigation results.\nBest,\nMilan",
+            "date": "2026-02-24T11:36:36Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bccb2fdf-3824-f111-8341-6045bde0c971",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hi Fosco,\nI hope you are doing well. During today´s Regular Touchpoint Field issues\n@Sambiagio, Michele (SI E EU CS TS)\npresented defecte #1 solution.\nIs defect #1 the same as we face under this ticket?\nWill FW v9.0 solve it for us?\nThank you for confirmation.\nKind regards,\nMilan Klempay\nService Engineer\nSiemens, s.r.o.\nSiemensova 1,\n155 00 Praha 13, Česká republika\nMobile: +420 737 800 426\nmailto:\nmilan.klempay@siemens.com",
+            "date": "2026-03-20T08:43:34Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "28b82da2-5b24-f111-8341-70a8a52f5853",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hello Milan,\nHope everything is good with you as well.\nI checked today this topic with R&D after your email. The rootcause in not related tot he EcoG outage communication, but an internal bug where the charger looses the OCPP Communication and does not allocate a transactionID to the outlet. R&D confirmed to me that this bug is under testing phase and it will be included in the upcoming FW\nv9.0 (\nexpected release CW15).\nSince the topic has been addressed by R&D and bugfix will be included in the upcoming FW version, please let me know if further support is required or we can close this ticket while waiting for the v9.0 release.\nlooking forward to hearing feedback form you.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-03-20T12:52:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b1cdce7-5c24-f111-8341-70a8a52f5853",
+            "subject": "RE: ID0476510-DC/Si-D/CZ-[MP / NN 170000049] OCPP Fault CRM:02888000574",
+            "body": "Hello Fosco,\nCan we just put the status of the ticket to\nOn hold\n? Once the\nFW v9.0 is released\nwe\nwill update immediately\nand check if it solved the problem with OCPP communication disruption.\nThank you for the support.\nBest,\nMilan",
+            "date": "2026-03-20T13:01:32Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "953b8c81-8ebc-6101-83a5-95bb3196f4c6",
+            "subject": "Status Update",
+            "body": "Waiting for FW v9.0.X to be released. Tests to be performed after FW update.\nTicket to stay open as per request form RC-CZ.",
+            "date": "2026-04-13T13:48:05Z",
+            "extra": {}
+        }
+    ]
+}

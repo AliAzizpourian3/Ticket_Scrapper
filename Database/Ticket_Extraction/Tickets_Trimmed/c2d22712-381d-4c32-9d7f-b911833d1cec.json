@@ -1,0 +1,119 @@
+{
+    "incident_id": "c2d22712-381d-4c32-9d7f-b911833d1cec",
+    "ticket_number": "0367161",
+    "title": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline",
+    "created_on": "2024-07-04T10:22:46Z",
+    "last_activity": "2025-12-16T14:07:38Z",
+    "age": "21498",
+    "description": "Reported behavior/issue:\nCharger is in a FailSafeMode and SCB connection is offline.\nRoot cause: Router 1 offline\nSolution: Replace Ethernet cable",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "Gz0OS6",
+    "stage": null,
+    "serial_number": "Y2 / R6 313099394005",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f3246661-ef39-ef11-8409-000d3a66e9e3",
+            "subject": "A new case manager was assigned to 0367161 CRM:00225065471",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0367161 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c2d22712-381d-4c32-9d7f-b911833d1cec",
+            "date": "2024-07-04T10:22:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20504c9d-f039-ef11-8409-6045bdddfe8e",
+            "subject": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline CRM:00315001552",
+            "body": "Hello ﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R6 313099394005\nChargerID/Serial No.\n:\nGz0OS6\nProblem Description\n: Charger offline in SCB for the second time in few days.\nTroubleshooting\n:\nAs I already mentioned to you, I believe that the router is working fine since you replaced it some time ago.\nMy feeling is that the power cable is not good or something is causing the Router to go offline/lose power\nLet's align later on the next steps\nFor future reference, your ticket number is\n0367161\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-04T10:31:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7671091a-033a-ef11-8409-000d3a66e9e3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 21 minutes and 22 seconds.",
+            "date": "2024-07-04T12:44:08Z",
+            "extra": {}
+        },
+        {
+            "id": "9bf8c2a8-ff3c-ef11-8409-0022489bbd8f",
+            "subject": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline CRM:00315001552",
+            "body": "Hello Markus,\nShould I send this ticket to your queue and you prepare for the site visit?\nAs soon as you know when you going there you can arrange a meeting with me or just call me when you are there.\nThank you!\nBest regards\nFrancisco",
+            "date": "2024-07-08T07:57:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54c49978-903e-ef11-8409-000d3ab1340c",
+            "subject": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201 CRM:00315001552",
+            "body": "Hi Markus,\nAfter yesterday's site visit, the Router was turned on but the Ethernet connection was not present. As such we were not able to reach the router.\nAfter you power cycle the router, it was working again.\nFrom what I shared, you replaced the router some 6 months ago, so  I don't believe the problem to be the router itself.\nWe replaced the Ethernet cable for the Router and we will monitor the behaviour from now on.\nWe also noticed that the APN was not correct which is impossible since we didn't perform any tasks on the router prior to being offline.\nRegarding the Dispenser PLC error → after a reboot we find this error → PLC not in operating state run, state=7\nWhat we found is the following:\nIf you shutdown the main unit from the display, dispenser plc is blinking and remains partially on. When bootin up main unit, dispenser plc is still blinking and stuck. But if you reboot, dispenser plc is coming back or if you power cycle the dispenser plc is also works again.\nI will try to understand what this State=7 means  since there is no information regarding this value and will come back to you.\nI will change the title to include the dispenser error too.\nThank you for your patience.\nBest regards,\nFrancisco",
+            "date": "2024-07-10T07:46:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "00e8a8dc-9a3e-ef11-8409-6045bde003e0",
+            "subject": "Re: ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201 CRM:00315001552",
+            "body": "Hi,\nHere is the repair report.\nMarkus\nLähettäjä:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nLähetetty:\nWednesday, July 10, 2024 10:57:45 AM\nVastaanottaja:\nRoiha, Markus (RC-FI SI E) <markus.roiha@siemens.com>\nAihe:\nID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201 CRM:00315001552\nHi Markus,\nAfter yesterday's site visit, the Router was turned on but the Ethernet connection was not present. As such we were not able to reach the router.\nAfter you power cycle the router, it was working again.\nFrom what I shared, you replaced the router some 6 months ago, so  I don't believe the problem to be the router itself.\nWe replaced the Ethernet cable for the Router and we will monitor the behaviour from now on.\nWe also noticed that the APN was not correct which is impossible since we didn't perform any tasks on the router prior to being offline.\nRegarding the Dispenser PLC error → after a reboot we find this error → PLC not in operating state run, state=7\nWhat we found is the following:\nIf you shutdown the main unit from the display, dispenser plc is blinking and remains partially on. When bootin up main unit, dispenser plc is still blinking and stuck. But if you reboot, dispenser plc is coming back or if you power cycle the dispenser plc is also works again.\nI will try to understand what this State=7 means  since there is no information regarding this value and will come back to you.\nI will change the title to include the dispenser error too.\nThank you for your patience.\nBest regards,\nFrancisco",
+            "date": "2024-07-10T09:00:35Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "78c65873-4143-ef11-a316-000d3ab06f45",
+            "subject": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201 CRM:00315001552",
+            "body": "Hello Markus, good morning. I hope you are doing well :)\nFor the SCB offline, did the charger go offline since we replaced the Ethernet cable?\nFor the Dispenser Error Flag:\nI found this in the R&D wiki but it's not been updated for almost 2 years, but according to a new page:\nWhich looks exactly the same.\nIn this case, it means that the Dispenser is waiting for the Selftest.\nI will test some scenarios here in the Training Center and will come back to you when I have an answer. Just give me one information, does this error only occur if you turn off the charger via HMI?\nBecause if I'm wondering if FC2 or FC3 really powers down and the dispenser is still powered on and just can't recover after an error since the main charger is expecting it powered off.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-16T07:03:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5de030ab-1144-ef11-a316-0022489fc6bd",
+            "subject": "ID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201 CRM:00315001552",
+            "body": "Hello Markus, good afternoon.\nToday I wasn't able to use the charger in the Training Center since I was busy with other tasks.\nCan we agree to discuss this next week as I will have more free time? Tomorrow and Friday I will not be here in the factory due to personal topics and cannot come to check.\nIf I have your permission I can close the ticket and update it afterwards.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-17T07:53:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec321d31-a745-ef11-a316-002248a2f864",
+            "subject": "Ticket 0367161 has been closed. Are you satisfied with our provided solution?",
+            "body": "Dear\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0367161\nwith the title:\nID0366430-DC/Si-D/FI-[Gz0OS6] - Charger SCB offline & Dispenser_PLC_A_KF201\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-19T08:16:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "79ed717d-aa45-ef11-a316-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Incident Solved Via Remote (L2) after 14 days, 19 hours, 56 minutes and 2 seconds.",
+            "date": "2024-07-19T08:40:11Z",
+            "extra": {}
+        }
+    ]
+}

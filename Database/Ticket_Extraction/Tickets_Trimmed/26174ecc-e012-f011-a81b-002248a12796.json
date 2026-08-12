@@ -1,0 +1,122 @@
+{
+    "incident_id": "26174ecc-e012-f011-a81b-002248a12796",
+    "ticket_number": "0417150",
+    "title": "ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working",
+    "created_on": "2025-04-06T12:15:16Z",
+    "last_activity": "2025-04-16T19:45:54Z",
+    "age": "14843",
+    "description": "Reported behavior/issue:\nCU not working\nRoot cause:",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "m6Wiqu",
+    "stage": null,
+    "serial_number": "MP / R9 170002654",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "49cca5ba-e112-f011-998a-7c1e52faf3c6",
+            "subject": "Note created on 4/6/2025 12:22:01 PM UTC by Filomena Carusone [contact:ab172d0c-ac0d-f011-9989-6045bdde9fb8]",
+            "body": "*WEB*",
+            "date": "2025-04-06T12:22:01Z",
+            "extra": {}
+        },
+        {
+            "id": "5405d267-3fac-a180-ae91-518bc0031c88",
+            "subject": "Issue reported from customer",
+            "body": "The charger is not working as you can see in the print attached. Searching in the Event list, it seems to be returned operative, but it's not. In the last days this charger is having several problems. Sometimes it moves to not operative or partially operational.\nCan you check, please?\nSoftware Version: v6.0.3-0-g215cb74\nOCPP Backend Connection: No",
+            "date": "2025-04-06T12:27:59Z",
+            "extra": {}
+        },
+        {
+            "id": "96359c02-e312-f011-998a-7c1e52768c07",
+            "subject": "0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Dear Filomena Carusone,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002654\nChargerID/Serial No.\n:\nm6Wiqu\nProblem Description\n: CU not working\nFor future reference, your case number is\n0417150\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-06T12:31:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aad2d4a4-57b4-2e28-9b84-334fe848d639",
+            "subject": "Internal note",
+            "body": "",
+            "date": "2025-04-06T12:33:18Z",
+            "extra": {}
+        },
+        {
+            "id": "fe3f2083-41f7-2d3d-b832-c413bfedad79",
+            "subject": null,
+            "body": "2025-04-06T15:02:18.935875+00:00 swcpu [user:debug] [4021] [ONR] DC1 : Outlet not ready - SECC has communication error with PLC\n2025-04-06T15:02:19.131373+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'Outlet_DC1_codes' changed from false - ('DC1 Errorcode:0') to true - ('DC1 Errorcode:11')\n2025-04-06T15:02:19.329518+00:00 swcpu [user:debug] [4021] [MBC] AC1: SECC: no communication for 750ms\n2025-04-06T15:02:22.639502+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'SECC_KF11_AC1_MB_Problem' changed from false - ('loss of communication AC1 and SECC') to true - ('loss of communication AC1 and SECC')\n2025-04-06T15:02:26.341630+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'Outlet_DC1_codes' changed from false - ('DC1 Errorcode:0') to true - ('DC1 Errorcode:20')\n2025-04-06T15:02:41.300286+00:00 swcpu [user:debug] [4021] [DCC] DC1: StatusCode \"NOT_READY\" --> \"READY\"",
+            "date": "2025-04-06T12:34:29Z",
+            "extra": {}
+        },
+        {
+            "id": "d288a94e-0113-f011-998a-6045bdddca9c",
+            "subject": "RE: 0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Dear Filomena Carusone,\nHope you are doing well,\nThe outlets were out of order due to an internal SECC communication error. The issue has been resolved by clearing the error, and everything is now functioning normally.\nKindly refer the logs where you can see error got cleared with following sequence.\n2025-04-06T15:02:18.935875+00:00 swcpu [user:debug] [4021] [ONR] DC1 : Outlet not ready - SECC has communication error with PLC\n2025-04-06T15:02:19.131373+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'Outlet_DC1_codes' changed from false - ('DC1 Errorcode:0') to true - ('DC1 Errorcode:11')\n2025-04-06T15:02:19.329518+00:00 swcpu [user:debug] [4021] [MBC] AC1: SECC: no communication for 750ms\n2025-04-06T15:02:22.639502+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'SECC_KF11_AC1_MB_Problem' changed from false - ('loss of communication AC1 and SECC') to true - ('loss of communication AC1 and SECC')\n2025-04-06T15:02:26.341630+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: PLC-Error-Flag 'Outlet_DC1_codes' changed from false - ('DC1 Errorcode:0') to true - ('DC1 Errorcode:20')\n2025-04-06T15:02:41.300286+00:00 swcpu [user:debug] [4021] [DCC] DC1: StatusCode \"NOT_READY\" --> \"READY\"\n2025-04-06T15:02:50.285831+00:00 sicharge-cp [local0:info] sicharge-cp-backend/c8acdcf9f469[734]: setOutletLedState ready 2\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-06T16:07:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af74d491-3115-f011-998a-7c1e52350ea5",
+            "subject": "RE: 0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Dear Filomena Carusone,\nHope you are doing well,\nWe have also checked the system today, and everything is now functioning properly. Could you please confirm if we can proceed with closing the ticket?\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T10:58:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df66a40c-331a-f011-998a-7c1e523508ba",
+            "subject": "RE: 0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Dear Filomena Carusone,\nI hope this email finds you well.\nAs you are satisfied with the analysis provided, may we proceed to close the case?\nYour prompt response would be greatly appreciated to ensure we can conclude this matter without any delays.\nThank you for your attention. We look forward to hearing from you.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T19:51:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90422e65-cb1a-f011-998a-7c1e52768372",
+            "subject": "RE: 0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Hi,\nYes, the charger seems to be ok. I think the case can be closed.\nThank you",
+            "date": "2025-04-16T14:02:22Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "94bc8499-f91a-f011-998a-7c1e52768c07",
+            "subject": "RE: 0417150 - ID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working CRM:00641001248",
+            "body": "Dear Filomena Carusone,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417150, the case is now closed.\nProblem Description\n: CU not working\nResolution\n: Analysis has been provided\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-16T19:33:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a2c9f563-fb1a-f011-998a-7c1e52768c07",
+            "subject": "Ticket 0417150 has been closed. Are you satisfied with our provided solution? CRM:00641001252",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0417150\nwith the title:\nID0417150-DC/Si-D/IT-[MP / R9 170002654] CU not working\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAbhinav Malokar\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-16T19:45:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

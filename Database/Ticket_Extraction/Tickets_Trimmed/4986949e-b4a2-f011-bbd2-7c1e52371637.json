@@ -1,0 +1,160 @@
+{
+    "incident_id": "4986949e-b4a2-f011-bbd2-7c1e52371637",
+    "ticket_number": "0453904",
+    "title": "ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue (ELMS)",
+    "created_on": "2025-10-06T13:01:54Z",
+    "last_activity": "2025-10-15T12:37:33Z",
+    "age": "12936",
+    "description": "Reported behavior/issue -\nCharger communication issue\nSolution: ELMS configuration support",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R6 170002078",
+    "case_nature_code": 580000001,
+    "chargerID": "JGQcg6",
+    "additional_info": [
+        {
+            "id": "5eeeab9a-b4a2-f011-bbd2-7ced8d78582d",
+            "subject": "Webform_incident_SiCharge D_06-10-2025_SN: JGQcg6",
+            "body": "Dear Daan van t Wout,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nJGQcg6\nThank you\neMobility Technical Support Team\nSehr geehrte/r Daan van t Wout,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nJGQcg6\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-06T13:01:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ef56ebba-b4a2-f011-bbd2-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0453904 CRM:00225267032",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0453904 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4986949e-b4a2-f011-bbd2-7c1e52371637",
+            "date": "2025-10-06T13:02:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "440c0ef5-b5a2-f011-bbd2-7c1e52379e11",
+            "subject": "ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear\nDaan\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002078\nChargerID\n:\nJGQcg6\nProblem Description\n: Charger communication issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0453904\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-06T13:11:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "55f72bda-55a3-f011-bbd3-7c1e5287f582",
+            "subject": "A new case manager was assigned to 0453904 CRM:00225267403",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0453904 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4986949e-b4a2-f011-bbd2-7c1e52371637",
+            "date": "2025-10-07T08:16:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "27c4e172-57a4-f011-bbd3-7c1e5236eee4",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Daan,\nI am reaching out from the Technical Support team in regards of ticket\nID0453904.\nThe ticket has been opened for support to configure ELMS communication with charger\nJGQcg6.\nToday I connected to the charger via SCB, and noticed that the \"External Load Management\" was activated in the PLC configuration, but the \"Open ports through VLan on WAN Port to the PLC\" in Router XF3 configuration was not enabled. I enabled it and configured it with the IP you provided:\nAfter the configuration, it looks to me that the charger is correctly communicating with the ELMS:\n2025-10-08T14:57:01.130625+00:00 [FW060103G1] swcpu [user:debug] [4127] [ELM] SICHARGE -> ELMS (status): charger ready = true\nCould you please confirm from your side that the charger is reachable and communicating from the ELMS?\nLooking forward to hearing feedback from you!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-08T15:00:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b19c37d2-18a5-f011-bbd2-7c1e52207e8f",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Mr.\nServidei,\nThank you for the change you made.\nNow we’re able to access the Sicharge D unit with the requested Ip-address. Thanks!\nHowever, can you verify that the maximum charging speed is still 270kW?\nI’m asking because we did set some setpoints via Modbus and we are afraid that the maximum setup of 270kW is now overwritten.\nCould that be the case? Or is the 270kW the maximum for now?\nFor future purposes we would like to increase the limit via Modbus. Is that possible? Or should we get in contact with you again to set it to maximum?\nHope to hear from you.\nThanks for now!\nWith best regards,\nDaan van 't Wout\nSiemens Nederland N.V.\nRC-NL SI EA SO AUT\nMichael Faradaystraat 6\n2712 PR Zoetermeer, Netherlands\nPhone: +31 620188288\nmailto:daan.van_t_wout@siemens.com\nwww.siemens.nl\nComm. Register The Hague no. 27015771",
+            "date": "2025-10-09T14:04:11Z",
+            "extra": {
+                "sender": "daan.van_t_wout@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dc24cbcf-d1a5-f011-bbd3-000d3addf8ce",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Daan,\nGlad to hear that everything works fine now!\nSo, I took a look at the charger, let me answer your questions:\nThe charger has an installed power capacity of 300kW\nEach outlet is limited from SCB to 270kW\nIf ELMS is configured and active, the power setpoints coming from the ELMS will always overrule the outlet power limitation from SCB. If the power limitation from SCB on DC is 270kW, but the ELMS is (for example) setting 140kW as power setpoint on DC2, the charger will follow ELMS setpoint.\nI checked some logs and for example yesterday the \"PlimELMSOutlet\" was set at 4kW, hence the EVSEMaxPower is following ELMS limitation:\nIf you want to change the power setpoint from ELMS, this has to be done from your side, unfortunately I cannot support with that.\nIf you want to change the power limit of the outlets themselves from SCB, this can be done form anyone who has 3rd level access on SCB, by changing the PLC configuration. In case you do not have access, you can open a service ticket.\nI hope I provided clarification to your doubts. Please let me know if you have further questions, otherwise I will proceed to close this ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-10T12:08:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20e13c20-d5a5-f011-bbd3-000d3addf8ce",
+            "subject": "Ticket 0453904 has been closed. Are you satisfied with our provided solution? CRM:00225269580",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0453904\nwith the title:\nID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue (ELMS)\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-10T12:32:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "684a3932-d5a5-f011-bbd3-000d3addf8ce",
+            "subject": "RE: Ticket 0453904 has been closed. Are you satisfied with our provided solution? CRM:00225269580",
+            "body": "Dear Daan,\nThis automatic email was sent by the ISP system without the case being closed yet.\nI will wait for your feedback to my previous email before closing the ticket.\nApologies for the inconvenience.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-10T12:32:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b3b5debd-17a8-f011-bbd2-7ced8d4258c6",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Fosco,\nThank you for this explanation.\nOne additional question, for me to be sure.\nWe saw that our ELMS was sending 4kW (We don’t know why yet, but I’m assuming 4kW is the lowest possible setpoint.) Something I need to figure out.\nBelow a screenshot from the Sicharge D manual.\nAfter I changed\nbit 0 to 0,\nthen the charger accepts a power consumption more than 4kW again.\nSo the charger is not limited by ELMS anymore.\nCan you confirm that when the (A_ELMS_LL) is set to 0; then the limitation is set back to the limit from SCB which is still 270kW?\nOr will it set back to installed power capacity of 300kW?\nWith best regards,\nDaan van 't Wout\nSiemens Nederland N.V.\nRC-NL SI EA SO AUT\nMichael Faradaystraat 6\n2712 PR Zoetermeer, Netherlands\nPhone: +31 620188288\nmailto:daan.van_t_wout@siemens.com\nwww.siemens.nl\nComm. Register The Hague no. 27015771",
+            "date": "2025-10-13T09:33:58Z",
+            "extra": {
+                "sender": "daan.van_t_wout@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "92fef562-9da9-f011-bbd2-7ced8d4258c6",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Daan,\nAs per stated in the ELMS manual for Sicharge D and in the table 3.2 you reported, if the\nA_ELMS_LL\n(Active Load limitation) is set to 0, the setpoint G_ActPwrLimit_SP is enforced as a new active power input limit for the whole charger, and the charger and the outlets will not consider ELMS limits even if setpoints were transmitted on the corresponding fallback- & setpoint registers.\nThis means that, in case of charging on a single outlet, the charger is limiting the outlet power to 270kW (as per outlet power limitation from SCB, not on the installed power of 300kW), and it will follow the EVs current request. If the charger is performing a parallel charging, the outlet power limitation will be set by the charger itself, according to converter distribution for High Flex configuration of the charger, and internal logic \"First-in-First-Served\".\nIn conclusion, I confirm to you that now the Active Load limitation from ELMS is off since 13.10:\n2025-10-13T07:57:15.381109+00:00 [FW060103G1] swcpu [user:debug] [4127] [ELM]  ELMS -> SICHARGE (control): Load limitation active = false\nThe charger is therefore not limited by the ELMS and allocating power according to internal logic.\nI hope I provided clarification to your doubts. If there are no further doubts on the ELMS power limitation, I would then proceed to close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-15T08:03:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57c672eb-bda9-f011-bbd2-7c1e5236229d",
+            "subject": "RE: ID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue CRM:03056000104",
+            "body": "Dear Fosco,\nThank you for the clarification and the quick response. So far, everything is clear now.\nThis ticket can be closed.\nKind regards,\nDaan.",
+            "date": "2025-10-15T11:56:05Z",
+            "extra": {
+                "sender": "daan.van_t_wout@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3d0513a5-c3a9-f011-bbd2-7c1e52880532",
+            "subject": "Ticket 0453904 has been closed. Are you satisfied with our provided solution? CRM:00225272240",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0453904\nwith the title:\nID0453904-DC/Si-D/NL-[MP / R6 170002078] Charger communication issue (ELMS)\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-15T12:37:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

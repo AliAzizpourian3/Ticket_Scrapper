@@ -1,0 +1,230 @@
+{
+    "incident_id": "6d6623cc-e344-ef11-a316-6045bde003e0",
+    "ticket_number": "0369673",
+    "title": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging",
+    "created_on": "2024-07-18T08:57:51Z",
+    "last_activity": "2025-12-16T14:07:18Z",
+    "age": "21701",
+    "description": "Reported behaviour/issue:\nConverter cannot supply output, PowerON = False, after positively performing ConverterGrouping and Fastshutdown check\nRoot cause:\nPossible quality issue\nSolution:\nSend converter back to factory for investigation\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nThe supplied converter that was ordered for replacement also has an error. Converters had to be replaced, removed and installed several times, and load tests had to be carried out.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "cLymeL",
+    "stage": null,
+    "serial_number": "MP / R4 170001723",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "4d2fbfc9-e344-ef11-a316-000d3a687981",
+            "subject": "Webform_incident_SiCharge D_18-07-2024_SN: MP / R4 170001723",
+            "body": "Dear Kaiblinger Daniel,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R4 170001723\nThank you\neMobility Technical Support Team\nSehr geehrte/r Kaiblinger Daniel,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R4 170001723\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-07-18T08:57:45Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b2c61cca-e544-ef11-a316-0022489a2913",
+            "subject": "A new case manager was assigned to 0369673 CRM:00225071780",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0369673 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6d6623cc-e344-ef11-a316-6045bde003e0",
+            "date": "2024-07-18T09:12:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "03be3273-e644-ef11-a316-000d3abae760",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "Hello Daniel and Johannes﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R4 170001723\nChargerID/Serial No.\n:\ncLymeL\nProblem Description\n: PowerConverter does not supply output current/power during charging session but is able to perform ConverterGrouping and Fastshutdown check, this means that it does not have an error-flag.\nTroubleshooting\n:\nSummary of the previous ticket and this one:\nIn the previous ticket we had a converter with an error and swapped with the neighbor converter to confirm that we didn't have a cabling issue. It is confirmed since the converter with error now shows the same behaviour in a different position.\nAs such I recommended to replace the converter.\nSummary of yesterday's replacement:\nAfter Daniel's support in replacing the bad converter with the new one, the charger was operational and ready to charge.\nThis is where the problem occurred:\nAs you can see here, in Group 2, where the converter was replaced, it cannot go to  “PowerON = True”, it stays “False” and as such we cannot provide the power from the other groups since we are still waiting for this one to complete his starting/supplying process.\nAs such, we swapped this new converter with another one from DC1:\nResult is the same, we still find the PowerOn = False, instead of True and power being supplied. As such DC3 group cannot supply power.\nSince this converter is not powering on, there seems to be a problem with the output, something we cannot test ourselves by opening it since it would void the warranty.\nI will reach out to QM for this and let you know an answer.\nI already had a meeting with them once and what they told me is that since the error is very rare since now, it's will take sometime to perform a deep investigation.\nDo you perhaps have a converter from a warehouse charger that you can use for the moment?\nOtherwise the customer will lose 20kW, I hope it's not very harsh to deal with this.\nI will do the RMAs and send a reply here.\nFor future reference, your ticket number is\n0369673\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-18T09:16:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53a5b58a-e844-ef11-a316-000d3abae760",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "Hi again,\nI reached out to my manager about the RMA and we as L2, cannot write down the RMA, this is supposed to be done by the technician or the service coordinator.\nI can share with you the RMA but I cannot fill it in for you. As NOC we only provide the answer to the ticket.\nIf you have any question please talk with your SMR or RM. I send in attach the RMA for LPZ.\nI will send the message to QM to speed up the process. My suggestion is to not order a new converter until further notice.\nThank you for your understanding.\nBest regards,\nFrancisco",
+            "date": "2024-07-18T09:31:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8d59ea3-f644-ef11-a316-6045bde003e0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 14 minutes and 50 seconds.",
+            "date": "2024-07-18T11:12:41Z",
+            "extra": {}
+        },
+        {
+            "id": "8799f6cc-f744-ef11-a316-000d3ab06f45",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "FYI",
+            "date": "2024-07-18T11:21:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "42d7afac-a745-ef11-a316-002248a2f864",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "Hi guys, good morning.\nI already reported this to the QM. Please send back the converter to LPZ.\nI hope we can start investigating this issue as soon as possible, because from my point of view, it's hard for me to ask you to order a new one and possibly find the same problem 2 times.\nFor now I would suggest keeping the -20kW, but if you need to have those 20kW, then my only suggestion is to keep ordering and see if we have a working one.\nAfter you give me your feedback I will close the ticket since the solution has been provided.\nI will obviously keep you updated on this topic. I have a meeting with QM regarding this topic in the next weeks.\nThank you very much for your support and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2024-07-19T08:20:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "259d7406-ad45-ef11-a316-002248a44b33",
+            "subject": "RE: ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "Hi Francisco,\nThe problem I see here is that we need the packaging to return the converter.\nI actually wanted to return the original defective one first and later the defective spare part.\nThe next issue is that I need to provide a ticket number for the RMA. I got the instruction today to claim everything on one ticket. If this ticket is closed again, we will have x tickets until the end of the case and this is difficult to track.\nWhat if you assign the ticket to us? Will that have a negative impact on your KPI?\nBR\nDaniel",
+            "date": "2024-07-19T08:58:14Z",
+            "extra": {
+                "sender": "daniel.kaiblinger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "32da9c40-ba45-ef11-a316-002248a2f864",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001600",
+            "body": "Hi Daniel,\nThank you for sharing your concerns.\nI believe Warranty Manager has already addressed this question to you. You should order a new converter and try again.\nSince this is the case, we will keep this ticket open and send it to your RC-AT queue. Please send me a message when you are ready to trial these tests again. I will be there to support you.\nBest regards,\nFrancisco",
+            "date": "2024-07-19T10:33:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bcaf1275-0f48-ef11-bfe2-0022489961b0",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00315001609",
+            "body": "Hello  guys, I will send this ticket to your queue. You just need to ping me in our chat and I will help you, just please give me at least 1 or 2 days notice to schedule in my calendar\nI am writing to formally inform that we are moving case 0369673 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nAT\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nX\nPerformance monitoring by RC\nX\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-AT SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-22T09:47:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b6413f08-500e-88e5-8f31-5171ab8ce08e",
+            "subject": null,
+            "body": "",
+            "date": "2024-08-02T10:02:24Z",
+            "extra": {}
+        },
+        {
+            "id": "02a47ed0-86c9-893e-8f33-701493f16315",
+            "subject": null,
+            "body": "",
+            "date": "2024-08-02T10:02:40Z",
+            "extra": {}
+        },
+        {
+            "id": "65c93876-35f9-c9cc-8c18-85884117a0ef",
+            "subject": null,
+            "body": "",
+            "date": "2024-08-02T10:03:28Z",
+            "extra": {}
+        },
+        {
+            "id": "84eedf33-82ae-8b14-9b52-59d9ff389900",
+            "subject": null,
+            "body": "Since there are now several tickets for the converter problem, I will attach all reports and delivery bills to this one.\nConverters were exchanged and the defective ones were sent back.\nTicket can be closed.\nThanks\nBR\nDaniel",
+            "date": "2024-08-02T10:04:18Z",
+            "extra": {}
+        },
+        {
+            "id": "0c2bb480-b750-ef11-bfe3-0022489961b0",
+            "subject": "A new case manager was assigned to 0369673 CRM:00225078309",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0369673 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6d6623cc-e344-ef11-a316-6045bde003e0",
+            "date": "2024-08-02T10:10:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aafdd339-ba50-ef11-bfe2-0022489e9c81",
+            "subject": "ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00579001005",
+            "body": "Hello Daniel,\nGreetings of the day!\nWe received your following communication:\nSince there are now several tickets for the converter problem, I will attach all reports and delivery bills to this one. Converters were exchanged and the defective ones were sent back. Ticket can be closed.\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0369673.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-02T10:30:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "202fbad5-ba50-ef11-bfe2-0022489e9c81",
+            "subject": "Automatische Antwort: ID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging CRM:00579001005",
+            "body": "Lieber Kollege/Kollegin\nIch befinde mich bis einschließlich 24.08.2024 in Urlaub.\nE-Mails werden in dieser Zeit nicht gelesen.\nBei dringenden Angelegenheiten kontaktieren Sie bitte echarging.at@siemens.com\nDear colleague,\nI am on vacation until August 24, 2024.\nEmails will not be read during this time.\nFor urgent matters, please contact echarging.at@siemens.com\nWith best regards,\nDaniel Kaiblinger\nSiemens Aktiengesellschaft Österreich\nRC-AT SI EA B EAST SM\nSiemensstr. 90\n1210 Vienna, Austria\nMobile: +43 (664) 78063393\nmailto:daniel.kaiblinger@siemens.com\nwww.siemens.at\nCompany Name: Siemens Aktiengesellschaft Oesterreich; Legal Form: Stock Corporation; Company Seat: Vienna; Register Number: FN 60562 m; Registered at: Commercial Court Vienna; DVR-Number: 0001708",
+            "date": "2024-08-02T10:34:55Z",
+            "extra": {
+                "sender": "daniel.kaiblinger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fcf8661e-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "Ticket 0369673 has been closed. Are you satisfied with our provided solution? CRM:00579001006",
+            "body": "Dear  team,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0369673\nwith the title:\nID0369673-DC/Si-D/AT[170001723] - Converter PowerON=False during charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-02T10:36:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d040737-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 14 days, 23 hours, 24 minutes and 53 seconds.",
+            "date": "2024-08-02T10:37:35Z",
+            "extra": {}
+        },
+        {
+            "id": "6c430b3d-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 4 seconds.",
+            "date": "2024-08-02T10:37:39Z",
+            "extra": {}
+        },
+        {
+            "id": "db430b3d-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 4 seconds.",
+            "date": "2024-08-02T10:37:43Z",
+            "extra": {}
+        },
+        {
+            "id": "4b463343-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 5 seconds.",
+            "date": "2024-08-02T10:37:49Z",
+            "extra": {}
+        },
+        {
+            "id": "ac9e005c-bb50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 44 seconds.",
+            "date": "2024-08-02T10:38:32Z",
+            "extra": {}
+        }
+    ]
+}

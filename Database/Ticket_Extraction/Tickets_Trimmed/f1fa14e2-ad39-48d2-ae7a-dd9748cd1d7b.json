@@ -1,0 +1,121 @@
+{
+    "incident_id": "f1fa14e2-ad39-48d2-ae7a-dd9748cd1d7b",
+    "ticket_number": "0410323",
+    "title": "ID0410290-DC/Si-D/FR-[Y2 / P0 312567479/10] Tesla model X charging interrupted (C1)",
+    "created_on": "2025-03-03T16:59:47Z",
+    "last_activity": "2025-05-06T07:26:51Z",
+    "age": "91587",
+    "description": "Reported behavior/issue:\nTesla model X had his charge interrupted 3 times\nOpen Ticket:\nNo\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\nInactive (4/18/2024) Engie Charger",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "HfJX29",
+    "stage": null,
+    "serial_number": "Y2 / P0 312567479/10,Y2 / P0 312567479/10",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "6c52c3eb-50f8-ef11-bae2-7c1e52774365",
+            "subject": "A new case manager was assigned to 0410323 CRM:00225172173",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0410323 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f1fa14e2-ad39-48d2-ae7a-dd9748cd1d7b",
+            "date": "2025-03-03T16:59:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f8a608c-2d5c-f3f5-a320-8e13b354611a",
+            "subject": "1st session: from 17:09 to 17:12",
+            "body": "Session interrupted due to\nDC2_CableTempSensor_XD101\nSat, 01 Mar 2025 16:12:51 GMT\n2025-03-01, 16:12:50\n2025-03-01T16:12:50.661802+00:00 sicharge-cp [local0:info] sicharge-cp-backend/01c25c3ffe10[738]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay') to false - ('temperature sensors okay KON:1')\nSat, 01 Mar 2025 16:12:53 GMT\n2025-03-01, 16:12:53\n2025-03-01T16:12:53.000000+00:00 secc [daemon:notice] SECC[818]: {\"type\":\"stop_charging\",\"timestamp\":1740845573978,\"chargerId\":\"secc2300-03071\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"source\":\"EV\",\"user\":\"internal\"}}\nSat, 01 Mar 2025 16:12:53 GMT\n2025-03-01, 16:12:53\n2025-03-01T16:12:53.633518+00:00 swcpu [user:debug] [4021] [CSV] DC2: Charging Cable Sensor Plausibility Contact Temperatures: 40.1, 24.9 deg C\nSat, 01 Mar 2025 16:12:53 GMT\n2025-03-01, 16:12:53\n2025-03-01T16:12:53.650648+00:00 swcpu [user:debug] [4021] [CSV] DC2: Charging Cable Sensor Validation Error, see other logs for details\nSat, 01 Mar 2025 16:12:54 GMT\n2025-03-01, 16:12:53\n2025-03-01T16:12:53.663688+00:00 sicharge-cp [local0:info] sicharge-cp-backend/01c25c3ffe10[738]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay KON:1') to true - ('VIV:0 PLE:1 KON:1')",
+            "date": "2025-03-03T17:03:48Z",
+            "extra": {}
+        },
+        {
+            "id": "1a46be48-b16e-9846-8790-9d993d56d1ff",
+            "subject": "2nd session: from 17:14 to 17:19",
+            "body": "Session Interrupted due\nDC2_CableTempSensor_XD101\nSat, 01 Mar 2025 16:19:11 GMT\n2025-03-01, 16:19:08\n2025-03-01T16:19:08.547232+00:00 sicharge-cp [local0:info] sicharge-cp-backend/01c25c3ffe10[738]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay') to false - ('temperature sensors okay KON:1')\nSat, 01 Mar 2025 16:19:11 GMT\n2025-03-01, 16:19:11\n2025-03-01T16:19:11.518593+00:00 swcpu [user:debug] [4021] [CSV] DC2: Charging Cable Sensor Plausibility Contact Temperatures: 54.4, 39.3 deg C\nSat, 01 Mar 2025 16:19:11 GMT\n2025-03-01, 16:19:11\n2025-03-01T16:19:11.535985+00:00 swcpu [user:debug] [4021] [CSV] DC2: Charging Cable Sensor Validation Error, see other logs for details\nSat, 01 Mar 2025 16:19:12 GMT\n2025-03-01, 16:19:11\n2025-03-01T16:19:11.547548+00:00 sicharge-cp [local0:info] sicharge-cp-backend/01c25c3ffe10[738]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay KON:1') to true - ('VIV:0 PLE:1 KON:1')",
+            "date": "2025-03-03T17:05:34Z",
+            "extra": {}
+        },
+        {
+            "id": "a43e1f20-b029-2572-a2ea-24c5a42d789e",
+            "subject": "3rd session: from 17:20 to 17:32",
+            "body": "Session interrupted due Suspended EV\nSat, 01 Mar 2025 16:32:07 GMT\n2025-03-01, 16:32:06\n2025-03-01T16:32:06.705514+00:00 sicharge-cp [local0:info] sicharge-cp-backend/01c25c3ffe10[738]: OCPP: Send command: StatusNotification (cfadea8d-6b1f-4ce3-ac50-060f032330db) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"SuspendedEV\"}",
+            "date": "2025-03-03T17:06:40Z",
+            "extra": {}
+        },
+        {
+            "id": "51a51b32-1fcb-7a6e-889f-0aceaaeda3df",
+            "subject": "Note to ES Team",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nTesla model X charging interrupted.\nAction Performed (L2):\nlogs have been analyzed and attached to the ticket, along with the session interruption reason in the notes below. It was noticed that the sessions were interrupted due to a cable temperature sensor error while charging. Additionally, a child case has already been created for a similar issue, case 0410190.\nCharger SW Version:\nV 6.0.3\nReason for Handover (L3):\nFurther investigation.\nLog Analysis with Timestamp:\nVehicle: Tesla Model X\nLogs reviewed for the given timestamp: 1st session: from 17:09 to 17:12 2nd session: from 17:14 to 17:19 3rd session: from 17:20 to 17:32. The ID Tag of his card is: 3ACBB69A\nAffected Component: DC2 Charging Cable\nAction Required:\nAction by HQ:\nFurther analysis is needed.",
+            "date": "2025-03-03T17:16:48Z",
+            "extra": {}
+        },
+        {
+            "id": "15db91e6-d7f8-ef11-bae2-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0410323 CRM:00225172485",
+            "body": "Sambath KS was assigned as new Case Manager for case 0410323 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f1fa14e2-ad39-48d2-ae7a-dd9748cd1d7b",
+            "date": "2025-03-04T09:06:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6db07139-2afb-ef11-bae2-7c1e5236cda4",
+            "subject": "0410323 - ID0410290-DC/Si-D/FR-[Y2 / P0 312567479/10] Tesla model X charging interrupted (C1) CRM:00646000025",
+            "body": "Dear Laurent,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team.  Please be aware that I have conducted an analysis on the charging session interruption and found the temperature plausibility error caused the same. It is normal for the charging session to be interrupted when the temperature differential between the positive and negative terminals exceed15 degrees Celsius. Would you kindly verify whether the end customer charged using an adapter?\nAdding Jessica in Loop\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-07T08:00:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a743a1c-c20a-f011-bae3-000d3ad97a58",
+            "subject": "RE: 0410323 - ID0410290-DC/Si-D/FR-[Y2 / P0 312567479/10] Tesla model X charging interrupted (C1) CRM:00646000025",
+            "body": "Dear Laurent,\nI hope all is well with you. Is there any update on the trail mail regarding the adapter status?\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-27T04:15:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ee88f0c-e10a-f011-bae3-7c1e52350ea5",
+            "subject": "RE: 0410323 - ID0410290-DC/Si-D/FR-[Y2 / P0 312567479/10] Tesla model X charging interrupted (C1) CRM:00646000025",
+            "body": "Hello Sambath,\nUnfortunately, I don’t know if the customer was using an adapter, and I have no way of knowing.\nCordialement,\nLaurent Cosson\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 27 mars 2025 05:17\nÀ :\nCOSSON Laurent (ENGIE Mobilités Electriques) <laurent.cosson@engie.com>\nCc :\nMINA, JESSICA (RC-FR SI E) <jessica.mina@siemens.com>\nObjet :\nRE: 0410323 - ID0410290-DC/Si-D/FR-[Y2 / P0 312567479/10] Tesla model X charging interrupted (C1) CRM:00646000025\nDear Laurent, I hope all is well with you. Is there any update on the trail mail regarding the adapter status? With best regards, eMobility Tech Support Team - Sambath.\nK.\nS",
+            "date": "2025-03-27T07:57:00Z",
+            "extra": {
+                "sender": "laurent.cosson@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "83174d99-6390-7fff-88cf-35712016e638",
+            "subject": "Status Update : 18/04/2025",
+            "body": "Observation : Issue is only happening with Tesla EV - Unable to find the usage of adapter for charging\nAction planned : As there is no other regions reported similar events - planned to have a discussion with Jessica to close the issue and end customer communication",
+            "date": "2025-04-18T04:46:36Z",
+            "extra": {}
+        },
+        {
+            "id": "18d70bae-96d3-50f1-b585-c94b260e4689",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Awaiting for Discussion with Jessica -\nPlanned to discuss with Jessica after 5th may after she is back from out of office",
+            "date": "2025-04-25T05:17:05Z",
+            "extra": {}
+        },
+        {
+            "id": "31c84bb8-103e-cb0d-babf-068b0afd8150",
+            "subject": "Notes from ES to NOC [ 06/05/2025]",
+            "body": "Problem Description\n: Tesla Model X charging interruption\nSuspected Root Cause\n: Adapter usage - Not confirmed\nAction Performed:\nAnalysed the events and History. Due to lack of evidence closing the case and incase any other Region or other charger repeating the pattern - Will again start to work. Already communicated the same with Jessica.\nCharger SW Version\n: v6.1.3\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-05-06T07:22:37Z",
+            "extra": {}
+        }
+    ]
+}

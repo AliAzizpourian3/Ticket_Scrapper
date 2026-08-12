@@ -1,0 +1,147 @@
+{
+    "incident_id": "352992b3-c058-ef11-bfe3-002248a2f864",
+    "ticket_number": "0373870",
+    "title": "ID0373870-DC/Si-D/FR-[MP / P6 170000689]SCB offline",
+    "created_on": "2024-08-12T15:37:02Z",
+    "last_activity": "2025-12-16T14:06:43Z",
+    "age": "13244",
+    "description": "Reported behavior/issue:  SCB offline\nRoot cause:\nSolution: Reboot the charger & routers\nOn DAMEX Sanctioned List: NO\nWarranty Status:YES",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "kqnOq9",
+    "stage": null,
+    "serial_number": "MP / P6 170000689",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "54d48fb2-c058-ef11-bfe3-000d3ab78c74",
+            "subject": "Webform_incident_SiCharge D_12-08-2024_SN: P6 170000689\tkqnOq9",
+            "body": "Dear Yacine Kedia,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nP6 170000689 kqnOq9\nThank you\neMobility Technical Support Team\nSehr geehrte/r Yacine Kedia,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nP6 170000689 kqnOq9\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-12T15:36:57Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "34eec4cb-c258-ef11-bfe3-000d3aba9474",
+            "subject": "A new case manager was assigned to 0373870 CRM:00225082190",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0373870 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=352992b3-c058-ef11-bfe3-002248a2f864",
+            "date": "2024-08-12T15:51:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73f2b15b-c558-ef11-bfe2-000d3ab45a22",
+            "subject": "ID0373870-DC/Si-D/FR-[ MP / P6 170000689]SCB offline CRM:01811000218",
+            "body": "Hello Yacine﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P6 170000689\nChargerID/Serial No.\n:\nkqnOq9\nProblem Description\n: Charger Offline on SCB and OCPP\nUnfortunately, we cannot do much remotely when we don't have SCB connection. The best would be to have someone on site to check,\nOur service team will contact you shortly.\nFor future reference, your ticket number is\n0373870\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-12T16:10:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d4e03cfe-c558-ef11-bfe2-000d3ab45a22",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 37 minutes and 45 seconds.",
+            "date": "2024-08-12T16:14:49Z",
+            "extra": {}
+        },
+        {
+            "id": "66d2370c-c658-ef11-bfe2-000d3ab45a22",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 24 seconds.",
+            "date": "2024-08-12T16:15:13Z",
+            "extra": {}
+        },
+        {
+            "id": "66aae6c4-c858-ef11-bfe2-000d3ab45a22",
+            "subject": "RE: ID0373870-DC/Si-D/FR-[ MP / P6 170000689]SCB offline CRM:01811000218",
+            "body": "Hello  team,\nThe charger is offline on SCB, Kindly follow the following steps:\nPlease verify the successful integration of the OCPP backend with our Sicharge D?\nTo determine which network our SIM is currently using, please access the Teltonika router's web portal using the correct IP address after establishing a successful connection with your laptop. Ensure that the network connection is 4G, not 2G.\nVerify if the 'WebSocketPingInterval' is set to 30 seconds in the backend? This setting ensures the best OCPP connection\nEnsure the customer has a stable data connection with sufficient data volume\nPlease reconfigure router2 with the correct APN credentials\nPlease check if the SIM card is inserted incorrectly by cleaning and then reinserting it into the XF4 router.\nPlease perform a hard reset and then reinsert the SIM card.\nI am writing to formally inform that we are moving case 0373870 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Ankita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-12T16:34:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b95949e8-7e5a-ef11-bfe3-0022489966da",
+            "subject": "RE: ID0373870-DC/Si-D/FR-[ MP / P6 170000689]SCB offline CRM:01811000218",
+            "body": "Hello,\nI went on site today to do a reboot of the charger and to restart the connection of the 2 routers (Siemens and Engie) and the charger is back online OCPP and SCB.\nYou can close the ticket,\nThank you\nYacine Kedia\nIngénieur Exploitation IRVE\nEngie Mobilités électriques – Vianeo\nyacine.kedia@engie.com\n+33 6 08 70 86 84\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming,\n69007, Lyon – France\nPensez à l'environnement avant d'imprimer ce message\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 12 août 2024 18:15\nÀ :\nKEDIA Yacine (ENGIE Mobilités Electriques) <yacine.kedia@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nID0373870-DC/Si-D/FR-[ MP / P6 170000689]SCB offline CRM:01811000218\nHello Yacine\n﻿\n,\n﻿\nThank you for reaching out to eMobility Support. My name is Ankita, and I will be assisting you with your following query today: Product: Sicharge D - Charging Center Main Asset: MP / P6 170000689 ChargerID/Serial No.\n: kqnOq9\nHello Yacine﻿,﻿\nThank you for reaching out to eMobility Support. My name is Ankita, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / P6 170000689\nChargerID/Serial No.\n: kqnOq9\nProblem Description\n: Charger Offline on SCB and OCPP\nUnfortunately, we cannot do much remotely when we don't have SCB connection. The best would be to have someone on site to check,\nOur service team will contact you shortly.\nFor future reference, your ticket number is 0373870, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2024-08-14T20:51:03Z",
+            "extra": {
+                "sender": "yacine.kedia@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3f9bba98-f55f-ef11-bfe3-0022489e9c81",
+            "subject": "A new case manager was assigned to 0373870 CRM:00225086068",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0373870 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=352992b3-c058-ef11-bfe3-002248a2f864",
+            "date": "2024-08-21T19:43:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b1e5eb91-f95f-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0373870-DC/Si-D/FR-[ MP / P6 170000689]SCB offline CRM:01811000218",
+            "body": "Hello Yacine,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0373870.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-21T20:11:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f419c0b3-f95f-ef11-bfe3-0022489a2913",
+            "subject": "Ticket 0373870 has been closed. Are you satisfied with our provided solution? CRM:00643000873",
+            "body": "Dear Yacine,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0373870\nwith the title:\nID0373870-DC/Si-D/FR-[MP / P6 170000689]SCB offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-21T20:12:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2179e3cb-fa5f-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 9 days, 4 hours, 5 minutes and 12 seconds.",
+            "date": "2024-08-21T20:20:24Z",
+            "extra": {}
+        },
+        {
+            "id": "4579e3cb-fa5f-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 5 seconds.",
+            "date": "2024-08-21T20:20:29Z",
+            "extra": {}
+        },
+        {
+            "id": "6679e3cb-fa5f-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 4 seconds.",
+            "date": "2024-08-21T20:20:34Z",
+            "extra": {}
+        },
+        {
+            "id": "ae8df2dd-fa5f-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 27 seconds.",
+            "date": "2024-08-21T20:21:00Z",
+            "extra": {}
+        }
+    ]
+}

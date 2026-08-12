@@ -1,0 +1,236 @@
+{
+    "incident_id": "2da8531c-c1e3-ef11-9341-000d3adecb49",
+    "ticket_number": "0404603",
+    "title": "ID0404603-DC/Si-D/DE-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH",
+    "created_on": "2025-02-05T13:00:05Z",
+    "last_activity": "2025-03-28T22:33:15Z",
+    "age": "74012",
+    "description": "Reported behaviour/issue: Charge exceeds Limit of 150KWH\nRoot cause:\nThe issue was caused because the peak power gets calculated using the last meter value that came in before the TX profile. As soon as TX profile comes the power gets calculated using the TX profile.\nSolution:  rectified from Depotfinity backend in Feb\nOn DAMEX Sanctioned List: no\nWarranty Status:\n2nd charger:\nxtIIQT\nDepotfinity Ticket -\nEVC3-8531",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "Y2 / S5 313651774001",
+    "case_nature_code": 580000001,
+    "chargerID": "LSurCD, xtIIQT",
+    "additional_info": [
+        {
+            "id": "673a751a-c1e3-ef11-9341-7c1e52771f21",
+            "subject": "Webform_incident_SiCharge D_05-02-2025_SN: Y2 / S5 313651774001",
+            "body": "Dear Jepsen,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / S5 313651774001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jepsen,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / S5 313651774001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-05T13:00:01Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a51f63bd-cee3-ef11-8eea-000d3aba081f",
+            "subject": "ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils Jepsen,\nThank you for reaching\nout\nto eMobility Support. My name is\nSunil\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S5 313651774001\nChargerID/Serial No.\n:\nLSurCD\nProblem Description\n: Charge exceeds Limit of 150KWH\nTroubleshooting\n:\nAs checked the charger configuration on SCB the Input Power is limited to 150KW & the Power limited from Depotfinity is also 150KW\nAfter analyzing the logs duration for 3 hr from 10 AM UTC to 13 PM UTC 05/02/2025\nIt is observed that twice charging session was performed on Connector 1 & 4 In charger LSurCD\ntotal energy delivered:  109497+57923\nAfter analyzing the logs duration for 3 hr from 10 AM UTC to 13 PM UTC 05/02/2025\nIt is observed that twice charging session was performed on Connector 2 In charger xtIIQT\ntotal energy delivered:  162425\nWe have control on KW not on KWH\nPlease let us know if you have any confusion or doubt in Explanation\nFor future reference, your case number is\n0404603\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-05T14:37:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59d33c9a-d6e3-ef11-8eea-000d3addcd64",
+            "subject": "AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Sunil,\nwe have two chargers here.\nFor five minutes the two chargers were charging with a total of nearly 293 kWh, which are 143 kWh too much, as the limit is 150 kWh for both chargers together.\nIt is absolutely important for us that the limit of 150 kWh will never be exceeded.\nMit freundlichen Grüßen\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\n#standwithukraine\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 5. Februar 2025 15:58\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nBetreff:\nID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224\nDear Nils Jepsen,\nThank you for reaching out to eMobility Support. My name is Sunil, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: Y2 / S5 313651774001\nChargerID/Serial No.\n: LSurCD\nProblem Description\n: Charge exceeds Limit of 150KWH\nTroubleshooting\n:\nAs checked the charger configuration on SCB the Input Power is limited to 150KW & the Power limited from Depotfinity is also 150KW\nAfter analyzing the logs duration for 3 hr from 10 AM UTC to 13 PM UTC 05/02/2025\nIt is observed that twice charging session was performed on Connector 1 & 4 In charger LSurCD\ntotal energy delivered:  109497+57923\nAfter analyzing the logs duration for 3 hr from 10 AM UTC to 13 PM UTC 05/02/2025\nIt is observed that twice charging session was performed on Connector 2 In charger xtIIQT\ntotal energy delivered:  162425\nWe have control on KW not on KWH\nPlease let us know if you have any confusion or doubt in Explanation\nFor future reference, your case number is 0404603, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-05T15:34:02Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4b9e82f2-9cfb-3517-8e91-e52cb5852136",
+            "subject": "Smart Charging Profile From Depotfinity",
+            "body": "",
+            "date": "2025-02-06T04:26:08Z",
+            "extra": {}
+        },
+        {
+            "id": "02a27602-45e4-ef11-9341-7c1e52341760",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nThank you for informing us regarding power limit exceeding issue, we have analyzed the logs and we are escalating this issue to depotfinity team for resolution.\nWe will update you as soon as we have new information form depotfinity team.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-06T04:44:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3aef091-48e4-ef11-8eea-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0404603 CRM:00225159852",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0404603 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2da8531c-c1e3-ef11-9341-000d3adecb49",
+            "date": "2025-02-06T05:09:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a4571f8-7de4-ef11-9341-7c1e528745b1",
+            "subject": "A new case manager was assigned to 0404603 CRM:00225160205",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0404603 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2da8531c-c1e3-ef11-9341-000d3adecb49",
+            "date": "2025-02-06T11:32:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "968e7fda-a897-d46b-8d09-510c0575a701",
+            "subject": "Note( Reply from Depotfinity Team)",
+            "body": "Y2/S5 313651774001\nFor transaction ID:\nWe have seen this behaviour in the portal and as we discussed with the team we got to know that there is a feature in place where as soon as the transaction starts there will be a spike to the max power and after after a minute or two minutes the spike will come down to allocated power. This is a known scenario and completely normal.\n[ESPPL-4948]\nCustomer Defect - Smart charging Problem with ATV Verona Tenant - Jira\nY2/S5 313661877001\nFor transaction ID:\nWe have observed that the spike generated when the transaction was coming to the end and also the TX Profile is not getting generated every min. We will discuss the same with RnD team and will keep you posted.",
+            "date": "2025-02-06T13:54:41Z",
+            "extra": {}
+        },
+        {
+            "id": "df0c30ab-2589-9e30-a59c-c95878206c6b",
+            "subject": "Note",
+            "body": "Hi Sunil Sharma ,\nWe will be seeing the spike because\nSmart Charging Algorithm is triggered every minute, so if a charger starts the transaction in the middle of the minute, it will charge with TxDefault power, which usually will be the charger’s max power.\nIf there are other chargers charging in the group our algorithm will split the available power within them. So, until the next minute the already charging chargers will charge with the power determined by the algorithm and the newly started charger will charge with TxDefault and the very next minute the algorithm will set the TxProfile based on the power limit set.\nSo, for that few seconds alone one charger might be charging over the limit. That's why the power is spiking in one bar and not continuously peak power graph is not the actual value which is delivered.\nBR,\nSwastika Mishra",
+            "date": "2025-02-07T13:05:05Z",
+            "extra": {}
+        },
+        {
+            "id": "3518df85-67ef-ef11-9341-7c1e522002af",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nWe are following up with depotfinity Team, related to the issue.\nOnce we have any information we will let you know.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T08:49:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1f300e96-2ff5-ef11-be1f-7c1e5236eee4",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nWe are still following up with Depotfinity team related to the issue & work is till in progress.\nOnce we have any further information we will let you know.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T17:23:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b463eb14-30f5-ef11-be1f-6045bde11b90",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nWe are still following up with Depotfinity team related to the issue & work is till in progress.\nOnce we have any further information we will let you know.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T17:27:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2d687ef1-f803-f011-bae3-7c1e523508ba",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nThe reported issue is been rectified by Depotfinity team .\nThe issue was caused because the peak power gets calculated using the last meter value that came in before the TX profile. As soon as TX profile comes the power gets calculated using the TX profile.\nCould you p\nlease check from your end & let us know if the problem is still appearing or not after Feb,2025.\nif not then we will proceed with closing the ticket once you confirm.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T13:00:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9af3d8c2-b604-f011-bae3-000d3addf8ce",
+            "subject": "RE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils,\nCould you please reply us back on the ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-19T11:39:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "957d9c0b-b804-f011-bae2-7c1e52212aca",
+            "subject": "AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Sunil,\nit took you weeks to answer me, so please be patient!\nMany thanks!\nMit freundlichen Grüßen\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 19. März 2025 12:40\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nBetreff:\nRE: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224\nDear Nils,\nCould you please reply us back on the ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-19T11:48:22Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a3c23aa4-f408-f011-bae3-7c1e52350ea5",
+            "subject": "RE: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Hello Nils,\nHope your are fine.\nCould you please confirm us if the problem is resolved or not.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-24T21:12:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c6204fa-4c09-f011-bae3-000d3ad97a58",
+            "subject": "AW: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Sunil,\nI have only ever noticed the additional consumption of over 150 kWh at the same time by chance, as you cannot see it directly in the Siemens portal. Only if you know the vehicles that were charging at the same time and then look at the affected charging processes can you recognize additional consumption. The second possibility is via the power consumption at the network operator, but it has not been possible to log in here for days.\nBest regards\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 24. März 2025 22:15\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nBetreff:\nRE: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224\nHello Nils,\nHope your are fine.\nCould you please confirm us if the problem is resolved or not.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T07:44:27Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9b514068-640b-f011-bae2-7c1e52350ea5",
+            "subject": "RE: AW: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Hello Nils,\nAs checked the charging session on 26/03/2025 for both the chargers\n1st charging session started in\nY2/S5 313661877001 at 18:09:13 IST  : UTC 12:39 with limit set to 150KW from OCPP backend\nlater charging session also started in\nY2/S5 313651774001 at IST 18:34:53 IST : UTC 13:04 PM\nSo Limit in charger\nY2/S5 313661877001 & Y2/S5 313651774001 update & set to 75KW\n& session was successfully completed so it seems issue is resolved, please confirm if we can proceed with closing the ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-27T23:37:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b881d0e-b20b-f011-bae1-7c1e52771f40",
+            "subject": "AW: AW: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Sunil,\nmany thanks for your information.\nThis issue can be closed.\nThank you!\nBest regards\nNils Jepsen\nTelefon:\nE-Mail:\n+49 531 37090-38\nn.jepsen@logistik-in-xxl.de\nlogistik in XXL GmbH\nNiederlassung Salzgitter\nHüttenstraße 44\n38239 Salzgitter\nwww.logistik-in-xxl.de\nUnsere Informationen zur Erfüllung der Informationspflicht nach Art.12ff. DSGVO finden Sie hier:\nDatenschutzhinweise (Art.13)\n/\n(Art.14)\nWeitere Informationen zum Thema Datenschutz finden Sie unter folgendem Link:\nDatenschutz\nUmsatzsteuer Identifikationsnummer (UstID) DE139329521\nAmtsgericht Braunschweig HRB 204357\nGeschäftsführer: Volker Asche, Peggy Meißner, Hans-Werner Stagars\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 (ADSp 2017).\nHinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§\n431 HGB)vom Gesetz ab, indem sie\ndie Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im\nÜbrigen die Regelhaftung von 8,33 SZR zusätzlich auf EUR 1,25 Millionen je Schadenfall sowie EUR 2,5 Millionen je Schadenereignis,\nmindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 28. März 2025 00:49\nAn:\nJepsen, Nils <n.jepsen@logistik-in-xxl.de>\nBetreff:\nRE: AW: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224\nHello Nils,\nAs checked the charging session on 26/03/2025 for both the chargers\n1st charging session started in\nY2/S5 313661877001 at 18:09:13 IST  : UTC 12:39 with limit set to 150KW from OCPP backend\nlater charging session also started in\nY2/S5 313651774001 at IST 18:34:53 IST : UTC 13:04 PM\nSo Limit in charger\nY2/S5 313661877001 & Y2/S5 313651774001 update & set to 75KW\n& session was successfully completed so it seems issue is resolved, please confirm if we can proceed with closing the ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-28T08:53:02Z",
+            "extra": {
+                "sender": "n.jepsen@logistik-in-xxl.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d0bad8d0-230c-f011-998a-6045bde0265d",
+            "subject": "RE: AW: AW: AW: AW: ID0404603-DC/Si-D/FR-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH CRM:01251001224",
+            "body": "Dear Nils Jepsen,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0404603, the case is now closed.\nProblem Description\n: Charge exceeds Limit of 150KWH\nResolution\n: Issue is resolved from Depotfinity side, Checked the logs power is getting limit as per process\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-28T22:27:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4b658e52-240c-f011-998a-6045bde0265d",
+            "subject": "Ticket 0404603 has been closed. Are you satisfied with our provided solution? CRM:01251001318",
+            "body": "Dear Nils,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0404603\nwith the title:\nID0404603-DC/Si-D/DE-[Y2/S5 313651774001]Charge exceeds Limit of 150KWH\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-28T22:31:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

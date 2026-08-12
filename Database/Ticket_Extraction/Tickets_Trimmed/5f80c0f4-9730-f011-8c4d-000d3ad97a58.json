@@ -1,0 +1,94 @@
+{
+    "incident_id": "5f80c0f4-9730-f011-8c4d-000d3ad97a58",
+    "ticket_number": "0424328",
+    "title": "ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state",
+    "created_on": "2025-05-14T07:49:26Z",
+    "last_activity": "2025-07-03T06:30:29Z",
+    "age": "63347",
+    "description": "Reported issue: The station has been in an \"Unavailable\" state since May 14, 2025 at 05:30:39, which is the time of the last status change.\nPlease investigate and take the necessary actions as soon as possible. We would also appreciate a report on the root cause and any corrective measures planned.\nSolution:",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "mSS9T9",
+    "stage": null,
+    "serial_number": "MP / R6 170002075",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "de49c8ee-9730-f011-8c4d-7c1e52350ea5",
+            "subject": "Report of Unavailable Sicharge D Charging Station – S/N: MP / R6 170002075",
+            "body": "Hello,\nI would like to report an issue with a Sicharge D charging station, serial number MP / R6 170002075.\nIssue observed:\nThe station has been in an \"Unavailable\" state since May 14, 2025 at 05:30:39, which is the time of the last status change.\nPlease investigate and take the necessary actions as soon as possible. We would also appreciate a report on the root cause and any corrective measures planned.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-05-14T07:49:16Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "757d7905-b430-f011-8c4e-7c1e5236cda4",
+            "subject": "ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state CRM:02684000233",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002075\nChargerID/Serial No.\n:\nmSS9T9\nProblem Description\n:\nThe station has been in an \"Unavailable\" state since May 14, 2025 at 05:30:39, which is the time of the last status change.\nFor future reference, your case number is\n0424328\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-14T11:10:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4b1b54f8-5131-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state CRM:02684000233",
+            "body": "Dear Malek Drif,\nI hope you are doing well.\nAs per the reported timestamp, we have checked the logs and found that the charger outlet went\nunavailable for a short period\nand then returned to the\nready\nstate. This occurred due to a\ncharger reboot\nat that time.\nPlease refer to the following log entries confirming the reboot and outlet unavailability\n2025-05-14T07:48:04.276814+00:00 sicharge-cp [local0:info] sicharge-cp-backend/680342b1b078[730]: PLC-Error-Flag 'PerformingCollaboratedReboot' changed from false - ('Reboot inactive') to true - ('Reboot active...EMG stop to all outlets')\n2025-05-14T07:48:05.207919+00:00 sicharge-cp [local0:info] sicharge-cp-backend/680342b1b078[730]: OCPP: Send command: StatusNotification (9476485b-7d96-4dbf-adcb-6751c82756dd) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\nFollowing the reboot, all outlets returned to the\nready\nstate, and the charging session was completed successfully.\nPlease see below:\n2025-05-15T03:30:48.424923+00:00 sicharge-cp [local0:info] sicharge-cp-backend/680342b1b078[737]: setOutletLedState ready 2\n2025-05-14T07:56:58.753430+00:00 sicharge-cp [local0:info] sicharge-cp-backend/680342b1b078[737]: setOutletLedState ready 2\n2025-05-14T07:56:58.769448+00:00 sicharge-cp [local0:info] sicharge-cp-backend/680342b1b078[737]: setOutletLedState ready 1\nAdditionally, we have observed some\nerror flags related to the converter\nand\nMeter_BC6_AC_Income\n. To address this, we will coordinate with our\nregional team\nfor further analysis and resolution. Once we have more information or a resolution plan, we will reach out to you accordingly.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-15T06:01:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff2f1699-5231-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state CRM:02684000233",
+            "body": "Dear Team,\nI hope you are doing well.\nAs per the reported timestamp, we have checked the logs and found that the charger outlet went\nunavailable for a short period\nand then returned to the\nready\nstate. This occurred due to a\ncharger reboot\nat that time.\nPlease refer to the following log entries confirming the reboot and outlet unavailability:\n2025-05-14\nT07:\n48\n:\n04.276814\n+\n00\n:\n00\nsicharge-cp [local0:\ninfo\n] sicharge-cp-backend/\n680342\nb1b078[\n730\n]: PLC-Error-Flag\n'PerformingCollaboratedReboot'\nchanged\nfrom\nfalse\n- (\n'Reboot inactive'\n)\nto\ntrue\n- (\n'Reboot active...EMG stop to all outlets'\n)\n2025-05-14\nT07:\n48\n:\n05.207919\n+\n00\n:\n00\nsicharge-cp [local0:\ninfo\n] sicharge-cp-backend/\n680342\nb1b078[\n730\n]: OCPP: Send command: StatusNotification (\n9476485\nb\n-7\nd96\n-4\ndbf-adcb\n-6751\nc82756dd) - {\"connectorId\":\n1\n,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\nFollowing the reboot, all outlets returned to the\nready\nstate, and the charging session was completed successfully. See the log entries below:\n2025-05-14\nT07:\n56\n:\n58.753430\n+\n00\n:\n00\nsicharge-cp [local0:info] sicharge-cp-backend/\n680342b\n1b078[\n737\n]: setOutletLedState ready\n2\n2025-05-14\nT07:\n56\n:\n58.769448\n+\n00\n:\n00\nsicharge-cp [local0:info] sicharge-cp-backend/\n680342b\n1b078[\n737\n]: setOutletLedState ready\n1\n2025-05-15\nT03:\n30\n:\n48.424923\n+\n00\n:\n00\nsicharge-cp [local0:info] sicharge-cp-backend/\n680342b\n1b078[\n737\n]: setOutletLedState ready\n2\nAdditionally, we have observed some\nerror flags related to the converter and Meter_BC6_AC_Income\n:\nPowerConverter[3] E31\nindicates a\nModule Fan Fault\n.\nMeter_BC6_AC_Income\nis the\nincoming meter\nand may have\ncommunication issues\nthat need to be checked.\nKindly refer to the\nknowledge article\nprovided below for detailed troubleshooting steps related to converter issues.\nKnowledge Article: Knowledge Article for ISP: Emobility_Sicharge_D_Converter_ Missing converter in DC1,DC2,DC3,DC4 - Dynamics 365\nPlease also ensure to\ncarry a spare converter and incoming meter\n, if meter is connected via communication wire, during on-site checks or interventions.\nBefore any site intervention\n, we recommend\nupgrading the charger firmware to the latest version\n, which may help optimize the system performance and resolve these error flags.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-15T06:05:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47f03a39-5531-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state CRM:02684000233",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0424328 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-15T06:24:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45d7644a-8d36-f011-8c4e-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0424328 CRM:00225203937",
+            "body": "Franck Le Gal was assigned as new Case Manager for case 0424328 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=5f80c0f4-9730-f011-8c4d-000d3ad97a58",
+            "date": "2025-05-21T21:48:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "43b8a44d-2953-f011-877b-7c1e52768c07",
+            "subject": "0424328 - ID0424328-DC/Si-D/FR-[ MP / R6 170002075 ] station is in \"Unavailable\" state CRM:00752000920",
+            "body": "Bonjour ,\nVeuillez trouver ci joint le rapport d'intervention.\nLa borne est opérationnelle.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-06-27T07:35:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

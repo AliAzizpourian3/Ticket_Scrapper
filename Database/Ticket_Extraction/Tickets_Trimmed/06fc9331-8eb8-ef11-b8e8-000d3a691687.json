@@ -1,0 +1,127 @@
+{
+    "incident_id": "06fc9331-8eb8-ef11-b8e8-000d3a691687",
+    "ticket_number": "0395278",
+    "title": "ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue",
+    "created_on": "2024-12-12T13:37:15Z",
+    "last_activity": "2025-12-16T14:02:59Z",
+    "age": "1771",
+    "description": "Reported behavior/issue:\nAuthorization Issue\nRoot cause:\nSolution:  Query addressed\nOn DAMEX Sanctioned List:\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "gvtqYD",
+    "stage": null,
+    "serial_number": "Y2 / S6 313724839002,Y2 / S6 313724839002",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "3d14db26-8eb8-ef11-b8e8-000d3adc3b84",
+            "subject": "Webform_incident_SiCharge D_12-12-2024_SN: Y2/S6 313724839002",
+            "body": "Dear Milan Klempay,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/S6 313724839002\nThank you\neMobility Technical Support Team\nSehr geehrte/r Milan Klempay,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/S6 313724839002\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-12-12T13:37:04Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c8ab7ff6-b2b8-ef11-b8e8-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0395278 CRM:00225137732",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0395278 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=06fc9331-8eb8-ef11-b8e8-000d3a691687",
+            "date": "2024-12-12T18:00:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "34a52db5-deb8-ef11-b8e9-0022489bcff4",
+            "subject": "ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Dear Milan,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S6 313724839002\nChargerID/Serial No.\n:\ngvtqYD\nProblem Description\n: Authorization Issue\nTroubleshooting\n: We have analyzed the logs and found that the time you shared corresponds to when the authorization was done on connectorId: 2, but the DC cable was still connected to the vehicle. Upon reviewing the logs, we observed that after some time, the charger was rebooted, as we did not see any change in the Pilot State for the DC2 outlet.\nFor future reference, your ticket number is\n0395278\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-12T23:13:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c05506e-2ab9-ef11-b8e9-000d3a697eb1",
+            "subject": "RE: ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Hello Shrey,\nPlease examine this charger further. Authorization is still not possible there. If you search, you will find multiple occasions like that.\nNo car was connected to any other connector while I was on-site. Both connectors were in the charger while the authorization got stuck, which happened multiple times.\nWhy this charger reports it has 3 points in reality it only has DC1 and DC3:\n2024-12-11T17:15:35.100913+00:00 sicharge-cp [local0:info] sicharge-cp-backend/81cdbe671349[706]: OCPP: Send command: Authorize (f5083246-9338-4eb3-883b-328b0c5ee992) - {\"idTag\":\"04793B9A3F7980\"}\nOCPP: Received result: Authorize (f5083246-9338-4eb3-883b-328b0c5ee992) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\ngvtqYD\nOCPP: Send command: StatusNotification (48137b5a-4023-470c-a80a-74631f78f0e2) {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Preparing\"}\n2024-12-11T17:15:36.785344+00:00 sicharge-cp [local0:info] sicharge-cp-backend/81cdbe671349[706]: setOutletLedState authenticated 2\nThank you very much.\nKind regards,\nMilan",
+            "date": "2024-12-13T08:15:42Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f026c9f9-80b9-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Hi Milan,\nGreetings of the day!\nWe have analyzed the logs again, and for the latest 1-day logs, we found that a successful charging session occurred on DC1 with the EV's state of charge (SOC) reaching up to 80%. In another charging session, authentication was not completed in a timely manner. Additionally, the charger was rebooted around 2:00 PM UTC on December 13th, at which point the connectors was unavailable. Throughout the past day, the connector was briefly unavailable for fractions of a second due to a CoAP polling issue caused by a lack of communication with the SECC. This issue has already been addressed with the concerned team and will be fixed in the upcoming firmware update.\nRegarding the three points that you're seeing in the logs, ConnectorId : 0 is for the complete charger and ConnectorId 1&2 are for respected DC outlets.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-13T18:35:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1fdfa9c7-82b9-ef11-b8e8-7c1e5221104a",
+            "subject": "RE: ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Hello Shrey,\nOk you can close this ticket for now. I will test the charger once I will be on-site and I will let you know if it works properly.\nI expect to visit the site next Wednesday.\nKind regards,\nMilan",
+            "date": "2024-12-13T18:48:11Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1f551146-85b9-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Dear Milan,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0395278.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-13T19:05:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "03fbc37c-85b9-ef11-b8e8-000d3a691687",
+            "subject": "Ticket 0395278 has been closed. Are you satisfied with our provided solution? CRM:00643001162",
+            "body": "Dear Milan,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0395278\nwith the title:\nID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-13T19:07:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45ac86c3-f6bc-ef11-b8e8-000d3ab41b62",
+            "subject": "RE: ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue CRM:00643001159",
+            "body": "Hello Shrey,\nI have tested again authorization on this charger and issue still prevails.\nPlease have a look at that.\nAuthorization is accepted by the backend but on screen, we get „Validate credentials“\nThis behavior is the same for both connectors.\n2024-12-18T04:00:14.955379+00:00 sicharge-cp [local0:info] sicharge-cp-backend/81cdbe671349[704]: OCPP: Send command: Authorize (df94efca-c549-491e-9006-3618695c8f03) - {\"idTag\":\"04793B9A3F7980\"}\n2024-12-18T04:00:16.099929+00:00 sicharge-cp [local0:info] sicharge-cp-backend/81cdbe671349[704]: OCPP: Received result: Authorize (df94efca-c549-491e-9006-3618695c8f03) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\nKind regards,\nMilan",
+            "date": "2024-12-18T04:15:53Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "32b7e7cc-f6bc-ef11-b8e8-000d3a691687",
+            "subject": "Email sent to a closed case 'ID0395278-DC/Si-D/CZ-[Y2/S6 313724839002] Authorization Issue (0395278)' CRM:00225139944",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0395278\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-12-18T04:16:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

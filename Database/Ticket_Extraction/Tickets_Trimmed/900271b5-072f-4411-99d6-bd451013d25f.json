@@ -1,0 +1,149 @@
+{
+    "incident_id": "900271b5-072f-4411-99d6-bd451013d25f",
+    "ticket_number": "0437011",
+    "title": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge",
+    "created_on": "2025-07-11T09:11:28Z",
+    "last_activity": "2025-12-04T12:26:16Z",
+    "age": "141317",
+    "description": "Reported behaviour/issue:\nAuthentication failed due to SLAC request missing\nSolution:\nNothing - EV issue",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "fT9hUP",
+    "stage": null,
+    "serial_number": "MP / PN 170001094",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "81d25d0c-375e-f011-bec2-7c1e5277c3ca",
+            "subject": "A new case manager was assigned to 0437011 CRM:00225227235",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0437011 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=900271b5-072f-4411-99d6-bd451013d25f",
+            "date": "2025-07-11T09:11:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70fd89dc-8d60-f011-bec3-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0437011 CRM:00225227964",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0437011 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=900271b5-072f-4411-99d6-bd451013d25f",
+            "date": "2025-07-14T08:38:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2cd20477-a160-f011-bec4-6045bdde4786",
+            "subject": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Dear Simen,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PN 170001094\nChargerID/Serial No.\n:\nfT9hUP\nProblem Description\n: Authentication failure?\nTroubleshooting\n:\nHere is the logs analysis:\nFirst:\n​​​​​​​\n​​​​​​​This error means that the charger didn't start the SLAC communication, in a specific step of SLAC. As such, we didn't even get to authentication. We only see A -> B2 and B2->E\n​​​​​​​Second:\n​​​​​​​\n​​​​​​​As you can see, the idTag is invalid and didn't start the session.\nFor future reference, your case number is\n0437011\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-14T10:58:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2260b8be-a460-f011-bec3-000d3ab07fc1",
+            "subject": "RE: ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi,\nFirst fault was a ecoG fault then?\nSecond fault is autocharge failure, Autocharge is active in SCB but the costumer has turned it off in their backend.\nDue to some issues with their OCPP backend.\nCan the issue with the HMI image spinning be if the session fails due to an ecoG error.\nThe communication “box” doesn’t indicate a fault so all 4 “boxes” just keeps spinning.\nAccording to Kople the loading image doesn’t go away until they unplug the vehicle.\nMaybe a bug in v7?\n/Simen",
+            "date": "2025-07-14T11:21:57Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e8b10fc4-a560-f011-bec4-6045bdde4786",
+            "subject": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi,\nI would need EcoG logs, but the SupportedAppProtocol is something from EV side. So it's EV's fault I assume.\nI don't know about the spinning since I've never face this issue. So I assume that EcoG is waiting for the timeout and until it does it will keep the same, waiting for the request.\nLet me know if I answered all the questions.\nBest regards,\nFrancisco",
+            "date": "2025-07-14T11:29:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e603739-4c61-f011-bec3-7ced8d40e4a4",
+            "subject": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi Simen, good morning :)\nPlease let me know if I can close the ticket. Otherwise, let me know if we can reproduce it.\nI am unable to provide any more details with what I have.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-15T07:20:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf0240ed-5561-f011-bec3-7c1e52768372",
+            "subject": "RE: ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi!\nYou say it is a EV fault, I see the MAC is showing it is a MEB car 00.7d.fa.02.31.54\nGuess this can also be a case of MEB issue? After my conversations with the costumer, I think in some cases when the session fails due to ecoG faults (MEB issue or comm error with the car). The HMI can get stuck with the loading screen, however its hard to recreate it seems.\nThis issue has also been observed by Markus in Finland.\n/Simen",
+            "date": "2025-07-15T08:30:19Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "76f7a830-6661-f011-bec3-7c1e5236cda4",
+            "subject": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi Simen,\nThanks for the feedback.\nBest I can do is update the EcoG to 1.4.11 and hope it mitigates the issue, what do you think?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-15T10:26:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "024f37da-6761-f011-bec3-7c1e52faf3c6",
+            "subject": "RE: ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Okay, lets try that and see if they report the issue again.\nEcoG 1.4.11 will be included in v8 right? Update the charger when its not in use please.\n/Simen",
+            "date": "2025-07-15T10:38:42Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3e3bf74b-8661-f011-bec3-7c1e523508ba",
+            "subject": "ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Hi Simen,\nI got the charger free and it's updating now. Yes the 1.4.11 is included in v8\nPlease let me know if I should close the ticket or send it to you for monitoring.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-15T14:16:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d371c86-2b62-f011-bec1-7ced8d467448",
+            "subject": "RE: ID0437011-DC/Si-D/NO-[MP / PN 170001094] HMI spinning during precharge CRM:00315002813",
+            "body": "Thanks, you can send the ticket back to me.\n/Simen",
+            "date": "2025-07-16T09:59:21Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c9b0ae3c-2f62-f011-bec3-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0437011 CRM:00225229376",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0437011 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=900271b5-072f-4411-99d6-bd451013d25f",
+            "date": "2025-07-16T10:25:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

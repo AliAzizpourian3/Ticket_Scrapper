@@ -1,0 +1,116 @@
+{
+    "incident_id": "21165a3f-911a-f011-998a-7c1e5287f582",
+    "ticket_number": "0419179",
+    "title": "ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101",
+    "created_on": "2025-04-16T07:06:04Z",
+    "last_activity": "2026-02-13T09:50:38Z",
+    "age": "161279",
+    "description": "Reported behaviour/issue: DC2_CableTempSensor_XD101 → CAN Communication lost\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "oFtBFH",
+    "stage": null,
+    "serial_number": "Y2 / S6 313724839003",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "17615336-911a-f011-998a-000d3adc93d1",
+            "subject": "Webform_incident_SiCharge D_16-04-2025_SN: 313724839003",
+            "body": "Dear Tomas Cepicka,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n313724839003\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tomas Cepicka,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n313724839003\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-16T07:05:44Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3d93f00b-991a-f011-998a-6045bdde4786",
+            "subject": "ID0419179-DC/Si-D/Cz-[Y2/S6 313724839003] Error flag  SafetyRelay_QA26 CRM:02682000049",
+            "body": "Dear Čepička, Tomáš (RC-CZ DI CS SD SO LVD),\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S6 313724839003\nChargerID/Serial No.\n:\nY2 / S6 313724839003\nProblem Description\n: Dear support, yesterday the CPO raised a ticket regarding this charger. It was in error. From the error flags we found the SafetyRelay_QA26 was active. Today in the morning our technician went on-site during his trip and twisted the emergency button to its original position. Although the station has been showing errors ever since - attached in the pictures.\nFor future reference, your case number is\n0419179\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-16T08:01:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "937d8682-a41a-f011-9989-7c1e52361e39",
+            "subject": "ID0419179-DC/Si-D/Cz-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:02682000049",
+            "body": "Hi Tomas, good morning.\nChanging the title to the CableTempSensor error since we found that the E-Stop was pressed and caused the QA26 error.\nFrom my side, as I already showed you, when we updated the charger it came back online (the outlet). The error codes show that there was a CAN communication lost in that outlet.\nIf the error occurs again, please leave the charger in error to proof where the root cause lies, my suggestion is to check this line right here:\nRemove the Cables from the XD16:13B and 14D, and measure resistance between them. You must have 60ohm, if you have any other value, that means that the microcontroller cables are faulty and it needs replacement.\nIf you have 60 Ohm, do the same on the KF13. Remove the CAN 1L and 1H from the KF13 and measure resistance again, you must have 60 Ohm. If you don't then from the XD16 to KF13 is the problem, either the cables are faulty or the XD16 is not passing correctly. You can try doing a bypass from the cables to KF13 with a WAGO terminal for example to understand if there is a problem with the cables or the terminal.\nIf you have 60 Ohm reaching the KF13, then please try replacing the black connector with a neighbour:\nThe arrows are pointing to the CAN cables, use this black connector that is unused and try again.\nIf it doesn't work, then we need to replace the EcoG.\nIs there any questions?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-16T09:23:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0acc6c0e-a91a-f011-9989-7c1e52781f84",
+            "subject": "RE: ID0419179-DC/Si-D/Cz-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:02682000049",
+            "body": "Hello Francisco,\nThank you for the provided steps what to do.\nI will inform the customer once the error reoccurs to NOT reboot the charger and leave it. Then we measure the values on-site and check the wires and resistances.\nYour description is perfect I think there are no more questions for now.\nThanks a lot.\nHave a nice day\nBest Regards\nTomas Cepicka\nSiemens, s.r.o.\nRC-CZ SI E CS\nSiemensova 2715/1\n155 00 Praha 13-Stodůlky\nMobil:+420 607 045 040",
+            "date": "2025-04-16T09:56:28Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "50d58765-e058-f011-877b-7c1e52faf3c6",
+            "subject": "0419179 - ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:00362000057",
+            "body": "Dear Tomas,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-07-04T14:08:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc108a90-ff5a-f011-bec2-7c1e52fad806",
+            "subject": "RE: 0419179 - ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:00362000057",
+            "body": "Dear Michele,\nWe are still working on this case. We need to do some testing on-site but there was no suitable occasion to do that.\nIn the future days or 1 week we should be able to visit the site and do some testing.\nThanks!\nBest Regards\nTomas Cepicka\nSiemens, s.r.o.\nRC-CZ SI E CS\nSiemensova 2715/1\n155 00 Praha 13-Stodůlky\nMobil:+420 607 045 040",
+            "date": "2025-07-07T06:57:03Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e4c6776b-d367-f011-bec2-6045bdde4786",
+            "subject": "RE: 0419179 - ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:00362000057",
+            "body": "Dear Tomas,\nmay I ask you if you could provide a status update about the repair on this ticket?\nAccording to our last email exchange, the repair should have been completed one week after your update of 07.07.2025, hence 14.07.2025\nIs this the case or are there still actions pending?\nMany thanks for your support.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-07-23T14:43:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf716bd7-d367-f011-bec2-7c1e52206585",
+            "subject": "RE: 0419179 - ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:00362000057",
+            "body": "Dear Tomas,\nmay I ask you if you could provide a status update about the repair on this ticket?\nAccording to our last email exchange, the repair should have been completed one week after your update of 07.07.2025, hence 14.07.2025\nIs this the case or are there still actions pending?\nMany thanks for your support.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-07-23T14:46:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8c88381a-0c72-f011-b4cc-6045bde0265d",
+            "subject": "RE: 0419179 - ID0419179-DC/Si-D/CZ-[Y2/S6 313724839003] DC2_CableTempSensor_XD101 CRM:00362000057",
+            "body": "Hello Michele,\nSorry about the delay.\nPlease close the ticket. The issue is no longer occurring. If it will occur in the future, we will open a new ticket.\nThanks\nBR Tomas",
+            "date": "2025-08-05T14:54:39Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

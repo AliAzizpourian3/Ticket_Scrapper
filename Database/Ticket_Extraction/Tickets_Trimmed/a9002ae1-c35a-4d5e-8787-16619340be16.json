@@ -1,0 +1,115 @@
+{
+    "incident_id": "a9002ae1-c35a-4d5e-8787-16619340be16",
+    "ticket_number": "0465088",
+    "title": "ID0465088-DC/Si-D/AT-[MP/R6 170001968] - long charging session",
+    "created_on": "2025-12-01T12:41:27Z",
+    "last_activity": "2026-01-19T08:27:29Z",
+    "age": "40082",
+    "description": "Reported behavior/issue- long charging session\nSolution: Seems that the EV didn't change pilotState and only after the reboot we can see the available state, possible that it was plugged out during reboot.",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "MP / R6 170001968",
+    "case_nature_code": 580000001,
+    "chargerID": "CY4tJy",
+    "additional_info": [
+        {
+            "id": "2bf92527-b3ce-f011-bbd3-7ced8d4259cd",
+            "subject": "A new case manager was assigned to 0465088 CRM:00225296469",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0465088 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a9002ae1-c35a-4d5e-8787-16619340be16",
+            "date": "2025-12-01T12:42:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86dcc7be-830f-cd9c-bab7-cdfeea6b4ac5",
+            "subject": "Case notes",
+            "body": "Hello,\non our charger\nMP/R6 170001968\nwe've encountered a charging session that was very long.\nCould you please check if the car was really plugged in for this time, or if there has been an error and the car was unplugged before the time that is shown in our backend?\nThank you and kind regards\nLara Oblak",
+            "date": "2025-12-01T12:44:31Z",
+            "extra": {}
+        },
+        {
+            "id": "5f44eea6-b3ce-f011-bbd3-7ced8d40d9c4",
+            "subject": "ID0465088-DC/Si-D/AT-[MP/R6 170001968] - long charging session CRM:03056000649",
+            "body": "Dear\nLara-Anna\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R6 170001968\nChargerID\n:\nCY4tJy\nProblem Description\n: long charging session\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0465088\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-01T12:45:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2389350a-53cf-f011-bbd3-7ced8d425bfe",
+            "subject": "A new case manager was assigned to 0465088 CRM:00225296854",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0465088 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a9002ae1-c35a-4d5e-8787-16619340be16",
+            "date": "2025-12-02T07:46:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fcef8d18-4203-494d-8de6-75a1e6f0911e",
+            "subject": "Log issue",
+            "body": "Dear SID Team,\nUnfortunately I haven´t got any significant issue. Can you please check further?",
+            "date": "2025-12-04T09:36:42Z",
+            "extra": {}
+        },
+        {
+            "id": "2ebd376c-551f-0587-a2e7-a67d14e0434a",
+            "subject": "NOTE FROM L3",
+            "body": "QA21-22 opened mid charging and PilotState goes from C2->C1 but seems to be incorrect, something wrong with StateMonitor or EcoG, after a reboot the outlet is available, unless they removed the plug mid reboot I don't see another explanation",
+            "date": "2025-12-04T11:19:32Z",
+            "extra": {}
+        },
+        {
+            "id": "602daa83-bad1-f011-bbd3-7c1e523625c2",
+            "subject": "A new case manager was assigned to 0465088 CRM:00225298900",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0465088 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a9002ae1-c35a-4d5e-8787-16619340be16",
+            "date": "2025-12-05T09:12:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4dee4bb4-2adf-f011-8544-7ced8d4251b1",
+            "subject": "ID0465088-DC/Si-D/AT-[MP/R6 170001968] - long charging session CRM:03056000649",
+            "body": "Hello Lara, good morning.\nThank you for your patience so far.\nI checked the logs and found that the charging was aborted, and the PilotState changed from C2 to C1, which indicates that the charger was still in communication with the EV, only when the EV changes the PilotState from C to B, we have a session stop.\nAfter a reboot, the outlet becomes available again, so we cannot confirm if the problem was related to hardware or software, unless there is someone that can prove that the plug was removed before or during the restart.\nIf they plug out during the restart, then we can only assume that the EV was the one that didn't unlock since they are the responsible.\nIf they plug out before the restart then we need to align with the field service team for a site visit.\nLet me know your feedback.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-12-22T11:38:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b4d9f6b4-2adf-f011-8544-7c1e5276d071",
+            "subject": "A new case manager was assigned to 0465088 CRM:00225308475",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0465088 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a9002ae1-c35a-4d5e-8787-16619340be16",
+            "date": "2025-12-22T11:38:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fac07a49-92e4-f011-8544-000d3addfd1c",
+            "subject": "ID0465088-DC/Si-D/AT-[MP/R6 170001968] - long charging session CRM:03056000649",
+            "body": "Hello Lara, good morning\nSince I've provided the answer, I will close the ticket.\nIf this happens again, please try to collect all the information from the previous email so that we can find the root cause and investigate.\nThank you and have a Happy New Year!\nBest regards,\nFrancisco",
+            "date": "2025-12-29T08:42:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

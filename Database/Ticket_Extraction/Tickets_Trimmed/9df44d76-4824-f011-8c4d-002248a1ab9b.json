@@ -1,0 +1,122 @@
+{
+    "incident_id": "9df44d76-4824-f011-8c4d-002248a1ab9b",
+    "ticket_number": "0421362",
+    "title": "ID0421362-DC/Si-D/NL/ [MP / R2 170001542] Live Linux Image required",
+    "created_on": "2025-04-28T15:50:09Z",
+    "last_activity": "2025-11-04T12:42:11Z",
+    "age": "273412",
+    "description": "Reported Issue:\nLive Linux image required.\nSolution:\nChild Case:\n0421855",
+    "type": 3,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R2 170001542,MP / R6 170002120",
+    "case_nature_code": 580000001,
+    "chargerID": "c0BYGi, hkzyB1",
+    "additional_info": [
+        {
+            "id": "9bffad6e-4824-f011-8c4d-7c1e523508ba",
+            "subject": "Request the access to Live Linux image to L3",
+            "body": "Hello good afternoon,\nI need to prepare live linux USB for scripts to run.\nI send this email to request access to the live linux image.\nThanks in advance,\nKind regards,\nBas Jeurissen",
+            "date": "2025-04-28T15:50:05Z",
+            "extra": {
+                "sender": "bas.jeurissen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a8f9df24-b624-f011-8c4d-7c1e5236eee4",
+            "subject": "ID0421362-DC/Si-D/NL/ [NULL] Live Linux Image required CRM:00641001255",
+            "body": "Dear Bas Jeurissen,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nProblem Description\n:Live Linux Image required\nTroubleshooting\n:\nThe Live Linux image along with the user script has been forwarded to you via Secufex mail. Kindly confirm once you have received it.\nShould you require any further assistance, please do not hesitate to let me know.\nThank you.\nWith best regards,\nAbhinav\neMobility Tech Support Team\nPlease do not change the subject of this email when replying to it.",
+            "date": "2025-04-29T04:55:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ff2dd1d-e125-f011-8c4d-6045bde0265d",
+            "subject": "RE: ID0421362-DC/Si-D/NL/ [NULL] Live Linux Image required CRM:00641001255",
+            "body": "Hi Bas,\nThank you very much for your coordination during the intervention.\nWe prepared the USB Live Linux stick and set the router password to\nadmin01\n, then proceeded with the configuration restore process.\nDuring the restore attempt, we initially encountered a\n\"No Bootable Device\"\nerror. To investigate further, we performed an IP scan using MobaXterm and noticed that the PLC, Linux, and Logo IPs were not reachable. Upon checking, we confirmed that all devices were powered on, but there were no blinking LEDs on the LAN cables connected to those devices.\nWe replaced the LAN cables, tried multiple reboots, connected the Live Linux USB stick to different USB ports on the Linux device, and navigated the boot menu using a USB keyboard—but each time, the system continued to show the same\n\"No Bootable Device\"\nerror.\nWe suspect there may be an issue with the communication module. At this point, I am handing the case over to the Expert Team. They will contact you shortly to continue the investigation.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-30T16:35:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66e7f7b8-30b5-2787-b5fc-c68a12dd1cdd",
+            "subject": null,
+            "body": "Child Case:\n0421855",
+            "date": "2025-04-30T16:54:57Z",
+            "extra": {}
+        },
+        {
+            "id": "6ff0ed98-13df-8255-9a4c-71fecfb38f2f",
+            "subject": null,
+            "body": "MP / R6 170002120 (hkzyB1) unit was successfully CFast flashed.",
+            "date": "2025-05-02T05:14:54Z",
+            "extra": {}
+        },
+        {
+            "id": "82d8ac21-5427-f011-8c4d-7c1e5236e32d",
+            "subject": "RE: ID0421362-DC/Si-D/NL/ [NULL] Live Linux Image required CRM:00641001255",
+            "body": "Hello\nCharger is investigated with help of L3\n@KS, Sambath (SI E CS SD ES)\n. Boot issue from KF1 PLC solved by work around from L3. Cfast card had to be inserted instead of out as mentioned in work sheet.\nNew charger created in SCB due to unknown reason, issue with Linux bootable image? New charger\nID 1Y9xGI\nNew SCB charger ID is prepared by L3, Hardware issue found and causes charger to not work. See attached pictures.\nAll 3 surge fuses are measured to be broken and need to be replaced. Component F01-FC1. This is a live AC incoming part so incoming AC needs to be turned off to continue working safe.\nParts needed:\n@Iovine, Monica (SI E HLX C B&F CS)\nplease order following parts for next intervention on charger location.\n3x 8EM5903-0AA00-3AA0\nKind regards,\nBas Jeurissen",
+            "date": "2025-05-02T12:51:23Z",
+            "extra": {
+                "sender": "bas.jeurissen@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "14867d71-4f2a-f011-8c4d-7c1e52768c07",
+            "subject": "ID0412517-DC/Si-D/BE-[MP / R2 170001542] Plug holder is cracked + Cfast Card Corrupt",
+            "body": "Good morning,\nThe correct ticket number is ID0412517.\n@Segers, Marnic (RC-BE SI EA SO ENG CS)\ndo you know who can turn off the incoming AC?\nMonica Iovine\nPlanner & Service Coordinator\nDe Run 4315\n|\n5503 LP Veldhoven\n|\nThe Netherlands\nT: +31 088-50 16 333\n(Support phone)\n|\n*\n:\nmonica.iovine@siemens.com\n|\n:\n:\nwww.heliox.com",
+            "date": "2025-05-06T07:55:18Z",
+            "extra": {
+                "sender": "monica.iovine@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "de2380e8-a12c-f011-8c4e-7c1e5236cda4",
+            "subject": "Child Case Resolved",
+            "body": "The Child Case 0421855 created on 4/30/2025 4:58:01 PM, for Product Sicharge D - Charging Center and End Customer Sparki was Closed and Resolved. Please take appropriate actions on this Case.",
+            "date": "2025-05-09T06:50:45Z",
+            "extra": {}
+        },
+        {
+            "id": "66b678e7-1a2d-f011-8c4d-7c1e52768c07",
+            "subject": "RE: ID0412517-DC/Si-D/BE-[MP / R2 170001542] Plug holder is cracked + Cfast Card Corrupt CRM:00797001863",
+            "body": "Dear RC-BE Team,\nI am handing over the case for onsite activity and spare parts ordering.\nSpare Parts (MLFM):\n3x\n8EM5903-0AA00-3AA0\nI am writing to formally inform that we are moving case 0421362 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nBE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nBE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T21:16:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b96a47eb-9415-723b-8dcd-0db92172ae02",
+            "subject": "Part request sent 06.05.25. ",
+            "body": "",
+            "date": "2025-05-12T12:47:27Z",
+            "extra": {}
+        },
+        {
+            "id": "f030c59d-7bb9-f011-bbd2-7ced8d77aaa4",
+            "subject": "Ticket 0421362 has been closed. Are you satisfied with our provided solution? CRM:00225282524",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0421362\nwith the title:\nID0421362-DC/Si-D/NL/ [MP / R2 170001542] Live Linux Image required\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-04T12:41:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

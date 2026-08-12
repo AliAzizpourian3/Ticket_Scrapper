@@ -1,0 +1,112 @@
+{
+    "incident_id": "6471c6ce-f802-f011-bae3-000d3ad97a58",
+    "ticket_number": "0412989",
+    "title": "ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’",
+    "created_on": "2025-03-17T06:26:52Z",
+    "last_activity": "2025-03-24T13:35:17Z",
+    "age": "10509",
+    "description": "Reported behavior/issue:\nOutlet1\n,Charging Issue ‘Authorization’\nRoot cause: Query addressed",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "CY4tJy",
+    "stage": null,
+    "serial_number": "MP / R6 170001968",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1a3746c7-f802-f011-bae3-7c1e52faf3c6",
+            "subject": "Webform_incident_SiCharge D_17-03-2025_SN: 170001968",
+            "body": "Dear Lara-Anna Oblak,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001968\nThank you\neMobility Technical Support Team\nSehr geehrte/r Lara-Anna Oblak,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001968\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-17T06:26:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73effcfa-dd21-b14a-9c4f-15ded806307d",
+            "subject": "Case opening remark",
+            "body": "For Socket 1, several error messages with the information \"Internal error\" were sent to our backend. After closer investigation, it was determined that some charging processes were showing 0.000 kWh, and on March 15, 2025, two different charging processes from two different cards/customers were even aborted. Currently, the charging point has been in the \"Charging is being prepared\" state for some time. I've included a small excerpt from the communication log that was sent to our backend in the comments section below. 03/14/2025 6:00 PM\nOn March 14, 2025, 6:34:30 PM +01:00, the status changed to\n\"NoError, Preparing,\" followed by two authorizations of the same RFID tag accepted by the backend on March 14, 2025, 6:34:39 PM +01:00 and\nMarch 14, 2025, 6:34:53 PM +01:00.\nOn March 14, 2025, 6:35:35 PM +01:00, the message\n\"InternalError, Faulted\" followed, and on March 14, 2025, 6:35:39 PM +01:00, it then changed to\n\"NoError, Preparing.\" The same card was authorized again at 18:35:46 +01:00 (backend accepted). At 18:36:00 +01:00, the status changed back to \"NoError,\nUnavailable.\"\nFrom 18:36:03 +01:00, the status was again \"InternalError, Faulted.\"\nAt 18:36:11 +01:00, it changed back to \"NoError, Available.\"\nAt 18:36:22 +01:00, it changed back to \"NoError, Preparing.\"\nAt 18:36:26 +01:00, the same card was authorized again, and the backend accepted the authorization. The next status message at 18:37:29 +01:00 was \"NoError, Finishing.\"\nSubsequently, \"NoError,\nSuspendedEVSE\" was sent at 18:40:49 +01:00.",
+            "date": "2025-03-17T06:37:14Z",
+            "extra": {}
+        },
+        {
+            "id": "62bda64f-fa02-f011-bae3-7c1e5236eee4",
+            "subject": "ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Dear Lara Anna Oblak,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170001968\nChargerID/Serial No.\n:\nCY4tJy\nProblem Description\n: Outlet1,Charging Issue ‘Authorization’\nPlease allow us some time to investigate the issue and we will get back to you with our findings.\nFor future reference, your case number is\n0412989\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T06:37:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "085f9904-9d03-f011-bae3-7c1e5236eee4",
+            "subject": "RE: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Hi Lara,\nWe have analyzed the logs, and below are our findings:\n|\nIn the snapshot below, you can see that when the charging session started on outlet 1, the pilot state changed to B2 (cable connected), and the status notification went to 'Preparing.' However, after that, the pilot state changed to A (cable disconnected), which caused the session to be aborted.\nIn the snapshot below, when the EV got connected again and the pilot state changed to B2, we encountered an error of 'SLAC failure (no PLC link established).' This indicates that the PLC is unable to establish a connection with the EV due to either a physical connection issue with the DC cable or a communication problem. In this scenario, you should replug the cable into the EV, ensuring it is properly tightened and connected.\nIn the snapshot below, when the charging session is attempted again, the cable is connected, the status notification goes to 'Preparing,' and authorization is accepted. However, the DC cable gets disconnected from the vehicle, as indicated in the logs, where the pilot state changes from B2 to A.\nIn the snapshot below, the status notification of the outlet changes to 'Unavailable' due to an 'Error Polling CoAP.' This issue is self-recoverable, and the outlets are temporarily out of order because the internal communication with the SECC was lost for a brief period. Our charger will reconnect to the SECC within 5 seconds. While the SECC is unreachable, an 'Outlet Out of Order' flag will be active and will be cleared once the charger reconnects to the SECC.\nIn the snapshot below, when the SECC of the outlets reconnects with the charger and the charging session is attempted again, we observed in the logs that the session was aborted due to a communication issue with the EV, which was detected from the EV side. In this case, could you please let us know the EV manufacturer and model you're trying to connect?\nIt was attempted again on DC Outlet 2, and we observed the same issue with the communication problem from the EV side. Please refer to the snapshot below.\nWe can conclude that there is no issue on the charger side. Initially, we encountered an issue where the cable got disconnected during the charging session attempt. Then, we observed a SLAC failure, where the DC plug was not connected properly. Finally, we are seeing a communication issue from the EV side.\nPlease let us know if you have any further queries to discuss. If not, we will proceed with closing this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T02:02:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09a4e3e4-6404-f011-bae3-000d3adc93d1",
+            "subject": "RE: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Hi Lara,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-19T01:53:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "acfd1f27-2e05-f011-bae3-7c1e52fad806",
+            "subject": "RE: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Hi Lara,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-20T01:53:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2263470-7005-f011-bae2-000d3ad990ba",
+            "subject": "AW: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Hello,\nthank you for the information! The Ticket can get closed.\nKind regards,\nLara Oblak\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 20. März 2025 02:55\nAn:\nlsm@e-netze.at\nBetreff:\nRE: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355\nHi Lara,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-20T09:48:16Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b6e3d593-b408-f011-bae2-000d3ad990ba",
+            "subject": "RE: AW: ID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’ CRM:00643001355",
+            "body": "Dear Lara Anna Oblak,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0412989, the case is now closed.\nProblem Description\n:\nOutlet1,Charging Issue ‘Authorization\nResolution\n: Query addressed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-24T13:33:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b7ac65b9-b408-f011-bae2-000d3ad990ba",
+            "subject": "Ticket 0412989 has been closed. Are you satisfied with our provided solution? CRM:00643001358",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0412989\nwith the title:\nID0412989-DC/Si-D/AT-[MP / R6 170001968] Outlet1,Charging Issue ‘Authorization’\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-24T13:34:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

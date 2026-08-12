@@ -1,0 +1,182 @@
+{
+    "incident_id": "410f0cd5-49df-f011-8544-7ced8d4258c6",
+    "ticket_number": "0469128",
+    "title": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC",
+    "created_on": "2025-12-22T15:21:15Z",
+    "last_activity": "2026-01-15T07:54:32Z",
+    "age": "34113",
+    "description": "Reported behavior/issue: Intermittent communication between Siemens Sicharge-D and PLC – ELMS / Load Balance.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "7p5Il9",
+    "stage": "Resolved",
+    "serial_number": "Y2 / R3 313020197004",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "41749cd1-49df-f011-8543-7c1e52fb41da",
+            "subject": "Intermittent communication between Siemens Sicharge-D and PLC – ELMS / Load Balance",
+            "body": "Hello everyone,\nWe have identified a communication issue with the Siemens Sicharge-D charger,\nSN: Y2 R4 313020197004\nID: 7PSil9.\nAt this site, we have a dynamic load control (Load Balance) project already implemented and fully operational. Together with Siemens Brazil, we carried out the ELMS activation, as well as the IP and port configuration, as shown in the attached image.\nInitially, the VLAN/IP was configured as 10.20.37.1. We then changed it to 192.168.0.160, keeping port 400 unchanged. After this adjustment, communication between the charger and our PLC was successfully established. However, after a short period of time (approximately 10 minutes at most), the charger stops communicating with the PLC, resulting in a complete disconnection.\nTo restore communication, a hard reboot of the charger is required. Once rebooted, communication is reestablished, but the issue repeats again after a few minutes.\nWhile on site, we also performed additional tests by replacing the PLC with a notebook acting as a client, establishing the connection directly. Even in this scenario, the same behavior was observed, with communication dropping after a short interval.\nIt is important to note that we already have six other sites with this same active load control functionality, using an equivalent configuration, and none of them have presented this type of instability so far.\nTherefore, we kindly request your support to analyze this scenario, identify the possible root cause, and provide guidance on the necessary actions to stabilize the communication.\nI look forward to your feedback.\nBest regards,\nFelipe Trajano\nP&D - Engenharia\nwww.raizen.com​​​\nEsta mensagem (incluindo qualquer anexo) é confidencial e legalmente protegida, somente podendo ser usada pelo indivíduo ou entidade a quem foi endereçada. Caso você a tenha recebido por engano, deverá devolver ao remetente e, posteriormente apagar, pois a disseminação, encaminhamento, uso, impressão ou cópia do conteúdo desta mensagem são expressamente proibidos.\nThis message (including any attachments) contains confidential information intended for a specific individual and purpose, and is protected by law. If you are not the intended recipient, you should return and then delete this message. Any disclosure, copying, printing, use or distribution of this message, or the taking of any part is illegal.\nEste mensaje (incluyendo cualquier anexo) es confidencial y legalmente protegido, pudiendo ser utilizado solamente por el individuo o entidad al que fue enviado. En el caso de que usted haya recibido este mensaje por equivocación, deberá devolverlo a su remitente y luego eliminarlo; quedando expresamente prohibidos su diseminación, reenvío, uso, impresión o copia del contenido de su contenido.\nPúblico",
+            "date": "2025-12-22T15:21:06Z",
+            "extra": {
+                "sender": "felipe.silva3@raizen.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7773e9cd-4adf-f011-8544-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0469128 CRM:00225308704",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0469128 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=410f0cd5-49df-f011-8544-7ced8d4258c6",
+            "date": "2025-12-22T15:28:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0e1a3252-4cdf-f011-8544-7c1e52362ec6",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Dear\nFelipe\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / R3 313020197004\nCharger ID\n: 7p5Il9\nProblem Description\n:\nIntermittent communication between Siemens Sicharge-D and PLC – ELMS / Load Balance\nFor your reference, this support request has been assigned the following case number:\n0469128\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-22T15:38:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "569864c6-56df-f011-8543-7ced8d425658",
+            "subject": "A new case manager was assigned to 0469128 CRM:00225308752",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0469128 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=410f0cd5-49df-f011-8544-7ced8d4258c6",
+            "date": "2025-12-22T16:53:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a231d05b-d7e0-f011-8544-7ced8d4259cd",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Dear\nFelipe\n,\nFollowing your report, and in order for us to properly investigate the issue you mentioned, we kindly ask you to provide the timestamp from your side. This will allow us to further analyze the logs and identify the root cause.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2025-12-24T14:46:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc6c4f56-e0e4-f011-8544-7c1e52880288",
+            "subject": "RES: [Externo] ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Dear Baroudi,\nI hope you are doing well.\nWe carried out several attempts over two days, as detailed below:\nDecember 18\n: from\n14:47\nto\n17:29\nDecember 19\n: from\n10:51\nto\n14:59\nAll times mentioned are based on the\nUTC-03:00 time zone\n.\nPlease let me know if you need any additional information.\nBest Regards\nFelipe Trajano\nP&D - Engenharia\nwww.raizen.com​​​\nPúblico\nDe:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnviada em:\nquarta-feira, 24 de dezembro de 2025 11:53\nPara:\nFelipe Martins Trajano da Silva <felipe.silva3@raizen.com>\nAssunto:\n[Externo] ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263\nATENÇÃO\nao e-mail\nEXTERNO\n(enviado de fora da empresa)\nVERIFIQUE\nse o remetente é conhecido,\nEVITE CLICAR\nem links ou abrir anexos e\nJAMAIS\ncompartilhe seu usuário e senha ao clicar em links ou anexos.\nDÚVIDAS?\nEncaminhe o e-mail suspeito para o time de Segurança da Informação usando o botão \"E-mail Suspeito\" no menu do Outlook.\nDear Felipe,\nFollowing your report, and in order for us to properly investigate the issue you mentioned, we kindly ask you to provide the timestamp from your side. This will allow us to further analyze the logs and identify the root cause.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2025-12-29T18:01:12Z",
+            "extra": {
+                "sender": "felipe.silva3@raizen.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a8317017-27ea-f011-8543-7ced8d425658",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Dear\nFelipe\n,\nFollowing your request and after our checks, the issue may be related to the network cable connecting\nX1\nto\nWAN point 3\n, as shown in the attached screenshot.\nPlease try connecting them directly or replacing the network cable to see if the issue is resolved.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-05T11:10:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56077673-28ea-f011-8544-7c1e52362b38",
+            "subject": "Resposta automática: [Externo] ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "For the continuity of the external maintenance ticket for the chargers, please contact: Daniel.Corral@raizen.com.\nEsta mensagem (incluindo qualquer anexo) é confidencial e legalmente protegida, somente podendo ser usada pelo indivíduo ou entidade a quem foi endereçada. Caso você a tenha recebido por engano, deverá devolver ao remetente e, posteriormente apagar, pois a disseminação, encaminhamento, uso, impressão ou cópia do conteúdo desta mensagem são expressamente proibidos.\nThis message (including any attachments) contains confidential information intended for a specific individual and purpose, and is protected by law. If you are not the intended recipient, you should return and then delete this message. Any disclosure, copying, printing, use or distribution of this message, or the taking of any part is illegal.\nEste mensaje (incluyendo cualquier anexo) es confidencial y legalmente protegido, pudiendo ser utilizado solamente por el individuo o entidad al que fue enviado. En el caso de que usted haya recibido este mensaje por equivocación, deberá devolverlo a su remitente y luego eliminarlo; quedando expresamente prohibidos su diseminación, reenvío, uso, impresión o copia del contenido de su contenido.",
+            "date": "2026-01-05T11:19:59Z",
+            "extra": {
+                "sender": "felipe.silva3@raizen.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7185ef32-e0ea-f011-8544-7c1e523628c9",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:03042000348",
+            "body": "Dear\nFelipe Trajano,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0469128\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-06T09:15:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "117b3c75-bceb-f011-8544-7ced8d4258c6",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:03042000352",
+            "body": "Dear\nFelipe Trajano,\nThis is another reminder regarding your support case\n0469128\n. We are still waiting for the following information to proceed:\n[Insert requested information here]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-07T11:31:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6ce02335-95ed-f011-8544-7c1e5236246a",
+            "subject": "URGENTE!!  ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Caros, boa tarde.\nSolicito atendimento em garantia da estação dado a falha de comunicação entre a Sicharge e o PLC.\nAt,\nPúblico\nDe:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnviada em:\nsegunda-feira, 5 de janeiro de 2026 08:19\nPara:\nFelipe Martins Trajano da Silva <Felipe.Silva3@raizen.com>; Pinto, Joao Paulo De Camargo Torres <joao.pinto@siemens.com>\nAssunto:\nID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263\nDear Felipe,\nFollowing your request and after our checks, the issue may be related to the network cable connecting\nX1\nto\nWAN point 3\n, as shown in the attached screenshot.\nPlease try connecting them directly or replacing the network cable to see if the issue is resolved.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-09T19:56:01Z",
+            "extra": {
+                "sender": "gerson.rocha@raizen.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6f082c20-36ee-f011-8407-7c1e52362ec6",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:02681001263",
+            "body": "Dear\nFelipe\n,\nFollowing your request and after our checks, we can inform you that this charger is out of warranty.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-10T15:07:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0aedcbe-d0ef-f011-8406-000d3ab12cf3",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:03042000365",
+            "body": "Dear\nFelipe Trajano,\nThis is another reminder regarding your support case\n0469128\n. We are still waiting for the following information to proceed:\n[Insert requested information here]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-12T16:07:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "927db12b-55f0-f011-8406-000d3ab12cf3",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:03042000371",
+            "body": "Dear\nFelipe Trajano\n,\nThis is our third and final reminder regarding your support case\n0469128.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\n[Insert requested information here]\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-13T07:55:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9c38236-e7f1-f011-8406-7ced8d44db54",
+            "subject": "ID0469128-DC/Si-D/BR-[Y2 / R3 313020197004] Intermittent communication between Sicharge-D and PLC CRM:03042000379",
+            "body": "Dear\nFelipe Trajano\nI would like to inform you that your support case\n0469128\nhas been resolved.\nHere is a summary of the actions taken:\n[Briefly describe what was done, e.g. “Updated the configuration settings to restore functionality.”]\n[Add any important details or follow-up instructions if needed.]\nSince the reported issue has been resolved, I will proceed to close this case.\nThank you for your cooperation, and please don’t hesitate to reach out through our support form for any future requests:\nwww.siemens.com/emobility-service-request\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-15T07:53:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

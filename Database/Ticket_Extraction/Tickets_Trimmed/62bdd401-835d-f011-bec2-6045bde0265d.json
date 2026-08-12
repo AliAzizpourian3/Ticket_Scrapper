@@ -1,0 +1,547 @@
+{
+    "incident_id": "62bdd401-835d-f011-bec2-6045bde0265d",
+    "ticket_number": "0436813",
+    "title": "ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline",
+    "created_on": "2025-07-10T11:42:57Z",
+    "last_activity": "2026-01-13T13:37:11Z",
+    "age": "69120",
+    "description": "Reported behavior/issue:  OCPP Offline\nSolution:\nyyyy-mm-dd:  2025-07-10",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "deQvCG",
+    "stage": null,
+    "serial_number": "MP / P1 170000139",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2d6d0002-835d-f011-bec2-000d3addf8ce",
+            "subject": "Webform_incident_SiCharge D_10-07-2025_SN: MP/P1170000139",
+            "body": "Dear Dirk Rücker,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/P1170000139\nThank you\neMobility Technical Support Team\nSehr geehrte/r Dirk Rücker,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/P1170000139\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-07-10T11:42:52Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "40216b0c-855d-f011-bec1-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225226836",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-10T11:57:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f11f4c41-885d-f011-bec2-000d3ab07fc1",
+            "subject": "ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Dear Dirk Rücker,\nThank you for reaching\nout\nto eMobility Support. My name is\nSakshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000139\nChargerID/Serial No.\n:\ndeQvCG\nProblem Description\n:\nOCPP Offline\nFor future reference, your case number is\n0436813\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSakshi Rawat\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-10T12:20:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b28de80-97cd-fd0c-8db8-91a45c0f312f",
+            "subject": null,
+            "body": "",
+            "date": "2025-07-10T12:23:33Z",
+            "extra": {}
+        },
+        {
+            "id": "f2b77cad-3c5e-f011-bec1-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225227253",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-11T09:52:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d23f1e1-415e-f011-bec1-7c1e52768c07",
+            "subject": "RE: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hi Dirk,\nWe could see the Charger is having backend\ndachau\nWe observed that Backend intergration test of the OCPP backend with SID have not been performed. We recommend backend intergration.\nConnecting to OCPP-Central-System \"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nAlso,\nCould you pls confirm if\n'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-11T10:29:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e38c8fd-515e-f011-bec2-7c1e52faf3c6",
+            "subject": "AW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hello Gary,\nwhat do you want me to say by „we recommend backend integration“\nThis System runs allready for a long time within a the Chargepoint Provider OCPP Central System under\n\"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nSo I assume a hardware probleme more precise a faulty router inside the Charger.\nPlease tell the Siemens support people to check and if nesseary, exchange the Router.\nI want you to do execute immediately\nThank you\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 11. Juli 2025 14:07\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nCc:\nservice-emobility.si.de@siemens.com; Giridhar, Boddeda <boddeda.giridhar@siemens.com>\nBetreff:\nRE: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Dirk,\nWe could see the Charger is having backend\ndachau\nWe observed that Backend intergration test of the OCPP backend with SID have not been performed. We recommend backend intergration.\nConnecting to OCPP-Central-System \"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nAlso, Could you pls confirm if 'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-11T12:24:32Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9bbbcb2d-7d60-f011-bec2-7c1e5236eee4",
+            "subject": "WG: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hi Gary,\nthis is the statement from our Backend- Provider Chargepoint:\nThank you for your message.\nWe have checked the DC charging station you mentioned. There has been no connection to the backend since 9 July 2025 - the station has not responded since then. We have not been able to detect any faults or anomalies in the system that would indicate a backend problem.\nFrom our point of view, the connection is technically OK\n.\nWe have reset the SIM connectivity to rule out a connection error at this level. We would ask you to restart the station on site so that the connection can be restored if necessary.\nIf no connection can be established after the restart, we recommend that you contact the manufacturer of the station (e.g. Siemens Support) for further analysis in order to rule out a possible fault on the hardware side.\nIf you have any further questions, please do not hesitate to contact us.\nTicket number: 14740675\nYours sincerely,\nBest regards,\nPatricija Jakoc\nTechnical Support Engineer, Chargepoint\nThat statement ist clear. The Problem ist on the Sicharge.\nPlease send a serviceteam to investigate the Charger on side.\nIts Urgend !!  We lose money !!\nBest regards\nDirk Rücker\nIn Behalf of the owner of the Charger, Municipal utilities Dachau\nVon:\nRücker Dirk\nGesendet:\nFreitag, 11. Juli 2025 14:24\nAn:\n'emobility_support.si@siemens.com' <emobility_support.si@siemens.com>\nCc:\nservice-emobility.si.de@siemens.com; Giridhar, Boddeda <boddeda.giridhar@siemens.com>\nBetreff:\nAW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHello Gary,\nwhat do you want me to say by „we recommend backend integration“\nThis System runs allready for a long time within a the Chargepoint Provider OCPP Central System under\n\"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nSo I assume a hardware probleme more precise a faulty router inside the Charger.\nPlease tell the Siemens support people to check and if nesseary, exchange the Router.\nI want you to do execute immediately\nThank you\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 11. Juli 2025 14:07\nAn:\nRücker Dirk <\nruecker@stadtwerke-dachau.de\n>\nCc:\nservice-emobility.si.de@siemens.com\n; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nRE: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Dirk,\nWe could see the Charger is having backend\ndachau\nWe observed that Backend intergration test of the OCPP backend with SID have not been performed. We recommend backend intergration.\nConnecting to OCPP-Central-System \"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nAlso, Could you pls confirm if 'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-14T06:38:46Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "17c89552-4161-f011-bec3-7c1e52faf3c6",
+            "subject": "AW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hello Gary,\nany news for me in this case?\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nRücker Dirk\nGesendet:\nMontag, 14. Juli 2025 08:38\nAn:\n'emobility_support.si@siemens.com' <emobility_support.si@siemens.com>; Giridhar, Boddeda <boddeda.giridhar@siemens.com>\nBetreff:\nWG: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Gary,\nthis is the statement from our Backend- Provider Chargepoint:\nThank you for your message.\nWe have checked the DC charging station you mentioned. There has been no connection to the backend since 9 July 2025 - the station has not responded since then. We have not been able to detect any faults or anomalies in the system that would indicate a backend problem.\nFrom our point of view, the connection is technically OK\n.\nWe have reset the SIM connectivity to rule out a connection error at this level. We would ask you to restart the station on site so that the connection can be restored if necessary.\nIf no connection can be established after the restart, we recommend that you contact the manufacturer of the station (e.g. Siemens Support) for further analysis in order to rule out a possible fault on the hardware side.\nIf you have any further questions, please do not hesitate to contact us.\nTicket number: 14740675\nYours sincerely,\nBest regards,\nPatricija Jakoc\nTechnical Support Engineer, Chargepoint\nThat statement ist clear. The Problem ist on the Sicharge.\nPlease send a serviceteam to investigate the Charger on side.\nIts Urgend !!  We lose money !!\nBest regards\nDirk Rücker\nIn Behalf of the owner of the Charger, Municipal utilities Dachau\nVon:\nRücker Dirk\nGesendet:\nFreitag, 11. Juli 2025 14:24\nAn:\n'emobility_support.si@siemens.com' <\nemobility_support.si@siemens.com\n>\nCc:\nservice-emobility.si.de@siemens.com\n; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nAW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHello Gary,\nwhat do you want me to say by „we recommend backend integration“\nThis System runs allready for a long time within a the Chargepoint Provider OCPP Central System under\n\"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nSo I assume a hardware probleme more precise a faulty router inside the Charger.\nPlease tell the Siemens support people to check and if nesseary, exchange the Router.\nI want you to do execute immediately\nThank you\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 11. Juli 2025 14:07\nAn:\nRücker Dirk <\nruecker@stadtwerke-dachau.de\n>\nCc:\nservice-emobility.si.de@siemens.com\n; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nRE: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Dirk,\nWe could see the Charger is having backend\ndachau\nWe observed that Backend intergration test of the OCPP backend with SID have not been performed. We recommend backend intergration.\nConnecting to OCPP-Central-System \"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nAlso, Could you pls confirm if 'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-15T06:02:45Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6c0760db-5961-f011-bec2-7c1e52206585",
+            "subject": "AW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hallo Emobility Support Team,\nda die Kollegen in Indien nicht reagieren würde es mich freuen wenn der deutsche Support die Führung\nübernimmt.\nWann kann ich mit einer Reparatur rechnen?\nDanke für eine Rückmeldung\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nRücker Dirk\nGesendet:\nDienstag, 15. Juli 2025 08:03\nAn:\n'emobility_support.si@siemens.com' <emobility_support.si@siemens.com>; 'Giridhar, Boddeda' <boddeda.giridhar@siemens.com>\nBetreff:\nAW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHello Gary,\nany news for me in this case?\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail:\nruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nRücker Dirk\nGesendet:\nMontag, 14. Juli 2025 08:38\nAn:\n'emobility_support.si@siemens.com' <\nemobility_support.si@siemens.com\n>; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nWG: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Gary,\nthis is the statement from our Backend- Provider Chargepoint:\nThank you for your message.\nWe have checked the DC charging station you mentioned. There has been no connection to the backend since 9 July 2025 - the station has not responded since then. We have not been able to detect any faults or anomalies in the system that would indicate a backend problem.\nFrom our point of view, the connection is technically OK\n.\nWe have reset the SIM connectivity to rule out a connection error at this level. We would ask you to restart the station on site so that the connection can be restored if necessary.\nIf no connection can be established after the restart, we recommend that you contact the manufacturer of the station (e.g. Siemens Support) for further analysis in order to rule out a possible fault on the hardware side.\nIf you have any further questions, please do not hesitate to contact us.\nTicket number: 14740675\nYours sincerely,\nBest regards,\nPatricija Jakoc\nTechnical Support Engineer, Chargepoint\nThat statement ist clear. The Problem ist on the Sicharge.\nPlease send a serviceteam to investigate the Charger on side.\nIts Urgend !!  We lose money !!\nBest regards\nDirk Rücker\nIn Behalf of the owner of the Charger, Municipal utilities Dachau\nVon:\nRücker Dirk\nGesendet:\nFreitag, 11. Juli 2025 14:24\nAn:\n'emobility_support.si@siemens.com' <\nemobility_support.si@siemens.com\n>\nCc:\nservice-emobility.si.de@siemens.com\n; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nAW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHello Gary,\nwhat do you want me to say by „we recommend backend integration“\nThis System runs allready for a long time within a the Chargepoint Provider OCPP Central System under\n\"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nSo I assume a hardware probleme more precise a faulty router inside the Charger.\nPlease tell the Siemens support people to check and if nesseary, exchange the Router.\nI want you to do execute immediately\nThank you\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 11. Juli 2025 14:07\nAn:\nRücker Dirk <\nruecker@stadtwerke-dachau.de\n>\nCc:\nservice-emobility.si.de@siemens.com\n; Giridhar, Boddeda <\nboddeda.giridhar@siemens.com\n>\nBetreff:\nRE: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184\nHi Dirk,\nWe could see the Charger is having backend\ndachau\nWe observed that Backend intergration test of the OCPP backend with SID have not been performed. We recommend backend intergration.\nConnecting to OCPP-Central-System \"ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp/cp/socket/16/DAH_Fraunhoferstr.5_DC01\"\nAlso, Could you pls confirm if 'WebSocketPingInterval' to 30 seconds and 'HeartbeatInterval' to 180 seconds from OCPP side.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-15T08:58:27Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bb9912b5-9207-aeef-a052-43ef46c35052",
+            "subject": "Notes to OCPP Team",
+            "body": "Charger is having backend\ndachau, OCPP is not backend integrated. Need to validate same and inform customer same.",
+            "date": "2025-07-16T16:31:48Z",
+            "extra": {}
+        },
+        {
+            "id": "da31d14b-ea62-f011-bec3-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225229916",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-17T08:44:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab10e8dc-ea62-f011-bec3-000d3adc93d1",
+            "subject": "RE: AW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:02889000184",
+            "body": "Hi Dirk,\nApologies for the late response.\nWe acknowledge the information provided from your side.\nWe are processing same and working with regional team to plan for site visit as soon as possible.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-17T08:48:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "21844543-ec62-f011-bec3-000d3adc93d1",
+            "subject": "ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00798002306",
+            "body": "Hi Team,\nWe need to plan for the site visit.\nRemotely We have check the router. Router is configured via Sim,\nAnd while it seems sim is not detected, We need to check if sim is properly inserted.\nPls try to reinsert it.\nAlso, We recommend having spare router while site intervention.\nI am writing to formally inform that we are moving case 0436813 ﻿from the\nTechnical Support\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nMaybe\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-17T08:58:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "853f0b9e-a163-f011-bec3-6045bde0265d",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225230430",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-18T06:37:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "729b1221-2866-f011-bec2-7c1e52768c07",
+            "subject": "ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000844",
+            "body": "Sehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0436813\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-07-21T11:45:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c51eacd-2da1-e5d6-8d3b-c08da0899f12",
+            "subject": "Semih ",
+            "body": "8EM5903-0AA05-7AA5\n-XF3, -XF4 Router Ethernet Mobile (4G) RUT241 Basic\nconfiguration with\nSicharge D\nCompanion Tool\nnecessary",
+            "date": "2025-07-21T11:48:26Z",
+            "extra": {}
+        },
+        {
+            "id": "84fd0622-3866-f011-bec3-7c1e52faf3c6",
+            "subject": "AW: ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000844",
+            "body": "Sehr geehrte Damen und Herren,\nhiermit wird bestätigt das die Ladesäule bei der Bundesnetzagentur gemeldet ist – siehe Anhang.\nWir bestätigen auch die Kenntnisnahme Ihres Störschreibens und die darin enthaltene, mit Verlaub, sehr vage „Anfahrtspauschale“, zumal ihnen der Einsatzort bekannt sein sollte.\nDa habe ich in der Verganagenheit schon seriösere Angebote aus Ihrer Abteilung bekommen.\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 21. Juli 2025 13:46\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\nID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000844\nSehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0436813, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-07-21T13:39:38Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "769a977d-d766-f011-bec2-7c1e5236eee4",
+            "subject": "0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658",
+            "body": "Hi Ralf,\nkannst Du mir bitte den Gefallen tun und folgendes Serviceangebot legen?\nKundenname\nAnsprechpartner\nAdresse\nStadtwerke Dachau\nDirk Rücker\nBrunngartenstr. 3\n85221 Dachau\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nService-Leistungsumfang\nAustausch der Netwerk Routers XF3\nTeile: 8EM5903-0AA05-7AA5\nReparatur inkl. OM: 1,5h + 3,5h = 1000EUR\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-07-22T08:40:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "692da9a4-6468-f011-bec2-6045bddf319c",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225233172",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-24T08:03:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9cd5720e-6568-f011-bec3-7c1e52faf3c6",
+            "subject": "RE: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658",
+            "body": "Hallo zusammen\nist hier schon was passiert ? würde gern den Techniker nächste woche für den Süden einplanen :D\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-24T08:06:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d42f0c19-6668-f011-bec3-7c1e523508ba",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658",
+            "body": "Hallo Sascha,\nda ich z.Z. nur Backlock abarbeite und gestern nicht an´s SAP Bearbeite gekommen bin – bin aktuell für 3 Teams unterwegs– ist es gut die Priorität hier zu erwähnen\nà\nwird ich allen anderen vorziehen und jetzt bearbeiten\n😉\nVG, Ralf\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 24. Juli 2025 10:08\nAn:\nWeber, Ralf (SI E C SE&O) <weber.ralf@siemens.com>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\nRE: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658\nHallo zusammen\nist hier schon was passiert ? würde gern den Techniker nächste woche für den Süden einplanen :D\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-24T08:13:41Z",
+            "extra": {
+                "sender": "weber.ralf@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9efee0ea-6c68-f011-bec3-7c1e523508ba",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658",
+            "body": "Hallo Sascha,\nanbei das eilige Angebot – ich gehe davon aus dass beide Router getauscht werden, da in der Beschreibung des Service-Leistungsumfangs steht : „…\nAustausch\nder\nNetwerk Routers XF3\nBitt prüfen / unterschreiben und an Kunden weiterleiten.\nDanke.\nVG, Ralf\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 24. Juli 2025 10:08\nAn:\nWeber, Ralf (SI E C SE&O) <weber.ralf@siemens.com>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\nRE: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000658\nHallo zusammen\nist hier schon was passiert ? würde gern den Techniker nächste woche für den Süden einplanen :D\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-24T09:02:29Z",
+            "extra": {
+                "sender": "weber.ralf@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ed08dc7e-9468-f011-bec3-7c1e523508ba",
+            "subject": "0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hallo Herr Rücker,\nanbei sende ich Ihnen wie gewünscht das Angebot Entstörung Ihrer Ladesäule.\nMit der Bitte um Beauftragung.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-07-24T13:45:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8fa17273-9868-f011-bec2-7c1e52206585",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hallo Herr Theil,\nvielen Dank für die schnelle Rückmeldung.\nIm Anhang finden Sie die das unterschriebene Angebot\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 24. Juli 2025 15:46\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\n0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670\nHallo Herr Rücker,\nanbei sende ich Ihnen wie gewünscht das Angebot Entstörung Ihrer Ladesäule.\nMit der Bitte um Beauftragung.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-07-24T14:14:08Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a0ca7596-2869-f011-bec2-6045bdde4786",
+            "subject": "A new case manager was assigned to 0436813 CRM:00225233746",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0436813 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=62bdd401-835d-f011-bec2-6045bde0265d",
+            "date": "2025-07-25T07:25:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5b0cad9-3069-f011-bec2-7c1e52768c07",
+            "subject": "RE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hallo Dirk Rücker,\nTeile wurden bestellt und der Techniker wird",
+            "date": "2025-07-25T08:25:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3efb2912-3169-f011-bec2-7c1e52768c07",
+            "subject": "RE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hi Ralf,\nJa, zwei zur Sicherheit, weil der Charger erst ein Problem mit dem OCPP-Router gemeldet hatte und jetzt ist der Siemens-Router anscheinend auch offline.\nDer Kunde hat das Angebot angenommen.\nIch brauche hier dann noch einen Auftrag.\nErsatzteile nur in Rechnung stellen wir haben noch welche im Lager.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T08:26:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c751d382-3b69-f011-bec3-7c1e52768372",
+            "subject": "AW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hallo,\nAufträge bitte über Holger Dorka / Julian Werner – bin zur Zeit nur SAP-fit für Angebote + Leistungssplit.\nSorry.\nVG, Ralf\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 25. Juli 2025 11:08\nAn:\nWeber, Ralf (SI E C SE&O) <weber.ralf@siemens.com>\nBetreff:\nRE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670\nHi Ralf,\nJa, zwei zur Sicherheit, weil der Charger erst ein Problem mit dem OCPP-Router gemeldet hatte und jetzt ist der Siemens-Router anscheinend auch offline.\nDer Kunde hat das Angebot angenommen.\nIch brauche hier dann noch einen Auftrag.\nErsatzteile nur in Rechnung stellen wir haben noch welche im Lager.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T09:41:21Z",
+            "extra": {
+                "sender": "weber.ralf@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4dfe94c9-3f69-f011-bec2-7c1e52768c07",
+            "subject": "RE: AW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hi Xenia,\nkannst du das bitte evtl. übernehmen ? Hat keine Eile wir haben die Teile auf Lager also muss nichts bestellt werden aber den Kunden in Rechnung gestellt werden. Den Einsatz habe ich für 04.08 geplant also entspannt. :)\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T10:12:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff75ca5f-766c-f011-b4cb-7c1e5236e32d",
+            "subject": "AW: AW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670",
+            "body": "Hallo Semih, erl. Auftrag:30774105.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Dachau\\A-30774105-Produkt_Ticketnr.0436813\nVG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 25. Juli 2025 12:15\nAn:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\nRE: AW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00373000670\nHi Xenia,\nkannst du das bitte evtl. übernehmen ? Hat keine Eile wir haben die Teile auf Lager also muss nichts bestellt werden aber den Kunden in Rechnung gestellt werden. Den Einsatz habe ich für 04.08 geplant also entspannt. :)\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-29T12:20:19Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4c308dd0-d76d-f011-b4cb-7c1e52206585",
+            "subject": "0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000853",
+            "body": "Guten Morgen Dirk Rücker\nDer Techniker kommt am Montag, den 04.08.2025. Es stellt sich die Frage, woher er den Schlüssel für die Ladesäule bekommt. Gibt es eine Adresse oder einen Ansprechpartner, bei dem er sich zur Abholung melden kann?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-31T06:30:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "573b6da2-dd6d-f011-bec2-7ced8d418fb5",
+            "subject": "Ticket 0436813 has been closed. Are you satisfied with our provided solution? CRM:00225236529",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0436813\nwith the title:\nID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSemih Sentuerk\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-31T07:12:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07ea200d-ef6d-f011-b4cc-7c1e52faf3c6",
+            "subject": "Re: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000853",
+            "body": "Hallo Herr Sentürk,\nVielen Dank fuer die Anfrage.\nDen Schlüssel werden Sie bei mir abholen können.\nMelden  Sie sich unter 08131 7009 260\nIch werde Ihnen dann die Säule aufschließen\nMit freundlichen Grüßen\nDirk Rücker",
+            "date": "2025-07-31T09:16:36Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9d76f93c-dc78-f011-b4cc-7c1e5236cda4",
+            "subject": "0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000879",
+            "body": "Hallo Herr Rücker,\nIch kann Ihre Station in meinem Testbackend anbinden. Zumindest sehe ich den Charger, angebunden habe ich ihn nicht, da sonst die Daten bei mir landen würden. Ich erhalte bei mir die HTTP-Fehlermeldung 'Unauthorized', da ich keinen OCPP-Schlüssel hinterlegt hatte. Dies zeigt mir, dass die Verbindung zum Charger grundsätzlich möglich ist, nur Chargepoint den Charger aus irgendeinem Grund nicht finden kann. Ich vermute, dass hier ein Fehler vorliegt. Bitte senden Sie mir alternative OCPP-Daten. Aktuell wird der Server nicht gefunden und wir sehen die HTTP-Meldung '404 Not Found - The server cannot find the requested resource.' Wir können keinen Backendserver erkennen, daher kann ich Ihnen in dieser Angelegenheit leider nicht weiterhelfen.\nAbgespeicherte Daten OCPP:\nOCPP ID: 313688401001\nURL: ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp\nRouter:\nLassen Sie die Daten Überprüfen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-14T06:59:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c7a4167-df78-f011-b4cc-000d3adc93d1",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000879",
+            "body": "Hallo Herr Sentürk,\nvielen Dank für Ihre Rückmeldung.\nMit Verlaub, Ihre Analyse ist keine neue Erkenntnis. Das wussten wir bereits aus der Analyse von Herr Dolce und wurde bereits am  unserem Backendbetreiber mitgeteilt.\nDie letzte Analyse von Chargepoint vom 12.August ist aus meiner Sicht noch nicht beantwortet:\nSehr geehrter Herr Rücker,\nvielen Dank für die Zusendung der Konfiguration.\nAuf den ersten Blick wirkt diese korrekt. Wir haben auch die eingesetzte SIM-Karte überprüft und festgestellt, dass sie aktiviert ist und sich ordnungsgemäß im Mobilfunknetz eingebucht hat. Auch\nkönnen wir den\nSIM-Router\nvon unserer Seite aus anpingen\n, allerdings erhalten wir systemintern\nkeine Anfrage von der\nStation\n.\nDa der Router eine Verbindung aufbaut, die Station jedoch nicht kommuniziert, liegt unserer Einschätzung nach die Ursache in einem fehlerhaften Port Forwarding zwischen Router und Station, insbesondere da die Station vor dem Routertausch einwandfrei funktionierte. Wir empfehlen Ihnen daher, diese Information an den Techniker weiterzuleiten, damit dieser das Port Forwarding überprüft.\nSollten Sie zwischenzeitlich weitere Fragen haben, können Sie sich jederzeit gerne an uns wenden.\nTicket Number: 14850039\nMit freundlichen Grüßen,\nBest regards,\nFidan Rexhepi\nSie werden verstehen das ich keine Lust mehr auf Email-PingPong zwischen Siemens-Support und Chargepoint-Support mehr  habe und erwarte nun eine pragmatische Lösung.\nVielleicht ist es zielführend das die beiden Supports sich direkt miteinander austauschen, da beide Parteien direkten Zugriff auf die jeweilige Systemtechnik haben und Ideen zur Fehlerermittlung  direkt zusammen ausprobieren könnten- ohne Zeitverlust !\nIch werde gerne behilflich sein den direkten Kontakt zu ermöglichen z.B durch einen Telefonnummer Vermittlung.\nDanke für Ihre Rückmeldung\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 14. August 2025 09:00\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\n[filtered] 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000879\nHallo Herr Rücker,\nIch kann Ihre Station in meinem Testbackend anbinden. Zumindest sehe ich den Charger, angebunden habe ich ihn nicht, da sonst die Daten bei mir landen würden. Ich erhalte bei mir die HTTP-Fehlermeldung 'Unauthorized', da ich keinen OCPP-Schlüssel hinterlegt hatte. Dies zeigt mir, dass die Verbindung zum Charger grundsätzlich möglich ist, nur Chargepoint den Charger aus irgendeinem Grund nicht finden kann. Ich vermute, dass hier ein Fehler vorliegt. Bitte senden Sie mir alternative OCPP-Daten. Aktuell wird der Server nicht gefunden und wir sehen die HTTP-Meldung '404 Not Found - The server cannot find the requested resource.' Wir können keinen Backendserver erkennen, daher kann ich Ihnen in dieser Angelegenheit leider nicht weiterhelfen.\nAbgespeicherte Daten OCPP:\nOCPP ID: 313688401001\nURL: ws://stadtwerke-dachau.private.ocpp-broker.com/ocpp\nRouter:\nLassen Sie die Daten Überprüfen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-14T07:22:22Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "23b2847d-e278-f011-b4cc-7c1e5236cda4",
+            "subject": "RE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000879",
+            "body": "Hallo Herr Rücker\nallein die Tatsache, dass ich den Charger in meinem Backend anbinden kann, widerlegt die Aussage, dass ein Portforwarding nicht funktionieren soll.\nSenden Sie mir einen Ansprechpartner auf Chargecloud Seite damit ich einen Termin einstellen kann.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-14T07:44:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d95e97e6-e278-f011-b4cc-6045bde117fc",
+            "subject": "Automatische Antwort: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000879",
+            "body": "﻿\n﻿\nVielen Dank für Ihre Nachricht.\nIch bin bis einschließlich 17. August 2025 nicht erreichbar und habe keinen Zugriff auf meine E-Mails.\nNachrichten werden nach meiner Rückkehr bearbeitet.\nIn dringenden Fällen wenden Sie sich bitte an\nservice-emobility.si.de@siemens.com\nMit freundlichen Grüßen\nDomenico Dolce\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +49 (152) 59184760\nmailto:domenico.dolce@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322",
+            "date": "2025-08-14T07:47:23Z",
+            "extra": {
+                "sender": "domenico.dolce@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a10453f2-64d3-a7c1-b4fe-1fffb8fb8da0",
+            "subject": "Semih",
+            "body": "",
+            "date": "2025-08-18T10:47:01Z",
+            "extra": {}
+        },
+        {
+            "id": "a911a3a0-a75a-a25c-8d24-c85ab9fe1f8c",
+            "subject": null,
+            "body": "Hallo Herr Rexhepi,\nein Siemens- Support Mitarbeiter (Herr Sentürk)  hat Ihre Analyse begutachtet und kommt zu einer\nabweichenden Schlussfolgerung.\nWir sehen es als sinnvoll an, wenn Sie und Herr Sentürk direkt miteinander kommunizieren um die Fehleranalyse direkt an den jeweiligen Systemen durch Ideenaustausch zu beschleunigen um  den Fehler zu identifizieren und zu beseitigen.\nBitte kontaktieren Sie Herr Sentürk von Siemens Support oder geben Sie mir Ihre Kontaktdaten.\nVielen Dank\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de",
+            "date": "2025-08-19T06:30:37Z",
+            "extra": {}
+        },
+        {
+            "id": "98be341d-a481-f011-b4cc-000d3ad97a58",
+            "subject": "0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Rücker\ndie Station ist wieder mit dem Backend Verbunden und sollte wieder im Backend sichtbar sein.\n2025-08-25T10:53:29.006090+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/2fb092e7e9df[2930]: [ensureOCPPConnection] OCPP is ONLINE, nothing to do here\nIch habe den Router auf Werkseinstellungen gesetzt und danach kam die Station wieder Online.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-25T11:10:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4236df64-aa81-f011-b4cb-000d3ab07fc1",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Sentürk,\nvielen Dank für Ihre Rückmeldung.\nLeider kann ich es (noch) nicht bestätigen. In meinem Backend-Webinterface wird die Ladestation immer noch offline angezeigt.\nIch nehme an, Sie haben die Sicharge auch neu gestartet usw.\nTut mir leid, ich würde Ihnen gerne etwas anderes berichten.\nEs wird wohl nötig sein das sich nochmal  jemand vor Ort mit der Kiste beschäftigt.\nVielleicht hat ja auch  der verbaute Switch ein Problem ?...\nBitte um schnelle Bearbeitung.\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 25. August 2025 13:11\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\n0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888\nHallo Herr Rücker\ndie Station ist wieder mit dem Backend Verbunden und sollte wieder im Backend sichtbar sein.\n2025-08-25T10:53:29.006090+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/2fb092e7e9df[2930]: [ensureOCPPConnection] OCPP is ONLINE, nothing to do here\nIch habe den Router auf Werkseinstellungen gesetzt und danach kam die Station wieder Online.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-25T11:55:33Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "17f2950b-c081-f011-b4cb-6045bddf319c",
+            "subject": "AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Sentürk,\nes tut sich etwas.\nNachdem ich die Sicharge neu gestartet hatte , kam eine neue Anmeldung der Sicharge.\nIch mache jetzt eine Neu-Anlage im Backend. Vermutlich wird es dann wieder gehen.\nMir ist aufgefallen das die Firmware neu ist:\nAlt\nNeu\nKönnte das die Ursache gewesen sein für das ganze Dillema?\nIch melde mich.\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 25. August 2025 13:11\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\n0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888\nHallo Herr Rücker\ndie Station ist wieder mit dem Backend Verbunden und sollte wieder im Backend sichtbar sein.\n2025-08-25T10:53:29.006090+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/2fb092e7e9df[2930]: [ensureOCPPConnection] OCPP is ONLINE, nothing to do here\nIch habe den Router auf Werkseinstellungen gesetzt und danach kam die Station wieder Online.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-25T14:30:33Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1e767376-1f83-f011-b4cb-002248a1b570",
+            "subject": "RE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Rücker\nIch denke nicht, dass es an der FW lag. Es scheint eher, dass die Wiederherstellung der Werkseinstellungen am Router das Problem gelöst hat. Da die Station beim Werksreset den Router neu aufspielt, wurden dabei vermutlich blockierte Adressen bereinigt. Ich bin sehr froh, dass jetzt wieder alles läuft.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-27T08:26:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2dea776c-2983-f011-b4cc-7c1e52768372",
+            "subject": "AW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Sentürk,\ndanke für Ihre Rückmeldung.\nIch habe das Gerät wie gesagt im Backend neu angelegt und bisher schein alles wieder zu funktionieren.\nBesten Dank für Ihre Mühe und Einsatz.\nLeider funktioniert es nur über den persönlichen Kontakt um  solche Probleme zu lösen.\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail: ruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 27. August 2025 10:30\nAn:\nRücker Dirk <ruecker@stadtwerke-dachau.de>\nBetreff:\nRE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888\nHallo Herr Rücker\nIch denke nicht, dass es an der FW lag. Es scheint eher, dass die Wiederherstellung der Werkseinstellungen am Router das Problem gelöst hat. Da die Station beim Werksreset den Router neu aufspielt, wurden dabei vermutlich blockierte Adressen bereinigt. Ich bin sehr froh, dass jetzt wieder alles läuft.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-27T09:37:26Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d7d53ce3-3a83-f011-b4cc-6045bddf397a",
+            "subject": "Ticket 0436813 has been closed. Are you satisfied with our provided solution? CRM:00225248560",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0436813\nwith the title:\nID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-27T11:42:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "10a90206-3b83-f011-b4cb-7ced8d77e692",
+            "subject": "Automatische Antwort: Ticket 0436813 has been closed. Are you satisfied with our provided solution? CRM:00225248560",
+            "body": "Sehr geehrte Damen und Herren,\nvielen Dank für Ihre Nachricht.\nIch bin derzeit nicht anwesend. Ihre Mail wird nicht weitergeleitet!\nIn dringenden Angelegenheiten wenden Sie sich bitte an unser Sekretariat unter der Telefonnummer 08131/7009 0 oder E-Mail info@stadtwerke-dachau.de.\nGerne kümmere ich mich nach meiner Rückkehr um Ihre Anfrage.",
+            "date": "2025-08-27T11:43:26Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f647791c-83ec-f011-8544-7c1e523625c2",
+            "subject": "WG: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Sentürk,\nein frohes neues Jahr wünsche ich Ihnen.\nIch habe ein Anliegen zu unserer Sicharge.\nDer AC-Ladepunkt soll nicht genutzt werden. Leider sendet die Station unserem  Backend das ein AC Ladepunkt vorhanden ist und konfiguriert werden muss.\nWürden Sie bitte den AC-Ladepunkt  dauerhaft de-aktivieren?!\nVielen dank\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail:\nruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nRücker Dirk\nGesendet:\nMittwoch, 27. August 2025 11:37\nAn:\n'emobility_support.si@siemens.com' <\nemobility_support.si@siemens.com\n>\nCc:\nDolce, Domenico <\ndomenico.dolce@siemens.com\n>\nBetreff:\nAW: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888\nHallo Herr Sentürk,\ndanke für Ihre Rückmeldung.\nIch habe das Gerät wie gesagt im Backend neu angelegt und bisher schein alles wieder zu funktionieren.\nBesten Dank für Ihre Mühe und Einsatz.\nLeider funktioniert es nur über den persönlichen Kontakt um  solche Probleme zu lösen.\nMit freundlichen Grüßen\nDirk Rücker\nTechnischer Berater E-Mobilität\nVertrieb und Wärme\nStadtwerke Dachau\nBrunngartenstr. 3\n85221 Dachau\nTel: 08131/7009-260\nFax: 08131/7009-60\nE-Mail:\nruecker@stadtwerke-dachau.de\nWeb:\nwww.stadtwerke-dachau.de\n--------------------------------------------------------------------------------------------------\nStadtwerke Dachau\nEigenbetrieb der Stadt Dachau\nPostfach 1867, 85208 Dachau\nHandelsregister: München HRA 74711\nWerkleitung: Robert Haimerl\nWerkausschussvorsitzender: Florian Hartmann\n--------------------------------------------------------------------------------------------------\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMittwoch, 27. August 2025 10:30\nAn:\nRücker Dirk <\nruecker@stadtwerke-dachau.de\n>\nBetreff:\nRE: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888\nHallo Herr Rücker\nIch denke nicht, dass es an der FW lag. Es scheint eher, dass die Wiederherstellung der Werkseinstellungen am Router das Problem gelöst hat. Da die Station beim Werksreset den Router neu aufspielt, wurden dabei vermutlich blockierte Adressen bereinigt. Ich bin sehr froh, dass jetzt wieder alles läuft.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2026-01-08T11:13:55Z",
+            "extra": {
+                "sender": "ruecker@stadtwerke-dachau.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0ad82c1d-83ec-f011-8544-7c1e5236229d",
+            "subject": "Email sent to a closed case 'ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline (0436813)' CRM:00225314592",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0436813\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2026-01-08T11:14:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b937cf1-84f0-f011-8406-7ced8d4869a5",
+            "subject": "RE: WG: AW: 0436813 - ID0436813-DC/Si-D/DE-[MP/P1170000139] OCPP Offline CRM:00439000888",
+            "body": "Hallo Herr Rücker\nIch hoffe Sie hatten einen guten Start in das neue Jahr.\nIch bin seit gestern wieder im Dienst und habe Ihre E-Mail gesehen. Ich kann die AC-Dose aus der Konfiguration löschen. Allerdings müssen wir in diesem Fall die OCPP ID der DC2 anpassen, da diese fortlaufend sein muss. Da aktuell noch eine Session läuft, würde ich die Anpassung vornehmen, sobald die Station unbenutzt ist. Gerne können wir das auch in einem kleinen Teams Call machen sodass auf beiden seiten die Daten identisch sind.\nZur Anpassung:\nCCS rechts würde dann den Identifier 2 bekommen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2026-01-13T13:37:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

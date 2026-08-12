@@ -1,0 +1,119 @@
+{
+    "incident_id": "76bd8201-a7a1-4eb6-9793-31514f6d59d3",
+    "ticket_number": "0465643",
+    "title": "ID0465643-DC/Si-D/IT-[MP / R9 170002450] Session authentication failed",
+    "created_on": "2025-12-03T19:21:02Z",
+    "last_activity": "2025-12-04T13:49:39Z",
+    "age": "1108",
+    "description": "Reported behaviour/issue: OCPP offline\nSolution: Connection reestablished by itself",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R9 170002450",
+    "case_nature_code": 580000001,
+    "chargerID": "eRTrNO",
+    "additional_info": [
+        {
+            "id": "28131152-7dd0-f011-bbd3-7c1e523625c2",
+            "subject": "A new case manager was assigned to 0465643 CRM:00225298014",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0465643 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76bd8201-a7a1-4eb6-9793-31514f6d59d3",
+            "date": "2025-12-03T19:21:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e7ea9e8f-f557-0816-b729-f671fa1f479b",
+            "subject": "Additional description-",
+            "body": "Hello,\na client tried to charge on november 3 between 2\n:41:05 PM and 2:56:07 PM CU TIME (15:41:05 - 15:56:07 Italy time) but the charger didn't deliver energy. Also between 08:12:58 AM and 3:33:52 PM CU TIME ( 09:12:58 and 3:33:52 Italy time) all the charges that were started were at 0 kWh, so the charger never delivered any energy.\nCan you please check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2025-12-03T19:24:04Z",
+            "extra": {}
+        },
+        {
+            "id": "8f5e5cbf-7dd0-f011-bbd3-7c1e52880b1b",
+            "subject": "ID0465643-DC/Si-D/IT-[MP / R9 170002450] Check on logs CRM:02681001171",
+            "body": "Dear\nRosita\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002450\nCharger ID\n: eRTrNO\nProblem Description\n: Check on logs\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0465643\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-03T19:25:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "02da6997-82d0-f011-bbd3-7ced8d4259cd",
+            "subject": "ID0465643-DC/Si-D/IT-[MP / R9 170002450] Check on logs CRM:00263000221",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002450\nwhich led to the opened ticket:\n0465643\n.\nProblem description:\n\"\na client tried to charge on november 3 between 2:41:05 PM and 2:56:07 PM CU TIME (15:41:05 - 15:56:07 Italy time) but the charger didn't deliver energy. Also between 08:12:58 AM and 3:33:52 PM CU TIME ( 09:12:58 and 3:33:52 Italy time) all the charges that were started were at 0 kWh, so the charger never delivered any energy.\nCan you please check the logs?\nThank you\"\nThe logs have been checked and it was possible to observe:\nThe charger was unable to authenticate the vehicle due to a communication timeout:\nV2G - message timeout V2G09MSGSequence_V2GDINSession_V2GDINContractAuthentication\nResulted in error code: 39.\nNetwork Connectivity Problems:\nThe charger could not reach backend servers:\nconnect() to [backend address] failed (101: Network unreachable)\npeer closed connection in SSL handshake (104: Connection reset by peer)\nno live upstreams while connecting to upstream\nSession Ended Unexpectedly:\nThe charging session was terminated automatically, and no energy was delivered:\n{\"type\":\"session_stop\",\"unexpected\":true,\"error\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2GDINSession_V2GDINContractAuthentication\"}}\nThe logs have been added to the ticket and it will be moved to our expert team.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-03T19:59:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c690006d-87d0-f011-bbd3-7c1e52880288",
+            "subject": "ID0465643-DC/Si-D/IT-[MP / R9 170002450] Check on logs CRM:00263000221",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002450\nwhich led to the opened ticket:\n0465643\n.\nProblem description:\n\"\na client tried to charge on november 3 between 2:41:05 PM and 2:56:07 PM CU TIME (15:41:05 - 15:56:07 Italy time) but the charger didn't deliver energy. Also between 08:12:58 AM and 3:33:52 PM CU TIME ( 09:12:58 and 3:33:52 Italy time) all the charges that were started were at 0 kWh, so the charger never delivered any energy.\nCan you please check the logs?\nThank you\"\nThe logs have been checked and it was possible to observe:\nThe charger was unable to authenticate the vehicle due to a communication timeout:\nV2G - message timeout V2G09MSGSequence_V2GDINSession_V2GDINContractAuthentication\nResulted in error code: 39.\nNetwork Connectivity Problems:\nThe charger could not reach backend servers:\nconnect() to [backend address] failed (101: Network unreachable)\npeer closed connection in SSL handshake (104: Connection reset by peer)\nno live upstreams while connecting to upstream\nSession Ended Unexpectedly:\nThe charging session was terminated automatically, and no energy was delivered:\n{\"type\":\"session_stop\",\"unexpected\":true,\"error\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2GDINSession_V2GDINContractAuthentication\"}}\nThe logs have been added to the ticket and it will be moved to our expert team.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-03T20:34:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "38446051-3e28-2dca-9640-4980f0c607dd",
+            "subject": "Logs",
+            "body": "2025-12-03T14:42:13.382283+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC1: PilotState \"B2\" --> \"E\"",
+            "date": "2025-12-03T20:35:59Z",
+            "extra": {}
+        },
+        {
+            "id": "3be11d20-f1d0-f011-bbd3-7ced8d4251b1",
+            "subject": "A new case manager was assigned to 0465643 CRM:00225298269",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0465643 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=76bd8201-a7a1-4eb6-9793-31514f6d59d3",
+            "date": "2025-12-04T09:10:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e1cde7b-fad0-f011-bbd3-7ced8d4258c6",
+            "subject": "ID0465643-DC/Si-D/IT-[MP / R9 170002450] Check on logs CRM:00263000221",
+            "body": "Hello Rosita, good morning. I hope you are doing well.\nI checked the logs from this time and the OCPP connection was down when the customer tried to charge:\nAs such the sessions didn't work.\nPlease let me know if this answered to your question and if I can close the ticket.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-12-04T10:17:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6f188da-15d1-f011-bbd3-7ced8d4258c6",
+            "subject": "RE: ID0465643-DC/Si-D/IT-[MP / R9 170002450] Check on logs CRM:00263000221",
+            "body": "Hello,\nyou can proceed to close the ticket.\nThank you,\nRosita Abate",
+            "date": "2025-12-04T13:33:51Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ade62309-18d1-f011-bbd3-7ced8d4251b1",
+            "subject": "Ticket 0465643 has been closed. Are you satisfied with our provided solution? CRM:00225298507",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0465643\nwith the title:\nID0465643-DC/Si-D/IT-[MP / R9 170002450] Session authentication failed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-04T13:49:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

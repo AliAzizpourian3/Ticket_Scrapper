@@ -1,0 +1,71 @@
+{
+    "incident_id": "04e07c43-74eb-ef11-9341-6045bddd1864",
+    "ticket_number": "0406971",
+    "title": "ID0406971-DC/Si-D/FR-[MP / R8 170002501] Mainbreaker_QA1 Closing Failure",
+    "created_on": "2025-02-15T08:10:07Z",
+    "last_activity": "2025-03-04T14:27:02Z",
+    "age": "24753",
+    "description": "Reported behavior/issue:\nMainbreaker_QA1 Closing Failure => charger in FailsafeMode\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status: 9/11/2025",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "Xj0PX1",
+    "stage": null,
+    "serial_number": "MP / R8 170002501",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "7fc8183e-74eb-ef11-9341-000d3ab1a06e",
+            "subject": "Webform_incident_SiCharge D_15-02-2025_SN: MP / R8 170002501",
+            "body": "Dear Sébastien COLLET,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R8 170002501\nThank you\neMobility Technical Support Team\nSehr geehrte/r Sébastien COLLET,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R8 170002501\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-15T08:10:03Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a455dac2-84eb-ef11-9341-0022489a2456",
+            "subject": "ID0406971-DC/Si-D/FR-[MP / R8 170002501] Mainbreaker_QA1 Closing Failure CRM:00579001500",
+            "body": "Dear COLLET, SEBASTIEN\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002501\nChargerID/Serial No.\n:\nXj0PX1\nProblem Description\n: Mainbreaker_QA1 Closing Failure\nKindly allow us some time to go through the issue. We will get back to you shortly.\nFor future reference, your case number is\n0406971\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-15T10:08:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec2ed574-a46e-e18d-9f6c-0fa60facb892",
+            "subject": "From RC",
+            "body": "Please send to L3 or R&D ( several cases since update from 4.0.11 to 6.0.3)",
+            "date": "2025-02-15T10:11:11Z",
+            "extra": {}
+        },
+        {
+            "id": "945d78f1-9c97-f590-b190-54125500f879",
+            "subject": "Notes for L2",
+            "body": "Informed to Francois. He will be discussing in Sicharge-D jour fixe and will then provide the update.",
+            "date": "2025-02-18T03:20:43Z",
+            "extra": {}
+        },
+        {
+            "id": "cef40f61-3cf0-ef11-9342-6045bdde1b10",
+            "subject": "ID0406971-DC/Si-D/FR-[MP / R8 170002501] Mainbreaker_QA1 Closing Failure CRM:00579001517",
+            "body": "Hello Sebastien,\nGreetings of the day!\nPlease do the following troubleshooting, knowing also the following conditions to close:\nF03-KF5 DI b.7: true:\nSafety relay trip QA26 (no emergency stop, doors are closed, external E-Stop is not activated)\n3 LEDs on the QA26 schould be on: 1, 2 & 3\nKF5 DI b.4: false:\nbreaker not closed yet\nIf the feedback was not present after closing, the Error Flag will raise\nunfortunately the flag will fall again shortly after (Sicharge Software <2.5.4)\nto check the Error Flag search for '\nPLC-Error-Flag\n' in syslogs during PLC operation mode 5: '\nSWITCH_ON_MAIN_BREAKER\n' as stated here:\nPLC Logic\nKF5 DI b.3: false:\nif AC contactor could not be opened (error happened), the main breaker will also Trip\nKF2 DQ b.1: false\n: turning off the main breaker\nMCCB is tripping: MCCB opens → TRIP LED turns yellow for 1s, turns off after (self recovery from TRIP after 1s); ACT LED is constantly green; reasons for tripping:\nundervoltage release F09-QA1 is not receiving/interrupts 24V feedback from safety relay trip F03-QA26.24\nit should turn 24V on if all emergency signals present (doors & e-stops)\ntwo parallel signals coming from QA26: .14 →  PLC KF5 DI15 / .24 → QA1 D1\nas the undervoltage release is an optional piece of mechanic for the main breaker, please make sure that it it inserted in the MCCB correctly\nthe \"turn on MCCB\" 230V signals might be inconsistent (thus dropping to false both turning the main breaker off)\nswitched L1/L2 is not an issue, charger operates normally\n→ for both issues:\ncheck the wire lines with all connectors inbetween, check both starting & end devices for the signal to arrive & stay\nyou can bridge some signals for testing purposes to eliminate issues & get to the real cause\non MCCB turning off the converters have usually some power left to change their status & alarm flag and communicate it to the PLC\nyou can check the charger logs searching for \"PLC-Error-Flags\"\nPlease take a spare KF2, undervoltage relay, motor for MCCB (or whole MCCB). QA26, and QA28/29.\nI am writing to formally inform that we are moving case 0406971 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nyes\nOnsite Troubleshooting\nyes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-21T10:12:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3990dc6e-520b-1266-9d61-f068ce072327",
+            "subject": null,
+            "body": "Rapport de dépannage (011).pdf\nAnalyse done with Resonance and François Winckel, issue seems due to motor MA1 and UVR, need to be ordered .\nTicket can be closed (duplication from\nID0404086)",
+            "date": "2025-03-04T12:42:45Z",
+            "extra": {}
+        }
+    ]
+}

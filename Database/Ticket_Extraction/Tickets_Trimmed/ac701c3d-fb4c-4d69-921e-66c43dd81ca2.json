@@ -1,0 +1,75 @@
+{
+    "incident_id": "ac701c3d-fb4c-4d69-921e-66c43dd81ca2",
+    "ticket_number": "0424762",
+    "title": "ID0424499-DC/Si-D/CL-[MP / R6 170002002] VLAN Configuration (C1)",
+    "created_on": "2025-05-15T14:10:26Z",
+    "last_activity": "2026-02-01T19:52:48Z",
+    "age": "77582",
+    "description": "Reported behaviour/issue: VLAN Configuration\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hiQWJH",
+    "stage": null,
+    "serial_number": "MP / R6 170002002,MP / R6 170002002",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "09023cc1-d893-8c7a-b95f-074dff98a6dc",
+            "subject": "Note to L3",
+            "body": "Dear Support,\nWe have encountered issues when configuring the Open Port through VLAN on the WAN Port to the PLC in the SCB router settings. When loading the configuration, a \"Network\" error appears.\nThe example device corresponds to SCB ID hiQWJH.\nWe need to configure the ELMS, as we are setting up a DLMS system with a Sicam A8000 and using the client's network segment 192.168.1.xxx, according to the attached architecture.\nWith best regards,\nLodhar Aedo Lobos.",
+            "date": "2025-05-15T14:15:39Z",
+            "extra": {}
+        },
+        {
+            "id": "aebe0cf0-a551-9804-aaee-2cd698da924b",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nIt seems that the ELMS features may not be supported if the chargers are connected via wired WAN.\nProblem Description:\nFor ELMS configuration support, please refer to the customer’s request below for better understanding.\nAction Performed (L2):\nVerified the PLC settings on the SCB and tried to enable the ELMS, but the same issue occurred.\nCharger SW Version:\nv6.1.3\nReason for Handover (L3):\nFurther support.",
+            "date": "2025-05-15T14:18:26Z",
+            "extra": {}
+        },
+        {
+            "id": "60505e81-c634-f011-8c4d-7c1e5220bf23",
+            "subject": "0424762 - ID0424499-DC/Si-D/CL-[MP / R6 170002002] VLAN Configuration (C1) CRM:00314000167",
+            "body": "Good evening Lodhar,\nI am reaching out from the Expert Services Team in regards of ticket\nID0424762.\nThe ticket is open for issues in configuring the ELMS on charger\nhiQWJH.\nFrom what I understood, on 15.05.2025 you were not able to configure the ELMS on the charger. I believe what has to be done now is to SSH inside the router XF3 and set the port forwarding directly inside the Teltonika settings of the router.\nI have first a few questions for you:\nWas the communication between charger and ELMS successful at any moment?\nDid you verify that the ETH cable is correctly inserted in F01-FA13, as per picture below, and that the ETH connection is established?\nFrom SCB, I that the charger is in error state due to the following error flag:\nSafetyRelay_QA26\nPLC\nSYSTEM\ntrue\nELMS tripped 3SK\nAs per the ELMS commissioning manual, I see that this error flag can be triggered from the ELMS side. Therefore, I am wondering if the ELMS is communicating with the charger.\nIf you need support to check together via SSH the settings inside the terminal, please let me know your working hours and we can set an appointment.\nLooking forward to hearing your feedback soon.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-19T15:32:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "911b43e3-df34-f011-8c4d-7c1e523508ba",
+            "subject": "RE: 0424762 - ID0424499-DC/Si-D/CL-[MP / R6 170002002] VLAN Configuration (C1) CRM:00314000167",
+            "body": "Dear Support,\nThe XF3 router is now connected to the internet for the SCB through a client router with the IP address 192.168.1.101/24 via RJ45 cable.\nWas communication between the charger and ELMS ever successful? I haven’t been able to test Modbus communication with the charger. The network is currently using the 192.168.1.xxx segment. A VLAN configuration is required to access the charger.\nDid you verify that the ETH cable is correctly inserted into F01-FA13, as shown in the image below, and that the ETH connection is established? The cable is connected and is currently being used for SCB access.\nWe are configuring ELMS to communicate with a Sicam A8000 RTU for the DLMS service. ELMS has already been activated in the SCB PLC configuration. However, when configuring the router through the SCB to enable \"Open ports through VLAN on WAN Port to the PLC,\" it fails and returns an error.\nI’m not sure if you could clarify what the PLC IP address is for this service, or what the correct IP segment should be, so I can better understand which IP to assign to the VLAN. Also, please confirm whether this configuration can be done directly on the Teltonika router via the web interface.\nI would appreciate your help with these points or with the configuration. I will be on-site all this week from 9:00 AM to 6:00 PM (UTC -4 Santiago, Chile).\nWith best regards,\nLodhar Aedo Lobos.\nSystem Engineer.\nSiemens S.A. - Chile  (RC-CL SI EA SO)\nAlonso de Cordova 4580,Piso 3, Las Condes\nMobile: +56 9 57986913\nEmail:\nlodhar.aedo@siemens.com\nDe:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnviado el:\nlunes, 19 de mayo de 2025 11:33 a. m.\nPara:\nAedo Lobos, Lodhar Maxwel (RC-CL SI EA SO) <lodhar.aedo@siemens.com>\nAsunto:\n0424762 - ID0424499-DC/Si-D/CL-[MP / R6 170002002] VLAN Configuration (C1) CRM:00314000167\nGood evening Lodhar,\nI am reaching out from the Expert Services Team in regards of ticket\nID0424762.\nThe ticket is open for issues in configuring the ELMS on charger\nhiQWJH.\nFrom what I understood, on 15.05.2025 you were not able to configure the ELMS on the charger. I believe what has to be done now is to SSH inside the router XF3 and set the port forwarding directly inside the Teltonika settings of the router.\nI have first a few questions for you:\nWas the communication between charger and ELMS successful at any moment?\nDid you verify that the ETH cable is correctly inserted in F01-FA13, as per picture below, and that the ETH connection is established?\nFrom SCB, I that the charger is in error state due to the following error flag:\nSafetyRelay_QA26\nPLC\nSYSTEM\ntrue\nELMS tripped 3SK\nAs per the ELMS commissioning manual, I see that this error flag can be triggered from the ELMS side. Therefore, I am wondering if the ELMS is communicating with the charger.\nIf you need support to check together via SSH the settings inside the terminal, please let me know your working hours and we can set an appointment.\nLooking forward to hearing your feedback soon.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-19T18:34:26Z",
+            "extra": {
+                "sender": "lodhar.aedo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0f9e6995-5535-f011-8c4e-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0424762 CRM:00225202781",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0424762 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ac701c3d-fb4c-4d69-921e-66c43dd81ca2",
+            "date": "2025-05-20T08:37:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d07e8154-ec5b-f011-bec2-6045bddf3f78",
+            "subject": "0424762 - ID0424499-DC/Si-D/CL-[MP / R6 170002002] VLAN Configuration (C1) CRM:00472000336",
+            "body": "Hello Lodhar,\nAfter our interventions we were able to have the chargers connected on the network via WiFi and the Modbus for the ELMS system also working via Ethernet cable.\nI will now proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-07-08T11:11:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

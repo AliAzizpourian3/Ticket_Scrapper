@@ -1,0 +1,155 @@
+{
+    "incident_id": "8814f0e8-1a15-f011-998a-000d3adc93d1",
+    "ticket_number": "0417808",
+    "title": "ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charger status Unavailable",
+    "created_on": "2025-04-09T08:16:26Z",
+    "last_activity": "2025-08-26T11:01:50Z",
+    "age": "21857",
+    "description": "Reported issue: Charger status Unavailable\nSolution:  Null\nyyyy-mm-dd: 2025-04-09",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "mtOy3T",
+    "stage": null,
+    "serial_number": "Y2 / S5 313682017001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "44169add-1a15-f011-998a-7c1e52faf3c6",
+            "subject": "Webform_incident_SiCharge D_09-04-2025_SN: 313682017001",
+            "body": "Dear Tanja Wydra,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n313682017001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tanja Wydra,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n313682017001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-09T08:16:03Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e1c9ba89-1f15-f011-9989-0022489d5a8e",
+            "subject": "ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Hallo ﻿Energu Support,\nvielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Deepanshi und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center\nHauptanlage\n: Y2 / S5 313682017001\nLadegerät-ID/Seriennr\n.:  Y2 / S5 313682017001\nProblembeschreibung\n: Der Charger ist wiederholt nicht verfügbar. Die Ladepunkte deaktivieren sich selbstständig. Ein Neustart wurde bereits\nmehrfach durchgeführt. Die Ladepunkte bleiben \"nicht verfügbar\".\nFür zukünftige Referenzen lautet Ihre Ticketummer 0417808\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nDeepanshi Singh\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-04-09T08:49:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "676df1a5-8264-1c09-ac9d-52804f509d4e",
+            "subject": "Internal notes",
+            "body": "2025-04-09T07:27:01.851780+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[733]: Error polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-04-09T07:27:01.852035+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[733]: at Timeout._onTimeout (/app/node_modules/coap/lib/retry_send.js:74:16)\n2025-04-09T10:46:33.280022+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[734]: Error polling coap://10.20.17.101:5683/state Error: No reply in 6s\n2025-04-09T10:46:33.280732+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[734]: at Timeout._onTimeout (/app/node_modules/coap/lib/retry_send.js:74:16)",
+            "date": "2025-04-09T12:06:50Z",
+            "extra": {}
+        },
+        {
+            "id": "8a46ced3-4215-f011-998a-000d3adc93d1",
+            "subject": "RE: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Dear Team,\nHope you are doing well,\nI have checked the logs on SCB, as mentioned in your trailing mail, and upon analysis, we are seeing the following error:\n\"Error polling coap://10.20.17.101:5683/state Error:\nNo reply in 6s\nThis indicates that the SECC Lite was unable to communicate with the controller at that moment.\nHowever, the communication was restored after some time.\nKindly refer to the sequence flow below to see how the error on the outlet was resolved and how it returned to a working state within seconds.\n2025-04-09T10:46:33.280022+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[734]: Error polling coap://10.20.17.101:5683/state Error: No reply in 6s\n2025-04-09T10:46:33.917130+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState outoforder 1\n2025-04-09T10:46:34.616821+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: OCPP: Send command: StatusNotification (d146c6ae-22d7-4166-9d22-ec5064aa4461) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\n2025-04-09T10:46:34.980075+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState ready 1\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T13:02:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a2ee0c1-99f0-2183-ad48-97bc9057e85f",
+            "subject": "Issue reported from the customer",
+            "body": "The\ncharger\nis\nrepeatedly\nunavailable\n.\nThe\ncharging\npoints\ndeactivate\nthemselves\n.\nA\nrestart\nhas\nalready\nbeen\ncarried\nout\nseveral\ntimes\n.\nThe\ncharging\npoints\nremain\n\"\nnot\navailable\n\".\nPlease\ncheck\nas\nsoon\nas\npossible\nwhat\nthe\nproblem\nis\nand\nsend\na\ntechnician\non\nsite\nif\nnecessary\n!",
+            "date": "2025-04-09T13:07:47Z",
+            "extra": {}
+        },
+        {
+            "id": "43c44165-e815-f011-998a-6045bddf319c",
+            "subject": "URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Hallo,\ndie Ladepunkte sind wieder deaktiviert.\nBitte schnellstmöglich prüfen, woran es liegt! Vielen Dank.\nThe charging points are deactivated again.\nPlease check the reason as soon as possible!\nThank you very much.\nFreundliche Grüße\nSupport\nENERGU GmbH\nGartenstraße 11, 97616 Bad Neustadt a. d. Saale\nM: +49 (0) 421 39699364\nsupport@energu.de\nwww.energu.de/\nAmtsgericht Schweinfurt HRB 8148\nGeschäftsführer: Arthur Schneider, Paul Schneider, Christoph Avé-Lallemant\nEin Unternehmen der Diersch & Schröder Gruppe.\nDiese Mail enthält vertrauliche oder rechtlich geschützte Informationen. Wenn Sie nicht der Adressat sind oder diese Mail irrtümlich erhalten haben, informieren Sie bitte den Absender und löschen Sie diese Mail. Das unerlaubte Kopieren oder die Weitergabe der Daten ist nicht gestattet.\n----------------------------------\nThis message may contain confidential or privileged material. Any unauthorized recipient is obliged to contact the sender and delete the message without reading, reviewing, retransmitting or disseminating it.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 9. April 2025 15:06\nAn:\nEnergu Support <support@energu.de>\nBetreff:\nRE: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charging points deactivate themselves CRM:02684000061\nDear Team,\nHope you are doing well,\nI have checked the logs on SCB, as mentioned in your trailing mail, and upon analysis, we are seeing the following error:\n\"Error polling coap://10.20.17.101:5683/state Error:\nNo reply in 6s\nThis indicates that the SECC Lite was unable to communicate with the controller at that moment.\nHowever, the communication was restored after some time.\nKindly refer to the sequence flow below to see how the error on the outlet was resolved and how it returned to a working state within seconds.\n2025-04-09T10:46:33.280022+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[734]: Error polling coap://10.20.17.101:5683/state Error: No reply in 6s\n2025-04-09T10:46:33.917130+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState outoforder 1\n2025-04-09T10:46:34.616821+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: OCPP: Send command: StatusNotification (d146c6ae-22d7-4166-9d22-ec5064aa4461) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\n2025-04-09T10:46:34.980075+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState ready 1\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-10T08:47:22Z",
+            "extra": {
+                "sender": "support@energu.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aca586d0-f215-f011-9989-6045bde0265d",
+            "subject": "WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Hallo,\nwir haben dazu folgende Informationen von unserem Backend-Anbieter erhalten:\n„Nach Überprüfung der Station haben wir festgestellt, dass der Hersteller-Fehlercode „SPD_FA1_or_Fuse_FC1_AC-Income“ in den Protokollen erscheint, was auf ein mögliches Problem mit dem Überspannungsschutzgerät (SPD) oder der Sicherung (FC1) auf der Stromeingangsseite des Ladegeräts hinweist.\nWir empfehlen Ihnen, sich zur weiteren Analyse und Lösung des Problems direkt mit dem Hersteller in Verbindung zu setzen. Zur Unterstützung dieses Prozesses haben wir die Diagnosedatei beigefügt, die Sie an den Hersteller weiterleiten können.\nSollten weitere Untersuchungen unsererseits erforderlich sein, teilen Sie uns bitte alle Rückmeldungen oder Analysen mit, die Sie vom Hersteller erhalten haben, damit wir Sie weiterhin unterstützen können.“\nWir bitten um eine Rückmeldung! Vielen Dank.\nFreundliche Grüße\nSupport\nENERGU GmbH\nGartenstraße 11, 97616 Bad Neustadt a. d. Saale\nM: +49 (0) 421 39699364\nsupport@energu.de\nwww.energu.de/\nAmtsgericht Schweinfurt HRB 8148\nGeschäftsführer: Arthur Schneider, Paul Schneider, Christoph Avé-Lallemant\nEin Unternehmen der Diersch & Schröder Gruppe.\nDiese Mail enthält vertrauliche oder rechtlich geschützte Informationen. Wenn Sie nicht der Adressat sind oder diese Mail irrtümlich erhalten haben, informieren Sie bitte den Absender und löschen Sie diese Mail. Das unerlaubte Kopieren oder die Weitergabe der Daten ist nicht gestattet.\n----------------------------------\nThis message may contain confidential or privileged material. Any unauthorized recipient is obliged to contact the sender and delete the message without reading, reviewing, retransmitting or disseminating it.\nVon:\nEnergu Support\nGesendet:\nDonnerstag, 10. April 2025 10:47\nAn:\nemobility_support.si@siemens.com\nBetreff:\nURGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charging points deactivate themselves CRM:02684000061\nHallo,\ndie Ladepunkte sind wieder deaktiviert.\nBitte schnellstmöglich prüfen, woran es liegt! Vielen Dank.\nThe charging points are deactivated again.\nPlease check the reason as soon as possible!\nThank you very much.\nFreundliche Grüße\nSupport\nENERGU GmbH\nGartenstraße 11, 97616 Bad Neustadt a. d. Saale\nM: +49 (0) 421 39699364\nsupport@energu.de\nwww.energu.de/\nAmtsgericht Schweinfurt HRB 8148\nGeschäftsführer: Arthur Schneider, Paul Schneider, Christoph Avé-Lallemant\nEin Unternehmen der Diersch & Schröder Gruppe.\nDiese Mail enthält vertrauliche oder rechtlich geschützte Informationen. Wenn Sie nicht der Adressat sind oder diese Mail irrtümlich erhalten haben, informieren Sie bitte den Absender und löschen Sie diese Mail. Das unerlaubte Kopieren oder die Weitergabe der Daten ist nicht gestattet.\n----------------------------------\nThis message may contain confidential or privileged material. Any unauthorized recipient is obliged to contact the sender and delete the message without reading, reviewing, retransmitting or disseminating it.\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMittwoch, 9. April 2025 15:06\nAn:\nEnergu Support <\nsupport@energu.de\n>\nBetreff:\nRE: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charging points deactivate themselves CRM:02684000061\nDear Team,\nHope you are doing well,\nI have checked the logs on SCB, as mentioned in your trailing mail, and upon analysis, we are seeing the following error:\n\"Error polling coap://10.20.17.101:5683/state Error:\nNo reply in 6s\nThis indicates that the SECC Lite was unable to communicate with the controller at that moment.\nHowever, the communication was restored after some time.\nKindly refer to the sequence flow below to see how the error on the outlet was resolved and how it returned to a working state within seconds.\n2025-04-09T10:46:33.280022+00:00 sicharge-cp [local0:err] ecog-secc-adapter/37f76a3dc10d[734]: Error polling coap://10.20.17.101:5683/state Error: No reply in 6s\n2025-04-09T10:46:33.917130+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState outoforder 1\n2025-04-09T10:46:34.616821+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: OCPP: Send command: StatusNotification (d146c6ae-22d7-4166-9d22-ec5064aa4461) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\n2025-04-09T10:46:34.980075+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5cfc37a7993f[734]: setOutletLedState ready 1\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-10T10:01:49Z",
+            "extra": {
+                "sender": "support@energu.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b7c6ceb1-1770-2b39-9504-38638fad1ab8",
+            "subject": "Internal Note",
+            "body": "Need to plan for site intervention issue persists.",
+            "date": "2025-04-12T19:05:20Z",
+            "extra": {}
+        },
+        {
+            "id": "292fecf3-5318-f011-998a-7c1e52faf3c6",
+            "subject": "RE: WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Dear Team,\nHope you are doing well,\nWe have checked the error flag and identified that the error\n\"Surge Protection Income\"\nhas been captured and making the charger out of order\nTherefore, we recommend planning a site intervention to resolve the issue.\nPlease ensure that during the intervention, the technician deployed is\ncertified and properly trained\n. Additionally,\nall EHS guidelines\nmust be strictly followed during the visit.\nAnd please carry the spare during the intervention\nSPD Type1/Type2 3P+N 400VAC\n8EM5903-0AA00-2AA0, and fuses FC1\nPlease check the SPD for 2 things:\nIf these terminals are fitted properly or not damaged\nIf the Green box above the PE is red\nIf the green box is red please replace the SPD.\nIf everything checks out, then please measure continuity between the 3 fuses:\nI am writing to formally inform that we are moving case 0417227 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-DE SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-13T10:42:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "483c1b03-0319-f011-998a-6045bde12d6b",
+            "subject": "RE: WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Guten Morgen Tanja,\nwir haben auf die Logs geschaut und konnten feststellen, dass wohl der Türkontakt nicht fest ist. D.h. die Tür vom Ladegerät scheint nicht korrekt verschlossen zu sein, sondern ist vermutlich lose und hängt etwas. Könntet Ihr überprüfen, ob die Tür der SiD fest angedockt ist? Falls ja, entsenden wir einen Techniker.\nVielen Dank vorab!\nVG Rudi",
+            "date": "2025-04-14T07:35:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "34d1bf76-0319-f011-9989-7c1e5235705d",
+            "subject": "RE: WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Guten Morgen Tanja,\nwir haben auf die Logs geschaut und konnten feststellen, dass wohl der Türkontakt nicht fest ist. D.h. die Tür vom Ladegerät scheint nicht korrekt verschlossen zu sein, sondern ist vermutlich lose und hängt etwas. Könntet Ihr überprüfen, ob die Tür der SiD fest angedockt ist? Falls ja, entsenden wir einen Techniker.\nVielen Dank vorab!\nVG Rudi",
+            "date": "2025-04-14T07:38:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3e7e4f02-d3f5-0db1-9bd4-ea9b5c572f94",
+            "subject": "Keine Antwort",
+            "body": "Hat sich von selbst gelöst, musste nichts vor Ort gemacht werden von uns",
+            "date": "2025-04-24T12:32:05Z",
+            "extra": {}
+        },
+        {
+            "id": "d0371919-4a2b-f011-8c4d-6045bde0265d",
+            "subject": "AW: WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ]  Charging points deactivate themselves CRM:02684000061",
+            "body": "Hallo,\nwir haben die anliegende Datei von Virta erhalten.\nBitte einmal nachschauen, ob hier ein Problem zu erkennen ist.\nVielen Dank.\nFreundliche Grüße\nSupport\nENERGU GmbH\nGartenstraße 11, 97616 Bad Neustadt a. d. Saale\nM: +49 (0) 421 39699364\nsupport@energu.de\nwww.energu.de/\nAmtsgericht Schweinfurt HRB 8148\nGeschäftsführer: Arthur Schneider, Paul Schneider, Christoph Avé-Lallemant\nEin Unternehmen der Diersch & Schröder Gruppe.\nDiese Mail enthält vertrauliche oder rechtlich geschützte Informationen. Wenn Sie nicht der Adressat sind oder diese Mail irrtümlich erhalten haben, informieren Sie bitte den Absender und löschen Sie diese Mail. Das unerlaubte Kopieren oder die Weitergabe der Daten ist nicht gestattet.\n----------------------------------\nThis message may contain confidential or privileged material. Any unauthorized recipient is obliged to contact the sender and delete the message without reading, reviewing, retransmitting or disseminating it.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 14. April 2025 09:39\nAn:\nEnergu Support <support@energu.de>; emobility_support.si@siemens.com; emobility_support.si@siemens.com\nBetreff:\nRE: WG: URGENT! - AW: ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charging points deactivate themselves CRM:02684000061\nPriorität:\nHoch\nGuten Morgen Tanja,\nwir haben auf die Logs geschaut und konnten feststellen, dass wohl der Türkontakt nicht fest ist. D.h. die Tür vom Ladegerät scheint nicht korrekt verschlossen zu sein, sondern ist vermutlich lose und hängt etwas. Könntet Ihr überprüfen, ob die Tür der SiD fest angedockt ist? Falls ja, entsenden wir einen Techniker.\nVielen Dank vorab!\nVG Rudi",
+            "date": "2025-05-07T13:49:31Z",
+            "extra": {
+                "sender": "support@energu.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "533c5419-4a2b-f011-8c4e-7c1e5236cda4",
+            "subject": "Email sent to a closed case 'ID0417808-DC/Si-D/DE-[ Y2 / S5 313682017001 ] Charger status Unavailable (0417808)' CRM:00225194332",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0417808\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-05-07T13:49:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

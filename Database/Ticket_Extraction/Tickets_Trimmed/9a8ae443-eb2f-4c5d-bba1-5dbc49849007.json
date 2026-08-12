@@ -1,0 +1,116 @@
+{
+    "incident_id": "9a8ae443-eb2f-4c5d-bba1-5dbc49849007",
+    "ticket_number": "0447063",
+    "title": "ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2",
+    "created_on": "2025-09-01T07:09:42Z",
+    "last_activity": "2026-01-16T11:11:03Z",
+    "age": "34878",
+    "description": "Reported behavior/issue: There is no successful charging session on DC2. A lot of\nP03 CABLECHECK to P00-UNKNOWN\noccur.\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "rpfuw1",
+    "stage": null,
+    "serial_number": "MP / S3 170003463",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2770a7a7-0287-f011-b4cb-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0447063 CRM:00225250236",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0447063 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9a8ae443-eb2f-4c5d-bba1-5dbc49849007",
+            "date": "2025-09-01T07:09:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab1e028a-0487-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0447063 CRM:00225250252",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0447063 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9a8ae443-eb2f-4c5d-bba1-5dbc49849007",
+            "date": "2025-09-01T07:23:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8ffdc99e-0487-f011-b4cc-7c1e5220bf23",
+            "subject": "ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:02678000262",
+            "body": "Dear\nFurkan Ahmet Goren\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: {\nKırşehir Mucur Çağlayanlar Opet\nChargerID/Serial No.\n:\nrpfuw1\nProblem Description\n: No successful charging session on DC2\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0447063\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAniket Sharma\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-01T07:24:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e94829b2-0b87-f011-b4cc-7c1e52768372",
+            "subject": "A new case manager was assigned to 0447063 CRM:00225250336",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0447063 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9a8ae443-eb2f-4c5d-bba1-5dbc49849007",
+            "date": "2025-09-01T08:14:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b56fa55e-3c87-f011-b4cb-7c1e52768c07",
+            "subject": "0447063 - ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:00314000229",
+            "body": "Good evening Furkan,\nI am reaching out in regards of ticket\nID0447063\nfor charger\nrpfuw1\n. The ticket has been opened for issues to charge on DC2.\nToday I performed some logs analysis on SCB and AWS, and these are my findings:\nI checked on AWS and collected some timestamps of failed sessions at P03_CableCheck from 2025-09-01 and 2025-08-31\nFrom AWS, it seems that the charger was never able to have a successful charging session since 1 month (date of dispenser's commissioning).\nThe charger is running on v4.0.11, and unfortunately I believe the Hawkbit.conf file is not in the config files, hence I cannot access the charger via SSH.\nFrom the logs, unfortunately I cannot tell which could be the issue. v4.0.11 is a quite old version, and many useful logs are not reported as they were introduced with subsequent FW versions.\nFrom a first analysis and suspicion, the issue could be:\nIn the EcoG KF11\nIn the Voltage transducer TF2\nIn the DC contactor QA13-14 (unlikely).\nUnfortunately, without SSH I cannot check if the EcoG has some clear error, and I cannot even check the EcoG logs. Moreover, due to unavailability of colleagues being able to restore the Hawkbit.conf file and provide me SSH, I will only be able to access it by the end of this current week CW36.\nOnce I will get the access, it would be also necessary to update the charger to v8.0.5 via OTA, as so far it was not possible from your side I believe.\nIf it is okay for you, we can align again by the end of this week and proceed with the FW updates and further troubleshooting.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-01T14:03:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee96302b-3d8a-f011-b4cc-7c1e52768372",
+            "subject": "RE: 0447063 - ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:00314000229",
+            "body": "Hello colleagues,\nI am following up my last email in regards of ticket\nID0447063.\nAs per my previous analysis, charger was never able to perform a charging session on DC2, always failing at P03_CableCheck.\nI got finally SSH access (as now the charger is on v5.0.23) and analyzed some more logs. These are my findings:\nI checked remotely EcoG KF11 and there is no visible error on it.\nI checked some failed sessions, DC2 starts the CableCheck and there is no Abnormal feedback on the QA13-14:\nSession fails due to CableCheck timeout.\nWhat I see, is that in the logs it is stated that \"Cablechek testvoltage is reached\"\nThis reading comes from the power converters, which state that the power converters reached the Cablecheck voltage\nHowever, from SCB logs and EcoG logs, I do not see the voltage building up:\nAs a conclusion, I believe the issue could be:\nTF2 voltage transducer not working fine\nThe voltage Clamps of TF2 (WC26 and WC27) are defective or not well attached to the copper bars\nQA13-14 is not actually closing , even if the feedback is received.\nIf you are planning to go onsite, please check the above components to troubleshoot the issue.\nPlease let me know in advance if you need support for when you will be onsite. Looking forward to hearing feedback from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-05T09:46:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3857dd30-ce93-f011-b4cc-000d3addd6a9",
+            "subject": "RE: 0447063 - ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:00314000229",
+            "body": "Dear\nFurkan and Emre,\nI hope this message finds you well.\nIs there any follow-up or feedback in regards to my previous email on ticket\nID0447063\n?\nHas an onsite visit already happened, or is it planned?\nThank you in advance for your cooperation and looking forward to your response.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-17T13:57:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd4213b0-2d95-f011-b4cc-6045bddece8c",
+            "subject": "RE: 0447063 - ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:00314000229",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0447063\n﻿from the Technical Support to the\neMobility RC-TR SI E Queue\n. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer: Astor\nProduct:\nSicharge D - Charging Center\nMain Asset:\nKırşehir Mucur Çağlayanlar Opet\nCharger ID / Serial No.:\nrpfuw1\nCharger address/functional location:\nPriority:\nMedium\nReason to Handover: Required onsite visit and onsite troubleshooting.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-TR SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-19T07:53:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c2a8f57-5595-f011-b4cc-6045bddf3f78",
+            "subject": "RE: 0447063 - ID0447063-DC/Si-D/TR-[MP / S4 170003463] No successful charging session on DC2 CRM:00314000229",
+            "body": "Hi Fosco,\nWe will perform a field service intervention for this device and check the TF2 first.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-09-19T12:37:08Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

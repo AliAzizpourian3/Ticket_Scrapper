@@ -1,0 +1,89 @@
+{
+    "incident_id": "4a7edd6b-bb6e-4f20-b9fc-84b60cd4fe4e",
+    "ticket_number": "0383329",
+    "title": "ID0383329-DC/Si-D/FI-[F2S3400025] - Dispenser PLC blinks red and contactor does not close",
+    "created_on": "2024-10-08T07:41:54Z",
+    "last_activity": "2025-12-16T14:05:21Z",
+    "age": "1579",
+    "description": "Reported behaviour/issue:\nPLC communication error\nRoot cause:\nPLC payload is corrupted\nSolution:\nSSH transfer the dispenser's payload\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nDispenser F2S3400025 is inside costumer warehouse. When they tried to commission it with one of the main units (\nMP / R8 170002225)\n, before sending it to the site, they were not able to get it working. Dispenser PLC blinks red and contactor does not close.\nI'm going onsite to the warehouse today and probably would need assistance to investigate this issue.\nWhat should be the first trouble shooting step?",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R8 170002225",
+    "case_nature_code": null,
+    "chargerID": "Qu2jTM",
+    "additional_info": [
+        {
+            "id": "9bc1a1d1-4885-ef11-ac20-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0383329 CRM:00225107239",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0383329 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4a7edd6b-bb6e-4f20-b9fc-84b60cd4fe4e",
+            "date": "2024-10-08T07:42:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54f44710-4985-ef11-ac21-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0383329 CRM:00225107240",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0383329 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4a7edd6b-bb6e-4f20-b9fc-84b60cd4fe4e",
+            "date": "2024-10-08T07:44:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6ec44916-4985-ef11-ac21-7c1e5237dbeb",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 minutes and 13 seconds.",
+            "date": "2024-10-08T07:44:08Z",
+            "extra": {}
+        },
+        {
+            "id": "eeb290fc-1186-ef11-ac20-7c1e5235e725",
+            "subject": "ID0383329-DC/Si-D/FI-[F2S3400025] - Dispenser PLC blinks red and contactor does not close CRM:00315001890",
+            "body": "Dear Sakari,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nWarehouse unit\nChargerID/Serial No.\n: Qu2jTM\nProblem Description\n: PLC communication error\nTroubleshooting\n:\nFrom what we understood, the first time you turned on the dispenser it possibly didn't finish the update or related that might've caused the payload to corrupt.\nWith the assistance from L3, we were able to upload the payload again to the dispenser and it started working almost completely.\nWe found afterwards that the StateMonitor KF214, was not sending the 12V for the fastshutdown of the converter group3 and group4. As such we replaced the StateMonitor and now the dispenser is fully operational.\nPlease provide me the following information and I will close the ticket.\nDefective part name/MLFB: KF214\nComponent serial number:\nLogs with marked error (CSV format preferred): attach\nActive error flags before replacement\nPLC-Dispenser-Error-Flag 'DC4_StateMonitor_KF214' changed to true - (No_Bypass_LCU2: less converters than expeceted deactivated)\nPLC-Dispenser-Error-Flag 'DC3_StateMonitor_KF214' changed to true - (No_Bypass_LCU3: less converters than expeceted deactivated)\nPLC-Dispenser-Error-Flag 'DC3_StateMonitor_KF214' changed to true - (statemonitor LCU_DC[3])\nPLC-Dispenser-Error-Flag 'DC4_StateMonitor_KF214' changed to true - (statemonitor LCU_DC[2])\nDevice-specific error code\n(if applicable): No 12V from fastshutdown line\nOutcome of wiring checkup: No 12V in output and checked fastshutdown check via RemoteDebugStation → voltage doesn't drop to 0 V in FSC\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note): 8/Oct\nFor future reference, your ticket number is\n0383329\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-09T07:42:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9ee95fa-1386-ef11-ac20-7c1e5235e725",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 day, 12 minutes and 25 seconds.",
+            "date": "2024-10-09T07:56:33Z",
+            "extra": {}
+        },
+        {
+            "id": "5e7cbb0b-1486-ef11-ac20-7c1e5235e725",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 24 seconds.",
+            "date": "2024-10-09T07:56:57Z",
+            "extra": {}
+        },
+        {
+            "id": "d1788718-2586-ef11-ac20-7c1e5235e725",
+            "subject": "Ticket 0383329 has been closed. Are you satisfied with our provided solution? CRM:00315001893",
+            "body": "Dear Sakari,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0383329\nwith the title:\nID0383329 - DC/Si-D/FI - [F2S3400025] - Dispenser PLC blinks red and contactor does not close\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-10-09T09:58:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ad3e3d49-2586-ef11-ac20-7c1e5235e725",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Incident Solved Via Remote (L3) after 2 hours, 3 minutes and 29 seconds.",
+            "date": "2024-10-09T10:00:26Z",
+            "extra": {}
+        }
+    ]
+}

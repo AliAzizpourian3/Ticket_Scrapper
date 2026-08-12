@@ -1,0 +1,151 @@
+{
+    "incident_id": "ca21dc64-bfea-ef11-9341-7c1e5237e811",
+    "ticket_number": "0406824",
+    "title": "ID0406824-DC/Si-D/PL-[MP / R2 170001500] Charger takes around 7kW in standby.",
+    "created_on": "2025-02-14T10:35:27Z",
+    "last_activity": "2025-04-24T09:47:57Z",
+    "age": "64303",
+    "description": "Reported behavior/issue:\nCharger takes around 7kW in standby.\nWe measured it, also with main heater and fan was of by fuse. I'm attaching pictures. Please reach me out via teams when you have any advice. We measure every phase and every one take 1A on phase\nRoot cause: Inefficiencies caused from the vehicle end. Hardware failure\nSolution: Answer provided by L3.\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status:",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "k7iriT",
+    "stage": null,
+    "serial_number": "MP / R2 170001500",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "693a5d60-bfea-ef11-9342-000d3a697eb1",
+            "subject": "Webform_incident_SiCharge D_14-02-2025_SN: MP / R2 170001500",
+            "body": "Dear Konrad Frach,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R2 170001500\nThank you\neMobility Technical Support Team\nSehr geehrte/r Konrad Frach,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R2 170001500\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-14T10:35:19Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c70fb5de-c8ea-ef11-9341-0022489a2456",
+            "subject": "A new case manager was assigned to 0406824 CRM:00225164657",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0406824 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ca21dc64-bfea-ef11-9341-7c1e5237e811",
+            "date": "2025-02-14T11:43:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b122067-d5ea-ef11-9341-000d3aba98df",
+            "subject": "0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001500\nCharger ID/Serial No.\n:\nk7iriT\nProblem Description\n: Charger takes around 7kW in standby\nTroubleshooting\n: Could you kindly provide detailed information regarding the measurement setup? Specifically, could you clarify where the probe was connected during the measurement phase (e.g., R, Y, B phases)?\nAdditionally, please confirm if there were any loads connected during the measurement and whether they were energized (powered on) during the testing.\nFurthermore, could you provide a brief overview of the issue? According to the standard, the active power (KW) consumption should be lower than the reactive power (KVAR). Please refer to the table, which details the power consumption for a 180-kW system with emission class B.\nAdditionally, could you specify how many devices were turned off during testing (e.g., EMC filter, fan, heater, etc.)?\nFor future reference, your case number is\n0406824\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T13:13:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33475bf3-11ed-ef11-9341-7c1e52372dd0",
+            "subject": "RE: 0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "Hi,\nThe station was measured in several states during measurements:\n- open,\n- closed,\n- closed with off: FC18, FC20, FC21, FC22,\n- closed with the emergency button pressed,\nThe measurement was made on the charger's power supply inside before 3VA. Rogowski coils were salivated on the power cables and voltage probes on the 3VA buses.\nOpen state::\n- the station has a consumption of 300-400 watts,\nClosed state:\n- the station has a consumption of 7558 W,\nClosed station with circuits turned off:\n- consumption not much less 7500 W,\nStation closed with emergency button pressed:\n- consumption like an open station - 300-400W,\nThe stations were checked on the power supply of the power modules:\n- each phase of the modules consume between 0.9 - 1.1 A. I attached is a video.\nBest regards\nSmart Infrastructures Team\neMobility - Poland\nul.\nŻupnicza 11\n03-821 Warszawa\nwww.siemens.pl/emobility\nSiemens Sp. z o.o. ul. Żupnicza 11, 03-821 Warszawa, Sąd Rejonowy dla m.st. Warszawy, XIV Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS 0000031854, Kapitał zakładowy: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\n“Ten dokument zawiera informacje poufne, które mogą być również objęte tajemnicą handlową lub służbową. Jest on przeznaczony do wyłącznego użytku adresata. Jeśli nie są Państwo jego adresatem lub jeśli otrzymaliście Państwo ten dokument omyłkowo, to wszelkie rozpowszechnianie, dystrybucja, reprodukcja, kopiowanie, publikacja lub wykorzystanie tego dokumentu czy też zawartych w nim informacji jest zabronione. Jeśli otrzymali Państwo tę wiadomość przez pomyłkę, prosimy o bezzwłoczne skontaktowanie się z nami oraz usunięcie tej wiadomości z Państwa komputera.Zwracamy Państwa uwagę na fakt, że takie wiadomości mogą zostać utracone, zmienione lub zafałszowane nawet bez udziału stron trzecich. Zwykłe maile nie są chronione przed dostępem osób trzecich i dlatego ich poufność nie może być w pewnych okolicznościach zagwarantowana. Nie możemy ponosić odpowiedzialności za integralność maili, które wyszły poza strefę kontrolowaną przez nas.\"\n“This document contains confidential information that may also constitute commercial or business secrets. It is destined for the exclusive use by the addressee. If you are not the intended addressee or if you receive this message by mistake then be advised that any distribution, multiplication, reproduction, copying or use of this document or the information contained herein is forbidden. If you have received this message by mistake please contact us immediately and remove it from your computer.We draw your attention to the fact that such messages can be lost, changed or falsified, with or without any interference by third persons. Normal e-mails are not protected against access by third persons and, therefore, their confidentiality may not be assured in certain circumstances. We cannot be responsible for the integrity of emails after they have left our sphere of control.\"",
+            "date": "2025-02-17T09:31:27Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "28c70e71-6d3e-4155-a600-56eddee049ec",
+            "subject": null,
+            "body": "In contact with Konrad via Teams.",
+            "date": "2025-02-20T03:20:17Z",
+            "extra": {}
+        },
+        {
+            "id": "6da23f20-83a9-dde0-8cd1-283f398464f6",
+            "subject": "Video for Rectifier current",
+            "body": "",
+            "date": "2025-02-20T04:22:31Z",
+            "extra": {}
+        },
+        {
+            "id": "7ee0c963-0d6d-52aa-8ea9-9ce6a901e5ef",
+            "subject": "Temp seems to be normal",
+            "body": "",
+            "date": "2025-02-24T06:26:06Z",
+            "extra": {}
+        },
+        {
+            "id": "03c543cd-1ad1-ba0d-8bbb-6d039b65c36c",
+            "subject": "Handover Notes",
+            "body": "Background :\nIdle power should be 200w while 7.5Kw is actual measured active power.\nWe have put the charger in the Debug mode and checked Temp. it found to be fine.\nAI:\nNeed to check in jour fixe if any way other approach to check/investigate the Power consumption in idle mode.\nNeed to ask customer if they can export the measurements in the .csv/ /pdf format. and share with us",
+            "date": "2025-02-24T06:40:02Z",
+            "extra": {}
+        },
+        {
+            "id": "4e84f590-c1f2-ef11-be1f-6045bddf319c",
+            "subject": "RE: 0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "Hi,\nhave you been able to establish something? Each day of operation of the station is a cost of 85EUR per day for the extra energy consumed.\nWhat steps can we take to better diagnose the station locally? We performed an update of the station in the meantime.\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2025-02-24T15:11:10Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fdf6bf77-d3f2-ef11-be1f-7c1e52768c07",
+            "subject": "RE: 0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "Hello Szymon,\nI wanted to sincerely apologize for the delayed response. Please rest assured that we are actively discussing your case with our ES team, and we are working diligently to resolve the matter.\nWe will provide you with an update as soon as possible.\nThank you for your patience and understanding.\nIf you have any further questions in the meantime, please don’t hesitate to reach out.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-24T17:19:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "baad97b7-89f3-ef11-be1f-6045bddf3f78",
+            "subject": "RE: 0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "I managed to get a csv file for this location, you will find there all the data from the power analyzer.\nBest regards\nSzymon",
+            "date": "2025-02-25T15:03:57Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13d27fd3-1a4d-1998-9508-732add9c8da3",
+            "subject": "Note to L2",
+            "body": "Background :Idle power should be 200w while 7.5Kw is actual measured active power.\nAI: Child case created.",
+            "date": "2025-02-26T17:29:04Z",
+            "extra": {}
+        },
+        {
+            "id": "b76b3de4-d10d-f011-998a-7c1e5236cda4",
+            "subject": "RE: 0406824 - ID0406824-DC/Si-D-PL-[MP / R2 170001500] Charger takes around 7kW in standby. CRM:02023000511",
+            "body": "Dear Poland Service Team,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406824, the case is now closed.\nProblem Description\n: Charger takes around 7kW in standby.\nResolution\n: Answer provided by L3. Charger efficiencies getting affected by the vehicle.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-31T01:46:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0520b07c-d50d-f011-998a-7c1e5236cda4",
+            "subject": "Ticket 0406824 has been closed. Are you satisfied with our provided solution? CRM:01410001585",
+            "body": "Dear Team,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406824\nwith the title:\nID0406824-DC/Si-D/PL-[MP / R2 170001500] Charger takes around 7kW in standby.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShreyas Sathe\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-31T02:11:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

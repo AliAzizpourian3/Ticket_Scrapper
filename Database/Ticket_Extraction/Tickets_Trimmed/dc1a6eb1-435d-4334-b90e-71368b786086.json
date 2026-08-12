@@ -1,0 +1,75 @@
+{
+    "incident_id": "dc1a6eb1-435d-4334-b90e-71368b786086",
+    "ticket_number": "0408175",
+    "title": "ID0408175-DC/Si-D/FI-[rKnB5p] - Converter groups unable to do a fast shutdown",
+    "created_on": "2025-02-20T11:05:40Z",
+    "last_activity": "2025-07-14T11:19:48Z",
+    "age": "207374",
+    "description": "Reported behaviour/issue:\nI\nn the SW\nv6.0.3 we have seen now multiple times one of the converter groups unable to do a fast shutdown after automatic reboot causing the charger to show following errors. Pictures in the timeline. Reboot did helps but the issue comes back after couple of days.\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "rKnB5p",
+    "stage": null,
+    "serial_number": "MP / P7 170000677",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "46788c54-b42d-8a71-9da3-2b1b56a15898",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-20T11:06:23Z",
+            "extra": {}
+        },
+        {
+            "id": "bbd54d28-266b-81c9-9045-702672a96e43",
+            "subject": "Note for NOC team",
+            "body": "Francisco de Matos Joaquim, promised to look into this tomorrow. Please send this to uor RC queue and he will take it tomorrow.",
+            "date": "2025-02-20T11:16:26Z",
+            "extra": {}
+        },
+        {
+            "id": "48ac7367-a2ef-ef11-9341-0022489a2456",
+            "subject": "ID0408175-DC/Si-D/FI-[rKnB5p] - Converter groups unable to do a fast shutdown CRM:00315002385",
+            "body": "Dear Sakari, here is the promised analysis :D\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nParkano\nChargerID/Serial No.\n:\nrKnB5p\nProblem Description\n: Missing Converters in DC4\nTroubleshooting\n: It seems that this error comes after a reboot, so the charger was working, a reboot was performed at 2am due to Autoreboot and the problem occurred.\nFrom the looks of it, I believe that there 2 possibilities, either KF214 is constantly sending 12V to the converters or the power supply to the converters is not good (very unlikely), since we have the CAN address it's communicating well but just not powering ON.\nMy suggestion is that the next time this occurs we go to site and check these 12V leaving from KF214, please bring a spare KF214 in case this is true.\nFor future reference, your case number is\n0408175\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-20T15:50:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df151236-23f0-ef11-9341-000d3ab1a06e",
+            "subject": "Re: ID0408175-DC/Si-D/FI-[rKnB5p] - Converter groups unable to do a fast shutdown CRM:00315002385",
+            "body": "Added Markus to the email chain\n-Sakari",
+            "date": "2025-02-21T07:12:32Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ddb85e79-43f0-ef11-9341-6045bde1756e",
+            "subject": "ID0408175-DC/Si-D/FI-[rKnB5p] - Converter groups unable to do a fast shutdown CRM:00315002385",
+            "body": "Hi guys, good morning.\nMarkus told me there were no sessions in DC3 and I can see that the FBK never goes to true on the QA231-232 as such it always fails in CableCheck.\nThis usually means that there is something wrong with the StateMonitor, KF214, which seems to be affecting also the Fast shutdown of DC4.\nI recommend you to take a spare KF214 and CCS cable in case there is something wrong. I assume it won't be needed the CCS.\nI will forward the ticket to your Queue.\nBest regards,\nFrancisco",
+            "date": "2025-02-21T11:03:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe5b44b4-4a53-f011-877b-6045bde0265d",
+            "subject": "0408175 - ID0408175-DC/Si-D/FI-[rKnB5p] - Converter groups unable to do a fast shutdown CRM:00362000028",
+            "body": "Dear Sakari,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-06-27T11:34:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

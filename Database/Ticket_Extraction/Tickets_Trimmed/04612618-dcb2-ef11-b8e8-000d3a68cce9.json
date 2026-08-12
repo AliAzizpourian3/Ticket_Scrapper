@@ -1,0 +1,79 @@
+{
+    "incident_id": "04612618-dcb2-ef11-b8e8-000d3a68cce9",
+    "ticket_number": "0393748",
+    "title": "ID0393748-DC/Si-D/RS[CjuQJx] - All outlets unavailable",
+    "created_on": "2024-12-05T07:39:54Z",
+    "last_activity": "2025-12-16T14:03:16Z",
+    "age": "1624",
+    "description": "Reported behaviour/issue:\nAll outlets unavilable\nRoot cause:\nConverter stuck in PowerOn=True\nSolution:\nReplace converter\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO QM 10:34 GMT 6/12/2024",
+    "type": 1,
+    "priority": 596630000,
+    "stage": null,
+    "serial_number": "MP / R6 170002088",
+    "case_nature_code": null,
+    "chargerID": "CjuQJx",
+    "additional_info": [
+        {
+            "id": "fdc66715-dcb2-ef11-b8e8-000d3ab9a120",
+            "subject": "CjuQJx error",
+            "body": "Dear Support,\nPlease help us to find the source of the error of the Sicharge D which operates in Kosovo, Prishtina. The charger was visually checked, there is no physical damage on it.\nDuring the night the fw has been updated.\nCharger is online in SCB and customer backend but the connectors are not available. There are no LEM meters in the charger.\nUntil tomorrow morning we are here in Kosovo, if you need any physical measurement.\nThank you in advance.\nBR,\nSzilard Negyesi",
+            "date": "2024-12-05T07:39:42Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "59f5c31a-f5b2-ef11-b8e8-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0393748 CRM:00225134342",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0393748 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=04612618-dcb2-ef11-b8e8-000d3a68cce9",
+            "date": "2024-12-05T10:38:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6506c1b8-00b3-ef11-b8e9-6045bdde0ce3",
+            "subject": "ID0393748-DC/Si-D/RS[CjuQJx] - All outlets unavailable CRM:00315002150",
+            "body": "Dear Norbert,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002088\nChargerID/Serial No.\n: CjuQJx\nProblem Description\n: All outlet out of order\nTroubleshooting\n:\nIt seems that there is a faulty converter on the charger\nThis converter[7] with serial number =\n2102312VGQKXN9001437SA002218000000FW:DC116PF116H100\nThis converter needs replacement if you don't have a spare part at the moment with you, what you can do is remove the CAN cable from this converter and reboot the charger.\nIt should come online and working if there is no other problem.\nLet me know your feedback.\nFor future reference, your ticket number is\n0393748\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-05T12:01:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0454aaa2-b8b3-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0393748-DC/Si-D/RS[CjuQJx] - All outlets unavailable CRM:00315002150",
+            "body": "Hi Szilard,\nAfter our site visit today we were able to fix the problem from the previous email but we found another converter with the same problem.\nAs you can see the converter is stuck in PowerOn=True and the voltage doesn't raise above 68V.\nAs you didn't have an extra power converter, we removed the CAN cable and now the charger is fully operational with only 20kW loss.\nAs you mentioned, this charger is very far and as such you will not replace this soon. So I will close the ticket and when you have the availability to change it please refer this ticket number again.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2024-12-06T09:58:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "777cb6bd-eba0-b6ce-adaa-fca9b4f2540b",
+            "subject": "NOTE TO QM",
+            "body": "Defective part name/MLFB: PowerConverter\nComponent serial number:\n2102312VGQKXNB001729SA002218000000FW:DC116PF116H100\nLogs with marked error (CSV format preferred)\n2024-12-06T09:16:56.792508+00:00 swcpu [user:debug] Converters grouped 6 / 15 -> Converters[9].Adr = 10, DC2\n→ Second faulty converter\n2024-12-05T12:06:20.944798+00:00 swcpu [user:debug] Converters grouped 2 / 15 -> Converters[5].Adr = 6, DC1\n→ First faulty converter\nRest in attachment, but after this log, the charger goes into error, no other converter is grouped\nActive error flags before replacement:\nPLC-Error-Flag 'Outlet_DC2_codes' initial value true - (Info:error codes for DC2 outlet)\nPLC-Error-Flag 'Outlet_DC1_codes' initial value true - (Info:error codes for DC1 outlet)\nDevice-specific error code:\nPower converter status “PowerON” = True\nOutcome of wiring checkup:\nNothing found related to AC income\nCAN allocation is done successfully\nFastshutdown not even reached so not worth checking\nCommissioning checklist\nCommissioning date: August 2023\nField service report: RC to provide\nDate of failure: 5/12/2024",
+            "date": "2024-12-06T10:34:20Z",
+            "extra": {}
+        },
+        {
+            "id": "208c7d54-beb3-ef11-b8e8-000d3ab41b62",
+            "subject": "Ticket 0393748 has been closed. Are you satisfied with our provided solution? CRM:00315002159",
+            "body": "Dear Szilard,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0393748\nwith the title:\nID0393748-DC/Si-D/RS[CjuQJx] - All outlets unavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-06T10:39:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

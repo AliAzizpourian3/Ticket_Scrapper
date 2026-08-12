@@ -1,0 +1,200 @@
+{
+    "incident_id": "b5cfa4ab-8067-f011-bec2-7ced8d4169c0",
+    "ticket_number": "0439318",
+    "title": "ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue",
+    "created_on": "2025-07-23T04:51:19Z",
+    "last_activity": "2025-10-14T10:25:13Z",
+    "age": "7574",
+    "description": "Reported behavior/issue:  Circuit breaker Issue\nSolution:  Replace QA1 and MA1\nyyyy-mm-dd:  NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "C8m08i",
+    "stage": null,
+    "serial_number": "MP / R7 170002211",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1f5816a1-8067-f011-bec3-000d3addf8ce",
+            "subject": "Webform_incident_SiCharge D_23-07-2025_SN: MP / R7 170002211",
+            "body": "Dear Milan Klempay,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R7 170002211\nThank you\neMobility Technical Support Team\nSehr geehrte/r Milan Klempay,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R7 170002211\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-07-23T04:51:04Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09ad11c1-8167-f011-bec3-6045bddf3f78",
+            "subject": "A new case manager was assigned to 0439318 CRM:00225232462",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0439318 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b5cfa4ab-8067-f011-bec2-7ced8d4169c0",
+            "date": "2025-07-23T04:59:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "61b576d3-67c6-6faa-b986-eb0434396668",
+            "subject": "Error flags found / Logs unavailable",
+            "body": "",
+            "date": "2025-07-23T05:07:30Z",
+            "extra": {}
+        },
+        {
+            "id": "360ac0e3-8467-f011-bec2-7c1e52768c07",
+            "subject": "ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Dear Milan Klempay,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R7 170002211\nChargerID/Serial No.\n:\nC8m08i\nProblem Description\n:\nCircuit breaker Issue\nFor future reference, your case number is\n0439318\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-23T05:21:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c5006b6-a767-f011-bec2-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0439318 CRM:00225232679",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0439318 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b5cfa4ab-8067-f011-bec2-7ced8d4169c0",
+            "date": "2025-07-23T09:30:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33f87db9-a767-f011-bec1-7ced8d2ec04c",
+            "subject": "ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Hi Milan,\nTo troubleshoot the QA1 we have to check these steps:\nMy first as always is to check if the XD9.1 is inserted tightly. These are those loose connectors.\nSecond is by applying (or checking) 24V on the QA29, we should be able to get 230V until the input of both L+ and ON in the MA1.\nIf we apply 24V on the A1-A2 and the contact 11-14 doesn't close then we need to replace QA29, same process with QA28\nNext thing is to check 24V on the Under voltage relay and if the QA1 feedback contact is closing.\nThe 24V to the UVR are supplied by QA26:\nNext question, when you reach the site, what is the LED color of the ACT and TRIP in the QA1? (seen from the front)\nIf both LEDs are on then that means MA1 is faulty and needs replacement.\nIf everything above checks out properly and it still doesn't work (230V in MA1, QA26 sending 24V, 24V in KF5 - first photo and KF2, for QA29 and QA28 - second photo). Please measure on the output of the QA1 if any phase is not having the 230/380V:\nIf we don't have a phase or multiple phases then we need to replace the QA1 but MA1 should not be necessary or the UVR.\nIf QA26 is not sending the 24V for the UVR, then we need to check which of these lines is not getting 24V:\nIf all of them checks out fine and we still don't have 24V in the output (24) then we need to replace the QA26.\nI don't think it's the feedback of the QA1 since we don't have the error called \"Failure in Feedback line\".\nUsually when we have these kind of problems it's the MA1 but let's prove it.\nMy recommendation is to take a spare MA1, QA26, QA28/29 (they are the same) and UVR. Let me know if you think you should take a QA1, I can recommend it too.\nLet me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-07-23T09:30:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90ba094a-4968-f011-bec2-7c1e52350ea5",
+            "subject": "RE: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Hello Francisco,\nThank you very much for the quite comprehensive troubleshooting manual. Let´s go through it!\nXD9.1 checked. Everything seems correctly connected and pushed inside the connector proreply.\nOn A1 of QA28 I measure around 7,34 volts same goes for QA29. When I bring voltage (24Volts) to A1 QA28 and QA29 lights up. When QA29 lights up MA1 motor engages for the first time and shortly after for the second time. We can see this behaviour when the doors are closed as well. Therefore I think QA28 and QA29 are ok.\nNext thing is to check 24V on the under-voltage relay and if the QA1 feedback contact is closing.\nWe have 24 Volts here\nXD34 6C and 6D –>24Volts\nWe have 0Volts here in both cases doors closed and open\nXD34 7A and 7B\nThe 24V to the UVR are supplied by QA26:\nSirius seems ok.\nNext question, when you reach the site, what is the LED color of the ACT and TRIP in the QA1? (seen from the front)\nACT is flashing green it only stay green when motor is engaged. TRIP has no light\nThere is no voltage behind QA1.\nJust to make sure, does it mean we need to replace QA1 only? Can you please send me MLFB so we can order it?\nI will atach photos under ticket documents.\nThank you again for your support here!\nBest,\nMilan",
+            "date": "2025-07-24T04:47:26Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b6dc90ce-7968-f011-bec3-7c1e52faf3c6",
+            "subject": "ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Hi Milan,\nThank you for the reply.\nIf we had a problem in the feedback line, we would see a specific error Failure in Feedback line, which is when we have the circuit breaker closed and have output voltage but feedback is open.\nI recommend you to take spare QA1 and MA1. Everything points to the fact that the circuit breaker is not closing but that is also possible if MA1 is not working properly.\nI can only make a suggestion here in order to avoid losing as much time as possible but feel free to do as you wish. Replacing the MA1 is always faster and easier, but then if it's the main breaker that is really not closing then we would still need to prove that MA1 is also faulty by putting the old back.\nLet me know if you need any support and schedule with 1 day in advance please.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-07-24T10:34:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a240f5ba-7a68-f011-bec2-7c1e5236e32d",
+            "subject": "Automatická odpověď: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Dear sender,\nI am out of office from 24.-27.7.2025.\nEmails are not forwarded.\nBR\nTomas Cepicka",
+            "date": "2025-07-24T10:41:19Z",
+            "extra": {
+                "sender": "tomas.cepicka@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c37b19d4-7a68-f011-bec3-6045bde0265d",
+            "subject": "Automatická odpověď: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Dobrý den,\nve dnech 24.07.2025 – 27.07.2025 jsem mimo kancelář\nbez automatického p\nř\nesm\ně\nrování elektronické pošty. V nal\néhavých př\nípadech mi zašlete sms na mobilní telefon: +420 702 045 217.\nPřípadně můžete kontaktovat kolegy:\nVN rozvaděče - Petr Tomášek, petr.tomasek@siemens.com\neMobilita - Václav Mužík, vaclav.muzik@siemens.com\nDěkuji\n,\nPavel Penzinger\nDear Sir or madam,\nI am currently out of the office 24.\n07\n.202\n5\n– 27.\n07\n.202\n5\n. Your e-mail will not be answered or forwarded automatically. In urgent cases you can send me sms on mobile phone: +420 702 045 217.\nAlternatively, you can contact colleagues:\nMV Switchgears - Petr Tomášek, petr.tomasek@siemens.com\neMobility - Václav Mužík, vaclav.muzik@siemens.com\nThanks for your understanding.\nPavel Penzinger",
+            "date": "2025-07-24T10:42:05Z",
+            "extra": {
+                "sender": "pavel.penzinger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9745a09c-2769-f011-bec2-6045bddf319c",
+            "subject": "FW: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Guide below:",
+            "date": "2025-07-25T07:18:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6fcacafd-2769-f011-bec2-6045bddf319c",
+            "subject": "FW: RE: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "What the colleague found - in this case, since QA28 and QA29 looks good, then it's the QA1 that is really not closing and we need to replace it.",
+            "date": "2025-07-25T07:21:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ccec37c-a16b-f011-b4cc-6045bde12d6b",
+            "subject": "ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Hi Milan,\nSince the problem is solved I will close the ticket. Please reply to this email or the survey with the report and findings.\nIf you get the auto reply saying this ticket is already closed don't worry as it will be still documented in the ticket.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-28T10:56:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7a49c1e-a26b-f011-b4cb-7c1e52206585",
+            "subject": "Ticket 0439318 has been closed. Are you satisfied with our provided solution? CRM:00225234649",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0439318\nwith the title:\nID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-28T11:00:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be171261-a26b-f011-b4cb-7c1e5220bf23",
+            "subject": "Automatická odpověď: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Dobr\ný\nden, děkuji za Vaši zpr\ná\nvu. Moment\ná\nlně čerp\ná\nm dovolenou a jsem bez možnosti př\ní\nstupu k emailu. K dispozici budu opět v ponděl\ní\n04.08.2025. Děkuji za pochopen\ní\na přeji hezk\ný\nden.\nHello, thank you for your message. I am currently on vacation and have no access to email. I will be available again on Monday, August 04, 2025. Thank you for your understanding and have a nice day.\nS  pozdravem / Best regarts,\nMichal Jurajda\nService engineer",
+            "date": "2025-07-28T11:02:44Z",
+            "extra": {
+                "sender": "michal.jurajda@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4bce52c0-0a6f-f011-b4cc-7c1e5236cda4",
+            "subject": "RE: ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue CRM:02888000161",
+            "body": "Hello Francisco,\nPlease see the work report attached.\nOne more question regarding this QA1 failure. We do not use power save mode on this charger, and yet we met with the failure.\nAccording to the spare parts list, the MCCB is rated for 20,000 switching cycles. Is there a software or hardware-based counter available that would allow us to monitor the current switching count during preventive maintenance?\nAs always, thank you very much for your support with this newly occured issue.\nKind regards,\nMilan",
+            "date": "2025-08-01T19:07:22Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f6f6dfc9-0a6f-f011-b4cb-6045bddf319c",
+            "subject": "Email sent to a closed case 'ID0439318-DC/Si-D/CZ-[ MP / R7 170002211] Circuit breaker Issue (0439318)' CRM:00225237476",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0439318\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-08-01T19:07:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

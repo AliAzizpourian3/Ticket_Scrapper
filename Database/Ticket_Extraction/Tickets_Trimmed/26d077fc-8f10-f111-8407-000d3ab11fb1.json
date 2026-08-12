@@ -1,0 +1,323 @@
+{
+    "incident_id": "26d077fc-8f10-f111-8407-000d3ab11fb1",
+    "ticket_number": "0479872",
+    "title": "ID0479872-DC/Si-D/NL-[MP/S0 170004104] Siemens problems with DAF NGD electric",
+    "created_on": "2026-02-23T08:16:44Z",
+    "last_activity": "2026-05-11T14:26:38Z",
+    "age": "137055",
+    "description": "Reported behaviour :\nSiemens problems with DAF NGD electric\nSolution:\nNote from TS: According to the logic, if the temperature is below 0ºC the cable is limited to 250A and the unit starts.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "DZ0pmR",
+    "stage": "In Progress",
+    "serial_number": "MP/S0170004104",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a373baf2-8f10-f111-8407-000d3ab12a39",
+            "subject": "FW: Siemens problems with DAF NGD electric",
+            "body": "Hi Support Giants,\nPlease, follow up below’s request\nWith best regards,\nErik-Jan Voogt, Account Manager\nSiemens e-Mobility Charging B.V.\nBIC 1, 5657BX, Eindhoven, Netherlands\nMobile: +316 8229 4682\nerik-jan.voogt.ext@siemens.com\nSiemens eMobility Charging B.V. is registered with the Dutch Chamber of Commerce under number 60956224. VAT ID: NL854134281B01 Registered office BIC 1, 5657BX Eindhoven, Netherlands.",
+            "date": "2026-02-23T08:16:36Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ed1daeea-9010-f111-8407-000d3ab12a39",
+            "subject": "A new case manager was assigned to 0479872 CRM:00225341133",
+            "body": "Alexander Cruz was assigned as new Case Manager for case 0479872 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=26d077fc-8f10-f111-8407-000d3ab11fb1",
+            "date": "2026-02-23T08:23:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a071bc5-9210-f111-8407-000d3ab124a4",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Dear\nErik Jan Voogt\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/S0 170004104\nChargerID\n:\nProblem Description\n:  Siemens problems with DAF NGD electric\nTroubleshooting\n:\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0479872\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAlexander Cruz\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-23T08:36:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70330b73-516e-8e5c-9187-c9cba15751f2",
+            "subject": "Note from TS",
+            "body": "It seems EV is not upscaling, yes we start at a low current of 100A but reach 250A in minutes, but the EV doesn't react to our change and since it doesn't react to our change, the charger downscales and never ramps up because the EV is not upscaling. Indeed strange that the Current Max is changing from 100A->250A->100A->250A->600A",
+            "date": "2026-02-23T15:31:19Z",
+            "extra": {}
+        },
+        {
+            "id": "5a91ccad-5f11-f111-8407-000d3ab12cfa",
+            "subject": "A new case manager was assigned to 0479872 CRM:00225342070",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0479872 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=26d077fc-8f10-f111-8407-000d3ab11fb1",
+            "date": "2026-02-24T09:03:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e88534c9-c328-77f7-a0a3-6d885ab526c4",
+            "subject": "NOTE FROM Integration - EcoG logs",
+            "body": "",
+            "date": "2026-02-24T10:03:31Z",
+            "extra": {}
+        },
+        {
+            "id": "66c2ada2-6312-f111-8407-7ced8d44dcb4",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hello Rasmus, good morning.\nMy name is Francisco, I'm from the Technical Support of the Sicharge D.\nI checked the logs from the first trend of emails, in 18th February and I can see exactly what you mean. The charging is limited at the beginning but some minutes after the charger is ready to provide full power.\nBefore I reach out to DAF for next steps, I would like to perform a test with you or any colleague that can be with this truck on-site with the Sicharge D.\nIs this possible for you? Please feel free to share a timeslot with me, with in mind that we have a timezone difference of 1h, so if I'm not mistaken, my 8am is your 9am, which is when I start my daily work. Any time is fine by me except from your 1pm to 2pm.\nAnother question that I would really like for you to answer. You mention that all the other chargers work normally except for this weird behavior with Alpitronic, do you know what is the cable model and supported max current/power?\nThank you very much for your time!\nBest regards,\nFrancisco",
+            "date": "2026-02-25T16:04:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a2ac6ad-6612-f111-8407-7ced8d44ddde",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hello Francisco,\nWe can test but unfortunately we have 110km to the nearest Siemens charger.\nWe have tested with other cables on other chargers as well but normally mostly 500A and 500A with boost to 700A.\nI have also tested on Kempower with 300A cables with boost to 500A.\nWe haven't test with siemens D400 with air cooled cables yet (same distance to them but in another direction).\nOn the tested Alpitronic it's only passive cooled cables we have tested.\nRasmus Lindé\n(+46)072-58 063 45\nLIR Teknik AB\n(+46)0 63-44 044\nLastarvägen 4\n834 33, Brunflo\nOn Wednesday, 25 February 2026 at 17:08:47 +01:00, emobility_support.si@siemens.com <emobility_support.si@siemens.com> wrote:\nHello Rasmus, good morning.\nMy name is Francisco, I'm from the Technical Support of the Sicharge D.\nI checked the logs from the first trend of emails, in 18th February and I can see exactly what you mean. The charging is limited at the beginning but some minutes after the charger is ready to provide full power.\nBefore I reach out to DAF for next steps, I would like to perform a test with you or any colleague that can be with this truck on-site with the Sicharge D.\nIs this possible for you? Please feel free to share a timeslot with me, with in mind that we have a timezone difference of 1h, so if I'm not mistaken, my 8am is your 9am, which is when I start my daily work. Any time is fine by me except from your 1pm to 2pm.\nAnother question that I would really like for you to answer. You mention that all the other chargers work normally except for this weird behavior with Alpitronic, do you know what is the cable model and supported max current/power?\nThank you very much for your time!\nBest regards,\nFrancisco",
+            "date": "2026-02-25T16:26:09Z",
+            "extra": {
+                "sender": "rasmus@lirteknik.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b3183054-6712-f111-8407-7ced8d44ddd4",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hello Rasmus,\nThanks for the fast reply.\nThat is totally ok, do not feel rushed, whenever you have the chance, please reach out to me via this email trend and we can test the scenario.\nMy expectations is that for the air cooled Sicharge D it will work without any problem. The cooling unit in this specific charger takes a few minutes to heat up and that's why it's limited at the beginning, for this, what I would expect is that after the heating is completed, if we plug out the truck and start a new session, it should start with the maximum available current.\nIn summary, with the charging session, I can confirm if there is any sort of incompatibility that we must tackle together with DAF, or if it's a charger issue.\nBest regards,\nFrancisco",
+            "date": "2026-02-25T16:30:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5df32fd2-6912-f111-8407-7ced8d44d2c4",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi again,\nI don't think it need 10 minutes to heat up your system.\nIf it is like that we need to replace this charger with a air cooled instead.\nI have never got so low amps on a cooled charger before. I think is is the communication between the truck and charger.\nNormally we use this charger for Scania and I haven't got this problem then.\nWhat step do the charger have in limitations compare to temperatures?\nRasmus Lindé\n(+46)072-58 063 45\nLIR Teknik AB\n(+46)0 63-44 044\nLastarvägen 4\n834 33, Brunflo\nOn Wednesday, 25 February 2026 at 17:34:53 +01:00, emobility_support.si@siemens.com <emobility_support.si@siemens.com> wrote:\nHello Rasmus,\nThanks for the fast reply.\nThat is totally ok, do not feel rushed, whenever you have the chance, please reach out to me via this email trend and we can test the scenario.\nMy expectations is that for the air cooled Sicharge D it will work without any problem. The cooling unit in this specific charger takes a few minutes to heat up and that's why it's limited at the beginning, for this, what I would expect is that after the heating is completed, if we plug out the truck and start a new session, it should start with the maximum available current.\nIn summary, with the charging session, I can confirm if there is any sort of incompatibility that we must tackle together with DAF, or if it's a charger issue.\nBest regards,\nFrancisco",
+            "date": "2026-02-25T16:48:40Z",
+            "extra": {
+                "sender": "rasmus@lirteknik.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bdb5bd32-f212-f111-8407-7ced8d44d2c4",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi Rasmus, good morning.\nThanks again for your feedback.\nFrom my point of view, I always try to find if there is any constraints in our system before pushing to the truck manufacturer.\nI will share with you the logs from our session for better understanding. When we start the charging process, the Sicharge D allocates 282kW for this truck:\nAccording to the ParameterDiscovery:\nThis is the part where the vehicle doesn't ask for more current at:\n09:00:33\nI also found it strange that it took so long to heat up the system, the truck definitely doesn't ask for more than ~110A at\n09:12:35\nEventually after 30mins we can see that the cable limitation is no longer present:\nBut the truck is never ramping up the current at any point in time after it reaches this ~100A.\nWe will investigate if this limitation is due to the fact that the EV is not asking for more than 100A and as such, the heating for the cable is never necessary, and with the normal charging operation, it heats up naturally and eventually can charge the maximum current.\nI will keep you updated with the latest findings, and if you find a timeslot for testing let me know. If possible we would also like to have the Scania to completely prove that it's an incompatibility solely with DAF and not a general issue.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T09:04:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db0ce3ee-1413-f111-8407-000d3ab11366",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi again,\nThe charging is @ 250A for the first 10min.\nThe truck should normally charge with 500A in that period, after 10min it will charge @ 400A.\nNow it charge with 250 in 10min and 400 after.\nRasmus Lindé\n(+46)072-58 063 45\nLIR Teknik AB\n(+46)0 63-44 044\nLastarvägen 4\n834 33, Brunflo\nOn Thursday, February 26, 2026 at 10:18:05 am +01:00, emobility_support.si@siemens.com <emobility_support.si@siemens.com> wrote:\nHi Rasmus, good morning.\nThanks again for your feedback.\nFrom my point of view, I always try to find if there is any constraints in our system before pushing to the truck manufacturer.\nI will share with you the logs from our session for better understanding. When we start the charging process, the Sicharge D allocates 282kW for this truck:\nAccording to the ParameterDiscovery:\nThis is the part where the vehicle doesn't ask for more current at:\n09:00:33\nI also found it strange that it took so long to heat up the system, the truck definitely doesn't ask for more than ~110A at\n09:12:35\nEventually after 30mins we can see that the cable limitation is no longer present:\nBut the truck is never ramping up the current at any point in time after it reaches this ~100A.\nWe will investigate if this limitation is due to the fact that the EV is not asking for more than 100A and as such, the heating for the cable is never necessary, and with the normal charging operation, it heats up naturally and eventually can charge the maximum current.\nI will keep you updated with the latest findings, and if you find a timeslot for testing let me know. If possible we would also like to have the Scania to completely prove that it's an incompatibility solely with DAF and not a general issue.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T13:13:31Z",
+            "extra": {
+                "sender": "rasmus@lirteknik.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d3107aca-2913-f111-8407-000d3ab12a39",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi Rasmus,\nWas there a charging session performed? I took a look at the charger from the title and there was no session from today. Was this session done in a different charger?\nOr are you providing me a general overview of how it should go? I read this also in the previous trend of emails shared with DAF.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T15:42:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e77eeaec-2d13-f111-8406-0022489c3080",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Sorry it wa only general information, and according to the three test before (one @ 17 & two @18 Feb)\nRasmus Lindé\n(+46)072-58 063 45\nLIR Teknik AB\n(+46)0 63-44 044\nLastarvägen 4\n834 33, Brunflo\nOn Thursday, February 26, 2026 at 4:46:27 pm +01:00, emobility_support.si@siemens.com <emobility_support.si@siemens.com> wrote:\nHi Rasmus,\nWas there a charging session performed? I took a look at the charger from the title and there was no session from today. Was this session done in a different charger?\nOr are you providing me a general overview of how it should go? I read this also in the previous trend of emails shared with DAF.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T16:12:20Z",
+            "extra": {
+                "sender": "rasmus@lirteknik.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0104c23b-3013-f111-8407-000d3ab12a39",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hello Rasmus,\nThanks for this particular message one @ 17 and two @ 18.\nI did an analysis from the 18th on a wrong session. But my analysis stays true, this is not a problem with the trucks, but a constraint regarding the temperature.\nAccording to the logic of the pump, it only gets activated, bearing in mind that we are below 0ºC, when the EV request for more than 100A. In this case, it really takes ~10mins to heat up and be able to charge up to maximum.\nIf you do not own the charger, then my recommendation is, in the future, use the Sicharge 400 with air cooled cables, depending on the configuration, these ones go up to 500A boost mode and then 375A, without any logic of cooling/heating.\nIf the charging gets limited to 400A most likely it's the 250A/400A cable.\nPlease let me know your feedback, in general, there is no problem with the system, this is how it was designed.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T16:29:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ed66d58-3d13-f111-8406-7ced8d71e3df",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Thanks for the information Francisco, but I think you have wrong (can't promise it, but I hope).\nIf it is as you describe, we need to reclaim this charger and change that one to another brand (it is our own charger).\nWe can in this case not buy any more of them as well (we have a offer now on 2 more).\nIt take to long time to charge a truck if we need to wait the hole time that the charger heats up before it can deliver the requested power.\nWe have asked many questions before we bought this charger. And have been promised that it can deliver >500A cont.\nWe even replaced a Sicharge 400 with normal cables due to to low Amps (tested that first). Every graph we have got and all specification in data sheet shows that Sicharge 400 with liquid cold cables can provide 600A up to a certain temperature (not only above a certain temp).\nIf this is the case we need to get that information to PACCAR and all DAF Dealers as fast as possible. So no more of them being delivered to places that can have below 0ºC in temperatures.\nExtra important with DAF because them only can charge with 500A the first 10min so it's the slowest charging speed on the market already, without getting lower because the chargers bad logic \"too have a cooling system that not working when it not need to work\" (when you not need to cool the cables with liquid).\nWe have received support from the Swedish Transport Authority for this charger, where the requirements are that it must be able to deliver 500A continuously (at least 45 minutes and an average of 60 minutes).\nRasmus Lindé\n(+46)072-58 063 45\nLIR Teknik AB\n(+46)0 63-44 044\nLastarvägen 4\n834 33, Brunflo\nOn Thursday, February 26, 2026 at 6:21:08 pm +01:00, emobility_support.si@siemens.com <emobility_support.si@siemens.com> wrote:\nHello Rasmus,\nThanks for this particular message one @ 17 and two @ 18.\nI did an analysis from the 18th on a wrong session. But my analysis stays true, this is not a problem with the trucks, but a constraint regarding the temperature.\nAccording to the logic of the pump, it only gets activated, bearing in mind that we are below 0ºC, when the EV request for more than 100A. In this case, it really takes ~10mins to heat up and be able to charge up to maximum.\nIf you do not own the charger, then my recommendation is, in the future, use the Sicharge 400 with air cooled cables, depending on the configuration, these ones go up to 500A boost mode and then 375A, without any logic of cooling/heating.\nIf the charging gets limited to 400A most likely it's the 250A/400A cable.\nPlease let me know your feedback, in general, there is no problem with the system, this is how it was designed.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-02-26T18:02:45Z",
+            "extra": {
+                "sender": "rasmus@lirteknik.se",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0e3e026e-b513-f111-8407-7ced8d44ddd4",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi Erik, good morning.\nAs I understood, region NL is responsible for this charger. As such, please align with the customer the next steps.\nIf the logic behind the pump needs to be changed, this needs to be conveyed to PLM.\nFrom our side, there is no more information needed and I can close the ticket. I will wait for your feedback before doing so, to let the customer know as well.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2026-02-27T08:22:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "32375b78-c113-f111-8407-7ced8d44dfaf",
+            "subject": "RE: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi Francisco,\nThanks for your email.\nThe region is Sweden. I only set up the ticket. Could you include the Swedish organisation?\nWith best regards,\nErik-Jan Voogt, Account Manager\nSiemens e-Mobility Charging B.V.\nBIC 1, 5657BX, Eindhoven, Netherlands\nMobile: +316 8229 4682\nerik-jan.voogt.ext@siemens.com\nSiemens eMobility Charging B.V. is registered with the Dutch Chamber of Commerce under number 60956224. VAT ID: NL854134281B01 Registered office BIC 1, 5657BX Eindhoven, Netherlands.",
+            "date": "2026-02-27T09:48:34Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "356727fe-c813-f111-8407-000d3ab11366",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hi Erik,\nSince the charger was sold to the customer in your region, the responsibility for this case does not lie with the Swedish organization.\nI will wait for your feedback before closing the ticket.\nThank you!\nBest regards",
+            "date": "2026-02-27T10:42:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45386120-c913-f111-8407-7ced8d44dfaf",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Dear Francisco,\nMy name is Richard Krieckaart and I am an e-mobility specialist within PACCAR Power Solutions, a subsidiary within PACCAR Parts Europe and DAF Trucks, located in Eindhoven, The Netherlands. I am asked to assist in finding a resolution for the reported issue by LIR Teknik, where, as I understood so far, multiple charging sessions did not go well with a DAF vehicle on their Siemens 400kW Sicharge D charger with liquid cooled cables.\nI received the mailing related to the service ticket with reference number ID0479872 from Rasmus Lindé. What I understand from this mailing is that there are potentially 3 charging sessions that showed the same issue, where the charger only provided 50% of the (vehicle) maximum power (160kW/250A) for 10 minutes. After these 10 minutes, continuous charging with 260 kW/400A is running as expected.\nCan you share the data log files of the charging sessions of the 17\nth\nand 18\nth\nFeb, so that we can analyze them, in order to find and determine the root cause of the behavior that we see?\nWe are also trying to retrieve all the data from the vehicle to compare everything and approach this case both from the vehicle and charger side. The MAC address of the vehicle should be 0C:73:EB:A6:06:06\nThank you in advance for your support.\nMet vriendelijke groet, Kind regards,\nRichard Krieckaart\nSpecialist e-Mobility Solutions\n|\nPACCAR\nPower Solutions\n| DAF Trucks N.V. |\nM: +31 (0) 6 12 77 48 99 |",
+            "date": "2026-02-27T10:43:28Z",
+            "extra": {
+                "sender": "richard.krieckaart@daftrucks.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "21a3f63e-cb13-f111-8407-000d3ab11366",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Dear Richard, good morning.\nThank you for your message.\nThe problem lies in our system related to how our heating system works. I can only share the .pcap files due to internal policy. I send them in attachment.\nI can also share a few logs for you to see the problem:\nIt takes around 10mins to heat up the system, since it must be cold in the region.\nLet me know what you think or if you need any extra information from us :)\nBest regards,\nFrancisco",
+            "date": "2026-02-27T10:58:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dff26095-de13-f111-8407-000d3ab11fb1",
+            "subject": "Re: ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "We sold to a reseller who sold the charger in Sweden. Our Swedish collegaes are informed about. The handover was the ticket.\nVan:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nVerzonden:\nFriday, February 27, 2026 11:57:59 AM\nAan:\nVoogt, Erik-Jan (ext) (SI E EU NL CS) <erik-jan.voogt.ext@siemens.com>\nOnderwerp:\nID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816\nHi Erik,\nSince the charger was sold to the customer in your region, the responsibility for this case does not lie with the Swedish organization.\nI will wait for your feedback before closing the ticket.\nThank you!\nBest regards",
+            "date": "2026-02-27T13:16:56Z",
+            "extra": {
+                "sender": "erik-jan.voogt.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "89fc6bb1-0cfe-0606-9b80-3245732fab94",
+            "subject": "NOTE FROM TS",
+            "body": "SCB logs of session in the beginning it limits to 250A due to temperature but ~10mins after it changes to 600A max, since the truck's logic is for the 1st 10 mins charge with 500A and afterwards constant 400A, the customer never charges the first 10mins as he would have expected",
+            "date": "2026-02-27T15:16:49Z",
+            "extra": {}
+        },
+        {
+            "id": "0ad31193-ecad-b230-916c-bf74e6333b9f",
+            "subject": "NOTE FROM TS",
+            "body": "",
+            "date": "2026-03-02T09:14:06Z",
+            "extra": {}
+        },
+        {
+            "id": "5e830fe3-2116-f111-8342-000d3ab1199b",
+            "subject": "ID0479872-DC/Si-D/SE-[ ] Siemens problems with DAF NGD electric CRM:02565000816",
+            "body": "Hello Rasmus, good morning. I hope you are doing well.\nWe have conveyed this information to our R&D team. As soon as we have feedback I will let you know.\nThank you for your patience so far and have a nice week ahead.\nBest regards\nFrancisco",
+            "date": "2026-03-02T10:23:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "62a79b51-2a88-733e-bea4-b859b1a37d80",
+            "subject": "NOTE FROM L3",
+            "body": "Align with PrCh and RC",
+            "date": "2026-04-30T09:51:05Z",
+            "extra": {}
+        },
+        {
+            "id": "5efde57c-73fc-d037-84e4-29e530c8d3df",
+            "subject": "Clean up session 11.05.2026",
+            "body": "Topic is in hands of Prod Care and R&D. No further action required from TS side.\nTicket to be moved to RC-SE for end customer's communication.",
+            "date": "2026-05-11T08:46:57Z",
+            "extra": {}
+        },
+        {
+            "id": "005716ff-164d-f111-bec6-002248a275a0",
+            "subject": "ID0479872-DC/Si-D/SE-[MP/S0 170004104] Siemens problems with DAF NGD electric CRM:00315003158",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0479872\n﻿from the Technical Support to the eMobility RC-SE SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP/S0 170004104\nCharger ID / Serial No.:\nDZ0pmR\nCharger address/functional location:\nPriority:\nMedium\nHandover reason: Since there is nothing to be done from Technical support side, please proceed with R&D and PLM regarding this topic or close it.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-SE SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-05-11T08:54:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6ea5d4a5-184d-f111-bec6-002248a275a0",
+            "subject": "ID0479872-DC/Si-D/NL-[MP/S0 170004104] Siemens problems with DAF NGD electric CRM:00315003159",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0479872\n﻿from the Technical Support to the eMobility RC-NL SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP/S0 170004104\nCharger ID / Serial No.:\nDZ0pmR\nCharger address/functional location:\nPriority:\nMedium\nHandover reason: As explained the customer got provided a charger that needs to heat up before use.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-NL SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-05-11T09:06:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3522b466-454d-f111-bec6-0022489d8e67",
+            "subject": "RE: ID0479872-DC/Si-D/NL-[MP/S0 170004104] Siemens problems with DAF NGD electric CRM:00315003159",
+            "body": "Hallo,\nCan you please provide what actions we need to take further in this ticket?\nMahek Butt –\nService Coordinator\nSiemens eMobility Charging B.V.\nAddress: BIC 1, 5657 BX Eindhoven, The Netherlands\nMobile: +31644225005\nE-mail:\nmahek.butt.ext@siemens.com\nWebsite:\nhttps://www.siemens.com/",
+            "date": "2026-05-11T14:26:31Z",
+            "extra": {
+                "sender": "planner.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

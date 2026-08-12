@@ -1,0 +1,122 @@
+{
+    "incident_id": "f70a24b5-f023-43a2-af5b-66e4f6dcb2da",
+    "ticket_number": "0439217",
+    "title": "ID0439217-DC/Si-D/FI-[Y2 / R4 313038785007]-Savonlinna Q2303 QA9-10 contactor pair fails.",
+    "created_on": "2025-07-22T13:13:23Z",
+    "last_activity": "2025-08-15T12:04:15Z",
+    "age": "28483",
+    "description": "Reported behavior/issue: QA9-10 contactor pair fails often - Q2303.\nSolution: Contactors replaced 7.8.2025\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "j8qKxe",
+    "stage": null,
+    "serial_number": "Y2 / R4 313038785007",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "564ab0ae-fd66-f011-bec2-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0439217 CRM:00225232177",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0439217 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f70a24b5-f023-43a2-af5b-66e4f6dcb2da",
+            "date": "2025-07-22T13:13:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2737be8-c25d-205a-b27f-13616994a16d",
+            "subject": "AWS 1 week backward",
+            "body": "# kontaktori toimiva 8.7.2025\nfields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/PLC-Error-Flag/\nand\n@message\nlike\n/true/\nand\n@message\nlike\n/DC_Co/\nand\n@message\nlike\n/coontactor stuck at ON feedback/\nor\n@message\nlike\n/SMC have feedback faults/\n|\nparse\n@message\n'_* '\nas\ncoil\n|\nparse\n@message\n'DC* :'\nas\noutlet\n|\nfilter\n@logStream\nlike\n/j8qKxe/\n|\nstats\ncount\n(*)\nas\nCount\nby\noutlet,coil,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-07-22T13:14:21Z",
+            "extra": {}
+        },
+        {
+            "id": "166aace8-1567-f011-bec2-7c1e5234ccd1",
+            "subject": "A new case manager was assigned to 0439217 CRM:00225232263",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0439217 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f70a24b5-f023-43a2-af5b-66e4f6dcb2da",
+            "date": "2025-07-22T16:07:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6211248-1667-f011-bec2-6045bddf319c",
+            "subject": "ID0439217-DC/Si-D/FI-[Y2 / R4 313038785007]QA9-10 contactor pair fails often. CRM:02681000511",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nSavonlinna\nCharger ID/Serial No.\n:\nj8qKxe\nProblem Description\n: QA9-10 contactor pair fails often.\nFor future reference, your case number is\n0439217\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-22T16:09:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "745d5431-1d67-f011-bec2-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0439217 CRM:00225232284",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0439217 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f70a24b5-f023-43a2-af5b-66e4f6dcb2da",
+            "date": "2025-07-22T16:59:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "96db18ee-b967-f011-bec2-7c1e52350ea5",
+            "subject": "ID0439217-DC/Si-D/FI-[Y2 / R4 313038785007]QA9-10 contactor pair fails often. CRM:00798002323",
+            "body": "Hi Markus,\nWe have checked the logs and found there is issue with the contactor QA9 or QA10.\nWe need to have spares while site intervention.\nHave couple of Charging sessions to validate the reported issue.\nI am writing to formally inform that we are moving case 0439217 ﻿from the\nTechnical Support\nto the\neMobility RC-\nFI\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFI\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-23T11:41:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a89d6900-8c68-f011-bec2-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0439217 CRM:00225233391",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0439217 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f70a24b5-f023-43a2-af5b-66e4f6dcb2da",
+            "date": "2025-07-24T12:45:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f819bee-95d8-6fb5-a276-aa7e564365fc",
+            "subject": "repair report",
+            "body": "",
+            "date": "2025-08-11T06:11:01Z",
+            "extra": {}
+        },
+        {
+            "id": "8ddc1e4a-4e4f-aaab-b60e-93fde8f84461",
+            "subject": "RMA ",
+            "body": "",
+            "date": "2025-08-11T06:11:41Z",
+            "extra": {}
+        },
+        {
+            "id": "b4f6fc7f-8876-f011-b4cb-6045bddf319c",
+            "subject": "Ticket 0439217 has been closed. Are you satisfied with our provided solution? CRM:00225241049",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0439217\nwith the title:\nID0439217-DC/Si-D/FI-[Y2 / R4 313038785007]-Savonlinna Q2303 QA9-10 contactor pair fails.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nMarkus Roiha\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-11T07:55:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f01c7c9a-4fca-ee4c-88cd-54975aaf0f71",
+            "subject": "RMA",
+            "body": "",
+            "date": "2025-08-15T12:04:13Z",
+            "extra": {}
+        }
+    ]
+}

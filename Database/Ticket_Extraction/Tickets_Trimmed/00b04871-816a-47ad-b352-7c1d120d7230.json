@@ -1,0 +1,119 @@
+{
+    "incident_id": "00b04871-816a-47ad-b352-7c1d120d7230",
+    "ticket_number": "0460580",
+    "title": "ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check",
+    "created_on": "2025-11-08T07:41:19Z",
+    "last_activity": "2025-11-12T11:19:11Z",
+    "age": "3421",
+    "description": "Reported behavior/Issue: CU logs check",
+    "type": 698630002,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002565",
+    "case_nature_code": 580000001,
+    "chargerID": "RrgeQp",
+    "additional_info": [
+        {
+            "id": "9671cb3e-a2bc-f011-bbd3-7ced8d425d60",
+            "subject": "A new case manager was assigned to 0460580 CRM:00225285073",
+            "body": "Sajid Hussain was assigned as new Case Manager for case 0460580 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=00b04871-816a-47ad-b352-7c1d120d7230",
+            "date": "2025-11-08T12:55:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99688367-a093-fd76-a96d-714f2e66b3f5",
+            "subject": "Description",
+            "body": "Hello,\nIs it possible to check logs on the charger 170002565 on yesterday 7 of November at 8:42:22 p.m. and at 8:49:04 p.m. ?\nA customer tried to charge. The recharge was accepted and when he put the plug in the car, the charger was blocked. He saw that controls were loading for some minutes, but the charge did not start.\nThank you in advance\nsoftware version\n: v8.0.5-0-g33a6c1d",
+            "date": "2025-11-08T13:12:25Z",
+            "extra": {}
+        },
+        {
+            "id": "774e5808-a5bc-f011-bbd3-7c1e52880288",
+            "subject": "ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check CRM:03097000157",
+            "body": "Dear\nFilomena\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002565\nChargerID\n:\nRrgeQp\nProblem Description\n: CU logs check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0460580\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSajid Hussain\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-08T13:15:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d708a48a-b2bc-f011-bbd3-7ced8d4259cd",
+            "subject": "ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check CRM:00263000135",
+            "body": "Dear\nFilomena Carusone\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002565\nwhich led to the opened ticket:\n0460580\n.\nWe have checked the charger and did not find any active error flags. The logs for the relevant period have been downloaded, and we are reviewing the moments when the issue occurred.\nTo assist with our investigation, could you please help us confirm the following:\nWas the problem specifically related to Plug DC2?\nAre the reported incident times (November 7th, 8:42:22 p.m. and 8:49:04 p.m.) in UTC?\nDoes the log data below match the timeframe and description of the encountered issue?\nLog Extract (UTC):\nFirst attempt initiated:\n2025-11-07T20:38:59.477052+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\nError occurred, CP changed to state E:\n2025-11-07T20:39:52.529775+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\nState changed between B and E, plug removed:\n2025-11-07T20:45:16.622109+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nPlug reconnected:\n2025-11-07T20:49:11.538871+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\nError occurred again:\n2025-11-07T20:50:05.441370+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\nCP returned to state A:\n2025-11-07T20:53:54.239974+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nReboot initiated:\n2025-11-07T20:54:37.441215+00:00 [FW080005G1] swcpu [user:debug] [4322] [CRS]  Reboot command ... received from ISAR\n2025-11-07T20:54:37.463965+00:00 [FW080005G1] swcpu [user:debug] [4322] [CRS]  Reboot active...EMG stop to all outlets\nWe are currently reviewing these logs and will forward them to an expert for further investigation. Your assistance in confirming the above points will greatly help us identify the root cause.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-08T14:52:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "812e0053-b3bc-f011-bbd3-7ced8d4258c6",
+            "subject": "ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check CRM:00263000135",
+            "body": "Dear\nFilomena Carusone\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002565\nwhich led to the opened ticket:\n0460580\n.\nWe have checked the charger and did not find any active error flags. The logs for the relevant period have been downloaded, and we are reviewing the moments when the issue occurred.\nTo assist with our investigation, could you please help us confirm the following:\nWas the problem specifically related to Plug DC2?\nAre the reported incident times (November 7th, 8:42:22 p.m. and 8:49:04 p.m.) in UTC?\nDoes the log data below match the timeframe and description of the encountered issue?\nLog Extract (UTC):\nFirst attempt initiated:\n2025-11-07T20:38:59.477052+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\nError occurred, CP changed to state E:\n2025-11-07T20:39:52.529775+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\nState changed between B and E, plug removed:\n2025-11-07T20:45:16.622109+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nPlug reconnected:\n2025-11-07T20:49:11.538871+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"A\" --> \"B2\"\nError occurred again:\n2025-11-07T20:50:05.441370+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B2\" --> \"E\"\nCP returned to state A:\n2025-11-07T20:53:54.239974+00:00 [FW080005G1] swcpu [user:debug] [4322] [DCC]  DC2: PilotState \"B1\" --> \"A\"\nReboot initiated:\n2025-11-07T20:54:37.441215+00:00 [FW080005G1] swcpu [user:debug] [4322] [CRS]  Reboot command ... received from ISAR\n2025-11-07T20:54:37.463965+00:00 [FW080005G1] swcpu [user:debug] [4322] [CRS]  Reboot active...EMG stop to all outlets\nWe are currently reviewing these logs and will forward them to an expert for further investigation. Your assistance in confirming the above points will greatly help us identify the root cause.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-08T14:58:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ff98d55-6096-6e31-80b2-e28e0200aa89",
+            "subject": "Logs with the problem",
+            "body": "",
+            "date": "2025-11-08T14:59:25Z",
+            "extra": {}
+        },
+        {
+            "id": "a8cb8d6d-5dbd-f011-bbd3-7c1e523628c9",
+            "subject": "RE: ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check CRM:00263000135",
+            "body": "Hello,\nThe issue was on DC 1 both times.\nNormally UTC Time is 2 hours before Italian time on our portal, but in this case we see that UTC time is only one hour before, so 8:42:22 p.m. and 8:49:04 p.m. (Italian time 9:42:22 p.m. and 9:49:04 p.m.).\nJust to be sure, could be possible to check logs 2 hours before the Italian time? So, could it be possible to also check logs on November 7th, 7:42:22 p.m. and 7:49:04 p.m. ?\nThank you,\nFilomena",
+            "date": "2025-11-09T11:15:43Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5f56f237-15be-f011-bbd2-0022489c2145",
+            "subject": "A new case manager was assigned to 0460580 CRM:00225285478",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0460580 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=00b04871-816a-47ad-b352-7c1d120d7230",
+            "date": "2025-11-10T09:11:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "18dd5e65-52be-f011-bbd2-7c1e52880b1b",
+            "subject": "RE: ID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check CRM:00263000135",
+            "body": "Dear Filomena,\nWe would like to inform you that the charging session failure was due to an error in the SECC (Supply Equipment Communication Controller) module. The issue was resolved after a reboot of the charger. No further actions are required from the service team, and we will proceed to close the ticket.\nRegarding the logs you mentioned, they were correct. However, please note that in the charger’s configuration, our DC group 2 corresponds to OCPP ID 1, and vice versa. This configuration difference was the source of the confusion.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-11-10T16:29:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4c7d5730-54be-f011-bbd3-7ced8d4258c6",
+            "subject": "Ticket 0460580 has been closed. Are you satisfied with our provided solution? CRM:00225285830",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0460580\nwith the title:\nID0460580-DC/Si-D/IT-[MP / R9 170002565] CU logs check\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-10T16:42:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

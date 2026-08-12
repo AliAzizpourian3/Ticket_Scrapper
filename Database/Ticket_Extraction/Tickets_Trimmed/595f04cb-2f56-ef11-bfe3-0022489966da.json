@@ -1,0 +1,158 @@
+{
+    "incident_id": "595f04cb-2f56-ef11-bfe3-0022489966da",
+    "ticket_number": "0373506",
+    "title": "ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue",
+    "created_on": "2024-08-09T09:14:40Z",
+    "last_activity": "2025-12-16T14:06:47Z",
+    "age": "6128",
+    "description": "Reported behavior/issue: Charging issue, not delivery maximum power\nRoot cause:\nSolution: Analysis done & query answered\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "fUCWRR",
+    "stage": null,
+    "serial_number": "Y2 / P7 312547889/07",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f87223ca-2f56-ef11-bfe3-000d3aba9474",
+            "subject": "Webform_incident_SiCharge D_09-08-2024_SN: Y2/P7 312547889/07",
+            "body": "Dear florent nicolas,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/P7 312547889/07\nThank you\neMobility Technical Support Team\nSehr geehrte/r florent nicolas,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/P7 312547889/07\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-09T09:14:35Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fdee5fa2-3256-ef11-bfe3-002248a44b33",
+            "subject": "A new case manager was assigned to 0373506 CRM:00225081317",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0373506 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=595f04cb-2f56-ef11-bfe3-0022489966da",
+            "date": "2024-08-09T09:35:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0279edca-4256-ef11-bfe3-0022489a2913",
+            "subject": "ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hello Florent,﻿\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / P7 312547889/07\nChargerID/Serial No.\n:\nfUCWRR\nProblem Description\n: Charging issue\nTroubleshooting\n: Please allow us some time to analyse the issue and I'll get back to you shortly.\nFor future reference, your ticket number is\n0373506\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-09T11:30:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90739c08-4356-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 hours, 17 minutes and 43 seconds.",
+            "date": "2024-08-09T11:32:24Z",
+            "extra": {}
+        },
+        {
+            "id": "e8739c08-4356-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-08-09T11:32:28Z",
+            "extra": {}
+        },
+        {
+            "id": "6fcf5b8b-5256-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hi Florent,\nGreetings of the day!\nWe have analyzed the logs and found that the charging session was aborted when the EV SOC was around 80-82%, with no issues detected on the charger side. While we acknowledge that the EV has a maximum power capacity of 115kW, the logs I’ve shared below demonstrate that the EV functions as the Master & charger functions as Slave. The charger provided the current and voltage that the EV demanded.\nAs you can see from the multiple session logs, the EV’s target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to 80% SOC using CC, and then it switches to CV mode. During this phase, the EV's target current drops to protect the battery from thermal runaway and to ensure proper cell balancing.\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this addresses your concerns. If there are no further questions, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-09T13:23:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "174d272d-5456-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 2 hours, 2 minutes and 35 seconds.",
+            "date": "2024-08-09T13:35:04Z",
+            "extra": {}
+        },
+        {
+            "id": "3c5530a7-4a58-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hi Florent,\nAwaiting your response to my previous email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-12T01:31:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b2e548d-5659-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hi Florent,\nI hope this email you well.\nAwaiting your response to my previous email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-13T09:29:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8a953c00-8059-ef11-bfe3-000d3a687981",
+            "subject": "RE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hello,\nThank you for this analysis.\nYou can close the ticket.\nCordialement,\nFlorent NICOLAS\nResponsable supervision plaque sud\nENGIE Mobilités Électriques\nflorent.nicolas@engie.com\n+33 7 87 84 21 41\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming\n69007 Lyon\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 13 août 2024 11:31\nÀ :\nNICOLAS Florent (ENGIE Mobilités Electriques) <florent.nicolas@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857\nHi Florent, I hope this email you well. Awaiting your response to my previous email. Thank you. With best regards, eMobility Tech Support Team - Shrey Please do not change the subject of this Email when replying to it. ------------------- Original\nHi Florent,\nI hope this email you well.\nAwaiting your response to my previous email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-13T14:26:19Z",
+            "extra": {
+                "sender": "florent.nicolas@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c55ea305-8059-ef11-bfe2-000d3a658031",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 4 days, 51 minutes and 25 seconds.",
+            "date": "2024-08-13T14:26:29Z",
+            "extra": {}
+        },
+        {
+            "id": "3d0b6289-8759-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue CRM:00643000857",
+            "body": "Hello Florent,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0373506.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-13T15:20:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53bca4a4-8759-ef11-bfe3-0022489a2913",
+            "subject": "Ticket 0373506 has been closed. Are you satisfied with our provided solution? CRM:00643000864",
+            "body": "Dear Florent,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0373506\nwith the title:\nID0373506-DC/Si-D/FR-[Y2 / P7 312547889/07] Charging issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-13T15:20:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6c8b3ac3-8759-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 55 minutes and 27 seconds.",
+            "date": "2024-08-13T15:21:56Z",
+            "extra": {}
+        },
+        {
+            "id": "8b714fc9-8759-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 15 seconds.",
+            "date": "2024-08-13T15:22:11Z",
+            "extra": {}
+        }
+    ]
+}

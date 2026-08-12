@@ -1,0 +1,83 @@
+{
+    "incident_id": "bb3dd804-1372-f011-b4cb-7ced8d724485",
+    "ticket_number": "0442052",
+    "title": "ID0442052-DC/SI-D/AT-[Y2/S7 313782532001]dispenser warning: selftest has failed",
+    "created_on": "2025-08-05T15:44:11Z",
+    "last_activity": "2025-08-11T06:48:47Z",
+    "age": "8104",
+    "description": "Reported issue:\ndispenser warning: selftest has failed\nSolution: NA\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "VgqMht",
+    "stage": null,
+    "serial_number": "Y2 / S7 313782532001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9380aefb-1272-f011-b4cb-7ced8d776240",
+            "subject": "Webform_incident_SiCharge D_05-08-2025_SN: Y2/S7 313782532001",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/S7 313782532001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/S7 313782532001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-05T15:44:00Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "700cdd63-1472-f011-b4cc-6045bddf3f78",
+            "subject": "A new case manager was assigned to 0442052 CRM:00225238736",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0442052 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bb3dd804-1372-f011-b4cb-7ced8d724485",
+            "date": "2025-08-05T15:54:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a348d9a8-1572-f011-b4cc-6045bde0265d",
+            "subject": "ID0442052-DC/SI-D/AT-Y2/S7 313782532001]dispenser warning: selftest has failed CRM:02678000166",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nAniket\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S7 313782532001\nChargerID/Serial No.\n:\nVgqMht\nProblem Description\n: dispenser warning: selftest has failed\nFor future reference, your case number is\n0442052\n, please do refer to this in all further communications regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAniket Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-05T16:03:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ffe82614-d572-f011-b4cb-0022489ec814",
+            "subject": "A new case manager was assigned to 0442052 CRM:00225239343",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0442052 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bb3dd804-1372-f011-b4cb-7ced8d724485",
+            "date": "2025-08-06T14:53:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d215f47-d972-f011-b4cb-7c1e52206585",
+            "subject": "0442052 - ID0442052-DC/SI-D/AT-[Y2/S7 313782532001]dispenser warning: selftest has failed CRM:00271000945",
+            "body": "Hello,\nDuring each boot-up of the dispenser, a self-test is performed where the cooling fans are power-cycled on and off multiple times in short-duration cycles by the dispenser PLC. If the \"OK\" signal from the fan is not received after the ON command is issued, the system flags a self-test error.\nPossible solutions to investigate:\nCheck the electrical wiring of the cooling circuit for tightness and proper connections.\nEnsure that the cooling air filters are clean and not obstructing airflow.\nPerform preventive maintenance and observe the behavior over multiple reboots. If the self-test continues to fail, it may be an early indication of a potential fan failure. In such cases, it is advisable to consider ordering spare parts.\nThat said, I believe a reboot should resolve the issue. This does not impact the charger’s functionality, as the fans are currently operational (verified via SSH). It’s likely that during the boot-up phase, the dispenser failed to send the \"OK\" signal to the main PLC, causing the error flag to be acknowledged.\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-08-06T15:23:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4a449b55-d972-f011-b4cb-7ced8d41ec51",
+            "subject": "Ticket 0442052 has been closed. Are you satisfied with our provided solution? CRM:00225239359",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0442052\nwith the title:\nID0442052-DC/SI-D/AT-[Y2/S7 313782532001]dispenser warning: selftest has failed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancois Winckel\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-06T15:23:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

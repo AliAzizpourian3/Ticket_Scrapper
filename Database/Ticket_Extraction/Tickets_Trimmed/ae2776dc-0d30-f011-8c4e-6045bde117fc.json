@@ -1,0 +1,122 @@
+{
+    "incident_id": "ae2776dc-0d30-f011-8c4e-6045bde117fc",
+    "ticket_number": "0424234",
+    "title": "ID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03] Charging issue",
+    "created_on": "2025-05-13T15:21:00Z",
+    "last_activity": "2025-05-23T15:00:15Z",
+    "age": "14379",
+    "description": "Reported behaviour/issue: We had a charging session which lasted after 21 hour. There is a empty period in the logs on SCB. 4D1CA2663BF64D1D8FFA452232C942E0 create:8/05/2025 @ 14:40:00 +02:00 Starte date: 7/05/2025 @ 17:20:06 +02:00 End date: 8/05/2025 @ 14:36:21 +02:00 30,9610 kWh 21:16:14 FRVIA sanef FR-VIA-E1000122552-1 EURE050 GreenFlux eMSP Network DE-DMB dkv 050CE4B4210000 15,48 EUR - 9699999001 Could you investigate please ?\nSolution: N/A\nyyyy-mm-dd: 2025-05-08\nUnable to create a child case, so handing the issue directly over to the DC L3 queue.\n23.05.2025: Handover from ES to NOC",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ajjYXz",
+    "stage": null,
+    "serial_number": "Y2 / P0 312569868/03",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "7de1e4d9-0d30-f011-8c4d-000d3adb047b",
+            "subject": "Webform_incident_SiCharge D_13-05-2025_SN: ajjYXz",
+            "body": "Dear Bonhomme,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\najjYXz\nThank you\neMobility Technical Support Team\nSehr geehrte/r Bonhomme,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\najjYXz\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-13T15:20:55Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "46c4c4cc-1530-f011-8c4e-000d3adc93d1",
+            "subject": "ID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03]Charging issue CRM:02681000159",
+            "body": "Dear Bastien Bonhomme,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / P0 312569868/03\nCharger ID/Serial No.\n:\najjYXz\nProblem Description\n: Charging issue\nFor future reference, your case number is\n0424234\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T16:17:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e79df563-e019-fc92-bdb8-da904deb7761",
+            "subject": "Analysis",
+            "body": "Session Start:\n2025-05-07 @ 15:19\non\nDC2\nInitial State of Charge (SoC):\n25%\nLast Available Log Before Gap:\n2025-05-07 @ 15:38\n– SoC reached 70%\nLog Gap:\nNo logs were recorded between\n2025-05-07 @ 15:38\nand\n2025-05-08 @ 12:34:12 GMT\n(~21 hours)\nLogs Resume:\n2025-05-08 @ 12:34:12 GMT\n– SCB resumes communication and logs begin to appear again.\nAdditional logs from\n23rd and 24th May\nalso appear afterward.",
+            "date": "2025-05-14T12:22:52Z",
+            "extra": {}
+        },
+        {
+            "id": "6f3c5934-be30-f011-8c4d-7c1e5287c7df",
+            "subject": "RE: ID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03]Charging issue CRM:02681000159",
+            "body": "Hi Bastien,\nI hope you're doing well.\nWe are currently investigating the issue with our expert team. Either we or someone from the expert team will reach out to you with further updates.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-05-14T12:23:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b732fb2-8642-9893-bd50-838226813300",
+            "subject": "Note to ES",
+            "body": "Suspected Root Cause:\nPossibly a firmware-related issue.\nProblem Description:\nCustomer reported a charging session that lasted over 21 hours.\nAction Performed (L2):\nAnalyzed the available logs. Summary and relevant findings are included in the note below.\nCharger Software Version:\nv6.1.3\nReason for Handover (L3):\nRequires further investigation by L3/HQ.\nLog Analysis with Timestamps:\nPlease refer to the attached logs showing data before SCB communication was lost and after it was re-established.\nAction Required by HQ:\nFurther investigation to confirm the root cause and advise on corrective action.\nAttachment:\nLogs covering the period before SCB communication was lost and after it was restored.\nAfter SCB commu establish ogs-insights-results.csv\nBefore comminication drop ajjYXz-logs.csv",
+            "date": "2025-05-14T12:32:41Z",
+            "extra": {}
+        },
+        {
+            "id": "9e724110-e479-2990-80fa-9848f9c7db44",
+            "subject": "Charging Session Analysis Summary",
+            "body": "Session Start:\n2025-05-07 @ 15:19\non\nDC2\nInitial State of Charge (SoC):\n25%\nLast Available Log Before Gap:\n2025-05-07 @ 15:38\n– SoC reached 70%\nLog Gap:\nNo logs were recorded between\n2025-05-07 @ 15:38\nand\n2025-05-08 @ 12:34:12 GMT\n(~21 hours)\nLogs Resume:\n2025-05-08 @ 12:34:12 GMT\n– SCB resumes communication and logs begin to appear again.\nAdditional logs from\n23rd and 24th May\nalso appear afterward.",
+            "date": "2025-05-14T12:46:03Z",
+            "extra": {}
+        },
+        {
+            "id": "44d80715-df37-f011-8c4d-7c1e523508ba",
+            "subject": "0424234 - ID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03] Charging issue CRM:00314000170",
+            "body": "Good evening Bastien,\nI am reaching out in regards of ticket\nID0424234\n, which was opened for a charging session on charger\najiYXz\nwhich lasted 21 hours.\nI had a look at the charger, but it seems that we had a loss of communication with our SCB, as we do not have logs between\n2025-05-07T15:38 and\n2025-05-08T12:34.\nDue to the missing logs, I cannot say exactly what happened. When the charger came back online, it usually sends a huge bunch of logs from previous days, as a duplicate. In these logs, I cannot see anything related to Launched Reboot, or FW update or other type of FW issue.\nWhat I can see is that the OCPP Backend connection of router 2 was re-established on 2025-05-08T12:39:58, when we received the Boot notification. As soon as the OCPP Backend connection is re-established, we send to the Backend the Stop Transaction command for transactionId :\n48219445\n(which started at 2025-05-07T15:20:07).\nThe only valuable information we receive it in the Stop Transaction command:\n2025-05-08T12:39:58.804834+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/431e9887adef[647]: OCPP: Send command: StopTransaction (88126ff5-05c8-4dba-9be7-86e879a1c74d) - {\"meterStop\":62600657,\"timestamp\":\"2025-05-08T12:36:21.469Z\",\"transactionData\":[{\"timestamp\":\"2025-05-08T12:36:21.469Z\",\"sampledValue\":[{\"value\":\"30957\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"reason\":\"\nPowerLoss\n\",\"transactionId\":48219445}\nAs suspected, everything goes into the direction of a PowerLoss, so a sudden interruption of the power supply from the grid to the charger. I would then suggest to please check with your grid operator if any shortage or cut of power supply happened on that location.\nAs no further analysis can be done, based on the data we received, I will proceed to close this ticket, as the root-cause seems to be a power loss from the grid.\nIn case further analysis is required from your side on this charger or on similar issue, kindly open a new ticket and our support Team will investigate for you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-23T14:06:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "48242451-523b-e7fe-a3f3-51939e251e97",
+            "subject": "Handover from ES to NOC",
+            "body": "Problem Description\n:  Charging lasted 21 hours\nSuspected Root Cause\n: Power loss from the grid\nAction Performed (ES)\n: Logs analysis. In the logs, there is clearly a gap of 21 hours in the logs. When the logs come back, it seems a boot up phase, and as soon as the stop transaction is sent, the reason is “Power Loss”.\nCharger SW Version\n: v6.1.3\nReason for Handover (ES/NOC\n): Please close the ticket, no further action needed.",
+            "date": "2025-05-23T14:38:30Z",
+            "extra": {}
+        },
+        {
+            "id": "3fd713f9-e537-f011-8c4d-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0424234 CRM:00225205236",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0424234 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ae2776dc-0d30-f011-8c4e-6045bde117fc",
+            "date": "2025-05-23T14:55:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24de381a-e637-f011-b4cb-7c1e52344ff6",
+            "subject": "RE: 0424234 - ID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03] Charging issue CRM:00314000170",
+            "body": "Dear Bastien Bonhomme,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0424234, the case is now closed.\nProblem Description\n: Charging issue\nResolution\n: Answer provided\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-23T14:56:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab289174-e637-f011-b4cb-7c1e52344ff6",
+            "subject": "Ticket 0424234 has been closed. Are you satisfied with our provided solution? CRM:01811000768",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0424234\nwith the title:\nID0424234-DC/Si-D/FR-[Y2 / P0 312569868/03] Charging issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-23T14:59:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

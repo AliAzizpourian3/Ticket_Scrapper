@@ -1,0 +1,127 @@
+{
+    "incident_id": "04c8cb25-e20a-f011-bae3-7c1e5236cda4",
+    "ticket_number": "0415378",
+    "title": "ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only",
+    "created_on": "2025-03-27T08:04:56Z",
+    "last_activity": "2025-05-22T12:01:48Z",
+    "age": "11209",
+    "description": "Reported issue\n: Request for Firmware update from 2.10 to 6.0.3\nSolution\n: FW updated to 5.0.23, Charger is offline now on SCB",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "Q83hjF",
+    "stage": null,
+    "serial_number": "MP / R8 170002424",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "d0580d25-e20a-f011-bae3-7c1e523508ba",
+            "subject": "SI-D 170002424 firmware update from 2.10 to 6.03 only (UAEV)",
+            "body": "Dear Support,\nPlease be requested to raise the ticket for subject charger firmware update from 2.10 to 6.03.\nCharger is already commissioned today and charging session also performed.\nRegards\nSyed Basheeruddin",
+            "date": "2025-03-27T08:04:51Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fe363286-ee0a-f011-bae3-6045bde0265d",
+            "subject": "ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Dear Basheer Thangal,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh Kumar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002424\nChargerID/Serial No.\n:\nQ83hjF\nProblem Description\n:  Firmware Update from 2.10.5 to 6.0.3 Only\nI can see the charger is online on SCB and communication. To update the firmware from v2.10.5 to 6.0.3, multiple updates will be performed in following sequence:\n2.10.5 → 3.X.X →4.X.X →5.X.X → 6.0.3\nMay you please confirm, if this charger has sufficient data plan and if there is any preferred time to do the remote update.\nUpon receiving your response, we will start the FW roll out.\nAdditionally, I would like to inform you about a non-critical alarm available on this charger.\nFans_GQ2-3\nPLC\nDEVICE\ntrue\nAutomation Fan Error-not rotating; OVheat:N\nSince you have just commissioned this charger, can you please check the FAN in the Automation Area, check it's wiring and status of Fuse.\nFor future reference, your case number is\n0415378\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-27T09:33:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "15df5e26-f90a-f011-bae2-6045bdddca9c",
+            "subject": "RE: ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Dear Reetesh,\nExisting sim have 5 GB data bundle, once 5 GB completed, we can replace the sim.\nOne more issue HMI is not working, and ticket is already opened earlier and now we commissioned the unit without screen display.\nWe will check the FAN in the Automation Area, check it's wiring and status of Fuse.\nRegards\nSyed Basheeruddin",
+            "date": "2025-03-27T10:49:29Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2ef70a3c-db0b-f011-bae2-7c1e5236cda4",
+            "subject": "RE: ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Hi Basheer,\nThe charger is now updated to v4.0.11.\nWith this the two updates would have consumed ~ 4GB of data.\nWould you please change the SIM card and let us know.\nAdditionally I would like to inform you that with v4.0.11, we are getting errors on all converter for Fast shutdown check failure. i.e. E52.\nowerConverter[0]\nPLC\nDEVICE\ntrue\n2102312VGQLUNB000048SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[1]\nPLC\nDEVICE\ntrue\n2102312VGQLUNB000056SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[2]\nPLC\nDEVICE\ntrue\n2102312VGQLUNB000057SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[3]\nPLC\nDEVICE\ntrue\n2102312VGQLUNB000068SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[4]\nPLC\nDEVICE\ntrue\n2102312VGQLUNB000086SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[5]\nPLC\nDEVICE\ntrue\n2102312VGQKXN9000377SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[6]\nPLC\nDEVICE\ntrue\n2102312VGQKXN9000478SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[7]\nPLC\nDEVICE\ntrue\n2102312VGQKXN9000494SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nPowerConverter[8]\nPLC\nDEVICE\ntrue\n2102312VGQKXN9000586SA002200000200FW:DC116PF116H100,F:2,E52\nfalse\nThus both outlets are out of order.\nSo now you have Four on field service task for this chager\nHMI Replacement\nSIM card change or recharge.\nAutomation FAN Check.\nPower converter wiring check for Fast Shutdown.\nPlease let us know if you need additional information on this. I would recommend to plan a site visit and perform the SW update locally via USB.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-28T13:47:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09c5fb92-d70e-f011-998a-7c1e5287f582",
+            "subject": "RE: ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Hi Basheer,\nThe charger is now on v5.0.23, however offline on SCB.\nHave you swapped the SIM card on this or not, what are your future plans to repair this charger and update software?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-01T08:59:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e43b2440-7c0f-f011-9989-6045bddf319c",
+            "subject": "RE: ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Hello Basheer,\nThe charger is still offline on SCB, since you have an open case for field service repair, I would recommend to update the charger locally via USB.\nAs NOC is unable to perform remote OTA FW update, we will be proceeding to close this case now.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-02T04:38:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d95f7e86-ff10-f011-998a-000d3ab07fc1",
+            "subject": "ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000509",
+            "body": "Dear Basheer Thangal,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0415378, the case is now closed.\nProblem Description\n: Firmware Update 6.0.3 Only\nResolution\n: Update till 5.0.23, charger is offline in SCB. Perform next update either on site via USB or create a new case once the charger is online on SCB\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-04T02:50:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea5cc6d4-ff10-f011-998a-000d3ab07fc1",
+            "subject": "Ticket 0415378 has been closed. Are you satisfied with our provided solution? CRM:00251000510",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0415378\nwith the title:\nID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-04T02:52:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a962d2e-ab13-f011-9989-000d3a681bac",
+            "subject": "RE: ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only CRM:00251000507",
+            "body": "Dear Reetesh,\nPlease be inform that charger is connected to SCB at the moment, so please don’t update the FM 6.13 converter grouping before the update was successfully done.\nSo please double check the converter grouping from SCB side.\nRegards\nSyed Basheeruddin",
+            "date": "2025-04-07T12:23:59Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ab99e22a-ab13-f011-998a-7c1e52768c07",
+            "subject": "Email sent to a closed case 'ID0415378-DC/Si-D/AE [MP / R8 170002424] Firmware Update 6.0.3 Only (0415378)' CRM:00225184818",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0415378\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-04-07T12:24:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

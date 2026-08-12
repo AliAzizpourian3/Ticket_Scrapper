@@ -1,0 +1,185 @@
+{
+    "incident_id": "dc5ed45c-1a4e-4041-a397-f50b691c30d6",
+    "ticket_number": "0470534",
+    "title": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number",
+    "created_on": "2026-01-06T09:53:55Z",
+    "last_activity": "2026-01-23T07:37:12Z",
+    "age": "24344",
+    "description": "Reported behavior/Issue: Missing charge Point Serial Number",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "THfP0S",
+    "stage": "Resolved",
+    "serial_number": "MP / S5 170003656",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "82e5fa9f-e5ea-f011-8544-7c1e523628c9",
+            "subject": "A new case manager was assigned to 0470534 CRM:00225313046",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0470534 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc5ed45c-1a4e-4041-a397-f50b691c30d6",
+            "date": "2026-01-06T09:54:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d4cc5f0e-5696-1866-9e35-8926c809aa6c",
+            "subject": "Missing chargePointSerialNumber in BootNotification ",
+            "body": "Hi Colleagues,\nWe have observed an inconsistency in the BootNotification messages coming from two different charging stations. As shown in the logs below, the field chargePointSerialNumber is missing for one device, while it is correctly present for the other one.\nOur CPO has confirmed that there is no backend-side configuration that can suppress or modify this parameter — it is expected to be provided directly by the charger. Therefore, they rely on the device to always send this value.\nDevice-(170003656 & 170003655):\n-chargePointSerialNumber missing-\n2026-01-05T15:01:16.545147+00:00 [FW080104G2] sicharge-cp [local0:info] sicharge-cp-backend/a854d9d3abee[2192]:\nOCPP: Send command: BootNotification (3b7ebf8f-0033-4f00-901d-1a768b838a9c) -\n{\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v8.1.4-0-g5b0f2d0 (PRODUCTION)\",\"iccid\":\"90011521120181652F\"}\nOther Device (CPO is different) (chargePointSerialNumber present):\n2026-01-06T08:12:57.470833+00:00 [FW080104G1] sicharge-cp [local0:info] sicharge-cp-backend/8d1bff5294f4[2219]:\nOCPP: Send command: BootNotification (8057fb79-468d-41e2-97f8-709fb7c42a0d) -\n{\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v8.1.4-0-g5b0f2d0 (PRODUCTION)\",\"iccid\":\"90011830220282785F\",\n\"chargePointSerialNumber\":\"Y2/R7313065117122\"\n}\nCould you please advise how we should proceed with this?\nDo we need to look for a device-side configuration, provisioning issue, or a firmware-related root cause?\nYour guidance on the expected behavior and next steps would be highly appreciated.",
+            "date": "2026-01-06T09:54:16Z",
+            "extra": {}
+        },
+        {
+            "id": "ace30bef-e5ea-f011-8544-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0470534 CRM:00225313049",
+            "body": "Faizal Khan was assigned as new Case Manager for case 0470534 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc5ed45c-1a4e-4041-a397-f50b691c30d6",
+            "date": "2026-01-06T09:56:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "184c2eb4-dbff-2126-8e22-192fb7909f8a",
+            "subject": "Case Not",
+            "body": "Hi Colleagues,\nWe have observed an inconsistency in the BootNotification messages coming from two different charging stations. As shown in the logs below, the field chargePointSerialNumber is missing for one device, while it is correctly present for the other one.\nOur CPO has confirmed that there is no backend-side configuration that can suppress or modify this parameter — it is expected to be provided directly by the charger. Therefore, they rely on the device to always send this value.\nDevice-(170003656 & 170003655):\n-chargePointSerialNumber missing-\n2026-01-05T15:01:16.545147+00:00 [FW080104G2] sicharge-cp [local0:info] sicharge-cp-backend/a854d9d3abee[2192]:\nOCPP: Send command: BootNotification (3b7ebf8f-0033-4f00-901d-1a768b838a9c) -\n{\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v8.1.4-0-g5b0f2d0 (PRODUCTION)\",\"iccid\":\"90011521120181652F\"}\nOther Device (CPO is different) (chargePointSerialNumber present):\n2026-01-06T08:12:57.470833+00:00 [FW080104G1] sicharge-cp [local0:info] sicharge-cp-backend/8d1bff5294f4[2219]:\nOCPP: Send command: BootNotification (8057fb79-468d-41e2-97f8-709fb7c42a0d) -\n{\"chargePointModel\":\"SICHARGE D\",\"chargePointVendor\":\"Siemens AG\",\"firmwareVersion\":\"v8.1.4-0-g5b0f2d0 (PRODUCTION)\",\"iccid\":\"90011830220282785F\",\"chargePointSerialNumber\":\"Y2/R7313065117122\"}\nCould you please advise how we should proceed with this?\nDo we need to look for a device-side configuration, provisioning issue, or a firmware-related root cause?\nYour guidance on the expected behavior and next steps would be highly appreciated.",
+            "date": "2026-01-06T09:59:06Z",
+            "extra": {}
+        },
+        {
+            "id": "9e4512e1-e6ea-f011-8544-7ced8d4258c6",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062",
+            "body": "Dear\nYunus\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: MP / S5 170003656\nChargerID\n: THfP0S\nProblem Description\n: Missing charge Point Serial Number\nFor your reference, this support request has been assigned the following case number:\n0470534\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nFaizal Khan\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-06T10:03:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74d342e5-e7ea-f011-8406-7c1e5235b513",
+            "subject": "A new case manager was assigned to 0470534 CRM:00225313061",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0470534 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc5ed45c-1a4e-4041-a397-f50b691c30d6",
+            "date": "2026-01-06T10:10:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a6ab0fa9-38ee-f011-8407-7c1e52362ec6",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062",
+            "body": "Dear\nYunus\n,\nFollowing your request, we need you to confirm whether the serial numbers are missing from all logs or only from some specific ones.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-10T15:26:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "954391cd-c3ef-f011-8406-7ced8d44ddd4",
+            "subject": "RE: ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062",
+            "body": "Hi Younes,\nThis CPO has two devices. Charge Point Serial Number is not sent to both devices.\nDevice serial numbers:\nMP/S5 170003656\nMP/S5 170003655\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nSI E EU TR\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2026-01-12T14:34:30Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2473afe4-8ff0-f011-8406-000d3ab12cf3",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062",
+            "body": "Dear\nYunus\n,\nFollowing your request, I can confirm that I double-checked the OCPP configuration and it appears to be correct. The only issue we can confirm from our side is that the OCPP router is currently offline\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-01-13T14:55:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "285a44ca-e7f1-f011-8406-7ced8d44db54",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03042000380",
+            "body": "Dear\nYunus Emre Temel,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0470534\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-15T07:57:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d52a651-b2f2-f011-8406-7ced8d44db54",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03042000393",
+            "body": "Dear\nYunus Emre Temel,\nThis is another reminder regarding your support case\n0470534\n. We are still waiting for the following information to proceed:\n[Insert requested information here]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-16T08:06:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "838c4e77-1cf5-f011-8406-7ced8d44db54",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03042000402",
+            "body": "Dear\nYunus Emre Temel,\nThis is another reminder regarding your support case\n0470534\n. We are still waiting for the following information to proceed:\n[Insert requested information here]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-19T09:51:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c776074a-bcf6-f011-8406-000d3ab11fb1",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03042000409",
+            "body": "Dear\nYunus Emre Temel\n,\nThis is our third and final reminder regarding your support case\n0470534.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\ncharge Point Serial Number\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-21T11:28:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f979fb3-2df8-f011-8406-000d3ab124a4",
+            "subject": "RE: ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nTue Jan 06 2026 10:05:32 GMT+0000 (Western European Standard Time)\nTo:\nYunus Emre Temel <emre.temel@siemens.com>;\nSubject:\nID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03288000062\nDear\nYunus\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: MP / S5 170003656\nChargerID\n: THfP0S\nProblem Description\n: Missing charge Point Serial Number\nFor your reference, this support request has been assigned the following case number:\n0470534\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe\nwant to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf\nwe can make it sooner, we will inform you in a timely manner.\nThank\nyou in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nFaizal Khan\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-23T07:32:50Z",
+            "extra": {
+                "sender": "younes.baroudi.ext@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e1ff7e3-2df8-f011-8406-000d3ab124a4",
+            "subject": "ID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number CRM:03042000412",
+            "body": "Hallo ﻿Yunus Emre Temel\nDies bezieht sich auf Ihr ticket# 0470534, für das wir noch keine Antwort erhalten haben.\nWir verstehen, dass Sie vielleicht beschäftigt sind oder das Problem bereits selbst lösen konnten. Daher werden wir dieses Ticket abschließen.\nWenn Sie in dieser Angelegenheit noch Hilfe benötigen, senden Sie uns bitte eine neue E-Mail an\nemobility_support.si@siemens.com\nund wir helfen Ihnen gerne weiter.\nBitte antworten Sie nicht auf diese E-Mail, da die Antworten auf das Ticket nach dem Schließen nicht mehr überwacht werden.\nWir danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿Younes Baroudi\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2026-01-23T07:34:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f360a4d-2ef8-f011-8406-000d3ab1149f",
+            "subject": "Ticket 0470534 has been closed. Are you satisfied with our provided solution? CRM:00225323698",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0470534\nwith the title:\nID0470534-DC/Si-D/TR-[MP / S5 170003656] Missing charge Point Serial Number\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-23T07:37:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

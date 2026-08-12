@@ -1,0 +1,215 @@
+{
+    "incident_id": "737a4039-4d68-ef11-bfe2-7c1e5233f636",
+    "ticket_number": "0377051",
+    "title": "ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB",
+    "created_on": "2024-09-01T10:30:37Z",
+    "last_activity": "2025-12-16T14:06:14Z",
+    "age": "14297",
+    "description": "Reported behavior/issue:\nNo logs at SCB\nRoot cause: NA\nSolution:\nR&D was able to fix the charger today (9/11/2024). Logs are already showing on SCB.\nOn DAMEX Sanctioned List:\nSiemens Employee\nWarranty Status:\nInactive (4/7/2024)\nHV3mh6 | Siemens Ltd Gedera | No logs on SCB (#671) · Issues · compact-charger / SICHARGE D Service Desk · GitLab\nNote from L3:\nPlease close the ticket.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "HV3mh6",
+    "stage": null,
+    "serial_number": "MP / P4 170000456",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "87191b2f-4d68-ef11-bfe2-000d3a69a8a0",
+            "subject": "MP / P4 170000456- No logs at SCB",
+            "body": "Dear support,\nPlease check out why there are no logs from the above charging position.\nAccording to the SCB, there is communication on both sides of the rioters, which means that actions such as rest can be performed, changing configuration.\nPlease check as soon as possible.\nBr,\nOrel.",
+            "date": "2024-09-01T10:30:19Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "87b1a766-5068-ef11-bfe2-002248a155a0",
+            "subject": "A new case manager was assigned to 0377051 CRM:00225090202",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0377051 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=737a4039-4d68-ef11-bfe2-7c1e5233f636",
+            "date": "2024-09-01T10:53:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "683e5652-5168-ef11-bfe2-7c1e5233f636",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 29 minutes and 22 seconds.",
+            "date": "2024-09-01T11:00:00Z",
+            "extra": {}
+        },
+        {
+            "id": "d62668df-b001-807f-8279-1cd18ee9cb37",
+            "subject": "The charger is online, but SCB logs are not being received, and error flags are visible.",
+            "body": "",
+            "date": "2024-09-01T11:08:06Z",
+            "extra": {}
+        },
+        {
+            "id": "8871b7b1-cfa6-6653-a7ec-efbdb924b2bb",
+            "subject": "Last received logs on AWS >>",
+            "body": "2024-07-16T05:06:12.321Z",
+            "date": "2024-09-01T11:13:10Z",
+            "extra": {}
+        },
+        {
+            "id": "2d06f87e-ca5b-f4e7-a5f7-29e09d9ce858",
+            "subject": "Reference case",
+            "body": "ID0007603, ID0226567",
+            "date": "2024-09-01T11:47:12Z",
+            "extra": {}
+        },
+        {
+            "id": "27cddbf1-5768-ef11-bfe2-7c1e5233f636",
+            "subject": "ID0377051-DC/Si-D/-[MP / P4 170000456] No logs at SCB CRM:00797001219",
+            "body": "Hello ﻿Orel,﻿\nThank you for reaching out to eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P4 170000456\nChargerID/Serial No.\n:\nHV3mh6\nProblem Description\n: No logs at SCB\nTroubleshooting\n: Kindly allow us some time. We will check this via SSH with the ES team and get back to you.\nFor future reference, your ticket number is\n0377051\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-01T11:47:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2193c742-5868-ef11-bfe2-7c1e5233f636",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 49 minutes and 37 seconds.",
+            "date": "2024-09-01T11:49:39Z",
+            "extra": {}
+        },
+        {
+            "id": "25e1ad72-7bda-c2c9-a3fe-336a02e626c2",
+            "subject": null,
+            "body": "Confirmed that the local SIM card is in the charger. And the XF3 APN is like siemens vod SIM. RC changed the APN to\nuinternet\nand did the reboot but still the issue persists.",
+            "date": "2024-09-02T11:53:51Z",
+            "extra": {}
+        },
+        {
+            "id": "0586a000-cfb0-bcea-8967-a1d10c4d5db5",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nCharger ID may be mismatch inside the config file\nProblem Description:\nThe charger is online, but SCB logs are not being received, and error flags are visible on SCB.\nAction Performed (L2):\nWe verified the charger’s online status by loading the router password and checked the last online timestamp on AWS, which is 2024-07-16T05:06:12.321Z.\nCharger SW Version:\n4.0.11\nReason for Handover (L3):\nNeed SSH access to check the reason why\nno\nlogs\navailable\non SCB\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAction Required by HQ:\nNeed to check config file via SSH access.",
+            "date": "2024-09-02T17:01:06Z",
+            "extra": {}
+        },
+        {
+            "id": "06900f29-cb69-ef11-a670-0022489e1eb4",
+            "subject": "A new case manager was assigned to 0377051 CRM:00225091079",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0377051 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=737a4039-4d68-ef11-bfe2-7c1e5233f636",
+            "date": "2024-09-03T08:04:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76fb6fa3-076a-ef11-a670-000d3ab806ae",
+            "subject": "0377051 - ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB CRM:00472000195",
+            "body": "Hello,\nToday I checked together with a colleague from R&D the charger configs for the amazon cloudwatch agent and everything was fine.\nR&D is now looking at cloudwatch logs to see if it's possible to identify the root cause of the problem.\nI will provide you feedback tomorrow if possible.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2024-09-03T15:17:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39a273af-076a-ef11-a670-000d3ab806ae",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 2 days, 3 hours, 28 minutes and 18 seconds.",
+            "date": "2024-09-03T15:17:55Z",
+            "extra": {}
+        },
+        {
+            "id": "7ca273af-076a-ef11-a670-000d3ab806ae",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 4 seconds.",
+            "date": "2024-09-03T15:17:59Z",
+            "extra": {}
+        },
+        {
+            "id": "7668bfb5-076a-ef11-a670-000d3ab806ae",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 4 seconds.",
+            "date": "2024-09-03T15:18:04Z",
+            "extra": {}
+        },
+        {
+            "id": "59ba6958-656f-ef11-a670-000d3a69a8a0",
+            "subject": "RE: 0377051 - ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB CRM:00472000195",
+            "body": "Hello Joao,\nI hope you are doing well.\nIs there anything new about this charging station?\nBr,\nOrel.",
+            "date": "2024-09-10T11:10:57Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0caf1b22-8a6f-ef11-a670-0022489d464a",
+            "subject": "RE: 0377051 - ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB CRM:00472000195",
+            "body": "Hello Oriel,\nYesterday I requested an update on R&D ticket. Today, they have increased the priority to high, but I got no answer yet.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2024-09-10T15:34:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ed4859f-1470-ef11-a670-00224899b868",
+            "subject": "0377051 - ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB CRM:00472000209",
+            "body": "Hello Orel,\nR&D was able to fix the charger today. Logs are already showing on SCB.\nWe will proceed to close the ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2024-09-11T08:05:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "450e3a44-1570-ef11-a670-000d3ab0ae6a",
+            "subject": "A new case manager was assigned to 0377051 CRM:00225094636",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0377051 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=737a4039-4d68-ef11-bfe2-7c1e5233f636",
+            "date": "2024-09-11T08:10:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af1a9a23-1a70-ef11-a670-000d3ab26cb1",
+            "subject": "ID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB CRM:00579001096",
+            "body": "Hello Orel,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0377051.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-11T08:45:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "111afa48-1a70-ef11-a670-000d3ab26cb1",
+            "subject": "Ticket 0377051 has been closed. Are you satisfied with our provided solution? CRM:00579001097",
+            "body": "Hello Orel,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0377051\nwith the title:\nID0377051-DC/Si-D/IL-[MP / P4 170000456] No logs at SCB\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-11T08:46:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f913470-1a70-ef11-a670-000d3ab26cb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L3) after 7 days, 17 hours, 29 minutes and 15 seconds.",
+            "date": "2024-09-11T08:47:19Z",
+            "extra": {}
+        }
+    ]
+}

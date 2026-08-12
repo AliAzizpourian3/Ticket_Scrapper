@@ -1,0 +1,123 @@
+{
+    "incident_id": "d9d88bd6-dacc-42c2-af9b-d517826ea341",
+    "ticket_number": "0469358",
+    "title": "ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs",
+    "created_on": "2025-12-23T16:25:25Z",
+    "last_activity": "2025-12-29T08:16:05Z",
+    "age": "8151",
+    "description": "Reported behavior/issue\nA client tried to charge today December 23 between 2:50:00 PM and 3:06:19 PM CU TIME (15:50:00 and 16:06:19 Italy time) but at first the RFID Card wasn't accepted, then the client started the charge with our app and there was no charger delivery. Also, when we checked on our portal around 3:10 PM CU TIME, after the attempts, the charger was offline.\nSolution: Because OCPP was offline customer couldn't authenticate\nyyyy-mm-dd:-",
+    "type": 1,
+    "priority": 1,
+    "stage": "Resolved",
+    "serial_number": "Y2 / S1 313483122005",
+    "case_nature_code": 580000001,
+    "chargerID": "VVC9kj",
+    "additional_info": [
+        {
+            "id": "4dac9d4c-1ce0-f011-8544-7ced8d40d9c4",
+            "subject": "A new case manager was assigned to 0469358 CRM:00225309457",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0469358 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d9d88bd6-dacc-42c2-af9b-d517826ea341",
+            "date": "2025-12-23T16:27:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b209366-672e-a26d-a619-0486bee0f2d5",
+            "subject": "Error description ",
+            "body": "Hello,\nA client tried to charge today December 23 between 2:50:00 PM and 3:06:19 PM CU TIME (15:50:00 and 16:06:19 Italy time) but at first the RFID Card wasn't accepted, then the client started the charge with our app and there was no charger delivery. Also, when we checked on our portal around 3:10 PM CU TIME, after the attempts, the charger was offline.\nCan you please check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2025-12-23T16:29:03Z",
+            "extra": {}
+        },
+        {
+            "id": "c96e4de4-1ce0-f011-8544-7c1e52362ec6",
+            "subject": "ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Dear\nRosita Abate\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/S1 313483122005\nChargerID\n:\nVVC9kj\nProblem Description\n: Charger is offline\nFor your reference, this support request has been assigned the following case number:\n0469358\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-23T16:31:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "83488a77-22e0-f011-8544-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0469358 CRM:00225309477",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0469358 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d9d88bd6-dacc-42c2-af9b-d517826ea341",
+            "date": "2025-12-23T17:11:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bfc0bd82-22e0-f011-8544-7c1e52362ec6",
+            "subject": "ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hello Rosita, good afternoon.\nI checked the logs from the provided time (even longer) from 2pm until 4pm UTC and there is only session performed during these 2 hours.\nThe session is sucessfully done even though I see that OCPP dropped for 20mins.\nBut the StopTransaction is done successfully:\nPlease let me know your thoughts and questions, is it possible that it's a different charger? The car also definitely stopped receiving power after reaching 100% SoC but that is normal.\nThank you!\nBEst regards,\nFrancisco",
+            "date": "2025-12-23T17:12:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e38408ff-c9e0-f011-8544-7ced8d425b04",
+            "subject": "RE: ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hello and thank you for the analysis,\nAfter the problems starting the recharge, the client charged successfully around 3:06 PM CU TIME. So, the problems he encountered before, like the one with the RFID Card,  were related to the OCPP connection being off?\nWith best regards,\nRosita Abate",
+            "date": "2025-12-24T13:11:10Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e73a41a-33e2-f011-8543-7c1e52880fe1",
+            "subject": "ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hello Rosita, good morning.\nI went as far back to 11 am and to 5 pm, and I couldn't find any RFID card being read except for this session.\nPerhaps the customer reported the wrong charger?\nI will wait for your feedback.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-12-26T08:16:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dcb87a19-72e2-f011-8544-7c1e52362b38",
+            "subject": "RE: ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hello,\nthe customer reported the charger 313483122005, but it could be that it was a mistake and the attempts happened on the charger 313508370035.\nCan you provide us the logs of the other charger please?\nThank you,\nRosita",
+            "date": "2025-12-26T15:46:54Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "71ec1993-76e2-f011-8544-7ced8d425d60",
+            "subject": "ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hi Rosita,\nIndeed this seems like the right charger, I see multiple attempts while OCPP is offline and as such only some minutes later it works:\nHere is 30mins later the session working.\nLet me know if this is what you were hoping for.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-12-26T16:19:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "298bd143-7be2-f011-8544-7c1e5276d071",
+            "subject": "RE: ID0469358-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889000964",
+            "body": "Hello,\nthank you, you can close the ticket.\nWith best regards,\nRosita Abate",
+            "date": "2025-12-26T16:52:37Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

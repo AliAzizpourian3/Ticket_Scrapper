@@ -1,0 +1,49 @@
+{
+    "incident_id": "69fa6a40-7d68-4b06-87fc-a98febba8e24",
+    "ticket_number": "0407597",
+    "title": "ID0406767-DC/Si-D/DE-[Y2 / S5 313651774001] Charging stopped. - C1",
+    "created_on": "2025-02-18T13:37:49Z",
+    "last_activity": "2025-02-21T13:04:47Z",
+    "age": "2888",
+    "description": "Reported behavior/issue:  Charging stopped on Mercedes truck\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "LSurCD",
+    "stage": null,
+    "serial_number": "Y2 / S5 313651774001,Y2 / S5 313651774001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "cc333f8e-d03a-7a2e-a1b5-64a4b3803062",
+            "subject": "Handover to ES",
+            "body": "Problem Description: Charging stopped on Mercedes truck on 13th Feb, 9:32 CET\nAction Performed:\nI checked the logs of the charger and noticed the\nERR_INTERNAL_COMM for SECC (error code 69)\nappearing multiple times over the last three weeks. I investigated whether the fault that appeared on the 13th was caused by a specific vehicle. I checked if the same vehicle's MAC address appeared on previous dates when the ERR_INTERNAL_COMM error was logged. However, the MAC address only appears once on the 13th.\n• Charger FW Version: 6.0.3\n• Reason for Handover: Need to do a deep dive analysis on the error code 69.\n• Attachment: Logs of the charger on the specified time stamp and AWS log.",
+            "date": "2025-02-18T13:38:15Z",
+            "extra": {}
+        },
+        {
+            "id": "6324d952-913d-c0cc-ae13-7f299fa14fc8",
+            "subject": null,
+            "body": "",
+            "date": "2025-02-18T13:38:34Z",
+            "extra": {}
+        },
+        {
+            "id": "cccb5e01-86ef-ef11-9341-0022489db585",
+            "subject": "0407597 - ID0406767-DC/Si-D/DE-[Y2 / S5 313651774001] Charging stopped. - C1 CRM:00440000298",
+            "body": "Guten Tag Herr Jespen,\nDer von ihnen gemeldete Fehler ist uns bekannt und wir haben ein Software Hotfix zu dem Thema.\nIch habe dieses bereits auf ihrem Ladegerät ausgerollt und der Fehler sollte nun nicht mehr auftreten.\nWir werden das Ticket schließen.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Deutschland\nmailto:berger.lukas@siemens.com\nwww.siemens.com",
+            "date": "2025-02-20T12:27:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6222b111-9dda-fc2c-a91b-8329bde19e8a",
+            "subject": "ES -→ NOC",
+            "body": "Task from ES: Checked the Logs found errorcode 69 applied Hotfix\nTask for NOC: Please close the Ticket.",
+            "date": "2025-02-20T12:28:24Z",
+            "extra": {}
+        }
+    ]
+}

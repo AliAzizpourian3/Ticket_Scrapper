@@ -1,0 +1,90 @@
+{
+    "incident_id": "d612bdb2-9459-48a9-a0f3-95268985d71c",
+    "ticket_number": "0414566",
+    "title": "ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order",
+    "created_on": "2025-03-24T10:23:21Z",
+    "last_activity": "2025-03-25T16:04:17Z",
+    "age": "1781",
+    "description": "Reported behavior/issue:\nOutlet 3 out of order\nRoot cause: Coaps Polling error\nSolution:  Information provided that it is self-cleared / temporary error\nOn DAMEX Sanctioned List: No\nWarranty Status:\nInactive",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "hlPOtU",
+    "stage": null,
+    "serial_number": "MP / P1 170000224",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "cfd7a24b-4154-7d5a-a11a-1f9e1b8d52e0",
+            "subject": "Notes from RC",
+            "body": "2025-03-24T09:02:04.002525+00:00 sicharge-cp [local0:err] sicharge-cp-backend/e4080beec242[730]: Error on LEM DC Meter (meter id: 1211960557 status: {\"value\":25,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":true,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\"reversedVoltage\":false,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})",
+            "date": "2025-03-24T11:22:48Z",
+            "extra": {}
+        },
+        {
+            "id": "e84a39bf-b008-f011-bae3-7c1e52faf3c6",
+            "subject": "0414566 - ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order CRM:00796001457",
+            "body": "Dear Simen Aarre,\nThank you for reaching\nout\nto eMobility Support. My name is\nKaushik\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000224\nChargerID/Serial No.\n: hlPOtU\nProblem Description\n: Outlet 3 out of order\nI found in the logs that the outlet was unavailable with the message 'Outlet not ready - SECC has communication error with PLC.' This was a temporary issue that resolved itself.\n2025-03-24T09:19:05.400573+00:00 sicharge-cp [local0:info] sicharge-cp-backend/e4080beec242[730]: LEM DC Meter for outlet (id: 3) is working\nFor future reference, your case number is\n0414566\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-24T13:06:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "de161afb-c108-f011-bae2-7ced8d2ef274",
+            "subject": "RE: 0414566 - ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order CRM:00796001457",
+            "body": "Hi,\nOkay if the charger is working again do we know why?\nDid it reboot or something, or did it just work again. What was the error flag?\n/Simen",
+            "date": "2025-03-24T15:09:38Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1cb4775a-7c09-f011-bae2-7c1e52fbf5b3",
+            "subject": "RE: 0414566 - ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order CRM:00796001457",
+            "body": "Hello Simen,\nThis issue (SECC has a communication error with the PLC) sometimes occurs in the charger when the PLC checks the availability of the outlet. If the feedback times out, this error triggers the error flag. It is typically resolved within 5 seconds. This issue may be addressed in the upcoming firmware release.\nIf no further support required kindly let me close this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T13:23:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca1be889-8709-f011-bae3-000d3adc93d1",
+            "subject": "RE: 0414566 - ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order CRM:00796001457",
+            "body": "Alright thanks, you can close this ticket.\n/Simen",
+            "date": "2025-03-25T14:43:44Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "93b09d75-9009-f011-bae2-7c1e52fbf5b3",
+            "subject": "ID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order CRM:00796001463",
+            "body": "Dear Simen Aarre,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414566, the case is now closed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-25T15:47:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5786d16-9209-f011-bae2-7c1e52fbf5b3",
+            "subject": "Ticket 0414566 has been closed. Are you satisfied with our provided solution? CRM:00796001464",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0414566\nwith the title:\nID0414566-DC/Si-D/NO-[MP / P1 170000224] Outlet 3 out of order\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nKaushik Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-25T15:59:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

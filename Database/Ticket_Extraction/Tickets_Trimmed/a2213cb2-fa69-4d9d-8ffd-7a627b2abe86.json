@@ -1,0 +1,203 @@
+{
+    "incident_id": "a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+    "ticket_number": "0377437",
+    "title": "ID0377437-DC/Si-D/SE-[Y2/S3 313539037001] Seitatech terminal error",
+    "created_on": "2024-09-03T10:36:47Z",
+    "last_activity": "2025-12-16T14:06:11Z",
+    "age": "60423",
+    "description": "Reported behavior/issue:\nSeitatech terminal error\nRoot cause:\nFW Bug | Wrong partial reversal amount\nSolution:\nFW update and Hotfix installation\nOn DAMEX Sanctioned List:\nWarranty Status:\nR&D Ticket\nUzOYLO | Cheap Energy Charging | Issue with Seitatech : wrong partial reversal amount & Transaction pending (#673) · Issues · compact-charger / SICHARGE D Service Desk · GitLab (siemens.com)\nJira Ticket ( If Any)\nEMOb - 13737\nEcoG Ticket (If Any)\nNA\nStatus Operation: Waiting RC Feedback\nNotes from ES to NOC [ 15/10/2024]",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "UzOYLO",
+    "stage": null,
+    "serial_number": "Y2 / S3 313539037001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ece57871-e069-ef11-bfe2-000d3adea690",
+            "subject": "Uploaded document IMG_2836.MOV.",
+            "body": "",
+            "date": "2024-09-03T10:37:06Z",
+            "extra": {}
+        },
+        {
+            "id": "26da7577-e069-ef11-bfe2-00224899b868",
+            "subject": "A new case manager was assigned to 0377437 CRM:00225091187",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0377437 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+            "date": "2024-09-03T10:37:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "60456d78-e369-ef11-bfe2-000d3adea690",
+            "subject": "A new case manager was assigned to 0377437 CRM:00225091204",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0377437 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+            "date": "2024-09-03T10:58:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1c5b9e5a-e969-ef11-bfe2-000d3a69a8a0",
+            "subject": "ID0377437-DC/Si-D/SE-[Y2/S3 313539037001] Seitatech terminal error CRM:00642001488",
+            "body": "Hello ﻿Magnus,﻿\nThank you for reaching out to eMobility Support. My name is\nMohini\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S3 313539037001\nChargerID/Serial No.\n:\nUzOYLO\nProblem Description\n: Seitatech terminal error\nFor future reference, your ticket number is\n0377437\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-03T11:40:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73a0e19c-e969-ef11-bfe2-000d3a69a8a0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 5 minutes and 49 seconds.",
+            "date": "2024-09-03T11:42:37Z",
+            "extra": {}
+        },
+        {
+            "id": "9ca0e19c-e969-ef11-bfe2-000d3a69a8a0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 7 seconds.",
+            "date": "2024-09-03T11:42:44Z",
+            "extra": {}
+        },
+        {
+            "id": "a760588c-d3d5-fee5-af5b-2affa48507b5",
+            "subject": "Notes from RC",
+            "body": "Issue with charger stuck at payment pending.\n[UPT1000F_Castles_SEITATECH]: Command Get terminal status finished with error: Transaction pending.\nI have checked with Jyri at seitatech and he doesn't see any errors on his side.\nIf I reboot the charger, it will work again but as soon as someone has charged it will get this error again. See attached movie to see how it looks on the charger HMI.",
+            "date": "2024-09-03T13:28:04Z",
+            "extra": {}
+        },
+        {
+            "id": "e8d2eb26-7d80-0da0-899e-d3f9e896d510",
+            "subject": "Notes for L2 & L3",
+            "body": "The issue appears to be that the terminal does not consistently \"wake up\" when customers press on the charger screen to pay with a credit card. Often, when someone selects the credit card option on the screen, the terminal does not respond, resulting in a failed message being displayed.\nThe issue I'm facing is that no errors are apparent from the charger's side. However, the same message appears repeatedly in the logs.\nReference Logs",
+            "date": "2024-09-03T13:30:24Z",
+            "extra": {}
+        },
+        {
+            "id": "1222dadb-b38d-9d12-ad8b-715a408c9f05",
+            "subject": "Notes for L3",
+            "body": "Suspected Root Cause :\nPayment issue with payment terminal\nProblem Description :\nSeitatech terminal error\nAction Performed (L2) : Analyzed logs\nCharger SW Version:\nV5.0.19\nReason for Handover (L3) :\nNeed deeper analysis, also discussion is going in taskforce\nFault history :\n03/09/2024\nAction Required\nAction by HQ :\nAttachment\n: Refer attached logs, also find notes in timeline",
+            "date": "2024-09-03T16:42:30Z",
+            "extra": {}
+        },
+        {
+            "id": "e4cd1ebd-946a-ef11-bfe2-00224899b868",
+            "subject": "A new case manager was assigned to 0377437 CRM:00225091702",
+            "body": "Sambath KS was assigned as new Case Manager for case 0377437 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+            "date": "2024-09-04T08:07:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3a21e16-3189-d0e6-9235-6dce5f6dab8e",
+            "subject": "Status Update : 13/09/2024",
+            "body": "Awaiting for R&D update",
+            "date": "2024-09-13T05:58:07Z",
+            "extra": {}
+        },
+        {
+            "id": "2435bda6-d44a-0229-8940-c811821c24d1",
+            "subject": "Status Update : 20/09/2024",
+            "body": "Hoptfix is ready for FW v 5.0.21\nWaiting for chargers to be updated to 5.0.21 and hotfix installation\nList of charger:\nRC\nSweden\nSl.No\nCharger ID\nFW Vesrion\nClient\n1\nUyJhM6\nv3.2.8\nJB Charge\n2\nA7al2S\nv5.0.21\nCheap Energy Charging\n3\nHh8SHw\nv5.0.21\n4\n77moda\nv5.0.21\n5\ngwmF5L\nv5.0.19\n6\nUzOYLO\nv5.0.19\n7\nrIfXFP\nv5.0.21\n8\nKOz2SG\nv5.0.19\n9\n3pIFTi\nv4.0.11\nRe&Go",
+            "date": "2024-09-20T05:52:00Z",
+            "extra": {}
+        },
+        {
+            "id": "bfe94675-1477-ef11-a670-7c1e52215614",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 16 days, 18 hours, 9 minutes and 22 seconds.",
+            "date": "2024-09-20T05:52:07Z",
+            "extra": {}
+        },
+        {
+            "id": "68de4f7b-1477-ef11-a670-7c1e52215614",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 7 seconds.",
+            "date": "2024-09-20T05:52:13Z",
+            "extra": {}
+        },
+        {
+            "id": "8e1fd4c1-d4fd-b8ce-8cab-d13b716f48d8",
+            "subject": "Status Update : 04/10/2024",
+            "body": "All the chargers are updated with Hotfix. Found chargers are showing same error after the hotfix installation.\nRCA : Pending list from chargers wont clear with the hotfix, only it will clear the future issues. With the help of R&D the pending lists were cleared from the charger. Awaiting for the feedback from RC regarding the performanace.",
+            "date": "2024-10-04T04:07:26Z",
+            "extra": {}
+        },
+        {
+            "id": "9200e284-e186-ef11-ac21-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 20 days, 2 hours, 35 minutes and 38 seconds.",
+            "date": "2024-10-10T08:27:51Z",
+            "extra": {}
+        },
+        {
+            "id": "ee2ca187-e399-c47f-8d2a-9dc5eb89b385",
+            "subject": "Notes from ES to NOC [ 15/10/2024]",
+            "body": "a) Problem Description\n: Seitatech terminal error\nb) Suspected Root Cause\n: FW Bug | Wrong partial reversal amount\nc\n) Action Performed:\nFW update and Hotfix installation\nd) Charger SW Version\n: 5.0.21\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-10-15T06:39:45Z",
+            "extra": {}
+        },
+        {
+            "id": "3d90307d-d78a-ef11-ac20-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0377437 CRM:00225110172",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0377437 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+            "date": "2024-10-15T09:26:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4d7f683-d78a-ef11-ac21-000d3aba081f",
+            "subject": "A new case manager was assigned to 0377437 CRM:00225110173",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0377437 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2213cb2-fa69-4d9d-8ffd-7a627b2abe86",
+            "date": "2024-10-15T09:26:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5373c6e9-d88a-ef11-ac21-002248a29667",
+            "subject": "RE: ID0377437-DC/Si-D/SE-[Y2/S3 313539037001] Seitatech terminal error CRM:00642001488",
+            "body": "Dear Magnus,\nSince your issue has been resolved by applying hotfix, we will be proceeding with closing the service ticket# 0377437.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-15T09:36:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a9bae227-d98a-ef11-ac21-002248a29667",
+            "subject": "Ticket 0377437 has been closed. Are you satisfied with our provided solution? CRM:00658000785",
+            "body": "Dear Magnus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0377437\nwith the title:\nID0377437-DC/Si-D/SE-[Y2/S3 313539037001] Seitatech terminal error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSaurav Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2024-10-15T09:38:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0572066-d98a-ef11-ac21-002248a29667",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Solved by R&D / Product Care after 5 days, 1 hour, 11 minutes and 58 seconds.",
+            "date": "2024-10-15T09:39:49Z",
+            "extra": {}
+        }
+    ]
+}

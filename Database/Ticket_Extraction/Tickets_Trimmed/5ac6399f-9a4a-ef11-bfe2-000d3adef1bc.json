@@ -1,0 +1,176 @@
+{
+    "incident_id": "5ac6399f-9a4a-ef11-bfe2-000d3adef1bc",
+    "ticket_number": "0371023",
+    "title": "ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline",
+    "created_on": "2024-07-25T15:29:09Z",
+    "last_activity": "2025-12-16T14:07:03Z",
+    "age": "11306",
+    "description": "Reported behaviour/issue: Query about authorization discrepancy while the charger is online and offline.\nRoot cause:\nSolution: before closing the case fill in the applicable solution.\nOn DAMEX Sanctioned List: Siemens employee",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "qbJssk",
+    "stage": null,
+    "serial_number": "MP / P9 170000997",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b10c0c99-9a4a-ef11-bfe2-0022489961b0",
+            "subject": "Sicharge D - OCPP not working properly when offline",
+            "body": "Hi there, we need your help on the following topic\nSerial Number:\n170000997 -\nhttps://configuration.sicharge.technology/chargers/qbJssk/detail\nTesting Time\n: 11:20 – 12:00 Argentinian Time (GMT-3)\nWe’ve been doing some tests on a Sicharge D and have the following outcome.\nFirst Scenario\n{\"key\":\"LocalAuthListEnabled\",\"value\":\"true\",\"readonly\":false},\n{\"key\":\"LocalAuthListMaxLength\",\"value\":\"100\",\"readonly\":true},\n{\"key\":\"LocalAuthorizeOffline\",\"value\":\"true\",\"readonly\":false},\n{\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false},\n{\"key\":\"AuthorizationCacheEnabled\",\"value\":\"false\",\"readonly\":false},\nFirst attempt, charging online. Works fine\nWe set the charger as if it lost connection to OCPP, it worked correctly when offline (recognizing the RFID’s saved locally)\nWhen we connected again the OCPP, the problem started.\nBecause the charger started charging without asking for authorization to the OCPP, so the backed closed the charging session.\nSecond Scenario\n{\"key\":\"LocalAuthListEnabled\",\"value\":\"\nfalse\n\",\"readonly\":false},\n{\"key\":\"LocalAuthListMaxLength\",\"value\":\"100\",\"readonly\":true},\n{\"key\":\"LocalAuthorizeOffline\",\"value\":\"true\",\"readonly\":false},\n{\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false},\n{\"key\":\"AuthorizationCacheEnabled\",\"value\":\"false\",\"readonly\":false},\nWith OCPP Online, it worked just fine\nWith OCPP Offline, it didn’t work because the LocalAuthListEnabled is set to false.\nSome Logs of the errors\n2024-07-25T14:40:14.661619+00:00 sicharge-cp [local0:info] sicharge-cp-backend/20f765c96437[703]: OCPP: Send command: StopTransaction (83e92af1-5b20-4170-b7f8-10cdb23f377c) - {\"meterStop\":303,\"timestamp\":\"2024-07-25T14:37:03.463Z\",\"transactionData\":[{\"timestamp\":\"2024-07-25T14:37:03.463Z\",\"sampledValue\":[{\"value\":\"303\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Register\"},{\"value\":\"80\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"}]}],\"reason\":\"Local\",\"idTag\":\"045742CF\",\"transactionId\":0}\n2024-07-25T14:41:45.904680+00:00 sicharge-cp [local0:info] sicharge-cp-backend/20f765c96437[703]: OCPP: Send command: StatusNotification (1af4c893-86c2-4684-ae15-62a2fc839290) - {\"connectorId\":0,\"errorCode\":\"\nLocalListConflict\"\n,\"status\":\"Available\"}\nThird Scenario\n{\"key\":\"LocalAuthListEnabled\",\"value\":\"false\",\"readonly\":false},\n{\"key\":\"LocalAuthListMaxLength\",\"value\":\"100\",\"readonly\":true},\n{\"key\":\"LocalAuthorizeOffline\",\"value\":\"true\",\"readonly\":false},\n{\"key\":\"LocalPreAuthorize\",\"value\":\"false\",\"readonly\":false}\n{\"key\":\"AuthorizationCacheEnabled\",\"value\":\"\ntrue\n\",\"readonly\":false},\nFirst attempt – Online. Worked just fine\nSecond attempt – Offline. Worked just fine\nThird attempt – Online again. Works fine again.\nShouldn’t It work when we have the first scenario?\nBest regards\nMariano Galizia Alfano\nSiemens\nProject Manager\nParque Industrial Newton\nCalle Cuba 4870, Ruta 8 - Km. 18\n(B1653KBM) Villa Ballester\nProvincia de Buenos Aires - Argentina\nCel.: +54 911 4064 9944\ne-mail:\nmariano.galizia-alfano@siemens.com\nWeb:\nwww.siemens.com.ar",
+            "date": "2024-07-25T15:29:03Z",
+            "extra": {
+                "sender": "mariano.galizia-alfano@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3e88c77b-a34a-ef11-bfe2-0022489961b0",
+            "subject": "A new case manager was assigned to 0371023 CRM:00225075040",
+            "body": "Shreyas Sathe was assigned as new Case Manager for case 0371023 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=5ac6399f-9a4a-ef11-bfe2-000d3adef1bc",
+            "date": "2024-07-25T16:32:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "331499f0-a64a-ef11-bfe2-0022489966da",
+            "subject": "ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01410000920",
+            "body": "Hello Mariano Galizia Alfano﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nShreyas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000997\nChargerID/Serial No.\n:\nqbJssk\nProblem Description\n:  Authorization discrepancy while online/offline\nTroubleshooting\n: I will go through the logs step by step. I will contact you as soon as I can, if I require more information or if any next steps are to be taken.\nFor future reference, your ticket number is\n0371023\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-25T16:57:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "247ec86d-9a4d-ef11-bfe2-6045bddf6876",
+            "subject": "RE: ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01410000920",
+            "body": "Hello Mariano﻿,\nI can see that the charger is on the OCPP backend “Voltbras”. Could you please make sure that the backend successfully integrated for Sicharge D?\nI could not see the charger backend in the list of sucessfully integrated backends.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shreyas Sathe\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-29T11:05:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95368b75-c64d-ef11-bfe2-000d3a6532cc",
+            "subject": "RE: ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01410000920",
+            "body": "Hi there,\nIt is not integrated, however, the behavior seems quite odd.\nAre we sure that the problem is in the OCPP and not with the charger behaviour?\nBest regards.",
+            "date": "2024-07-29T16:20:28Z",
+            "extra": {
+                "sender": "mariano.galizia-alfano@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9a4a95f7-83f1-e445-a43b-a9ff55c7fbea",
+            "subject": "L2 handover",
+            "body": "OCPP not integrated. Please ask the customer to take up this issue with the integration team. No charge events were found without authorization, so customer's claim regarding that the charger when online started without authorization cannot be verified.",
+            "date": "2024-08-01T10:23:10Z",
+            "extra": {}
+        },
+        {
+            "id": "5e6c48a3-f34f-ef11-bfe2-0022489966da",
+            "subject": "A new case manager was assigned to 0371023 CRM:00225077715",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0371023 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=5ac6399f-9a4a-ef11-bfe2-000d3adef1bc",
+            "date": "2024-08-01T10:48:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d80406b7-f34f-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 6 days, 19 hours, 20 minutes and 18 seconds.",
+            "date": "2024-08-01T10:49:28Z",
+            "extra": {}
+        },
+        {
+            "id": "217624bd-f34f-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 15 seconds.",
+            "date": "2024-08-01T10:49:43Z",
+            "extra": {}
+        },
+        {
+            "id": "4ce5edcd-2150-ef11-bfe2-002248a2f864",
+            "subject": "RE: ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01410000920",
+            "body": "Hello,\nAs OCPP  is not integrated.  Please ask the customer to take up this issue with the integration team\nonline  ,\nNo charge events were found without authorization, so customer's claim regarding the charger starting without authorization cannot be verified.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-01T16:19:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e00009f8-2750-ef11-bfe2-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 6 hours, 13 minutes and 51 seconds.",
+            "date": "2024-08-01T17:03:35Z",
+            "extra": {}
+        },
+        {
+            "id": "10c8afe9-4250-ef11-bfe2-000d3a697718",
+            "subject": "RE: ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01410000920",
+            "body": "Okay, perfect.\nYou may proceed to close the ticket\nBR",
+            "date": "2024-08-01T20:16:26Z",
+            "extra": {
+                "sender": "mariano.galizia-alfano@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "04f23406-4350-ef11-bfe3-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 3 hours, 13 minutes and 21 seconds.",
+            "date": "2024-08-01T20:17:08Z",
+            "extra": {}
+        },
+        {
+            "id": "94070c7f-c050-ef11-bfe3-002248a2f864",
+            "subject": "ID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline CRM:01282000431",
+            "body": "Hello\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0371023.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-02T11:15:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c27298b4-c050-ef11-bfe3-000d3a67b152",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 14 hours, 59 minutes and 58 seconds.",
+            "date": "2024-08-02T11:16:53Z",
+            "extra": {}
+        },
+        {
+            "id": "37f132b7-c550-ef11-bfe2-0022489e9c81",
+            "subject": "Ticket 0371023 has been closed. Are you satisfied with our provided solution? CRM:01282000432",
+            "body": "Dear  Marinao,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0371023\nwith the title:\nID0371023-DC/Si-D/AR-[MP / P9 170000997] Authorization discrepancy while online/offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-02T11:52:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20a8d81d-c650-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 38 minutes and 38 seconds.",
+            "date": "2024-08-02T11:55:33Z",
+            "extra": {}
+        }
+    ]
+}

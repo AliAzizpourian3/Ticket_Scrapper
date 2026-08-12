@@ -1,0 +1,140 @@
+{
+    "incident_id": "a59a382b-730b-479f-9d20-c991f3c857b7",
+    "ticket_number": "0368819",
+    "title": "ID0368819 - DC/Si-D/EE- [MP / P0 170001063] - No SCB connection",
+    "created_on": "2024-07-15T06:30:24Z",
+    "last_activity": "2024-07-30T08:54:49Z",
+    "age": "21744",
+    "description": "Reported behavior/issue:\nNo SCB connection\nRoot cause:\nSolution:  Back online 17.7.2024. LTE forced on. WAN failover disabled.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "KVvc4h",
+    "stage": null,
+    "serial_number": "MP / P0 170001063",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "467130b8-7342-ef11-a316-000d3a687981",
+            "subject": "A new case manager was assigned to 0368819 CRM:00225069773",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0368819 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a59a382b-730b-479f-9d20-c991f3c857b7",
+            "date": "2024-07-15T06:30:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a6f5249-7942-ef11-a316-000d3a6964b9",
+            "subject": "A new case manager was assigned to 0368819 CRM:00225069827",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0368819 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a59a382b-730b-479f-9d20-c991f3c857b7",
+            "date": "2024-07-15T07:10:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ca06094-7942-ef11-a316-000d3a64c042",
+            "subject": "ID0368819 - DC/Si-D/EE- [MP / P0 170001063] - No SCB connection CRM:00642001316",
+            "body": "Hello Markus ﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nMohini\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nKVvc4h\nChargerID/Serial No.\n:\nKVvc4h\nProblem Description\n: No SCB connection\nFor future reference, your ticket number is\n0368819\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-15T07:12:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c8c60f6-7942-ef11-a316-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 44 minutes and 43 seconds.",
+            "date": "2024-07-15T07:15:08Z",
+            "extra": {}
+        },
+        {
+            "id": "7123484f-7a42-ef11-a316-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 2 minutes and 36 seconds.",
+            "date": "2024-07-15T07:17:44Z",
+            "extra": {}
+        },
+        {
+            "id": "86f53ead-8742-ef11-a316-000d3a64c042",
+            "subject": "ID0368819 - DC/Si-D/EE- [MP / P0 170001063] - No SCB connection CRM:00642001317",
+            "body": "Hello Markus,\nHope you are doing well.\nUnfortunately, we cannot do much remotely when we don't have SCB connection.\nThe best would be to have someone on site to check:\nLocal reboots help to bring the charger back online.\nIf the router is connected to internet\nIf the charger is powered\nThen we can analysis the log to try to find out why outlets are offline.\nAnd kindly refer the below points which might be the reason to out the charger on SCB.\nThen there might be Internet issue with the Siemens router and probably because of failover function the WAN is switched from Cellular to Ethernet.\nI would recommend doing a Hard reset from \"OCPP\" (If charger is connected to OCPP server) or a local reboot will bring them up again.\ndata service of mobile network operator might not be available\n- SIM card disabled / expired\n- monthly data volume exhausted\n- signal strength got weak due to changed radio transmission conditions\n- in case of M2M contracts is IP not enabled\nBackend related issues\n- Backend changed the settings for the affected charger\n- OCPP server on Backend side unavailable\nTeltonika related issues\n- Router switches to a wrong network service (e.g. 3G instead of 4G)\n- Hardware failure of Router\n- Router software crash\nI am writing to formally inform that we are moving case 0363411 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nEE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nEE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-07-15T08:53:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac41112e-9042-ef11-a316-6045bdde23a6",
+            "subject": "A new case manager was assigned to 0368819 CRM:00225069958",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0368819 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a59a382b-730b-479f-9d20-c991f3c857b7",
+            "date": "2024-07-15T09:54:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80181827-3244-ef11-a316-000d3ab7b851",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 2 days, 4 hours, 28 minutes and 27 seconds.",
+            "date": "2024-07-17T11:46:10Z",
+            "extra": {}
+        },
+        {
+            "id": "7ee024d6-e24d-ef11-bfe2-000d3a687981",
+            "subject": "RE: ID0368819 - DC/Si-D/EE- [MP / P0 170001063] - No SCB connection CRM:00642001317",
+            "body": "Job done.\nMarkus",
+            "date": "2024-07-29T19:43:42Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cbe0f4df-e24d-ef11-bfe2-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 12 days, 7 hours, 57 minutes and 42 seconds.",
+            "date": "2024-07-29T19:43:55Z",
+            "extra": {}
+        },
+        {
+            "id": "8de95230-e34d-ef11-bfe2-000d3a687981",
+            "subject": "A new case manager was assigned to 0368819 CRM:00225076271",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0368819 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a59a382b-730b-479f-9d20-c991f3c857b7",
+            "date": "2024-07-29T19:46:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd83762b-514e-ef11-bfe2-000d3a687981",
+            "subject": "Ticket 0368819 has been closed. Are you satisfied with our provided solution? CRM:00315001648",
+            "body": "Dear\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0368819\nwith the title:\nID0368819 - DC/Si-D/EE- [MP / P0 170001063] - No SCB connection\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-30T08:53:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "873b815d-514e-ef11-bfe2-000d3a687981",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Incident Solved Via Remote (L2) after 13 hours, 10 minutes and 52 seconds.",
+            "date": "2024-07-30T08:54:45Z",
+            "extra": {}
+        }
+    ]
+}

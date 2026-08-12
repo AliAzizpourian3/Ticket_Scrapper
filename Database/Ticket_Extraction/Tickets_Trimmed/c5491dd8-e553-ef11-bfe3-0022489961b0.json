@@ -1,0 +1,201 @@
+{
+    "incident_id": "c5491dd8-e553-ef11-bfe3-0022489961b0",
+    "ticket_number": "0372930",
+    "title": "ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline",
+    "created_on": "2024-08-06T11:20:14Z",
+    "last_activity": "2026-01-30T09:07:23Z",
+    "age": "22858",
+    "description": "Reported behaviour/issue:\nOCPP offline and ELMS enabling\nRoot cause:\nWAN failover?\nSolution:\nCFast Card Flashed,\nBoth Router made online\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "STBpCB",
+    "stage": null,
+    "serial_number": "MP / S5 170003680",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "d363d2d2-e553-ef11-bfe2-0022489e9c81",
+            "subject": "Multiple issues on charger STBpCB",
+            "body": "Hi colleagues,\nCharger STBpCB loses connection to OCPP regularly. Could you verify whether the WAN failover is disabled. There’s only connection through a SIM.\nAlso, the OCPP back-end (LMS) does not receive any info on the actual Power Delivery. They say the charger does not share this info. Can we enable this?\nThomas",
+            "date": "2024-08-06T11:20:08Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dcd4326c-e753-ef11-bfe3-0022489a2913",
+            "subject": "A new case manager was assigned to 0372930 CRM:00225079636",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0372930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c5491dd8-e553-ef11-bfe3-0022489961b0",
+            "date": "2024-08-06T11:31:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6102f281-f753-ef11-bfe3-000d3a687981",
+            "subject": "ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Hello Thomas﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S5 170003680\nChargerID/Serial No.\n:\nSTBpCB\nProblem Description\n: OCPP offline and ELMS activation\nTroubleshooting\n:\nELMS has been activated.\nI am waiting for SSH access to check the OCPP router.\nFor future reference, your ticket number is\n0372930\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-06T13:26:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c982029e-fa53-ef11-bfe3-000d3a687981",
+            "subject": "RE: ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Hello Francisco,\nInput from the backend: add\nEnergy.Active.Import.Register\nAlso they recommend the MeterValuesSampleInterval to be 5-15 minutes, do you know what we have?\nThomas\nVan:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nVerzonden:\ndinsdag 6 augustus 2024 15:27\nAan:\nBoersma, Thomas (RC-NL SI E) <thomas.boersma@siemens.com>\nOnderwerp:\nID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671\nHello Thomas\n﻿\n,\n﻿\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / S5 170003680\nChargerID/Serial No.\n: STBpCB\nProblem Description\n: OCPP offline and ELMS activation\nTroubleshooting\n:\nELMS has been activated.\nI am waiting for SSH access to check the OCPP router.\nFor future reference, your ticket number is 0372930, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-06T13:48:54Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3e7fea45-fe53-ef11-bfe3-000d3a687981",
+            "subject": "ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Hi Thomas,\nBackend needs to add Energy.Active.Import.Register themselves. If I add it, then after a reboot it's removed.\nFor the MeterValueSampleInterval I got from one charger like this:\n\"MeterValueSampleInterval\": {\n\"readonly\": false,\n\"value\": 0,\n\"unit\": \"seconds\"\nI hope I answered to your questions. I am still waiting for the SSH access.\nBest regards,\nFrancisco",
+            "date": "2024-08-06T14:15:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd43f2d6-fe53-ef11-bfe3-0022489961b0",
+            "subject": "RE: ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Is it possible that we have to do it temporary in order to allow them to add it?\nThey say it can’t be done at this moment…\nVan:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nVerzonden:\ndinsdag 6 augustus 2024 16:17\nAan:\nBoersma, Thomas (RC-NL SI E) <thomas.boersma@siemens.com>\nOnderwerp:\nID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671\nHi Thomas,\nBackend needs to add Energy.Active.Import.Register themselves. If I add it, then after a reboot it's removed.\nFor the MeterValueSampleInterval I got from one charger like this:\n\"MeterValueSampleInterval\": {\n\"readonly\": false,\n\"value\": 0,\n\"unit\": \"seconds\"\nI hope I answered to your questions. I am still waiting for the SSH access.\nBest regards,\nFrancisco",
+            "date": "2024-08-06T14:19:15Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "daaf1a7d-ff53-ef11-bfe3-000d3a687981",
+            "subject": "ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Added in charger config file.\nPlease check on the backend.\nBR,\nFrancisco",
+            "date": "2024-08-06T14:23:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d17fb772-0254-ef11-bfe3-000d3aba9474",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 hours, 24 minutes and 49 seconds.",
+            "date": "2024-08-06T14:45:04Z",
+            "extra": {}
+        },
+        {
+            "id": "ae3959de-9054-ef11-bfe3-000d3abae760",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 16 hours, 59 minutes and 30 seconds.",
+            "date": "2024-08-07T07:44:34Z",
+            "extra": {}
+        },
+        {
+            "id": "1b4fda95-2249-1dd3-9cd6-4912ab06543f",
+            "subject": "Findings ",
+            "body": "Need one more intervention and check logs simultaneously",
+            "date": "2024-08-09T08:39:29Z",
+            "extra": {}
+        },
+        {
+            "id": "d05a9288-4e56-ef11-bfe3-0022489966da",
+            "subject": "A new case manager was assigned to 0372930 CRM:00225081443",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0372930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c5491dd8-e553-ef11-bfe3-0022489961b0",
+            "date": "2024-08-09T12:54:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90b893eb-6d10-59f6-8e90-b7d39bb21bb4",
+            "subject": "12/8 Site intervention",
+            "body": "Prepared USB, couldn't complete as we ran short of time. To be continued at the next visit",
+            "date": "2024-08-12T14:08:37Z",
+            "extra": {}
+        },
+        {
+            "id": "06d34ddc-a25a-ef11-bfe3-000d3abae760",
+            "subject": "A new case manager was assigned to 0372930 CRM:00225083324",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0372930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c5491dd8-e553-ef11-bfe3-0022489961b0",
+            "date": "2024-08-15T01:08:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e362566f-d150-c970-9642-dbfa92ded04c",
+            "subject": "Update",
+            "body": "CFast Card Flashed\nBoth Router made online\nNot able to open SSH Port",
+            "date": "2024-08-21T08:58:01Z",
+            "extra": {}
+        },
+        {
+            "id": "d4278284-5e60-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 15 days, 29 minutes and 47 seconds.",
+            "date": "2024-08-22T08:14:22Z",
+            "extra": {}
+        },
+        {
+            "id": "57e37c8a-5e60-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 5 seconds.",
+            "date": "2024-08-22T08:14:27Z",
+            "extra": {}
+        },
+        {
+            "id": "bde37c8a-5e60-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 5 seconds.",
+            "date": "2024-08-22T08:14:32Z",
+            "extra": {}
+        },
+        {
+            "id": "8e819896-5e60-ef11-bfe3-002248a44b33",
+            "subject": "RE: ID0372930-DC/Si-D/NL[STBpCB] - OCPP offline CRM:00315001671",
+            "body": "Hello\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0372930.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-22T08:14:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7aa7b1c0-5e60-ef11-bfe3-002248a44b33",
+            "subject": "Ticket 0372930 has been closed. Are you satisfied with our provided solution? CRM:00658000710",
+            "body": "Dear,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0372930\nwith the title:\nID0372930-DC/Si-D/NL[STBpCB] - OCPP offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSaurav Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-22T08:16:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "26994d0f-5f60-ef11-bfe3-002248a44b33",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 3 minutes and 41 seconds.",
+            "date": "2024-08-22T08:18:15Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,182 @@
+{
+    "incident_id": "013f3528-fa2e-f011-8c4d-7c1e52361e39",
+    "ticket_number": "0423690",
+    "title": "ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue",
+    "created_on": "2025-05-12T06:27:22Z",
+    "last_activity": "2026-01-13T13:27:19Z",
+    "age": "93665",
+    "description": "Reported behavior/issue: DC2 not working in parallel → contactor stuck in feedback ON",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cbk8c9",
+    "stage": null,
+    "serial_number": "Y2 / R0 313281750001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2e970222-fa2e-f011-8c4d-6045bddf319c",
+            "subject": "[OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001",
+            "body": "Hello,\nI am contacting you to report an incident that impacted the charging of a truck on the Sicharge D charging station – S/N: Y2R0313281750001.\nCharging session details:\n• Period: from 10/05/2025 at 19:09:35 to 11/05/2025 at 13:09:27\n• Connection: from 10/05/2025 at 19:08:54 to 11/05/2025 at 13:09:27\n• Charging duration: 17h 59min 51s\n• Energy consumed: 180.26 kWh\n• Start meter: 49,259.3\n• Stop meter: 49,439.5\n• Stop reason: Error occurred during charging\nThis incident prevented the full charging of the vehicle and may have disrupted operational planning.\nPlease open a ticket for analysis and resolution, and kindly provide us with the root cause and proposed corrective actions.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-05-12T06:27:13Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "283916b0-0a2f-f011-8c4d-6045bde0265d",
+            "subject": "ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R0 313281750001\nChargerID/Serial No.\n:\ncbk8c9\nProblem Description\n: Charging Session Issue\nFor future reference, your case number is\n0423690\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-12T08:25:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6d85cf7-142f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253",
+            "body": "Hi Malek, good morning. I hope you are doing well.\nI checked the session and it seems everything started and ended successfully. Here are my findings and be aware of the time difference:\nAt “our” 15:49 on the 11th May, the session stops due to the SoC reaching 100%. We can see that the EV is requesting 0 A since it's fully charged.\nAnd we can see right after this last log the stop charging request from the EV:\nAfterwards, is the problem, the BCB toggle is requesting authentication even though the config is correct.\nI will confirm why this happened and come back to you.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T09:39:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49ae12da-f62f-f011-8c4d-7c1e5235a84c",
+            "subject": "ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253",
+            "body": "Hi Malek, good afternoon.\nI rechecked the whole session and I made a mistake along the way because of the timestamps, here is the correct analysis:\nWe started the session here:\nAnd ended here:\nRight before we stop the session here are the values transmitted by the EV:\nSo the EV stopped the session and only the next day we remove the Plug.\nUnfortunately, I do not have the SECC logs from this session available. From our side, the EV reached 100% SoC so there was no error during charging.\nPlease let me know if you face this issue again so that I can proactively recover the logs since they are not in the system for long.\nThank you for your patience.\nBest regards,\nFrancisco",
+            "date": "2025-05-13T12:36:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a6c335d1-ff2f-f011-8c4d-7c1e5220bf23",
+            "subject": "[OURRY 160] ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253",
+            "body": "Hi Francisco,\nWe are experiencing an issue with the fast charger: it refuses to launch charging sessions for two trucks at the same time.\nThe\n\"agency side\"\nof the charger is working properly, but the\n\"depot exit side\"\nremains stuck with a solid green light. Please find attached some photos illustrating the situation.\nAs you can see in the screenshots, the issue was reported to me by email at\n9:30 PM on 10/05/2025\n.\nIn my opinion, the actual issue occurred earlier on the same day, around\n10/05/2025 at 19:09:35\n, before the user sent the email. The session on\nDC1\nended at 100% but displayed the message\n\"Error occurred during charging\"\n. Meanwhile,\nDC2\nremained in a fault state up to the present moment.\nAdditionally, as shown in the screenshots, no charging session was recorded on\nDC2\n, which suggests there is indeed a technical issue.\nWe would appreciate your help to better understand the root cause and find a resolution.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 13 mai 2025 15:11\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nNevo, Emmanuel <emmanuel.nevo@siemens.com>; emobility_support.si.fr@siemens.com; Nevo, Emmanuel <emmanuel.nevo@siemens.com>\nObjet :\nID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253\nImportance :\nHaute\nHi Malek, good afternoon.\nI rechecked the whole session and I made a mistake along the way because of the timestamps, here is the correct analysis:\nWe started the session here:\nAnd ended here:\nRight before we stop the session here are the values transmitted by the EV:\nSo the EV stopped the session and only the next day we remove the Plug.\nUnfortunately, I do not have the SECC logs from this session available. From our side, the EV reached 100% SoC so there was no error during charging.\nPlease let me know if you face this issue again so that I can proactively recover the logs since they are not in the system for long.\nThank you for your patience.\nBest regards,\nFrancisco",
+            "date": "2025-05-13T13:40:25Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bc4db189-0330-f011-8c4d-7c1e52768c07",
+            "subject": "[OURRY 160] ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:02679000253",
+            "body": "Hi Malek,\nThanks for the feedback.\nThen let's remove DC1 from the equation since the charging session worked completely well. So the error that showed on the HMI definitely seems to be related to the DC2.\nHere are my findings of the DC2 since 10th May 00:00 until 11th May 23:59\nFrom bottom to top, I only inserted here 3 examples out of 6 charging sessions where Authentication was not provided.\nThe only session that was able to pass the Authentication was here:\nHere we actually have a hardware issue so we will align with the regional colleagues for a site troubleshoot. They will align with you when they are allocated.\nIf there are more questions I add myself on the loop since I will have to forward this ticket to them.\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2025-05-13T14:07:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee0765cf-0430-f011-8c4d-7c1e52768c07",
+            "subject": "ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:00315002636",
+            "body": "Dear Colleagues, please replace QA13-14 on this charger as it has feedback stuck in ON. That's why the sessions in parallel are not working.\nI am writing to formally inform that we are moving case 0423690 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-13T14:16:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a55c4a9-4d36-f011-8c4e-7c1e52768372",
+            "subject": "A new case manager was assigned to 0423690 CRM:00225203812",
+            "body": "SEBASTIEN COLLET was assigned as new Case Manager for case 0423690 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=013f3528-fa2e-f011-8c4d-7c1e52361e39",
+            "date": "2025-05-21T14:12:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "16172fdb-b558-f011-877b-6045bdde4786",
+            "subject": "0423690 - ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:00568000296",
+            "body": "Bonjour Malek,\nPeux tu me donner l'adresse exacte du client afin de faire intervenir notre prestataire pour le changement des contacteurs QA13/QA14 comme préconisé ?\nEn te remerciant par avance,\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-07-04T09:04:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f105a809-c858-f011-877a-7c1e52206585",
+            "subject": "RE: 0423690 - ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:00568000296",
+            "body": "Bonjour Sébastien,\nl’adresse :\nOURRY\n5 Rue Alfred Suquet, 92230 Gennevilliers\nS’il vous plaît, tenez nous informer de la date de l’intervention afin de prévenir le client.\nBien à vous,\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 4 juillet 2025 11:04\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nBRUA, ANTOINE <antoine.brua@siemens.com>; CHERGUI, Ramdane <ramdane.chergui@siemens.com>; MBONGO, Naina <naina.mbongo@siemens.com>; Le Gal, Franck <franck.legal@siemens.com>\nObjet :\n0423690 - ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue CRM:00568000296\nBonjour Malek,\nPeux tu me donner l'adresse exacte du client afin de faire intervenir notre prestataire pour le changement des contacteurs QA13/QA14 comme préconisé ?\nEn te remerciant par avance,\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-07-04T11:14:30Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "89f77e55-1662-f011-bec3-7c1e52768372",
+            "subject": "RE: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127",
+            "body": "Bonjour,\nL'incident que vous avez signalé a été résolu. Le ticket correspondant sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention associé.\nN’hésitez pas à nous contacter si vous avez la moindre question ou besoin d’informations complémentaires.\nCordialement,\nRamdane CHERGUI",
+            "date": "2025-07-16T07:27:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e43d77e2-1662-f011-bec3-6045bde0265d",
+            "subject": "RE: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127",
+            "body": "Bonjour,\nL'incident que vous avez signalé a été résolu. Le ticket correspondant sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention associé.\nN’hésitez pas à nous contacter si vous avez la moindre question ou besoin d’informations complémentaires.\nCordialement,\nRamdane CHERGUI",
+            "date": "2025-07-16T07:31:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1c2f94e4-1662-f011-bec3-7c1e52768372",
+            "subject": "RE: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nWed Jul 16 2025 09:30:53 GMT+0200 (heure d’été d’Europe centrale)\nTo:\nMalek DRIF <m.drif@autorecharge.fr>; SI Emobility Technical Support <emobility_support.si@siemens.com>;\nCc:\nEmmanuel NEVO <emmanuel.nevo@siemens.com>; RC-FR SI E CS <emobility_support.si.fr@siemens.com>; Emmanuel Nevo <emmanuel.nevo@siemens.com>;\nSubject:\nRE: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127\nBonjour,\nL'incident que vous avez signalé a été résolu. Le ticket correspondant sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention associé.\nN’hésitez pas à nous contacter si vous avez la moindre question ou besoin d’informations complémentaires.\nCordialement,\nRamdane CHERGUI\n------------------- Original Message -------------------\nFrom:\nMalek DRIF <m.drif@autorecharge.fr>;\nReceived:\nMon May 12 2025 08:27:11 GMT+0200 (heure d’été d’Europe centrale)\nTo:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; eMobility Support Queue <emobility_support.si@siemens.com>;\nCc:\nEmmanuel NEVO <emmanuel.nevo@siemens.com>; RC-FR SI E CS <emobility_support.si.fr@siemens.com>; Emmanuel Nevo <emmanuel.nevo@siemens.com>;\nSubject:\n[OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001\nHello,\nI am contacting you to report an incident that impacted the charging of a truck on the Sicharge D charging station – S/N: Y2R0313281750001.\nCharging session details:\n• Period: from 10/05/2025 at 19:09:35 to 11/05/2025 at 13:09:27\n• Connection: from 10/05/2025 at 19:08:54 to 11/05/2025 at 13:09:27\n• Charging duration: 17h 59min 51s\n• Energy consumed: 180.26 kWh\n• Start meter: 49,259.3\n• Stop meter: 49,439.5\n• Stop reason: Error occurred during charging\nThis incident prevented the full charging of the vehicle and may have disrupted operational planning.\nPlease open a ticket for analysis and resolution, and kindly provide us with the root cause and proposed corrective actions.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-07-16T07:31:36Z",
+            "extra": {
+                "sender": "ramdane.chergui@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "411bbee5-1e62-f011-bec3-7c1e523508ba",
+            "subject": "Re: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127",
+            "body": "Bonjour Messieurs,\nC’est la deuxième fois qu’un technicien accède au site sans que nous en soyons informés à l’avance. Il ne s’agit pas d’une station-service en libre accès sur autoroute, mais bien d’un entrepôt logistique fermé, avec des procédures et des contraintes d’accès.\nDans ces conditions, il est impossible de garantir le bon déroulement des tests.\nMa question est simple : est-il acceptable d’intervenir sur un site privé sans prévenir ni prendre rendez-vous ?\nÀ l’avenir, merci de nous informer, Janusan et moi, en amont de toute intervention.\nCourtoises salutations,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nWednesday, July 16, 2025 9:30:56 AM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>\nCc :\nNevo, Emmanuel <emmanuel.nevo@siemens.com>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; Nevo, Emmanuel <emmanuel.nevo@siemens.com>\nObjet :\nRE: [OURRY] Ticket Request – Incident on Sicharge D Charging Station Y2R0313281750001 CRM:02441000127\nBonjour,\nL'incident que vous avez signalé a été résolu. Le ticket correspondant sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention associé.\nN’hésitez pas à nous contacter si vous avez la moindre question ou besoin d’informations complémentaires.\nCordialement,\nRamdane CHERGUI",
+            "date": "2025-07-16T08:28:58Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10ddc9e8-1e62-f011-bec1-7c1e5277cc1f",
+            "subject": "Email sent to a closed case 'ID0423690-DC/Si-D/FR-[Y2 / R0 313281750001] Charging Session Issue (0423690)' CRM:00225229251",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0423690\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-16T08:29:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "incident_id": "7c3bb065-06a1-ef11-8a6a-6045bdde0ce3",
+    "ticket_number": "0389458",
+    "title": "ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2",
+    "created_on": "2024-11-12T14:57:20Z",
+    "last_activity": "2026-02-17T08:15:04Z",
+    "age": "14636",
+    "description": "Reported behavior/issue:  Unable to charge with CP2 (problem with authorization)\nRoot cause:\nSolution:  Information provided, No response on multiple follow-ups.\nOn DAMEX Sanctioned List:\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "PWnLON",
+    "stage": null,
+    "serial_number": "MP / P9 170000982",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "2f9c2966-06a1-ef11-8a69-0022489fb3e7",
+            "subject": "Webform_incident_SiCharge D_12-11-2024_SN: 170000982",
+            "body": "Dear Konrad Frach,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000982\nThank you\neMobility Technical Support Team\nSehr geehrte/r Konrad Frach,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000982\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-11-12T14:57:15Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "33b239e0-14a1-ef11-8a69-000d3ab655d3",
+            "subject": "A new case manager was assigned to 0389458 CRM:00225123468",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0389458 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7c3bb065-06a1-ef11-8a6a-6045bdde0ce3",
+            "date": "2024-11-12T16:40:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3dd7379f-65e1-9906-a7d1-a7b288c10b86",
+            "subject": "Reported issue ",
+            "body": "A customer reported a problem with authorisation for CP2 to us. He is sending logs from the backend to determine the session and time. Session ID: 1bsgis8feftqkb and 8wbzf5ff5h80x. I am unable to determine for what reason the sessions were interrupted. A changeconfiguration was uploaded prior to these two sessions",
+            "date": "2024-11-12T16:50:07Z",
+            "extra": {}
+        },
+        {
+            "id": "0b916938-16a1-ef11-8a6a-0022489bcff4",
+            "subject": "0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Konrad,\nThank you for reaching out to eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000982\nChargerID/Serial No.\n:\nPWnLON\nProblem Description\n:\nUnable to charge with DC2\nPlease give us some time to review the logs. We will get back to you once we've completed our analysis.\nFor future reference, your ticket number is\n0389458\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-12T16:50:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22c969fc-52a2-ef11-8a6a-002248a29667",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Konrad,\nThank you for your patience while I reviewed the logs related to the charging issue you reported.\nOn\n2024-11-12 at 09:05:54\n, the charger began the process of initiating a charging session on\nConnector 1\n. However, within\n15-20 seconds\n, a session stop request was received from the user, preventing the charger from starting the charging process. As a result, the charger briefly changed to a \"faulted\" state for approximately\n3-4 seconds\n.\nAfter this, at\n09:07:57\n, the charger successfully started charging on\nDC2\nwith\ntransaction ID: 789803462\n, and the session continued until\n09:51:01\n. Later, the charger initiated another successful charging session on\nDC1\nwith\ntransaction ID: 280834512\n, starting at\n11:03:45\nand concluding at\n11:40:43\n.\nBoth outlets are working fine.\nPlease let us know if you have any further questions, or if we can proceed to close this ticket.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-14T06:37:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "85df2748-96a2-ef11-8a6a-000d3addcd64",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Hi,\nI would like to do a thorough analysis with you on what exactly happened during this time.\nReported to us:\n“We encountered a problem with starting charging at point one. At the station was Jakub M, who authorized himself using a mobile app (android) from his business account (free price list). In the station's logs, we noted the status “Preparing” and then “Accepted” several times - a screenshot of the logs below, yet the app was able to immediately throw the error “Time to connect has expired” (certainly not a timeout).”\n{\n\"id\": \"1bsgis8feftqkb\",\n\"payload\": {\n\"additionalInfo\": {\n\"callId\": \"67331a473afce8_82110205\"\n},\n\"resourceId\": 1242992,\n\"method\": \"RemoteStartTransaction\",\n\"payload\": \"[object] (stdClass: {\\\"status\\\":\\\"Accepted\\\"})\",\n\"uniqConnectionId\": \"d952b3d5-e112-4dc1-8181-7b01f127e34d\",\n\"direction\": \"INCOMING message TO SERVER\",\n\"chargerUuid\": \"ba13a519-9b6d-4379-ab24-ebfbb2c5b06a\",\n\"message\": \"INCOMING message TO SERVER\"\n},\n\"timestamp\": \"2024-11-12T09:05:11.439660Z\"\nThe customer then restarted the station, but still had problems on CP1. On CP2 he had no such problems.\nA while before the trials, I can see the changes through GetConfiguration, you can see them about time:\n2024-11-12T09:01:31.333859+00:00 sicharge-cp [local0:info] sicharge-cp-backend/22804be356a4[700]: OCPP: Received command: GetConfiguration (conf6733196b3fa1e8_91058629) - {\"key\":[\"ConnectionTimeOut\"]}\nThen on my first attempt at CP1, I see:\n2024-11-12T09:05:04.000000+00:00 secc-le [daemon:notice] SECC[848]: {\"type\":\"session_start\",\"timestamp\":1731402304311,\"chargerId\":\"secc2300-02193\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"user\":\"\"}}\n2024-11-12T09:05:11.437337+00:00 sicharge-cp [local0:info] sicharge-cp-backend/22804be356a4[700]: OCPP: Send result: RemoteStartTransaction (67331a473afce8_82110205) - {\"status\":\"Accepted\"}\n2024-11-12T09:05:18.259220+00:00 swcpu [user:debug] [DCC] DC1: PilotState \"B2\" --> \"A\"\n2024-11-12T09:05:18.652299+00:00 sicharge-cp [local0:info] ecog-secc-adapter/d005bedef22d[700]: {\"type\":\"stack_started\",\"timestamp\":1731402317000,\"chargerId\":\"\",\"outlet\":\"\",\"outletType\":\"CCS\"}\n2024-11-12T09:05:19.567119+00:00 swcpu [user:debug] [DCC] DC1: PilotState \"A\" --> \"E\"\n2024-11-12T09:05:22.808594+00:00 sicharge-cp [local0:err] ecog-secc-adapter/d005bedef22d[700]: Error: No reply in 4.25s\n2024-11-12T09:05:22.810350+00:00 sicharge-cp [local0:err] ecog-secc-adapter/d005bedef22d[700]: at Timeout._onTimeout (/app/node_modules/coap/lib/retry_send.js:74:16)\n2024-11-12T09:05:23.862674+00:00 sicharge-cp [local0:info] sicharge-cp-backend/22804be356a4[700]: secc events: {\"type\":\"SeccSessionStop\",\"outletId\":1,\"state\":{\"timestamp\":1731402322178,\"EVCCID\":\"\",\"EVMAC\":\"\",\"SLAC\":{\"link\":\"no PLC link\",\"error\":false,\"init\":false},\"bookedfor\":\"\",\"controller\":\"SECC2300LE\",…….\n2024-11-12T09:05:25.098837+00:00 sicharge-cp [local0:info] sicharge-cp-backend/22804be356a4[700]: setOutletLedState error 1\n2024-11-12T09:05:25.733029+00:00 sicharge-cp [local0:info] sicharge-cp-backend/22804be356a4[700]: OCPP: Send command: StatusNotification (f2b72c98-3348-4a6d-a5b4-d302e134b322) - {\"connectorId\":1,\"errorCode\":\"InternalError\",\"status\":\"Faulted\"}\nWhich coincides with the customer's first situation. Why did EcoG initiate a timeout error at that time?\nSecond attempt -\nIs this where the EV-EVSE connection was disconnected in some way?  Is it simply a loss of communication when the plug is in the socket?\nAnother attempt with an authentication error - I assume an error on the MSP side.\nThe session then ran on DC2 without any problem.\nDo we have a problem on the CP1 side here? Is he running too slow? Is the problem on the MSP side of not providing information?\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2024-11-14T14:39:43Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9794125e-a8a2-ef11-8a6a-0022489ec7b5",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nHope you are doing well.\nWe have reviewed the logs again.\nTo assist us in troubleshooting and further investigation, could you kindly provide the following details:\nHas the OCPP backend been integrated successfully?\nWhich EV was charging at the time, and could you please provide the model number of the vehicle?\nWe suspect there might be a communication issue between the EV and the EVSE, potentially causing the EV to change its state.\nYour prompt response will help us resolve the issue efficiently.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-14T16:49:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "89520a80-35a3-ef11-8a69-000d3ab41b62",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Hello,\nThanks for your reply!\n1 The station is integrated with ELOCITY - everything should be fine. We will perform additional tests on the days.\n2. VW ID3 PRO 150 kW for both charging points.\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2024-11-15T09:39:33Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "690ac021-59a3-ef11-8a69-000d3ab009dd",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nThank you for the information.\nPlease perform the additional tests and let us know if you require any support from our side.\nBegin charging with authorization first, then connect the cable and verify the result.\n2.Are you experiencing the same issue with any other vehicles as well?\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-15T13:54:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b11dd44-e5a5-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nHope you are doing well!\nWe kindly request your timely response.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-18T19:42:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0e49ef44-6ca7-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nHope you are doing well. We haven't heard back from you on ticket# 0389458 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-20T18:21:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c61b1789-6ca7-ef11-b8e8-000d3adb68c6",
+            "subject": "Automatyczna odpowiedź: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Szanowni Państwo,\nw dniach 19-20.11.2024 przebywam na zwolnieniu lekarskim. W sprawach pilnych uprzejmię proszę o kontakt z:\nKonrad Frach\nkonrad.frach.ext@siemens.com\n+48 880432592\nZ wyrazami szacunku\nSzymon Brodowicz\nPhone: +48 882490147",
+            "date": "2024-11-20T18:23:31Z",
+            "extra": {
+                "sender": "szymon.brodowicz@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6c084538-60a8-ef11-b8e9-000d3addcd64",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nHope you are doing well. We haven't heard back from you on ticket# 0389458 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-21T23:27:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "690f8d6b-02a9-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: 0389458 - ID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2 CRM:02023000295",
+            "body": "Dear Szymon,\nThis in regards to your ticket# 0389458 for which we haven't received a response yet.\nWe understand that you might be busy or you were able to resolve the issue by yourself. Hence, we shall proceed with closing out this ticket.\nIf you still require assistance on this matter, please do drop us a new email at\nemobility_support.si@siemens.com\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you!\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-22T18:49:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c51c2cd-02a9-ef11-b8e9-6045bdde0ce3",
+            "subject": "Ticket 0389458 has been closed. Are you satisfied with our provided solution? CRM:02023000331",
+            "body": "Dear Konrad,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0389458\nwith the title:\nID0389458-DC/Si-D/PL-[MP / P9 170000982] Unable to charge with DC2\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-22T18:51:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

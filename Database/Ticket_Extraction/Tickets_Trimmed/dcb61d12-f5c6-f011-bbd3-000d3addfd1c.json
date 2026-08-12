@@ -1,0 +1,123 @@
+{
+    "incident_id": "dcb61d12-f5c6-f011-bbd3-000d3addfd1c",
+    "ticket_number": "0463395",
+    "title": "ID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue",
+    "created_on": "2025-11-21T16:13:53Z",
+    "last_activity": "2026-02-05T13:17:49Z",
+    "age": "109264",
+    "description": "Reported behavior/issue-\nthe issue is, when a user starts a transaction, no MeterValues are being sent\nback to the OCP,\nSolution:-\nyyyy-mm-dd:-",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "MP / R4 170001785",
+    "case_nature_code": 580000001,
+    "chargerID": "Zxa4Mx",
+    "additional_info": [
+        {
+            "id": "c925d309-f5c6-f011-bbd2-7ced8d425658",
+            "subject": null,
+            "body": "Hello we are having issues with missing packets from OCPP,\nthe issue is, when a user starts a transaction, no MeterValues are being sent back to the OCP,\nwe need help enabling all meter values to be sent back to us via OCPP.\nHere is the info on the charger:\nv2.11.0-0-geeb1d66\nID Zxa4Mx\nI need the charger to be updated, and the MeterValues to be sent each 30 seconds, can you please help?",
+            "date": "2025-11-21T16:13:46Z",
+            "extra": {
+                "sender": "angelo@coulombenergia.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c3522f30-f6c6-f011-bbd3-000d3addfd1c",
+            "subject": "A new case manager was assigned to 0463395 CRM:00225292107",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0463395 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcb61d12-f5c6-f011-bbd3-000d3addfd1c",
+            "date": "2025-11-21T16:21:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "979675ab-dcd4-cbf5-8d5f-8daf6b566f2b",
+            "subject": "Error Description",
+            "body": "Hello we are having issues with missing packets from OCPP,\nthe issue is, when a user starts a transaction, no MeterValues are being sent\nback to the OCP,\nwe need help enabling all meter values to be sent back to us via OCPP.\nHere is the info on the charger:\nv2.11.0-0-geeb1d66\nID Zxa4Mx\nI need the charger to be updated, and the MeterValues to be sent each 30\nseconds, can you please help?",
+            "date": "2025-11-21T16:23:57Z",
+            "extra": {}
+        },
+        {
+            "id": "316228d0-f6c6-f011-bbd3-7c1e52880b1b",
+            "subject": "ID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue CRM:02889000874",
+            "body": "Dear\nAngelo Rodem\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/R4 170001785\nChargerID\n:\nZxa4Mx\nProblem Description\n: W\nhen a user starts a transaction, no Meter Values are being sent\nback to the OCP,\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0463395\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-21T16:26:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0faef32e-f7c6-f011-bbd3-7c1e52362b38",
+            "subject": "A new case manager was assigned to 0463395 CRM:00225292113",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0463395 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcb61d12-f5c6-f011-bbd3-000d3addfd1c",
+            "date": "2025-11-21T16:29:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cb165027-37c9-f011-bbd2-000d3ab6151b",
+            "subject": "ID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue CRM:02889000874",
+            "body": "Dear\nAngelo Rodem\n,\nThe reason no MeterValues are being sent back to the OCP  is that this charger model does not include meter. Because of that, the station is unable to generate or transmit MeterValues during a transaction.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2025-11-24T13:11:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a345847-3ec9-f011-bbd3-7ced8d425d60",
+            "subject": "Re: ID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue CRM:02889000874",
+            "body": "That is impossible, really impossible, if it did not had a meter the stop transaction packages would not wor, and also we saw the logs, all of the data is indeed collected, can you route me to someone with expertise on this charger? This is important.\nEm seg., 24 de nov. de 2025, 10:52,\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> escreveu:\nDear\nAngelo Rodem\n,\nThe reason no MeterValues are being sent back to the OCP  is that this charger model does not include meter. Because of that, the station is unable to generate or transmit MeterValues during a transaction.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2025-11-24T14:03:07Z",
+            "extra": {
+                "sender": "angelo@coulombenergia.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bd015870-70cb-f011-bbd2-7ced8d425658",
+            "subject": "A new case manager was assigned to 0463395 CRM:00225294797",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0463395 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dcb61d12-f5c6-f011-bbd3-000d3addfd1c",
+            "date": "2025-11-27T09:07:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6b0aefa-9402-f111-8407-000d3ab12e50",
+            "subject": "0463395 - ID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue CRM:00472000540",
+            "body": "Dear Angelo,\nThe issue was reported in a very old FW version (v2.11), now it's running version v8.0.5.\nI took a look in the past charging sessions and we are sending the meterStart values as requested. I will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2026-02-05T13:17:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6adbfb0f-9502-f111-8407-000d3ab11366",
+            "subject": "Ticket 0463395 has been closed. Are you satisfied with our provided solution? CRM:00225331720",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0463395\nwith the title:\nID0463395-DC/Si-D/BR-[MP/R4 170001785] Meter value issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-02-05T13:17:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "incident_id": "b4698c54-6aa3-f011-bbd3-6045bddf319c",
+    "ticket_number": "0454099",
+    "title": "ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\"",
+    "created_on": "2025-10-07T10:42:43Z",
+    "last_activity": "2026-01-30T08:05:46Z",
+    "age": "165416",
+    "description": "Reported behavior/issue - Software crashed\nSolution: Flash the CFAST card",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "MP / R4 170001812",
+    "case_nature_code": 580000001,
+    "chargerID": "B3U2G3",
+    "additional_info": [
+        {
+            "id": "bce7cc4f-6aa3-f011-bbd2-7c1e52fa89ea",
+            "subject": "Webform_incident_SiCharge D_07-10-2025_SN: 170001812",
+            "body": "Dear Kathrin Soares,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001812\nThank you\neMobility Technical Support Team\nSehr geehrte/r Kathrin Soares,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001812\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-07T10:42:32Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9afcb46d-6aa3-f011-bbd2-7c1e52fa89ea",
+            "subject": "A new case manager was assigned to 0454099 CRM:00225267526",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0454099 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b4698c54-6aa3-f011-bbd3-6045bddf319c",
+            "date": "2025-10-07T10:43:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf2f4fa8-6ba3-f011-bbd3-7c1e5236cda4",
+            "subject": "ID0454099-DC/Si-D/DE-[MP / R4 170001812] Hardware or software error. CRM:03056000109",
+            "body": "Dear\nKathrin\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R4 170001812\nChargerID\n:\nB3U2G3\nProblem Description\n: Hardware or software error.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0454099\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-07T10:52:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d69f392-1da4-f011-bbd2-6045bddde3c6",
+            "subject": "A new case manager was assigned to 0454099 CRM:00225268073",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0454099 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b4698c54-6aa3-f011-bbd3-6045bddf319c",
+            "date": "2025-10-08T08:05:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c95f8aae-46a4-f011-bbd3-7c1e5236eee4",
+            "subject": "RE: ID0454099-DC/Si-D/DE-[MP / R4 170001812] Hardware or software error. CRM:03056000109",
+            "body": "Dear colleagues,\nI am reaching out in regards of ticket\nID0454099.\nThe ticket has been opened from Daimler side for issue on charger\nMP/R4 170001812.\nI took a look at the charger, and I can see that the sicharge-cp-backend is looping as a result of FW corruption from the error-flags-offline.json file. The charger is offline on SCB, even though the logs related to the sicharge-cp-backend are incoming. Visible error is:\nsicharge-cp-backend.service: Main process exited, code=exited, status=1/FAILURE\nI already asked R&D if it was possible to restart remotely the sicharge-cp-backend.service remotely from their side, but the charger it is not reachable.\nTherefore, it is necessary to go onsite and flash the CFast card. As the charger is running on v5.0.21, I would suggest to flash the charger to v8.0.5, so to avoid future corruption of the FW in the same way.\nFor this reason, I am handing over the ticket\n0454099\n﻿from the Technical Support to the\neMobility RC-DE SI E Queue\n.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-DE SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-08T12:59:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4cc5c8a-e1a8-f011-bbd2-7c1e52362ec6",
+            "subject": "AW: ID0454099-DC/Si-D/DE-[MP / R4 170001812] Hardware or software error. CRM:03056000109",
+            "body": "Hello,\nunfortunately, the DC charger is still not running, which is not acceptable.\nCan you please give me an update on the matter? How long will it take to solve the issue?\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 8. Oktober 2025 16:24\nAn:\nservice-emobility.si.de@siemens.com\nCc:\nSoares Goncalves, Kathrin (227) <kathrin.soares_goncalves@daimlertruck.com>\nBetreff:\nRE: ID0454099-DC/Si-D/DE-[MP / R4 170001812] Hardware or software error. CRM:03056000109\nSie erhalten nicht häufig E-Mails von\nemobility_support.si@siemens.com\n.\nErfahren Sie, warum dies wichtig ist\nDear colleagues,\nI am reaching out in regards of ticket\nID0454099.\nThe ticket has been opened from Daimler side for issue on charger\nMP/R4 170001812.\nI took a look at the charger, and I can see that the sicharge-cp-backend is looping as a result of FW corruption from the error-flags-offline.json file. The charger is offline on SCB, even though the logs related to the sicharge-cp-backend are incoming. Visible error is:\nsicharge-cp-backend.service: Main process exited, code=exited, status=1/FAILURE\nI already asked R&D if it was possible to restart remotely the sicharge-cp-backend.service remotely from their side, but the charger it is not reachable.\nTherefore, it is necessary to go onsite and flash the CFast card. As the charger is running on v5.0.21, I would suggest to flash the charger to v8.0.5, so to avoid future corruption of the FW in the same way.\nFor this reason, I am handing over the ticket\n0454099\n﻿from the Technical Support to the\neMobility RC-DE SI E Queue\n.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-DE SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-14T09:38:39Z",
+            "extra": {
+                "sender": "kathrin.soares_goncalves@daimlertruck.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c2d8b2d0-9ca9-f011-bbd2-000d3ab479bf",
+            "subject": "ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955",
+            "body": "Sehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0454099\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-10-15T07:59:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "848a090d-cfd1-f8b4-be99-51ec5081e59b",
+            "subject": "Semih ",
+            "body": "Leider muss hier jemand vor Ort die Cfast Karte Flashen. Konfig ist hier angehängt\ngebraucht wird:\nCfast Karte: 6ES7648-2BF10-0XM1\nCfast card reader\nTastatur\nUSB",
+            "date": "2025-10-15T08:28:39Z",
+            "extra": {}
+        },
+        {
+            "id": "4da1c202-a1a9-f011-bbd2-000d3a668a5e",
+            "subject": "A new case manager was assigned to 0454099 CRM:00225271973",
+            "body": "Stefan Jordan was assigned as new Case Manager for case 0454099 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b4698c54-6aa3-f011-bbd3-6045bddf319c",
+            "date": "2025-10-15T08:29:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cb4c8952-a3a9-f011-bbd2-7ced8d476e92",
+            "subject": "AW: ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955",
+            "body": "Guten Tag,\nich würde eine Bestellung auslösen, mit welcher der Auftrag genehmigt wäre. Können Sie mir eine ungefähre Angabe machen, welche Kosten anfallen werden, also wie viele Stunden Ihre Mitarbeiter ca. benötigen werden und wie viele km die Anfahrt beträgt?\nVielen Dank für Ihre Unterstützung!\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 15. Oktober 2025 10:06\nAn:\nSoares Goncalves, Kathrin (227) <kathrin.soares_goncalves@daimlertruck.com>\nBetreff:\nID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955\nSehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0454099, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nThis email may contain confidential or personal information. If you are not the intended recipient,\nplease inform the sender, delete the email, and do not share its contents. Thank you.",
+            "date": "2025-10-15T08:45:48Z",
+            "extra": {
+                "sender": "kathrin.soares_goncalves@daimlertruck.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "416f5c3b-94ad-f011-bbd2-6045bddfa04d",
+            "subject": "WG: ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955",
+            "body": "Guten Tag Herr Theil,\nich habe letzte Woche die Information erhalten, dass ein Technikereinsatz vor Ort notwendig ist. Dafür wurde mir ein Störschreiben zugeschickt, s. Anhang.\nDieses kann ich leider nicht unterschreiben, der Prozess in unserem Unternehmen schreibt mir vor, hier eine Bedarfsanforderung bzw. Bestellung auszulösen, mit welcher der Technikereinsatz beauftragt wird. Ich habe das so auch mitgeteilt, jedoch bisher keine Antwort erhalten.\nKönnen Sie sich den Sachverhalt anschauen und mir Rückmeldung geben? Wir benötigen hier wirklich dringend eine Lösung!\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nSoares Goncalves, Kathrin (227)\nGesendet:\nMittwoch, 15. Oktober 2025 10:46\nAn:\n'emobility_support.si@siemens.com' <emobility_support.si@siemens.com>\nBetreff:\nAW: ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955\nGuten Tag,\nich würde eine Bestellung auslösen, mit welcher der Auftrag genehmigt wäre. Können Sie mir eine ungefähre Angabe machen, welche Kosten anfallen werden, also wie viele Stunden Ihre Mitarbeiter ca. benötigen werden und wie viele km die Anfahrt beträgt?\nVielen Dank für Ihre Unterstützung!\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMittwoch, 15. Oktober 2025 10:06\nAn:\nSoares Goncalves, Kathrin (227) <\nkathrin.soares_goncalves@daimlertruck.com\n>\nBetreff:\nID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:00439000955\nSehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen. Falls Ihre Ladesäule ERK-zertifiziert ist, müssten Sie uns vorab bitte zusätzlich noch bestätigen, dass diese wenn sie für öffentliches Laden genutzt wird, bereits bei der Bundesnetzagentur bzw. dem Eichamt registriert wurde. Ohne dies ist leider kein Technikereinsatz möglich. Sollte ihre Säule nicht öffentlich genutzt werden, teilen sie uns dies bitte mit. Beachten sie das wir dann, nach der Instandsetzung keine eichrechtskonforme Messung durchführen und dies auch nicht dem zuständigen Eichamt melden.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0454099, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nMit freundlichen Grüßen\nIhr eMobility Services Deutschland Team\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nThis email may contain confidential or personal information. If you are not the intended recipient,\nplease inform the sender, delete the email, and do not share its contents. Thank you.",
+            "date": "2025-10-20T09:07:43Z",
+            "extra": {
+                "sender": "kathrin.soares_goncalves@daimlertruck.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9fb69fec-81ae-f011-bbd2-7c1e52880fe1",
+            "subject": "0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020",
+            "body": "Hallo Frau Soares,\nentschuldigen Sie die späte Rückmeldung.\nHerr Theil hat mich darauf aufmerksam gemacht, dass Sie auf eine Antwort warten.\nDa ich jetzt nicht weiß, ob Sie ein offizielles Angebot benötigen,  oder Ihnen eine ungefähre Auskunft hier genügt:\nDie Fahrzeit wird ca. 90 Minuten betragen, die reine Arbeitszeit beläuft sich auf ca. 2 Stunden vor Ort.\nMacht in Summe 3,5h bei einem Stundensatz von 190€ -> ca. 665€.\nSollten Sie dies nochmal explizit als Angebot benötigen, lassen Sie mich dies gerne wissen, dann würde ich mich um die Angebotslegung bemühen.\nBei Rückfragen melden Sie sich gern direkt bei mir.\nMit freundlichen Grüßen / best regards\nStefan Jordan\nHeliox Leistungselektronik GmbH\nSI E EU DE CS\nLöwenstraße 11a, 44135 Dortmund, Germany\nMobile: +49 (0)151 22167618\nmailto:\nstefan.jordan@siemens.com",
+            "date": "2025-10-21T13:29:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bea1ffca-11af-f011-bbd2-7c1e52880fe1",
+            "subject": "0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000021",
+            "body": "Hallo ihr beiden,\nich brauche folgendes Serviceangebot:\nKundenname\nAnsprechpartner\nAdresse\nDaimler Truck AG, Nutzfahrzeugzentrum Haan\nKathrin Soares\nAn der Backesheide 1\n42781 Haan\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nService-Leistungsumfang\nReparatur inkl. An- und Abfahrt und OM: 4h = 760EUR\nTitel: Cfast Card flashen\nViele Grüße\nStefan",
+            "date": "2025-10-22T06:39:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df8db513-52af-f011-bbd2-7c1e52880fe1",
+            "subject": "AW: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000021",
+            "body": "Hi Stefan,\nanbei das Angebot mit der Bitte um Prüfung, Unterschrift, Ablage und Versand an den Kunden.\nVG\nNiko\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 22. Oktober 2025 08:39\nAn:\nSwehla, Nikolas Soufian (SI E EU DE S) <nikolas.swehla@siemens.com>; Weber, Ralf (SI E EU DE S) <weber.ralf@siemens.com>\nBetreff:\n0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000021\nHallo ihr beiden,\nich brauche folgendes Serviceangebot:\nKundenname\nAnsprechpartner\nAdresse\nDaimler Truck AG, Nutzfahrzeugzentrum Haan\nKathrin Soares\nAn der Backesheide 1\n42781 Haan\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nService-Leistungsumfang\nReparatur inkl. An- und Abfahrt und OM: 4h = 760EUR\nTitel: Cfast Card flashen\nViele Grüße\nStefan",
+            "date": "2025-10-22T14:19:11Z",
+            "extra": {
+                "sender": "nikolas.swehla@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4235819d-22b3-f011-bbd2-7c1e52362ec6",
+            "subject": "WG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020",
+            "body": "Guten Tag Herr Jordan,\nleider habe ich bisher noch kein Angebot von Ihnen erhalten.\nBitte priorisieren Sie die Angebotserstellung, damit der Technikereinsatz so schnell wie möglich stattfinden kann. Die Ladesäule ist jetzt seit Ende August nicht mehr nutzbar von uns. Dieser Zustand ist nicht weiter tragbar! Das Ticket bei Siemens habe ich am 07.10.2025 eröffnet, auch das ist mittlerweile fast 3 Wochen her.\nIch bitte hier um schnellstmögliche Bearbeitung unseres Anliegens und zeitnahe Rückmeldung.\nVielen Dank\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nSoares Goncalves, Kathrin (227)\nGesendet:\nMittwoch, 22. Oktober 2025 08:30\nAn:\nJordan, Stefan <stefan.jordan@siemens.com>\nBetreff:\nWG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020\nGuten Morgen Herr Jordan,\nein Angebot wäre ideal, dann würde ich eine Bestellung gemäß Angebot auslösen.\nSoll diese Bestellung dann zu Ihren Händen versendet werden?\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 21. Oktober 2025 15:29\nAn:\nSoares Goncalves, Kathrin (227) <kathrin.soares_goncalves@daimlertruck.com>\nCc:\nJordan, Stefan <stefan.jordan@siemens.com>\nBetreff:\n0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020\nHallo Frau Soares,\nentschuldigen Sie die späte Rückmeldung.\nHerr Theil hat mich darauf aufmerksam gemacht, dass Sie auf eine Antwort warten.\nDa ich jetzt nicht weiß, ob Sie ein offizielles Angebot benötigen,  oder Ihnen eine ungefähre Auskunft hier genügt:\nDie Fahrzeit wird ca. 90 Minuten betragen, die reine Arbeitszeit beläuft sich auf ca. 2 Stunden vor Ort.\nMacht in Summe 3,5h bei einem Stundensatz von 190€ -> ca. 665€.\nSollten Sie dies nochmal explizit als Angebot benötigen, lassen Sie mich dies gerne wissen, dann würde ich mich um die Angebotslegung bemühen.\nBei Rückfragen melden Sie sich gern direkt bei mir.\nMit freundlichen Grüßen / best regards\nStefan Jordan\nHeliox Leistungselektronik GmbH\nSI E EU DE CS\nLöwenstraße 11a, 44135 Dortmund, Germany\nMobile: +49 (0)151 22167618\nmailto:\nstefan.jordan@siemens.com\nTo help protect sensitive information, avoid including confidential details in unencrypted replies.\nUse encryption if sending attachments or other sensitive content. If you're not the intended recipient,\nplease notify the sender, delete the email, and do not share its contents. Thank you.",
+            "date": "2025-10-27T10:49:35Z",
+            "extra": {
+                "sender": "kathrin.soares_goncalves@daimlertruck.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f4236cf1-d3b4-f011-bbd2-7c1e5236229d",
+            "subject": "RE: WG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020",
+            "body": "Hallo Frau Soares,\nanbei übersende ich Ihnen das gewünschte Angebot!\nDie lange Bearbeitungszeit bitte ich zu entschuldigen.\nMit freundlichen Grüßen\nStefan Jordan",
+            "date": "2025-10-29T14:31:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6c84515e-d4b4-f011-bbd2-7ced8d4258c6",
+            "subject": "RE: WG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020",
+            "body": "Hallo Frau Soares,\nanbei übersende ich Ihnen das gewünschte Angebot!\nDie lange Bearbeitungszeit bitte ich zu entschuldigen.\nMit freundlichen Grüßen\nStefan Jordan",
+            "date": "2025-10-29T14:34:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "580b40f8-7db8-f011-bbd2-7ced8d425d60",
+            "subject": "AW: WG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020",
+            "body": "Guten Tag Herr Jordan,\nanbei erhalten Sie die Bestellung zu Ihrem Angebot.\nZur Terminabstimmung bitte ich Sie sich an Herrn Tobias Volkner, +49 1608650694,  tobias.t.volkner@daimlertruck.com oder Herrn Thomas Karnofsky, +49 151  51307668, thomas.karnofsky@daimlertruck.com, zu wenden.\nDie Bestellung wurde von meiner Kollegin bereits an den in unserem Lieferantenportal hinterlegten Ansprechpartner, Herrn Nikolas Swehla, versendet.\nMit freundlichen Grüßen / With kind regards\nKathrin Soares\nkfm. Facility Management\nFTB|SR-D\nBesucheradresse:\nDaimler Truck AG\nNutzfahrzeugzentrum Mercedes-Benz Nürnberg\nNeumeyerstraße 7-11, 90411 Nürnberg\nTelefon: +49 911 25229 254\nE-Mail:\nkathrin.soares_goncalves@daimlertruck.com\nwww.mercedes-benz-trucks-nuernberg.de\nDiese E-Mail kann vertrauliche Informationen enthalten. Sollten Sie nicht der Adressat sein, sind Sie nicht zur Verwendung der in dieser E-Mail enthaltenen Informationen befugt. Bitte benachrichtigen Sie uns über den irrtümlichen Erhalt.\nDaimler Truck AG, Stuttgart, Germany\nSitz/Domicile: Stuttgart, Registergericht/Court of Registry: AG Stuttgart, HRB - Nr./Commercial Register No.: 762884\nVorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Joe Kaeser\nVorstand/Board of Management: Karin Rådström, Vorsitzende/Chairwoman: Karl Deppen, Andreas Gorbach, Jürgen Hartwig, John O`Leary, Achim Puchert, Eva Scherer\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 29. Oktober 2025 15:33\nAn:\nSoares Goncalves, Kathrin (227) <kathrin.soares_goncalves@daimlertruck.com>; Jordan, Stefan <stefan.jordan@siemens.com>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>\nCc:\nTheil, Sascha <sascha.theil@siemens.com>; Theil, Sascha <sascha.theil@siemens.com>\nBetreff:\nRE: WG: 0454099 - ID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\" CRM:02558000020\nHallo Frau Soares,\nanbei übersende ich Ihnen das gewünschte Angebot!\nDie lange Bearbeitungszeit bitte ich zu entschuldigen.\nMit freundlichen Grüßen\nStefan Jordan",
+            "date": "2025-11-03T06:26:07Z",
+            "extra": {
+                "sender": "kathrin.soares_goncalves@daimlertruck.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a1c42ee5-1abe-472c-96c8-f0b8709462ec",
+            "subject": "Email an Daimler geschrieben",
+            "body": "Terminanfrage an 'tobias.t.volkner@daimlertruck.com'; 'thomas.karnofsky@daimlertruck.com' am 03.11. abgeschickt",
+            "date": "2025-11-05T08:59:13Z",
+            "extra": {}
+        },
+        {
+            "id": "0550af9b-aefd-f011-8407-000d3ab12a39",
+            "subject": "Ticket 0454099 has been closed. Are you satisfied with our provided solution? CRM:00225327813",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0454099\nwith the title:\nID0454099-DC/Si-D/DE-[MP / R4 170001812] sicharge-cp-backend \"1/FAILURE\"\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-30T07:38:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

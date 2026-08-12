@@ -1,0 +1,166 @@
+{
+    "incident_id": "dd65ce9f-f18a-ef11-ac21-000d3ab4d5d3",
+    "ticket_number": "0384689",
+    "title": "ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler",
+    "created_on": "2024-10-15T12:33:12Z",
+    "last_activity": "2025-12-16T14:05:08Z",
+    "age": "2891",
+    "description": "Reported behaviour/issue:\nPilotState change\nRoot cause:\nIMD_FAULT_DC2 IsoStatusNotValid\nSolution:\nThe IMD recovers the selftest after some time. Wait for the test to be performed\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\nActive\nproblem charging our vehicle at your DC charging station at Rosi's rest area in Ledehose. The vehicle is plugged in for charging with a SoC of 27%. What is noticeable on the first and second plug-in attempt is that the pilot signal switches between static pilot, no pilot and 5% no readiness for charging. The vehicle then switched to charging error. On the third attempt, communication is terminated due to SupportedAppProtocol_failed\n12.10.2024 22:02:40 Uhr",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "ugTWsO",
+    "stage": null,
+    "serial_number": "MP / R0 170002549",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "addffe9e-f18a-ef11-ac21-000d3a6610b3",
+            "subject": "kein DC-Laden am Rastplatz Rosi's in Lederhose möglich",
+            "body": "Hallo zusammen,\nLeider hatten wir letztens ein Problem unser Fahrzeug an eurer DC-Ladestation am Rastplatz Rosi’s in Ledehose zu laden.\nFahrzeug wird mit einem SoC von 27% zum Laden angesteckt. Auffällig beim ersten und zweiten Steckversuch ist, dass das Pilotsignal zwischen statischer Pilot, kein Pilot und 5% keine Ladebereitschaft toggelt. Das Fahrzeug wechselt anschließend auf Ladefehler.\nBeim dritten Versuch wird aufgrund SupportedAppProtocol_failed die Kommunikation beendet.\nSN: 170002549\nZeitpunkt:\n12.10.2024 22:02:40 Uhr\nKönntet ihr euch bitte den Fall einmal anschauen?\nDanke und Grüße\nBenjamin\nBenjamin Perske\nDigital Engineer Consultant E-Mobility & Powertrain Leipzig (DCE)",
+            "date": "2024-10-15T12:33:05Z",
+            "extra": {
+                "sender": "benjamin.perske@partner.bmw.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6767bfe6-008b-ef11-ac20-7c1e5235c73f",
+            "subject": "A new case manager was assigned to 0384689 CRM:00225110407",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0384689 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dd65ce9f-f18a-ef11-ac21-000d3ab4d5d3",
+            "date": "2024-10-15T14:22:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be3e205f-028b-ef11-ac20-000d3ab009dd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 59 minutes and 45 seconds.",
+            "date": "2024-10-15T14:32:58Z",
+            "extra": {}
+        },
+        {
+            "id": "933f205f-028b-ef11-ac20-000d3ab009dd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-10-15T14:33:02Z",
+            "extra": {}
+        },
+        {
+            "id": "c7e215d4-028b-ef11-ac20-000d3ab009dd",
+            "subject": "ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo ﻿Benjamin\n, guten Tag.\nVielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Francisco und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt: Sicharge D - Charging Center - ERK\nHauptanlage\n: AH5057DC003\nLadegerät-ID/Seriennr.: ugTWsO\nProblembeschreibung: Der Ladevorgang kann nicht gestartet werden.\nProblembehebung:\nDas Problem scheint mit dem Isolationsmessgerät zusammenzuhängen. Unsere Protokolle zeigen Folgendes:\nIMD_FAULT_DC2 IsoStatusNotValid\nDieser Fehler bedeutet, dass der Selbsttest nicht erfolgreich durchgeführt wurde.\nIch möchte die Ladestation neu starten. Wenn Sie Zeit haben, einen Ladevorgang zu testen, informieren Sie mich bitte. Ich werde mich dann per Fernzugriff mit dem Ladegerät verbinden und das Problem beheben.\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0384689\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nFrancisco de Matos Joaquim\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2024-10-15T14:36:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4357ba7f-d9ea-e1cd-ad99-6359d06e8427",
+            "subject": "Logs",
+            "body": "",
+            "date": "2024-10-15T14:43:21Z",
+            "extra": {}
+        },
+        {
+            "id": "bf4686a5-9e8b-ef11-ac20-0022489dc6eb",
+            "subject": "RE: ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Francisco,\nDanke für die Schnelle Rückmeldung.\nLeider weiß ich nicht wann die Kollegen dort wieder vorbeikommen um nochmal zu laden.\nFalls ich etwas höre, sag ich dir gerne nochmal Bescheid.\nDanke und Grüße\nBenjamin\nCONFIDENTIAL",
+            "date": "2024-10-16T09:11:42Z",
+            "extra": {
+                "sender": "benjamin.perske@partner.bmw.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "97a4ace6-a78b-ef11-ac21-002248a29667",
+            "subject": "ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Benjamin,\nIch kann den Neustart aus der Ferne durchführen, wenn Sie mir Ihre Erlaubnis geben.\nIch werde ihn durchführen, wenn kein Ladevorgang läuft, und Sie können den Vorgang dann testen, wenn dies möglich ist.\nTeilen Sie mir Ihre Meinung mit.\nBest regards,\nFrancisco",
+            "date": "2024-10-16T10:17:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "963589f5-ad8b-ef11-ac21-0022489bcff4",
+            "subject": "RE: ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Francisco,\nJa das wäre auf jeden Fall schon mal hilfreich.\nDanke und Grüße\nBenjamin\nCONFIDENTIAL",
+            "date": "2024-10-16T11:01:21Z",
+            "extra": {
+                "sender": "benjamin.perske@partner.bmw.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9af8841c-c78b-ef11-ac21-002248a29667",
+            "subject": "ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Benjamin,\nDer DC2 funktioniert wieder. Ich sehe, dass es einen anderen Fehler bezüglich der Temperatur des Kabels gibt. Bitte sehen Sie sich das Foto unten an, es zeigt fast 84ºC:\nWie Sie sehen können, ist die Temperatur tatsächlich hoch. Dies kann auf mehrere Faktoren zurückzuführen sein, wie z. B.:\n- Schmutz oder Staub in den DC-Kontakten oder auf der EV-Seite\n- Kontakte sind nicht im besten Zustand\n- Feuchtigkeit in den Kontakten\n- zu häufige Nutzung des Boost-Modus (anstelle von 250 A liefert er 400 A, lässt aber die Temperatur steigen)\nIch warte auf Ihre Rückmeldung.\nBest regards,\nFrancisco",
+            "date": "2024-10-16T14:01:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "309944eb-4a8c-ef11-ac21-7c1e5235925f",
+            "subject": "RE: ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Francisco\nCONFIDENTIAL",
+            "date": "2024-10-17T05:44:57Z",
+            "extra": {
+                "sender": "benjamin.perske@partner.bmw.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "06adc23a-788c-ef11-ac20-000d3ab41b62",
+            "subject": "ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Benjamin,\nDa das Problem mit dem Isolationsüberwachungsgerät nicht mehr besteht, sollte ich das Ticket schließen?\nDer Kabeltemperaturfehler ist das erste Vorkommnis. Ich kann nur sagen, dass Sie die DC-Kontakte proaktiv reinigen und sicherstellen müssen, dass die EVs auch einigermaßen sauber sind und keinen Schmutz oder Staub auf die Kontakte bringen.\nBest regards,\nFrancisco",
+            "date": "2024-10-17T11:09:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "458e0dd7-7a8c-ef11-ac21-7c1e5235925f",
+            "subject": "RE: ID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler CRM:00315001924",
+            "body": "Hallo Francisco,\nJa, ich denke das Ticket kann man erstmal schließen.\nDas Thema mit der Temperatur habe ich auch intern weitergeleitet.\nDanke und Grüße\nBenjamin\nCONFIDENTIAL",
+            "date": "2024-10-17T11:27:55Z",
+            "extra": {
+                "sender": "benjamin.perske@partner.bmw.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "765feaee-828c-ef11-ac20-000d3ab41b62",
+            "subject": "Ticket 0384689 wurde geschlossen. Sind Sie zufrieden mit der Lösung? CRM:00315001929",
+            "body": "Sehr geehrte/r   Benjamin\nSie erhalten von uns diese Zufriedenheitsabfrage, weil Sie kürzlich unseren Technischen Support angefragt haben.\nWir sind sehr gespannt wie Sie unseren Service bewerten.\nTicket Nr.:\n0384689\nTitel:\nID0384689-DC/Si-D/DE[170002549] - PilotState-Fehler\nWir werten alle Antworten sehr genau aus und erstellen entsprechende Maßnahmen um unsere Service Dienstleistung  an Sie stetig zu verbessern\nDie Umfrage dauert circa 1 Minute\n&lastName=&email=&country=\nGermany\n&cOMPANY=\nGermany\n&c_T_O_NUMBER=\n0384689\n&tECHNOLOGY=\nDC-Charger\n&pRODUCT_FAMILY=\nSicharge D\n\"_blank\">Bitte klicken Sie hier um die Umfrage zu starten\nVielen Dank für Ihre Unterstützung und Ihre in Anspruch genommene Zeit.\nSie entscheiden in der Umfrage ob Sie anonym bleiben wollen\nMit freundlichen Grüßen ihr\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-10-17T12:25:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aafe198b-858c-ef11-ac20-000d3ab41b62",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 1 day, 22 hours, 11 minutes and 27 seconds.",
+            "date": "2024-10-17T12:44:29Z",
+            "extra": {}
+        }
+    ]
+}

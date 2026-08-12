@@ -1,0 +1,108 @@
+{
+    "incident_id": "3eca685d-2172-f011-b4cb-7c1e52350ea5",
+    "ticket_number": "0442070",
+    "title": "ID0442070-DC/SI-D/IT-[MP / R9 170002726]OCPP modem is not connected",
+    "created_on": "2025-08-05T17:26:50Z",
+    "last_activity": "2025-08-07T11:12:07Z",
+    "age": "2506",
+    "description": "Reported issue:\nOCPP modem is not connected\nSolution: NA\nyyyy-mm-dd:NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ycQiU5",
+    "stage": null,
+    "serial_number": "MP / R9 170002726",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2de16153-2172-f011-b4cb-7c1e5236eee4",
+            "subject": "Webform_incident_SiCharge D_05-08-2025_SN: 170002726",
+            "body": "Dear Luca Rizzi ,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002726\nThank you\neMobility Technical Support Team\nSehr geehrte/r Luca Rizzi ,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002726\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-05T17:26:38Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "97a3ef77-2172-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0442070 CRM:00225238752",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0442070 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3eca685d-2172-f011-b4cb-7c1e52350ea5",
+            "date": "2025-08-05T17:27:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "60218551-2272-f011-b4cb-7c1e52768c07",
+            "subject": "ID0442070-DC/SI-D/IT-[MP / R9 170002726]OCPP modem is not connected CRM:02678000173",
+            "body": "Dear Luca Rizzi,\nThank you for reaching\nout\nto eMobility Support. My name is\nAniket\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002726\nChargerID/Serial No.\n:\nycQiU5\nProblem Description\n: OCPP modem is not connected\nFor future reference, your case number is\n0442070\n, please do refer to this in all further communications regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAniket Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-05T17:33:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5bdf382-6479-c3aa-9d5b-6c1c3db41a18",
+            "subject": null,
+            "body": "",
+            "date": "2025-08-06T05:09:56Z",
+            "extra": {}
+        },
+        {
+            "id": "49af3b57-8772-f011-b4cc-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0442070 CRM:00225238849",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0442070 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3eca685d-2172-f011-b4cb-7c1e52350ea5",
+            "date": "2025-08-06T05:36:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "847fe75f-8772-f011-b4cb-7c1e52206585",
+            "subject": "RE: ID0442070-DC/SI-D/IT-[MP / R9 170002726]OCPP modem is not connected CRM:02678000173",
+            "body": "Hello Luca,\nUpon reviewing the logs, we observed multiple instances of HTTP 404 errors around 17:25 on 5th August 2025. These errors indicate that the charge point attempted to reach a backend resource that was not found, resulting in a failed connection.\nAdditionally, earlier log entries show that the charge point was undergoing network reconfiguration, including updates to SIM card parameters and WAN protocol settings. It is likely that during this transition, the charge point temporarily lost connectivity or attempted to reach the backend before the network settings were fully applied.\nThe charge point has now established a stable OCPP connection with the backend, No further errors have been observed since the network settings were applied.\nIf the issue reoccurs, we will proceed to check the router settings and perform a deeper network-level analysis.\nShould you have any questions or need assistance, feel free to reach out.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-06T05:37:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f9a57aa-f7c5-84d3-82a8-6e2a05481803",
+            "subject": null,
+            "body": "",
+            "date": "2025-08-06T05:42:58Z",
+            "extra": {}
+        },
+        {
+            "id": "1d025d00-7f73-f011-b4cc-000d3addf8ce",
+            "subject": "RE: ID0442070-DC/SI-D/IT-[MP / R9 170002726]OCPP modem is not connected CRM:02678000173",
+            "body": "Dear Luca Rizzi,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0442070, the case is now closed.\nProblem Description\n: OCPP modem is not connected\nResolution\n:\ntemporarily lost connectivity\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-08-07T11:09:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dff54a3f-7f73-f011-b4cb-7c1e52350ea5",
+            "subject": "Ticket 0442070 has been closed. Are you satisfied with our provided solution? CRM:00225239790",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0442070\nwith the title:\nID0442070-DC/SI-D/IT-[MP / R9 170002726]OCPP modem is not connected\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-07T11:11:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

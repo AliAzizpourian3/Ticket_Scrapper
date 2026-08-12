@@ -1,0 +1,116 @@
+{
+    "incident_id": "38b9faf3-464a-4c37-b8ae-fdd82bdad613",
+    "ticket_number": "0440335",
+    "title": "ID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1",
+    "created_on": "2025-07-28T11:39:07Z",
+    "last_activity": "2026-01-19T08:44:28Z",
+    "age": "241596",
+    "description": "Reported behavior/issue: Mainbreaker_QA1 &\n12VDC_Supply_TB18_FC23\nSolution:\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "4uwxxm",
+    "stage": "Resolved",
+    "serial_number": "MP / PN 170001137",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a559c07f-a76b-f011-b4cc-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0440335 CRM:00225234673",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0440335 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=38b9faf3-464a-4c37-b8ae-fdd82bdad613",
+            "date": "2025-07-28T11:39:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44575d14-ed6b-f011-b4cc-6045bde0265d",
+            "subject": "A new case manager was assigned to 0440335 CRM:00225234886",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0440335 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=38b9faf3-464a-4c37-b8ae-fdd82bdad613",
+            "date": "2025-07-28T19:57:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ffa0d622-ed6b-f011-b4cb-7c1e52206585",
+            "subject": "ID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1 CRM:02678000152",
+            "body": "Dear Mert Kanneci,\nThank you for reaching\nout\nto eMobility Support. My name is\nAniket\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nAskoç Tesisleri Kuzey\nChargerID/Serial No.\n:\n4uwxxm\nProblem Description\n:\nMainbreaker_QA1\nFor future reference, your case number is\n0440335\n, please do refer to this in all further communications regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAniket Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-28T19:57:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "28f4f130-546c-f011-b4cb-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0440335 CRM:00225235155",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0440335 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=38b9faf3-464a-4c37-b8ae-fdd82bdad613",
+            "date": "2025-07-29T08:15:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "79481436-546c-f011-bec2-7c1e52363b10",
+            "subject": "ID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1 CRM:02678000152",
+            "body": "Hi Mert,\nTo troubleshoot the QA1 we have to check these steps:\nMy first as always is to check if the XD9.1 is inserted tightly. These are those loose connectors.\nSecond is by applying (or checking) 24V on the QA28 and then QA29, we should be able to get 230V until the input of both L+ and ON in the MA1, from the logic below:\nIf we apply 24V on the A1-A2 and the contact 11-14 doesn't close then we need to replace QA29, same process with QA28\nNext thing is to check 24V on the Under voltage relay, the QA1 feedback should not be closing so you must not have 24V between .1 and .4\nThe 24V to the UVR are supplied by QA26:\nNext question, when you reach the site, what is the LED color of the ACT and TRIP in the QA1? (seen from the front)\nIf both LEDs are on then that means MA1 is faulty and needs replacement.\nIf everything above checks out properly and it still doesn't work (230V in MA1, QA26 sending 24V, 24V in KF5 - first photo and KF2, for QA29 and QA28 - second photo). Please measure on the output of the QA1 if any phase is not having the 230/380V:\nIf we don't have a phase or multiple phases then we need to replace the QA1 but MA1 should not be necessary or the UVR.\nIf QA26 is not sending the 24V for the UVR, then we need to check which of these lines is not getting 24V:\nIf all of them checks out fine and we still don't have 24V in the output (24) then we need to replace the QA26.\nI don't think it's the feedback of the QA1 since we don't have the error called \"Failure in Feedback line\".\nUsually when we have these kind of problems it's the MA1 but let's prove it.\nMy recommendation is to take a spare QA1, MA1, QA26, QA28/29 (they are the same) and UVR.\nI will send this ticket to your queue.\nBest regards,\nFrancisco",
+            "date": "2025-07-29T08:15:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f15695f0-556c-f011-bec2-7c1e52363b10",
+            "subject": "ID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1 CRM:02678000152",
+            "body": "Hi Mert,\nI didn't see the 12V TB18_FC23 error. Please also this:\nIf QA25 is closing and we are getting the 230V to the TB18.\nIf 12V are on the output of TB18\nIf FC23 is tripped or if the feedback is not present.\nTake a spare TB18 and FC23 to site in case it needs replacement. Anything reach out to me via Teams.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-29T08:28:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "410e0daa-3d6d-f011-b4cb-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0440335 CRM:00225236127",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0440335 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=38b9faf3-464a-4c37-b8ae-fdd82bdad613",
+            "date": "2025-07-30T12:06:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5044e12-556d-f011-bec2-7ced8d2c9a41",
+            "subject": "RE: ID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1 CRM:02678000152",
+            "body": "Hi Francisco,\nThank you for the information.\nWe will have the spare parts you specified. We will make a site visit tomorrow.\nBR,",
+            "date": "2025-07-30T14:54:27Z",
+            "extra": {
+                "sender": "mert.kanneci@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c8077f3c-466e-f011-b4cb-6045bddf319c",
+            "subject": "Ticket 0440335 has been closed. Are you satisfied with our provided solution? CRM:00225236940",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0440335\nwith the title:\nID0440335-DC/Si-D/TR-[MP / PN 170001137] Mainbreaker_QA1\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nIbrahim Mert Kanneci\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-31T19:40:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

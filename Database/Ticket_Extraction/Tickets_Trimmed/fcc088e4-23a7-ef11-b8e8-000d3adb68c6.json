@@ -1,0 +1,148 @@
+{
+    "incident_id": "fcc088e4-23a7-ef11-b8e8-000d3adb68c6",
+    "ticket_number": "0390923",
+    "title": "ID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW",
+    "created_on": "2024-11-20T09:43:36Z",
+    "last_activity": "2025-12-16T14:03:54Z",
+    "age": "51838",
+    "description": "Reported behavior/issue:\nCharger only provide 5kW\nRoot cause:\nSolution: Query addressed by ES team, no issue in the charger.\nOn DAMEX Sanctioned List:\nWarranty Status: Active\nWeird transaction occured, the power was stuck at 5kW,\nAfter reset, the charge was OK, max 60kW maybe due to the\nvehicle\n03.12.2024: Notes\nNote from L3:\nCheck if the customer provide any feedback. If not, then close the ticket please.",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "cQ2bqX",
+    "stage": null,
+    "serial_number": "Y2 / R9 313202799027",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "39f2aee3-23a7-ef11-b8e8-000d3ab41b62",
+            "subject": "Webform_incident_SiCharge D_20-11-2024_SN: Y2 / R9 313202799027",
+            "body": "Dear SPANO,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / R9 313202799027\nThank you\neMobility Technical Support Team\nSehr geehrte/r SPANO,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / R9 313202799027\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-11-20T09:43:26Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "007771d1-31a7-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0390923 CRM:00225126979",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0390923 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fcc088e4-23a7-ef11-b8e8-000d3adb68c6",
+            "date": "2024-11-20T11:23:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20b382d1-3da7-ef11-b8e9-7c1e5235e725",
+            "subject": "ID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW CRM:00645000867",
+            "body": "Dear Customer,\nThank you for reaching out to eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R9 313202799027\nChargerID/Serial No.\n:\ncQ2bqX\nProblem Description\n: Charger only provide 5kW\nWe will analyze the logs and get back to you with an update.\nFor future reference, your ticket number is\n0390923\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T12:49:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "41d9b29a-3e59-c083-b982-de82d1a144f7",
+            "subject": null,
+            "body": "No logs on SCB (\nY2 / R9 313202799027)\nOn SCC charger is with different serial number (\nY2/ R8 313202799027).\nOn SCC we can see the latest events, but we can't see the charger logs.\nI'm in contact with the one of the member of SCC team to know if we can fetch the logs from SCC",
+            "date": "2024-11-25T23:46:54Z",
+            "extra": {}
+        },
+        {
+            "id": "b0878c9d-1eb0-2f9d-90ed-85db214a52d9",
+            "subject": null,
+            "body": "1. Issue Customer reported:\nCharger only provide 5kW\n2. Suspected Root Cause\n: n/a (There is no logs on SCB)\n3. Action Performed (L2) :\nn/a\n4. Charger SW Version:\na. v3.2.8\n5. Reason for Handover (L3)\n: Suspect, config file is corrupted.\n- The charger is connected to both SCB and SCC.\n- On SCB, it is with Y2 / R9 313202799027, and on SCC with Y2 / R8 313202799027.\n- The charger is online on both SCB and SCC.\n- On SCB, there are no logs. I also checked CloudWatch for the last 12 months, but no logs were found.\n- On SCC, there is no option to check the logs yet, but only getting Connectivity Update events.\n- I reboot the charger from SCB. During the reboot, I observed the \"PerformingCollaboratedReboot\" alarm and other error flags. The main charger page also showed that SCB was disconnected. However, no logs were generated.\n- I discussed this issue with a colleague from the SiFinity team, if SCC and SCB connection at the same time can affect this, as I encountered a similar issue earlier with different charger.\n- After consulting with an expert, we suspect the issue might be due to a corrupted config file.\n6. Action Required:\na. Action by HQ :\ncheck with R&D if restore config is possible remotely.",
+            "date": "2024-11-28T20:29:13Z",
+            "extra": {}
+        },
+        {
+            "id": "5f2f1611-31ae-ef11-b8e8-7c1e523405bd",
+            "subject": "A new case manager was assigned to 0390923 CRM:00225131523",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0390923 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fcc088e4-23a7-ef11-b8e8-000d3adb68c6",
+            "date": "2024-11-29T09:05:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b74fce3-e54f-f6ea-8f09-f7bf4f209afe",
+            "subject": "Notes",
+            "body": "Charger was not logging cause “data__sicharge-cp-backend__config__device.crt” file was empty.\nRestores, logs sent from charger to Cloudwatch.\nLogs analysis ongoing.",
+            "date": "2024-12-03T08:58:40Z",
+            "extra": {}
+        },
+        {
+            "id": "2d199f8e-2fb2-ef11-b8e8-000d3ab11939",
+            "subject": "A new case manager was assigned to 0390923 CRM:00225133788",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0390923 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fcc088e4-23a7-ef11-b8e8-000d3adb68c6",
+            "date": "2024-12-04T11:04:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0636336b-19b3-ef11-b8e8-000d3adc3b84",
+            "subject": "0390923 - ID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW CRM:00472000239",
+            "body": "Dear Yan Spano,\nWe observed an issue with charger connections to Siemens Backend that was not possible to receive the logs from the charger. It's fixed now.\nChecking the last days sessions I didn't saw any charging session with power limitation. The Smart Charging profile was deleted and most probably was the reason for your low power charging sessions.\nCan you share the timestamp when you noticed the behaviour? Or we can also organize a test where you enable again the smart charging profile and I can check if it's limiting the session or not.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2024-12-05T14:58:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af2436dd-44c1-ef11-b8e8-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0390923 CRM:00225141908",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0390923 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fcc088e4-23a7-ef11-b8e8-000d3adb68c6",
+            "date": "2024-12-23T15:45:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e86f076a-dcc1-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: 0390923 - ID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW CRM:00472000239",
+            "body": "Hi Yan,\nCould you please let us know if you're still facing the issue? If not, we will proceed with closing this ticket by tomorrow EOD.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-24T09:49:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c4881dd-6cc3-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: 0390923 - ID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW CRM:00472000239",
+            "body": "Dear Yan. Spano,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0390923, and the case is now closed.\nProblem Description\n:\nCharger only provide 5kW\nResolution\n: As the query has already been addressed by the ES team and there is no current issue with the charger, if you experience any further issues regarding power limitations, please open a new ticket referencing this one.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-26T09:36:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f115741-6dc3-ef11-b8e8-000d3a68cce9",
+            "subject": "Ticket 0390923 has been closed. Are you satisfied with our provided solution? CRM:00643001185",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0390923\nwith the title:\nID0390923-DC/Si-D/MC-[cQ2bqX]- Charger only provide 5kW\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-26T09:39:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

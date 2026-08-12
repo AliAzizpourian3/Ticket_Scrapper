@@ -1,0 +1,233 @@
+{
+    "incident_id": "8b669940-08bf-f011-bbd3-7ced8d425b04",
+    "ticket_number": "0461159",
+    "title": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock",
+    "created_on": "2025-11-11T14:11:12Z",
+    "last_activity": "2025-11-14T10:41:47Z",
+    "age": "4062",
+    "description": "Reported behavior/issue- SECC Offline Causing Cable Lock\nSolution: EcoG lost communication -> v8.0.5 update\n1. TECHNICAL OVERVIEW\nThe charge began at 09:20 Irish time and terminated within seconds (0 kWh\ndelivered). Immediately afterwards, the unit reported Faulted – SECC is offline\nat 09:24 and again at 09:31, remaining in fault until an on-site emergency cable\nrelease was performed at 11:04 Irish time.\nFrom the data and CCTV, it appears the SECC module lost communication during the\nFinishing phase, preventing the unlock command from reaching the latch actuator.\nThe unit later self-recovered without a full reboot.\nPlease confirm:\n* Whether this failure mode is known on SiCharge D hardware, and if firmware\nupdates exist that ensure automatic latch release when SECC communication\ndrops during Finishing.\n* Any recommended diagnostic steps or parameter settings (e.g., watchdog\ntimers, SECC restart intervals, or unlock-on-fault options) to mitigate\nrecurrence.\n* Whether Siemens recommends a preventive SECC reboot schedule or other\noperational measure for high-use sites.\n2. LOG DATA\nIf possible, please extract and share controller and SECC logs for 09:15 – 09:40\nUTC on 10 Nov 2025 from this unit so we can verify the internal event chain.\n3. FIRMWARE CONFIRMATION\nKindly confirm the current firmware versions (main controller, SECC, and power\nmodule) for this unit, and whether the auto-unlock logic is standard in the\nlatest certified release.\nThis is the only known occurrence at Galway, but it resulted in a prolonged\ncustomer lock-in and manual intervention, so we’d like to apply any corrective\nupdate or configuration Siemens recommends.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": 580000001,
+    "chargerID": "3g38Q6",
+    "additional_info": [
+        {
+            "id": "7411f13d-08bf-f011-bbd3-7ced8d40d9c4",
+            "subject": "Galway Retail Park – SECC Offline Causing Cable Lock (10 Nov 2025, Connector 2)",
+            "body": "Hi Siemens team,\nWe had a customer lock-in incident on Monday 10 November 2025 at our Galway Retail Park site involving a SiCharge D unit, Connector 2 (IE-GFX-E170003301-2).\n1. Technical overview\nThe charge began at 09:20 Irish time and terminated within seconds (0 kWh delivered). Immediately afterwards, the unit reported\nFaulted – SECC is offline\nat 09:24 and again at 09:31, remaining in fault until an on-site emergency cable release was performed at 11:04 Irish time.\nFrom the data and CCTV, it appears the SECC module lost communication during the Finishing phase, preventing the unlock command from reaching the latch actuator. The unit later self-recovered without a full reboot.\nPlease confirm:\nWhether this failure mode is known on SiCharge D hardware, and if firmware updates exist that ensure automatic latch release when SECC communication drops during Finishing.\nAny recommended diagnostic steps or parameter settings (e.g., watchdog timers, SECC restart intervals, or unlock-on-fault options) to mitigate recurrence.\nWhether Siemens recommends a preventive SECC reboot schedule or other operational measure for high-use sites.\n2. Log data\nIf possible, please extract and share controller and SECC logs for 09:15 – 09:40 UTC on 10 Nov 2025 from this unit so we can verify the internal event chain.\n3. Firmware confirmation\nKindly confirm the current firmware versions (main controller, SECC, and power module) for this unit, and whether the auto-unlock logic is standard in the latest certified release.\nThis is the only known occurrence at Galway, but it resulted in a prolonged customer lock-in and manual intervention, so we’d like to apply any corrective update or configuration Siemens recommends.\nMany thanks,\nColin Barry\nBrite EV Charging Ltd\ncolin@brite.ie",
+            "date": "2025-11-11T14:11:04Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e597ab48-0abf-f011-bbd2-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0461159 CRM:00225286465",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0461159 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8b669940-08bf-f011-bbd3-7ced8d425b04",
+            "date": "2025-11-11T14:25:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f1aefa4f-0abf-f011-bbd2-7c1e52880b1b",
+            "subject": "RE: A new case manager was assigned to 0461159 CRM:00225286465",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nTue Nov 11 2025 19:55:35 GMT+0530 (India Standard Time)\nTo:\nYashveer Ahlawat <yashveer.ahlawat.ext@siemens.com>;\nSubject:\nA new case manager was assigned to 0461159 CRM:00225286465\nYashveer Ahlawat was assigned as new Case Manager for case 0461159 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8b669940-08bf-f011-bbd3-7ced8d425b04",
+            "date": "2025-11-11T14:25:52Z",
+            "extra": {
+                "sender": "yashveer.ahlawat.ext@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bbb2085c-0abf-f011-bbd2-7c1e52880b1b",
+            "subject": "ID0461159-DC/Si-D/TR-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Dear\nColin\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID\n:\n3g38Q6\nProblem Description\n: SECC Offline Causing Cable Lock\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0461159\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-11T14:26:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b414d529-0bbf-f011-bbd3-7c1e52880fe1",
+            "subject": "A new case manager was assigned to 0461159 CRM:00225286470",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0461159 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8b669940-08bf-f011-bbd3-7ced8d425b04",
+            "date": "2025-11-11T14:31:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9043b8ea-0cbf-f011-bbd3-7ced8d425b04",
+            "subject": "ID0461159-DC/Si-D/TR-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hello Colin, good afternoon. I hope you are doing well today.\nI checked the logs and you are absolutely correct. When the SECC communication got interrupted, the charging session kept going and charged for 18mins.\nOnly when you released the EV it was when it stopped.\nQuestion, is this the first time this has occurred?\nThe first thing to do here, is to update to the latest version which has some hardening of the communication and we can mitigate this issue from Software side. Also, if the topic needs to be investigated,\nThe latest version is already ready to start updating.\nIf we face the same issue after the update, we need a field service technician on-site to troubleshoot and provide a solution.\nIn theory, there should be no need to perform a restart of the SECC.\nLet me know your feedback.\nThanks a lot!\nBest regards,\nFrancisco",
+            "date": "2025-11-11T14:44:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd061dd0-14bf-f011-bbd3-7ced8d40d9c4",
+            "subject": "Re: ID0461159-DC/Si-D/TR-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hi Francisco,\nThanks for confirming and for the quick analysis, much appreciated.\nYes, this is the first instance we have seen of this issue at Galway Retail Park. The logs, CCTV and UCC record all align with your assessment – SECC communication interruption during Finishing, session continuing for approximately 18 minutes, and the EV remaining locked until manual emergency release.\nIt is worth noting that this 18-minute continuation does not appear in the GreenFlux or CPO session data, which shows the transaction ending after only a few seconds (0 kWh). We now understand this is because the SECC loss prevented the OCPP StopTransaction and power data from being transmitted, so the backend recorded the charge as completed while the power module locally continued to supply current. This distinction is important for audit accuracy and any future root-cause reviews.\nCould you please confirm the internal metering delta (kWh delivered) for EVSE IE-GFX-E170003301-2 between 09:20 and 09:38 Irish time on 10 November. We estimate roughly 2–8 kWh may have been delivered, given the unit was already in the Finishing or taper phase, but we would like the exact value from the charger’s local power trace.\nWe are happy to proceed with the latest firmware update you mentioned. Please confirm the rollout procedure and timeline for this specific unit (IE-GFX-E170003301-2) and whether it can be performed remotely or will require a field visit.\nGiven that the incident resulted directly from a hardware or software communication fault, we also request that Siemens cover the associated UCC intervention cost (€1.75 per minute × ~18 minutes ≈ €31.50). The intervention was required only because the unit failed to release the cable automatically after the SECC fault.\nPlease confirm:\n- That this issue will be logged internally under warranty or service records for traceability.\n- Whether the upcoming firmware version fully includes auto-unlock protection in the event of SECC communication loss.\nAdditional update (11 November 2025):\nWe have had a similar SECC-related fault this morning",
+            "date": "2025-11-11T15:41:00Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "18ee60a4-17bf-f011-bbd3-7ced8d425d60",
+            "subject": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hello Colin,\nThanks for the quick feedback.\nThe meter data is\n55942 Wh = 55.942 kWh\nWhat I see is that the EV was on 29% when it reach the site and it ended with 98%.\nThe update is ready to be performed. We can do the update between 8am and 5pm, please let me know what time fits you best. Jason told me that he can arrange someone to go there to proceed with the update to make sure everything runs smoothly, so please find me a time and we will do it together.\nThe intervention cost must be aligned with Jason as well, from Tech Support, I am only capable of providing the troubleshooting, analysis and solution.\nRegarding your question of unlocking the cable, it is only indirectly related to the charger. According to the international norm:\nThe EV is the one responsible for locking the plug, in this case, we couldn't remove it since we couldn't stop the session from the charger, but when you stop from the EV, it must unlock.\nI checked the timestamp you provided to me today and found that the reason why it went wrong it was because the system needed to do a FW calibration of the voltage reading and the session failed, when the calibration was succesfully performed, it restarted the EcoG and that is the reason why you saw that error.\n~4mins later we could do the charging again:\nI will wait patiently for your feedback.\nThank you for your time and patience.\nBest regards,\nFrancisco",
+            "date": "2025-11-11T16:01:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "358ce2e4-9b10-2d6a-9c88-ec125f0474ab",
+            "subject": "LOGS EcoG",
+            "body": "",
+            "date": "2025-11-11T16:30:16Z",
+            "extra": {}
+        },
+        {
+            "id": "4f06e4a0-1ebf-f011-bbd2-7ced8d425658",
+            "subject": "Re: ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hi Francisco,\nThanks for the clear analysis. Here is what this means for us in simple terms and what we propose next.\nRoot cause and behaviour\nThe unit performed a firmware self-calibration of the voltage reading. During that moment the SECC communication dropped, so the backend saw the session end while the charger kept power active locally for about 18 minutes. Because DC voltage remained above 60 V, the plug stayed mechanically locked in line with IEC 61851-23. The lock released only after the emergency procedure.\nEnergy and exposure\nThe meter total for the visit was 55.942 kWh. Any extra energy delivered during the 18-minute period was small relative to the overall session. GreenFlux recorded the sessi",
+            "date": "2025-11-11T16:51:15Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "20cb0017-25bf-f011-bbd3-7ced8d425d60",
+            "subject": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hi Colin,\nThanks for the answer.\nI just want to clarify that the Calibration was the reported problem from today, for connector 4.\nThe 18minutes charging session is from yesterday, for connector 2, it is not related to this error.\nFor the update, we will inform you, as soon as we have it.\nThank you very much and see you tomorrow.\nBest regards,\nFrancisco",
+            "date": "2025-11-11T17:37:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da94634f-adbf-f011-bbd3-7ced8d4258c6",
+            "subject": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hello Colin, good morning.\nThe update has been successfully performed today at 8am.\nI will keep the ticket opened until Friday and if no issues arise, I will close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-11-12T09:52:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b057291b-d0bf-f011-bbd3-7ced8d4251b1",
+            "subject": "Re: ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Ok, thanks for the update.\n@Adam please revert re the warranty claim for the costs associated,\nregards\nColin\nOn Wed, Nov 12, 2025 at 9:55 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Colin, good morning.\nThe update has been successfully performed today at 8am.\nI will keep the ticket opened until Friday and if no issues arise, I will close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-11-12T14:01:39Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "399f0874-3ec1-f011-bbd3-7ced8d425b04",
+            "subject": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hello Colin, good morning.\nSince there has been no reports from the same problem again, I will close this ticket and if it reoccurs, please open a new ticket and mention this ticket\nID0461159\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T09:44:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "312e9bc4-3fc1-f011-bbd3-7ced8d425d60",
+            "subject": "Ticket 0461159 has been closed. Are you satisfied with our provided solution? CRM:00225288191",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0461159\nwith the title:\nID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-14T09:53:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01dde0c8-40c1-f011-bbd2-7c1e5236229d",
+            "subject": "Re: ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hi Francisco,\nthere are reports of a major outage yesterday at the chargers, please give me time now to update you. Leave ticket open\nC\nOn Fri, Nov 14, 2025 at 9:53 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Colin, good morning.\nSince there has been no reports from the same problem again, I will close this ticket and if it reoccurs, please open a new ticket and mention this ticket\nID0461159\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T10:00:53Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b04145d0-40c1-f011-bbd3-7c1e52880288",
+            "subject": "Email sent to a closed case 'ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock (0461159)' CRM:00225288198",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0461159\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-11-14T10:01:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2491816e-41c1-f011-bbd3-7c1e523628c9",
+            "subject": "ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Hi Colin,\nSince there is a new FW version, we should have a brand new ticket, but feel free to share your findings here, and I can tell you if it indeed needs a new ticket or not\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T10:05:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "50ea017e-46c1-f011-bbd3-6045bddfa04d",
+            "subject": "Re: ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock CRM:03056000473",
+            "body": "Ive opened a new ticket - it seems the new issue is different, this one can remain closed thanks.\nOn Fri, Nov 14, 2025 at 10:08 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHi Colin,\nSince there is a new FW version, we should have a brand new ticket, but feel free to share your findings here, and I can tell you if it indeed needs a new ticket or not\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T10:41:39Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a09f8e7f-46c1-f011-bbd3-7c1e523625c2",
+            "subject": "Email sent to a closed case 'ID0461159-DC/Si-D/IE-[MP / S2 170003301] SECC Offline Causing Cable Lock (0461159)' CRM:00225288233",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0461159\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-11-14T10:41:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

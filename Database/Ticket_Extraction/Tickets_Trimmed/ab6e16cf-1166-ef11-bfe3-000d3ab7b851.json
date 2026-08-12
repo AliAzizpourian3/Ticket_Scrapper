@@ -1,0 +1,75 @@
+{
+    "incident_id": "ab6e16cf-1166-ef11-bfe3-000d3ab7b851",
+    "ticket_number": "0376778",
+    "title": "ID0376778-DC/Si-D/IE[E7gWMK] - Failed to start charging",
+    "created_on": "2024-08-29T14:20:24Z",
+    "last_activity": "2025-12-16T14:06:16Z",
+    "age": "1263",
+    "description": "Reported behaviour/issue:\nCharger fails to start after successful authentication and remotestarttransaction\nRoot cause:\nPossible User Error, 172 transaction this month without any errors\nSolution:\nConvey the message to the customer that there is no problem related to the charger\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "E7gWMK",
+    "stage": null,
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9e4c22cd-1166-ef11-bfe2-7c1e5233f636",
+            "subject": "Webform_incident_SiCharge D_29-08-2024_SN: MP / S2 170003301",
+            "body": "Dear Jason Stonier,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003301\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jason Stonier,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003301\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-29T14:20:17Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0e0a51eb-1166-ef11-bfe2-002248a155a0",
+            "subject": "A new case manager was assigned to 0376778 CRM:00225089442",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0376778 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ab6e16cf-1166-ef11-bfe3-000d3ab7b851",
+            "date": "2024-08-29T14:21:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c4f19574-1566-ef11-bfe2-6045bddce356",
+            "subject": "ID0376778-DC/Si-D/IE[E7gWMK] - Failed to start charging CRM:00315001702",
+            "body": "Hello Jason﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID/Serial No.\n:\nE7gWMK\nProblem Description\n: Failed to start charging after Preparing and RemoteStartTransaction: Accepted\nTroubleshooting\n:\nAs we already aligned, we checked the logs and came to the following possible conclusions:\nUser error:\nAs the customer reported, he tried to use DC1, unsuccessfully and then proceed to successfully use the DC2.\nFrom the logs we see the following difference between DC1 and DC2\nDC1:\nDC2:\nAs you can see, there are no logs related to the PilotState or session start on the DC1.\nThis leads me to believe that the customer didn't use the DC1 correctly and possibly the locking mechanism didn't actuate which leads to the PilotState to remain in \"A\".\nPilotState error/wrong reading:\nSince the customer stated that the DC1 didn't work and DC2 did, here are my assumptions on where it might've failed:\nEither the CP on the plug didn't send the correct voltage to the StateMonitor + EcoG\nXD10 is not inserted correctly leading to 0V coming to both components\nKF12 and/or KF14 input terminals are not getting the correct voltage or they are not transmitting/processing them correctly.\nThis last idea seems a bit out of place to me since we didn't find any other error and also from AWS we can see that there were 172 sessions on DC1 performed this last month\nFor future reference, your ticket number is\n0376778\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-29T14:46:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fdc78c5f-1b66-ef11-bfe2-6045bddce356",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 8 minutes and 26 seconds.",
+            "date": "2024-08-29T15:28:51Z",
+            "extra": {}
+        },
+        {
+            "id": "36543392-c166-ef11-bfe2-7c1e523674ae",
+            "subject": "Ticket 0376778 has been closed. Are you satisfied with our provided solution? CRM:00315001708",
+            "body": "Dear  Jason, as we agreed, I am closing the ticket since we already provided the necessary information.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0376778\nwith the title:\nID0376778-DC/Si-D/IE[E7gWMK] - Failed to start charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-30T11:18:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d24fec4a-c266-ef11-bfe2-7c1e523674ae",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Incident Solved Via Remote (L2) after 19 hours, 54 minutes and 50 seconds.",
+            "date": "2024-08-30T11:23:42Z",
+            "extra": {}
+        }
+    ]
+}

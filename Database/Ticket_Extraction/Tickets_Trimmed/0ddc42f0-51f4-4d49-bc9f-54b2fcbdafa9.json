@@ -1,0 +1,89 @@
+{
+    "incident_id": "0ddc42f0-51f4-4d49-bc9f-54b2fcbdafa9",
+    "ticket_number": "0428133",
+    "title": "ID0426415-DC/Si-D/AE-[MP / R8 170002529] Technical Error (C1)",
+    "created_on": "2025-05-30T20:25:21Z",
+    "last_activity": "2025-07-22T09:29:08Z",
+    "age": "75664",
+    "description": "Reported behavior/issue:   charger at fault",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "rDarRV",
+    "stage": null,
+    "serial_number": "MP / R8 170002529,MP / R8 170002529",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9b4c693b-943d-f011-877a-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0428133 CRM:00225208580",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0428133 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0ddc42f0-51f4-4d49-bc9f-54b2fcbdafa9",
+            "date": "2025-05-30T20:25:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec542945-cef8-0c20-8545-9e156a45f565",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nSeems\nhawkbit and\namazon-cloudwatch-agent.jason\nfile is missing in config.\nProblem Description:\nThe charger is online, but the SCB logs are not being receiving & a\ndditionally, there is an issue with the charger not updating: the download trigger multiple time tried but FW is not downloading.\nAction Performed (L2):\nWe verified the charger's online status by logging in using the router password. Additionally, error flags are visible on the SCB.\nChecked the similar issue cases & also noticed there is one R&D Ticket >> https://code.siemens.com/compact-charger/sicharge-d-service-desk/-/issues/671\nCharger SW Version:\nv5.0.23\nReason for Handover (L3):\nWe need to check the configuration file via SSH access and make the necessary adjustments accordingly. Once the changes are completed, the charger should be updated to firmware version v6.1.3.",
+            "date": "2025-05-30T20:34:18Z",
+            "extra": {}
+        },
+        {
+            "id": "5d61a037-883f-f011-8779-7c1e52205b2c",
+            "subject": "A new case manager was assigned to 0428133 CRM:00225208939",
+            "body": "Sambath KS was assigned as new Case Manager for case 0428133 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0ddc42f0-51f4-4d49-bc9f-54b2fcbdafa9",
+            "date": "2025-06-02T08:04:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e79877e6-190b-cb85-8534-264be143a39d",
+            "subject": "Status Update ",
+            "body": "Charger is offline from\n05/31/2025, 01:37 AM",
+            "date": "2025-06-12T05:01:15Z",
+            "extra": {}
+        },
+        {
+            "id": "8f8917e8-314b-f011-8779-7c1e52350ea5",
+            "subject": "0428133 - ID0426415-DC/Si-D/AE-[MP / R8 170002529] Technical Error (C1) CRM:00646000041",
+            "body": "Dear Basheer,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team.\nCan you please support me for making this charger online? Due to this charger being offline on SCB, I am unable to troubleshoot the log issue.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-17T04:17:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "635bc7e8-9051-f011-877a-7ced8d417adb",
+            "subject": "RE: 0428133 - ID0426415-DC/Si-D/AE-[MP / R8 170002529] Technical Error (C1) CRM:00646000041",
+            "body": "Dear Basheer,\nI hope all is well with you. can you please update the status regarding the trail mail.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-25T06:52:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8bbf686d-c953-a7d7-8bfb-6c3bf00a0ce5",
+            "subject": "Status Update : 25/06/2025",
+            "body": "Awaiting for customer response.\nCharger was online yesterday but no information shared",
+            "date": "2025-06-25T06:55:32Z",
+            "extra": {}
+        },
+        {
+            "id": "0e042787-cf5c-1bc1-9b73-977f970d97ed",
+            "subject": "Notes from ES [ 22/07/2025]",
+            "body": "Problem Description\n: Technical Issue\nSuspected Root Cause\n: Duplicate ticket\nAction Performed:\nNA\nCharger SW Version\n: 5.0.23\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nUnable to communicate with customer - Closing the ticket",
+            "date": "2025-07-22T09:27:26Z",
+            "extra": {}
+        }
+    ]
+}

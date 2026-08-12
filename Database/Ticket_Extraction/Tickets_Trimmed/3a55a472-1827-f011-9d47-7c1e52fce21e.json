@@ -1,0 +1,96 @@
+{
+    "incident_id": "3a55a472-1827-f011-9d47-7c1e52fce21e",
+    "ticket_number": "0422018",
+    "title": "ID0422018 -DC/Si-D/DE [MP / R0 170002778] SECC SyntaxError All outlets unavailable",
+    "created_on": "2025-05-02T05:44:01Z",
+    "last_activity": "2025-12-16T14:00:51Z",
+    "age": "4389",
+    "description": "Reported Issue: All outlets out of order, No Error flag reported on Sifinity Control or OCPP\nSolution : Reboot",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "UU4Lub",
+    "stage": null,
+    "serial_number": "MP / R0 170002778",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "4d21f571-1927-f011-8c4d-7c1e52361e39",
+            "subject": "Note created on 5/2/2025 5:51:09 AM UTC by Marius Schneider [contact:698d91f6-5322-ee11-9967-0022489de400]",
+            "body": "*WEB*",
+            "date": "2025-05-02T05:51:09Z",
+            "extra": {}
+        },
+        {
+            "id": "258b5103-dfe4-8504-ba71-a0373da0918f",
+            "subject": "Case Opening Remark",
+            "body": "All outlets out of order\ncharger online on OCPP\nNo error send in Status Notification.\nNo error available in Sifinity Control",
+            "date": "2025-05-02T06:07:32Z",
+            "extra": {}
+        },
+        {
+            "id": "1cfaf4e7-1b27-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422018 -DC/Si-D/DE [MP / R0 170002778] All outlets unavailable CRM:00251000537",
+            "body": "Dear Marius Schneider,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh Kumar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R0 170002778\nChargerID/Serial No.\n:\nUU4Lub\nProblem Description\n: All outlets unavailable\nWe are troubleshooting the issue; it appears like the outlet are unavailable due to internal communication message timeout between the PLC and charger controller.\nAllow us some time to resolve the issue.\nFor future reference, your case number is\n0422018\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-02T06:08:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17e22649-35ce-094d-b146-b43ff5a1c2ef",
+            "subject": "Notes - Analysis [SyntaxError: Unexpected token I in JSON at position 3385]",
+            "body": "Thu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.746778+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: SyntaxError: Unexpected token I in JSON at position 3385\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.748964+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at JSON.parse (<anonymous>)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.749371+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at ChargerPollClient.jsonBuffer2Object (/app/core/charger/ChargerPollClient.js:1:7262)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.749557+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at OutgoingMessage.<anonymous> (/app/core/charger/ChargerPollClient.js:1:4569)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.749711+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at OutgoingMessage.emit (node:events:525:35)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.749862+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Agent.handle [as _handle] (/app/node_modules/coap/lib/agent.js:274:7)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.750016+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Socket.<anonymous> (/app/node_modules/coap/lib/agent.js:84:10)\nThu, 01 May 2025 21:10:36 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.750231+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Socket.emit (node:events:513:28)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:35\n2025-05-01T21:10:35.750417+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at UDP.onMessage [as onmessage] (node:dgram:933:8)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.798638+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: SyntaxError: Unexpected token I in JSON at position 3385\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.799940+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at JSON.parse (<anonymous>)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.800258+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at ChargerPollClient.jsonBuffer2Object (/app/core/charger/ChargerPollClient.js:1:7262)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.800456+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at OutgoingMessage.<anonymous> (/app/core/charger/ChargerPollClient.js:1:4569)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.800612+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at OutgoingMessage.emit (node:events:525:35)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.800809+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Agent.handle [as _handle] (/app/node_modules/coap/lib/agent.js:274:7)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.800977+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Socket.<anonymous> (/app/node_modules/coap/lib/agent.js:84:10)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.801177+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at Socket.emit (node:events:513:28)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:36\n2025-05-01T21:10:36.801368+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: at UDP.onMessage [as onmessage] (node:dgram:933:8)\nThu, 01 May 2025 21:10:37 GMT\n2025-05-01, 21:10:37\n2025-05-01T21:10:37.267154+00:00 sicharge-cp [local0:err] ecog-secc-adapter/9d2ef6cad66b[731]: Error: No reply in 4.25s",
+            "date": "2025-05-02T06:19:25Z",
+            "extra": {}
+        },
+        {
+            "id": "79ebf3fe-334f-2deb-877f-bdfbe4700d31",
+            "subject": "Notes for ES - Unable to create Child case",
+            "body": "More than 10L entires in last 24 Hours",
+            "date": "2025-05-02T06:28:49Z",
+            "extra": {}
+        },
+        {
+            "id": "d11fa544-412f-634b-a71f-f6a06ef64324",
+            "subject": "Count if Syntax Error in last 2 days - 114663 times",
+            "body": "",
+            "date": "2025-05-02T06:37:46Z",
+            "extra": {}
+        },
+        {
+            "id": "ac44057f-2027-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0422018 -DC/Si-D/DE [MP / R0 170002778] All outlets unavailable CRM:00251000537",
+            "body": "Dear Marius,\nThanks for your support and patience, after\nthe reboot the charger and outlets are back to operation.\nAs explained previously, the issue is caused\ndue to internal communication message timeout between the PLC and charger controller.\nIf the issue persists again, we can setup a periodic reboot on this charger, and even if the problem is not resolved, we have to replace the charge controller in future.\nMay I proceed to close the case, i\nf you need any further assistance, you can always contact us by submitting a new request at\nwww.siemens.com/emobility-service-request\nor at ISP customer Portal\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.\nHello Marius,\nAfter the reboot the charger and outlets are back to operation.\nAs explained previously, the issue is caused\ndue to internal communication message timeout between the PLC and charger controller.\nIf the issue persists again, we can setup a periodic reboot on this charger, and even if the problem is not resolved, we have to replace the charge controller in future.\nAs your issue is resolved, may I proceed to close the case.",
+            "date": "2025-05-02T06:41:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7929242d-5929-f011-8c4e-7c1e5287f582",
+            "subject": "ID0422018 -DC/Si-D/DE [MP / R0 170002778] All outlets unavailable CRM:00251000537",
+            "body": "Dear Marius Schneider,\nThanks for your support and patience, we have not observed the communication error on this charger since 2 May 2025 06:00:00 UTC, as your issue has been resolved for case # 0422018, the case is now closed.\nProblem Description\n: All outlets unavailable\nResolution\n: SECC Communication error, reboot the charger.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-05T02:32:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be2a2fa6-5929-f011-8c4e-7c1e5287f582",
+            "subject": "Ticket 0422018 has been closed. Are you satisfied with our provided solution? CRM:00251000538",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0422018\nwith the title:\nID0422018 -DC/Si-D/DE [MP / R0 170002778] SECC SyntaxError All outlets unavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-05T02:35:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

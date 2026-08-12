@@ -1,0 +1,181 @@
+{
+    "incident_id": "3d29e9f9-dec8-ef11-b8e8-000d3a691687",
+    "ticket_number": "0397771",
+    "title": "ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag",
+    "created_on": "2025-01-02T07:55:53Z",
+    "last_activity": "2025-12-16T14:02:38Z",
+    "age": "26938",
+    "description": "Reported behaviour/issue:Charging not possible on outlet 1 but no error flag\nRoot cause:\nSolution: update chrarger to V6.0.3\nOn DAMEX Sanctioned List: no\nWarranty Status:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "1JPTxA",
+    "stage": null,
+    "serial_number": "MP / R9 170002658",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c5f4f3f3-dec8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Webform_incident_SiCharge D_02-01-2025_SN: 170002658",
+            "body": "Dear Lorenz Wojtowski,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002658\nThank you\neMobility Technical Support Team\nSehr geehrte/r Lorenz Wojtowski,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002658\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-02T07:55:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f7bf2c12-e0c8-ef11-b8e8-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0397771 CRM:00225143585",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0397771 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3d29e9f9-dec8-ef11-b8e8-000d3a691687",
+            "date": "2025-01-02T08:03:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe686264-2e10-4113-9345-7488626ae74f",
+            "subject": "Note",
+            "body": "There is already one ticket available for same charger which is in RC-BE Queue, Ticket ID:\n0394031",
+            "date": "2025-01-02T08:22:59Z",
+            "extra": {}
+        },
+        {
+            "id": "a31168a7-2cd3-41e1-a592-16f34e0ff0ee",
+            "subject": "Note",
+            "body": "on 31/12/2024: EV Communication error found\n01/01/2025\n2025-01-01, 13:45:15\n2025-01-01T13:45:15.000000+00:00 secc-le [daemon:notice] SECC[837]: {\"type\":\"session_stop\",\"timestamp\":1735739114911,\"chargerId\":\"secc2300-10732\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1735739053409,\"duration\":0,\"energy\":0,\"EVMAC\":\"98.ed.5c.f6.35.68\",\"user\":\"internal\",\"error\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}}",
+            "date": "2025-01-03T02:32:58Z",
+            "extra": {}
+        },
+        {
+            "id": "0d2c9bfd-7cc9-ef11-b8e9-000d3addcd64",
+            "subject": "ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Dear Lorenz Wojtowski,\nThank you for reaching\nout\nto eMobility Support. My name is\nSunil\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002658\nChargerID/Serial No.\n:\n1JPTxA\nProblem Description\n: Charging not possible on outlet 1 but no error flag\nTroubleshooting\n: As checked in logs there was communication error between Charger & EV  ON 31/12/2024 at 16:04 UTC\nCharger changed it's state to Error mode for few sec then again it become Healthy as Gun was removed.\nOn 31/12/2024 at 17:44 UTC &01/01/2025 there was\n2025-01-01T13:45:13.000000+00:00 secc-le [daemon:warning] SECC[837]: {\"type\":\"alert\",\"timestamp\":1735739113409,\"chargerId\":\"secc2300-10732\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}\nFor future reference, your case number is\n0397771\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-03T02:46:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ef7ee6d-6ace-ef11-b8e9-0022489bcff4",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Dear Lorenz Wojtowski,\nCould you please reply us back in the ticket..\nWe have replied you in previous email related to the case of interruption.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T09:16:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6abda742-39cf-ef11-8ee9-6045bddf6bcc",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Dear Lorenz Wojtowski,\nHope you are fine..\nCould you please reply us back in the ticket\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-10T09:57:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c3aba6e-57cf-ef11-b8ea-002248a2b1bd",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hello Sunil,\nIf I understand correctly you said in the ticket that the error was due to the car and it is not a SiD problem ?\nKind regards,\nLorenz",
+            "date": "2025-01-10T13:33:15Z",
+            "extra": {
+                "sender": "lorenz.wojtowski@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bc0c30a4-ecd1-ef11-8ee9-000d3ab009dd",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hello Lorenz,\nAs per the Local time that you have shared based on that we observed that there was a \"\nEV communication problem detected\"\nTue, 31 Dec 2024 16:05:33 GMT\n2024-12-31, 16:05:33\n2024-12-31T16:05:33.000000+00:00 secc-le [daemon:notice] SECC[837]: {\"type\":\"alert\",\"timestamp\":1735661133451,\"chargerId\":\"secc2300-10732\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\"}}\nTue, 31 Dec 2024 17:51:25 GMT\n2024-12-31, 17:51:26\n2024-12-31T17:51:26.000000+00:00 secc-le [daemon:warning] SECC[837]: {\"type\":\"alert\",\"timestamp\":1735667486010,\"chargerId\":\"secc2300-10732\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}\n2025-01-01, 13:48:57\n2025-01-01T13:48:57.000000+00:00 secc-le [daemon:notice] SECC[837]: {\"type\":\"alert\",\"timestamp\":1735739337625,\"chargerId\":\"secc2300-10732\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}\nto confirm it's a issue form Charger side or Vehicle side we are analyzing the Ecog logs .\nWe will update you once we analyze it.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T20:26:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef3c3f5e-f3d1-ef11-8ee9-000d3ab009dd",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hello Lorenz,\nWe are still working on the issue, Could you please perform multiple charging sessions .\nWe need to collect Ecog Logs for the sessions in which code:39 & 54 is appearing on Outlet 1 & 2.\nSo for that we are keeping close look charging sessions.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T21:14:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e78ef396-d78c-6ed0-8c04-24efa389aba6",
+            "subject": "Note",
+            "body": "requested Sambath to collect Ecog Logs for Outlet 2\nAlready informed Via Teams\n3\n2025-01-15T13:50:43.165Z\n2025-01-15T13:50:41.866943+00:00 sicharge-cp [local0:info] ecog-secc-adapter/d700edee7498[739]: {\"type\":\"alert\",\"timestamp\":1736949042173,\"chargerId\":\"secc2300-09702\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"src\":\"stack\",\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}\n1JPTxA\n4\n2025-01-15T13:50:42.413Z\n2025-01-15T13:50:42.000000+00:00 secc [daemon:notice] SECC[843]: {\"type\":\"alert\",\"timestamp\":1736949042173,\"chargerId\":\"secc2300-09702\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}\n1JPTxA\n5\n2025-01-15T13:50:41.912Z\n2025-01-15T13:50:42.000000+00:00 secc [daemon:warning] SECC[843]: {\"type\":\"alert\",\"timestamp\":1736949042173,\"chargerId\":\"secc2300-09702\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"code\":39,\"msg\":\"V2G - message timeout V2G09MSGSequence_V2G09SupportedAppProtocol\"}}",
+            "date": "2025-01-15T23:32:06Z",
+            "extra": {}
+        },
+        {
+            "id": "c675cc0e-41d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hi Sunil,\nThere are a lot of charging sessions per day normally on that site. But since update last week to 6.0.3 it seems that the problem has gone.\nKind regards,\nLorenz",
+            "date": "2025-01-20T15:13:18Z",
+            "extra": {
+                "sender": "lorenz.wojtowski@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2258585c-4cd7-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hi Lorenz,\nThanks for update.\nDo you want to monitor the charger or Shall we consider closure of the case.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-20T16:34:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2e6ce3b7-53d7-ef11-8eea-0022489fb3e7",
+            "subject": "Re: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Hi Gary,\nFor me you can close the ticket.\nKind regards,\nLorenz\nVan:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nVerstuurd:\nmaandag, januari 20, 2025 5:35:34 p.m.\nAan:\nWojtowski, Lorenz (RC-BE SI E) <lorenz.wojtowski@siemens.com>\nCC:\nGiridhar, Boddeda (SI E CS TS NOC) <boddeda.giridhar@siemens.com>\nOnderwerp:\nRE: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109\nHi Lorenz,\nThanks for update.\nDo you want to monitor the charger or Shall we consider closure of the case.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-20T17:26:53Z",
+            "extra": {
+                "sender": "lorenz.wojtowski@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a3c36f73-91d7-ef11-8eea-000d3a68cce9",
+            "subject": "Re: ID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag CRM:01251001109",
+            "body": "Dear Lorenz Wojtowski,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0397771, and the case is now closed.\nProblem Description\n: Charging not possible on outlet 1 but no error flag\nResolution\n: Update Charger to V6.0.3\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-21T00:48:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c61fb1db-91d7-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0397771 has been closed. Are you satisfied with our provided solution? CRM:01251001160",
+            "body": "Dear Lorenz,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0397771\nwith the title:\nID0397771-DC/Si-D/BE-[MP / R9 170002658]Charging not possible on outlet 1 but no error flag\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-21T00:51:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "incident_id": "c27b784f-5927-f011-9d47-7c1e52fce21e",
+    "ticket_number": "0422095",
+    "title": "ID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline",
+    "created_on": "2025-05-02T13:28:19Z",
+    "last_activity": "2025-05-05T08:52:05Z",
+    "age": "4044",
+    "description": "Reported behavior/issue:\nOCPP Offline\nRoot cause: rebooted while router2 was not reachable\nSolution: Reboot, after router 2 is accessible.",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "ThvN5S",
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370032",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "aa667fb3-5927-f011-8c4e-6045bdde4786",
+            "subject": "Note created on 5/2/2025 1:31:12 PM UTC by Filomena Carusone [contact:ab172d0c-ac0d-f011-9989-6045bdde9fb8]",
+            "body": "*WEB*",
+            "date": "2025-05-02T13:31:12Z",
+            "extra": {}
+        },
+        {
+            "id": "f5fcb070-c6fd-98d1-b136-f2d7f8806aec",
+            "subject": "Case Opening Notes",
+            "body": "Hi,\nThe charger is not reachable, as you can see in the Print attached.\nCan you check, please?\nThank you",
+            "date": "2025-05-02T13:48:03Z",
+            "extra": {}
+        },
+        {
+            "id": "b13c360b-6827-f011-8c4d-0022489c1dd3",
+            "subject": "0422095 - ID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline CRM:02023000606",
+            "body": "Dear Filomena Carusone,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370032\nCharger ID/Serial No.\n:\nThvN5S\nProblem Description\n: OCPP Offline\nTroubleshooting:\nWe will investigate the reported issue and follow up with you as soon as we have more details\nFor future reference, your case number is\n0422095\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-02T15:13:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ee22bd9-531a-be54-8d85-df429a3a4145",
+            "subject": "Charger in Failsafe mode",
+            "body": "Charger is online on OCPP & SCB, but it is in Failsafe mode.",
+            "date": "2025-05-05T02:47:15Z",
+            "extra": {}
+        },
+        {
+            "id": "bfeb8efb-504f-16cc-982b-4070c2ff3a83",
+            "subject": "Analysis [Refer files under Tab Attachments]",
+            "body": "Failsafe Mode active\nLast booted on 2025-05-02T14:54:04 with verison v6.0.3\nLast BootNotification BootNotification (762aeb00-36b2-40c3-a60a-925a995aa4d3) - {\"currentTime\":\"\n2025-05-02T20:29:37Z\n\",\"interval\":60,\"status\":\"Accepted\"}\nappears charger has OCPP connectivity issue\nCount of “OFFLINE” is 5969 in last 3 days\nCharger send StatusNotification as Faulted on 2025-05-02 20:29:38 {\"\"connectorId\"\":0,\"\"errorCode\"\":\"\"OtherError\"\",\"\"status\"\":\"\"Faulted\"\",\"\"vendorId\"\":\"\"SICHARGE D\"\",\"\"vendorErrorCode\"\":\"\"ChargerOperationMode\"\"}\"\nSince Then it is faulted\nCharger went into failsafe mode, because it was rebooted with router 2 unreachable.\n2025-05-02T13:47:58.358086+00:00 swcpu [user:debug] [4021] [CRS] Reboot active...power cycle to LOGO sent\nCharger is now healthy, as router 2 is reachable and after reboot, failsafe mode is disappeared.",
+            "date": "2025-05-05T05:43:44Z",
+            "extra": {}
+        },
+        {
+            "id": "67b0fb11-7929-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: 0422095 - ID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline CRM:02023000606",
+            "body": "Dear Filomena Carusone,\nGreetings of the day.\nWe would like to inform you that Router 2 was previously unreachable, which caused the charger to enter failsafe mode and go offline. After Router 2 became accessible again, we performed a reboot, and the charger is now online on both OCPP and SCB with no active error flags.\nWe kindly request you to confirm by the end of today if we may proceed with closing the ticket. If we do not hear back from you, we will proceed to close the ticket tomorrow.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T06:20:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "270b19aa-7c29-f011-8c4d-7c1e52768c07",
+            "subject": "RE: 0422095 - ID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline CRM:02023000606",
+            "body": "Hi,\nI think the ticket can be closed.\nThank you",
+            "date": "2025-05-05T06:46:27Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a6147277-8d29-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: 0422095 - ID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline CRM:02023000606",
+            "body": "Dear Filomena Carusone,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0422095, the case is now closed.\nProblem Description\n: IPlanet OCPP Offline\nResolution\n:\nReboot, after router 2 is accessible.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-05T08:46:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d434bbb3-8d29-f011-8c4d-7c1e5236eee4",
+            "subject": "Ticket 0422095 has been closed. Are you satisfied with our provided solution? CRM:02023000609",
+            "body": "Dear Filomena,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0422095\nwith the title:\nID0422095-DC/Si-D/IT-[Y2 / S1 313508370032] Iplanet OCPP Offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-05T08:48:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

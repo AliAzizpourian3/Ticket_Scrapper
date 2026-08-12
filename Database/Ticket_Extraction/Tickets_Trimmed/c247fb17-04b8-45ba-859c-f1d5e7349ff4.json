@@ -1,0 +1,70 @@
+{
+    "incident_id": "c247fb17-04b8-45ba-859c-f1d5e7349ff4",
+    "ticket_number": "0419060",
+    "title": "ID0419060-DC/Si-D/FI-[zdOKrA]-Suomussalmi no sessions on DC2 after 29.3.",
+    "created_on": "2025-04-15T12:54:47Z",
+    "last_activity": "2025-04-22T19:04:44Z",
+    "age": "10450",
+    "description": "Customer complaint there has not been any session on right DC2 outlet but there has been OCPP “preparing” messages coming through. From AWS we can confirm last succesful session was 29.3.2025.\nCable broken, bad contact or broken EcoG?\nMarkus will update version from 6.0.3 to 6.1.3 asap\nCable internally broken. CP pin shows 0VDC while wire terminal block shows 12.2VDC. Cable replaced.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "zdOKrA",
+    "stage": null,
+    "serial_number": "MP / R7 170002230",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "cb5cf00e-03b7-b4e5-9ac1-6e69a7dd1ae7",
+            "subject": "Customer backend evidence",
+            "body": "",
+            "date": "2025-04-15T12:55:57Z",
+            "extra": {}
+        },
+        {
+            "id": "b3958a63-26f9-de7b-adf2-4213a31922da",
+            "subject": "AWS querie",
+            "body": "fields\n@timestamp\n,\n@message\n,\n@logStream\n|\nfilter\n@logStream\nlike\n/zdOKrA/\n|\nfilter\n@message\nlike\n/DC2: Charging Phase \"P01_AUTHENTICATION\" --> \"P02_PARAMETER_DISCOVERY\"/\n|\nlimit\n10000",
+            "date": "2025-04-15T12:58:48Z",
+            "extra": {}
+        },
+        {
+            "id": "276cdc48-001a-f011-9989-000d3ad97a58",
+            "subject": "ID0419060-DC/Si-D/FI-[zdOKrA]-Suomussalmi no sessions on DC2 after 29.3. CRM:00315002569",
+            "body": "Dear Markus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nSuomussalmi\nChargerID/Serial No.\n:\nzdOKrA\nProblem Description\n: DC2 is not starting sessions - looks like CP is not recognized.\nTroubleshooting\n: From the WebUI i can start a simulated session and it runs A→B2→C2, from FW point of view there seems to be no problem.\nSince I am not 100% sure what is train of thought behind StateMonitor+Main EcoG, I will recommend you to take:\nCCS cable\nStateMonitor\nMain EcoG\nOn Thursday I will ask EcoG about how the strategy is done here to clarify next time what we can do in order to avoid losing time.\nFor future reference, your case number is\n0419060\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T13:48:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "96234566-6ab6-1dc1-b1ff-3ab39635943a",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-22T19:01:04Z",
+            "extra": {}
+        },
+        {
+            "id": "8ffb23a5-d10c-7b8d-8ae7-2ccf8fec27a0",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-22T19:01:31Z",
+            "extra": {}
+        },
+        {
+            "id": "259575d7-ef6a-cdfb-9f64-f880b153d7f0",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-22T19:01:49Z",
+            "extra": {}
+        },
+        {
+            "id": "1ec447e4-22d1-f712-9453-4fc2d998fef2",
+            "subject": "serial number of broken cable",
+            "body": "",
+            "date": "2025-04-22T19:02:10Z",
+            "extra": {}
+        }
+    ]
+}

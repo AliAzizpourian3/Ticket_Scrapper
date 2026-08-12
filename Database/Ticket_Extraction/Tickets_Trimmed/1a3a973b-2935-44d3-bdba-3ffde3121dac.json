@@ -1,0 +1,130 @@
+{
+    "incident_id": "1a3a973b-2935-44d3-bdba-3ffde3121dac",
+    "ticket_number": "0457734",
+    "title": "ID0457734-DC/Si-D/IT-[MP / R9 170002651] Cu logs check",
+    "created_on": "2025-10-25T06:09:16Z",
+    "last_activity": "2025-10-29T10:59:58Z",
+    "age": "6050",
+    "description": "Reported Behavior/Issue: CU Log Check",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R9 170002651",
+    "case_nature_code": 580000001,
+    "chargerID": "mn0YSA",
+    "additional_info": [
+        {
+            "id": "41e1d3ab-5893-7429-8617-157f687ded18",
+            "subject": "Case Description",
+            "body": "Hello, yesterday 24 of October a customer tried to charge on charger n. 170002651 between 5:40 and 6:00 p.m. but he could not and the cable was blocked in the car. Can you help us to understand better why the cable was blocked, since he did not charge?\nThank you in advance\nsoftware version\n: v6.1.3-0-gfb2eb75",
+            "date": "2025-10-25T06:52:27Z",
+            "extra": {}
+        },
+        {
+            "id": "8bed0d92-6fb1-f011-bbd2-7ced8d425d60",
+            "subject": "ID0413410-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Dear\nFilomena\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002651\nChargerID\n:\nmn0YSA\nProblem Description\n: Cu logs check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0457734\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nNikhil Pratap Singh\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-25T06:55:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b9ed82e6-6fb1-f011-bbd2-7c1e523628c9",
+            "subject": "A new case manager was assigned to 0457734 CRM:00225277327",
+            "body": "Nikhil Pratap Singh was assigned as new Case Manager for case 0457734 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1a3a973b-2935-44d3-bdba-3ffde3121dac",
+            "date": "2025-10-25T06:57:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d561d31-78b1-f011-bbd2-7ced8d4258c6",
+            "subject": "RE: ID0413410-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Dear Filomena Carusone,\nThank you for reaching out and informing us about the issue that occurred yesterday, October 24th, with charger n. 170002651. We understand that the customer was unable to charge between 5:40 p.m. and 6:00 p.m. (Italy time) and that the cable remained blocked in the vehicle, which is undoubtedly a frustrating situation.\nWe want to assure you that we have already initiated our investigation to understand what might have happened.\nAs part of our initial analysis, we checked the charger logs for the mentioned period. According to our records, we identified the following CP (Control Pilot) value exchanges yesterday afternoon. Please note that the times in the logs are in UTC (Coordinated Universal Time):\n@timestamp    @message\n2025-10-24 18:08:17.900    2025-10-24T18:08:17.822261+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"E\" --> \"A\"2025-10-24 18:07:30.519\n2025-10-24T18:06:58.964318+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"A\" --> \"E\"2025-10-24 18:01:46.845\n2025-10-24T18:01:46.816676+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"A\" --> \"E\"\nConsidering that Italy was on CEST (UTC+2) on that date, the times in the logs (between 18:01 and 18:08 UTC) would correspond approximately to 8:01 p.m. and 8:08 p.m. (20:01 and 20:08) in Italy time on October 24th.\nCould you please confirm if this time period (around 8:00 p.m. in Italy) matches the exact moment when the customer encountered the issue with the charger? This confirmation is very important to help us accurately correlate the events.\nWe have already collected the complete logs, and our specialized team will analyze them as soon as possible in detail to identify the root cause of the blocked cable and the charging failure.\nWe greatly appreciate your patience and cooperation as we work to resolve this. We will keep you updated as soon as we have more information.\nThank you!\nWith best regards,\nGuilherme Andre De Verissimo Dias\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547, Corroios, Portugal",
+            "date": "2025-10-25T07:57:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fb2c50e8-b97d-5c65-9b28-8524d0dc8773",
+            "subject": "Logs from the period when the cable was stucked",
+            "body": "",
+            "date": "2025-10-25T08:02:53Z",
+            "extra": {}
+        },
+        {
+            "id": "d165526c-7bb1-f011-bbd2-7c1e52880b1b",
+            "subject": "RE: ID0413410-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Dear Filomena Carusone,\nThank you for reaching out and informing us about the issue that occurred yesterday, October 24th, with charger n. 170002651. We understand that the customer was unable to charge between 5:40 p.m. and 6:00 p.m. (Italy time) and that the cable remained blocked in the vehicle, which is undoubtedly a frustrating situation.\nWe want to assure you that we have already initiated our investigation to understand what might have happened.\nAs part of our initial analysis, we checked the charger logs for the mentioned period. According to our records, we identified the following CP (Control Pilot) value exchanges yesterday afternoon. Please note that the times in the logs are in UTC (Coordinated Universal Time):\n@timestamp    @message\n2025-10-24 18:08:17.900    2025-10-24T18:08:17.822261+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"E\" --> \"A\"2025-10-24 18:07:30.519\n2025-10-24T18:06:58.964318+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"A\" --> \"E\"2025-10-24 18:01:46.845\n2025-10-24T18:01:46.816676+00:00 [FW070005G1] swcpu [user:debug] [4130] [DCC]  DC2: PilotState \"A\" --> \"E\"\nConsidering that Italy was on CEST (UTC+2) on that date, the times in the logs (between 18:01 and 18:08 UTC) would correspond approximately to 8:01 p.m. and 8:08 p.m. (20:01 and 20:08) in Italy time on October 24th.\nCould you please confirm if this time period (around 8:00 p.m. in Italy) matches the exact moment when the customer encountered the issue with the charger? This confirmation is very important to help us accurately correlate the events.\nWe have already collected the complete logs, and our specialized team will analyze them as soon as possible in detail to identify the root cause of the blocked cable and the charging failure.\nWe greatly appreciate your patience and cooperation as we work to resolve this. We will keep you updated as soon as we have more information.\nThank you!\nWith best regards,\nGuilherme Andre De Verissimo Dias\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547, Corroios, Portugal",
+            "date": "2025-10-25T08:20:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7757e557-94b1-f011-bbd2-7c1e523622b6",
+            "subject": "RE: ID0413410-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Hello,\nThe customer called us at 7:49 p.m. (Italy time) so at 5:49 CU Time.\nAth this moment he could not take off the cable from the car.\nI have a question, I opened the ticket n. 0457734 with this issue, but here I see n.\n0413410\n, which one do I have to follow?\nThank you and Regards,\nFilomena",
+            "date": "2025-10-25T11:18:42Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f26a556a-18b3-f011-bbd2-6045bddfa04d",
+            "subject": "A new case manager was assigned to 0457734 CRM:00225277857",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0457734 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1a3a973b-2935-44d3-bdba-3ffde3121dac",
+            "date": "2025-10-27T09:36:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a84e07de-d1b3-f011-bbd2-7ced8d4258c6",
+            "subject": "RE: ID0457734-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Buongiorno Filomena,\nFirst of all, apologies for the confusion on the ticket number. The correct ticket number for this case is\nID0457734.\nI analyzed the logs form the timestamp reported (between 17:30 and 18:00 UTC time), and these are my findings:\nCustomer attempted #3 times to charge with AC socket (ConnectorId:3)\n2025-10-24T17:32:30.796317+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: PilotState \"A\" --> \"B1\"\nCharging fails due to already active error flags (initial value):\nSince the error flags are reporting \"initial value\", I can assure that the AC socket was displayed as \"out of order\" on the HMI.\n2025-10-24T17:34:30.387084+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: Cable unplugged\n2025-10-24T17:35:53.995493+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2025-10-24T17:35:54.492643+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: charging cable locked\n2025-10-24T17:35:54.637003+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/1a6e2ddb9164[738]: outlet is out of order, no connect allowed\nI do not see any \"cable unplugegd\" in the logs\n2025-10-24T17:38:43.231559+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: PilotState \"A\" --> \"B1\"\nI do not see any \"cable locked in the logs\"\n2025-10-24T17:38:43.453322+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/1a6e2ddb9164[738]: outlet is out of order, no connect allowed\n2025-10-24T17:52:24.431846+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: try to unlock charging cable\n2025-10-24T17:52:24.921851+00:00 [FW070005G1] swcpu [user:debug] [4130] [ACC]  AC1: charging cable unlocked\nCharger was rebooted from the Backend at 2025-10-24T18:01:44.700637+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/1a6e2ddb9164[738]: OCPP: Received command: Reset (3836529) - {\"type\":\"Hard\"}\nIn conclusion:\nThe charging attempts failed as the customer attempted to charge on a \"out of order\" AC outlet.\nCan you please confirm that the customer contacted you for issues on the AC charging?\nFrom your opening message, I see that the customer mainly complained about the cable being stuck in the car. Since we are talking about AC charging, some considerations have to be made:\nFor AC charging, as per DC charging, the charger has no control on the locking of the cable in the EV. It is up to the EV to lock/unlock the cable\nFor AC charging, in opposition to DC charging, the charger locks the AC cable in the charger socket on the other hand of the cable.\nTherefore, could you please clarify what the customer meant with \"\ncable was blocked in the car\"?\nFrom the logs, I can only assume that the customer complained about the AC cable being locked in the charger socket from\n17:35:53 or\n17:38:43 until 17:52:24. However, the cable was connected when the outlet was out of order, hence I cannot assure on the behavior of the locking mechanism of the AC socket when such wrong handling of the charging session happens.\nThe charger still presents the AC socket (ConnectorId:3) as out of order, due to the tripping of FC5 and/or FB1:\nOnce I will receive feedback from your side, I will forward the ticket to the Service colleagues from Italy in order to restore the AC socket on this charger.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-28T07:44:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "11f77b91-b2b4-f011-bbd2-7c1e5236229d",
+            "subject": "RE: ID0457734-DC/Si-D/IT-[MP / R9 170002651] Cu logs check CRM:03098000097",
+            "body": "Thank you for your feedback.\nThere is an open ticket on this charger, since it has problems. So this ticket can be closed.\nThank you,\nFilomena",
+            "date": "2025-10-29T10:32:38Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13656b46-b6b4-f011-bbd2-7ced8d40d9c4",
+            "subject": "Ticket 0457734 has been closed. Are you satisfied with our provided solution? CRM:00225279463",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0457734\nwith the title:\nID0457734-DC/Si-D/IT-[MP / R9 170002651] Cu logs check\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-29T10:59:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

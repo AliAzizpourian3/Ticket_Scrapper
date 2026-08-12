@@ -1,0 +1,104 @@
+{
+    "incident_id": "185374cd-d07d-f011-b4cc-6045bddf3f78",
+    "ticket_number": "0445096",
+    "title": "ID0445096-DC/Si-D/CH-[Y2 / R3 312881977025] Outlet 2 - Cable check failing",
+    "created_on": "2025-08-20T14:20:22Z",
+    "last_activity": "2025-10-20T13:05:28Z",
+    "age": "87765",
+    "description": "Reported Behavior/ Issue: Charge Point 2 Is Not Working\nSolution: Most likely replace KF14 otherwise can be XD10.1 or contactor not closing properly.\nNotes: DC2 fails sometimes during cable check, no errors flags visible, might be a vehicle issue.",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "yZ5lmz",
+    "stage": null,
+    "serial_number": "Y2 / R3 312881977025",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ee4859c7-d07d-f011-b4cb-000d3ad8c0cf",
+            "subject": "Webform_incident_SiCharge D_20-08-2025_SN: Y2 / R3 312881977025",
+            "body": "Dear Alexander Müller,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / R3 312881977025\nThank you\neMobility Technical Support Team\nSehr geehrte/r Alexander Müller,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / R3 312881977025\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-20T14:20:17Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "049f6291-effd-861c-88ed-bb60905c69d9",
+            "subject": "Issue Description",
+            "body": "Customer claims several times that the Charging Point 2 is not\nworking. He told us that that the cable check at charging point 2\nstill does not work reliably.\nIn about half of the cases, it is not recognized correctly. Can you please check and provide next steps.",
+            "date": "2025-08-20T14:55:32Z",
+            "extra": {}
+        },
+        {
+            "id": "d8484607-d67d-f011-b4cc-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0445096 CRM:00225245654",
+            "body": "Shashank Mishra was assigned as new Case Manager for case 0445096 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=185374cd-d07d-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-20T14:57:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2edc4b2a-d67d-f011-b4cc-6045bddf3f78",
+            "subject": "ID0445096-DC/Si-D/CH-[Y2 / R3 312881977025] Charge Point 2 Is Not Working CRM:02699000196",
+            "body": "Dear Alexander Müller,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R3 312881977025\nChargerID/Serial No.\n:\nyZ5lmz\nProblem Description\n:\nCharge Point 2 Is Not Working\nFor future reference, your case number is\n0445096\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-20T14:58:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd9da5d8-6382-f011-b4cc-7c1e5287f582",
+            "subject": "ID0445096-DC/Si-D/CH-[Y2 / R3 312881977025] Outlet 2 - Cable check failing CRM:02699000196",
+            "body": "Hi Alex! Good morning :) How are you? I'm changing the title to reflect better the issue.\nI checked this charger and here is what I found, I will share as much knowledge as I can:\nFrom bottom to top, you can see we go to CableCheck -> C state -> Close contactor, but we are not seeing the contactor being closed properly.\nUsually when we see the AbNormal it means that either the contactor didn't close physically or the StateMonitor is not able to close it.\nFrom my experience, this is related to the StateMonitor because when the StateMonitor is able to close it, we still see some voltages in the logs and only after it finishes processing it fails. But here is almost immediately.\nPlease check the following:\nCheck if the XD10.1B is inserted properly as these connectors get loose often.\nSince I'm almost 100% sure this is StateMonitor error, please trial replacing the KF13\nIf it doesn't work with the replacement please measure the following:\nMeasure 24V outputing from the KF14 and between the C1-C2 of both QA21-22.\nIf we have 24V in C1-C2:\nMeasure in the busbar if the contactors are really closing.\nMeasure the 13-14 to understand if the problem is from the feedback itself (I see the error while in single charging only so I believe this is excluded)\nI recommend you to bring spare KF14 and QA21-22.\nI will send this to the RC-CH queue. If you need on-site support please arrange with at least 2 days in advance as we are currently facing a surge of tickets.\nThank you!\nBEstre",
+            "date": "2025-08-26T10:03:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "630c0fd9-6382-f011-b4cb-7c1e5277978b",
+            "subject": "A new case manager was assigned to 0445096 CRM:00225247883",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0445096 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=185374cd-d07d-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-26T10:03:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ca69755-9382-f011-b4cb-7c1e5277978b",
+            "subject": "AW: ID0445096-DC/Si-D/CH-[Y2 / R3 312881977025] Outlet 2 - Cable check failing CRM:02699000196",
+            "body": "Hi\nThanks a lot for the detailed response. We will order the needed parts and schedule the appointment with the customer, expected for the 10\nth\nSeptember. In case we need support, we will let you know. After the intervention we will reply with the result.\nGreetings\nAlex\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 26. August 2025 12:13\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0445096-DC/Si-D/CH-[Y2 / R3 312881977025] Outlet 2 - Cable check failing CRM:02699000196\nHi Alex! Good morning :) How are you? I'm changing the title to reflect better the issue.\nI checked this charger and here is what I found, I will share as much knowledge as I can:\nFrom bottom to top, you can see we go to CableCheck -> C state -> Close contactor, but we are not seeing the contactor being closed properly.\nUsually when we see the AbNormal it means that either the contactor didn't close physically or the StateMonitor is not able to close it.\nFrom my experience, this is related to the StateMonitor because when the StateMonitor is able to close it, we still see some voltages in the logs and only after it finishes processing it fails. But here is almost immediately.\nPlease check the following:\nCheck if the XD10.1B is inserted properly as these connectors get loose often.\nSince I'm almost 100% sure this is StateMonitor error, please trial replacing the KF13\nIf it doesn't work with the replacement please measure the following:\nMeasure 24V outputing from the KF14 and between the C1-C2 of both QA21-22.\nIf we have 24V in C1-C2:\nMeasure in the busbar if the contactors are really closing.\nMeasure the 13-14 to understand if the problem is from the feedback itself (I see the error while in single charging only so I believe this is excluded)\nI recommend you to bring spare KF14 and QA21-22.\nI will send this to the RC-CH queue. If you need on-site support please arrange with at least 2 days in advance as we are currently facing a surge of tickets.\nThank you!\nBEstre",
+            "date": "2025-08-26T15:43:04Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0e4276cf-1ef6-d328-969a-627423c6efc9",
+            "subject": "spareparts ordered",
+            "body": "State Monitor - Diethelm Aufzüge - K.0001102.02.11 - K.0001102.02.11 - Wrike",
+            "date": "2025-08-26T15:48:55Z",
+            "extra": {}
+        },
+        {
+            "id": "6871e594-912b-e4ec-80ab-9e63947ae72d",
+            "subject": "Semih ",
+            "body": "Charger is working, but i would check the behavior after uploading the charger to FW 8.0.5 and see if the interuptions are still persisting",
+            "date": "2025-09-10T13:40:05Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "incident_id": "af8f964d-bb0c-44be-bf46-8f02400a58c2",
+    "ticket_number": "0429693",
+    "title": "ID0429629-DC/Si-D/AT-[MP/S5 170003620] Charger Offline (C1)",
+    "created_on": "2025-06-06T12:36:26Z",
+    "last_activity": "2025-06-17T03:38:55Z",
+    "age": "15302",
+    "description": "Reported behavior/issue: Charger offline\nSolution: Cfast card replacement ( New charger ID : nfeVUo)",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620,MP / S5 170003620",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "5731f7e3-d242-f011-8779-7ced8d45426a",
+            "subject": "A new case manager was assigned to 0429693 CRM:00225212006",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0429693 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=af8f964d-bb0c-44be-bf46-8f02400a58c2",
+            "date": "2025-06-06T12:36:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4f037dd6-dca9-d46a-a9d7-9b7736933ebc",
+            "subject": "Router related logs",
+            "body": "2025-06-06T10:34:54.488590+00:00 [FW070005G2] sicharge-cp [local0:err] sicharge-cp-backend/28473aae45f9[720]: [ensureMobileConnection] router1 - exception: {\"code\":255,\"killed\":false,\"signal\":null,\"cmd\":\"sshpass -p LnZ3EIWCCIv44h8aplDW ssh -o HostKeyAlgorithms=+ssh-rsa -o strictHostKeyChecking=no -o userKnownHostsFile=/dev/null -o loglevel=ERROR root@10.20.17.1 gsmctl --at \\\"AT+QSPN\\\"\",\"stdout\":\"\",\"stderr\":\"\",\"stack\":\"Error: Command failed: sshpass -p LnZ3EIWCCIv44h8aplDW ssh -o HostKeyAlgorithms=+ssh-rsa -o strictHostKeyChecking=no -o userKnownHostsFile=/dev/null -o loglevel=ERROR root@10.20.17.1 gsmctl --at \\\"AT+QSPN\\\"\\n\\n at genericNodeError (node:internal/errors:984:15)\\n at wrappedFn (node:internal/errors:538:14)\\n at ChildProcess.exithandler (node:child_process:422:12)\\n at ChildProcess.emit (node:events:518:28)\\n at maybeClose (node:internal/child_process:1104:16)\\n at ChildProcess._handle.onexit (node:internal/child_process:304:5)\"}",
+            "date": "2025-06-06T12:38:35Z",
+            "extra": {}
+        },
+        {
+            "id": "7eaf18c4-a2ba-5e3e-a0cf-cde3f256506c",
+            "subject": "Both routers have similar behavior",
+            "body": "",
+            "date": "2025-06-06T12:39:03Z",
+            "extra": {}
+        },
+        {
+            "id": "4cb0f1c4-e989-7931-a24e-81bca31233e8",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nWe have observed that both routers are frequently disconnecting\n.\nAction Performed (L2):\nWe have noticed that both routers are disconnecting frequently. Please refer to the attached screenshot in the note below for further details.\nCharger SW Version:\nv7.0.5\nReason for Handover (L3):\nFurther investigation.\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAction Required by HQ:\nFurther investigation.",
+            "date": "2025-06-06T12:49:37Z",
+            "extra": {}
+        },
+        {
+            "id": "07febbb4-d145-f011-8779-6045bde12d6b",
+            "subject": "A new case manager was assigned to 0429693 CRM:00225212834",
+            "body": "Sambath KS was assigned as new Case Manager for case 0429693 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=af8f964d-bb0c-44be-bf46-8f02400a58c2",
+            "date": "2025-06-10T08:05:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab2fb3fc-8d46-f011-877a-6045bddf3f78",
+            "subject": "0429693 - ID0429629-DC/Si-D/AT-[MP/S5 170003620] Charger Offline (C1) CRM:00646000035",
+            "body": "Dear Nenad,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As we have attended this charger yesterday for Cfast card corruption & created new charger ID ( FW downgraded to v6.0.3), Let us monitor the charger operation for couple of days for error free operation. Thank you very much for being understanding and patient.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-11T06:33:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe5ca7db-03e9-b67b-b329-fff02aa0e2d7",
+            "subject": "Status Update : 11/06/2025",
+            "body": "Issue : Abnormal behavior from router & charger stuck in boot process -\nAction taken : Cfast card flashing and creation of new charger ID\nRelated Ticket:\nID0430148/DC/Si-D/AT-[MP / S5 170003620]Charger Out Of Order",
+            "date": "2025-06-11T06:36:02Z",
+            "extra": {}
+        },
+        {
+            "id": "134d274a-2b4b-f011-877a-000d3addf8ce",
+            "subject": "RE: 0429693 - ID0429629-DC/Si-D/AT-[MP/S5 170003620] Charger Offline (C1) CRM:00646000035",
+            "body": "Dear Nenad,\nI hope all is well with you. Please be aware that I have checked the OCPP logs for last days and observed everything is working fine. I am proceeding to close the ticket. Thank you very much for being understanding and patient.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-17T03:29:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0015adfa-3fc3-7a0b-a346-0441839c2ec5",
+            "subject": "Notes from ES to NOC [ 17/06/2025]",
+            "body": "Problem Description\n:\nOCPP connectivity toggling\nSuspected Root Cause\n: Hardware issue with Cfast card - More details -->\nID0430148/DC/Si-D/AT-[MP / S5 170003620] Charger Out Of Order\nAction Performed:\nCfast card replacement\nCharger SW Version\n: v6.0.3\nFault history:\nNA\nLog analysis with timestamp:\nAttaching log for issue resolution proof\nAttachment:\nNA",
+            "date": "2025-06-17T03:36:23Z",
+            "extra": {}
+        }
+    ]
+}

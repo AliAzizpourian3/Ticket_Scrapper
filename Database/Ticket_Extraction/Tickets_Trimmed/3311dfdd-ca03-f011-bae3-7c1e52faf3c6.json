@@ -1,0 +1,126 @@
+{
+    "incident_id": "3311dfdd-ca03-f011-bae3-7c1e52faf3c6",
+    "ticket_number": "0413331",
+    "title": "ID0413331-DC/Si-D/MY-[MP / ND 170000121] customer received low power",
+    "created_on": "2025-03-18T07:30:31Z",
+    "last_activity": "2025-04-04T23:04:48Z",
+    "age": "25414",
+    "description": "Reported behavior/issue:\nThe overall session of the customer is only receiving 47kW and less, and not the expected 100kW. The EV also charging in low SoC, hence should be receiving more power.\nOpen Ticket:\nYes, but different issue\nRoot cause:\nSolution:\nAnswer provided &\nissue will be addressed on Firmware v7.0\nOn DAMEX Sanctioned List: No\nWarranty Status:\nInactive (12/7/2023)",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "sruJwD",
+    "stage": null,
+    "serial_number": "MP / ND 170000121",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ec0df2d9-ca03-f011-bae3-7c1e523508ba",
+            "subject": "Cust receiving low power than expected - Siemens Sicharge D at R&R Tapah, Malaysia",
+            "body": "Dear Siemens support,\nMy name is Hafizi from TNBX, the Charge Point Operator for TNB Electron.\nI would like to lodge a complaint received from a customer that charged at R&R Tapah Northbound, Malaysia that equipped with your 180kW Siemens Sicharge D charger. Please find below the details of the issue.\nCharging session\n: March 13, 2025 2:07 PM - 2:34 PM\nLocation\n: R&R Tapah Northbound (TNB Electron)\nConnector\n: 2 (being limited to 100kW)\nCar\n: Tesla Model Y\nStart SoC\n: 26%\nEnd SoC\n: 66%\nComplaint\n: The overall session of the customer is only receiving 47kW and less, and not the expected 100kW. The EV also charging in low SoC, hence should be receiving more power.\nNotes\n: During the Tesla Model Y session, there is also an ongoing session on Connector 1.\nTherefore, we would like your team to investigate why the customer received low power, and can’t reach near 100kW .\nLooking forward for your findings.\nThank you.\nRegards,\nMUHD AMIRUL HAFIZI BIN SUKOR\nSpecialist (Electric Vehicle)\nTNBX Sdn. Bhd.\nSubsidiary of Tenaga Nasional Berhad\nTel. No. (H/p) : 013-477 0611\nEmail :\namirul.sukor@tnb.com.my\n********************************************************************************************\nNOTIFICATION:\nThe personal data and other information contained in this email is confidential and only for the use of the intended recipient. If you are not the intended recipient, you must not read, copy, deliver or disclose this email to anyone. If you have received this email in error, please notify the sender immediately or call 1300 80 2323 or TNB CareLine at 1300 88 5454 and permanently delete all copies of this email. TNB disclaims all liability for any error, loss or damage arising from this email being infected by computer virus or other malicious software.\n********************************************************************************************",
+            "date": "2025-03-18T07:30:25Z",
+            "extra": {
+                "sender": "amirul.sukor@tnb.com.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5f68e594-eb03-f011-bae3-7c1e52350ea5",
+            "subject": "ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Dear Muhd Amirul Hafizi b. Sukor,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nChargerID/Serial No.\n:\nProblem Description\n:\nThe overall session of the customer is only receiving 47kW and less, and not the expected 100kW. The EV also charging in low SoC, hence should be receiving more power.\nCould you please provide us charger serial number / Charger ID so we can investigate further?\nFor future reference, your case number is\n0413331\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T11:24:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "482c2c13-5404-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Dear Jyoti,\nApologies for the late reply. Kindly find below the requested details.\nSerial Number:\nMP / ND 170000121\nChargerID: sruJwD\nHope it helps.\nThank you.\nRegards,\nMUHD AMIRUL HAFIZI BIN SUKOR\nSpecialist (Electric Vehicle)\nTNBX Sdn. Bhd.\nSubsidiary of Tenaga Nasional Berhad\nTel. No. (H/p) : 013-477 0611\nEmail :\namirul.sukor@tnb.com.my",
+            "date": "2025-03-18T23:52:46Z",
+            "extra": {
+                "sender": "amirul.sukor@tnb.com.my",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c81991ed-73c3-3563-9709-5095c65435be",
+            "subject": null,
+            "body": "Hi Helpdesk team,\nAccording to the customer this is what I had observed.\nsruJwD  1741846454407  2025-03-13T06:14:09.879073+00:00 swcpu [user:debug] |2025-03-13T06:07:13|DC2|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=163|EVSE_NowPwr[kW]=41.5|EVSE_NowCur[A]=113|EVSE_NowVol[V]=366|EV_TarCur[A]=127|EV_TarVol[V]=430|EV_SOC[%]=41|EVSE_DESpwr[kW]=59|Pilot=4  1741846459526\nWhat is this EVSE_DESpwr[kW]=59? I see that my outlet 2 power is stricted by this value.\n59,000W / 163A = 362V.\nin other session, such limitation is not observed. So what is this EVSE DESpwr",
+            "date": "2025-03-19T04:00:24Z",
+            "extra": {}
+        },
+        {
+            "id": "e307097f-bfb8-1bdd-bf14-f5b596375ea6",
+            "subject": "Note to L2",
+            "body": "EV connected: V_Max: 430[V], I_Max:499[A], P_Max:214[kW], SoC:35[%]\nWhen charging session stopped-\n2025-03-13T06:33:50.853538+00:00 swcpu [user:debug] |2025-03-13T06:07:13|DC2|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=207|EVSE_NowPwr[kW]=55.9|EVSE_NowCur[A]=151|EVSE_NowVol[V]=370|EV_TarCur[A]=165|EV_TarVol[V]=430|EV_SOC[%]=66|EVSE_D\nESpwr[kW]=75|\nPilot=4\nDuring Parallel charging -\n2025-03-13T06:07:13|\nDC2\n|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=163|EVSE_NowPwr[kW]=41.5|EVSE_NowCur[A]=113|EVSE_NowVol[V]=366|EV_TarCur[A]=127|EV_TarVol[V]=430|EV_SOC[%]=41|\nEVSE_DESpwr[kW]=59\n|Pilot=4\n2025-03-13T05:39:26|\nDC1\n|EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=178|EVSE_NowPwr[kW]=60.3|EVSE_NowCur[A]=134|EVSE_NowVol[V]=449|EV_TarCur[A]=134|EV_TarVol[V]=453|EV_SOC[%]=88|\nEVSE_DESpwr[kW]=80\n|Pilot=4",
+            "date": "2025-03-20T05:53:22Z",
+            "extra": {}
+        },
+        {
+            "id": "1f26bf8e-a205-f011-bae2-7c1e523654c1",
+            "subject": "RE: ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Hello Muhd Amirul Hafizi b. Suko,\nThanks for the response.\nWe are analyzing the logs and will get back to you soon with update.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-20T15:47:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d237084-d908-f011-bae3-7c1e52faf3c6",
+            "subject": "RE: ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Hello Edna,\nHope you are doing well.\nWe have checked the detailed logs of charging session started at\n06:07:27\nUTC time on 13th Mar.\nInitially EV provided his Maximum Voltage as 430 V and Maximum Current as 499 A, which calculates to 214 kW maximum Power.\nBut during charging EV never demanded more than 165 A, which is denoted by EVTragetCurrent. [DC2]\nDuring charging-\n2025-03 13T06:07:13|\nDC2\n|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=163|EVSE_NowPwr[kW]=41.5|EVSE_NowCur[A]=113|EVSE_NowVol[V]=366|EV_TarCur[A]=127|EV_TarVol[V]=430|EV_SOC[%]=41|\nEVSE_DESpwr[kW]=59\n|Pilot=4\nWhen charging session stopped-\nDESpwr[kW]=75\n2025-03-13T06:33:50.853538+00:00 swcpu [user:debug] |2025-03-13T06:07:13|\nDC2\n|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=207|EVSE_NowPwr[kW]=55.9|EVSE_NowCur[A]=151|EVSE_NowVol[V]=370|\nEV_TarCur[A]=165\n|EV_TarVol[V]=430|EV_SOC[%]=66|EVSE_D\nESpwr[kW]=75|\nPilot=4\nIn this charging session Target current set by EV was low that's why the output power was less than expected.\nFurthermore, we checked the recent charging session logs, and the charger always provides a current equal to the EVTargetCurrent.\n2025-03-24T05:50:53|DC2|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=244|EVSE_NowPwr[kW]=99.1|EVSE_NowCur[A]=242|EVSE_NowVol[V]=409|EV_TarCur[A]=244|EV_TarVol[V]=478|EV_SOC[%]=30|\nEVSE_DESpwr[kW]=100|\nPilot=4\n2025-03-22T14:27:34|DC2|EVSE_MaxPwr[kW]=100|EVSE_MaxCur[A]=130|EVSE_NowPwr[kW]=41.4|EVSE_NowCur[A]=94|EVSE_NowVol[V]=438|EV_TarCur[A]=95|EV_TarVol[V]=456|EV_SOC[%]=76|\nEVSE_DESpwr[kW]=100|\nPilot=4\nKeys-\nEV_TarCur[A]=is current demanded by EV.\nEV_TarVol[V]=is Voltage at which EV will be 100% charged.\nEV_SOC[%]= is current State of Charge of EV\nEVSE_DESpwr[kW]=Charger's Dynamic Energy Sharing power.\nHope this answers your query, if you have any other questions, please let us know. If not, can we close this ticket?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-24T17:57:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd1e5708-0910-f011-998a-7c1e52350ea5",
+            "subject": "RE: ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Hello Edna,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-02T21:25:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "217bedd9-a611-f011-998a-7c1e52768c07",
+            "subject": "RE: ID0413331-DC/Si-D/MY-{Null] customer received low power CRM:02682000005",
+            "body": "Dear Muhd Amirul Hafizi b. Sukor,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0413331, the case is now closed.\nProblem Description\n: Received low power\nResolution\n: Answer provide to regional team & the issue will be addressed on Firmware v7.0\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-04T22:47:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b4f10e3-b45a-aec3-8b37-0a8da712857b",
+            "subject": null,
+            "body": "",
+            "date": "2025-04-04T23:01:04Z",
+            "extra": {}
+        },
+        {
+            "id": "795a13cb-a811-f011-998a-7c1e52768c07",
+            "subject": "Ticket 0413331 has been closed. Are you satisfied with our provided solution? CRM:00921001670",
+            "body": "Dear Amirul Sukor,\nYou are receiving this survey invite, because you recently requested our technical support services. We are keen to hear what you thought of our services we offered you in the ticket\n0413331\nwith the title:\nID0413331-DC/Si-D/MY-[MP / ND 170000121] customer received low power\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-04T23:02:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

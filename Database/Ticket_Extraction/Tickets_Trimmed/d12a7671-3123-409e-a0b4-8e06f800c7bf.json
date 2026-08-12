@@ -1,0 +1,78 @@
+{
+    "incident_id": "d12a7671-3123-409e-a0b4-8e06f800c7bf",
+    "ticket_number": "0415989",
+    "title": "ID0415989-DC/Si-D/FI-[WJv88t] - Kirkkonummi Q2303 contactor pair QA17-18",
+    "created_on": "2025-03-31T14:52:22Z",
+    "last_activity": "2025-05-13T07:18:45Z",
+    "age": "61466",
+    "description": "Reported behavior/issue: Q2303 coil pair QA17-18.\nRoot cause: Faulty contactor\nSolution: Replace contactor\nDone 29.4.2025 by Sakari Harjunpää",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "WJv88t",
+    "stage": null,
+    "serial_number": "MP / R6 170001969",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "670eac16-fc16-a913-89a2-2a24cc9dc1eb",
+            "subject": "AWS querie",
+            "body": "fields\n@timestamp\n,\n@message\n,\n@logStream\n|\nfilter\n@message\nlike\n/coontactor stuck at ON feedback, waiting for reset/\nand\n@message\nlike\n/to true/\nor\n@message\nlike\n/primary converter group has error, reason: One or more connected SMC have feedback faults/\n|\nparse\n@message\n'_* '\nas\ncoil\n|\nparse\n@message\n'DC* : Outlet'\nas\nDC\n|\nfilter\n@logStream\nlike\n/WJv88t/\n#| stats count(*) as Count by @logStream, coil, DC\n|\nsort\nby\n@logStream\ndesc\n,\nCount\ndesc\n, coil\ndesc\n|\nlimit\n10000",
+            "date": "2025-03-31T14:52:49Z",
+            "extra": {}
+        },
+        {
+            "id": "d623a965-356f-6f0b-8f33-791bf802dcb1",
+            "subject": "AWS screenshot",
+            "body": "",
+            "date": "2025-03-31T14:53:35Z",
+            "extra": {}
+        },
+        {
+            "id": "1204b52f-4c0e-f011-9989-7c1e52878e80",
+            "subject": "ID0415989-DC/Si-D/FI-[WJv88t] - Kirkkonummi Q2303 contactor pair QA17-18 CRM:00798002079",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nKirkkonummi\nChargerID/Serial No.\n:\nWJv88t\nProblem Description\n:  Kirkkonummi Q2303 contactor pair QA17-18\nAllow us some time.\nFor future reference, your case number is\n0415989\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-31T16:21:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2923b787-bd71-a600-8576-4c83f33da915",
+            "subject": "Notes",
+            "body": "Need to validate the AWS analysis as reported by RC.",
+            "date": "2025-04-02T19:48:05Z",
+            "extra": {}
+        },
+        {
+            "id": "fd66ed79-6f10-f011-998a-000d3adc93d1",
+            "subject": "ID0415989-DC/Si-D/FI-[WJv88t] - Kirkkonummi Q2303 contactor pair QA17-18 CRM:00798002079",
+            "body": "Hi Markus,\nPlease proceed with the contactor replacement. I will send this back to your queue.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-03T09:39:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db106aa3-b929-f011-8c4e-000d3adc93d1",
+            "subject": "Claim / Warranty Request SI E / ID0415989-DC/Si-D/FI-[WJv88t] - Kirkkonummi Q2303 contactor pair QA17-18 CRM:00798002079 / Sicharge D / 05-05-2025 /",
+            "body": "Please dont assign this ticket to a case manager\nThis mail  is intented  for our SI E Claim manager  (Karsten Gebauer). He will pick up this case and assign to the Claim  queue.\nThanks and regards\nSI E Claim management",
+            "date": "2025-05-05T14:02:56Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9f35cf39-debe-07ff-885c-3bca1f3e7ec7",
+            "subject": "repair report",
+            "body": "",
+            "date": "2025-05-06T13:49:20Z",
+            "extra": {}
+        }
+    ]
+}

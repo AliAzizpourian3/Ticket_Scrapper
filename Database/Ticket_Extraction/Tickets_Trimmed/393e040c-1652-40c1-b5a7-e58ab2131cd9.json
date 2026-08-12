@@ -1,0 +1,45 @@
+{
+    "incident_id": "393e040c-1652-40c1-b5a7-e58ab2131cd9",
+    "ticket_number": "0423332",
+    "title": "ID0423332-DC/Si-D/NZ-[Y2 / R3 313057296006] Didn't get RFID access (C1)",
+    "created_on": "2025-05-08T20:40:42Z",
+    "last_activity": "2025-12-02T08:38:13Z",
+    "age": "68367",
+    "description": "Problem Description:\nThe charger is online, but the SCB logs are not being received, and error flags are visible on the SCB\nParent case:\n0422741\nEVC3-9389",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "SoIYac",
+    "stage": null,
+    "serial_number": "Y2 / R3 313057296006",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2c5d3880-6028-1980-9664-bb1702a59bae",
+            "subject": "Note to ES Team",
+            "body": "Suspected Root Cause:\nSeems m\nissing hawkbit file or file_amazon-cloudwatch-agent.jason\nProblem Description:\nThe charger is online, but the SCB logs are not being received, and error flags are visible on the SCB.\nAction Performed (L2):\nWe verified the charger is online status by loading the router password.\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nWe need to check the configuration file via SSH access and make the necessary adjustments through SSH.",
+            "date": "2025-05-08T20:47:40Z",
+            "extra": {}
+        },
+        {
+            "id": "cd4aefb6-8f42-522f-9239-882b04843f96",
+            "subject": null,
+            "body": "Parent case:\n0422741",
+            "date": "2025-05-08T20:51:23Z",
+            "extra": {}
+        },
+        {
+            "id": "09a35127-c21b-67ce-9724-d52530a0792a",
+            "subject": "Status Update: 13/05/2025",
+            "body": "Ongoing discussion with Benjamin -\nNo issue with the charger config - Suspecting APN issue",
+            "date": "2025-05-13T05:29:57Z",
+            "extra": {}
+        },
+        {
+            "id": "2b100717-a6e4-758d-90f6-25f38c9a6d0d",
+            "subject": "Status Update : 25/06/2025",
+            "body": "Duplicate case -->\n0422741",
+            "date": "2025-06-25T08:07:02Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "incident_id": "05e65d6a-f8b3-405d-8d66-6c5bad5b3dfc",
+    "ticket_number": "0419432",
+    "title": "ID0419432-DC/Si-D/AE-[MP / R8 170002428]Charging aborted automatically - C1",
+    "created_on": "2025-04-17T07:13:51Z",
+    "last_activity": "2025-09-10T07:01:23Z",
+    "age": "138351",
+    "description": "Reported behavior/issue:\nCharging aborted automatically\nRoot cause: Wiring Issue\nSolution:  Wiring corrected",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "JCt9Hc",
+    "stage": null,
+    "serial_number": "MP / R8 170002428,MP / R8 170002428",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "e7da7573-b315-32c8-b1ab-c1e41ae8ed88",
+            "subject": "Notes",
+            "body": "As Requested from Sambath to\nCreate Child Case.\n“\nRC requested for ExpertNow support”",
+            "date": "2025-04-17T07:21:00Z",
+            "extra": {}
+        },
+        {
+            "id": "432a7c45-261c-f011-9989-7c1e5236eee4",
+            "subject": "0419432 - ID0419432-DC/Si-D/AE-[MP / R8 170002428]Charging aborted automatically - C1 CRM:00646000031",
+            "body": "Dear Team,\nThank you so much for your support during yesterday's intervention. Please find the attached report for your refence. Please be aware that the issue is not resolved and root cause for the problem is yet to be identified. we require an EV to check the healthiness DC1. As we discussed, let us plan the next intervention with an availability of EV.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-04-18T07:25:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "13334108-aefe-a7e0-8575-d1a627abe18d",
+            "subject": "Status Update : 18/04/2025",
+            "body": "Awaiting for next site intervention\nActivity on 17th April\nChecked both IMD configuration and found all Okay\nChecked charging session with both the outlet and observed\nDC1 fail at cable check with IMD fault\nDC2 failing during power delivery after closing QA9-10 with IMD fault\nRemoved all authentication method from the charger made it freecharging mode\nReduced DC2 max power to 80kW to not engage DC1 in charging process\nFound DC2 is able to charge the EV without any IMD fault -\nSuccessful charging session on DC2\nConcluded there is an issue from DC1 group or connection which causing the IMD fault while a voltage buildup\nPlanned remove all converter from DC1 and try trial and error method on outlet 1\nDue to unavailability of EV at site, plan dropped\nDiscussed with Basheer to have an another intervention with EV to find the root cause of the issue",
+            "date": "2025-04-18T08:07:22Z",
+            "extra": {}
+        },
+        {
+            "id": "b7187c5c-53dd-a02b-af08-2baaf2fb15f7",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Awaiting for next site intervention",
+            "date": "2025-04-25T05:49:51Z",
+            "extra": {}
+        },
+        {
+            "id": "2929b665-4327-f011-8c4d-7c1e52361e39",
+            "subject": "RE: 0419432 - ID0419432-DC/Si-D/AE-[MP / R8 170002428]Charging aborted automatically - C1 CRM:00646000031",
+            "body": "Dear Sambath,\nWe will plan site intervention on Monday 5\nth\nMay 9:30 AM UAE time.\nRegards\nSyed Basheeruddin",
+            "date": "2025-05-02T10:51:29Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "86c462bc-2ade-64b7-b237-f7c54450eea6",
+            "subject": "Status Update : 09/05/2025",
+            "body": "Result of intervention on 5th May: Unable to find the root cause of the Isolation Drop -→ Removed all converter from DC1 and",
+            "date": "2025-05-09T07:49:48Z",
+            "extra": {}
+        },
+        {
+            "id": "6891bbd5-6c35-f011-8c4d-000d3ad97a58",
+            "subject": "RE: 0419432 - ID0419432-DC/Si-D/AE-[MP / R8 170002428]Charging aborted automatically - C1 CRM:00646000031",
+            "body": "Dear Sambath,\nAfter our site intervention still, we are waiting for way to proceed further for insulation resistance procedure.\nCustomer is continuous sending email for feedback, so please investigate and guide for troubleshooting.\nRegards\nSyed Basheerddin",
+            "date": "2025-05-20T11:23:27Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73f2a062-0131-5a31-b0ff-2c35e35a20b6",
+            "subject": "Status Update : 12/06/2025",
+            "body": "Awaiting for arranging an insulation tester at site to find out the leakage point",
+            "date": "2025-06-12T04:49:58Z",
+            "extra": {}
+        },
+        {
+            "id": "04490193-04b0-d233-8393-d142dfb97214",
+            "subject": "Status Update : 25/06/2025",
+            "body": "Planned for intervention date --> 26/06/2025",
+            "date": "2025-06-25T10:17:43Z",
+            "extra": {}
+        },
+        {
+            "id": "79cfa2c8-c953-b2b4-ab89-57f5d74822c4",
+            "subject": "Status Update : 27/06/2025",
+            "body": "RC cancelled the intervention on 26th June.\nObserved charger was in failsafe mode after the FW update (RC informed there is another ticket for the FW update and will coordinate with the case manager to rectify the issue).",
+            "date": "2025-06-27T15:28:56Z",
+            "extra": {}
+        },
+        {
+            "id": "63e31428-add1-7e6e-9c99-73d449fd5b99",
+            "subject": "Status update:",
+            "body": "After the intervention today, both outlets are working again.\nWe found out that one of the DC1 cables connected to bus bar, was very close to the frame. After bending it a little to be far way from the housing the outlet 1 was working. We did several successful tests with outlet 1 and 2.",
+            "date": "2025-07-14T12:45:06Z",
+            "extra": {}
+        },
+        {
+            "id": "794fa678-5a0c-8fe8-ac34-a3728bb41983",
+            "subject": "Notes from ES [ 22/07/2025]",
+            "body": "Problem Description\n:\nInsulation failure on DC1\nSuspected Root Cause\n: Wiring Issue\nAction Performed:\nCorrected the same and resloved the issue\nCharger SW Version\n: v7.0.5\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-07-22T09:01:46Z",
+            "extra": {}
+        }
+    ]
+}

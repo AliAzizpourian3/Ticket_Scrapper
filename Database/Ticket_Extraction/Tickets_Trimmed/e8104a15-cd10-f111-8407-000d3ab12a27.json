@@ -1,0 +1,248 @@
+{
+    "incident_id": "e8104a15-cd10-f111-8407-000d3ab12a27",
+    "ticket_number": "0480099",
+    "title": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue",
+    "created_on": "2026-02-23T15:34:14Z",
+    "last_activity": "2026-03-18T13:12:13Z",
+    "age": "32978",
+    "description": "Reported behavior/issue:- Cooling issue",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "NHayn8",
+    "stage": "Resolved",
+    "serial_number": "RVP/SD170004260,RVP/SN170004284,RVP/SD170004263",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "c7b37e12-cd10-f111-8406-002248a14b0b",
+            "subject": "Webform_incident_SiCharge D_23-02-2026_SN: MP / SD 170004260, MP / SD 170004284, MP / SD 170004263.....",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / SD 170004260, MP / SD 170004284, MP / SD 170004263.....\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / SD 170004260, MP / SD 170004284, MP / SD 170004263.....\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-02-23T15:34:06Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "40e97d65-cd10-f111-8407-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0480099 CRM:00225341639",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0480099 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e8104a15-cd10-f111-8407-000d3ab12a27",
+            "date": "2026-02-23T15:36:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c52f8875-cf10-f111-8407-000d3ab12a27",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Dear\nJohannes\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nRVP/SD 170004260 (MULTI)\nChargerID\n:\nNHayn8\nProblem Description\n:\nCooling issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0480099\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-23T15:51:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da475177-5711-f111-8407-7ced8d44dfaf",
+            "subject": "A new case manager was assigned to 0480099 CRM:00225342016",
+            "body": "Felipe Moraes was assigned as new Case Manager for case 0480099 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e8104a15-cd10-f111-8407-000d3ab12a27",
+            "date": "2026-02-24T08:04:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0e7d8eb-6c11-f111-8406-002248a1a08c",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Dear Johannes,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nFollowing your request we could check the charge sessions and regarding this \"maximum current of charging cable is limited by under temperature\" we could find more information.\nIt is expected to have the charging current is limited to 250A in case temperature of coolant feed or coolant return is below 0°C.\nThe pump has temperature sensors, which needs to be read out by the EVSE to determine the present maximum current, which the EV is allowed to consume. This is especially important for low temperatures, when the coolant has high viscosity. At temperatures below -8°C the pump automatically turns on a heater inside the tank. It remains on until the temperature increased to >=+2°C.\nDue to the current ambient temperatures at the chargers' location, once the chargers' temperature dropped below 0°C the maximum current was limited as expected - once the fans were shutdown the temperature increased back to normal operating levels, without the need to turn on the heater. In situations where the temperature does not increase as expected after fan shutdown, the heater is engaged to bring it back up.\nWith best regards,\neMobility Technical\nSupport Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-24T10:38:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f0cae50-b011-f111-8407-000d3ab11366",
+            "subject": "AW: ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "HI,\nShouldn’t the heater in the cooling unit be activated before any power reduction takes place?\nWhy are so many chargers affected?\nCan we check whether the heater of the cooling unit is functioning properly?\nWe should ensure that the heater is activated in time, even at temperatures of 0 or −5 °C, to avoid any loss of power.\nSo where exactly does the problem lie?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 24. Februar 2026 12:02\nAn:\nDißauer, Johannes (SI E EU AT) <johannes.dissauer@siemens.com>\nBetreff:\nID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160\nDear Johannes,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nFollowing your request we could check the charge sessions and regarding this \"maximum current of charging cable is limited by under temperature\" we could find more information.\nIt is expected to have the charging current is limited to 250A in case temperature of coolant feed or coolant return is below 0°C.\nThe pump has temperature sensors, which needs to be read out by the EVSE to determine the present maximum current, which the EV is allowed to consume. This is especially important for low temperatures, when the coolant has high viscosity. At temperatures below -8°C the pump automatically turns on a heater inside the tank. It remains on until the temperature increased to >=+2°C.\nDue to the current ambient temperatures at the chargers' location, once the chargers' temperature dropped below 0°C the maximum current was limited as expected - once the fans were shutdown the temperature increased back to normal operating levels, without the need to turn on the heater. In situations where the temperature does not increase as expected after fan shutdown, the heater is engaged to bring it back up.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-24T18:40:49Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "25aebac6-2612-f111-8407-7ced8d44db54",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Dear Johannes,\nI hope this email finds you well.\nI just confirmed the information with our team.\nWhen the pump didn't turn on the amperes are limit to 100.\nWhen the liquid is around 0º pump turn on and it limit to 250A to avoid the temperature drops more.\nWith best re\ngards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-25T08:48:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c058d9a7-4e12-f111-8407-7ced8d44d2c4",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Dear Johannes,\nI hope this email finds you well.\nComplementing the last email\nWhy are so many chargers affected?\nThe cable should heat itself while being used, but since it is cold, the PLC send the informative that it is limit by 100A or 250A because of the temperature and since the other chargers are in the same weather it can also affect then.\nCan we check whether the heater of the cooling unit is functioning properly?\nThe cooling doesn't have a heater as its purpose to cool down the charging cables - as for heating the charging cables this should occur normally during the charging process.\nWe should ensure that the heater is activated in time, even at temperatures of 0 or −5 °C, to avoid any loss of power\nThe cable should heat it self while charging because the \"heater\" is related with the charger, and the cable only has a colling system that doesn't heats.\nSo where exactly does the problem lie?\nIn resume. in the charger we don't have problems, the charger has a heater in case the temperature is below 0 ºC, the cable doesn't have a heater because it heats after start to be used.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-25T13:34:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6210214c-4116-f111-8342-7ced8d44d2c4",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000160",
+            "body": "Dear\nJohannes,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0480099\nCan I check any other information for you today, or can I ask you to confirm if we can close this ticket please?\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-02T14:08:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8a6f82a-4816-f111-8341-000d3adbefbd",
+            "subject": "AW: ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Hi Felipe,\nDoes this mean that when the ambient temperature is 0 °C or below, the CCS cable is not used for a longer period, cools down, and therefore always starts charging at a reduced power level?\nHow long does it take until the temperature rises above 0 °C again so that full power can be drawn, if the cable has not been used for an extended period at an ambient temperature of –5 °C?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 25. Februar 2026 14:51\nAn:\nDißauer, Johannes (SI E EU AT) <johannes.dissauer@siemens.com>\nBetreff:\nID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160\nDear Johannes,\nI hope this email finds you well.\nComplementing the last email\nWhy are so many chargers affected?\nThe cable should heat itself while being used, but since it is cold, the PLC send the informative that it is limit by 100A or 250A because of the temperature and since the other chargers are in the same weather it can also affect then.\nCan we check whether the heater of the cooling unit is functioning properly?\nThe cooling doesn't have a heater as its purpose to cool down the charging cables - as for heating the charging cables this should occur normally during the charging process.\nWe should ensure that the heater is activated in time, even at temperatures of 0 or −5 °C, to avoid any loss of power\nThe cable should heat it self while charging because the \"heater\" is related with the charger, and the cable only has a colling system that doesn't heats.\nSo where exactly does the problem lie?\nIn resume. in the charger we don't have problems, the charger has a heater in case the temperature is below 0 ºC, the cable doesn't have a heater because it heats after start to be used.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-02T14:57:48Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cc590318-4a16-f111-8342-7ced8d44d2c4",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Hi Johannes,\nI hope this email finds you well.\nChecking the logs I could find that needed 2 minutes to remove the limit in the maximum current of charging cable because of the temperature.\nChecking the other charges and sessions it also needed 2 more minutes.\nWith best r\negards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-02T15:11:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a028e100-0c17-f111-8342-7ced8d44d2c4",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000166",
+            "body": "Dear\nJohannes Dissauer,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0480099\nApart from all the information shared, do you have any other questions or if I may proceed with closing this ticket?\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-03T14:19:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "804d8da6-d517-f111-8342-000d3ab12a39",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000175",
+            "body": "Dear\nJohannes Dissauer,\nThis is another reminder regarding your support case\n0480099\n. We are still waiting for the following information to proceed:\n[Apart from all the information shared, do you have any other questions or if I may proceed with closing this ticke\n]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-04T14:23:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ffa13d23-e617-f111-8342-7ced8d44dcb4",
+            "subject": "AW: ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000175",
+            "body": "Hi,\nif i checking the manual of the cooling unit, there is a heater installed.\nSo for this case it make sense to start the heater before we reach the limitation.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 4. März 2026 15:31\nAn:\nDißauer, Johannes (SI E EU AT) <johannes.dissauer@siemens.com>\nBetreff:\nID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000175\nDear Johannes Dissauer,\nThis is another reminder regarding your support case 0480099. We are still waiting for the following information to proceed:\n[Apart from all the information shared, do you have any other questions or if I may proceed with closing this ticke]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-04T16:21:03Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "64a2ba00-e817-f111-8342-000d3ab12a39",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Dear Johannes ,\nI hope this email finds you well.\nIndeed the heater works but the heat the charger house but not the cable.\nThe cable has only the cooling unit in case it overheat.\nThe cable doesn't have a heater because it heats after starts to be used, in the sessions you mentioned it had a delay around 2 minutes to heat, after the session starts and the cable be used.\nWith best\nregards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-04T16:34:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9cdca40-ac18-f111-8342-7ced8d44dfaf",
+            "subject": "AW: ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "Hi,\nno i am talking about the heater in the coolingtank.\nIf you check the manual you can see there is a heater included.\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 4. März 2026 17:55\nAn:\nDißauer, Johannes (SI E EU AT) <johannes.dissauer@siemens.com>\nBetreff:\nID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160\nDear Johannes ,\nI hope this email finds you well.\nIndeed the heater works but the heat the charger house but not the cable.\nThe cable has only the cooling unit in case it overheat.\nThe cable doesn't have a heater because it heats after starts to be used, in the sessions you mentioned it had a delay around 2 minutes to heat, after the session starts and the cable be used.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-05T15:59:18Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c69f319c-921c-f111-8341-000d3a68204e",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:02889001160",
+            "body": "HI Johannes,\nI hope this email finds you well.\nThank you for your patience, I could check the screenshots you shared and needed to confirm with Francisco.\nApologies from the information I have shared before.\nThe heather in the cooling system turns on when the cable temperature is -8 or below or if the car requests 100A or more.\nOn these situation we see on the logs that we have a limit on the power delivery, and 2 minutes later as we could see on the logs, the limit is removed and the car charges as normal.\nI asked a screenshot to explain better how it works\nOn this screenshot we can see that is needed determine the maximum current from the EV, apart from this if the temperature is below -8ºC the pump automatically turns on the heater inside the tank.\nWith be\nst regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-10T15:05:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "567e6fe4-ad1f-f111-8342-7ced8d44dcb4",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000195",
+            "body": "Dear\nJohannes Dissauer,\nThis is another reminder regarding your support case\n0480099\n. We are still waiting for the following information to proceed:\n[Apart from all the information shared from the error on the logs regarding the temperature, can we check any other information for you or can we proceed closing the ticket?]\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-14T13:58:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a5c15f52-1b21-f111-8342-000d3ab12a39",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000198",
+            "body": "Dear\nJohannes Dissauer\n,\nThis is our third and final reminder regarding your support case\n0480099.\nDespite our previous follow-ups, we have not yet received the required information to continue troubleshooting:\n[\nApart from all the information shared from the error on the logs regarding the temperature, can we check any other information for you or can we proceed closing the ticket?\n]\nIf we do not hear from you within 1 day the case will be automatically closed.\nShould the issue persist or resurface, please submit a new request via our webform:\nwww.siemens.com/emobility-service-request\nWe are still happy to assist you once we receive the necessary details.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-16T09:34:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9a32a5db-cb22-f111-8342-000d3ab12e50",
+            "subject": "ID0480099-DC/Si-D/AT-[Multi] Cooling issue CRM:03276000208",
+            "body": "Dear\nJohannes Dissauer,\nThank you for your time and cooperation regarding case\n0480099.\nWe have been working on your request, but in order to proceed further we require additional input from your side. As we did not receive the requested information, we are unable to continue the investigation and will now close this case.\nYou can submit a new request once the missing information is available via:\nwww.siemens.com/emobility-service-request\nWe appreciate your understanding.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-03-18T13:10:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3d96c0f-cc22-f111-8341-000d3adb385e",
+            "subject": "Ticket 0480099 has been closed. How did we do? CRM:00225354695",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-18T13:12:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

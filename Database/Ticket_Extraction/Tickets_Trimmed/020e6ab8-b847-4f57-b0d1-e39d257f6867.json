@@ -1,0 +1,112 @@
+{
+    "incident_id": "020e6ab8-b847-4f57-b0d1-e39d257f6867",
+    "ticket_number": "0433005",
+    "title": "ID0433005-DC/Si-D/DK-[MP / S1 170003245] Charger Malfunctioning",
+    "created_on": "2025-06-24T06:25:46Z",
+    "last_activity": "2025-09-02T08:29:05Z",
+    "age": "100924",
+    "description": "Reported behavior/issue: Charger Malfunctioning\nSolution:  Cabled changed\nyyyy-mm-dd:  2025-09-01",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "xDBYMt",
+    "stage": null,
+    "serial_number": "MP / S1 170003245",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "dd2b5617-c450-f011-877b-6045bddf397a",
+            "subject": "A new case manager was assigned to 0433005 CRM:00225219089",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0433005 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=020e6ab8-b847-4f57-b0d1-e39d257f6867",
+            "date": "2025-06-24T06:26:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4077265f-c850-f011-877b-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0433005 CRM:00225219125",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0433005 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=020e6ab8-b847-4f57-b0d1-e39d257f6867",
+            "date": "2025-06-24T06:56:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "25c26d26-87dc-e696-8637-983044bef8e9",
+            "subject": null,
+            "body": "We have seen issues with this charger sometimes now.\nThe state of DC1 is not correct. The charger thinks a car is pluged in, however this is not the case.\nAfter a reboot of the charger it can work without any issues for 2-4 days, the we will see the issue again.\nThe charger has this issue right now. So if you quickly can have a look then I will not reboot the charger.\nHere you can see some examples:",
+            "date": "2025-06-24T07:03:16Z",
+            "extra": {}
+        },
+        {
+            "id": "04466ef3-c950-f011-877b-000d3ad97a58",
+            "subject": "ID0433005-DC/Si-D/DK-[MP / S1 170003245] Charger Malfunctioning CRM:02888000102",
+            "body": "Dear Rasmus Eksten,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S1 170003245\nChargerID/Serial No.\n:\nxDBYMt\nProblem Description\n:  Charger Malfunctioning\nFor future reference, your case number is\n0433005\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-24T07:08:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cff9ae05-d850-f011-877b-000d3adc93d1",
+            "subject": "A new case manager was assigned to 0433005 CRM:00225219213",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0433005 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=020e6ab8-b847-4f57-b0d1-e39d257f6867",
+            "date": "2025-06-24T08:48:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e0271c09-da50-f011-877b-7c1e52768c07",
+            "subject": "ID0433005-DC/Si-D/DK-[MP / S1 170003245] Charger Malfunctioning CRM:02888000102",
+            "body": "Hi Rasmus, good morning.\nIt seems from the logs that we are seeing PilotState B2, if you are saying that there is no car connected, we need to understand where the fault lies.\nWe need to measure in the cable, the input to StateMonitor and EcoG for the CP signal to ground.\nI recommend you to take a spare CCS, KF12 and KF14, in order to avoid another site visit.\nIf the cable measures 9V then we have a problem with the cable\nIf you measure 12V in the cable, then go to KF12 and KF14 and see where it drops to 9V.\nIf you still see 12V at the input of both controllers, please try a different spare grey connector from EcoG or StateMonitor\nIf you still see the error, please replace the StateMonitor or EcoG and see which one fixes it.\nIf you need support reach out me via Teams, I will send this ticket back to you.\nBest regards,\nFrancisco",
+            "date": "2025-06-24T09:03:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "06c4fbe4-e550-f011-877b-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0433005 CRM:00225219289",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0433005 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=020e6ab8-b847-4f57-b0d1-e39d257f6867",
+            "date": "2025-06-24T10:28:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2609f592-8655-f011-877a-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0433005 CRM:00225221616",
+            "body": "Martin Koch Pedersen was assigned as new Case Manager for case 0433005 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=020e6ab8-b847-4f57-b0d1-e39d257f6867",
+            "date": "2025-06-30T07:48:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a49b0dc3-d687-f011-b4cb-7ced8d475c24",
+            "subject": "Ticket 0433005 has been closed. Are you satisfied with our provided solution? CRM:00225250977",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0433005\nwith the title:\nID0433005-DC/Si-D/DK-[MP / S1 170003245] Charger Malfunctioning\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-02T08:28:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

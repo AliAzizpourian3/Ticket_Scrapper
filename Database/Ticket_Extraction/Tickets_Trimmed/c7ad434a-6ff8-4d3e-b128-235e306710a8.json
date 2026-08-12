@@ -1,0 +1,28 @@
+{
+    "incident_id": "c7ad434a-6ff8-4d3e-b128-235e306710a8",
+    "ticket_number": "0402259",
+    "title": "Autocharge - Charger continued to charge after StopTransaction",
+    "created_on": "2025-01-27T09:19:30Z",
+    "last_activity": "2025-12-16T15:33:47Z",
+    "age": "Cancelled",
+    "description": "We are in a proof of concept with Uno-X.\nIn December there was an incident where a charging session was started with AutoCharge.\nStopTransaction was sent to the backend after approx.. 1 minute, whoever the charger did not stop charging.\nThe charger stopped after 23 minuts.\nI have tried to look in the logs, and I cannot find any reason why this happened.\nIn the start of the session I can see that some one is aborting a credit card transaction just before the StopTransaction.\nWe need to give Uno-X an explanation.\nThe charger was running FW4 at the time. It have now been updated to FW6.\nIf we can answer that the bug have been fixed in FW6, then this is sufficient.",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "qntu3k",
+    "stage": null,
+    "serial_number": "MP / SN 170004220",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "e44817d6-8fdc-ef11-8eea-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0402259 CRM:00225154017",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0402259 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c7ad434a-6ff8-4d3e-b128-235e306710a8",
+            "date": "2025-01-27T09:19:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

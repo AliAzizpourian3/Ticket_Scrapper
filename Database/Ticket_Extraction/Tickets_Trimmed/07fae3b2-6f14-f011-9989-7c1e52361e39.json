@@ -1,0 +1,116 @@
+{
+    "incident_id": "07fae3b2-6f14-f011-9989-7c1e52361e39",
+    "ticket_number": "0417606",
+    "title": "ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector",
+    "created_on": "2025-04-08T11:50:45Z",
+    "last_activity": "2025-05-22T12:01:42Z",
+    "age": "29531",
+    "description": "Reported behaviour/issue:\nI would like to inform you that the DC1 connector on the SICHARGE D charging\nwith serial number MP/R6 170002001 is essential for proper operation in our\ncurrent setup.\nWe kindly request that you take this requirement into account during any\nupcoming interventions or technical adjustments.\nAdditionally, we would appreciate it if you could investigate the system\nconfiguration to ensure that this connector is correctly integrated and\nfunctioning as expected.",
+    "type": 3,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R6 170002001",
+    "case_nature_code": 580000001,
+    "chargerID": "MP / R6 170002001",
+    "additional_info": [
+        {
+            "id": "524362a8-6f14-f011-9989-000d3ad97a58",
+            "subject": "DC1 Connector Required – Charging Point SICHARGE D (Simulator) – S/N MP/R6 170002001",
+            "body": "Dear Technical Team,\nI would like to inform you that the DC1 connector on the SICHARGE D charging with serial number MP/R6 170002001 is essential for proper operation in our current setup.\nWe kindly request that you take this requirement into account during any upcoming interventions or technical adjustments.\nAdditionally, we would appreciate it if you could investigate the system configuration to ensure that this connector is correctly integrated and functioning as expected.\nPlease don’t hesitate to reach out if you require any further details.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-04-08T11:50:29Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0ee23468-7714-f011-9989-000d3ad97a58",
+            "subject": "ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002001\nChargerID/Serial No.\n:\nMP / R6 170002001\nProblem Description\n: 1 connector not working properly\nFor future reference, your case number is\n0417606\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T12:45:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e7d58ac-3915-f011-998a-7c1e523508ba",
+            "subject": "RE: ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Hello team,\nGreetings of the day!\nWe have checked and found the following issues:\nFollow the steps below:\n1.Please check if the power converter are properly connection to its shelf case.\n2. Check for any loose connection of any power cable or CAN communication cables of the converter and measured the voltage across it with the help of multimeter. Check the resistance across CAN communication cables.\n3. Please see to the display of the power converter whether it is OFF state or ON?\n4. If all the steps are performed and you still see the power converter is faulty, we suggest you to replace it.\nAttached KA for your reference:\nKnowledge Article: Knowledge Article for ISP: Emobility_Sicharge_D_Converter_ Missing converter in DC1,DC2,DC3,DC4 -\nKindly check the connections according to diagram below:\nCheck if the RCD FB3 or any of the breaker is tripped.\nCheck for any loose connections and all the wirings according to diagram.\n2025-04-07T05:23:00.046796+00:00 sicharge-cp [local0:err] sicharge-cp-backend/57e00f9731dd[734]: Error on LEM DC Meter (meter id: 1223051425 status: {\"value\":1,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":false,\n\"timeSyncStatusIsOk\":false\n,\"overTemperatureIsDetected\":false,\"reversedVoltage\":false,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})\nThis indicates- Time synchronization expired: last valid synchronization is older than 48 hours.\nSolution-\n1. In command synchronization mode, achieve a new synchronization\n2. In NTP synchronization mode, check the settings, as well as network access to the NTP servers\nDo let us know if you have any queries?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T11:56:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6b2f87b-0916-f011-998a-6045bdde4786",
+            "subject": "RE: ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Hello team,\nGreetings of the day!\nThere is an update on the trailing mail.\nThe issue was with Ecog. It was stuck.\n@francisco.joaquim@siemens.com\nhad rebooted it and the issue with Outlet 1 is fixed now.\nHence, kindly ignore the previous mail as the issue is resolved remotely.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-10T12:44:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7b13f63-0a16-f011-998a-6045bdde4786",
+            "subject": "RE: ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Hello Malek,\nGreetings of the day!\nPlease note that, certain remote action has been performed, and Outlet 1 is now available. Kindly confirm the same from your end.\nDo let us know if you have any other queries or should we proceed to close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-10T12:50:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a6693262-f619-f011-998a-7c1e5236cda4",
+            "subject": "RE: ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Hello Malek,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T12:37:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3c92dbd-b41a-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:02679000065",
+            "body": "Hello Malek,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nAs the issue is resolved, could you please let us know if you have any other queries or should we proceed to close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-16T11:20:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6230f636-8c24-f011-8c4d-7c1e5236eee4",
+            "subject": "ID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector CRM:00579001619",
+            "body": "Dear Malek DRIF,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417606, the case is now closed.\nProblem Description\n: DC1 connector issue\nResolution\n: Ecog rebooted\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-28T23:55:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bf1e197-8c24-f011-8c4d-7c1e5236eee4",
+            "subject": "Ticket 0417606 has been closed. Are you satisfied with our provided solution? CRM:00579001620",
+            "body": "Dear Malek,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0417606\nwith the title:\nID0417606-DC/Si-D/FR-[MP/R6 170002001] DC1 Connector\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-28T23:57:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

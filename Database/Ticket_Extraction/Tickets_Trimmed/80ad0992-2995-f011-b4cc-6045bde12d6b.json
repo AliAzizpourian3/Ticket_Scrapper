@@ -1,0 +1,125 @@
+{
+    "incident_id": "80ad0992-2995-f011-b4cc-6045bde12d6b",
+    "ticket_number": "0450794",
+    "title": "ID0450794-DC/Si-D/AT-[RVP/T4170004764] Power converter issue",
+    "created_on": "2025-09-19T07:23:53Z",
+    "last_activity": "2025-12-09T12:00:27Z",
+    "age": "116917",
+    "description": "Reported behavior/issue:- Power Conbverter 0 = E17\nSolution:-\nyyyy-mm-dd:-",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "I31tZs",
+    "stage": null,
+    "serial_number": "RVP/T4170004764",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "c72d4e91-2995-f011-b4cb-7c1e5237b9fe",
+            "subject": "Webform_incident_SiCharge D_19-09-2025_SN: RVP / T4170004764",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nRVP / T4170004764\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nRVP / T4170004764\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-19T07:23:44Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "92efa6e1-2e95-f011-b4cb-7c1e5237b9fe",
+            "subject": "A new case manager was assigned to 0450794 CRM:00225259290",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0450794 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=80ad0992-2995-f011-b4cc-6045bde12d6b",
+            "date": "2025-09-19T08:01:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "36c36aa3-2f95-f011-b4cb-7c1e5237b9fe",
+            "subject": "ID0450794-DC/Si-D/AT-[RVP/T4170004764] Power converter issue CRM:02889000644",
+            "body": "Dear\nJohannes\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nRVP/T4170004764\nChargerID/Serial No.\n:\nI31tZs\nProblem Description\n:\nPower Converter 0 = E17\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0450794\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-19T08:07:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8ade048f-3095-f011-b4cb-7ced8d4a2c3c",
+            "subject": "A new case manager was assigned to 0450794 CRM:00225259305",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0450794 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=80ad0992-2995-f011-b4cc-6045bde12d6b",
+            "date": "2025-09-19T08:13:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b88b3dfd-4c65-8047-817f-849f0af5c8fa",
+            "subject": null,
+            "body": "2102313PAVKXPA000562SA002204000204FW:DC903PF000H100,F:0,E17",
+            "date": "2025-09-19T08:37:36Z",
+            "extra": {}
+        },
+        {
+            "id": "7a772d22-3795-f011-b4cc-6045bddece8c",
+            "subject": "RE: ID0450794-DC/Si-D/AT-[RVP/T4170004764] Power converter issue CRM:02889000644",
+            "body": "Dear Johannes,\nI am reaching out in regards of ticket\nID0450794\n. The ticket has been opened for E17 on a power converter of charger\nRVP/T4 170004764.\nI analyzed the charger and these are my findings:\nE17 is generated by a CAN communication interruption between the PLC and the Power Converter\nThe E17 is present on the Power converter with SN\n2102313PAVKXPA000562\nsince this morning (19.09.2025).\nA reboot did not re-establish the communication.\nThe Power converter belongs to the converter group of DC2. This means that the charger can perfectly work, but the Converter Group of DC2 is limited to only one power converter (40kW power available).\nIt can happen that this error is temporary and it clears out. Nevertheless, when this error appears and cannot be immediately cleared with a reboot (like this case),\nit is recommended to replace the power converter.\nTherefore, I am moving\nthe case\n0450794\n﻿from the Technical Support to the\neMobility RC-AT SI E Queue\n.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-AT  SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-19T09:00:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4e129ea0-9397-f011-b4cc-6045bde12d6b",
+            "subject": "A new case manager was assigned to 0450794 CRM:00225260186",
+            "body": "Daniel Kaiblinger was assigned as new Case Manager for case 0450794 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=80ad0992-2995-f011-b4cc-6045bde12d6b",
+            "date": "2025-09-22T09:07:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49de1760-186a-29d4-a79f-e7a7d647ed5c",
+            "subject": null,
+            "body": "",
+            "date": "2025-10-30T11:40:18Z",
+            "extra": {}
+        },
+        {
+            "id": "94e31a6f-dbae-38b7-b766-2ed1d4148890",
+            "subject": null,
+            "body": "Today i checked the Station via SCB. And it seems that the Error is BACK!!!\nhow is this Possible? to days ago everything was fine. I did charging tests on both outlets, no Error.\nI think i have to go there to exchange the Converter.",
+            "date": "2025-10-30T11:42:35Z",
+            "extra": {}
+        },
+        {
+            "id": "52dc2e26-607e-f4a7-add3-99355170184a",
+            "subject": null,
+            "body": "Today its not only the E17 Error on Converter 0. Also the Error Flag \"Missing Converter\" is active",
+            "date": "2025-10-31T09:32:35Z",
+            "extra": {}
+        },
+        {
+            "id": "447004f1-2678-6408-8a45-f506618a190f",
+            "subject": null,
+            "body": "Defect converter replaced. Ticket can be closed",
+            "date": "2025-12-09T11:58:30Z",
+            "extra": {}
+        },
+        {
+            "id": "48202fc1-e758-5445-8e96-073b9a512e9f",
+            "subject": null,
+            "body": "defect converter already sent back.",
+            "date": "2025-12-09T11:59:20Z",
+            "extra": {}
+        }
+    ]
+}

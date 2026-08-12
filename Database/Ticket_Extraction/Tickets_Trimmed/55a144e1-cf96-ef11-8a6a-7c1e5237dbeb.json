@@ -1,0 +1,213 @@
+{
+    "incident_id": "55a144e1-cf96-ef11-8a6a-7c1e5237dbeb",
+    "ticket_number": "0387355",
+    "title": "ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable",
+    "created_on": "2024-10-30T15:01:52Z",
+    "last_activity": "2025-12-16T14:04:33Z",
+    "age": "38680",
+    "description": "Reported behavior/issue:\nChargepoint unavailable\nRoot cause:\nSolution:  Intervention done successfully, FSR will be uploaded later.\nOn DAMEX Sanctioned List: no\nWarranty Status: 12/1/2024",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "4cMESg",
+    "stage": null,
+    "serial_number": "MP / N0 160382419",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "36efc0db-cf96-ef11-8a69-000d3ab9eb7b",
+            "subject": "Webform_incident_SiCharge D_30-10-2024_SN: 160382419",
+            "body": "Dear René Ruppert,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n160382419\nThank you\neMobility Technical Support Team\nSehr geehrte/r René Ruppert,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n160382419\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-10-30T15:01:42Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5279c1a4-d996-ef11-8a6a-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0387355 CRM:00225117066",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0387355 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=55a144e1-cf96-ef11-8a6a-7c1e5237dbeb",
+            "date": "2024-10-30T16:11:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9681723a-dc96-ef11-8a6a-002248a2ad51",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 28 minutes and 21 seconds.",
+            "date": "2024-10-30T16:30:14Z",
+            "extra": {}
+        },
+        {
+            "id": "af5c8b5f-dc96-ef11-8a6a-002248a2ad51",
+            "subject": "ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Hello team,\nThank you for reaching out to eMobility Support. My name is\nVaishnavi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / N0 160382419\nChargerID/Serial No.\n:\n4cMESg\nProblem Description\n: Chargepoint unavailable\nKindly allow us some time to go through the issue. We will get back to you shortly.\nFor future reference, your ticket number is\n0387355\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-30T16:31:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eaf2d89f-dc96-ef11-8a6a-002248a2ad51",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 2 minutes and 47 seconds.",
+            "date": "2024-10-30T16:33:02Z",
+            "extra": {}
+        },
+        {
+            "id": "fe85e1ab-dc96-ef11-8a6a-002248a2ad51",
+            "subject": "RE: ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Hello team,\nGreetings of the day!\nWe checked and found the following error flags:\nFor Mainfan error, kindly refer the following KA:\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_Mainfan_GQ1_Ok Signal Lost-Fan rotation disabled - Dynamics 365\nFor Outlet3 Unavailable, we found the following in logs:\nTue, 29 Oct 2024 17:26:45 GMT\n2024-10-29, 17:26:45\n2024-10-29T17:26:45.212514+00:00 sicharge-cp [local0:err] ecog-secc-adapter/78e6cbeaa1a0[712]: Error polling coap://10.20.17.101:5683/state Error: No reply in 4.25s\nThere is polling coap error multiple times.\ni.e. there was loss in communication to SECC.\nTill date, we are getting the same error polling coap for Outlet 3. Hence, need to check the connections to KF12 and KF13 as per the diagram below:\nKindly check the KF12 itself, whether it is getting proper supply of 24V.\nPlease note: Here Outlet 1 (Left) is configured as Outlet3 by CPO\nPlease share your observations once the above mentioned items have been checked.\nWe will wait for your feedback to proceed further accordingly.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-30T16:33:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc6ef212-e096-ef11-8a6a-002248a2ad51",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 24 minutes and 42 seconds.",
+            "date": "2024-10-30T16:57:43Z",
+            "extra": {}
+        },
+        {
+            "id": "77aac94d-e196-ef11-8a6a-002248a2ad51",
+            "subject": "ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001273",
+            "body": "Hello team,\nWith reference to trailing mail, I am writing to formally inform that we are moving case 0387355 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nyes\nOnsite Troubleshooting\nyes\nEnd Customer Communication\nyes\nSpare Part Ordering\nmaybe\nPerformance monitoring by RC\nyes\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-30T17:06:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f299769-5e97-ef11-8a6a-7c1e5235925f",
+            "subject": "0387355 - ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00755000078",
+            "body": "Hallo Denise,\nkönntest du eine Yunex Bestellung auslösen? Ersatzteil erstmal nicht notwendig\nAuf die Zeile 426\nDanke dir!\nVG Rudi",
+            "date": "2024-10-31T08:02:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cde6a900-5f97-ef11-8a69-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0387355 CRM:00225117321",
+            "body": "Rudolf Artes was assigned as new Case Manager for case 0387355 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=55a144e1-cf96-ef11-8a6a-7c1e5237dbeb",
+            "date": "2024-10-31T08:06:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "30ae06b8-6697-ef11-8a69-0022489dc6eb",
+            "subject": "AW: 0387355 - ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00755000078",
+            "body": "Hallo Rudi,\nhier die Bestellung für Yunex.\nAuftrag habe ich in die Liste eingetragen.\nViele Grüße\nDenise\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 31. Oktober 2024 09:02\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0387355 - ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00755000078\nHallo Denise,\nkönntest du eine Yunex Bestellung auslösen? Ersatzteil erstmal nicht notwendig\nAuf die Zeile 426\nDanke dir!\nVG Rudi",
+            "date": "2024-10-31T09:01:31Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "08515bb6-6697-ef11-8a69-000d3ab9a120",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 16 hours, 3 minutes and 54 seconds.",
+            "date": "2024-10-31T09:01:37Z",
+            "extra": {}
+        },
+        {
+            "id": "035c5de9-589d-91c3-96ca-2dfee5e83219",
+            "subject": "Asked Yunex about Status",
+            "body": "",
+            "date": "2024-11-19T14:50:37Z",
+            "extra": {}
+        },
+        {
+            "id": "0cc8aeda-0fa8-ef11-b8ea-7c1e5235925f",
+            "subject": "AW: ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Hello, can you please give me an update to this case ?\nThank you\nMit freundlichen Güßen\nRené Ruppert\nReferent O&M E-mobility | Technischer Service\nPFALZWERKE AKTIENGESELLSCHAFT\nWredestraße 35\n|\n67059 Ludwigshafen\nMobil: 0175/2228581\nMail:\nrene.ruppert@pfalzwerke.de\n|\nwww.pfalzwerke.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 30. Oktober 2024 17:33\nAn:\nsupport-e-mobility <support-e-mobility@pfalzwerke.de>\nCc:\nservice-emobility.si.de@siemens.com; Salamon, Marius <marius.salamon@siemens.com>\nBetreff:\nID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272\nHello team,\nThank you for reaching out to eMobility Support. My name is Vaishnavi, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / N0 160382419\nChargerID/Serial No.\n: 4cMESg\nProblem Description\n: Chargepoint unavailable\nKindly allow us some time to go through the issue. We will get back to you shortly.\nFor future reference, your ticket number is 0387355, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-21T13:52:36Z",
+            "extra": {
+                "sender": "support-e-mobility@pfalzwerke.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bc8fd54b-11a8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: AW: ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Hallo Herr Ruppert,\nder Techniker wird am Montag, den 25.11, den Einsatz durchführen - dieser wird sich noch ankündigen für das Datum.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322",
+            "date": "2024-11-21T14:02:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cbc56a8a-11a8-ef11-b8e9-002248a29667",
+            "subject": "RE: AW: ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Hallo Herr Ruppert,\nder Techniker wird am Montag, den 25.11, den Einsatz durchführen - dieser wird sich noch ankündigen für das Datum.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322",
+            "date": "2024-11-21T14:04:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ed29f98d-9fb4-3f37-ad14-03eb43353cc0",
+            "subject": "Ticket can be closed",
+            "body": "Technician was on site succesfully, report will be attached",
+            "date": "2024-11-26T11:01:29Z",
+            "extra": {}
+        },
+        {
+            "id": "5d5b7416-e6ab-ef11-b8e9-002248a29667",
+            "subject": "A new case manager was assigned to 0387355 CRM:00225129448",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0387355 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=55a144e1-cf96-ef11-8a6a-7c1e5237dbeb",
+            "date": "2024-11-26T11:03:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af673bfc-e7ab-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: AW: ID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable CRM:00579001272",
+            "body": "Dear Team,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0387355.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-26T11:17:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d5c6ff2a-ebab-ef11-b8e9-000d3ab4d5d3",
+            "subject": "Ticket 0387355 has been closed. Are you satisfied with our provided solution? CRM:00643001107",
+            "body": "Dear Team,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0387355\nwith the title:\nID0387355-DC/Si-D/DE-[MP / N0 160382419] Chargepoint unavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-26T11:40:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

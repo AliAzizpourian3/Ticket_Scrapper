@@ -1,0 +1,42 @@
+{
+    "incident_id": "438b1342-d39d-4aa8-b634-c98279a7fa0b",
+    "ticket_number": "0407093",
+    "title": "ID0406839-DC/Si-D/RO[170000128] - DC2_CableTempSensor_XD101-(C1)",
+    "created_on": "2025-02-17T05:02:17Z",
+    "last_activity": "2025-02-27T10:50:46Z",
+    "age": "14748",
+    "description": "Reported behaviour/issue:\nCharging sessions aborted\nRoot cause:\nDC2_CableTempSensor_XD101\nSolution:\nNotes: charger is out of warranty. First analysis and action items provided to the region.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cQKZW3",
+    "stage": null,
+    "serial_number": "MP / P1 170000128,MP / P1 170000128",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b428af08-5171-bb47-b82f-edf0614be664",
+            "subject": "Handover Note from L2 to ES",
+            "body": "Problem Description :\nDC2_CableTempSensor_XD101\nSuspected Root Cause :\nn/a\nAction Performed (L2) :\nupdated the charger to v6.0.3\nCharger SW Version:\nv6.0.3\nReason for Handover (L3) :\nAs per Product Issue Report SiD, further investigation required.",
+            "date": "2025-02-17T05:04:06Z",
+            "extra": {}
+        },
+        {
+            "id": "97203d73-7838-1874-b48a-09680df7a7ec",
+            "subject": "Notes for L3",
+            "body": "Refer the parent Case under “\nCase Relationships\n”",
+            "date": "2025-02-17T08:25:16Z",
+            "extra": {}
+        },
+        {
+            "id": "ca8e507e-f7f4-ef11-be1f-6045bddf3f78",
+            "subject": "0407093 - ID0406839-DC/Si-D/RO[170000128] - DC2_CableTempSensor_XD101-(C1) CRM:00314000146",
+            "body": "Dear Traian,\nI am reaching out regarding child ticket\nID0407093,\nopened for DC2_CableTempSensor_XD101 on charger\ncQKZW3.\nI had a quick look at the charger behavior over the last month (from 1st February 2025), and these are my findings:\n#24 activation of the error flag “\nPLC-Error-Flag 'DC2_CableTempSensor_XD101' changed to true - (VIV:0 PLE:1 KON:1)”, where:\nVIV:0 → in case of an invalid sensor reading\nPLE:1→ in case of an plausibility error (temperature difference between +/- 15 deg C too high)\nKON:1: → in case the contact temperature sensors are not okay\nThe CableTempSensor issue in #10 cases brought to a charging interruption on DC2:\n#2 times on 08.02.2025\n#1 time on 13.02.2025\n#2 rimes on 14.02.2025\n#5 times on 15.02.2025\nSince then, no other appearance of the error flag. The issue is therefore not permanent and not recurring daily.\nI do not see at the moment a clear reason to replace the cable. What can be done is to go onsite and check the plug. In particular, please check the status of the pins of the plug and the connector mating surface. Please check if dust or dirt is inside the fins of the plug, or if the fins are bent/broken. All these points might reduce the contact surface or create hotspots, resulting in CableTempSensor issue.\nPlease be aware that this ticket is related to an\nout of warranty charger\n. I will therefore close this child case and redirect you in the parent ticket to my colleague from NOC Team for the handling of out of warranty case, if further support on this ticket is required from your side!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-02-27T10:42:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

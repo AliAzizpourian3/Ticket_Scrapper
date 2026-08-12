@@ -1,0 +1,103 @@
+{
+    "incident_id": "af76e484-b121-f011-9d47-7c1e52fce21e",
+    "ticket_number": "0420891",
+    "title": "ID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error",
+    "created_on": "2025-04-25T08:44:38Z",
+    "last_activity": "2025-05-22T11:00:25Z",
+    "age": "39015",
+    "description": "Reported issue: payment terminal error\nSolution:\nThis is a rejection of the Payment Terminal because it don't know the Transaction number this fault can only be resolved when the charger runs in debug mode. When customer states ot that the Payment Terminal went to debug mode at the reffered time stamp, then it needs a clarification with CCV support directly.\nSolution:\nCCV updated the terminal firmware\nUpdate 13/May - ES talking PLM to understand how to contact CCV and address these issues",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "uoQAdw",
+    "stage": null,
+    "serial_number": "MP / P3 170000422",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "3408e417-b321-f011-9989-7c1e52768372",
+            "subject": "Note created on 4/25/2025 8:55:56 AM UTC by Marius Schneider [contact:698d91f6-5322-ee11-9967-0022489de400]",
+            "body": "*WEB*",
+            "date": "2025-04-25T08:55:57Z",
+            "extra": {}
+        },
+        {
+            "id": "9c5f879d-33c5-a054-b575-c1e2146e15d3",
+            "subject": "Additonal notes",
+            "body": "Hi Siemens Support Team,\nwe have a customer complaint about a failed card transaction on charger with ID uoQAdw.\nThe charger has an integrated CCV contactless payment terminal, model CCV OPM-C60.\nThe customer authorized a charging session via Girocard via EMVS token \"EMVS*55804354*001214\", receipt number 0561.\nThen, the payment terminal went into diagnosis mode and made a daily closing which led the running card transaction to fail. The charging session was therefore not billed correctly, the customer was invoiced the full 50€ preauthorization amount.\nPlease check why the terminal went into diagnosis mode. What was the behavior of the charger during timestamp 17.04.2025 @ 11:55:14 +02:00?\nThanks and kind regards,\nMarius Schneider\nSoftware Version: v6.0.3-0-g215cb74+APN (PRODUCTION)\nOCPP Backend Connection: Yes",
+            "date": "2025-04-25T10:25:11Z",
+            "extra": {}
+        },
+        {
+            "id": "fff2c0f8-bf21-f011-998a-7c1e52faf3c6",
+            "subject": "ID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error CRM:02698000064",
+            "body": "Dear Marius Schneider,\nThank you for reaching\nout\nto eMobility Support. My name is\nMeghna\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nAH5020DC001\nChargerID/Serial No.\n:\nMP / P3 170000422\nProblem Description\n:  Payment terminal error\nFor future reference, your case number is\n0420891\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-25T10:28:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "665af21c-585a-dadc-9af3-5fa9a5660d65",
+            "subject": "Note-Logs",
+            "body": "2025-04-17T10:16:54.469997+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2f8ba0666e82[736]: {\"stack\":\"Error: Transaction Status was: error\\n at /dist/services/paymentTerminal.js:380:35\\n at Generator.next (<anonymous>)\\n at fulfilled (/dist/services/paymentTerminal.js:5:58)\\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\"}\n2025-04-17T10:16:54.468659+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: Partial reversal returned with {\"status\":\"error\",\"message\":\"Could not convert receipt number to TA number\",\"details\":\"Could not convert receipt number to TA number\"}\n2025-04-17T10:16:54.281451+00:00 sicharge-cp [local0:info] sicharge-cp-ccv/e5f40f1ed441[736]: Requested ZVT Partial-Reversal 06 23: amount 2559, and currency EUR,\nreceipt 561\n2025-04-17T10:16:54.004010+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Send result: DataTransfer (638804818138429831-83532) - {\"status\":\"Accepted\"}\n2025-04-17T10:16:53.994621+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Received command: DataTransfer (638804818138429831-83532) - {\"vendorId\":\"AdhocPayment\",\"messageId\":\"FinalCost\",\"data\":\"{\\\"txId\\\":46807302,\\\"cost\\\":2441,\\\"description\\\":{\\\"en\\\":\\\"kWh: 41.377, Duration: 00:20:23, Cost: 24.41 EUR.\\\"}}\"}\n2025-04-17T10:16:53.726370+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Send result: DataTransfer (638804818135042019-d0afb) - {\"status\":\"\nRejected\",\"data\":\"transaction not found\"}\n2025-04-17T10:16:53.722494+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Received command: DataTransfer (638804818135042019-d0afb) - {\"vendorId\":\"AdhocPayment\",\"messageId\":\"RunningCost\",\"data\":\"{\\\"txId\\\":46807302,\\\"cost\\\":2441,\\\"description\\\":{\\\"en\\\":\\\"kWh: 41.377, Duration: 00:20:23.3040000, Cost: 24.41 EUR.\\\"}}\"}",
+            "date": "2025-04-25T12:44:59Z",
+            "extra": {}
+        },
+        {
+            "id": "d86d2333-0624-f011-8c4d-7c1e52768c07",
+            "subject": "AW: ID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error CRM:02698000064",
+            "body": "Good Morning Meghna,\nplease also check why we are not receiving any merchant receipts, only copies of the customer receipts.\nThe terminal is configured to send both copies of merchant and customer receipt to our mail address “cpo@tank.rast.de”:\nKind regards,\nMarius Schneider\nMarius Schneider\nProject Manager E-Mobility\nm +49 (0) 171-5628529\ne\nmarius.schneider@tank.rast.de\nAutobahn Tank & Rast Gruppe GmbH & Co.\nKG, Andreas-Hermes-Str. 7-9, 53175 Bonn,\nwww.tank.rast.de\n,\nSitz der Gesellschaft: Bonn, Amtsgericht Bonn HRA 8655,\nPersönlich haftende Gesellschafterin Autobahn Tank & Rast Management GmbH mit Sitz in Bonn, Amtsgericht Bonn, HRB 21964, Geschäftsführung: Peter M. Löw (Vors.), Lutz Scharpe, Peter Krosta\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 25. April 2025 12:29\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nBetreff:\nID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error CRM:02698000064\nDear Marius Schneider,\nThank you for reaching out to eMobility Support. My name is Meghna, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: AH5020DC001\nChargerID/Serial No.\n: MP / P3 170000422\nProblem Description\n:  Payment terminal error\nFor future reference, your case number is 0420891, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nMeghna Bhardwaj\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-28T07:55:59Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cc6c90d7-5e24-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: AW: ID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error CRM:02698000064",
+            "body": "Hello\nMarius Schneider,\nThanks for the response.\nPlease allow us sometime to analyze the logs and will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-04-28T18:30:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b59c6e7b-19d2-4f34-a376-668712ca43a3",
+            "subject": "Note to ES",
+            "body": "Suspected Root Cause:\nNA\nProblem Description: Payment terminal issue.\nThe charger has an integrated CCV contactless payment terminal, model CCV OPM-C60. The payment terminal went into diagnosis mode and made a daily closing which led the running card transaction to fail. The charging session was therefore not billed correctly; the customer was invoiced the full 50€ preauthorization amount.\nAction Performed (L2):\nLog analysis done.\nCharger SW Version\n: v\nv6.0.3\nReason for Handover (L3\n): Further analysis.\nLogs analysis-\n2025-04-17T10:16:54.469997+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2f8ba0666e82[736]: {\"stack\":\"Error: Transaction Status was: error\\n at /dist/services/paymentTerminal.js:380:35\\n at Generator.next (<anonymous>)\\n at fulfilled (/dist/services/paymentTerminal.js:5:58)\\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\"}\n2025-04-17T10:16:54.468659+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: Partial reversal returned with {\"status\":\"error\",\"message\":\"Could not convert receipt number to TA number\",\"details\":\"Could not convert receipt number to TA number\"}\n2025-04-17T10:16:54.281451+00:00 sicharge-cp [local0:info] sicharge-cp-ccv/e5f40f1ed441[736]: Requested ZVT Partial-Reversal 06 23: amount 2559, and currency EUR,\nreceipt 561\n2025-04-17T10:16:54.004010+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Send result: DataTransfer (638804818138429831-83532) - {\"status\":\"Accepted\"}\n2025-04-17T10:16:53.994621+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Received command: DataTransfer (638804818138429831-83532) - {\"vendorId\":\"AdhocPayment\",\"messageId\":\"FinalCost\",\"data\":\"{\\\"txId\\\":46807302,\\\"cost\\\":2441,\\\"description\\\":{\\\"en\\\":\\\"kWh: 41.377, Duration: 00:20:23, Cost: 24.41 EUR.\\\"}}\"}\n2025-04-17T10:16:53.726370+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Send result: DataTransfer (638804818135042019-d0afb) - {\"status\":\"\nRejected\",\"data\":\"transaction not found\"}\n2025-04-17T10:16:53.722494+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2f8ba0666e82[736]: OCPP: Received command: DataTransfer (638804818135042019-d0afb) - {\"vendorId\":\"AdhocPayment\",\"messageId\":\"RunningCost\",\"data\":\"{\\\"txId\\\":46807302,\\\"cost\\\":2441,\\\"description\\\":{\\\"en\\\":\\\"kWh: 41.377, Duration: 00:20:23.3040000, Cost: 24.41 EUR.\\\"}}\"}",
+            "date": "2025-04-29T19:23:50Z",
+            "extra": {}
+        },
+        {
+            "id": "64b4439a-552a-f011-8c4d-7c1e52768c07",
+            "subject": "Child Case Resolved",
+            "body": "The Child Case 0421634 created on 4/29/2025 7:24:12 PM, for Product Sicharge D - Charging Center and End Customer Autobahn Tank & Rast AG was Closed and Resolved. Please take appropriate actions on this Case.",
+            "date": "2025-05-06T08:39:29Z",
+            "extra": {}
+        },
+        {
+            "id": "49bdb3e4-7fd1-bded-a132-169c457512c3",
+            "subject": "Note to handover ",
+            "body": "Please discuss with ES Ingo",
+            "date": "2025-05-07T16:46:01Z",
+            "extra": {}
+        },
+        {
+            "id": "bb7335f0-fb36-f011-8c4e-6045bde0265d",
+            "subject": "Ticket 0420891 has been closed. Are you satisfied with our provided solution? CRM:00315002672",
+            "body": "Dear Marius, CCV updated the Firmware of the terminal and the Experts' team declared the issue to be solved.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0420891\nwith the title:\nID0420891-DC/Si-D/DE-[MP / P3 170000422] Payment terminal error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-22T11:00:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

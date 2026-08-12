@@ -1,0 +1,46 @@
+{
+    "incident_id": "b8aabf9a-3714-4b78-a5ad-537cec2dc66e",
+    "ticket_number": "0420054",
+    "title": "ID0420054-DC/Si-D/NO-[MP / P1 170000224] LEM issue",
+    "created_on": "2025-04-22T08:22:12Z",
+    "last_activity": "2025-12-04T12:24:58Z",
+    "age": "34499",
+    "description": "Reported behaviour/issue:  Error LEM DC Meter\nSolution:\nWarranty Status: Inactive\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hlPOtU",
+    "stage": null,
+    "serial_number": "MP / P1 170000224",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "0214acab-891f-f011-9989-000d3ab353e4",
+            "subject": "ID0420054-DC/Si-D/NO-[MP / P1 170000224] Error LEM DC Meter CRM:02699000029",
+            "body": "Dear Simen Aarre,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000224\nChargerID/Serial No.\n:\nhlPOtU\nProblem Description\n:\nTroubleshooting\n:\nFor future reference, your case number is\n0420054\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-22T14:54:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99a9f370-b602-4224-955d-df2d199f02e1",
+            "subject": "Note to L2",
+            "body": "Error flags-\noutlet2\nsicharge-cp\nOUTLET\ntrue\nOutlet 2: outoforder, LEMState: Unavailable\nfalse\noutlet3\nsicharge-cp\nOUTLET\ntrue\nOutlet 3: outoforder, LEMState: Error Error on LEM DC Meter (meter id: 1211960557 status: {\"value\":25,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"tamperingIsDetected\":true,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\"reversedVoltage\":false,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})\nfalse",
+            "date": "2025-04-22T15:51:01Z",
+            "extra": {}
+        },
+        {
+            "id": "8a68e745-921f-f011-9989-000d3addf8ce",
+            "subject": "RE: ID0420054-DC/Si-D/NO-[MP / P1 170000224] Error LEM DC Meter CRM:02699000029",
+            "body": "Hello\nSimen Aarre\n,\nI trust this email finds you in good health. We have received a technical support request from\nKople AS\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P1 170000224\nCharger ID/Serial No.:\nhlPOtU\nProblem Description: LEM issue\nPlease note that during the analysis of the charger and error flags, it was observed that the LEM is experiencing an issue. Among the LEM error flags, the critical error flag detected is \"Tampering Detected.\" This indicates that unauthorized manipulation may have occurred. To address this, please inspect the device's integrity, including the manufacturer seals, front panel of the Meter Unit, and Meter Unit housing for signs of forced opening. In both scenarios, it is necessary to replace both components of the LEM, namely the Sensing Unit and Metering Unit. Below are the part numbers for your reference to order and carry out the replacement activity.\noutlet3\nsicharge-cp\nOUTLET\ntrue\nOutlet 3: outoforder, LEMState: Error Error on LEM DC Meter (meter id: 1211960557 status: {\"value\":25,\"bits\":{\"suLinkStatusIsOk\":true,\"muFatalErrorOccured\":false,\"transactionIsOnGoing\":false,\"\ntamperingIsDetected\":true\n,\"timeSyncStatusIsOk\":true,\"overTemperatureIsDetected\":false,\"reversedVoltage\":false,\"suMeasureFailureOccurred\":false}}, error: {\"value\":0,\"bits\":{\"muInitIsFailed\":false,\"suStateIsInvalid\":false,\"versionCheckIsFailed\":false,\"muRngInitIsFailed\":false,\"muDataIntegrityIsFailed\":false,\"muFwIntegrityIsFailed\":false,\"suIntegrityIsFailed\":false,\"logbookIntegrityIsFailed\":false,\"logbookIsFull\":false,\"memoryAccessIsFailed\":false,\"muStateIsFailed\":false}})\nBefore proceeding, please verify the current LEM rating as the charger configuration is not linked to the SCB, and the faulty outlet has a rating of 500A. Consequently, place the order based on the highlighted part numbers, considering that the charger is non-ERK.\nAdditionally, upon reviewing our asset database, we found that the product is no longer under warranty since [01/07/2024], as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer.\nShould you require further remote or expert support, please order it via PMD.\nI am writing to formally inform that we are moving case 0420054 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nNO\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nNO\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-22T15:56:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

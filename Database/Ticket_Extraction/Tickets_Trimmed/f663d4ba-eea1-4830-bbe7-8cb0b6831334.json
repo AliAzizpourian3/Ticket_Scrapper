@@ -1,0 +1,42 @@
+{
+    "incident_id": "f663d4ba-eea1-4830-bbe7-8cb0b6831334",
+    "ticket_number": "0419393",
+    "title": "ID0419393-DC/Si-D/AT-[MP / S5 170003620] Outlet 2 is blocked because the LEM meter outputs - C1",
+    "created_on": "2025-04-17T01:50:08Z",
+    "last_activity": "2025-06-11T16:08:34Z",
+    "age": "80058",
+    "description": "Reported issue:\nThis ticket refers to the already closed ticketID0393637. This was closed too early. I think the reversed voltage problem was confused with the BYD 0kW session problem. The course of our deployments is relatively well visible in the ticket timeline. Problem: We received the order from HQ to perform the H&S temp. sensor wiring on three chargers. This is a very important rewiring of the first 400KW chargers, as without this the performance is limited and at OMV mainly trucks want to charge. The email is attached. The strange problem is that every time we perform the wiring, Outlet 2 is blocked because the LEM meter outputs \"reversed voltage\". Permanently. See screenshots attached. THE WIRING OF THE TEMP. SENSOR SHOULD HAVE NOTHING TO DO WITH THE METER! These are not related.\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620,MP / S5 170003620",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "57af4b1d-f421-1c75-b54e-53b55b6ce2af",
+            "subject": "Handover from ",
+            "body": "Suspected Root Cause :\nWiring issue\nProblem Description : Outlet 2 is blocked because the LEM meter outputs\nAction Performed (L2) :\nCollected information\nCharger SW Version:\nv\n6.1.3-0-gfb2eb75+meter-stop-HF\nReason for Handover (L3) : HQ (Instructions of Rewiring) & R&D Involvement (Beta Testing of FW)\nAction Required\nAction by HQ :  Need to validated wiring information.\n“Upon rewiring they get the issue of LEM is sending an reverse voltage error and the DC2 is therefore unavailable.”",
+            "date": "2025-04-17T02:14:12Z",
+            "extra": {}
+        },
+        {
+            "id": "d6a63c6b-d7c9-44bd-8c69-c96e27b2dbcd",
+            "subject": "Additional Information",
+            "body": "ID0418167 - Parent case.\nID0393637 - Previous case.\nWhenever Rewiring, Charger is getting Out of order.\nWe need to plan for site intervention and check.",
+            "date": "2025-04-17T08:26:57Z",
+            "extra": {}
+        },
+        {
+            "id": "8a2e56d3-dd46-f011-877a-7c1e52fad806",
+            "subject": "0419393 - ID0419393-DC/Si-D/AT-[MP / S5 170003620] Outlet 2 is blocked because the LEM meter outputs - C1 CRM:00472000310",
+            "body": "Hello Daniel,\nI discussed the topic together with Product Champion and Serviceability Manager and you have permission to let the charger running in the original state from factory.\nThe rewiring instructions are meant to boost the performance and don't have impact in safety.\nI will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-11T16:05:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

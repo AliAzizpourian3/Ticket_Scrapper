@@ -1,0 +1,182 @@
+{
+    "incident_id": "51b2cad6-99a8-ef11-b8e9-7c1e5237dbeb",
+    "ticket_number": "0391381",
+    "title": "ID0391381-DC/SI-D/AE-[MP / R8 170002420]-meter reading unable read in OCPP backend",
+    "created_on": "2024-11-22T06:20:16Z",
+    "last_activity": "2025-12-16T14:03:49Z",
+    "age": "10705",
+    "description": "Reported behavior/ issue:\nmeter reading unable read in OCPP backend\nRoot cause: parameters wrongly configured\nSolution: Query answered\nWarranty Status : Active (9/4/2025)\nFW: Dc Charger 170002420 meter reading unable read in OCPP backend (UAEV-Etihad WE)",
+    "type": 3,
+    "priority": 3,
+    "stage": null,
+    "serial_number": "MP / R8 170002420",
+    "case_nature_code": null,
+    "chargerID": "MP / R8 170002420",
+    "additional_info": [
+        {
+            "id": "b21b20c9-99a8-ef11-b8e9-000d3a6610b3",
+            "subject": "FW: Dc Charger 17002420 meter reading unable read in OCPP backend (UAEV-Etihad WE)",
+            "body": "Dear support.\nPlease be requested to open the ticket for subject charger are currently unable to monitor the active session of the EV charger. Specifically, we need to track the current charging speed and the total kWh charged during an active session.\nPlease find attached the relevant details for your reference and necessary action.\nRegards\nSyed Basheeruddin",
+            "date": "2024-11-22T06:19:58Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0decff59-a8a8-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0391381 CRM:00225128071",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0391381 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=51b2cad6-99a8-ef11-b8e9-7c1e5237dbeb",
+            "date": "2024-11-22T08:04:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5d27b27-aaa8-ef11-b8e9-0022489bcff4",
+            "subject": "ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Dear Basheer,\nThank you for reaching out to eMobility Support. My name is\nVaishnavy\n, and I will be assisting you with your following query today:\nProduct\n: Dummy Product - eMobility\nMain Asset\n: N/A\nChargerID/Serial No.\n: N/A\nProblem Description\n:\nmeter reading unable read in OCPP backend\nTroubleshooting\n: Please send entire serial number of the charger or charger ID. The sent serial number isn't complete.\nFor future reference, your ticket number is\n0391381\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-22T08:17:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "51dc23b2-aca8-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Dear Support,\nAs requested, please find below.\nRegards\nSyed Basheeruddin",
+            "date": "2024-11-22T08:35:20Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9f2c682-eaaa-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Hello Basheer,\nThanks for sharing the serial number.\nAt first, I would highlight that the backend is not in the successfully integrated backend list for Sicharge D :\nBackend Integrations\n,\nHaving said that, I tried to search the logs from 20/11/24 till 23/11/24, here are my findings:\nThe charger is manufactured without the LEM; hence Sicharge D will not send any MeterValues with\nEnergy.Active.Import.Register,\nmeasurand -\nEnergy.Active.Import.Register & Energy.Active.Import.Interval\nare not configured by OCPP backend in the\nMeterValuesSampledData\n. Ask your customer to add these two measurand in MeterValuesSampledData by using ChangeConfiguration. However, please keep point 1 in mind.\nMeterValueSampleInterval\nwas 0 in the begining - Please set it to 30, 60 or any value as per backend need.\nThe OCPP operator can't see recurring the kWh being delivered (e.g 1min cycle) i.e.\nEnergy.Active.Import.Register\nThey could still the energy at start (always start with 0 ) and at the end of session (with actual energy consumed).\nIn this case the Meter start (at StartTransaction) is always 0\nMeter Stop (at StopTransaction) will be equal to energy delivered\nEnergy.Active.Import.Interval\n-> This can be configured to know whole energy delivered within the session.\nHope this explains, if your CPO has furthermore questions, we suggest proposing a backend integration for detailed integration test and answerind customer queries.\nLet me know if we are good to close the case.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-25T05:02:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3998ff4-eeaa-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Basheer,\nHere are the logs, in case you and the customer are interested.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-25T05:34:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "364a1a03-d5ab-ef11-b8e8-000d3ab9a120",
+            "subject": "RE: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Dear Reetesh,\nWe will hold the ticket until get response from RM as discussed.\nRegards\nSyed Basheeruddin",
+            "date": "2024-11-26T09:01:26Z",
+            "extra": {
+                "sender": "thangal.basheer.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "47944b43-70ae-ef11-b8e9-000d3aba081f",
+            "subject": "RE: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Hello,\nAs discussed on teams call, we shall proceed forward to close the case.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-29T16:37:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a075b9d1-70ae-ef11-b8e9-000d3aba081f",
+            "subject": "Ticket 0391381 has been closed. Are you satisfied with our provided solution? CRM:01282000675",
+            "body": "Dear Basheer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0391381\nwith the title:\nID0391381-DC/SI-D/AE-[MP / R8 170002420]-meter reading unable read in OCPP backend\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-29T16:41:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "85f79f52-4cb1-ef11-b8e8-7c1e52378e9b",
+            "subject": "FW: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Dear Jens,\nHope you are doing well.\nKindly allow me to brief the below;\n1-VIP Customer ordered 40 units without LEM meter.\n2-Customer is keen on receiving the “metervalues.\nregister” ,\ncomparing Siemens to other brands which already providing the same.\n3-NOC team well explained an alternative solution in detail.\nSo based on the above; would you please confirm whether getting the\nregister\nvalues is planned in any of the future “FW Release” and expected date for the same, or the same is not applicable as long as no LEM meter is installed.\nKindly let me know if further clarification is required.\nBR,\nSadek",
+            "date": "2024-12-03T07:58:13Z",
+            "extra": {
+                "sender": "sadek.hassanien@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d2539359-4cb1-ef11-b8e9-0022489bcff4",
+            "subject": "Email sent to a closed case 'ID0391381-DC/SI-D/AE-[MP / R8 170002420]-meter reading unable read in OCPP backend (0391381)' CRM:00225132723",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0391381\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-12-03T07:58:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "181329e0-5fb1-ef11-b8e8-000d3ab9a120",
+            "subject": "AW: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Dear Sadek,\ncurrently ist planned for v6.1 which is planned for end of March 2025.\nYou can find it in the roadmap as feature “Energy Monitoring w/o DC meter”.\nBR\nJens\nVon:\nHassanien, Sadek (RC-QA SI E) <sadek.hassanien@siemens.com>\nGesendet:\nDienstag, 3. Dezember 2024 08:58\nAn:\nAmarell, Jens (SI E PLM HP) <jens.amarell@siemens.com>\nCc:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Sharma, Reetesh Kumar (SI E CS TS NOC) <sharma.reetesh@siemens.com>; BASHEER, THANGAL (ext) (RC-AE SI EA CS) <thangal.basheer.ext@siemens.com>\nBetreff:\nFW: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660\nPriorität:\nHoch\nDear Jens,\nHope you are doing well.\nKindly allow me to brief the below;\n1-VIP Customer ordered 40 units without LEM meter.\n2-Customer is keen on receiving the “metervalues.\nregister” ,\ncomparing Siemens to other brands which already providing the same.\n3-NOC team well explained an alternative solution in detail.\nSo based on the above; would you please confirm whether getting the\nregister\nvalues is planned in any of the future “FW Release” and expected date for the same, or the same is not applicable as long as no LEM meter is installed.\nKindly let me know if further clarification is required.\nBR,\nSadek",
+            "date": "2024-12-03T10:18:07Z",
+            "extra": {
+                "sender": "jens.amarell@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a02137e5-5fb1-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Email sent to a closed case 'ID0391381-DC/SI-D/AE-[MP / R8 170002420]-meter reading unable read in OCPP backend (0391381)' CRM:00225132862",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0391381\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-12-03T10:18:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bbdf450a-60b1-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Re: ID0391381-DC/SI-D/AE-[Unknown]-meter reading unable read in OCPP backend CRM:01282000660",
+            "body": "Many Thanks Jens!",
+            "date": "2024-12-03T10:19:13Z",
+            "extra": {
+                "sender": "sadek.hassanien@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6cdaf609-60b1-ef11-b8e8-000d3ade3245",
+            "subject": "Email sent to a closed case 'ID0391381-DC/SI-D/AE-[MP / R8 170002420]-meter reading unable read in OCPP backend (0391381)' CRM:00225132863",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0391381\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-12-03T10:19:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

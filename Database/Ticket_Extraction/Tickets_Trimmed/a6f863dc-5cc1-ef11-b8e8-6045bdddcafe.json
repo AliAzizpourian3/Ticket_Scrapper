@@ -1,0 +1,123 @@
+{
+    "incident_id": "a6f863dc-5cc1-ef11-b8e8-6045bdddcafe",
+    "ticket_number": "0397109",
+    "title": "ID0397109-DC/Si-D/IL-[170001152]-Problems during commission-",
+    "created_on": "2024-12-23T18:36:47Z",
+    "last_activity": "2025-12-16T14:02:43Z",
+    "age": "60033",
+    "description": "Reported behavior/issue:\nProblems during commission\nRoot cause: KF11\nSolution:\nCharger\ncame back to work only after replacing KF11\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status:Expired\nNote from L3:\nAfter KF11 replacement, charger was operational.\nPlease close the ticket.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / PN 170001152",
+    "case_nature_code": null,
+    "chargerID": "FctPJa",
+    "additional_info": [
+        {
+            "id": "f7823ed2-5cc1-ef11-b8e8-7c1e527784c9",
+            "subject": "Problems during commission- 170001152",
+            "body": "Hello Colleagues,\nToday, during a charging station commission attempt, I ran into a bunch of problems.\nAs soon as the charging station went up to the SCB for the first time after connecting it to the electricity, it was updated to FW 2.5.2, therefore we directly attempted an initial update to 2.11 via USB as in every commission we do, the update is of course done in chronological order.\nIn any case the update failed numerous times\nThe HMI screen is stuck at 70 percent status:\nThere were a minimal number of logs in Error flags from the SCB (while the HMI screen still shows 70 percent), no logs appeared in Show logs.\n(PLC was on RUN mode)\nI ran a test in MobaXterm for the IP addresses on both routers, it looked fine.\n10.20.17.1--- 8 IP addresses\n10.20.17.2--- 7 IP addresses\nAfter numerous failed attempts to understand the problem, we had to end the day the site is in a very remote location, on the way I saw on the SCB that the charging station was back to full communication intermittently on the SCB with several problems:\n- SECC_DC1_MB_Problem\n- SECC_DC2_MB_Problem\n- Outlet 1 LEM Unavailable (I tried to delete the IP address in the SCB to check if this is some LEM problem, but the problem remains in the SCB, for the information the address is still missing in the SCB I will return it as soon as I have communication back with a charging station)\nThe SCB lost communication many times during this time as well, I looked at the logs and saw that a reboot was sent by the router many times:\nCharging station is now in the remote FW update sent by me (takes a lot of time over an hour after Activ update is activated, I think because of all the problems I mentioned)\nFYI, I tried a KF11 replacement attempt, I keep spare parts during once we get to the commission, that didn't help either and the problem remains the same.\nPlease investigate the case in depth and share the information with L3, we request a meeting on the site with a support team, please also provide us with a list of spare parts, if necessary, the site is very remote for us.\nPlease help us in this case as soon as possible.\nBr,\nOrel.",
+            "date": "2024-12-23T18:36:38Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f7bdb6c0-67c1-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0397109 CRM:00225141952",
+            "body": "Vaishnavy Gurav was assigned as new Case Manager for case 0397109 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6f863dc-5cc1-ef11-b8e8-6045bdddcafe",
+            "date": "2024-12-23T19:54:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "44f5589c-68c1-ef11-b8e8-7c1e5235925f",
+            "subject": "ID0397109-DC/Si-D/IL-[170001152]-Problems during commission- CRM:01282000737",
+            "body": "Dear orel lachiani,\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavy\n, and I will be assisting you with your following query today:\nProduct\n:\nSicharge-D\nMain Asset\n:\n170001152\nProblem Description\n:\nProblems during commission\nTroubleshooting\n: We shall forward the case to experts for further support\nFor future reference, your case number is\n0397109\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-23T20:00:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd6d3c2c-3306-efaf-b035-f9685e71108e",
+            "subject": "L2 To L3",
+            "body": "Reason to handover: Commissioning support case",
+            "date": "2024-12-23T20:04:02Z",
+            "extra": {}
+        },
+        {
+            "id": "4f2f6551-68c3-ef11-b8ea-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0397109 CRM:00225142379",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0397109 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6f863dc-5cc1-ef11-b8e8-6045bdddcafe",
+            "date": "2024-12-26T09:03:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7321b913-d0d0-ef11-8ee9-000d3ab41b62",
+            "subject": "RE: ID0397109-DC/Si-D/IL-[170001152]-Problems during commission- CRM:01282000737",
+            "body": "Dear Joao,\nI would like to update, that the charging position came back to work only after replacing KF11, which was apparently faulty.\nPlease write this down when closing the ticket, so that we can submit a warranty claim for the replaced item.\nBr,\nOrel.",
+            "date": "2025-01-12T10:29:25Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e5a328da-96d8-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0397109-DC/Si-D/IL-[170001152]-Problems during commission- CRM:01282000737",
+            "body": "Dear Joao, good morning.\nI am attaching the warranty claim for the replaced item, you can close the ticket.\nMany thanks!\nBr,",
+            "date": "2025-01-22T07:59:59Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ef031104-e7df-ef11-8eea-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0397109 CRM:00225156814",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0397109 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a6f863dc-5cc1-ef11-b8e8-6045bdddcafe",
+            "date": "2025-01-31T15:21:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99bc73c6-1ee2-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0397109-DC/Si-D/IL-[170001152]-Problems during commission- CRM:01282000737",
+            "body": "Dear orel lachiani,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0397109, and the case is now closed.\nProblem Description\n: Problems during commission\nResolution\n: Charger\ncame back to work only after replacing KF11\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-03T11:05:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58bcb708-1fe2-ef11-8eea-0022489bcff4",
+            "subject": "Ticket 0397109 has been closed. Are you satisfied with our provided solution? CRM:01251001202",
+            "body": "Dear Orel,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0397109\nwith the title:\nID0397109-DC/Si-D/IL-[170001152]-Problems during commission-\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSunil Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-03T11:07:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

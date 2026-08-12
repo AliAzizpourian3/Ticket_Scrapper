@@ -1,0 +1,119 @@
+{
+    "incident_id": "99c20fa3-891d-49d8-b5c4-75261901d662",
+    "ticket_number": "0398441",
+    "title": "ID0398441-DC/Si-D/DK-[ MP / R5 170001905 ] Main breaker fault",
+    "created_on": "2025-01-07T12:10:20Z",
+    "last_activity": "2025-03-11T11:10:13Z",
+    "age": "90660",
+    "description": "Reported behavior/issue:\nMain breaker fault\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status: Active_14/6/2025",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "Fy1cQz",
+    "stage": null,
+    "serial_number": "MP / R5 170001905",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "19d1ac61-f0cc-ef11-8ee9-7c1e5237af0e",
+            "subject": "A new case manager was assigned to 0398441 CRM:00225145225",
+            "body": "Martin Koch Pedersen was assigned as new Case Manager for case 0398441 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=99c20fa3-891d-49d8-b5c4-75261901d662",
+            "date": "2025-01-07T12:10:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e076351e-f3cc-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0398441 CRM:00225145253",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0398441 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=99c20fa3-891d-49d8-b5c4-75261901d662",
+            "date": "2025-01-07T12:30:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab2168dc-8859-5a20-9e55-53f48fb180d2",
+            "subject": "Reported from the RC",
+            "body": "Main breaker fault. After the customer have opened the door, the charger comes with this fault.\nWe have tried the close the charger completely down, without success.",
+            "date": "2025-01-07T12:32:36Z",
+            "extra": {}
+        },
+        {
+            "id": "feb95a1c-f5cc-ef11-b8e8-7c1e52378e9b",
+            "subject": "ID0398441-DC/Si-D/DK-[ Null ] Main breaker fault CRM:00641000954",
+            "body": "Dear Martin Koch Pedersen,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170001905\nChargerID/Serial No.\n:\nMP / R5 170001905\nProblem Description\n: Main breaker fault\nFor future reference, your case number is\n0398441\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-07T12:44:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4e46bf6-05cd-ef11-b8e8-000d3ab41b62",
+            "subject": "RE: ID0398441-DC/Si-D/DK-[ MP / R5 170001905 ] Main breaker fault CRM:00641000954",
+            "body": "Dear Martin Koch,\nHope you are doing well,\nAs per the reported issue, we have checked the charger on SCB and identified a failure with the Main Breaker (QA1) not closing. Therefore, a site intervention is required.\nChecklist for Troubleshooting\nWiring and Power Supply\nInspect all wiring and verify the presence of 230V AC power supply from QA29 & QA28 to the MA1 terminal.\nContactor Checks\nInspect the coils and auxiliary contactors QA28 and QA29, which control the ON/OFF operation of the motor charging operator.\nInput and Output Status\nCheck the status of:\nInput:\nDI12\n(used for status monitoring).\nOutput commands:\nDQ9 & DQ10\n(used for sending commands to the breaker).\nManual MCCB Operation\nPlan to manually close the MCCB by applying 24V manually to QA29.\nMA1 Terminal Verification\nVerify if the MA1 terminal is not closing even after receiving a positive latch.\nCheck if there are no lights on the ACT indicator.\nComponent Replacement Plan\nIf the issue persists:\nReplace MA1\nand restart the charger.\nIf the problem still exists,\nreplace QA1 breaker\n.\nPlease refer to the attached\nschematic\nand\nknowledge article\nfor detailed guidance on troubleshooting the issue.\nKnowledge Article: Knowledge Article for ISP: Emobility_SID_HW_Braeker,QA1_Mainbreaker QA1 error - Dynamics 365\nPlease carry the following spare parts in case replacements are needed during the site intervention.\nQA1-: 3VA1463-6EF42-0AA0\nMA1-: 3VA9467-0HA20\nContactor-:  QA28/QA29\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-07T14:44:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "753c8b27-09cd-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0398441-DC/Si-D/DK-[ MP / R5 170001905 ] Main breaker fault CRM:00641000955",
+            "body": "Dear Martin Koch,\nI am writing to formally inform that we are moving case 0398441 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-DK SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-DK SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-07T15:07:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bae39fb6-31d7-ef11-8eea-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0398441 CRM:00225150919",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0398441 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=99c20fa3-891d-49d8-b5c4-75261901d662",
+            "date": "2025-01-20T13:23:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "623aae3e-96da-ef11-8eea-000d3ab41b62",
+            "subject": "RE: ID0398441-DC/Si-D/DK-[ MP / R5 170001905 ] Main breaker fault CRM:00641000955",
+            "body": "Hello Team,\nHope you are doing well.\nCould you please update the status of this ticket.?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-24T21:00:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33752269-86dc-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0398441-DC/Si-D/DK-[ MP / R5 170001905 ] Main breaker fault CRM:00641000955",
+            "body": "We have been onsite.\nThe MA1 was defect and replaced.\nAfter this the charger was working again.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-27T08:12:16Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "144cb9aa-9df3-fd02-8747-2dc0135caeca",
+            "subject": null,
+            "body": "Please close the ticket",
+            "date": "2025-02-18T12:18:59Z",
+            "extra": {}
+        }
+    ]
+}

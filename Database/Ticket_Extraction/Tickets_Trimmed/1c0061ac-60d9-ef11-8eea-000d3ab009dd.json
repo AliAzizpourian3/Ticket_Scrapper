@@ -1,0 +1,288 @@
+{
+    "incident_id": "1c0061ac-60d9-ef11-8eea-000d3ab009dd",
+    "ticket_number": "0401704",
+    "title": "ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue",
+    "created_on": "2025-01-23T08:04:33Z",
+    "last_activity": "2025-04-17T09:19:58Z",
+    "age": "62255",
+    "description": "Reported behavior/issue:\nCharging issue\nRoot cause: Contactor QA9-10 fbK:on cmd:off\nSolution: Replace contactor\nOn DAMEX Sanctioned List: no\nWarranty Status: Active_08/08/2026",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "TtvcAx",
+    "stage": null,
+    "serial_number": "MP / S2 170003340",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "25b534a9-60d9-ef11-8eea-000d3ab66b74",
+            "subject": "Webform_incident_SiCharge D_23-01-2025_SN: MP / S2 170003340",
+            "body": "Dear Martin Teepe,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003340\nThank you\neMobility Technical Support Team\nSehr geehrte/r Martin Teepe,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003340\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-23T08:04:28Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "acc30429-6dd9-ef11-8eea-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0401704 CRM:00225152733",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0401704 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c0061ac-60d9-ef11-8eea-000d3ab009dd",
+            "date": "2025-01-23T09:34:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c83299a-e0d0-ef48-a8bb-f3c86171969e",
+            "subject": "Reported from the Customer",
+            "body": "The charging station in a depot and we with the backend\nDepotFinity. Volvo trucks are loaded. If a\ntruck is currently being charged, no\nCharging process. The charging point will be marked with Except\nOperation indicated",
+            "date": "2025-01-23T09:56:24Z",
+            "extra": {}
+        },
+        {
+            "id": "bb8fe80a-72d9-ef11-8eea-7c1e5235925f",
+            "subject": "ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00641000976",
+            "body": "Dear Mr. Martin Teepe,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003340\nChargerID/Serial No.\n:\nTtvcAx\nProblem Description\n:\nCharging issue\nFor future reference, your case number is\n0401704\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T10:08:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6cd6dfe1-a8d9-ef11-8ee9-000d3a67b137",
+            "subject": "RE: ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00641000976",
+            "body": "Dear Team,\nHope you are doing well,\nAs per the reported timestamp, the logs indicate repeated issues with the DC_Contactors MG1-MG2_QA09-10 and QA13-14. The session has been aborted multiple times due to the coil being stuck at ON feedback.\nTo address this effectively, we recommend planning a site intervention.\nBelow are the troubleshooting steps to assist during the visit.\nTroubleshooting Steps:\nCheck the Coils:\nSupply 24V separately to the coils (QA09-10 and QA13-14).\nObserve if they pick up properly.\nEvaluate Contactor Condition:\nIf coils (QA09-10 and QA13-14) do not pick up properly:\nThe contactors might be faulty.\nRepair or replace the faulty contactors.\nInspect Auxiliary Contactors:\nIf the coils pick up properly:\nInspect the auxiliary contactors.\nEnsure they are functioning correctly, as they control the main DC output for charging.\nVerify Feedback to PLC:\nCheck the feedback mechanism that provides the status to the PLC.\nEnsure the feedback signals are accurate and correctly interpreted by the PLC.\nKindly carry spare contactors in case replacement is needed during the intervention\n8EM5903-0AA00-7AA8 Qty-04\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T16:41:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59a646de-aad9-ef11-8ee9-000d3a67b137",
+            "subject": "ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00641000979",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0401704 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-DE SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-DE SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T16:55:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "798dc568-24da-ef11-8ee9-000d3ad9431b",
+            "subject": "A new case manager was assigned to 0401704 CRM:00225153284",
+            "body": "Sascha Theil was assigned as new Case Manager for case 0401704 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c0061ac-60d9-ef11-8eea-000d3ab009dd",
+            "date": "2025-01-24T07:25:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b1af6f9-2bda-ef11-8eea-002248a2b1bd",
+            "subject": "0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000374",
+            "body": "Hi Abhinav,\nThanks for bringing this to my attention and also the troubleshooting suggestions.\nJust to be sure, I understand your feedback correctly: are you saying that we should bring\nfour\nof the following spare part on site?\n8EM5903-0AA00-7AA8 Qty-04\nPlease advise\nSascha",
+            "date": "2025-01-24T08:19:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b94a8513-52da-ef11-8eea-7c1e5235e725",
+            "subject": "RE: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000374",
+            "body": "Dear Mr.Sascha,\nHope you are doing well,\nYes, please carry the four contactors along with a 24V SMPS to test the contactors before proceeding with the replacement.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-24T12:52:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5c7c55d1-5ada-ef11-8eea-000d3a697eb1",
+            "subject": "AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000374",
+            "body": "Thanks Abhinav!\nMit freundlichen Grüßen\nSascha Theil\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nDatum:\nFreitag, 24. Januar 2025 um 13:55\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nBetreff:\nRE: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000374\nDear Mr.Sascha,\nHope you are doing well,\nYes, please carry the four contactors along with a 24V SMPS to test the contactors before proceeding with the replacement.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-24T13:55:17Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "417324e6-5ada-ef11-8ee9-000d3ad9431b",
+            "subject": "0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nHellmann\nMLFB / Bezeichnung\n4x 8EM5903-0AA00-7AA8 Contactors\nAuftragsnummer\nMuss bitte noch angelegt werden\nTicketnummer\nSiehe oben\nLieferadresse\nNiederlassung Hannover\nGWL?\nja\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-01-24T13:55:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f5b298c-47dd-ef11-8eea-002248a2b1bd",
+            "subject": "AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Sascha,\nAuftrag 30737724 ist angelegt.\nMaterial ist bestell. Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\Hellmann Worldwide Logistics Germany GmbH & Co.\nKG\\A-30737724-Ticketnr. 0401704\\06_SV-Lieferant\\3314217040.PDF\nRMA Request 139\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 24. Januar 2025 14:57\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nHellmann\nMLFB / Bezeichnung\n4x 8EM5903-0AA00-7AA8 Contactors\nAuftragsnummer\nMuss bitte noch angelegt werden\nTicketnummer\nSiehe oben\nLieferadresse\nNiederlassung Hannover\nGWL?\nja\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-01-28T07:14:53Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2b460cab-bcee-ef11-9341-002248a2968e",
+            "subject": "RE: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Teepe,\nmich hat in der Zwischenzeit Ihr Ticket erreicht und gerne möchte ich unsere Technikerin Ramona Hilse zu Ihnen schicken.\nUm dies jedoch tun zu dürfen, müsste ich Sie bitten, zu folgendem Punkt kurz Rückmeldung zu geben:\nMit freundlichen Grüßen\nSascha Theil\nSehr geehrte Damen und Herren,\nUm Ihre ERK-zertifizierte Ladesäule wieder instandsetzen zu können, müssen wir als Dienstleister vorab sicherstellen, dass die Ladesäule durch Sie bei der Bundesnetzagentur beziehungsweise dem Eichamt registriert wurde.\nKönnten Sie dies bitte vorab bestätigen?\nZuvor dürfen wir leider keinen unserer Techniker rausschicken.\nMit freundlichen Grüßen\nSiemens eMobility Services",
+            "date": "2025-02-19T12:26:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b14738b-c2ee-ef11-9342-6045bdde1b10",
+            "subject": "0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000407",
+            "body": "Hi Ramona,\nhier noch vorab zu diesem Ticket eine Info von Francisco de Matos / Catalina. Kannst Du das bitte berücksichtigen, wenn Du am Charger bist?\n########\nMy final comment is that regarding the oscilloscope measurements, it’s up to you how you want to handle it, since the error doesn’t appear every time, we need to be there until we get it, the more occurrences we have recorded the better, so that Catalina can present this to Volvo.\nSince you are exchanging the QA9-10 from one charger, they must use the other to charge, so we should use that one for monitoring.\nI managed to get a photo from a colleague that performed these tests on a different project. (see attachment)\nEasiest way to do it is to use a WAGO terminal where you can fit another cable and measure with the oscilloscope:\n(see attachment 2)\nHere there are 2 separate measurements, CP and fast shutdown, but we don’t need to measure the fast shutdown.\n####\nGrüße\nSascha",
+            "date": "2025-02-19T13:08:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "352f5efa-c3ee-ef11-9341-6045bde1756e",
+            "subject": "RE: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000407",
+            "body": "Kannst Du Catalina und Francisco bitte Bescheid geben, bevor Du zum Kunden fährst?\nSie würden sich dann von Remote hinzuschalten.\nGrüße\nSascha",
+            "date": "2025-02-19T13:18:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2836be07-cfee-ef11-9342-6045bdde1b10",
+            "subject": "RE: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Teepe,\nwir haben uns dieses Ticket gerade noch mal intern angeschaut und festgestellt, dass es sich hierbei um ein Missverständnis handelt und dieser Charger ja gar nicht ERK-konform ist.\nInsofern hier die Bitte, meine letzte Mail zu ignorieren. Meine Kollegin Frau Hilse wird sich stattdessen bei Ihnen zwecks der Terminfindung bei Ihnen melden.\nEntschuldigen Sie bitte die Umstände.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-19T14:37:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f136b04-47ef-ef11-9341-7c1e522002af",
+            "subject": "AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo zusammen,\njetzt haben wir ein Problem die Anlage in Osnabrück zeigt Außer Betrieb an.\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics Germany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone  +49 541 605-1442\nMobile  +49 151 2034 1442\nFax       +49 541 605-451275\nE-Mail  martin.teepe@hellmann.com\n#GernePerDu\nTHINKING AHEAD - MOVING FORWARD\nHandelsregister / Commercial Register Osnabrueck HRA 205173\nGeschäftsführer / Managing Directors: Sven Eisfeld, Benjamin Engel, Jens Tarnowski, Sandra Vodde. Persönlich haftende Gesellschafterin: Beteiligungsgesellschaft HWL GmbH, mit Zweigniederlassung in Osnabrück HRB 216202 (Amtsgericht Osnabrück), Salzburg / Österreich, Firmenbuch Landesgericht Salzburg FN 555962 t.\nUSt-IdNr. / V.A.T. Id. no.: DE 309356252\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 – ADSp 2017 – und – soweit diese für die Erbringung logistischer (Zusatz-) Leistungen nicht gelten – nach den Logistik-AGB, Stand 2019. Hinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§ 431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen Euro je Schadenfall sowie 2,5 Millionen Euro je Schadenereignis, mindestens aber 2 SZR/kg, beschränken. Die ADSp 2017 können Sie unter\nwww.hellmann.com/adsp\nabrufen, die Logistik-AGB 2019 unter\nwww.hellmann.com/logagb\n.\nWeitere Informationen zum Thema Datenschutz und unserem Umgang mit personenbezogenen Daten finden Sie unter folgendem Link:\nwww.hellmann.com/datenschutz\nWe operate exclusively in accordance with the German Freight Forwarders' Standard Terms and Conditions 2017 (Allgemeine Deutsche Spediteurbedingungen 2017 – ADSp 2017) and – if they do not apply for performing (supplementary) logistics services – with the General Terms and Conditions of Logistics-Services Providers (Logistik-AGB), as of 2019. Note: In clause 23 the ADSp 2017 deviate from the statutory liability limitation in section 431 of the German Commercial Code (HGB) by limiting the liability for multimodal transportation with the involvement of sea carriage and an unknown damage place to 2 SDR/kg and, for the rest, the customary liability limitation of 8.33 SDR/kg additionally to Euro 1.25 million per damage case and EUR 2.5 million per damage event, but not less than 2 SDR/kg. You can find the ADSp 2017 here:\nwww.hellmann.com/ffst\nand the Logistik-AGB 2019 here:\nwww.hellmann.com/loggtc\n.\nFor further information on the subject of data protection and our handling of personal data please refer to the following link:\nwww.hellmann.com/privacy\nVon:\nemobility_support.si@siemens.com\nGesendet:\nMittwoch, 19. Februar 2025 15:39\nBis:\nMartin Teepe\nCc:\nHilse, Ramona\nBetreff:\nRE: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nSie erhalten nicht häufig E-Mails von emobility_support.si@siemens.com.\nErfahren Sie, warum dies wichtig ist\nHallo Herr Teepe,\nwir haben uns dieses Ticket gerade noch mal intern angeschaut und festgestellt, dass es sich hierbei um ein Missverständnis handelt und dieser Charger ja gar nicht ERK-konform ist.\nInsofern hier die Bitte, meine letzte Mail zu ignorieren. Meine Kollegin Frau Hilse wird sich stattdessen bei Ihnen zwecks der Terminfindung bei Ihnen melden.\nEntschuldigen Sie bitte die Umstände.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-20T04:56:24Z",
+            "extra": {
+                "sender": "martin.teepe@hellmann.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dc81e09c-51f0-ef11-9341-7c1e527622e8",
+            "subject": "RE: AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Teepe,\nich habe mir diese Ladesäule soeben noch mal angeschaut. Auf unserer Seite, gemäß den Informationen in unserem Backend, scheint alles in Ordnung zu sein.\nKönnen Sie das auf Ihrer Seite bestätigen?\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-21T12:44:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "abb17947-5af0-ef11-9341-000d3a6717e6",
+            "subject": "Re: AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Theil,\nEs gibt nur Probleme, wenn 2Fhz gleichzeitig angeschlossen sind. Dann lädt nur das erste und das zweite beginnt manchmal, wenn der erste 100%hat oder abgekoppelt wird.In der Zeit von 6.30 bis ca. 16 Uhr steht keiner an der Ladestation.\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics\nGermany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone\n+49 541 605-1442\nMobile\n+49 151 2034 1442\nFax\n+49 541 605-451275\nE-Mail\nmartin.teepe@hellmann.com\n#GernePerDu",
+            "date": "2025-02-21T13:46:44Z",
+            "extra": {
+                "sender": "martin.teepe@hellmann.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0e4c04b7-5af0-ef11-9341-002248a2968e",
+            "subject": "Re: AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Teepe,\nDanke Ihnen für die schnelle Rückmeldung. Ich gehe dem auf Basis dieser Info noch mal nach.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-21T13:49:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "30106ae1-5af0-ef11-9341-002248a2968e",
+            "subject": "FW: Re: AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hi Semih,\nkannst Du auf Basis des Kundenfeedbacks bitte noch mal prüfen, ob der geplante Einsatz noch richtig ist?\nLetzte Troubleshooting Hinweise, die ich Ramona mitgegeben habe, sind folgende:\nCheck the Coils:\nSupply 24V separately to the coils (QA09-10 and QA13-14).Observe if they pick up properly.Evaluate Contactor Condition:\nIf coils (QA09-10 and QA13-14) do not pick up properly:\nThe contactors might be faulty.Repair or replace the faulty contactors.Inspect Auxiliary Contactors:\nIf the coils pick up properly:\nInspect the auxiliary contactors.Ensure they are functioning correctly, as they control the main DC output for charging.Verify Feedback to PLC:\nCheck the feedback mechanism that provides the status to the PLC.Ensure the feedback signals are accurate and correctly interpreted by the PLC.\nKindly carry spare contactors in case replacement is needed during the intervention\n8EM5903-0AA00-7AA8 Qty-04\nGrüße\nSascha",
+            "date": "2025-02-21T13:51:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "616bc957-86f2-ef11-be1f-6045bddd587e",
+            "subject": "RE: FW: Re: AW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hi,\nic hbesprich das mit der Ramona, aber da es nur ein low Flex ist denke ich stimmt die vermutung mit den contactors, ich check das nacher mal.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-24T08:07:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "18cfa5c1-43f4-ef11-be1f-6045bddd5690",
+            "subject": "AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Danke Dir, Daniel!\nHallo Herr Teepe,\nich habe soeben von unserer Technikerin Frau Hilse verstanden, dass die berechtigte Hoffnung besteht, dass durch ihren heutigen Einsatz vor Ort nun auch das parallele Laden mit zwei Fahrzeugen funktionieren sollte.\nKönnten Sie dies bitte noch mal probieren und entsprechend Rückmeldung geben?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nAndreici, Daniel (SI E C SOL) <daniel.andreici@siemens.com>\nDatum:\nMittwoch, 26. Februar 2025 um 14:01\nAn:\nMartin Teepe <Martin.Teepe@hellmann.com>, Theil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>, Piroth, Ralf (SI E C SOL) <Ralf.Piroth@siemens.com>, Narten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nCc:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>, Michael Rothenberger <Michael.Rothenberger@hellmann.com>, Florian Stille <Florian.Stille@hellmann.com>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Teepe,\nvielen Dank für die Rückmeldung - das ist die richtige Batterie.\nWir planen die IBN kurzfristig, wahrscheinlich kommenden Dienstag ein. Ich melde mich morgen nochmals mit einem verbindlichen Termin.\nWith best regards,\nDaniel Andreici\nSiemens AG\nSmart Infrastructure\neMobility\nSolutions\nSI E C SOL\nSiemenspromenade 10\n91058 Erlangen, Germany\nPhone: +49 (9131) 17-46091\nMobile: +49 (173) 2038410\nmailto:daniel.andreici@siemens.com\nwww.siemens.com\nVon:\nMartin Teepe <Martin.Teepe@hellmann.com>\nGesendet:\nMittwoch, 26. Februar 2025 13:40\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>; Piroth, Ralf (SI E C SOL) <Ralf.Piroth@siemens.com>; Andreici, Daniel (SI E C SOL) <daniel.andreici@siemens.com>; Narten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nCc:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>; Michael Rothenberger <Michael.Rothenberger@hellmann.com>; Florian Stille <Florian.Stille@hellmann.com>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Zusammen,\nfolgende Batterie haben wir heute angeliefert bekommen?\nIst das jetzt die richtige?\nGruß\nMartin Teepe\nVon:\nTheil, Sascha <\nsascha.theil@siemens.com\n>\nGesendet:\nMittwoch, 26. Februar 2025 11:24\nAn:\nPiroth, Ralf <\nRalf.Piroth@siemens.com\n>; Andreici, Daniel <\ndaniel.andreici@siemens.com\n>; Narten, Benjamin <\nbenjamin.narten@siemens.com\n>\nCc:\nHilse, Ramona <\nramona.hilse@siemens.com\n>; Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>; Florian Stille <\nFlorian.Stille@hellmann.com\n>; Martin Teepe <\nMartin.Teepe@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Daniel, hallo Benno,\nich habe soeben mit Herrn Teepe telefoniert und zwei Themen mitgenommen, die bitte von Euch noch nachverfolgt werden müssen:\nFehlende Batterie bei der SieStorage Neo (\n@Andreici, Daniel (SI E C SOL)\n): lt. Herrn Teepe haben wir hier seit Errichtung der Anlage (Mitte letzten Jahres) noch eine Batterie, die installiert werden muss. Infolge von mehreren Falschbestellungen /-lieferungen der Batterie ist dies nun seit mehreren Monaten offen. Kannst Du bitte veranlassen, dass die nun bei Hellmann angekommene Batterie installiert wird? Laut Herrn Teepe ist hier Ralf Pieroth im Bilde, aber aktuell abwesend.\nProbleme beim parallelen Laden (\n@Narten, Benjamin (RC-DE SI E C EC)\n): hier habe ich Herrn Teepe so verstanden, dass Du im Austausch mit Volvo bist? Hast Du hier neue Erkenntnisse, die Du teilen kannst?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nMartin Teepe <\nMartin.Teepe@hellmann.com\n>\nDatum:\nMittwoch, 26. Februar 2025 um 09:14\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>, Florian Stille <\nFlorian.Stille@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Theil,\nwie geht es jetzt weiter?\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics Germany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone  +49 541 605-1442\nMobile  +49 151 2034 1442\nFax       +49 541 605-451275\nE-Mail\nmartin.teepe@hellmann.com\n#GernePerDu\nTHINKING AHEAD - MOVING FORWARD\nHandelsregister / Commercial Register Osnabrueck HRA 205173\nGeschäftsführer / Managing Directors: Sven Eisfeld, Benjamin Engel, Jens Tarnowski, Sandra Vodde. Persönlich haftende Gesellschafterin: Beteiligungsgesellschaft HWL GmbH, mit Zweigniederlassung in Osnabrück HRB 216202 (Amtsgericht Osnabrück), Salzburg / Österreich, Firmenbuch Landesgericht Salzburg FN 555962 t.\nUSt-IdNr. / V.A.T. Id. no.: DE 309356252\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 – ADSp 2017 – und – soweit diese für die Erbringung logistischer (Zusatz-) Leistungen nicht gelten – nach den Logistik-AGB, Stand 2019. Hinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§ 431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen Euro je Schadenfall sowie 2,5 Millionen Euro je Schadenereignis, mindestens aber 2 SZR/kg, beschränken. Die ADSp 2017 können Sie unter\nwww.hellmann.com/adsp\nabrufen, die Logistik-AGB 2019 unter\nwww.hellmann.com/logagb\n.\nWeitere Informationen zum Thema Datenschutz und unserem Umgang mit personenbezogenen Daten finden Sie unter folgendem Link:\nwww.hellmann.com/datenschutz\nWe operate exclusively in accordance with the German Freight Forwarders' Standard Terms and Conditions 2017 (Allgemeine Deutsche Spediteurbedingungen 2017 – ADSp 2017) and – if they do not apply for performing (supplementary) logistics services – with the General Terms and Conditions of Logistics-Services Providers (Logistik-AGB), as of 2019. Note: In clause 23 the ADSp 2017 deviate from the statutory liability limitation in section 431 of the German Commercial Code (HGB) by limiting the liability for multimodal transportation with the involvement of sea carriage and an unknown damage place to 2 SDR/kg and, for the rest, the customary liability limitation of 8.33 SDR/kg additionally to Euro 1.25 million per damage case and EUR 2.5 million per damage event, but not less than 2 SDR/kg. You can find the ADSp 2017 here:\nwww.hellmann.com/ffst\nand the Logistik-AGB 2019 here:\nwww.hellmann.com/loggtc\n.\nFor further information on the subject of data protection and our handling of personal data please refer to the following link:\nwww.hellmann.com/privacy\nVon:\nTheil, Sascha\nGesendet:\nDienstag, 25. Februar 2025 16:40\nBis:\nMartin Teepe; Piroth, Ralf\nCc:\nHilse, Ramona; Michael Rothenberger; Florian Stille\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nSie erhalten nicht häufig E-Mails von\nsascha.theil@siemens.com\n.\nErfahren Sie, warum dies wichtig ist\nHallo Herr Teepe,\nhier Pieroth ist bis zum 5.3. außer Haus.\nFunktioniert denn der Energiespeicher? Bzw. können Sie mit Bestimmtheit sagen, dass der Akku von Herrn Pieroth bestellt wurde?\nWeder Frau Hilse noch ich wurden hierüber in Kenntnis gesetzt, und ebenso wenig gibt es ein Ticket zu etwaigen Arbeiten an dem Speichersystem.\nMit der Bitte um ein paar mehr Informationen zum Kontext, falls vorhanden.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nMartin Teepe <\nMartin.Teepe@hellmann.com\n>\nDatum:\nDienstag, 25. Februar 2025 um 16:29\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>, Florian Stille <\nFlorian.Stille@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Theil,\nkönnen sie mich mal bitt mit ihrem Kollegen Ralf Piroth auseinandersetzten und klären, was das für ein Akku ist.\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics Germany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone  +49 541 605-1442\nMobile  +49 151 2034 1442\nFax       +49 541 605-451275\nE-Mail\nmartin.teepe@hellmann.com\n#GernePerDu\nTHINKING AHEAD - MOVING FORWARD\nHandelsregister / Commercial Register Osnabrueck HRA 205173\nGeschäftsführer / Managing Directors: Sven Eisfeld, Benjamin Engel, Jens Tarnowski, Sandra Vodde. Persönlich haftende Gesellschafterin: Beteiligungsgesellschaft HWL GmbH, mit Zweigniederlassung in Osnabrück HRB 216202 (Amtsgericht Osnabrück), Salzburg / Österreich, Firmenbuch Landesgericht Salzburg FN 555962 t.\nUSt-IdNr. / V.A.T. Id. no.: DE 309356252\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 – ADSp 2017 – und – soweit diese für die Erbringung logistischer (Zusatz-) Leistungen nicht gelten – nach den Logistik-AGB, Stand 2019. Hinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§ 431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen Euro je Schadenfall sowie 2,5 Millionen Euro je Schadenereignis, mindestens aber 2 SZR/kg, beschränken. Die ADSp 2017 können Sie unter\nwww.hellmann.com/adsp\nabrufen, die Logistik-AGB 2019 unter\nwww.hellmann.com/logagb\n.\nWeitere Informationen zum Thema Datenschutz und unserem Umgang mit personenbezogenen Daten finden Sie unter folgendem Link:\nwww.hellmann.com/datenschutz\nWe operate exclusively in accordance with the German Freight Forwarders' Standard Terms and Conditions 2017 (Allgemeine Deutsche Spediteurbedingungen 2017 – ADSp 2017) and – if they do not apply for performing (supplementary) logistics services – with the General Terms and Conditions of Logistics-Services Providers (Logistik-AGB), as of 2019. Note: In clause 23 the ADSp 2017 deviate from the statutory liability limitation in section 431 of the German Commercial Code (HGB) by limiting the liability for multimodal transportation with the involvement of sea carriage and an unknown damage place to 2 SDR/kg and, for the rest, the customary liability limitation of 8.33 SDR/kg additionally to Euro 1.25 million per damage case and EUR 2.5 million per damage event, but not less than 2 SDR/kg. You can find the ADSp 2017 here:\nwww.hellmann.com/ffst\nand the Logistik-AGB 2019 here:\nwww.hellmann.com/loggtc\n.\nFor further information on the subject of data protection and our handling of personal data please refer to the following link:\nwww.hellmann.com/privacy\nVon:\nTheil, Sascha\nGesendet:\nDienstag, 25. Februar 2025 16:22\nBis:\nMartin Teepe; Piroth, Ralf\nCc:\nHilse, Ramona; Michael Rothenberger\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nSie erhalten nicht häufig E-Mails von\nsascha.theil@siemens.com\n.\nErfahren Sie, warum dies wichtig ist\nWenn ich mir den Lieferschein anschaue, würde ich vermuten, dass dieser Akku für ein Fahrzeug ist?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>\nDatum:\nDienstag, 25. Februar 2025 um 16:22\nAn:\nmartin.teepe@hellmann.com\n<\nmartin.teepe@hellmann.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Teepe,\nFrau Hilse und ich haben uns hierzu kurz ausgetauscht und mussten leider feststellen, dass wir von diesem Akku nichts wissen.\nSind Sie sich sicher, dass von / für Siemens ist?\n@Piroth, Ralf (SI E C SOL)\n: weißt Du hier ggf. was?\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-26T13:15:39Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "55dac46a-e2f4-ef11-be1f-7c1e5236eee4",
+            "subject": "AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hallo Herr Theil,\nleider muss ich ihre Hoffnung zerschlagen.\nDieses Bild habe ich gestern um 17.45h von unserem Fahrerbekommen.\nGruß\nMartin Teepe\nVon:\nTheil, Sascha\nGesendet:\nMittwoch, 26. Februar 2025 14:15\nBis:\nAndreici, Daniel; Martin Teepe; Piroth, Ralf; Narten, Benjamin\nCc:\nHilse, Ramona; Michael Rothenberger; Florian Stille; emobility_support.si@siemens.com\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nDanke Dir, Daniel!\nHallo Herr Teepe,\nich habe soeben von unserer Technikerin Frau Hilse verstanden, dass die berechtigte Hoffnung besteht, dass durch ihren heutigen Einsatz vor Ort nun auch das parallele Laden mit zwei Fahrzeugen funktionieren sollte.\nKönnten Sie dies bitte noch mal probieren und entsprechend Rückmeldung geben?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nAndreici, Daniel (SI E C SOL) <daniel.andreici@siemens.com>\nDatum:\nMittwoch, 26. Februar 2025 um 14:01\nAn:\nMartin Teepe <Martin.Teepe@hellmann.com>, Theil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>, Piroth, Ralf (SI E C SOL) <Ralf.Piroth@siemens.com>, Narten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nCc:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>, Michael Rothenberger <Michael.Rothenberger@hellmann.com>, Florian Stille <Florian.Stille@hellmann.com>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Teepe,\nvielen Dank für die Rückmeldung - das ist die richtige Batterie.\nWir planen die IBN kurzfristig, wahrscheinlich kommenden Dienstag ein. Ich melde mich morgen nochmals mit einem verbindlichen Termin.\nWith best regards,\nDaniel Andreici\nSiemens AG\nSmart Infrastructure\neMobility\nSolutions\nSI E C SOL\nSiemenspromenade 10\n91058 Erlangen, Germany\nPhone: +49 (9131) 17-46091\nMobile: +49 (173) 2038410\nmailto:daniel.andreici@siemens.com\nwww.siemens.com\nVon:\nMartin Teepe <Martin.Teepe@hellmann.com>\nGesendet:\nMittwoch, 26. Februar 2025 13:40\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>; Piroth, Ralf (SI E C SOL) <Ralf.Piroth@siemens.com>; Andreici, Daniel (SI E C SOL) <daniel.andreici@siemens.com>; Narten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nCc:\nHilse, Ramona (RC-DE SI E CS) <ramona.hilse@siemens.com>; Michael Rothenberger <Michael.Rothenberger@hellmann.com>; Florian Stille <Florian.Stille@hellmann.com>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Zusammen,\nfolgende Batterie haben wir heute angeliefert bekommen?\nIst das jetzt die richtige?\nGruß\nMartin Teepe\nVon:\nTheil, Sascha <\nsascha.theil@siemens.com\n>\nGesendet:\nMittwoch, 26. Februar 2025 11:24\nAn:\nPiroth, Ralf <\nRalf.Piroth@siemens.com\n>; Andreici, Daniel <\ndaniel.andreici@siemens.com\n>; Narten, Benjamin <\nbenjamin.narten@siemens.com\n>\nCc:\nHilse, Ramona <\nramona.hilse@siemens.com\n>; Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>; Florian Stille <\nFlorian.Stille@hellmann.com\n>; Martin Teepe <\nMartin.Teepe@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Daniel, hallo Benno,\nich habe soeben mit Herrn Teepe telefoniert und zwei Themen mitgenommen, die bitte von Euch noch nachverfolgt werden müssen:\nFehlende Batterie bei der SieStorage Neo (\n@Andreici, Daniel (SI E C SOL)\n): lt. Herrn Teepe haben wir hier seit Errichtung der Anlage (Mitte letzten Jahres) noch eine Batterie, die installiert werden muss. Infolge von mehreren Falschbestellungen /-lieferungen der Batterie ist dies nun seit mehreren Monaten offen. Kannst Du bitte veranlassen, dass die nun bei Hellmann angekommene Batterie installiert wird? Laut Herrn Teepe ist hier Ralf Pieroth im Bilde, aber aktuell abwesend.\nProbleme beim parallelen Laden (\n@Narten, Benjamin (RC-DE SI E C EC)\n): hier habe ich Herrn Teepe so verstanden, dass Du im Austausch mit Volvo bist? Hast Du hier neue Erkenntnisse, die Du teilen kannst?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nMartin Teepe <\nMartin.Teepe@hellmann.com\n>\nDatum:\nMittwoch, 26. Februar 2025 um 09:14\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>, Florian Stille <\nFlorian.Stille@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Theil,\nwie geht es jetzt weiter?\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics Germany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone  +49 541 605-1442\nMobile  +49 151 2034 1442\nFax       +49 541 605-451275\nE-Mail\nmartin.teepe@hellmann.com\n#GernePerDu\nTHINKING AHEAD - MOVING FORWARD\nHandelsregister / Commercial Register Osnabrueck HRA 205173\nGeschäftsführer / Managing Directors: Sven Eisfeld, Benjamin Engel, Jens Tarnowski, Sandra Vodde. Persönlich haftende Gesellschafterin: Beteiligungsgesellschaft HWL GmbH, mit Zweigniederlassung in Osnabrück HRB 216202 (Amtsgericht Osnabrück), Salzburg / Österreich, Firmenbuch Landesgericht Salzburg FN 555962 t.\nUSt-IdNr. / V.A.T. Id. no.: DE 309356252\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 – ADSp 2017 – und – soweit diese für die Erbringung logistischer (Zusatz-) Leistungen nicht gelten – nach den Logistik-AGB, Stand 2019. Hinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§ 431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen Euro je Schadenfall sowie 2,5 Millionen Euro je Schadenereignis, mindestens aber 2 SZR/kg, beschränken. Die ADSp 2017 können Sie unter\nwww.hellmann.com/adsp\nabrufen, die Logistik-AGB 2019 unter\nwww.hellmann.com/logagb\n.\nWeitere Informationen zum Thema Datenschutz und unserem Umgang mit personenbezogenen Daten finden Sie unter folgendem Link:\nwww.hellmann.com/datenschutz\nWe operate exclusively in accordance with the German Freight Forwarders' Standard Terms and Conditions 2017 (Allgemeine Deutsche Spediteurbedingungen 2017 – ADSp 2017) and – if they do not apply for performing (supplementary) logistics services – with the General Terms and Conditions of Logistics-Services Providers (Logistik-AGB), as of 2019. Note: In clause 23 the ADSp 2017 deviate from the statutory liability limitation in section 431 of the German Commercial Code (HGB) by limiting the liability for multimodal transportation with the involvement of sea carriage and an unknown damage place to 2 SDR/kg and, for the rest, the customary liability limitation of 8.33 SDR/kg additionally to Euro 1.25 million per damage case and EUR 2.5 million per damage event, but not less than 2 SDR/kg. You can find the ADSp 2017 here:\nwww.hellmann.com/ffst\nand the Logistik-AGB 2019 here:\nwww.hellmann.com/loggtc\n.\nFor further information on the subject of data protection and our handling of personal data please refer to the following link:\nwww.hellmann.com/privacy\nVon:\nTheil, Sascha\nGesendet:\nDienstag, 25. Februar 2025 16:40\nBis:\nMartin Teepe; Piroth, Ralf\nCc:\nHilse, Ramona; Michael Rothenberger; Florian Stille\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nSie erhalten nicht häufig E-Mails von\nsascha.theil@siemens.com\n.\nErfahren Sie, warum dies wichtig ist\nHallo Herr Teepe,\nhier Pieroth ist bis zum 5.3. außer Haus.\nFunktioniert denn der Energiespeicher? Bzw. können Sie mit Bestimmtheit sagen, dass der Akku von Herrn Pieroth bestellt wurde?\nWeder Frau Hilse noch ich wurden hierüber in Kenntnis gesetzt, und ebenso wenig gibt es ein Ticket zu etwaigen Arbeiten an dem Speichersystem.\nMit der Bitte um ein paar mehr Informationen zum Kontext, falls vorhanden.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nMartin Teepe <\nMartin.Teepe@hellmann.com\n>\nDatum:\nDienstag, 25. Februar 2025 um 16:29\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>, Florian Stille <\nFlorian.Stille@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Theil,\nkönnen sie mich mal bitt mit ihrem Kollegen Ralf Piroth auseinandersetzten und klären, was das für ein Akku ist.\nMit freundlichen Grüßen aus Osnabrück\nMartin Teepe\nTeamleiter im Fuhrpark\n-Fahrzeugverwaltung / Fahrereinsatzplanung-\n- Rangierdienst-\nHellmann Worldwide Logistics Germany GmbH & Co. KG\nElbestrasse 1\n49090 Osnabrueck\nGermany\nPhone  +49 541 605-1442\nMobile  +49 151 2034 1442\nFax       +49 541 605-451275\nE-Mail\nmartin.teepe@hellmann.com\n#GernePerDu\nTHINKING AHEAD - MOVING FORWARD\nHandelsregister / Commercial Register Osnabrueck HRA 205173\nGeschäftsführer / Managing Directors: Sven Eisfeld, Benjamin Engel, Jens Tarnowski, Sandra Vodde. Persönlich haftende Gesellschafterin: Beteiligungsgesellschaft HWL GmbH, mit Zweigniederlassung in Osnabrück HRB 216202 (Amtsgericht Osnabrück), Salzburg / Österreich, Firmenbuch Landesgericht Salzburg FN 555962 t.\nUSt-IdNr. / V.A.T. Id. no.: DE 309356252\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 – ADSp 2017 – und – soweit diese für die Erbringung logistischer (Zusatz-) Leistungen nicht gelten – nach den Logistik-AGB, Stand 2019. Hinweis: Die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§ 431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadenort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen Euro je Schadenfall sowie 2,5 Millionen Euro je Schadenereignis, mindestens aber 2 SZR/kg, beschränken. Die ADSp 2017 können Sie unter\nwww.hellmann.com/adsp\nabrufen, die Logistik-AGB 2019 unter\nwww.hellmann.com/logagb\n.\nWeitere Informationen zum Thema Datenschutz und unserem Umgang mit personenbezogenen Daten finden Sie unter folgendem Link:\nwww.hellmann.com/datenschutz\nWe operate exclusively in accordance with the German Freight Forwarders' Standard Terms and Conditions 2017 (Allgemeine Deutsche Spediteurbedingungen 2017 – ADSp 2017) and – if they do not apply for performing (supplementary) logistics services – with the General Terms and Conditions of Logistics-Services Providers (Logistik-AGB), as of 2019. Note: In clause 23 the ADSp 2017 deviate from the statutory liability limitation in section 431 of the German Commercial Code (HGB) by limiting the liability for multimodal transportation with the involvement of sea carriage and an unknown damage place to 2 SDR/kg and, for the rest, the customary liability limitation of 8.33 SDR/kg additionally to Euro 1.25 million per damage case and EUR 2.5 million per damage event, but not less than 2 SDR/kg. You can find the ADSp 2017 here:\nwww.hellmann.com/ffst\nand the Logistik-AGB 2019 here:\nwww.hellmann.com/loggtc\n.\nFor further information on the subject of data protection and our handling of personal data please refer to the following link:\nwww.hellmann.com/privacy\nVon:\nTheil, Sascha\nGesendet:\nDienstag, 25. Februar 2025 16:22\nBis:\nMartin Teepe; Piroth, Ralf\nCc:\nHilse, Ramona; Michael Rothenberger\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nSie erhalten nicht häufig E-Mails von\nsascha.theil@siemens.com\n.\nErfahren Sie, warum dies wichtig ist\nWenn ich mir den Lieferschein anschaue, würde ich vermuten, dass dieser Akku für ein Fahrzeug ist?\nMit freundlichen Grüßen\nSascha Theil\nVon:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>\nDatum:\nDienstag, 25. Februar 2025 um 16:22\nAn:\nmartin.teepe@hellmann.com\n<\nmartin.teepe@hellmann.com\n>, Piroth, Ralf (SI E C SOL) <\nRalf.Piroth@siemens.com\n>\nCc:\nHilse, Ramona (RC-DE SI E CS) <\nramona.hilse@siemens.com\n>, Michael Rothenberger <\nMichael.Rothenberger@hellmann.com\n>\nBetreff:\nAW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375\nHallo Herr Teepe,\nFrau Hilse und ich haben uns hierzu kurz ausgetauscht und mussten leider feststellen, dass wir von diesem Akku nichts wissen.\nSind Sie sich sicher, dass von / für Siemens ist?\n@Piroth, Ralf (SI E C SOL)\n: weißt Du hier ggf. was?\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-02-27T08:11:24Z",
+            "extra": {
+                "sender": "martin.teepe@hellmann.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "13ddc50e-e8f5-ef11-be1f-6045bde0265d",
+            "subject": "FW: AW: 0401704 - ID0401704-DC/Si-D/DE-[MP / S2 170003340] Charging issue CRM:00373000375",
+            "body": "Hi Catalina,\nfür Dich zur Info - wir haben hier einen Charger, der im Zusammenspiel mit Volve Fahrzeugen Schwierigkeiten hat beim parallelen Laden.\nHabe verstanden, dass Benjamin Narten (in CC) bereits im Austausch mit Volvo ist. Vielleicht ergibt es Sinn, dass ihr euch mal austauscht?\nGrüße\nSascha",
+            "date": "2025-02-28T15:24:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

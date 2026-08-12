@@ -1,0 +1,90 @@
+{
+    "incident_id": "cb7c6050-9839-4bce-8593-50cd300bc62b",
+    "ticket_number": "0458477",
+    "title": "ID0458477-DC/Si-D/IT-[Y2/SD 314015297001] CU logs check",
+    "created_on": "2025-10-29T11:02:32Z",
+    "last_activity": "2025-11-05T15:15:12Z",
+    "age": "10333",
+    "description": "Reported behavior/issue- CU logs check\nSolution: Customer to check with Payment Provider",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "Y2/SD314015297001",
+    "case_nature_code": 580000001,
+    "chargerID": "ibiw7N",
+    "additional_info": [
+        {
+            "id": "91737bd6-b6b4-f011-bbd2-7c1e523628c9",
+            "subject": "A new case manager was assigned to 0458477 CRM:00225279466",
+            "body": "Nikhil Pratap Singh was assigned as new Case Manager for case 0458477 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=cb7c6050-9839-4bce-8593-50cd300bc62b",
+            "date": "2025-10-29T11:03:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57cf7ce7-b6b4-f011-bbd2-7ced8d4ac495",
+            "subject": "A new case manager was assigned to 0458477 CRM:00225279467",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0458477 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=cb7c6050-9839-4bce-8593-50cd300bc62b",
+            "date": "2025-10-29T11:03:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0a2f86de-302c-0cb7-93ac-b634f38e249e",
+            "subject": "Case description",
+            "body": "Hello,\non 19/10/2025 a Client tried to charge with POS during 6:30/6:45 and 7:00/7:30 PM (CU time) on charger n. 314015297001 and couldn't charge.\nThe Client said that 2 authorization were token from the Credit Card but we don't find any charge (even at 0).\nIs it possible to check logs?\nThank you in advance.\nsoftware version\n: v6.1.3-0-gfb2eb75",
+            "date": "2025-10-29T11:04:10Z",
+            "extra": {}
+        },
+        {
+            "id": "78043c8e-b7b4-f011-bbd2-7ced8d425bfe",
+            "subject": "ID0458477-DC/Si-D/IT-[Y2/SD314015297001] CU logs check CRM:03056000348",
+            "body": "Dear\nFilomena\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/SD314015297001\nChargerID\n:\nibiw7N\nProblem Description\n: CU logs check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0458477\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-29T11:08:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b03b302-c4b4-f011-bbd2-7ced8d76daaf",
+            "subject": "A new case manager was assigned to 0458477 CRM:00225279528",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0458477 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=cb7c6050-9839-4bce-8593-50cd300bc62b",
+            "date": "2025-10-29T12:37:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe02df49-cdb4-f011-bbd2-7ced8d4259cd",
+            "subject": "RE: ID0458477-DC/Si-D/IT-[Y2/SD314015297001] CU logs check CRM:03056000348",
+            "body": "Buon pomeriggio Filomena,\nI am reaching out in regards of ticket\nID0458477\nfor charger\nY2/SD 314015297001.\nThe ticket has been opened for failed authentication via POS on 19.10.2025.\nI had a look at the logs to seek for the failed transactions via POS. Unfortunately, being the IM30 PAX terminal integrated in our Sicharge D as a Cloud Payment terminal, from Sicharge D side we do not have visibility at all of the Payment process and authorization.\nThe communication sequence: POS  --> Fortech --> NTT Data Backend --> Sicharge D (via OCPP). Therefore, from charger side, we only receive a RemoteStartTransaction when the authorization and payment process is successful and communicated from the Backend to the charger. We do not have visibility of any failed payment, as all this communication is limited between the POS and Fortech.\nI hope I provided you a clarification in regards of this payment process, hence failed authorization.\nIf further details on the failed attempts are required, it is necessary to reach out to Fortech directly.\nPlease let me know if further support is required from our side. Looking forward to hearing form you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-29T13:43:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0d9fd29-5aba-f011-bbd2-7ced8d425bfe",
+            "subject": "Ticket 0458477 has been closed. Are you satisfied with our provided solution? CRM:00225283410",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0458477\nwith the title:\nID0458477-DC/Si-D/IT-[Y2/SD 314015297001] CU logs check\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-05T15:14:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

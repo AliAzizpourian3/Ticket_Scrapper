@@ -1,0 +1,1626 @@
+ErrorCodes:
+  IllegalTransition:
+    errorCode: IllegalTransition
+    errorName: "100101"
+    classification: Maintenance
+    severity: Major
+    description: Illegal transition of EVSEcore state. This means that the siucapp went from one state to another which was not designed to do
+    potentialRootCause: ""
+    potentialResolution: Using the siucapp logs, identify specific step in which the process failed. Investigate the possible root cause for that specific process.
+  unexpectedError:
+    errorCode: unexpectedError
+    errorName: "220400"
+    classification: Maintenance
+    severity: Minor
+    description: ""
+    potentialRootCause: ""
+    potentialResolution: ""
+  outputEnabledTimeout:
+    errorCode: outputEnabledTimeout
+    errorName: "100201"
+    classification: Maintenance
+    severity: Major
+    description: "Timeout for enabling charger output. The OutputEnable includes: close AC contactors close DC contactors turn ON power converter"
+    potentialRootCause: ""
+    potentialResolution: Using the siucapp logs, identify specific step in which the process failed. Investigate the possible root cause for that specific process.
+  outputEnabledFail:
+    errorCode: outputEnabledFail
+    errorName: "100202"
+    classification: Maintenance
+    severity: Major
+    description: Fail during the output enable (channel closed for example).
+    potentialRootCause: ""
+    potentialResolution: Using the siucapp logs, identify specific step in which the process failed. Investigate the possible root cause for that specific process.
+  outputEnabledUnhandled:
+    errorCode: outputEnabledUnhandled
+    errorName: "100203"
+    classification: Maintenance
+    severity: Major
+    description: Received an outputEnabled without any active command.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  outputDisabledTimeout:
+    errorCode: outputDisabledTimeout
+    errorName: "100204"
+    classification: Maintenance
+    severity: Major
+    description: "Timeout for disabling charger output. Like OutputEnable, it includes: turn OFF power converter wait for safe DC voltage and current (60V/2A) open DC contactors close AC contactors"
+    potentialRootCause: ""
+    potentialResolution: Using the siucapp logs, identify specific step in which the process failed. Investigate the possible root cause for that specific process.
+  outputDisabledFail:
+    errorCode: outputDisabledFail
+    errorName: "100205"
+    classification: Maintenance
+    severity: Major
+    description: Fail during the output disable (channel closed for example).
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  outputDisabledUnhandled:
+    errorCode: outputDisabledUnhandled
+    errorName: "100206"
+    classification: Maintenance
+    severity: Major
+    description: Received an outputDisabled without any active command.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  voltageSetpointTimeout:
+    errorCode: voltageSetpointTimeout
+    errorName: "100207"
+    classification: Maintenance
+    severity: Major
+    description: Timeout for voltage setpoint. A certain target was requested to the Power Converter but there was no positive feedback from this request.
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  voltageSetpointFail:
+    errorCode: voltageSetpointFail
+    errorName: "100208"
+    classification: Maintenance
+    severity: Major
+    description: Fail during voltage setpoint (channel closed for example).
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  voltageSetpointUnhandled:
+    errorCode: voltageSetpointUnhandled
+    errorName: "100209"
+    classification: Maintenance
+    severity: Major
+    description: Received an voltageSetpointCB without any active command.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  currentSetpointTimeout:
+    errorCode: currentSetpointTimeout
+    errorName: "100210"
+    classification: Maintenance
+    severity: Major
+    description: Timeout for current setpoint
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  currentSetpointFail:
+    errorCode: currentSetpointFail
+    errorName: "100211"
+    classification: Maintenance
+    severity: Major
+    description: Fail during current setpoint (channel closed for example).
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  currentSetpointUnhandled:
+    errorCode: currentSetpointUnhandled
+    errorName: "100212"
+    classification: Maintenance
+    severity: Major
+    description: Received an currentSetpointCB without any active command.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  bindedCheckFail:
+    errorCode: bindedCheckFail
+    errorName: "100213"
+    classification: Maintenance
+    severity: Major
+    description: Not binded to any process.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  assertVoltageLowerThanFail:
+    errorCode: assertVoltageLowerThanFail
+    errorName: "100214"
+    classification: Maintenance
+    severity: Major
+    description: Voltage value at the output not low enough in the expected time. For now it is only being used on process of turning OFF (voltage lower than 10 V).
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: If DSP is part of the solution (UC150), firmware version may not be the latest; check that the version is at least 2.0.7 Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  assertVoltageHigherThanFail:
+    errorCode: assertVoltageHigherThanFail
+    errorName: "100215"
+    classification: Maintenance
+    severity: Major
+    description: Voltage value at the output not high enough in the expected time. For now it is only being used on process of CableCheck (voltage higher than 475 V * 0.95).
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  assertCurrentLowerThanFail:
+    errorCode: assertCurrentLowerThanFail
+    errorName: "100216"
+    classification: Maintenance
+    severity: Critical
+    description: Current value at the output not low enough in the expected time. For now it is only being used on process of turning OFF (current lower than 2A).
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  assertCurrentHigherThanFail:
+    errorCode: assertCurrentHigherThanFail
+    errorName: "100217"
+    classification: Maintenance
+    severity: Major
+    description: Current value at the output not high enough in the expected time.
+    potentialRootCause: ""
+    potentialResolution: "Investigate the exact moment when this error occurs and if error is alone or triggered after other error. It can be caused by: Setpoint was not received by Power Converter CAN communication problem or any other existing Power Converter issue which was not correctly detected Something is preventing the Power Converter from reaching the setpoint check if error is associated with specific EV (may point towards EV related problems) check if error is persistent or an isolated event. Isolated events should be registered but can be ignored. check if charger is able to reach a setpoint without an EV connected check all DC line connections check for potential short circuits"
+  batteryOverVoltage:
+    errorCode: batteryOverVoltage
+    errorName: "110001"
+    classification: Safety
+    severity: Major
+    description: Error triggered when dc voltage is higher than EV reported maximum voltage (tolerance of 10V considered). This error is implemented according IEC61851.
+    potentialRootCause: ""
+    potentialResolution: "Possible causes: together with dspLoadDump: root cause of load dump must be investigated caused by not reading correctly the EV max voltage: check PLC traces in order to confirm caused by EV battery voltage misbehaving: report to customer for joint analysis with EV OEM"
+  highInitVoltage:
+    errorCode: highInitVoltage
+    errorName: "110002"
+    classification: Safety
+    severity: Major
+    description: Voltage at the plug is higher than 60V at initialization
+    potentialRootCause: ""
+    potentialResolution: "Possible causes: EV is not disconnecting the batteries from the socket, voltage is already present even before charging process starts Output contactors are stuck and voltage is immediately at the plug  Output measurement after the contactors is not correct, either due to cabling issues or not calibrated"
+  dispenserContactorTimeout:
+    errorCode: dispenserContactorTimeout
+    errorName: "110101"
+    classification: Maintenance
+    severity: Major
+    description: Feedback for contactor open/closed was not received when command was issued.
+    potentialRootCause: ""
+    potentialResolution: "Check that the CAN communication is working Check that the contactor is working properly (power and feedback circuits) Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  dispenserDoorOpened:
+    errorCode: dispenserDoorOpened
+    errorName: "110102"
+    classification: Safety
+    severity: Major
+    description: Dispenser door is open.
+    potentialRootCause: ""
+    potentialResolution: "Check if door is properly closed. Check if the door switch is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  globalEmergency:
+    errorCode: globalEmergency
+    errorName: "110103"
+    classification: Maintenance
+    severity: Major
+    description: Emergency button which is connected to both chargers and dispensers is pressed.
+    potentialRootCause: ""
+    potentialResolution: "Check that nothing is triggering the DC shutdown line Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  spdAC:
+    errorCode: spdAC
+    errorName: "110104"
+    classification: Maintenance
+    severity: Major
+    description: AC surge arrester is active.
+    potentialRootCause: ""
+    potentialResolution: "Check if surge arrester was trigger, if yes, replace it Check connection between surge arrester and Linux and that the voltage levels of the feedback are correct Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  spdDC:
+    errorCode: spdDC
+    errorName: "110105"
+    classification: Maintenance
+    severity: Major
+    description: DC surge arrester is active.
+    potentialRootCause: ""
+    potentialResolution: "Check if surge arrester was trigger, if yes, replace it Check connection between surge arrester and Linux and that the voltage levels of the feedback are correct Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  depotDoorOpenedCb:
+    errorCode: depotDoorOpenedCb
+    errorName: "110106"
+    classification: Safety
+    severity: Major
+    description: Door Opened on DepotPanto ControlBox.
+    potentialRootCause: ""
+    potentialResolution: "Check if door is properly closed. Check if the door switch is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  depotDoorOpenedPb:
+    errorCode: depotDoorOpenedPb
+    errorName: "110107"
+    classification: Safety
+    severity: Major
+    description: Door Opened on DepotPanto PowerBox.
+    potentialRootCause: ""
+    potentialResolution: "Check if door is properly closed. Check if the door switch is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  mainProcessError:
+    errorCode: mainProcessError
+    errorName: "110201"
+    classification: Maintenance
+    severity: Major
+    description: Error on the mainProcess fiber, probably an unexpected sequence of AKKA stages.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  cpStateFault:
+    errorCode: cpStateFault
+    errorName: "110202"
+    classification: Safety
+    severity: Critical
+    description: Unexpected transition of CP state from C/D to A.
+    potentialRootCause: ""
+    potentialResolution: "Should be reported to customer for joint analysis with EV OEM. If proven that the issue is not on EV side: Check all CP connections Check that CP measurement matches actual multimeter values Check all PE connections to guarantee that noise is not causing wrong CP measurements measure CP noise using an oscilloscope"
+  noCommunicationToAkka:
+    errorCode: noCommunicationToAkka
+    errorName: "110203"
+    classification: Maintenance
+    severity: Major
+    description: When siucapp boots, it waits for messages from AKKA. If no message is received, this error will appear.
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between AKKA and Linux Check that AKKA is working properly Check the CAN connection to the AKKA and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  communicationLostAkka:
+    errorCode: communicationLostAkka
+    errorName: "110204"
+    classification: Maintenance
+    severity: Major
+    description: siucapp is not receiving messages from AKKA within the minimum interval defined.
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between AKKA and Linux Check that AKKA is working properly Check the CAN connection to the AKKA and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  slacFailure:
+    errorCode: slacFailure
+    errorName: "110205"
+    classification: Maintenance
+    severity: Minor
+    description: Session could not establish a TCP connection, failed at SLAC.
+    potentialRootCause: ""
+    potentialResolution: "Should be reported to customer for joint analysis with EV OEM. If proven that the issue is not on EV side: Check all CP connections Check that CP measurement matches actual multimeter values Check all PE connections to guarantee that noise is not causing wrong CP measurements measure CP noise using an oscilloscope"
+  sessionSetupFailure:
+    errorCode: sessionSetupFailure
+    errorName: "110206"
+    classification: Maintenance
+    severity: Minor
+    description: After TCP connection was established, session was not able to reach CableCheck.
+    potentialRootCause: ""
+    potentialResolution: "Should be reported to customer for joint analysis with EV OEM. Main cause must be related with ISO15118 protocol issues (example: failed to negotiated session limits during ChargeParameterDiscovery)"
+  sendMessageError:
+    errorCode: sendMessageError
+    errorName: "120213"
+    classification: Maintenance
+    severity: Major
+    description: An error occurred while trying to send a message.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  evseShutdownTimeout:
+    errorCode: evseShutdownTimeout
+    errorName: "110208"
+    classification: Maintenance
+    severity: Minor
+    description: Timeout for the vehicle to do a normal shutdown.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM. It means that something is not working well in the shutdown process of the vehicle which forces us to create a timeout in order to close the session and be ready for a new one.
+  dcPlusTemperature:
+    errorCode: dcPlusTemperature
+    errorName: "110209"
+    classification: Safety
+    severity: Major
+    description: Temperature of the plug out of range (DC+).
+    potentialRootCause: ""
+    potentialResolution: Check if the plug sensor is working properly by measuring it's resistance and comparing with any other temperature measurement device. Check if the signal is correctly reaching the output platform (Gen2) or the S7 (Gen1 Dispenser) and if input matches the schematics. Check if there are any physical damages on the plug which may have caused a malfunction on the sensors.
+  dcMinusTemperature:
+    errorCode: dcMinusTemperature
+    errorName: "110210"
+    classification: Safety
+    severity: Major
+    description: Temperature of the plug out of range (DC-).
+    potentialRootCause: ""
+    potentialResolution: Check if the plug sensor is working properly by measuring it's resistance and comparing with any other temperature measurement device. Check if the signal is correctly reaching the output platform (Gen2) or the S7 (Gen1 Dispenser) and if input matches the schematics. Check if there are any physical damages on the plug which may have caused a malfunction on the sensors.
+  ressTemperatureInhibit:
+    errorCode: ressTemperatureInhibit
+    errorName: "110220"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Battery Temperature Inhibit, Battery too hot/cold to accept charge.
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  evShiftPosition:
+    errorCode: evShiftPosition
+    errorName: "110221"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Vehicle Shift Position, Vehicle is not in Park.
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  chargerConnectorLockFault:
+    errorCode: chargerConnectorLockFault
+    errorName: "110222"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Charger Connector Lock Fault, Vehicle has not detected the Charge cord connector locked into the inlet or failure where connector cannot be unlocked from the charging inlet.
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  evRessMalfunction:
+    errorCode: evRessMalfunction
+    errorName: "110223"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Vehicle RESS Malfunction, Any non-recoverable fault or error condition of the Vehicle RESS. (RESS= Battery)
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  chargingCurrentDiff:
+    errorCode: chargingCurrentDiff
+    errorName: "110224"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Charging Current Differential, Indication that vehicle has stopped the charging session after detecting that the charging station is not able to maintain the current request.
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  chargingVoltageOutOfRange:
+    errorCode: chargingVoltageOutOfRange
+    errorName: "110225"
+    classification: Maintenance
+    severity: Minor
+    description: Definition from Table 100 of ISO15118-2 Charging voltage out of range, Indication that vehicle has stopped the charging session after detecting that the RESS is either under or above normal operating voltage range.
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  chargingSystemIncompatibility:
+    errorCode: chargingSystemIncompatibility
+    errorName: "110226"
+    classification: Maintenance
+    severity: Minor
+    description: "Definition from Table 100 of ISO15118-2 Charging System Incompatibility, if the vehicle determines that the charging station is incompatible. Using this value is optional; as an alternative, the vehicle can use EVReady in DC_EVStatusType equal to “FALSE”."
+    potentialRootCause: ""
+    potentialResolution: EV generated error and sent according ISO15118. Should be reported to customer for joint analysis with EV OEM.
+  pantographError:
+    errorCode: pantographError
+    errorName: "110301"
+    classification: Maintenance
+    severity: Minor
+    description: Both feedbacks (that the pantograph is in the up and down position) are being received at the same time.
+    potentialRootCause: ""
+    potentialResolution: "Check that the pantograph is working properly Check if the signal is correctly reaching the Linux controller and if output matches the schematics. Check that there are 24V in the output when the command is issued Check if Linux is detecting properly the signal: feedback must be visible in the logs output must be correctly configured in gpio.conf"
+  pantographButtonPressed:
+    errorCode: pantographButtonPressed
+    errorName: "110302"
+    classification: Maintenance
+    severity: Major
+    description: Stop/Emergency button on the pantograph is pressed.
+    potentialRootCause: ""
+    potentialResolution: "Check that button is not pressed and working properly Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs output must be correctly configured in gpio.conf"
+  pantographDidNotMove:
+    errorCode: pantographDidNotMove
+    errorName: "110303"
+    classification: Maintenance
+    severity: Major
+    description: Pantograph did not move.
+    potentialRootCause: ""
+    potentialResolution: "Check that the pantograph is working properly Check if the signal is correctly reaching the Linux controller and if output matches the schematics. Check that there are 24V in the output when the command is issued Check if Linux is detecting properly the signal: feedback must be visible in the logs output must be correctly configured in gpio.conf"
+  pantographTimeout:
+    errorCode: pantographTimeout
+    errorName: "110304"
+    classification: Maintenance
+    severity: Major
+    description: Pantograph did not reach the end position in time. It is generated as a protection in case the pantograph is stuck while moving or one of the position sensors (up or down) is not working as it should.
+    potentialRootCause: ""
+    potentialResolution: "Check that the pantograph is working properly Check if the signal is correctly reaching the Linux controller and if output matches the schematics. Check that there are 24V in the output when the command is issued Check if Linux is detecting properly the signal: feedback must be visible in the logs output must be correctly configured in gpio.conf"
+  cpStateLost:
+    errorCode: cpStateLost
+    errorName: "110305"
+    classification: Safety
+    severity: Critical
+    description: Unexpected transition of CP state from C/D to A.
+    potentialRootCause: ""
+    potentialResolution: "Should be reported to customer for joint analysis with EV OEM. If proven that the issue is not on EV side: Check all CP connections Check that CP measurement matches actual multimeter values Check all PE connections to guarantee that noise is not causing wrong CP measurements measure CP noise using an oscilloscope"
+  pantoDownToCpBTimeout:
+    errorCode: pantoDownToCpBTimeout
+    errorName: "110306"
+    classification: Maintenance
+    severity: Major
+    description: Timeout between pantograph being down and CP B
+    potentialRootCause: ""
+    potentialResolution: Position of the vehicle is not correct; contacts are not aligned between pantograph and vehicle rails Dirt or damaged pantograph or rails CP is not being correctly generated by the ACD CP is not being correctly measured by ACD
+  cpBToCTimeout:
+    errorCode: cpBToCTimeout
+    errorName: "110307"
+    classification: Maintenance
+    severity: Major
+    description: Transition from CP State B to C timeout.
+    potentialRootCause: ""
+    potentialResolution: "Should be reported to customer for joint analysis with EV OEM. If proven that the issue is not on EV side: Check all CP connections Check that CP measurement matches actual multimeter values Check all PE connections to guarantee that noise is not causing wrong CP measurements measure CP noise using an oscilloscope"
+  sequenceError:
+    errorCode: sequenceError
+    errorName: "110308"
+    classification: Maintenance
+    severity: Major
+    description: Message received via WiFi is not in the sequence establish in ISO15118/OppCharge.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM.
+  messageTimeout:
+    errorCode: messageTimeout
+    errorName: "110309"
+    classification: Maintenance
+    severity: Major
+    description: Message was not received via WiFi within the timeframe defined in ISO15118/OppCharge.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM.
+  invalidDataReceived:
+    errorCode: invalidDataReceived
+    errorName: "110310"
+    classification: Maintenance
+    severity: Major
+    description: Message received via WiFi has a content which is not foreseen in ISO15118/OppCharge.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM.
+  unknownSession:
+    errorCode: unknownSession
+    errorName: "110311"
+    classification: Maintenance
+    severity: Minor
+    description: Unknown session received from vehicle. Defined in ISO15118/OppCharge.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM.
+  invalidStage:
+    errorCode: invalidStage
+    errorName: "110312"
+    classification: Maintenance
+    severity: Major
+    description: Invalid EVSECore stage while parsing a request.
+    potentialRootCause: ""
+    potentialResolution: Should be reported to customer for joint analysis with EV OEM.
+  positionSensorError:
+    errorCode: positionSensorError
+    errorName: "110313"
+    classification: Maintenance
+    severity: Minor
+    description: Loss of position sensor signal during charging procedure.
+    potentialRootCause: ""
+    potentialResolution: "Check that the sensor is working properly Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs output must be correctly configured in gpio.conf"
+  noCommunicationToACD:
+    errorCode: noCommunicationToACD
+    errorName: "110314"
+    classification: Maintenance
+    severity: Major
+    description: When siucapp boots, it waits for messages from ACD application. If no message is received, this error will appear.
+    potentialRootCause: ""
+    potentialResolution: Check that acdmqtt application is running and there are no errors in the logs Check that gpiomqtt application is running and there are no errors in the logs Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  communicationLostACD:
+    errorCode: communicationLostACD
+    errorName: "110315"
+    classification: Maintenance
+    severity: Major
+    description: siucapp is not receiving messages from ACD application within the minimum interval defined.
+    potentialRootCause: ""
+    potentialResolution: Check that acdmqtt application is running and there are no errors in the logs Check that gpiomqtt application is running and there are no errors in the logs Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  cpCToBTimeout:
+    errorCode: cpCToBTimeout
+    errorName: "110316"
+    classification: Maintenance
+    severity: Minor
+    description: Transition from CP State C to B timeout
+    potentialRootCause: ""
+    potentialResolution: Vehicle is not changing from C to B when specified by IEC61851 CP is not being correctly generated by the ACD CP is not being correctly measured by ACD
+  manualBindFail:
+    errorCode: manualBindFail
+    errorName: "110401"
+    classification: Maintenance
+    severity: Major
+    description: not possible to bind to a controller (peer)
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  unbindFail:
+    errorCode: unbindFail
+    errorName: "110402"
+    classification: Maintenance
+    severity: Major
+    description: not possible to unbind a plug from a controller
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  inputBreakerTimeout:
+    errorCode: inputBreakerTimeout
+    errorName: "120101"
+    classification: Maintenance
+    severity: Major
+    description: Timeout for closing/opening input breaker.
+    potentialRootCause: ""
+    potentialResolution: "Check if the circuit breaker from the Soft Starter is tripped. If yes: Check for damages on the AC contactors Check for damages on the diode bridge Check if the AC contactor is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  converterTimeout:
+    errorCode: converterTimeout
+    errorName: "120202"
+    classification: Maintenance
+    severity: Critical
+    description: Timeout for turning ON/OFF converter.
+    potentialRootCause: ""
+    potentialResolution: Check that the device is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  outputBreakerTimeout:
+    errorCode: outputBreakerTimeout
+    errorName: "120203"
+    classification: Maintenance
+    severity: Major
+    description: Timeout for closing/opening output breaker
+    potentialRootCause: ""
+    potentialResolution: Check that the device is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  noCommunicationToGreenInvert:
+    errorCode: noCommunicationToGreenInvert
+    errorName: "120104"
+    classification: Maintenance
+    severity: Major
+    description: No communication with GreenInvert was ever established (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  communicationLostGreenInvert:
+    errorCode: communicationLostGreenInvert
+    errorName: "120105"
+    classification: Maintenance
+    severity: Critical
+    description: Loss of communication with GreenInvert (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  fanControlTimeout:
+    errorCode: fanControlTimeout
+    errorName: "120220"
+    classification: Maintenance
+    severity: Minor
+    description: Setpoint sent to fans was not confirmed by FanControl (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this error can appear: The fan is broken and needs replacement. The AC circuit breaker for the fan has tripped, thus the fan has no supply voltage. The Fan Control Platform is broken.  To confirm what is the cause follow the steps below: Confirm that the circuit breaker for the fan is tripped. If so, reset it and confirm if the fan is operational. If the circuit breaker trips again, re-wire another fan to that circuit breaker to confirm that it is not damaged. If the circuit breaker still trips with another fan connected to it, check all the wiring between the fan and the circuit breaker. There might be an cable extension between the fan and the circuit breaker. If nothing is detected on the wiring replace the circuit-breaker. If the breaker does trip again, then the Fan needs replacement. If the circuit breaker is not tripped, go to step 2. If the circuit breaker is not tripped, change the connections on the Fan Control Platform of the fan that is not spinning, to an one that it is spinning. For instance, consider that the error is fan1NoSpin and Fan 2 is working. Re-wire the connections from Fan 2 to Fan 1 and from Fan 1 to Fan 2. Test the system: if the error displayed is fan2NoSpin, then the fan is broken. Otherwise, the board needs replacement."
+  inputBreakerFail:
+    errorCode: inputBreakerFail
+    errorName: "120107"
+    classification: Maintenance
+    severity: Major
+    description: Unexpected state of input breaker received.
+    potentialRootCause: ""
+    potentialResolution: "Check if the AC contactor is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  outputBreakerFail:
+    errorCode: outputBreakerFail
+    errorName: "120108"
+    classification: Maintenance
+    severity: Major
+    description: Unexpected state of output breaker received.
+    potentialRootCause: ""
+    potentialResolution: "Check if the DC contactor is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  dcOverVoltage:
+    errorCode: dcOverVoltage
+    errorName: "120109"
+    classification: Safety
+    severity: Major
+    description: DC Voltage value too high for the specific hardware.
+    potentialRootCause: ""
+    potentialResolution: Investigation of the siucapp logs in order to understand root cause. In most cases it is caused by EV battery issues and it may be followed by other errors like EVRESSMalfunction. In case the source appears to be internal to the charger, guarantee that the charger is correctly calibrated and that are no other errors in the alarm history that can point towards an IGBT or DC capacitor issue.
+  dcOverCurrent:
+    errorCode: dcOverCurrent
+    errorName: "120110"
+    classification: Safety
+    severity: Major
+    description: DC Current value too high for the specific hardware.
+    potentialRootCause: ""
+    potentialResolution: Investigation of the siucapp logs in order to understand root cause. In most cases it is caused by EV battery issues and it may be followed by other errors like EVRESSMalfunction. In case the source appears to be internal to the charger, guarantee that the charger is correctly calibrated and that are no other errors in the alarm history that can point towards an IGBT or DC capacitor issue.
+  emergencyButtonPressed:
+    errorCode: emergencyButtonPressed
+    errorName: "120209"
+    classification: Maintenance
+    severity: Major
+    description: Received feedback of emergency button pressed.
+    potentialRootCause: ""
+    potentialResolution: "Check that button is not pressed and working properly Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  isolationFault:
+    errorCode: isolationFault
+    errorName: "120210"
+    classification: Safety
+    severity: Major
+    description: Received feedback of isolation monitor fail.
+    potentialRootCause: ""
+    potentialResolution: "Check all IMD (Bender) parameters: R1 – 100KΩ, Error = Off R2 -95 KΩ, Error = Off TON – 30 s Isolation Value = 160 Ω Check if error is appearing with one specific EV or multiple EVs; single EV may point to an EV problem. If multiple: With the charger on Standby: Verify the isolation on the bender value (+- 160 KΩ) Verify the isolation at the plug with a megger (above 1MΩ) between: Positive cable and earth Negative cable and earth."
+  doorOpened:
+    errorCode: doorOpened
+    errorName: "120211"
+    classification: Safety
+    severity: Major
+    description: Door is opened.
+    potentialRootCause: ""
+    potentialResolution: "Check if door is properly closed. Check if the door switch is working properly. Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  voltageLowerThanFail:
+    errorCode: voltageLowerThanFail
+    errorName: "120215"
+    classification: Maintenance
+    severity: Major
+    description: Voltage did not reach a value lower than 20V before turning off power converter
+    potentialRootCause: ""
+    potentialResolution: Check that the Output Platform is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Output Platform is correctly calibrated by comparing with multimeter measurements
+  acOverVoltageL1:
+    errorCode: acOverVoltageL1
+    errorName: "120116"
+    classification: Safety
+    severity: Major
+    description: AC Voltage value too high for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acOverVoltageL2:
+    errorCode: acOverVoltageL2
+    errorName: "120117"
+    classification: Safety
+    severity: Major
+    description: AC Voltage value too high for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acOverVoltageL3:
+    errorCode: acOverVoltageL3
+    errorName: "120118"
+    classification: Safety
+    severity: Major
+    description: AC Voltage value too high for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acUnderVoltageL1:
+    errorCode: acUnderVoltageL1
+    errorName: "120119"
+    classification: Maintenance
+    severity: Major
+    description: AC Voltage value too low for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acUnderVoltageL2:
+    errorCode: acUnderVoltageL2
+    errorName: "120120"
+    classification: Maintenance
+    severity: Major
+    description: AC Voltage value too low for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acUnderVoltageL3:
+    errorCode: acUnderVoltageL3
+    errorName: "120121"
+    classification: Maintenance
+    severity: Major
+    description: AC Voltage value too low for the specific hardware (only set if converter ON).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acOverCurrentL1:
+    errorCode: acOverCurrentL1
+    errorName: "120122"
+    classification: Safety
+    severity: Major
+    description: AC Current value too high for the specific hardware.
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the measurement transducers are working properly and correctly connected, matching the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acOverCurrentL2:
+    errorCode: acOverCurrentL2
+    errorName: "120123"
+    classification: Safety
+    severity: Major
+    description: AC Current value too high for the specific hardware.
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the measurement transducers are working properly and correctly connected, matching the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  acOverCurrentL3:
+    errorCode: acOverCurrentL3
+    errorName: "120124"
+    classification: Safety
+    severity: Major
+    description: AC Current value too high for the specific hardware.
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the measurement transducers are working properly and correctly connected, matching the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements
+  communicationLostOutput:
+    errorCode: communicationLostOutput
+    errorName: "120206"
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication with OutputPlatform (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  communicationLostFans:
+    errorCode: communicationLostFans
+    errorName: "120208"
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication with Fans (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  outputDiffVoltage:
+    errorCode: outputDiffVoltage
+    errorName: "120127"
+    classification: Maintenance
+    severity: Major
+    description: Voltage difference between GreenInvert and OutputPlatform too high (configurable).
+    potentialRootCause: ""
+    potentialResolution: Check that the Buck board is working properly and all LEDs are correct Check that the Output Platform is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Check that the Buck board is correctly calibrated by comparing with multimeter measurements Check that the Output Platform is correctly calibrated by comparing with multimeter measurements NOTE This error is only available in Gen1.x chargers equipped with OutputPlatform
+  DC_Link_Under_Balance_Error:
+    errorCode: DC_Link_Under_Balance_Error
+    errorName: "120130"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  DC_Link_Over_Voltage_Error:
+    errorCode: DC_Link_Over_Voltage_Error
+    errorName: "120131"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  DC_Link_Under_Voltage_Error:
+    errorCode: DC_Link_Under_Voltage_Error
+    errorName: "120132"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Frequency_Deviation_Error:
+    errorCode: Frequency_Deviation_Error
+    errorName: "120133"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Inverter_IGBT_Desaturation_Error:
+    errorCode: Inverter_IGBT_Desaturation_Error
+    errorName: "120134"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Input_Mains_High_Error:
+    errorCode: Input_Mains_High_Error
+    errorName: "120135"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error. The Mains input is out of parameters (greater than 110%).
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Input_Mains_Low_Error:
+    errorCode: Input_Mains_Low_Error
+    errorName: "120136"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error. Mains are bellow limits (-10% of nominal)
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Input_Mains_Current_Error:
+    errorCode: Input_Mains_Current_Error
+    errorName: "120137"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Retifier_IGBT_Desaturation_Error:
+    errorCode: Retifier_IGBT_Desaturation_Error
+    errorName: "120138"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Start_Timeout_Error:
+    errorCode: Start_Timeout_Error
+    errorName: "120139"
+    classification: Maintenance
+    severity: Major
+    description: "GreenInvert error. Request to power converter is sent but after 5s the mains voltage and the rectifier voltage do not reach it’s minimum values."
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Shutdown_Rectifier_Error:
+    errorCode: Shutdown_Rectifier_Error
+    errorName: "120140"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Output_Short_Circuit_Error:
+    errorCode: Output_Short_Circuit_Error
+    errorName: "120141"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error. When the load current exceeds approximately 2.5 times the nominal full load value and the Output Voltage drops below the under voltage threshold.
+    potentialRootCause: ""
+    potentialResolution: Before trying to reset the charger, make sure that the short circuit is not present anymore. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Output_Overload_Error:
+    errorCode: Output_Overload_Error
+    errorName: "120142"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Output_Over_Voltage_Error:
+    errorCode: Output_Over_Voltage_Error
+    errorName: "120143"
+    classification: Safety
+    severity: Major
+    description: GreenInvert error. The rectifier voltage is above the maximal value for safe operation.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Output_Under_Voltage_Error:
+    errorCode: Output_Under_Voltage_Error
+    errorName: "120144"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error. The rectifier is not able to achieve the nominal DC bus voltage. This fault can be caused by too low Mains voltage during cold start or failure of the Rectifier.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  CAN_Communication_Timeout_error:
+    errorCode: CAN_Communication_Timeout_error
+    errorName: "120145"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error. Generated due a communication timeout.
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Input_Contactor_OFF_Error:
+    errorCode: Input_Contactor_OFF_Error
+    errorName: "120146"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  DC_BUS_PreCharge_Timeout_Error:
+    errorCode: DC_BUS_PreCharge_Timeout_Error
+    errorName: "120147"
+    classification: Maintenance
+    severity: Major
+    description: GreenInvert error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  Over_Temperature_Error:
+    errorCode: Over_Temperature_Error
+    errorName: "120148"
+    classification: Safety
+    severity: Major
+    description: "GreenInvert error. Charger's heat sink's temperature has exceeded 80ºC or the IGBTs case 120ºC."
+    potentialRootCause: ""
+    potentialResolution: Check if there is any obstruction to the ventilation inlets or outlets of the charger. Check if all fans are working properly. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  softStartTimeout:
+    errorCode: softStartTimeout
+    errorName: "120201"
+    classification: Maintenance
+    severity: Major
+    description: Timeout for turning ON/OFF softStart.
+    potentialRootCause: ""
+    potentialResolution: "Check that the device is working properly and all LEDs are correct Check that all cables are correctly connected and that they match the schematics Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. With everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic. Check for damages on the thyristors Check if the circuit breaker from the Soft Starter is tripped. If yes: Check for damages on the AC contactors Check for damages on the diode bridge If all ok, turn ON the charger via manual mode"
+  communicationLostSoftStart:
+    errorCode: communicationLostSoftStart
+    errorName: "120204"
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication with SoftStart (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  communicationLostDSP:
+    errorCode: communicationLostDSP
+    errorName: "120205"
+    classification: Maintenance
+    severity: Critical
+    description: Loss of communication with DSP (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  communicationLostEnergyMeter:
+    errorCode: communicationLostEnergyMeter
+    errorName: "120207"
+    classification: Maintenance
+    severity: Major
+    description: Loss of communication with EnergyMeter (timeout configurable).
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between device and Linux Check that device is working properly Check the CAN connection to the device and Linux, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  transformerThermostat:
+    errorCode: transformerThermostat
+    errorName: "120212"
+    classification: Safety
+    severity: Major
+    description: Thermostat of the transformer was triggered.
+    potentialRootCause: ""
+    potentialResolution: Check if the transformer temperature sensor is working properly by measuring it's resistance and comparing with any other temperature measurement device Check if the signal is correctly reaching the Linux and if input matches the schematics. Check that there are no blocks to the ventilation, that the filters are properly maintained and clean and that the environmental conditions to which the charger is exposed are according the product manual.
+  igbtDiffTemperatures:
+    errorCode: igbtDiffTemperatures
+    errorName: "120214"
+    classification: Safety
+    severity: Minor
+    description: "Difference between max and min temperature reported by the IGBTs is higher than 30ºC."
+    potentialRootCause: ""
+    potentialResolution: Check that there are no installation problems in the IGBT; they should be correctly installed in the heat dissipater, with correct torque and dissipater should be clean Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  allPeersDead:
+    errorCode: allPeersDead
+    errorName: "120401"
+    classification: Maintenance
+    severity: Major
+    description: None of the chargers connected to the Dispenser/Panto/Master charger is responding to pings.
+    potentialRootCause: ""
+    potentialResolution: "It is not possible to reach via ethernet/FO neither of the chargers. Possible causes are related with ethernet/FO connection issues: Check that all chargers are correctly connected and powered up Check that all ethernet/FO cables are working and installed properly Check if all ethernet/FO switches are working Please keep in mind that the quality and type of the cable must be according what is specified in the product manual. No device, converter or similar should be connected between devices."
+  allPeersInFail:
+    errorCode: allPeersInFail
+    errorName: "120402"
+    classification: Maintenance
+    severity: Major
+    description: All chargers connected to the Dispenser/Panto/Master are in error.
+    potentialRootCause: ""
+    potentialResolution: Investigate the siucapp_peer logs for each charger in order to understand root cause.
+  wrongMasterConfiguration:
+    errorCode: wrongMasterConfiguration
+    errorName: "120403"
+    classification: Maintenance
+    severity: Major
+    description: Charger configured as "master" on software does not match with charger configured as "master" on hardware.
+    potentialRootCause: ""
+    potentialResolution: Check that the charger which has the "master" key is also the same that is configured as master in the software. "Master" charger has different configuration files than the other chargers. For more details please check the software manual.
+  masterGpioTimeout:
+    errorCode: masterGpioTimeout
+    errorName: "120404"
+    classification: Maintenance
+    severity: Major
+    description: Charger configured as "master" not receiving the respective GPIO signal.
+    potentialRootCause: ""
+    potentialResolution: Only possible in chargers with direct feedback from the "master" configuration key. Same as wrongMasterConfiguration, check that the charger which has the "master" key is also the same that is configured as master in the software. "Master" charger has different configuration files than the other chargers. For more details please check the software manual. Check if the key feedback is correctly wired to the respective Linux.
+  distributedBindFail:
+    errorCode: distributedBindFail
+    errorName: "120410"
+    classification: Maintenance
+    severity: Major
+    description: The combiner (dispenser/panto/master charger) could not bind to any of the peers.
+    potentialRootCause: ""
+    potentialResolution: Dispenser/Panto/Master is able to connect to the multiple chargers but is not able to request them to turn ON in order to start the charging session.  Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers may enter in error when turning ON If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  outputStateClose:
+    errorCode: outputStateClose
+    errorName: "120412"
+    classification: Maintenance
+    severity: Major
+    description: One of the peers (chargers) could not open it's output. Not safe to charge in parallel.
+    potentialRootCause: ""
+    potentialResolution: "Using the siucapp logs, identify to which charger this error relates to. In that specific charger: There can be 3 reasons why this errors can appear: The contactor related to the alarm is broken. The board is broken. The DC shutdown line is opened thus preventing the contactors to close or forcing then to open. In this case cannotCloseRelayPlus and cannotCloseRelayMinus are issued. If this happens, the errors can be ignored. To clear them, check the table above.  To confirm what is the cause follow the steps below: If the error is only on one of the contactors, switch the connections on the board between the Relay Plus and Minus. For instance, assume that the error is cannotOpenRelayPlus. Switch the connections from the relays to the board. If the error is now cannotOpenRelayMinus, then the relay is broken. Otherwise the error cannotOpenRelayPlus should keep appearing. Thus, the board is broken and needs replacement."
+  lostAllPeers:
+    errorCode: lostAllPeers
+    errorName: "120413"
+    classification: Maintenance
+    severity: Major
+    description: Indication all bound peers (chargers) were lost (due to errors or loss of communication) and session must be interrupted.  This error should only happen during charging.
+    potentialRootCause: ""
+    potentialResolution: Similar to distributedBindFail but already during the charging process. Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers may go to error when turning ON If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peersVoltageSetpointFail:
+    errorCode: peersVoltageSetpointFail
+    errorName: "120414"
+    classification: Maintenance
+    severity: Major
+    description: Voltage setpoint was not successfully sent to at least one of the bound peers (chargers).
+    potentialRootCause: ""
+    potentialResolution: "Guarantee that there are no communication problems between Dispenser/Panto/Master and the remaining chargers. Can be related to ethernet/FO connection issues: Check that all chargers are correctly connected and powered up Check that all ethernet/FO cables are working and installed properly Check if all ethernet/FO switches are working Please keep in mind that the quality and type of the cable must be according what is specified in the product manual. No device, converter or similar should be connected between devices. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D."
+  peerSendVoltageSetpointSkip:
+    errorCode: peerSendVoltageSetpointSkip
+    errorName: "120415"
+    classification: Maintenance
+    severity: Minor
+    description: Voltage setpoint was requested but combiner's algorithm could not calculate the value to send to the peer (charger).
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peersCurrentSetpointFail:
+    errorCode: peersCurrentSetpointFail
+    errorName: "120416"
+    classification: Maintenance
+    severity: Major
+    description: Current setpoint was not successfully sent to at least one of the bound peers (chargers).
+    potentialRootCause: ""
+    potentialResolution: "Guarantee that there are no communication problems between Dispenser/Panto/Master and the remaining chargers. Can be related to ethernet/FO connection issues: Check that all chargers are correctly connected and powered up Check that all ethernet/FO cables are working and installed properly Check if all ethernet/FO switches are working Please keep in mind that the quality and type of the cable must be according what is specified in the product manual. No device, converter or similar should be connected between devices. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D."
+  peerSendCurrentSetpointSkip:
+    errorCode: peerSendCurrentSetpointSkip
+    errorName: "120417"
+    classification: Maintenance
+    severity: Minor
+    description: Current setpoint was requested but combiner's algorithm could not calculate the value to send to the peer (charger).
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peersEnableOutputFail:
+    errorCode: peersEnableOutputFail
+    errorName: "120418"
+    classification: Maintenance
+    severity: Major
+    description: At least one of the peers (chargers) could not enable it's output.
+    potentialRootCause: ""
+    potentialResolution: Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers should have an error when finishing the charging session. If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peersDisableOutputFail:
+    errorCode: peersDisableOutputFail
+    errorName: "120419"
+    classification: Maintenance
+    severity: Major
+    description: At least one of the peers (chargers) could not disable it's output.
+    potentialRootCause: ""
+    potentialResolution: Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers should have an error when finishing the charging session. If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peerSendOutputSkip:
+    errorCode: peerSendOutputSkip
+    errorName: "120420"
+    classification: Maintenance
+    severity: Major
+    description: Action on output was requested but combiner's algorithm could not process it.
+    potentialRootCause: ""
+    potentialResolution: Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peerBindFail:
+    errorCode: peerBindFail
+    errorName: "120421"
+    classification: Maintenance
+    severity: Minor
+    description: The combiner (dispenser/panto/master charger) could not bind to at least one of the peers (chargers).
+    potentialRootCause: ""
+    potentialResolution: Dispenser/Panto/Master is able to connect to at least one charger but is not able to request them to turn ON in order to start the charging session.  Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers may enter in error when turning ON If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  peerUnbindFail:
+    errorCode: peerUnbindFail
+    errorName: "120422"
+    classification: Maintenance
+    severity: Minor
+    description: The combiner (dispenser/panto/master charger) could not unbind from at least one of the peers (chargers).
+    potentialRootCause: ""
+    potentialResolution: Dispenser/Panto/Master is able to connect to at least one charger but is not able to request them to turn OFF in order to start the charging session.  Investigate the siucapp_peer logs for each charger in order to understand root cause. Chargers may enter in error when turning ON If no error can be seen at the peers, investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  ocppServiceStartupDuringSession:
+    errorCode: ocppServiceStartupDuringSession
+    errorName: "130101"
+    classification: Maintenance
+    severity: Major
+    description: OCPP service has crashed and restarted during a charging process.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  ocppServiceHeartbeatTimeout:
+    errorCode: ocppServiceHeartbeatTimeout
+    errorName: "130102"
+    classification: Maintenance
+    severity: Major
+    description: OCPP service has crashed and it is no longer reachable.
+    potentialRootCause: ""
+    potentialResolution: siucapp specific error. Investigate the exact moment when this error occurs and if error is alone or triggered after other error. Provide all findings together with logs to the R&D.
+  ocppUnavailable:
+    errorCode: ocppUnavailable
+    errorName: "130103"
+    classification: Maintenance
+    severity: Major
+    description: Set whenever the AvailabilityState of an EVSE is set to Inoperative by the CSMS
+    potentialRootCause: ""
+    potentialResolution: This is only considered an error if the AvailabilityState is set to Operative by the CSMS and the error doesn't clear. Please keep in mind that the AvailabilityState is persistent so, once received, rebooting will not clear the error. It must be reset by the CSMS. In extreme cases (not recommended during a regular operation) the OCPP cache can be cleared by removing the content of the /opt/sicharge/apps/ocpp-ng/var folder, except the ssl folder.
+  externalButton1Pressed:
+    errorCode: externalButton1Pressed
+    errorName: "130201"
+    classification: Maintenance
+    severity: Major
+    description: First external button pressed.
+    potentialRootCause: ""
+    potentialResolution: "Check that button is not pressed and working properly Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  externalButton2Pressed:
+    errorCode: externalButton2Pressed
+    errorName: "130202"
+    classification: Maintenance
+    severity: Major
+    description: Second external button pressed.
+    potentialRootCause: ""
+    potentialResolution: "Check that button is not pressed and working properly Check if the signal is correctly reaching the Linux controller and if input matches the schematics. Check if Linux is detecting properly the signal: feedback must be visible in the logs input must be correctly configured in gpio.conf"
+  dispenserCANCommunicationLostAkka:
+    errorCode: dispenserCANCommunicationLostAkka
+    errorName: "210101"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser lost CAN communication with AKKA.
+    potentialRootCause: ""
+    potentialResolution: "Via candump, check that no CAN messages are being exchanged between device and S7. Check that device is working properly Check the CAN connection to the device and S7, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. With everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic. Confirm that the PLC debug mode is not ON (example: USB Pen is not being used for PLC traces)"
+  dispenserDoor:
+    errorCode: dispenserDoor
+    errorName: "210102"
+    classification: Safety
+    severity: Major
+    description: Dispenser door is open.
+    potentialRootCause: ""
+    potentialResolution: Check if door is properly closed. Check if the door switch is working properly. Check if the signal is correctly reaching the S7 controller and if input matches the schematics. Check if S7 is detecting properly the signal using TIA Portal.
+  dispenserFusePlus:
+    errorCode: dispenserFusePlus
+    errorName: "210103"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser fuse blow (DC+).
+    potentialRootCause: ""
+    potentialResolution: ""
+  dispenserFuseMinus:
+    errorCode: dispenserFuseMinus
+    errorName: "210104"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser fuse blow (DC-).
+    potentialRootCause: ""
+    potentialResolution: ""
+  dispenserContactorPlus:
+    errorCode: dispenserContactorPlus
+    errorName: "210105"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser contactor error (DC+)
+    potentialRootCause: ""
+    potentialResolution: Check if the DC contactor is working properly. Check if the signal is correctly reaching the S7 controller and if input matches the schematics. Check if S7 is detecting properly the signal using TIA Portal.
+  dispenserContactorMinus:
+    errorCode: dispenserContactorMinus
+    errorName: "210106"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser contactor error (DC-)
+    potentialRootCause: ""
+    potentialResolution: Check if the DC contactor is working properly. Check if the signal is correctly reaching the S7 controller and if input matches the schematics. Check if S7 is detecting properly the signal using TIA Portal.
+  dispenserModbusCommunicationLost:
+    errorCode: dispenserModbusCommunicationLost
+    errorName: "210107"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser lost communication with Modbus server.
+    potentialRootCause: ""
+    potentialResolution: Check the ethernet connection is correctly established between charger and dispenser Check that the ethernet cable is working properly Check that the ethernet cable is according the specification (both cable type and installation) Check that the S7 is working properly and with the latest software version Check that the Linux is working properly and with the latest software version modbusmqtt application must be running and without errors in the logs
+  dispenserTemperature:
+    errorCode: dispenserTemperature
+    errorName: "210108"
+    classification: Safety
+    severity: Major
+    description: "Dispenser temperature out of range (-20ºC to 55ºC)"
+    potentialRootCause: ""
+    potentialResolution: Check if the temperature sensor is working properly by measuring it's resistance and comparing with any other temperature measurement device Check if the signal is correctly reaching the S7 and if input matches the schematics. Check that the environmental conditions to which the charger is exposed are according the product manual.
+  dispenserCANCommunicationLostLC:
+    errorCode: dispenserCANCommunicationLostLC
+    errorName: "210109"
+    classification: Maintenance
+    severity: Major
+    description: Dispenser lost CAN communication with Liquid Cooled plug.
+    potentialRootCause: ""
+    potentialResolution: Via candump, check that no CAN messages are being exchanged between LC and S7 Check that LC is working properly Check the CAN connection to the LC and S7, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. with everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  dspDCOvervoltage:
+    errorCode: dspDCOvervoltage
+    errorName: "220101"
+    classification: Safety
+    severity: Major
+    description: DC Capacitors Overvoltage
+    potentialRootCause: ""
+    potentialResolution: This might point towards a defective diode bridge. If it happens, other errors that appear need to be analyzed
+  dspDCUndervoltage:
+    errorCode: dspDCUndervoltage
+    errorName: "220102"
+    classification: Maintenance
+    severity: Major
+    description: DC Capacitors Undervoltage
+    potentialRootCause: ""
+    potentialResolution: This might point towards a defective diode bridge. If it happens, other errors that appear need to be analyzed
+  dspDCUnbalancedCapacitors:
+    errorCode: dspDCUnbalancedCapacitors
+    errorName: "220103"
+    classification: Safety
+    severity: Major
+    description: DC Capacitors Unbalanced
+    potentialRootCause: ""
+    potentialResolution: "This error can have several causes. Cause: Vehicle To understand this, it is important to understand how the transfer on energy from the charger to the vehicle happens. There is a voltage, vOut, and a current, i+, that is delivered to the vehicle. If everything works properly, i+ = i-. If not then i+ is not equal to i-. Since vOut is fixed by the vehicle and i+ by the charger, and since the charger is symmetrical, then the only variable that is able to change is the DC Link. As the DC Link becomes unsymmetrical to accommodate the difference between i+ and i-, there is a point in which the DCUnbalancedCapacitors is thrown. Global Wiki English > Errors and Associated Troubleshoot (Gen2 Software Guide) > image-2023-5-19_10-22-37.png  Cause: IGBTs Suppose that the IGBTs connected to the DC- are defected so that a switching delay happens or they are not able to let through the full current i-. This will create i+ not equal to i- and thus the same situation as above. Global Wiki English > Errors and Associated Troubleshoot (Gen2 Software Guide) > image-2023-5-19_10-24-0.png Cause: Diode Bridges Same as the IGBTs, a defective Diode Bridge will give an Unbalanced DC Link. Usually this is already seen after the Softstarter is on MONITORING state. There are some actions that can be taken to better understand the issue: Test with another vehicle to see if it is a vehicle problem or a charger problem and measuring the i+ and i- values to see the differences between vehicles. If not, then either the IGBTs or Diode Bridges need replacement. Usually both need, but it is more likely that there is an issue on the Diode Bridges. If there is a past IGBTxSaturation, this might mean that the IGBTs are broken. Always replace both drivers and IGBTs."
+  dspOverCurrent:
+    errorCode: dspOverCurrent
+    errorName: "220104"
+    classification: Safety
+    severity: Major
+    description: Over current detected on iBuck or iOut
+    potentialRootCause: ""
+    potentialResolution: "Investigation of the siucapp logs in order to understand root cause. In most cases it is caused by EV battery issues and it may be followed by other errors like EVRESSMalfunction. In case the source appears to be internal to the charger, guarantee that the charger is correctly calibrated and that are no other errors in the alarm history that can point towards an IGBT or DC capacitor issue. Other errors on the DSP may cause this error: since the DSP halts de IGBTs on error, the energy stored on the Output Capacitors may flow so fast to the vehicle that it may cause a spike in the current for a short period of time."
+  dspOutputOvervoltage:
+    errorCode: dspOutputOvervoltage
+    errorName: "220105"
+    classification: Safety
+    severity: Major
+    description: Over votlage detected on vOut or vBuck
+    potentialRootCause: ""
+    potentialResolution: Investigation of the siucapp logs in order to understand root cause. In most cases it is caused by EV battery issues and it may be followed by other errors like EVRESSMalfunction. In case the source appears to be internal to the charger, guarantee that the charger is correctly calibrated and that are no other errors in the alarm history that can point towards an IGBT or DC capacitor issue.
+  dspLoadDump:
+    errorCode: dspLoadDump
+    errorName: "220106"
+    classification: Maintenance
+    severity: Major
+    description: DC load, most likely the EV battery, was disconnected while energy was being transferred without any warning
+    potentialRootCause: ""
+    potentialResolution: This error is usually caused by the EV. It case you are sure that it is not an EV fault, check all DC lines to guarantee that no contact is loose or no devices like fuses or relays are not malfunctioning and causing a disconnection during charging.
+  dspLowInputVoltage:
+    errorCode: dspLowInputVoltage
+    errorName: "220107"
+    classification: Maintenance
+    severity: Major
+    description: Input voltage too low, cannot convert to desired output voltage
+    potentialRootCause: ""
+    potentialResolution: This might point towards a defective diode bridge. If it happens, other errors that appear need to be analyzed
+  dspKeepAliveTimeout:
+    errorCode: dspKeepAliveTimeout
+    errorName: "220108"
+    classification: Maintenance
+    severity: Major
+    description: DSP_StartConversion is not sent whitin 500 ms
+    potentialRootCause: ""
+    potentialResolution: Check the CAN connection to the DSP, in particular if the shielding in not touching any other cable or if the cable was not damaged in production causing a faulty connection. With everything OFF, measure the resistance between CAN H/L which should be ~60ohm. If not, check that all CAN configuration switches are according the schematic.
+  dspIGBTPlus0Saturation:
+    errorCode: dspIGBTPlus0Saturation
+    errorName: "220109"
+    classification: Safety
+    severity: Major
+    description: IGBT Driver detected IGBT saturation
+    potentialRootCause: ""
+    potentialResolution: IGBT and Driver need replacement. Pay attention to other errors on the system as the Diode Bridges might also need to be replaced
+  dspIGBTPlus1Saturation:
+    errorCode: dspIGBTPlus1Saturation
+    errorName: "220110"
+    classification: Safety
+    severity: Major
+    description: IGBT Driver detected IGBT saturation
+    potentialRootCause: ""
+    potentialResolution: IGBT and Driver need replacement. Pay attention to other errors on the system as the Diode Bridges might also need to be replaced
+  dspIGBTMinus0Saturation:
+    errorCode: dspIGBTMinus0Saturation
+    errorName: "220111"
+    classification: Safety
+    severity: Major
+    description: IGBT Driver detected IGBT saturation
+    potentialRootCause: ""
+    potentialResolution: IGBT and Driver need replacement. Pay attention to other errors on the system as the Diode Bridges might also need to be replaced
+  dspIGBTMinus1Saturation:
+    errorCode: dspIGBTMinus1Saturation
+    errorName: "220112"
+    classification: Safety
+    severity: Major
+    description: IGBT Driver detected IGBT saturation
+    potentialRootCause: ""
+    potentialResolution: IGBT and Driver need replacement. Pay attention to other errors on the system as the Diode Bridges might also need to be replaced
+  dspIGBTPlus0OverTemp:
+    errorCode: dspIGBTPlus0OverTemp
+    errorName: "220113"
+    classification: Safety
+    severity: Major
+    description: "IGBT temperature is above 150ºC"
+    potentialRootCause: ""
+    potentialResolution: Check the siucapp logs and confirm that these temperatures are being measured. Check that there are no blocks to the ventilation, that the filters are properly maintained and clean and that the environmental conditions to which the charger is exposed are according the product manual.
+  dspIGBTPlus1OverTemp:
+    errorCode: dspIGBTPlus1OverTemp
+    errorName: "220114"
+    classification: Safety
+    severity: Major
+    description: "IGBT temperature is above 150ºC"
+    potentialRootCause: ""
+    potentialResolution: Check the siucapp logs and confirm that these temperatures are being measured. Check that there are no blocks to the ventilation, that the filters are properly maintained and clean and that the environmental conditions to which the charger is exposed are according the product manual.
+  dspIGBTMinus0OverTemp:
+    errorCode: dspIGBTMinus0OverTemp
+    errorName: "220115"
+    classification: Safety
+    severity: Major
+    description: "IGBT temperature is above 150ºC"
+    potentialRootCause: ""
+    potentialResolution: Check the siucapp logs and confirm that these temperatures are being measured. Check that there are no blocks to the ventilation, that the filters are properly maintained and clean and that the environmental conditions to which the charger is exposed are according the product manual.
+  dspIGBTMinus1OverTemp:
+    errorCode: dspIGBTMinus1OverTemp
+    errorName: "220116"
+    classification: Safety
+    severity: Major
+    description: "IGBT temperature is above 150ºC"
+    potentialRootCause: ""
+    potentialResolution: Check the siucapp logs and confirm that these temperatures are being measured. Check that there are no blocks to the ventilation, that the filters are properly maintained and clean and that the conditions to which the charger is exposed are according the product manual.
+  dspNeedRestart:
+    errorCode: dspNeedRestart
+    errorName: "220117"
+    classification: Maintenance
+    severity: Major
+    description: A task running on the Master Core stopped working
+    potentialRootCause: ""
+    potentialResolution: Contact R&D and provide the logs. The system entered a safe state as an error on the board/firmware on the code was found.
+  dspDCShutdown:
+    errorCode: dspDCShutdown
+    errorName: "220118"
+    classification: Maintenance
+    severity: Major
+    description: DC Shutdown line is interrupted
+    potentialRootCause: ""
+    potentialResolution: "Confirm that 0 V are at the DC Shutdown Pin of the board. If 24 V appear, then the boards is damaged and needs replacement. If not, check the DC Shutdown path for any miswiring or broken cable: remember to check if the emergency button is released or the system is not in a known error that is opening the DC Shutdown line."
+  dspSlaveNotCommunicating:
+    errorCode: dspSlaveNotCommunicating
+    errorName: "220120"
+    classification: Maintenance
+    severity: Major
+    description: The Slave Core stopped sending data to the Master Core
+    potentialRootCause: ""
+    potentialResolution: Contact R&D and provide the logs. The system entered a safe state as an error on the board/firmware on the code was found.
+  dspOutputShortCircuit:
+    errorCode: dspOutputShortCircuit
+    errorName: "220121"
+    classification: Safety
+    severity: Major
+    description: vBuck or vOut keeps at 0 V although a voltage setpoint different than 0 is requested
+    potentialRootCause: ""
+    potentialResolution: Check all DC cables to guarantee that there is no short circuit. Check that the source was not the EV.
+  dspOutputVoltageHigh:
+    errorCode: dspOutputVoltageHigh
+    errorName: "220122"
+    classification: Safety
+    severity: Major
+    description: vBuck or vOut are above 20 V while the system is ONALARM or going from CONVERTING to READY. Error should be cleared after output voltage is below 20 V
+    potentialRootCause: ""
+    potentialResolution: Investigation of the siucapp logs in order to understand root cause. In most cases it is caused by EV battery issues and it may be followed by other errors like EVRESSMalfunction. In case the source appears to be internal to the charger, guarantee that the charger is correctly calibrated and that are no other errors in the alarm history that can point towards an IGBT or DC capacitor issue.
+  dspCurrentMeasurementDiff:
+    errorCode: dspCurrentMeasurementDiff
+    errorName: "220123"
+    classification: Maintenance
+    severity: Major
+    description: iBuck and iOut currents have a difference on the measurement of at least 25 A
+    potentialRootCause: ""
+    potentialResolution: Check the cables from the board to the Current Sensing Modules. If the error keeps persisting, even with a different vehicle, the DSP needs to be calibrated. Please pay attention to other errors, as this might happen in case the system is quickly halted e.g. DC Shutdown line triggered. There is a very small chance the the Current Sensing Modules are also broken, as this error checks if both sensing modules are providing the same measuring value.
+  ssL1CannotOpenRelay:
+    errorCode: ssL1CannotOpenRelay
+    errorName: "220201"
+    classification: Safety
+    severity: Major
+    description: System cannot open relay L1. Feedback of contactor doesn't indicate that the relay L1 was opened (occurs after 1 s if no change on feedback). Relay is opened and then closes.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is open or a command to stop the SoftStarter is issued.
+  ssL2CannotOpenRelay:
+    errorCode: ssL2CannotOpenRelay
+    errorName: "220202"
+    classification: Safety
+    severity: Major
+    description: System cannot open relay L2. Feedback of contactor doesn't indicate that the relay L1 was opened (occurs after 1 s if no change on feedback). Relay is opened and then closes.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is open or a command to stop the SoftStarter is issued.
+  ssL3CannotOpenRelay:
+    errorCode: ssL3CannotOpenRelay
+    errorName: "220203"
+    classification: Safety
+    severity: Major
+    description: System cannot open relay L3. Feedback of contactor doesn't indicate that the relay L1 was opened (occurs after 1 s if no change on feedback). Relay is opened and then closes.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is open or a command to stop the SoftStarter is issued.
+  ssL1CannotCloseRelay:
+    errorCode: ssL1CannotCloseRelay
+    errorName: "220204"
+    classification: Maintenance
+    severity: Major
+    description: System cannot close relay L1. Feedback of contactor doesn't indicate that the relay L1 was closed (occurs after 1 s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is closed or a command to stop the SoftStarter is issued.
+  ssL2CannotCloseRelay:
+    errorCode: ssL2CannotCloseRelay
+    errorName: "220205"
+    classification: Maintenance
+    severity: Major
+    description: System cannot close relay L2. Feedback of contactor doesn't indicate that the relay L1 was closed (occurs after 1 s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is closed or a command to stop the SoftStarter is issued.
+  ssL3CannotCloseRelay:
+    errorCode: ssL3CannotCloseRelay
+    errorName: "220206"
+    classification: Maintenance
+    severity: Major
+    description: System cannot close relay L3. Feedback of contactor doesn't indicate that the relay L1 was closed (occurs after 1 s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is closed or a command to stop the SoftStarter is issued.
+  ssFilterCannotOpenRelay:
+    errorCode: ssFilterCannotOpenRelay
+    errorName: "220207"
+    classification: Maintenance
+    severity: Major
+    description: System cannot close relay Input Filter. Feedback of contactor doesn't indicate that the relay Input Filter was closed (occurs after 1 s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is open or a command to stop the SoftStarter is issued.
+  ssFilterCannotCloseRelay:
+    errorCode: ssFilterCannotCloseRelay
+    errorName: "220208"
+    classification: Maintenance
+    severity: Major
+    description: System cannot open relay Input Filter. Feedback of contactor doesn't indicate that the relay Input Filter was opened (occurs after 1 s if no change on feedback). Relay is opened and then closes.
+    potentialRootCause: ""
+    potentialResolution: Feedback return that the relay is closed or a command to stop the SoftStarter is issued.
+  ssDCShutdown:
+    errorCode: ssDCShutdown
+    errorName: "220209"
+    classification: Maintenance
+    severity: Major
+    description: Emergency pushbutton press was detected. Emergency Line is triggered.
+    potentialRootCause: ""
+    potentialResolution: The condition that triggered the emergency line is no longer present.
+  ssSoftstartOperationFailed:
+    errorCode: ssSoftstartOperationFailed
+    errorName: "220210"
+    classification: Maintenance
+    severity: Major
+    description: System tried to perform the soft start operation but it failed. Happens when the circuit breaker for the AC connections on the SoftStarter trips.
+    potentialRootCause: ""
+    potentialResolution: Command to stop the SoftStarter is issued.
+  ssDSTTrip:
+    errorCode: ssDSTTrip
+    errorName: "220211"
+    classification: Maintenance
+    severity: Major
+    description: Surge arrester is blown.
+    potentialRootCause: ""
+    potentialResolution: Replace Surge arrester.
+  opDCShutdown:
+    errorCode: opDCShutdown
+    errorName: 220301/220601/220701/220801
+    classification: Maintenance
+    severity: Major
+    description: Emergency pushbutton press was detected.
+    potentialRootCause: ""
+    potentialResolution: "Confirm that 0 V are at the DC Shutdown Pin of the board. If 24 V appear, then the boards is damaged and needs replacement. If not, check the DC Shutdown path for any miswiring or broken cable: remember to check if the emergency button is released or the system is not in a known error that is opening the DC Shutdown line."
+  opCannotCloseRelayPlus:
+    errorCode: opCannotCloseRelayPlus
+    errorName: 220302/220602/220702/220802
+    classification: Maintenance
+    severity: Major
+    description: Feedback of contactor doesn't indicate that the relay Plus was closed (occurs after 1s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this errors can appear: The contactor related to the alarm is broken. The board is broken. The DC shutdown line is opened thus preventing the contactors to close or forcing then to open. In this case cannotCloseRelayPlus and cannotCloseRelayMinus are issued. If this happens, the errors can be ignored. To clear them, check the table above.  To confirm what is the cause follow the steps below: If the error is only on one of the contactors, switch the connections on the board between the Relay Plus and Minus. For instance, assume that the error is cannotOpenRelayPlus. Switch the connections from the relays to the board. If the error is now cannotOpenRelayMinus, then the relay is broken. Otherwise the error cannotOpenRelayPlus should keep appearing. Thus, the board is broken and needs replacement."
+  opCannotOpenRelayPlus:
+    errorCode: opCannotOpenRelayPlus
+    errorName: 220303/220603/220703/220803
+    classification: Safety
+    severity: Major
+    description: Feedback of contactor doesn't indicate that the relay Plus was opened (occurs after 1s if no change on feedback). System still tries to open the Relay.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this errors can appear: The contactor related to the alarm is broken. The board is broken. The DC shutdown line is opened thus preventing the contactors to close or forcing then to open. In this case cannotCloseRelayPlus and cannotCloseRelayMinus are issued. If this happens, the errors can be ignored. To clear them, check the table above.  To confirm what is the cause follow the steps below: If the error is only on one of the contactors, switch the connections on the board between the Relay Plus and Minus. For instance, assume that the error is cannotOpenRelayPlus. Switch the connections from the relays to the board. If the error is now cannotOpenRelayMinus, then the relay is broken. Otherwise the error cannotOpenRelayPlus should keep appearing. Thus, the board is broken and needs replacement."
+  opCannotCloseRelayMinus:
+    errorCode: opCannotCloseRelayMinus
+    errorName: 220304/220604/220704/220804
+    classification: Maintenance
+    severity: Major
+    description: Feedback of contactor doesn't indicate that the relay Minus was closed (occurs after 1s if no change on feedback). Relay is closed and then opens.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this errors can appear: The contactor related to the alarm is broken. The board is broken. The DC shutdown line is opened thus preventing the contactors to close or forcing then to open. In this case cannotCloseRelayPlus and cannotCloseRelayMinus are issued. If this happens, the errors can be ignored. To clear them, check the table above.  To confirm what is the cause follow the steps below: If the error is only on one of the contactors, switch the connections on the board between the Relay Plus and Minus. For instance, assume that the error is cannotOpenRelayPlus. Switch the connections from the relays to the board. If the error is now cannotOpenRelayMinus, then the relay is broken. Otherwise the error cannotOpenRelayPlus should keep appearing. Thus, the board is broken and needs replacement."
+  opCannotOpenRelayMinus:
+    errorCode: opCannotOpenRelayMinus
+    errorName: 220305/220605/220705/220805
+    classification: Safety
+    severity: Major
+    description: Feedback of contactor doesn't indicate that the relay Minus was opened (occurs after 1s if no change on feedback). System still tries to open the Relay.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this errors can appear: The contactor related to the alarm is broken. The board is broken. The DC shutdown line is opened thus preventing the contactors to close or forcing then to open. In this case cannotCloseRelayPlus and cannotCloseRelayMinus are issued. If this happens, the errors can be ignored. To clear them, check the table above.  To confirm what is the cause follow the steps below: If the error is only on one of the contactors, switch the connections on the board between the Relay Plus and Minus. For instance, assume that the error is cannotOpenRelayPlus. Switch the connections from the relays to the board. If the error is now cannotOpenRelayMinus, then the relay is broken. Otherwise the error cannotOpenRelayPlus should keep appearing. Thus, the board is broken and needs replacement."
+  fcFan1NoSpin:
+    errorCode: fcFan1NoSpin
+    errorName: "220401"
+    classification: Safety
+    severity: Major
+    description: Triggered when a speed different than 0 is set, but no RPM is detected on the feedback tachometer. Trigger will happen after 10 seconds of the setting of the speed.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this error can appear: The fan is broken and needs replacement. The AC circuit breaker for the fan has tripped, thus the fan has no supply voltage. The Fan Control Platform is broken.  To confirm what is the cause follow the steps below: Confirm that the circuit breaker for the fan is tripped. If so, reset it and confirm if the fan is operational. If the circuit breaker trips again, re-wire another fan to that circuit breaker to confirm that it is not damaged. If the circuit breaker still trips with another fan connected to it, check all the wiring between the fan and the circuit breaker. There might be an cable extension between the fan and the circuit breaker. If nothing is detected on the wiring replace the circuit-breaker. If the breaker does trip again, then the Fan needs replacement. If the circuit breaker is not tripped, go to step 2. If the circuit breaker is not tripped, change the connections on the Fan Control Platform of the fan that is not spinning, to an one that it is spinning. For instance, consider that the error is fan1NoSpin and Fan 2 is working. Re-wire the connections from Fan 2 to Fan 1 and from Fan 1 to Fan 2. Test the system: if the error displayed is fan2NoSpin, then the fan is broken. Otherwise, the board needs replacement."
+  fcFan2NoSpin:
+    errorCode: fcFan2NoSpin
+    errorName: "220402"
+    classification: Safety
+    severity: Major
+    description: Triggered when a speed different than 0 is set, but no RPM is detected on the feedback tachometer. Trigger will happen after 10 seconds of the setting of the speed.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this error can appear: The fan is broken and needs replacement. The AC circuit breaker for the fan has tripped, thus the fan has no supply voltage. The Fan Control Platform is broken.  To confirm what is the cause follow the steps below: Confirm that the circuit breaker for the fan is tripped. If so, reset it and confirm if the fan is operational. If the circuit breaker trips again, re-wire another fan to that circuit breaker to confirm that it is not damaged. If the circuit breaker still trips with another fan connected to it, check all the wiring between the fan and the circuit breaker. There might be an cable extension between the fan and the circuit breaker. If nothing is detected on the wiring replace the circuit-breaker. If the breaker does trip again, then the Fan needs replacement. If the circuit breaker is not tripped, go to step 2. If the circuit breaker is not tripped, change the connections on the Fan Control Platform of the fan that is not spinning, to an one that it is spinning. For instance, consider that the error is fan1NoSpin and Fan 2 is working. Re-wire the connections from Fan 2 to Fan 1 and from Fan 1 to Fan 2. Test the system: if the error displayed is fan2NoSpin, then the fan is broken. Otherwise, the board needs replacement."
+  fcFan3NoSpin:
+    errorCode: fcFan3NoSpin
+    errorName: "220403"
+    classification: Safety
+    severity: Major
+    description: Triggered when a speed different than 0 is set, but no RPM is detected on the feedback tachometer. Trigger will happen after 10 seconds of the setting of the speed.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this error can appear: The fan is broken and needs replacement. The AC circuit breaker for the fan has tripped, thus the fan has no supply voltage. The Fan Control Platform is broken.  To confirm what is the cause follow the steps below: Confirm that the circuit breaker for the fan is tripped. If so, reset it and confirm if the fan is operational. If the circuit breaker trips again, re-wire another fan to that circuit breaker to confirm that it is not damaged. If the circuit breaker still trips with another fan connected to it, check all the wiring between the fan and the circuit breaker. There might be an cable extension between the fan and the circuit breaker. If nothing is detected on the wiring replace the circuit-breaker. If the breaker does trip again, then the Fan needs replacement. If the circuit breaker is not tripped, go to step 2. If the circuit breaker is not tripped, change the connections on the Fan Control Platform of the fan that is not spinning, to an one that it is spinning. For instance, consider that the error is fan1NoSpin and Fan 2 is working. Re-wire the connections from Fan 2 to Fan 1 and from Fan 1 to Fan 2. Test the system: if the error displayed is fan2NoSpin, then the fan is broken. Otherwise, the board needs replacement."
+  fcFan4NoSpin:
+    errorCode: fcFan4NoSpin
+    errorName: "220404"
+    classification: Safety
+    severity: Major
+    description: Triggered when a speed different than 0 is set, but no RPM is detected on the feedback tachometer. Trigger will happen after 10 seconds of the setting of the speed.
+    potentialRootCause: ""
+    potentialResolution: "There can be 3 reasons why this error can appear: The fan is broken and needs replacement. The AC circuit breaker for the fan has tripped, thus the fan has no supply voltage. The Fan Control Platform is broken.  To confirm what is the cause follow the steps below: Confirm that the circuit breaker for the fan is tripped. If so, reset it and confirm if the fan is operational. If the circuit breaker trips again, re-wire another fan to that circuit breaker to confirm that it is not damaged. If the circuit breaker still trips with another fan connected to it, check all the wiring between the fan and the circuit breaker. There might be an cable extension between the fan and the circuit breaker. If nothing is detected on the wiring replace the circuit-breaker. If the breaker does trip again, then the Fan needs replacement. If the circuit breaker is not tripped, go to step 2. If the circuit breaker is not tripped, change the connections on the Fan Control Platform of the fan that is not spinning, to an one that it is spinning. For instance, consider that the error is fan1NoSpin and Fan 2 is working. Re-wire the connections from Fan 2 to Fan 1 and from Fan 1 to Fan 2. Test the system: if the error displayed is fan2NoSpin, then the fan is broken. Otherwise, the board needs replacement."
+  fcDCShutdown:
+    errorCode: fcDCShutdown
+    errorName: "220405"
+    classification: Maintenance
+    severity: Major
+    description: Emergency pushbutton press was detected.
+    potentialRootCause: ""
+    potentialResolution: "If this error appears on an UC150 (or any board that has no DC Shutdown cables connected to it) then the board is broken and needs replacement. If not: Confirm that 0 V are at the DC Shutdown Pin of the board. If 24 V appear, then the boards is damaged and needs replacement. If not, check the DC Shutdown path for any miswiring or broken cable: remember to check if the emergency button is released or the system is not in a known error that is opening the DC Shutdown line."
+  TASNoloadST/AllPhaseArithmeticNoLoad:
+    errorCode: TASNoloadST/AllPhaseArithmeticNoLoad
+    errorName: "220501"
+    classification: Maintenance
+    severity: Major
+    description: All phase arithmetic sum apparent power no-load condition status
+    potentialRootCause: ""
+    potentialResolution: ""
+  TPNoloadST/AllPhaseActivePowerNoLoad:
+    errorCode: TPNoloadST/AllPhaseActivePowerNoLoad
+    errorName: "220502"
+    classification: Maintenance
+    severity: Major
+    description: All phase sum active power no-load condition status
+    potentialRootCause: ""
+    potentialResolution: ""
+  TQNoloadST/AllPhaseReactiveNoLoad:
+    errorCode: TQNoloadST/AllPhaseReactiveNoLoad
+    errorName: "220503"
+    classification: Maintenance
+    severity: Major
+    description: All phase sum reactive power no-load condition status
+    potentialRootCause: ""
+    potentialResolution: ""
+  emIRevWnST/CurrentPhaseSequence:
+    errorCode: emIRevWnST/CurrentPhaseSequence
+    errorName: "220504"
+    classification: Maintenance
+    severity: Major
+    description: "Current Phase Sequence Error status. Phases are not with the right rotation (L1 → L2 → L3)."
+    potentialRootCause: ""
+    potentialResolution: "Corrective action: Remove the AC supply cables and put them back in the correct rotation."
+  emURevWnST/VoltagePhaseSequence:
+    errorCode: emURevWnST/VoltagePhaseSequence
+    errorName: "220505"
+    classification: Maintenance
+    severity: Major
+    description: "Voltage Phase Sequence Error status. Phases are not with the right rotation (L1 → L2 → L3)."
+    potentialRootCause: ""
+    potentialResolution: "Corrective action: Remove the AC supply cables and put them back in the correct rotation."
+  emOVPhaseCS/PhaseCOverVoltage:
+    errorCode: emOVPhaseCS/PhaseCOverVoltage
+    errorName: "220506"
+    classification: Maintenance
+    severity: Major
+    description: Over voltage on phase C. More than 460 V was detected on phase C.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emOVPhaseAST/PhaseAOverVoltage:
+    errorCode: emOVPhaseAST/PhaseAOverVoltage
+    errorName: "220507"
+    classification: Maintenance
+    severity: Major
+    description: Over voltage on phase A. More than 460 V was detected on phase A.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emOIPhaseCST/PhaseCOverCurrent:
+    errorCode: emOIPhaseCST/PhaseCOverCurrent
+    errorName: "220508"
+    classification: Maintenance
+    severity: Major
+    description: Over current on phase C. More than 250 A was detected on phase C.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emOIPhaseAST/PhaseAOverCurrent:
+    errorCode: emOIPhaseAST/PhaseAOverCurrent
+    errorName: "220509"
+    classification: Maintenance
+    severity: Major
+    description: Over current on phase A. More than 250 A was detected on phase A.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emPhaseLossCST/PhaseCLost:
+    errorCode: emPhaseLossCST/PhaseCLost
+    errorName: "220510"
+    classification: Maintenance
+    severity: Major
+    description: Phase Lost phase C. Less than 280 V was detected on phase C.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emPhaseLossAST/PhaseALost:
+    errorCode: emPhaseLossAST/PhaseALost
+    errorName: "220511"
+    classification: Maintenance
+    severity: Major
+    description: Phase Lost phase A. Less than 280 V was detected on phase A.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emFreqLoST/LowFrequency:
+    errorCode: emFreqLoST/LowFrequency
+    errorName: "220512"
+    classification: Maintenance
+    severity: Major
+    description: Frequency Low. Less than 49 Hz was detected.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emSagPhaseCST/PhaseCVoltageSag:
+    errorCode: emSagPhaseCST/PhaseCVoltageSag
+    errorName: "220513"
+    classification: Maintenance
+    severity: Major
+    description: Voltage Sag on phase C. Less than 340 V was detected on phase C.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emSagPhaseAST/PhaseAVoltageSag:
+    errorCode: emSagPhaseAST/PhaseAVoltageSag
+    errorName: "220514"
+    classification: Maintenance
+    severity: Major
+    description: Voltage Sag on phase A. Less than 340 V was detected on phase A.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  emFreqHiST/HighFrequency:
+    errorCode: emFreqHiST/HighFrequency
+    errorName: "220515"
+    classification: Maintenance
+    severity: Major
+    description: Frequency High. More than 51 Hz was detected.
+    potentialRootCause: ""
+    potentialResolution: All of the alarms thrown by the energy meter mean a failure on the Mains or a bad wiring (URevWnST/VoltagePhaseSequence). If there is no condition to trigger a given alarm, the board might be in defect and needs to be replaced. Always confirm this via an energy meter/oscilloscope. It is normal for some errors to appear when the charger is fully turned on, since the energy meter saves the alarms after detecting a power loss. The Linux Platform will turn off these alarms after boot up.
+  # The backend uses this default code when an error is notified by the firmware without an error code. NOT TO BE USED as a default error code while sending error events.
+  "UnknownError": # Internal error code used by cloud, when techCode is missing.
+    errorCode: "UnknownError"
+    errorName: "Unknown error"
+    description: "An unspecified error has occurred."
+    classification: "Maintenance"
+    severity: "Information"
+    potentialRootCause: "An error occurred but the charger failed to communicate the error code."
+    potentialResolution: "Please check the firmware logs"

@@ -1,0 +1,178 @@
+{
+    "incident_id": "52737b52-4fb3-ef11-b8e8-7c1e527679d8",
+    "ticket_number": "0393950",
+    "title": "ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values",
+    "created_on": "2024-12-05T21:24:37Z",
+    "last_activity": "2026-01-30T10:40:34Z",
+    "age": "16715",
+    "description": "Reported behavior/issue: Meter values\nRoot cause: LEM address not updated.\nSolution:  LEM address updated\nOn DAMEX Sanctioned List: No\nWarranty Status: Not active",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "pukk7o",
+    "stage": null,
+    "serial_number": "MP / N2 160342780",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "69c87a45-4fb3-ef11-b8e8-000d3a68cce9",
+            "subject": "SI Charge D Meter Values",
+            "body": "Hello SI Emobility,\nI’m encountering something with an SI Charge D for which I’m looking for some clarity.   This pertains to the meterStart, meterStop and the energy register.\nWith the charger following what I believe is referred to as ‘Zero Based’ meterStart’s, using 0 as the meterStart and having the total Wh delivered in the meterStop, I’m running into a couple of challenges:\nAcross 10 sessions, I’m seeing inconsistencies in the value provided in the meterStop, relative to the cumulative energy derived from the meter register alone.  There are multiple instances in which the cumulative energy from the first meter until the last is already more than the value found in the meterStop, and that is without including the energy between the start of transaction and first meter, or the energy between the last meter and the stop of transaction.  The only conclusion I can come to is that the energy is under calculated, perhaps for all the sessions.\nTo apply Time of Use rates, the energy must be grouped into quarter hour groups which may each have different rates.   This Zero Based approach results in a need to approximate the energy delivered in between the start and first meter, as well as between the last meter and the stop message, not being able to determine that from the OCPP messages in the way it can be done with the meter register approach.\nOn individual sessions the differences are relatively minor, however over the course of a month with many sessions, the aggregate total of missing energy could grow to a material amount when providing Tariff cost information.\nMy ask is whether this is expected behavior, that the meterStop may reflect a lower amount than the cumulative energy delivered, and whether there is any recommended approach to determine the energy delivered between the start of transaction & the first meter, as well as between the last meter and the stop of transaction when using this Zero Based method.\nCharger serial number: 160342780",
+            "date": "2024-12-05T21:24:19Z",
+            "extra": {
+                "sender": "ryanevans@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f46ceb65-afb3-ef11-b8e9-000d3aba081f",
+            "subject": "AW: SI Charge D Meter Values",
+            "body": "Hi Support Team,\nI added the FW version to the list, maybe that helps to answer the questions.\nCharger ID:\npukk7o\nBR Benjamin\nVon:\nEvans, Ryan (SI CTO ETP R&D A&A) <ryanevans@siemens.com>\nGesendet:\nDonnerstag, 5. Dezember 2024 22:23\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nDayagi, Celia (SI CTO ETP PPM&MK) <celia.dayagi@siemens.com>; Kuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>; Bach, Jeff (SI CTO ETP R&D A&A) <jeff.bach@siemens.com>; Prem, Ingrid (SI CTO ETP R&D PRM) <ingrid.prem@siemens.com>; Tumkur Hanumantha Raju, Yogesh (SI CTO ETP R&D A&A) <yogesh.tumkur-hanumantha-raju@siemens.com>\nBetreff:\nSI Charge D Meter Values\nHello SI Emobility,\nI’m encountering something with an SI Charge D for which I’m looking for some clarity.   This pertains to the meterStart, meterStop and the energy register.\nWith the charger following what I believe is referred to as ‘Zero Based’ meterStart’s, using 0 as the meterStart and having the total Wh delivered in the meterStop, I’m running into a couple of challenges:\nAcross 10 sessions, I’m seeing inconsistencies in the value provided in the meterStop, relative to the cumulative energy derived from the meter register alone.  There are multiple instances in which the cumulative energy from the first meter until the last is already more than the value found in the meterStop, and that is without including the energy between the start of transaction and first meter, or the energy between the last meter and the stop of transaction.  The only conclusion I can come to is that the energy is under calculated, perhaps for all the sessions.\nTo apply Time of Use rates, the energy must be grouped into quarter hour groups which may each have different rates.   This Zero Based approach results in a need to approximate the energy delivered in between the start and first meter, as well as between the last meter and the stop message, not being able to determine that from the OCPP messages in the way it can be done with the meter register approach.\nOn individual sessions the differences are relatively minor, however over the course of a month with many sessions, the aggregate total of missing energy could grow to a material amount when providing Tariff cost information.\nMy ask is whether this is expected behavior, that the meterStop may reflect a lower amount than the cumulative energy delivered, and whether there is any recommended approach to determine the energy delivered between the start of transaction & the first meter, as well as between the last meter and the stop of transaction when using this Zero Based method.\nCharger serial number: 160342780",
+            "date": "2024-12-06T08:52:19Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f4b92dca-b3b3-ef11-b8e9-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0393950 CRM:00225134843",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0393950 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=52737b52-4fb3-ef11-b8e8-7c1e527679d8",
+            "date": "2024-12-06T09:23:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "93f83fe9-b9b3-ef11-b8e8-000d3a649ca8",
+            "subject": "ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello Benjamin,\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / N2 160342780\nChargerID/Serial No.\n:\npukk7o\nProblem Description\n: Meter values\nTroubleshooting\n: We apologize for the delayed reply. We acknowledge your issue. Could you please let us know if the LEM meter is installed or not in the charger?\nFor future reference, your ticket number is\n0393950\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-06T10:07:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "03264c74-e6b3-ef11-b8e9-7c1e5237dbeb",
+            "subject": "AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hi Beerpal,\nyes there are LEM meters installed\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 6. Dezember 2024 12:31\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nCc:\nEvans, Ryan (SI CTO ETP R&D A&A) <ryanevans@siemens.com>\nBetreff:\nID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379\nHello Benjamin,\nThank you for reaching out to eMobility Support. My name is Beerpal, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / N2 160342780\nChargerID/Serial No.\n: pukk7o\nProblem Description\n: Meter values\nTroubleshooting\n: We apologize for the delayed reply. We acknowledge your issue. Could you please let us know if the LEM meter is installed or not in the charger?\nFor future reference, your ticket number is 0393950, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-06T15:26:32Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "640b2bd9-0eb6-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello Bejamin,\nThanks for the response.\nCould you please confirm the EVSE ID for Outlet1 & Outlet3.?\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-09T09:20:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "be22fb44-0fb6-ef11-b8e8-000d3ab009dd",
+            "subject": "RE: AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello\nBenjamin\n,\nThanks for the response.\nCould you please confirm the EVSE ID for Outlet1 & Outlet3.?\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-09T09:23:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4f64bf68-c9b6-ef11-b8e8-000d3a68cce9",
+            "subject": "Re: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hi,\nThe charger is a test charger only, not public accessable:\nLets use dummy values\nDE*ETP*P000001\nDE*ETP*P000003\nBr Benjamin\nVon meinem iPhone gesendet",
+            "date": "2024-12-10T07:36:10Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cde12d7f-14b9-ef11-b8e8-7c1e52375389",
+            "subject": "Re: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello\nBenjamin\n,\nHope you are doing well.\nWe have done the needful. Please check and confirm if the issue is still persisting.\nIf no further query, shall we move ahead and close this ticket.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-13T05:38:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0fd2847b-50bb-ef11-b8e8-6045bddfaa5b",
+            "subject": "Re: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello Benjamin,\nHope you are doing well.\nW\ne hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T01:53:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "908c69b1-87bb-ef11-b8e8-000d3a68cce9",
+            "subject": "AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hi Beerpal,\nthanks for your feedback. Unfortunately I will not have the chance to verify your new settings before Christmas.\nCan do it earliest in cw2/25.\nBR Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 16. Dezember 2024 02:56\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nCc:\nEvans, Ryan (SI CTO ETP R&D A&A) <ryanevans@siemens.com>\nBetreff:\nRe: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379\nHello Benjamin,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you. Should you still need further assistance on this matter please get back to us.\nDo let us know if you have any queries or concerns regarding your ticket.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T08:28:21Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "be0cc8ec-87bb-ef11-b8e8-7c1e5235925f",
+            "subject": "RE: AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello Benjamin,\nThanks for the response.\nIf it is not possible, we will need to close this ticket for now, as we cannot keep this ticket open for an extended period. When you check it later, if the issue persists, you can create a new ticket.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T08:29:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "afe9c1ab-f7e6-d724-80ba-4887248b6d11",
+            "subject": "Note to L2",
+            "body": "As discussed with\n@benjamin.kuppler@siemens.com\n, confirmed that y\nou can close ticket, I will raise a new one if needed next year.",
+            "date": "2024-12-17T11:53:48Z",
+            "extra": {}
+        },
+        {
+            "id": "7ee892cf-6dbc-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: AW: ID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values CRM:00921001379",
+            "body": "Hello Benjamin,\nAs discussed over the MS Teams chat, since your issue has been resolved, we will be proceeding with closing the service ticket# 0393950.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-17T11:55:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a106f23-6ebc-ef11-b8e9-002248a2b1bd",
+            "subject": "Ticket 0393950 has been closed. Are you satisfied with our provided solution? CRM:00921001417",
+            "body": "Hello Benjamin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0393950\nwith the title:\nID0393950-DC/Si-D/DE-[MP / N2 160342780] Meter values\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-17T11:57:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

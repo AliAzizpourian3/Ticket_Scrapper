@@ -1,0 +1,189 @@
+{
+    "incident_id": "1f1ccb1f-8176-f011-b4cc-6045bddf3f78",
+    "ticket_number": "0443068",
+    "title": "ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working",
+    "created_on": "2025-08-11T07:02:26Z",
+    "last_activity": "2026-01-15T10:02:44Z",
+    "age": "81093",
+    "description": "Reported behavior/issue: Customer contacted us because the Dispenser is not working. We\nchecked in SCB and saw many issues related to Converter Group 3\n&ç and PLC KF201. Please check and advise",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "I9gkfv",
+    "stage": null,
+    "serial_number": "Y2/T5 314309754001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "887ee41c-8176-f011-b4cc-6045bde12d6b",
+            "subject": "Webform_incident_SiCharge D_11-08-2025_SN: Y2/T5 314309754001",
+            "body": "Dear Alexander Müller,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/T5 314309754001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Alexander Müller,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/T5 314309754001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-11T07:02:18Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "03af51db-8176-f011-b4cc-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0443068 CRM:00225240994",
+            "body": "Tanya Meghani was assigned as new Case Manager for case 0443068 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1f1ccb1f-8176-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-11T07:07:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "313eb0c2-8276-f011-b4cc-7c1e5287f582",
+            "subject": "ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:02832000304",
+            "body": "Dear Alexander Müller,\nThank you for reaching\nout\nto eMobility Support. My name is\nTanya\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2/T5 314309754001\nChargerID/Serial No.\n:\nI9gkfv\nProblem Description\n:\nDispenser is not working\nFor future reference, your case number is\n0443068\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-11T07:14:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "97c810ca-4a78-f011-b4cb-7c1e52874197",
+            "subject": "A new case manager was assigned to 0443068 CRM:00225242652",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0443068 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1f1ccb1f-8176-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-13T13:38:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d7e35b0f-e379-f011-b4cc-7c1e52350ea5",
+            "subject": "0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Good evening Alexander,\nI am reaching out from the Expert Services team in regards of ticket\nID0443068.\nApologies for the delayed answer.\nToday I had a look at the charger+dispenser, and these are the active error flags:\nFrom what I can see, the main problem is that the outlets of the dispenser are not available, as the charger could not group correctly DC3 and DC4.\nDC3 Errorcode:3\nmeans\nstate monitor fast shutdown check error.\nDC4 Errorcode:8\nmeans\nno converters ready for charging use in entire charger.\nE52 at the end of the powerconverter error flags means\nFast Shutdown check failed.\nThe error flag \"Dispenser_PLC_A_KF201 -\nPLC not in operating state run\n, state 1\" is just a consequence of the above points, it means that the dispenser outlets are not ready for operation however modbus communication with charger PLC is ok.\nAs a matter of fact, I connected via SSH to the charger, and I have communication to all 4 EcoGs and to the PLC of the dispenser.\nTo solve the problem, it is necessary to go onsite and perform some troubleshooting activities. I suspect the issue could be in the state monitor inside the dispenser KF214, so I would suggest to bring a spare one. If you can, please bring onsite a KF13 state monitor of the charger.\nWas the dispenser just commissioned? Because then the problem could be in the connections between dispenser and charger.\nPlease let me know if you need support for the onsite activity. In case support is required, please let's align in advance and let's schedule the activity as per availability.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-15T14:21:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b74d4220-e479-f011-b4cc-7c1e523508ba",
+            "subject": "AW: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Hello\nThank for the information. We will order the needed parts.\nRegarding the commissioning. Yes, the commissioning was only some weeks ago, but the commissioning was successful and all was fine, no faults nothing, we tested everything.\nAs soon as the parts arrived, we will schedule the intervention and will let you know\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 15. August 2025 16:21\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\n0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217\nGood evening Alexander,\nI am reaching out from the Expert Services team in regards of ticket\nID0443068.\nApologies for the delayed answer.\nToday I had a look at the charger+dispenser, and these are the active error flags:\nFrom what I can see, the main problem is that the outlets of the dispenser are not available, as the charger could not group correctly DC3 and DC4.\nDC3 Errorcode:3\nmeans\nstate monitor fast shutdown check error.\nDC4 Errorcode:8\nmeans\nno converters ready for charging use in entire charger.\nE52 at the end of the powerconverter error flags means\nFast Shutdown check failed.\nThe error flag \"Dispenser_PLC_A_KF201 -\nPLC not in operating state run, state 1\" is just a consequence of the above points, it means that the dispenser outlets are not ready for operation however modbus communication with charger PLC is ok.\nAs a matter of fact, I connected via SSH to the charger, and I have communication to all 4 EcoGs and to the PLC of the dispenser.\nTo solve the problem, it is necessary to go onsite and perform some troubleshooting activities. I suspect the issue could be in the state monitor inside the dispenser KF214, so I would suggest to bring a spare one. If you can, please bring onsite a KF13 state monitor of the charger.\nWas the dispenser just commissioned? Because then the problem could be in the connections between dispenser and charger.\nPlease let me know if you need support for the onsite activity. In case support is required, please let's align in advance and let's schedule the activity as per availability.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-15T14:28:38Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae65c669-856f-5fe3-a7fd-2e695d575316",
+            "subject": "Spareparts ordered",
+            "body": "https://app-eu.wrike.com/open.htm?id=1729127024",
+            "date": "2025-08-15T14:33:53Z",
+            "extra": {}
+        },
+        {
+            "id": "290d5c87-947e-f011-b4cb-6045bddf319c",
+            "subject": "A new case manager was assigned to 0443068 CRM:00225246142",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0443068 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1f1ccb1f-8176-f011-b4cc-6045bddf3f78",
+            "date": "2025-08-21T13:41:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "55ea56fc-a37e-f011-b4cc-7c1e5236cda4",
+            "subject": "AW: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Hello\nToday i received the message that the charger + Dispenser is working again. The customer told me that an electrician from the customer (Lastmanagement) went on site and figured out that with the doorlock from the dispenser something was off. He solved the issue and now its working.\nIn SCB there is still an issue recorded:\nCan you please check the Charger and Dispenser again and tell us if we still must replace the ordered parts or if we must do something else?\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nMüller, Alexander (RC-CH SI E CS)\nGesendet:\nFreitag, 15. August 2025 16:29\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217\nHello\nThank for the information. We will order the needed parts.\nRegarding the commissioning. Yes, the commissioning was only some weeks ago, but the commissioning was successful and all was fine, no faults nothing, we tested everything.\nAs soon as the parts arrived, we will schedule the intervention and will let you know\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 15. August 2025 16:21\nAn:\nMüller, Alexander (RC-CH SI E CS) <\nalexander.mueller@siemens.com\n>\nBetreff:\n0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217\nGood evening Alexander,\nI am reaching out from the Expert Services team in regards of ticket\nID0443068.\nApologies for the delayed answer.\nToday I had a look at the charger+dispenser, and these are the active error flags:\nFrom what I can see, the main problem is that the outlets of the dispenser are not available, as the charger could not group correctly DC3 and DC4.\nDC3 Errorcode:3\nmeans\nstate monitor fast shutdown check error.\nDC4 Errorcode:8\nmeans\nno converters ready for charging use in entire charger.\nE52 at the end of the powerconverter error flags means\nFast Shutdown check failed.\nThe error flag \"Dispenser_PLC_A_KF201 -\nPLC not in operating state run, state 1\" is just a consequence of the above points, it means that the dispenser outlets are not ready for operation however modbus communication with charger PLC is ok.\nAs a matter of fact, I connected via SSH to the charger, and I have communication to all 4 EcoGs and to the PLC of the dispenser.\nTo solve the problem, it is necessary to go onsite and perform some troubleshooting activities. I suspect the issue could be in the state monitor inside the dispenser KF214, so I would suggest to bring a spare one. If you can, please bring onsite a KF13 state monitor of the charger.\nWas the dispenser just commissioned? Because then the problem could be in the connections between dispenser and charger.\nPlease let me know if you need support for the onsite activity. In case support is required, please let's align in advance and let's schedule the activity as per availability.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-08-21T15:32:08Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2b6b3c7a-2c7f-f011-b4cc-6045bde0265d",
+            "subject": "RE: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Hello,\nOne of the converter is down, could be a defective cable or converter, please send a technician on site to troubleshoot this.\nMit freundlichen Grüßen/ Best regards,\nFrancois WINCKEL\nNonnendammallee 101\n13629 Berlin, Deutschland\nMobil: +49 (1525) 1637094\nMailto:\nfrancois.winckel@siemens.com\nwww.siemens.com",
+            "date": "2025-08-22T07:49:08Z",
+            "extra": {
+                "sender": "francois.winckel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1dbe8f3f-9b81-f011-b4cc-6045bde0265d",
+            "subject": "AW: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Hello Francois\nThanks for checking again.\nThe customer is 200km away, and we have to drive long distance. I want to make sure that the technician is equipped with the correct parts, to avoid another on site visit.\nCan you double check if the vollowing order code would be the correct?:\nWould you recommend to have also some of the following parts available on site?:\nAppreciate your support.\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nWinckel, Francois (SI E CS TS) <francois.winckel@siemens.com>\nGesendet:\nFreitag, 22. August 2025 09:49\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nRE: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217\nHello,\nOne of the converter is down, could be a defective cable or converter, please send a technician on site to troubleshoot this.\nMit freundlichen Grüßen/ Best regards,\nFrancois WINCKEL\nNonnendammallee 101\n13629 Berlin, Deutschland\nMobil: +49 (1525) 1637094\nMailto:\nfrancois.winckel@siemens.com\nwww.siemens.com",
+            "date": "2025-08-25T10:07:10Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ff136325-ba81-f011-b4cb-002248a3916c",
+            "subject": "RE: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00314000217",
+            "body": "Hello,\nHere the converter only will be necessary, you can take this one too :\nMit freundlichen Grüßen/ Best regards,\nFrancois WINCKEL\nNonnendammallee 101\n13629 Berlin, Deutschland\nMobil: +49 (1525) 1637094\nMailto:\nfrancois.winckel@siemens.com\nwww.siemens.com",
+            "date": "2025-08-25T13:48:15Z",
+            "extra": {
+                "sender": "francois.winckel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "48a49f84-6583-f011-b4cc-6045bde0265d",
+            "subject": "ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00271000979",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0443068 ﻿from the\nTechnical Support\nto the\neMobility RC-\nCH\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nSee email below on what to do or order, send me a blocker if you need support remotely\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nCH\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francois Winckel\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-27T16:47:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a94a8ccd-109e-f011-b41c-7c1e5236cda4",
+            "subject": "0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00362000120",
+            "body": "Dear Alexander,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-09-30T15:19:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46f4a05c-949e-f011-b41c-6045bddf319c",
+            "subject": "AW: 0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00362000120",
+            "body": "Hello the intervention on site is planned for next Monday, so please don’t close the ticket. Thank you\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nCustomer Support\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nMobile +41 798720748\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 30. September 2025 17:19\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nCc:\nSambiagio, Michele (SI E CS SD ES) <michele.sambiagio@siemens.com>\nBetreff:\n0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00362000120\nDear Alexander,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-10-01T07:00:54Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e4c77887-c1a2-f011-bbd3-7c1e523508ba",
+            "subject": "0443068 - ID0443068-DC/Si-D/CH-[Y2/T5 314309754001] Dispenser is not working CRM:00472000407",
+            "body": "Dear Alexander,\nToday the issue was fixed in the ExpertNow intervention. I have attached the report in this ticket.\nI will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-10-06T14:34:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

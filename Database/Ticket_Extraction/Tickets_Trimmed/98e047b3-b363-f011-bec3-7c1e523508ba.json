@@ -1,0 +1,339 @@
+{
+    "incident_id": "98e047b3-b363-f011-bec3-7c1e523508ba",
+    "ticket_number": "0438459",
+    "title": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging",
+    "created_on": "2025-07-18T08:46:31Z",
+    "last_activity": "2025-09-30T13:03:32Z",
+    "age": "106817",
+    "description": "Reported behavior/issue: Left connector not charging\nSolution: Replace FC8.2 with busbar\nhttps://sieportal.siemens.com/de-de/products-services/detail/%25208EM5901-1AA02-2AA5?tree=CatalogTree\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cQKZW3",
+    "stage": null,
+    "serial_number": "MP / P1 170000128",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "3f6a8eaa-b363-f011-bec3-000d3ad97a58",
+            "subject": "SiCharge D 170000128 | No charge left connector",
+            "body": "Hello,\nCustomer has contacted us stating that it is not possible for drivers to charge using the left connector.\nHe has sent the following log and screenshot.\n7/17/2025, 01:33:56 PM,578      BaseUnitService::startCharging Attempting to start charging on connector 3 with transactionID 1905802...\n7/17/2025, 01:33:56 PM,578      Ocpp16ClientService::sendRemoteStart Sending: RemoteStartTransactionRequestMessage{connectorId=3, idTag='170000128_3', chargingProfile=null}\n7/17/2025, 01:33:57 PM,304      BaseUnitService::startCharging Charging will terminate automatically if not started by the charger in 120 seconds.\n7/17/2025, 01:33:57 PM,305      BaseUnitService::startCharging Charging request on connector 3 has been ACCEPTED.\n7/17/2025, 01:33:59 PM,083      Ocpp16MessageReceiver::onStatusNotification  Received status notification: StatusNotificationMessage{connectorId=3, errorCode=NO_ERROR, status=PREPARING, timestamp='null', vendorId='null', vendorErrorCode='null'}\n7/17/2025, 01:33:59 PM,153      Ocpp16MessageReceiver::onStatusNotification            Responding: StatusNotificationResponseMessage{}\n7/17/2025, 01:34:08 PM,635      Ocpp16MessageReceiver::onHeartbeat Received heartbeat: HeartbeatRequestMessage{}\n7/17/2025, 01:34:08 PM,635      Ocpp16MessageReceiver::onHeartbeat Responding: HeartbeatResponseMessage{currentTime='2025-07-17T13:34:08Z'}\n7/17/2025, 01:34:50 PM,174      Ocpp16MessageReceiver::onStatusNotification  Received status notification: StatusNotificationMessage{connectorId=3, errorCode=INTERNAL_ERROR, status=FAULTED, timestamp='null', vendorId='null', vendorErrorCode='null'}\n7/17/2025, 01:34:50 PM,174      Ocpp16MessageReceiver::onStatusNotification  Connector availability changed to: false\n7/17/2025, 01:34:50 PM,195      Ocpp16MessageReceiver::onStatusNotification            Responding: StatusNotificationResponseMessage{}\n7/17/2025, 01:34:51 PM,062      Ocpp16MessageReceiver::onStatusNotification  Received status notification: StatusNotificationMessage{connectorId=3, errorCode=NO_ERROR, status=PREPARING, timestamp='null', vendorId='null', vendorErrorCode='null'}\n7/17/2025, 01:34:51 PM,062      Ocpp16MessageReceiver::onStatusNotification  Connector availability changed to: true\n7/17/2025, 01:34:51 PM,071      Ocpp16MessageReceiver::onStatusNotification            Responding: StatusNotificationResponseMessage{}\n7/17/2025, 01:34:59 PM,092      Ocpp16MessageReceiver::onStatusNotification  Received status notification: StatusNotificationMessage{connectorId=3, errorCode=NO_ERROR, status=AVAILABLE, timestamp='null', vendorId='null', vendorErrorCode='null'}\n7/17/2025, 01:34:59 PM,128      Ocpp16MessageReceiver::onStatusNotification            Responding: StatusNotificationResponseMessage{}\n7/17/2025, 01:35:56 PM,170      Ocpp16MessageReceiver::onStatusNotification  Received status notification: StatusNotificationMessage{connectorId=1, errorCode=NO_ERROR, status=AVAILABLE, timestamp='null', vendorId='null', vendorErrorCode='null'}\n7/17/2025, 01:35:56 PM,171      Ocpp16MessageReceiver::onStatusNotification            Responding: StatusNotificationResponseMessage{}\n7/17/2025, 01:35:57 PM,305      BaseUnitService::lambda$startCharging$0         Charging start attempt TIMED OUT on connector 3 after 120 seconds.\n7/17/2025, 01:35:57 PM,383      BaseUnitService::lambda$startCharging$0         Charging stop request on connector 3 FAILED after an initial session timeout. (REQUEST_REJECTED/Stop transaction rejected.)\n7/17/2025, 01:36:08 PM,482      Ocpp16MessageReceiver::onHeartbeat Received heartbeat: HeartbeatRequestMessage{}\nPlease advise.\nTraian Păun\nSiemens SRL\nRC-RO SI EA CS\nStrada Preciziei nr. 24\n062204 București, România\nTel.: +40 (21) 6296-408\nMobil: +40 (758) 017842\ntraian.paun@siemens.com\nwww.siemens.ro\nwww.siemens.com\nSiemens S.R.L.,\nStrada Preciziei nr. 24\nCUI J40/6775/1995, CIF RO 7614474",
+            "date": "2025-07-18T08:46:21Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d038730f-b563-f011-bec2-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225230531",
+            "body": "Anupama Srivastava was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-07-18T08:56:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b4ee65a0-6518-36ef-8a7f-17eccfec3b80",
+            "subject": "Issue Description",
+            "body": "Hello,\nCustomer has contacted us stating that it is not possible for drivers to charge\nusing the left connector.\nHe has sent the following log and screenshot.\n7/17/2025, 01:33:56 PM,578      BaseUnitService::startCharging Attempting to\nstart charging on connector 3 with transactionID 1905802...\n7/17/2025, 01:33:56 PM,578      Ocpp16ClientService::sendRemoteStart Sending:\nRemoteStartTransactionRequestMessage{connectorId=3, idTag='170000128_3',\nchargingProfile=null}\n7/17/2025, 01:33:57 PM,304      BaseUnitService::startCharging Charging will\nterminate automatically if not started by the charger in 120 seconds.\n7/17/2025, 01:33:57 PM,305      BaseUnitService::startCharging Charging request\non connector 3 has been ACCEPTED.\n7/17/2025, 01:33:59 PM,083      Ocpp16MessageReceiver::onStatusNotification\nReceived status notification: StatusNotificationMessage{connectorId=3,\nerrorCode=NO_ERROR, status=PREPARING, timestamp='null', vendorId='null',\nvendorErrorCode='null'}\n7/17/2025, 01:33:59 PM,153\nOcpp16MessageReceiver::onStatusNotification            Responding:\nStatusNotificationResponseMessage{}\n7/17/2025, 01:34:08 PM,635      Ocpp16MessageReceiver::onHeartbeat Received\nheartbeat: HeartbeatRequestMessage{}\n7/17/2025, 01:34:08 PM,635      Ocpp16MessageReceiver::onHeartbeat Responding:\nHeartbeatResponseMessage{currentTime='2025-07-17T13:34:08Z'}\n7/17/2025, 01:34:50 PM,174      Ocpp16MessageReceiver::onStatusNotification\nReceived status notification: StatusNotificationMessage{connectorId=3,\nerrorCode=INTERNAL_ERROR, status=FAULTED, timestamp='null', vendorId='null',\nvendorErrorCode='null'}\n7/17/2025, 01:34:50 PM,174      Ocpp16MessageReceiver::onStatusNotification\nConnector availability changed to: false\n7/17/2025, 01:34:50 PM,195\nOcpp16MessageReceiver::onStatusNotification            Responding:\nStatusNotificationResponseMessage{}\n7/17/2025, 01:34:51 PM,062      Ocpp16MessageReceiver::onStatusNotification\nReceived status notification: StatusNotificationMessage{connectorId=3,\nerrorCode=NO_ERROR, status=PREPARING, timestamp='null', vendorId='null',\nvendorErrorCode='null'}\n7/17/2025, 01:34:51 PM,062      Ocpp16MessageReceiver::onStatusNotification\nConnector availability changed to: true\n7/17/2025, 01:34:51 PM,071\nOcpp16MessageReceiver::onStatusNotification            Responding:\nStatusNotificationResponseMessage{}\n7/17/2025, 01:34:59 PM,092      Ocpp16MessageReceiver::onStatusNotification\nReceived status notification: StatusNotificationMessage{connectorId=3,\nerrorCode=NO_ERROR, status=AVAILABLE, timestamp='null', vendorId='null',\nvendorErrorCode='null'}\n7/17/2025, 01:34:59 PM,128\nOcpp16MessageReceiver::onStatusNotification            Responding:\nStatusNotificationResponseMessage{}\n7/17/2025, 01:35:56 PM,170      Ocpp16MessageReceiver::onStatusNotification\nReceived status notification: StatusNotificationMessage{connectorId=1,\nerrorCode=NO_ERROR, status=AVAILABLE, timestamp='null', vendorId='null',\nvendorErrorCode='null'}\n7/17/2025, 01:35:56 PM,171\nOcpp16MessageReceiver::onStatusNotification            Responding:\nStatusNotificationResponseMessage{}\n7/17/2025, 01:35:57 PM,305      BaseUnitService::lambda$startCharging$0\nCharging start attempt TIMED OUT on connector 3 after 120 seconds.\n7/17/2025, 01:35:57 PM,383      BaseUnitService::lambda$startCharging$0\nCharging stop request on connector 3 FAILED after an initial session timeout.\n(REQUEST_REJECTED/Stop transaction rejected.)\n7/17/2025, 01:36:08 PM,482      Ocpp16MessageReceiver::onHeartbeat Received\nheartbeat: HeartbeatRequestMessage{}\nPlease advise.\nTraian Păun\nSiemens SRL\nRC-RO SI EA CS\nStrada Preciziei nr. 24\n062204 București, România\nTel.: +40 (21) 6296-408\nMobil: +40 (758) 017842\ntraian.paun@siemens.com\nwww.siemens.ro\n[https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.siemens.ro%2Fcariere&data=05%7C02%7Cemobility_support.si%40siemens.com%7C554e8384ad684651b9eb08ddc5d78dd8%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638884251766235991%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GF3Np8GgkdX%2BZbszcN5cLf9epCSls3h9eQBJSmDmlfg%3D&reserved=0]\nwww.siemens.com [http://www.siemens.com/]\nSiemens S.R.L., Strada Preciziei nr. 24\nCUI J40/6775/1995, CIF RO 7614474",
+            "date": "2025-07-18T09:49:19Z",
+            "extra": {}
+        },
+        {
+            "id": "e5de9c20-bd63-f011-bec3-7c1e523508ba",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Dear Traian Radu Paun,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnupama\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000128\nChargerID/Serial No.\n:\ncQKZW3\nProblem Description\n:\nLeft connector not charging\nFor future reference, your case number is\n0438459\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnupama Srivastava\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-18T09:54:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90a7be4d-bd63-f011-bec2-000d3a66e9bf",
+            "subject": "Automatic reply: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Dear Sender,\nThank you for your message. I am currently out of the office from 16.07.2025 until 21.05.2025 with limited acces to my emails.",
+            "date": "2025-07-18T09:55:16Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cedd3922-bf63-f011-bec2-000d3a66e9bf",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225230583",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-07-18T10:08:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a8e9e498-2966-f011-bec2-7c1e5236eee4",
+            "subject": "Re: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Hello\nAnupama,\nI need an update on this charger, please.\nThank you\n-Traian",
+            "date": "2025-07-21T11:55:34Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e5bcec6-e167-f011-bec3-000d3ab07fc1",
+            "subject": "Re: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Hi Traian,\nCould you pls confirm when the charger was commissioned and also can you pls help provide commissioning report.\nWhat is tentative date of commissioning.\nCould you pls confirm if issue persists from starting.\nWe could see the configuration of Charger is wrong.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-23T16:26:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58df2f07-6568-f011-bec3-7c1e52fad806",
+            "subject": "Re: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Dear Ghiridar,\nWhat does this have to do with the issue?\nThe charger was comissioned 03/2022 and it was done by the customer himself.\nThe charger has worked fine for 3+ years.\nIt has worked like this fine until a couple of days ago, when one outlet, the one on the left standing in front of the charger, started giving errors.\nCan you please focus on the issue with the charging?\nHave you checked the logs? Have you checked the backend for any issues?\nThank you\n-Traian",
+            "date": "2025-07-24T08:06:05Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4178f6cd-bb6b-f011-b4cb-7ced8d487a6a",
+            "subject": "Re: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Hello Ghiridar,\nDo you have any ideea yet on the cause and the issue fix?\nThank you\n-Traian",
+            "date": "2025-07-28T14:04:47Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "007240b1-8ac1-b75e-b64e-e69e4a8471d4",
+            "subject": "Notes from NOC to ES",
+            "body": "Need to investigate the ECoG Logs.",
+            "date": "2025-07-29T17:59:09Z",
+            "extra": {}
+        },
+        {
+            "id": "bf2c9fe1-1b6d-f011-b4cb-7c1e52206585",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225235906",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-07-30T08:04:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d5f5bc12-216d-f011-b4cb-6045bddf319c",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Hi Traian, good morning! Long time no see! How are you doing these days?\nI am taking over this ticket.\nI checked everything and I am still trying to find a solution because the logs show that everything is ok:\nBut the outlet still shows out of order.\nPlease allow me sometime to understand the root cause. Are you willing to update the charger to v7.0.5? If there is a software problem, we need to have the latest version.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-07-30T08:42:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9197482-316d-f011-b4cc-000d3ad97a58",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:02919000204",
+            "body": "Hi Traian,\nI managed to solve the problem, it seems like the EcoG was stuck and after I reboot it manually, it came back. But then the customer deactivated the outlet on purpose and that's why it wouldn't work no matter what.\nThe problem is solved.\nIf you need anything just reach out to me via Teams. I will close the ticket.\nThanks and have a nice week.\nBEst regards,\nFrancisco",
+            "date": "2025-07-30T10:39:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "97bacfcb-316d-f011-bec2-7ced8d2c9a41",
+            "subject": "Ticket 0438459 has been closed. Are you satisfied with our provided solution? CRM:00225236054",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0438459\nwith the title:\nID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-07-30T10:41:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da240540-a66e-f011-b4cc-000d3adc93d1",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315002872",
+            "body": "Hi Traian,\nIt seems that the problem is still the same. To troubleshoot this problem we would need to go on-site with an EV to make sure to find where the problem is. The issue can only come from either the contactor QA21-22 or in the circuit of the voltage transducer.\nIf you have crocodile tips for the multimeter, we can measure on the DC busbar and confirm if it's the contactor or not.\nThe idea is to measure the voltage during the PreCharge and see if it has the voltage we see on the Converters.\nIf the voltage is not correct according to the converters, then we need to replace the contactors.\nIf the voltage is correct, the next step is to measure between the XD41:43B and 44D and see if we also get the same voltage (2-10V)\nSo, if we have a 400V in PreCharge we should measure around 4.1V\nIf we don't measure that here, then we need to make sure of 2 things:\nWC22 and WC23 are not loose (hard to be, but worth to check everything)\nThis TF1 output to XD41 is also properly attached/cables are ok.\nIf the voltage is being measured correctly on the XD41, we need to move on to XD10.1.\nI don't know if you remember we had this problem before where these orange/green connectors get loose very often and might not have 100% contact to the PLC cartridge and can cause a bad reading.\nYou can push the connectors together from inside-out (be careful you need to open the converters plate to do this, only with charger powered off)\nIf it still isn't working we need to measure the 4.1V on the cables input of KF7.\nIf we don't get 4.1V maybe there is something wrong the cables, otherwise, if we get 4.1V on the input, we need to check the back of the KF7 and see if there are any bended pins or similar that might cause a problem.\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​With these instructions I recommend you to take a spare pair of contactors QA21-22 and TF1. Since this charger is out of warranty feel free to take a KF7 but in my experience I've never replaced a PLC cartridge before, so it is very unlikely.\nFor the contactors:\nhttps://mall.industry.siemens.com/mall/de/DE/Catalog/Product/?mlfb=%208EM5903-0AA00-7AA8\nFor the TF1:\nhttps://mall.industry.siemens.com/mall/de/DE/Catalog/Product/?mlfb=%208EM5903-0AA01-0AA5\nFor the KF7:\nhttps://mall.industry.siemens.com/mall/de/DE/Catalog/Product/?mlfb=%206ES7134-6HD01-0BA1\nFrom this point onwards, since the charger is out of warranty and you require site support, you need to order it. Please check the notes below:\nI am writing to formally inform that we are moving case 0438459 ﻿from the\nTechnical Support\nto the\neMobility RC-\nRO\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nRO\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-01T07:08:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6baf2a7a-b46e-f011-bec2-7ced8d46fd6b",
+            "subject": "Ticket 0438459 has been closed. Are you satisfied with our provided solution? CRM:00225237164",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0438459\nwith the title:\nID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-01T08:49:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "719e787f-b46e-f011-b4cc-000d3adc93d1",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225237165",
+            "body": "Traian Radu Paun was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-08-01T08:50:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5c147d4f-2292-f011-b4cc-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225256947",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-09-15T10:54:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d030102-e092-f011-b4cb-7c1e52875076",
+            "subject": "A new case manager was assigned to 0438459 CRM:00225257519",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0438459 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98e047b3-b363-f011-bec3-7c1e523508ba",
+            "date": "2025-09-16T09:32:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "69dc03bb-e292-f011-b4cc-7c1e52fad806",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315002872",
+            "body": "Hi Traian,\nAs we just aligned, please trial the new and old contactor:\nApply 24V to the C1-C2\nMeasurement resistance between A1-A2 and compare with the new one.\nFirst thing is to prove that the old contactor is faulty and the new ones also are ok. If everything checks out, then we need to understand if there is any bad connection from busbar to the TF2, which is now TF1 since we swapped them.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-16T09:51:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "99668c11-a197-f011-b4cc-000d3ad97a58",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003023",
+            "body": "Dear\nTraian,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0438459\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-09-22T10:44:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bea4a0b2-3499-f011-b4cb-000d3abac8b6",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Dear\nTraian ,\nThis is another reminder regarding your support case\n0438459\n. We are still waiting for the information to proceed\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-09-24T10:53:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "81b07f4d-4599-f011-b4cb-7ced8d4a6e0c",
+            "subject": "Re: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Hello,\nI am waiting for the power supply I ordered. Should arrive these days and will reply with the values.\nThank you\n-Traian",
+            "date": "2025-09-24T12:52:25Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73f3f80c-0d9a-f011-b4cc-6045bde0265d",
+            "subject": "RE: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Hello Francisco,\nI have supplied both contactors with 24V and measured the contact resistance with my Fluke 117.\nI got 0.1Ω on both contactors. Safe to say the contactors are not the problem.\n- Traian",
+            "date": "2025-09-25T12:42:17Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c1d79cab-109a-f011-b4cc-6045bddf319c",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Hi Traian,\nThanks for the feedback.\nCan we please schedule a new site visit with the new contactors? We would like to analyse this with more time in site since last time we didn't have enough time.\nIf you can do it in the morning it would be the best for us. We start at your 10am. Feel free to let me know when it fits you best.\nI will wait for your feedback.\nBEst regards,\nFrancisco",
+            "date": "2025-09-25T13:08:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a329bb5-149a-f011-b4cb-7ced8d7820b3",
+            "subject": "RE: ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Sometime, next week. I will try to let you know 1 day in advance.\nBut I only have 1 new contactor. Last time I replaced QA21.\nAny other tools I should have with me?\n- Traian",
+            "date": "2025-09-25T13:37:01Z",
+            "extra": {
+                "sender": "traian.paun@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0d39205f-159a-f011-b4cc-6045bddf3f78",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Hi Traian,\nThanks.\nPlease bring 2 multimeters with crocodile tips if possible and these 2 contactors. If I remember something else, I will let you by the end of tomorrow.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-25T13:41:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "af8fe8a1-fc9d-f011-b41b-6045bdde846d",
+            "subject": "ID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging CRM:00315003026",
+            "body": "Hi Traian, good afternoon.\nTo summarize all the actions performed today:\nChecked again TF1 and it is reading properly\nReplace QA22 since the measurement from DC+ to DC- was not ok again (not closing)\nChecked all the connections to the QA21 and QA22\nChecked the nut and WC's tightness\nRemoved the DC connections from the roof of DC1 to isolate the error and find if it was related to the cable -> not the cable\nChecked the FC8.2 and we have no continuity -> broken fuse\nConfirmed by swapping DC1 fuse with DC2 and DC1 is now working again. -> Confirmed Fuse problem.\nFinally we found the problem. As we aligned, in my honest opinion, we should remove the DC fuse completely in order to avoid further future problems with this component, since it's no longer required as per Phoenix Contact's statement.\nHere is the MLFB for the copper bar to replace the fuse:\n8EM5901-1AA02-2AA5\nhttps://sieportal.siemens.com/de-de/products-services/detail/%25208EM5901-1AA02-2AA5?tree=CatalogTree\nSince we provided a solution, we will close this ticket. If you can please take 1min to fill in the survey as it helps us :)\nIf you need anything else regarding this topic, please call me or message me on Teams.\nThank you very much for your time and patience. See you on the next ticket.\nBest regards,\nFrancisco",
+            "date": "2025-09-30T12:54:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "685f8cd7-fd9d-f011-b41b-7ced8d48c90c",
+            "subject": "Ticket 0438459 has been closed. Are you satisfied with our provided solution? CRM:00225264381",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0438459\nwith the title:\nID0438459-DC/Si-D/RO-[MP / P1 170000128] Left connector not charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-30T13:03:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "incident_id": "ba39ab40-2fcf-ef11-b8e8-000d3a68cce9",
+    "ticket_number": "0399198",
+    "title": "ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP.",
+    "created_on": "2025-01-10T08:45:41Z",
+    "last_activity": "2025-12-16T14:02:18Z",
+    "age": "7128",
+    "description": "Reported behavior/issue:\nThe Sicharge D does not regulate down to 0kW via Modbus-TCP.\nRoot cause: NA\nSolution: Query answered\nOn DAMEX Sanctioned List:\nWarranty Status:\nExpired 4/8/2023",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "bc5NOn",
+    "stage": null,
+    "serial_number": "MP / N4 160339049",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "bee2ed39-2fcf-ef11-b8e9-000d3a67d7cb",
+            "subject": "Webform_incident_SiCharge D_10-01-2025_SN: 160339049",
+            "body": "Dear Remo Zwahlen,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n160339049\nThank you\neMobility Technical Support Team\nSehr geehrte/r Remo Zwahlen,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n160339049\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-10T08:45:31Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3eb08aaf-37cf-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0399198 CRM:00225146907",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0399198 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ba39ab40-2fcf-ef11-b8e8-000d3a68cce9",
+            "date": "2025-01-10T09:45:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a87b140-0f12-5247-bc6b-cf4c4daa4700",
+            "subject": "Case translation ",
+            "body": "The Sicharge D does not regulate down to 0kW via Modbus-TCP. There may be a problem with load shedding or with a PV system where the charging stations are not allowed to charge.",
+            "date": "2025-01-10T11:20:34Z",
+            "extra": {}
+        },
+        {
+            "id": "5ef2b7a2-45cf-ef11-8ee9-000d3adbcd09",
+            "subject": "0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417",
+            "body": "Dear Remo Zwahlen,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nSiemens SRE Zürich\nCharger ID/Serial No.\n:\nbc5NOn\nProblem Description\n:  ELMS Query\nTroubleshooting\n:  As outlined in the ELMS Manual, the charger assesses the current status of both the AC and DC charging outlets, dynamically calculates the minimum achievable power limit (G_Power_Min), and transmits this value back to ELMS. If ELMS sends a limit below this calculated value, it is disregarded. The default value is 1.5 kW when no charging is active, and it increases by 4 kW for each active charging port.\nPlease refer to the relevant section in the ELMS Manual, which you have already highlighted for further details.\nIf this answers your query, can we proceed with the closing of the case?\nFor future reference, your case number is\n0399198\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-10T11:25:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "328301a6-66cf-ef11-b8e8-7c1e52378e9b",
+            "subject": "AW: 0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417",
+            "body": "Hi Vikas, thanks already for your support.\nIf I may add to the support request (in case there isn’t any possibility to throttle the charger to zero):\nWe found this (screenshot below). Could you please let us know the difference between the Fast Shutdown and the Emergency Shutdown?\nI would guess that with the Fast Shutdown, you can shut down each channel separately, whereas with the Emergency Shutdown, you shut down both channels simultaneously. If so, are there any other differences as well?\nThanks, best regards\nYannick\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 10.\nJanuar 2025 12:28\nAn:\nZwahlen, Remo (RC-CH SI B S SE E BD) <\nremo.zwahlen@siemens.com\n>\nBetreff:\n0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417\nDear Remo Zwahlen,\nThank you for reaching out to eMobility Support. My name is Vikas, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: Siemens SRE Zürich\nCharger ID/Serial No.\n: bc5NOn\nProblem Description\n:  ELMS Query\nTroubleshooting\n:  As outlined in the ELMS Manual, the charger assesses the current status of both the AC and DC charging outlets, dynamically calculates the minimum achievable power limit (G_Power_Min), and transmits this value back to ELMS. If ELMS sends a limit below this calculated value, it is disregarded. The default value is 1.5 kW when no charging is active, and it increases by 4 kW for each active charging port.\nPlease refer to the relevant section in the ELMS Manual, which you have already highlighted for further details.\nIf this answers your query, can we proceed with the closing of the case?\nFor future reference, your case number is 0399198, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-10T15:22:10Z",
+            "extra": {
+                "sender": "yannick.besse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e439d396-32d0-ef11-b8e8-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0399198 CRM:00225147293",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0399198 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ba39ab40-2fcf-ef11-b8e8-000d3a68cce9",
+            "date": "2025-01-11T15:42:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "099bb8b1-fad0-ef11-8ee9-000d3ab41b62",
+            "subject": "RE: AW: 0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417",
+            "body": "Hello Yannick,\nGreetings of the day!\nDifference between Fast shutdown and Emergency shutdown is stated below:\nFast Shutdown:\nFastshutdown mode allows for a controlled shutdown.\nCharger has the feature -Self-checks & health monitoring. The charging station autonomously checks whether it is in good electrical condition.\nDuring each boot process, it is checked whether the quick shutdown of the converters is working correctly (This is checked to confirm whether the converters can be able to ramp down its voltage quickly in case of emergency).\nThe charging station not only detects whether the right number of converters is in a group, but also whether the right converter group is going into fast\nshutdown.\nThis feature ensures additional operational reliability, especially with regard to retrofitting of converters.\nEmergency Shutdown:\nThe emergency shutdown mode is used for immediate and uncontrolled shutdown of the charger.\nIt is triggered in case of critical faults, safety issues, or when the user presses the emergency stop button.\nIn this mode, the charger will immediately disconnect from the electric vehicle and shut down the power output as quickly as possible.\nThe emergency shutdown is designed to prioritize safety and halt the charging process immediately to prevent any potential hazards.\nFor any further information, you can refer to Operating instructions manual of Sicharge D. Link attached below:\nsicharge_d_operating_instructions_en-US_en-US.pdf - SICHARGE D charging station - ID: 109796320 - Industry Support Siemens\nI hope this answers your query.\nPlease let us know if you have any further questions or if we should proceed with closing this case.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-12T15:34:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01f53660-afd1-ef11-8ee9-000d3a691687",
+            "subject": "RE: AW: 0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417",
+            "body": "Hello Yannick,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nPlease let us know if you have any further questions or if we should proceed with closing this case.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T13:07:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6269d116-bcd1-ef11-8ee9-000d3a691687",
+            "subject": "AW: AW: 0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417",
+            "body": "Hi\nThank you for your response, I believe that answers our question. You can close the case\nBest regards, thank you for your help\nYannick\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 13. Januar 2025 14:09\nAn:\nBesse, Yannick (RC-CH SI B OPS EXC NOC SOP SIP2) <yannick.besse@siemens.com>\nCc:\nZwahlen, Remo (RC-CH SI B S SE E BD) <remo.zwahlen@siemens.com>\nBetreff:\nRE: AW: 0399198 - ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:02023000417\nHello Yannick,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nPlease let us know if you have any further questions or if we should proceed with closing this case.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T14:38:50Z",
+            "extra": {
+                "sender": "yannick.besse@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "73790138-12d3-ef11-8eea-000d3ab4d5d3",
+            "subject": "ID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP. CRM:00579001409",
+            "body": "Hello Yannick,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0399198, and the case is now closed.\nProblem Description\n: The Sicharge D does not regulate down to 0kW via Modbus-TCP.\nResolution\n: Query answered\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-15T07:27:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5bc23bd7-12d3-ef11-8eea-000d3ab4d5d3",
+            "subject": "Ticket 0399198 has been closed. Are you satisfied with our provided solution? CRM:00579001410",
+            "body": "Hello Remo,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0399198\nwith the title:\nID0399198-DC/Si-D/CH- [MP / N4 160339049] The Sicharge D does not regulate down to 0kW via Modbus-TCP.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-15T07:32:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

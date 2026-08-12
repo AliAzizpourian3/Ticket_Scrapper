@@ -1,0 +1,71 @@
+{
+    "incident_id": "b51c77fd-2736-4c1e-a14b-40bc8e3fe521",
+    "ticket_number": "0378480",
+    "title": "ID0378480-DC/Si-D/FI[2KqqUd] - Fastshutdown failed in DC3/4",
+    "created_on": "2024-09-09T14:34:52Z",
+    "last_activity": "2025-12-16T14:06:04Z",
+    "age": "20",
+    "description": "Reported behaviour/issue:\nFastshutdown test for dc 3 and 4 failed due to broken kf214. Ecog was powered on but the power LED was very dim.\nRoot cause:\nsicharge-cp-ecog-secc-adapter.service: Failed with result 'exit-code'.\nsicharge-cp-ecog-secc-adapter.service: Main process exited, code=exited, status=1/FAILURE\nsicharge-cp-ecog-secc-adapter.service: Service RestartSec=1s expired, scheduling restart.\nSolution:\nReplace KF214\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO QM: Information in timeline (RC to provide missing information)\nDispenser SN:\nF2S3400184",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "2KqqUd",
+    "stage": null,
+    "serial_number": "MP / P8 170000794",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "bfbae4b7-b86e-ef11-a670-002248a155a0",
+            "subject": "A new case manager was assigned to 0378480 CRM:00225093751",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0378480 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b51c77fd-2736-4c1e-a14b-40bc8e3fe521",
+            "date": "2024-09-09T14:35:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1c65db43-b96e-ef11-a670-000d3ab7063f",
+            "subject": "ID0378405-DC/Si-D/FI[2KqqUd] - Fastshutdown failed in DC3/4 CRM:00315001743",
+            "body": "Hello ﻿Markus,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170000794\nChargerID/Serial No.\n:\n2KqqUd\nProblem Description\n: Fastshutdown check is not completed in DC3 and DC4 due to 12V in the output.\nTroubleshooting\n: As you stated by replacing the KF214 it's working again.\nDefective part name/MLFB: StateMonitor KF214\nComponent serial number: CP2300L2324T00008636\nLogs with marked error (CSV format preferred):\nActive error flags before replacement:\nDevice-specific error code\n(if applicable): N/A\nOutcome of wiring checkup:\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note): 9/Sep/2024\nFor future reference, your ticket number is\n0378480\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-09T14:39:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a3494172-ba6e-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0378480 has been closed. Are you satisfied with our provided solution? CRM:00315001744",
+            "body": "Dear  Markus, please provide the missing information below :)\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0378480\nwith the title:\nID0378480-DC/Si-D/FI[2KqqUd] - Fastshutdown failed in DC3/4\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-09T14:47:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3cf67f75-7de0-ec6c-beb8-8c42f62c12b7",
+            "subject": "NOTE TO QM:",
+            "body": "Defective part name/MLFB: StateMonitor KF214\nComponent serial number: CP2300L2324T00008636\nLogs with marked error (CSV format preferred):\nActive error flags before replacement:\nDevice-specific error code\n(if applicable): N/A\nOutcome of wiring checkup:\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note): 9/Sep/2024\nDevice pingable y/n: Yes\nSECC dump view logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not performed as the RC did this task on his own\nSECC state logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not performed as the RC did this task on his own",
+            "date": "2024-09-09T14:53:17Z",
+            "extra": {}
+        },
+        {
+            "id": "ecaafc6a-bb6e-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 19 minutes and 40 seconds.",
+            "date": "2024-09-09T14:54:33Z",
+            "extra": {}
+        },
+        {
+            "id": "7fb63771-bb6e-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Incident Solved Via Field Service (RC-L2) after 17 seconds.",
+            "date": "2024-09-09T14:54:50Z",
+            "extra": {}
+        }
+    ]
+}

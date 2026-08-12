@@ -1,0 +1,116 @@
+{
+    "incident_id": "14cf4f8f-8fbb-ef11-b8e8-7c1e5235d017",
+    "ticket_number": "0395708",
+    "title": "ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss",
+    "created_on": "2024-12-16T09:24:34Z",
+    "last_activity": "2026-01-20T12:58:52Z",
+    "age": "1495",
+    "description": "Reported behavior/issue:\nN\no stop meter value after power loss\nRoot cause:\nSolution:  Query addressed\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "bucVuF",
+    "stage": null,
+    "serial_number": "MP / S0 170004167",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1d251f8a-8fbb-ef11-b8e9-7c1e5237dbeb",
+            "subject": "no stop meter value after power loss",
+            "body": "Hi Support,\nPlease check the behavior of SID.\nMeter values (meter stop) mustn’t be lost after power loss!\nTimestamp: Dec 12, 3:36:pm GMT+1\nSID ID: bucVuF\nWith best regards,\nBenjamin Kuppler\nSiemens AG\nSmart Infrastructure\nDepotCo – Emerging Transportation Platform\nSI CTO ETP\nSiemenspromenade 10\n91058 Erlangen, Germany\nMobile: +49 1734297957\nmailto:benjamin.kuppler@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Chairman of the Supervisory Board: Jim Hagemann Snabe; Managing Board: Roland Busch, Chairman, President and Chief Executive Officer; Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Registered offices: Berlin and Munich, Germany; Commercial registries: Berlin-Charlottenburg, HRB 12300, Munich, HRB 6684; WEEE-Reg.-No. DE 23691322",
+            "date": "2024-12-16T09:24:26Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "caac102e-9cbb-ef11-b8e8-6045bdde37cc",
+            "subject": "A new case manager was assigned to 0395708 CRM:00225138918",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0395708 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=14cf4f8f-8fbb-ef11-b8e8-7c1e5235d017",
+            "date": "2024-12-16T10:54:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6c9753d-a5bb-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Dear Benjamin,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S0 170004167\nChargerID/Serial No.\n:\nbucVuF\nProblem Description\n: No stop meter value after power loss\nPlease allow us some time to analyze the issue and we will get back to you shortly.\nFor future reference, your ticket number is\n0395708\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T11:59:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d1ca25d-b9bb-ef11-b8e8-000d3ab41b62",
+            "subject": "RE: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Hi Benjamin,\nGreetings of the day!\nWe have analyzed the logs, and it was quite difficult to retrieve them, as the charger was rebooted during the ongoing charging session due to a power failure from the grid or because of an unstable 24VDC power supply to the PLC. If the 24VDC supply fluctuates for an extended period, the charger will reboot. When we analyzed the logs in both SCB and AWS, we found that there are no logs between 13:36 and 14:05 UTC for approximately half an hour. When the charger rebooted, it shows the stop transaction as zero, as the charger also lacks a DC LEM meter to register the previous values.\nI hope this explanation is clear. If there are no further queries, may we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-16T14:23:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d2eba371-4fbc-ef11-b8e9-6045bdde0ce3",
+            "subject": "AW: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Hi,\nyes there was a power outage for half an hour, but the charger should be able to store the meter stop value non-volatile (even if it is a emulated meter value from charge controller) .\nDo you tell me, that this is not possible?\nThanks\nBR  Benjamin\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 16. Dezember 2024 15:36\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166\nHi Benjamin,\nGreetings of the day!\nWe have analyzed the logs, and it was quite difficult to retrieve them, as the charger was rebooted during the ongoing charging session due to a power failure from the grid or because of an unstable 24VDC power supply to the PLC. If the 24VDC supply fluctuates for an extended period, the charger will reboot. When we analyzed the logs in both SCB and AWS, we found that there are no logs between 13:36 and 14:05 UTC for approximately half an hour. When the charger rebooted, it shows the stop transaction as zero, as the charger also lacks a DC LEM meter to register the previous values.\nI hope this explanation is clear. If there are no further queries, may we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T08:18:13Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aa5f44e7-55bc-ef11-b8e8-7c1e52365989",
+            "subject": "RE: AW: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Hi Benjamin,\nNo, the charger will not store the data in case of a power outage. Please let us know if you have any questions. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T09:04:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e09ec936-5bbc-ef11-b8e8-000d3ab97945",
+            "subject": "AW: AW: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Ok thanks for your feedback. In that case you can close the ticket.\nThanks!\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 17. Dezember 2024 10:07\nAn:\nKuppler, Benjamin (SI CTO ETP PPM&MK) <benjamin.kuppler@siemens.com>\nBetreff:\nRE: AW: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166\nHi Benjamin,\nNo, the charger will not store the data in case of a power outage. Please let us know if you have any questions. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-17T09:42:26Z",
+            "extra": {
+                "sender": "benjamin.kuppler@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f0bb44e2-5fbc-ef11-b8e8-7c1e5235d017",
+            "subject": "RE: AW: AW: ID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss CRM:00643001166",
+            "body": "Dear\nBenjamin\n,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0395708.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-17T10:15:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "71670f38-60bc-ef11-b8e8-7c1e5235d017",
+            "subject": "Ticket 0395708 has been closed. Are you satisfied with our provided solution? CRM:00643001172",
+            "body": "Dear Benjamin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0395708\nwith the title:\nID0395708-DC/Si-D/NO-[MP / S0 170004167] No stop meter value after power loss\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-17T10:18:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

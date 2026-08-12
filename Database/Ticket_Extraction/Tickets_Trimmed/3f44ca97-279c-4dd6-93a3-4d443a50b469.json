@@ -1,0 +1,49 @@
+{
+    "incident_id": "3f44ca97-279c-4dd6-93a3-4d443a50b469",
+    "ticket_number": "0415531",
+    "title": "ID0415498-DC/Si-D/IT-[Multiple] Update firmware ( C1)",
+    "created_on": "2025-03-27T23:12:16Z",
+    "last_activity": "2025-12-16T12:20:07Z",
+    "age": "16656",
+    "description": "Reported behavior/issue:  should Update firmware of this chargers to 6.13 version\n31.03.2025: Notes\n31.03.2025: EVC3-9098",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP/SD170004301,MP/SNT1170004327,MP/SNT1170004326,MP/SNT1170004329,MP/SNT1170004332,MP/SNT1170004328,MP/SNT1170004325,MP/SNT1170004331,MP/SNT1170004339,MP/SNT1170004330,MP/SNT1170004337,MP/SNT1170004334,MP/SNT1170004338,MP/SNT1170004336,MP/SNT1170004362,MP/T1170004322,MP/T1170004323,MP/SNT1170004361,MP/SNT1170004335,MP/SNT1170004363,MP/SNT1170004333,MP/T1170004321,MP/SD170004300,MP/SD170004300,MP/SD170004300",
+    "case_nature_code": null,
+    "chargerID": "QocWqb",
+    "additional_info": [
+        {
+            "id": "2090389e-10a0-d7e3-bcd5-061f57a2a345",
+            "subject": "Notes to L3",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nFW update, roll out not possible\nAction Performed (L2) :\nR\nolled out initiated on all chargers but not completed showing initiated from long time\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) :\nNeed to roll out 6.1.3",
+            "date": "2025-03-27T23:21:02Z",
+            "extra": {}
+        },
+        {
+            "id": "461b642d-b66c-1f9f-b127-b05347cad197",
+            "subject": "Notes",
+            "body": "Chargers mentioned as per below\nMP / SD 170004300 rolled out not possible\nMP / SD 170004301 rolled out not possible\nMP / T1 170004325 rolled out not possible\nMP / T1 170004326 offline\nMP / T1 170004327 rolled out not possible\nMP / T1 170004328 rolled out not possible\nMP / T1 170004331 rolled out not possible\nMP / T1 170004332 rolled out not possible\nMP / T1 170004333 rolled out not possible\nMP / T1 170004334 rolled out not possible\nMP / T1 170004335 rolled out not possible\nMP / T1 170004336 rolled out not possible\nMP / T1 170004337 rolled out not possible\nMP / T1 170004338 rolled out not possible\nMP / T1 170004339 rolled out not possible\nMP / T1 170004361 rolled out not possible\nMP / T1 170004362 rolled out not possible\nMP / T1 170004363 offline\nMP / T1 170004321 rolled out not possible\nMP / T1 170004322 rolled out not possible\nMP / T1 170004323 rolled out not possible",
+            "date": "2025-03-27T23:21:57Z",
+            "extra": {}
+        },
+        {
+            "id": "5d3a7728-ecf9-34a9-aec1-2ceb92f2e684",
+            "subject": "Notes",
+            "body": "R&D ticket to support mass rollout created today.\nVery low signal on the chargers, that could be the issue of failed roll out.\nOn 31.03 updated 4 chargers to v6.1.3 and ecog v.1.4.11:\nMP / SD 170004300\nMP / SD 170004301\nMP / T1 170004327\nMP / T1 170004328",
+            "date": "2025-03-31T12:45:57Z",
+            "extra": {}
+        },
+        {
+            "id": "53a7d357-7714-f011-998a-6045bdde4786",
+            "subject": "0415531 - ID0415498-DC/Si-D/IT-[Multiple] Update firmware ( C1) CRM:00314000156",
+            "body": "Buon pomeriggio Riccardo,\nI am reaching out regarding ticket\nID0415531\n, which was opened for issues in rolling out FW 6.1.3 to a list of chargers from Rome.\nThe issue in rolling out the FW was related to the missing hawkbit.conf file on the charger (which includes the connection parameters to hawkbit). The hawkbit.conf has been generated for all chargers in the list. This problem can happen e.g. if a CFast card is flashed and an old charger config is copied to the CFast card or sometimes if a charger was newly commissioned and it was missing this file.\nThe chargers in the list you provided us are all running on v6.1.3 now. Charger MP/T1 170004362 had a very low signal, and the rollout of the FW took a very long time. It is now available to be updated at your earliest convenience.\nAs the issue is solved, I will proceed to close this ticket.\nW\nith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-08T12:45:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

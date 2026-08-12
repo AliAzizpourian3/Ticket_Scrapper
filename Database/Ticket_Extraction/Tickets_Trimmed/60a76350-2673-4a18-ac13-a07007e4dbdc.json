@@ -1,0 +1,145 @@
+{
+    "incident_id": "60a76350-2673-4a18-ac13-a07007e4dbdc",
+    "ticket_number": "0480129",
+    "title": "ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] AC contactor failed to close",
+    "created_on": "2026-02-23T19:13:53Z",
+    "last_activity": "2026-02-26T11:33:59Z",
+    "age": "3860",
+    "description": "Reported behavior/issue:- Check on logs",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "VVC9kj",
+    "stage": "Resolved",
+    "serial_number": "Y2 / S1 313483122005",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "0c27c94d-ec10-f111-8407-7ced8d44dfaf",
+            "subject": "A new case manager was assigned to 0480129 CRM:00225341790",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0480129 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60a76350-2673-4a18-ac13-a07007e4dbdc",
+            "date": "2026-02-23T19:17:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "959e8cc1-285d-2772-a3ef-322215ec717b",
+            "subject": "Error description ",
+            "body": "Hello,\nOn February 23, a client attempted to charge on the Type 2 Connector at 6\n:04:57 PM CU TIME, but the recharge remained in status \"standby\" until 6:40:48 PM CU TIME and no energy was delivered. Right after, t\nhe client’s cable became stuck in the charger, and the connector went into a “faulted” status. We unlocked the connector on our portal and the client removed the cable, but the status was still \"faulted\". We then rebooted the charger and the problem was solved.\nCan you please check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2026-02-23T19:19:50Z",
+            "extra": {}
+        },
+        {
+            "id": "7d6d11d0-ec10-f111-8407-7ced8d44db54",
+            "subject": "ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:02889001163",
+            "body": "Dear\nRosita\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/S1 313483122005\nChargerID\n:\nVVC9kj\nProblem Description\n: C\nable became stuck in the charger, and the connector went into a “faulted” status.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0480129\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-23T19:21:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "77b3b9e5-ed10-f111-8407-000d3ab1199b",
+            "subject": "ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313483122005\nwhich led to the opened ticket:\n0480129\n.\nProblem description:\n\"On February 23, a client attempted to charge on the Type 2 Connector at 6:04:57 PM CU TIME, but the recharge remained in status \"standby\" until 6:40:48 PM CU TIME and no energy was delivered. Right after, the client’s cable became stuck in the charger, and the connector went into a “faulted” status. We unlocked the connector on our portal and the client removed the cable, but the status was still \"faulted\". We then rebooted the charger and the problem was solved.\"\nInvestigation:\nWe have checked the charger and it's showing an healthy behaviour at the moment:\n2026-02-23T18:04:51.251879+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:04:55.354457+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"B2\"\n2026-02-23T18:04:56.232183+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B2\" --> \"C2\"\n2026-02-23T18:04:57.216117+00:00 [FW080005G1] swcpu [user:debug] [4322] [CMP]  AC1:\nAC contactor did not close\n2026-02-23T18:04:59.266453+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"C2\" --> \"B1\"\n2026-02-23T18:40:53.941351+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:41:23.017143+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"A\"\n2026-02-23T18:41:24.027379+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:42:02.992506+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"A\"\nFor the first attempt it was possible to found an error on the contactor, the logs have been downloaded and shared with our expert team that will provided you an answer as soon as possible.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-23T19:29:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1816d649-ff10-f111-8407-000d3ab12e50",
+            "subject": "ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313483122005\nwhich led to the opened ticket:\n0480129\n.\nProblem description:\n\"On February 23, a client attempted to charge on the Type 2 Connector at 6:04:57 PM CU TIME, but the recharge remained in status \"standby\" until 6:40:48 PM CU TIME and no energy was delivered. Right after, the client’s cable became stuck in the charger, and the connector went into a “faulted” status. We unlocked the connector on our portal and the client removed the cable, but the status was still \"faulted\". We then rebooted the charger and the problem was solved.\"\nInvestigation:\nWe have checked the charger and it's showing an healthy behaviour at the moment:\n2026-02-23T18:04:51.251879+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:04:55.354457+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"B2\"\n2026-02-23T18:04:56.232183+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B2\" --> \"C2\"\n2026-02-23T18:04:57.216117+00:00 [FW080005G1] swcpu [user:debug] [4322] [CMP]  AC1:\nAC contactor did not close\n2026-02-23T18:04:59.266453+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"C2\" --> \"B1\"\n2026-02-23T18:40:53.941351+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:41:23.017143+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"A\"\n2026-02-23T18:41:24.027379+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"A\" --> \"B1\"\n2026-02-23T18:42:02.992506+00:00 [FW080005G1] swcpu [user:debug] [4322] [ACC]  AC1: PilotState \"B1\" --> \"A\"\nFor the first attempt it was possible to found an error on the contactor, the logs have been downloaded and shared with our expert team that will provided you an answer as soon as possible.\nWe really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-23T21:33:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "455ec8bb-5f11-f111-8407-7ced8d77f39b",
+            "subject": "A new case manager was assigned to 0480129 CRM:00225342071",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0480129 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60a76350-2673-4a18-ac13-a07007e4dbdc",
+            "date": "2026-02-24T09:03:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3b7f0db-8a11-f111-8407-7ced8d44db54",
+            "subject": "RE: ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Dear Rosita,\nI am reaching out in regards of ticket\nID0480129.\nThe ticket was opened for issues to charge AC on charger\nY2/S1 313483122005\non 23.02.2026.\nHere is the logs' analysis:\nThe first attempt happened at 2026-02-23T18:02:31. The session failed because the charger tried to close the AC contactor, but it did not close:\nAt 2026-02-23T18:03:28 a second attempt failed for the same reason.\nThird attempt at 2026-02-23T18:04:51. This time, we also see the error flag: PLC-Error-Flag 'Contactor_QA8_AC_Charging' initial value true  - (contactor did not close 3 consecutive attempts). For some reason, the charger did not unlock the AC socket. From the logs I cannot see the reason why, as the SECC is not producing logs for AC sessions, hence I cannot see which signal was missing in order to unlock the socket.\nThe outlet remained as Faulted due to the error flag. The status was changed after the reboot.\nI will forward this ticket to the regional colleagues, so that they can Investigate onsite  the AC contactor and if required replace the faulty component.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-02-24T14:12:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "77c40dec-8f11-f111-8407-7ced8d44db54",
+            "subject": "RE: ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0480129\n﻿from the Technical Support to the\neMobility RC-IT SI E Queue\n. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer: IPlanet\nProduct:\nSicharge D - Charging Center\nMain Asset:\nY2 / S1 313483122005\nCharger ID / Serial No.:\nVVC9kj\nCharger address/functional location:\nPriority:\nHigh\nHandover reason: The QA8 AC contactor was not able to close and caused #3 sessions to fail on 23.02.2026. I checked the logs in the last 2 weeks, and for #6 times teh AC charging was possible, only yesterday it failed:\nI would suggest to check in the next days if AC sessions are failing, and in case to go onsite and check the AC contactor line, and in case QA8 can never close, to replace it.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-IT SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-02-24T14:48:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0a329947-9211-f111-8407-7ced8d44db54",
+            "subject": "A new case manager was assigned to 0480129 CRM:00225342483",
+            "body": "Giuseppe CANCELLIERI was assigned as new Case Manager for case 0480129 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60a76350-2673-4a18-ac13-a07007e4dbdc",
+            "date": "2026-02-24T15:05:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dbc5f67d-6712-f111-8407-7ced8d44d1ac",
+            "subject": "RE: ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Hello and thank you for the analysis,\nCan you please keep me updated on this problem?\nWith best regards,\nRosita Abate",
+            "date": "2026-02-25T16:31:58Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cb6b08ad-0513-f111-8407-000d3ab1199b",
+            "subject": "RE: ID0480129-DC/Si-D/IT-[Y2/S1 313483122005] Check on logs CRM:00263000482",
+            "body": "Buongiorno Rosita,\nabbiamo monitorato lo stato del charger, a seguito del primo feedback fornitovi dal collega esperto di HQ.\nIl contattore relativo alla presa AC potrebbe a volte non aprirsi collegamente e non permettere la ricarica, anche a caausa di \"una richiesta sbagliata\" da parte del veicolo.\nSuccessivamente all'episodio segnalato, sono state eseguite ulteriori ricariche, andate a buon fine.\nAttualmente non vedendo criticità per cui intervenire in sito o tenere aperto il ticket di riferimento, procederemo con la chiusura.\nQualora il problema dovesse ripresentarsi in modo massivo potrete risegnalare l'errore aprendo un nuovo ticket, e procederemo direttamente ad un analisi in sito.\nBuona giornata,\nGiuseppe",
+            "date": "2026-02-26T11:24:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86b81e00-0713-f111-8407-7ced8d44db54",
+            "subject": "Ticket 0480129 has been closed. How did we do? CRM:00225343956",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-02-26T11:33:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

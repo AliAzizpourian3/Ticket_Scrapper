@@ -1,0 +1,94 @@
+{
+    "incident_id": "064026b5-f2d8-f011-8544-7c1e52880288",
+    "ticket_number": "0467526",
+    "title": "ID0467526-DC/Si-D/DE-[Y2/T94002909175] Charging Station Blocked",
+    "created_on": "2025-12-14T13:42:21Z",
+    "last_activity": "2025-12-29T08:54:33Z",
+    "age": "21312",
+    "description": "Reported behavior/Issue: Charging Station Blocked\nTranslation of the issue:\nWith our Siemens Sicharge D (OCPP 1.6), users can stop the DC charging process at any time via the app using RemoteStopTransaction, even though the vehicle is still plugged in.\nThe transaction is terminated, the charging station remains physically blocked, and blocking fees no longer apply. This behavior is being deliberately abused.\nQuestion/suggested solution:\nIs there a firmware or configuration option to deactivate RemoteStop or to ensure that the charging process is completed when the plug is removed?\nSolution:\nHow to Implement an \"Idle/Blocking Fee\" Policy:\nHow it works: When your CSMS receives a RemoteStopTransaction request from a user's app, it sends the RemoteStopTransaction to the SiD. The SiD will then send a StopTransaction confirmation.\nThe crucial next step\n: Your CSMS should then immediately check the SiD's outlet status. If the outlet StatusNotification still indicates that the charging point is Occupied (meaning the cable is still connected) but the ChargingState is no longer Charging (because the transaction stopped), your CSMS can initiate a new \"idle\" or \"blocking\" fee timer for that specific connector.\nUser Notification: The app should clearly inform the user that while the charging session has ended, a blocking fee will apply until the vehicle is unplugged.\nHere you can do the logic of sum of kWh + idle timer.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "4sEMEw",
+    "stage": "Resolved",
+    "serial_number": "Y2/T94002909175",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "905caeaf-f2d8-f011-8544-7ced8d40d9c4",
+            "subject": "Webform_incident_SiCharge D_14-12-2025_SN: Y2/T94002909175",
+            "body": "Dear Eduard Huber,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/T94002909175\nThank you\neMobility Technical Support Team\nSehr geehrte/r Eduard Huber,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/T94002909175\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-12-14T13:42:10Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7c48981e-f4d8-f011-8544-7c1e52880b1b",
+            "subject": "A new case manager was assigned to 0467526 CRM:00225303688",
+            "body": "Sajid Hussain was assigned as new Case Manager for case 0467526 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=064026b5-f2d8-f011-8544-7c1e52880288",
+            "date": "2025-12-14T13:52:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e043781-f6d8-f011-8544-7c1e52880b1b",
+            "subject": "ID0467526-DC/Si-D/DE-[Y2/T94002909175] Charging Station Blocked CRM:03097000310",
+            "body": "Dear\nEduard\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/T94002909175\nChargerID\n: 4sEMEw\nProblem Description\n: Charging Station Blocked\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0467526\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSajid Hussain\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-14T14:09:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d9ff851-79d9-f011-8544-7c1e523625c2",
+            "subject": "A new case manager was assigned to 0467526 CRM:00225303832",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0467526 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=064026b5-f2d8-f011-8544-7c1e52880288",
+            "date": "2025-12-15T05:45:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "43e24528-52df-f011-8544-7c1e5276d071",
+            "subject": "A new case manager was assigned to 0467526 CRM:00225308737",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0467526 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=064026b5-f2d8-f011-8544-7c1e52880288",
+            "date": "2025-12-22T16:20:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "010f7e36-52df-f011-8544-7c1e523625c2",
+            "subject": "ID0467526-DC/Si-D/DE-[Y2/T94002909175] Charging Station Blocked CRM:03097000310",
+            "body": "Hello Eduard, good afternoon.\nUnfortunately, there is no configuration from our side due to the fact that this relates only to OCPP.\nWe recommend you to do the following:\nHow to Implement an \"Idle/Blocking Fee\" Policy:\nHow it works: When your CSMS receives a RemoteStopTransaction request from a user's app, it sends the RemoteStopTransaction to the SiD. The SiD will then send a StopTransaction confirmation.\nThe crucial next step\n: Your CSMS should then immediately check the SiD's outlet status. If the outlet StatusNotification still indicates that the charging point is Occupied (meaning the cable is still connected) but the ChargingState is no longer Charging (because the transaction stopped), your CSMS can initiate a new \"idle\" or \"blocking\" fee timer for that specific connector.\nUser Notification: The app should clearly inform the user that while the charging session has ended, a blocking fee will apply until the vehicle is unplugged.\nHere you can do the logic of sum of kWh + idle timer.\nI will wait for your feedback before closing the ticket since it's not charger related.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-12-22T16:21:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2976fb38-93e4-f011-8544-000d3addfd1c",
+            "subject": "ID0467526-DC/Si-D/DE-[Y2/T94002909175] Charging Station Blocked CRM:03097000310",
+            "body": "Hello Eduard, good morning.\nSince I've provided a detailed answer and it must be done via OCPP backend, I will close the ticket.\nThank you and have a Happy New Year!\nBest regards,\nFrancisco",
+            "date": "2025-12-29T08:49:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "incident_id": "a2b14025-b119-4592-8283-37bd475c40f3",
+    "ticket_number": "0430983",
+    "title": "ID0430774-DC/Si-D/AT-[RVP / T2 170004421]Firmware update issue (C1)",
+    "created_on": "2025-06-13T06:15:48Z",
+    "last_activity": "2025-06-16T06:23:09Z",
+    "age": "4328",
+    "description": "Reported behaviour/issue: Firmware update issue\nSolution: Manually updated the Hawkbit file",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "y2QrMB",
+    "stage": null,
+    "serial_number": "RVP/T2170004421,RVP/T2170004421",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f3f085e1-1d48-f011-877a-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0430983 CRM:00225214720",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0430983 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2b14025-b119-4592-8283-37bd475c40f3",
+            "date": "2025-06-13T06:16:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7e569489-fac8-3007-a70b-579d1964886a",
+            "subject": "Notes to ES",
+            "body": "Suspected Root Cause:\nSeems hawkbit file is missing in config.\nProblem Description:\nUnable to roll out FW.\nAction Performed (L2):\nTried rolling out the charger FW.\nCharger SW Version:\nv6.0.3-0\nReason for Handover (L3):\nNeed to check the configuration file via SSH access and take necessary actions.",
+            "date": "2025-06-13T06:19:53Z",
+            "extra": {}
+        },
+        {
+            "id": "45e992ea-2c48-f011-8779-7ced8d2bdbda",
+            "subject": "A new case manager was assigned to 0430983 CRM:00225214789",
+            "body": "Sambath KS was assigned as new Case Manager for case 0430983 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2b14025-b119-4592-8283-37bd475c40f3",
+            "date": "2025-06-13T08:03:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0e31f77d-7c30-cb70-ba52-ce79ea75173c",
+            "subject": "Notes to ES",
+            "body": "RC wants to update it to FW 6.1.3 Only.",
+            "date": "2025-06-13T08:37:06Z",
+            "extra": {}
+        },
+        {
+            "id": "2088b3b0-3c48-f011-8779-6045bddf319c",
+            "subject": "0430983 - ID0430774-DC/Si-D/AT-[RVP / T2 170004421]Firmware update issue (C1) CRM:00646000037",
+            "body": "Dear Daniel,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Please be aware that I am working on this ticket and update you the status shortly.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-13T09:56:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac75c2e4-a089-c30b-9987-cfa320a3e686",
+            "subject": "Status Update : 13/06/2025",
+            "body": "Initiated FW download - FW will be rolled out\nInitiated time : 4:33 PM IST\nRolled out time : 6:15 PM IST",
+            "date": "2025-06-13T09:57:36Z",
+            "extra": {}
+        },
+        {
+            "id": "9efd718f-5348-f011-877a-000d3ad97a58",
+            "subject": "RE: 0430983 - ID0430774-DC/Si-D/AT-[RVP / T2 170004421]Firmware update issue (C1) CRM:00646000037",
+            "body": "Dear Daniel,\nPlease be aware that the FW (v6.1.3) is rolled out and ready to install. Please proceed with FW update once there is no active charging session or any appropriate time slot according to end customer.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-06-13T12:40:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "536fbde1-794a-f011-877a-6045bde0265d",
+            "subject": "RE: 0430983 - ID0430774-DC/Si-D/AT-[RVP / T2 170004421]Firmware update issue (C1) CRM:00646000037",
+            "body": "Hi Samabth,\nThanks that looks good. My colleague Nenad already installed the update. So, you can close the ticket now.\nThank you\nBR\nDaniel",
+            "date": "2025-06-16T06:19:45Z",
+            "extra": {
+                "sender": "daniel.kaiblinger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3fa12418-8320-5a88-8d33-be217e4c3692",
+            "subject": "Notes from ES to NOC [ 16/06/2025]",
+            "body": "Problem Description\n:\nUnable to update the charger\nSuspected Root Cause\n: Hawkbit file missing\nAction Performed:\nHawkbit file uploaded manually\nCharger SW Version\n: v6.1.3\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-06-16T06:20:39Z",
+            "extra": {}
+        }
+    ]
+}

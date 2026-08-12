@@ -1,0 +1,268 @@
+{
+    "incident_id": "41a271ce-55a7-ef11-b8e8-0022489dcc44",
+    "ticket_number": "0391015",
+    "title": "ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops",
+    "created_on": "2024-11-20T15:40:46Z",
+    "last_activity": "2025-01-31T13:36:43Z",
+    "age": "68963",
+    "description": "no wake up fonctionnaly",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "sKCWgE",
+    "stage": null,
+    "serial_number": "Y2 / R6 313033014001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fe5dcdc4-55a7-ef11-b8e8-7c1e5235d851",
+            "subject": "Webform_incident_SiCharge D_20-11-2024_SN: Y2 / R6 313033014001",
+            "body": "Dear Malek Drif,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / R6 313033014001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Malek Drif,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / R6 313033014001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-11-20T15:40:37Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e27be0c-5ba7-ef11-b8e8-7c1e5276e7e9",
+            "subject": "A new case manager was assigned to 0391015 CRM:00225127140",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0391015 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=41a271ce-55a7-ef11-b8e8-0022489dcc44",
+            "date": "2024-11-20T16:18:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01bfe707-5ca7-ef11-b8e8-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0391015 CRM:00225127142",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0391015 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=41a271ce-55a7-ef11-b8e8-0022489dcc44",
+            "date": "2024-11-20T16:25:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31bd0ce4-68a7-ef11-b8e9-0022489bcff4",
+            "subject": "0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Malek,\nGreetings of the day\nThank you for reaching out to eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R6 313033014001\nChargerID/Serial No.\n:\nsKCWgE\nProblem Description\n: Charging Session Stops\nTroubleshooting\n: Logs Analyzed\nWe have checked the logs of the time stamp you mentioned and found that charger has not received response from backend of StartTransaction message so charging session was stopped.\n2024-11-19T17:25:37.901090+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2178b0ba39c8[699]: OCPP: Send command: StartTransaction (db1a4c9f-59b7-4136-a952-a8de67d78863) - {\"connectorId\":1,\"idTag\":\"04B7E50AEA6F81\",\"meterStart\":76360044,\"timestamp\":\"2024-11-19T17:25:37.886Z\"}\n2024-11-19T17:25:52.908101+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2178b0ba39c8[699]: {\"stack\":\"Error: Timeout for message db1a4c9f-59b7-4136-a952-a8de67d78863 - {\\\"connectorId\\\":1,\\\"idTag\\\":\\\"04B7E50AEA6F81\\\",\\\"meterStart\\\":76360044,\\\"timestamp\\\":\\\"2024-11-19T17:25:37.886Z\\\"}\\n at onRejectResponse (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:212:82)\\n at Timeout.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:192:25)\\n at listOnTimeout (node:internal/timers:559:17)\\n at processTimers (node:internal/timers:502:7)\"}\nTimeout has been set for 15 sec, so here we have not received response from backend in 15 sec that's why session is topped. OCPP was online during this time.\nPlease let us if you have any other queries or can we close this ticket?\nFor future reference, your ticket number is\n0391015\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T17:57:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f25f7d4c-6ca7-ef11-b8e9-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0391015 CRM:00225127162",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0391015 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=41a271ce-55a7-ef11-b8e8-0022489dcc44",
+            "date": "2024-11-20T18:21:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9a75564f-72a7-ef11-b8e9-000d3a6610b3",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Saurav,\nThank you for your detailed response regarding the charging session interruption. However, I am not entirely clear on the explanation provided and would need some clarification.\nYou mentioned that the charger did not receive a response from the backend within the 15-second timeout, even though OCPP was connected. However, we already have an offline option in place, which, in theory, should allow the session to continue even without a response from the backend.\nCould you please explain why this functionality did not take over in this particular case?\nAdditionally, could you provide guidance on the actions or configurations needed to prevent this issue from occurring in the future?\nThank you in advance for your clarifications and recommendations.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmercredi, novembre 20, 2024 7:13 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nemobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>\nObjet :\n0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827\nDear Malek,\nGreetings of the day\nThank you for reaching out to eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R6 313033014001\nChargerID/Serial No.\n:\nsKCWgE\nProblem Description\n: Charging Session Stops\nTroubleshooting\n: Logs Analyzed\nWe have checked the logs of the time stamp you mentioned and found that charger has not received response from backend of StartTransaction message so charging session was stopped.\n2024-11-19T17:25:37.901090+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2178b0ba39c8[699]: OCPP: Send command: StartTransaction (db1a4c9f-59b7-4136-a952-a8de67d78863) - {\"connectorId\":1,\"idTag\":\"04B7E50AEA6F81\",\"meterStart\":76360044,\"timestamp\":\"2024-11-19T17:25:37.886Z\"}\n2024-11-19T17:25:52.908101+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2178b0ba39c8[699]: {\"stack\":\"Error: Timeout for message db1a4c9f-59b7-4136-a952-a8de67d78863 - {\\\"connectorId\\\":1,\\\"idTag\\\":\\\"04B7E50AEA6F81\\\",\\\"meterStart\\\":76360044,\\\"timestamp\\\":\\\"2024-11-19T17:25:37.886Z\\\"}\\n at onRejectResponse (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:212:82)\\n at Timeout.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:192:25)\\n at listOnTimeout (node:internal/timers:559:17)\\n at processTimers (node:internal/timers:502:7)\"}\nTimeout has been set for 15 sec, so here we have not received response from backend in 15 sec that's why session is topped. OCPP was online during this time.\nPlease let us if you have any other queries or can we close this ticket?\nFor future reference, your ticket number is\n0391015\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T19:04:56Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ea2eade4-7ba7-ef11-b8e8-000d3ab009dd",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Malek,\nThank you for your prompt response.\nWe understand that the charging session is already enabled to start when OCPP is offline; however, in this case, it did not initiate because OCPP was online. This process only works when the charger is offline before starting the charging session, or more accurately, before authorization.\nIn this particular charging session, the session stopped because the charger did not receive a response for the\nStartTransaction\nmessage.\nDuring offline charging, authorization is managed directly by the charger, without requiring backend communication. This explains why offline charging did not initiate and why the online charging session failed in this instance.\nProposal to Address the Issue\nTo prevent similar issues in the future, we recommend increasing the default timeout period for OCPP messages from\n15 seconds\nto\n30 seconds\n. This would allow the charger to wait longer for a response from the backend before terminating the session. If no response is received within the extended period, the session will still terminate.\nPlease let us know if we have your permission to increase the default timeout for OCPP messages to 30 seconds. Also, feel free to reach out if you have any further questions.\nWe look forward to your response.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-20T20:13:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6c525be-38a8-ef11-b8e8-7c1e52362f44",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Good evening,\nI am writing to inform you that we appear to be facing the same issue regarding the charging session initiated this evening.\nSession Details:\n•     Start: 21/11/2024 at 18:48:23\n•     End: 21/11/2024 at 18:48:59 (status: preparing)\n•     Preparation:\n•     Start: 21/11/2024 at 18:47:48\n•     End: 21/11/2024 at 18:48:23\nIt appears that the session did not succeed, with partial failure during some stages.\nAdditionally (See attached file):\n•\nWeb socket ping interval has already been set to 30 seconds since 19/09/2024 at 09:09:40\n.\nThank you for your assistance in identifying the cause.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nWednesday, November 20, 2024 9:21:31 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nAntoine HERBRICH <aherbrich@herbrich.fr>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; COLLET, SEBASTIEN <sebastien.collet@siemens.com>; Nelly Michaud <nelly.michaud@volvo.com>\nObjet :\nRe: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827\nDear Malek,\nThank you for your prompt response.\nWe understand that the charging session is already enabled to start when OCPP is offline; however, in this case, it did not initiate because OCPP was online. This process only works when the charger is offline before starting the charging session, or more accurately, before authorization.\nIn this particular charging session, the session stopped because the charger did not receive a response for the\nStartTransaction\nmessage.\nDuring offline charging, authorization is managed directly by the charger, without requiring backend communication. This explains why offline charging did not initiate and why the online charging session failed in this instance.\nProposal to Address the Issue\nTo prevent similar issues in the future, we recommend increasing the default timeout period for OCPP messages from\n15 seconds\nto\n30 seconds\n. This would allow the charger to wait longer for a response from the backend before terminating the session. If no response is received within the extended period, the session will still terminate.\nPlease let us know if we have your permission to increase the default timeout for OCPP messages to 30 seconds. Also, feel free to reach out if you have any further questions.\nWe look forward to your response.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-21T18:45:14Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "44458b75-15e4-7506-a2ba-f529b3ed805e",
+            "subject": null,
+            "body": "2024-11-21, 18:48:48\n2024-11-21T18:48:48.000000+00:00 secc-le [daemon:notice] SECC[19878]: {\"type\":\"session_stop\",\"timestamp\":1732214928285,\"chargerId\":\"secc2300-10593\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"start\":1732214860718,\"duration\":0,\"energy\":0,\"EVCCID\":\"0016810edfba\",\"EVMAC\":\"00.16.81.0e.df.ba\",\"user\":\"internal\",\"error\":{\"code\":38,\"msg\":\"V2G - message processing (e.g invalid param, wrong internal state) V2G09MSGSequence_V2G09Session_V2G09Authorization",
+            "date": "2024-11-21T21:38:29Z",
+            "extra": {}
+        },
+        {
+            "id": "da710622-5109-fc46-8388-57212f9d91d0",
+            "subject": "Failed in authentication",
+            "body": "2024-11-21T18:47:12.510592+00:00 sicharge-cp [local0:info] ecog-secc-adapter/b308a2fe7ab1[699]: {\"type\":\"alert\",\"timestamp\":1732214833881,\"chargerId\":\"secc2300-10593\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"src\":\"stack\",\"code\":38,\"msg\":\"V2G - message processing (e.g invalid param, wrong internal state) V2G09MSGSequence_V2G09Session_V2G09Authorization\"}}",
+            "date": "2024-11-21T22:46:34Z",
+            "extra": {}
+        },
+        {
+            "id": "3ad2cb15-5da8-ef11-b8e9-0022489f383f",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Hi Malek DRIF,\nThank you for your response.\nWe have reviewed the logs for the provided timestamps, and these sessions failed due to\nV2G Error 38\n, which indicates an issue with the Vehicle-to-Grid (V2G) functionality between the charger and the vehicle.\nThe vehicle details for this timestamp are as follows:\nEVCCID:\n0016810edfba\nEVMAC:\n00.16.81.0e.df.ba\nTo assist you better, please provide the following information:\nThe\nmake and model\nof this vehicle.\nHas this vehicle been charged on this charger or any other Sicharge D charger previously? If yes, please provide the\ntimestamp\nand\ncharger details\n.\nHas the\nintegration test\nfor this vehicle been conducted with Sicharge D?\nRegarding the OCPP Response Timeout, please correct me if I am wrong, but it seems you are referencing\nWebSocketPingInterval\nas the\nOCPP Response Timeout\n. Please note that these are distinct parameters.\nThe\nOCPP Response Timeout\nvalue is currently set to 15 seconds. If you agree, it can be changed remotely from our SCB to 30 seconds, as mentioned earlier.\nLooking forward to your response.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-21T23:05:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "64a84844-6aa8-ef11-b8e9-002248a29667",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Hello,\nThank you. Could you please set it to 30 seconds on your side?\nRegarding the V2G 38 error, the explanation you provided this time is different from what you told me the day before yesterday.\nPlease involve Sébastien and Francisco in this matter, as the only etruck charging here since commissioning has been a Volvo Trucks.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nFriday, November 22, 2024 12:43:02 AM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nNelly Michaud <nelly.michaud@volvo.com>; Antoine HERBRICH <aherbrich@herbrich.fr>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; COLLET, SEBASTIEN <sebastien.collet@siemens.com>\nObjet :\nRe: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827\nHi Malek DRIF,\nThank you for your response.\nWe have reviewed the logs for the provided timestamps, and these sessions failed due to\nV2G Error 38\n, which indicates an issue with the Vehicle-to-Grid (V2G) functionality between the charger and the vehicle.\nThe vehicle details for this timestamp are as follows:\nEVCCID:\n0016810edfba\nEVMAC:\n00.16.81.0e.df.ba\nTo assist you better, please provide the following information:\nThe\nmake and model\nof this vehicle.\nHas this vehicle been charged on this charger or any other Sicharge D charger previously? If yes, please provide the\ntimestamp\nand\ncharger details\n.\nHas the\nintegration test\nfor this vehicle been conducted with Sicharge D?\nRegarding the OCPP Response Timeout, please correct me if I am wrong, but it seems you are referencing\nWebSocketPingInterval\nas the\nOCPP Response Timeout\n. Please note that these are distinct parameters.\nThe\nOCPP Response Timeout\nvalue is currently set to 15 seconds. If you agree, it can be changed remotely from our SCB to 30 seconds, as mentioned earlier.\nLooking forward to your response.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-22T00:39:45Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "04c581cf-6aa8-ef11-b8e8-000d3ab009dd",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Hi Malek,\nThank you for the response.\nWe have set the OCPP Response Timeout to 30 seconds.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-22T00:43:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d34a6cc9-0da9-ef11-b8e8-6045bde1b398",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Malek Drif,\nI hope this message finds you well.\nI have reviewed the additional logs of the charger and can confirm that this vehicle successfully charged on this unit.\nAs mentioned earlier, the charging interruption on 18th November was due to an OCPP Response Timeout. However, yesterday's issue appears to have been different—it seems to have been caused by a communication failure between the EV and the charger (V2G). This issue may have been due to some services being stuck, but restarting the session or rebooting the charger helps to resolve it.\nAs we mentioned earlier, we have already set the OCPP Response Timeout to 30 seconds. Could we monitor the situation and observe if any issues occur again?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-22T20:10:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2bdc9b2e-19a9-ef11-b8e9-002248a29667",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Good evening,\nThank you for your message.\nYou mentioned that the truck charged successfully last night, but here’s the full story that you may not know. After observing the issue, I was fortunate to notify Mr. HERBRICH, who was still in his office at the time. He personally took care of unplugging and reconnecting the truck to restart the charging session.\nLast year, we already went through a stressful winter dealing with this type of issue. On several occasions, someone from his team had to intervene, even very late at night, sometimes for hours. It became exhausting and demoralizing for the drivers, and we don’t want to face the same chaos again this year.\nAs you know, these trucks are not V2G-compatible, and we don’t encounter this kind of problem with other charger models. It’s crucial to urgently deploy the update that can interpret the BCB toggle as a WakeUp function.\nIf restarting the charger is indeed a solution, as you suggested, I give you full authorization to proceed immediately.\nWe remain vigilant and especially attentive to the commitments made by your management over the past two years.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nFriday, November 22, 2024 9:56:53 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nNelly Michaud <nelly.michaud@volvo.com>; Antoine HERBRICH <aherbrich@herbrich.fr>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; COLLET, SEBASTIEN <sebastien.collet@siemens.com>\nObjet :\nRe: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827\nDear Malek Drif,\nI hope this message finds you well.\nI have reviewed the additional logs of the charger and can confirm that this vehicle successfully charged on this unit.\nAs mentioned earlier, the charging interruption on 18th November was due to an OCPP Response Timeout. However, yesterday's issue appears to have been different—it seems to have been caused by a communication failure between the EV and the charger (V2G). This issue may have been due to some services being stuck, but restarting the session or rebooting the charger helps to resolve it.\nAs we mentioned earlier, we have already set the OCPP Response Timeout to 30 seconds. Could we monitor the situation and observe if any issues occur again?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-22T21:31:55Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "494e7436-640e-cf24-bfdb-5d47264814e0",
+            "subject": null,
+            "body": "Need to discuss this with Fransisco first",
+            "date": "2024-11-25T03:21:05Z",
+            "extra": {}
+        },
+        {
+            "id": "8ef3c30a-4f58-44a1-9912-6a62a5d660b5",
+            "subject": null,
+            "body": "",
+            "date": "2024-11-25T10:00:09Z",
+            "extra": {}
+        },
+        {
+            "id": "5c8e3274-d7ab-ef11-b8e8-000d3ab41b62",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Hi Sebastian and Emmanuel,\nI hope you're both doing well.\nThe customer from Autorecharge, Malek Drif, has kindly requested the BCB toggle to be used as a Wake-Up function for their chargers, as their Volvo trucks are not V2G-compatible. After discussing this with our Product Champion, Michele, we have confirmed that this feature is planned for inclusion in FW v6.1, which is expected in calendar week CW8 of 2025.\nIf possible, could you please advise on how you would prefer us to proceed? Should we inform the customer directly about the planned implementation, or would you prefer to handle the communication with them?\nThank you for your guidance, and I look forward to your response.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-26T09:18:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "022aa6b2-2dad-ef11-b8e8-000d3ab41b62",
+            "subject": "Re: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Hi Sebastian and Emmanuel,\nI hope you're both doing well.\nCould you please provide me with feedback or suggestions on how to proceed with this?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-28T02:08:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e4a3705-59ad-ef11-b8e9-000d3aba081f",
+            "subject": "RE: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Sominath,\nI'd prefer the French team to contact him directly for this type of information. Please do not inform French users of the release date of the roadmap features, this the French team work.\nI’d already inform him of the BCB release in 1\nst\nquarter of 25.\nThansk for your support\nWith best regards,\nAvec mes meilleures salutations,\nEmmanuel Nevo\nResponsable business Développement\nSiemens SAS\nRC-FR SI E SAL S\nWTC - SIEMENS\n120 rue du Porteau\nBâtiment A, 2ème étage\n86000 Poitiers\n, France\nMobile: +33 621990429\nmailto:emmanuel.nevo@siemens.com\nwww.siemens.com\nDe :\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 28 novembre 2024 03:13\nÀ :\nCOLLET, SEBASTIEN (RC-FR SI E SAL SVC) <sebastien.collet@siemens.com>; Nevo, Emmanuel (RC-FR SI E SAL S) <emmanuel.nevo@siemens.com>\nCc :\nde Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>\nObjet :\nRe: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827\nImportance :\nHaute\nHi Sebastian and Emmanuel,\nI hope you're both doing well.\nCould you please provide me with feedback or suggestions on how to proceed with this?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-28T07:19:02Z",
+            "extra": {
+                "sender": "emmanuel.nevo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f5c749b7-01ae-ef11-b8e9-002248a29667",
+            "subject": "RE: 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear Emmanuel,\nThank you for the response.\nDear RC-FR Team, we are transferring this case to the RC-FR queue for further communication with the customer. As mentioned in the previous email, kindly ensure that the customer is informed about the BCB toggle wakeup function if required again.\nI am writing to formally inform that we are moving case 0391015 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Sominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-29T03:26:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "befe217f-03ae-ef11-b8e8-0022489fb3e7",
+            "subject": "Réponse automatique : 0391015 - ID0391015-DC/Si-D/FR-[Y2 / R6 313033014001] Charing Session Stops CRM:00658000827",
+            "body": "Dear sender,\nThank you for your email. I am currently out of the office.\nI will respond to your message as soon as possible upon my return.\nBest regards,\nAntoine AULAY\nService & Sales Director\nSiemens eMobility",
+            "date": "2024-11-29T03:39:21Z",
+            "extra": {
+                "sender": "antoine.aulay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c4cd661a-61ae-ef11-b8e8-7c1e523405bd",
+            "subject": "A new case manager was assigned to 0391015 CRM:00225131801",
+            "body": "Franck Le Gal was assigned as new Case Manager for case 0391015 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=41a271ce-55a7-ef11-b8e8-0022489dcc44",
+            "date": "2024-11-29T14:49:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "637cb893-ae09-b702-9fdc-e62fda7d266f",
+            "subject": null,
+            "body": "nous clôturons le ticket pas de version disponible pour la fonction Wake up",
+            "date": "2025-01-07T12:56:39Z",
+            "extra": {}
+        },
+        {
+            "id": "c8664331-995c-7337-a9c5-7b80ca1ab373",
+            "subject": null,
+            "body": "nous clôturons le ticket pas de version disponible pour lea fonction Wake up",
+            "date": "2025-01-07T13:01:49Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "incident_id": "9db31009-71b5-4bfa-a588-45fd14b7480b",
+    "ticket_number": "0422357",
+    "title": "ID0422357-DC/Si-D/SE [Y2/S3 313581528002] Transaction pending still on FW v7.0",
+    "created_on": "2025-05-05T13:17:25Z",
+    "last_activity": "2025-05-20T09:59:41Z",
+    "age": "21402",
+    "description": "Reported behavior/issue:\nTransaction pending still on fw 7\nRoot cause:\nEcoG issue?\nWorkaround: Delete transaction\nSolution: Update to v8\nhttps://jira.si.siemens.cloud/browse/EVC3-9343",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "4ORLUA",
+    "stage": null,
+    "serial_number": "Y2 / S3 313581528002",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "5f3d58a2-c629-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422357-DC/Si-D/SE [Y2/S3 313581528002] Transaction pending still on FW v7.0 CRM:00315002595",
+            "body": "Dear Magnus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S3 313581528002\nChargerID/Serial No.\n:\n4ORLUA\nProblem Description\n: Transaction Pending still persisting in v7\nTroubleshooting\n: Can you please give me a date on when this happened? I couldn't find it via AWS, maybe I'm searching the wrong log but this is the one I used:\nPartial reversal returned with {\"status\":\"error\"\nFor future reference, your case number is\n0422357\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T15:35:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "02d53fac-3e2a-f011-8c4e-7c1e5236cda4",
+            "subject": "Sv: ID0422357-DC/Si-D/SE [Y2/S3 313581528002] Transaction pending still on FW v7.0 CRM:00315002595",
+            "body": "Hi\nTry this instead ”Get terminal status finished with error: Transaction pending“\nI use this filter in AWS.\nfields\n@timestamp\n,\n@message\n| filter\n@message\nlike /Get terminal status finished with error: Transaction pending/\n| stats count(*) as Count by\n@logStream\n| sort by Count desc\n| limit 10000\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 5 maj 2025 17:47\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nID0422357-DC/Si-D/SE [Y2/S3 313581528002] Transaction pending still on FW v7.0 CRM:00315002595\nDear Magnus,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: Y2 / S3 313581528002\nChargerID/Serial No.\n: 4ORLUA\nProblem Description\n: Transaction Pending still persisting in v7\nTroubleshooting\n: Can you please give me a date on when this happened? I couldn't find it via AWS, maybe I'm searching the wrong log but this is the one I used:\nPartial reversal returned with {\"status\":\"error\"\nFor future reference, your case number is 0422357, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-06T05:55:22Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6a4496e9-6035-f011-8c4d-7c1e52350ea5",
+            "subject": "Ticket 0422357 has been closed. Are you satisfied with our provided solution? CRM:00315002664",
+            "body": "Dear Magnus, R&D deleted the transaction and updated the charger.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0422357\nwith the title:\nID0422357-DC/Si-D/SE [Y2/S3 313581528002] Transaction pending still on FW v7.0\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-20T09:58:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0df58a0a-6135-f011-8c4e-6045bde0265d",
+            "subject": "Autosvar: Ticket 0422357 has been closed. Are you satisfied with our provided solution? CRM:00315002664",
+            "body": "﻿\nDear sender,\nI hope this message finds you well.\nI am writing to inform you that I am out of the office.\nI will do my best to respond as soon as possible upon my return.\nWith best regards,\nMagnus Hellberg",
+            "date": "2025-05-20T09:59:00Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

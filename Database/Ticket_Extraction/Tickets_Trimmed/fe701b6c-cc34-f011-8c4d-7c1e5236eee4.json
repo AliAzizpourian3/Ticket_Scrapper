@@ -1,0 +1,211 @@
+{
+    "incident_id": "fe701b6c-cc34-f011-8c4d-7c1e5236eee4",
+    "ticket_number": "0425356",
+    "title": "ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue",
+    "created_on": "2025-05-19T16:15:05Z",
+    "last_activity": "2025-07-17T07:25:58Z",
+    "age": "84430",
+    "description": "Reported behaviour/issue: Parallel charging session issue: 14th April from 10:00 am CEST Time. We discovered a sporadic issue during a parallel charging with IVECO eBus. The behavior was the following one: the first eBus was plugged in and in charging mode. Once the second eBus was plugged in, the first eBus was interrupted the charging session while the second one was in charging mode. So, no parallel charging session occured. We are going to perform further tests 21th May from 10:00 am CEST Time with multiple eBuses for better investigating the issue.\nSolution: N/A\nyyyy-mm-dd: 2025-05-14\nNext onsite activity planned on 27.05.2025\n02.06.2025: R&D ticket EVC3-9532",
+    "type": 698630002,
+    "priority": 3,
+    "chargerID": "7r0Wkj",
+    "stage": null,
+    "serial_number": "MP/SNT1170004334",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9f93da03-6936-f011-8c4e-6045bde0265d",
+            "subject": "ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:01282001001",
+            "body": "Dear Valerio Filocamo,\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavy\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP/SNT1170004334\nChargerID/Serial No.\n:\n7r0Wkj\nProblem Description\n: Parallel charging session issue\nTroubleshooting\n: Please share if you were able to charge today in the todays checks conducted.\nFor future reference, your case number is\n0425356\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-21T17:28:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca07f238-f836-f011-8c4d-7c1e5287c7df",
+            "subject": "A new case manager was assigned to 0425356 CRM:00225204363",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0425356 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fe701b6c-cc34-f011-8c4d-7c1e5236eee4",
+            "date": "2025-05-22T10:33:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "34b1d761-f936-f011-8c4d-000d3ab07fc1",
+            "subject": "A new case manager was assigned to 0425356 CRM:00225204372",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0425356 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fe701b6c-cc34-f011-8c4d-7c1e5236eee4",
+            "date": "2025-05-22T10:42:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c471316-1d37-f011-8c4e-7c1e52faf3c6",
+            "subject": "0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Ciao Valerio,\nAttached to this email I am forwarding you the report from yesterday's activity, that was shared already in chat via Teams.\nFrom the activity, we noticed as you know some issues in starting the charging session with Iveco buses. In the SCB logs, the root cause can be identified from:\nsecc events:  {\"type\":\"SeccSessionStop\",\"outletId\":2,\"state\":{\"online\":true,\"timestamp\":1747819837861,\"EVCCID\":\"\",\"EVMAC\":\"\",\"SLAC\":{\"link\":\"\nPLC link no SLAC\n\",\"error\":false,\"init\":false}\nor\nsecc events:  {\"type\":\"SeccSessionStop\",\"outletId\":2,\"state\":{\"online\":true,\"timestamp\":1747819843850,\"EVCCID\":\"\",\"EVMAC\":\"\",\"SLAC\":{\"link\":\"\nPLC link establishing\n\",\"error\":false,\"init\":false}\nor\nsecc events:  {\"type\":\"SeccSessionStop\",\"outletId\":2,\"state\":{\"online\":true,\"timestamp\":1747819391834,\"EVCCID\":\"\",\"EVMAC\":\"\",\"SLAC\":{\"link\":\"\nno PLC link\n\",\"error\":false,\"init\":true}\nAlso from the EcoG logs (which you can find attached to this email) you can see that, when the charging session is successful, we received form the bus the SLAC_PARAM_REQ:\nHowever, when the session was failing, we neever received this request:\nAttached to this email you can also find .pcap traces of the failed sessions. These pcap files can be shared with IVECO.\nIt would be of great importance to have IVECO onsite next time we will perform tests (as per current plan, Tuesday 27.05). It would be very important also to get to know from IVECO what is the correct procedure, according to them, to handle the bus when performing a charging session with Sicharge D.\nAs final point, it is also important to know and to talk with IVECO in regards of the #3 buses that we used yesterday during the test. The #3 buses were number 5070, 5019 and 5097, and because of the 3 buses showed each one a different behavior, it is fundamental to know if the 3 EVs are the same model, if the same model of EVCC is used and if different FW version of the EVCC are in place.\nThank you in advance for collecting all these information!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-05-22T14:57:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01862e4c-3737-f011-8c4d-7c1e5236e32d",
+            "subject": "RE: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hi Valerio,\nYou can share the attached log analysis with IVECO, if it helps to speed up the analysis from their side and also to help them prepare in advance of the onsite visit.\nSpecially I can recommend sharing with them the slides of Test 1, Test 5, Test 8 and Test 9. We will carry out deeper analysis on our side on the same tests.\nI can also say that this behaviour is unfortunately very similar to one observed with IVECO trucks and Sicharge D in a project in Germany. After many discussions rounds and several site visits, the analysis gave a conclusion that IVECO is turning off their PLC during communication with the charger and this was known issue for IVECO. I think it might be worth sharing this learning with IVECO already and maybe avoid a large and complex investigation here too, in case we are experiencing the same issue. Our contact for the other project is Domenico Pacucci.\nLet me know if there is anything else I can help with\nBR\nCatalina",
+            "date": "2025-05-22T18:05:17Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fe781495-423a-f011-b4cb-7c1e52350ea5",
+            "subject": "R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hello All,\nThis is the reply of IVECO:\nIt appears that, based on Siemens’ test reports, the same vehicles were tested and the charging issue consistently occurs on inlet 2.\nI presume inlet 2 to be the front connector, which suggests a potential CP-line routing fault between the front and rear inlets via a relay.\nBy default, the rear inlet is connected to CP; the relay switches when the front inlet flap is open and the rear flap is closed.\nPlease verify that, during testing, only one flap was open at a time.\nAdditionally, I think that we have maybe to check the relay and its wiring.\nMy primary hypothesis remains a CP-line routing issue on the vehicle that requires investigation.\nKindly confirm that both flaps were never open at the same time during your tests.\nBest regards,\nThank you very much,\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nItaly\nSmart Infrastructure\nProposal & Channel Partners\nRC-IT SI E PROP&CP\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>\nInviato:\ngiovedì 22 maggio 2025 20:04\nA:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; FILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>\nCc:\nde Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>\nOggetto:\nRE: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168\nHi Valerio,\nYou can share the attached log analysis with IVECO, if it helps to speed up the analysis from their side and also to help them prepare in advance of the onsite visit.\nSpecially I can recommend sharing with them the slides of Test 1, Test 5, Test 8 and Test 9. We will carry out deeper analysis on our side on the same tests.\nI can also say that this behaviour is unfortunately very similar to one observed with IVECO trucks and Sicharge D in a project in Germany. After many discussions rounds and several site visits, the analysis gave a conclusion that IVECO is turning off their PLC during communication with the charger and this was known issue for IVECO. I think it might be worth sharing this learning with IVECO already and maybe avoid a large and complex investigation here too, in case we are experiencing the same issue. Our contact for the other project is Domenico Pacucci.\nLet me know if there is anything else I can help with\nBR\nCatalina",
+            "date": "2025-05-26T15:03:30Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "05836d54-de3b-f011-b4cc-7c1e5236e32d",
+            "subject": "RE: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hi Valerio,\nBased on the test conducted this week. I have updated both the integration report, including the input from IVECO regarding the front / rear inlet and the impact on the charger operation.\nAs well as the field intervention report with the latest tests, including a short conclusion regarding the observations made about the charging operation sequence followed by the user during parallel charging.\nFosco have created the ticket to inform, Product Champion and R&D about the behaviour during parallel charging. However, based on the observations, the recommendation towards the customer is to indicate to the drivers or operators of the charging infrastructure that in the case they are required to plug two vehicles almost simultaneously to a charger, for a parallel session, to do it with at least 1 minute difference between the connection of the first vehicle and the second one.\nRegards\nCatalina",
+            "date": "2025-05-28T16:10:57Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3673d63f-ee3b-f011-b4cc-7c1e523508ba",
+            "subject": "R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hello All,\nThank you very much for your support in recent days and for the detailed report.\nFrom our internal discussion with the customer, it has been determined that it is not feasible to advise operators to wait approximately one minute before initiating nearly simultaneous charging sessions.\nAs a result, the issue of parallel charging behaviour must be escalated to PC and R&D with the\nhighest priority\n, especially given that we are planning to install around 50 SiD units with IVECO at another depot (Tor Sapienza) very soon with the same customer.\nPlease,\n@Servidei, Fosco (SI E CS SD ES)\n, provide us some clarification on this issue and the expected timeline for its resolution. Considering there are 86 charging points to manage, we cannot place the responsibility on public transport operators to wait at least one minute before connecting to another charging point of the same charger. While this might seem straightforward, it is different in a depot use-case scenario.\nRegarding the IVECO issue, we will provide to our customer with a report outlining all our findings. I will keep you updated on IVECO's intervention.\nThank you very much,\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nItaly\nSmart Infrastructure\nProposal & Channel Partners\nRC-IT SI E PROP&CP\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>\nInviato:\nmercoledì 28 maggio 2025 18:10\nA:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; Servidei, Fosco (SI E CS SD ES) <fosco.servidei@siemens.com>\nCc:\nde Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>\nOggetto:\nRE: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168\nHi Valerio,\nBased on the test conducted this week. I have updated both the integration report, including the input from IVECO regarding the front / rear inlet and the impact on the charger operation.\nAs well as the field intervention report with the latest tests, including a short conclusion regarding the observations made about the charging operation sequence followed by the user during parallel charging.\nFosco have created the ticket to inform, Product Champion and R&D about the behaviour during parallel charging. However, based on the observations, the recommendation towards the customer is to indicate to the drivers or operators of the charging infrastructure that in the case they are required to plug two vehicles almost simultaneously to a charger, for a parallel session, to do it with at least 1 minute difference between the connection of the first vehicle and the second one.\nRegards\nCatalina",
+            "date": "2025-05-28T18:04:52Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3ff88934-b63f-f011-8779-7c1e52350ea5",
+            "subject": "RE: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Dear Valerio and Luca,\nFirst of all, thank you for your availability and support over the past week during the onsite testing. I also appreciate your efforts in raising awareness regarding the management of the chargers in the depot in Rome, and the urgency to find a prompt solution.\nOver the past week, we successfully identified a failure pattern during parallel charging and were able to reproduce such pattern. Catalina has already shared the corresponding test report with you.\nPlease rest assured that we are treating this topic with high priority. I am currently post-processing the logs and the results in detail from all the tests performed onsite, and then I will report them to R&D. Due to public holiday in Germany last week and the need to carefully post-process the data, the issue has not been reported to R&D yet. I apologize for any confusion caused by earlier miscommunication. Therefore, I cannot provide you with a\nclarification on this issue and the expected timeline for its resolution yet.\nAs I am also covering the role of Product Champion during this period, I can assure you that the issue will be escalated to R&D with the highest priority. I will keep you updated as soon as I have more findings and information.\nIn the meanwhile, please note that during the test session we already identified a temporary workaround. Since the issue occurs only when a second outlet is plugged in during the CableCheck phase of a first outlet, we recommend to avoid plugging in both outlets at the same time, but to kindly wait that the first outlet reaches the power delivery phase before connecting the second outlet.\nThis workaround involves a brief delay of approximately 30 seconds and I believe it will not significantly impact the operations of the customer for the time being. In fact, during testing, a single operator, who had to connect both buses to reproduce the issue, was sometimes unable to reproduce it due to a natural delay required to operate both outlets.\nFor these same reasons, we believe that there is currently no need to set up a taskforce, but you can refer to me via the ticket for any update or question.\nI will proceed with reporting the logs and data to R&D and I will provide you with an update as soon as possible.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-02T13:33:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74e9f39d-bd3f-f011-8779-7c1e5236e32d",
+            "subject": "Automatic reply: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Dear Colleagues,\nI am currently out of the office and will be unavailable until June 11, 2025.\nDuring this period, I will not have access to my email.\nI will respond to your message as soon as possible upon my return.\nThank you for your understanding, and I apologize for any inconvenience this may cause.\nBest regards,\nCatalina",
+            "date": "2025-06-02T14:26:57Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4a2dace7-934b-f011-8779-7c1e5236e32d",
+            "subject": "RE: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Dear Valerio,\nHere is a recap of the activities performed today 17.06.2025:\nToday we performed an onsite visit to reproduce the parallel charging issue.\nThe goal was to activate the \"DEBUG\" Log Level and have R&D remotely check the behavior live.\nThe tests were performed on charger\ncC8Qh5 - MP / T1 170004320\n, which is the same charger as the previous test, with the same configuration and FW.\nWe performed more than 10 parallel charging attempts, and we were never able to reproduce the issue\nThe next steps to further proceed in this investigation are:\nPlease indicate me, in agreement with the customer, 5-10 chargers on which I can activate the DEBUG log level.\nPlease have the customer test intensively on these chargers, so to reproduce if possible the parallel charging issue. We can perform this activity for a timespan of 3-5 days.\nInstruct the customer to report to you the charger IDs and the timestamps of the parallel failures, and report them to me.\nI will then forward the DEBUG logs to R&D for further analysis.\nIMPORTANT: it is important that, during this phase, the chargers are NOT rebooted. If a reboot happens, the Log level is set back to INFO, and the DEBUG log level has to be activated again.\nLooking forward to hearing your feedback with the chargers IDs.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-17T15:58:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "10acd760-1a4c-f011-877a-7c1e5236cda4",
+            "subject": "R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hello Fosco,\nBelow you will find the serial numbers of the 11 chargers installed in one shelter. We can request the end customer, ATAC ROME, to allocate buses to this area for a few days:\n170004323\n170004301\n170004320\n170004361\n170004333\n170004329\n170004321\n170004322\n170004332\n170004335\n170004327\nPlease, let us know if the eCoG update to version 1.4.11 will also be deployed to these chargers in order to understand, if based on the fault event we experienced on charger 170004362, we are considering purchasing a few KF12 units as a preventive measure for our spare parts stock.\nThank you very much,\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nItaly\nSmart Infrastructure\nProposal & Channel Partners\nRC-IT SI E PROP&CP\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmartedì 17 giugno 2025 18:19\nA:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>\nCc:\nde Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>; Mora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nOggetto:\nRE: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168\nDear Valerio,\nHere is a recap of the activities performed today 17.06.2025:\nToday we performed an onsite visit to reproduce the parallel charging issue.\nThe goal was to activate the \"DEBUG\" Log Level and have R&D remotely check the behavior live.\nThe tests were performed on charger\ncC8Qh5 - MP / T1 170004320\n, which is the same charger as the previous test, with the same configuration and FW.\nWe performed more than 10 parallel charging attempts, and we were never able to reproduce the issue\nThe next steps to further proceed in this investigation are:\nPlease indicate me, in agreement with the customer, 5-10 chargers on which I can activate the DEBUG log level.\nPlease have the customer test intensively on these chargers, so to reproduce if possible the parallel charging issue. We can perform this activity for a timespan of 3-5 days.\nInstruct the customer to report to you the charger IDs and the timestamps of the parallel failures, and report them to me.\nI will then forward the DEBUG logs to R&D for further analysis.\nIMPORTANT: it is important that, during this phase, the chargers are NOT rebooted. If a reboot happens, the Log level is set back to INFO, and the DEBUG log level has to be activated again.\nLooking forward to hearing your feedback with the chargers IDs.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-18T08:01:05Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "89fc6516-5e4c-f011-877a-000d3ad97a58",
+            "subject": "RE: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Good evening Valerio,\nToday I deployed the EcoG v1.4.11 on all the chargers in the list, except:\n170004335 (offline)\n170004329 (offline)\nAs agreed, I activated the DEBUG log level on all chargers (except the two chargers above being offline).\nLet's proceed in the following way:\nPlease instruct the customer to use these 11 chargers, and to pay attention about any parallel charging issue. So far, the investigation is focusing on the failure of one outlet when the charging sessions are initiated on both outlets and before any outlet is already in power delivery\nPlease instruct the customer to recognize such failure behavior, and to report to you the exact charger number and exact timestamp, whenever the issue appears.\nPlease report to me via ticketing system or via MS teams the reported timestamps.\nI will then analyze the sessions and report them to R&D in case relevant.\nPlease remember that the DEBUG log level is set, and it will be set back to INFO whenever the charger is rebooted or switched off. In that case, it is necessary to set the parameter again.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-18T16:05:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "68ecfabb-f54c-f011-877a-7ced8d40e4a4",
+            "subject": "R: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hello Fosco,\nFollowing the latest firmware update carried out to remove the current noise level limitation, which was capping the maximum power at 100 kW during parallel charging, all N°11 SiD units are now running version 7.0.5.\nSo, please active the DEBUG log level on all chargers.\nWe have informed the end customer to thoroughly test these chargers and to provide us with all the necessary information to support further analysis on our side.\nIn the meantime, could you please check if the parallel charging event can be monitored through the AWS dashboard?\nThank you very much,\nWith best regards,\nValerio FILOCAMO\nSiemens S.p.A.\nItaly\nSmart Infrastructure\nProposal & Channel Partners\nRC-IT SI E PROP&CP\nVia Vipiteno 4\n20128 Milan, Italy\nMobile: +39 3476302667\nmailto:valerio.filocamo@siemens.com\nwww.siemens.it\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmercoledì 18 giugno 2025 18:19\nA:\nFILOCAMO, Valerio (RC-IT SI E PROP&CP) <valerio.filocamo@siemens.com>\nCc:\nMora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>; de Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>; de Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>; Mora, Catalina (SI E CS SD ES) <maria-catalina.mora-suarez@siemens.com>\nOggetto:\nRE: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168\nGood evening Valerio,\nToday I deployed the EcoG v1.4.11 on all the chargers in the list, except:\n170004335 (offline)\n170004329 (offline)\nAs agreed, I activated the DEBUG log level on all chargers (except the two chargers above being offline).\nLet's proceed in the following way:\nPlease instruct the customer to use these 11 chargers, and to pay attention about any parallel charging issue. So far, the investigation is focusing on the failure of one outlet when the charging sessions are initiated on both outlets and before any outlet is already in power delivery\nPlease instruct the customer to recognize such failure behavior, and to report to you the exact charger number and exact timestamp, whenever the issue appears.\nPlease report to me via ticketing system or via MS teams the reported timestamps.\nI will then analyze the sessions and report them to R&D in case relevant.\nPlease remember that the DEBUG log level is set, and it will be set back to INFO whenever the charger is rebooted or switched off. In that case, it is necessary to set the parameter again.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-19T10:11:26Z",
+            "extra": {
+                "sender": "valerio.filocamo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "60018c1b-b94d-f011-8779-6045bddf319c",
+            "subject": "RE: R: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hi Valerio,\nThank you for the information. I set back the log level to DEBUG just now on all chargers.\nPlease consider that the DEBUG log level is just a simple setting on SCB. Therefore, in case of further FW updates or reboots or power off of the chargers due to maintenance, the Log Level can be set back to DEBUG also from your side.\nAwaiting for further instructions and feedback from the customer in case of parallel charging issues.\nHave a good weekend!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-06-20T09:29:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "65388475-b94d-f011-8779-7c1e523516d3",
+            "subject": "Automatic reply: R: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Hello , I'm out of office and will be back on Monday. Your emails and messages will not be read.",
+            "date": "2025-06-20T09:32:25Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "76b0efb9-12a5-ea0c-9710-eb09b9792faf",
+            "subject": "Update",
+            "body": "Customer to provide feedback in CW28.\nAs per CW26 and CW27, no further complains on parallel disconnections reported by customer.",
+            "date": "2025-07-04T13:16:14Z",
+            "extra": {}
+        },
+        {
+            "id": "67979105-dd62-f011-bec2-7c1e52768c07",
+            "subject": "RE: R: R: R: 0425356 - ID0425356-DC/Si-D/IT-[MP/SNT1170004334]Parallel charging session issue CRM:00314000168",
+            "body": "Buongiorno Valerio,\nI am proceeding to close the ticket\nID0425356\nfor the parallel interruptions with IVECO in Rome, as we agreed via Teams.\nDuring our last testing activity in June, we were not able to reproduce the failure scenario anymore, and the customer has not provided any further complain since over a month. Therefore, we consider the issue closed.\nMany thanks again for your support and collaboration!\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-17T07:09:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

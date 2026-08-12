@@ -1,0 +1,104 @@
+{
+    "incident_id": "4e8c0fa2-19d4-ef11-8ee9-000d3a68cce9",
+    "ticket_number": "0400487",
+    "title": "ID0400487-DC/Si-D/DE - [wKOw4G] OCPP Offline Issue Resulting in 0kWh Session After Charging",
+    "created_on": "2025-01-16T14:53:28Z",
+    "last_activity": "2025-12-16T14:02:01Z",
+    "age": "18710",
+    "description": "Reported behavior/issue:\nStopTransaction contains invalid MeterValues in case of OCPP disconnection during charging.\nRoot cause:\nSolution:\nProcessing canceled due to one time occurance only\nOn DAMEX Sanctioned List: No\nWarranty Status:\nInactive (\n8/1/2023)\nJira ticket: https://jira.si.siemens.cloud/servicedesk/customer/portal/892/EVC3-8218",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "wKOw4G",
+    "stage": null,
+    "serial_number": "MP / N8 160365537",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "63dcfa9d-19d4-ef11-8ee9-7c1e5234e790",
+            "subject": "Webform_incident_SiCharge D_16-01-2025_SN: 160365537",
+            "body": "Dear Ingo Oldenburg,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n160365537\nThank you\neMobility Technical Support Team\nSehr geehrte/r Ingo Oldenburg,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n160365537\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-16T14:53:23Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "17dfa4bf-38d4-ef11-8ee9-6045bde1171e",
+            "subject": "A new case manager was assigned to 0400487 CRM:00225149737",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0400487 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e8c0fa2-19d4-ef11-8ee9-000d3a68cce9",
+            "date": "2025-01-16T18:36:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8f7dff0-5c8c-7167-91b5-e520376369b9",
+            "subject": "Notes",
+            "body": "StopTransaction contains invalid MeterValues in case of OCPP disconnection during charging.\n1.) Transaction started at 2025-01-16T14:19:21\n2.) OCPP Offline at 2025-01-16T14:22:00\n3.) Transaction stopped at 2025-01-16T14:24:01\n4.) OCPP online at 025-01-16T14:24:32\nProblem: Metervalues are identical but Energy delivered 2.587 kWh (see sampled values) \"meterStart\":2279329,\"timestamp\":\"2025-01-16T14:19:21.237Z\" \"meterStop\":2279329,\"timestamp\":\"2025-01-16T14:24:01.255Z\"",
+            "date": "2025-01-16T19:08:05Z",
+            "extra": {}
+        },
+        {
+            "id": "0ac04499-3dd4-ef11-8ee9-0022489fb3e7",
+            "subject": "ID0400487-DC/Si-D/DE - [wKOw4G] OCPP Offline Issue Resulting in 0kWh Session After Charging CRM:00796001170",
+            "body": "Dear Oldenburg, Ingo (SI E PR PS),\nThank you for reaching\nout\nto eMobility Support. My name is\nKaushik\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / N8 160365537\nChargerID/Serial No.\n:\nwKOw4G\nProblem Description\n:OCPP Offline Issue Resulting in 0kWh Session After Charging\nI will assign this ticket to OCPP Queue for further investigation.\nFor future reference, your case number is\n0400487\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T19:10:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "198a620f-4b0a-4ae9-925a-e91ac785678b",
+            "subject": "Handover notes to OCPP Queue",
+            "body": "Suspected Root Cause:\nFW (v6.0.3) bug\nProblem Description:\nOCPP Offline Issue Resulting in 0kWh Session After charging (\nWhen OCPP goes offline during charging and comes back after session is finished, Meter Start Value in start transaction is same as Meter Stop Value in Stop Transaction, resulting in 0kWh session even when power was delivered.\n)\nCharger SW Version\n: v6.0.3\nReason for Handover (OCPP)\n: Further troubleshooting needed",
+            "date": "2025-01-16T19:21:39Z",
+            "extra": {}
+        },
+        {
+            "id": "137d2f9e-9bd4-ef11-8eea-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0400487 CRM:00225149883",
+            "body": "Ingo Oldenburg was assigned as new Case Manager for case 0400487 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e8c0fa2-19d4-ef11-8ee9-000d3a68cce9",
+            "date": "2025-01-17T06:23:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f963994a-536e-aab3-b183-f868b8176a22",
+            "subject": null,
+            "body": "The stituation could not be reproduced anymore. All succeeding test run without problem. Ticket may be closed",
+            "date": "2025-01-29T12:53:16Z",
+            "extra": {}
+        },
+        {
+            "id": "bfd56725-4ade-ef11-8ee9-7c1e5287e371",
+            "subject": "A new case manager was assigned to 0400487 CRM:00225155551",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0400487 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4e8c0fa2-19d4-ef11-8ee9-000d3a68cce9",
+            "date": "2025-01-29T14:05:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "27b0812c-4fde-ef11-8eea-002248a2b1bd",
+            "subject": "RE: ID0400487-DC/Si-D/DE - [wKOw4G] OCPP Offline Issue Resulting in 0kWh Session After Charging CRM:00796001170",
+            "body": "Dear Oldenburg, Ingo (SI E PR PS),\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0400487, and the case is now closed.\nProblem Description\n:\nOCPP Offline Issue Resulting in 0kWh Session After Charging\nResolution\n: Issue is not arising anymore all the test has been performed without error.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-29T14:41:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

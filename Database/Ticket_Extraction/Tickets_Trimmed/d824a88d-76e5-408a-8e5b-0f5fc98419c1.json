@@ -1,0 +1,130 @@
+{
+    "incident_id": "d824a88d-76e5-408a-8e5b-0f5fc98419c1",
+    "ticket_number": "0460606",
+    "title": "ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs",
+    "created_on": "2025-11-09T08:16:34Z",
+    "last_activity": "2025-11-14T08:29:17Z",
+    "age": "1830",
+    "description": "Reported behavior/Issue: CU Check logs",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370043",
+    "case_nature_code": 580000001,
+    "chargerID": "bcTv9c",
+    "additional_info": [
+        {
+            "id": "b1c710db-ba86-80cb-b17f-b5c770b5007b",
+            "subject": "Description",
+            "body": "Hello,\nIs it possible to check logs on the charger 313508370043 at 4:05:19 p.m. and at 4:16:24 p.m. (CU Time) of yesterday 8 of November?\nA customer tried to charge, but he had two 0 recharges.\nThank you in advance.\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2025-11-09T08:24:24Z",
+            "extra": {}
+        },
+        {
+            "id": "b5060bf7-45bd-f011-bbd2-7c1e52362ec6",
+            "subject": "ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs CRM:03097000159",
+            "body": "Dear\nFilomena\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370043\nChargerID\n:\nbcTv9c\nProblem Description\n: CU Check logs\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0460606\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSajid Hussain\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-09T08:27:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd0f1471-46bd-f011-bbd2-7c1e52880b1b",
+            "subject": "A new case manager was assigned to 0460606 CRM:00225285100",
+            "body": "Sajid Hussain was assigned as new Case Manager for case 0460606 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d824a88d-76e5-408a-8e5b-0f5fc98419c1",
+            "date": "2025-11-09T08:31:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fba6526c-4abd-f011-bbd3-7ced8d40d9c4",
+            "subject": "ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs CRM:00263000137",
+            "body": "Dear\nFilomena Carusone\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313508370043\nwhich led to the opened ticket:\n0460606\n.\nWe have checked the charger and did not find any active error flags. The logs for the relevant period have been downloaded, and we are reviewing the moments when the issue occurred.\nTo assist with our investigation, could you please help us confirm the following:\nDoes the log data below match the timeframe and description of the encountered issue?\nLog Extract (UTC):\nLogs at 4:05:19 p.m:\n2025-11-08T16:05:19.040975+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received result: Authorize (697c885a-9a67-411b-9e79-a6df99d1e039) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-11-08T16:05:19.043892+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: RemoteStartTransaction:\ncable not yet connected\n2025-11-08T16:05:19.779983+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: setOutletLedState authenticated 2\nLogs at 4:16:24 p.m\n2025-11-08T16:16:24.876026+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received command: RemoteStartTransaction (10260977) - {\"connectorId\":1,\"idTag\":\"7a46d34917c04491b12b\"}\n2025-11-08T16:16:24.882221+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Send result: RemoteStartTransaction (10260977) - {\"status\":\"Accepted\"}\n2025-11-08T16:16:24.882737+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Send command: Authorize (0f71c16d-75a0-41fa-838d-2ad34d4644d4) - {\"idTag\":\"7A46D34917C04491B12B\"}\n2025-11-08T16:16:24.932829+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received result: Authorize (0f71c16d-75a0-41fa-838d-2ad34d4644d4) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-11-08T16:16:24.934647+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: RemoteStartTransaction:\ncable not yet connected\nWe are currently reviewing these logs and will forward them to an expert for further investigation. Your assistance in confirming the above points will greatly help us identify the root cause.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-09T08:59:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5ba8b0a2-4618-ad5c-b96e-26eec4c08ebb",
+            "subject": "logs",
+            "body": "",
+            "date": "2025-11-09T09:03:19Z",
+            "extra": {}
+        },
+        {
+            "id": "ca03f1ea-4abd-f011-bbd2-7c1e52362ec6",
+            "subject": "ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs CRM:00263000137",
+            "body": "Dear\nFilomena Carusone\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313508370043\nwhich led to the opened ticket:\n0460606\n.\nWe have checked the charger and did not find any active error flags. The logs for the relevant period have been downloaded, and we are reviewing the moments when the issue occurred.\nTo assist with our investigation, could you please help us confirm the following:\nDoes the log data below match the timeframe and description of the encountered issue?\nLog Extract (UTC):\nLogs at 4:05:19 p.m:\n2025-11-08T16:05:19.040975+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received result: Authorize (697c885a-9a67-411b-9e79-a6df99d1e039) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-11-08T16:05:19.043892+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: RemoteStartTransaction:\ncable not yet connected\n2025-11-08T16:05:19.779983+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: setOutletLedState authenticated 2\nLogs at 4:16:24 p.m\n2025-11-08T16:16:24.876026+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received command: RemoteStartTransaction (10260977) - {\"connectorId\":1,\"idTag\":\"7a46d34917c04491b12b\"}\n2025-11-08T16:16:24.882221+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Send result: RemoteStartTransaction (10260977) - {\"status\":\"Accepted\"}\n2025-11-08T16:16:24.882737+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Send command: Authorize (0f71c16d-75a0-41fa-838d-2ad34d4644d4) - {\"idTag\":\"7A46D34917C04491B12B\"}\n2025-11-08T16:16:24.932829+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: OCPP: Received result: Authorize (0f71c16d-75a0-41fa-838d-2ad34d4644d4) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\n2025-11-08T16:16:24.934647+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/07dda42f05a2[2885]: RemoteStartTransaction:\ncable not yet connected\nWe are currently reviewing these logs and will forward them to an expert for further investigation. Your assistance in confirming the above points will greatly help us identify the root cause.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-09T09:03:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5b2b8445-54bd-f011-bbd2-7ced8d425658",
+            "subject": "RE: ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs CRM:00263000137",
+            "body": "Hello,\nYes, It seems the log data below match the timeframe and description of the encountered issue.\nThank you,\nFilomena",
+            "date": "2025-11-09T10:10:16Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3a976ae2-05be-f011-bbd3-7ced8d4259cd",
+            "subject": "A new case manager was assigned to 0460606 CRM:00225285308",
+            "body": "Marcelo Kuester was assigned as new Case Manager for case 0460606 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d824a88d-76e5-408a-8e5b-0f5fc98419c1",
+            "date": "2025-11-10T07:21:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3340c40a-44be-f011-bbd3-7c1e52880fe1",
+            "subject": "Ticket 0460606 has been closed. Are you satisfied with our provided solution? CRM:00225285780",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0460606\nwith the title:\nID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-10T14:46:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49d27df7-33c1-f011-bbd2-7ced8d425658",
+            "subject": "RE: ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs CRM:00263000137",
+            "body": "Hello,\nThis ticket has been closed, but you said you were reviewing logs and will forward them to an expert for further investigation.\nHow can I proceed?\nThank you and Regards,\nFilomena",
+            "date": "2025-11-14T08:29:08Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "234639fd-33c1-f011-bbd3-7ced8d4258c6",
+            "subject": "Email sent to a closed case 'ID0460606-DC/Si-D/IT-[Y2 / S1 313508370043] CU Check logs (0460606)' CRM:00225288115",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0460606\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-11-14T08:29:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

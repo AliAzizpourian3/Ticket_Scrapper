@@ -1,0 +1,191 @@
+{
+    "incident_id": "2edc382d-16d9-4098-ae29-4a4d6834ca05",
+    "ticket_number": "0413642",
+    "title": "ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work",
+    "created_on": "2025-03-19T08:25:24Z",
+    "last_activity": "2025-06-24T10:44:01Z",
+    "age": "139819",
+    "description": "Charger (\nlpuy1j\n) was offline in their backend. From our perspective it was running fine. OCPP connection was ok and all outlets were ok. (Picture1)\nI investigated it more and last night charger did automated reboot. Charger sent \"\nPerformingCollaboratedReboot\"\nStatusNotification- message like it should. After that when charger came back alive, charger did not send anymore BootNotification, StatusNotification or heartbeat-messages.\nCustomer sent from their OCPP server command \"\nTriggerMessage ( - {\"requestedMessage\":\"StatusNotification\"}\" and it never came through. After I deleted and re-writed OCPP URL, communication started to work.\nAfter reboot, BootNotification, statusNotification and heartbeat messages were missing. Is this single bug / event or hiding bug?",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "lpuy1j",
+    "stage": null,
+    "serial_number": "Y2 / R5 313038805007",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b19cd62e-0239-880a-a052-07fce7b8f538",
+            "subject": "Picture1",
+            "body": "",
+            "date": "2025-03-19T08:25:49Z",
+            "extra": {}
+        },
+        {
+            "id": "de96a118-6aeb-6b34-8fb6-0874f8b737dd",
+            "subject": "Picture2",
+            "body": "",
+            "date": "2025-03-19T08:26:35Z",
+            "extra": {}
+        },
+        {
+            "id": "a0b6c63f-2199-9cdf-8287-4ac2dd889d35",
+            "subject": "Picture3 - bKsQc1 - OCPP communacion worked",
+            "body": "",
+            "date": "2025-03-19T08:30:14Z",
+            "extra": {}
+        },
+        {
+            "id": "3c113546-ac08-f011-bae3-7c1e52faf3c6",
+            "subject": "0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hello Markus\ni need to perform a few Sicharge cp backend reset on this charger and then check the logs if there is nothing unusual then would need to perform some hard reboot and all Data will be send to RnD is that Okay for the customer and which Time period would be the best for this ? at this time the charger would be unavailable.\nBR Semih",
+            "date": "2025-03-24T12:34:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef7a4ecd-b208-f011-bae3-6045bddf319c",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hi,\nThis is okay. I would say morning time is the best. Do you have any estimate when you can do this?\nMarkus",
+            "date": "2025-03-24T13:20:54Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dd4a57db-5a09-f011-bae3-7c1e52350ea5",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hello Markus,\ni could do it the earliest on Thursday 27th, March starting at 6:00 GMT+1 would that be Okay ?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T09:23:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e00152d-5b09-f011-bae3-7c1e5236e32d",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hello Markus,\ni could do it the earliest on Thursday 27th, March starting at 6:00 GMT+1 would that be Okay ?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T09:26:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d7778004-150a-f011-bae3-7c1e5236eee4",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hi,\nI think this is ok time. I will inform the customer.\nWith best regards,\nMarkus Roiha\nService Operations Manager\nSiemens Osakeyhtiö\nSmart Infrastructure\nTarvonsalmenkatu 19\n02601 Espoo, Finland\nwww.siemens.fi\nMobile +358 10 5116898\nEmail\nmarkus.roiha@siemens.com\nFacebook:\nSiemens Suomi\nTwitter:\nSiemens Suomi\nInstagram:\nSiemens Suomi",
+            "date": "2025-03-26T07:36:29Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "140e1ea8-e085-d912-83db-21ce41d283de",
+            "subject": "Semih ",
+            "body": "Test will be Performed at 6:00 GMT+1 on 27th of march\ntest will be as following by active debug logs i will perform 5 Sicharge cp backend reboot and get the logs\nafter that 3 Hard reboot of charger will follow also logs will be  downloaded and presented for analysis to RnD.",
+            "date": "2025-03-26T12:07:46Z",
+            "extra": {}
+        },
+        {
+            "id": "c7af827f-d80a-f011-bae3-7c1e52faf3c6",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hello Markus,\nThanks for getting clearance from customer, I did the Tests i Performed 5 reboot of sichargecp Backend and 3 Reboot of the charger (just 3 todont stress the charger too much) but of course this time everything worked and OCPP communication was okay. I already created a RnD case so they can do the analysis and will let you know when they find something.\n27.03.2025: EVC3-9067 case created on RnD side need to wait for analysis.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-27T06:55:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b03f7b1f-04f4-1d2e-8923-ff2392950e8e",
+            "subject": "Semih ",
+            "body": "The weird behavior in the OCPP communication after reboot will be analyzed by RnD case created EVC3-9067 RnD colleague informed",
+            "date": "2025-03-27T07:01:52Z",
+            "extra": {}
+        },
+        {
+            "id": "aced8d12-e90a-f011-bae3-7c1e5236e32d",
+            "subject": "RE: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00439000747",
+            "body": "Hi Semih,\nThank you for info!\nMarkus",
+            "date": "2025-03-27T08:54:23Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7a445e66-22b9-0f2b-aa15-f59c5b7ec7bd",
+            "subject": "Semih ",
+            "body": "As im moving to RC-DE i will release this case and send to L3 queue please also check the EVC case\n27.03.2025: EVC3-9067 case created on RnD side need to wait for analysis.",
+            "date": "2025-06-16T08:11:25Z",
+            "extra": {}
+        },
+        {
+            "id": "80bc13b6-524b-f011-8779-7c1e5277a10f",
+            "subject": "A new case manager was assigned to 0413642 CRM:00225216300",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0413642 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2edc382d-16d9-4098-ae29-4a4d6834ca05",
+            "date": "2025-06-17T08:11:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aed50021-994b-f011-877a-7c1e52768c07",
+            "subject": "0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00472000313",
+            "body": "Hello Markus,\nPlease check with the backend if they can set the websocket ping interval to 60 seconds in order to track if this improved the OCPP connection.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-17T16:35:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c7a25f8-394c-f011-877a-7c1e52768372",
+            "subject": "Re: 0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00472000313",
+            "body": "Hello,\nInterval is 60sec.\nBr,\nMarkus",
+            "date": "2025-06-18T11:47:12Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "28a9dbcc-ab4d-f011-8779-7ced8d3fd26c",
+            "subject": "0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00472000315",
+            "body": "Hello Markus,\nAfter setting the websocket ping interval to 60 seconds (18th June), the performance improved a lot.\nIssue seams to be fixed now. Let me know if I can proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-20T07:54:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9e0f8c4-e750-f011-877b-7c1e52350ea5",
+            "subject": "0413642 - ID0413642-DC/Si-D/FI-[lpuy1j] Plugit- After reboot OCPP communication did not work CRM:00472000320",
+            "body": "Hello Markus,\nIssue is fixed, I will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-24T10:41:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

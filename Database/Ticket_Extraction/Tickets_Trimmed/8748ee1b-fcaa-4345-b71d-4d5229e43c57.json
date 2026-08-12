@@ -1,0 +1,101 @@
+{
+    "incident_id": "8748ee1b-fcaa-4345-b71d-4d5229e43c57",
+    "ticket_number": "0476379",
+    "title": "ID0476379-DC/Si-D/FI-[MP / R6 170002026] KCM Columbus reduced power",
+    "created_on": "2026-02-04T09:21:21Z",
+    "last_activity": "2026-03-09T16:14:56Z",
+    "age": "164398",
+    "description": "Reported behavior/issue - KCM Columbus reduced power",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "kXnNip",
+    "stage": "In Progress",
+    "serial_number": "MP / R6 170002026",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "784c1e38-ab01-f111-8407-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0476379 CRM:00225330645",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0476379 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8748ee1b-fcaa-4345-b71d-4d5229e43c57",
+            "date": "2026-02-04T09:23:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8098632d-14a8-a592-8715-f520776865fb",
+            "subject": "Case notes",
+            "body": "Looks like charger cannot provide maximal power, and one converter is down. Please check can you see anything referring to this",
+            "date": "2026-02-04T09:34:09Z",
+            "extra": {}
+        },
+        {
+            "id": "e76a24b7-ac01-f111-8407-000d3ab12cf3",
+            "subject": "ID0476379-DC/Si-D/FI-[MP / R6 170002026] KCM Colubus reduced power CRM:03056001003",
+            "body": "Dear\nOlli\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002026\nChargerID\n:\nkXnNip\nProblem Description\n: KCM Colubus reduced power:\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0476379\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-04T09:34:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1935b8fe-ad01-f111-8407-000d3ab12a27",
+            "subject": "A new case manager was assigned to 0476379 CRM:00225330686",
+            "body": "Felipe Moraes was assigned as new Case Manager for case 0476379 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8748ee1b-fcaa-4345-b71d-4d5229e43c57",
+            "date": "2026-02-04T09:43:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ed207da-d101-f111-8407-000d3ab12e50",
+            "subject": "ID0476379-DC/Si-D/FI-[MP / R6 170002026] KCM Colubus reduced power CRM:03056001003",
+            "body": "Dear Olli,\nThank you for contacting our eMobility Support, I hope this email finds you well.\nFollowing our analysis, we have confirmed a\nmissing Power Converter error\n. I will send a\nsite technical inspection\nto resolve this.\nRegarding the charging speed, our logs show that the\nEV was limiting the maximum power\nduring today’s sessions. This indicates the power limit was determined by the vehicle's parameters.\nWith best regards,\neMobility Technical Support Team – Felipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-04T14:00:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "da70dfbb-d201-f111-8407-000d3ab12e50",
+            "subject": "ID0476379-DC/Si-D/FI-[MP / R6 170002026] KCM Colubus reduced power CRM:03276000066",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0476379\n﻿from the Technical Support to the eMobility RC-FI SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nHelsinki - Vuosaari\nCharger ID / Serial No.:\nkXnNip\nCharger address/functional location:\nPriority:\nMedium\nHandover reason: Missing power convertor\nFollowing our diagnostic procedure for the power converter issue, we have analyzed the screenshots provided and confirmed that\nPowerConverter[6] and PowerConverter[9]\nis currently reporting a fault.\nTo resolve this, please follow the troubleshooting steps below:\n1. CanCommLoss:\nInspect the\nCanCommLoss\ncables attached to\nPowerConverter[6] and PowerConverter[9]\n. Ensure they are securely seated and free of damage.\nTo confirm that you are checking the converters on the correct group I’m sharing this screenshot with you since we don’t have the converter serial number.\n2. Component Swapping Test:\nIf the cables are properly connected, please swap Converter [6 or 9] with the adjacent functional unit.\n▹\nIf the fault\nfollows the converter\nto the new position, it confirms the hardware itself is faulty.\n▹\nIf the fault\nstays at the same position\n, the issue likely lies with the cabling or the communication port.\nConclusion:\nIf the hardware fault is confirmed after the swap, the converter will need to be replaced.\nPower Converter AC/DC:\n8EM5903-0AA01-0AA2\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-\nFI\nSI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nFelipe Moraes\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-04T14:06:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "369d05ad-3316-f111-8341-000d3adbefbd",
+            "subject": "A new case manager was assigned to 0476379 CRM:00225345566",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0476379 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8748ee1b-fcaa-4345-b71d-4d5229e43c57",
+            "date": "2026-03-02T12:31:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f884d7c7-3316-f111-8342-000d3ab12cf3",
+            "subject": "RE: ID0476379-DC/Si-D/FI-[MP / R6 170002026] KCM Colubus reduced power CRM:03276000066",
+            "body": "Terve,\nOhessa tullut viestiä ja voin vahvistaa, että kaksi tehomoduulia on pois pelistä.\n1. Yksi tehomoduuli ei löydy CAN-väylästä eli todennäköisesti täysin rikki. Tämän sijainti on ryhmässä DC3 eli joko TB13-14 (takaoven takana) tai TB4 (etuoven takana). DC3 on kolme tehomoduulia ja ainaostaan moduulit kyseisillä sarjanumeroilla löytyvät\n2102312VGQKXN9000823SA002200000200FW\nja\n2102312VGQKXN9000885SA002200000200FW\n.\n2. Toinen tehomoduuli on väylässä, mutta antaa vikaa että 12v hätäpysäytyssignaali ei mene perille. Joko heikko liitos tai konvertterissa DI inputti rikki. Sijainti on vihreä ryhmä DC4 ja joko TB12 tai TB11. Melkein kannattaa vaihtaa TB12 ja TB11 hätäpysäytysliittimet päikseen niin nähdään auttoiko tai vikaantuiko viereinen konvertteri, jotta poissuljetaan huono liitos. Konvertterin sarjanumero\n2102312VGQKXN9000877SA002204000\n. Hätäpysäytyslinja johtosarjassa tuo ohuet johtimet punaisella värillä.\nMarkus",
+            "date": "2026-03-02T12:31:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

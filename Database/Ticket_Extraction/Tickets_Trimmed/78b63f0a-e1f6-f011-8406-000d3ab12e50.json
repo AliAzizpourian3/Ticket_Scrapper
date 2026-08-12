@@ -1,0 +1,171 @@
+{
+    "incident_id": "78b63f0a-e1f6-f011-8406-000d3ab12e50",
+    "ticket_number": "0473682",
+    "title": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue",
+    "created_on": "2026-01-21T15:51:33Z",
+    "last_activity": "2026-01-23T15:51:34Z",
+    "age": "184054",
+    "description": "Reported behaviour/issue: Connector 4 recurring faulted state",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "3g38Q6",
+    "stage": "In Progress",
+    "serial_number": "MP/S2170003304,MP / S2 170003301",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "547cad07-e1f6-f011-8406-7ced8d44dcb4",
+            "subject": "Galway Retail Park – Connector 4 recurring faulted state",
+            "body": "Dear Siemens Support Team,\nWe are raising a new support request regarding a connector-level issue identified at our Galway Retail Park site. We are deliberately keeping this escalation strictly evidence-based, based on verified logs and observed behaviour.\nSite details\nLocation Galway Retail Park, H91 P5Y2, Galway, Ireland\nChargePoint ID IE-GFX-E170003301\nAffected connector Connector 4\nIssue description\nConnector 4 is repeatedly transitioning into Faulted state over short intervals. The issue appears isolated to this connector only. Other connectors on the same charge point remain operational and are not exhibiting similar behaviour.\nObserved timeline\nBased on OCPP StatusNotification logs:\n• 20 January 2026 at 17:18 UTC – Connector 2 briefly reported Faulted state, then recovered\n• 21 January 2026 between approximately 11:28 and 13:27 UTC – Connector 4 entered Faulted state multiple times, with frequent status updates recorded during this window\nThere is no evidence of cabinet-level faults, coordinated reboots, SECC reinitialisation, or multi-connector impact associated with these events.\nOperational symptoms\n• Sessions failing to start on Connector 4\n• Occasional cable lock events requiring emergency release\n• Users successfully redirected to other connectors\n• No mid-session drops observed on other connectors\nVehicle context\nMultiple vehicles were present and charging at the site during this period. At this stage, we do not have sufficient evidence to attribute the issue to a specific vehicle make or model. The fact that the fault behaviour is isolated to Connector 4, while other connectors continue to operate normally, suggests the issue may be connector-specific rather than vehicle-specific, however we are not asserting root cause and are open to Siemens’ assessment. We see 47 preparing records on this charger in the past 24 hours.\nInitial assessment\nAt this stage, we are not asserting root cause. Based on the logs and observed behaviour, the issue appears consistent with a connector-level hardware or sensor issue rather than a backend, power, or cabinet-level fault. Possible areas for inspection may include the DC cable and handle, latch or lock mechanism, temperature or proximity sensors, or connector-specific IO components.\nActions taken\nConnector 4 has been set to Unavailable to prevent further failed customer attempts. Other connectors remain live and are operating normally.\nRequested support\nWe request Siemens support to:\n• Review the connector-level diagnostics and logs for IE-GFX-E170003301-4\n• Advise whether this behaviour aligns with known connector or cable failure modes\n• Confirm recommended next steps, including whether on-site inspection or cable replacement is required\nPlease let us know if additional logs, timestamps, or vehicle identifiers would be helpful from our side.\nKind regards,\nColin",
+            "date": "2026-01-21T15:51:27Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b375bff5-01f7-f011-8406-7ced8d44dcb4",
+            "subject": "A new case manager was assigned to 0473682 CRM:00225322775",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0473682 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=78b63f0a-e1f6-f011-8406-000d3ab12e50",
+            "date": "2026-01-21T19:47:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f72510a1-03f7-f011-8406-7ced8d44d1ac",
+            "subject": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue CRM:02681001357",
+            "body": "Dear\nColin\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nCharger ID\n: 3g38Q6\nProblem Description\n:\nConnector 4 recurring faulted state\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0473682\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-21T19:59:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "725d2f09-07f7-f011-8406-7ced8d44df3f",
+            "subject": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue CRM:00263000382",
+            "body": "Dear\nColin Barry\n,\nWe are sending this email regarding a problem with your charger:\nMP / S2 170003301\nwhich led to the opened ticket:\n0473682\n.\nFollowing your message, I have checked the charger. I can confirm that:\nConnector 4 is currently shown as disconnected/offline, which aligns with the behaviour described in your logs.\nThe other connectors are online and operating normally.\nAt the moment of checking, an active charging session is in progress on another connector, confirming that the cabinet and backend communication are functioning correctly.\nWe will now forward this case to our expert team for a deeper review of the connector diagnostics. We will update you as soon as we have their assessment, along with recommended next steps.\nIf you have additional timestamps or vehicle identifiers for the affected attempts, feel free to share them, they may help with correlation during the expert review.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-21T20:23:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59f261ab-07f7-f011-8406-7ced8d44d2c4",
+            "subject": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue CRM:00263000382",
+            "body": "Dear\nColin Barry\n,\nWe are sending this email regarding a problem with your charger:\nMP / S2 170003301\nwhich led to the opened ticket:\n0473682\n.\nFollowing your message, I have checked the charger. I can confirm that:\nConnector 4 is currently shown as disconnected/offline, which aligns with the behaviour described in your logs.\nThe other connectors are online and operating normally.\nAt the moment of checking, an active charging session is in progress on another connector, confirming that the cabinet and backend communication are functioning correctly.\nWe will now forward this case to our expert team for a deeper review of the connector diagnostics. We will update you as soon as we have their assessment, along with recommended next steps.\nIf you have additional timestamps or vehicle identifiers for the affected attempts, feel free to share them, they may help with correlation during the expert review.\nOnce you have this information, please forward to us and we will investigate the problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-21T20:27:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "37f14226-71f7-f011-8406-000d3ab12cf3",
+            "subject": "A new case manager was assigned to 0473682 CRM:00225323076",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0473682 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=78b63f0a-e1f6-f011-8406-000d3ab12e50",
+            "date": "2026-01-22T09:03:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ab6c4243-77f7-f011-8406-000d3ab12a39",
+            "subject": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue CRM:00263000382",
+            "body": "Hi Colin! Good morning, how are you doing?\nI got your ticket and just to let you know that I was trying to understand if there was any FW problem on the connector but I only realised now that you made it inoperative on purpose.\nIf you see on the backend that 5mins ago, the outlets went online and offline, it was because of me.\nI checked the logs you mentioned regarding yesterday on DC4 and found the same behaviour from a previous ticket:\nIt seems that this EV, has some kind of auxiliary system or the battery voltage is getting applied on our cable and the charger to make sure there is no harm or damage to any of the participants, disables the outlet immediately.\nAnd after the EV is plugged out, the outlet is available:\nRegarding the incident on the 20th January, I find again that the customer chose the wrong connector ID:\nAs you can see, charger says \"we can start the session but there is not cable connected to the connectorID 1\", because it's connected on ID2, and as such, the charger refers to this as a authentication error and sends to the backend that it couldn't start.\nRegarding the topic that the \"\nOccasional cable lock events requiring emergency release\n\" this is completely on the vehicle side. The norm of electric vehicles specifies that the\nlocking mechanism is always on the EV side\n, as such, if there is any constraints that it's not unlocking, the fault is within the EV, we are not responsible for the lock, we only provide the \"socket\" for the locking mechanism to fit. I am sending a video in attachment of our own tester box so you can see for yourself, and also if you see the video, I'm clicking a button that locks/unlocks the system, the EV probably doesn't have this button since it's FW based.\nIn summary, I will align with the regional colleagues what to do with the connector ID 4, I must say that all the points redirect to the vehicle but I will recommend them to replace the component and confirm if we are correct or not.\nAs soon as someone is assigned, they will let you know.\nThank you and have a nice day ahead.\nBest regards,\nFrancisco",
+            "date": "2026-01-22T09:46:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3c4e4c9-85f7-f011-8406-000d3ab12a39",
+            "subject": "ID0473682-DC/Si-D/IE-[Multiple]  Connector 4 issue CRM:00315003122",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0473682\n﻿from the Technical Support to the eMobility RC-GB SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer: Colin\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / S2 170003301\nCharger ID / Serial No.:\n3g38Q6\nCharger address/functional location:\nPriority:\nMedium\nHandover reason: Replace TF204 - 8EM5903-0AA01-0AA5\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-GB SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-01-22T11:30:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "405c2553-8af7-f011-8406-000d3ab12a39",
+            "subject": "Re: ID0473682-DC/Si-D/IE-[Multiple] Connector 4 issue CRM:00263000382",
+            "body": "Hi Francisco,\nI’m good thanks! And Thank you for the detailed review and for coming back so quickly.\nI want to clarify a few points, as the behaviour I experienced last night does not appear to align cleanly with a purely vehicle-side issue.\nThe attempts in question were made by me on multiple chargers at the Sandy Road site within a short time window. I always initiate sessions via the Charge Assist app (not card tap), which is normally reliable for me.\nSequence of events last night:\n• I first attempted to charge",
+            "date": "2026-01-22T12:03:13Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7cd4bda2-8af7-f011-8406-000d3ab127aa",
+            "subject": "A new case manager was assigned to 0473682 CRM:00225323302",
+            "body": "Jason Stonier was assigned as new Case Manager for case 0473682 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=78b63f0a-e1f6-f011-8406-000d3ab12e50",
+            "date": "2026-01-22T12:05:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d89cd0d-3df8-f011-8406-000d3ab12cfa",
+            "subject": "Re: ID0473682-DC/Si-D/IE-[Multiple] Connector 4 issue CRM:00263000382",
+            "body": "Hi Francisco\nAs we have not heard from any local agent as you have suggested and no one has been assigned to this case to replace the connector, I will turn it back on as we cannot afford a drop in service on Friday or the weekend, Friday to Sunday is worth over €1k in sales to us at this location. Please advise what you would like to do. But you will need to keep this open and monitored in case there are more issues today, I will go there now and test,\nRegards\nColin\nColin Barry\nBrite EV charging",
+            "date": "2026-01-23T09:22:37Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1551c6f7-48f8-f011-8406-7ced8d77f39b",
+            "subject": "RE: ID0473682-DC/Si-D/IE-[Multiple] Connector 4 issue CRM:00263000382",
+            "body": "HI Colin,\nAn engineer is on his way to site this morning to check both the charger at Retail, and the one with the occasional comms drop at the Motorpark.\nThanks,\nJason",
+            "date": "2026-01-23T10:47:55Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "66b92285-4df8-f011-8406-000d3ab12cfa",
+            "subject": "Re: ID0473682-DC/Si-D/IE-[Multiple] Connector 4 issue CRM:00263000382",
+            "body": "Great news thanks Jason\nColin Barry\nBrite EV charging",
+            "date": "2026-01-23T11:20:36Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "019a6282-5bf8-f011-8406-000d3ab11366",
+            "subject": "Re: ID0473682-DC/Si-D/IE-[Multiple] Connector 4 issue CRM:00263000382",
+            "body": "Hi All\nWe wanted to provide\nadditional information\nthat has come to light and which we believe is\nrelevant to the existing Galway Retail Park ticket currently under investigation\n. -\ncharger 3301.\nNew information received\nWe have now received a customer complaint relating to\nGalway Retail Park, connector 4\n, dated Tuesday 20 January 2026 at approximately 13:40. The customer reports that a charging session did not commence, but that three separate €50 payment authorisations were taken.\nReview against existing ticket\nAfter reviewing backend logs and on-site playback for the relevant time window, we can see that connector 4 entered\nPreparing\nstate and did not progress to an active charging session before the customer left the site. There is no evidence of a successful start or sustained charge for this attempt.\nThis behaviour mirrors the\nsame failure mode already being investigated under the current GRP ticket\n, namely connector 4 entering\nPreparing\nand not progressing to charge, leading to abandoned sessions.\nRelationship to current investigation\nWhile the payment aspect is new, the charging behaviour itself is\nnot a separate or unrelated issue\n, and appears to be another occurrence of the same connector-level problem already under review at Galway Retail Park.\nWe are therefore sharing this as\nadditional evidence\nto be considered as part of the existing ticket, rather than raising it as a standalone incident.\nNext steps\nWe will handle the customer refund directly. Our main concern is ensuring the underlying connector 4 issue is resolved to prevent further customer impact.\nPlease let us know if you need any additional timestamps or data points from our side to support the ongoing investigation.\nKind regards,\nColin\nBrite Charging Limited\nsupport@brite.ie\nOn Fri, Jan 23, 2026 at 11:20 AM Colin Barry <\ncolin@brite.ie\n> wrote:\nGreat news thanks Jason\nColin Barry\nBrite EV charging",
+            "date": "2026-01-23T13:00:41Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

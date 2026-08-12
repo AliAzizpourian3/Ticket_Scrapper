@@ -1,0 +1,116 @@
+{
+    "incident_id": "98ef91b1-4cda-f011-8544-7c1e528800b0",
+    "ticket_number": "0467840",
+    "title": "ID0467840-DC/Si-D/IE-[MULTIPLE] Modbus and SECC communication Failure",
+    "created_on": "2025-12-16T06:59:08Z",
+    "last_activity": "2025-12-23T15:39:37Z",
+    "age": "10600",
+    "description": "Reported behavior/issue:\nModbus and SECC communication Failure\nSolution: No failure during sessions, when sessions end successfully we send a message error since SECC resets the PLC communication.\nyyyy-mm-dd:  NA",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "MP/S2170003304,MP/S2170003302",
+    "case_nature_code": 580000001,
+    "chargerID": "Multiple",
+    "additional_info": [
+        {
+            "id": "006814b4-4cda-f011-8544-7ced8d425bfe",
+            "subject": "Escalation: Siemens SiCharge D internal comms failures (modbus0 not connected, SECC offline) across multiple charge points",
+            "body": "Dear Siemens Support Team,\nWe are escalating a recurring systemic fault pattern across multiple Siemens SiCharge D charge points in our network. OCPP connectivity remains stable and online, however EVSEs repeatedly enter Faulted state with Siemens vendor errors that point to internal cabinet communications and SECC availability issues.\nThe repeated pattern is that ChargePointStatus remains Available and ConnectivityStatus remains Online, while EVSEs and connectors report Faulted with InternalError and Siemens vendor messages indicating readiness and internal comms failures.\nChargePointId 170003302\n11 Dec 2025: EVSEs 1, 2, 3, 4 report Faulted with InternalError.\n12 Dec 2025 and 13 Dec 2025: EVSE 3 reports Faulted with VendorErrorCode “modbus0 is not connected” (repeated).\nChargePointId 170003303\n11 Dec 2025: EVSE 2 reports Faulted with InternalError.\n12 Dec 2025: EVSE 1 and EVSE 2 report Faulted with VendorErrorCode “evse is not ready” (repeated on EVSE 1).\nChargePointId 170003304\n09 Dec 2025: EVSE 1 reports Faulted with VendorErrorCode “SECC Status not updated”. EVSE 2 reports Faulted with VendorErrorCode “secc is offline”.\n11 Dec 2025: EVSE 4 reports Faulted with VendorErrorCode “modbus0 is not connected”. EVSE 3 reports Faulted with VendorErrorCode “secc pilot is E”.\n12–13 Dec 2025: multiple EVSEs report Faulted with VendorErrorCode “evse is not ready”, alongside InternalError events.\nThese errors indicate internal fieldbus communication loss (“modbus0 is not connected”) and SECC unavailability (“secc is offline”, “SECC Status not updated”), resulting in EVSE readiness failure (“evse is not ready”). This is not consistent with user misuse or vehicle-specific incidents and appears to be cabinet level or shared subsystem instability.\nWe request cabinet level diagnostics and engineering review for these charge points, with specific attention to:\nIdentification of what subsystem is mapped to “modbus0” on this hardware build and the likely causes of Modbus disconnection.\nSECC health and communication monitoring, including reasons for “SECC Status not updated” and “secc is offline”.\nInternal logs around the timestamps above, including watchdog resets, PSU stability events, brownout indicators, bus timeout counters, and safety controller triggers.\nFirmware versions for cabinet controller and SECC, and confirmation of any known issues relating to Modbus dropouts, SECC offline events, or repeated EVSE readiness failures on this firmware branch.\nRecommended corrective action beyond resets, including whether Siemens recommends proactive replacement of SECC modules, comms interface boards, cabinet harness components, or other internal modules when this pattern is present.\nGiven the recurrence across several charge points in the same period, we suspect either a common firmware issue or a common hardware subsystem weakness. We need root cause identification and a permanent fix.\nPlease confirm next steps and ownership for engineering escalation, and advise what immediate site actions Siemens recommends (full power-down sequence, module reseat checks, comms termination checks, or targeted module replacement).\nRegards,\nColin",
+            "date": "2025-12-16T06:59:03Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "58830a13-4eda-f011-8544-7ced8d425b04",
+            "subject": "A new case manager was assigned to 0467840 CRM:00225304845",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0467840 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98ef91b1-4cda-f011-8544-7c1e528800b0",
+            "date": "2025-12-16T07:08:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95d7e314-d9db-f011-8543-7ced8d425658",
+            "subject": "ID0467840-DC/Si-D/IE-[MULTIPLE] Modbus and SECC communication Failure CRM:02888000509",
+            "body": "Dear\nColin Barry\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/S2170003302\nChargerID\n: MULTIPLE\nProblem Description\n:  Modbus and SECC communication Failure\nFor your reference, this support request has been assigned the following case number:\n0467840\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nAnit Mukherjee\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-18T06:16:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d684968-e5db-f011-8543-7ced8d425658",
+            "subject": "A new case manager was assigned to 0467840 CRM:00225306577",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0467840 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98ef91b1-4cda-f011-8544-7c1e528800b0",
+            "date": "2025-12-18T07:44:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bf1548d-16dc-f011-8543-7c1e52880fe1",
+            "subject": "A new case manager was assigned to 0467840 CRM:00225306991",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0467840 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98ef91b1-4cda-f011-8544-7c1e528800b0",
+            "date": "2025-12-18T13:36:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74c8a905-2adc-f011-8543-7c1e52362ec6",
+            "subject": "ID0467840-DC/Si-D/IE-[MULTIPLE] Modbus and SECC communication Failure CRM:02888000509",
+            "body": "Dear Colin,\nThank you for contacting eMobility support.\nWe will forward this ticket to the experts teams.\nThey will contact you as soon as possible with a possible solution.\nThank you.\nKind regards,\nPriscilla van Wettum",
+            "date": "2025-12-18T15:55:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7acd41c8-07e0-f011-8544-7ced8d425bfe",
+            "subject": "A new case manager was assigned to 0467840 CRM:00225309354",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0467840 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=98ef91b1-4cda-f011-8544-7c1e528800b0",
+            "date": "2025-12-23T14:00:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "830deda5-12e0-f011-8544-7c1e52362ec6",
+            "subject": "ID0467840-DC/Si-D/IE-[MULTIPLE] Modbus and SECC communication Failure CRM:02888000509",
+            "body": "Hello Colin,\nI believe Jason already explained to you this subject because I was out of office and he left me a message.\nSince there is no issue with the charging sessions, it's the same as the previous ticket. For now, this is how the system is designed, the SECC sends this false positive in a way of internally addressing it as a session end.\nFor now, if there is any real complaint from the customer please let us know, otherwise, Jason will keep you updated on any news we might have. I will close the ticket.\nThank you and have a nice holidays.\nBest regards,\nFrancisco",
+            "date": "2025-12-23T15:18:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "35b0d193-15e0-f011-8543-7ced8d414a4a",
+            "subject": "Ticket 0467840 has been closed. Are you satisfied with our provided solution? CRM:00225309425",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0467840\nwith the title:\nID0467840-DC/Si-D/IE-[MULTIPLE] Modbus and SECC communication Failure\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-23T15:39:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

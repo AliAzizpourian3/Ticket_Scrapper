@@ -1,0 +1,138 @@
+{
+    "incident_id": "35d25e72-5407-f111-8406-7c1e5237a53c",
+    "ticket_number": "0477897",
+    "title": "ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check",
+    "created_on": "2026-02-11T14:17:52Z",
+    "last_activity": "2026-05-11T08:12:30Z",
+    "age": "153908",
+    "description": "Reported behavior/issue -\nPlease review the following sequence for charger 170003301 at Galway Retail Park on 11 February 2026 between 09:42 and 10:06 UTC.",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "3g38Q6",
+    "stage": "In Progress",
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a7e33c6e-5407-f111-8407-7ced8d44ddde",
+            "subject": "Brite - 170003301 – 11 Feb 2026 behaviour (09:42–10:06 UTC) + request for deeper visibility",
+            "body": "Hi Francisco,\nPlease review the following sequence for charger 170003301 at Galway Retail Park on 11 February 2026 between 09:42 and 10:06 UTC.\nConnector 4\n09:42:13 UTC\nStatus: Faulted\nVendorErrorCode: “evse is not ready”\n09:46:31 UTC\nStatus: Faulted\nErrorCode: InternalError\nConnector 2\n09:46:12 UTC\nStatus: Faulted\nErrorCode: InternalError\nThis coincided with a manual disconnect and return-to-holster event and appears to have been a brief transient.\nConnector 1\n10:01:27.579 UTC\nStatus: Preparing\nErrorCode: NoError\n10:02:55.508 UTC\nStatus: Available\nErrorCode: NoError\nIn this case, a BYD vehicle was moved between connectors due to difficulty initiating charge. Connector 1 entered Preparing but never transitioned to Charging and returned cleanly to Available without any EVSE fault. The vehicle was then moved back to connector 4, where at 10:05:48 UTC the session started successfully and charged normally.\nThe chargepoint remained Online and Available at CP level throughout.\nFrom the sequence, connector 1 appears to show a clean negotiation abort, while connector 4 earlier shows readiness/internal fault behaviour before later starting successfully.\nCould you please:\nReview connector 4 at 09:42–09:47 UTC to confirm what internal readiness condition maps to “evse is not ready” and the subsequent InternalError.\nReview connector 1 at 10:01–10:03 UTC to confirm why it exited Preparing without transitioning to Charging (protocol timeout, ISO 15118/DIN negotiation failure, EV abort, authorisation path, etc.).\nConfirm whether there is any shared cabinet-level condition that could explain connector 4 readiness faults independent of vehicle negotiation.\nAdditionally, in cases where we suspect vehicle-side negotiation instability, is there any way for us to access more granular diagnostic information at CPO level? For example, visibility of ISO 15118/DIN state transitions, SLAC results, precharge attempts, contactor commands, or protocol timeouts. At present we only see high-level OCPP state changes, which makes it difficult to determine whether behaviour is vehicle-driven or EVSE-driven without your internal logs.\nWe would like to understand what level of protocol or hardware diagnostics can be made available to us for future analysis.\nThanks,\nColin",
+            "date": "2026-02-11T14:17:45Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8824fa1b-5507-f111-8407-000d3ab12cf3",
+            "subject": "A new case manager was assigned to 0477897 CRM:00225335593",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0477897 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35d25e72-5407-f111-8406-7c1e5237a53c",
+            "date": "2026-02-11T14:22:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "90df9dcb-5607-f111-8407-7ced8d44db54",
+            "subject": "A new case manager was assigned to 0477897 CRM:00225335606",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0477897 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35d25e72-5407-f111-8406-7c1e5237a53c",
+            "date": "2026-02-11T14:34:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8ed021e7-5607-f111-8407-7ced8d44df3f",
+            "subject": "ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03056001017",
+            "body": "Dear\nColin\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID\n:\n3g38Q6\nProblem Description\n:  Charger sequence check\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0477897\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-02-11T14:35:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "feaa2582-5707-f111-8407-000d3ab12cf3",
+            "subject": "A new case manager was assigned to 0477897 CRM:00225335614",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0477897 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=35d25e72-5407-f111-8406-7c1e5237a53c",
+            "date": "2026-02-11T14:39:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87fbc496-5e07-f111-8407-000d3ab12a39",
+            "subject": "ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03056001017",
+            "body": "Dear Colin,\nFollowing your request regarding the errors mentioned in the ticket, and after completing our checks, we have identified the root cause.\nWe will now align with the Field Service team on the next steps and proceed with the necessary actions to resolve the issues.\nWe will keep you updated on the progress.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-11T15:30:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e7f795a-6207-f111-8407-000d3ab12a39",
+            "subject": "ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03042000458",
+            "body": "Dear Service Coordinator / RC,\nI am writing to inform that we are moving the case\n0477897\n﻿from the Technical Support to the eMobility RC-IE SI E Queue. We kindly ask you to take over the case and perform the necessary troubleshooting steps.\nCustomer:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / S2 170003301\nCharger ID / Serial No.:\n3g38Q6\nCharger address/functional location:\nPriority:\nHigh\nHandover reason:\nFollowing the client’s report and after our checks, we have identified the following:\nVendorErrorCode\n– This issue is related to the connection from EcoG.\ncheck connection from EcoG to switch (KF1) and if it doesn't work then we need to replace it\nOutlet 4 – Error Code 7.8\n– This is related to _TF204 of the dispenser.\nit is necessary to replace the Wago plug XD, as I suspect it is the cause of the issue.\nSwap TF204 and TF203 to determine whether the issue remains on Outlet 4 or moves to Outlet 3.\nAs an alternative approach to help identify the root cause during our on-site intervention, we can perform the following actions:\nConnecte directly to the PLC analog input board to verify whether the problem is related to the wiring.\nIn parallel, we also need to carry out several charging sessions with the Volvo Trucks to assess the charger’s performance.\nMG1: VoltagePrechargeRequired = True\n– The charger is not ready for power delivery due to an issue related to the fast shutdown cable in the group converter.\nPlease follow the check process steps:\nPlease check the MG1 - MG2 \"+F05-QA9\" \"+F05-QA10\" follwing the screenshot that I will attached\nIf you see that is necessary to replace the MG1 - MG2 \"+F05-QA9\" \"+F05-QA10\" please do it.\nPlease proceed with the necessary actions to resolve these issues. If you notice anything that needs adjustment or replacement to fully resolve the problem, kindly take the required corrective actions.\nKindly pick up the case using \"Pick\" option in the queue or manually using the \"Assign\" function from the\neMobility RC-IE SI E Queue\nand work on it & document the activity (Logs/Field Service Report) and attach it to the case under Documents Tab on ISP.\nIn case you require Expert Support, kindly create Work-order as per\nunified service process\n. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution following the case handling guidelines.\nThank you.\nWith best regards,\neMobility Technical Support Team –\nYounes Baroudi\nPlease do not change the subject line when replying to this email.",
+            "date": "2026-02-11T15:57:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "14ec7c40-6707-f111-8407-000d3ab12e50",
+            "subject": "Re: ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03056001017",
+            "body": "Please advise on the root cause.\nOn Wed, Feb 11, 2026 at 3:56 PM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nDear Colin,\nFollowing your request regarding the errors mentioned in the ticket, and after completing our checks, we have identified the root cause.\nWe will now align with the Field Service team on the next steps and proceed with the necessary actions to resolve the issues.\nWe will keep you updated on the progress.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-11T16:32:31Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bdb001e1-c408-f111-8407-7ced8d44df3f",
+            "subject": "Re: ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03056001017",
+            "body": "Please advise on the root cause\nOn Wed, Feb 11, 2026 at 4:32 PM Colin Barry <\ncolin@brite.ie\n> wrote:\nPlease advise on the root cause.\nOn Wed, Feb 11, 2026 at 3:56 PM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nDear Colin,\nFollowing your request regarding the errors mentioned in the ticket, and after completing our checks, we have identified the root cause.\nWe will now align with the Field Service team on the next steps and proceed with the necessary actions to resolve the issues.\nWe will keep you updated on the progress.\nWith best regards,\nYounes Baroudi\neMobility Technical Support Team",
+            "date": "2026-02-13T10:15:13Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "67dff0e2-c608-f111-8406-0022489bbd90",
+            "subject": "URGENT - Re: ID0477897-DC/Si-D/IE-[MP/S2 170003301] ADDITIONAL FAULTS",
+            "body": "Hi Younes,\nFurther to case 0477897 and your confirmation that the root cause has been identified, I need to flag additional fault activity now observed on the same charger (MP / S2 170003301).\nSince 6 February, we have recorded repeated Faulted states across multiple connectors with the following vendor-level errors:\n• “modbus0 is not connected”\n• “evse is not ready”\n• “secc pilot is E”\n• OCPP InternalError\nThese have occurred",
+            "date": "2026-02-13T10:29:37Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9e00282-084d-f111-bec6-000d3adf9c95",
+            "subject": "ID0477897-DC/Si-D/IE-[MP/S2 170003301] Charger sequence check CRM:03042000458",
+            "body": "Good morning,\nFollowing the recent handover of this ticket, the client has reported new issues concerning the same charger.\nCould you please confirm if any repairs have been performed on the charger and, if so, whether these repairs successfully resolved the previously reported issues?\nOur current observations indicate that all outlets are functioning correctly and charging as expected. If this assessment is accurate and all concerns have been addressed, we recommend proceeding with the closure of this ticket.\nBest regards,\nMiguel Caleiro",
+            "date": "2026-05-11T07:10:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

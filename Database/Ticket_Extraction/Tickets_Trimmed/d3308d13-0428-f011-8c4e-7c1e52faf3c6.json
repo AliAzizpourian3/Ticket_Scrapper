@@ -1,0 +1,214 @@
+{
+    "incident_id": "d3308d13-0428-f011-8c4e-7c1e52faf3c6",
+    "ticket_number": "0422147",
+    "title": "ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption",
+    "created_on": "2025-05-03T09:50:48Z",
+    "last_activity": "2025-05-22T11:57:58Z",
+    "age": "23043",
+    "description": "Reported issue:  Charging Interruption\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "SMpaSh",
+    "stage": null,
+    "serial_number": "Y2 / S2 313522141002",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "345f5c0c-0428-f011-8c4d-6045bde0265d",
+            "subject": "Urgent Investigation Request – Recurring Charging Issue on Sicharge D Unit (S/N Y2/S2313522141002)",
+            "body": "Hello,\nThis is an urgent request for investigation regarding a malfunction observed on the Sicharge D charging station (Serial No: Y2/S2313522141002).\nThis morning at 11:45 AM, the\nCEO manager personally contacted me after his vehicle (M1) displayed a charging error\n. The vehicle had been connected since 03/05/2025 at 11:09:48, and the charging session started at 11:10:21.\nImportant: This is the second time I am reporting this issue, and we have still received no response to date.\nI am therefore requesting that you:\n1.\nCreate a formal investigation\nticket immediately.\n2.    Review the\nlogs of the affected connector\n.\n3.    Check the\ncable condition\nand\nEcoG charge controller\n.\n4.    Investigate any potential\novervoltage or energy management anomalies\non this unit.\nPlease also mobilize the local teams urgently, as this concerns a priority vehicle, and provide us with a\ndetailed technical response\nas soon as possible.\nLooking forward to your swift feedback,\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-05-03T09:50:38Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6293b503-84d5-f49e-83ee-95ad0e4133f4",
+            "subject": null,
+            "body": "This is an urgent request for investigation regarding a malfunction observed on\nthe Sicharge D charging station (Serial No: Y2/S2313522141002).\nThis morning at 11:45 AM, the CEO manager personally contacted me after his\nvehicle (M1) displayed a charging error. The vehicle had been connected since\n03/05/2025 at 11:09:48, and the charging session started at 11:10:21.\nImportant: This is the second time I am reporting this issue, and we have still\nreceived no response to date.\nI am therefore requesting that you:\n1.    Create a formal investigation ticket immediately.\n2.    Review the logs of the affected connector.\n3.    Check the cable condition and EcoG charge controller.\n4.    Investigate any potential overvoltage or energy management\nanomalies on this unit.\nPlease also mobilize the local teams urgently, as this concerns a priority\nvehicle, and provide us with a detailed technical response as soon as possible.\nLooking forward to your swift feedback,\nBest regards,",
+            "date": "2025-05-03T10:06:28Z",
+            "extra": {}
+        },
+        {
+            "id": "10749297-6496-2877-99d4-acc4ddd8500d",
+            "subject": "Log Analysis",
+            "body": "Due to DPA, at EV soc 52%, (CG Allocation Level 1 Optimization Done, EV SOC: 52 % ), EVSE_MaxCur[A]=0, thus EV changed it's target back to EV_TarCur[A]=0 , Untill EVSE increased it's current\nObserved power converter error\n2025-05-03T09:21:46.058353+00:00 sicharge-cp [local0:info] sicharge-cp-backend/a59d439365f2[737]: PLC-Error-Flag 'PowerConverter[1]' changed from false - ('2102312VGQLUP2001675SA002200000000FW:DC118PF118H100,F:1') to true - ('2102312VGQLUP2001675SA002204000208FW:DC118PF118H100,F:1,E17')    1746264109944    38942990891094633904275403277726082492796823461502189580\nthis is causing statusnotificaiton changing from SuspendedEV to Charging and vice versa, before EV Communication was dropped.\nCan try updating the charger to v7.0.5.\nErrorcode 17, is not critical Internal communicaiton error",
+            "date": "2025-05-03T11:40:37Z",
+            "extra": {}
+        },
+        {
+            "id": "2e3d3082-1828-f011-8c4d-7c1e52350ea5",
+            "subject": "ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S2 313522141002\nChargerID/Serial No.\n:\nSMpaSh\nProblem Description\n: Malfunction observed on the Sicharge D charging station and showing displayed a charging error.\nAt the mentioned time, we observed EV was getting charged, until 52% without any issue, at this point charger used it's DPA to reduce the allocated power from 120Kw to 80kw\nThis resulted in a momentary reduction of EVSE max current to 0A, a sec, followed by EV also reducing the target current to 0A.\nHowever later the charging resumed with 200A.\nDuring this time when EV reached to 57% soc, we observed power converter error (non-critical), and again the session was suspended (not stopped)\nHowever, after few seconds the EV dropped the communication, resulting in the interruption of charging session.\nWhile we are further analyzing the issue, may we recommend you to update the charger to 7.0.5.\nIf required, we will dispatch field service team for a site visit.\nFor future reference, your case number is\n0422147\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-03T12:17:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "394c63db-1c28-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Malek DRIF,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S2 313522141002\nChargerID/Serial No.\n:\nSMpaSh\nProblem Description\n: Malfunction observed on the Sicharge D charging station and showing displayed a charging error.\nAt the mentioned time, we observed EV was getting charged, until 52% without any issue, at this point charger used it's DPA to reduce the allocated power from 120Kw to 80kw\nThis resulted in a momentary reduction of EVSE max current to 0A, a sec, followed by EV also reducing the target current to 0A.\nHowever later the charging resumed with 200A.\nDuring this time when EV reached to 57% soc, we observed power converter error (non-critical), and again the session was suspended (not stopped)\nHowever, after few seconds the EV dropped the communication, resulting in the interruption of charging session.\nWhile we are further analyzing the issue, may we recommend you to update the charger to 7.0.5.\nIf required, we will dispatch field service team for a site visit.\nFor future reference, your case number is\n0422147\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-03T12:48:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "43a1f158-4728-f011-8c4d-7c1e52361e39",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Deepanshi,\nThank you very much for your detailed analysis and recommendation.\nYes, you may proceed — I confirm that you can go ahead with the update to version 7.0.5.\nI appreciate your support and look forward to your continued assistance in resolving this issue.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nsamedi, mai 3, 2025 2:46 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; emobility_support.si@siemens.com <emobility_support.si@siemens.com>\nCc :\nNevo, Emmanuel <emmanuel.nevo@siemens.com>; Emeric DE BODINAT <e.debodinat@autorecharge.fr>; Nevo, Emmanuel <emmanuel.nevo@siemens.com>\nObjet :\nID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194\nDear Malek DRIF,\nThank you for reaching out to eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S2 313522141002\nChargerID/Serial No.\n:\nSMpaSh\nProblem Description\n: Malfunction observed on the Sicharge D charging station and showing displayed a charging error.\nAt the mentioned time, we observed EV was getting charged, until 52% without any issue, at this point charger used it's DPA to reduce the allocated power from 120Kw to 80kw\nThis resulted in a momentary reduction of EVSE max current to 0A, a sec, followed by EV also reducing the target current to 0A.\nHowever later the charging resumed with 200A.\nDuring this time when EV reached to 57% soc, we observed power converter error (non-critical), and again the session was suspended (not stopped)\nHowever, after few seconds the EV dropped the communication, resulting in the interruption of charging session.\nWhile we are further analyzing the issue, may we recommend you to update the charger to 7.0.5.\nIf required, we will dispatch field service team for a site visit.\nFor future reference, your case number is\n0422147\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-03T17:52:20Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0b50badd-a005-202b-9790-e286ef0020ac",
+            "subject": "v7.0.5 Rolled out",
+            "body": "v7.0.5 Rolled out by Reetesh at 09:36 IST",
+            "date": "2025-05-04T04:06:45Z",
+            "extra": {}
+        },
+        {
+            "id": "4cf73c1e-da28-f011-8c4d-7c1e52361e39",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Malek DRIF,\nI hope this email finds you well.\nI wanted to provide you with an update regarding the firmware update process. The download has commenced, and we anticipate activating the firmware as soon as it completes, which will require the charger to be ideal for the installation.\nWe are hopeful that by Monday morning, we will be ready with version 7.0.5.\nFor future reference, your case number is\n0422147\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-04T11:22:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a043a12b-db28-f011-8c4d-7c1e52361e39",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Malek DRIF,\nI hope this email finds you well.\nI wanted to provide you with an update regarding the firmware update process. The download has commenced, and we anticipate activating the firmware as soon as it completes, which will require the charger to be ideal for the installation.\nWe are hopeful that by Monday morning, we will be ready with version 7.0.5.\nFor future reference, your case number is\n0422147\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-04T11:30:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4305e0a8-5629-f011-8c4e-7c1e5287f582",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Good morning, Malek,\nThis is to update you that the charger has been successfully updated to v7.0.5, may you please perform few charging sessions and provide your feedback.\nLooking forward to hearing from you.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T02:14:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0be43ba7-0a2b-f011-8c4d-7c1e52361e39",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Hello,\nI’m writing to report that the charging issue is still ongoing. Yesterday at 09:59, a charging error appeared once again (see attached screenshot). The battery remained stuck at 84% despite the charging attempt. Also yesterday, the CEO plugged his Porsche Macan into the same connector and noticed that the charger was still faulty.\nI called Emmanuel about this to inform him of the situation. I’m wondering where we currently stand regarding the ticket that was already created for this issue.\nCould you please update me on the next steps? Thank you in advance for your feedback.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nMonday, May 5, 2025 4:17:35 AM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nEmeric DE BODINAT <e.debodinat@autorecharge.fr>; Nevo, Emmanuel <emmanuel.nevo@siemens.com>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>\nObjet :\nRe: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194\nGood morning, Malek,\nThis is to update you that the charger has been successfully updated to v7.0.5, may you please perform few charging sessions and provide your feedback.\nLooking forward to hearing from you.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-07T06:15:21Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5096a5a0-282b-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Hello Malek,\nI am analyzing the logs for the reported time; I will get back to you soon with the findings.\nThanks for your understanding and patience.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-07T09:50:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24cc1e18-322b-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Hello Malek,\nUpon analyzing the logs for the two sessions, here is my feedback:\n1st Session:\nStarted at 2025-05-06T07:15:49\nUTC [CEST-2]\nOn Outlet 1 failed during Cable Check, after ChargeParamterDiscovery, EV didn't send the Cable Check request and hence session was failed.\n2nd session:\nStarted at 2025-05-06T07:18:13\nUTC [CEST-2]\nCharging started successfully with EV at 71%\nCurrent reached till 100A.\nAt 79% SoC, Dynamic Power Allocation was triggered, due to less power consumption by EV.\nLater we observed a non-critical error from 1 power converter.\nThis leads to the EVSE_max current to 0\nEV followed it and set it's Target Current to 0A.\nEventually the session was terminated at 84% SoC.\nRefer attached summary.\nWe will dispatch the field service team to replace this PowerConveter, as the session is stopped, or current is set to 0A, only after the Power Converter Error appears.\n@Emmanuel, for your action to dispatch the service team. I will write the MLFB of the power converter to you in a separate email.\nBefore replacing the converter, please inspect the input air filters, on many occasions, it has been observed that due to dust and foreign particles, power converter misbehaves and losses it's communication.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-07T10:57:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f71a9b50-342b-f011-8c4d-6045bde0265d",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0422147 ﻿from the\neMobility TS SiD Queue\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nSuspected Defective Converter : PowerConverter[1] : 2102312VGQLUP2001675SA002004000208FW:DC118PF118H100,F:1,E17\nRecommended MLFB to order :  8EM5903-0AA01-0AA2\nDescription: Power Converter AC/DC 20kW\nQty: 1\nBefore replacement of parts, please inspect the charger condition, and ask for last preventive maintenance report.\nPlease inspect the input air filters, on many occasions, it has been observed that due to dust and foreign particles, power converter misbehaves and losses it's communication.\nAfter part replacement, before submitting for any\nwarranty claim\n, please refer to the\nDC spare RMA return process\n, if your part and country is in the whitelist, please send the defective part to factory.\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Reetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-07T11:13:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54464770-0730-f011-8c4d-0022489f6fd1",
+            "subject": "RE: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Bonjour,\nNous vous informons que M. Jonathan Larcher interviendra sur site pour le remplacement du convertisseur le jeudi 16 mai à 15h30.\nVous pouvez le contacter si besoin au +33 7 60 05 74 85.\nN'hésitez pas à revenir vers nous si vous avez la moindre question.\nBien cordialement,\nRamdane Chergui",
+            "date": "2025-05-13T14:34:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca879130-0830-f011-8c4e-000d3adc93d1",
+            "subject": "RE: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Bonjour,\nNous vous informons que M. Jonathan Larcher interviendra sur site pour le remplacement du convertisseur le jeudi 16 mai à 15h30.\nVous pouvez le contacter si besoin au +33 7 60 05 74 85.\nN'hésitez pas à revenir vers nous si vous avez la moindre question.\nBien cordialement,\nRamdane Chergui",
+            "date": "2025-05-13T14:40:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "89b018de-fa30-f011-8c4d-7c1e52768c07",
+            "subject": "Re: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194",
+            "body": "Bonjour Ramdane,\nJe te remercie pour ton retour.\nJe souhaite simplement m’assurer de la date exacte que tu m’as indiquée : tu mentionnes jeudi\n(15) ou\nvendredi\n(16)\n. Peux-tu me confirmer à quelle date précise est programmée l’intervention ?\nMerci d’avance pour ta réponse.\nBien à toi,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi, mai 13, 2025 4:39 PM\nÀ :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>; emobility_support.si.fr@siemens.com <emobility_support.si.fr@siemens.com>; Malek DRIF <m.drif@autorecharge.fr>\nCc :\nNevo, Emmanuel <emmanuel.nevo@siemens.com>; Emeric DE BODINAT <e.debodinat@autorecharge.fr>; Nevo, Emmanuel <emmanuel.nevo@siemens.com>; Le Gal, Franck <franck.legal@siemens.com>; BRUA, ANTOINE <antoine.brua@siemens.com>; BRUA, ANTOINE <antoine.brua@siemens.com>\nObjet :\nRE: ID0422147-DC/Si-D/FR-[ Y2 / S2 313522141002 ] Charging Interruption CRM:02684000194\nBonjour,\nNous vous informons que M. Jonathan Larcher interviendra sur site pour le remplacement du convertisseur le jeudi 16 mai à 15h30.\nVous pouvez le contacter si besoin au +33 7 60 05 74 85.\nN'hésitez pas à revenir vers nous si vous avez la moindre question.\nBien cordialement,\nRamdane Chergui",
+            "date": "2025-05-14T19:37:28Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5bb192cd-9634-f011-8c4d-7c1e5235fbdd",
+            "subject": "RE: Urgent Investigation Request – Recurring Charging Issue on Sicharge D Unit (S/N Y2/S2313522141002) CRM:02441000098",
+            "body": "Bonjour,\nL’incident signalé sur cette borne a été résolu. Le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-05-19T09:51:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e0cb5024-9734-f011-8c4d-7ced8d4271e4",
+            "subject": "RE: Urgent Investigation Request – Recurring Charging Issue on Sicharge D Unit (S/N Y2/S2313522141002) CRM:02441000098",
+            "body": "Bonjour,\nL’incident signalé sur cette borne a été résolu. Le ticket sera donc clôturé.\nVous trouverez en pièce jointe le rapport d’intervention.\nCordialement,\nRamdane Chergui",
+            "date": "2025-05-19T09:53:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

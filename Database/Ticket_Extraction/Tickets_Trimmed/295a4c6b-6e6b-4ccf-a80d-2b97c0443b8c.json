@@ -1,0 +1,101 @@
+{
+    "incident_id": "295a4c6b-6e6b-4ccf-a80d-2b97c0443b8c",
+    "ticket_number": "0378060",
+    "title": "ID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error",
+    "created_on": "2024-09-06T07:08:32Z",
+    "last_activity": "2025-12-16T14:06:07Z",
+    "age": "245",
+    "description": "Reported behavior/issue:  Keeting these error on the charger.\nDC2 Outlet not ready - HPC charging cable cooling error\nPLC-Error-Flag DC2_CoolingUnit_EP1_Fan/Pump\nRoot cause: All evidence points to CAN communication problem\nSolution: Check the line of the CAN communication",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "003HJH",
+    "stage": null,
+    "serial_number": "MP / P9 170001021",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "80a31ddb-1e6c-ef11-bfe2-000d3a69a8a0",
+            "subject": "A new case manager was assigned to 0378060 CRM:00225092770",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0378060 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=295a4c6b-6e6b-4ccf-a80d-2b97c0443b8c",
+            "date": "2024-09-06T07:08:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4cc10999-1f6c-ef11-bfe2-00224899b868",
+            "subject": "A new case manager was assigned to 0378060 CRM:00225092777",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0378060 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=295a4c6b-6e6b-4ccf-a80d-2b97c0443b8c",
+            "date": "2024-09-06T07:14:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e27414a-236c-ef11-a670-000d3ab7063f",
+            "subject": "ID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729",
+            "body": "Hello ﻿Magnus,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170001021\nChargerID/Serial No.\n:\n003HJH\nProblem Description\n:\nPLC-Error-Flag 'DC2_CoolingUnit_EP1_Fan/Pump' changed to true - (BUS: 0 GSH: 1 GSS: 0 SDC: 0 SLK: 0 ErrorCode: 3)\nTroubleshooting\n:\nFrom the Error Codes, it seems like the CAN communication between EcoG and the Outlet's Microcontroller was lost. And after a possible reboot, it came back again.\nAs you can see here below, these are the codes that are in \"0\" as the logs show. All of them are related to the CAN.\nAfterwards, I used the AWS to confirm that there were multiple errors in the same timestamp, leading me to believe that there is no faulty component.\nTo understand what went wrong we need to check this line, from the XD101, the orange and white cable both should have 60Ohm until the KF11.\nThere are only 3 possibilities to what the problem might be:\nMicrocontroller CAN communication line was stopped/lost (HW/FW error)\nXD12 loose wiring (very unlikely)\nKF11 CAN communication error, possibly translating the information.\nWhat is your opinion? From my perspective, we can test this when the error is online but you need to request to the customer to leave the charger in error.\nFor future reference, your ticket number is\n0378060\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T07:40:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "241c5324-306c-ef11-bfe2-7c1e5233f636",
+            "subject": "Sv: ID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729",
+            "body": "Hi\nI have also checked aws and it seems like the error will disappear after less then 5 seconds.\nSo, it is difficult to troubleshoot with the error active.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 6 september 2024 10:59\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729\nHello ﻿Magnus,﻿\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / P9 170001021\nChargerID/Serial No.\n: 003HJH\nProblem Description\n:\nPLC-Error-Flag 'DC2_CoolingUnit_EP1_Fan/Pump' changed to true - (BUS: 0 GSH: 1 GSS: 0 SDC: 0 SLK: 0 ErrorCode: 3)\nTroubleshooting\n:\nFrom the Error Codes, it seems like the CAN communication between EcoG and the Outlet's Microcontroller was lost. And after a possible reboot, it came back again.\nAs you can see here below, these are the codes that are in \"0\" as the logs show. All of them are related to the CAN.\nAfterwards, I used the AWS to confirm that there were multiple errors in the same timestamp, leading me to believe that there is no faulty component.\nTo understand what went wrong we need to check this line, from the XD101, the orange and white cable both should have 60Ohm until the KF11.\nThere are only 3 possibilities to what the problem might be:\nMicrocontroller CAN communication line was stopped/lost (HW/FW error)\nXD12 loose wiring (very unlikely)\nKF11 CAN communication error, possibly translating the information.\nWhat is your opinion? From my perspective, we can test this when the error is online but you need to request to the customer to leave the charger in error.\nFor future reference, your ticket number is 0378060, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T09:12:35Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3ddb90b3-306c-ef11-a670-000d3ab7063f",
+            "subject": "ID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729",
+            "body": "Hi Magnus,\nThanks for the feedback.\nMy suggestion would be to check if the wires are properly inserted in the terminals and also if the connector XD12 is not loose.\nSince the error was only once, I cannot say to replace it.\nWhat do you want to do next? Should I send this ticket to RC-SE and you perform this troubleshooting or should I close the ticket and if the error reoccurs in the future we will then move to site?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-06T09:16:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74e33542-396c-ef11-bfe2-000d3ab02502",
+            "subject": "Sv: ID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729",
+            "body": "I can keep an eye on this and when will go on site for another issue we can check the cables.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 6 september 2024 11:21\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error CRM:00315001729\nHi Magnus,\nThanks for the feedback.\nMy suggestion would be to check if the wires are properly inserted in the terminals and also if the connector XD12 is not loose.\nSince the error was only once, I cannot say to replace it.\nWhat do you want to do next? Should I send this ticket to RC-SE and you perform this troubleshooting or should I close the ticket and if the error reoccurs in the future we will then move to site?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-06T10:17:47Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9696b0cd-3c6c-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0378060 has been closed. Are you satisfied with our provided solution? CRM:00315001733",
+            "body": "Dear Magnus\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0378060\nwith the title:\nID0378060-DC/Si-D/SE [MP / P9 170001021] DC2 Outlet not ready - HPC charging cable cooling error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-06T10:43:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a379270e-416c-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Incident Solved Via Remote (L2) after 4 hours, 5 minutes and 9 seconds.",
+            "date": "2024-09-06T11:13:42Z",
+            "extra": {}
+        }
+    ]
+}

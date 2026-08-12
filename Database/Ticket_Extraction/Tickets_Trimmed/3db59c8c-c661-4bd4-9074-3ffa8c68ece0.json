@@ -1,0 +1,68 @@
+{
+    "incident_id": "3db59c8c-c661-4bd4-9074-3ffa8c68ece0",
+    "ticket_number": "0407886",
+    "title": "ID0407886-DC/Si-D/SE [MP / R6 170002160] Session failed on DC1",
+    "created_on": "2025-02-19T12:21:29Z",
+    "last_activity": "2025-12-16T14:01:06Z",
+    "age": "4195",
+    "description": "Reported behavior/issue:\nNot able to charge on DC1. Stops att P03 Cable check.  See charging attempt 2025-02-19, 11:39:00 - 2025-02-19, 11:43:00 on DC1\nRoot cause:\nSolution:\nReboot",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "mShvyw",
+    "stage": null,
+    "serial_number": "MP / R6 170002160",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "26361283-e1ee-ef11-9341-7c1e522002af",
+            "subject": "0407886 - ID0407886-DC/Si-D/SE [MP / R6 170002160] Not able to charge on DC1",
+            "body": "",
+            "date": "2025-02-19T16:49:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b8983148-795d-05d1-a46a-e7200975fe1c",
+            "subject": null,
+            "body": "2025-02-19, 11:44:05\n2025-02-19T11:44:05.888486+00:00 sicharge-cp [local0:info] ecog-secc-adapter/5cd5c92bad46[732]: {\"type\":\"session_stop\",\"timestamp\":1739965446653,\"chargerId\":\"secc2300-08940\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"error\":{\"code\":38,\"msg\":\"V2G - message processing (e.g invalid param, wrong internal state) V2G09MSGSequence_V2G09Session_V2G09Session_Charging_V2G09CableCheck\"},\"source\":\"\",\"start\":1739965374181,\"duration\":0,\"energy\":0,\"user\":\"internal\",\"EVCCID\":\"0092a52c7033\",\"EVMAC\":\"00.92.a5.2c.70.33\"}}\nWed, 19 Feb 2025 11:44:06 GMT\n2025-02-19, 11:44:06",
+            "date": "2025-02-19T16:50:31Z",
+            "extra": {}
+        },
+        {
+            "id": "d718fc2e-e3ee-ef11-9341-7c1e522002af",
+            "subject": "ID0407886-DC/Si-D/SE [MP / R6 170002160] Not able to charge on DC1 CRM:01811000680",
+            "body": "Dear Magnus Hellberg,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnkita\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002160\nChargerID/Serial No.\n:\nmShvyw\nProblem Description\n: Not able to charge on DC1\nWe’ve reviewed the logs for the charging session you mentioned, and the failure was due to error code 38, a V2G (Vehicle-to-Grid) error, which typically happens due to a communication issue between the EV and the grid.\nWe’ve rebooted the charger and reported the issue. Please try another charging session, and we hope it proceeds smoothly without any errors.\nFeel free to reach out if you encounter any further issues.\nFor future reference, your case number is\n0407886\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T17:01:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2a87aa8-04f1-ef11-9341-6045bde1756e",
+            "subject": "RE: ID0407886-DC/Si-D/SE [MP / R6 170002160] Not able to charge on DC1 CRM:01811000680",
+            "body": "Dear Magnus Hellberg,\nWe have analyzed today’s logs, and we can confirm that charging session was successfully completed on DC1. The session was stopped from the EV side, and everything has been resolved on our end.\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0407886, the case is now closed.\nProblem Description\n: Not able to charge on DC1\nResolution\n: Reboot\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-22T10:06:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95c796ef-05f1-ef11-9341-7c1e52372dd0",
+            "subject": "Ticket 0407886 has been closed. Are you satisfied with our provided solution? CRM:01811000682",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0407886\nwith the title:\nID0407886-DC/Si-D/SE [MP / R6 170002160] Session failed on DC1\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-22T10:15:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

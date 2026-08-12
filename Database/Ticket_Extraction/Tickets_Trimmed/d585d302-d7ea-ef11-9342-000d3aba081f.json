@@ -1,0 +1,280 @@
+{
+    "incident_id": "d585d302-d7ea-ef11-9342-000d3aba081f",
+    "ticket_number": "0406897",
+    "title": "ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\"",
+    "created_on": "2025-02-14T13:24:33Z",
+    "last_activity": "2025-03-16T18:32:12Z",
+    "age": "43505",
+    "description": "Reported behavior/issue:\nCharging point 1 reports \"out of order\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status: Active_01/12/2025",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "d3Eh6S",
+    "stage": null,
+    "serial_number": "MP / RN 170002927",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1c0530fd-d6ea-ef11-9341-6045bde0456f",
+            "subject": "Webform_incident_SiCharge D_14-02-2025_SN: 170002927",
+            "body": "Dear Jens Hildenbrand,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002927\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jens Hildenbrand,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002927\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-14T13:24:24Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f56bd79d-e3ea-ef11-9341-6045bddfbfba",
+            "subject": "ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001085",
+            "body": "Dear Jens Hildenbrand,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / RN 170002927\nChargerID/Serial No.\n:\nd3Eh6S\nProblem Description\n: Charging point 1 reports “out of order”\nFor future reference, your case number is\n0406897\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T14:54:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e7417f27-f2ea-ef11-9341-6045bddfbfba",
+            "subject": "ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nHope you are doing well,\nAs per the reported date of 13/02/2025, we have reviewed the logs on SCB but did not find any charging activity on Outlet 1. Additionally, we checked the logs from the previous day based on the reported time but did not see any charging initiation. All charging sessions were performed on Outlet 2.\nCould you please provide the exact date and timestamp so that we can analyze further?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-14T16:38:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0768c5eb-a623-53fb-98ef-4bdfa994abdf",
+            "subject": null,
+            "body": "During our initial analysis, we identified a CoAP polling error on Outlet 1 & 2, along with Error Code 54 (EV communication problem detected) when a session was initiated for Outlet 2.\n2025-02-14T09:11:17.904529+00:00 sicharge-cp [local0:err] ecog-secc-adapter/c6ce9e32679d[711]: Error polling coap://10.20.17.101:5683/state Error: No reply in 4.25s.\n2025-02-13T23:27:35.678531+00:00 sicharge-cp [local0:info] sicharge-cp-backend/e87cc44ca275[711]: OCPP: Received result: Authorize (b3101c87-5ffc-4a6a-886b-a0f6cc0a020d) - {\"idTagInfo\":{\"status\":\"Invalid\"}\n2025-02-13T23:30:12.000000+00:00 secc [daemon:notice] SECC[841]: {\"type\":\"alert\",\"timestamp\":1739489412877,\"chargerId\":\"secc2300-09788\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\"}",
+            "date": "2025-02-14T17:11:23Z",
+            "extra": {}
+        },
+        {
+            "id": "11261b3c-10ee-ef11-9341-6045bddfbfba",
+            "subject": "RE: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nI hope this message finds you well.\nI wanted to inform you that the charger outlets were temporarily unavailable due to a\nCOAP error\n. However, the issue has now been resolved, and all outlets are available again.\nI trust that your query has been addressed and that you are satisfied with the resolution. The charger is now operating normally, with no active error flags.\nCould you kindly verify from your end and confirm that everything is functioning as expected?\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-18T15:51:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "242fb2c6-9aee-ef11-9341-000d3ab1a06e",
+            "subject": "AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Good morning,\nunfortunately the charger still does not work and shows „out of order“ (german: außer Betrieb) on the display.\nPlease check again.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 18. Februar 2025 16:54\nAn:\nJens Hildenbrand <Jens.Hildenbrand@gvsped.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086\nACHTUNG EXTERNE E-MAIL:\nBitte überprüfen Sie diese E-Mail und den Absender sorgfältig, bevor Sie Hyperlinks oder Anhänge öffnen!\nDear Jens Hildenbrand,\nI hope this message finds you well.\nI wanted to inform you that the charger outlets were temporarily unavailable due to a\nCOAP error\n. However, the issue has now been resolved, and all outlets are available again.\nI trust that your query has been addressed and that you are satisfied with the resolution. The charger is now operating normally, with no active error flags.\nCould you kindly verify from your end and confirm that everything is functioning as expected?\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-19T08:23:20Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6848a710-96f0-ef11-9341-002248a28911",
+            "subject": "RE: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nThanks for the feedaback,\nWe have observed that the charger's firmware is 5.0.21 Therefore, we recommend upgrading it tolatest one, as these updates typically include bug fixes, performance enhancements, and improved compatibility with electric vehicle communication protocols. By doing so, you can mitigate the errors we have been experiencing.\nIf the issue still persists after the update with latest one, we will proceed with further troubleshooting.\nCould you please provide us with the date and time so that we can proceed accordingly?\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-21T20:54:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b78dc3fa-95f2-ef11-be1f-7c1e5236eee4",
+            "subject": "AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Good morning,\nevery day between 09:00 and 11:00 p.m. (local time) there should be no risk to disturb any truck while loading.\nSo you can do the upgrading in this time-window.\nPlease give me a short hint when you plan to start it.\nThank you very much.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 21. Februar 2025 22:00\nAn:\nJens Hildenbrand <Jens.Hildenbrand@gvsped.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086\nACHTUNG EXTERNE E-MAIL:\nBitte überprüfen Sie diese E-Mail und den Absender sorgfältig, bevor Sie Hyperlinks oder Anhänge öffnen!\nDear Jens Hildenbrand,\nThanks for the feedaback,\nWe have observed that the charger's firmware is 5.0.21 Therefore, we recommend upgrading it tolatest one, as these updates typically include bug fixes, performance enhancements, and improved compatibility with electric vehicle communication protocols. By doing so, you can mitigate the errors we have been experiencing.\nIf the issue still persists after the update with latest one, we will proceed with further troubleshooting.\nCould you please provide us with the date and time so that we can proceed accordingly?\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-24T09:59:14Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6356009d-a5f5-ef11-be1f-7c1e52fb539c",
+            "subject": "RE: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nHope you are doing,\nCan we schedule it for tomorrow between 9 PM and 11 PM? As per IST, that would be between 2 AM and 4 AM. Please let me know if this time works for you.\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-28T07:28:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f86c1d6-a8f5-ef11-be1f-6045bde0265d",
+            "subject": "AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Abhinav,\nfor us the time mentioned is OK.\nThank you very much.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 28. Februar 2025 08:31\nAn:\nJens Hildenbrand <Jens.Hildenbrand@gvsped.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086\nACHTUNG EXTERNE E-MAIL:\nBitte überprüfen Sie diese E-Mail und den Absender sorgfältig, bevor Sie Hyperlinks oder Anhänge öffnen!\nDear Jens Hildenbrand,\nHope you are doing,\nCan we schedule it for tomorrow between 9 PM and 11 PM? As per IST, that would be between 2 AM and 4 AM. Please let me know if this time works for you.\nLooking forward to your confirmation\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-28T07:51:39Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "996eef1d-bff8-ef11-bae2-6045bde0265d",
+            "subject": "RE: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nI hope you are doing well.\nWe have upgraded the firmware to the latest version. Could you please confirm by performing a few sessions? Kindly share your update so we can proceed accordingly.\nLooking forward to your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-04T06:08:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "abd01f32-86fa-ef11-bae2-7c1e52fad806",
+            "subject": "Re: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Abhinav,\nUnfortunately nothing changed.\nThe charger is still out of order.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.",
+            "date": "2025-03-06T12:26:21Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1fbb8efd-9efa-ef11-bae2-000d3ade6663",
+            "subject": "Re: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nI hope you are doing well.\nWe have rechecked the charger logs and identified that\nOutlet 1 is healthy and available for charging\n.\nKindly refer the below log where you can outlet 1 is available.\n2025-03-05T23:39:51.11026\n\"connectorId\"\n:1,\n\"errorCode\"\n:\n\"NoError\"\n,\n\"status\"\n:\n\"Available\"\n}\nCould you please\nreconfirm\nwhether the\nserial number of the charger matches\nthe one mentioned in the ticket? Additionally, if possible, kindly share a\nphoto of the charger's nameplate\nfor verification.\nLooking forward to your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-06T15:23:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a422f3d-60fb-ef11-bae2-000d3ab07fc1",
+            "subject": "Re: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0406897\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-07T14:27:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f113e064-69fb-ef11-bae2-7c1e5236cda4",
+            "subject": "AW: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Hello Abhinav,\nsorry, I wasn´t in my office until now.\nAttached you find the data-plate oft he charger.\nThe lights on the side oft he charger are white on the side that doesn´t work, green on the working side.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 7. März 2025 15:28\nAn:\nJens Hildenbrand <Jens.Hildenbrand@gvsped.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRe: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086\nACHTUNG EXTERNE E-MAIL:\nBitte überprüfen Sie diese E-Mail und den Absender sorgfältig, bevor Sie Hyperlinks oder Anhänge öffnen!\nDear Jens Hildenbrand,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0406897\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-07T15:32:38Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7aab729c-6dfb-ef11-bae2-7c1e52774092",
+            "subject": "RE: AW: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nI hope this email finds you well.\nWe have noticed that the charger serial number(\nMP / RN 170002927)\nyou initially reported does not match the nameplate provided. After verifying the correct serial number from the photos you shared (\nMP/RN 170002926\n), we have reviewed the logs and identified some anomalies related to charger outlet 1.\nWe are currently analyzing the issue of\nMP/RN 170002926\nand will get back to you with an update soon.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-07T16:02:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c599eb84-245d-65f5-a1a6-b8dcc07fdb8c",
+            "subject": null,
+            "body": "",
+            "date": "2025-03-07T16:15:51Z",
+            "extra": {}
+        },
+        {
+            "id": "cd072bf9-b1fd-ef11-bae3-7c1e52768c07",
+            "subject": "RE: AW: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand\nHope you are doing well,\nWe have noticed that the charger serial number(\nMP / RN 170002927)\nyou initially reported does not match the nameplate provided. After verifying the correct serial number from the photos you shared (\nMP/RN 170002926\n), we have reviewed the logs and identified some anomalies related to charger outlet 1.\nWe have identified a communication error on Outlet 1, which may be resolved by upgrading to the latest firmware.\nAdditionally, we recommend updating your charger’s firmware to the latest version, as it includes bug fixes, performance enhancements, and improved compatibility with electric vehicle communication protocols, helping to mitigate the issues you’ve been experiencing.\nTherefore, please share the date and time for scheduling this update on charger MP/RN 170002926.\nWould 09:00 or 11:00 p.m. (your local time) work for you? Please let me know your preference.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-10T13:17:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b1d1889-c1fd-ef11-bae3-7c1e52350ea5",
+            "subject": "Re: AW: AW: AW: AW: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Abhinav,\nIn the next days 9 p.m. would be OK.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.",
+            "date": "2025-03-10T15:08:37Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "20f34cd0-497a-af58-87a2-0dde8530361f",
+            "subject": "Internal note",
+            "body": "Informed to C shift collogue to upgrade the firmware to latest one",
+            "date": "2025-03-12T11:20:50Z",
+            "extra": {}
+        },
+        {
+            "id": "d2b6c197-ce01-f011-bae3-6045bde0265d",
+            "subject": "ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens,\nI hope you are doing well.\nWe have upgraded the charger to the latest version and have thoroughly checked its status. There are no error flags raised, and everything looks good now.\nKindly refer to the image below for reference.\nAs everything is functioning properly, you may proceed with closing the ticket.\nThank you for your support.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-15T18:52:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "20b98ffc-ce01-f011-bae3-7c1e5236eee4",
+            "subject": "Automatische Antwort: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "﻿\n﻿\nSehr geehrte Damen und Herren,\nich bin bis einschließlich 23.03.2025 nicht im Büro und habe nur eingeschränkten Zugang zu meinen Emails.\nIn dringenden Fällen wenden Sie sich bitte an meinen Kollegen Herrn Mock ( benjamin.mock@gvsped.de ).\nIhre Email wird nicht weitergeleitet.\nVielen Dank für Ihr Verständnis.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nTelefon:\n+49-7150-3006-64\nTelefax:\n+49-7150-3006-62\nE-Mail:\njens.hildenbrand@gvsped.de\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet",
+            "date": "2025-03-15T18:55:06Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0d6b6f0f-6d02-f011-bae3-7c1e52350ea5",
+            "subject": "Re: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Abhinav,\nThank you for your support.\nThe charger is working again without problems now.\nMit freundlichen Grüßen\nJens Hildenbrand\nGeschäftsführer\nGroße-Vehne Speditions GmbH Stuttgart\nRudolf-Diesel-Straße 2\nD-70806 Kornwestheim\nGeschäftsführer: Jens Hildenbrand, Benjamin Mock\nAmtsgericht Stuttgart HRB 205101\nSitz der Gesellschaft ist Kornwestheim\nKooperationspartner der GV-Trucknet\n￼\nWir arbeiten ausschließlich auf Grundlage der Allgemeinen Deutschen Spediteurbedingungen 2017 - ADSp 2017 -. Hinweis: die ADSp 2017 weichen in Ziffer 23 hinsichtlich des Haftungshöchstbetrages für Güterschäden (§431 HGB) vom Gesetz ab, indem sie die Haftung bei multimodalen Transporten unter Einschluss einer Seebeförderung und bei unbekanntem Schadensort auf 2 SZR/kg und im Übrigen die Regelhaftung von 8,33 SZR/kg zusätzlich auf 1,25 Millionen EUR je Schadensfall sowie 2,5 Millionen EUR je Schadensereignis, mindestens aber 2 SZR/kg, beschränken.",
+            "date": "2025-03-16T13:46:33Z",
+            "extra": {
+                "sender": "jens.hildenbrand@gvsped.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "051971e6-9202-f011-bae3-6045bddf319c",
+            "subject": "Re: ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001086",
+            "body": "Dear Jens Hildenbrand,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0406897, the case is now closed.\nProblem Description\n: Charging point 1 reports \"out of order\"\nResolution\n: Firmware has ben upgraded as issue resolved\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-16T18:17:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5f15c6ce-9402-f011-bae3-6045bddf319c",
+            "subject": "0406897 - ID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\" CRM:00641001217",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406897\nwith the title:\nID0406897-DC/Si-D/DE-[MP / RN 170002927] Charging point 1 reports \"out of order\"\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAbhinav Malokar\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-16T18:31:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

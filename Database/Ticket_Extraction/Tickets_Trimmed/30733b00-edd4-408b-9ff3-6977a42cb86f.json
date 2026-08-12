@@ -1,0 +1,116 @@
+{
+    "incident_id": "30733b00-edd4-408b-9ff3-6977a42cb86f",
+    "ticket_number": "0399022",
+    "title": "ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23",
+    "created_on": "2025-01-09T10:42:49Z",
+    "last_activity": "2025-12-16T14:02:20Z",
+    "age": "15787",
+    "description": "Reported behaviour/issue: FW stuck in Rollout\nRoot cause:\nSWUPDATE bug\nWorkaround:\nUpdate manually via Win SCP\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\n-----------------------------//------------------------------\nReported behaviour/issue:\nAfter FW update the CFAST is corrupted\nRoot cause:\nUnclear\nWorkaround:\nFlash CFAST card with v5.0.23\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNote to Warranty Manager:\nComplicated topic, we didn't request RC to replace the CFAST and caused delay in the troubleshooting and solution (possible 2 extra days) since it appears that the new CFAST was faulty, after flashing the original one it's working.\nTroubleshooting also took much longer that it should due to the new update of the routers, the routers stop working (in rare cases), where we needed to factory reset the routers several times until it was working and due to this we needed to wait for the charger to go into Failsafemode to understand where the problem was.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "nqq1M7",
+    "stage": null,
+    "serial_number": "Y2 / R4 313038785003",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "6e9ab281-76ce-ef11-b8e9-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0399022 CRM:00225146387",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0399022 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=30733b00-edd4-408b-9ff3-6977a42cb86f",
+            "date": "2025-01-09T10:43:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49673ba5-76ce-ef11-b8e9-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0399022 CRM:00225146388",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0399022 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=30733b00-edd4-408b-9ff3-6977a42cb86f",
+            "date": "2025-01-09T10:44:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb8e1c0c-87d1-ef11-8ee9-7c1e52378e9b",
+            "subject": "ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Dear Markus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nHelsinki - Suutarila\nChargerID/Serial No.\n:\nnqq1M7\nProblem Description\n: Cannot update FW to v5.0.23\nTroubleshooting\n: We already checked with R&D and there was a bug SWUPDATE, we performed the update but it seems the charger didn't come back online yet. I believe the only solution we have here is to go on site and check what happened.\nFor future reference, your case number is\n0399022\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T08:19:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f965c5b-19d3-ef11-8ee9-000d3a691687",
+            "subject": "ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Hi guys, good morning.\nJust a quick update on the ticket.\nWhen we arrived on site the charger was in boot loop and didn't even reach the Hello screen or the usual Siemens screen with the % of loading.\nWhen we flashed the CFAST, we got a new ID (possible that something went wrong in the restore config) and we got to failsafemode since the Routers had the previous password.\nIt seems that Router 2 completely went faulty since we cannot reach it or access it, so we replaced it but Router 1 also looks faulty as at first I could access it via SSH and not via WebUI but now I can't access neither.\nAfter you replaced the Router 2 the charger didn't come back online and it seems Router 1 is faulty too.\nLet me know when you are able to go on site and replace the router.\nThank you and apologies for this trouble so far.\nBest regards,\nFrancisco",
+            "date": "2025-01-15T08:18:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd6cda1d-fed6-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Hello,\nThank you for the awesome support last Friday!\nDo we have any idea what was the root cause of the issue?\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2025-01-20T07:14:09Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fd6e7350-09d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Hi Sakari,\nUnfortunately, I can only theorize that after the update, we ran into a conflict or similar in the CFAST that caused it to do that first boot loop with just Sicharge OC 5.0.23, after that we replaced the CFAST to no avail, it seems that this CFAST is not working properly either way, we need to check why the Amazon cloudwatch service is not working and the IDs are being created everytime we start up.\nQuick summary of all the interventions that we did:\nTried a new CFAST and didn't work with the problem mentioned above\nFactory reseted the routers when connection was not possible/failsafe mode was active\nRetried the original CFAST (newly flashed) and it worked after some router factory resets and flashing of routers.\nThe charger is now in v6.0.3 and working.\nLet me know if this information is enough for you and I will close the ticket.\nBest regards,\nFrancisco",
+            "date": "2025-01-20T08:34:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5400fab-0fd7-ef11-8eea-7c1e5237dbeb",
+            "subject": "Automaattinen vastaus: ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Dear sender,\nI'm on business trip and I have limited access to my email.\nIn urgent cases, please contact sakari.harjunpaa@siemens.com.\nBr,\nMarkus",
+            "date": "2025-01-20T09:19:38Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cf14f97b-11d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23 CRM:00315002246",
+            "body": "Hello,\nYes and thanks for the excellent support once again.\nFor the claim process I would like to add that the troubleshooting for us in the region, L2 and L3 and even help with R&D took 5 days and multiple site interventions, so it was not at all typical issue. Due to the programming of Sicharge D we needed to wait every time for the failsafe mode to trigger (taking over 1 hour per failsafe wait) and because of that troubleshooting the issue took a lot of time and specially the waiting time at the site.\nAdditionally just to clarify the charger is still running in the v5.0.23 but working fine! I hope that upgrading it to the v6.0.3 will go smoothly!\nIf nothing else we can close the ticket!\n😊\nThank you and I will leave a great feedback for you guys!\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2025-01-20T09:32:45Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5e4bc354-13d7-ef11-8eea-7c1e5237dbeb",
+            "subject": "Ticket 0399022 has been closed. Are you satisfied with our provided solution? CRM:00315002264",
+            "body": "Dear Sakari,\nI wrote the notes to the Warranty Manager in the ticket where I mention that due to the faulty CFAST and Router strange behavior after the update it took several days.\nSince we uploaded the new update I thought it was already in v6.0.3.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0399022\nwith the title:\nID0399022-DC/Si-D/FI-[nqq1M7] -Unable to download FW version 5.0.23\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-20T09:45:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

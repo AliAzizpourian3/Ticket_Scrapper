@@ -1,0 +1,125 @@
+{
+    "incident_id": "188e4877-d9e4-49e2-95a7-159d65c7e343",
+    "ticket_number": "0403511",
+    "title": "ID0403511-Depot360 DC/SiD/NO- ALN 102 Connector 2 in EV Suspended mode",
+    "created_on": "2025-02-02T11:58:01Z",
+    "last_activity": "2026-01-20T12:56:47Z",
+    "age": "73647",
+    "description": "Serial# - 170004183\nMLFB# - NA\nDevice Type: SiCharge D\nOn DAMEX Sanctioned List?: No\nIf Siemens Employee, ECN/SRE?: No\nNetwork Connectivity Method: SIM\nAvailable in Siemens Cloud: Yes\nFirmware Version: v6.0.3-0-g215cb74\nBackend/Group:Depot360 AI (Alnabru)\nCar Make/Model: (applicable if charging issues/unable to charge)\nDate/Time of Issue Last encountered: 2/2/2025  10:51 AM UTC\nAgent Notes: Slow charging rate - ALN 102 connector 2. Time stamp added in the screen shot in UTC.\nThe charging session began with 77Kw power delivery and then dropped to 0KW gradually in one hour.\nVehicle Connected :\n23532\n04.02.2025: EVC3-8486",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "HIxl9n",
+    "stage": null,
+    "serial_number": "MP / S0 170004170",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "140caa2d-5fe1-ef11-8eea-000d3ab009dd",
+            "subject": "0403511 - Vehicle in EV suspended mode CRM:00902000089",
+            "body": "Hi Team,\nWe noticed that the vehicle number -\n23532 , which is\ncharging with charger ALN 102,  Connector 1 is not taking any power.\nSession began at (Session began at 11:40 PM CET)\nThe vehicle was plugged in with 40% SOC and is now stuck at 46% SOC.\nFrom the logs we can see that the power import (i.e power taken the vehicle reduced to 0kw gradaully from initial 77Kw).\nWe would recommmend\nReconnecting the vehicle to the same connector\nIf issue still persist, connect the vehicle with the alternative connector.\nAbove mentioned steps would also help us further into our investigation.\nThank you for your kind patience and support., while we get back to you with the resolution.\nRegards\nSiemens Depot360 NOC Team.",
+            "date": "2025-02-02T12:14:06Z",
+            "extra": {
+                "sender": "depot360.support@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1155aff-02b5-40b7-834a-46c35903236c",
+            "subject": null,
+            "body": "Session iD in Depot360 AI :\n665904514",
+            "date": "2025-02-02T12:30:09Z",
+            "extra": {}
+        },
+        {
+            "id": "5a4ce17b-61e1-ef11-8eea-000d3ab009dd",
+            "subject": "RE: 0403511 - Vehicle in EV suspended mode CRM:00902000089",
+            "body": "Hi Team,\nWe see that the vehicle 23532 is now connected to ALN 102 - Conenctor 1 and is now charging at  KW.\n(1:32 PM CET)\nThis seems fine now. However, we will continue to monitor the charging session and notify you if we notice some issue.\nWe will keep you updated on our ongoing investigation, meanwhile please feel free to contact us for any query or support.\nRegards\nSiemens Depot360 NOC Team",
+            "date": "2025-02-02T12:30:28Z",
+            "extra": {
+                "sender": "depot360.support@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b3913f9d-62e1-ef11-8eea-000d3ab009dd",
+            "subject": "RE: 0403511 - Vehicle in EV suspended mode CRM:00902000089",
+            "body": "Hi Team,\nWe see that the vehicle 23532 is now connected to ALN 102 - Conenctor 1 and is now charging at  KW.\n(1:32 PM CET)\nThis seems fine now. However, we will continue to monitor the charging session and notify you if we notice some issue.\nWe will keep you updated on our ongoing investigation, meanwhile please feel free to contact us for any query or support.\nRegards\nSiemens Depot360 NOC Team",
+            "date": "2025-02-02T12:38:39Z",
+            "extra": {
+                "sender": "depot360.support@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9ae3fa24-1a9c-8d75-ab47-3a1186f23a14",
+            "subject": null,
+            "body": "Technician onsite tried replugging the vehicle with the same connector 2 twice,  from DF graph we could see the power delivery at 77 KW .\nThe same vehicle 23532 when connected with ALN 102 connector 2, began importing power at 169KW which rose to 200KW and is charging normal.\nCharging session id in Depot369 :\n397475524",
+            "date": "2025-02-02T12:57:37Z",
+            "extra": {}
+        },
+        {
+            "id": "dfb12732-5565-4bda-853a-e7b37408f214",
+            "subject": null,
+            "body": "Hi Team ,\nWe have been noticing an issue with certain charging sessions, where\nThe charging session would normally begin with 70 -60 Kw power delivery and then gradually drop till 0Kw and end up in ‘Suspended EV’ mode.\nThe vehicle start SOC could be as low as 19% - 40% so SOC is also not the reason for drop in the import power.\nThe same vehicle when plugged with different connector would charger normally (around 160 - 200Kw depending on the SOC).\nHere is a screen shot from current charging session on ALN 102, Connector 2, which began around 11:40 AM CET, 2/2/2025, which  continued 1:23 PM CET 2/2/2025\nVehicle number 23532\nWe need your help investigating the reason behind this issue.\nWe are attaching a file containing details of past such Charging sessions.\nForm the SCB logs, could we also check the vehicle FW of Solaris vehicles which were used during such charging session ?\nLow Energy Delivered Cases for past 14 days.docx",
+            "date": "2025-02-02T13:39:51Z",
+            "extra": {}
+        },
+        {
+            "id": "ec6f7587-2b4c-e113-9368-08a1fe4bdbdf",
+            "subject": "Note to L2",
+            "body": "Charger serial number for\nALN 102\nis\nMP / SD 170004183\n. Need to analyze the logs for the mentioned time for the mentioned issue.",
+            "date": "2025-02-02T17:25:35Z",
+            "extra": {}
+        },
+        {
+            "id": "7f2623d1-d04d-c0be-b877-523e9df1efc5",
+            "subject": "Handover to ES",
+            "body": "a) Problem Description: Connector 2 power for\nMP / SD 170004183\nderating during a charging session.\nb) Suspected Root Cause: Connector 2 issue / EV issue\nc) Action Performed: During the charging session dt. 02/02/25 → 10:40 UTC time, we see that a charging session with transaction id 665903339 started to derate after a few minutes of charging (~10:47 UTC). The charging started at 77kW and went down to 0kW. We see that the actual deration of values started after we receive a power converter error log :\n2025-02-02T10:56:01.947583+00:00 sicharge-cp [local0:info] sicharge-cp-backend/5664ccf39e58[709]: PLC-Error-Flag 'PowerConverter[1]' changed from false - ('2102313PAVKXP9002342SA022010000000FW:DC903PF903H100,F:1') to false - ('\n2102313PAVKXP9002342SA022000000000FW:DC903PF903H100\n,F:1')\nOur observation is that the power converter id is not identical in the same log (the id in bold does not match the id above).\nWe tried checking EcoG logs (attached), however we only have them available from 11:00 onwards, where kW values were already dropped to 0kW.\nWe also checked the mac of the vehicle (\n00.16.81.03.6c.8e) and we see that this vehicle chargers without deration at CP2 and on other chargers in this project, we also saw that when CP1 was occupied and the vehicle was on CP2, the deration did not happen.\nWe also see that for CP2 this deration of kW is not constant as multiple different charging sessions are seen successful.\nd) Charger SW Version: 6.0.3\ne) Reason for Handover: Detailed log analysis / troubleshooting\nf) Fault history: NA\nEV Make and Model: ESolaris\nAttachment: EcoG logs\nPLEASE note : This case came to NOC from Depot360 team and hence we do not have Business flow change access. Once after log analysis done, please transfer this case to NOC so that we will transfer it back to Depot360 with the relavant troubleshooting steps.",
+            "date": "2025-02-03T06:43:05Z",
+            "extra": {}
+        },
+        {
+            "id": "6cce6a9a-5509-f011-bae2-7c1e52fb82d3",
+            "subject": "ID0403511-Depot360 DC/SiD/NO- ALN 102 Connector 2 in EV Suspended mode CRM:00315002470",
+            "body": "Hi colleagues, good morning/afternoon.\nI got this ticket from L3 since the issue has been already analysed in ID0400611 and a fix in on it's way in v7.0.X.\nI believe we can close this ticket since we already have this other one still active with Melba as case manager, or please let me know if I should send this ticket to the Depot360 queue and you do what you think it's best.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-03-25T08:46:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f1b973d4-5609-f011-bae2-7c1e52fbf5b3",
+            "subject": "ID0403511-Depot360 DC/SiD/NO- ALN 102 Connector 2 in EV Suspended mode CRM:00315002470",
+            "body": "Hi colleagues, good morning/afternoon.\nI got this ticket from L3 since the issue has been already analysed in ID0400611 and a fix in on it's way in v7.0.X.\nI believe we can close this ticket since we already have this other one still active with Melba as case manager, or please let me know if I should send this ticket to the Depot360 queue and you do what you think it's best.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-03-25T08:55:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "41460a20-6709-f011-bae3-7c1e5287f582",
+            "subject": "RE: ID0403511-Depot360 DC/SiD/NO- ALN 102 Connector 2 in EV Suspended mode CRM:00315002470",
+            "body": "Hello Francisco,\nThank you for updating.\nPlease send the ticket back to Depto360 queue and we will close it.\nRegards\nSiemens Depot360 NOC Team",
+            "date": "2025-03-25T10:51:44Z",
+            "extra": {
+                "sender": "depot360.support@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9fbf828a-6c3f-85fb-b10a-f0ca4d8d9654",
+            "subject": null,
+            "body": "The issue has been already analysed in ID0400611 and a fix in on it's way in v7.0.X.\nThere is another ticket ‘0400611’ open with the same issue, Hence clsing this. Further followup on the fix will be done on the existing ticket.",
+            "date": "2025-03-25T15:25:08Z",
+            "extra": {}
+        }
+    ]
+}

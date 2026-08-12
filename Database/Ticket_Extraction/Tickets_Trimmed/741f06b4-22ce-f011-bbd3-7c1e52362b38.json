@@ -1,0 +1,101 @@
+{
+    "incident_id": "741f06b4-22ce-f011-bbd3-7c1e52362b38",
+    "ticket_number": "0464917",
+    "title": "ID0464917-DC/Si-D/HU-[MP / S3 170003430] One Port of HUMOL0158 Missing Data",
+    "created_on": "2025-11-30T19:28:18Z",
+    "last_activity": "2026-01-19T08:27:31Z",
+    "age": "41456",
+    "description": "Reported behavior/issue:  One Port of HUMOL0158 Missing Data\nSolution:  Not SiD related issue\nyyyy-mm-dd:  NA",
+    "type": 1,
+    "priority": 3,
+    "stage": "Resolved",
+    "serial_number": "MP / S3 170003430",
+    "case_nature_code": 580000001,
+    "chargerID": "6koRpR",
+    "additional_info": [
+        {
+            "id": "7acbe1ac-22ce-f011-bbd3-7c1e52880288",
+            "subject": "Hubject CDR Rejection: Missing Signed Meter Data on One Port of HUMOL0158 Siemens Sicharge D Charger (DATA_ERROR 022)",
+            "body": "Dear Support Team,\nWe are experiencing a critical issue with the following charger:\nProduct: Sicharge D - Charging Center\nCharger ID:\n“6koRpR”\nSerial No.: “MP/S3170003430”\nCustomer charger ID: HUMOL0158\nCustomer: MOL Hungarian Oil and Gas Public Limited Company\nOne of the charger's connectors (ports) (CP2) is functioning correctly and successfully sending Charge Detail Record (CDR) data to the Hubject platform.\nHowever, CDRs originating from the other connector (CP1) are being rejected by Hubject.\nThis problem is causing significant revenue loss.\nCore Problem:\nHubject is rejecting CDRs from the faulty port with DATA_ERROR 022 (\"Data Inconsistency\"). The stated reason is the absence of signed meter data (SignedMeteringValues). The charger likely sends a \"public key,\" indicating Eichrecht compatibility, but the signed meter data required by Hubject is not included in the CDR from the faulty port.\nDetails and Observations (HUMOL0158):\nCharger ID:\nHUMOL0158\nProblem:\nOn the same charger, one port (e.g., Connector Identity Key=1) successfully sends data, while CDRs from the other port (e.g., Connector Identity Key=2) are rejected by Hubject.\nError Code:\nHubject DATA_ERROR 022 (\"Data Inconsistency\"), with the specific reason: \"the sent CDR must contain the SignedMeteringValues.\"\nObservations, suggestions:\nIf one charging point works and another does not, it might be a\nconfiguration problem for that specific outlet\n.\nThe CalibrationLawDataAvailabilityType parameter is likely set to \"EXTERNAL,\" which implies the expectation of Eichrecht compatibility. The charger sends a \"public key,\" but the signed meter data is missing.\nAccording to the attached screenshot (MOL_Roaming_issue_1.jpg): all the correct transactions are on the HU*MOL*E937*2 (2nd) connector (Kerekharaszt South side), and all the transactions on the 1st connector are incorrect. The incorrect transactions are in red, the good transactions are in white. (Attached one failed and one good transaction log as well: failed_transaction_log.jpg & good_transaction_log.jpg)\nthis issue occurs on other chargers as well, for example:\nID: 15LEDe; s/n: MP / S4 170003434\nBackend System:\nDriivz\nQuestion and Request:\nPlease investigate the configuration of the HUMOL0158 charger, specifically focusing on any differences between the two ports that might affect the transmission of signed meter data.\nIs it possible to configure the faulty port exactly like the working port, so that it also correctly sends Eichrecht-compliant signed meter data (MID) to Hubject when CalibrationLawDataAvailabilityType is set to \"EXTERNAL\"?\nWhat steps do you recommend for a permanent resolution to this issue?\nWe kindly request your urgent assistance in resolving this problem.\nThank you!\nYours sincerely,\nLaszlo Szilagyi\nE-mobility service portfolio manager\nSiemens Ltd.\nSmart\nInfrastructure\nSI E EU HU\nAddress: 1143 Budapest\n,\nGizella st. 51-57.\nMobile\n: +36 30 096 0923\nE-mail:\nlaszlo.szilagyi.ext@siemens.com\nWeb:\nwww.siemens.com",
+            "date": "2025-11-30T19:27:59Z",
+            "extra": {
+                "sender": "laszlo.szilagyi.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c6fe7a11-23ce-f011-bbd3-7c1e52880b1b",
+            "subject": "A new case manager was assigned to 0464917 CRM:00225295969",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0464917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=741f06b4-22ce-f011-bbd3-7c1e52362b38",
+            "date": "2025-11-30T19:30:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d44a15f7-23ce-f011-bbd3-7c1e523628c9",
+            "subject": "ID0464917-DC/Si-D/HU-[MP / S3 170003430] One Port of HUMOL0158 Missing Data CRM:02888000463",
+            "body": "Dear\nLaszlo Szilagyi\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003430\nChargerID\n: 6koRpR\nProblem Description\n: One Port of HUMOL0158 Missing Data\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0464917\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAnit Mukherjee\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-30T19:37:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08f5fb0f-53cf-f011-bbd2-7c1e52362ec6",
+            "subject": "A new case manager was assigned to 0464917 CRM:00225296858",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0464917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=741f06b4-22ce-f011-bbd3-7c1e52362b38",
+            "date": "2025-12-02T07:47:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee9826af-f0d0-f011-bbd3-7ced8d4258c6",
+            "subject": "A new case manager was assigned to 0464917 CRM:00225298259",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0464917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=741f06b4-22ce-f011-bbd3-7c1e52362b38",
+            "date": "2025-12-04T09:07:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bcb65292-772d-7de0-ba55-f8de8d3d6337",
+            "subject": "Status Update",
+            "body": "Chargers in RC-CH at Manor are using Hubject as well. To check if maybe they know what to do.\nThis is not a Sicharge D product failure.\nIssue caused by a parameter exchanged between CPO Backend and Roaming platform. This parameter is not sent by the charger.",
+            "date": "2025-12-11T16:18:40Z",
+            "extra": {}
+        },
+        {
+            "id": "2cfc899b-c1e4-f011-8544-7c1e523628c9",
+            "subject": "ID0464917-DC/Si-D/HU-[MP / S3 170003430] One Port of HUMOL0158 Missing Data CRM:02888000463",
+            "body": "Hi Laszlo, good afternoon.\nAs far as we know, there are some chargers in Switzerland that are using Hubject as well, since this is not a SiD product issue, and it's related to CPO backend and Roaming platform, please reach out to them and understand if they are facing the same problem, since this parameter is not sent by the charger, there is nothing we can do.\nI will close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-12-29T14:21:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "016609e9-c1e4-f011-8544-7c1e523628c9",
+            "subject": "A new case manager was assigned to 0464917 CRM:00225310732",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0464917 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=741f06b4-22ce-f011-bbd3-7c1e52362b38",
+            "date": "2025-12-29T14:23:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

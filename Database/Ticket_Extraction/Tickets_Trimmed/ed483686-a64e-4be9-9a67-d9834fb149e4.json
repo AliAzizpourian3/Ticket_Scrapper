@@ -1,0 +1,90 @@
+{
+    "incident_id": "ed483686-a64e-4be9-9a67-d9834fb149e4",
+    "ticket_number": "0423379",
+    "title": "ID0423379-DC/Si-D/SE [MP / S0 170004104]  Charger never recieves start transaction",
+    "created_on": "2025-05-09T06:39:20Z",
+    "last_activity": "2025-05-27T07:04:00Z",
+    "age": "25944",
+    "description": "Reported behavior/issue:\nCustomer have reported a couple of times that the charger doesn't start transaction even if they send it from the backend. Last time it started to work after a couple of days and then also the backend recieved a lot of logs. Can it be a bad connectopn to the backend?\nLast time this happend was 2025-05-08 19:30 local time. They also tried to reboot from backend but nothing happend.\nRoot cause:\nSolution:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "DZ0pmR",
+    "stage": null,
+    "serial_number": "MP / S0 170004104",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7df9d47d-b92c-f011-8c4d-7c1e523508ba",
+            "subject": "ID0423379-DC/Si-D/SE [MP / S0 170004104]  Charger never recieves start transaction CRM:00315002613",
+            "body": "Dear Magnus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S0 170004104\nChargerID/Serial No.\n:\nDZ0pmR\nProblem Description\n: Charger never receives StartTransaction\nTroubleshooting\n:\nFrom the timestamp you gave me 8/May 19:30 local time, which in SCB is 17:30, here is what I can see:\n2025-05-08T17:25:32.108085+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[641]: OCPP: Send command: StartTransaction (663c066c-091c-4d58-91d9-b16ba374d1ed) - {\"connectorId\":1,\"idTag\":\"33BDBBF4\",\"meterStart\":21050382,\"timestamp\":\"2025-05-08T17:25:32.103Z\"}\n2025-05-08T17:25:34.382230+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[641]: OCPP: Received result: StartTransaction (663c066c-091c-4d58-91d9-b16ba374d1ed) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"transactionId\":2024418}\nFrom the logs it was sent and received, I even checked from 17:00 until 19:00 to be 100% sure there are no sessions and this is the only session.\nI also don't see any message of OCPP Offline.\nCan you please tell me what were the consequences? Is this a depot or public charging?\nFor future reference, your case number is\n0423379\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T09:39:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a6f789d-ba2c-f011-8c4d-000d3ad97a58",
+            "subject": "Sv: ID0423379-DC/Si-D/SE [MP / S0 170004104]  Charger never recieves start transaction CRM:00315002613",
+            "body": "This is the message I got from the customer. I have translated it to English.\nHi again,\nNow we have had a similar problem approx. 19.30. The charger does not send to the backend that the vehicle is connected....\nThe truck that was tested then, seemed to change position in the screen when the vehicle was connected and when the RFID was read but never received a signal to start charging.\nI have tried sending the restart command \"reboot\" from Vourity to the charger in the hope that it would start at 21:13 but has not started yet...\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 9 maj 2025 11:45\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>\nÄmne:\nID0423379-DC/Si-D/SE [MP / S0 170004104] Charger never recieves start transaction CRM:00315002613\nDear Magnus,\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / S0 170004104\nChargerID/Serial No.\n: DZ0pmR\nProblem Description\n: Charger never receives StartTransaction\nTroubleshooting\n:\nFrom the timestamp you gave me 8/May 19:30 local time, which in SCB is 17:30, here is what I can see:\n2025-05-08T17:25:32.108085+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[641]: OCPP: Send command: StartTransaction (663c066c-091c-4d58-91d9-b16ba374d1ed) - {\"connectorId\":1,\"idTag\":\"33BDBBF4\",\"meterStart\":21050382,\"timestamp\":\"2025-05-08T17:25:32.103Z\"}\n2025-05-08T17:25:34.382230+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[641]: OCPP: Received result: StartTransaction (663c066c-091c-4d58-91d9-b16ba374d1ed) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"transactionId\":2024418}\nFrom the logs it was sent and received, I even checked from 17:00 until 19:00 to be 100% sure there are no sessions and this is the only session.\nI also don't see any message of OCPP Offline.\nCan you please tell me what were the consequences? Is this a depot or public charging?\nFor future reference, your case number is 0423379, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T09:47:34Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c915c64f-5088-fad9-b1bc-2ba4d4a0f12c",
+            "subject": "NOTE TO OCPP",
+            "body": "Reason why StartTransaction was not received. Customer is blaming us.\n2025-05-07T17:23:36.690104+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[643]: OCPP: Send command: StartTransaction (be4e17f8-b437-4b26-b2d8-8fb537b0468f) - {\"connectorId\":1\nbut no Received command",
+            "date": "2025-05-12T15:24:51Z",
+            "extra": {}
+        },
+        {
+            "id": "f5997f39-5435-f011-8c4d-6045bdde7c76",
+            "subject": "A new case manager was assigned to 0423379 CRM:00225202772",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0423379 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=ed483686-a64e-4be9-9a67-d9834fb149e4",
+            "date": "2025-05-20T08:27:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8adf6e5-2236-f011-8c4e-000d3addf8ce",
+            "subject": "RE: A new case manager was assigned to 0423379 CRM:00225202772",
+            "body": "Hello guys\nso here you can look for the unique message iD to find the response to that StartTransaction message :\nbe4e17f8-b437-4b26-b2d8-8fb537b0468f\nthen you will Find 2 entries in the logs:\n2025-05-07T17:23:36.690104+00:00 [FW060103G2] sicharge-cp [local0:info] sicharge-cp-backend/7ff38a34a44c[643]: OCPP: Send command: StartTransaction (be4e17f8-b437-4b26-b2d8-8fb537b0468f) - {\"connectorId\":1,\"idTag\":\"33BDBBF4\",\"meterStart\":19898330,\"timestamp\":\"2025-05-07T17:23:36.681Z\"}\n2025-05-07T17:23:51.694724+00:00 [FW060103G2] sicharge-cp [local0:err] sicharge-cp-backend/7ff38a34a44c[643]: {\"stack\":\"Error:\nTimeout for message\nbe4e17f8-b437-4b26-b2d8-8fb537b0468f - {\\\"connectorId\\\":1,\\\"idTag\\\":\\\"33BDBBF4\\\",\\\"meterStart\\\":19898330,\\\"timestamp\\\":\\\"2025-05-07T17:23:36.681Z\\\"}\\n at\nonRejectResponse\n(/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:217:82)\\n at Timeout.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:197:25)\\n at listOnTimeout (node:internal/timers:581:17)\\n at process.processTimers (node:internal/timers:519:7)\"}\nSo the message from Charger to Backend was send but we got no confirmation from Backend normally its like this\nOCPP: Send command: StartTransaction (379afe20-534b-4ef2-bb22-70a1e7994774) - {\"connectorId\":1,\"idTag\":\"33BDBBF4\",\"meterStart\":23278249,\"timestamp\":\"2025-05-21T08:26:05.403Z\"}\nOCPP: Received result: StartTransaction (16774453-bb44-4c41-b2c7-55583f08cfeb) - {\"idTagInfo\":{\"status\":\"Accepted\"},\"\ntransactionId\":9311703\n}\nso some how we didnt get a response from Backend and without Transaction ID we will not start any session. So question would be why did the Backend not respond.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-21T09:06:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "486feec3-c73a-f011-b4cc-7c1e5287c7df",
+            "subject": "RE: A new case manager was assigned to 0423379 CRM:00225202772",
+            "body": "Hello Magnus\nfrom my point of view we can close this case or do you still have any query about this issue ?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-27T06:56:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "928d3829-c83a-f011-b4cc-7c1e52768372",
+            "subject": "Sv: A new case manager was assigned to 0423379 CRM:00225202772",
+            "body": "Hi\nWe can close the case.\nThanks for your help.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nMagasinsgatan 2\n291 32 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 27 maj 2025 08:58\nTill:\nHellberg, Magnus (RC-SE SI SWE E) <magnus.hellberg@siemens.com>; de Matos Joaquim, Francisco (SI E CS TS) <francisco.joaquim@siemens.com>\nÄmne:\nRE: A new case manager was assigned to 0423379 CRM:00225202772\nHello Magnus\nfrom my point of view we can close this case or do you still have any query about this issue ?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-27T06:59:44Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

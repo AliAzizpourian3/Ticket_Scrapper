@@ -1,0 +1,138 @@
+{
+    "incident_id": "617e72dc-a1a1-ef11-8a6a-6045bdde0ce3",
+    "ticket_number": "0389618",
+    "title": "ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx",
+    "created_on": "2024-11-13T09:30:12Z",
+    "last_activity": "2025-12-16T14:04:11Z",
+    "age": "2914",
+    "description": "Reported behaviour/issue: PaymentTerminalUnreachable_PZx\nRoot cause:\nN/A\nWorkaround:\nReboot\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "kZjnVL",
+    "stage": null,
+    "serial_number": "Y2 / S5 313688776001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "a4d687d4-a1a1-ef11-8a6a-7c1e5235e725",
+            "subject": "Terminal Valina bei Ladestation Siemens (Y2 / S5 313688776001), Manor in Emmen",
+            "body": "Hallo Khalil\nWir haben die Nachricht «authentification à échoué», auf Deutsch «Authentifizierung fehlgeschlagen» beim Karte Zahlung.\nIm unsere Backend sehen wie folgende error:\nGemäss unsere interne wissen, diese Meldung ist eine Sammelmeldung für jegliches Payment terminal Probleme.\nKönnte folgende Ursachen haben\nSoftPLC kann das Terminal nicht erreichen\nTerminal tat keine Kommunikation zum Payment Provider\nTerminal ist in einem fehlerzustand\nTerminal ist nicht mehr beim Payment Provider freigeschaltet\nKannst du es anschauen bitte?\nWir sind heute Nachmittag Vorort für die Abnahme.\nLg, José\nMeilleures salutations\nJosé Martin\nSiemens Suisse SA\neMobility\nFreilagerstrasse 38\n8047 Zürich, Suisse\njose.martin@siemens.com\nMobile +41 79 363 93 53\nwww.siemens.ch",
+            "date": "2024-11-13T09:29:58Z",
+            "extra": {
+                "sender": "jose.martin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7132eca3-b2a1-ef11-8a69-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0389618 CRM:00225123850",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0389618 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=617e72dc-a1a1-ef11-8a6a-6045bdde0ce3",
+            "date": "2024-11-13T11:30:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f187ea5-b3a1-ef11-8a6a-000d3addcd64",
+            "subject": "ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Dear José,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nManor Emmen\nChargerID/Serial No.\n:\nkZjnVL\nProblem Description\n: PaymentTerminalUnreachable_PZx\nTroubleshooting\n:\npossible causes:\nNetwork cable defect or not connected\nNetwork switch defect\n(not the problem I can ping the Payment terminal)\nPower supply of payment terminal defect or not connected\nIP-address of payment terminal wrong\n(already checked)\npossible solutions:\nCheck network configuration of payment-terminal:\nStatic IP-\naddress: 10.20.17.50\nSubnetmask: 255.255.255.0\nGateway: 10.20.17.2\nDNS: 10.20.17.2\nPing terminal (IP: 10.20.17.50)\n(already checked)\nFor future reference, your ticket number is\n0389618\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-13T11:37:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a08f48b8-c2a1-ef11-8a6a-002248a2b1bd",
+            "subject": "FW: ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Thank you Francisco.\nI put Naim in CC, as he will be today onsite.\nFor your information, we will be giving direct from the PSP, Worldline, the network configuration and will like if you can check it before wit them bevor, we change something.\nBest regards, José",
+            "date": "2024-11-13T13:25:21Z",
+            "extra": {
+                "sender": "jose.martin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b0b570c4-70a2-ef11-8a6a-7c1e5235e725",
+            "subject": "ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Hello Naim, good morning.\nI see that the charger is now without error flags regarding the payment terminal.\nCan you please explain what was done in order to fix it?\nThank you.\nBest regards,\nFrancisco",
+            "date": "2024-11-14T10:11:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff5c69c2-32a3-ef11-8a6a-7c1e5235e725",
+            "subject": "ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Hello colleagues, good morning.\nSince the error has been cleared, I request from you the steps to fix it. If I don't get a reply, I will close the ticket by the end of the day.\nThank you for understanding!\nBest regards,\nFrancisco",
+            "date": "2024-11-15T09:19:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01552388-37a3-ef11-8a69-0022489dc6eb",
+            "subject": "RE: ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Hi Franciso,\nNaim proceed to a hard reset to get worked the valina terminal.\nBest regards\nJosé",
+            "date": "2024-11-15T09:53:58Z",
+            "extra": {
+                "sender": "jose.martin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4a4119a5-37a3-ef11-8a69-6045bddf3ac2",
+            "subject": "Ticket 0389618 has been closed. Are you satisfied with our provided solution? CRM:00315002059",
+            "body": "Dear José,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0389618\nwith the title:\nID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-15T09:54:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "187be8d5-38a3-ef11-8a6a-000d3a682fc5",
+            "subject": "Ticket 0389618 has been closed. Are you satisfied with our provided solution? CRM:00315002059",
+            "body": "Dear José,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0389618\nwith the title:\nID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-15T10:03:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f3dd34d4-3ba3-ef11-8a6a-002248a2b1bd",
+            "subject": "AW: ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045",
+            "body": "Hi Support\nI think it’s an SiD Problem, I rebooted the terminal more Times it don’t worked.\nSince the Hard reboot of the sicharge D it works.\nBR Naim\nVon:\nMartin, José (RC-CH SI E C) <jose.martin@siemens.com>\nGesendet:\nMittwoch, 13. November 2024 14:25\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nKasami, Naim (RC-CH SI E OX&PM) <naim.kasami@siemens.com>; Shaaban, Khalil <khalil.shaaban@worldline.com>\nBetreff:\nFW: ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx CRM:00315002045\nThank you Francisco.\nI put Naim in CC, as he will be today onsite.\nFor your information, we will be giving direct from the PSP, Worldline, the network configuration and will like if you can check it before wit them bevor, we change something.\nBest regards, José",
+            "date": "2024-11-15T10:24:52Z",
+            "extra": {
+                "sender": "naim.kasami@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8ca47bd7-3ba3-ef11-8a6a-002248a29667",
+            "subject": "Email sent to a closed case 'ID0389618-DC/Si-D/CH[kZjnVL] - PaymentTerminalUnreachable_PZx (0389618)' CRM:00225124913",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0389618\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-11-15T10:24:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

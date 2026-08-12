@@ -1,0 +1,93 @@
+{
+    "incident_id": "b6a81417-7399-4410-8650-726692386f06",
+    "ticket_number": "0414888",
+    "title": "ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1]",
+    "created_on": "2025-03-25T11:19:04Z",
+    "last_activity": "2025-12-16T12:20:08Z",
+    "age": "99655",
+    "description": "Reported behavior/issue:\nCharging issue\nRoot cause:\nR&D ticket: EMOB-17016",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "9NAmV1",
+    "stage": null,
+    "serial_number": "MP/SD170004222,MP/SD170004222",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "398f5796-b148-bca4-919f-dd83cc328180",
+            "subject": "Case handed over from L2-->L3 Expert",
+            "body": "Problem Description: Charging issue\nAction Performed (L2) : Analyzed the logs as per the timestamp\nCharger SW Version:\nV\n6.0.3-0\nReason for Handover (L3): As per the NOC JourFix, creating the child case.\nLog analysis with timestamp :\nSyntaxError: Unexpected token I in JSON at position 3306.\nAction Required\nAction by HQ : Need further analysis\nAttachement\n: refer attached logs below\n2025-02-07T12:20:58.058779+00:00 sicharge-cp [local0:err] ecog-secc-adapter/5eefed17a939[713]: SyntaxError: Unexpected token I in JSON at position 3306.\n2025-02-07T12:20:58.065022+00:00 sicharge-cp [local0:err] ecog-secc-adapter/5eefed17a939[713]: at JSON.parse (<anonymous>)",
+            "date": "2025-03-25T11:27:10Z",
+            "extra": {}
+        },
+        {
+            "id": "08ae386a-13f6-7f9d-b6c6-5866e4cf3436",
+            "subject": "Response from the customer",
+            "body": "I have opened a ticket 2 weeks ago  and I still  haven’t heard back from your side ?\nHere is the reference : 0414542\nCould you please tell me if your investigations are ongoing ?",
+            "date": "2025-04-02T04:15:29Z",
+            "extra": {}
+        },
+        {
+            "id": "1556e1ba-d40f-f011-9989-6045bddf319c",
+            "subject": "0414888 - ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1] CRM:00314000155",
+            "body": "Good afternoon,\nI am reaching out from the Expert Services team in regards of child ticket\nID041488.\nThe ticket was opened for charging session transactionId:41769429 on charger\n9NamV1\n, which started on 2025-02-07T11:58:58 and received the StopTransaction on 2025-02-10T08:22:30.\nThe charging itself stopped on 2025-02-07T12:46:36, but the OCPP Stop Transaction command was sent only on 2025-02-10, after a reboot of the charger was triggered.\nThis behavior was due to an error on the SECC. The SECC had an issue in parsing a configuration file, which resulted into the EcoG unable to confirm the status of the outlet, hence to communicate to the OCPP Backend the information required (in this case, the end of the session on DC2).\nThis issue can be seen in the logs, which are getting corrupted by a very high logging, as follows:\nThe issue has already been reported to R&D, who is aware of the problem and in discussion with EcoG to develop a solution. I will inform you on the resolution progresses as soon as I will receive feedback from R&D.\nI had an overview of the charger on AWS, and I noticed that a similar behavior happened only two other times, on 2025-02-17/18 and on 2025-03-03.\nSince it is proven that a reboot of the charger can solve the issue, I would suggest to set an automatic reboot of the charger every two days, until a solution from R&D is provided.\nIf you agree, I will align with the colleagues of RC-FR and set this automatic reboot for you.\nLooking forward to hearing your feedback soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-02T15:11:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04e3b118-8b14-f011-9989-7ced8d2ca140",
+            "subject": "RE: 0414888 - ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1] CRM:00314000155",
+            "body": "Good afternoon Fosco,\nThank you for your feedback which helps us a lot to understand. Could you please tell me what SECC means ?\nWe’ve already set up a periodic reboot every 3 days I don’t think a reboot every 2 days is more efficient. While we’re waiting for feedback from R&D, could you please find a better solution ?\nBest regards\nCordialement,\nAnthony Mi-poudou\nTechnicien Superviseur IRVE\nENGIE Mobilités Électriques\nanthony.mi-poudou@engie.com\n+33 6 77 00 49 61\nengie-vianeo.com\nTour T1,\n1 place Samuel de champlain\n92930 Paris la défense\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmercredi 2 avril 2025 17:12\nÀ :\nMI POUDOU Anthony (ENGIE Mobilités Electriques) <anthony.mi-poudou@engie.com>\nCc :\nCOLLET, SEBASTIEN <sebastien.collet@siemens.com>; MINA, JESSICA (RC-FR SI E) <jessica.mina@siemens.com>\nObjet :\n0414888 - ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1] CRM:00314000155\nGood afternoon, I am reaching out from the Expert Services team in regards of child ticket ID041488. The ticket was opened for charging session transactionId:\n41769429 on charger 9NamV1, which started on 2025-02-07T11:\n58:\n58 and received the StopTransaction\nGood afternoon,\nI am reaching out from the Expert Services team in regards of child ticket\nID041488.\nThe ticket was opened for charging session transactionId:41769429 on charger\n9NamV1\n, which started on 2025-02-07T11:58:58 and received the StopTransaction on 2025-02-10T08:22:30.\nThe charging itself stopped on 2025-02-07T12:46:36, but the OCPP Stop Transaction command was sent only on 2025-02-10, after a reboot of the charger was triggered.\nThis behavior was due to an error on the SECC. The SECC had an issue in parsing a configuration file, which resulted into the EcoG unable to confirm the status of the outlet, hence to communicate to the OCPP Backend the information required (in this case, the end of the session on DC2).\nThis issue can be seen in the logs, which are getting corrupted by a very high logging, as follows:\nThe issue has already been reported to R&D, who is aware of the problem and in discussion with EcoG to develop a solution. I will inform you on the resolution progresses as soon as I will receive feedback from R&D.\nI had an overview of the charger on AWS, and I noticed that a similar behavior happened only two other times, on 2025-02-17/18 and on 2025-03-03.\nSince it is proven that a reboot of the charger can solve the issue, I would suggest to set an automatic reboot of the charger every two days, until a solution from R&D is provided.\nIf you agree, I will align with the colleagues of RC-FR and set this automatic reboot for you.\nLooking forward to hearing your feedback soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.\nENGIE Mail Disclaimer: https://www.engie.com/disclaimer",
+            "date": "2025-04-08T15:06:50Z",
+            "extra": {
+                "sender": "anthony.mi-poudou@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1d5a99a4-3119-f011-998a-7c1e52faf3c6",
+            "subject": "RE: 0414888 - ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1] CRM:00314000155",
+            "body": "Good afternoon Mr. Mi-poudou,\nApologies for the late reply. In eMobility, SECC refers to “Supply Equipment Communication/Charge Controller”. Therefore the SECC is the EcoG controller in the charger responsible for the communication with the EVCC (Electric Vehicle Communication/Charge Controller) inside all EVs.\nThank you for the information regarding the automatic reboot already set for the charger. At the moment we do not have another solution to overcome the issue, which is anyway appearing not often. I will keep monitoring the charger while pushing our R&D department and EcoG for a fast resolution. In case in the future the issue will appear on a daily basis, it might be worth considering a replacement of the EcoG controller.\nI will keep you updated regarding developments on a resolution path.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-14T13:09:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c12d86b-973f-f011-8779-7ced8d40e4a4",
+            "subject": "A new case manager was assigned to 0414888 CRM:00225209080",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0414888 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b6a81417-7399-4410-8650-726692386f06",
+            "date": "2025-06-02T09:53:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87a48f05-c427-8ebb-bcd6-5ad68d02d73e",
+            "subject": "ISP Clean-up session",
+            "body": "EcoG v1.4.11 to be installed and ticket to be closed",
+            "date": "2025-06-02T09:54:09Z",
+            "extra": {}
+        },
+        {
+            "id": "0ca6a87a-cc3f-f011-8779-7c1e52205b2c",
+            "subject": "0414888 - ID0414542-DC/Si-D/FR-[MP / SD 170004222] Charging issue[C1] CRM:00472000307",
+            "body": "Hello Mr. Anthony,\nI have installed a new firmware on the Charger Communication Controller. (Old version 1.4.5 - New Version 1.4.11)\nAccording to our R&D team, this new firmware version includes an updated implementation of the communication protocol, which should address the issue you previously reported.\nI will proceed to close this ticket. In case you observe similar issue, please report to us by opening a new ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-02T16:13:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

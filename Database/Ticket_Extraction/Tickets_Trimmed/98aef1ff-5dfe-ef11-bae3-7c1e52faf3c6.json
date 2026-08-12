@@ -1,0 +1,50 @@
+{
+    "incident_id": "98aef1ff-5dfe-ef11-bae3-7c1e52faf3c6",
+    "ticket_number": "0411910",
+    "title": "ID0411910-DC/Si-D/IL[170000903] - DC2_CableTempSensor_XD101",
+    "created_on": "2025-03-11T09:48:43Z",
+    "last_activity": "2025-10-28T17:08:49Z",
+    "age": "321262",
+    "description": "Reported behaviour/issue:\nDC2_CableTempSensor_XD101\nSolution:\nLoose wiring-> Issue has fixed",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "ZFNwm9",
+    "stage": null,
+    "serial_number": "MP / P9 170000903",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "d762b9fc-5dfe-ef11-bae3-7c1e52350ea5",
+            "subject": "170000903- Outlet 2 not work HPF Cable",
+            "body": "Dear Support,\nI would appreciate your help in diagnosing a CCS2 that is not working at the charging station.\nThe coolant tank is still full, I am attaching a video from inside the tank.\nBr,\nOrel.",
+            "date": "2025-03-11T09:48:34Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a114cae9-67fe-ef11-bae2-0022489d7182",
+            "subject": "ID0411910-DC/Si-D/IL[170000903] - DC2_CableTempSensor_XD101 CRM:00315002433",
+            "body": "Dear Orel, how are you?\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000903\nChargerID/Serial No.\n:\nZFNwm9\nProblem Description\n: DC2 is out of order due to CableTempSensor\nTroubleshooting\n: I checked the charger remotely and I see there is something wrong with the controller:\nAs you can see, the temperatures reading are 17kºC and 20kºC which is literally impossible unless we are near the sun :D\nWe also have the error\nCBL:1 → in case of CAN Bus communication lost, this is the error responsible for the temperature error. We need to check where this communication is dropped here:\nFrom here, you need to measure 3 points:\nXD12:7B to XD12:8D\nXD12:7A to XD12:8C\nKF11 CAN 1L to KF11 CAN 1H\nMeasure directly on the connector screws\nIf we don't have 60Ohm in the first measurement it seems that the cables that come directly from the Microcontroller are broken or faulty and it needs replacement.\nIf we don't have 60Ohm between 7A and 8C that means that there is something wrong in this connector XD12.\nIf we don't have 60Ohm on the KF11 screws, then please try and use another spare connector from neighbour EcoG (usually there are some connectors in KF11/KF12 that are not used at all)\nIf we get 60Ohm until the KF11 and still we have the error, then we need to replace KF11.\nSince the charger is out of warranty, please let me know what fits you best. I would recommend first to confirm if it's really the cable that needs replacement and then order it.\nSo I would say to go to site with a spare KF11 and try all these measurements above.\nFor future reference, your case number is\n0411910\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T10:59:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "628bfc62-83fe-ef11-bae2-0022489d7182",
+            "subject": "ID0411910-DC/Si-D/IL[170000903] - DC2_CableTempSensor_XD101 CRM:00315002435",
+            "body": "Dear Orel,\nI am writing to formally inform that we are moving case 0411910 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nIL\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nX\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nIL\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T14:16:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

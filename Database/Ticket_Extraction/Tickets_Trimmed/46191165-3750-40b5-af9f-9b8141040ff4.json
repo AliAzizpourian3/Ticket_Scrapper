@@ -1,0 +1,61 @@
+{
+    "incident_id": "46191165-3750-40b5-af9f-9b8141040ff4",
+    "ticket_number": "0417623",
+    "title": "ID0417623-DC/Si-D/DK[qntu3k] - SECC timestamp not correct",
+    "created_on": "2025-04-08T12:43:23Z",
+    "last_activity": "2025-04-15T10:35:06Z",
+    "age": "9789",
+    "description": "Reported behaviour/issue: The charger timestamp for the SECC messages are not in sync with the actual time.\nSolution:\nTechnical information provided - message not in sync shouldn't cause any issue. The reported issue was not due to messages out of synce\nWe found this error because the customer had issues with the charger.\nIt was unresponsive so they could not stop a ongoing session to release the car. This happened this morning (08-04-25), the charger was rebooted at 10:10 GMT to get the car released.\nIt have been working since.\nCan the time issue have any influence on the stability of the charger?\nThe charger have the EcoG hotfix installed since Febuary 14 and the EcoG KF11 have been replaced February 18.",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "qntu3k",
+    "stage": null,
+    "serial_number": "MP / SN 170004220",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9fabbb76-4215-f011-9989-000d3ad97a58",
+            "subject": "ID0417623-DC/Si-D/DK[qntu3k] - SECC timestamp not correct CRM:00315002530",
+            "body": "Dear Rasmus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / SN 170004220\nChargerID/Serial No.\n:\nqntu3k\nProblem Description\n: SECC timestamp is not correct and EV was stuck\nTroubleshooting\n: As we already aligned, the EV being locked must be from the EV side, from IEC 61851-23, AA.3.4\nWe are not responsible for the locking mechanism, usually when we go from A to B2, we lock the EV after the SLAC is established and only when we go to B1 it must be unlocked since we don't have SLAC. You can see from the Normal Startup mentioned in the norm:\nIn B1, we don't have SLAC so we are not passing through t0→t1 even. So the locking should not happen. In the case of B2, it's possible that the EV is locked but as I can see from the logs we don't start SLAC so it also shouldn't be locking.\nFor the EcoG question about the timestamps I will try to get this information.\nFor future reference, your case number is\n0417623\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T12:59:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b2e4d4a-ac16-f011-9989-000d3a65e7f6",
+            "subject": "ID0417623-DC/Si-D/DK[qntu3k] - SECC timestamp not correct CRM:00315002530",
+            "body": "Hi Rasmus,\nSo the timestamp being incorrect shouldn't have any impact on the sessions. If we see this happening please report to me.\nIn the SCB logs I cannot find this and also not in AWS, I'm not sure what is causing this confusion.\nIn any case for the time you provided there was indeed that problem which I already gave an explanation.\nPlease let me know what else do you need from me otherwise I will close the ticket.\nThanks as always for the support.\nBest regards,\nFrancisco",
+            "date": "2025-04-11T08:09:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e6dad7b-0319-f011-998a-6045bde12d6b",
+            "subject": "ID0417623-DC/Si-D/DK[qntu3k] - SECC timestamp not correct CRM:00315002530",
+            "body": "Hi Rasmus, good morning. Hope you had a nice weekend :)\nCan you please tell me if the previous answer is enough? To be honest, until we face the error like it was presented, I can only send the ticket to your region until you face it or close it.\nLet me know your thoughts.\nBest regards,\nFrancisco",
+            "date": "2025-04-14T07:38:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "967d1606-ce19-f011-9989-7c1e5277d5a9",
+            "subject": "Ticket 0417623 has been closed. Are you satisfied with our provided solution? CRM:00315002558",
+            "body": "Dear Rasmus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0417623\nwith the title:\nID0417623-DC/Si-D/DK[qntu3k] - SECC timestamp not correct\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-15T07:48:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "incident_id": "24e8f079-86a2-4b8a-89f5-0ce2c39af30b",
+    "ticket_number": "0393936",
+    "title": "ID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2",
+    "created_on": "2024-12-05T17:53:12Z",
+    "last_activity": "2026-03-25T09:40:05Z",
+    "age": "5385",
+    "description": "Reported behavior/issue:\nA connection couldn't be connected to Router-2 during the first commissioning. Router-1 is accessed, but there is no connection to Router-2 (10.20.17.2). When we run a network scanner, it didn't show 10.20.17.2. Device stuck 30% and commissioning didn't finish.\nRoot cause: Router Failure\nSolution: Router Replacement\nOn DAMEX Sanctioned List:\nWarranty Status: Active\nNotes from ES to NOC [ 09/12/2024]",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "78rYPq",
+    "stage": null,
+    "serial_number": null,
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "bf7c1ed1-31b3-ef11-b8e8-000d3ab11939",
+            "subject": "A new case manager was assigned to 0393936 CRM:00225134614",
+            "body": "Ibrahim Mert Kanneci was assigned as new Case Manager for case 0393936 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=24e8f079-86a2-4b8a-89f5-0ce2c39af30b",
+            "date": "2024-12-05T17:53:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef294ea7-5eb3-ef11-b8e9-000d3ab4d5d3",
+            "subject": "ID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2 CRM:00643001145",
+            "body": "Dear Mert,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nChargerID/Serial No.\n:\n78rYPq\nProblem Description\n: There is no connection on the Router-2\nTroubleshooting\n: Please allow us some time to analyse the issue and we will get back to you shortly with an update.\nFor future reference, your ticket number is\n0393936\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-05T23:14:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4f5ec32-21a9-318a-a072-d987bff24f54",
+            "subject": "Handover NOC-->Experts",
+            "body": "Suspected Root Cause : Cfast flashing needs to be done\nProblem Description : Device stuck at 30%\nAction Performed (L2) : N/A, as the charger is still in commissioning phase as mentioned by the Region.\nCharger SW Version:\nv4.0.11\nReason for Handover (L3) : NOC doesn't support commissioning.",
+            "date": "2024-12-05T23:18:23Z",
+            "extra": {}
+        },
+        {
+            "id": "5cc19c4f-b1b3-ef11-b8e9-000d3a67d7cb",
+            "subject": "A new case manager was assigned to 0393936 CRM:00225134818",
+            "body": "Sambath KS was assigned as new Case Manager for case 0393936 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=24e8f079-86a2-4b8a-89f5-0ce2c39af30b",
+            "date": "2024-12-06T09:06:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "909db4f9-03b6-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: ID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2 CRM:00643001145",
+            "body": "Dear Mert,\nI hope all is well with you. Thank you so much for your support during the intervention and really appreciate your cooperation. Please be aware that I will be proceeding to close the ticket as the issue resolved after replacing the router (XF4).\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2024-12-09T08:02:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "14e5f6b8-e426-c723-9827-26a6c596cb0f",
+            "subject": "Note to QM ",
+            "body": "Particular\nRemarks\nDefective part name/MLFB\n8EM5903-0AA01-3AA8\nComponent serial number\n1114668267\nLogs with marked error (CSV format preferred)\n<<logs-insights-results (1).csv>>\nActive error flags before replacement\nCharger is in failsafe mode\nDevice-specific error code (if applicable)\n[routerLoginRPC] login to router failed {\"\"message\"\":\"\"request to\nhttp://10.20.17.2/ubus\nfailed, reason: connect EHOSTUNREACH 10.20.17.2:80\"\",\"\"type\"\":\"\"system\"\",\"\"errno\"\":\"\"EHOSTUNREACH\"\",\"\"code\"\":\"\"EHOSTUNREACH\"\",\"\"stack\"\":\"\"FetchError: request to\nhttp://10.20.17.2/ubus\nfailed, reason: connect EHOSTUNREACH 10.20.17.2:80\\n\nOutcome of wiring checkup\nAll Good, But observed Router lights are always ON ( Condition same as hard reset)\nNote : Found Hard reset button on the router is in pressed condition always\nCommissioning checklist\nEvent happened during commissioning\nCommissioning date\nTicket was for issue during commissioning ( 06/12/2024)\nField service report\nRC needs to attach\nDate of failure (see side note)\n05/12/2024\nComplementary information\nNot required\nComplementary procedures\nNot required",
+            "date": "2024-12-09T08:36:37Z",
+            "extra": {}
+        },
+        {
+            "id": "39a4717a-3009-4fa5-ae29-aa6abf07dcd0",
+            "subject": " Notes from ES to NOC [ 09/12/2024]",
+            "body": "a) Problem Description\n:\nFailsafe mode\nb) Suspected Root Cause\n: Router failure (XF4)\nc\n) Action Performed: Router Replacement\nd) Charger SW Version\n: 4.0.11\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2024-12-09T08:37:57Z",
+            "extra": {}
+        },
+        {
+            "id": "82b7a4a2-20b6-ef11-b8e8-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0393936 CRM:00225135656",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0393936 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=24e8f079-86a2-4b8a-89f5-0ce2c39af30b",
+            "date": "2024-12-09T11:28:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8a6fffad-21b6-ef11-b8e8-000d3ab2311b",
+            "subject": "ID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2 CRM:00641000852",
+            "body": "Dear Mert,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0393936.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-09T11:35:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3387d531-22b6-ef11-b8e8-000d3ab2311b",
+            "subject": "Ticket 0393936 has been closed. Are you satisfied with our provided solution? CRM:00641000853",
+            "body": "Dear Mert,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0393936\nwith the title:\nID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAbhinav Malokar\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-09T11:39:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d8da663a-80b8-ef11-b8e9-6045bdde0ce3",
+            "subject": "Uploaded document Work Order 0393936 Borusan EnBW   .pdf.",
+            "body": "",
+            "date": "2024-12-12T11:57:18Z",
+            "extra": {}
+        },
+        {
+            "id": "d2db663a-80b8-ef11-b8e9-6045bdde0ce3",
+            "subject": "Uploaded document photos_0_duringWork.jpeg.",
+            "body": "",
+            "date": "2024-12-12T11:57:24Z",
+            "extra": {}
+        },
+        {
+            "id": "f97e6140-80b8-ef11-b8e9-6045bdde0ce3",
+            "subject": "Uploaded document photos_0_4f7fb54c-df17-4f58-9cb3-a79d370ab777.jpeg.",
+            "body": "",
+            "date": "2024-12-12T11:57:29Z",
+            "extra": {}
+        },
+        {
+            "id": "617f6140-80b8-ef11-b8e9-6045bdde0ce3",
+            "subject": "Uploaded document photos_0_afterWork.jpeg.",
+            "body": "",
+            "date": "2024-12-12T11:57:32Z",
+            "extra": {}
+        },
+        {
+            "id": "d21b9093-2e28-f111-8342-000d3ab124a4",
+            "subject": "CASE CLOSED: ID0393936-DC/Si-D/TR-[Y2/S3 300000004042] There is no connection on the Router-2 CRM:00225358222",
+            "body": "Dear Mert Kanneci,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0393936, the case is now closed. We hope that we have responded to your request in a timely and professional manner.\nIf the issue is not resolved, please click the button\nReactivate the Ticket\nIf you need further assistance later, you can always submit a new request via our support form:\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Technical Support Team",
+            "date": "2026-03-25T09:40:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

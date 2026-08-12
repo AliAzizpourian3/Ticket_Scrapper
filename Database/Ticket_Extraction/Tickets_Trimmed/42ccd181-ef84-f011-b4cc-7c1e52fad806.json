@@ -1,0 +1,123 @@
+{
+    "incident_id": "42ccd181-ef84-f011-b4cc-7c1e52fad806",
+    "ticket_number": "0446940",
+    "title": "ID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection",
+    "created_on": "2025-08-29T15:47:52Z",
+    "last_activity": "2025-10-01T12:39:45Z",
+    "age": "35876",
+    "description": "Reported behaviour/issue: Charger is intermittently losing connection. Site seem to rarely be affected by the issue, but are querying it when they're checking the dashboard & seeing the unit offline .\nSolution: Change Operator or SIM Card -> this zone has bad network connectivity\nyyyy-mm-dd: 2025-08-29",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "GctVQV",
+    "stage": null,
+    "serial_number": "MP / P1 170000136",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "aeea097d-ef84-f011-b4cc-7c1e52350ea5",
+            "subject": "Webform_incident_SiCharge D_29-08-2025_SN: 170000136",
+            "body": "Dear Adam Lucas,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000136\nThank you\neMobility Technical Support Team\nSehr geehrte/r Adam Lucas,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000136\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-29T15:47:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0cb08185-f384-f011-b4cc-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0446940 CRM:00225249960",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0446940 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=42ccd181-ef84-f011-b4cc-7c1e52fad806",
+            "date": "2025-08-29T16:16:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0b94d08e-f784-f011-b4cc-6045bdde4786",
+            "subject": "ID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection CRM:02681000719",
+            "body": "Dear\nAdam Lucas\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000136\nCharger ID/Serial No.\n:\nGctVQV\nProblem Description\n:  Charger is intermittently losing connection\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0446940\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-08-29T16:45:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5723a529-0c87-f011-b4cb-7c1e52768c07",
+            "subject": "A new case manager was assigned to 0446940 CRM:00225250350",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0446940 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=42ccd181-ef84-f011-b4cc-7c1e52fad806",
+            "date": "2025-09-01T08:17:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7e4421bb-bc8c-f011-b4cb-7c1e523508ba",
+            "subject": "RE: ID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection CRM:02681000719",
+            "body": "Dear Adam,\nI am reaching out from the\nTechnical Support Team\nin regards of ticket\nID0446940.\nApologies for the delayed answer.\nI had an overview to the OCPP connection of the charger over the past week, and indeed the charger loses the connection to the OCPP backend several times per day. I connected remotely to the charger, and I see that:\nRouter XF3 (Siemens Backend) has an excellent signal\nRouter XF4 (OCPP Backend) has a weaker signal:\nFrom my side, I can force router XF4 to connect only with 4G signal, which could help the signal stability. I tested it and the signal got slightly stronger:\nMay I ask you if you tried already to change operator? This could help in case signal from the selected operator is weak in that location. Other solutions such as replace the router or have router 2 connecting to the wifi of router 1 could be explored.\nLooking forward to hearing your feedback soon.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-08T14:04:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "303fb3f2-d54c-dcaf-957e-7eb6342dec3e",
+            "subject": "Status Update",
+            "body": "No feedback from customer.",
+            "date": "2025-09-19T09:23:37Z",
+            "extra": {}
+        },
+        {
+            "id": "de422a15-4795-f011-b4cc-6045bddf3123",
+            "subject": "A new case manager was assigned to 0446940 CRM:00225259432",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0446940 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=42ccd181-ef84-f011-b4cc-7c1e52fad806",
+            "date": "2025-09-19T10:55:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ffc01b1d-4795-f011-b4cb-7ced8d72ea24",
+            "subject": "ID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection CRM:00315003013",
+            "body": "Hi guys, good morning.\nFosco sent here the information for the request where we can see that XF4's SIM card doesn't seem to be strong as XF3's.\n@Jason do you want to test other operators or my personal opinion, changing the SIM card?\nLet me know your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-19T10:55:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5c9d815-8c97-f011-b4cb-7c1e52344c7b",
+            "subject": "ID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection CRM:00315003019",
+            "body": "Dear\nAdam Lucas,\nThis is another reminder regarding your support case\n0446940\n. We are still waiting for the information to proceed.\nWithout this input, we are unable to move forward with the investigation or provide further support.\nPlease reply at your earliest convenience so we can assist you as effectively as possible.\nWe appreciate your cooperation and look forward to your response.\nWith best regards,\neMobility Technical Support Team –\nFrancisco de Matos Joaquim\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-09-22T08:13:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8a37eb20-8298-f011-b4cc-6045bddf319c",
+            "subject": "Ticket 0446940 has been closed. Are you satisfied with our provided solution? CRM:00225260998",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0446940\nwith the title:\nID0446940-DC/Si-D/GB-[ MP / P1 170000136]Charger is intermittently losing connection\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-23T13:35:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

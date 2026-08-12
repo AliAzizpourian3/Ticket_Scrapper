@@ -1,0 +1,134 @@
+{
+    "incident_id": "6cab5072-7714-f011-998a-7c1e5236e32d",
+    "ticket_number": "0417624",
+    "title": "ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend",
+    "created_on": "2025-04-08T12:46:14Z",
+    "last_activity": "2025-10-01T14:20:42Z",
+    "age": "9988",
+    "description": "Reported issue: We´ve got a few errors with \"internal error\" sent to our backend. We couldn´t see a lot in the Communication logs in our backend thus we would need some help to know if everythin is working as it should on this charger. Following are the times when the errors were sent to our backend: -\n-06.04.2025 09:51:37\n-06.04.2025 09:51:22\n-04.04.2025 18:50:57\n-04.04.2025 12:00:53\n-04.04.2025 11:11:07\n-02.04.2025 19:54:02\nSolution:  N/A\nyyyy-mm-dd: 2025-04-06",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "CY4tJy",
+    "stage": null,
+    "serial_number": "MP / R6 170001968,MP / R6 170001968",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "602bef6d-7714-f011-998a-000d3adc93d1",
+            "subject": "Webform_incident_SiCharge D_08-04-2025_SN: 170001968",
+            "body": "Dear Lara-Anna Oblak,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001968\nThank you\neMobility Technical Support Team\nSehr geehrte/r Lara-Anna Oblak,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001968\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-08T12:46:09Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e847605-7914-f011-9989-7c1e52fb241f",
+            "subject": "ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Dear Lara Anna Oblak,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170001968\nChargerID/Serial No.\n:\nCY4tJy\nProblem Description\n:  We´ve got a few errors with \"internal error\" sent to our backend. We couldn´t see a lot in the Communication logs in our backend thus we would need some help to know if everything is working as it should on this charger.\nFor future reference, your case number is\n0417624\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T12:57:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3cbb907f-be14-f011-9989-7c1e5236eee4",
+            "subject": "RE: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Dear Lara Anna Oblak,\nI hope this message finds you well.\nWe have completed the analysis of the logs for the time you mentioned and found the following details regarding the charging session:\nThe error that occurred appears as a fault, but the charging session was failed in the authentication.\nThis was the first attempt, and upon reviewing the logs, we see that the session began with a \"Session Start\" and the EV was connected (A -> B2). However, no EV details were provided at this stage.\nThe charger then proceeded to request Authentication, but this was not provided, resulting in the charging session failing and triggering the \"InternalError\" code.\nThis issue was momentary, as the session recovered shortly after. As seen in the logs (B2 -> E), the charger moved from an error state to available shortly after (E -> A).\nTo clarify, the sequence suggests that authentication was completed after the vehicle was plugged in. We can confirm that the charging session proceeded as intended from the point of authentication (P01_Authentication -> P02_ParameterDiscovery). As such, the charging session worked as expected after this phase, which rules out the possibility of an issue with the vehicle.\nPlease let us know if you need any further details or assistance.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T21:14:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76289fa9-3815-f011-9989-7c1e5236eee4",
+            "subject": "AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Hello Ankita!\nThank you for your help!\nOut of curiosity:\nIs the “InternalError” code only triggered because of the situation that you mentioned in your E-Mail, or could there be other Situations in which this code can occur?\nIs there any kind of List that explains which error code means what?\nThank you for your help and kind regards,\nLara\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 8. April 2025 23:18\nAn:\nlsm@e-netze.at\nBetreff:\nRE: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ] Internal error with backend CRM:02684000050\nDear Lara Anna Oblak,\nI hope this message finds you well.\nWe have completed the analysis of the logs for the time you mentioned and found the following details regarding the charging session:\nThe error that occurred appears as a fault, but the charging session was failed in the authentication.\nThis was the first attempt, and upon reviewing the logs, we see that the session began with a \"Session Start\" and the EV was connected (A -> B2). However, no EV details were provided at this stage.\nThe charger then proceeded to request Authentication, but this was not provided, resulting in the charging session failing and triggering the \"InternalError\" code.\nThis issue was momentary, as the session recovered shortly after. As seen in the logs (B2 -> E), the charger moved from an error state to available shortly after (E -> A).\nTo clarify, the sequence suggests that authentication was completed after the vehicle was plugged in. We can confirm that the charging session proceeded as intended from the point of authentication (P01_Authentication -> P02_ParameterDiscovery). As such, the charging session worked as expected after this phase, which rules out the possibility of an issue with the vehicle.\nPlease let us know if you need any further details or assistance.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T11:49:23Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a3f4b0c8-6215-f011-9989-000d3ad97a58",
+            "subject": "RE: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "HelloLara Anna Oblak,\nThank you for your inquiry.\nBased on the logs we reviewed, the \"InternalError\" code was triggered after the vehicle was successfully connected, followed by the charger attempting to request authentication. Since authentication was not provided, the charging session failed, which resulted in the error code being triggered. This specific error occurs prior to authentication completion, which is why it is categorized as an \"InternalError.\"\nWhile this is one potential cause, it’s important to note that similar error codes can occur in other situations related to failures in the charging stages.\nI hope this answers your question. May I proceed with closing the case?\nBest regards,\neMobility Tech Support Team - Ankita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-09T16:50:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "173d4760-eb18-f011-9989-7c1e5236eee4",
+            "subject": "RE: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Dear Lara Anna Oblak,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0417624\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-14T04:46:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54ed3459-a8e4-ff02-a189-c85e3fdc3491",
+            "subject": "Note to L2",
+            "body": "Awaiting response for case closure.",
+            "date": "2025-04-14T07:45:37Z",
+            "extra": {}
+        },
+        {
+            "id": "3fd4aca2-cb19-f011-9989-7c1e52361e39",
+            "subject": "AW: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Hello Ankita!\nyes, you can proceed with closing the case.\nThank you and kind regards,\nLara\n----------------------------------------------------------------------\nIhr Ladeinfrastruktur Serviceteam\nPhone: +43-316-90555-52156\nE-Mail:\nlsm@e-netze.at\nWebsite:\nwww.e-netze.at\n----------------------------------------------------------------------\nDieses E-Mail ist ausdrücklich nur zur Verwendung durch den Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, verständigen Sie bitte unverzüglich den Absender und löschen dieses E-Mail. Jede Weiterleitung, Verbreitung oder Nutzung des Inhaltes durch andere Personen als den beabsichtigten Empfänger ist ausdrücklich untersagt.\nBitte lesen Sie unsere Datenschutzinformation gemäß Datenschutzgrundverordnung, welche sie unter folgendem Link abrufen können:\nhttps://www.e-netze.at/LP/Datenschutz.aspx\nEnergienetze Steiermark GmbH, A - 8010 Graz, Leonhardgürtel 10\nSitz Graz, FN 242892w, Landesgericht für ZRS Graz, ATU 57910103\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 14. April 2025 06:48\nAn:\nlsm@e-netze.at\nBetreff:\nRE: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ] Internal error with backend CRM:02684000050\nDear Lara Anna Oblak,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0417624\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-15T07:31:29Z",
+            "extra": {
+                "sender": "lsm@e-netze.at",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c7dab04-ea19-f011-9989-7c1e52361e39",
+            "subject": "RE: AW: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Dear Lara Anna Oblak,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417624, the case is now closed.\nProblem Description\n:  Internal error with backend\nResolution\n: Query answered.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-15T11:08:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "584dd447-ea19-f011-998a-000d3adc93d1",
+            "subject": "RE: AW: AW: ID0417624-DC/Si-D/AT-[ MP / R6 170001968 ]  Internal error with  backend CRM:02684000050",
+            "body": "Dear Lara Anna Oblak,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417624, the case is now closed.\nProblem Description\n:  Internal error with backend\nResolution\n: Query answered.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-15T11:10:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "46812665-ea19-f011-9989-7c1e52361e39",
+            "subject": "Ticket 0417624 has been closed. Are you satisfied with our provided solution? CRM:02023000579",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0417624\nwith the title:\nID0417624-DC/Si-D/AT-[ MP / R6 170001968 ] Internal error with backend\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-15T11:11:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

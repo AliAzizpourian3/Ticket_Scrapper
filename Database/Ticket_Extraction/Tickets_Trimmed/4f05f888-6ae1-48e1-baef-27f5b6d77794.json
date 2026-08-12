@@ -1,0 +1,79 @@
+{
+    "incident_id": "4f05f888-6ae1-48e1-baef-27f5b6d77794",
+    "ticket_number": "0460896",
+    "title": "ID0460896-DC/Si-D/IT-[MP / R9 170002647] CU not functional",
+    "created_on": "2025-11-10T14:14:06Z",
+    "last_activity": "2025-11-10T15:52:02Z",
+    "age": "98",
+    "description": "Reported behavior/issue- CU not functional\nSolution: ELMS temporarily deactivated. ELMS configuration for fallback values to be done from RC-IT side",
+    "type": 698630002,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002647",
+    "case_nature_code": null,
+    "chargerID": "maeJw7",
+    "additional_info": [
+        {
+            "id": "a30307b6-3fbe-f011-bbd2-7ced8d2cf24d",
+            "subject": "A new case manager was assigned to 0460896 CRM:00225285745",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0460896 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4f05f888-6ae1-48e1-baef-27f5b6d77794",
+            "date": "2025-11-10T14:15:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a1d8f2e-8dcf-0916-9800-06fe5030e9f4",
+            "subject": "Case notes",
+            "body": "Hello,\nThe charger 170002647 is not operative. We performed a reboot 2 times, but nothing changed. Can you check, please?\nThank you in advance.\nsoftware version\n: v8.0.5-0-g33a6c1d",
+            "date": "2025-11-10T14:18:00Z",
+            "extra": {}
+        },
+        {
+            "id": "a9632a1b-40be-f011-bbd2-7c1e52880b1b",
+            "subject": "ID0460896-DC/Si-D/IT-[MP / R9 170002647] CU not functional CRM:03056000464",
+            "body": "Dear\nFilomena\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002647\nChargerID\n:\nmaeJw7\nProblem Description\n: CU not functional\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0460896\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-10T14:18:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c8dfd8a6-40be-f011-bbd3-7ced8d425b04",
+            "subject": "A new case manager was assigned to 0460896 CRM:00225285753",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0460896 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4f05f888-6ae1-48e1-baef-27f5b6d77794",
+            "date": "2025-11-10T14:22:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b6df52a-4abe-f011-bbd3-7ced8d425bfe",
+            "subject": "RE: ID0460896-DC/Si-D/IT-[MP / R9 170002647] CU not functional CRM:03056000464",
+            "body": "Dear Filomena,\nI am reaching out in regards of ticket\nID0460896.\nThe ticket was opened for charger\nMP/R9 170002647\nin San Vincenzo, being out of order.\nI already aligned with the colleagues from RC-IT, and I rectified the charger. Now it is available, as I disabled the ELMS in agreement with RC-IT colleagues.\nThe issue was caused by a new feature introduced wit\nh FW v8.0.5, where\nif ELMS is enabled and there's no active Modbus communication to provide power limits, the system defaults to a safe state by deactivating the outlets\n. Therefore, you could see now all the outlets reporting OoO status with error code 33. The change in 8.0.5 is a stricter enforcement of safety. This is particularly crucial in scenarios like a power loss, where the ELMS might not re-establish communication immediately, preventing potential overloads.\nIn case\nELMS is enabled but are not actively using it, it is necessary to\nensure that a fallback value is transmitted to the device at least once.\nThis will allow the system to operate using that fallback in the absence of live ELMS communication, preventing the outlets from being deactivated and avoiding Error 33 during reboots or temporary communication losses.\nThe ELMS is now deactivated, and the colleagues form RC-IT are already in contact with IPlanet in order to ensure that the fallback values are transmitted.\nAs the issue is already taken care of and analyzed, I would proceed to close this ticket as there is no further action required form our side.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-10T15:30:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "caf13d11-4dbe-f011-bbd3-7ced8d40d9c4",
+            "subject": "Ticket 0460896 has been closed. Are you satisfied with our provided solution? CRM:00225285815",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0460896\nwith the title:\nID0460896-DC/Si-D/IT-[MP / R9 170002647] CU not functional\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-10T15:51:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

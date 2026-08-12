@@ -1,0 +1,112 @@
+{
+    "incident_id": "65a88e85-17e9-4f72-b2fe-e828c54f32b7",
+    "ticket_number": "0466156",
+    "title": "ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue",
+    "created_on": "2025-12-06T17:29:25Z",
+    "last_activity": "2025-12-09T14:07:14Z",
+    "age": "4118",
+    "description": "Reported behavior/issue-\nthe charger didn't deliver any energy.\netween 4\n:23:16 PM and 4:30:16 PM CU TIME (17:23:16 and 17:30:16 Italy time)\nyyyy\n-mm-dd:-",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370010",
+    "case_nature_code": 580000001,
+    "chargerID": "HlVzkG",
+    "additional_info": [
+        {
+            "id": "646ef7a4-cad2-f011-8544-7ced8d4251a1",
+            "subject": "A new case manager was assigned to 0466156 CRM:00225299334",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0466156 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=65a88e85-17e9-4f72-b2fe-e828c54f32b7",
+            "date": "2025-12-06T17:40:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c073f6c-cd8c-b2bd-beb7-0bcd9faeb103",
+            "subject": null,
+            "body": "Hello,\nToday november 6, a client tried to charge with POS between 4\n:23:16 PM and 4:30:16 PM CU TIME (17:23:16 and 17:30:16 Italy time) but the charger didn't deliver any energy. He tried again with POS but the charge stopped on its own, between 4:30:16 PM and 4:33:04 PM CU TIME (17:30:16 and 17:33:04 Italy time).\nCan you please check the logs?\nThank you\nsoftware version\n: v8.0.5-0-g33a6c1d",
+            "date": "2025-12-06T17:40:32Z",
+            "extra": {}
+        },
+        {
+            "id": "8844d4f0-cad2-f011-8544-7ced8d4258c6",
+            "subject": "ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue CRM:02889000915",
+            "body": "Dear\nRosita Abate\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/S1 313508370010\nChargerID\n:\nHlVzkG\nProblem Description\n:\nCharger did not deliver energy\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0466156\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-06T17:42:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "36a3a39c-d0d2-f011-8544-7ced8d4258c6",
+            "subject": "ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue CRM:00263000233",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313508370010\nwhich led to the opened ticket:\n0466156\n.\nError\ndescription:\n\"Today november 6, a client tried to charge with POS between 4:23:16 PM and 4:30:16 PM CU TIME (17:23:16 and 17:30:16 Italy time) but the charger didn't deliver any energy. He tried again with POS but the charge stopped on its own, between 4:30:16 PM and 4:33:04 PM CU TIME (17:30:16 and 17:33:04 Italy time).\"\nOn the logs it was possible to observe:\n2025-12-06T16:23:16.086158+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: OCPP: Received command: RemoteStartTransaction (86794316) - {\"connectorId\":2,\"idTag\":\"d4c04c8c8675418bbf40\"}\n2025-12-06T16:23:16.091502+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: OCPP: Send result: RemoteStartTransaction (86794316) - {\"status\":\"Accepted\"}\n2025-12-06T16:23:16.096996+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: RemoteStartTransaction: cable not yet connected\n2025-12-06T16:23:16.893474+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: setOutletLedState authenticated 2\n2025-12-06T16:30:21.000000+00:00 [FW080005G1] secc [daemon:notice] SECC[849]: {\"type\":\"session_stop\",\"timestamp\":1765038621329,\"chargerId\":\"secc2300-09314\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"source\":\"EV\",\"start\":1765038602709,\"duration\":0,\"energy\":0,\"EVCCID\":\"48313300b35a\",\"EVMAC\":\"48.31.33.00.b3.5a\",\"user\":\"internal\",\"error\":{\"code\":67,\"msg\":\"ERR_EV_DROPPED,\nvehicle ended with unexpected pilot state B\n\"}}}\nOn the logs it was possible to observe that the vehicle ended the session, the logs have been collected and will be forwarded to an expert team that will update you as soon as possible about this problem.\nPlease let us know if you have more details about this problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-06T18:23:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fc22e7df-d4d2-f011-8544-7c1e52362b38",
+            "subject": "ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue CRM:00263000233",
+            "body": "Dear\nRosita Abate\n,\nWe are sending this email regarding a problem with your charger:\nY2 / S1 313508370010\nwhich led to the opened ticket:\n0466156\n.\nError\ndescription:\n\"Today november 6, a client tried to charge with POS between 4:23:16 PM and 4:30:16 PM CU TIME (17:23:16 and 17:30:16 Italy time) but the charger didn't deliver any energy. He tried again with POS but the charge stopped on its own, between 4:30:16 PM and 4:33:04 PM CU TIME (17:30:16 and 17:33:04 Italy time).\"\nOn the logs it was possible to observe:\n2025-12-06T16:23:16.086158+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: OCPP: Received command: RemoteStartTransaction (86794316) - {\"connectorId\":2,\"idTag\":\"d4c04c8c8675418bbf40\"}\n2025-12-06T16:23:16.091502+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: OCPP: Send result: RemoteStartTransaction (86794316) - {\"status\":\"Accepted\"}\n2025-12-06T16:23:16.096996+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: RemoteStartTransaction: cable not yet connected\n2025-12-06T16:23:16.893474+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/fddcdabf32e8[825]: setOutletLedState authenticated 2\n2025-12-06T16:30:21.000000+00:00 [FW080005G1] secc [daemon:notice] SECC[849]: {\"type\":\"session_stop\",\"timestamp\":1765038621329,\"chargerId\":\"secc2300-09314\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"unexpected\":true,\"source\":\"EV\",\"start\":1765038602709,\"duration\":0,\"energy\":0,\"EVCCID\":\"48313300b35a\",\"EVMAC\":\"48.31.33.00.b3.5a\",\"user\":\"internal\",\"error\":{\"code\":67,\"msg\":\"ERR_EV_DROPPED,\nvehicle ended with unexpected pilot state B\n\"}}}\nOn the logs it was possible to observe that the vehicle ended the session, the logs have been collected and will be forwarded to an expert team that will update you as soon as possible about this problem.\nPlease let us know if you have more details about this problem. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-12-06T18:53:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fbe12f1c-1ed4-f011-8544-7ced8d425bfe",
+            "subject": "A new case manager was assigned to 0466156 CRM:00225299765",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0466156 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=65a88e85-17e9-4f72-b2fe-e828c54f32b7",
+            "date": "2025-12-08T10:10:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a460831a-4ad4-f011-8544-7c1e5236229d",
+            "subject": "RE: ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue CRM:00263000233",
+            "body": "Buonasera Rosita,\nI am reaching out in regards of ticket\nID0466156.\nFollowing the previous analysis provided by my colleague, I report here the results of my analysis for the timestamps provided on 2025-12-06 for charger\nY2/S1 313508370010:\nThe first session was authenticated via App at 2025-12-06T16:23:16 on DC2 (I do not see the payment terminal configured for this charger).\nThe session failed during P03-CableCheck with the following error: code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\". This means the EV did not provide the correct pilot state, and the session was stopped because of it.\nThe vehicle was disconnected and connected again on DC2 at 2025-12-06T16:26:28. In this time, I see the connection to the Backend going several times online and offline. I do not see any authorization, probably due to the offline issue, and the session fails at 2025-12-06T16:29:02\nAt 2025-12-06T16:30:16 DC1 is authorized, the EV is connected and it starts charging at 2025-12-06T16:31:02.\nThe charger provides 100kW, but suddenly the EV started to request a lower current, until reaching 0 A current requested.\nThe session is stopped by the charger at 2025-12-06T16:32:39. The error shown is \"expected pilot state change timed out\".\nFor the first and third case, it seems clear that the EV had an abnormal behavior.\nFor the second case (missed authorization), this could be related to the toggling of connection with the Backend. As mentioned in ticket 0466073, this is currently under investigation with RC-IT in a separate way.\nPlease let me know if further analysis is required, or I can proceed to close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-08T15:25:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "01c7b0d4-05d5-f011-8544-7ced8d4251b1",
+            "subject": "RE: ID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue CRM:00263000233",
+            "body": "Hello,\nthank you for the analysis, you can close the ticket.\nWith best regards,\nRosita Abate",
+            "date": "2025-12-09T13:49:12Z",
+            "extra": {
+                "sender": "rosita.abate@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6b973755-08d5-f011-8544-7ced8d4259cd",
+            "subject": "Ticket 0466156 has been closed. Are you satisfied with our provided solution? CRM:00225300720",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0466156\nwith the title:\nID0466156-DC/Si-D/IT-[Y2/S1 313508370010] Charging issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-09T14:07:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

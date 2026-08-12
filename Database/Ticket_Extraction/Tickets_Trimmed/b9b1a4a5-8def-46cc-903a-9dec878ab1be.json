@@ -1,0 +1,142 @@
+{
+    "incident_id": "b9b1a4a5-8def-46cc-903a-9dec878ab1be",
+    "ticket_number": "0410469",
+    "title": "ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week",
+    "created_on": "2025-03-04T10:16:32Z",
+    "last_activity": "2025-04-04T10:35:35Z",
+    "age": "44659",
+    "description": "Reported behavior/issue:\nLast 4 weeks there has been 164 charging session on DC2 cable and 51 times CableTempSensor failures and 31 times where the difference has been > 15 degree celsius.\nRoot cause:\nBad or damaged CCS2 cable. NOTE: CMS is in use.\nSolution:\nWork done 3.4.2025 by Caverion Estonia\nOpen Ticket: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hKzfTF",
+    "stage": null,
+    "serial_number": "MP / R2 170001450",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c3ae8dc1-e1f8-ef11-bae2-6045bddf319c",
+            "subject": "A new case manager was assigned to 0410469 CRM:00225172547",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0410469 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b9b1a4a5-8def-46cc-903a-9dec878ab1be",
+            "date": "2025-03-04T10:16:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9ce009f-8891-d901-9b8f-f40d30a980e4",
+            "subject": "CableTempDiff >15 degree celsius",
+            "body": "fields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SeccStopCharging/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_Wh\":*,'\nas\nenergy\n|\nparse\n@message\n'\"source\":*,'\nas\nsource\n|\nparse\n@message\n'\"curr_ses_secs\":*,'\nas\nduration\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_endBy\":\"*\",'\nas\nend_by_source\n|\nparse\n@message\n'\"pt1000_1_T\":*,'\nas\npt1000_1_T\n|\nparse\n@message\n'\"pt1000_2_T\":*,'\nas\npt1000_2_T\n|\nparse\n@message\n'\"curr_ses_errMsg\":\"*\"'\nas\nerrorMsg\n|\ndisplay\n@logStream\n, outlet, energy, source, duration, end_by_source, EVMAC,\nabs\n(pt1000_2_T-pt1000_1_T)\nas\ndiff\n, errorMsg\n#| filter outlet = 3\n#| filter energy > 0\n|\nfilter\ndiff\n>\n15\n|\nlimit\n10000",
+            "date": "2025-03-04T10:17:37Z",
+            "extra": {}
+        },
+        {
+            "id": "c86b2f8c-97ac-df07-a459-1a387f7b0999",
+            "subject": "Total sessions last 4 week",
+            "body": "fields\n@logStream\n,\n@timestamp\n|\nfilter\n@message\nlike\n/SeccStopCharging/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nparse\n@message\n/\n\\\n\"outlet\n\\\n\":\n\\\n\"(?<outlet>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_Wh\":*,'\nas\nenergy\n|\nparse\n@message\n'\"source\":*,'\nas\nsource\n|\nparse\n@message\n'\"curr_ses_secs\":*,'\nas\nduration\n|\nparse\n@message\n/\n\\\n\"EVMAC\n\\\n\":\n\\\n\"(?<EVMAC>.*?)\n\\\n\"/\n|\nparse\n@message\n'\"curr_ses_endBy\":\"*\",'\nas\nend_by_source\n|\nparse\n@message\n'\"pt1000_1_T\":*,'\nas\npt1000_1_T\n|\nparse\n@message\n'\"pt1000_2_T\":*,'\nas\npt1000_2_T\n|\nparse\n@message\n'\"curr_ses_errMsg\":\"*\"'\nas\nerrorMsg\n|\ndisplay\n@logStream\n, outlet, energy, source, duration, end_by_source, EVMAC,\nabs\n(pt1000_2_T-pt1000_1_T)\nas\ndiff\n, errorMsg\n|\nfilter\noutlet =\n3\n|\nlimit\n10000",
+            "date": "2025-03-04T10:19:02Z",
+            "extra": {}
+        },
+        {
+            "id": "a2216d8c-0a7a-60ea-adcd-29a22cb587c1",
+            "subject": "DC2_CableTempSensor_XD101",
+            "body": "fields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/-Error-Flag\\s+'([^']+)'\\s+changed\\sto\\strue/\n|\nparse\n@message\n/-Error-Flag\\s+'(?<PLC_ERROR>[^']+)'\\s+changed\\sto\\s(?<DC_VALUE>true)/\n|\nfilter\n@logStream\nlike\n/hKzfTF/\n|\nfilter\nPLC_ERROR\nlike\n/IMD_BC/\nor\n@message\nlike\n/CableTempSensor/\nor\n@message\nlike\n/DC_Co/\nor\n@message\nlike\n/OCPP/\nor\n@message\nlike\n/doorOpen_BG201/\nor\n@message\nlike\n/High voltage transducer/\nor\n@message\nlike\n/DoorPositionSwitch_BG3_BG4/\n|\nstats\ncount\n(*)\nas\nCount\nby\nPLC_ERROR,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-03-04T10:19:34Z",
+            "extra": {}
+        },
+        {
+            "id": "e02c48e6-f7f8-ef11-bae2-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0410469 CRM:00225172710",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0410469 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b9b1a4a5-8def-46cc-903a-9dec878ab1be",
+            "date": "2025-03-04T12:55:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd46587f-c80b-5c0a-a670-b1a5d084194a",
+            "subject": "reported Behavior or issue",
+            "body": "Reported behavior/issue:\nLast 4 weeks there has been 164 charging session on DC2 cable and 51 times CableTempSensor failures and 31 times where the difference has been > 15 degree celsius.\nRoot cause:\nBad or damaged CCS2 cable. NOTE: CMS is in use.\nSolution:\nPlease DO NOT ADD MAIN ASSET BEFORE FINAL JUDGEMENT",
+            "date": "2025-03-04T13:16:03Z",
+            "extra": {}
+        },
+        {
+            "id": "db860f8b-fef8-ef11-bae2-7c1e5236cda4",
+            "subject": "ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week CRM:00797001760",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R2 170001450\nChargerID/Serial No.\n:\nhKzfTF\nProblem Description\n: DC2 CableTempSensor error 51 times last 4 week\nTroubleshooting\n: As we discussed in the Teams chat, we noticed that the charger is running an older firmware version (v3.2.8). While we recommend updating it to the latest version, we understand you're not ready for the update at the moment. Kindly allow us some time to review the logs, and we will get back to you as soon as possible.\nFor future reference, your case number is\n0410469\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-04T13:42:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c58524a2-0f4c-8010-aae3-b84e25c6ac93",
+            "subject": "Charger serial number",
+            "body": "MP / R2 170001450",
+            "date": "2025-03-04T18:46:30Z",
+            "extra": {}
+        },
+        {
+            "id": "4ce029a5-18d7-0160-b22d-aab0041e9ac3",
+            "subject": "Charging session interrupted due to CableTempSensor error",
+            "body": "2025-02-09T09:59:40.035Z\n2025-02-09T09:59:39.793380+00:00 swcpu [user:debug] 1 soft_plc_sicharge: <LCU_DC[1].DC_StatusCode> : \"EVSE_SHUTDOWN\" --> \"READY\"\n2025-02-09T09:59:40.035Z\n2025-02-09T09:59:40.035Z\n2025-02-09T09:59:40.035Z\n2025-02-09T09:59:40.286Z",
+            "date": "2025-03-04T19:06:26Z",
+            "extra": {}
+        },
+        {
+            "id": "d4bec123-908d-a6f0-b12c-bdeba463743f",
+            "subject": "Charger is reported CableTempSensor error 51 times in last 4 weeks",
+            "body": "",
+            "date": "2025-03-04T19:19:28Z",
+            "extra": {}
+        },
+        {
+            "id": "c6589819-5c57-f80a-b4cb-ab335a5cbbc1",
+            "subject": null,
+            "body": "Will create a child case & assigned to ES.",
+            "date": "2025-03-04T19:20:07Z",
+            "extra": {}
+        },
+        {
+            "id": "a82daf3b-5a88-b6e8-aec4-9de0121d9742",
+            "subject": "Additional Comment",
+            "body": "The main asset is not added in the note due to the RC's request. If we add the main asset, the end customer will see the case description, and they may ask what this case is about it to RC. (It seems this issue is not known to the end customer, and the RC doesn't want them to know about it just yet.)",
+            "date": "2025-03-05T12:44:11Z",
+            "extra": {}
+        },
+        {
+            "id": "8aecbf1a-9b04-d2e4-a276-e37ec4a2e7ea",
+            "subject": null,
+            "body": "Child case 0410696",
+            "date": "2025-03-05T12:45:25Z",
+            "extra": {}
+        },
+        {
+            "id": "9d575fbe-6803-f011-bae3-7c1e52350ea5",
+            "subject": "RE: ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week CRM:00797001760",
+            "body": "Hi Markus,\nI hope you're doing well.\nReferring to the child case (0410696) for this issue, I am handing over the case for onsite activity (CCS cable replacement). Please refer to the MLFM below for the CCS cable:\n8EM5903-0AA02-6AA2 -XD100, -XD101 Charging Cable CCS2 250A 1000V 5,82m CCS 250 A / 400 A (Boost) 5 m\nPlease refer to the link below for the return whitelist component and return process for the Sicharger D.\nLink:\nReturn spare parts Sicharge D\nAlso note that t\nhe\nconsignment shipped from RC to QM\nmust include the following data:\nISP ticket number\nSerial number of charger\nDefective part name/MLFB\nAdditionally, please add the following details to the note for SQM before closing the case.\nDefective part name/MLFB\nComponent serial number\nLogs with marked error (CSV format preferred)\nActive error flags before replacement\nDevice-specific error code\n(if applicable)\nOutcome of wiring checkup\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note\nCharger Delivery date:\nCharger Installation date at site:\nI am writing to formally inform that we are moving case 0410469 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nEE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nEE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T19:48:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7df49317-4011-f011-998a-7c1e52350ea5",
+            "subject": "RE: ID0410469-DC/Si-D/EE-[hKzfTF] DC2 CableTempSensor error 51 times last 4 week CRM:00797001760",
+            "body": "Hi,\nTask done 3.4.2025.",
+            "date": "2025-04-04T10:32:30Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

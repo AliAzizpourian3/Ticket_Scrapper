@@ -1,0 +1,81 @@
+{
+    "incident_id": "2c142c10-bbf7-4126-9ee3-18e7599a98b6",
+    "ticket_number": "0409644",
+    "title": "ID0409175-DC/Si-D/SA-[MP / S1 170003197] Cable Temperature Error (C1)",
+    "created_on": "2025-02-27T09:27:09Z",
+    "last_activity": "2025-03-04T16:12:53Z",
+    "age": "7282",
+    "description": "Reported behavior/issue:\nCable Temperature Sensor it activated (\nVIV:0 RNE:1 KON:1\n)\nOpen Ticket:\nNo\nRoot cause:  Cable fault\nSolution:  Cable replacement with new one\nOn DAMEX Sanctioned List:\nSiemens Employee\nWarranty Status\n: Yes",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "WeccII",
+    "stage": null,
+    "serial_number": "MP / S1 170003197,MP / S1 170003197",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "4cb9ee3d-d6d4-d4d9-833e-20bd94a8d22c",
+            "subject": "Note to ES Team",
+            "body": "Suspected Root Cause\n: It seems the CCS cable is faulty (possibly something loose in the Plug or water ingress).\nProblem Description\n: The charger is displaying a cable temperature error flag (VIV: 0, RNE: 1, KON: 1), but the error flag disappears when the customer removes the plug from the Plug holder.\nAction Performed (L2)\n: After rebooting, the issue reoccurs. The firmware was updated to the latest version, v6.0.3, but the issue persists. The RC partner was onsite and brought me into the call. We checked for any dirt on the CCS pin, verified the corrosion of the connector blades, and collected a short video of the plug along with pictures. We also checked the following:\nMeasured the voltage between the CP pin and Ground, which showed approximately 12 volts.\nMeasured the resistance between P1 and P2, which remained stable at approximately 1.04 kΩ even with cable movement (video attached above).\nMeasured the resistance between N1 and N2, which varied after the movement of the cable (video attached above).\nAdditionally, ES colleagues checked the resistance value while moving the gun, and a variation was also observed. The screenshot is attached in the above note.\nCharger SW Version\n: v6.0.3\nReason for Handover (L3)\n: Further investigation required, as per the Field Issue Excel sheet.\nLog Analysis with Timestamp\n: 26th Feb. 9:30 AM to 2:30 PM (UTC)\nAction Required by HQ\n: Further investigation needed.\nAttachment\n: Attached the videos of the resistance & Plug pictures in the above note.",
+            "date": "2025-02-27T09:28:47Z",
+            "extra": {}
+        },
+        {
+            "id": "76201d9f-8bff-cdd7-9ff8-32aefd92c3e2",
+            "subject": null,
+            "body": "N1 & N2 Resistance measurement.mp4\nP1 & P2 Resistance measurement.mp4",
+            "date": "2025-02-27T09:31:50Z",
+            "extra": {}
+        },
+        {
+            "id": "26ff2fe0-205a-6634-9d43-2d923f26f2fb",
+            "subject": "Variation of value after plug movement",
+            "body": "",
+            "date": "2025-02-27T10:48:29Z",
+            "extra": {}
+        },
+        {
+            "id": "193549c7-d333-c180-92e1-883216c66ce6",
+            "subject": "Plug pictures & video",
+            "body": "",
+            "date": "2025-02-27T10:51:31Z",
+            "extra": {}
+        },
+        {
+            "id": "d3a95a48-e2f7-ef11-bae2-6045bddf319c",
+            "subject": "0409644 - ID0409175-DC/Si-D/SA-[MP / S1 170003197] Cable Temperature Error (C1) CRM:00646000024",
+            "body": "Dear Basheer,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. Can we have a short call today regarding the issue?\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-03T03:47:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b76e2c6c-d734-f005-932f-5234f44a6b05",
+            "subject": "Note to QM ",
+            "body": "Particular\nRemarks\nDefective part name/MLFB\n8EM5903-0AA02-6AA2\nComponent serial number\n0010029541\nLogs with marked error (CSV format preferred)\nSCB Logs:\n<<WeccII-logs (3).csv>>\nActive error flags before replacement\nPLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from true - ('VIV:0 RNE:1 KON:1')\nDevice-specific error code (if applicable)\n('VIV:0 RNE:1 KON:1')\nOutcome of wiring checkup\nWiring All Okay\nCommissioning checklist\nOK\nCommissioning date\nNA\nField service report\nRC will Update\nDate of failure (see side note)\n26/02/2025\nComplementary information\nCP-to-ground Voltage reading (standby) -\n12V\nSigns of corrosion (external) -\nNo sign of corrosion on the contactor mating surface or external damage\nNote :\nObserved cable temperature varies with applying an external force to cable | Charger is newly commissioned\n2025-02-26T08:53:04.744119+00:00 swcpu [user:debug] [4021] [CSV]\nDC2: Charging Cable Sensor Plausibility\nContact Temperatures:\n18, -47.2\nEvidence of water ingress - No\nPicture of the Cable label -\nOutlet Number and position -\nDC2 right\nCable lifetime from commissioning until replacement -\nError observed with the first charging session\nIs it the original cable or has a cable replacement already taken place? - No\nDate of CMS installation (if applicable) -\nNA\nDates of last OK and first NOK session -\n2025-02-26T08:53:04.744119\nEV Manufacturers of last OK and first NOK session (or MAC) - if available\nMaximum charging current value (EVSE_NowCur[A]) of last 2 weeks before NOK session -\nNA\n( Newly commissioned charger)\nHow many Charging phases P01-P05 encountered on NOK session (Abortion on P06) - 1 out of 1\nSum of Energy transfer for the affected outlet in last 12 Months -\n18.2 kWhr\nCount of charging sessions for the affected outlet in the last 12 Months - 1 Nos\nComplementary procedures\nNot Required",
+            "date": "2025-03-04T10:16:56Z",
+            "extra": {}
+        },
+        {
+            "id": "4e695a8e-e2f8-ef11-bae2-000d3adc93d1",
+            "subject": "RE: 0409644 - ID0409175-DC/Si-D/SA-[MP / S1 170003197] Cable Temperature Error (C1) CRM:00646000024",
+            "body": "Dear Basheer,\nI hope all is well with you. Thank you so much for your support and sharing the details.  As we discussed yesterday, please proceed to replace the charging cable as the fault appearing with a mechanical stress.  Request your support to share the following details also:\nCharger Delivery date:\nCharger Installation date at site:\nCharger commissioning date:\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-04T10:22:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "55389487-7c93-d3d2-a79f-238b09421458",
+            "subject": "Notes from ES to NOC [ 04/03/2025]",
+            "body": "a) Problem Description\n: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from true - ('VIV:0 RNE:1 KON:1')\nb) Suspected Root Cause\n: Cable damage -\nRCA - Unknown as there is no physical damage observed by RC\nc\n) Action Performed:\nAnalysis of the issue\nd) Charger SW Version\n: v6.0.3\nf) Fault history:\nNA\ng) Log analysis with timestamp:\n2025-02-26T08:53:04.744119+00:00 swcpu [user:debug] [4021] [CSV]\nDC2: Charging Cable Sensor Plausibility\nContact Temperatures:\n18, -47.2\ni) Attachment:\nSCB Log",
+            "date": "2025-03-04T10:46:45Z",
+            "extra": {}
+        }
+    ]
+}

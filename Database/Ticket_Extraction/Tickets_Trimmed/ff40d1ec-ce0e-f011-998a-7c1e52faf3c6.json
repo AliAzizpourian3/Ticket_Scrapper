@@ -1,0 +1,90 @@
+{
+    "incident_id": "ff40d1ec-ce0e-f011-998a-7c1e52faf3c6",
+    "ticket_number": "0416107",
+    "title": "ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding",
+    "created_on": "2025-04-01T07:57:16Z",
+    "last_activity": "2025-05-22T12:01:47Z",
+    "age": "62095",
+    "description": "Reported behavior/issue:\nWe are having a problem with this charger for sending the full idtag of the remote OCPI start session.See attached logs for reference\nIdTag for charger e2UpCm is showing error has been exceeded but all the other chargers in the same customer it doesn't have for example charger\n3nmTN4\nOCPP configs are exactly the same. logs-insights in timeline. AWS query only for 3 chargers to confirm, since RC said all of them are working except the first one",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "e2UpCm",
+    "stage": null,
+    "serial_number": "MP / P4 170000461",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "8eee8ae6-ce0e-f011-9989-7c1e52768c07",
+            "subject": "Charger 170000461 - OCPI is not responding to the idtag 32 charts",
+            "body": "Dear All,\nWe are having a problem with this charger for sending the full idtag of the remote OCPI start session\nSee attached logs for reference\nBest Regards,\nItai Zitan\nSiemens Ltd.\nBusiness Development Manager\nKannot Industrial Area\n70750 Gedera, Israel\nMobile: +972 53 8644306\nmailto:itai.zitan@siemens.com",
+            "date": "2025-04-01T07:57:06Z",
+            "extra": {
+                "sender": "itai.zitan@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f9287d29-ee0e-f011-9989-7ced8d2c5183",
+            "subject": "ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding. CRM:02682000021",
+            "body": "Dear Itai Zitan,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P4 170000461\nChargerID/Serial No.\n:\nProblem Description\n:\nWe are having a problem with this charger for sending the full idtag of the remote OCPI start session.See attached logs for reference.\nWe will investiagte the logs and get back to you as soon as possible.\nFor future reference, your case number is\n0416107\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-01T11:40:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e9b85a1-7010-f011-998a-000d3adc93d1",
+            "subject": "ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding. CRM:02682000021",
+            "body": "Hi Ita, good afternoon :) How are you doing? Long time no see.\nSorry for the delay, there was a huge spike in tickets and we had to go through the first ones.\nCan I know the reason why you want a idTag that big? This sounds like a implementation is required and I need to present to the colleagues the reason why we need it and what is the consequences.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-03T09:47:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "54b7d691-e318-b59c-b920-5c5cecb66255",
+            "subject": "NOTE TO OCPP",
+            "body": "",
+            "date": "2025-04-03T11:01:33Z",
+            "extra": {}
+        },
+        {
+            "id": "33c69c0e-0119-f011-998a-6045bddf319c",
+            "subject": "RE: ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding. CRM:02682000021",
+            "body": "Hello Itai,\nFor me, it looks like this is a backend issue because we, as chargers, don't receive any OCPI communication. This communication is only e.g. between the backend and the payment provider. Therefore, we cannot answer why the backend is sending the long ID, as it is not a processed value. But as per OCPP the IdTag can only be 20 digits.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-14T07:21:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "655a716f-0219-f011-998a-7c1e523508ba",
+            "subject": "Automatic reply: ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding. CRM:02682000021",
+            "body": "Dear sender, I am out of the office from 14/04/25 with limited access to my email, I will return on Sunday 17/04/\n2\n5 In urgent cases i can be reached on my mobile phone:\n+972 53 8644306",
+            "date": "2025-04-14T07:31:19Z",
+            "extra": {
+                "sender": "itai.zitan@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9f1aca63-7929-f011-8c4d-7c1e52768c07",
+            "subject": "RE: Automatic reply: ID0416107-DC/Si-D/IL-[MP / P4 170000461] OCPI not responding. CRM:02682000021",
+            "body": "Hello\nAs there has been no response or further queries from you, I would like to inform you that this case will be closed if we do not hear from you soon.\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T06:23:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "incident_id": "8dcbe967-aea1-4caf-b720-75c973861d43",
+    "ticket_number": "0417871",
+    "title": "ID0417822-DC/Si-D/PL-[Multiple] Downgrade software 6.0.3 and 6.1.3 (C1)",
+    "created_on": "2025-04-09T11:21:04Z",
+    "last_activity": "2025-05-06T04:48:11Z",
+    "age": "38487",
+    "description": "Reported issue:  Please urgently downgrade software 6.0.3 and 6.1.3 for chargers: These two are the first to go:\nMP / RN 170002786\nMP / RN 170002787\nY2/S3 300000004049\nMP / RN 170002795\nY2/RD 300000004025\nMP / R6 170002262\nMP / RN 170002794\nMP / P9 170000980\nThe software is not undergoing integration testing with the main MSP in Poland at this time\nSolution:  Null\nyyyy-mm-dd: 2025-04-09",
+    "type": 3,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / RN 170002787,MP / RN 170002795,MP / R6 170002262,MP / RN 170002794,MP / P9 170000980,Y2/RD300000004025,Y2/S3 300000004049,MP / RN 170002786,MP / RN 170002786",
+    "case_nature_code": null,
+    "chargerID": "Rt1goP",
+    "additional_info": [
+        {
+            "id": "11f8daa4-5b3f-1c2f-8b27-fc0e9791a2b9",
+            "subject": "Notes to L3",
+            "body": "Suspected Root Cause :\nNA\nProblem Description :\nDowngrade FW to 6.0.3\nAction Performed (L2) :\nNA\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\nTo downgrade FW to 6.0.3",
+            "date": "2025-04-09T11:21:52Z",
+            "extra": {}
+        },
+        {
+            "id": "1a2d7d3c-231a-7d51-9599-24406fab00cf",
+            "subject": "Case remarks",
+            "body": "Please urgently downgrade software 6.0.3 and 6.1.3 for chargers:\nThese two are the first to go: MP / RN 170002786, MP / RN 170002787\nand then: Y2/S3 300000004049\nMP / RN 170002795\nY2/RD 300000004025\nMP / R6 170002262\nMP / RN 170002794\nMP / P9 170000980\nThe software is not undergoing integration testing with the main MSP in Poland at this time.",
+            "date": "2025-04-09T11:26:03Z",
+            "extra": {}
+        },
+        {
+            "id": "1f2275c8-61aa-470d-bd08-3ce6c6f3efef",
+            "subject": "Notes to L3",
+            "body": "Based on the recent discussion with Frach Konrad, the firmware should be downgraded to version 4.0.11.",
+            "date": "2025-04-09T12:40:36Z",
+            "extra": {}
+        },
+        {
+            "id": "79d4292b-f257-c3f0-afeb-f8af3a9dda48",
+            "subject": "Status Update: 18/04/2025",
+            "body": "FW downgrade plan has been paused till 22nd April as there is manpower constrain from RC side - incase of charger going OoO during downgrade process\nStatus -\nActivity is in hold\nAttaching mail communication between RC and Stephan\nSummary:\nTickets\nID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV (C1)\nID0417607-DC/Si-D/PL-[ Y2/S3 300000004049 ] error while restarting the charger\nR&D ticket\nEMOB-17935\nECD - 1564\nIssue\nAfter StopTransaction is the StatusNotification SuspendedEV\nDuring charging with soft reset, charger is sending status Unavailable and in session_stop unexpected as False.\nDuring charging with hard reset, charger is sending status Charging and in session_stop, unexpected as True.\nArea of Impact\nno billing, since polish OCPP backend provider Elocity uses the staus Finishing in the StatusNotification message as mandatory condition\nDid not pass integration test with MSP\nStatus\nHotfix implementation in progress for beta test\nFixed with v7.0.x\nFix Version\nv7.0.4\nv7.0.4",
+            "date": "2025-04-18T06:12:44Z",
+            "extra": {}
+        },
+        {
+            "id": "507ef9e7-5578-4313-872e-c298a1da1c18",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Charger FW downgrade plan has been paused",
+            "date": "2025-04-25T05:43:43Z",
+            "extra": {}
+        },
+        {
+            "id": "b568b064-4489-691d-a0a7-dde365d33561",
+            "subject": "Notes from ES to NOC [ 06/05/2025]",
+            "body": "Problem Description\n: FW downgrade\nSuspected Root Cause\n: FW Bug\nAction Performed:\nRemotely downgraded the FW to v 4.0.11 for two chargers as agreed - ChargerID:\njGpPKe & ZBnIJD\nCharger SW Version\n: v4.0.11\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-05-06T04:45:51Z",
+            "extra": {}
+        }
+    ]
+}

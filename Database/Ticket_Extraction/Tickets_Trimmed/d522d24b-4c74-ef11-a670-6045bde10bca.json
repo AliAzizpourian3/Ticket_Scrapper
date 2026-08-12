@@ -1,0 +1,356 @@
+{
+    "incident_id": "d522d24b-4c74-ef11-a670-6045bde10bca",
+    "ticket_number": "0379691",
+    "title": "ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet",
+    "created_on": "2024-09-16T16:54:16Z",
+    "last_activity": "2025-12-16T14:05:53Z",
+    "age": "31145",
+    "description": "Reported behavior/issue:\nMeterVale mismatch\nRoot cause:\nDetails captured for Inlet in place of outlet\nSolution:\nDifferent parameters of MeterValue Explained\nOn DAMEX Sanctioned List: No\nWarranty Status:\nExpired (12/07/2023)",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "K5YipH",
+    "stage": null,
+    "serial_number": "MP / ND 170000126",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "68b70c46-4c74-ef11-a671-000d3ab7063f",
+            "subject": "MeterValue Afcon-Driivz",
+            "body": "Dear Team,\nWe need your help with the MeterValue that is sent to the customer's OCPP.\nI will describe the problem initially during the loading the values ​​that are sent to the customer are the Register and not the Interval so that the customer during the loading in his application interface sees very high values ​​of the charge (in money), in my opinion because it doubles the total loadings (Register).\nAt the end of the loading, values ​​of (Interval) are sent to the customer so that the charge at the end of the charge becomes the original charge that should be.\nI will illustrate this during a transaction, I will take for example load position 170000126 transaction number 5256844 at 14:20:44 GMT\nDuring the transaction:\nAt the end of the transaction:\nIt is possible to notice the values ​​that are sent during the loading and at the end, we would be happy to receive your support on how to handle this issue.\nAttaches configuration from Driivz side.\nThanks in advance,\nOrel.",
+            "date": "2024-09-16T16:54:11Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e9da254f-4c74-ef11-a670-0022489fd5e9",
+            "subject": "RE: MeterValue Afcon-Driivz",
+            "body": "From:\nLachiani, Orel (RC-IL SI E)\nSent:\nMonday, 16 September 2024 19:53\nTo:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSubject:\nMeterValue Afcon-Driivz\nDear Team,\nWe need your help with the MeterValue that is sent to the customer's OCPP.\nI will describe the problem initially during the loading the values ​​that are sent to the customer are the Register and not the Interval so that the customer during the loading in his application interface sees very high values ​​of the charge (in money), in my opinion because it doubles the total loadings (Register).\nAt the end of the loading, values ​​of (Interval) are sent to the customer so that the charge at the end of the charge becomes the original charge that should be.\nI will illustrate this during a transaction, I will take for example load position 170000126 transaction number 5256844 at 14:20:44 GMT\nDuring the transaction:\nAt the end of the transaction:\nIt is possible to notice the values ​​that are sent during the loading and at the end, we would be happy to receive your support on how to handle this issue.\nAttaches configuration from Driivz side.\nThanks in advance,\nOrel.",
+            "date": "2024-09-16T16:54:20Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "739fbb9f-7374-ef11-a670-000d3ab08c0a",
+            "subject": "A new case manager was assigned to 0379691 CRM:00225097126",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0379691 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d522d24b-4c74-ef11-a670-6045bde10bca",
+            "date": "2024-09-16T21:35:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3fcfc0ce-7474-ef11-a670-000d3a65d428",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 4 hours, 49 minutes and 59 seconds.",
+            "date": "2024-09-16T21:44:18Z",
+            "extra": {}
+        },
+        {
+            "id": "7b76942c-7774-ef11-a670-000d3a65d428",
+            "subject": "0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Dear Orel,\nThank you for reaching out to eMobility Support. My name is\nSaurav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / ND 170000126\nChargerID/Serial No.\n:\nK5YipH\nProblem Description\n: MeterValue at Inlet and outlet\nTroubleshooting\n: Please find the explanation below\nAs this charger does not have LEM meter we can only receive total unit charged via Energy.Active.Import.Interval. It always starts with 0 and end at total unit consumed and then resets it value. But Energy.Active.Import.Register always starts with last captured metervalues and add total unit consumed during the charging session to it.\nNow there are 2 places where we can capture these values, Inlet and Outlet.\nAt Inlet, we will receive combined values of all available outlet in that charger and at Outlet we will receive values for any one particular outlet.\nIf we take the example of same transaction id of the same charger, we can see in the start transaction message that meterStart value is \"0\".\n2024-09-16T14:20:42.296158+00:00 sicharge-cp [local0:info] sicharge-cp-backend/11be168f4970[702]: OCPP: Send command: StartTransaction (fa9ee42e-4c9c-4561-be49-0b6daf401ab7) - {\"connectorId\":1,\"idTag\":\"EEFF204E4029CD\",\"\nmeterStart\":0,\n\"timestamp\":\"2024-09-16T14:20:42.289Z\"}\nIn the Metervalue we have both the parameters i.e. Energy.Active.Import.Interval and Energy.Active.Import.Register.\n2024-09-16T14:21:42.840661+00:00 sicharge-cp [local0:info] sicharge-cp-backend/11be168f4970[702]: OCPP: Send command: MeterValues (c2c85a18-e845-4527-9a69-23db41818275) - {\"connectorId\":1,\"transactionId\":5256844,\"meterValue\":[{\"timestamp\":\"2024-09-16T14:21:42.839Z\",\"sampledValue\":[{\"value\":\"198\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Import\"},{\"value\":\"160000\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Offered\"},{\"value\":\"86922\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\"},{\"value\":\"1263\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Sample.Periodic\",\"measurand\":\"\nEnergy.Active.Import.Interval\n\"},{\"value\":\"380665938.28286594\",\"location\":\"Inlet\",\"unit\":\"Wh\",\"measurand\":\"\nEnergy.Active.Import.Register\n\"},{\"value\":\"14\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"439\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\"}]}]}\nBut the location of both the values are different.\n2024-09-16T14:21:42.840661+00:00 sicharge-cp [local0:info] sicharge-cp-backend/11be168f4970[702]: OCPP: Send command: MeterValues (c2c85a18-e845-4527-9a69-23db41818275) - {\"connectorId\":1,\"transactionId\":5256844,\"meterValue\":[{\"timestamp\":\"2024-09-16T14:21:42.839Z\",\"sampledValue\":[{\"value\":\"198\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Import\"},{\"value\":\"160000\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Offered\"},{\"value\":\"86922\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\"},{\"value\":\"1263\",\"\nlocation\":\"Outlet\n\",\"unit\":\"Wh\",\"context\":\"Sample.Periodic\",\"measurand\":\"\nEnergy.Active.Import.Interval\n\"},{\"value\":\"380665938.28286594\",\"\nlocation\":\"Inlet\"\n,\"unit\":\"Wh\",\"measurand\":\"\nEnergy.Active.Import.Register\n\"},{\"value\":\"14\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"439\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\"}]}]}\nIn the StopTransaction message we receive Energy.Active.Import.Interval for location outlet.\n2024-09-16T15:05:42.265103+00:00 sicharge-cp [local0:info] sicharge-cp-backend/11be168f4970[702]: OCPP: Send command: StopTransaction (54e20beb-7da8-4b9f-b7cb-668d5fdec6fc) - {\"meterStop\":48970,\"timestamp\":\"2024-09-16T15:05:42.251Z\",\"transactionData\":[{\"timestamp\":\"2024-09-16T15:05:42.251Z\",\"sampledValue\":[{\"value\":\"84\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"48970\",\"\nlocation\":\"Outlet\n\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"\nEnergy.Active.Import.Interval\n\"}]}],\"reason\":\"Remote\",\"transactionId\":5256844}\nSo, it's please inform customer to capture only Energy.Active.Import.Interval for location outlet.\nAnd meterStart will always be \"0\".\nHope this is clear, let us know if you have any other question related to this or can we close this ticket.\nAwaiting your response.\nFor future reference, your ticket number is\n0379691\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-16T22:01:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2e058cef-8274-ef11-a670-000d3a65d428",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 hour, 41 minutes and 2 seconds.",
+            "date": "2024-09-16T23:25:23Z",
+            "extra": {}
+        },
+        {
+            "id": "285f32f6-8274-ef11-a670-000d3a65d428",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 13 seconds.",
+            "date": "2024-09-16T23:25:31Z",
+            "extra": {}
+        },
+        {
+            "id": "fb3ea0f8-2b75-ef11-a670-000d3ab08c0a",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nAs discussed in today's meeting with customer, please discuss the points with backend team and let us know.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-17T19:35:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9eaecf68-d175-ef11-a671-000d3ab8e04e",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Dear Saurav,\nHope you are well.\nAfcon is asking for another brief meeting on Driivz on Sunday\nCan you join the meeting in the attached email?\nThanks in advance",
+            "date": "2024-09-18T15:19:44Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ceae26f-d175-ef11-a671-000d3a69a8a0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 15 hours, 54 minutes and 20 seconds.",
+            "date": "2024-09-18T15:19:52Z",
+            "extra": {}
+        },
+        {
+            "id": "1d11b8a4-ecf9-3d2d-a74a-78a522c8085b",
+            "subject": "Update",
+            "body": "Discussion with Afcon and Driivz on 22nd September.\nInformation provided to Afcon:\n1) Informed about location \"Inlet\" and 'Outlet\"\n2) Difference between 'Energy.Active.Import.Interval\" and \"Energy.Active.Import.Register\".\n3) Difference between MeterValues Measurand and StopTransaction Sample Value.\nDiscussion with Driivz team:\n1) How we can capture correct meter values during charging.\nSolution:\nChargers with LEM meters will have Energy.Active.Import.Register and LEM address were updated. Cases without LEM meters will have only Energy.Active.Import.Interval. And Afcon will not show estimated cost for those chargers.",
+            "date": "2024-09-23T04:15:07Z",
+            "extra": {}
+        },
+        {
+            "id": "5a2ce49a-6579-ef11-a670-002248997338",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nGreetings of the day.\nHope you have checked the charger's performance & data after our discussion with backend team.\nPlease let us know if you have any other questions on this or can we close this ticket?\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-23T04:38:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5ecd0187-6679-ef11-a670-002248997338",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 4 days, 13 hours, 24 minutes and 45 seconds.",
+            "date": "2024-09-23T04:44:37Z",
+            "extra": {}
+        },
+        {
+            "id": "402b5f98-7879-ef11-ac20-000d3ab4d5d3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Saurav,\nI have seen several transactions taking place at these charging stations\nIf we take charging station 160365534 as an example, I will initially point out that this is an early Sicharge D charging station that did not have a LEM to begin with.\nThere seems to be new data being received, in my estimation even the correct values.\nBut still according to them the values ​​do not appear in the application during charging.\nTherefore, for now we have not yet solved the case.\nI have another question for this what used to happen when there was no DC meter in our charging stations, how is data sent to the OCPP during meter less charging?\n(I'm not sure there is a DC meter on every connector on every type of charging station).\nBr,\nOrel.",
+            "date": "2024-09-23T06:54:02Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f96a0f9f-7879-ef11-ac20-000d3ab121b3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 2 hours, 9 minutes and 31 seconds.",
+            "date": "2024-09-23T06:54:08Z",
+            "extra": {}
+        },
+        {
+            "id": "9ca9dc13-8a79-ef11-a670-002248997338",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nGlad to know that charger is not sending \"Energy.Active.Import.Register\" now as this charger does not have LEM Meter.\nAs we discussed with Driivz team yesterday i.e. 22nd September that all the chargers which do not have LEM meter which means that chargers which will not send Energy.Active.Import.Register for location Outlet will not show estimated cost on the customer's application.\nLet me us know if we misunderstood anything.\nChargers which do not have LEM meters, EcoG calculates total energy and send in metervalues as well as stoptransaction message.\nPlease let me know if you have any other question or can we close this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-23T08:59:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17733a39-8b79-ef11-a670-002248997338",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 2 hours, 13 minutes and 7 seconds.",
+            "date": "2024-09-23T09:07:15Z",
+            "extra": {}
+        },
+        {
+            "id": "8128ee18-8c79-ef11-ac20-000d3ab121b3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Saurav,\nYou understood correctly, but it is a problem that charging stations will not send values ​​during customer charging, and for this we need to somehow find a solution, because there are a variety of DC stations in the world that do not have LEM and yet it is possible to receive parameters during charging.\nAll charging stations have EcoG, will they somehow be able to get the parameters from there?\nSince you see from the logs that now the Interval values ​​are sent as I sent in a previous email, will they be able to pull these values ​​during the charging?\nBr,\nOrel.",
+            "date": "2024-09-23T09:13:30Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c99d0a19-8c79-ef11-ac20-002248a29667",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 6 minutes and 25 seconds.",
+            "date": "2024-09-23T09:13:39Z",
+            "extra": {}
+        },
+        {
+            "id": "356d5b9f-397a-ef11-ac20-000d3ab08c0a",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nAs discussed on our call on September 23rd, if the charger does not have an LEM meter, EcoG will calculate the total charging units and send the values in the\nEnergy.Active.Import.Interval\nfield. However, Driivz is currently only considering the\nEnergy.Active.Import.Register\nfield to display the total units (estimated cost) during charging on their backend application.\nIn summary, the charger is sending\nEnergy.Active.Import.Interval\nto the backend, but they require\nEnergy.Active.Import.Register\n. Since the charger lacks LEM meters, we are providing the values through a different measurand, which the backend is not considering. Ultimately, it is up to the backend to decide which value to use.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it\n.",
+            "date": "2024-09-24T05:55:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86b2dca7-4f7a-ef11-ac20-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 23 hours, 19 minutes and 46 seconds.",
+            "date": "2024-09-24T08:33:25Z",
+            "extra": {}
+        },
+        {
+            "id": "b88f4266-8e7a-ef11-ac20-002248a29667",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Saurav,\nMany thanks for the multiple support on this issue, I have sent Afcon and Driivz an email for the changes they are supposed to make based on the email you attached.\nI believe an answer will be received in a few days; I will update as soon as I receive a response from them.\nThank you very much and have a good evening.\nBr,\nOrel.",
+            "date": "2024-09-24T16:02:37Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "75d7966f-8e7a-ef11-ac20-000d3a67d7cb",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 7 hours, 29 minutes and 25 seconds.",
+            "date": "2024-09-24T16:02:51Z",
+            "extra": {}
+        },
+        {
+            "id": "e7ab50f7-e67a-ef11-ac20-6045bdde0ce3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nThank you for the update.\nWe will keep this ticket open for a few days for the response from Driivz and Afcon.\nWe will wait for your response.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-25T02:36:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c6e6763-e77a-ef11-ac20-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 10 hours, 36 minutes and 41 seconds.",
+            "date": "2024-09-25T02:39:31Z",
+            "extra": {}
+        },
+        {
+            "id": "f7bcc62d-ad7c-ef11-a670-002248a2b1bd",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nGreetings of the day.\nHope you are doing well.\nPlease let us know whether you have received any feedback from customer or not?\nDo you have any other queries for us?\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-27T08:48:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "21bb342e-af7c-ef11-ac20-000d3ab08c0a",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Oreal,\nI would suggest closing the case, and we are always available for discussion if you have further questions from customer or CPO.\nBest Regards,\nReetesh Sharma",
+            "date": "2024-09-27T09:02:20Z",
+            "extra": {
+                "sender": "sharma.reetesh@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0f007138-af7c-ef11-ac20-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 2 days, 6 hours, 22 minutes and 59 seconds.",
+            "date": "2024-09-27T09:02:30Z",
+            "extra": {}
+        },
+        {
+            "id": "84b521da-bc7d-ef11-ac21-6045bdde0ce3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Reetesh&Saurav, good evening.\nHope you had a nice weekend.\nI can currently say that things are still under review from their side and there is no solution from their side yet, it has been forwarded to the Driivz programmers and they are in China so it will take a few more days.\nI quote what they sent:\nI am still waiting for an answer, but I can already tell that this is likely either a design issue or a bug, rather than a configuration problem.\nTherefore, please don't expect an immediate fix from our side.\nRegards,\nTyoma\nI prefer not to close the ticket yet, it is a ticket that has already been opened in the past and there was no solution, therefore I would like to wait to close it at least until Wednesday (we have a holiday in Israel from Wednesday to Sunday).\nIf I close the ticket, I won't necessarily have support, in most cases a ticket number is needed for diagnosis, the support team is usually quite busy, so documentation is necessary.\nThank you for your understanding\nBr,\nOrel.",
+            "date": "2024-09-28T17:12:39Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5f9defc0-247e-ef11-ac21-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 1 day, 20 hours, 33 minutes and 53 seconds.",
+            "date": "2024-09-29T05:36:25Z",
+            "extra": {}
+        },
+        {
+            "id": "52474b14-d383-ef11-ac21-000d3ab4d5d3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Hello Orel,\nWe are still waiting for your response.\nPlease let us know the response received from customer?\nDo we still need to keep this ticket open?\nAwaiting your response.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-06T11:06:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22859acb-b984-ef11-ac21-6045bdde0ce3",
+            "subject": "RE: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Dear Orel,\nHope you are doing well. We haven't heard back from you on ticket# 0379691 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-07T14:38:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "326f3d23-3585-ef11-ac21-7c1e5235925f",
+            "subject": "Re: 0379691 - ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00658000734",
+            "body": "Dear Saurav, good morning\nPlease cloae this ticket.\nThank you very much on your support.\nHave a nice day.\nBr,\nOrel.",
+            "date": "2024-10-08T05:21:20Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c9853a29-3585-ef11-ac21-7c1e5235925f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 8 days, 23 hours, 45 minutes and 3 seconds.",
+            "date": "2024-10-08T05:21:26Z",
+            "extra": {}
+        },
+        {
+            "id": "fd213636-4a85-ef11-ac21-000d3a697eb1",
+            "subject": "ID0379691-DC/Si-D/IL-[MP / ND 170000126] MeterValue at Inlet and Outlet CRM:00251000346",
+            "body": "Dear Oreal,\nThanks for your confirmation, since your issue has been resolved, we will be proceeding with closing the service ticket#\n0379691\n.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Reetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-08T07:52:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "39bf8029-4b85-ef11-ac21-000d3a697eb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Answer Provided after 2 hours, 37 minutes and 30 seconds.",
+            "date": "2024-10-08T07:58:59Z",
+            "extra": {}
+        },
+        {
+            "id": "dcd3bd48-4b85-ef11-ac21-000d3a697eb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Answer Provided to Incident Solved Via Remote (L2) after 58 seconds.",
+            "date": "2024-10-08T07:59:55Z",
+            "extra": {}
+        }
+    ]
+}

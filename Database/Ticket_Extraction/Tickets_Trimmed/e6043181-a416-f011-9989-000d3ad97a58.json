@@ -1,0 +1,204 @@
+{
+    "incident_id": "e6043181-a416-f011-9989-000d3ad97a58",
+    "ticket_number": "0418320",
+    "title": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption",
+    "created_on": "2025-04-11T07:13:51Z",
+    "last_activity": "2025-08-26T11:01:48Z",
+    "age": "4334",
+    "description": "Reported behavior/issue: DC1_CableTempSensor_XD100\nRoot cause: ERR69 - internal communication error\nSolution: Install EcoG 1.4.11",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R6 170001953",
+    "case_nature_code": 580000001,
+    "chargerID": "MP / R6 170001953",
+    "additional_info": [
+        {
+            "id": "b8400668-a416-f011-9989-002248a1227a",
+            "subject": "Webform_incident_SiCharge D_11-04-2025_SN: MP / R6 170001953",
+            "body": "Dear Martin Glöckner,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R6 170001953\nThank you\neMobility Technical Support Team\nSehr geehrte/r Martin Glöckner,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R6 170001953\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-11T07:13:08Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "67d26733-a716-f011-9989-7c1e52361e39",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hallo ﻿Martin Glöckner\nVielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Amit und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center - ERK\nHauptanlage\n: MP / R6 170001953\nLadegerät-ID/Seriennr\n.: MP / R6 170001953\nProblembeschreibung\n: Ladeabbruch am Mittwoch\nFür zukünftige Referenzen lautet Ihre Ticketummer 0418320\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nAmit Deswal\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-04-11T07:33:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4a5d0ce7-b116-f011-9989-000d3a65e7f6",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Martin, good morning.\nFrancisco here, how are you today?\nI checked the logs and this error seems to be a consequence of another problem. This is happening because we don't have the hotfix that I applied on this charger a long time ago because we updated to v6.1.3. I didn't want to upload the hotfix because of the tests during the week.\nTo mitigate this error, I need to either install the hotfix that we worked 1 month ago for the Wake-up function. This would be a win-win situation since it would fix this error and also enable the wake up function for the Volvos.\nThis version of the hotfix is an updated version of the same which is currently in D300 (and also tested in the past in D300 on 10th March when me and Catalina supported the activity)\nIf you rather not have this version, I can install a simpler version where I increase the timeout for the error.\nLet me know what suits you best and when I can perform the hotfix.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-04-11T08:49:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "81068aee-bc16-f011-9989-7c1e52772aad",
+            "subject": "AW: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Francisco,\nUnfortunately, my face is sunburned because of our field test yesterday between Iveco and Siemens :-(\nD160: Win-win sounds good. You can install the hotfix. Now the station should be free for the next few minutes.\nIf the Volvos can charge reliably again and wake up, that'll help us. It has no effect on the Ivecos; charging didn't work at both charging station yesterday – so this hotfix is not the reason.\nJust answer in this mail list, when we can use D160 again.\nHave a nice weekend.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 11. April 2025 11:51\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nBetreff:\nID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good morning.\nFrancisco here, how are you today?\nI checked the logs and this error seems to be a consequence of another problem. This is happening because we don't have the hotfix that I applied on this charger a long time ago because we updated to v6.1.3. I didn't want to upload the hotfix because of the tests during the week.\nTo mitigate this error, I need to either install the hotfix that we worked 1 month ago for the Wake-up function. This would be a win-win situation since it would fix this error and also enable the wake up function for the Volvos.\nThis version of the hotfix is an updated version of the same which is currently in D300 (and also tested in the past in D300 on 10th March when me and Catalina supported the activity)\nIf you rather not have this version, I can install a simpler version where I increase the timeout for the error.\nLet me know what suits you best and when I can perform the hotfix.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-04-11T10:08:45Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "40f315eb-c016-f011-998a-7c1e52350ea5",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Martin,\nI'm glad to hear that you have sun, you need to enjoy it :)\nI have installed the hotfix in the D160 and it's ready to charge.\nI will keep this ticket until Monday and proactively check if there is any occurrence during the weekend. Please reply to this email if you see a problem as well.\nThank you for your help as always!\nHave a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-04-11T10:37:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0aba4380-c116-f011-998a-7c1e5236cda4",
+            "subject": "Automatische Antwort: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Sehr geehrte Damen und Herren,\nIhre E-Mail wird nicht weiter geleitet und bearbeitet.\nIch bin ab dem 14.03.2025 wieder im Haus.\nMit freundlichen Grüßen\nAndreas Spannagl",
+            "date": "2025-04-11T10:41:26Z",
+            "extra": {
+                "sender": "aspannagl@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "960cfb3a-0119-f011-998a-000d3adc93d1",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Martin, good morning. I hope you had a nice weekend.\nI checked the D160 and since I installed the hotfix there has been no more errors. From my side, I think it's resolved.\nIn any case, if you find the same issue again, please inform the colleagues from Germany and they can reach out to me if necessary.\nI will proceed to close the ticket.\nThank you and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-04-14T07:22:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95284ca8-0119-f011-998a-000d3adc93d1",
+            "subject": "Ticket 0418320 has been closed. Are you satisfied with our provided solution? CRM:00315002549",
+            "body": "Dear Martin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0418320\nwith the title:\nID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-14T07:25:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "df02e1dd-0219-f011-998a-7c1e523508ba",
+            "subject": "AW: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Francisco,\nwe had an error for Volvo on Friday 2025-04-11 18:47:35. The truck OAL VM 69 used outlet 2 on D160.\nNow we ask also our driver to an “intentional human intervention” because in this time the status of the truck changed from\nbusy\nto\noff\n.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 14. April 2025 09:24\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nSpannagl Andreas <aspannagl@v-markt.de>; Logistik <logistik@v-markt.de>\nBetreff:\nID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good morning. I hope you had a nice weekend.\nI checked the D160 and since I installed the hotfix there has been no more errors. From my side, I think it's resolved.\nIn any case, if you find the same issue again, please inform the colleagues from Germany and they can reach out to me if necessary.\nI will proceed to close the ticket.\nThank you and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-04-14T07:34:16Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "19b9e3de-0219-f011-998a-7c1e5236e32d",
+            "subject": "Email sent to a closed case 'ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption (0418320)' CRM:00225186981",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0418320\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-04-14T07:34:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d70052d9-0519-f011-998a-6045bde12d6b",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Martin,\nThanks for the feedback. I will check it in this ticket, you can ignore the closure emails.\nI will bring you some news.\nBR,\nFrancisco",
+            "date": "2025-04-14T07:55:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e0802ab-c730-f011-8c4d-7c1e5287c7df",
+            "subject": "AW: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Francisco,\ntoday in the morning we had an charging interruption on D160 (outlet 1) again.\nOAL VM 49 SoC 55%\n14.05.2025 08:36\nThe last 7 days were ok.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nGlöckner Martin\nGesendet:\nFreitag, 11. April 2025 12:09\nAn:\n'emobility_support.si@siemens.com' <emobility_support.si@siemens.com>\nCc:\nLogistik <logistik@v-markt.de>; Spannagl Andreas <aspannagl@v-markt.de>\nBetreff:\nAW: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076\nHi Francisco,\nUnfortunately, my face is sunburned because of our field test yesterday between Iveco and Siemens :-(\nD160: Win-win sounds good. You can install the hotfix. Now the station should be free for the next few minutes.\nIf the Volvos can charge reliably again and wake up, that'll help us. It has no effect on the Ivecos; charging didn't work at both charging station yesterday – so this hotfix is not the reason.\nJust answer in this mail list, when we can use D160 again.\nHave a nice weekend.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 11. April 2025 11:51\nAn:\nGlöckner Martin <\nmgloeckner@v-markt.de\n>\nBetreff:\nID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good morning.\nFrancisco here, how are you today?\nI checked the logs and this error seems to be a consequence of another problem. This is happening because we don't have the hotfix that I applied on this charger a long time ago because we updated to v6.1.3. I didn't want to upload the hotfix because of the tests during the week.\nTo mitigate this error, I need to either install the hotfix that we worked 1 month ago for the Wake-up function. This would be a win-win situation since it would fix this error and also enable the wake up function for the Volvos.\nThis version of the hotfix is an updated version of the same which is currently in D300 (and also tested in the past in D300 on 10th March when me and Catalina supported the activity)\nIf you rather not have this version, I can install a simpler version where I increase the timeout for the error.\nLet me know what suits you best and when I can perform the hotfix.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-05-14T13:31:03Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6c4660af-c730-f011-8c4e-6045bdde4786",
+            "subject": "Email sent to a closed case 'ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption (0418320)' CRM:00225200853",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0418320\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-05-14T13:31:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2589be9d-ce30-f011-8c4d-7c1e523508ba",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Martin, good afternoon\nThanks for the report. Since the charger was updated to v7.0.5 it lost the hotfix. Can I install it now?\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-05-14T14:20:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bf022e3e-d030-f011-8c4d-7c1e523508ba",
+            "subject": "ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Since no one was charging I took the opportunity. It's installed. You shouldn't have more problems\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-14T14:32:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "468a36aa-d530-f011-8c4d-7c1e52768372",
+            "subject": "AW: ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076",
+            "body": "Hi Francisco,\nThanks for fast troubleshooting. We will continue to monitor and report any problems\nViele Grüße\nMartin Glöckner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 14. Mai 2025 16:33\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nSpannagl Andreas <aspannagl@v-markt.de>; Logistik <logistik@v-markt.de>\nBetreff:\nID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption CRM:02679000076\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nSince no one was charging I took the opportunity. It's installed. You shouldn't have more problems\nThanks!\nBR,\nFrancisco",
+            "date": "2025-05-14T15:11:17Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cc74f6ad-d530-f011-8c4d-6045bddde3f5",
+            "subject": "Email sent to a closed case 'ID0418320-DC/Si-D/DE-[MP / R6 170001953] Charging Interruption (0418320)' CRM:00225200904",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0418320\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-05-14T15:11:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

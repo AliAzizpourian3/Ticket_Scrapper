@@ -1,0 +1,104 @@
+{
+    "incident_id": "12c2d679-bebc-494e-93ca-eaa2d5b273be",
+    "ticket_number": "0426497",
+    "title": "ID0426497-DC/Si-D/FI-[MP / R7 170002239]-Hamina OCPP door open status missing",
+    "created_on": "2025-05-23T08:57:54Z",
+    "last_activity": "2025-06-20T14:15:01Z",
+    "age": "40638",
+    "description": "When charger door (dispenser dooer?) suddenly opened, charger only sent errorcode “SafetyRelay_QA26” but further errorcode “DoorPositionSwitch_BG3_BG4” or dispenser door open-message was missing.\nR&D Ticket created:\nhttps://jira.si.siemens.cloud/browse/EVC3-9513\n2/Jun - No answer yet from R&D",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "DF1zSC",
+    "stage": null,
+    "serial_number": "MP / R7 170002239",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f8c65906-b437-f011-8c4e-6045bdde4786",
+            "subject": "A new case manager was assigned to 0426497 CRM:00225204988",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0426497 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=12c2d679-bebc-494e-93ca-eaa2d5b273be",
+            "date": "2025-05-23T08:58:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "71df1314-b437-f011-8c4e-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0426497 CRM:00225204990",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0426497 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=12c2d679-bebc-494e-93ca-eaa2d5b273be",
+            "date": "2025-05-23T08:58:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2aed0a4-2bd8-2608-9eae-fe319f0bef30",
+            "subject": null,
+            "body": "",
+            "date": "2025-05-23T08:59:25Z",
+            "extra": {}
+        },
+        {
+            "id": "26fed11d-d4a1-8a4f-b081-a3ea2e16e2d4",
+            "subject": "SCB safetyrelay error flag",
+            "body": "",
+            "date": "2025-05-23T09:00:08Z",
+            "extra": {}
+        },
+        {
+            "id": "a932e93f-2823-19fd-b3f4-8a82d4146eb6",
+            "subject": "Screenshot from SiD software manual",
+            "body": "",
+            "date": "2025-05-23T09:00:31Z",
+            "extra": {}
+        },
+        {
+            "id": "3b7db553-bd37-f011-8c4d-7c1e523508ba",
+            "subject": "ID0426497-DC/Si-D/FI-[MP / R7 170002239]-Hamina OCPP door open status missing CRM:00315002680",
+            "body": "Dear Markus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nHamina\nChargerID/Serial No.\n: MP / R7 170002239\nProblem Description\n: OCPP message door opened is not transmitted\nTroubleshooting\n: I will check in the Training Center for the same, as soon as I perform the tests I will bring you news.\nFor future reference, your case number is\n0426497\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-23T10:04:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "357c94fe-3f3a-f011-b4cb-7c1e52350ea5",
+            "subject": "ID0426497-DC/Si-D/FI-[MP / R7 170002239]-Hamina OCPP door open status missing CRM:00315002680",
+            "body": "Hi Markus,\nYesterday I was not able to use the SID for the tests but we will do it today.\nYesterday I checked via AWS and apparently we are not receiving the Dispenser one:\nThis is the timestamp you provided to me, exactly at this time we get the error flag but not the OCPP StatusNotification.\nIt seems that according to the schematic, both error flags of the QA26 and Dispenser door are reported at the “same” time, see here:\nAs you can see, when we open the door, the error flag is raised but also open the circuit to the main charger where it leads to QA26.\nNow what we need to understand is why this error flag is triggered first. For example, when we do a reboot, we don't send all the errors to OCPP except PerformingCollaboratedReboot. So my assumption is that when we get dispenser door opened, he prioritizes QA26 and as such it doesn't send it.\nAfter our tests, I will propose to create a R&D ticket to understand.\nBest regards,\nFrancisco",
+            "date": "2025-05-26T14:45:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "298773f1-ad42-f011-8779-7ced8d40e4a4",
+            "subject": "A new case manager was assigned to 0426497 CRM:00225211811",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0426497 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=12c2d679-bebc-494e-93ca-eaa2d5b273be",
+            "date": "2025-06-06T08:12:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "36b1dbc7-e04d-f011-8779-7c1e52350ea5",
+            "subject": "0426497 - ID0426497-DC/Si-D/FI-[MP / R7 170002239]-Hamina OCPP door open status missing CRM:00472000317",
+            "body": "Hello Markus,\nWe have reported the case to R&D already. There is a Rework related to OCPP vender codes already in place to better define what would be the necessary information to send via OCPP, including better management of priority messages.\nMost probably this will only take effect on v9 but without confirmation yet.\nSince from service there is no task pending here, I will proceed to close this ticket since I don't see the point to have it open.\nFuture update for this fix should come on release note for next versions. I will also try to contact you via teams chat if I have confirmation for the FW version that bring the fix.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-20T14:13:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

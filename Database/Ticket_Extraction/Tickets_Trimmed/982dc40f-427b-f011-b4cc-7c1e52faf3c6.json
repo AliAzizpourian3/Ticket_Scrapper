@@ -1,0 +1,101 @@
+{
+    "incident_id": "982dc40f-427b-f011-b4cc-7c1e52faf3c6",
+    "ticket_number": "0444251",
+    "title": "ID0444251-DC/Si-D/IT-[MULTIPLE] High Volume of Logs in SCB",
+    "created_on": "2025-08-17T08:13:33Z",
+    "last_activity": "2025-08-25T14:56:00Z",
+    "age": "11922",
+    "description": "Reported behavior/issue: High Volume of Logs in SCB\" in EU (Frankfurt)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "EdV2K6",
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370019,Y2 / S1 313508370003",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "8a362806-427b-f011-b4cc-7c1e5236eee4",
+            "subject": "RE: ALARM: \"High Volume of Logs in SCB\" in EU (Frankfurt)",
+            "body": "Hi Team,\nWe have received an alert indicating that the following chargers are transmitting unusually large volumes of data:\n•           EdV2K6\nW4Yc7G\nCould you please investigate and take the necessary action to address this issue\nThank you for your prompt attention\nThanks,\nVanshika Gupta",
+            "date": "2025-08-17T08:13:24Z",
+            "extra": {
+                "sender": "vanshika.gupta.ext@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "338b943d-427b-f011-b4cc-6045bde0265d",
+            "subject": "A new case manager was assigned to 0444251 CRM:00225243800",
+            "body": "Tanya Meghani was assigned as new Case Manager for case 0444251 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=982dc40f-427b-f011-b4cc-7c1e52faf3c6",
+            "date": "2025-08-17T08:14:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3791a509-b92b-63d5-8ea6-8b85ef52e1ef",
+            "subject": null,
+            "body": "Hi Team,\nWe have received an alert indicating that the following chargers are\ntransmitting unusually large volumes of data:\n•           EdV2K6\nW4Yc7G\nCould you please investigate and take the necessary action to address this issue\nThank you for your prompt attention\nThanks,\nVanshika Gupta\n-----Original Message-----\nFrom: SCB Prod Alarm Topic <no-reply@sns.amazonaws.com>\nSent: Sunday, August 17, 2025 1:29 PM\nTo: SI Cloud_Support_eMobility <cloud_support.infra@siemens.com>\nSubject: ALARM: \"High Volume of Logs in SCB\" in EU (Frankfurt)\nYou are receiving this email because your Amazon CloudWatch Alarm \"High Volume\nof Logs in SCB\" in the EU (Frankfurt) region has entered the ALARM state,\nbecause \"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (17/08/25\n06:58:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK ->\nALARM transition).\" at \"Sunday 17 August, 2025 07:58:39 UTC\".\nView this alarm in the AWS Management Console:\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Feu-central-1.console.aws.amazon.com%2Fcloudwatch%2Fdeeplink.js%3Fregion%3Deu-central-1%23alarmsV2%3Aalarm%2FHigh%2520Volume%2520of%2520Logs%2520in%2520SCB&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C13251b7652044b24223608dddd63e117%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638910143240470935%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=gYJozVKKF%2BFNsyuZY52lzO5fLt1eTCy%2BMEF0KQEAWiA%3D&reserved=0\nAlarm Details:\n- Name:                       High Volume of Logs in SCB\n- Description:                #................\nA high volume of logs has been detected in the SCB environment.\nAction Required:\nLog in to the SichargeD AWS account (689117314700).\nNavigate to CloudWatch > Logs Insights > Saved Queries > CloudOperations.\nIdentify the chargers generating more than one million log entries.\nCreate a support ticket using this email < emobility_support.si@siemens.com >\nand include the charger IDs in the description.\n#........................\n- State Change:               OK -> ALARM\n- Reason for State Change:    Threshold Crossed: 1 out of the last 1 datapoints\n[1.0 (17/08/25 06:58:00)] was greater than the threshold (0.0) (minimum 1\ndatapoint for OK -> ALARM transition).\n- Timestamp:                  Sunday 17 August, 2025 07:58:39 UTC\n- AWS Account:                689117314700\n- Alarm Arn:\narn:aws:cloudwatch:eu-central-1:689117314700:alarm:High Volume of Logs in SCB\nThreshold:\n- The alarm is in the ALARM state when the metric is GreaterThanThreshold 0.0\nfor at least 1 of the last 1 period(s) of 3600 seconds.\nMonitored Metric:\n- MetricNamespace:                     Custom/LogInsights\n- MetricName:                          HighEventVolumeDetected\n- Dimensions:                          [LogGroup = messages]\n- Period:                              3600 seconds\n- Statistic:                           Average\n- Unit:                                not specified\n- TreatMissingData:                    missing\nState Change Actions:\n- OK:\n- ALARM: [arn:aws:sns:eu-central-1:689117314700:SCB_Prod_Alaram_Topic]\n- INSUFFICIENT_DATA:\n--\nIf you wish to stop receiving notifications from this topic, please click or\nvisit the link below to unsubscribe:\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsns.eu-central-1.amazonaws.com%2Funsubscribe.html%3FSubscriptionArn%3Darn%3Aaws%3Asns%3Aeu-central-1%3A689117314700%3ASCB_Prod_Alaram_Topic%3A17258578-7e63-426a-975c-e1565e45b3c2%26Endpoint%3Dcloud_support.infra%40siemens.com&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C13251b7652044b24223608dddd63e117%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638910143240495977%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=r2Wpysislra7VG9aa26CZmsOHPBRgMl%2FkSi6lHcAwJk%3D&reserved=0\nPlease do not reply directly to this email. If you have any questions or\ncomments regarding this email, please contact us at\nhttps://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Faws.amazon.com%2Fsupport&data=05%7C02%7Cvanshika.gupta.ext%40siemens.com%7C13251b7652044b24223608dddd63e117%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638910143240511743%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LpYUF48Jt%2FLZYNXUsdqoxKAvwE0GYnLnJKLuVjezNPk%3D&reserved=0",
+            "date": "2025-08-17T08:18:32Z",
+            "extra": {}
+        },
+        {
+            "id": "891f93e8-427b-f011-b4cc-7c1e52350ea5",
+            "subject": "ID0444251-DC/Si-D/IT-[MULTIPLE] High Volume of Logs in SCB CRM:02832000326",
+            "body": "Dear Vanshika Gupta,\nThank you for reaching\nout\nto eMobility Support. My name is\nTanya\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370003\nChargerID/Serial No.\n:\nEdV2K6\nProblem Description\n:\nHigh Volume of Logs in SCB\nFor future reference, your case number is\n0444251\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-17T08:19:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "680176b1-497b-f011-b4cc-7c1e52350ea5",
+            "subject": "RE: ID0444251-DC/Si-D/IT-[MULTIPLE] High Volume of Logs in SCB CRM:02832000326",
+            "body": "Dear Vanshika Gupta,\nThank you for reaching out, we will work on logs and will send the report on Monday.\nFor future reference, your case number is 0444251, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team - Tanya Meghani\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-08-17T09:08:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b74d2e77-c381-f011-b4cb-7ced8d2c69f6",
+            "subject": "RE: ID0444251-DC/Si-D/IT-[MULTIPLE] High Volume of Logs in SCB CRM:02832000326",
+            "body": "Dear Vanshika,\nI have checked and at this moment there is no high volume of logs present on this charger.\nAs R&D is already aware of this issue and working on a solution, I will proceed to close this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team - Laura Martins,\nPlease do not change the subject of this email when replying to it.",
+            "date": "2025-08-25T14:54:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f7c31f8d-c381-f011-b4cc-6045bde0265d",
+            "subject": "RE: ID0444251-DC/Si-D/IT-[MULTIPLE] High Volume of Logs in SCB CRM:02832000326",
+            "body": "Dear Vanshika,\nI have checked and at this moment there is no high volume of logs present on this charger.\nAs R&D is already aware of this issue and working on a solution, I will proceed to close this ticket.\nThank you.\nWith best regards,\neMobility Tech Support Team - Laura Martins,\nPlease do not change the subject of this email when replying to it.",
+            "date": "2025-08-25T14:55:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "81599499-c381-f011-b4cc-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0444251 CRM:00225247403",
+            "body": "Laura Gaspar Martins was assigned as new Case Manager for case 0444251 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=982dc40f-427b-f011-b4cc-7c1e52faf3c6",
+            "date": "2025-08-25T14:55:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

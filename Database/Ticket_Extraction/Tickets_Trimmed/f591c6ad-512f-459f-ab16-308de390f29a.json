@@ -1,0 +1,383 @@
+{
+    "incident_id": "f591c6ad-512f-459f-ab16-308de390f29a",
+    "ticket_number": "0388778",
+    "title": "ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest",
+    "created_on": "2024-11-08T04:43:43Z",
+    "last_activity": "2025-12-16T14:04:19Z",
+    "age": "17672",
+    "description": "Reported behaviour/issue:\nOutlet 2 and 3 out of order after FW update to 4.0.11\nDC_Coils_MG1-MG4_SelfTest\nPLC\nSYSTEM\ntrue\nstatus: failed, reason: smc-init state failed\nOutlet_DC2_codes\nPLC\nINFO\ntrue\nDC2 Outlet not ready - state monitor fastshutdown check erro\nDC1_StateMonitor_KF13\nPLC\nDEVICE\ntrue\nstatemonitor DC1\nDC2_StateMonitor_KF13\nPLC\nDEVICE\ntrue\nOutgoing Coil closed without permission DC2\nAttempted to soft reboot charger, still did not help. Charging port 3 was charging successfully prior to FW up ~2:43PM AEST 08/11/2024\nRoot cause:\nSolution: Converter grouping done manually\nOn DAMEX Sanctioned List:\nWarranty Status:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "qhDPeN",
+    "stage": null,
+    "serial_number": "MP / P3 170000342",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fff04110-8c9d-ef11-8a6a-002248a29667",
+            "subject": "A new case manager was assigned to 0388778 CRM:00225121271",
+            "body": "Ferdinand Reisch was assigned as new Case Manager for case 0388778 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f591c6ad-512f-459f-ab16-308de390f29a",
+            "date": "2024-11-08T04:43:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73247b30-950d-0842-8a1b-520d36480ccb",
+            "subject": "Note from RC",
+            "body": "Knowledge Article: Knowledge Article for ISP: Emobility_SiCD_HW_KF13_ DC1_StateMonitor_KF13 error - Dynamics 365\nMight be related? Unforuntatley this is a very remote site… so we need to have every possible known situation available to perform this action.",
+            "date": "2024-11-08T04:49:36Z",
+            "extra": {}
+        },
+        {
+            "id": "a4049243-bc48-0d7b-be0c-2bb0821fbe81",
+            "subject": "Note from RC",
+            "body": "Potential QA13/QA14 error?\nFri, 08 Nov 2024 04:35:51 GMT\n2024-11-08, 04:35:51\n2024-11-08T04:35:51.382817+00:00 swcpu [user:debug] [SCO] OGC[1]: DC2-DC2_QA13-14, COMMAND: off, FEEDBACK: on, BLOCKING: no, OPRSTATE: AbNormal(off FBK Timeout), CHRGOPRMODE: 6, CTRL_DC_UNIT: 2\nWhy did this only seem to become a problem after the FW update?",
+            "date": "2024-11-08T04:52:43Z",
+            "extra": {}
+        },
+        {
+            "id": "058a5a8f-a09d-ef11-8a6a-0022489ec7b5",
+            "subject": "A new case manager was assigned to 0388778 CRM:00225121333",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0388778 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f591c6ad-512f-459f-ab16-308de390f29a",
+            "date": "2024-11-08T07:10:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74703e64-a79d-ef11-8a6a-002248a2ad51",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 hours, 15 minutes and 59 seconds.",
+            "date": "2024-11-08T07:59:44Z",
+            "extra": {}
+        },
+        {
+            "id": "08f81e88-a79d-ef11-8a6a-002248a2ad51",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 51 seconds.",
+            "date": "2024-11-08T08:00:35Z",
+            "extra": {}
+        },
+        {
+            "id": "8aa62748-b09d-ef11-8a6a-002248a2ad51",
+            "subject": "ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00645000845",
+            "body": "Dear Customer,\nThank you for reaching out to eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P3 170000342\nChargerID/Serial No.\n:\nqhDPeN\nProblem Description\n:\nMG1-MG4_SelfTest\nWe will analyze the logs and get back to you with an update.\nFor future reference, your ticket number is\n0388778\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-08T09:03:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "82d1c5ef-b59d-ef11-8a6a-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0388778 CRM:00225121457",
+            "body": "Mohini Patil was assigned as new Case Manager for case 0388778 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f591c6ad-512f-459f-ab16-308de390f29a",
+            "date": "2024-11-08T09:43:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b3bc81e-bace-a317-8f14-2771d56bb411",
+            "subject": "Analysis",
+            "body": "Feedback coil stuck. Most probably QA13-14 replacement is required. But analyze the logs further.\n2024-11-08, 03:41:47\n2024-11-08T03:41:47.195228+00:00 swcpu [user:debug] [SCO] OGC[1]: DC2-DC2_QA13-14, COMMAND: off, FEEDBACK: on, BLOCKING: no, OPRSTATE: AbNormal(on FBK while off), CHRGOPRMODE: 6, CTRL_DC_UNIT: 2\n2024-11-08, 03:41:47\n2024-11-08T03:41:47.212580+00:00 swcpu [user:debug] OutgoingCoilsFbkOnWhileCmdOff \"DC2\"",
+            "date": "2024-11-08T09:54:50Z",
+            "extra": {}
+        },
+        {
+            "id": "d3104539-b195-1340-90b3-2d7c989d6588",
+            "subject": "Analysis notes",
+            "body": "As per analysis need to check QA13 & QA14\nThu, 07 Nov 2024 18:11:16 GMT\n2024-11-07, 18:11:16\n2024-11-07T18:11:16.198088+00:00 swcpu [user:debug] 1 soft_plc_sicharge: DC_Contactor_DC2_QA13-14: Warning!! Feedback is ON when Command is OFF even after time delay\nThu, 07 Nov 2024 18:11:19 GMT\n2024-11-07, 18:11:18\n2024-11-07T18:11:18.147304+00:00 swcpu [user:debug] 1 soft_plc_sicharge: [SCO] OGC[1]: DC2-DC2_QA13-14, COMMAND: off, FEEDBACK: on, BLOCKING: no, OPRSTATE: AbNormal(off FBK Timeout), CHRGOPRMODE: 6, CTRLLCUID: 2",
+            "date": "2024-11-08T13:46:20Z",
+            "extra": {}
+        },
+        {
+            "id": "6e9eb3c8-da9d-ef11-8a6a-002248a29667",
+            "subject": "ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00642001767",
+            "body": "Hello Ferdinand,\nHope you are doing great.\nAs per our analysis QA13-QA14 needs to check if faulty needs to replace (notes added in timeline), we\nrecommend manually inspecting the contactors. If any faults are detected in the contactors, please proceed with replacing them.\nThere are two preconditions to start the SMC selftest:\nAll converters report power off state\nThe outgoing coils are open\nAs per the DC_Coils_MG1-MG4_SelfTest, that means need to check all the contactor which we are using for flex configuration i.e\nSMC1: QA11/QA12\nSMC2: QA17/QA18\nSMC3: QA15/QA16\nstatus: failed, reason: smc[0,1,2,3]-[states]-[results]\nstatus: failed, reason: smc[0,1,2,3]-[F,S,S,S]-[0,0,0,0] : in charger\nSo SMC0 : QA9/QA10\nSMC1: QA11/QA12\nSMC2: QA17/QA18\nSMC3: QA15/QA16\nIn error code status [F,S,S,S]: denotes SMC0 contactor check  failed & SMC1,2,3 is skipped\n[0,0,0,0]: denotes Contactor QA9/QA10 feedback is not received\nI am writing to formally inform that we are moving case 0388778 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nNZ\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nNZ\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Mohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-08T14:07:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7bdee965-e89d-ef11-8a69-000d3adbbeb5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 7 hours, 44 minutes and 24 seconds.",
+            "date": "2024-11-08T15:44:58Z",
+            "extra": {}
+        },
+        {
+            "id": "fb87e46b-e89d-ef11-8a69-000d3adbbeb5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 7 seconds.",
+            "date": "2024-11-08T15:45:05Z",
+            "extra": {}
+        },
+        {
+            "id": "3188e46b-e89d-ef11-8a69-000d3adbbeb5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 6 seconds.",
+            "date": "2024-11-08T15:45:11Z",
+            "extra": {}
+        },
+        {
+            "id": "31c3ceac-b39f-ef11-8a69-000d3ab655d3",
+            "subject": "RE: ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00642001767",
+            "body": "Hello Mohini,\nThank you for the information.\nWe will review what is needed to undertake this investigation from a site perspective.\nHowever, we require some more information… this charger was operational and all connectors were functional.\nWhy is it after the FW update, that the charger has this issue?\nThere was a recent preventative maintenance that took place on this charger, so the charger was power cycled recently, even prior to the FW update and did not have this issue.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-10T22:32:37Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7ee08903-b59f-ef11-8a6a-000d3ab4d5d3",
+            "subject": "0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Good Morning Liz,\nHope you are doing well.\nWe have noted that charger 170000342 (JumpCharging Napier) has connector 2 (AC) and connector 3 (CCS2) out of order.\nSome internal switching misalignments have been detected, thus making those connectors not to be operational.\nWe are working on the next steps forward but wanted to first inform you of this.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-10T22:42:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e71defb-b99f-ef11-8a69-000d3ab655d3",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Thanks Ferdi\nCan you let me know if you updated the firmware.\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2024-11-10T23:17:47Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "37e6aac1-c29f-ef11-8a69-0022489fb3e7",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Liz,\nYes, charger is updated to version 4.0.11\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T00:20:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6185db01-c39f-ef11-8a69-0022489dc6eb",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Liz,\nYes, charger is updated to version 4.0.11\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T00:22:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6a805c79-bdcb-6622-9ae7-f587acb137fb",
+            "subject": "Notes from RC",
+            "body": "Potentially requiring tech to have the following prior to going to remote site (via plane).\n10x 8EM5903-0AA00-7AA8, 1x 8EM5903-0AA00-6AA1",
+            "date": "2024-11-11T00:28:42Z",
+            "extra": {}
+        },
+        {
+            "id": "1de98d52-d49f-ef11-8a6a-0022489bcff4",
+            "subject": "A new case manager was assigned to 0388778 CRM:00225122033",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0388778 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f591c6ad-512f-459f-ab16-308de390f29a",
+            "date": "2024-11-11T02:26:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c6a3b9d-3c9f-7f51-9bb1-3cbaf78e0f88",
+            "subject": "Note from RC",
+            "body": "Appears Ticket\nID0362845\nis also very similar, had QA13/14 error, and MG1-MG4 self test.\nFrom here, the power module was also tested.\nWe will review the logs to see if there is any additional converter error on bootup.",
+            "date": "2024-11-11T02:29:52Z",
+            "extra": {}
+        },
+        {
+            "id": "ada8ce6b-e95b-3c4e-bbde-51521223e4ea",
+            "subject": "Note from RC",
+            "body": "In rare case, could also be power module, as the charger sat for more than 1 year before energisation.\nCould also require power module replacement, will reach out to distibutor to see if they have this in stock",
+            "date": "2024-11-11T23:04:48Z",
+            "extra": {}
+        },
+        {
+            "id": "e2342560-81a0-ef11-8a6a-7c1e5237dbeb",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Good Afternoon Liz,\nHope you are doing well.\nReviewing the logs, we are building up the potential components which may be required as part of the investigation/repair.\nWould you please be able to advise if you have the following in stock?\n10x 8EM5903-0AA00-7AA8 (likely 4x requiring replacement, 6x as potential extras).\n1x 8EM5903-0AA00-6AA1 (KF13)\n1x 8EM5903-0AA01-0AA2 (Power Module)\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T23:05:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "880d6709-82a0-ef11-8a6a-7c1e5235e725",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Good Afternoon Liz,\nHope you are doing well.\nReviewing the logs, we are building up the potential components which may be required as part of the investigation/repair.\nWould you please be able to advise if you have the following in stock?\n10x 8EM5903-0AA00-7AA8 (likely 4x requiring replacement, 6x as potential extras).\n1x 8EM5903-0AA00-6AA1 (KF13)\n1x 8EM5903-0AA01-0AA2 (Power Module)\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T23:09:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0e4c5864-82a0-ef11-8a69-7c1e5234911a",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "@Beor, Matt (RC-AU SI E FIN)\nare you able to check if we have any of the below spares in stock?\nThank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T23:12:23Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2feab408-87a0-ef11-8a69-000d3ab41b62",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hi Ferdi\nWe have the following in stock\n8EM5903-0AA00-7AA8 - 1 only – do you have contactors in Australia you can send?\n8EM5903-0AA00-6AA1 (KF13) – 1 in stock ( this was the replacement sent for Oak Road not installed yet)\n8EM5903-0AA01-0AA2 (Power Module) – 37 in stock , part number is 8EM5905-0AA00-2AA8\nRegards\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2024-11-11T23:45:36Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7abcde43-87a0-ef11-8a69-000d3adcacc1",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Liz,\nThanks for the follow up, that’s good to know.\nI am checking our local stock as well, awaiting to hear back from Matt on this.\nThe global team will still do a couple more tests remotely when the charger is in idle to obtain some more information.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-11T23:47:20Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "67d32759-94a0-ef11-8a69-7c1e5234911a",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hi Ferdi,\nWe have:\n9x 8EM5903-0AA00-7AA8\n1x 8EM5903-0AA00-6AA1\nNil of 8EM5903-0AA01-0AA2\nKind regards,\nMatt Beor\n+61 409 843 850",
+            "date": "2024-11-12T01:20:49Z",
+            "extra": {
+                "sender": "matt.beor@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f8dd9e30-96a0-ef11-8a6a-7c1e5235e725",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Matt,\nThanks for checking, great in total we would have enough.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-12T01:34:06Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5dc5ab8e-47a1-ef11-8a6a-0022489bcff4",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Liz,\nHope you are doing well.\nAre you able to reach out to the customer to understand when the vehicle is not connected to the charger?\nOur global team would like to do some additional remote testing and monitoring by rebooting the charger, during which a vehicle should not be connected.\nWe have also checked local stock and if a site intervention is required and confirmed by HQ, we will send over the remaining contactors in case they are needed.\nAs the first preventative maintenance was only carried out 13 months after installation of the charger (missing the 6 and 12 month maintenance schedules), warranty has been compromised in general.\nIf contactors are found to be defective, this will be covered under warranty.\nIf KF13 has the failure, as it was noted that the charger had substantial dust inside and the KF13 has openings, due to the lacking maintenance, it would not be covered.\nHowever, in this exceptional case, we are willing to cover half of the component and labour cost for KF13 replacement on good will of understanding an effort for preventative maintenance was made, however in future cases where preventative maintenance is missed, it may not be covered under warranty.\nWe believe it is less likely to be a power module, however would you be able to confirm that the charger was put into operation at the latest, 12 months after the manufacture date (03/2022)?\nIf site visit is required, understanding the remote location of the site, would you prefer components be sent to your warehouse and then carried with the technician to the site? Or directly to the site?\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-12T22:43:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "75709f8b-52a1-ef11-8a6a-7c1e5235e725",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hey Liz,\nHope you are doing well.\nAre you able to reach out to the customer to understand when the vehicle is not connected to the charger?\nOur global team would like to do some additional remote testing and monitoring by rebooting the charger, during which a vehicle should not be connected.\nWe have also checked local stock and if a site intervention is required and confirmed by HQ, we will send over the remaining contactors in case they are needed.\nAs the first preventative maintenance was only carried out 13 months after installation of the charger (missing the 6 and 12 month maintenance schedules), warranty has been compromised in general.\nIf contactors are found to be defective, this will be covered under warranty.\nIf KF13 has the failure, as it was noted that the charger had substantial dust inside and the KF13 has openings, due to the lacking maintenance, it would not be covered.\nHowever, in this exceptional case, we are willing to cover half of the component and labour cost for KF13 replacement on good will of understanding an effort for preventative maintenance was made, however in future cases where preventative maintenance is missed, it may not be covered under warranty.\nWe believe it is less likely to be a power module, however would you be able to confirm that the charger was put into operation at the latest, 12 months after the manufacture date (03/2022)?\nIf site visit is required, understanding the remote location of the site, would you prefer components be sent to your warehouse and then carried with the technician to the site? Or directly to the site?\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2024-11-13T00:02:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "57704d5b-4325-1278-accc-4b25484bdfdc",
+            "subject": "Note from RC",
+            "body": "01/03/2022    - date of manufacture\n04/07/2023     - in house warehouse commissioning\n05/10/2023    - on site installation\n05/11/2024     - first preventative maintenance",
+            "date": "2024-11-13T00:03:28Z",
+            "extra": {}
+        },
+        {
+            "id": "c973fd6c-71a1-ef11-8a6a-000d3a67d7cb",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Hello Liz,\nGreetings of the day.\nWe have done manual converter grouping on this charger which involved all the contractors and now all error flags are cleared, and outlets are available.\nPlease check the charger on site and confirm whether all outlets are available or not, if yes, please complete a charging cycle on both the outlets.\nWaiting for your feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-13T03:43:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78a0b977-97a5-ef11-b8e9-002248a2b1bd",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Dear Liz,\nHope you are doing well. We haven't heard back from you on ticket# 0388778 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-18T10:25:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ef87f5d-69a6-ef11-b8e9-002248a29667",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Dear Liz,\nHope you are doing well. We haven't heard back from you on ticket# 0388778 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-19T11:28:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe662c4f-2fa7-ef11-b8e8-000d3adc3b84",
+            "subject": "RE: 0388778 - ID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest CRM:00312000035",
+            "body": "Dear Liz,\nThis in regards to your ticket# 0388778 for which we haven't received a response yet.\nWe understand that you might be busy and issue has been resolved. Hence, we shall proceed with closing out this ticket.\nIf you still require assistance on this matter, please do drop us a new email at\nemobility_support.si@siemens.com\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you!\nWith best regards,\neMobility Tech Support Team - Saurav Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T11:05:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d952b474-30a7-ef11-b8e9-0022489bcff4",
+            "subject": "Ticket 0388778 has been closed. Are you satisfied with our provided solution? CRM:00658000824",
+            "body": "Dear Ferdinand,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0388778\nwith the title:\nID0388778-DC/Si-D/NZ-[qhDPeN] MG1-MG4_SelfTest\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSaurav Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-20T11:13:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

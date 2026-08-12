@@ -1,0 +1,72 @@
+{
+    "incident_id": "7a587d50-190e-f011-9989-7c1e5287e2e8",
+    "ticket_number": "0415899",
+    "title": "ID0415899-DC/Si-D/DE-[MP / R0 170002839] IVECO trucks",
+    "created_on": "2025-03-31T10:17:14Z",
+    "last_activity": "2025-08-19T11:32:10Z",
+    "age": "125496",
+    "description": "Reported issue: Left LP does not establish a connection.\nSolution: EVCC has issues -> IVECO Problem\nyyyy-mm-dd:\nUpdate 3/Apr/2025 - Interoperability issue, already in discussion with IVECO colleagues. Their system is very sensitive and fails in CableCheck. They are proposing a solution from their side.\nUpdate 17/4/2025 - Root Cause is the same and, if it is, it is associated to PSD profile\nUpdate from Energu: Tested IVECO 2.0. and works?\nUpdate from EcoG -\n“\nWe checked with our PLC modem supplier and the root cause of the sessions failing is a reset of the PLC modem on IVECO side. In parallel, we also consulted IVECO and they confirmed that their EVCC is shutting down, but so far they have not been able to conclude what is causing this shutdown.”\nUpdate from 6/june - Ecog to have a final discussion with IVECO, looks like EV issue so nothing for us to, final answer on 12/Jun\nUpdate from 17/June -\nSo far we haven’t received any update from Iveco side about the root cause of the EVCC shutting down.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Pipwyj",
+    "stage": null,
+    "serial_number": "MP / R0 170002839",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "129dca49-190e-f011-9989-6045bde13997",
+            "subject": "Webform_incident_SiCharge D_31-03-2025_SN: 170002839",
+            "body": "Dear Ralph Lindner,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002839\nThank you\neMobility Technical Support Team\nSehr geehrte/r Ralph Lindner,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002839\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-31T10:17:10Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "70cfc3ca-260e-f011-998a-7c1e5236cda4",
+            "subject": "ID0415899-DC/Si-D/DE-[ MP / R0 170002839 ] Left LP does not establish a connection CRM:02684000028",
+            "body": "Hallo ﻿Breilmann KG Techniker,\nvielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Deepanshi und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center - ERK\nHauptanlage\n: MP / R0 170002839\nProblembeschreibung\n: Linker LP stellt keine Verbindung her\nFür zukünftige Referenzen lautet Ihre Ticketummer 0415899\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir Danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team - ﻿\nDeepanshi Singh\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-03-31T11:53:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0925146a-6610-f011-998a-7c1e5236cda4",
+            "subject": "ID0415899-DC/Si-D/DE-[ MP / R0 170002839 ] Left LP does not establish a connection CRM:02684000028",
+            "body": "Hello Ralph, good morning.\nI checked the logs from the date you presented and found that indeed the EV is not going to charge until some attempts. This is a recent known issue from the IVECO trucks, I can see from the logs, with the vehicle identification: 5c.cc.a0.02.62.a5. Every EV that start with 5c.cc (as far as I know) is always an IVECO truck.\nWe already brought this to their attention directly as we have been having meetings with them over the past month. They have acknowledged the issue being that their system is very sensitive to certains changes in certain phases.\nI will convey the information that you are having this issue so that they can work on a solution.\nAs soon as I have an update I will come back to you. For now, when the IVECO trucks are failing the sessions please retry until it works.\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2025-04-03T08:34:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09d58a34-8f52-f011-877b-7c1e52faf3c6",
+            "subject": "ID0415899-DC/Si-D/DE-[ MP / R0 170002839 ] Left LP does not establish a connection CRM:02684000028",
+            "body": "Hello Ralph, good afternoon. I hope you are doing well.\nUpdate from our side regarding your charging problem with the IVECO trucks.\nOur supplier had a discussion with IVECO directly and found that there is a problem with the controller on the vehicle side.\nMy recommendation is to reach out to this colleague from IVECO and explain the situation, hopefully they will provide you a solution:\nleandro.lasciato@ivecogroup.com\nFrom our side, it has been cleared that the problem does not come from the charging station and it's related to the vehicle.\nWe will close our ticket since it's declared solved.\nThank you and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-06-26T13:12:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7da78884-9452-f011-877b-7c1e52faf3c6",
+            "subject": "Ticket 0415899 has been closed. Are you satisfied with our provided solution? CRM:00315002755",
+            "body": "Dear Ralph,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0415899\nwith the title:\nID0415899-DC/Si-D/DE-[MP / R0 170002839] IVECO trucks\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-06-26T13:50:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

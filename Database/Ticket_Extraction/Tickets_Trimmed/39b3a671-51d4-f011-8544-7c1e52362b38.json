@@ -1,0 +1,101 @@
+{
+    "incident_id": "39b3a671-51d4-f011-8544-7c1e52362b38",
+    "ticket_number": "0466442",
+    "title": "ID0466442-DC/Si-D/CH-[MP / R7 170002200] Short Charging Issue",
+    "created_on": "2025-12-08T16:17:55Z",
+    "last_activity": "2026-01-15T10:02:45Z",
+    "age": "2687",
+    "description": "Reported behaviour/issue : Short Charger Issue",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R7 170002200",
+    "case_nature_code": 580000001,
+    "chargerID": "xgesXO",
+    "additional_info": [
+        {
+            "id": "fb0d5968-51d4-f011-8544-7ced8d425b04",
+            "subject": "Webform_incident_SiCharge D_08-12-2025_SN: MP / R7 170002200",
+            "body": "Dear Alexander Müller,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R7 170002200\nThank you\neMobility Technical Support Team\nSehr geehrte/r Alexander Müller,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R7 170002200\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-12-08T16:17:42Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "216408a9-52d4-f011-8544-7ced8d40d9c4",
+            "subject": "A new case manager was assigned to 0466442 CRM:00225300128",
+            "body": "Sumit Kumar was assigned as new Case Manager for case 0466442 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=39b3a671-51d4-f011-8544-7c1e52362b38",
+            "date": "2025-12-08T16:26:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e1033217-54d4-f011-8544-7ced8d40d9c4",
+            "subject": "ID0466442-DC/Si-D/CH-[MP / R7 170002200] Short Charger Issue CRM:03055000423",
+            "body": "Dear\nAlexander\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R7 170002200\nChargerID\n: xgesXO\nProblem Description\n:\nShort Charger Issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0466442\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-12-08T16:36:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "206ea41e-55d4-f011-8544-7ced8d4259cd",
+            "subject": "A new case manager was assigned to 0466442 CRM:00225300139",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0466442 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=39b3a671-51d4-f011-8544-7c1e52362b38",
+            "date": "2025-12-08T16:44:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "abcf5a56-56d4-f011-8544-7c1e52880f76",
+            "subject": "RE: ID0466442-DC/Si-D/CH-[MP / R7 170002200] Short Charger Issue CRM:03055000423",
+            "body": "Dear Alexander,\nI am reaching out in regards of the SLA ticket\nID0466442.\nThank you for raising the ticket. I had a quick look at the #3 sessions highlighted, and these are my findings:\nThe session on 08.12.2025 is a low energy session due to a bug of the charger. During the charging session, an error on the LEM triggers an OCPPStopTransaction, which is accepted, but the session in reality goes on. This bug has already been addressed by R&D, and a fix is already included in the recently released\nFW v8.1.4.\nPlease proceed to update the charger at v8.1.4 as soon as possible.\nFor the session on 07.12.2025 I saw many RemoteStartTransaction messages on the same outlet, which might have stopped the session. I will analyze it more in depth and provide you with a feedback as soon as posisble.\nFor the session on 06.12.2025, also here we have the same behavior as for the first case. An error on the LEM triggers an OCPPStopTransaction, which is accepted, but the session in reality goes on\nPlease proceed to update the charger MP / R7 170002200 to FW v8.1.4 as soon as possible. I will follow up on the second failed session shortly.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-08T16:53:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95ec3a91-0fd5-f011-8544-7c1e52880288",
+            "subject": "RE: ID0466442-DC/Si-D/CH-[MP / R7 170002200] Short Charger Issue CRM:03055000423",
+            "body": "Dear Alexander,\nI\nam following up on ticket\nID0466442.\nHere is a complete analysis of the sessions reported by you:\n(As per previous email)\nThe session on 08.12.2025 is a low energy session due to a bug of the charger. During the charging session, an error on the LEM triggers an OCPPStopTransaction, which is accepted, but the session in reality goes on. This bug has already been addressed by R&D, and a fix is already included in the recently released\nFW v8.1.4.\nPlease proceed to update the charger at v8.1.4 as soon as possible.\nFor the session on 07.12.2025 also in this case the session was short from Backend side due to the LEM errror:\n(As per previous email)\nFor the session on 06.12.2025, also here we have the same behavior as for the first case. An error on the LEM triggers an OCPP StopTransaction, which is accepted, but the session in reality goes on\nIn conclusion, all three sessions were reported as short sessions due to this error on the LEM, which is solved in\nFW v8.1.4.\nIt is necessary then to update the charger to\nv8.1.4\nas soon as possible. The charger is currently running on v7.0.5, and v8.0.5 already rolled out. It is necessary  to update first to v8.0.5, rollout v8.1.4, and then update again.\nShould I proceed to update the charger to v8.1.4 during office hours, or will you take care to launch the update on SCB?\nPlease let me know if you need support to update the charger. I will then proceed to close the ticket, as the analysis has been provided and the bug and bugfix communicated.\nLooking forward to hearing feedback from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-12-09T14:58:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7dcd759f-21ba-4b9c-857f-c9191442cc25",
+            "subject": "Status Update",
+            "body": "Charger updated to v8.1.4 on 09.12.2025. Ticket to be closed",
+            "date": "2025-12-10T13:03:36Z",
+            "extra": {}
+        },
+        {
+            "id": "d47144d0-c8d5-f011-8543-7c1e52210c30",
+            "subject": "Ticket 0466442 has been closed. Are you satisfied with our provided solution? CRM:00225301384",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0466442\nwith the title:\nID0466442-DC/Si-D/CH-[MP / R7 170002200] Short Charging Issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-10T13:04:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

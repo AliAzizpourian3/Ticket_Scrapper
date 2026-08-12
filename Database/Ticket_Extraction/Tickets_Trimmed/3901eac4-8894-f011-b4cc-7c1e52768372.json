@@ -1,0 +1,68 @@
+{
+    "incident_id": "3901eac4-8894-f011-b4cc-7c1e52768372",
+    "ticket_number": "0450628",
+    "title": "ID0450628-DC/Si-D/PL-[MP / RD 170003083] Issue with FC14 and FC17.",
+    "created_on": "2025-09-18T12:12:41Z",
+    "last_activity": "2025-10-24T12:37:43Z",
+    "age": "51865",
+    "description": "Reported Behavior/ Issue: Issue with FC14 and FC17.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "HMeQs9",
+    "stage": null,
+    "serial_number": "MP / RD 170003083",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "599077bf-8894-f011-b4cc-6045bde12d6b",
+            "subject": "Webform_incident_SiCharge D_18-09-2025_SN: MP / RD 170003083",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / RD 170003083\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / RD 170003083\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-18T12:12:33Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a0571d91-9094-f011-b4cb-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0450628 CRM:00225258857",
+            "body": "Shashank Mishra was assigned as new Case Manager for case 0450628 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3901eac4-8894-f011-b4cc-7c1e52768372",
+            "date": "2025-09-18T13:08:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6623ffb5-9094-f011-b4cc-7c1e5236cda4",
+            "subject": "ID0450628-DC/Si-D/PL-[MP / RD 170003083] Issue with FC14 and FC17. CRM:02699000246",
+            "body": "Dear\nSzymon Brodowicz\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: {\nMP / RD 170003083\nChargerID/Serial No.\n:\nHMeQs9\nProblem Description\n:\nIssue with FC14 and FC17.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0450628\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nShashank Mishra\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-18T13:09:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "75a5eff2-5695-f011-b4cc-7c1e523508ba",
+            "subject": "ID0450628-DC/Si-D/PL-[MP / RD 170003083] Issue with FC14 and FC17. CRM:02699000246",
+            "body": "Hello Szymon, good afternoon.\nDid you had the time to check anything here?\nI would start from FC14 where the light isn't even on, so from here we need to understand if the 24V supply is reaching FC14 > if the bridges connecting them is good or needs replacement.\nFor FC17 since it's red that means it tripped and we need to follow that line and find where the faulty component.\nPlease check if removing the 24V supply to the LED controller, the FC17 is working, if you plug in the 24V and the FC turns red, then we need to replace the KF15.\nI recommend you to take 2 spare FC14/17 (they are the same) and KF15. Also the bridges.\nPlease let me know if you have any doubts or questions. I will send this ticket back to your queue RC-PL but feel free to reach out to me when you need.\nThanks a lot and have a nice weekend.\nBest regards,\nfrancisco",
+            "date": "2025-09-19T12:48:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "372863b0-b4c9-7c2f-a878-c490ef04a5bd",
+            "subject": "Summary of activities",
+            "body": "On-site work was required.\nDuring the station visit, the FC14 and FC17 fuses were checked.\nDiagnosis:\n- FC17 was functional; it only needed to be restarted and the cables tightened.\n- FC14 - the problem was with the fuse and the KF1 controller power connector. The KF1 connector was completely loose and needed to be repaired.\nAfter completing these steps, a restart was performed via a cold start, from the HMI panel, and from the SCB. All restarts were successful.\nAfter a few days, the station became inactive in the SCB, but this was an issue with the XF3 router - the station is working properly in the backend system.",
+            "date": "2025-10-24T12:37:01Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "incident_id": "23036c60-6393-4a7c-ab61-51df202ef851",
+    "ticket_number": "0435930",
+    "title": "ID0435930-DC/Si-D/FI-[MP / R7 170002231]-Salo DC Contactor error",
+    "created_on": "2025-07-07T11:06:52Z",
+    "last_activity": "2025-07-14T09:54:06Z",
+    "age": "10007",
+    "description": "Reported behavior/issue: QA09-10 and QA17-18 coils stuck in feedback ON\nSolution: Replace contactors\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "iV6iBW",
+    "stage": null,
+    "serial_number": "MP / R7 170002231",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "51822580-225b-f011-bec1-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0435930 CRM:00225225107",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0435930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23036c60-6393-4a7c-ab61-51df202ef851",
+            "date": "2025-07-07T11:07:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "272912b5-b3e4-42af-b4ab-cecb22e2defc",
+            "subject": "AWS query and screenshot 1 week backward",
+            "body": "fields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/PLC-Error-Flag/\nand\n@message\nlike\n/true/\nand\n@message\nlike\n/DC_Co/\nand\n@message\nlike\n/coontactor stuck at ON feedback/\nor\n@message\nlike\n/SMC have feedback faults/\n|\nparse\n@message\n'_* '\nas\ncoil\n|\nparse\n@message\n'DC* :'\nas\nOutlet\n|\nfilter\n@logStream\nlike\n/iV6iBW/\n|\nstats\ncount\n(*)\nas\nCount\nby\nOutlet,coil,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-07-07T11:08:11Z",
+            "extra": {}
+        },
+        {
+            "id": "09745d9b-265b-f011-bec1-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0435930 CRM:00225225131",
+            "body": "Anupama Srivastava was assigned as new Case Manager for case 0435930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23036c60-6393-4a7c-ab61-51df202ef851",
+            "date": "2025-07-07T11:36:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "933865fe-285b-f011-bec2-7c1e52faf3c6",
+            "subject": "ID0435930-DC/Si-D/FI-[MP / R7 170002231]- Charger failure CRM:02919000126",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnupama\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nSalo\nChargerID/Serial No.\n:\niV6iBW\nProblem Description\n:\nCharger failure\nFor future reference, your case number is\n0435930\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnupama Srivastava\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-07T11:53:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef1f129f-345b-f011-bec1-7c1e52206585",
+            "subject": "A new case manager was assigned to 0435930 CRM:00225225214",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0435930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23036c60-6393-4a7c-ab61-51df202ef851",
+            "date": "2025-07-07T13:16:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "38c6961a-355b-f011-bec2-000d3ad97a58",
+            "subject": "ID0435930-DC/Si-D/FI-[MP / R7 170002231]- DC contactor errors CRM:02919000126",
+            "body": "Hi Markus,\nPlease proceed with the replacement of QA17-18 and QA09-10.\nI will send this ticket to you.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-07T13:20:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e427ac2-355b-f011-bec2-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0435930 CRM:00225225225",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0435930 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=23036c60-6393-4a7c-ab61-51df202ef851",
+            "date": "2025-07-07T13:24:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3099d95-16d6-7284-9f93-4054ba40c5e0",
+            "subject": "repair report",
+            "body": "",
+            "date": "2025-07-10T20:03:32Z",
+            "extra": {}
+        }
+    ]
+}

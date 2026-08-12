@@ -1,0 +1,83 @@
+{
+    "incident_id": "6161a948-21bb-f011-bbd2-7ced8d425b04",
+    "ticket_number": "0460274",
+    "title": "ID0460274-DC/Si-D/AT-[Y2/T10 4002926962] Voltage issue",
+    "created_on": "2025-11-06T15:00:15Z",
+    "last_activity": "2025-11-14T13:17:26Z",
+    "age": "11417",
+    "description": "Reported behavior/issue- can you please check why we didn't reach the target voltage. we charging here a SCANIA truck.\nSolution:- No issue. Charging parameter explanation.\nyyyy-mm-dd:-",
+    "type": 1,
+    "priority": 3,
+    "stage": null,
+    "serial_number": "Y2/T10 4002926962",
+    "case_nature_code": 580000001,
+    "chargerID": "tJGWs1",
+    "additional_info": [
+        {
+            "id": "f63e1b45-21bb-f011-bbd2-7c1e5276d071",
+            "subject": "Webform_incident_SiCharge D_06-11-2025_SN: Y2/T10 4002926962",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/T10 4002926962\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/T10 4002926962\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-11-06T15:00:07Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "248f4083-22bb-f011-bbd2-7ced8d744afe",
+            "subject": "A new case manager was assigned to 0460274 CRM:00225284275",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0460274 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6161a948-21bb-f011-bbd2-7ced8d425b04",
+            "date": "2025-11-06T15:08:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "db00a4cc-23bb-f011-bbd2-7c1e52362ec6",
+            "subject": "ID0460274-DC/Si-D/AT-[Y2/T10 4002926962] Voltage issue CRM:02889000831",
+            "body": "Dear\nJohannes Dissauer\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2/T10 4002926962\nChargerID\n:\ntJGWs1\nProblem Description\n: D\nidn't reach the target voltage\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0460274\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSakshi Rawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-06T15:18:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a234374-bcbb-f011-bbd2-002248a235a8",
+            "subject": "A new case manager was assigned to 0460274 CRM:00225284733",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0460274 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6161a948-21bb-f011-bbd2-7ced8d425b04",
+            "date": "2025-11-07T09:31:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8019b948-ecbe-f011-bbd2-002248a408bb",
+            "subject": "RE: ID0460274-DC/Si-D/AT-[Y2/T10 4002926962] Voltage issue CRM:02889000831",
+            "body": "Dear Johannes,\nI am reaching out in regards of ticket\nID0460274.\nThis ticket, as well as ticket\nID0459972\n, was opened to address a query regarding a discrepancy between the Target Voltage and the Actual Voltage during a charging session.\nFor sake of completeness, I am sharing below the response I previously shared with you in the other ticket:\nThis gap can be noticed in the logs as well, and\nit is perfectly normal.\nThe Target Voltage (EV_TarVol) is a parameter communicated by the EV which represents the battery voltage level at 100% of SOC. The measured voltage (EVSE_NowVol) represents the instantaneous voltage at the interface between the EV and the charger, hence we can say in a certain way it is the instantaneous voltage level of the EV's battery. Therefore, there will always be a gap between these two parameters, if the SOC is not 100%, as power converters and batteries are two voltage generators in parallel. To charge the EV's battery, the charger provides a constant current, while raising the voltage level up to the Target Voltage.\nHere some examples for you:\nSOC not 100%:\n|EVSE_MaxPwr[kW]=172|EVSE_MaxCur[A]=265|EVSE_NowPwr[kW]=87.4|EVSE_NowCur[A]=235\n|EVSE_NowVol[V]=371.6\n|EV_TarCur[A]=242|\nEV_TarVol[V]=430\n|EV_SOC[%]=44|EVSE_DESpwr[kW]=172|Pilot=4\nSOC at 100%:\n|EVSE_MaxPwr[kW]=160|EVSE_MaxCur[A]=400|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|\nEVSE_NowVol[V]=730.7|\nEV_TarCur[A]=0\n|EV_TarVol[V]=733\n|EV_SOC[%]=100|EVSE_DESpwr[kW]=4|Cable_Max[A]=400|Phase=5\nWhat is important is that the Actual Current follows the Target Current request from the EV, with a discrepancy according to the standards.\nHope this explanation clarifies your doubts. If there are no further questions, I would proceed to close this query and ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-11T10:50:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a575c239-5cc1-f011-bbd3-7ced8d425bfe",
+            "subject": "Ticket 0460274 has been closed. Are you satisfied with our provided solution? CRM:00225288351",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0460274\nwith the title:\nID0460274-DC/Si-D/AT-[Y2/T10 4002926962] Voltage issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-14T13:17:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

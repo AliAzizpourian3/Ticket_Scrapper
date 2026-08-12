@@ -1,0 +1,111 @@
+{
+    "incident_id": "e31f8d1b-3521-47ab-b2dd-0df0ce77e533",
+    "ticket_number": "0411694",
+    "title": "ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline",
+    "created_on": "2025-03-10T14:05:35Z",
+    "last_activity": "2025-06-17T12:07:24Z",
+    "age": "19866",
+    "description": "Reported issue:  Charger is offline, last message was PerformingCollaboratedReboot\nSolution:\n2025-10-03 : Appears like corrupt configuration file on charger, need to flash CFAST Card",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "v95a0K",
+    "stage": null,
+    "serial_number": "MP / RD 170003105",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "029a7934-594e-15b6-a2bc-621ce82ae580",
+            "subject": "Case Opening Remark",
+            "body": "\"Error according to backend: PerformingCollaboratedReboot - Station boots but is not active\"",
+            "date": "2025-03-10T14:09:07Z",
+            "extra": {}
+        },
+        {
+            "id": "e6f2ec5f-5b56-f3a1-a2fe-c8fbe37f9eb0",
+            "subject": "Charger is showing offline on SCB but logs are coming - Corrupt Configuration file",
+            "body": "Mon, 10 Mar 2025 14:25:14 GMT\n2025-03-10, 14:25:13\n2025-03-10T14:25:13.604622+00:00 sicharge-cp [kern:info] kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth5484e1a: link becomes ready\nMon, 10 Mar 2025 14:25:14 GMT\n2025-03-10, 14:25:13\n2025-03-10T14:25:13.604885+00:00 sicharge-cp [kern:info] kernel: br-07212a857071: port 7(veth5484e1a) entered blocking state\nMon, 10 Mar 2025 14:25:14 GMT\n2025-03-10, 14:25:13\n2025-03-10T14:25:13.601170+00:00 sicharge-cp [kern:info] NetworkManager[481]: <info> [1741616713.6010] device (veth5484e1a): carrier: link connected\nMon, 10 Mar 2025 14:25:14 GMT\n2025-03-10, 14:25:13\n2025-03-10T14:25:13.576569+00:00 sicharge-cp [kern:info] kernel: eth0: renamed from veth7fc8398\nMon, 10 Mar 2025 14:25:14 GMT\n2025-03-10, 14:25:12\n2025-03-10T14:25:12.970223+00:00 sicharge-cp [daemon:info] systemd[3568]: run-docker-runtime\\x2drunc-moby-2e3b00f0347bee0caacdb6ac8b45d15a1adfda03805dea849032eddd0915b39b-runc.lgKyZZ.mount: Succeeded.\nMon, 10 Mar 2025 14:25:13 GMT\n2025-03-10, 14:25:12\n2025-03-10T14:25:12.913228+00:00 sicharge-cp [daemon:info] containerd[533]: time=\"2025-03-10T14:25:12.912305045Z\" level=info msg=\"starting signal loop\" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/2e3b00f0347bee0caacdb6ac8b45d15a1adfda03805dea849032eddd0915b39b pid=22267\nMon, 10 Mar 2025 14:25:13 GMT\n2025-03-10, 14:25:12\n2025-03-10T14:25:12.806804+00:00 sicharge-cp [kern:info] NetworkManager[481]: <info> [1741616712.8066] manager: (veth5484e1a): new Veth device (/org/freedesktop/NetworkManager/Devices/312992)\nMon, 10 Mar 2025 14:25:13 GMT\n2025-03-10, 14:25:12\n2025-03-10T14:25:12.798326+00:00 sicharge-cp [kern:info] NetworkManager[481]: <info> [1741616712.7981] manager: (veth7fc8398): new Veth device (/org/freedesktop/NetworkManager/Devices/312991)",
+            "date": "2025-03-10T14:27:21Z",
+            "extra": {}
+        },
+        {
+            "id": "5d598c18-c0fd-ef11-bae3-7c1e52faf3c6",
+            "subject": "ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861",
+            "body": "Dear Eduard Huber - TankE GmbH,\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavy\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / RD 170003105\nChargerID/Serial No.\n: VRpzYW\nProblem Description\n: Charger Offline\nTroubleshooting\n: Hello Eduard,\nFirst and foremost, we would like to extend our sincerest apologies for the delay in processing your case. We completely understand how frustrating this situation must be for you, and we deeply regret any inconvenience this has caused. Unfortunately, due to a glitch in our system, we needed to recreate your case, which has taken longer than anticipated.\nAfter carefully reviewing the logs on our backend, we found that the system is showing as offline, and it appears that the configuration file has become corrupted. We truly understand the importance of resolving this quickly, but due to the nature of the issue, we are unable to access the system remotely via SSH.\nTo ensure that we can resolve this as efficiently as possible, we are arranging for a visit from our regional country team. They will reach out to you shortly to schedule the visit and provide the necessary assistance in person.\nWe fully appreciate your patience and understanding throughout this process, and once again, we deeply apologize for the inconvenience caused. Please rest assured that we are doing everything we can to resolve this promptly.\nThank you for your continued trust in us.\nFor future reference, your case number is\n0411694\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T14:58:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "263d30ad-cafd-ef11-bae3-7c1e52faf3c6",
+            "subject": "RE: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861",
+            "body": "Hello,\nI hope this email finds you well.\nI am writing to inform you that we’ve encountered an issue with this charger, the configuration file appears to be corrupted, resulting in the system going offline. After assessment, we’ve determined that flashing the CFast card with new configurations is the necessary resolution.\nCould you please let me know when you plan to schedule the site visit to carry out this task in advance if you require intervention support from our side.\nThank you for your attention to this matter. I look forward to hearing from you soon.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T16:14:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2726d550-78fe-ef11-bae2-0022489d7182",
+            "subject": "ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000865",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0411694 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nPlease plan a visit, refer below article.\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_SW_Firmware_ Firmware download from Companion tool and update via USB - Dynamics 365\nYou can put the same FW again.\nThings to consider:\nWhile you are preparing the USB do c\nreate \"data\" folder along “autorun” folder to avoid creating new charger ID.\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T12:57:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0502ca15-a1b7-3851-bd2d-7fd0a35de870",
+            "subject": "Work Order für Ramona erstellt",
+            "body": "",
+            "date": "2025-03-11T16:42:49Z",
+            "extra": {}
+        },
+        {
+            "id": "2045e981-20ff-ef11-bae3-7c1e5236e32d",
+            "subject": "0411694 - ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01027000233",
+            "body": "Hey Sascha,\nhier ist ein Ticket für dich.\nKannst du es bitte bearbeiten?\nVielen Dank.\nVG,\nRodrigo",
+            "date": "2025-03-12T09:01:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e6c0dcdc-be00-f011-bae3-7c1e52faf3c6",
+            "subject": "AW: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861",
+            "body": "Hi Eddi,\nich habe unserer Techniker Ramona Hilse den Auftrag bereits weitergegeben.\nSie plant Ende kommender Woche bzw. die darauffolgende Woche in NRW unterwegs zu sein und sich den Charger anzuschauen.\nWann das genau sein wird, dazu wird sie sich mit Euch noch abstimmen.\nHoffe, das passt so.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nEduard Huber - TankE GmbH <e.huber@tanke.io>\nDatum:\nDonnerstag, 13. März 2025 um 17:08\nAn:\nTheil, Sascha (RC-DE SI E CS) <sascha.theil@siemens.com>\nCc:\nMatthias Litzke - TankE GmbH <m.litzke@tanke.io>\nBetreff:\nWG: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861\nHallo Sascha,\nkönnt Ihr an dieser Stelle etwas beschleunigen, da uns hierzu einige Bürgeranfragen erreichen und diese teilweise nicht nett sind.\nVielen Dank!\nLiebe Grüße\nEddie\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 10. März 2025 16:54\nAn:\nEduard Huber - TankE GmbH <e.huber@tanke.io>\nBetreff:\nID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861\nDear Eduard Huber - TankE GmbH,\nThank you for reaching out to eMobility Support. My name is Vaishnavy, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / RD 170003105\nChargerID/Serial No.\n: VRpzYW\nProblem Description\n: Charger Offline\nTroubleshooting\n: Hello Eduard,\nFirst and foremost, we would like to extend our sincerest apologies for the delay in processing your case. We completely understand how frustrating this situation must be for you, and we deeply regret any inconvenience this has caused. Unfortunately, due to a glitch in our system, we needed to recreate your case, which has taken longer than anticipated.\nAfter carefully reviewing the logs on our backend, we found that the system is showing as offline, and it appears that the configuration file has become corrupted. We truly understand the importance of resolving this quickly, but due to the nature of the issue, we are unable to access the system remotely via SSH.\nTo ensure that we can resolve this as efficiently as possible, we are arranging for a visit from our regional country team. They will reach out to you shortly to schedule the visit and provide the necessary assistance in person.\nWe fully appreciate your patience and understanding throughout this process, and once again, we deeply apologize for the inconvenience caused. Please rest assured that we are doing everything we can to resolve this promptly.\nThank you for your continued trust in us.\nFor future reference, your case number is 0411694, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-14T10:27:09Z",
+            "extra": {
+                "sender": "sascha.theil@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5c0969ee-be00-f011-bae3-000d3ad97a58",
+            "subject": "AW: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861",
+            "body": "Hi Sascha,\nsuper, vielen Dank für die schnelle Rückmeldung.\nLiebe Grüße\nEddie\nVon:\nTheil, Sascha <sascha.theil@siemens.com>\nGesendet:\nFreitag, 14. März 2025 11:26\nAn:\nEduard Huber - TankE GmbH <e.huber@tanke.io>\nCc:\nMatthias Litzke - TankE GmbH <m.litzke@tanke.io>; Hilse, Ramona <ramona.hilse@siemens.com>; emobility_support.si@siemens.com\nBetreff:\nAW: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861\nHi Eddi,\nich habe unserer Techniker Ramona Hilse den Auftrag bereits weitergegeben.\nSie plant Ende kommender Woche bzw. die darauffolgende Woche in NRW unterwegs zu sein und sich den Charger anzuschauen.\nWann das genau sein wird, dazu wird sie sich mit Euch noch abstimmen.\nHoffe, das passt so.\nMit freundlichen Grüßen\nSascha Theil\nVon:\nEduard Huber - TankE GmbH <\ne.huber@tanke.io\n>\nDatum:\nDonnerstag, 13. März 2025 um 17:08\nAn:\nTheil, Sascha (RC-DE SI E CS) <\nsascha.theil@siemens.com\n>\nCc:\nMatthias Litzke - TankE GmbH <\nm.litzke@tanke.io\n>\nBetreff:\nWG: ID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861\nHallo Sascha,\nkönnt Ihr an dieser Stelle etwas beschleunigen, da uns hierzu einige Bürgeranfragen erreichen und diese teilweise nicht nett sind.\nVielen Dank!\nLiebe Grüße\nEddie\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMontag, 10. März 2025 16:54\nAn:\nEduard Huber - TankE GmbH <\ne.huber@tanke.io\n>\nBetreff:\nID0411694-DC/Si-D/DE [MP / RD 170003105] Charger Offline CRM:01282000861\nDear Eduard Huber - TankE GmbH,\nThank you for reaching out to eMobility Support. My name is Vaishnavy, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n: MP / RD 170003105\nChargerID/Serial No.\n: VRpzYW\nProblem Description\n: Charger Offline\nTroubleshooting\n: Hello Eduard,\nFirst and foremost, we would like to extend our sincerest apologies for the delay in processing your case. We completely understand how frustrating this situation must be for you, and we deeply regret any inconvenience this has caused. Unfortunately, due to a glitch in our system, we needed to recreate your case, which has taken longer than anticipated.\nAfter carefully reviewing the logs on our backend, we found that the system is showing as offline, and it appears that the configuration file has become corrupted. We truly understand the importance of resolving this quickly, but due to the nature of the issue, we are unable to access the system remotely via SSH.\nTo ensure that we can resolve this as efficiently as possible, we are arranging for a visit from our regional country team. They will reach out to you shortly to schedule the visit and provide the necessary assistance in person.\nWe fully appreciate your patience and understanding throughout this process, and once again, we deeply apologize for the inconvenience caused. Please rest assured that we are doing everything we can to resolve this promptly.\nThank you for your continued trust in us.\nFor future reference, your case number is 0411694, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-14T10:27:33Z",
+            "extra": {
+                "sender": "e.huber@tanke.io",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7a17a53c-922e-e757-a136-8731a696ba2d",
+            "subject": null,
+            "body": "charger ist betriebsbereit case can be closed  customer communication already done",
+            "date": "2025-03-24T09:09:32Z",
+            "extra": {}
+        }
+    ]
+}

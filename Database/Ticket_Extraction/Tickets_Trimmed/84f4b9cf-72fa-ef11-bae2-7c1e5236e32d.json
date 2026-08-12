@@ -1,0 +1,250 @@
+{
+    "incident_id": "84f4b9cf-72fa-ef11-bae2-7c1e5236e32d",
+    "ticket_number": "0410999",
+    "title": "ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV",
+    "created_on": "2025-03-06T10:07:39Z",
+    "last_activity": "2025-06-17T09:30:38Z",
+    "age": "57684",
+    "description": "Reported behavior/issue:\nSuspendedEV\nRoot cause:\nCorrection will be implemented in FW 7.0.x\nSolution:\nHotfix applied (Patch) / Code correction\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "PWnLON",
+    "stage": null,
+    "serial_number": "MP / P9 170000982",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "049eabcb-72fa-ef11-bae2-6045bdde4786",
+            "subject": "Webform_incident_SiCharge D_06-03-2025_SN: MP / P9 170000982",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / P9 170000982\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / P9 170000982\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-06T10:07:30Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a1b1b55f-75fa-ef11-bae2-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0410999 CRM:00225173968",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0410999 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=84f4b9cf-72fa-ef11-bae2-7c1e5236e32d",
+            "date": "2025-03-06T10:26:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7778f09b-7afa-ef11-bae2-6045bdde4786",
+            "subject": "ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000982\nChargerID/Serial No.\n:\nPWnLON\nProblem Description\n: SuspendedEV\nTroubleshooting\n: We are analyzing the logs for the given timestamp & I will get back to you soon.\nFor future reference, your case number is\n0410999\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-06T11:03:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "296ba72d-fa20-8161-a5c9-cefbe2de4ef1",
+            "subject": "Note to L2",
+            "body": "",
+            "date": "2025-03-06T11:28:40Z",
+            "extra": {}
+        },
+        {
+            "id": "e37e000c-38fe-ef11-bae3-7c1e5236e32d",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Szymon,\nI hope you're doing well. Thank you for your patience as we've taken some time to analyze the issue.\nThe session was stopped on 2025-02-20 at 14:34:14 from the EV side, as the SOC of the vehicle reached 100%.\nTimestamp\n: 2025-02-20T14:34:14.036324+00:00\nLog Message:\nswcpu [user:debug] [4022] [DCC] | 2025-02-20T13:28:18 | DC1: | EVSE_MaxPwr[kW]=0 | EVSE_MaxCur[A]=0 | EVSE_NowPwr[kW]=0 | EVSE_NowCur[A]=0 | EVSE_NowVol[V]=1.3 | EV_TarCur[A]=0 | EV_TarVol[V]=0 | EV_SOC[%]=100 | EVSE_DESpwr[kW]=150 | Pilot=2\nAs the session terminated from the EV side, the status message showed \"SuspendedEV\". As the plug was not removed, so DC1 remained in the \"B1\" state, which is normal behavior for us.\nAt 2025-02-20, 14:50:55, the StatusNotification command was sent from the OCPP backend. As a result, DC1 briefly displayed \"SuspendedEV\" for a second.\nLog Entries:\n2025-02-20T14:50:55.689327+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP:\nSend command: StatusNotification\n(b6755b12-6b8d-4fc4-a558-5e7294ccf6ad) - {\"connectorId\":0,\"errorCode\":\"NoError\",\"status\":\"Available\"}\n2025-02-20T14:50:55.778707+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Received result: StatusNotification (b6755b12-6b8d-4fc4-a558-5e7294ccf6ad) - {}\n2025-02-20T14:50:56.686564+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Send command: StatusNotification (b536e7f5-1052-4c9e-bedb-0cf30e93b12c) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"SuspendedEV\"}\n2025-02-20T14:50:56.688593+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Send command: StatusNotification (39adbccf-519d-4a4a-b657-cd4edafef746) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nAfterward, when the connector was unplugged at 2025-02-20, 14:52:03, the pilot state transitioned from \"B1\" to \"A\", and just 2 seconds later, the DC1 status notification changed from \"SuspendedEV\" to \"Available.\"\nRegarding your second query about why the status was not changed to \"Preparing\":\nThe status of DC1 did not change because the connector was not unplugged from the EV. Therefore, the pilot state remained in \"B1\" until the connector was unplugged at 2025-02-20, 14:52:03. After just 2 seconds, the status was updated to \"Available.\" There were no issues from the charger or the backend, and the billing was processed correctly.\nRegarding the unsuccessful charging sessions for DC1:\nWe have analyzed several charging sessions and observed that some sessions were not authorized, while others failed due to an invalid idTag. DC1 had successful charging sessions starting from 2025-02-22.\nBelow is a summary of the sessions for your reference:\nSr No\nStart Transaction\nidTag / Transaction Id\nStop Transaction\nRemarks\n1\n2025-02-20, 14:52:59\nAD0825EA\n2025-02-20, 14:53:29\n{\"idTagInfo\":{\"status\":\"Invalid\"}}\n2\n2025-02-20, 14:54:20\nAD0825EA\n2025-02-20, 14:54:53\n{\"idTagInfo\":{\"status\":\"Invalid\"}}\n3\n2025-02-22, 15:25:14\n128736137\n2025-02-22, 16:01:26\nSuccessful charging session (approx. 44.24 kW)\n4\n2025-02-22, 17:33:55\n652010410\n2025-02-22, 18:16:13\nSuccessful charging session (approx. 59.8 kW)\nPlease let me know if you have any further queries, or if we can proceed with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-11T05:17:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "05c337f8-39fe-ef11-bae3-000d3ad97a58",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Szymon,\nI hope you're doing well. Thank you for your patience as we've taken some time to analyze the issue.\nThe session was stopped on 2025-02-20 at 14:34:14 from the EV side, as the SOC of the vehicle reached 100%.\nTimestamp\n: 2025-02-20T14:34:14.036324+00:00\nLog Message:\nswcpu [user:debug] [4022] [DCC] | 2025-02-20T13:28:18 | DC1: | EVSE_MaxPwr[kW]=0 | EVSE_MaxCur[A]=0 | EVSE_NowPwr[kW]=0 | EVSE_NowCur[A]=0 | EVSE_NowVol[V]=1.3 | EV_TarCur[A]=0 | EV_TarVol[V]=0 | EV_SOC[%]=100 | EVSE_DESpwr[kW]=150 | Pilot=2\nAs the session terminated from the EV side, the status message showed \"SuspendedEV\". As the plug was not removed, so DC1 remained in the \"B1\" state, which is normal behavior for us.\nAt 2025-02-20, 14:50:55, the StatusNotification command was sent from the OCPP backend. As a result, DC1 briefly displayed \"SuspendedEV\" for a second.\nLog Entries:\n2025-02-20T14:50:55.689327+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP:\nSend command: StatusNotification\n(b6755b12-6b8d-4fc4-a558-5e7294ccf6ad) - {\"connectorId\":0,\"errorCode\":\"NoError\",\"status\":\"Available\"}\n2025-02-20T14:50:55.778707+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Received result: StatusNotification (b6755b12-6b8d-4fc4-a558-5e7294ccf6ad) - {}\n2025-02-20T14:50:56.686564+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Send command: StatusNotification (b536e7f5-1052-4c9e-bedb-0cf30e93b12c) - {\"connectorId\":1,\"errorCode\":\"NoError\",\"status\":\"SuspendedEV\"}\n2025-02-20T14:50:56.688593+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/4dd497458d8c[734]: OCPP: Send command: StatusNotification (39adbccf-519d-4a4a-b657-cd4edafef746) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nAfterward, when the connector was unplugged at 2025-02-20, 14:52:03, the pilot state transitioned from \"B1\" to \"A\", and just 2 seconds later, the DC1 status notification changed from \"SuspendedEV\" to \"Available.\"\nRegarding your second query about why the status was not changed to \"Preparing\":\nThe status of DC1 did not change because the connector was not unplugged from the EV. Therefore, the pilot state remained in \"B1\" until the connector was unplugged at 2025-02-20, 14:52:03. After just 2 seconds, the status was updated to \"Available.\" There were no issues from the charger or the backend, and the billing was processed correctly.\nRegarding the unsuccessful charging sessions for DC1:\nWe have analyzed several charging sessions and observed that some sessions were not authorized, while others failed due to an invalid idTag. DC1 had successful charging sessions starting from 2025-02-22.\nBelow is a summary of the sessions for your reference:\nSr No\nStart Transaction\nidTag / Transaction Id\nStop Transaction\nRemarks\n1\n2025-02-20, 14:52:59\nAD0825EA\n2025-02-20, 14:53:29\n{\"idTagInfo\":{\"status\":\"Invalid\"}}\n2\n2025-02-20, 14:54:20\nAD0825EA\n2025-02-20, 14:54:53\n{\"idTagInfo\":{\"status\":\"Invalid\"}}\n3\n2025-02-22, 15:25:14\n128736137\n2025-02-22, 16:01:26\nSuccessful charging session (approx. 44.24 kW)\n4\n2025-02-22, 17:33:55\n652010410\n2025-02-22, 18:16:13\nSuccessful charging session (approx. 59.8 kW)\nPlease let me know if you have any further queries, or if we can proceed with closing the ticket.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-11T05:30:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "18c77bee-51fe-ef11-bae3-6045bde0265d",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Hello,\nyes please elaborate on the topic because:\n- the station behaved exactly as you wrote: charging finished, the station indicated SupsendedEV, then the plug was unplugged and the pilot status went to “A” status and CP was available - but only for the station because the SuspendedEV status remained in the backend system.\nThe status remained because the station did not send a Finishing message about the completed charging session.\nI spoke with MSP (the backend provider) and he explained to me that the station should send a Finishing message after the session is completed and the session is terminated based on that.\nHere is the whole problem, that SuspendedEV remained, the point in the backend was further occupied. Therefore, the next session was rejected, because for the backend this point was occupied. This was the result of this, not properly terminated session.\nWhy didn't the charger send Finishing?\nBest regards,\nSzymon",
+            "date": "2025-03-11T08:22:20Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7041972f-56fe-ef11-bae2-7c1e5220255c",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "I am curious about this point of the OCPP 1.6 protocol:\nDoes the charging station behave in the manner indicated here? That is, it has a setting of false for StopTransactionOnEVSideDisconnect and that is why the charging station sent SuspendedEV after this session ended.\nI don't know if this is a good indication, but it is a suggestion.\nThe whole problem here is the session termination on the backend system side.\nAs we can see, this system did not terminate the session even though it received an Available status - because its logic requires Finishing.\nWhere does the problem lie:\n- In SICHARGE D, which did not send Finishing?\n- In the backend system that did not terminate the session seeing Available?\n- Is it enough to change the StopTransactionOnEVSideDisconnect parameter to true and then the sessions will be terminated as expected? How to check if the station supports this message?\nThe OCPP information is from a publicly available file from the OCA website: OCPP-1.6 edition 2.\nPlease feel free to analyze.\nWith best regards,\nSzymon Brodowicz\nSiemens Sp. z o.o.\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nMobile: +48 882490147\nmailto:szymon.brodowicz@siemens.com\nwww.siemens.pl",
+            "date": "2025-03-11T08:52:45Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09c1e0f6-2494-6162-8a69-93a2d2b3b058",
+            "subject": "Notes to L2 ",
+            "body": "Analyzing the queries from RC from the trail mail.",
+            "date": "2025-03-12T06:38:18Z",
+            "extra": {}
+        },
+        {
+            "id": "160083e3-7429-9537-becc-d392f0f2fa7f",
+            "subject": "Notes to L2",
+            "body": "Discussed the case with Ingo on Teams call, Ingo will check the case with Software team and then we will work on it next week.",
+            "date": "2025-03-12T08:57:47Z",
+            "extra": {}
+        },
+        {
+            "id": "ad194e78-2000-f011-bae2-7c1e5220d6ef",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Hello,\nI attached word with cases which we have, the main issue is that we have suspended EV message after stop transaction. Backend provider said that it is critical mistake.\nFor now, we ask them to use:\nOCPP configuration key \"TxStopPoint\"\nPowerPathClosed -> StopTransaction message when CCS plug is removed\nEnergyTransfer -> StopTransaction message when EcoG reports a Session End\nWith best regards,\nKonrad Frach\nExternal service provider at Siemens Sp. z o.o.\nPoland\nSmart Infrastructure\neMobility - Poland\nRC-PL SI E\nul.\nZupnicza 11\n03-821 Warsaw, Poland\nTel. +48 880432592\nmailto:konrad.frach.ext@siemens.com\nSiemens Sp. z o.o. ul. Żupnicza 11, 03-821 Warszawa, Sąd Rejonowy dla m.st. Warszawy, XIV Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS 0000031854, Kapitał zakładowy: 96 831 415,00.- PLN, BDO 000008961, NIP: 526-03-02-870\nWażne:\nTen mail i wszelkie załączniki do niego zawierają informacje będące własnością przedsiębiorcy. Jeśli otrzymaliście Państwo tego maila omyłkowo, prosimy o niezwłoczne poinformowanie nas poprzez odesłanie go do nadawcy oraz usunięcie całej korespondencji wraz załącznikami ze swojego systemu. Dziękujemy.",
+            "date": "2025-03-13T15:33:12Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "66fc3f33-4bf7-d931-a492-f04e6796109d",
+            "subject": "Notes to L2",
+            "body": "Discussed the case with Ingo on Teams call on 12th March, I will be discussed with Ingo on next week.",
+            "date": "2025-03-15T13:25:55Z",
+            "extra": {}
+        },
+        {
+            "id": "ede0016a-049a-68b5-ac51-4b35dff3aab4",
+            "subject": "Notes to L2",
+            "body": "Discussed the case with Ingo and he will check with R&D collogue and he is in touch with RC Konrad Frach for the same. creating a child case for further support.",
+            "date": "2025-03-18T17:32:36Z",
+            "extra": {}
+        },
+        {
+            "id": "a37db130-aa04-f011-bae3-6045bde0265d",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nI hope you're doing well.\nI've created a child ticket for this issue. As you've already discussed it with Ingo, he will work on this issue along with the R&D and will update you on the progress.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-19T10:09:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46d880b5-ab04-f011-bae3-7c1e5236cda4",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nI hope you're doing well.\nI've created a child ticket for this issue. As you've already discussed it with Ingo, he will work on this issue along with the R&D and will update you on the progress.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-19T10:20:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d3e036df-0909-f011-bae3-6045bddf319c",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nI hope you're doing well.\nHere’s the latest update:\nCurrently, it is not intended to send a SuspendedEV after a StopTransaction. This issue will be addressed in an upcoming version.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-24T23:44:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95197744-0a09-f011-bae3-7c1e5236eee4",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nI hope you're doing well.\nHere’s the latest update:\nCurrently, it is not intended to send a SuspendedEV after a StopTransaction. This issue will be addressed in an upcoming version.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-24T23:47:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ed8bcfb-4909-f011-bae3-7c1e5236eee4",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Vikas,\nwhen can we expect an update?\nBr\nKonrad",
+            "date": "2025-03-25T07:23:09Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "12f271a8-b409-f011-bae3-7c1e52faf3c6",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nSince this ticket requires R&D involvement and the issue will be addressed in an upcoming firmware version, I’m unable to provide a timeline at the moment. However, I’ll keep you updated as soon as I receive more information from them.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-25T20:06:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b901fdf-b509-f011-bae3-7c1e52350ea5",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Konrad,\nSince this ticket requires R&D involvement and the issue will be addressed in an upcoming firmware version, I’m unable to provide a timeline at the moment. However, I’ll keep you updated as soon as I receive more information from them.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when replying to it.",
+            "date": "2025-03-25T20:15:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9f9d1d7c-ec19-f011-9989-7c1e52361e39",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Poland Service Team,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0410999, the case is now closed.\nProblem Description\n: SuspendedEV\nResolution\n:  Patch applied (Hotfix)\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-15T11:26:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2da50bb2-ec19-f011-9989-7c1e5277d5a9",
+            "subject": "RE: ID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV CRM:00921001608",
+            "body": "Dear Poland Service Team,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0410999, the case is now closed.\nProblem Description\n: SuspendedEV\nResolution\n:  Patch applied (Hotfix)\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-15T11:28:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "36fc65cc-ec19-f011-9989-7c1e52361e39",
+            "subject": "Ticket 0410999 has been closed. Are you satisfied with our provided solution? CRM:02023000580",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0410999\nwith the title:\nID0410999-DC/Si-D/PL-[MP / P9 170000982] SuspendedEV\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-15T11:28:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

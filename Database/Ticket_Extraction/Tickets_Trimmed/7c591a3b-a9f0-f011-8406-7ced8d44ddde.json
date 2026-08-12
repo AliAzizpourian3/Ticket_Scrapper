@@ -1,0 +1,156 @@
+{
+    "incident_id": "7c591a3b-a9f0-f011-8406-7ced8d44ddde",
+    "ticket_number": "0472084",
+    "title": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults",
+    "created_on": "2026-01-13T17:56:57Z",
+    "last_activity": "2026-01-19T10:16:27Z",
+    "age": "8180",
+    "description": "Reported behaviour/issue: Recurring Internal Errors and Modbus Communication Faults on Sicharge D.\nSolution: All these errors are EV related",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "8yaTTI",
+    "stage": "Resolved",
+    "serial_number": "MP/S2170003304",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "fd8cb435-a9f0-f011-8406-000d3ab21808",
+            "subject": "Recurring Sicharge D EVSE faults and internal comms errors across ChargePoint 170003304",
+            "body": "Hi Francisco,\nWe would like to raise a formal support request relating to repeated and recurring fault states on Siemens Sicharge D hardware, specifically ChargePointId 170003304, observed across multiple EVSEs and connectors over several days.\nThis follows on from earlier correspondence with Jason Stonier in December, where Siemens support acknowledged that a number of transient and internal conditions are automatically published to OCPP, even when they may not be operationally meaningful in isolation. Jason confirmed at that time that this behaviour had been raised internally with R and D and the product owner.\nIn this case however, the pattern we are seeing is not isolated or cosmetic. We are observing a progression of faults that suggests an underlying internal instability or communications issue, rather than irrelevant transient states.\nSummary of observed behaviour\nOn 2026 01 06 at 21 22 UTC, EVSE 2 reported OtherError with vendor code “modbus0 is not connected”.\nFollowing this, between 2026 01 08 and 2026 01 10, multiple EVSEs and connectors on the same charge point reported repeated faulted states including “evse is not ready”, “secc pilot is E”, and ultimately plain InternalError with no vendor detail.\nThese faults are occurring across different connectors and EVSE IDs, while the charge point remains Online and Available at top level, and they recur over hours and days rather than resolving cleanly.\nNotably, in several cases a specific vendor error such as “modbus0 is not connected” or “secc pilot is E” is followed shortly afterwards by generic InternalError states, which aligns with a scenario where an internal subsystem or controller is unstable and later faults are no longer being translated into vendor specific messages.\nWhy we are raising this formally\nWhile we understand that some transient conditions may be noisy at OCPP level, the repetition, cross EVSE spread, and escalation from specific internal bus errors to generic InternalError states indicates a likely underlying root cause that needs investigation.\nThis is also consistent with the earlier view shared by Jason that all events should exist in internal logs, with relevance determined before publishing externally. In this instance, the events appear operationally relevant, as they correlate with connectors being unusable.\nWhat we are requesting\nA review of Siemens internal logs for ChargePointId 170003304 covering the period from 2026 01 06 to 2026 01 10, with particular focus on internal communications, Modbus dependencies, controller stability, and any related crash or restart events.\nClarification on what internal component or subsystem “modbus0” maps to in this configuration, and whether loss of that link would plausibly cascade into the observed EVSE not ready and InternalError states on other connectors.\nConfirmation on whether this pattern is known, firmware related, or indicative of a hardware level issue that may require site intervention.\nWe are happy to provide any additional OCPP message sequences, timelines, or site context if required. Please let us know what further information would help move this forward.\nKind regards,\nColin",
+            "date": "2026-01-13T17:56:45Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d4897fd3-b0f0-f011-8406-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0472084 CRM:00225317698",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0472084 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7c591a3b-a9f0-f011-8406-7ced8d44ddde",
+            "date": "2026-01-13T18:51:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1564d299-b1f0-f011-8406-7ced8d44df3f",
+            "subject": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Dear\nColin\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/S2170003304\nCharger ID\n: 8yaTTI\nProblem Description\n: Recurring Internal Errors and Modbus Communication Faults on Sicharge D\nFor your reference, this support request has been assigned the following case number:\n0472084\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-13T18:56:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "857c13f2-12f1-f011-8406-7ced8d44dcb4",
+            "subject": "A new case manager was assigned to 0472084 CRM:00225317834",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0472084 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7c591a3b-a9f0-f011-8406-7ced8d44ddde",
+            "date": "2026-01-14T06:33:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "986da46e-5ca7-5226-913e-ff19aa9885dd",
+            "subject": "The client mentioned Francisco’s name in the ticket.",
+            "body": "The client mentioned Francisco’s name in the ticket. After informing Francisco, he asked me to forward it to the SID team\nSuspected Root Cause :\nProblem Description :\nAction Performed (L2) :\nCharger SW Version:\nv8.0.5-0-g33a6c1d+APN\nReason for Handover (L3) :\nabc\nFault history :\nLog analysis with timestamp :\nAction Required\nAttachement\n:",
+            "date": "2026-01-14T10:01:24Z",
+            "extra": {}
+        },
+        {
+            "id": "3c2f921c-f1f1-f011-8406-7ced8d44da5f",
+            "subject": "A new case manager was assigned to 0472084 CRM:00225318786",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0472084 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7c591a3b-a9f0-f011-8406-7ced8d44ddde",
+            "date": "2026-01-15T09:03:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4b72f9fa-00f2-f011-8406-7ced8d44dfaf",
+            "subject": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hi Colin, good morning. I hope you are doing well.\nI'm going to start from the easiest to answer to the \"toughest\":\n10th Jan, we have a faulted due to customer choosing the wrong connector ID, they plug in DC2\nAnd choose the connector ID:4 which is then \"rejected\" because the charger is expecting a session on connector ID2:\nThe next faulted state is due to a EV communication problem, what is expected is that when the EV gets plugged in, he exchanges information with the charger pertaining to the next steps called SLAC (Signal Level Attenuation Characterization) and in our logs, I can see that the EV didn't establish this connection with the charger and after the timeout, we stop the session:\nPLC means Power Line Communication.\n9th January we have 3 instances in a row for the same problem mentioned above about the SLAC:\nIn this case again, it's the EV since after a couple of mins, the customer reattempts and it's successfull.\nNow, the \"toughest\" ones, still on the 9th January, we have an isolation fault from EV side and the charger promptly stops the session to avoid any damage or risk of harming:\nThis indicates that the EV had some kind of misbehaviour that caused our system to raise all alarms.\nIt seems to be a one time only because after 2mins the customer retries the session and it works perfectly.\nOn the 8th January, we have an EV that is causing an abnormal voltage on the charger:\nBefore we plug in, there is no session or any interaction with the charger, and we read on our output contactor a very high voltage!\nAs you can see in red, the reading is 137V but our system is at that moment at 0V from the converter side, it's literally impossible that before starting a session, our converters are in working state.\nAs such, our system will not allow the charging to happen unless this voltage is dropped to ~0V. Which happens when the customer plugs out the EV.\nFinal case, on the 8th we have a session on DC1 that is finished correctly:\nAnd what I see is that even though our output contactors are already opened (no output voltage)\nWe still measure on the output some voltage:\nThis seems to be the same reason as the previous error, the EV doesn't open the contactors or has some kind of device that enables some voltage in our charger and since it's out of the ordinary working principle, we send an error.\nPlease let me know if I was clear in my explanation.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-01-15T10:57:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "42b1f837-14f2-f011-8406-000d3ab12cf3",
+            "subject": "Re: ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hello Francisco,\nI am fine thanks, I would prefer the weather in Portugal than west of ireland thanks!!\nSo thank you for the detailed and clear explanation, that was very helpful and appreciated.\nI agree that, taken individually, each of the scenarios you describe is technically plausible. Wrong connector selection, SLAC timeouts, isolation faults and abnormal voltage conditions are all things we would expect the charger to protect against, and it is reassuring to see the unit doing so safely.\nWhere we are still struggling operationally is not with any single event in isolation, but with the pattern that emerges when these events are viewed together across days and across EVSEs.\nSpecifically:\n• We are seeing repeated intermittent faulted states, including InternalError and generic OtherError, across multiple EVSEs on the same charge point\n• These events frequently self recover within seconds or minutes, without a reset or intervention\n• From the customer perspective this presents as short or aborted sessions, suspended charging, slow or inconsistent behaviour, rather than a clean rejection\n• The same site then exhibits vendor level faults such as “evse is not ready”, “secc pilot is E”, and in at least one case “modbus0 is not connected”\nOur concern is not whether an EV can misbehave in one instance, but whether the charger is entering a degraded internal state where it becomes more sensitive to otherwise recoverable EV side anomalies, resulting in Faulted or InternalError transitions being surfaced.\nThis aligns with Jason’s earlier observation that many transient internal conditions are currently published to OCPP without relevance filtering, and that relevance should ideally be determined internally.\nTo help us move this forward constructively, could you confirm one point:\nFrom Siemens’ internal logs, do you see any evidence of controller restarts, internal comms instability, or subsystem reinitialisation around these events, even if they recover quickly?\nIf the answer is no, that gives us confidence that this is purely EV driven behaviour. If the answer is yes, then we may need to look at mitigation or firmware handling to reduce customer impact.\nThanks again for taking the time to investigate this. Happy to provide anything further if useful.\nKind regards,\nColin\nOn Thu, Jan 15, 2026 at 11:15 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHi Colin, good morning. I hope you are doing well.\nI'm going to start from the easiest to answer to the \"toughest\":\n10th Jan, we have a faulted due to customer choosing the wrong connector ID, they plug in DC2\nAnd choose the connector ID:4 which is then \"rejected\" because the charger is expecting a session on connector ID2:\nThe next faulted state is due to a EV communication problem, what is expected is that when the EV gets plugged in, he exchanges information with the charger pertaining to the next steps called SLAC (Signal Level Attenuation Characterization) and in our logs, I can see that the EV didn't establish this connection with the charger and after the timeout, we stop the session:\nPLC means Power Line Communication.\n9th January we have 3 instances in a row for the same problem mentioned above about the SLAC:\nIn this case again, it's the EV since after a couple of mins, the customer reattempts and it's successfull.\nNow, the \"toughest\" ones, still on the 9th January, we have an isolation fault from EV side and the charger promptly stops the session to avoid any damage or risk of harming:\nThis indicates that the EV had some kind of misbehaviour that caused our system to raise all alarms.\nIt seems to be a one time only because after 2mins the customer retries the session and it works perfectly.\nOn the 8th January, we have an EV that is causing an abnormal voltage on the charger:\nBefore we plug in, there is no session or any interaction with the charger, and we read on our output contactor a very high voltage!\nAs you can see in red, the reading is 137V but our system is at that moment at 0V from the converter side, it's literally impossible that before starting a session, our converters are in working state.\nAs such, our system will not allow the charging to happen unless this voltage is dropped to ~0V. Which happens when the customer plugs out the EV.\nFinal case, on the 8th we have a session on DC1 that is finished correctly:\nAnd what I see is that even though our output contactors are already opened (no output voltage)\nWe still measure on the output some voltage:\nThis seems to be the same reason as the previous error, the EV doesn't open the contactors or has some kind of device that enables some voltage in our charger and since it's out of the ordinary working principle, we send an error.\nPlease let me know if I was clear in my explanation.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-01-15T13:15:12Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10f78178-1af2-f011-8406-7ced8d44dfaf",
+            "subject": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hi Colin! Good afternoon :) I'm not sure if we spoke since last year and it's a bit late but Happy New Year 2026.\nThis week, I'm not sure if you would prefer our weather, it's been pouring down for the past 2 weeks and it seems it won't stop soon, but indeed it should be warmer than there :D\nI'm glad that it was explained properly, sometimes we have these very specific details and names, nomeclatures, etc, that is not easy to understand. Be sure that when I check your tickets I don't hide anything, it must be clear for both parties where the fault lies, and if it's us, I do not hesitate to say so, that is why I always send photo of our logs.\nWith this being said:\nQ:\n\"From Siemens’ internal logs, do you see any evidence of controller restarts, internal comms instability, or subsystem reinitialisation around these events, even if they recover quickly?\"\nA:\nI have examined all the logs from the time periods of the errors reported, and I can find no evidence of SECC restarts causing the errors. In certain circumstances, the\ncharge controller\n(which manages communications between the vehicle and the chargepoint), may make a service restart (not a full controller reboot), as a consequence of a failure of communication from the vehicle, and that would be seen in the logs or occasionally at the end of a session. It does this to ensure that the logic is at a default zero state after a fault or an unclean communication stop from the car.\nSo, in short - no, these errors are not a result of any controllers or services rebooting/restarting - rather, any service restarts are the result of the error.\nLet me know if this answered to your needs or if there is anything else you need :)\nThanks!\nBest regards,\nFrancisco",
+            "date": "2026-01-15T14:00:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "29264291-19f5-f011-8406-7ced8d44d2c4",
+            "subject": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hi Colin, good morning. I hope you had a nice weekend and ready to start a new one.\nSince I have provided the answer to your questions, please let me know if I can close the ticket or if there is anything else you need from me.\nThank you and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2026-01-19T09:31:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88d8629c-1df5-f011-8406-000d3ab124a4",
+            "subject": "Re: ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hi Francisco\nThank you for the clarification.\nI’m happy to close the ticket, with the understanding that Siemens retains a note of these events and the associated explanations for future reference, should similar behaviour recur.\nRegards\nColin\nColin Barry\nBrite EV charging",
+            "date": "2026-01-19T09:59:59Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0fe8fee1-1ef5-f011-8406-7ced8d44d2c4",
+            "subject": "ID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults CRM:02681001320",
+            "body": "Hi Colin,\nOf course, as I mentioned before, when you open a ticket we will always analyse it, if it's our fault we will always let you know.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-01-19T10:09:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd92da8b-1ff5-f011-8406-6045bde07811",
+            "subject": "Ticket 0472084 has been closed. Are you satisfied with our provided solution? CRM:00225320793",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0472084\nwith the title:\nID0472084-DC/Si-D/IE-[MP/S2170003304] Recurring Internal Errors and Modbus Communication Faults\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-19T10:13:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

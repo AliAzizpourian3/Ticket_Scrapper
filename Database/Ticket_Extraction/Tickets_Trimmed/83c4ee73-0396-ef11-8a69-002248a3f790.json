@@ -1,0 +1,178 @@
+{
+    "incident_id": "83c4ee73-0396-ef11-8a69-002248a3f790",
+    "ticket_number": "0387110",
+    "title": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity",
+    "created_on": "2024-10-29T14:38:31Z",
+    "last_activity": "2025-12-16T14:04:36Z",
+    "age": "24195",
+    "description": "Reported behaviour/issue:\nCharging capacity\nRoot cause:\nEV issue?\nSolution:\nIf the trucks have\nexactly the same battery conditions\n=> 133.94 x 1,07 ( 7% charge delta between both trucks) =\n143,3158 Kwh in theory\nfor the second truck with exactly\nthe same charge conditions\n,  but in our case, charging sessions don’t start at the same SOC and don’t stop at the same SOC so we haven’t the same charging algorithm between both truck, that can explain the error difference between reality and Theory = 160.47- 143,3158 = 17 Kwh\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\nActive",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "4HIbKg",
+    "stage": null,
+    "serial_number": "MP / R6 170002001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "384e086e-0396-ef11-8a6a-7c1e5237dbeb",
+            "subject": "Creation Request: Verification of 300 kW Charger Capacity - MP/R6 17000200",
+            "body": "Hello,\nI am reaching out as we have observed an unusual issue with the Sicharge D charger (serial number: MP/R6 17000200), and we would like to ensure that its 300 kW capacity is unaffected. We suspect that one of the electric trucks may have a potential power demand issue.\n1) First truck – The charger appears to have delivered the expected 300 kW power:\n- Date: 10/29/2024\n- Start time: 11:48:45\n- End time: 12:27:08\n- Charging duration: 00:38:22\n- Energy consumption: 133.94 kWh\n2) Second truck – The charger did not seem to reach full capacity, or there may have been a limitation on the power demand:\n- Date: 10/29/2024\n- Start time: 12:33:42\n- End time: 13:35:36\n- Charging duration: 01:01:54\n- Energy consumption: 160.47 kWh\nPlease verify these details and confirm that the charger is operating at full capacity.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2024-10-29T14:38:24Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "86c3e5a9-0696-ef11-8a69-000d3ab41b62",
+            "subject": "A new case manager was assigned to 0387110 CRM:00225116483",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387110 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=83c4ee73-0396-ef11-8a69-002248a3f790",
+            "date": "2024-10-29T15:01:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "65d51c6c-0796-ef11-8a69-002248a2fe80",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 28 minutes and 22 seconds.",
+            "date": "2024-10-29T15:06:54Z",
+            "extra": {}
+        },
+        {
+            "id": "97f2264c-0996-ef11-8a69-002248a2fe80",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978",
+            "body": "Dear Malek, long time no see. I hope you are doing well.\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002001\nChargerID/Serial No.\n:\n4HIbKg\nProblem Description\n: Charging capacity\nTroubleshooting\n:\nFrom our logs, we can clearly see that the charger has a maximum power available of 280kW:\nAs you can see the EVSE_MaxPwr[kW] = 280kW and the provided power is 211kW, which is measured from the NowCur[A]xNowVol[V]. So in sum, the EV is requesting 330A and 662V = 218KW and is being provided 328A and 643V = 211kW.\nThe reason why the charger cannot go to Max=300kW is because there is a communication error from one converter and that is the reason why only 20kW are missing. I can arrange a regional colleague to resolve this issue since it's a simple problem.\nEven though the converter is missing, the EV is still requesting less, than what I assume you expect, as you can see he is requesting 330A, if he is to require 300kW it should request 453A, considering that the 662V are always constant.\nLet me know yours thoughts and questions.\nFor future reference, your ticket number is\n0387110\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-29T15:20:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "167c8a43-0f96-ef11-8a69-6045bde13ddf",
+            "subject": "RE: ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978",
+            "body": "Dear Francisco,\nIt was a real pleasure to connect with you again.\nI confirm that I understand the truck's power demand is limited to 250 kW. However, I’m wondering why this 2\nnd\ntruck didn’t charge at the maximum power level !\n- Date: 29/10/2024\n- Start Time: 12:33:42\n- End Time: 13:35:36\n- Connected From: 12:33:03\n- Connected To: 13:36:19\n- Server Timestamp: 12:33:43\n- Energy Consumption:\n160.47 kWh\nCould you clarify whether the issue is related to the charger or the truck itself? Once clarified, we should organize an intervention to resolve this problem.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 29 octobre 2024 16:35\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nObjet :\nID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978\nDear Malek, long time no see. I hope you are doing well.\nThank you for reaching out to eMobility Support. My name is Francisco, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / R6 170002001\nChargerID/Serial No.\n: 4HIbKg\nProblem Description\n: Charging capacity\nTroubleshooting\n:\nFrom our logs, we can clearly see that the charger has a maximum power available of 280kW:\nAs you can see the EVSE_MaxPwr[kW] = 280kW and the provided power is 211kW, which is measured from the NowCur[A]xNowVol[V]. So in sum, the EV is requesting 330A and 662V = 218KW and is being provided 328A and 643V = 211kW.\nThe reason why the charger cannot go to Max=300kW is because there is a communication error from one converter and that is the reason why only 20kW are missing. I can arrange a regional colleague to resolve this issue since it's a simple problem.\nEven though the converter is missing, the EV is still requesting less, than what I assume you expect, as you can see he is requesting 330A, if he is to require 300kW it should request 453A, considering that the 662V are always constant.\nLet me know yours thoughts and questions.\nFor future reference, your ticket number is 0387110, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-29T16:03:06Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d703df7a-1296-ef11-8a69-002248a2fe80",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978",
+            "body": "Hello again,\nI now understand your question, I apologise.\nYes, indeed it seems like the session was stopped without a request. This was performed by the SECC, I would like to check the logs but I can't as they are already deleted from the temporary folder.\nCan we please align on a date for a charging session or when you know of another session please report back to me? This way I can analyse and check where the root cause lies in. From the logs I cannot confirm if the stop came from the EV or the charger.\nI hope I was clear this time.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2024-10-29T16:26:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e70a879-4596-ef11-8a6a-000d3addcd64",
+            "subject": "Re: ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978",
+            "body": "Hello,\nI will check with Nicolas on-site tomorrow morning and will keep you informed.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nTuesday, October 29, 2024 5:28:45 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nObjet :\nID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001978\nHello again,\nI now understand your question, I apologise.\nYes, indeed it seems like the session was stopped without a request. This was performed by the SECC, I would like to check the logs but I can't as they are already deleted from the temporary folder.\nCan we please align on a date for a charging session or when you know of another session please report back to me? This way I can analyse and check where the root cause lies in. From the logs I cannot confirm if the stop came from the EV or the charger.\nI hope I was clear this time.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2024-10-29T22:31:04Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "924767df-9996-ef11-8a6a-002248a29667",
+            "subject": "RE: Creation Request: Verification of 300 kW Charger Capacity - MP/R6 17000200",
+            "body": "Dear Malek,\nThank you for your ticket,\nIn attachment, please find the logs of both charging sessions ( be careful, the serial number of the charger is MP / R6 170002001 instead\nMP/R6 17000200\n)\nYou can see the first truck began the charging session with SOC= 36% until 69% => 33% de 100%SOC\nTue, 29 Oct 2024 10:48:43 GMT\n2024-10-29, 10:48:43\n2024-10-29T10:48:43.551583+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"\nP05_START_CHARGE\" --> \"P06_CHARGE\"\nTue, 29 Oct 2024 10:48:43 GMT\n2024-10-29, 10:48:43\n2024-10-29T10:48:43.717480+00:00 swcpu [user:debug] IMD_DC2 Selfcheck active\nTue, 29 Oct 2024 10:48:45 GMT\n2024-10-29, 10:48:44\n2024-10-29T10:48:44.962818+00:00 swcpu [user:debug] |2024-10-29T10:48:19|DC1|EVSE_MaxPwr[kW]=60|EVSE_MaxCur[A]=71|EVSE_NowPwr[kW]=17.1|EVSE_NowCur[A]=26|EVSE_NowVol[V]=650|EV_TarCur[A]=49|EV_TarVol[V]=669|\nEV_SOC[%]=36|EVSE\n_DESpwr[kW]=248|Pilot=4\nArret Charge :\nTue, 29 Oct 2024 11:27:02 GMT\n2024-10-29, 11:27:01\n2024-10-29T11:27:01.931868+00:00 swcpu [user:debug] |2024-10-29T10:48:19|DC1|EVSE_MaxPwr[kW]=200|EVSE_MaxCur[A]=269|EVSE_NowPwr[kW]=189.6|EVSE_NowCur[A]=267|EVSE_NowVol[V]=709|EV_TarCur[A]=267|EV_TarVol[V]=710|\nEV_SOC[%]=69\n|EVSE_DESpwr[kW]=199.5|Pilot=4\nTue, 29 Oct 2024 11:27:06 GMT\n2024-10-29, 11:27:06\n2024-10-29T11:27:06.295134+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"\nP06_CHARGE\" --> \"P07_STOP_CHARGE\n\"\nand the second one with SOC= 14% until 55% => 40% 100%SOC\nTue, 29 Oct 2024 11:33:41 GMT\n2024-10-29, 11:33:41\n2024-10-29T11:33:41.125958+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"\nP05_START_CHARGE\" --> \"P06_CHARGE\"\nTue, 29 Oct 2024 11:33:49 GMT\n2024-10-29, 11:33:47\n2024-10-29T11:33:47.926210+00:00 swcpu [user:debug] |2024-10-29T11:33:09|DC1|EVSE_MaxPwr[kW]=60|EVSE_MaxCur[A]=96|EVSE_NowPwr[kW]=59.3|EVSE_NowCur[A]=94|EVSE_NowVol[V]=628|EV_TarCur[A]=95|EV_TarVol[V]=648|\nEV_SOC[%]=14\n|EVSE_DESpwr[kW]=248|Pilot=4\nArret Charge :\nTue, 29 Oct 2024 12:35:26 GMT\n2024-10-29, 12:35:22\n2024-10-29T12:35:22.873920+00:00 swcpu [user:debug] |2024-10-29T11:33:09|DC1|EVSE_MaxPwr[kW]=60|EVSE_MaxCur[A]=42|EVSE_NowPwr[kW]=0|EVSE_NowCur[A]=0|EVSE_NowVol[V]=687|EV_TarCur[A]=0|EV_TarVol[V]=709|\nEV_SOC[%]=55|EVSE_DESpwr[kW]=2|Pilot=4\nTue, 29 Oct 2024 12:35:32 GMT\n2024-10-29, 12:35:32\n2024-10-29T12:35:32.464346+00:00 swcpu [user:debug] [DCC] DC1: Charging Phase \"\nP06_CHARGE\" --> \"P07_STOP_CHARGE\"\nThere is no power limitation on the charger and the values seems coherent\nTruck 1 => 33% of total battery\nTruck 2 => 40% of total battery 2\nDelta = 7% total battery charge between both truck\nIf the trucks have\nexactly the same battery conditions\n=> 133.94 x 1,07 ( 7% charge delta between both trucks) =\n143,3158 Kwh in theory\nfor the second truck with exactly\nthe same charge conditions\n,  but in our case, charging sessions don’t start at the same SOC and don’t stop at the same SOC so we haven’t the same charging algorithm between both truck, that can explain the error difference between reality and Theory = 160.47- 143,3158 = 17 Kwh\nWhat do you think about this ?\nAvec mes meilleures salutations,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com\nSiège social : Siemens SAS - Tour CB21 - 16 place de l’Iris - CS 60351 - 92040 Paris La Défense Cedex - RCS Nanterre 562 016 774\nDe :\nMalek DRIF <m.drif@autorecharge.fr>\nEnvoyé :\nmardi 29 octobre 2024 15:38\nÀ :\nSI Emobility Technical Support <emobility_support.si@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>\nCc :\nCOLLET, SEBASTIEN (RC-FR SI E SAL SVC) <sebastien.collet@siemens.com>; Nevo, Emmanuel (RC-FR SI E SAL S) <emmanuel.nevo@siemens.com>\nObjet :\nCreation Request: Verification of 300 kW Charger Capacity - MP/R6 17000200\nImportance :\nHaute\nHello,\nI am reaching out as we have observed an unusual issue with the Sicharge D charger (serial number: MP/R6 17000200), and we would like to ensure that its 300 kW capacity is unaffected. We suspect that one of the electric trucks may have a potential power demand issue.\n1) First truck – The charger appears to have delivered the expected 300 kW power:\n- Date: 10/29/2024\n- Start time: 11:48:45\n- End time: 12:27:08\n- Charging duration: 00:38:22\n- Energy consumption: 133.94 kWh\n2) Second truck – The charger did not seem to reach full capacity, or there may have been a limitation on the power demand:\n- Date: 10/29/2024\n- Start time: 12:33:42\n- End time: 13:35:36\n- Charging duration: 01:01:54\n- Energy consumption: 160.47 kWh\nPlease verify these details and confirm that the charger is operating at full capacity.\nBest regards,\nMalek DRIF | Head of Operations | Mob: +33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2024-10-30T08:35:19Z",
+            "extra": {
+                "sender": "sebastien.collet@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "362fcd3a-8d9a-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315001993",
+            "body": "Hello Sebastien, good morning.\nThank you very much for your explanation.\nMalek, what do you think? Have you faced any more issues like this?\nBest regards,\nFrancisco",
+            "date": "2024-11-04T09:14:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea6d374a-279c-ef11-8a69-000d3ab655d3",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002004",
+            "body": "Dear Malek,\nHope you are doing well. We haven't heard back from you on ticket# 0387110 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-06T10:10:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e351a824-08a0-ef11-8a6a-000d3a6610b3",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002029",
+            "body": "Dear Malek,\nHope you are doing well. We haven't heard back from you on ticket# 0387110 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-11T08:37:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ee6b0da1-09a0-ef11-8a6a-002248a2b1bd",
+            "subject": "Réponse automatique : ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002029",
+            "body": "Bonjour,\nJe suis actuellement en congé jusqu'au 15/11/2024 inclue, je prendrais connaissance de vos mails à mon retour.\nPour toute demande urgente, veuillez contacter les personnes identifiées ci-dessous :\n·        Antoine AULAY (Directeur commercial SIE)\n+33 603236870\n:\nantoine.aulay@siemens.com\n·        Antoine BRUA (Expert technique SIE)\n+33 637090717\n:\nantoine.brua@siemens.com\nJe vous remercie de votre compréhension et vous souhaite un bel été sportif !\nWith best regards,\nAvec mes meilleures salutations,\nEmmanuel Nevo\nResponsable business Développement\nSiemens SAS\nRC-FR SI E SAL S\nWTC - SIEMENS\n120 rue du Porteau\nBâtiment A, 2ème étage\n86000 Poitiers\n, France\nMobile: +33 621990429\nmailto:emmanuel.nevo@siemens.com\nwww.siemens.com",
+            "date": "2024-11-11T08:47:50Z",
+            "extra": {
+                "sender": "emmanuel.nevo@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8f8301d2-a6a2-ef11-8a6a-000d3ab4d5d3",
+            "subject": "ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002054",
+            "body": "Dear Malek, I believe we provided an answer to you. Please let me know some kind of feedback.\nHope you are doing well. We haven't heard back from you on ticket# 0387110 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-14T16:38:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "708d26cd-b7a2-ef11-8a6a-000d3ab4d5d3",
+            "subject": "Re: ID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002054",
+            "body": "Yes, thank you\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nThursday, November 14, 2024 5:39:00 PM\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nCOLLET, SEBASTIEN <sebastien.collet@siemens.com>\nObjet :\nID0387110-DC/Si-D/FR[170002001] - Charging Capacity CRM:00315002054\nDear Malek, I believe we provided an answer to you. Please let me know some kind of feedback.\nHope you are doing well. We haven't heard back from you on ticket# 0387110 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-14T18:39:43Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "09faa5f4-29a3-ef11-8a6a-000d3ab4d5d3",
+            "subject": "Ticket 0387110 has been closed. Are you satisfied with our provided solution? CRM:00315002058",
+            "body": "Dear Malek,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0387110\nwith the title:\nID0387110-DC/Si-D/FR[170002001] - Charging Capacity\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-15T08:16:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

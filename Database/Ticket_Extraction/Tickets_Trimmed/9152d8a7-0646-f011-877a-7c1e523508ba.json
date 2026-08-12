@@ -1,0 +1,145 @@
+{
+    "incident_id": "9152d8a7-0646-f011-877a-7c1e523508ba",
+    "ticket_number": "0430286",
+    "title": "ID0430286-DC/Si-D/FR-[MP / R8 170002515] secc is offline",
+    "created_on": "2025-06-10T14:24:53Z",
+    "last_activity": "2025-07-25T13:22:50Z",
+    "age": "33023",
+    "description": "Reported behavior/issue: Error on Display\nSolution: NA\nyyyy-mm-dd: 2025-09-06",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "zaBsY8",
+    "stage": null,
+    "serial_number": "MP / R8 170002515",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "669583a6-0646-f011-877a-7c1e5236eee4",
+            "subject": "Webform_incident_SiCharge D_10-06-2025_SN: Y8-MP R8 170002515",
+            "body": "Dear florent nicolas,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY8-MP R8 170002515\nThank you\neMobility Technical Support Team\nSehr geehrte/r florent nicolas,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY8-MP R8 170002515\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-06-10T14:24:45Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "49f9d307-0746-f011-877a-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0430286 CRM:00225213145",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0430286 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9152d8a7-0646-f011-877a-7c1e523508ba",
+            "date": "2025-06-10T14:27:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8de78034-0a46-f011-8779-7ced8d453563",
+            "subject": "0430286-DC/Si-D/FR-[MP / R8 170002515] Error on display CRM:02888000066",
+            "body": "Dear Florent Nicolas,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002515\nChargerID/Serial No.\n:\nzaBsY8\nProblem Description\n:\nError on display\nFor future reference, your case number is\n0430286\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-10T14:50:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6681bcd4-1846-f011-877a-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0430286 CRM:00225213212",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0430286 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9152d8a7-0646-f011-877a-7c1e523508ba",
+            "date": "2025-06-10T16:34:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87951119-7548-f011-877a-7c1e52faf3c6",
+            "subject": "RE: 0430286-DC/Si-D/FR-[MP / R8 170002515] Error on display CRM:02888000066",
+            "body": "Hi Florent,\nI hope you're doing well.\nThe VendorErrorCode “secc is offline” refers to a brief internal communication loss with the SECC, typically caused by a CoAP polling error. This disconnection is momentary—usually resolved within 5 seconds as the Controller automatically re-establishes the connection. Importantly, this event has no impact on the charger’s operation, including during active charging sessions.\nTo clarify, everything is functioning as intended. With the latest Sicharge D firmware version v6.1.3, new OCPP VendorErrorCodes have been introduced. These codes are meant to give the backend more visibility into the charger's internal behavior. They do not indicate the presence of new issues—such communication drops have occurred previously, but were simply not reported before.\nAdditionally, the R&D team is already planning improvements for a future firmware release. These will reduce the frequency of such notifications when they are inconsequential and do not affect charger availability.\nTo summarize, these messages are not new errors, but rather newly reported behaviors introduced in FW v6.1.3.\nIf you have any further questions, Do let us know.\nLooking forward to your feedback.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-13T16:40:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "193aec0b-747b-da2b-bf23-df4f7f794b8f",
+            "subject": null,
+            "body": "",
+            "date": "2025-06-13T17:12:22Z",
+            "extra": {}
+        },
+        {
+            "id": "bf6666b0-524b-f011-877a-000d3addf8ce",
+            "subject": "RE: 0430286-DC/Si-D/FR-[MP / R8 170002515] Error on display CRM:02888000066",
+            "body": "Hi,\nI disagree with your analysis. EVSE is out of order. Even after charger reboot this error is there.\nPlease had a look in the logs, EVSE 1 is still OUT OF ORDER !\nCordialement,\nFlorent NICOLAS\nResponsable supervision région sud\nENGIE Mobilités Électriques\nflorent.nicolas@engie.com\n+33 7 87 84 21 41\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming\n69007 Lyon\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 13 juin 2025 18:42\nÀ :\nNICOLAS Florent (ENGIE Mobilités Electriques) <florent.nicolas@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: 0430286-DC/Si-D/FR-[MP / R8 170002515] Error on display CRM:02888000066\nHi Florent, I hope you're doing well. The VendorErrorCode “secc is offline” refers to a brief internal communication loss with the SECC, typically caused by a CoAP polling error. This disconnection is momentary—usually resolved within 5 seconds\nHi Florent,\nI hope you're doing well.\nThe VendorErrorCode “secc is offline” refers to a brief internal communication loss with the SECC, typically caused by a CoAP polling error. This disconnection is momentary—usually resolved within 5 seconds as the Controller automatically re-establishes the connection. Importantly, this event has no impact on the charger’s operation, including during active charging sessions.\nTo clarify, everything is functioning as intended. With the latest Sicharge D firmware version v6.1.3, new OCPP VendorErrorCodes have been introduced. These codes are meant to give the backend more visibility into the charger's internal behavior. They do not indicate the presence of new issues—such communication drops have occurred previously, but were simply not reported before.\nAdditionally, the R&D team is already planning improvements for a future firmware release. These will reduce the frequency of such notifications when they are inconsequential and do not affect charger availability.\nTo summarize, these messages are not new errors, but rather newly reported behaviors introduced in FW v6.1.3.\nIf you have any further questions, Do let us know.\nLooking forward to your feedback.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-17T08:11:40Z",
+            "extra": {
+                "sender": "florent.nicolas@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8cb30331-644b-f011-877a-000d3adc93d1",
+            "subject": "RE: 0430286-DC/Si-D/FR-[MP / R8 170002515] Error on display CRM:02888000066",
+            "body": "Hi Florent,\nWe will informed Field service team to plan a visit.\nAlso, We recommend having charger at latest FW. i.e. 7.0.5.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-17T10:16:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "83688b2a-654b-f011-8779-6045bddce1c2",
+            "subject": "0430286-DC/Si-D/FR-[MP / R8 170002515] secc is offline CRM:00798002236",
+            "body": "Hi Team,\nWe need to plan for the site intervention.\nWe need to check for the connection between KF12 and PLC. Also, We recommend having spare ethernet cable.\nAlso, Check if the IP of KF12 is available. And can be able to ping. (i.e. 10.20.17.100)\nAlso, We recommend updating the charger to latest FW after approval from Customer.\nI am writing to formally inform that we are moving case 0430286 ﻿from the\nTechnical Support\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nYes\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-17T10:23:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca149da2-bd50-f011-877b-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0430286 CRM:00225219046",
+            "body": "Franck Le Gal was assigned as new Case Manager for case 0430286 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9152d8a7-0646-f011-877a-7c1e523508ba",
+            "date": "2025-06-24T05:39:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66cfcdb7-0b58-f011-877a-7c1e52206585",
+            "subject": "0430286 - ID0430286-DC/Si-D/FR-[MP / R8 170002515] secc is offline CRM:00752000949",
+            "body": "Bonjour,\nVeuillez trouver ci joint le rapport d'intervention.\nLa borne est opérationnelle.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-07-03T12:46:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6050f771-5a69-f011-bec3-7c1e52faf3c6",
+            "subject": "0430286 - ID0430286-DC/Si-D/FR-[MP / R8 170002515] secc is offline CRM:00296000373",
+            "body": "bonjour,\nCi-joint le rapport d'intervention.\nCordialement,\nAntoine Brua\nLvl 2 Support Engineer E-mobility France\nSiemens SAS\nRC-FR SI E\nParc Technologique de Lyon\n743, Allée des Parcs\n69800 Saint-Priest, France\nTél : +33 6 18 29 28 21\nmail: antoine.brua@siemens.com\nwww.siemens.com",
+            "date": "2025-07-25T13:22:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "incident_id": "172d8f2d-bfab-4e91-b1a0-8f90f8f312d4",
+    "ticket_number": "0418462",
+    "title": "ID0417607-DC/Si-D/PL-[ Y2/S3 300000004049 ] error while restarting the charger (C1)",
+    "created_on": "2025-04-11T16:31:36Z",
+    "last_activity": "2025-05-06T04:52:41Z",
+    "age": "35301",
+    "description": "Reported issue:  The charging message was sent after stoptransaction. After restarting the charger during the session. This took place during intergration testing. This is a critical error and a failure to comply with OCPP rules. We did not pass ingegration with the head MSP in Poland. Please act quickly and escalate the ticket to L3. I am attaching a pictures of logs.\nSolution:  FW update\nyyyy-mm-dd:  2025-07-04\nR&D Ticket : ECD-1564",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "wvFeLI",
+    "stage": null,
+    "serial_number": "Y2/S3 300000004049,Y2/S3 300000004049",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c56bbf23-c0de-a265-924f-902f742febac",
+            "subject": "NOC > ES",
+            "body": "Problem Description :\nerror while restarting the charger\nSuspected Root Cause :\nn/a\nAction Performed (L2) :\nLog analysis\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\ndetailed analysis needed\nLog analysis with timestamp :\nThere are 2 tests customer performed, one with soft reset and other with hard reset.\nDuring charging with soft reset, charger is sending status Unavailable and in session_stop unexpected as False.\nDuring charging with hard reset, charger is sending status Charging and in session_stop, unexpected as True.\nAs per the Soft and Hard reset description, this behavior is correct, but still need to confirm with experts.\n2025-04-07T09:03:00 > Need to check why charger sent status as Charging in Status Notification after StopTransaction.\nAction Required\nAction by HQ : detailed analysis needed\nAttachement :\nlogs attached",
+            "date": "2025-04-11T16:33:40Z",
+            "extra": {}
+        },
+        {
+            "id": "d2100a6c-c914-fdc3-8e83-9507083d5cbc",
+            "subject": "Status Update: 18/04/2025",
+            "body": "Bug already fixed with SiD V7.0.1\nRC is aware of the issue & status update\n.",
+            "date": "2025-04-18T06:04:13Z",
+            "extra": {}
+        },
+        {
+            "id": "45fe4089-a88b-da60-87fb-ca1a10b4d295",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Bug already fixed with SiD V7.0.1\nAwaiting for FW release and customer communication",
+            "date": "2025-04-25T05:45:29Z",
+            "extra": {}
+        },
+        {
+            "id": "62c8e7c7-1a4d-1624-bad4-76e2416430a0",
+            "subject": "Notes from ES to NOC [ 06/05/2025]",
+            "body": "Problem Description\n:\nError while restarting the charger\nSuspected Root Cause\n: FW Bug\nAction Performed:\nFW update to v 7.0.x\nCharger SW Version\n: v6.1.3\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-05-06T04:51:06Z",
+            "extra": {}
+        }
+    ]
+}

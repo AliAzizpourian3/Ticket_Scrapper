@@ -1,0 +1,182 @@
+{
+    "incident_id": "32c1f99c-8e98-f011-b4cc-7c1e52fad806",
+    "ticket_number": "0451541",
+    "title": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge",
+    "created_on": "2025-09-23T15:04:37Z",
+    "last_activity": "2025-10-06T07:19:08Z",
+    "age": "18255",
+    "description": "Reported Behavior/ Issue: Unable to Charge",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "yZ5lmz",
+    "stage": null,
+    "serial_number": "Y2 / R3 312881977025",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ec68e395-8e98-f011-b4cc-7c1e5236cda4",
+            "subject": "Webform_incident_SiCharge D_23-09-2025_SN: Y2 / R3 312881977025",
+            "body": "Dear Alexander Müller,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / R3 312881977025\nThank you\neMobility Technical Support Team\nSehr geehrte/r Alexander Müller,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / R3 312881977025\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-23T15:04:29Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6854735c-9198-f011-b4cb-7c1e52362371",
+            "subject": "A new case manager was assigned to 0451541 CRM:00225261074",
+            "body": "Shashank Mishra was assigned as new Case Manager for case 0451541 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=32c1f99c-8e98-f011-b4cc-7c1e52fad806",
+            "date": "2025-09-23T15:24:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5fdb83fd-9198-f011-b4cc-6045bddf3123",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Dear\nAlexander\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / R3 312881977025\nChargerID/Serial No.\n:\nyZ5lmz\nProblem Description\n:\nUnable to Charge\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0451541\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nShashank Mishra\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-23T15:28:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7dccb890-e699-f011-b4cc-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0451541 CRM:00225262073",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0451541 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=32c1f99c-8e98-f011-b4cc-7c1e52fad806",
+            "date": "2025-09-25T08:06:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f24178c4-ea99-f011-b4cc-6045bde12d6b",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Alexander, good morning. I hope you are doing well.\nFrom what I can see in the logs, the EV failed in the SLAC communication in the first 2 attempts and at the 3rd attempt it worked immediately.\n1st Session:\n2nd Session:\nWhen you see in the logs, we understand that it failed SLAC because we never go from P00_Unknown to P01_Authentication, which we immediately see in session 3\nI don't have the EcoG logs anymore to prove my point but since we don't do a reboot or there is any indication on the logs of any reset on the EcoG, I can only point to the communication from EV itself.\nLet me know if this answered to your question and if you have any doubts.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-25T08:36:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c96f2f94-079a-f011-b4cc-6045bddece8c",
+            "subject": "AW: ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Francisco\nThanks for lot for your deepdive.\nI will share this information with the customer.\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 25. September 2025 10:52\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255\nHi Alexander, good morning. I hope you are doing well.\nFrom what I can see in the logs, the EV failed in the SLAC communication in the first 2 attempts and at the 3rd attempt it worked immediately.\n1st Session:\n2nd Session:\nWhen you see in the logs, we understand that it failed SLAC because we never go from P00_Unknown to P01_Authentication, which we immediately see in session 3\nI don't have the EcoG logs anymore to prove my point but since we don't do a reboot or there is any indication on the logs of any reset on the EcoG, I can only point to the communication from EV itself.\nLet me know if this answered to your question and if you have any doubts.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-25T12:03:03Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4d94fe6d-129a-f011-b4cc-6045bddf319c",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Alex,\nThanks for the feedback.\nI will keep this ticket open until Friday in case customer gives us a reply, does that sound good to you?\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2025-09-25T13:20:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4f9dab5-139a-f011-b4cc-7c1e52faf3c6",
+            "subject": "AW: ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Sure, i’ll keep you updated\n😊\nAppreciate your support\n😉\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 25. September 2025 15:22\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255\nHi Alex,\nThanks for the feedback.\nI will keep this ticket open until Friday in case customer gives us a reply, does that sound good to you?\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2025-09-25T13:29:56Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fbc67ff6-f99c-f011-b41c-6045bddf319c",
+            "subject": "AW: ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Good morning Francisco.\nI got the response from the customer:\nThank you for the analysis. However, according to our user, this is always a problem at our station. There are no problems with GoFast.\nWe also received four complaints from external customers over the weekend:\n1 - 09/27/2025 2:39 p.m.\nDidn't work at all.\nHonda e\nAlready had authentication problems. Previous charging at the station without problems.\n2 - 09/27/2025 4:57 p.m.\nAuthentication\nID.3\n3 - 09/28/2025 10:49 a.m.\n482 did not respond, 481 then worked.\nSkoda Enyaq\n4 - 09/28/2025 8:37 p.m.\nRight cable/charging station (...82) did not start.\nSkoda Enyaq\nCommunication could not be established with (...82).\nWith all these problems, you can't blame the car manufacturer.\nSo the customer is not happy with our response. I told him we cannot\nWe cannot generalize and must examine the charging processes in detail and analyze the exact cause of each faulty charge.\nThe customer is no longer really happy.\nCan you take a look at the four messages?\nThank you very much\nAlex\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 25. September 2025 15:22\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255\nHi Alex,\nThanks for the feedback.\nI will keep this ticket open until Friday in case customer gives us a reply, does that sound good to you?\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2025-09-29T06:03:08Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0d7002ce-139d-f011-b41c-000d3ab07fc1",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Alex, good morning.\nI apologise for the lack of proper response.\nWhen we are not going forward with the authentication we only have 3 possible root causes:\nEV -> most common\nAlso reported from EcoG\nEcoG\nCCS cable (most unlikely)\nI can see that since 27th Sep, there has been no successfull charging sessions in DC2. And all of them are during SLAC, which is reported with Error 54 or Error 39. I send a CSV in attachment of all the sessions from 7 days ago.\nFrom DC1 I can see that there was a one time occurrence only and will not focus on that. What I propose if the following:\nReboot the EcoG remotely and try again\nIf it doesn't work then we need to go on-site and trial replacing the EcoG KF11.\nIf it doesn't work, then I can only assume that it's a CCS cable issue on the PLC comms cable.\nLet me know what you think, I can reboot the EcoG right now since nobody is charging but we should tell the customer he will see in his backend that the outlets went unavailable for 1min.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-29T09:08:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08d865fb-319d-f011-bbd3-7c1e5287f582",
+            "subject": "AW: ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Francisco\nThanks a lot for your response. At the end, the customer doesn’t care if it’s related to SLAC or to the EcoG or if the EV is the “root cause” they want just to use the Charger without any issues.\nThis isn't the first time the customer has complained; in the past, it was always related to the DC2. We can try the KF11, but our technician won't be able to diagnose the cable as the cause. When the technicians are on site, the charger usually works without any problems...\nTrue to the motto “spontaneous self-healing.”\nI will inform the customer that we will be rebooting the KF11.\nMay I ask you to perform the reboot?\nI will inform the customer that they should continue to monitor the situation and provide me with feedback on how the charger behaves after the reboot. If the customer reports another error, I will order KF11 and schedule an on-site intervention.\nGreetings From Switzerland\nAlex\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 29. September 2025 11:40\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255\nHi Alex, good morning.\nI apologise for the lack of proper response.\nWhen we are not going forward with the authentication we only have 3 possible root causes:\nEV -> most common\nAlso reported from EcoG\nEcoG\nCCS cable (most unlikely)\nI can see that since 27th Sep, there has been no successfull charging sessions in DC2. And all of them are during SLAC, which is reported with Error 54 or Error 39. I send a CSV in attachment of all the sessions from 7 days ago.\nFrom DC1 I can see that there was a one time occurrence only and will not focus on that.\nWhat I propose if the following:\nReboot the EcoG remotely and try again\nIf it doesn't work then we need to go on-site and trial replacing the EcoG KF11.\nIf it doesn't work, then I can only assume that it's a CCS cable issue on the PLC comms cable.\nLet me know what you think, I can reboot the EcoG right now since nobody is charging but we should tell the customer he will see in his backend that the outlets went unavailable for 1min.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-29T12:44:06Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f35a0229-339d-f011-b41b-7c1e52350ea5",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Alex,\nI rebooted the EcoG when I sent the last email since it was free.\nPlease check with the customer again and let me know what you find.\nThanks a lot for the patience and support.\nBest regards,\nFrancisco",
+            "date": "2025-09-29T12:52:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "944d8a24-ff9d-f011-b41b-6045bdde846d",
+            "subject": "ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hi Alex, good afternoon. I hope you are doing well.\nI checked this charger proactively and found that DC2 never failed a session since I rebooted the EcoG:\nThe session in DC1 that failed, was not given enough time for the Authentication to go through, and right after they did the correct thing, please see the difference:\nAnd the next session on the same outlet with the same EV:\nSo it takes around 15sec for everything to start working since plug-in + authentication provided.\nIn this case, the customer plugged out before the session could even start.\nI will keep this ticket for the next couple of days and if I don't see any problem again, we can close it, what do you think?\nThanks for the patience so far.\nBest regards,\nFrancisco",
+            "date": "2025-09-30T13:12:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "12b95d9b-0b9e-f011-b41b-6045bdde846d",
+            "subject": "AW: ID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255",
+            "body": "Hello Francisco\nI’m doing well, hope you too\n😉\nThank a lot for your amazing support, I contacted the customer to investigate and contact us if they have any issues and so far I got no response, so lets continue line you mentioned and at the end of the week we can close the ticket, in case the customer contact us again we will plan the on site invertion like the already talked about with the EcoG and the CCS Cable check.\nGreetings\nAlex\nFreundliche Grüsse\nAlexander Müller\nSiemens Schweiz AG\nOrder Execution & Project Management,\nFreilagerstrasse 28\n8047 Zürich, Schweiz\nmailto:alexander.mueller@siemens.com\nwww.siemens.ch\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 30. September 2025 15:28\nAn:\nMüller, Alexander (RC-CH SI E CS) <alexander.mueller@siemens.com>\nBetreff:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge CRM:02699000255\nHi Alex, good afternoon. I hope you are doing well.\nI checked this charger proactively and found that DC2 never failed a session since I rebooted the EcoG:\nThe session in DC1 that failed, was not given enough time for the Authentication to go through, and right after they did the correct thing, please see the difference:\nAnd the next session on the same outlet with the same EV:\nSo it takes around 15sec for everything to start working since plug-in + authentication provided.\nIn this case, the customer plugged out before the session could even start.\nI will keep this ticket for the next couple of days and if I don't see any problem again, we can close it, what do you think?\nThanks for the patience so far.\nBest regards,\nFrancisco",
+            "date": "2025-09-30T14:42:00Z",
+            "extra": {
+                "sender": "alexander.mueller@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "af6a55b9-84a2-f011-bbd2-000d3adc1641",
+            "subject": "Ticket 0451541 has been closed. Are you satisfied with our provided solution? CRM:00225266639",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0451541\nwith the title:\nID0451541-DC/Si-D/CH-[Y2 / R3 312881977025] Unable to Charge\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-06T07:19:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

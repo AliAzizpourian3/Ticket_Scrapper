@@ -1,0 +1,115 @@
+{
+    "incident_id": "9d61c8ee-e9d8-4e90-a082-55827f9e0f4a",
+    "ticket_number": "0439854",
+    "title": "ID0439854-DC/Si-D/SE-[Multiple]-Payment terminal doesnt work due to pending transaction.",
+    "created_on": "2025-07-25T06:22:51Z",
+    "last_activity": "2025-08-01T10:22:12Z",
+    "age": "10320",
+    "description": "Reported behavior/issue:\nPayment terminal doesn't work due to pending transaction.\nSolution:\nhttps://jira.si.siemens.cloud/browse/EMOB-18316\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "JFprdw",
+    "stage": null,
+    "serial_number": "Y2 / S3 313508980001,Y2 / S3 313539037001,Y2 / S3 313584658001,MP / S7 170003821,RVP/T5170004804,MP / S7 170003822,Y2 / S3 313586575004,Y2 / S3 313539037002,Y2 / S3 313586586001,Y2 / S3 313586575003,Y2 / S3 313581528001,Y2 / S3 313539037003,Y2 / S3 313581528002,RVP/T2170004461,RVP/T2170004460,RVP/T2170004466,RVP/T2170004469,RVP/T2170004467,RVP/T2170004463,RVP/T2170004462,RVP/T2170004471",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "318e61cd-1f69-f011-bec2-7ced8d4169c0",
+            "subject": "A new case manager was assigned to 0439854 CRM:00225233700",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0439854 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9d61c8ee-e9d8-4e90-a082-55827f9e0f4a",
+            "date": "2025-07-25T06:23:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8504140e-3362-a773-a634-8a35821981bb",
+            "subject": "AWS 1 week backward",
+            "body": "",
+            "date": "2025-07-25T06:40:42Z",
+            "extra": {}
+        },
+        {
+            "id": "d5738b8b-d30b-d0f7-bd88-35f5f56a7c10",
+            "subject": "AWS query",
+            "body": "fields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/Transaction pending/\n|\nfilter\n@logStream\nlike\n/JFprdw|LCk4jo|UzOYLO|gwmF5L|IpxO8V|DueZBO|rIfXFP|A7al2S|Hh8SHw|77moda|MceDiJ|yHJUei|4ORLUA|F2bZLu|6u2B90|9jNva4|mkl1TO|IgjZFK|i9PPX0|SrrbIK|mN6ttK/\n|\nstats\ncount\n(*)\nas\nCount\nby\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-07-25T06:41:15Z",
+            "extra": {}
+        },
+        {
+            "id": "5dfe00cd-2a69-f011-bec3-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0439854 CRM:00225233754",
+            "body": "Sakshi Rawat was assigned as new Case Manager for case 0439854 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9d61c8ee-e9d8-4e90-a082-55827f9e0f4a",
+            "date": "2025-07-25T07:41:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "469da83a-d7cc-0b9e-b952-9badec186a99",
+            "subject": null,
+            "body": "Reported behavior/issue:\nCustomer has multiple sites where payment terminal doesnt work as expected due to pending transaction. Action needs to be done immediatelly!\nJFprdw,LCk4jo,UzOYLO,gwmF5L,IpxO8V,DueZBO,rIfXFP,A7al2S,Hh8SHw,77moda,MceDiJ,yHJUei,4ORLUA,F2bZLu,6u2B90,9jNva4,mkl1TO,IgjZFK,i9PPX0,SrrbIK,mN6ttK\nSolution:\nN/A\nyyyy-mm-dd:",
+            "date": "2025-07-25T08:19:36Z",
+            "extra": {}
+        },
+        {
+            "id": "b4e29be7-3069-f011-bec2-7ced8d2be968",
+            "subject": "ID0439854-DC/Si-D/SE-[Multiple]-Payment terminal doesnt work due to pending transaction. CRM:02889000273",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nSakshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nRVP/T5170004804(multiple)\nChargerID/Serial No.\n:\nJFprdw\nProblem Description\n:\nPayment terminal doesn't work due to pending transaction.\nFor future reference, your case number is\n0439854\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSakshi Rawat\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-25T08:25:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88b90866-3369-f011-bec3-7c1e52768372",
+            "subject": "A new case manager was assigned to 0439854 CRM:00225233792",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0439854 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9d61c8ee-e9d8-4e90-a082-55827f9e0f4a",
+            "date": "2025-07-25T08:43:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b66c4f1f-b16b-f011-b4cc-6045bde12d6b",
+            "subject": "ID0439854-DC/Si-D/SE-[Multiple]-Payment terminal doesnt work due to pending transaction. CRM:02889000273",
+            "body": "Hi Magnus,\nAs we discussed today please reach out to Seitatech to understand if it's possible to recover the transactions from the backup file in order to proceed with the rest of them.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-07-28T12:48:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9baf1e73-c06e-f011-b4cc-6045bde0265d",
+            "subject": "ID0439854-DC/Si-D/SE-[Multiple]-Payment terminal doesnt work due to pending transaction. CRM:02889000273",
+            "body": "Hi Magnus,\nR&D is monitoring the charger you provided to me: 9jNva4\nThey disabled the auto reboots in order to avoid repeating the enabling of the debug logs.\nIf customer wants to reboot the charger, please enable them again.\nSince this is no longer a service topic, we will close the ticket. As always, I will keep you posted via Teams, but if you believe the process is not getting fast enough, please reach out to Michele.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-08-01T10:15:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d5252258-c16e-f011-bec2-7c1e52764d4f",
+            "subject": "Ticket 0439854 has been closed. Are you satisfied with our provided solution? CRM:00225237266",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0439854\nwith the title:\nID0439854-DC/Si-D/SE-[Multiple]-Payment terminal doesnt work due to pending transaction.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-01T10:21:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,181 @@
+{
+    "incident_id": "33140138-9315-49bb-bcec-ead70a3634ee",
+    "ticket_number": "0371713",
+    "title": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped.",
+    "created_on": "2024-07-30T13:55:30Z",
+    "last_activity": "2025-01-27T18:06:08Z",
+    "age": "260891",
+    "description": "Location: Jämsä, Finland\nReported behavior/issue:\nCharger was offline. 26.7.2024 Plugit technician found out that the fuse -\"FC14\" was tripped and red (See Video in timeline).\nTechnician reset the fuse and it stayed ON. When technician was charging his EV, fuse tripped again and he couldnt reset it anymore. During the troubleshooting, we found out that it was possible to reset “-FC14” when right LEM-meter supply was disconnected from “+F11-XD21” connector 3A. Main unit right socket is disabled and LEM-meter supply is disconnect.\nSeems like the LEM is defected but I will continue troubleshooting 31.7.2024.\nRoot cause:\nSolution:\nLoose wire connection found; issue fixed during site visit",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "z4gi5Z",
+    "stage": null,
+    "serial_number": "MP / P8 170000823",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ecdd4c6b-7b4e-ef11-bfe2-0022489e9c81",
+            "subject": "A new case manager was assigned to 0371713 CRM:00225076800",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0371713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=33140138-9315-49bb-bcec-ead70a3634ee",
+            "date": "2024-07-30T13:55:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d795276-7e54-b92c-9120-f25456d308fc",
+            "subject": "Video -FC14.",
+            "body": "",
+            "date": "2024-07-30T14:03:37Z",
+            "extra": {}
+        },
+        {
+            "id": "0b50e4dd-7c4e-ef11-bfe3-000d3abae760",
+            "subject": "A new case manager was assigned to 0371713 CRM:00225076804",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0371713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=33140138-9315-49bb-bcec-ead70a3634ee",
+            "date": "2024-07-30T14:06:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ce837160-804e-ef11-bfe2-0022489966da",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hello Markus﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170000823\nChargerID/Serial No.\n:\nz4gi5Z\nProblem Description\n: FC14 tripped due to possible LEM problem\nTroubleshooting\n:\nPlease bring a spare LEM if possible to site tomorrow for the troubleshooting.\nFor future reference, your ticket number is\n0371713\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-30T14:31:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d28df2d-134f-ef11-bfe2-0022489e9c81",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hi Markus,\nAfter our short meeting, you explained to me how there was already a troubleshooting task performed where the FC14 was tripped and trialed removing the 24V cable from each device pertaining to the FC14 (router1, router2, LEM1, LEM2, HMI and Switch) and only when you remove the LEM2 meter from this FC14, it was able to be turned ON again and workable.\nFor my perspective, there is somehow a surge of current on one of these devices, from your explanation, it seems like the LEM2 meter is provoking the issue, since we can see in the logs that when we charge with DC2, suddendly we lose logs → FC14 trip.\nSo my recommendation is to go on-site, perform a charging session in DC2 and wait for it to trip. If it trips, then let's trial again removing the 24V and see if it comes back to green when removing LEM2.\nIf it is as explained above I would like to trial the same test but changing the connection of LEM2 to FC12 and retry this.\nIf it works then it is most likely that the component is workable but somehow it has some problem that is causing the current surge.\nIf it doesn't work then we have a faulty LEM meter and needs to be replaced.\nPlease take a spare LEM to site and some 24V cables for the rewiring.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-31T08:02:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5d0d73d0-9e50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 2 days, 17 hours, 18 minutes and 39 seconds.",
+            "date": "2024-08-02T07:14:11Z",
+            "extra": {}
+        },
+        {
+            "id": "800d73d0-9e50-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 5 seconds.",
+            "date": "2024-08-02T07:14:15Z",
+            "extra": {}
+        },
+        {
+            "id": "9c99a4d6-9e50-ef11-bfe2-0022489e9c81",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hi Markus, good morning.\nAfter the site visit, we were able to understand that the problem might come from the HMI actually and not the LEM. When we power ON, FC14 is RED and cannot be reseted unless we remove 24V from the XD21:4C (24V HMI).\nYou measured the resistance from the FC14 to ground and it has a very low value of 800ohm. What I measured in the Training Center is in kiloOhm.\nI will go back there today to confirm the value which we should have. If there is a leakage we must investigate it.\nLet's keep in touch for the next steps. When are you planning to return there?\nBest regards,\nFrancisco",
+            "date": "2024-08-02T07:14:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d00baaa-3d53-ef11-bfe3-002248a44b33",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hello Markus,\nAny news about this topic? When are you able to visit the site? Tomorrow I will be doing home office, so if there is any need to go to the Training Center please leave me a PM in Teams so that I can rearrange my work days.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-05T15:16:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "89ba1edf-5e53-ef11-bfe3-0022489a2913",
+            "subject": "RE: ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hi,\nI will try to visit here during this week. Last week it was raining heavily so I could not perform any activities here.\nMarkus",
+            "date": "2024-08-05T19:14:08Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "72a4490d-7455-ef11-bfe3-000d3abae760",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hi Markus,\nAfter today's site visit, as soon as you arrived, you measured again the resistance from XD21 and found no issue.\nWhen we removed the 24V from the HMI and replugged, the FC14 tripped again. The resistance was not as bad as previously (idea is that the probes were not inserted tightly in the terminals, I also faced this issue when I measured in our charger), we have a good resistance but after we plug in the 24V HMI, the resistance suddenly drops and keeps dropping.\nThis, in theory, indicates that the HMI is requesting a lot of current and that's why the resistance is dropping since the capacitance is high.\nSince you didn't have a Clamp current meter, I cannot accept the values you registered since I used the same multimeter as you and faced different values from using the clamp meter.\nIn any case, just a gut feeling but the capacitors in the HMI are discharging too fast (or related) and that's why we see the surge of current, resulting the FC14 tripping and that's why sometime afterwards of FC14 being able to be reset we are able to continue since the current requested is less, since the other devices are already powered on.\nFrom my perspective, here are the next actions:\nMeasure the current,\nwith the clamp meter\n, from the HMI when starting up the charger → from the measurement I made in our charger it should be ~0.2A\nRecommend you to order a new HMI and take it to site in case we find that the current requested is above what I measured.\nAs you mentioned, since you don't have the clamp meter and the HMI, we will postpone this to when you are back.\nAs such I  will assign this ticket to you.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-08T10:50:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7e8161f-7555-ef11-bfe3-000d3ab78c74",
+            "subject": "A new case manager was assigned to 0371713 CRM:00225080846",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0371713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=33140138-9315-49bb-bcec-ead70a3634ee",
+            "date": "2024-08-08T10:58:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08c950b0-a784-ef11-ac21-000d3a67d7cb",
+            "subject": "RE: ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00315001654",
+            "body": "Hi,\nI had visit here earlier in September, but I couldn’t replicate fuse tripping anymore and, I measured current and there was no big deviation. Anyway, the display left side is darker than right site. Please check the picture.\nMarkus",
+            "date": "2024-10-07T12:28:52Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "eedce998-d6dc-ef11-8ee9-002248a0b76d",
+            "subject": "A new case manager was assigned to 0371713 CRM:00225154330",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0371713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=33140138-9315-49bb-bcec-ead70a3634ee",
+            "date": "2025-01-27T17:46:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b56b0b2-d6dc-ef11-8eea-000d3a68cce9",
+            "subject": "ID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped. CRM:00796001226",
+            "body": "Dear Markus Roiha,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0371713, and the case is now closed.\nProblem Description\n: Jämsä Fuse -FC14 tripped.\nResolution\n: Loose wire connection found\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-27T17:46:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "260e297c-d7dc-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0371713 has been closed. Are you satisfied with our provided solution? CRM:00796001227",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0371713\nwith the title:\nID0371713-DC/Si-D/FI[MP / P8 170000823] - Jämsä Fuse -FC14 tripped.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nKaushik Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-27T17:52:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

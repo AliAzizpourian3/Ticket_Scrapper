@@ -1,0 +1,423 @@
+{
+    "incident_id": "dc4b1d8f-2c74-ef11-a671-000d3ab7063f",
+    "ticket_number": "0379648",
+    "title": "ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction",
+    "created_on": "2024-09-16T13:07:03Z",
+    "last_activity": "2025-12-16T12:20:09Z",
+    "age": "449254",
+    "description": "Reported behaviour/issue:\n0 meter values\nRoot cause:\nMeterValue is the same as Start and StopTransaction\nSolution:\nLoose wiring\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nA3584 #2 OMV Reiterholz 3 Laakirchen\nSerial: MP / S3 170003381\nIssue is already adressed to RnD please check\n[EVC3-6467]  Planned to be in 6.1.X\nCharging process #96768705 | 12.09.2024\nTotal duration 00:25:20\nTotal consumption 0,000 kWh (30,40 kWh)\nTotal costs € 0.00\nDirect Payment QR code\nSNOW: INC1310846\nA2013 #2 OMV Packer Straße 3 Völkermarkt - St.Jakob\nSerial: S/N P / R6 170002084\nCharging process #96745498 | 12.09.2024\nTotal duration 00:44:26\nTotal consumption 0,000 kWh (66,17 kWh)\nTotal costs € 0.00\nRoaming be.ENERGISED community\nCharging process #96887512 | 14.09.2024\nTotal duration 00:16:51\nTotal consumption 0,000 kWh (19,27 kWh)\nTotal costs € 0.00\nRoaming be.ENERGISED community\nSNOW: INC1312330\nT\nhe issues were reported also to be.Energised support team and here is the feedback:\nonly the StartTransaction and StopTransaction data are relevant for our calculations in connection with the charging process. Regardless of the values previously transmitted in the MeterValues, these are not used for the calculation of costs, kWh or charging time. Only the measured values specified in the Start and StopTransaction (MeterStart and MeterEnd) are used. In this case, the charging station has transmitted the same value both times.\nFix addressed to v7.0 - R&D ticket:\nEVC3-8990\nFix addressed to v8.1 - R&D ticket:\nEVC3-9209",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S3 170003381,MP / R6 170002084",
+    "case_nature_code": null,
+    "chargerID": "pHAdNC & Zt9lsW",
+    "additional_info": [
+        {
+            "id": "da8b6387-2c74-ef11-a671-000d3aba081f",
+            "subject": "[OMV] Issues with Sicharge D // MP / S3 170003381 and  MP / R6 170002084",
+            "body": "Dear Support,\nour customer OMV facing Problems with missing metervalues.\nOur chargers are sending sometimes the same Metervalue so they can’t see any consumption.\nCan you please check both Chargers below.\nWith best regards,\nDipl.-Ing.\nJohannes Dissauer\nSiemens Aktiengesellschaft Österreich\nRC-AT SI E C\nSiemensstr.\n90\n1210 Vienna, Austria\nMobile: +43 (664) 88557764\nmailto:johannes.dissauer@siemens.com\nwww.siemens.at\nVon:\nCenoiu, George-Catalin <GeorgeCatalin.Cenoiu@omv.com>\nGesendet:\nMontag, 16. September 2024 14:45\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>; Kaiblinger, Daniel (RC-AT SI EA B EAST SM) <daniel.kaiblinger@siemens.com>\nCc:\nIvankovic, Borna <Borna.Ivankovic@omv.com>; Calin, Marius <Marius.Calin1@petrom.com>\nBetreff:\nIssues with Sicharge D // INC1310846 and INC1312330\nPriorität:\nHoch\nDear both,\nWe have issues with our Siemens chargers, could you please analyze the topic as soon as possible?\nWe found 2 more charging logs with 0 cost and 0 consumption. The station sent the same meter value at the start and stop transaction.\nTo summarize it and have it together, please find below the affected charging logs:\nA3584 #2 OMV Reiterholz 3 Laakirchen\nSerial: MP / S3 170003381\nCharging process #96768705 | 12.09.2024\nTotal duration 00:25:20\nTotal consumption 0,000 kWh (30,40 kWh)\nTotal costs € 0.00\nDirect Payment QR code\nSNOW: INC1310846\nA2013 #2 OMV Packer Straße 3 Völkermarkt - St.Jakob\nSerial: S/N P / R6 170002084\nCharging process #96745498 | 12.09.2024\nTotal duration 00:44:26\nTotal consumption 0,000 kWh (66,17 kWh)\nTotal costs € 0.00\nRoaming be.ENERGISED community\nCharging process #96887512 | 14.09.2024\nTotal duration 00:16:51\nTotal consumption 0,000 kWh (19,27 kWh)\nTotal costs € 0.00\nRoaming be.ENERGISED community\nSNOW: INC1312330\nThe issues were reported also to be.Energised support team and here is the feedback:\nonly the StartTransaction and StopTransaction data are relevant for our calculations in connection with the charging process. Regardless of the values previously transmitted in the MeterValues, these are not used for the calculation of costs, kWh or charging time. Only the measured values specified in the Start and StopTransaction (MeterStart and MeterEnd) are used. In this case, the charging station has transmitted the same value both times.\nKind regards / Mit freundlichen Grüßen / Cu stimă\nGeorge-C\nătălin Cenoiu\nExpert E-Mobility Applications\nDTER-E Digital E-Mobility Hub\nBusiness & Digital Transformation\n+43 (664) 612 1912\ngeorgecatalin.cenoiu@@omv.com\nwww.omv.com\nOMV Downstream GmbH\nTrabrennstrasse 6-8\n1020 Vienna, Austria\nOMV Downstream GmbH, registriert beim Handelsgericht Wien unter FN 185462p; Gesellschaftssitz: Wien; DVR: 3001807; UID ATU48359903; Trabrennstrasse 6-8, 1020 Wien, Österreich.\nDiese Nachricht ist vertraulich und nur für den Adressaten bestimmt. Falls Sie diese Nachricht irrtümlich erhalten haben, verständigen Sie bitte den Absender und löschen Sie diese Nachricht und alle Anhänge. Danke. Soweit gesetzlich zulässig, schließt OMV jede Haftung für Schäden aus Übertragungsfehlern, Viren, fremden Einflüssen, Verzögerungen und dergleichen aus.\nOMV Downstream GmbH registered with Commercial Court Vienna, FN 185462p; registered office: Vienna; DVR:\n3001807\n; UID ATU48359903; Trabrennstrasse 6-8, 1020 Vienna, Austria. This message is confidential and intended solely for the addressee. If you received this message in error, please immediately inform the sender and delete the message and any attachments. Thank you. To the extent permitted by law, OMV shall in no way be liable for any damages, whatever their nature, arising out of transmission failures, viruses, external influences, delays and the like.\nInternal",
+            "date": "2024-09-16T13:06:57Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "facb2644-3774-ef11-a670-000d3ab08c0a",
+            "subject": "A new case manager was assigned to 0379648 CRM:00225097039",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0379648 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc4b1d8f-2c74-ef11-a671-000d3ab7063f",
+            "date": "2024-09-16T14:23:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3c08b1a3-3774-ef11-a671-00224899b868",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 19 minutes and 18 seconds.",
+            "date": "2024-09-16T14:26:23Z",
+            "extra": {}
+        },
+        {
+            "id": "568beaf1-3774-ef11-a671-00224899b868",
+            "subject": "ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Dear Johannes,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S3 170003381\nChargerID/Serial No.\n:\npHAdNC & Zt9lsW\nProblem Description\n: 0 meter values in 2 different sessions makes the backend not charge for the Wh.\nTroubleshooting\n:\nI am in contact with the OCPP colleague. They already have a similar ticket and will provide me feedback as soon as possible. I appreciate your patience. Thank you.\nFor future reference, your ticket number is\n0379648\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-16T14:28:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "96c78bfb-9e75-ef11-a670-00224899dda1",
+            "subject": "ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Hi Johannes, good morning.\nSorry for the delay.\nThere is already a ticket open and being handled by R&D regarding this topic. Let me show you what you should look for:\n{\n\"FV\":\"1.0\",\n\"GI\":\"LEM DCBM\",\n\"GS\":\"1240041810\",\n\"GV\":\"v2\",\n\"PG\":\"T528\",\n\"MV\":\"LEM\",\n\"MS\":\"1240041810\",\n\"MF\":\"MU-2.3.0.1_SU-0.1.3.0\",\n\"IS\":true,\n\"IL\":\"TRUSTED\",\n\"IF\":[\"RFID_NONE\",\"OCPP_AUTH\",\"ISO15118_NONE\",\"PLMN_NONE\"],\n\"IT\":\"KEY_CODE\",\n\"ID\":\"F1A4535DF1EE0F\",\n\"CT\":\"EVSEID\",\n\"CI\":\"ccsRight\",\n\"TT\":\"contract based\",\n\"UV\":\"v4.0.8-0-g852085f-P\",\n\"UD\":\"\",\n\"RD\":[\n{\n\"TM\":\"2024-09-12T17:38:00,000+0200 R\",\n\"TX\":\"B\",\n\"RV\":12538.035,\n\"RI\":\"1-0:1.8.0\",\n\"RU\":\"kWh\",\n\"RT\":\"DC\",\n\"EF\":\"\",\n\"ST\":\"E\"\n,\n\"UC\":{\n\"UN\":\"No_Comp\",\n\"UI\":2,\n\"UR\":0\n}\n},\n{\n\"RV\":7.746,\n\"RI\":\"1-0:2.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n},\n{\n\"TM\":\"2024-09-12T18:03:19,000+0200 R\",\n\"TX\":\"E\",\n\"RV\":12568.454,\n\"RI\":\"1-0:1.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n},\n{\n\"RV\":7.746,\n\"RI\":\"1-0:2.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n}\n]\n}\nThe log starts like this: \"OCMF record is invalid\" and then has all these information above not separated but in a single line.\nI will put this on the R&D ticket. Please inform me as soon as you have more sessions like this.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-18T09:18:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7de34c68-49bd-2df0-b7fc-b17274a051cb",
+            "subject": "Semih ",
+            "body": "I will discuss this with RnD on our OCPP Meeting on monday",
+            "date": "2024-09-18T10:11:08Z",
+            "extra": {}
+        },
+        {
+            "id": "242cd553-a675-ef11-a670-7c1e5236f7e7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 day, 19 hours, 44 minutes and 57 seconds.",
+            "date": "2024-09-18T10:11:19Z",
+            "extra": {}
+        },
+        {
+            "id": "c2828675-a675-ef11-a671-000d3ab8e04e",
+            "subject": "A new case manager was assigned to 0379648 CRM:00225098651",
+            "body": "Semih Sentuerk was assigned as new Case Manager for case 0379648 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc4b1d8f-2c74-ef11-a671-000d3ab7063f",
+            "date": "2024-09-18T10:12:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "84473a05-6376-ef11-a670-6045bde10bca",
+            "subject": "AW: ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Hi Francisco,\nOMV also had some new 0kWh chargingrecords.\nDo you got a feedback from R&D?\nWe have to fix it fast because otherwise they will switch off all SiD in AT\n☹\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 18. September 2024 11:26\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781\nHi Johannes, good morning.\nSorry for the delay.\nThere is already a ticket open and being handled by R&D regarding this topic. Let me show you what you should look for:\n{\n\"FV\":\"1.0\",\n\"GI\":\"LEM DCBM\",\n\"GS\":\"1240041810\",\n\"GV\":\"v2\",\n\"PG\":\"T528\",\n\"MV\":\"LEM\",\n\"MS\":\"1240041810\",\n\"MF\":\"MU-2.3.0.1_SU-0.1.3.0\",\n\"IS\":true,\n\"IL\":\"TRUSTED\",\n\"IF\":[\"RFID_NONE\",\"OCPP_AUTH\",\"ISO15118_NONE\",\"PLMN_NONE\"],\n\"IT\":\"KEY_CODE\",\n\"ID\":\"F1A4535DF1EE0F\",\n\"CT\":\"EVSEID\",\n\"CI\":\"ccsRight\",\n\"TT\":\"contract based\",\n\"UV\":\"v4.0.8-0-g852085f-P\",\n\"UD\":\"\",\n\"RD\":[\n{\n\"TM\":\"2024-09-12T17:38:00,000+0200 R\",\n\"TX\":\"B\",\n\"RV\":12538.035,\n\"RI\":\"1-0:1.8.0\",\n\"RU\":\"kWh\",\n\"RT\":\"DC\",\n\"EF\":\"\",\n\"ST\":\"E\"\n,\n\"UC\":{\n\"UN\":\"No_Comp\",\n\"UI\":2,\n\"UR\":0\n}\n},\n{\n\"RV\":7.746,\n\"RI\":\"1-0:2.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n},\n{\n\"TM\":\"2024-09-12T18:03:19,000+0200 R\",\n\"TX\":\"E\",\n\"RV\":12568.454,\n\"RI\":\"1-0:1.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n},\n{\n\"RV\":7.746,\n\"RI\":\"1-0:2.8.0\",\n\"RU\":\"kWh\",\n\"ST\":\"E\"\n}\n]\n}\nThe log starts like this: \"OCMF record is invalid\" and then has all these information above not separated but in a single line.\nI will put this on the R&D ticket. Please inform me as soon as you have more sessions like this.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-09-19T08:42:04Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "67882617-8279-ef11-ac21-000d3ab2618c",
+            "subject": "RE: AW: ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Hallo Johannes\nthis invalid record is caused by a ReverseVoltageError getting observed by the LEM-Meter so that the meter sends a Invalid record due to this wrong MeterValue. The RnD is investigating to indentify why the meter is getting a reversevoltage, maybe its from the EV or something is causing a negative Voltage on the V2G line. Currently tests are ongoing, will let you know if we get any news.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-23T08:01:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "810e994f-8479-ef11-a670-6045bddf74c7",
+            "subject": "AW: AW: ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Hello Semih,\nthank you for the information.\nSo your AC/DC Converter support both directions?\nCan we filter negative values if they are not to big so that we will not get a fault “OCMF record”?\nOr are we not allowed for change this values if we send OCMF messages?\nWith best regards,\nDipl.-Ing.\nJohannes Dissauer\nSiemens Aktiengesellschaft Österreich\nRC-AT SI E C\nSiemensstr.\n90\n1210 Vienna, Austria\nMobile: +43 (664) 88557764\nmailto:johannes.dissauer@siemens.com\nwww.siemens.at\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 23. September 2024 10:14\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nCc:\nKaiblinger, Daniel (RC-AT SI EA B EAST SM) <daniel.kaiblinger@siemens.com>\nBetreff:\nRE: AW: ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781\nPriorität:\nHoch\nHallo Johannes\nthis invalid record is caused by a ReverseVoltageError getting observed by the LEM-Meter so that the meter sends a Invalid record due to this wrong MeterValue. The RnD is investigating to indentify why the meter is getting a reversevoltage, maybe its from the EV or something is causing a negative Voltage on the V2G line. Currently tests are ongoing, will let you know if we get any news.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-23T08:17:52Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f34d6f30-497a-ef11-ac20-000d3ab08c0a",
+            "subject": "RE: AW: AW: ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00315001781",
+            "body": "Hallo Johannes,\nJa, wir müssen zunächst die Ursache ermitteln und anschließend muss die Entwicklungsabteilung uns entsprechende Anweisungen geben, um den Fehler durch reversevoltage zu vermeiden. Dieses Themna is aktuell als Urgent markiert.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSemih\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-09-24T07:47:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "63de33fe-670b-d4d6-b5d4-a7dd695a57eb",
+            "subject": "Semih ",
+            "body": "Friendly reminder on 07.10.2024, progress check and checked support needed or not",
+            "date": "2024-10-07T11:28:27Z",
+            "extra": {}
+        },
+        {
+            "id": "d0cd38de-b223-d79f-8346-8c484ace05f4",
+            "subject": "Semih",
+            "body": "Error could be reproduced in LPZ with a BYD Seal.\nA fix is being worked on in the EMOB ticket",
+            "date": "2024-11-15T08:00:49Z",
+            "extra": {}
+        },
+        {
+            "id": "c19fd5db-0a00-f011-bae3-7c1e52774092",
+            "subject": "0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hallo Johannes,\ndieses issue wurde in der FW 6.1.3 gefixed. Dieser ist aktuell auch released und kann aufgespielt werden.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-13T12:58:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "57e13168-0803-f011-bae3-6045bdde4786",
+            "subject": "AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi,\nthis problem isn’t fixed in the new 6.1.3 since we also hade facing the problem in 6.1.2 Beta.\nR&D also said it is not the BYD problem which is fixed in the new FW.\nIt looks like a new bug.\nWith best regards,\nDipl.-Ing.\nJohannes Dissauer\nSiemens Aktiengesellschaft Österreich\nAustria\nSmart Infrastructure\nCustomer\nRC-AT SI E C\nSiemensstr.\n90\n1210 Vienna, Austria\nMobile: +43 (664) 88557764\nmailto:johannes.dissauer@siemens.com\nwww.siemens.at\nCompany Name: Siemens Aktiengesellschaft Oesterreich; Legal Form: Stock Corporation; Company Seat: Vienna; Register Number: FN 60562 m; Registered at: Commercial Court Vienna; DVR-Number: 0001708\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 13. März 2025 13:59\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\n0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743\nHallo Johannes,\ndieses issue wurde in der FW 6.1.3 gefixed. Dieser ist aktuell auch released und kann aufgespielt werden.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T08:18:33Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "febec410-ef03-f011-bae2-6045bddcc668",
+            "subject": "RE: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hallo Johannes,\nWenn es sich um einen neuen Bug handelt, kannst du mir bitte genau sagen, was aktuell als Beanstandung vorliegt? Ist es das gleiche Verhalten, eine neue Störung oder ein neuer Fehler? Mit wem wurde das von der RnD besprochen? Dann kann ich dazu einen RnD case erstellen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T11:49:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dc9eb88a-f703-f011-bae3-7c1e5236cda4",
+            "subject": "AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi Semih,\nanbei die Mail von R&D.\nIn den Logs sollte es ersichtlich sein, dass es sich nicht um das bekannte BYD-Problem handelt.\nLG,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 18. März 2025 12:55\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743\nHallo Johannes,\nWenn es sich um einen neuen Bug handelt, kannst du mir bitte genau sagen, was aktuell als Beanstandung vorliegt? Ist es das gleiche Verhalten, eine neue Störung oder ein neuer Fehler? Mit wem wurde das von der RnD besprochen? Dann kann ich dazu einen RnD case erstellen.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T12:50:23Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "82abda72-6005-f011-bae3-6045bde0265d",
+            "subject": "RE: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi Johannes,\ngibt es einen Grund dafür, dass der Charger nicht mehr als ERK konfiguriert wurde?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-20T07:53:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c779a50c-cf2d-9ac4-88f4-435fc50f2f40",
+            "subject": "Semih ",
+            "body": "Created a new RnD request for the 0 Session that occured on the new FW EVC3-8990",
+            "date": "2025-03-20T08:12:19Z",
+            "extra": {}
+        },
+        {
+            "id": "4c35af52-a909-f011-bae3-6045bde0265d",
+            "subject": "AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi,\nwas meinst du damit? Wir haben am ERK Setup nichts geändert.\nLG,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 20. März 2025 08:57\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743\nHi Johannes,\ngibt es einen Grund dafür, dass der Charger nicht mehr als ERK konfiguriert wurde?\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T18:45:30Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6d740621-1a0a-f011-bae3-7c1e52350ea5",
+            "subject": "RE: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi Johannes,\ndieser charger zum Beispiel ist nicht als ERK configuriert:\nAustriaDeutsch WagramS1, Ost KM 38,5, 2232 Deutsch-Wagram\nASl07a | MP / S5 170003620\nRnD case EVC3-8990 zwecks 0 Session wird per EMOB-17635 bearbeitet, Hotfix wird erstellt für 6.1.3 und fix FW-Version ist 7.0.1\nHotfix wird über die RnD deployed\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T08:13:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f33fe203-1c0a-f011-bae3-7c1e52350ea5",
+            "subject": "Automatische Antwort: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "﻿\nSehr geehrte Damen und Herren,\nvielen Dank für Ihre E-Mail.\nIch bin\n[\n] im Urlaub bis einschließlich 07.Februar\n[\n] krankheitsbedingt außer Dienst.\n[\nX\n] dienstlich unterwegs und habe nur eingeschränkten Zugriff auf meine E-Mails.\n[\n] auf einer Forbildung bis einschließlich\n[\n] auf einer Messe bis einschließlich\nund daher nur eingeschränkt erreichbar.\nBei\ndringenden Angelegenheite\nn kontaktieren Sie bitte echarging.at@siemens.com\nIhre E-Mail wird nicht automatisch weitergeleite\nt. Nachrichten werden nach meiner Rückkehr bearbeitet.\nVielen Dank für Ihr Verständnis.",
+            "date": "2025-03-26T08:26:38Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "65926f1c-3597-a1f7-8147-2569e631abf4",
+            "subject": "Semih ",
+            "body": "Hotfix is present and will be deployed by rnd fix Fw version is the 7.0.1 case can be closed from TS side",
+            "date": "2025-03-26T08:27:02Z",
+            "extra": {}
+        },
+        {
+            "id": "60bab211-1e0a-f011-bae3-6045bdde4786",
+            "subject": "AW: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hi Semih,\ndanke dass du das kontrolliert hast.\nNein das waren wir nicht.\nIst eventuell im Zuge des \"Reversed Voltage\" Problems des Zählers oder im Zuge der Temperaturumverkabelung von Service umgestellt worden.\nDas darf Aufgrund der Vorgaben und OCMF Daten nicht deaktiviert werden.\nKannst du da bitte wieder aktiveren.\nKannst du uns eventuell auch bei dem \"Reversed Voltage\" Problem helfen.\nMüssen wir hier wirklich den Zähler tauschen?\nDas ist aufgrund der Nacheichung nicht so einfach.\nWo lag nun genau da Problem an den neune 0 Sessions?\nGab es hier ein Timing Problem mit dem LEM?\nLG,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 26. März 2025 09:25\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743\nHi Johannes,\ndieser charger zum Beispiel ist nicht als ERK configuriert:\nAustriaDeutsch WagramS1, Ost KM 38,5, 2232 Deutsch-Wagram\nASl07a | MP / S5 170003620\nRnD case EVC3-8990 zwecks 0 Session wird per EMOB-17635 bearbeitet, Hotfix wird erstellt für 6.1.3 und fix FW-Version ist 7.0.1\nHotfix wird über die RnD deployed\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T08:41:16Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "592083a4-450a-f011-bae3-7c1e52350ea5",
+            "subject": "RE: AW: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hallo Johannes\nIst eventuell im Zuge des \"Reversed Voltage\" Problems des Zählers oder im Zuge der Temperaturumverkabelung von Service umgestellt worden.\nDas darf Aufgrund der Vorgaben und OCMF Daten nicht deaktiviert werden.\nKannst du da bitte wieder aktiveren.\nIch stell ERK wieder ein sobald keine session laufen\nKannst du uns eventuell auch bei dem \"Reversed Voltage\" Problem helfen.\nMüssen wir hier wirklich den Zähler tauschen?\nDas ist aufgrund der Nacheichung nicht so einfach.\nAlso soweit ich weiß wurde da nur SW Technisch was angepasst, ist mir neu das die LEM getauscht werden müssen aber ich bin nicht tief in der Thematik aktuell\nWo lag nun genau da Problem an den neune 0 Sessions?\nGab es hier ein Timing Problem mit dem LEM?\nThe reason for that is, that the backend gets an error while stopping the LEM transaction. This happens because the PLC stops the LEM transaction (s. BYD workaraound) but if the backend asks if the LEM transaction is stopped then the LEM answers with transaction is running. In that case the backend stops the transaction. But then the LEM asweres wit an error (Error: PUT\nhttp://10.20.17.20/v2/legal?transactionId=92674d2640ec4177\nreturned: 412 - Precondition Failed).\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T13:24:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "00fc4644-510a-f011-bae2-000d3ab7ac53",
+            "subject": "RE: AW: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hallo Johannes\nIst eventuell im Zuge des \"Reversed Voltage\" Problems des Zählers oder im Zuge der Temperaturumverkabelung von Service umgestellt worden.\nDas darf Aufgrund der Vorgaben und OCMF Daten nicht deaktiviert werden.\nKannst du da bitte wieder aktiveren.\nIch stell ERK wieder ein sobald keine session laufen\nKannst du uns eventuell auch bei dem \"Reversed Voltage\" Problem helfen.\nMüssen wir hier wirklich den Zähler tauschen?\nDas ist aufgrund der Nacheichung nicht so einfach.\nAlso soweit ich weiß wurde da nur SW Technisch was angepasst, ist mir neu das die LEM getauscht werden müssen aber ich bin nicht tief in der Thematik aktuell\nWo lag nun genau da Problem an den neune 0 Sessions?\nGab es hier ein Timing Problem mit dem LEM?\nThe reason for that is, that the backend gets an error while stopping the LEM transaction. This happens because the PLC stops the LEM transaction (s. BYD workaraound) but if the backend asks if the LEM transaction is stopped then the LEM answers with transaction is running. In that case the backend stops the transaction. But then the LEM asweres wit an error (Error: PUT\nhttp://10.20.17.20/v2/legal?transactionId=92674d2640ec4177\nreturned: 412 - Precondition Failed).\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T14:47:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1a500fc3-9e0b-f011-bae2-000d3ad97a58",
+            "subject": "RE: AW: AW: AW: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000743",
+            "body": "Hello Johannes\nThe hotfix is now apllied to both ASl07a and pHAdNC.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-28T06:35:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c4f923f-e704-9ed0-b621-31eb8b905a50",
+            "subject": "Semih ",
+            "body": "on 2/5 charger the HF could be applied on other 3 unfortunately it didnt and we need RC onsite to bring back the chargers online again. RnD is on it and will fix the chargers meanwhile logs will be checked for further 0Sessions",
+            "date": "2025-04-02T09:17:03Z",
+            "extra": {}
+        },
+        {
+            "id": "b9c50305-5f10-c1d4-9b28-c75fda7a5fc7",
+            "subject": "Semih ",
+            "body": "The RC needs to go onsite because after/during HF application the chargers went offline, so Johannes send someone onsite to bring back the chargers those onsite visit need to be claimed somehow, i will get clearification",
+            "date": "2025-04-03T11:31:02Z",
+            "extra": {}
+        },
+        {
+            "id": "0a0a1b3e-6b14-f011-998a-7c1e52768c07",
+            "subject": "0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000767",
+            "body": "Hi Johannes,\ngab es hier bei den chargern noch 0 Sessions, nach unsere Analyse macht der HF das was er machen soll.\nVG Semih",
+            "date": "2025-04-08T11:18:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "19879faf-1015-f011-998a-7c1e52350ea5",
+            "subject": "AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000767",
+            "body": "Hi Semih,\nIch habe die Logs jetzt nicht geprüft aber nachdem ich nichts vom Kunden gehört habe, hoffe ich, dass der HF funktioniert.\nLediglich in Laakirchen wurde am 2.4 ein 0kWh Ladung festgestellt.\nNachdem aber anscheinend am selben Tag auch der HF installiert wurde, kann dies noch davor geschehen sein.\nLG,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 9. April 2025 08:59\nAn:\nDissauer, Johannes (RC-AT SI E CS) <johannes.dissauer@siemens.com>\nBetreff:\n0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00439000767\nHi Johannes,\ngab es hier bei den chargern noch 0 Sessions, nach unsere Analyse macht der HF das was er machen soll.\nVG Semih",
+            "date": "2025-04-09T07:03:10Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "25ec3ea9-b476-95fd-9ed1-d35272241803",
+            "subject": null,
+            "body": "Hi,\nOur customer reported transactions with 0€ again.",
+            "date": "2025-04-14T12:19:03Z",
+            "extra": {}
+        },
+        {
+            "id": "4849824f-46bf-35c8-956f-1820187a8138",
+            "subject": null,
+            "body": "do you have any news  for Laakirchen? We had another 0 cost and 0 power charging process (Charging process #117445283 | 13.04.2025).",
+            "date": "2025-04-15T13:19:24Z",
+            "extra": {}
+        },
+        {
+            "id": "c8ddd331-d2b9-209d-b1cc-57a3409928e1",
+            "subject": null,
+            "body": "Serial number: S/N P / R6 170002084\nSerial number: MP / S3 170003381",
+            "date": "2025-05-08T13:52:38Z",
+            "extra": {}
+        },
+        {
+            "id": "28ae13a9-9c0f-40f0-aa38-52b36a919801",
+            "subject": null,
+            "body": "Please find below a new\ncharging session with 0 records.\nSerial number:\nMP / S7 170003860",
+            "date": "2025-05-13T15:16:07Z",
+            "extra": {}
+        },
+        {
+            "id": "9ed817e0-f648-3bd5-8df7-cf63a134ffde",
+            "subject": "Semih ",
+            "body": "As im moving to RC-DE i will release this case and send to L3 queue please also check the EVC case",
+            "date": "2025-06-16T04:55:20Z",
+            "extra": {}
+        },
+        {
+            "id": "fd0fa13c-1d57-f011-877b-7c1e52fad806",
+            "subject": "A new case manager was assigned to 0379648 CRM:00225222909",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0379648 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=dc4b1d8f-2c74-ef11-a671-000d3ab7063f",
+            "date": "2025-07-02T08:19:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "96e5fc68-2d63-f011-bec3-6045bde0265d",
+            "subject": "0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00314000191",
+            "body": "Good evening Johannes,\nI am reaching out in regards of ticket\nID0379648,\nas we received this very old ticket in our Expert Services queue.\nI discussed this topic with Semih, who supported you in the past months with this ticket, and I got to know that the Put error was already solved in the past months.\nI know that at the OMV sites the chargers are still facing issues related to the \"OCMF record INVALID\" issue, on which R&D is currently working on.\nIf you agree, I would proceed to close this very old ticket. For the \"OCMF record INVALID\" issues related to the OMV chargers, I would keep the conversation in the already opened ticket\nID0425226\n, which is the reference ticket for all the communication in regards of this topic.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-17T16:45:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7255e73f-9f63-f011-bec3-000d3ad97a58",
+            "subject": "AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00314000191",
+            "body": "Hi,\ni know you have to close the ticket but this problem is not solved as you know so please leave it open since we summarize all of the customer cases in this ticket für R&D.\nI hope it will be fixed in 8.1 FW.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 17. Juli 2025 18:46\nAn:\nDissauer, Johannes (RC-AT SI E CS) <johannes.dissauer@siemens.com>\nBetreff:\n0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00314000191\nGood evening Johannes,\nI am reaching out in regards of ticket\nID0379648,\nas we received this very old ticket in our Expert Services queue.\nI discussed this topic with Semih, who supported you in the past months with this ticket, and I got to know that the Put error was already solved in the past months.\nI know that at the OMV sites the chargers are still facing issues related to the \"OCMF record INVALID\" issue, on which R&D is currently working on.\nIf you agree, I would proceed to close this very old ticket. For the \"OCMF record INVALID\" issues related to the OMV chargers, I would keep the conversation in the already opened ticket\nID0425226\n, which is the reference ticket for all the communication in regards of this topic.\nLooking forward to hearing from you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-18T06:20:10Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "802efee8-5069-f011-bec2-7c1e5236e32d",
+            "subject": "RE: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00314000191",
+            "body": "Dear Johannes,\nI hope my message finds you well.\nTicket ID0379648\nwill be closed immediately as its continued use for new cases deviates from our established process.\nThis ticket was specifically for issues on Firmware v6.1.3, which were tackled and partially corrected by v7.0 (Issue reported to R&D ticket EVC3-8990).\nDocumenting new cases here is inappropriate as it pertains to obsolete implementations and significantly disrupts our ticket flow. Furthermore, there is no action pending from Service teams on this ticket and reporting to R&D has been completed; therefore, it will be closed as per the established process.\nPlease note that all tickets where no action is pending from Service teams, and R&D reporting is concluded will be closed in accordance with our process, without exception.\nPlease be assured that ongoing issues related to Firmware v7.0 are already being tracked under ISP ticket ID0425226, with a solution anticipated in Firmware v8.1.\nWe will take care of connecting ticket ID0379648 to ID0425226 to ensure proper traceability and process continuity. As clarified above, ticket ID0425226 will be closed as well, as there is no action pending from Service teams and reporting to R&D has been completed.\nFor all future customer cases, regardless of similarity, a new, distinct ticket must be opened. If symptoms persist on newer Firmware versions, a new ticket explicitly referencing the latest FW is mandatory. Related cases should be linked using the \"case relationships\" function, which is valid for both active and resolved tickets.\nOur HQ support teams rely on new ISP tickets to accurately reflect issues on the latest FW versions for R&D bug-reporting, internal service reporting statistics and ultimately reflecting the impact on the installed base according to product-specific KPIs.\nStrict adherence to these processes is crucial for efficient issue resolution and accurate reporting.\nSummary of status and action items:\nTicket ID0379648:\nClosed immediately due to non-compliance; refers to obsolete v6.1.3 issues tackled by v7.0. No service action is pending and reporting to R&D is completed; closure is per established process. This applies to all tickets in a similar status.\nFirmware v7.0 Issues\n: Already reported and actively followed up via ISP ID0425226; solution expected in v8.1. No service action is pending and reporting to R&D is completed; the ticket will be closed.\nTicket Linking:\nID0379648 will be connected to ID0425226 by us to ensure proper case relationship management.\nRequired Action:\nOpen new, distinct tickets for every new customer case, especially for issues on current Firmware versions.\nProcess:\nUtilize \"case relationships\" for linking related tickets;\nWe are available for any guidance needed to ensure smooth adherence to these critical processes.\nMany thanks in advance for your understanding.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-07-25T12:14:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ede728e0-5269-f011-bec3-6045bde12d6b",
+            "subject": "RE: AW: 0379648 - ID0379648-DC/Si-D/AT[170003381 & 170002084] - 0 meter values at StopTransaction CRM:00314000191",
+            "body": "Dear Johannes,\nI hope my message finds you well.\nTicket ID0379648\nwill be closed immediately as its continued use for new cases deviates from our established process.\nThis ticket was specifically for issues on Firmware v6.1.3, which were tackled and partially corrected by v7.0 (Issue reported to R&D ticket EVC3-8990).\nDocumenting new cases here is inappropriate as it pertains to obsolete implementations and significantly disrupts our ticket flow. Furthermore, there is no action pending from Service teams on this ticket and reporting to R&D has been completed; therefore, it will be closed as per the established process.\nPlease note that all tickets where no action is pending from Service teams, and R&D reporting is concluded will be closed in accordance with our process, without exception.\nPlease be assured that ongoing issues related to Firmware v7.0 are already being tracked under ISP ticket ID0425226, with a solution anticipated in Firmware v8.1.\nWe will take care of connecting ticket ID0379648 to ID0425226 to ensure proper traceability and process continuity. As clarified above, ticket ID0425226 will be closed as well, as there is no action pending from Service teams and reporting to R&D has been completed.\nFor all future customer cases, regardless of similarity, a new, distinct ticket must be opened. If symptoms persist on newer Firmware versions, a new ticket explicitly referencing the latest FW is mandatory. Related cases should be linked using the \"case relationships\" function, which is valid for both active and resolved tickets.\nOur HQ support teams rely on new ISP tickets to accurately reflect issues on the latest FW versions for R&D bug-reporting, internal service reporting statistics and ultimately reflecting the impact on the installed base according to product-specific KPIs.\nStrict adherence to these processes is crucial for efficient issue resolution and accurate reporting.\nSummary of status and action items:\nTicket ID0379648:\nClosed immediately due to non-compliance; refers to obsolete v6.1.3 issues tackled by v7.0. No service action is pending and reporting to R&D is completed; closure is per established process. This applies to all tickets in a similar status.\nFirmware v7.0 Issues\n: Already reported and actively followed up via ISP ID0425226; solution expected in v8.1. No service action is pending and reporting to R&D is completed; the ticket will be closed.\nTicket Linking:\nID0379648 will be connected to ID0425226 by us to ensure proper case relationship management.\nRequired Action:\nOpen new, distinct tickets for every new customer case, especially for issues on current Firmware versions.\nProcess:\nUtilize \"case relationships\" for linking related tickets;\nWe are available for any guidance needed to ensure smooth adherence to these critical processes.\nMany thanks in advance for your understanding.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-07-25T12:28:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

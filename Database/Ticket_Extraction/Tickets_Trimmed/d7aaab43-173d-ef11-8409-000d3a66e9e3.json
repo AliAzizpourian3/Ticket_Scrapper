@@ -1,0 +1,93 @@
+{
+    "incident_id": "d7aaab43-173d-ef11-8409-000d3a66e9e3",
+    "ticket_number": "0367713",
+    "title": "ID0367713-DC/Si-D/NL[BszIkS] - HMI is black",
+    "created_on": "2024-07-08T10:46:06Z",
+    "last_activity": "2025-12-22T09:50:06Z",
+    "age": "5585",
+    "description": "Reported behaviour/issue: HMI is black\nRoot cause:\nHW issue → No LEDs are on in the HMI but we have 24V throughout the whole circuit.\nSolution:\nReplace HMI\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\nNOTE TO QM: I requested the RC to provide all the information according to confluence. Please read the latest email from RC.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "BszIkS",
+    "stage": null,
+    "serial_number": "MP / P0 170001089",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "19176344-173d-ef11-8409-6045bdddfe8e",
+            "subject": "BszIkS - Screen black",
+            "body": "Hi colleagues,\nThe HMI on this charger is completely black, but we don’t have any error flags, please advise.\nThomas",
+            "date": "2024-07-08T10:46:02Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5ab2374f-173d-ef11-8409-002248a2918b",
+            "subject": "A new case manager was assigned to 0367713 CRM:00225066933",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0367713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d7aaab43-173d-ef11-8409-000d3a66e9e3",
+            "date": "2024-07-08T10:46:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9d768e63-173d-ef11-8409-0022489bbd8f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 48 seconds.",
+            "date": "2024-07-08T10:46:55Z",
+            "extra": {}
+        },
+        {
+            "id": "0b4d6065-173d-ef11-8409-000d3a66e9e3",
+            "subject": "A new case manager was assigned to 0367713 CRM:00225066933",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0367713 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d7aaab43-173d-ef11-8409-000d3a66e9e3",
+            "date": "2024-07-08T10:46:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "39eb0177-243d-ef11-8409-0022489bbd8f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 1 hour, 33 minutes and 42 seconds.",
+            "date": "2024-07-08T12:20:36Z",
+            "extra": {}
+        },
+        {
+            "id": "1b7bd411-cd3d-ef11-8409-6045bdddacb7",
+            "subject": "0367713 - ID0367713-DC/Si-D/NL[BszIkS] - HMI is black CRM:00315001571",
+            "body": "Hi Thomas,\nWere you able to confirm if the HMI returned after the reboot?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-07-09T08:27:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1fcf6fae-1d40-ef11-8409-000d3a64c042",
+            "subject": "0367713 - ID0367713-DC/Si-D/NL[BszIkS] - HMI is black CRM:00315001571",
+            "body": "Hi Thomas, good morning.\nAfter yesterday's site visit, we were able to identify that the HMI was faulty.\nHere is a short summary of our performed actions:\nCheck the XD24:4 for 24V (input point for 24V HMI)\nWe have 24.66V → okay\nNext, we measured directly on the connector that provides the 24V to the HMI :\nWe measure again 24.6 V → okay\nBefore we opened the metal plate to verify the PCB directly (which takes sometime and work), we tried replacing the USB and DP cable:\nNo result\nWe measured at the output of the connector and we have 24V (couldn't take a photo).\nTried removing and reinsert the connector and turning OFF and ON the FC14 → still same result.\nProblem can't be the FC14 otherwise we would have problem in, e.g, routers, and also the connector was tested from both sides to see if it wasn't a connector issue.\nCheck the LED of the HMI and it's not turning ON as it's supposed to.\nSolution: replace the HMI.\nPlease proceed to order a new HMI and replace it.\nIf there are no further questions I will close the ticket since we only need to replace the HMI now.\nI just need you to help me filling this in after you replace the HMI for QM:\nDefective part name/MLFB: HMI gen1?\nComponent serial number:\nLogs with marked error (CSV format preferred): N/A\nActive error flags before replacement: None\nDevice-specific error code\n(if applicable): No LED turned ON\nOutcome of wiring checkup: Checked connections from XD21:4 onwards until the PCB of the HMI, all the connectors had 24V. Tried replacing USB and DP cable, and also didn't work.\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\n(see side note): This week?\nI will close the ticket. When you have all this information when you replace it, please just reply to this email and ignore the auto response.\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2024-07-12T07:09:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c114b83-2340-ef11-8409-000d3a64c042",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 3 days, 19 hours, 30 minutes and 40 seconds.",
+            "date": "2024-07-12T07:51:17Z",
+            "extra": {}
+        }
+    ]
+}

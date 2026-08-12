@@ -1,0 +1,144 @@
+{
+    "incident_id": "7b5b2d84-942d-486d-9cd2-d2045649a10b",
+    "ticket_number": "0427000",
+    "title": "ID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted",
+    "created_on": "2025-05-26T14:17:45Z",
+    "last_activity": "2026-01-19T08:44:36Z",
+    "age": "296231",
+    "description": "The charging session is abruptly interrupted on the charger.\nWe receive the following error:\nDC1: Outlet not ready – EVSE not in operating mode run, mode: 0 → 9\nAfter this, the device shuts itself down. This issue started occurring after the v7.0.5 firmware update.\nThe log data is attached. We kindly request a detailed analysis.",
+    "type": 3,
+    "priority": 596630000,
+    "chargerID": "28JUhB",
+    "stage": "Resolved",
+    "serial_number": null,
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "05fe3e32-3c3a-f011-b4cc-7c1e5287c7df",
+            "subject": "A new case manager was assigned to 0427000 CRM:00225206102",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0427000 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7b5b2d84-942d-486d-9cd2-d2045649a10b",
+            "date": "2025-05-26T14:17:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a19206d0-3d3a-f011-b4cc-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0427000 CRM:00225206112",
+            "body": "Amit Deswal was assigned as new Case Manager for case 0427000 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7b5b2d84-942d-486d-9cd2-d2045649a10b",
+            "date": "2025-05-26T14:29:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80ce663a-3e3a-f011-b4cb-7c1e52350ea5",
+            "subject": "ID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted CRM:02679000317",
+            "body": "Dear Yunus Emre Temel,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: Y2/R7 313065117139\nChargerID/Serial No.\n:\n28JUhB\nProblem Description\n: Charging session is abruptly interrupted\nFor future reference, your case number is\n0427000\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-26T14:32:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bd97152-903a-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0427000 CRM:00225206214",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0427000 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7b5b2d84-942d-486d-9cd2-d2045649a10b",
+            "date": "2025-05-27T00:20:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "33f6ff37-f883-3be5-8bee-d13c42d62a3f",
+            "subject": "Notes - Charger put on debug mode. For TLG logging. ",
+            "body": "",
+            "date": "2025-05-27T00:22:43Z",
+            "extra": {}
+        },
+        {
+            "id": "baf01c83-47ce-34e6-8e93-fe58cc2c7dc4",
+            "subject": "GQ1 error",
+            "body": "",
+            "date": "2025-05-28T00:04:13Z",
+            "extra": {}
+        },
+        {
+            "id": "14e49b48-4309-e57d-aa70-930ecf116c23",
+            "subject": null,
+            "body": "",
+            "date": "2025-05-28T00:04:26Z",
+            "extra": {}
+        },
+        {
+            "id": "d024ca73-dc2b-aa78-8aca-0c9967468813",
+            "subject": null,
+            "body": "",
+            "date": "2025-05-28T00:04:40Z",
+            "extra": {}
+        },
+        {
+            "id": "1870881f-573f-f011-877a-7c1e52768372",
+            "subject": "ID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted CRM:00798002169",
+            "body": "Hi Emre,\nWe have investigated the charger and charging sessions.\nAlso, Notes been added from your side.  Thanks for same.\nWe have observed there is issue with Temp & fan in the charger. We need to check/troubleshoot as per following instructions.\nFirst of all,\nCurrently, We have issue of CanCommLoss over one of the converter.\nWe need to identify the converter from the missing serial number and check by replacing it with adjacent one to ascertain if it is CAN wiring issue or the converter issue.\nWe recommend having spare converter while site intervention.\nWe have observed BT2 alarms in logs,\n\"VIN:\" → sensor value is invalid: true if one of the following conditions is in error\n\"ORI:\" → sensor reading is outside the defined operation limit\nWe need to investigate if the temperature is actually increasing or sensor is malfunctioning.\nWe need to check for the resistance across BT2 sensor. It should be as per PT1000 temp vs resistance table.\nWe recommend having spares while site intervention.\nFor investigating BT1 & BT2, We need to check the voltage between (I2 and Ground) and it should be comparable between (I8 and Ground)\nSimilarly, We need to check the voltage between (I1 and Ground) and it should be comparable between (I7 and Ground)\nAlso, We have observed the GQ1 Error Flag.\nFor GQ1 Fan Error,\nPls refer KA\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_FAN_Error Flag_OK Signal Lost -\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_Mainfan_GQ1_Ok Signal Lost-Fan rotation disabled -\nI am writing to formally inform that we are moving case 0427000 ﻿from the\nTechnical Support\nto the\neMobility RC-\nTR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nTR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-02T02:13:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "070f8d00-5e3f-f011-8779-7c1e52350ea5",
+            "subject": "Otomatik yanıt: ID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted CRM:00798002169",
+            "body": "Dear All,\nThank you for your email. I will be out of office until 10.06.2025 with limited access to e-mails.\nBest regards,",
+            "date": "2025-06-02T03:02:28Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cfb15865-e13f-f011-877a-6045bde0265d",
+            "subject": "A new case manager was assigned to 0427000 CRM:00225209435",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0427000 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=7b5b2d84-942d-486d-9cd2-d2045649a10b",
+            "date": "2025-06-02T18:43:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c10e6d89-3650-f011-877b-7c1e52fc0c57",
+            "subject": "RE: ID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted CRM:00798002169",
+            "body": "Hi Gary,\nWe will do a onsite service plan for this unit... And check the temperatures as you said\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-06-23T13:32:45Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fac58c11-e3db-f011-8544-7ced8d4251b1",
+            "subject": "Ticket 0427000 has been closed. Are you satisfied with our provided solution? CRM:00225306562",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0427000\nwith the title:\nID0427000-DC/Si-D/TR-[Y2/R7 313065117139] Charging session is abruptly interrupted\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-12-18T07:27:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "incident_id": "60198b06-cad8-ef11-8eea-000d3a691687",
+    "ticket_number": "0401569",
+    "title": "ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable",
+    "created_on": "2025-01-22T14:06:14Z",
+    "last_activity": "2025-02-15T09:35:21Z",
+    "age": "17287",
+    "description": "Reported behaviour/issue:\nMainbreaker error\nRoot cause:\n3VA27 only mainbreaker - seems to be a problem during startup fuse where we see a drop in the voltage for QA29 command\nWorkaround:\nChange 24V for QA29 command from FC14 to FC16\nFinal Solution: Being discussed by R&D\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "pHAdNC",
+    "stage": null,
+    "serial_number": "MP / S2 170003381",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "86201efe-c9d8-ef11-8ee9-6045bddddfa2",
+            "subject": "Webform_incident_SiCharge D_22-01-2025_SN: MP / S2 170003381",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003381\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003381\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-22T14:06:03Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "99d02198-cad8-ef11-8eea-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0401569 CRM:00225152273",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0401569 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60198b06-cad8-ef11-8eea-000d3a691687",
+            "date": "2025-01-22T14:10:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56f7d7b3-cdd8-ef11-8eea-6045bdde0ce3",
+            "subject": "ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003381\nChargerID/Serial No.\n:\npHAdNC\nProblem Description\n: allOutletsUnavailable\nTroubleshooting\n: As we checked the error flags on SCB where it is showing the door is opened. Could you please check & confirm.\nFor future reference, your case number is\n0401569\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-22T14:32:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "100f152c-d67c-4d68-b55d-79250f42cdb6",
+            "subject": "Note to L2-Error flags",
+            "body": "",
+            "date": "2025-01-22T14:41:29Z",
+            "extra": {}
+        },
+        {
+            "id": "021abd29-93e7-f74a-bc1a-f849eebab661",
+            "subject": "Note to L2",
+            "body": "As discussed with RC over teams call,\nRC confirmed the similar issue was reported on another charger-\nASl07a\nFor this ticket the RC is confirmed the FC12 to FC17 is tripping and generating the error.\nAs checked the door position was not opened.\nAlso found the multiple time Mainfan_GQ1 error in the last one week",
+            "date": "2025-01-22T17:36:58Z",
+            "extra": {}
+        },
+        {
+            "id": "7b173e78-68d9-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Hello Johannes,\nThanks for connecting on MS Teams call.\nWe have inspected your case; our observations are as follows:\nPlease refer to the schematic and KA mentioned below for further guidance on troubleshooting.\nWe observed error flags on the SCB and found that fuses FC12 to FC17 had tripped. As a result, we can arrange a site visit to inspect the fuses and wirings.\n2. As discussed, please refer the troubleshooting steps mentioned in\nKA Link\nfor Mainfan GQ1 error-\n3. For error flags, SPD\n_FA1_or_Fuse_FC1_AC-Income please refer the KA on this\nLink\n-\n4, For state monitor fastshutdown check, please refer the KA on this\nLink.\nWe recommend please take the spare parts with you when visit the site.\nI am writing to formally inform that we are moving case 0401569 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nAT\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nYes\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nAT\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nIf you need further assistance, please do notify us.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-23T09:00:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7088d0fe-87d9-ef11-8ee9-000d3a665ec4",
+            "subject": "A new case manager was assigned to 0401569 CRM:00225152965",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0401569 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60198b06-cad8-ef11-8eea-000d3a691687",
+            "date": "2025-01-23T12:46:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8ffc8102-88d9-ef11-8eea-000d3ab009dd",
+            "subject": "ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Hi colleagues,\nThanks @Lea for being on site today to troubleshoot this issue. We were able to bring the charger back provisionally. At least that is good.\nFor now, I'm waiting for the RC colleague that will replace the QA1 in his charger so that we can understand if it fixes it entirely.\nI will provide you feedback as soon as possible but for now explain to the customer to not perform any reboot without any on-site support.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-01-23T12:46:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d0a9a7d-88d9-ef11-8eea-0022489bcff4",
+            "subject": "Automatische Antwort: ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "﻿\nVielen Dank für Ihre Nachricht.\nIch bin ab dem 23. Januar wieder im Haus. Nachrichten werden in meiner Abwesenheit nicht beantwortet.\nIn dringenden Fällen bitte perikles.christias@siemens.com kontaktieren.\nThank you for your message.\nI will be out of the office until 23th of january. Messages will be not answered in my absence.\nFur urgent requests please reach out to\nperikles.christias@siemens.com\nMit freundlichen Grüßen/ With kind regards,\nLea Tesch",
+            "date": "2025-01-23T12:49:38Z",
+            "extra": {
+                "sender": "lea.tesch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1009e647-34de-ef11-8ee9-6045bde065fa",
+            "subject": "ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Hi Johannes,\nAfter today's chat I presented to you a workaround (that apparently was asked during your escalation meeting) to change the 24V of QA29 from FC14 to FC16.\nIf this issue ever happens again please do this workaround until we find a final solution as this appears to be only related to 3VA27 (only in SiD400).\nI will update you as soon as we have a definite answer.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-01-29T11:29:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4baf2271-dedf-ef11-8ee9-0022489c643d",
+            "subject": "AW: ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Hi Francisco,\nbut you meaning only the MOTOR ON Signal as you can see here?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 31. Jänner 2025 12:31\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490\nHi Johannes,\nAfter today's chat I presented to you a workaround (that apparently was asked during your escalation meeting) to change the 24V of QA29 from FC14 to FC16.\nIf this issue ever happens again please do this workaround until we find a final solution as this appears to be only related to 3VA27 (only in SiD400).\nI will update you as soon as we have a definite answer.\nThank you and have a nice weekend!\nBest regards,\nFrancisco",
+            "date": "2025-01-31T14:19:57Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cdb6f72b-06e2-ef11-8eea-000d3a68cce9",
+            "subject": "ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Hi Johannes, good morning. I hope you had a nice weekend.\nYes, if you prefer, this is the point used in Norway, in case you want to be 100% sure.\nFrom our side, for now, there is nothing else we can do until R&D provides a solution. If you are okay with it, can I close the ticket and I can give you updates via Teams?\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2025-02-03T08:09:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a7bebd96-2de2-ef11-8ee9-002248a0b76d",
+            "subject": "AW: ID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490",
+            "body": "Since Daniel is on vacation, we can do nothing on side.\nSo I think we can close it.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 3. Februar 2025 09:17\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable CRM:00921001490\nHi Johannes, good morning. I hope you had a nice weekend.\nYes, if you prefer, this is the point used in Norway, in case you want to be 100% sure.\nFrom our side, for now, there is nothing else we can do until R&D provides a solution. If you are okay with it, can I close the ticket and I can give you updates via Teams?\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2025-02-03T12:51:32Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "609f7163-38e2-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0401569 has been closed. Are you satisfied with our provided solution? CRM:00315002314",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0401569\nwith the title:\nID0401569-DC/Si-D/AT-[MP / S2 170003381] allOutletsUnavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-03T14:08:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

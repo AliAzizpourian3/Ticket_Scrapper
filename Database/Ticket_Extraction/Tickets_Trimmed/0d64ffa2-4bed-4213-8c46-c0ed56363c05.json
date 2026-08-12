@@ -1,0 +1,24 @@
+{
+    "incident_id": "0d64ffa2-4bed-4213-8c46-c0ed56363c05",
+    "ticket_number": "0423796",
+    "title": "ID-DC/Si-D/FI-[MP / R6 170002029]-Okeroinen Converter E17",
+    "created_on": "2025-05-12T10:24:54Z",
+    "last_activity": "2025-12-03T11:27:38Z",
+    "age": "Cancelled",
+    "description": "Reported behavior/issue:\nConverter is giving error in the background. Failing during session(s)? Proactive based on AWS.\n('2102312VGQKXN9000596SA002204000204FW:DC116PF116H100,F:1,E17')\nSolution:\nAction:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "PdbewO",
+    "stage": null,
+    "serial_number": "MP / R6 170002029",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "96e139fc-6f58-d39b-acfd-3e82a876784a",
+            "subject": "AWS querie failing converter",
+            "body": "#konvertteri\nfields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/PowerConverter/\nand\n@message\nlike\n/to true/\n|\nfilter\n@logStream\nlike\n/PdbewO/\n|\nparse\n@message\n'to true -*'\nas\ncode\n|\nstats\ncount\n(*)\nas\nCount\nby\ncode,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-05-12T10:26:32Z",
+            "extra": {}
+        }
+    ]
+}

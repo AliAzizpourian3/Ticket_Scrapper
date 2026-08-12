@@ -1,0 +1,288 @@
+{
+    "incident_id": "f19c0020-faf6-f011-8406-7ced8d44db54",
+    "ticket_number": "0473714",
+    "title": "ID0473714-DC/Si-D/IE-[Multiple] P03_CABLE_CHECK --> P00_UNKNOWN",
+    "created_on": "2026-01-21T18:51:09Z",
+    "last_activity": "2026-01-30T10:05:52Z",
+    "age": "12434",
+    "description": "Reported behaviour/issue: StateMonitor issue\nSolution: Already solved in a previous ticket - replace KF13/14",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "8yaTTI",
+    "stage": "Resolved",
+    "serial_number": "MP/S2170003304",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "6c2efc16-faf6-f011-8406-000d3ab127aa",
+            "subject": "Sandy Road – on-site charging failure experienced by operator on chargers 3304 and 3303 (evening of 21 January)",
+            "body": "Dear Siemens Support Team,\nWe are raising a new support request relating to an issue personally experienced by me on site this evening at our Sandy Road location. This is a fresh incident and is separate from previous cases.\nSite details\nLocation Sandy Road, Galway, Ireland\nChargePoint IDs\nIE-GFX-E170003304\nIE-GFX-E170003303\nContext\nAt the time of arrival this evening, charger 3303 already had one connector set to Unavailable, as previously requested. I required a charge and therefore proceeded first to charger 3304.\nOn-site test and observed behaviour\nOn 21 January 2026, between approximately 17:44 and 17:50 UTC, the following occurred.\n• I first attempted to start a charging session on charger 3304, using the Charge Assist app. I did not use contactless card payment.\n• Multiple start attempts were made. Each attempt resulted in the app taking a pre-authorisation, but the charging session did not start.\n• During these attempts, charging did not progress beyond the initial stages and no energy delivery occurred.\nI then moved to charger 3303.\n• On charger 3303, I connected to the connector that remained available.\n• The charger entered Preparation state but did not progress to Charging.\n• The connector remained locked in the vehicle while the charger stalled. I waited, then stopped the process and attempted again.\n• Multiple attempts were made on this charger, with the same outcome. Charging did not start.\nAs I required a charge, I then moved to charger 3302.\n• On charger 3302, using the same vehicle, app, and start procedure, the charging session started immediately on the first attempt and charged normally.\nAdditional observation\nWhile on site, I noted that charger 3304 displayed a session amount of approximately €12 on the payment terminal screen, which appeared to remain displayed and did not clear in the normal way. This amount appeared low for a completed DC session and did not appear to correspond to an active or progressing charge at the time. We are unsure whether this reflects a session that did not close correctly.\nLog context\nReviewing the logs subsequently, charger 3304 shows multiple transitions to Unavailable earlier in the day, consistent with the issues experienced on site this evening. Relevant Unavailable and Faulted status updates for this charger were recorded earlier on 21 January.\nImpact\nThis issue was experienced directly by me as the operator. If this behaviour is occurring for the site owner, it is highly likely that it is also affecting customers, potentially without all incidents being reported. The pattern of issues observed at Sandy Road over the past day is concerning.\nRequest\nWe request urgent Siemens assistance this evening to:\n• Review charger and connector logs for 3304 and 3303 between 17:44 and 17:50 UTC on 21 January 2026\n• Identify why accepted app-based pre-authorisations are not progressing to started charging sessions\n• Review the stalled Preparation state observed on charger 3303\n• Review the session amount remaining displayed on charger 3304 and confirm whether a session may not have closed correctly\n• Advise on immediate next steps and whether on-site intervention is required\nPlease treat this as urgent, given the direct customer impact and the inability to reliably charge at this site.\nKind regards,\nColin\nColin Barry\nBrite EV charging",
+            "date": "2026-01-21T18:50:53Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a74a7c65-fbf6-f011-8406-000d3ab12cf3",
+            "subject": "A new case manager was assigned to 0473714 CRM:00225322767",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0473714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f19c0020-faf6-f011-8406-7ced8d44db54",
+            "date": "2026-01-21T19:00:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0ed6fa78-fcf6-f011-8406-7ced8d44d1ac",
+            "subject": "ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Dear\nColin\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/S2170003304\nCharger ID\n: 8yaTTI\nProblem Description\n:\nOn-site charging failure experienced by operator on chargers 3304 and 3303 (evening of 21 January)\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0473714\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-21T19:07:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46ed15fa-63f7-f011-8406-000d3ab1199b",
+            "subject": "A new case manager was assigned to 0473714 CRM:00225322976",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0473714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f19c0020-faf6-f011-8406-7ced8d44db54",
+            "date": "2026-01-22T07:28:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "195de6f5-073c-93ae-9b48-630f5c7b50a6",
+            "subject": null,
+            "body": "170003304\n170003303",
+            "date": "2026-01-22T16:47:34Z",
+            "extra": {}
+        },
+        {
+            "id": "86849b1a-98fa-f011-8407-7ced8d44dfaf",
+            "subject": "A new case manager was assigned to 0473714 CRM:00225324619",
+            "body": "Priscilla van Wettum was assigned as new Case Manager for case 0473714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f19c0020-faf6-f011-8406-7ced8d44db54",
+            "date": "2026-01-26T09:19:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f81d3919-9afa-f011-8406-6045bde132cc",
+            "subject": "A new case manager was assigned to 0473714 CRM:00225324639",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0473714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f19c0020-faf6-f011-8406-7ced8d44db54",
+            "date": "2026-01-26T09:33:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea006918-acfa-f011-8407-000d3ab12a39",
+            "subject": "RE: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Dear Mr. Barry,\nI hope you are doing well. Thank you for raising the issue.\nI am really sorry for the late response. But in the meantime I keep the charger in observation. Because the primary cause identified as a bug issue in both charger.\nCurrently the charger looks error free. I have also identified that those charger running with old version of FW. It is also recommended that all charger should run with latest FW version.\nCan you please activate the latest FW update?\nIf you are not able to update. Let us know, we can update remotely.\nLet me know if the problem still remain from your side.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-26T11:42:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d8474269-affa-f011-8407-7ced8d44d1ac",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi there\nNo we don’t have ability to update the Fw. Have you the agreement of Jason Stonier to update this? If so please do it remotely, Jason is usually the final say for our chargers and we work closely with him, thank you,\nRegards,\nColin\nColin Barry\nBrite EV charging",
+            "date": "2026-01-26T12:06:18Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1dfbdff5-befa-f011-8407-000d3ab12a39",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Dear Mr. Barry,\nThank you for the quick reply.\nI have updated the FW to the latest version. Please let me know if there is any issue remain on those charger.\nOtherwise a quick feedback will very helpful to close the ticket.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-26T13:57:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87d85291-82fb-f011-8407-000d3ab12a39",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Dear\nColin Barry,\nI hope this message finds you well.\nI am writing to follow up on our previous request for additional information needed to proceed with your support case:\n0473714\nOnce we receive the necessary details, we will be able to continue with troubleshooting and move toward a resolution.\nWe appreciate your cooperation and look forward to your response.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T13:17:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff4c617c-84fb-f011-8407-000d3ab12cf3",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi\nWhat additional information do you need?\nC\nColin Barry\nBrite EV charging",
+            "date": "2026-01-27T13:31:33Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "48c2340f-85fb-f011-8407-000d3ab12a39",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hello Mr.  Barry,\nI hope you are doing well. Both charger are updated and from our end both looks error free.\nCan you also confirm from your side please?\nIf everything okay. Can I proceed to close the ticket?\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T13:35:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "59797588-8efb-f011-8407-7ced8d44ddd4",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi before closing can you confirm that both chargers are error free for the past 24 hours:?\nColin\nOn Tue, Jan 27, 2026 at 1:39 PM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Mr.  Barry,\nI hope you are doing well. Both charger are updated and from our end both looks error free.\nCan you also confirm from your side please?\nIf everything okay. Can I proceed to close the ticket?\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail:\nharun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T14:43:27Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "37f0714c-9dfb-f011-8406-7ced8d466cdb",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hello Mr. Barry;\nThank you for the quick reply. From our end\n170003304\n170003303\nWaiting for your valuable feedback.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T16:29:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f78da915-35fc-f011-8407-7ced8d44db54",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi\nHarun\n,\nThanks for the response and for confirming the case details.\nJust to clarify our expectation on this type of request, when we raise an issue after a physical on-site incident and after checking our own backend logs, we are not asking for a confirmation of the current live status. A live screenshot only tells us the charger’s present state and does not address whether any faults, warnings, protective events or internal resets occurred in the period leading up to the incident.\nWhat we need from Siemens, as the OEM, is a clear historical confirmation for the defined window. Specifically, for the 24 hours preceding the reported issue",
+            "date": "2026-01-28T10:35:48Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "efbc2716-3cfc-f011-8407-000d3ab124a4",
+            "subject": "A new case manager was assigned to 0473714 CRM:00225326400",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0473714 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f19c0020-faf6-f011-8406-7ced8d44db54",
+            "date": "2026-01-28T11:25:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "17608bd6-3dfc-f011-8407-7ced8d44ddde",
+            "subject": "ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Colin! good morning :) How are you today?\nI apologise for the misunderstanding, please allow me some time to search through all the problems and I will give you a detailed answer.\nThank you for your patience and understanding.\nBest regards,\nFrancisco",
+            "date": "2026-01-28T11:38:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3692e2b-3ffc-f011-8407-000d3ab12cf3",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Francisco,\nCivic were on site working last week on some of these issues and we have had no information as to what work was done and why,\nyou might report on that also pls,\nRegards\nColin\nOn Wed, Jan 28, 2026 at 11:40 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHi Colin! good morning :) How are you today?\nI apologise for the misunderstanding, please allow me some time to search through all the problems and I will give you a detailed answer.\nThank you for your patience and understanding.\nBest regards,\nFrancisco",
+            "date": "2026-01-28T11:47:58Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bd91b399-f8fc-f011-8407-7ced8d44ddde",
+            "subject": "ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Colin, good afternoon.\nApologies for the delay as I was making a deep analysis of the described issue and with your information regarding Civic.\nFrom 3303, I found that during that time, there was no Authentication provided, I don't see any RFID, Credit Card or Remote APP identification.\nFrom 3304,\nthe error is correlated with other tickets raised last week, the cause of the error is not clear as it is intermittent, however",
+            "date": "2026-01-29T09:55:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fbb37ed0-39fd-f011-8407-7ced8d44db54",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Francisco,\nJust to flag an additional issue reported today so you can check whether it correlates with what you have already been analysing.\nDetails as follows:\nSite\nGalway Retail Park, Galway\nCharger\n3301\nCharger ID: IE-GFX-E170003301-2\nDate\nToday, 29 January 2026\nTime window\nCustomer report received via hotline at approximately 11:56\nIssue described as occurring shortly before the call (late morning / early afternoon)\nReported behaviour\nCustomer was unable to start a charging session.\nFrom the customer perspective the charger appeared as ready.\nAt the same time, the charger was shown as faulted in the EV portal.\nThis issue was observed today and is separate in time from the specific events you reviewed earlier.\nCould you please check whether the logs around this time window for charger 3301 show any relation to the behaviour you have been analysing, or whether this appears to be a separate condition?\nIf you need exact backend timestamps or session references from our side, let me know and we can pull those.\nThanks,\nColin\nColin Barry\nBrite EV charging",
+            "date": "2026-01-29T17:42:08Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1f580bde-aafd-f011-8407-000d3ab12a27",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Francisco\nFollowing on from last night.\nAgain this morning this looks like another error",
+            "date": "2026-01-30T07:11:26Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f9fcb0f5-b4fd-f011-8407-000d3ab12cf3",
+            "subject": "ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Hi Colin, good morning.\nI will start with yesterday's reported problem at around 11:56. I believe that this is the problem that the customer reported:\nWhat I see is that the customer didn't provide any authentication for a few mins and the session stopped.\nThe next session on DC2 worked completely well and there was no reboot or similar, inbetween.\nFor this reported issue from today, I searched for 3301 and 3302 and I cannot find any failed session, I searched both since 3 am, as I can see from your email it came at 7am.\nIn 3301 I only find one session and it's successfull:\nIn 3302 there is no attempt at all, the charger doesn't even recognize if there was any EV plugged in, we usually see it with this log:\nAnd in 3302 I only have a session start at this time and works perfectly:\nIs it possible that it's a different charger? Also, if the session fails and there is no energy transfer from our side, it's a clear issue on the Payment Terminal provider service and not related to us. To confirm this I need your help finding the session.\nPlease also be aware that I really want to support you in this topic but it's not related to the initial reported issue and should be refered in a new ticket, as the documentation will be scattered.\nI will keep working with this ticket but in the future please open a new ticket :)\nThank you!\nBest regards,\nFrancisco",
+            "date": "2026-01-30T08:23:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ebb259b-c1fd-f011-8407-7ced8d44db54",
+            "subject": "Re: ID0473714-DC/Si-D/IE-[Multiple] Charging issue CRM:02681001356",
+            "body": "Ok thanks - for now - can you close off this original ticket if there is no more to do on it ? I will start an investigation on the others and come back to you\nColin Barry\nBrite EV charging",
+            "date": "2026-01-30T09:54:09Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e59ed738-c3fd-f011-8406-7ced8d488a6e",
+            "subject": "Ticket 0473714 has been closed. Are you satisfied with our provided solution? CRM:00225327959",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0473714\nwith the title:\nID0473714-DC/Si-D/IE-[Multiple] P03_CABLE_CHECK --> P00_UNKNOWN\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-30T10:05:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

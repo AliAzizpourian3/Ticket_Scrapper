@@ -1,0 +1,31 @@
+{
+    "incident_id": "b06ecfc1-0979-4e82-ba9e-0f4309fdc9e6",
+    "ticket_number": "0418137",
+    "title": "0418137-DC/Si-D/FR-[ MP/ P8 170001008] Engie VIANEO-Cfast card corrupt-C1",
+    "created_on": "2025-04-10T11:05:16Z",
+    "last_activity": "2025-04-17T09:59:22Z",
+    "age": "5808",
+    "description": "Reported issue:  On SCB the statuts of the connectors are always faulted and unknown. Yet on site and on OCPP backend outlets are available. There is also no logs on SCB The charger also takes more than 30 minutes to reboot. After the boot process it stays in hallo hello mode for 30min at least.\nSolution:\nyyyy-mm-dd: 2025-04-09\nOut of warranty\n14.04.2025: Handover from ES to NOC",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "z57DMM",
+    "stage": null,
+    "serial_number": "MP / P8 170001008,MP / P8 170001008",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "72806489-044f-1e95-ad1d-443075c9b590",
+            "subject": "Reason for child case creation",
+            "body": "Suspect cfast card corrupt, needed confirmation from ES prior to advising site visit.\nFound:\nNo logs fetched on SCB & AWS\nSCB landing page reflects outlets out of order whereas on site they are available and working",
+            "date": "2025-04-10T11:10:18Z",
+            "extra": {}
+        },
+        {
+            "id": "c891aeba-c3d5-27eb-b2d0-97932432e989",
+            "subject": "Handover from ES to NOC",
+            "body": "Please instruct the region to flash the CFast card\nI checked remotely via SSH the Hawkbit.conf file and the AWS certificate and everything seems correct.\nFrom Remote Frontend, the charger seems stuck in Hello/Hallo screen\nPlease inform also the region and End Customer that this is a Out of warranty case. 1 hour of support provided by ES\nConfig files attached here",
+            "date": "2025-04-14T11:49:26Z",
+            "extra": {}
+        }
+    ]
+}

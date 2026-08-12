@@ -1,0 +1,115 @@
+{
+    "incident_id": "4efbc9f9-5743-ef11-a316-000d3a687981",
+    "ticket_number": "0369106",
+    "title": "ID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15",
+    "created_on": "2024-07-16T09:44:30Z",
+    "last_activity": "2025-12-16T14:07:24Z",
+    "age": "8565",
+    "description": "Reported behaviour/issue:\nConverter Error 15\nRoot cause:\nModule Lockout DueTo Overvoltage\nSolution:\nVisual inspection of output cables. Remove and reinsert the output cables. Not possible to check output voltage as it's very dangerous\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "2NCBkI",
+    "stage": null,
+    "serial_number": "MP / R5 170001937",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "dce081f9-5743-ef11-a316-6045bdde23a6",
+            "subject": "Webform_incident_SiCharge D_16-07-2024_SN: 170001937",
+            "body": "Dear Lorenz Wojtowski,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001937\nThank you\neMobility Technical Support Team\nSehr geehrte/r Lorenz Wojtowski,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001937\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-07-16T09:44:22Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2bbb4b6a-5843-ef11-a316-6045bde003e0",
+            "subject": "A new case manager was assigned to 0369106 CRM:00225070521",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0369106 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4efbc9f9-5743-ef11-a316-000d3a687981",
+            "date": "2024-07-16T09:47:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78f26ab1-5843-ef11-a316-000d3ab06f45",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 5 minutes and 3 seconds.",
+            "date": "2024-07-16T09:49:33Z",
+            "extra": {}
+        },
+        {
+            "id": "90f26ab1-5843-ef11-a316-000d3ab06f45",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 3 seconds.",
+            "date": "2024-07-16T09:49:36Z",
+            "extra": {}
+        },
+        {
+            "id": "9651c3fa-5843-ef11-a316-000d3ab06f45",
+            "subject": "ID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15 CRM:00315001594",
+            "body": "Hello Lorenz﻿, good morning. I hope you are doing well.﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170001937\nChargerID/Serial No.\n:\n2NCBkI\nProblem Description\n: PowerConverter E:15 →\nModule Lockout DueTo Overvoltage\nTroubleshooting\n:\nL2: I can access the charger remotely and perform a converter grouping and see the behaviour the converter. For that I need your permission to do the grouping as the charger will be unavailable for a few minutes.\nI checked AWS and this is the first and only time this happened.\nFor future reference, your ticket number is\n0369106\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-16T09:51:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "954f1b1c-6043-ef11-a316-000d3ab06f45",
+            "subject": "ID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15 CRM:00315001594",
+            "body": "Hi Lorenz,\nI took the initiative since there was no one charging and performed the converter grouping.\nAs we can see, the converter now doesn't perform the fastshutdown check, previously we could see it since the charger was online and the fastshutdown is only performed at the start up.\nAs you can see from the very pixelated photo, the Conv[4] didn't get any DC_Output_Voltage as we usually see from any other converter during grouping.\nFrom my perspective it can only be 3 things:\nOutput cables\nConverter is faulty\nMy recommendation of actions is the following:\nTake a spare converter to site\nPerform a visual inspection of output cables\nRemove them and reinsert them if possible\nIf this fixes the problem, good\nOtherwise, please swap this converter with the neighbour converter and see if the error is still persisting in the same converter which is the following SN:\n2102312VGQKXN9001090SA002200000205FW:DC116PF116H100\nIf the problem persists in the same converter then we have a faulty converter and needs replacement\nIf the problem is now on the other converter then we should have a wiring issue somewhere between the output cables\nAs you already scheduled, Thursday I support you remotely.\nThank you and see you on Thursday.\nBest regards,\nFrancisco",
+            "date": "2024-07-16T10:42:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "306e89d5-0248-ef11-bfe2-0022489961b0",
+            "subject": "ID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15 CRM:00315001594",
+            "body": "Hi Lorenz, good morning. I hope you are doing well and had a nice weekend.\nAfter last week's site visit, we were able to check the Output cables of the converter.\nWe unplugged and replug them again. There were no visible signs of damage, it's impossible to measure the output while powered on as it is very dangerous.\nAfter the inspection, the converter is working again.\nIf I have your permission I will close the ticket.\nThank you and have a nice week!\nBest regards,\nFrancisco",
+            "date": "2024-07-22T08:17:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb86bc65-0348-ef11-bfe2-0022489961b0",
+            "subject": "RE: ID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15 CRM:00315001594",
+            "body": "Hello Francisco,\nYou may close the ticket.\nThanks and kind regards,\nLorenz",
+            "date": "2024-07-22T08:21:34Z",
+            "extra": {
+                "sender": "lorenz.wojtowski@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d8ffa01f-0448-ef11-bfe2-0022489961b0",
+            "subject": "Ticket 0369106 has been closed. Are you satisfied with our provided solution? CRM:00315001605",
+            "body": "Dear  Lorenz\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0369106\nwith the title:\nID0369106-DC/Si-D/BE[170001937] - PowerConverter E:15\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-22T08:26:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3315286f-0448-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 5 days, 22 hours, 39 minutes and 26 seconds.",
+            "date": "2024-07-22T08:29:02Z",
+            "extra": {}
+        }
+    ]
+}

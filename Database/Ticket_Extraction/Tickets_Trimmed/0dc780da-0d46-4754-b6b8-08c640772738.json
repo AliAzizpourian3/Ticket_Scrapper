@@ -1,0 +1,107 @@
+{
+    "incident_id": "0dc780da-0d46-4754-b6b8-08c640772738",
+    "ticket_number": "0441617",
+    "title": "ID0441617-DC/Si-D/FI-[MP / P8 170000829]-Vantaanportti Q2303 QA9-10 contactor pair fails.",
+    "created_on": "2025-08-04T06:09:31Z",
+    "last_activity": "2025-08-15T12:58:49Z",
+    "age": "16249",
+    "description": "Reported behavior/issue: QA9-10 contactor pair fails often - Q2303. TB13 converter missing and dispenser roll cross ends q-feedback done.\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "hE5gvw",
+    "stage": null,
+    "serial_number": "MP / P8 170000829",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "ef16da9f-f970-f011-b4cb-7c1e52206585",
+            "subject": "A new case manager was assigned to 0441617 CRM:00225237709",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0441617 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0dc780da-0d46-4754-b6b8-08c640772738",
+            "date": "2025-08-04T06:09:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8721ccc2-ac08-24ec-9ad5-4033e434b080",
+            "subject": null,
+            "body": "",
+            "date": "2025-08-04T06:10:22Z",
+            "extra": {}
+        },
+        {
+            "id": "54a8c4f8-199b-7c95-9366-749a2bb372d6",
+            "subject": "AWS query",
+            "body": "fields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/PLC-Error-Flag/\nand\n@message\nlike\n/true/\nand\n@message\nlike\n/DC_Co/\nand\n@message\nlike\n/coontactor stuck at ON feedback/\nor\n@message\nlike\n/SMC have feedback faults/\n|\nparse\n@message\n'_* '\nas\ncoil\n|\nparse\n@message\n'DC* :'\nas\noutlet\n|\nfilter\n@logStream\nlike\n/hE5gvw/\n|\nstats\ncount\n(*)\nas\nCount\nby\noutlet,coil,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-08-04T06:10:34Z",
+            "extra": {}
+        },
+        {
+            "id": "6c240cfd-f970-f011-b4cc-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0441617 CRM:00225237711",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0441617 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0dc780da-0d46-4754-b6b8-08c640772738",
+            "date": "2025-08-04T06:12:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "898d8c5a-fa70-f011-b4cb-7c1e52768c07",
+            "subject": "ID0441617-DC/Si-D/FI-[MP / P8 170000829]-Vantaanportti Q2303 QA9-10 contactor pair fails. CRM:02888000171",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nVantaa - Vantaanportti\nChargerID/Serial No.\n:\nhE5gvw\nProblem Description\n:\nVantaanportti Q2303 QA9-10 contactor pair fails.\nFor future reference, your case number is\n0441617\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-04T06:15:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "277c9580-c2ed-47f0-b148-bbe44b733a3b",
+            "subject": "Error Flags and Logs",
+            "body": "",
+            "date": "2025-08-04T06:22:03Z",
+            "extra": {}
+        },
+        {
+            "id": "0f4f4832-1071-f011-b4cb-7c1e5236e32d",
+            "subject": "A new case manager was assigned to 0441617 CRM:00225237841",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0441617 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0dc780da-0d46-4754-b6b8-08c640772738",
+            "date": "2025-08-04T08:51:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f03e3212-c871-f011-b4cc-7c1e52faf3c6",
+            "subject": "RE: ID0441617-DC/Si-D/FI-[MP / P8 170000829]-QA9-10 contactor pair fails. CRM:02888000171",
+            "body": "Hello Markus,\nWe’re facing a Switching Matrix Error on the QA9-10 contactor of the charger Please follow the steps below:\nCheck contactor for damage or loose wiring.\nReview error logs\nMeasure coil voltage – replace if faulty.\nVerify switching matrix config and control signals.\nReplace contactor if needed and retest system.\nMLFB NO-\n8EM5903-0AA00-7AA8 -QA9, -QA10, ... -QA24 Contactor DC 2P 500A 1200VDC.\nAdditionally there is error of missing  converter in DC3,\nkindly find below attached steps and knowledge article.\nTroubleshooting Steps:\nCheck for any loose connections to all the power converters.\nUse a multimeter to verify the input to the power converter is within the permissible range.\nIdentify the missing converter by their serial numbers and verify if they are powered on.\nIf a converter is missing or not powering on, swap it with a known working one and check if the replaced converter powers on.\nExamine the power converter display for any errors or if it shows any light.\nIf all the above steps have been performed and the power converter still does not power on, please proceed with replacing it.Kindly follow the KA if needed.\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_HW_Power Converter_Missing converters - Dynamics 365\nMLFB No.\n8EM5903-0AA01-0AA2 -TB1, -TB2, ... -TB15 Power Converter AC/DC 20kW\nI am writing to formally inform that we are moving case 0441617 ﻿from the\nTechnical Support\nto the\neMobility RC-\nFI\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYES\nOnsite Troubleshooting\nYES\nEnd Customer Communication\nYES\nSpare Part Ordering\nYES\nPerformance monitoring by RC\nYES\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFI\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Ankita Khobare\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-05T06:47:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c713d38c-b138-15a7-a005-d9256967f72f",
+            "subject": "Repair report",
+            "body": "",
+            "date": "2025-08-13T06:29:54Z",
+            "extra": {}
+        },
+        {
+            "id": "c0eb5113-496c-b845-85a8-92a3bfe18980",
+            "subject": "RMA",
+            "body": "",
+            "date": "2025-08-15T12:55:29Z",
+            "extra": {}
+        }
+    ]
+}

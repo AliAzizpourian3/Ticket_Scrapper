@@ -1,0 +1,130 @@
+{
+    "incident_id": "2a6c0855-5fa6-ef11-b8e8-0022489fb3e7",
+    "ticket_number": "0390634",
+    "title": "ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable",
+    "created_on": "2024-11-19T10:16:31Z",
+    "last_activity": "2025-07-17T13:38:36Z",
+    "age": "29063",
+    "description": "Reported behaviour/issue: outlet1 is alternating between available and not available\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: Siemens employee\nWarranty Status: Under warranty",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "1CMGsC",
+    "stage": null,
+    "serial_number": "MP / S7 170003841",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "0c8c5a4f-5fa6-ef11-b8e9-000d3a67d7cb",
+            "subject": "Webform_incident_SiCharge D_19-11-2024_SN: MP / S7 170003841",
+            "body": "Dear Jessica MINA,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S7 170003841\nThank you\neMobility Technical Support Team\nSehr geehrte/r Jessica MINA,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S7 170003841\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-11-19T10:16:26Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fa3b9ce0-64a6-ef11-b8e8-7c1e52374bc5",
+            "subject": "A new case manager was assigned to 0390634 CRM:00225126245",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0390634 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2a6c0855-5fa6-ef11-b8e8-0022489fb3e7",
+            "date": "2024-11-19T10:56:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31a35e51-68a6-ef11-b8e8-7c1e5277c5b3",
+            "subject": "ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hello Jessica,\nThank you for reaching out to eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S7 170003841\nChargerID/Serial No.\n:\n1CMGsC\nProblem Description\n: Outlet1 toggling between available & unavailable\nTroubleshooting\n: I have searched the logs of 18th Nov, we see the error being triggered.\nAs I can see the error is not generated today.\nI will asked for remote access to the charger to find if we have connection to KF11 since it's outlet 1 that is not working properly.\nIt's possible that a connection is loose, but before we arrange a site visit, I will provide you feedback when I have a clear answer.\nFor future reference, your ticket number is\n0390634\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-19T11:20:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8f5dfa60-33a7-ef11-b8e9-000d3ab4d5d3",
+            "subject": "RE: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hello Jessica,\nHope you are doing well.\nCould you please confirm whether the outlet is switching between available and unavailable, or if the OCPP connection is disconnecting?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-20T11:34:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8019e2bb-f5fe-5229-b08d-59e12e89278b",
+            "subject": "Note to L2",
+            "body": "Logs attached.\n2024-11-19T18:50:17.863790+00:00 sicharge-cp [local0:info] sicharge-cp-backend/aea4193aa213[677]: OCPP: Send command: StatusNotification (147f9484-f2fb-4f01-8d4b-d100086660da) - {\"\nconnectorId\":2,\n\"errorCode\":\"NoError\",\"status\":\"Available\"}\n2024-11-19T18:50:16.866619+00:00 sicharge-cp [local0:info] sicharge-cp-backend/aea4193aa213[677]: OCPP: Send command: StatusNotification (1fd198f6-8df6-4316-959e-726801f04452) - {\"\nconnectorId\":2\n,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}\n2024-11-20T03:54:43.319594+00:00 sicharge-cp [local0:info] sicharge-cp-backend/aea4193aa213[677]: OCPP: Send command: StatusNotification (a2e5a9c7-5ce7-4cc9-909c-9a5614eb51da) - {\"\nconnectorId\":1\n,\"errorCode\":\"NoError\",\"status\":\"Available\"}\n2024-11-20T03:54:41.321551+00:00 sicharge-cp [local0:info] sicharge-cp-backend/aea4193aa213[677]: OCPP: Send command: StatusNotification (b3cbfa0a-48f5-40b4-a1d3-4930ede3e0f4) - {\"\nconnectorId\":1\n,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"}",
+            "date": "2024-11-20T16:46:21Z",
+            "extra": {}
+        },
+        {
+            "id": "7428b369-22a8-ef11-b8e8-0022489bd0ce",
+            "subject": "RE: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hello Jessica,\nHope you are doing well. We haven't heard back from you on ticket# 0390634 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-21T16:05:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "993287af-22a8-ef11-b8e8-0022489a5457",
+            "subject": "Re: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hi\nPlease check the logs\nBest regards\nJessica\nDe:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnviado:\nThursday, November 21, 2024 5:06:28 PM\nPara:\nMINA, JESSICA (RC-FR SI E EXE) <jessica.mina@siemens.com>\nAsunto:\nRE: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295\nHello Jessica,\nHope you are doing well. We haven't heard back from you on ticket# 0390634 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-21T16:07:29Z",
+            "extra": {
+                "sender": "jessica.mina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9bb21a3e-8dab-ef11-b8e8-000d3a691687",
+            "subject": "Re: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hello Jessica,\nThanks for the response.\nWe checked the logs and found that the PLC is not reachable to SECC. Additionally, we found the following error in the logs, indicating that the issue may be with EcoG (KF12).\n2024-11-19T04:49:53.897632+00:00 sicharge-cp [local0:err] sicharge-cp-backend/aea4193aa213[677]: PLC-Error-Flag 'SECC_DC1_MB_Problem_KF12' changed to true - (loss of communication DC1 and SECC)\nCheck if the communication is established correctly and the SECC is correctly working.\nOn-Site:\nCheck if the Ethernet cable is properly attached to the switch. It come from +F03-KF12 (J10) output through WD5 cable and it reaches the +F03-XF1:P5\nIf we cannot check the connectivity, we can test replacing the Ethernet cable.\nIf it doesn't work then try replacing the KF12 and see if it works.\nCheck if the 24V are being applied correctly to KF12 coming from the +F03-XD3:18C to the VDC input of the KF12\nIf there are no 24V being applied to KF12, please check if the XD3 connector is correctly fitted and there are no loose connections\nOtherwise please check if FC15 is tripped and having 24V output.\nIf you need any further assistance, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2024-11-26T00:27:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "10fccb87-4aac-ef11-b8e8-000d3ab9a120",
+            "subject": "Re: ID0390634-DC/Si-D/FR-[MP / S7 170003841] Outlet1 toggling between available & unavailable CRM:00921001295",
+            "body": "Hello Jessica,\nI am writing to formally inform that we are moving case 0390634 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-26T23:02:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "88998ac5-9bac-ef11-b8e8-7c1e52762e1c",
+            "subject": "A new case manager was assigned to 0390634 CRM:00225130294",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0390634 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=2a6c0855-5fa6-ef11-b8e8-0022489fb3e7",
+            "date": "2024-11-27T08:44:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bfda7a07-6a59-4414-8955-4fe09077112e",
+            "subject": "Note to RC-FR",
+            "body": "Due to inauguration of the charger next week we will update the ecoG Friday 06/12/2024",
+            "date": "2024-11-29T14:40:08Z",
+            "extra": {}
+        }
+    ]
+}

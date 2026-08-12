@@ -1,0 +1,127 @@
+{
+    "incident_id": "8affb951-ce1a-f011-998a-7c1e5236e32d",
+    "ticket_number": "0419340",
+    "title": "ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue",
+    "created_on": "2025-04-16T14:23:14Z",
+    "last_activity": "2025-05-22T12:01:31Z",
+    "age": "6744",
+    "description": "Reported behaviour/issue:  One of our customer encounter an issue on this charger: 2025-03-11T17:56:15.069502+00:00 sicharge-cp [local0:info] ecog-secc-adapter/df9832825e89[733]: {\"type\":\"alert\",\"timestamp\":1741715774956,\"chargerId\":\"secc2300- 01143\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\": {\"src\":\"stack\",\"code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\"}} His Badge was: FR-F3U-R-UGJE4HMX-4 Could you investigate please ? Is it a communication problem with EV or charger ?\nSolution: N/A\nyyyy-mm-dd: 2025-03-11",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "V3noQJ",
+    "stage": null,
+    "serial_number": "MP / P9 170000893",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "0f7e774e-ce1a-f011-998a-6045bde12d6b",
+            "subject": "Webform_incident_SiCharge D_16-04-2025_SN: V3noQJ",
+            "body": "Dear bonhomme,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nV3noQJ\nThank you\neMobility Technical Support Team\nSehr geehrte/r bonhomme,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nV3noQJ\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-16T14:23:10Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9e9d7d1-da1a-f011-9989-6045bde0cc45",
+            "subject": "ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:02681000082",
+            "body": "Dear Bastien Bonhomme,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000893\nCharger ID/Serial No.\n:\nV3noQJ\nProblem Description\n: customer encounter an issue on this charger: 2025-03-11T17:56:15.069502+00:00 sicharge-cp [local0:info] ecog-secc-adapter/df9832825e89[733]: {\"type\":\"alert\",\"timestamp\":1741715774956,\"chargerId\":\"secc2300- 01143\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\": {\"src\":\"stack\",\"code\":67,\"msg\":\"ERR_EV_DROPPED, vehicle ended with unexpected pilot state B\"}} His Badge was: FR-F3U-R-UGJE4HMX-4\nFor future reference, your case number is\n0419340\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-16T15:52:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "052a11d5-5b1b-f011-9989-6045bde0265d",
+            "subject": "ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Dear Bastien,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000893\nChargerID/Serial No.\n:\nV3noQJ\nProblem Description\n: Vehicle dropped the sessions with the ERR67\nTroubleshooting\n:\nThe ERR67 means that while we were in Charging Phase (PilotState C), the EV suddenly sent a PilotState B (Preparing). I can see that in this date there were 3 different sessions with the (most likely) same EV since they belong to the same manufacturer.\n1st session: EVMAC\":\"00.7d.fa.08.7d.ad\"\n2nd session: \"EVMAC\":\"00.7d.fa.08.01.a2\"\n3rd session: \"EVMAC\":\"00.7d.fa.07.b6.82\"\nYou can use this website to check what is the manufacturer: https://www.macvendors.com/\nAs you can see, they used the same brand everytime. This makes me believe there might be some incompatibility from their side with our charger since this error is very rare. Usually this is error is only seen in heavy duty trucks that have a auxiliary system capable of introducing interference in the PilotState.\nIf these EVs are not heavy duty trucks, then I can only mention that the EV itself is dropping the session without going through the correct phases.\nPlease let me know your thought and questions. If I answered to your needs let me know if I can close the ticket.\nFor future reference, your case number is\n0419340\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-17T07:16:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73f890a1-351c-f011-998a-7c1e523508ba",
+            "subject": "RE: ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Hello,\nDo you have a list with this error code between EV and EVSE please ?\nThank you\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-18T09:15:13Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "26d434e8-3a1c-f011-9989-7c1e5236eee4",
+            "subject": "RE: ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Hello,\nAs sent earlier it was the\nerror 67\nfound while we were in Charging Phase (PilotState C), the EV suddenly sent a PilotState B (Preparing). I can see that in this date there were 3 different sessions with the (most likely) same EV since they belong to the same manufacturer.\nDid we understand and address the issue right, if not please elaborate.\nif your query is answered please confirm to close the ticket.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-18T09:53:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d779312-3c1c-f011-998a-7c1e52faf3c6",
+            "subject": "RE: ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Yes i understand but do you have the list for other error like error 68, 69, 70 …\nThank you\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-18T10:01:29Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "60d172bf-621e-f011-9989-7c1e52361e39",
+            "subject": "RE: ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Hello,\nWe do have a internal documentation for the errors although we aren't authorized to share it, you shall look into the ocpp error codes or create a case to us for assistance.\nI hope the query is resolved, we shall hence close the case.\nWith best regards,\neMobility Tech Support Team - Vaishnavy Gurav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-21T03:43:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "22467d0b-7c1e-f011-9989-7c1e52350ea5",
+            "subject": "Ticket 0419340 has been closed. Are you satisfied with our provided solution? CRM:01282000946",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0419340\nwith the title:\nID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavy Gurav\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-21T06:44:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c6ec409-471f-f011-998a-7c1e5236cda4",
+            "subject": "RE: ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue CRM:00315002579",
+            "body": "Hello,\nOk, you can close.\nThank you\nBest regards\nBastien BONHOMME\nResponsable adjoint de supervision\nMobilités Electriques - Vianeo\nbastien.bonhomme\n@engie.com\n+33 7 88 93 37 37",
+            "date": "2025-04-22T06:57:24Z",
+            "extra": {
+                "sender": "bastien.bonhomme@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9479d0d-471f-f011-998a-000d3ab07fc1",
+            "subject": "Email sent to a closed case 'ID0419340-DC/Si-D/FR-[MP / P9 170000893]Charger issue (0419340)' CRM:00225189227",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0419340\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-04-22T06:57:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

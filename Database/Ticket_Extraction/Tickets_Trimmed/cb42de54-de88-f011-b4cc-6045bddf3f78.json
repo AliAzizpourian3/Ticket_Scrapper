@@ -1,0 +1,94 @@
+{
+    "incident_id": "cb42de54-de88-f011-b4cc-6045bddf3f78",
+    "ticket_number": "0447746",
+    "title": "ID0447746-DC/Si-D/AT-[Y2 / S8 313835473001]Technical Query",
+    "created_on": "2025-09-03T15:54:56Z",
+    "last_activity": "2026-04-28T15:28:27Z",
+    "age": "2553",
+    "description": "Reported behaviour/issue: Questions Modbus:\n1. Do we need the heartbeat function to be active to use the\nfallback value?\n2. Why does the error flag show DC3 and 4 as active when we only\nhave two outlets?\nSolution: N/A\nyyyy-mm-dd: 2025-09-03",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "KfGO66",
+    "stage": null,
+    "serial_number": "Y2 / S8 313835473001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "2f07b74d-de88-f011-b4cc-6045bddf3f78",
+            "subject": "Webform_incident_SiCharge D_03-09-2025_SN: Y2 / S8 313835473001",
+            "body": "Dear Nenad Nikolic,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / S8 313835473001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Nenad Nikolic,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / S8 313835473001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-03T15:54:49Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4a3a154c-e188-f011-b4cc-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0447746 CRM:00225251878",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0447746 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=cb42de54-de88-f011-b4cc-6045bddf3f78",
+            "date": "2025-09-03T16:16:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bc1ddc17-e388-f011-b4cc-7c1e52350ea5",
+            "subject": "ID0447746-DC/Si-D/AT-[Y2 / S8 313835473001]Technical Query CRM:02681000753",
+            "body": "Dear\nNenad Nikolic\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / S8 313835473001\nCharger ID/Serial No.\n:\nKfGO66\nProblem Description\n: Technical Query\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0447746\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nJagmeet Singh\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-03T16:29:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5b3f163-6789-f011-b4cc-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0447746 CRM:00225252221",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0447746 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=cb42de54-de88-f011-b4cc-6045bddf3f78",
+            "date": "2025-09-04T08:16:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a66f9182-8f89-f011-b4cc-6045bdde4786",
+            "subject": "ID0447746-DC/Si-D/AT-[Y2 / S8 313835473001]Technical Query CRM:02681000753",
+            "body": "Hello Nenad, good afternoon. I hope you are doing well.\nRegarding your questions about the ELMS.\nHeartbeat and Fallback\nAlthough the Heartbeat is only optional, it's highly recommended to be used since the communication interface relies on TCP protocol which attempts automatic re-connection and is slow to report communication loss. With the heartbeat you have fast and reliable communication loss monitoring. So the final answer is, no you do not need the heartbeat to have the fallback to work, even though it's recommended.\nDC3 and DC4 error\nIs it possible that the ELMS is monitoring one of the following registers?\nPlease let me know your feedback.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-04T13:03:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "09ae0b2a-418a-f011-b4cb-6045bddf319c",
+            "subject": "ID0447746-DC/Si-D/AT-[Y2 / S8 313835473001]Technical Query CRM:02681000753",
+            "body": "Hello Nenad,\nSince I've answered your questions, I will proceed to close the ticket.\nI send in attachment the ELMS manual.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-09-05T10:14:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b69b27d-418a-f011-b4cb-7ced8d752791",
+            "subject": "Ticket 0447746 has been closed. Are you satisfied with our provided solution? CRM:00225252873",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0447746\nwith the title:\nID0447746-DC/Si-D/AT-[Y2 / S8 313835473001]Technical Query\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-05T10:17:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

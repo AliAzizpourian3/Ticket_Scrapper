@@ -1,0 +1,89 @@
+{
+    "incident_id": "0c8b844b-3203-f011-bae3-7c1e523508ba",
+    "ticket_number": "0413177",
+    "title": "ID0413177-DC/Si-D/IT-[MP / R9 170002562] Issue with Meter values",
+    "created_on": "2025-03-17T13:18:28Z",
+    "last_activity": "2025-04-10T09:40:10Z",
+    "age": "34341",
+    "description": "Reported behaviour/issue: After the updating of the FW, we having problems with the Initial Meter values. According to the customer request has to be settled for each start of each charging session equal to o (zero). For the time being is starting from the last values meter recorded.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "1jxU6Y",
+    "stage": null,
+    "serial_number": "MP / R9 170002562",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "8b87b446-3203-f011-bae3-6045bde0265d",
+            "subject": "Webform_incident_SiCharge D_17-03-2025_SN: 170002562",
+            "body": "Dear Luca Rizzi,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002562\nThank you\neMobility Technical Support Team\nSehr geehrte/r Luca Rizzi,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002562\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-17T13:18:20Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7e31693e-3603-f011-bae3-7c1e52350ea5",
+            "subject": "ID0413177-DC/Si-D/IT-[MP / R9 170002562] Issue with Meter values CRM:02678000008",
+            "body": "Dear Luca Rizzi,\nThank you for reaching\nout\nto eMobility Support. My name is\nAniket\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002562\nProblem Description\n: After the updating of the FW, we having problems with the Initial Meter values. According to the customer request has to be settled for each start of each charging session equal to o (zero). For the time being is starting from the last values meter recorded.\nFor future reference, your case number is\n0413177\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAniket Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T13:46:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e1c43416-75bc-c255-9043-9e463238d480",
+            "subject": "Analysis",
+            "body": "FW was updated to v6.1.3 on 13/03/2025.\nChecked logs for both Connectors.\nLogs before 13 Mar:\n2025-03-01T13:58:19.511Z\n2025-03-01T13:58:18.976273+00:00 sicharge-cp [local0:info] sicharge-cp-backend/a62cc7c08f90[733]: OCPP: Send command: StopTransaction (0331c167-3077-4641-bd4d-175a1251504a) - {\"meterStop\":22999,\"timestamp\":\"2025-03-01T13:58:18.959Z\",\"transactionData\":[{\"timestamp\":\"2025-03-01T13:58:18.959Z\",\"sampledValue\":[{\"value\":\"95\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"22999\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"transactionId\":475617529}\n2025-03-06T17:27:22.854Z\n2025-03-06T17:27:22.118626+00:00 sicharge-cp [local0:info] sicharge-cp-backend/a62cc7c08f90[733]: OCPP: Send command: StartTransaction (1f75a0bc-c6bc-4a20-a0bd-572db85bb2de) - {\"connectorId\":1,\"idTag\":\"IT-SRGCNYVNLEZV-X\",\"meterStart\":0,\"timestamp\":\"2025-03-06T17:27:22.110Z\"}\nLogs after 13 Mar:\n2025-03-15T03:31:55.821Z\n2025-03-15T03:31:55.308208+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]: OCPP: Send command: StopTransaction (232d3947-898b-4428-8528-573ac2ab87b1) - {\"meterStop\":47376,\"timestamp\":\"2025-03-15T03:31:55.290Z\",\"transactionData\":[{\"timestamp\":\"2025-03-15T03:31:55.291Z\",\"sampledValue\":[{\"value\":\"85\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\"},{\"value\":\"47376\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"}]}],\"reason\":\"Remote\",\"transactionId\":475618424}\n2025-03-16T22:44:17.252Z\n2025-03-16T22:44:16.340727+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]: OCPP: Send command: StartTransaction (cea584bf-27b9-4636-a4f1-6594c8bc3025) - {\"connectorId\":1,\"idTag\":\"DE*DCS*00GV0N*2\",\"meterStart\":47376,\"timestamp\":\"2025-03-16T22:44:16.333Z\"}",
+            "date": "2025-03-17T16:43:10Z",
+            "extra": {}
+        },
+        {
+            "id": "e074205e-5a1e-f2f2-b3ab-8db0676fe7e2",
+            "subject": null,
+            "body": "Attached Meter values after FW updated to v6.1.3",
+            "date": "2025-03-17T17:06:05Z",
+            "extra": {}
+        },
+        {
+            "id": "4225aa5b-fe03-f011-bae3-6045bde0265d",
+            "subject": "RE: ID0413177-DC/Si-D/IT-[MP / R9 170002562] Issue with Meter values CRM:02678000008",
+            "body": "Hello Luca,\nGreetings of the day!\nWe have analyzed the issue:\nPlease note -\nT\nhis is an implemented error correction in v6.1.3. There is a virtual meter introduced for Energy.Active.Import.Interval. That behaves like a physical meter which increases the meter continuously. The difference between MeterStop and MeterStart is still valid in each transaction.\n2025-03-17 13:31:42.562,\"2025-03-17T13:31:40.905629+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]:\nOCPP: Send command: StopTransaction (da309632-1862-4132-90ca-bb8a6e8e15e7) -\n{\"\"\nmeterStop\"\":76262\n,\"\"timestamp\"\":\"\"2025-03-17T13:31:40.892Z\"\",\n\"\"transactionData\"\":[{\"\"timestamp\"\":\"\"2025-03-17T13:31:40.892Z\"\",\n\"\"sampledValue\"\":[{\"\"value\"\":\"\"59\"\",\"\"location\"\":\"\"EV\"\",\"\"unit\"\":\"\"Percent\"\",\n\"\"measurand\"\":\"\"SoC\"\"},\n{\"\"value\"\":\"\"16177\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"Wh\"\",\"\"context\"\":\"\"Transaction.End\"\",\"\"measurand\"\":\"\"Energy.Active.Import.Interval\"\"}]}],\n\"\"transactionId\"\":475618600}\",1jxU6Y\n2025-03-17 13:17:36.503,\"2025-03-17T13:17:36.025401+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]:\nOCPP: Send command: StartTransaction (c2569560-ded8-468a-b16a-e72426e7a950) - {\"\"connectorId\"\":2,\"\"idTag\"\":\"\"EV-000000222\"\",\"\"\nmeterStart\"\":60085\n,\"\"timestamp\"\":\"\"2025-03-17T13:17:36.019Z\"\"}\",1jxU6Y\n76262 - 60085 = 16177\nTherefore, at the start of next charging session, meterStart is not starting with zero. It is starting from the last values meter recorded.\nDo let us know, if you have any queries?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T13:39:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6aa32e83-0204-f011-bae3-6045bde0265d",
+            "subject": "Re: ID0413177-DC/Si-D/IT-[MP / R9 170002562] Issue with Meter values CRM:02678000008",
+            "body": "Dear Vaishnavi,\nI thank you very much for your email. What I need is to start every transaction with zero.\nSo I'm asking you how I have to change this parameter in charger model on the back end.\nWhich is the right string???\nbr\nLuca\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\nmartedì, marzo 18, 2025 2:56 PM\nA:\nRIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nOggetto:\nRE: ID0413177-DC/Si-D/IT-[MP / R9 170002562] Issue with Meter values CRM:02678000008\nHello Luca,\nGreetings of the day!\nWe have analyzed the issue:\nPlease note -\nThis is an implemented error correction in v6.1.3. There is a virtual meter introduced for Energy.Active.Import.Interval. That behaves like a physical meter which increases the meter continuously. The difference between MeterStop and MeterStart is still valid in each transaction.\n2025-03-17 13:31:42.562,\"2025-03-17T13:31:40.905629+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]:\nOCPP: Send command: StopTransaction (da309632-1862-4132-90ca-bb8a6e8e15e7) -\n{\"\"\nmeterStop\"\":76262\n,\"\"timestamp\"\":\"\"2025-03-17T13:31:40.892Z\"\",\n\"\"transactionData\"\":[{\"\"timestamp\"\":\"\"2025-03-17T13:31:40.892Z\"\",\n\"\"sampledValue\"\":[{\"\"value\"\":\"\"59\"\",\"\"location\"\":\"\"EV\"\",\"\"unit\"\":\"\"Percent\"\",\n\"\"measurand\"\":\"\"SoC\"\"},\n{\"\"value\"\":\"\"16177\"\",\"\"location\"\":\"\"Outlet\"\",\"\"unit\"\":\"\"Wh\"\",\"\"context\"\":\"\"Transaction.End\"\",\"\"measurand\"\":\"\"Energy.Active.Import.Interval\"\"}]}],\n\"\"transactionId\"\":475618600}\",1jxU6Y\n2025-03-17 13:17:36.503,\"2025-03-17T13:17:36.025401+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/83432f17093f[640]:\nOCPP: Send command: StartTransaction (c2569560-ded8-468a-b16a-e72426e7a950) - {\"\"connectorId\"\":2,\"\"idTag\"\":\"\"EV-000000222\"\",\"\"\nmeterStart\"\":60085\n,\"\"timestamp\"\":\"\"2025-03-17T13:17:36.019Z\"\"}\",1jxU6Y\n76262 - 60085 = 16177\nTherefore, at the start of next charging session, meterStart is not starting with zero. It is starting from the last values meter recorded.\nDo let us know, if you have any queries?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T14:08:58Z",
+            "extra": {
+                "sender": "luca.rizzi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5af39fef-b424-69c8-828d-b3a7b32e4bd0",
+            "subject": "L2-->L3  (Creating child case)",
+            "body": "Suspected Root Cause :\nIssue with meter values after updating to v6.1.3.\nProblem Description :\nOCPP parameter is Energy.Active.Import.Interval.\nStill meter is taking last reading as the start value for next charging session after the FW update to v6.1.3\nAction Performed (L2) :\nLog analysis. (Attached in timeline)\nCharger SW Version:\nV6.1.3\nReason for Handover (L3) :\nDiscussed with Ingo. Th\nis is an implemented error correction in 6.1.3. there is a virtual meter introduced for Energy.Active.Import.Interval. That behaves like a physical meter which increases the meter continuously.\nFault history: NA\nLog analysis with timestamp :\nAttached in timeline.\nAction Required\nAction by HQ :\nThis error correction is not mentioned in release notes of FW v6.1.3. Need to confirm with R&D.\nAttachment\n: refer attched logs",
+            "date": "2025-03-18T14:11:11Z",
+            "extra": {}
+        },
+        {
+            "id": "198ff9a6-7b04-befb-8bbd-0a1237168d24",
+            "subject": "Communication from RC",
+            "body": "Luca wants to downgrade this charger to older FW",
+            "date": "2025-03-18T15:43:46Z",
+            "extra": {}
+        }
+    ]
+}

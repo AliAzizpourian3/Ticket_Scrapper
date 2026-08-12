@@ -1,0 +1,75 @@
+{
+    "incident_id": "3fd27d8d-b3ee-ef11-a81c-6045bddfc085",
+    "ticket_number": "0407864",
+    "title": "ID0407864-DC/Si-D/UK[170002824] - DC1_CableTempSensor_XD100",
+    "created_on": "2025-02-19T11:20:42Z",
+    "last_activity": "2025-03-26T23:40:36Z",
+    "age": "21634",
+    "description": "Reported behaviour/issue:\nAll outlets out of order due to DC1_CableTempSensor_XD100 and DC2_CableTempSensor_XD101\nRoot cause:\nWater ingress\nSolution:\nReplace CCS cables\nNote to QM in timeline",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "OWlkix",
+    "stage": null,
+    "serial_number": "MP / R0 170002824",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "26dfe057-84b8-c22b-836f-ccdefb80b726",
+            "subject": "Notes from RC",
+            "body": "Level 2 support required\nas CCS1 and CCS2 both displaying faults but no fault can be found or seen within the controller.\nserial number\nMP / R0 170002824\nv3.0.2-0-g8a70905+SF-RETOPICS\nBut I already sent a firmware update - v4 firmware\nSoftware Version: v3.0.2-0-g8a70905+SF-RETOPICS\nOCPP Backend Connection: Yes",
+            "date": "2025-02-19T13:51:54Z",
+            "extra": {}
+        },
+        {
+            "id": "8f0e11dc-48f0-ef11-9341-7c1e52884a89",
+            "subject": "0407864 - ID0407864-DC/Si-D/UK[170002824] - DC1_CableTempSensor_XD100 CRM:00315002386",
+            "body": "Hi guys, good morning.\nLeaving here a summary of the steps taken so far, starting from the beginning:\nXD10\nMeasured between 7B and 5B = 1.1kOhm → okay\nMeasured between 8D and 6D = 0.937kOhm → not okay\nBetween 7A and B5 = 2.5kOhm → not okay\nBetween 8C and 6D = 1.6kOhm → not okay\nWe plugged out the XD10 terminal block and put back in → now we measured 1kOhm from the PT1 and PT2 to 5B and 7B → 1kOhm = okay\nXD16\n1.039kOhm both between 7B-5B and 8D-6D\nPT2 to 6D = 80kOhm → not okay\nPT1 to 5B → not ok\nWe bypassed the XD16 directly to KF14 and we measured 1kOhm with 5B and 8D to PT1 and PT2 respectively.\nCharger is still with error of temperature sensor, the readings are not reaching the KF14 correctly.\nAs you showed me your video, it seems that the plug is coming to green and white in seconds, so it must be a bad contact or the KF14 is faulty. Only the Minus part of the temperature sensors are not reading correctly, so from PT2 to 8D of XD10 and XD16.\nNext steps is to order a new KF14 and go to site to retest this scenario.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-21T11:42:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0a42f87-68fa-ef11-bae2-6045bddcc0ac",
+            "subject": "A new case manager was assigned to 0407864 CRM:00225173885",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0407864 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=3fd27d8d-b3ee-ef11-a81c-6045bddfc085",
+            "date": "2025-03-06T08:53:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e33f8ca-68fa-ef11-bae2-000d3ad97a58",
+            "subject": "0407864 - ID0407864-DC/Si-D/UK[170002824] - DC1_CableTempSensor_XD100 CRM:00315002386",
+            "body": "Hello guys, good morning.\nAfter yesterday's site visit we tested replacing the KF14 and the error was still persisting.\nAs such we measured the PT1/PT2 from both plugs and the results were:\nDC2\nPT1 = 104 Ohm\nXD16:7B to XD16:5B = 104 Ohm\nPT2 = 324 Ohm\nXD16:8D to XD16:6D = 325 Ohm\nDC1\nXD10:7B to XD10:5B = 233 Ohm\nXD10:8D to XD10:6D = 31.6 Ohm\nJust to be 100% sure there is nothing wrong with the Multimeter we measured the BT3 and got 1.1kOhm → no problem with multimeter\nAfter this we tried measuring XD16 and XD10:\nXD16:7B to XD16:5B = 1.063 kOhm\nXD16:8D to XD16:6D = 172 Ohm\nXD10:7B to XD10:5B = 237.5 Ohm\nXD10:8D to XD10:6D = 33.8 Ohm\nIf the problem was not with the KF14 and the small parts (connectors/wirings → very unlikely), we checked for any signs of issues with the plug itself and we found that the cable was filled with water. (Video attached)\nAs such, we proceed to replace 1 CCS to confirm if this was indeed the problem and after the replacement it was working properly. Then we replaced the 2nd plug and it was also working.\nAlso, we left the new KF14 on the charger as you deemed unworthy to put back the old one. To be clear, since we didn't test the old one, it won't be elegible for warranty for now. Nevertheless you get to keep a spare KF14 in case you face any other issue related to the StateMonitor.\nThank you very much for your time and dedication. Always a pleasure working with you guys. See you on the next ticket.\nBest regards,\nFrancisco",
+            "date": "2025-03-06T08:55:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "338ba827-3f8f-ca31-917c-4e9032a1be4a",
+            "subject": "NOTE TO QM",
+            "body": "CP-to-ground Voltage reading (standby): N/A\nSigns of corrosion (external): No\nEvidence of water ingress: Yes, both cables\nPicture of the Cable label: in attachment\nOutlet Number and position: DC1 and DC2\nCable lifetime from commissioning until replacement:\nIs it the original cable or has a cable replacement already taken place?: Original\nDate of CMS installation (if applicable): N/A\nDates of last OK and first NOK session:\nDC1: 3 OK sessions in 24/10/2024 1pm-2pm\nDC1 and DC2: 2 OK sessions in 05/03/2025 5:57pm - 6:19pm\nEV Manufacturers of last OK and first NOK session (or MAC) - if available: N/A\nMaximum charging current value (\nEVSE_NowCur[A]\n) of last 2 weeks before NOK session\n24/10/2024 → NowCur = 21 A\nCharger was limited to 18kW due to testing scenario\nHow many Charging phases P01-P05 encountered on NOK session (Abortion on P06): None\nSum of Energy transfer for the affected outlet in last 12 Months: No LEMs → very small amount of Energy, only 5 sessions since last 12 months and the first 3 only had 21 A current for few minutes.\nCount of charging sessions for the affected outlet in the last 12 Months:\nDC1: 4 sessions\nDC2: 1 session",
+            "date": "2025-03-06T11:09:50Z",
+            "extra": {}
+        },
+        {
+            "id": "df2d88d1-81fa-ef11-bae2-7c1e5236cda4",
+            "subject": "Ticket 0407864 has been closed. Are you satisfied with our provided solution? CRM:00315002416",
+            "body": "Dear Brett and Jason,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0407864\nwith the title:\nID0407864-DC/Si-D/UK[170002824] - DC1_CableTempSensor_XD100\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-06T11:54:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

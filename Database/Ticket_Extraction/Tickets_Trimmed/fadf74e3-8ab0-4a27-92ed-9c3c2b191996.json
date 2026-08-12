@@ -1,0 +1,35 @@
+{
+    "incident_id": "fadf74e3-8ab0-4a27-92ed-9c3c2b191996",
+    "ticket_number": "0409227",
+    "title": "ID0409200-DC/Si-D/AT-[Y2 / S9 313875948001] Required config files (C1)",
+    "created_on": "2025-02-25T16:31:14Z",
+    "last_activity": "2025-03-17T15:24:51Z",
+    "age": "21354",
+    "description": "Reported behavior/issue:\nRequired config files\nopen case:\nYes, but different issues\nRoot cause:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "8qgG8Z",
+    "stage": null,
+    "serial_number": "Y2 / S9 313875948001,Y2 / S9 313875948001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "2645e888-55eb-672f-8a43-45d82e87d491",
+            "subject": "Note to ES Team",
+            "body": "Suspected Root Cause:\nIt seems that FW 4.0.11 was downloaded again.\nProblem Description:\nThe charger is already on FW v4.0.11, but the same version is showing as downloaded (the charger is under strict SLA).\nAction Performed (L2):\nProvided the configuration file for FW v4.0.11 as RC wants to keep an additional CFast card ready for emergency purposes, as the charger has strict SLA.\nCharger SW Version:\nv4.0.11\nReason for Handover (L3):\nThe downloaded FW version 4.0.11 needs to be deleted so that the RC can update the charger to the latest version in the future, if needed.\nAction Required by HQ:\nPlease delete the downloaded FW in the second partition. The 4.0.11 was also downloaded here by mistake.",
+            "date": "2025-02-25T16:46:59Z",
+            "extra": {}
+        },
+        {
+            "id": "05888a49-3df4-ef11-be1f-7c1e5236e32d",
+            "subject": "0409227 - ID0409200-DC/Si-D/AT-[Y2 / S9 313875948001] Required config files (C1) CRM:00314000145",
+            "body": "Good afternoon Daniel,\nI am reaching out regarding child case\nID0409227\n, for charger\n8qgG8Z.\nAttached to this email you can find the config files of the charger, as per request.\nI deleted remotely via ssh the rolled out FW v4.0.11, and I already rolled out FW v5.0.23, as you can see from SCB:\nThe charger is already set up also for a subsequent update to v6.0.3, which I can launch remotely via ssh, once the update to v5..0.23 is completed.\nPlease let me know if you want to proceed with the update to v5.0.23 by coordinating with the End customer, and when I can then complete the roll-out of v6.0.3 as well.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-02-26T12:29:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

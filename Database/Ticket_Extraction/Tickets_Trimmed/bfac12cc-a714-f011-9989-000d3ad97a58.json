@@ -1,0 +1,90 @@
+{
+    "incident_id": "bfac12cc-a714-f011-9989-000d3ad97a58",
+    "ticket_number": "0417697",
+    "title": "ID0417697-DC/Si-D/AR-[MP / P9 170000997] OCPP Metervalue Issue",
+    "created_on": "2025-04-08T18:32:19Z",
+    "last_activity": "2025-05-22T13:27:00Z",
+    "age": "63054",
+    "description": "Reported behaviour/issue: load testing issue\nSolution: N/A\nyyyy-mm-dd: N/A",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "qbJssk",
+    "stage": null,
+    "serial_number": "MP / P9 170000997",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "3b4808c4-a714-f011-998a-6045bdde4786",
+            "subject": "Métricas YPF ",
+            "body": "Dear Support,\nWe have a client who is having problems with the information they receive in their backend (OCPP)\nI attach a reference serial number: 170000997\nHowever, they have the problem with all the Sicharge D they have purchased.\nThe client tells us the following:\nHacemos las pruebas de carga en las estaciones de ECHEVERRÍA, pero la estación\nno envió la métrica que necesitamos para actualizar el gráfico de carga\n.\nMeterValues sin la metrica\nEnergy.Active.Import.Register:\n[2,\"0eb71555-7727-4df8-8a32-acd9320fc31d\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":1563905055,\"meterValue\":[{\"timestamp\":\"2025-04-03T13:38:55.283Z\",\"sampledValue\":[]}]}]\nMeterValues sin la metrica\nEnergy.Active.Import.Register:\n[2,\"f5f3630b-76c8-45a9-9692-f412c9234fde\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":243883359,\"meterValue\":[{\"timestamp\":\"2025-04-03T13:43:21.140Z\",\"sampledValue\":[]}]}]\nMeterValues sin la metrica Energy.Active.Import.Register:\n[2,\"027c1dbd-adf1-49c4-8c1e-998a99348dc1\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":942004262,\"meterValue\":[{\"timestamp\":\"2025-04-03T13:49:39.712Z\",\"sampledValue\":[]}]}]\nConfiguré otras métricas para el cargador enviar:\nEnergy.Active.Import.Register\n,Current.Offered,Power.Offered,Temperature,Voltage\nCargador envia otras metricas, pero noe envia la que necesitamos (\nEnergy.Active.Import.Register):\n[2,\"1b47fbcd-55c4-4ffc-b742-2848333f6bfb\",\"MeterValues\",{\"connectorId\":1,\"transactionId\":797580563,\"meterValue\":[{\"timestamp\":\"2025-04-03T13:54:05.628Z\",\"sampledValue\":[{\"value\":\"120\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Offered\"},{\"value\":\"46000\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Offered\"},{\"value\":\"386\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\"}]}]}]\nSaludos\n/\nBest Regards /\nMit freundlichen Grüßen\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\nRuta 8 (Centro de Integración y Servicios)\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\nFacundo Javier Pacheco\nSiemens\nField Service Technician\nParque Industrial Newton\nCalle Cuba 4870, Ruta 8 - Km. 18\n(B1653KBM) Villa Ballester\nProvincia de Buenos Aires - Argentina\nTel.: +5411 3989 0010  /  0810 999 7436\nCel.: +54 911 3440 5648\ne-mail:\nfacundo.pacheco@siemens.com\nWeb:\nwww.siemens.com.ar\nNota importante:\neste e-mail y sus archivos adjuntos contienen información de propiedad corporativa. Si lo ha recibido por error, por favor avísenos inmediatamente respondiendo por e-mail y elimine el correo recibido y sus archivos adjuntos de su sistema.\nMuchas gracias.\nImportant notice:\nThis e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-04-08T18:32:09Z",
+            "extra": {
+                "sender": "facundo.pacheco@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7df7d84a-ab14-f011-998a-6045bddf319c",
+            "subject": "ID0417697-DC/Si-D/AR-[MP / P9 170000997]load testing issue CRM:02681000062",
+            "body": "Dear Pacheco, Facundo Javier (RC-AR SI EA AR SO),\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000997\nCharger ID/Serial No.\n:\nqbJssk\nProblem Description\n: Cx tried to\ndo load testing at ECHEVERRÍA stations, but the station did not send the metrics.\nFor future reference, your case number is\n0417697\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T18:57:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "504fd9da-d811-6fc9-a80c-c6bf36f2f2d7",
+            "subject": "Notes for Semih",
+            "body": "Charger is out of warranty\nBE is not integrated\nCan be an issue of incorrect measurand configuration\nCharger is without LEM, hence Energy.Active.Import.Interval Cannot be sent\nAnalyse the OCPP configuration file via SSH, provide your technical analysis and suggest to order BE test.",
+            "date": "2025-04-09T06:02:30Z",
+            "extra": {}
+        },
+        {
+            "id": "0c9692aa-ec19-f011-9989-7c1e5236eee4",
+            "subject": "RE: Métricas YPF CRM:00439000771",
+            "body": "Hello Javier,\nSo from what I understand in your email, you can't use the Energy.Active.Import.Register because you don't have a DC-meter device. To use this, you must update to the new FW 6.1.3, which supports it via the 'Digital Meter'\nEnergy.Active.Import.Register Numerical value read from the \"active electrical energy\" (Wh or kWh) register of the\n(most authoritative) electrical meter\nmeasuring energy imported (from the grid supply).\nSo you can use the calculated Values from the controller e.g.\nEnergy.Active.Import.Interval\nAbsolute amount of \"active electrical energy\" (Wh or kWh) imported (from the grid supply) during an associated time \"interval\", specified by a Metervalues ReadingContext, and applicable interval duration configuration values (in seconds) for \"ClockAlignedDataInterval\" and \"MeterValueSampleInterval\".\nOr we update the charger to the above mentioned FW and the customer can then use the\nVirtual Meter\nto get the Energy.Active.Import.Register.\nThank you.\nWith best regards,\nSemih Sentürk\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-15T11:28:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "77f9e983-1524-f011-8c4d-6045bde0265d",
+            "subject": "RE: Métricas YPF CRM:00439000771",
+            "body": "Hello Javier\nPlease let me know if the issue is still occurring. Your feedback is important for us to assist you further.\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-28T09:45:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b68068e-7929-f011-8c4d-7c1e52768c07",
+            "subject": "RE: Métricas YPF CRM:00439000771",
+            "body": "Hello\nAs there has been no response or further queries from you, I would like to inform you that this case will be closed if we do not hear from you soon.\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T06:24:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8aaa710f-1037-f011-8c4d-7c1e523508ba",
+            "subject": "ID0417697-DC/Si-D/AR-[MP / P9 170000997] OCPP Metervalue Issue CRM:00439000780",
+            "body": "Dear Pacheco, Facundo Javier (RC-AR SI EA AR SO),\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0417697, the case is now closed.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-22T13:24:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

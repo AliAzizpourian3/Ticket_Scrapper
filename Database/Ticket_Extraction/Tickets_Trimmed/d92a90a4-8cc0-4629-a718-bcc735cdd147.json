@@ -1,0 +1,126 @@
+{
+    "incident_id": "d92a90a4-8cc0-4629-a718-bcc735cdd147",
+    "ticket_number": "0369455",
+    "title": "ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions",
+    "created_on": "2024-07-17T13:05:54Z",
+    "last_activity": "2025-12-16T14:07:20Z",
+    "age": "6930",
+    "description": "Location\n: KSM Laitila\nNOTE TO QM: The latest email from RC will have all the information necessary. There is already filled almost all the information.\nReported behavior/issue:\nThere are numerous 0-sessions on DC3 / left dispenser cable. Cable damaged? Earlier ticket that has been closed\nID0366443.\nRoot cause:\nSolution:",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "KbapdX",
+    "stage": null,
+    "serial_number": "MP / R6 170002028",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "b64b7356-3d44-ef11-a316-000d3ab06f45",
+            "subject": "A new case manager was assigned to 0369455 CRM:00225071269",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0369455 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d92a90a4-8cc0-4629-a718-bcc735cdd147",
+            "date": "2024-07-17T13:06:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "67e3f77c-4644-ef11-a316-000d3a687981",
+            "subject": "A new case manager was assigned to 0369455 CRM:00225071333",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0369455 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d92a90a4-8cc0-4629-a718-bcc735cdd147",
+            "date": "2024-07-17T14:11:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "83f7a0c0-ca45-ef11-a316-002248a2f864",
+            "subject": "ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions CRM:00315001603",
+            "body": "Hello Markus﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002028\nChargerID/Serial No.\n:\nKbapdX\nProblem Description\n: DC3 outlet was not able to charge multiple times.\nTroubleshooting\n:\nAfter yesterday's site visit, we performed some tests to understand what was wrong with with Plug DC3.\nWe started by measuring CP and PP:\nCP voltage was around 12V when measured without EV plugged in. → Correct\nThen we measured the PP for continuity and voltage in XD211\nWhen we had the EV connected in DC3 we only measured 0V in PP\nComparing with DC4, when we measured it was ~3.7V\nThe continuity could't be measured in the PP\nIn the logs, we can see that the session doesn't even go to P00_Unknown → P01_Authentication and stops with the error:\nPLC link\nno\nSLAC or PLC link\nAs such, it must be a broken contact inside the cable and needs replacement.\nAfter we perform the replacement the DC3 is able to charge again.\nProvide me the service report and help me fill in this information\nDefective part name/MLFB: CCS2 cable\nComponent serial number:\nLogs with marked error (CSV format preferred):\n[DCC] DC3: PilotState \"A\" --> \"B2\" → session start\nActive error flags before replacement: No error flags\nDevice-specific error code\n(if applicable):\nPLC link\nno\nSLAC or PLC link\nOutcome of wiring checkup: CP voltage is 12V but PP is 0V with EV plugged in:\nFor DC3\nFor DC4\nAs per the standards:\nCommissioning checklist\nCommissioning date\nField service report:\nDate of failure\n(see side note):\nCP-to-ground Voltage reading (standby): 12V but PP was 0V with no continuity between XD230 and XD211:9B\nSigns of corrosion (external): No\nEvidence of water ingress: No\nOutlet Number and position (e.g. DC1 - Left): DC3\nCable lifetime from commissioning until replacement:\nFor future reference, your ticket number is\n0369455\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-19T12:31:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b5d4f78-0348-ef11-bfe2-0022489961b0",
+            "subject": "ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions CRM:00315001603",
+            "body": "Hi Markus, good morning.\nI will proceed to close the ticket. When you have the information that I requested below please just reply to this email.\nThank you very much!\nBest regards,\nFrancisco",
+            "date": "2024-07-22T08:22:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "790b504e-0548-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 4 days, 19 hours, 29 minutes and 25 seconds.",
+            "date": "2024-07-22T08:35:20Z",
+            "extra": {}
+        },
+        {
+            "id": "136a4854-0548-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-07-22T08:35:23Z",
+            "extra": {}
+        },
+        {
+            "id": "52d66160-0548-ef11-bfe2-0022489961b0",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 18 seconds.",
+            "date": "2024-07-22T08:35:42Z",
+            "extra": {}
+        },
+        {
+            "id": "bed81fe2-854a-ef11-bfe3-000d3aba9474",
+            "subject": "RE: ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions CRM:00315001603",
+            "body": "Hi,\nThere was no serial number in the cable.\nMarkus",
+            "date": "2024-07-25T13:00:40Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "51ba2eeb-854a-ef11-bfe2-002248a2f864",
+            "subject": "Email sent to a closed case 'ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions (0369455)' CRM:00225074844",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0369455\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-07-25T13:00:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0bc59497-c84a-ef11-bfe2-0022489a2913",
+            "subject": "RE: ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions CRM:00315001603",
+            "body": "Commissioning checklist: no\nCommissioning date: no\nField service report: Added\nDate of failure\n(see side note):\nCP-to-ground Voltage reading (standby): 12V but PP was 0V with no continuity between XD230 and XD211:9B\nSigns of corrosion (external): No\nEvidence of water ingress: No\nOutlet Number and position (e.g. DC1 - Left): DC3\nCable lifetime from commissioning until replacement:",
+            "date": "2024-07-25T20:58:11Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "68c8ec9e-c84a-ef11-bfe2-000d3adef1bc",
+            "subject": "Email sent to a closed case 'ID0369455-DC/Si-D/FI-[MP / R6 170002028] - DC3 or dispenser left cable numerous 0 sessions (0369455)' CRM:00225075079",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0369455\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-07-25T20:58:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

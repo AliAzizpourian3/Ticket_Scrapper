@@ -1,0 +1,194 @@
+{
+    "incident_id": "b8310a31-0e5f-ef11-bfe3-000d3aba9474",
+    "ticket_number": "0375175",
+    "title": "ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1",
+    "created_on": "2024-08-20T16:06:51Z",
+    "last_activity": "2025-12-16T14:06:30Z",
+    "age": "8477",
+    "description": "Reported behavior/issue:\nMissing Power Converter on DC1\nRoot cause:\nSolution:\nR\nemote troubleshooting\nOn DAMEX Sanctioned List: NO\nWarranty Status:\n11/08/2024",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "N6gt6z",
+    "stage": null,
+    "serial_number": "MP / P8 170000836",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9cb9c22b-0e5f-ef11-bfe3-000d3ab1a5a5",
+            "subject": "Webform_incident_SiCharge D_20-08-2024_SN: P8 170000836\tN6gt6z",
+            "body": "Dear Yacine Kedia,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nP8 170000836 N6gt6z\nThank you\neMobility Technical Support Team\nSehr geehrte/r Yacine Kedia,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nP8 170000836 N6gt6z\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-20T16:06:43Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "07f72ef1-1f5f-ef11-bfe3-002248a2d091",
+            "subject": "A new case manager was assigned to 0375175 CRM:00225085345",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0375175 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b8310a31-0e5f-ef11-bfe3-000d3aba9474",
+            "date": "2024-08-20T18:13:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "057adf50-2b5f-ef11-bfe3-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 hours, 28 minutes and 27 seconds.",
+            "date": "2024-08-20T19:35:20Z",
+            "extra": {}
+        },
+        {
+            "id": "723c4d61-2b5f-ef11-bfe3-002248a2f864",
+            "subject": "0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello ﻿Yacine,﻿\nThank you for reaching out to eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170000836\nChargerID/Serial No.\n:\nN6gt6z\nProblem Description\n:\nMissing Power Converter on DC1\nFor future reference, your ticket number is\n0375175\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-20T19:35:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6ca9ef49-2c5f-ef11-bfe3-002248a2f864",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 6 minutes and 51 seconds.",
+            "date": "2024-08-20T19:42:10Z",
+            "extra": {}
+        },
+        {
+            "id": "4e3a959a-cb3b-29ab-90c1-3a03493c21ed",
+            "subject": "Analysis",
+            "body": "1.Charger power upgradation document is missing in SCB as per the customer configuration file it is 160 kw LF, but PLC Configuration is set to 300 kw low flex which is fine as charger is detecting all 15 converters.\n2. As it is HF there should not be any QA11/12, QA15/16, QA19/20, QA23/24\n3.Charger having fast shutdown error, as per log analysis QA11 QA12 showing abnormal operation state, which might be the root cause for missing converter.\n4. will reach out to RC to know if hardware changes are done and will also check by debug station via SSH access.",
+            "date": "2024-08-21T00:48:43Z",
+            "extra": {}
+        },
+        {
+            "id": "09ab334f-0460-ef11-bfe3-002248a44b33",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello Yacine,\nHope you are doing well.\nwe have done some analysis regarding the issue which you are facing, and we suspect that there might be some issue with the power converter.\nwe are forwarding the case to our regional service team for further onsite troubleshooting.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-21T21:28:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "969437d9-bad1-c6d6-8f57-5a291ddbe845",
+            "subject": "Notes to L2",
+            "body": "",
+            "date": "2024-08-22T18:21:36Z",
+            "extra": {}
+        },
+        {
+            "id": "8629f832-7a61-ef11-bfe3-0022489e9c81",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello Yacine,\nHope you are doing well.\nI would like to provide an update on the recent issues you have reported. We are coordinating with our regional service team to schedule a site visit for intervention. Your patience is greatly valued.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-23T18:05:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "062a3d49-7b61-ef11-bfe3-0022489e9c81",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello Team,\nGreetings of the day.\nReferring to the previous email, please be informed that we have identified some issues with the power converter. Therefore, we need to schedule a site visit to troubleshoot the problem. We will provide an update by next week, on or before the 27th of the month, regarding the preparations needed prior to the site visit.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-23T18:12:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f879198a-f062-ef11-bfe2-0022489d4af6",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello,\nThank you for letting me know, don’t hesitate to tell me when you have a date of intervention.\nThank you,\nBest Regards,\nYacine Kedia\nIngénieur Exploitation IRVE\nEngie Mobilités électriques – Vianeo\nyacine.kedia@engie.com\n+33 6 08 70 86 84\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming,\n69007, Lyon – France\nPensez à l'environnement avant d'imprimer ce message\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 23 août 2024 20:12\nÀ :\nKEDIA Yacine (ENGIE Mobilités Electriques) <yacine.kedia@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098\nHello Yacine, Hope you are doing well. I would like to provide an update on the recent issues you have reported. We are coordinating with our regional service team to schedule a site visit for intervention. Your patience is greatly valued. With\nHello Yacine,\nHope you are doing well.\nI would like to provide an update on the recent issues you have reported. We are coordinating with our regional service team to schedule a site visit for intervention. Your patience is greatly valued.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-25T14:44:33Z",
+            "extra": {
+                "sender": "yacine.kedia@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cabcb99e-9b63-ef11-bfe3-0022489a2913",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello Yacine,\nwe have resolved the issue with the charger through remote troubleshooting with our experts today. Please verify the resolution on your end and confirm if we can proceed with closing the ticket today?\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-26T11:09:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "80a61b0b-9c63-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 5 days, 15 hours, 30 minutes and 5 seconds.",
+            "date": "2024-08-26T11:12:15Z",
+            "extra": {}
+        },
+        {
+            "id": "db89ee20-a963-ef11-bfe2-000d3ab98db9",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello,\nYes, I see that there is no longer the problem because I don’t see any error flag on SCB\nThank you ! You can close the ticket; I will create another one if the problem comes back\nBest regards,\nYacine Kedia\nIngénieur Exploitation IRVE\nEngie Mobilités électriques – Vianeo\nyacine.kedia@engie.com\n+33 6 08 70 86 84\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming,\n69007, Lyon – France\nPensez à l'environnement avant d'imprimer ce message\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 26 août 2024 13:13\nÀ :\nKEDIA Yacine (ENGIE Mobilités Electriques) <yacine.kedia@engie.com>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098\nHello Yacine, we have resolved the issue with the charger through remote troubleshooting with our experts today. Please verify the resolution on your end and confirm if we can proceed with closing the ticket today? With best regards, eMobility\nHello Yacine,\nwe have resolved the issue with the charger through remote troubleshooting with our experts today. Please verify the resolution on your end and confirm if we can proceed with closing the ticket today?\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-26T12:45:58Z",
+            "extra": {
+                "sender": "yacine.kedia@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4ae87524-a963-ef11-bfe2-002248a01c9f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 hour, 33 minutes and 52 seconds.",
+            "date": "2024-08-26T12:46:07Z",
+            "extra": {}
+        },
+        {
+            "id": "6629b0b8-ac63-ef11-bfe2-002248a01c9f",
+            "subject": "RE: 0375175 - ID0375175-DC/Si-D/FR- [MP / P8 170000836]Missing Power Converter on DC1 CRM:02023000098",
+            "body": "Hello Yacine,\nSure, if you faced any issue again then kindly create a new ticket. Since your issue has been resolved, we will be proceeding with closing the service ticket# 0375175.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-08-26T13:11:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "15c42fe1-ad63-ef11-bfe2-002248a01c9f",
+            "subject": "Ticket 0375175 has been closed. Are you satisfied with our provided solution? CRM:02023000106",
+            "body": "Dear Yacine,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0375175 with\nthe title:\nID0375175-DC/Si-D/FR- [MP / P8 170000836] Missing Power Converter on DC1\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically, it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-26T13:19:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7ea68142-ae63-ef11-bfe2-002248a01c9f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 36 minutes and 31 seconds.",
+            "date": "2024-08-26T13:22:39Z",
+            "extra": {}
+        },
+        {
+            "id": "e09c975f-ae63-ef11-bfe2-002248a01c9f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 51 seconds.",
+            "date": "2024-08-26T13:23:30Z",
+            "extra": {}
+        }
+    ]
+}

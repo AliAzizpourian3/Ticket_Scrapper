@@ -1,0 +1,156 @@
+{
+    "incident_id": "fb288067-d27c-f011-b4cc-7c1e52768372",
+    "ticket_number": "0444657",
+    "title": "ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions",
+    "created_on": "2025-08-19T07:59:23Z",
+    "last_activity": "2025-09-02T10:44:34Z",
+    "age": "11511",
+    "description": "Reported behavior/issue:  Error during charging sessions\nSolution:\nFor the Payment Terminal error, this is because of the hotfix we've created in order to keep the CCV working. When we receive the Terminal communication timeout message, we restart the service and that's why you see that error in the backend.\nJust <1 min later the error is false when the service is back online.\nFor the Router1 loss, it was a one-time occurence since 4 weeks ago. It might've been a sudden communication drop.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "iHgqVF",
+    "stage": null,
+    "serial_number": "MP / PD 170001321,MP / PD 170001200",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1b491565-d27c-f011-b4cb-7c1e52fb99a0",
+            "subject": "Webform_incident_SiCharge D_19-08-2025_SN: 170001200 & 170001321",
+            "body": "Dear Chloë D'hose,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170001200 & 170001321\nThank you\neMobility Technical Support Team\nSehr geehrte/r Chloë D'hose,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170001200 & 170001321\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-08-19T07:59:18Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "04c35be2-df7c-f011-b4cb-7c1e52fb920b",
+            "subject": "A new case manager was assigned to 0444657 CRM:00225244838",
+            "body": "Tanya Meghani was assigned as new Case Manager for case 0444657 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fb288067-d27c-f011-b4cc-7c1e52768372",
+            "date": "2025-08-19T09:35:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "afa8729f-15f6-0eed-8482-6f6975bdf827",
+            "subject": null,
+            "body": "The previous ticket was already closed but the issue isn't resolved.\nSo please open a new ticket. My email with info will follow with all\nthe attachments.",
+            "date": "2025-08-19T09:41:00Z",
+            "extra": {}
+        },
+        {
+            "id": "2f8924a1-e07c-f011-b4cc-6045bdde4786",
+            "subject": "ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Dear Chloë D'hose (Support),\nThank you for reaching\nout\nto eMobility Support. My name is\nTanya\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PD 170001200\nChargerID/Serial No.\n:\niHgqVF\nProblem Description\n:\nError during charging sessions\nFor future reference, your case number is\n0444657\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-19T09:41:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "acbd5de3-ee7c-f011-b4cb-7c1e52fb99a0",
+            "subject": "RE: ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Dear Francisco\nWe still see that both chargers in Ciney aren’t working as they should.\nOn charger 170001200 we see errors occurring on both plugs:\nWith the following logs for both plugs:\n{\n\"ChargePointStatus\"\n:\n\"Available\"\n,\n\"ConnectivityStatus\"\n:\n\"Online\"\n,\n\"ErrorCode\"\n:\n\"NoError\"\n,\n\"UpdatedConnectorStatus\"\n:\n{\n\"ChargePointId\"\n:\n\"MA-197-01\"\n,\n\"ConnectorId\"\n:\n1\n,\n\"ErrorCode\"\n:\n\"OtherError\"\n,\n\"Status\"\n:\n\"Available\"\n,\n\"Timestamp\"\n:\n\"2025-08-19T01:00:59.7963707+00:00\"\n,\n\"VendorId\"\n:\n\"SICHARGE D\"\n,\n\"VendorErrorCode\"\n:\n\"PaymentTerminalUnreachable_PZx\"\n}\n}\nOn charger 170001321 we also see errors occurring on both plugs:\nLogs on plug one during a charging session:\n{\n\"ChargePointStatus\"\n:\n\"Available\"\n,\n\"ConnectivityStatus\"\n:\n\"Online\"\n,\n\"ErrorCode\"\n:\n\"OtherError\"\n,\n\"VendorId\"\n:\n\"SICHARGE D\"\n,\n\"VendorErrorCode\"\n:\n\"router1 connection loss\"\n,\n\"UpdatedEvseStatus\"\n:\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-1\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T13:27:38.1333987+00:00\"\n,\n\"Status\"\n:\n\"Charging\"\n,\n\"ConnectorStatuses\"\n:\n[\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-1\"\n,\n\"ConnectorId\"\n:\n1\n,\n\"ErrorCode\"\n:\n\"NoError\"\n,\n\"Status\"\n:\n\"Charging\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T13:27:38.1333987+00:00\"\n}\n]\n}\n,\n\"UpdatedConnectorStatus\"\n:\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-1\"\n,\n\"ConnectorId\"\n:\n1\n,\n\"ErrorCode\"\n:\n\"NoError\"\n,\n\"Status\"\n:\n\"Charging\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T13:27:38.1333987+00:00\"\n}\n}\nAfter two minutes the EV was “suspended” which isn’t possible. So the charging session is automatically being aborted.\nPlug two is in error since 18/08/2025 @ 06:18:13 according to our platform, Greenflux:\n{\n\"ChargePointStatus\"\n:\n\"Available\"\n,\n\"ConnectivityStatus\"\n:\n\"Online\"\n,\n\"ErrorCode\"\n:\n\"OtherError\"\n,\n\"VendorId\"\n:\n\"SICHARGE D\"\n,\n\"VendorErrorCode\"\n:\n\"router1 connection loss\"\n,\n\"UpdatedEvseStatus\"\n:\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-2\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T04:18:13.383036+00:00\"\n,\n\"Status\"\n:\n\"Available\"\n,\n\"ConnectorStatuses\"\n:\n[\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-2\"\n,\n\"ConnectorId\"\n:\n2\n,\n\"ErrorCode\"\n:\n\"NoError\"\n,\n\"Status\"\n:\n\"Available\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T04:18:13.383036+00:00\"\n}\n]\n}\n,\n\"UpdatedConnectorStatus\"\n:\n{\n\"ChargePointId\"\n:\n\"MA-197-02\"\n,\n\"EvseId\"\n:\n\"BE-SPK-EMA-197-02-2\"\n,\n\"ConnectorId\"\n:\n2\n,\n\"ErrorCode\"\n:\n\"NoError\"\n,\n\"Status\"\n:\n\"Available\"\n,\n\"Timestamp\"\n:\n\"2025-08-18T04:18:13.383036+00:00\"\n}\n}\nThis is one of our best stations so a solution would be very much appreciated!\nThank you.\nMet vriendelijke groeten | Cordialement | With kind regards,\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\ndinsdag 19 augustus 2025 11:42\nAan:\nSiemensticket <siemensticket@sparki.be>\nOnderwerp:\nID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328\nDear Chloë D'hose (Support),\nThank you for reaching out to eMobility Support. My name is Tanya, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / PD 170001200\nChargerID/Serial No.\n: iHgqVF\nProblem Description\n:\nError during charging sessions\nFor future reference, your case number is 0444657, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nTanya Meghani\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-19T11:23:13Z",
+            "extra": {
+                "sender": "siemensticket@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ba56a4b4-8781-f011-b4cb-002248a3916c",
+            "subject": "A new case manager was assigned to 0444657 CRM:00225247095",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0444657 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=fb288067-d27c-f011-b4cc-7c1e52768372",
+            "date": "2025-08-25T07:47:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24ee5c62-8f81-f011-b4cc-000d3adc93d1",
+            "subject": "ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Hello Chlöe, good morning.\nI hope you are doing well today.\nFor the Payment Terminal error, this is because of the hotfix we've created in order to keep the CCV working. When we receive the Terminal communication timeout message, we restart the service and that's why you see that error in the backend.\nJust <1 min later the error is false when the service is back online.\nFor the Router1 loss, it was a one-time occurence since 4 weeks ago. It might've been a sudden communication drop.\nPlease be aware that we should create tickets for the different issues. The router issue is only related to charger 1321.\nFrom my side, the CCV errors are like this for now until the development team finishes the solution.\nThe router issue, if it starts occuring more times, then we will send someone on-site to troubleshoot it.\nFor now, I believe all the answer were provided. Can you please let me know if you need anything else from our side?\nThanks a lot and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-08-25T08:42:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d95a08a-1a83-f011-b4cb-6045bddf319c",
+            "subject": "Ticket 0444657 has been closed. Are you satisfied with our provided solution? CRM:00225248389",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0444657\nwith the title:\nID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-08-27T07:50:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b3b206a5-e587-f011-b4cc-7c1e52fad806",
+            "subject": "RE: ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Dear Fransisco\nI can see that the following occurs in SCB on charger 1321:\nDue to this error CCV isn’t working. How is this possible with the hotfix?\nMet vriendelijke groeten | Cordialement | With kind regards,\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\nmaandag 25 augustus 2025 10:48\nAan:\nSiemensticket <siemensticket@sparki.be>\nOnderwerp:\nID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328\nHello Chlöe, good morning.\nI hope you are doing well today.\nFor the Payment Terminal error, this is because of the hotfix we've created in order to keep the CCV working. When we receive the Terminal communication timeout message, we restart the service and that's why you see that error in the backend.\nJust <1 min later the error is false when the service is back online.\nFor the Router1 loss, it was a one-time occurence since 4 weeks ago. It might've been a sudden communication drop.\nPlease be aware that we should create tickets for the different issues. The router issue is only related to charger 1321.\nFrom my side, the CCV errors are like this for now until the development team finishes the solution.\nThe router issue, if it starts occuring more times, then we will send someone on-site to troubleshoot it.\nFor now, I believe all the answer were provided. Can you please let me know if you need anything else from our side?\nThanks a lot and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-09-02T10:14:51Z",
+            "extra": {
+                "sender": "siemensticket@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ade8e024-e887-f011-b4cb-7c1e5236eee4",
+            "subject": "RE: ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Dear Francisco\nPlease ignore my last email, I just found out that the terminal is broken.\nThe charger was still under warranty when the case was made. Is it possible to schedule an intervention to replace the terminal please?\nTicket was made on 23/07/2025 and the warranty ended on 15/08/2025.\nHere you can find the conclusion of our tech that went on site:\nOn the MA-197-02, CCV still did not work after rebooting. The charger cannot connect to the terminal (“no terminal connected”).I was also unable to connect to the terminal using the TS3 software. The terminal produces a pulsating beep (as we also had in Aalst with the defective terminal there).\nMet vriendelijke groeten | Cordialement | With kind regards,\nVan:\nSiemensticket\nVerzonden:\ndinsdag 2 september 2025 12:14\nAan:\nemobility_support.si@siemens.com; Siemensticket <siemensticket@sparki.be>\nOnderwerp:\nRE: ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328\nDear Fransisco\nI can see that the following occurs in SCB on charger 1321:\nDue to this error CCV isn’t working. How is this possible with the hotfix?\nMet vriendelijke groeten | Cordialement | With kind regards,\nVan:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nVerzonden:\nmaandag 25 augustus 2025 10:48\nAan:\nSiemensticket <\nsiemensticket@sparki.be\n>\nOnderwerp:\nID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328\nHello Chlöe, good morning.\nI hope you are doing well today.\nFor the Payment Terminal error, this is because of the hotfix we've created in order to keep the CCV working. When we receive the Terminal communication timeout message, we restart the service and that's why you see that error in the backend.\nJust <1 min later the error is false when the service is back online.\nFor the Router1 loss, it was a one-time occurence since 4 weeks ago. It might've been a sudden communication drop.\nPlease be aware that we should create tickets for the different issues. The router issue is only related to charger 1321.\nFrom my side, the CCV errors are like this for now until the development team finishes the solution.\nThe router issue, if it starts occuring more times, then we will send someone on-site to troubleshoot it.\nFor now, I believe all the answer were provided. Can you please let me know if you need anything else from our side?\nThanks a lot and have a nice week ahead.\nBest regards,\nFrancisco",
+            "date": "2025-09-02T10:32:38Z",
+            "extra": {
+                "sender": "chloe@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c7e5e622-e887-f011-b4cb-7ced8d2bd52b",
+            "subject": "Email sent to a closed case 'ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions (0444657)' CRM:00225251074",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0444657\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-09-02T10:32:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9164b16a-e987-f011-b4cc-7c1e52350ea5",
+            "subject": "ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Hi Chlöe, good afternoon.\nYes, it's possible but unfortunately, I cannot reopen a ticket due to system constraints.\nAre you able to open a new ticket? Please mention these topics \"previous ticket ID0444657 was under investigation but the root cause was only found recently, after the ticket closure, which at that time had warranty\"\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-02T10:41:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1deaddcd-e987-f011-b4cc-6045bde0265d",
+            "subject": "Automatisch antwoord: ID0444657-DC/Si-D/BE-[MULTIPLE] Error during charging sessions CRM:02832000328",
+            "body": "Beste\nBedankt voor uw mail.\nIk ben momenteel afwezig zonder toegang tot mijn mails.\nVoor dringende zaken kan u de customer care bereiken op hello@sparki.be of +32 78 48 66 60.\nAlvast bedankt.",
+            "date": "2025-09-02T10:44:31Z",
+            "extra": {
+                "sender": "gerrit@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

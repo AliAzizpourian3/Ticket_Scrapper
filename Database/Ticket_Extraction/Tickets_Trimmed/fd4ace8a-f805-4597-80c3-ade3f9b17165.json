@@ -1,0 +1,46 @@
+{
+    "incident_id": "fd4ace8a-f805-4597-80c3-ade3f9b17165",
+    "ticket_number": "0416631",
+    "title": "ID0416631-DC/Si-D/DK[3AHqra] - CableCheck failure due to voltage not raising",
+    "created_on": "2025-04-03T05:46:02Z",
+    "last_activity": "2025-04-03T15:38:58Z",
+    "age": "592",
+    "description": "Reported behaviour/issue:\nCableCheck failure due to voltage not raising to 200V/500V → due to XD442 had loose connection\nSolution:\nReconnect the cables from XD442",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "3AHqra",
+    "stage": null,
+    "serial_number": "MP / S3 170003353",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "de146a23-8bf6-6aff-96d7-c3ddf66ca6c2",
+            "subject": "We have disabled plugs, not to confuse customers that the charger is working.",
+            "body": "Just a note. We have disabled the two plugs so not to confuse the charging customers. Because it will show “Green” leds if we enable them.\nYou can of course activate the plugs if needed.",
+            "date": "2025-04-03T06:04:08Z",
+            "extra": {}
+        },
+        {
+            "id": "ca7a8852-8e10-f011-9989-7c1e5276b0e4",
+            "subject": "ID0416631-DC/Si-D/DK[3AHqra] - CableCheck failure due to voltage not raising CRM:00315002510",
+            "body": "Dear Rasmus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003353\nChargerID/Serial No.\n:\n3AHqra\nProblem Description\n: Charger is not able to build up voltage on DC1 and DC2\nTroubleshooting\n:\nWe made several tests and via DebugStation we could see that there was no voltage on the DC contactors but there was voltage on the converter but swinging (very strange?)\nAs such I believed it to be either the IMD or the Voltage transducer that was not reading the voltage correctly.\nWe checked the connector on the left side of the charger which is the responsible for the busbar measurements and plug out-plug in.\nWe also checked the QA44 and QA45 if they light up when starting the session → OK\nChecked the XD12.1 responsible for transmitting the 24V to the DC contactors → OK\nThe problem then seems to come from after the QA44/45.\nWe checked in the backside the XD442 and found a loose connector → after putting the connections properly we were able to charge.\nWe found another problem with the modbus communication of the BC2 but after moving the cables it's operational again.\nPlease let me know if I can close the ticket.\nFor future reference, your case number is\n0416631\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-03T13:19:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8fe97091-a110-f011-9989-000d3a65f00b",
+            "subject": "Ticket 0416631 has been closed. Are you satisfied with our provided solution? CRM:00315002511",
+            "body": "Dear Rasmus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0416631\nwith the title:\nID0416631-DC/Si-D/DK[3AHqra] - CableCheck failure due to voltage not raising\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-03T15:37:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

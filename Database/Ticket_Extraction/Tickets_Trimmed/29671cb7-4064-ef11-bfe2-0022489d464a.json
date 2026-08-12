@@ -1,0 +1,162 @@
+{
+    "incident_id": "29671cb7-4064-ef11-bfe2-0022489d464a",
+    "ticket_number": "0376219",
+    "title": "ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4",
+    "created_on": "2024-08-27T06:51:00Z",
+    "last_activity": "2025-12-16T14:06:22Z",
+    "age": "18902",
+    "description": "Reported behaviour/issue:\nConverters are found (230V are supplied) but Fastshutdown is not possible\nRoot cause:\nKF214 is faulty → 12V coming from the output when it should only come when it's in Emergency\nSolution:\nReplace KF214\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "rhAYBP",
+    "stage": null,
+    "serial_number": "Y2 / RD 300000005007",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "e90289ac-4064-ef11-bfe3-000d3a687981",
+            "subject": "Webform_incident_SiCharge D_27-08-2024_SN: Y2 / RD 300000005007",
+            "body": "Dear Antoine BRUA,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / RD 300000005007\nThank you\neMobility Technical Support Team\nSehr geehrte/r Antoine BRUA,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / RD 300000005007\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-27T06:50:50Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "95395626-4264-ef11-bfe2-0022489f9aa3",
+            "subject": "A new case manager was assigned to 0376219 CRM:00225088019",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0376219 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=29671cb7-4064-ef11-bfe2-0022489d464a",
+            "date": "2024-08-27T07:01:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cc2d64b9-4264-ef11-bfe2-0022489d464a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 14 minutes and 28 seconds.",
+            "date": "2024-08-27T07:05:30Z",
+            "extra": {}
+        },
+        {
+            "id": "fdd67dbf-4264-ef11-bfe2-0022489d464a",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 5 seconds.",
+            "date": "2024-08-27T07:05:35Z",
+            "extra": {}
+        },
+        {
+            "id": "4c7f96e9-4264-ef11-bfe2-0022489d464a",
+            "subject": "ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4 CRM:00315001690",
+            "body": "Hello Antoine﻿,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / RD 300000005007\nChargerID/Serial No.\n:\nrhAYBP\nProblem Description\n: Converters in Group 3 and 4 are not able to perform fastshutdown due to possible contactor failure.\nTroubleshooting\n:\nAs we already discussed, we will check today on-site with the assistance of the technician to troubleshoot this issue.\nFor future reference, your ticket number is\n0376219\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-27T07:06:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b991545-5964-ef11-bfe2-002248a3a07b",
+            "subject": "ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4 CRM:00315001690",
+            "body": "Hello Antoine,\nAfter today's site visit with the assistance of the technician, we were able to find the root cause of the problem.\nHere is a short summary of the performed actions:\nAs we checked yesterday, the converter grouping was not passing in DC3 and DC4 after the closing of the QA11-12.\nAs such I thought that one of the contactors might not be working correctly.\nNot the case as we measured the continuity between A1 and A2 and we had continuity in both contactors.\nAs such, the next thought was, the converters were not powering on due to the fastshutdown signal being ON:\nIn XD39 we measured between 3B/3A and 1B/1A, to housing and had 12V (as it should).\nBut from the dispenser side, XD39 4D/4C and 2D/2C, we also had 12V, this is the indication that the StateMonitor is sending command to fastshutdown the converters in DC3 and DC4.\nWhen we removed the XD39:4C and XD39:2C, the converter grouping was possible and successful without the fastshutdown check (unsuccessful)\nWith the connections still removed, the measured directly on the output of the StateMonitor, CCS-A OUT (J1) SuC and CCS-A OUT (J1) SuO:\nAnd we found that there are 12V constantly toggled in the output of the StateMonitor\nWhat could be the reason is that the internal switch/contactor might be damaged or welded and as such it always have 12V.\nAs such please order and replace this StateMonitor KF214.\nI will send this ticket to the RC-FR queue please pick it up for replacement purposes. You can reach out to me for the meeting schedule in case you need further support.\nThank you for your help in translating and have a nice day :D\nBest regards,\nFrancisco",
+            "date": "2024-08-27T09:46:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "50f342ad-5e64-ef11-bfe2-000d3ab98db9",
+            "subject": "ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4 CRM:00315001690",
+            "body": "Hello Antoine,\nAfter today's site visit with the assistance of the technician, we were able to find the root cause of the problem.\nHere is a short summary of the performed actions:\nAs we checked yesterday, the converter grouping was not passing in DC3 and DC4 after the closing of the QA11-12.\nAs such I thought that one of the contactors might not be working correctly.\nNot the case as we measured the continuity between A1 and A2 and we had continuity in both contactors.\nAs such, the next thought was, the converters were not powering on due to the fastshutdown signal being ON:\nIn XD39 we measured between 3B/3A and 1B/1A, to housing and had 12V (as it should).\nBut from the dispenser side, XD39 4D/4C and 2D/2C, we also had 12V, this is the indication that the StateMonitor is sending command to fastshutdown the converters in DC3 and DC4.\nWhen we removed the XD39:4C and XD39:2C, the converter grouping was possible and successful without the fastshutdown check (unsuccessful)\nWith the connections still removed, the measured directly on the output of the StateMonitor, CCS-A OUT (J1) SuC and CCS-A OUT (J1) SuO:\nAnd we found that there are 12V constantly toggled in the output of the StateMonitor\nWhat could be the reason is that the internal switch/contactor might be damaged or welded and as such it always have 12V.\nAs such please order and replace this StateMonitor KF214.\nI will send this ticket to the RC-FR queue please pick it up for replacement purposes. You can reach out to me for the meeting schedule in case you need further support.\nThank you for your help in translating and have a nice day :D\nBest regards,\nFrancisco",
+            "date": "2024-08-27T10:25:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "64243a5c-6064-ef11-bfe2-0022489e442d",
+            "subject": "ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4 CRM:00315001691",
+            "body": "Hello  Antoine\nI am writing to formally inform that we are moving case 0376219 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-27T10:37:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2486751d-8264-ef11-bfe3-000d3a687981",
+            "subject": "A new case manager was assigned to 0376219 CRM:00225088379",
+            "body": "ANTOINE BRUA was assigned as new Case Manager for case 0376219 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=29671cb7-4064-ef11-bfe2-0022489d464a",
+            "date": "2024-08-27T14:39:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6595d00f-8a6e-ef11-a670-0022489d464a",
+            "subject": "A new case manager was assigned to 0376219 CRM:00225093511",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0376219 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=29671cb7-4064-ef11-bfe2-0022489d464a",
+            "date": "2024-09-09T09:01:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "976edd65-8d6e-ef11-a670-000d3ab7063f",
+            "subject": "Ticket 0376219 has been closed. Are you satisfied with our provided solution? CRM:00315001737",
+            "body": "Dear  Antoine and Sebastien,\nAfter last week's site visit we were able to bring the charger to work by replacing the KF214.\nPlease share with me the following information:\nDefective part name/MLFB: StateMonitor KF214\nComponent serial number:\nLogs with marked error (CSV format preferred):\nConverter cannot be turned on: Index[X]\nPLC-Error-Flag 'PowerConverters' changed to true - (Missing Converters in DC4,3)\nActive error flags before replacement: Above\nDevice-specific error code\n(if applicable): 12V coming from the following outputs when it should be 0V. The output should send the 12V only when in Emergency Mode and it was static 12V even when opening door:\nOutcome of wiring checkup: Check all wirings from main charger to dispenser. Always had 12V.\nCommissioning checklist\nCommissioning date\nField service report:\nDate of failure\n(see side note):\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0376219\nwith the title:\nID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-09-09T09:25:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "aad05362-916e-ef11-a670-000d3ab7063f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 13 days, 2 hours, 48 minutes and 10 seconds.",
+            "date": "2024-09-09T09:53:44Z",
+            "extra": {}
+        },
+        {
+            "id": "993b9512-d2f4-13b2-bfbd-7d92f437993a",
+            "subject": "NOTE TO QM:",
+            "body": "RC will reply with the rest of the information in an email:\nDefective part name/MLFB: StateMonitor KF214\nComponent serial number:\nLogs with marked error (CSV format preferred):\nConverter cannot be turned on: Index[X]\nPLC-Error-Flag 'PowerConverters' changed to true - (Missing Converters in DC4,3)\nActive error flags before replacement: Above\nDevice-specific error code\n(if applicable): 12V coming from the following outputs when it should be 0V. The output should send the 12V only when in Emergency Mode and it was static 12V even when opening door:\nOutcome of wiring checkup: Check all wirings from main charger to dispenser. Always had 12V.\nCommissioning checklist\nCommissioning date\nField service report:\nDate of failure\n(see side note):",
+            "date": "2024-09-09T10:17:52Z",
+            "extra": {}
+        },
+        {
+            "id": "f86c4aa9-9e6e-ef11-a670-002248a155a0",
+            "subject": "0376219 - ID0376219-DC/Si-D/FR[rhAYBP] - Missing converters in DC3/4 CRM:00568000096",
+            "body": "Hello,\nPlease find the Intervention report who close this ticket.\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2024-09-09T11:28:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f66c6733-b99c-411b-91d6-94dddcc3712d",
+            "subject": "NOTE TO QM in timeline (the rest is below)",
+            "body": "Device pingable y/n: Yes\nSECC dump view logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not possible to get, didn't have SSh access and customer needed to power down the charger since it was unusable\nSECC state logs\n(see \"EcoG Troubleshooting notes\" on the side of this page): Not possible to get, didn't have SSh access and customer needed to power down the charger since it was unusable",
+            "date": "2024-09-09T15:13:12Z",
+            "extra": {}
+        }
+    ]
+}

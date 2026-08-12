@@ -1,0 +1,132 @@
+{
+    "incident_id": "90edbdc6-265a-ef11-bfe3-0022489fc6bd",
+    "ticket_number": "0374211",
+    "title": "ID0374211-DC/Si-D/RS-[TLRXpf] connectivity problem",
+    "created_on": "2024-08-14T10:20:09Z",
+    "last_activity": "2026-02-16T17:03:25Z",
+    "age": "323",
+    "description": "Reported behaviour/issue:  SCB and OCPP Offline\nRoot cause:\ndisconnected the LAN connection\nSolution c\nhanged it to data SIM\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status: No Information Available",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "TLRXpf",
+    "stage": null,
+    "serial_number": null,
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "523e85c0-265a-ef11-bfe3-0022489fc6bd",
+            "subject": "TLRXpf connectivity problem",
+            "body": "Dear Support,\ncustomer has reported that the Sicharge D, TLRXpf is offline in their backend and I can confirm that it is offline in SCB as well.\nThere is power on site, there is power for the teltonika routers as well, charger is powered on.\nThere is internet via LAN, customer has confirmed that they have tested it.\nPlease check what can be the problem (if you can reach the charger via SSH) or suggest some troubleshooting steps to find the rootcause of this error.\nÜdvözlettel / With best regards,\nSzilard Negyesi\nSiemens Zrt.\nSI E\nGizella út 51-57.\n1143 Budapest\nmailto:\nszilard.negyesi@siemens.com\nwww.siemens.hu\nwww.siemens.com\nSiemens Zrt. cégjegyzékszám: 01-10-041548 (Fővárosi Törvényszék Cégbírósága)\nEz az e-mail (és minden melléklete) bizalmas, üzleti titkot és/vagy védett személyes adatokat tartalmaz. Ha ezt az e-mailt nem Önnek szánták (ill. tévedésből kapta meg), akkor kérjük, hogy haladéktalanul törölje, és értesítse a feladót. Az e-mail tartalmának jogosulatlan másolása vagy terjesztése szigorúan tilos.",
+            "date": "2024-08-14T10:20:02Z",
+            "extra": {
+                "sender": "szilard.negyesi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "771a29ec-265a-ef11-bfe2-0022489e9c81",
+            "subject": "A new case manager was assigned to 0374211 CRM:00225083047",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0374211 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90edbdc6-265a-ef11-bfe3-0022489fc6bd",
+            "date": "2024-08-14T10:21:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46ac90b1-2b5a-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 35 minutes and 18 seconds.",
+            "date": "2024-08-14T10:55:29Z",
+            "extra": {}
+        },
+        {
+            "id": "8c089ebd-2b5a-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 15 seconds.",
+            "date": "2024-08-14T10:55:43Z",
+            "extra": {}
+        },
+        {
+            "id": "09099ebd-2b5a-ef11-bfe3-0022489966da",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 4 seconds.",
+            "date": "2024-08-14T10:55:47Z",
+            "extra": {}
+        },
+        {
+            "id": "6766e8d5-2b5a-ef11-bfe3-0022489966da",
+            "subject": "ID0374211-DC/Si-D/RS-[TLRXpf] connectivity problem CRM:00798001165",
+            "body": "Hello ﻿Szilard,﻿\nThank you for reaching out to eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n: MP / S1 170003161\nChargerID/Serial No.\n:\nTLRXpf\nProblem Description\n:  Connectivity Problem (SCB & OCPP Offline)\nTroubleshooting\n:\nWe need to follow KA for troubleshooting :\nEmobility_SICD_Connectivity_OCPP/SCB offline\nWe recommend having Spare router while site intervention.\nTo need additional information from the Customer side in troubleshooting issue :\n1. What is the name of the customer backend?\n2. If the OCPP Backend Integration Tests have been performed. If not, We need to seek for same at\nBackend Integrations (sharepoint.com)\n3. What are the values of WebSocketPingInterval, ConnectionTimeOut, HeartbeatInterval\nFor future reference, your ticket number is\n0374211\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-14T10:56:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1e25efa8-87df-09c2-b17e-321c83b9f5dc",
+            "subject": null,
+            "body": "2024-08-12T11:04:01.874552+00:00 sicharge-cp [local0:err] sicharge-cp-backend/281a2449c271[699]: OCPP-Central-System connection error: Unexpected server response: 500\n2024-08-12T11:04:01.920693+00:00 sicharge-cp [local0:err] sicharge-cp-backend/281a2449c271[699]: OCPP-Central-System connection error: Unexpected server response: 404\n2024-08-12T10:35:02.054575+00:00 sicharge-cp [local0:err] sicharge-cp-backend/281a2449c271[699]: OCPP-Central-System connection error: Unexpected server response: 503\n1\nUnexpected server response: 404\n691\n2\nUnexpected server response: 500\n18\n3\nUnexpected server response: 503\n98\n4\nUnexpected server response: 307\n25",
+            "date": "2024-08-14T11:25:48Z",
+            "extra": {}
+        },
+        {
+            "id": "a272721c-535a-ef11-bfe3-0022489a2913",
+            "subject": "A new case manager was assigned to 0374211 CRM:00225083249",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0374211 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90edbdc6-265a-ef11-bfe3-0022489fc6bd",
+            "date": "2024-08-14T15:37:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70502854-535a-ef11-bfe2-0022489e9c81",
+            "subject": "ID0374211-DC/Si-D/RS-[TLRXpf] connectivity problem CRM:00798001166",
+            "body": "Hi Szilard,\nThanks for confirmation on closure of the case over Teams.\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0374211.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-14T15:39:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c8096c2-535a-ef11-bfe2-0022489e9c81",
+            "subject": "Ticket 0374211 has been closed. Are you satisfied with our provided solution? CRM:00798001167",
+            "body": "Dear Szilard,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0374211\nwith the title:\nID0374211-DC/Si-D/RS-[TLRXpf] connectivity problem\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-14T15:42:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9156ebd6-535a-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 4 hours, 46 minutes and 55 seconds.",
+            "date": "2024-08-14T15:42:42Z",
+            "extra": {}
+        },
+        {
+            "id": "b256ebd6-535a-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 5 seconds.",
+            "date": "2024-08-14T15:42:47Z",
+            "extra": {}
+        },
+        {
+            "id": "405a84e4-535a-ef11-bfe2-0022489e9c81",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Field Service (RC-L2) after 20 seconds.",
+            "date": "2024-08-14T15:43:07Z",
+            "extra": {}
+        }
+    ]
+}

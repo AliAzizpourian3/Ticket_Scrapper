@@ -1,0 +1,112 @@
+{
+    "incident_id": "4fead2ab-e778-f011-b4cb-7c1e52778007",
+    "ticket_number": "0443875",
+    "title": "ID0443875-DC/Si-D/IL-[MP / P9 170000901] Faulty Charging Cable",
+    "created_on": "2025-08-14T08:21:35Z",
+    "last_activity": "2025-10-20T11:20:08Z",
+    "age": "96659",
+    "description": "Reported Behavior/ Issue:\nThe charging cable with the coolant is in a fault state\nSolution: Replace Cable",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "t6sDML",
+    "stage": null,
+    "serial_number": "MP / P9 170000901",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "789e6ba9-e778-f011-b4cc-7c1e52768372",
+            "subject": "charging station not available-170000901 ",
+            "body": "Hello everyone,\nCharging station name :DC-00261\nSerial number: 170000901\nLog from the backend: The charging cable with the coolant is in a fault state, we request a diagnosis.\nIn addition, the second uncooled cable was found to be charging at a rate of 130 kWh and the cable reached an\nDescription of the fault : X\nTime range when the fault started : 24 (\n14.08.2025\n)\nI would be happy for a solution asap.\nBest regards\nLital",
+            "date": "2025-08-14T08:21:27Z",
+            "extra": {
+                "sender": "techni_ev@afcon.co.il",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a2558ce8-df72-472e-aa16-e88e79442e5d",
+            "subject": "Issue Description",
+            "body": "Hello everyone,\nCharging station name :DC-00261\nSerial number: 170000901\nLog from the backend: The charging cable with the coolant is in a fault state, we request a diagnosis.\nIn addition, the second uncooled cable was found to be charging at a rate of 130 kWh and the cable reached an\nDescription of the fault : X\nTime range when the fault started : 24 (\n14.08.2025\n)\nI would be happy for a solution asap.\nBest regards\nLital",
+            "date": "2025-08-14T14:26:00Z",
+            "extra": {}
+        },
+        {
+            "id": "364be730-1b79-f011-b4cb-7c1e52368001",
+            "subject": "A new case manager was assigned to 0443875 CRM:00225243199",
+            "body": "Shashank Mishra was assigned as new Case Manager for case 0443875 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4fead2ab-e778-f011-b4cb-7c1e52778007",
+            "date": "2025-08-14T14:30:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "edeed038-1b79-f011-b4cc-7c1e523508ba",
+            "subject": "ID0443875-DC/Si-D/IL-[MP / P9 170000901] Faulty Charging Cable CRM:02699000170",
+            "body": "Dear Team Techni EV,\nThank you for reaching\nout\nto eMobility Support. My name is\nShashank\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000901\nChargerID/Serial No.\n:\nt6sDML\nProblem Description\n:\nFaulty Charging Cable\nFor future reference, your case number is\n0443875\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShashank Mishra\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-08-14T14:30:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "32e22f45-967d-f011-b4cc-000d3addf8ce",
+            "subject": "A new case manager was assigned to 0443875 CRM:00225245349",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0443875 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4fead2ab-e778-f011-b4cb-7c1e52778007",
+            "date": "2025-08-20T07:21:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0a82d3b8-967d-f011-b4cc-7c1e523508ba",
+            "subject": "ID0443875-DC/Si-D/IL-[MP / P9 170000901] Faulty Charging Cable CRM:02699000170",
+            "body": "Hello Lital, good morning. I hope you are doing well.\nI checked the CCS and we do not have temperature values:\nAs you can see the resistance = 0 ohm.\nSince this is a LCC, we can only measure the CAN communication since this is the responsible for the readings:\nFirst we need to measure 60Ohm between High and Low, by measuring between XD12:7B and 8D. We need to measure we measure in this 7B and 8D specifically to confirm if the defect is in the cable or the signal is lost somewhere until the KF11.\nIf we don't have 60Ohm, then the microcontroller is faulty and the cable needs to be replaced.\nSecond, if we have 60Ohm, then we must follow this 60Ohm until the input of KF11 CAN 1L and 1H.\nIf the signal is lost until there, we should check if there is any loose cable.\nThird, if we have 60Ohm until KF11 and still it doesn't work, try these two options by order:\nReplace the black connector with a spare one (the EcoG has some that are not used at all)\nIf it still doesn't work, please try replacing the KF11.\nIf it doesn't work, then we need to replace the CCS Cable\n@Orel I will send this ticket to you, if you need any help just ping me.\nBest regards,\nFrancisco",
+            "date": "2025-08-20T07:24:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d795db60-9d7d-f011-b4cc-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0443875 CRM:00225245392",
+            "body": "Orel Lachiani was assigned as new Case Manager for case 0443875 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4fead2ab-e778-f011-b4cb-7c1e52778007",
+            "date": "2025-08-20T08:12:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66dde727-ed87-f011-b4cc-6045bde0265d",
+            "subject": "RE: ID0443875-DC/Si-D/IL-[MP / P9 170000901] Faulty Charging Cable CRM:02699000170",
+            "body": "Hello\neMobility Tech Support Team,\nWe performed the measurements,\n130 ohm's values ​​were measured at the points that were specified to us that should be below 60 ohm's.\nIn addition, we tried to replace the KF11 part, but the charger reset at 30% each time - meaning that it seems that the update was unsuccessful. (Possibly due to the difference between the versions)\nWe disassembled the replacement KF11 part from another charger with the serial number attached in the picture.\nWhat are the next steps for testing to diagnose the fault?\nPlease advise.\nBest Regards,\nDoron Yavelberg\nMaintenance Manager\nAFCON ELECTRIC TRANSPORTATION LTD",
+            "date": "2025-09-02T11:08:31Z",
+            "extra": {
+                "sender": "dorony@afcon.co.il",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0f1f50b3-a6ad-f011-bbd2-7c1e52880288",
+            "subject": "Ticket 0443875 has been closed. Are you satisfied with our provided solution? CRM:00225274390",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0443875\nwith the title:\nID0443875-DC/Si-D/IL-[MP / P9 170000901] Faulty Charging Cable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-20T11:19:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

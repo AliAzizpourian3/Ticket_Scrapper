@@ -1,0 +1,42 @@
+{
+    "incident_id": "9956a30a-654b-477f-aec5-f92aee687230",
+    "ticket_number": "0415496",
+    "title": "ID0415496-DC/Si-D/TR-[Y2/RD 300000004029] 'PT1000_BT5_AC-Income'",
+    "created_on": "2025-03-27T14:51:15Z",
+    "last_activity": "2025-05-06T11:34:20Z",
+    "age": "57403",
+    "description": "Reported behavior/issue:\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status: Yes",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "Af2Llf",
+    "stage": null,
+    "serial_number": "Y2 / RD 300000004029",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "71b88fb9-0130-4131-96e2-1cd2bd2dcc75",
+            "subject": "Note from RC",
+            "body": "The charger appears to be offline on the SCB. The customer checked the charger onsite and confirmed that there is power, and the FC12 LED is green. However, the charger is still not functioning.\nUpon checking the logs, we identified the following errors indicating that the charger shut down due to high temperature:\nError: 'PT1000_BT5_AC-Income'\nRTD Incomer Temperature Value: 65.5°C. Value exceeded service limit\nCould you please advise on the next steps to resolve this issue? Should we arrange an onsite inspection or take specific troubleshooting actions?",
+            "date": "2025-03-27T16:26:02Z",
+            "extra": {}
+        },
+        {
+            "id": "73bc0c95-61e9-dd04-afc3-1da76e4781e0",
+            "subject": "Note to L2",
+            "body": "2025-03-26T16:32:51.254873+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b1fdb58d5389[734]: PLC-Error-Flag 'PT1000_BT5_AC-Income' changed from true - ('VIN:0 CRE:0 CSM:0 SCE:0 SRI:0 ORI:0 OHW:1 OHS:1 OHSe:0 ST:T') to true - ('VIN:0 CRE:0 CSM:0 SCE:0 SRI:0 ORI:0 OHW:1 OHS:1 OHSe:1 ST:T')\n2025-03-26T16:32:51.218867+00:00 swcpu [user:debug] [4021] [EOT] Sensor: RTD Incomer Temperature Value: 65.2 degC Event: value > service limit",
+            "date": "2025-03-27T16:34:05Z",
+            "extra": {}
+        },
+        {
+            "id": "3f7ca42d-2b0b-f011-bae3-6045bdde4786",
+            "subject": "ID0415496-DC/Si-D/TR-[Y2/RD 300000004029] 'PT1000_BT5_AC-Income' CRM:00798002068",
+            "body": "Dear Emre,\nThank you for reaching\nout\nto eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / RD 300000004029\nChargerID/Serial No.\n:\nAf2Llf\nProblem Description\n: 'PT1000_BT5_AC-Income'\nTroubleshooting\n:\nWe have analysed the charger and found the issue is with the BT2 sensor,\nWe recommend having the spare BT2 while site intervention.\nWe could see the temp and humidity reading of the BT2 are wrong,\nHence, Heater is getting ON which result in the BT5 reporting issue of the High Temp.\nI am writing to formally inform that we are moving case 0415496 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nTR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nEnd Customer Communication\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nTR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nFor future reference, your case number is\n0415496\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBoddeda Giridhar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-27T16:47:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

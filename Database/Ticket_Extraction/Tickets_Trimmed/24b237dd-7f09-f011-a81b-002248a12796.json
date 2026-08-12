@@ -1,0 +1,203 @@
+{
+    "incident_id": "24b237dd-7f09-f011-a81b-002248a12796",
+    "ticket_number": "0414939",
+    "title": "ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions",
+    "created_on": "2025-03-25T13:48:43Z",
+    "last_activity": "2025-04-02T14:07:21Z",
+    "age": "11539",
+    "description": "Reported behavior/issue:\n0kWh sessions\nRoot cause:\ninternal communication with SECC (\nError Polling Coap\n)",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002723,MP / RD 170003001",
+    "case_nature_code": null,
+    "chargerID": "fq2t11 , 63Vm6i",
+    "additional_info": [
+        {
+            "id": "c1080890-8109-f011-bae3-7c1e52768372",
+            "subject": "Note created on 3/25/2025 2:00:56 PM UTC by Luigi Iodice [contact:1fd59796-8cbb-ef11-b8e8-6045bddccb26]",
+            "body": "*WEB*",
+            "date": "2025-03-25T14:00:56Z",
+            "extra": {}
+        },
+        {
+            "id": "983f3bc3-cea0-0755-b773-2f12854f1a23",
+            "subject": "Case opening remark.",
+            "body": "Hi,\nIs it possible to check logs for these two chargers? They are operative, but we noticed that there is a high percentage of null recharges, as you can see in files attached.\nThank you\nSoftware Version: v4.0.11-0-g0b7d164\nOCPP Backend Connection: No",
+            "date": "2025-03-25T14:23:04Z",
+            "extra": {}
+        },
+        {
+            "id": "029096ed-8509-f011-bae3-7c1e52faf3c6",
+            "subject": "ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002723\nChargerID/Serial No.\n:\nfq2t11 , 63Vm6i\nProblem Description\n:\n0kWh sessions\nTroubleshooting\n: We have analysed the logs and below are our findings:\nCharger: MP / R9 170002723\n23rd March\nsession : This session was aborted due to cable was unplugged as you can see in the below snapshot and after that when the cable was connected again, the session was successful.\n22nd March\n: In the below session the cable was not yet connected, that's why the charging session was not started resulting in zero session.\n20th March 17:55:39\n: This charging session got aborted due to authentication is not being done & the issue arises from the EV side as you can see the ERR_EVCOM EV Communication detected. There is no issue from the charger side.\n20th March 17:47\n: This charging session was also got aborted due to Authentication and Cable connection is not done in timely manner, as the connection got timed out.\n18th March\n: The charging session got aborted due to cable not yet connected and rest we don't see any issues in rest of the charging session.\nCharger : MP / RD 170003001\n25th March\n:The session got aborted due to cable not connected in the first RemoteStart Transaction and while the connector goes to Preparing, there were multiple remote start transaction was send in between resulting it to zero sessions.\n23rd March\n: All the charging session I have checked and in all the RemoteStartTransaction ,we have cable not yet connected resulting it to zero sessions.\nWe conclude that there are no issues on the charger side. All sessions were aborted either due to the cable not being connected, authentication not being done in a timely manner, or communication issues from the EV side.\nPlease let us know if you have any further query to discuss, if not we shall proceed with closing this ticket.\nFor future reference, your case number is\n0414939\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-25T14:32:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b9aa0f7-200a-f011-bae3-000d3addf8ce",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Hello,\nthanks for the analysis. We noticed that one of the CU in this thicket, the\n170003001 Padova,\nmoves down at             26/03/2025 08:31:01 UCT. Could you do a check for this one, please?\nThanks and regards,\nLuigi Iodice",
+            "date": "2025-03-26T09:01:56Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "07d40b77-250a-f011-bae3-7c1e5236e32d",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Hi Luigi,\nWe have reviewed the charger, and it appears that the Siemens router inside the charger got disconnected due to a network issue or another cause. We do not have the logs after 08:11 UTC on 26th March. Once the charger comes back online and the logs are uploaded, we can investigate further. Could you please check from the customer's backend if the charger is online? If it is, we can perform the reboot function. However, if the charger does not come back online for an extended period, we will need to arrange for site intervention.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T09:34:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "73321852-460a-f011-bae3-7c1e52faf3c6",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Hello,\nthe CU is online and a customer is charging at the moment.\nRegards,\nLuigi Iodice",
+            "date": "2025-03-26T13:29:20Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0482d75d-4d0a-f011-bae2-000d3ab7ac53",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Hi Luigi,\nWe have checked it and that was because of the Error Polling Coap\nwhich means the internal communication with SECC was lost for a brief period of time. Our charger will reconnect to SECC within 5 seconds. While SECC is not reachable, an 'Outlet Out of Order' flag will be active and will be cleared once the charger reconnects to SECC. We have observed that this issue does not occur frequently.\nI hope everything has been clarified. If there are no further questions, may we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T14:19:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f265b7ff-643b-0d91-a267-17cf5f595a6c",
+            "subject": "Notes for NOC",
+            "body": "AI : Analysis done, waiting for the customer reply to the response, if there are no more query we can proceed with closing this ticket.",
+            "date": "2025-03-26T17:01:00Z",
+            "extra": {}
+        },
+        {
+            "id": "2a1f2621-1e0e-f011-9989-7c1e52878e80",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-31T10:51:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0fdb398-1f0e-f011-9989-6045bde13997",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-31T11:02:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ef8e9b96-130f-f011-9989-7c1e521ff9c7",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-01T16:08:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "00a785bf-130f-f011-998a-7c1e52344a13",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-01T16:09:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "18afb48c-b00f-f011-9989-7c1e52367d3b",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-02T10:52:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0fc841d6-b00f-f011-998a-7c1e52350ea5",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0414939\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-02T10:54:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "51df2f6c-bd0f-f011-9989-7c1e5277fc4a",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Hello,\nboth the CU’s of this ticket are working good. You can close the ticket.\nThanks for the support.\nGreetings,\nLuigi Iodice",
+            "date": "2025-04-02T12:24:36Z",
+            "extra": {
+                "sender": "luigi.a.iodice@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "20ee141c-cb0f-f011-9989-7c1e52367d3b",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414939, the case is now closed.\nProblem Description\n: 0kWh sessions\nResolution\n: Internal communication error\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-02T14:02:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d102bc53-cb0f-f011-998a-7c1e5236cda4",
+            "subject": "RE: ID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions CRM:00643001359",
+            "body": "Dear Luigi Iodice,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414939, the case is now closed.\nProblem Description\n: 0kWh sessions\nResolution\n: Internal communication error\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-02T14:04:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0d5e4566-cb0f-f011-9989-7c1e52367d3b",
+            "subject": "Ticket 0414939 has been closed. Are you satisfied with our provided solution? CRM:02023000567",
+            "body": "Dear Luigi,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0414939\nwith the title:\nID0414939-DC/Si-D/IT-[MP / R9 170002723] Iplanet - 0kWh sessions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-02T14:04:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "incident_id": "bd5cf62b-3145-4fda-b0d7-5e5f91cb95ba",
+    "ticket_number": "0402881",
+    "title": "ID0402881-DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket",
+    "created_on": "2025-01-29T12:29:20Z",
+    "last_activity": "2025-12-16T14:01:36Z",
+    "age": "13074",
+    "description": "Reported behavior/issue:\nSicharge D's AC socket not sending correct meter values after user stops the transaction form the car.\nOCPP gets meter value 0 kWh charged and is not billed for the energy they charged.\nRoot cause: NA\nSolution:  FW Update\nOn DAMEX Sanctioned List: No\nWarranty Status:\nActive\nNotes from ES to NOC [ 07/02/2025]",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "V6nFZ1",
+    "stage": null,
+    "serial_number": "MP / R2 170001449",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "04fc2ab0-3cde-ef11-8eea-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0402881 CRM:00225155453",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0402881 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bd5cf62b-3145-4fda-b0d7-5e5f91cb95ba",
+            "date": "2025-01-29T12:29:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ca238263-3dde-ef11-8eea-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0402881 CRM:00225155454",
+            "body": "Kaushik Kumar was assigned as new Case Manager for case 0402881 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bd5cf62b-3145-4fda-b0d7-5e5f91cb95ba",
+            "date": "2025-01-29T12:34:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c39f9ba4-391a-a66c-af55-c8fda72f8118",
+            "subject": "Notes from RC",
+            "body": "Sicharge D's AC socket not sending correct meter values after user stops the transaction form the car.\nOCPP gets meter value 0 kWh charged and is not billed for the energy they charged.\nWe did test today with customer if you want to pull the ecog logs\nLogs from the test sessions:\nWed, 29 Jan 2025 11:32:38 GMT\n2025-01-29, 11:32:37\n2025-01-29T11:32:37.897049+00:00 swcpu [user:debug] [4021] [ACC] AC1: Cable unplugged\nWed, 29 Jan 2025 11:32:36 GMT\n2025-01-29, 11:32:36\n2025-01-29T11:32:36.323296+00:00 swcpu [user:debug] [4021] [ACC] AC1: PilotState \"B1\" --> \"A\"\nWed, 29 Jan 2025 11:32:36 GMT\n2025-01-29, 11:32:36\n2025-01-29T11:32:36.295079+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: secc events: {\"type\":\"SeccSessionStop\",\"outletId\":2,\"state\":{\"timestamp\":1738150355556,\"stop\":false,\"auth\":false,\"out_of_order\":false,\"lock\":false,\"lock_sense\":false,\"pwm\":false,\"relay\":false,\"relay_sense\":false,\"pilot\":0,\"duty\":9,\"evsemaxc\":32,\"cable_maxc\":63,\"pv\":0,\"pc\":0,\"pp\":0,\"curr_ses_secs\":0,\"curr_ses_Wh\":0,\"phs\":1,\"phsStr\":\"Not Connected\",\"version\":\"v1.2.17-44-g4a760be-HEAD\",\"testEV\":false,\"initializing\":false,\"outlet\":\"2\",\"outletType\":\"AC\",\"user\":\"internal\",\"freeCharge\":false,\"meter\":0,\"needsUnplug\":false,\"MODBUS0_connected\":true,\"MODBUS0_RX_MaxChargeCurrent\":32,\"MODBUS0_RX_PresentChargePower\":0,\"MODBUS0_RX_RelayState\":false,\"MODBUS0_RX_StopCharge\":false,\"MODBUS0_RX_StartCharge\":false,\"MODBUS0_RX_LockState\":false,\"MODBUS0_RX_ForceUnlock\":false,\"MODBUS0_RX_SetAuth\":false,\"MODBUS0_RX_DeclineStateD\":false,\"MODBUS0_RX_NotOperational\":false,\"MODBUS0_RX_LifeBeat\":0,\"MODBUS0_RX_ErrorCode\":0,\"MODBUS0_RX_LockTime\":0,\"MODBUS0_RX_UnLockTime\":0,\"MODBUS0_RX_HoldTime\":0,\"MODBUS0_RX_ApplicationFlags\":8,\"MODBUS0_TX_Pilot\":0,\"MODBUS0_TX_Relay\":false,\"MODBUS0_TX_Lock\":false,\"MODBUS0_TX_LifeBeat\":6933,\"MODBUS0_TX_ErrorCode\":0,\"online\":true}}\nWed, 29 Jan 2025 11:32:38 GMT\n2025-01-29, 11:32:36\n2025-01-29T11:32:36.295613+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: secc events: {\"type\":\"SeccEvDisconnect\",\"outletId\":2}\nWed, 29 Jan 2025 11:32:36 GMT\n2025-01-29, 11:32:36\n2025-01-29T11:32:36.288342+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: secc events: {\"type\":\"SeccStopCharging\",\"outletId\":2,\"state\":{\"timestamp\":1738150355556,\"stop\":false,\"auth\":false,\"out_of_order\":false,\"lock\":false,\"lock_sense\":false,\"pwm\":false,\"relay\":false,\"relay_sense\":false,\"pilot\":0,\"duty\":9,\"evsemaxc\":32,\"cable_maxc\":63,\"pv\":0,\"pc\":0,\"pp\":0,\"curr_ses_secs\":0,\"curr_ses_Wh\":0,\"phs\":1,\"phsStr\":\"Not Connected\",\"version\":\"v1.2.17-44-g4a760be-HEAD\",\"testEV\":false,\"initializing\":false,\"outlet\":\"2\",\"outletType\":\"AC\",\"user\":\"internal\",\"freeCharge\":false,\"meter\":0,\"needsUnplug\":false,\"MODBUS0_connected\":true,\"MODBUS0_RX_MaxChargeCurrent\":32,\"MODBUS0_RX_PresentChargePower\":0,\"MODBUS0_RX_RelayState\":false,\"MODBUS0_RX_StopCharge\":false,\"MODBUS0_RX_StartCharge\":false,\"MODBUS0_RX_LockState\":false,\"MODBUS0_RX_ForceUnlock\":false,\"MODBUS0_RX_SetAuth\":false,\"MODBUS0_RX_DeclineStateD\":false,\"MODBUS0_RX_NotOperational\":false,\"MODBUS0_RX_LifeBeat\":0,\"MODBUS0_RX_ErrorCode\":0,\"MODBUS0_RX_LockTime\":0,\"MODBUS0_RX_UnLockTime\":0,\"MODBUS0_RX_HoldTime\":0,\"MODBUS0_RX_ApplicationFlags\":8,\"MODBUS0_TX_Pilot\":0,\"MODBUS0_TX_Relay\":false,\"MODBUS0_TX_Lock\":false,\"MODBUS0_TX_LifeBeat\":6933,\"MODBUS0_TX_ErrorCode\":0,\"online\":true},\"unexpected\":false}\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.542824+00:00 swcpu [user:debug] [4021] [ACC] AC1: active phase changed to: Idle\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.526925+00:00 swcpu [user:debug] [4021] [ACC] AC1: charging cable unlocked\nWed, 29 Jan 2025 11:32:36 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.388742+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: OCPP: Received result: StopTransaction (2b8a7294-0e9b-44a6-900d-f49c192341cd) - {\"idTagInfo\":{\"status\":\"Accepted\"}}\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.341654+00:00 swcpu [user:debug] [4021] [ACC] AC1: PilotState \"C2\" --> \"B1\"\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.325347+00:00 swcpu [user:debug] [4021] [ACC] |2025-01-29T11:30:49|AC1: |EVSE_NowPwrTot[kW]=0|EVSE_NowVolAvg[V]=395.8|EVSE_NowCurL1[A]=0|EVSE_NowCurL2[A]=0|EVSE_NowCurL3[A]=0|EVSE_MaxCur[A]=0|Pilot=1\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.292061+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: OCPP: Send command: StopTransaction (2b8a7294-0e9b-44a6-900d-f49c192341cd) - {\"meterStop\":273,\"timestamp\":\"2025-01-29T11:32:35.285Z\",\"transactionData\":[{\"timestamp\":\"2025-01-29T11:32:35.285Z\",\"sampledValue\":[{\"value\":\"273.21\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Interval\"},{\"value\":\"273\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"context\":\"Transaction.End\",\"measurand\":\"Energy.Active.Import.Register\"}]}],\"transactionId\":175697}\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.278342+00:00 sicharge-cp [local0:info] sicharge-cp-backend/d2b5f69d4d18[731]: secc events: {\"type\":\"SeccMeteringEnd\",\"outletId\":2,\"startSnapshotIsAvailiable\":false,\"endSnapshotIsAvailiable\":false}\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.046107+00:00 swcpu [user:debug] [4021] [ACC] AC1: try to unlock charging cable\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.029778+00:00 swcpu [user:debug] [4021] [ACC] AC1: active phase changed to: Unlock cable\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:35\n2025-01-29T11:32:35.014007+00:00 swcpu [user:debug] [4021] [ACC] AC1: contactor opened unexpectedly: stop charging\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:34\n2025-01-29T11:32:34.745374+00:00 swcpu [user:debug] [4021] [ACC] |2025-01-29T11:30:49|AC1: |EVSE_NowPwrTot[kW]=0|EVSE_NowVolAvg[V]=398.1|EVSE_NowCurL1[A]=0.6|EVSE_NowCurL2[A]=0.6|EVSE_NowCurL3[A]=0.6|EVSE_MaxCur[A]=0.6|Pilot=4\nWed, 29 Jan 2025 11:32:35 GMT\n2025-01-29, 11:32:34\n2025-01-29T11:32:34.245869+00:00 swcpu [user:debug] [4021] [ACC] |2025-01-29T11:30:49|AC1: |EVSE_NowPwrTot[kW]=1.2|EVSE_NowVolAvg[V]=398.6|EVSE_NowCurL1[A]=5.3|EVSE_NowCurL2[A]=5.2|EVSE_NowCurL3[A]=5.4|EVSE_MaxCur[A]=5.4|Pilot=4\nWed, 29 Jan 2025 11:32:34 GMT\n2025-01-29, 11:32:31\n2025-01-29T11:32:31.669123+00:00 swcpu [user:debug] [4021] [ACC] |2025-01-29T11:30:49|AC1: |EVSE_NowPwrTot[kW]=10.5|EVSE_NowVolAvg[V]=394.7|EVSE_NowCurL1[A]=15.5|EVSE_NowCurL2[A]=15.5|EVSE_NowCurL3[A]=15.3|EVSE_MaxCur[A]=15.5|Pilot=4",
+            "date": "2025-01-29T12:43:50Z",
+            "extra": {}
+        },
+        {
+            "id": "b4b06a8c-4bde-ef11-8eea-6045bdde0ce3",
+            "subject": "ID0402881 - DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket CRM:00796001259",
+            "body": "Dear Harjunpaa, Sakari (RC-FI SI E),\nThank you for reaching\nout\nto eMobility Support. My name is\nKaushik\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nAlexela Aegviidu\nChargerID/Serial No.\n: V6nFZ1\nProblem Description\n:  No meter values from AC socket\nKindly allow me to discuss this issue with the experts and analyze the logs for this event.\nFor future reference, your case number is\n0402881\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-29T14:16:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8cb987d9-e4df-ef11-8eea-7c1e52378e9b",
+            "subject": "RE: ID0402881 - DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket CRM:00796001259",
+            "body": "Hi Sakari,\nGreetings of the day!\nI am assigning this ticket to our experts for further support, as there is already an open ticket for the same issue with the L3/expert team, and they are currently working on it.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nKaushik Kumar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T15:05:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d920d3f-4791-5fb6-8c78-e64a82f1de10",
+            "subject": "Handover to L3",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nThe meter values is zero after session stop which was '\nvalue'10532.\nAction Performed (L2):\nLog analyzed.\nCharger SW Version:\nv6.0.3\nReason for Handover (L3):\nFurther investigation needed. As there is similar case with R & D (\nEVC3 - 8226\n).\nAction Required\nby HQ:\nFurther investigation",
+            "date": "2025-01-31T15:25:21Z",
+            "extra": {}
+        },
+        {
+            "id": "c64f829f-0de2-ef11-8eea-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0402881 CRM:00225157190",
+            "body": "Sambath KS was assigned as new Case Manager for case 0402881 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bd5cf62b-3145-4fda-b0d7-5e5f91cb95ba",
+            "date": "2025-02-03T09:02:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e3907b9f-00e3-ef11-8eea-7c1e5235925f",
+            "subject": "RE: ID0402881 - DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket CRM:00796001259",
+            "body": "Dear Sakari,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As we discussed, we need to collect the logs with debug log level enabled. Please inform me prior before the next site activity.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-02-04T14:02:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f102809-0ae3-ef11-8eea-002248a2b1bd",
+            "subject": "RE: ID0402881 - DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket CRM:00796001259",
+            "body": "FYI.\nLaitteella on Debug mode päällä. Mihkel silloin sanoi että Pavel tulee siellä käymään mutta kun kysyin että kertoo meille kun käy niin ei koskaan vastannut.\nYst. Terv.\nSakari",
+            "date": "2025-02-04T15:09:42Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4a52dfc6-97a6-364a-8761-26a065d450f9",
+            "subject": "Notes from ES to NOC [ 07/02/2025]",
+            "body": "a) Problem Description\n:\nAC charging issue - OkW billing after stopping the session from EV side\nb) Suspected Root Cause\n: FW Bug\nc\n) Action Performed:\nAlready working on the ticket - ID0399331\nd) Charger SW Version\n: v6.0.3\ne) Reason for Handover (NOC):\nNeed to close the ticket and survey. As the ticket is a duplicate. Already discussed with Markus Roiha about the ticket closure.\nf) Fault history:\nNA\ng) Log analysis with timestamp:\nNA\nh) Action Required by NOC:\nTicket closure and survey.\ni) Attachment:\nNA",
+            "date": "2025-02-07T10:16:12Z",
+            "extra": {}
+        },
+        {
+            "id": "98371ff2-49e5-ef11-8eea-000d3aba081f",
+            "subject": "A new case manager was assigned to 0402881 CRM:00225160859",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0402881 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bd5cf62b-3145-4fda-b0d7-5e5f91cb95ba",
+            "date": "2025-02-07T11:52:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "66281c03-5ee5-ef11-8eea-7c1e52378e9b",
+            "subject": "ID0402881-DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket CRM:00798001861",
+            "body": "Dear Sakari,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0402881, and the case is now closed.\nProblem Description\n:  No meter values from AC socket\nResolution\n: Update FW\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-07T14:15:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bcabbcb0-5ee5-ef11-8eea-7c1e52378e9b",
+            "subject": "Ticket 0402881 has been closed. Are you satisfied with our provided solution? CRM:00798001862",
+            "body": "Dear Sakari,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0402881\nwith the title:\nID0402881-DC/Si-D/EE - [V6nFZ1] - No meter values from AC socket\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBoddeda Giridhar\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-07T14:20:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

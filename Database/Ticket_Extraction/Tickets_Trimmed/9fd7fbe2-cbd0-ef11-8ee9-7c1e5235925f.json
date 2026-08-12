@@ -1,0 +1,687 @@
+{
+    "incident_id": "9fd7fbe2-cbd0-ef11-8ee9-7c1e5235925f",
+    "ticket_number": "0399431",
+    "title": "ID0399431-DC/Si-D/IE-[MP / S2 170003301] BRITE- Unable to charge with card",
+    "created_on": "2025-01-12T09:59:18Z",
+    "last_activity": "2025-03-03T14:56:19Z",
+    "age": "72297",
+    "description": "Reported behavior/issue:\nUnable to charge with card\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status: 3/19/2026",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "E7gWMK",
+    "stage": null,
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c8ab4222-4cc8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Webform_incident_SiCharge D_01-01-2025_SN: MP / S2 170003301 – Charger / F2S1516381 - Dispenser",
+            "body": "Dear colin barry,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S2 170003301 – Charger / F2S1516381 - Dispenser\nThank you\neMobility Technical Support Team\nSehr geehrte/r colin barry,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S2 170003301 – Charger / F2S1516381 - Dispenser\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-01T14:24:47Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "79d77ccc-4cc8-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0397739 CRM:00225143488",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0397739 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f58def29-4cc8-ef11-b8e8-000d3a68cce9",
+            "date": "2025-01-01T14:29:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ca7833a-4d05-57a4-9147-00a763967fa7",
+            "subject": null,
+            "body": "01-01-2025 12:42:37\n2025-01-01T12:41:47.733100+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/2603128c69d5[698]: OCPP: Send command:\nStartTransaction\n(e347a513-3c83-47b7-b920-9bbba76a0bcd) - {\"connectorId\":4,\"idTag\":\"040FF3FA7E6B81\",\"meterStart\":0,\"timestamp\":\"2025-01-01T12:41:47.726Z\"}\n2025-01-01T12:42:02.768517+00:00\nsicharge-cp [local0:err] sicharge-cp-backend/2603128c69d5[698]: {\n\"stack\":\"Error: Timeout for message\ne347a513-3c83-47b7-b920-9bbba76a0bcd - {\\\"connectorId\\\":4,\\\"idTag\\\":\\\"040FF3FA7E6B81\\\",\\\"meterStart\\\":0,\\\"timestamp\\\":\\\"2025-01-01T12:41:47.726Z\\\"}\\n at onRejectResponse (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:212:82)\\n at Timeout.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:192:25)\\n at listOnTimeout (node:internal/timers:559:17)\\n at processTimers (node:internal/timers:502:7)\"}\n2025-01-01T12:42:17.345393+00:00\nsicharge-cp [local0:err] sicharge-cp-backend/2603128c69d5[698]: Response for unknown message: [3,\"e347a513-3c83-47b7-b920-9bbba76a0bcd\",{\"transactionId\":996584342,\"idTagInfo\":{\"status\":\"Accepted\"}}]\nThis session failed because the OCPP backend did not respond to the StartTransaction request within 15 seconds; instead, it responded after 30 seconds.",
+            "date": "2025-01-01T15:42:06Z",
+            "extra": {}
+        },
+        {
+            "id": "88dd93a5-350a-04d3-b9a7-6891f3cde2cc",
+            "subject": null,
+            "body": "2nd issue today:\nMaybe it's the session below; need to confirm. >> Need to check the EcoG logs, as the session ended after accepting a Remote StartTransaction from the backend but did not send the StartTransaction to the OCPP backend by the charger.",
+            "date": "2025-01-01T16:10:22Z",
+            "extra": {}
+        },
+        {
+            "id": "4e69f6f8-5ac8-ef11-b8e8-6045bde1171e",
+            "subject": "ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Dear Colin Barry,\nThank you for reaching\nout\nto eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID/Serial No.\n:\nE7gWMK\nProblem Description\n: The charger is not starting charge sessions and is prematurely ending charge sessions.\nTroubleshooting\n:\n1st issue:\nWe have analyzed the logs and noticed that the charger sent the StartTransaction request to the OCPP backend, but the charger did not receive a response within 15 seconds. Instead, it received the response after 30 seconds, which is why this session failed. Please refer to the attached logs below for your reference.\n2025-01-01T12:41:47.733100+00:00\nsicharge-cp [local0:info] sicharge-cp-backend/2603128c69d5[698]: OCPP: Send command:\nStartTransaction\n(e347a513-3c83-47b7-b920-9bbba76a0bcd) - {\"connectorId\":4,\"idTag\":\"040FF3FA7E6B81\",\"meterStart\":0,\"timestamp\":\"2025-01-01T12:41:47.726Z\"}\n2025-01-01T12:42:02.768517+00:00\nsicharge-cp [local0:err] sicharge-cp-backend/2603128c69d5[698]: {\n\"stack\":\"Error: Timeout for message\ne347a513-3c83-47b7-b920-9bbba76a0bcd - {\\\"connectorId\\\":4,\\\"idTag\\\":\\\"040FF3FA7E6B81\\\",\\\"meterStart\\\":0,\\\"timestamp\\\":\\\"2025-01-01T12:41:47.726Z\\\"}\\n at onRejectResponse (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:212:82)\\n at Timeout.<anonymous> (/node_modules/@sicharge-cp/ocpp-lib/dist/Connection.js:192:25)\\n at listOnTimeout (node:internal/timers:559:17)\\n at processTimers (node:internal/timers:502:7)\"}\n2025-01-01T12:42:17.345393+00:00\nsicharge-cp [local0:err] sicharge-cp-backend/2603128c69d5[698]: Response for unknown message: [3,\"e347a513-3c83-47b7-b920-9bbba76a0bcd\",{\"transactionId\":996584342,\"idTagInfo\":{\"status\":\"Accepted\"}}]\nProposal to Address the Issue:\nTo prevent similar issues in the future, we recommend increasing the default timeout period for OCPP messages from\n15 seconds\nto more than\n30 seconds\n. This will allow the charger to wait longer for a response from the backend before terminating the session. If no response is received within the extended period, the session will still terminate.\nPlease let us know if we have your permission to increase the default timeout for OCPP messages to more than 30 seconds.\n2nd issue:\nTo assist you better, could you please provide the following information:\nWas this session attempted on Outlet 2?\nHow was the authorization processed for this session?\nIf you have the exact timestamp of this session, could you please provide it to us?\nFor future reference, your case number is\n0397739\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-01T16:11:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3df341a5-69c8-ef11-b8e8-6045bde1171e",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Dear Colin Barry,\nAdditionally, we have made some payment terminal configuration changes remotely. Could you please try again the charging session and let us know?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-01T17:56:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "353102e3-eb09-ac41-bdcd-2ae74208398a",
+            "subject": null,
+            "body": "2025-01-01T17:51:30.589311+00:00 sicharge-cp [local0:info] sicharge-cp-backend/2603128c69d5[704]: Configuration-Backend configuration (configurations/set) changed: {\"id\":\"E7gWMK\",\"key\":\"paymentTerminal\",\"value\":\"Payter\",\"operation\":\"\",\"section\":\"\"}",
+            "date": "2025-01-01T18:11:27Z",
+            "extra": {}
+        },
+        {
+            "id": "1dc7e48a-73c8-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Reference Case 0397739\nHi Sominath,\nplease increase the timeout to 30 seconds / 31 seconds as per your recommendation. Please advise who would have set it originally to 15 seconds and why we didnt have it set to 30 seconds before? We had an issue going back some months which meant that the software provider Fuuse said repeatedly that the charger would drop the connection to their server and this was the cause of pre authorised transactions being taken and sessions not starting. Is this what we are talking about here? are there any negatives in moving the timeout to 30 seconds? why not go to 60 seconds?\n2nd issue:\nthis occurred",
+            "date": "2025-01-01T19:06:51Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "527128e0-74c8-ef11-b8e9-0022489bcff4",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "I will try later and let you know Sominath. thanks\nOn Wed, Jan 1, 2025 at 6:02 PM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nDear Colin Barry,\nAdditionally, we have made some payment terminal configuration changes remotely. Could you please try again the charging session and let us know?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-01T19:16:21Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fac3e97a-de71-9a4d-895f-892b26746f74",
+            "subject": null,
+            "body": "Yesterday, the OCPP connection experienced fluctuations.\nYesterday, the OCPP connection fluctuated only after a soft reboot. However, it stabilized afterward. If the issue recurs, we may need to check the XF4 remotely.\n\"key\":\"HeartbeatInterval\",\"value\":\"60\n\"key\":\"WebSocketPingInterval\",\"value\":\"30\"\nAs per AWS log but these\nGetConfiguration\ndata is of 24th oct.\n\"key\":\"WebSocketPingInterval\",\"value\":\"30\"\n\"key\":\"HeartbeatInterval\",\"value\":\"60",
+            "date": "2025-01-02T04:19:25Z",
+            "extra": {}
+        },
+        {
+            "id": "b287398c-0cc9-ef11-b8e8-6045bde1171e",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Please advise on the below, was the time out changed? What is the status of the second query?\nAlso re time out, the screen says “this can take up to 60 seconds”\nColin Barry\nBrite EV charging",
+            "date": "2025-01-02T13:22:03Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "944fb85e-15c9-ef11-b8e8-7c1e5235925f",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Reference problem 2\nSame issue again\nThe charger kicked out my car at 67%\nEnd time stamp below\nPlease advise",
+            "date": "2025-01-02T14:25:11Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5845ed0b-16c9-ef11-b8e9-7c1e5235e725",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin Barry,\nThank you for your response.\nKindly allow us some time to investigate the logs. In the meantime, could you please confirm if the CreditCard is working now, or if the issue persists?\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-02T14:30:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "696b9c79-16c9-ef11-b8e9-0022489bcff4",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Forgot to update the picture of the screen\nAlso to note at the same time I came back, the four connectors were being used, I was",
+            "date": "2025-01-02T14:33:12Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5cfac62e-1cc9-ef11-b8e8-000d3ab41b62",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi yes so far no issues today with credit card time out - can you confirm the time out has increased?\nLet me know about the other items\nColin Barry\nBrite EV charging",
+            "date": "2025-01-02T15:13:59Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8bdf7303-21c9-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Colin Barry,\nThank you for the feedback.\ncan you confirm the time out has increased?\nYes, the 'OCPP Response Timeout' has been increased to 45 seconds.\nPlease advise who would have set it originally to 15 seconds and why we didnt have it set to 30 seconds before? We had an issue going back some months which meant that the software provider Fuuse said repeatedly that the charger would drop the connection to their server and this was the cause of pre authorised transactions being taken and sessions not starting. Is this what we are talking about here? are there any negatives in moving the timeout to 30 seconds? why not go to 60 seconds?\n>> The preferred OCPP (Open Charge Point Protocol) response timeout typically depends on the specific implementation and use case. However, a commonly recommended response timeout for most OCPP operations is between 10 and 30 seconds.\nIt’s important to note that the timeout can be adjusted based on system performance, network reliability, and the type of transaction being processed. In some cases, the timeout can be set lower (e.g., 10 seconds) to enable faster communication, while in other cases, it may be set higher (e.g., 30 seconds) to accommodate network delays or backend processing times. As mentioned above, the 'OCPP Response Timeout' has now been increased to 45 seconds.\nReference problem 2\n>> We kindly ask for your patience as we investigate the issue and will get back to you as soon as possible. Thank you for your understanding.\nBest Regards,\nSominath Nagalgaon\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-01-02T15:48:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "abb69a2f-0b9f-bfc6-8b88-4964816c7687",
+            "subject": "Note to L2",
+            "body": "Action Taken:\nAdded the Payter Payment Terminal and changed the ‘OCPP Response Timeout’ to 45 seconds. According to the customer, no credit card issues were reported today, which likely indicates that the payment terminal issue has been resolved.\nNext Steps:\nNeed to analyze the logs for the second issue mentioned in the waveform. RC has confirmed the timestamp and outlet details in the email thread. Additionally, the logs for the session carried out today need to be analyzed. (Please refer to the timeline & thread mail for a better understanding.)",
+            "date": "2025-01-02T17:04:56Z",
+            "extra": {}
+        },
+        {
+            "id": "7ae86488-46c9-ef11-b8e8-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0397739 CRM:00225143811",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0397739 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f58def29-4cc8-ef11-b8e8-000d3a68cce9",
+            "date": "2025-01-02T20:17:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "956d8e27-9010-e363-b544-1128b5e1fa92",
+            "subject": "NOTES",
+            "body": "Charging issue on the Outlet 4 and\nCharging session terminated due to internal reason.\n2025-01-01T12:42:02.785080+00:00 sicharge-cp [local0:info] ecog-secc-adapter/10f0856b8a28[698]: attempt to stop charge { outlet_id: 4, request_id: '74624e63-8846--8372-fa0795941637' }\n2025-01-01T12:42:02.768517+00:00 sicharge-cp [local0:err] sicharge-cp-backend/2603128c69d5[698]: {\"stack\":\"Error: Timeout for message e347a513-3c83-47b7-b920-9bbba76a0bcd - {\\\"connectorId\\\":4,\\\"idTag\\\":\\\"040FF3FA7E6B81\\\",\n2025-01-01T12:40:50.000000+00:00 secc-le-disp [daemon:notice] SECC[841]: {\"type\":\"session_start\",\"timestamp\":1735735250617,\"chargerId\":\"secc2300-10742\",\"outlet\":\"4\",\"outletType\":\"CCS\",\"payload\":{\"user\":\"internal\"}}",
+            "date": "2025-01-02T23:36:52Z",
+            "extra": {}
+        },
+        {
+            "id": "f3991023-e760-6921-a909-2eaff9ffc0ce",
+            "subject": null,
+            "body": "Session ID delivered is blank\n25-01-01T12:41:04.556576+00:00 swcpu [user:debug] CHARGING_SESSION_START_ID||2025-01-01T12:40:57|DC4",
+            "date": "2025-01-02T23:43:17Z",
+            "extra": {}
+        },
+        {
+            "id": "5947d821-64c9-ef11-b8e9-6045bdde0ce3",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin,\nWe have investigated the logs and have identified the issue is related to FW related Bug.\nWe recommend the charger to be on Latest FW i.e. v6.0.3.\nAs of now, Charger is on FW v4.0.11, We have 2 major releases after the Firmware.\nWe are seeking your approval to update the FW of the Charger.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-02T23:48:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "953acef9-abc9-ef11-b8e9-6045bdde0ce3",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Please proceed with FW update\nColin Barry\nBrite EV charging",
+            "date": "2025-01-03T08:23:15Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a26acd67-acc9-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Please advise why Siemens did not update the firmware on an ongoing basis? We were informed by Siemens UK management that proactive monitoring for such events would be done. Please advise if this will be done in future to avoid such problems.\nColin Barry\nBrite EV charging",
+            "date": "2025-01-03T08:26:28Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c8b945fe-16cc-ef11-b8e9-6045bdde0ce3",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Guys,\nPlease confirm that the FW has been updated?\nAlso please advise on the SOP for updating firmware on an ongoing basis, will you be updating this going forward to avoid these issues?\nregards\nColin\nOn Fri, Jan 3, 2025 at 8:25 AM Colin Barry <\ncolin@brite.ie\n> wrote:\nPlease advise why Siemens did not update the firmware on an ongoing basis? We were informed by Siemens UK management that proactive monitoring for such events would be done. Please advise if this will be done in future to avoid such problems.\nColin Barry\nBrite EV charging",
+            "date": "2025-01-06T10:14:24Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ad912263-62cc-ef11-b8e8-000d3ab009dd",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin,\nGreetings of the Day,\nFW update is in Progress.\nFor Firmware Update, We seek for approval to update.\nAlso, We check if there is any active Charging session. We only update when there is no Charging session over any of the Outlets.\nPls note, We tried updating the Charger but whenever we see, We found that the outlet is occupied,\nFW Update can terminate the Active Charging session.\nSo, We generally been quoted the Tentative timeframe to update.\nFW is updated to v5.0.23, We will update you once it is updated to v6.0.3.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-06T19:14:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3551a9f3-77cc-ef11-b8e8-0022489fb3e7",
+            "subject": "Re: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi\nPlease see the average session start times so you can judge when the system is probably going to be quiet. This is Ireland gmt uk time.\nFor example Tuesday 6am is more than likely quiet.\nRegards\nColin\nColin Barry\nBrite EV charging",
+            "date": "2025-01-06T21:48:33Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "47f6bce3-78cc-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin,\nThat’s great infographics, We really appreciate your input.\nWe will closely monitor of said time and Also, We will try to do needful as soon as possible.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-06T21:55:14Z",
+            "extra": {
+                "sender": "boddeda.giridhar@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4492e3d1-84cc-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin,\nWe have updated the Charger to latest FW v6.0.3.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-06T23:20:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "93ce2098-4acd-ef11-b8e8-000d3a68cce9",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Colin,\nSince FW update, could you pls confirm if issue persists.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-07T22:56:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ecd01818-48fe-d32b-86b1-86ebd5d9f6aa",
+            "subject": "Query from Jason via Teams: ",
+            "body": "Query from Jason Stonier:\nIt seems Charger went offline in SCB at about 02:00 UTC today \"08th Jan\" - there was a reboot from SCB and it never came back online. It is still online to OCPP though. I'm wondering if you have any clues.",
+            "date": "2025-01-08T23:34:36Z",
+            "extra": {}
+        },
+        {
+            "id": "2b11df83-6f23-778b-b263-7342cb3bbb25",
+            "subject": "Analysis",
+            "body": "Reason : At that time, FW was updated,\nReboot is part of the FW update and reboot is not triggered separately.\nSignal Strength & Operator seems to be fine on Router 1 till 01:57:22\nrouter1 - signal strength: {\"stdout\":\"+QCSQ: \\\"LTE\\\",42,-76,149,-16\\r\\n\\r\\n\",\"stderr\":\"\"}\ncurrent operator: {\"stdout\":\"+QSPN: \\\"3Ireland\\\",\\\"3\\u0011IRL\\\",\\\"DATA ONLY\\\",0,\\\"27205\\\"\\r\\n\\r\\n\",\"stderr\":\"\"}\nCharger disconnected at 02:01:55\nNow, If any of following reason for SCB offline:\nData Plan exhaustion\nRouter's 2 Mobile connection\nor Other ?",
+            "date": "2025-01-08T23:47:33Z",
+            "extra": {}
+        },
+        {
+            "id": "aa54bba4-1bce-ef11-b8ea-002248a2b1bd",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Jason,\nThanks for reporting charger to be Offline.\nIt seems after the FW update the Charger didn't came online.\nIn order to resolve same, We need to have perform reboot.\nCould you pls request the Remote reboot from OCPP side, or need to perform physical reboot.\nOnce charger comes online, We will check router setting\nVia SSH\nfor RCA.\nHope it works, else We need to plan for a site visit with the spare router.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-08T23:52:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d001fcc1-43ce-ef11-b8e8-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0397739 CRM:00225146144",
+            "body": "Reetesh Kumar Sharma was assigned as new Case Manager for case 0397739 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=f58def29-4cc8-ef11-b8e8-000d3a68cce9",
+            "date": "2025-01-09T04:39:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9204eace-83ce-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Jason,\nCould you please provide an update on whether a remote reboot from the OCPP side has been performed, or a physical reboot has been carried out on the charger? We are currently observing that the charger is still offline on SCB.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T12:18:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "41183c53-9ace-ef11-b8ea-002248a2b1bd",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi team,\nI have rebooted the charger from OCPP, and the SCB connection has not come back online.\nI will try to get an engineer to the site.\nThanks,\nJason",
+            "date": "2025-01-09T14:59:30Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c1299b7-bace-ef11-b8e9-0022489bcff4",
+            "subject": "RE: ID0397739-DC/Si-D/IE-[MP / S2 170003301] Not starting charge sessions CRM:00797001602",
+            "body": "Hi Jason,\nThanks for update.\nIf you need assistance in the site intervention, Do let us tentative timing, so that We can align a person for remote support.\nPreparations for Site intervention;\nWe need a spare router, Ethernet cable.\nLaptop with Admin access and the Companion Tool.\nWe need to follow the Knowledge Article\nKnowledge Article: Knowledge Article for ISP: Emobility_SiCD_SW_Router_WebUI- 2 Mobile (WAN) in Main WAN section - Dynamics 365\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-09T18:51:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c0b3afd8-cbd0-ef11-8eea-7c1e5237dbeb",
+            "subject": "Webform_incident_SiCharge D_12-01-2025_SN: mps2170003301 dispenser S2S1516381",
+            "body": "Dear colin barry,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nmps2170003301 dispenser S2S1516381\nThank you\neMobility Technical Support Team\nSehr geehrte/r colin barry,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nmps2170003301 dispenser S2S1516381\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-12T09:59:06Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4c7b25b9-dad0-ef11-8eea-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0399431 CRM:00225147326",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0399431 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fd7fbe2-cbd0-ef11-8ee9-7c1e5235925f",
+            "date": "2025-01-12T11:45:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f5e9f5a1-c11a-d302-ab64-77cbaa2c1099",
+            "subject": "Issue reported by customer",
+            "body": "The customer attempted to use the charger on Friday by tapping their card, but was unable to do so. They also received an email indicating that the charger had been updated with new firmware. The customer is requesting a solution as soon as possible, as their usage has decreased significantly since last Friday. Serial no. MPS2170003301 dispenser no. S2S1516381",
+            "date": "2025-01-12T11:53:52Z",
+            "extra": {}
+        },
+        {
+            "id": "6fcfe924-dcd0-ef11-8ee9-000d3a68cce9",
+            "subject": "ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello Colin Barry,\nThank you for reaching\nout\nto eMobility Support. My name is\nVaishnavi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID/Serial No.\n:\nE7gWMK\nProblem Description\n: Unable to charge with card\nTroubleshooting\n:\nWe have checked and found that the charger is offline on SCB, which is why the customer is unable to charge. To resolve this issue, a site intervention has already been planned. Service personnel will visit the site to investigate the issue and provide you with further updates shortly.\nPlease note that, this issue has already been addressed in ticket\nID0397739-DC/Si-D/IE-[MP / S2 170003301] BRITE- Not starting charge sessions\n. Hence for further updates, kindly refer to ticket ID0397739. With your confirmation, we will proceed with the closure of this case, to avoid creating a duplicate record.\nKindly confirm the same.\nFor future reference, your case number is\n0399431\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-12T11:55:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0d6d4cb-e1d0-ef11-8ee9-6045bde1171e",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Thank you.\nPlease confirm what SCB is?\nPlease note the charger has been offline since Friday afternoon.\nIf someone is coming today to site, I need notice as I have the access keys. My phone number is +353879113409\nColin\nColin Barry\nBrite EV charging",
+            "date": "2025-01-12T12:36:11Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0dfc8b26-e2d0-ef11-8ee9-000d3a68cce9",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello Colin,\nSCB is our backend. Charger is offline on SCB, which means Router 1 (XF3) is offline. Therefore, a site intervention has been planned to investigate why the Router 1 connection is lost and why the charger is offline.\nService personnel will inform you once he plan to visit the site.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-12T12:38:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7b366d5b-e6d0-ef11-8eea-0022489bcff4",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Please advise if the service agent will attend today? It is 1.08pm now.\nColin Barry\nBrite EV charging",
+            "date": "2025-01-12T13:08:47Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "82ed2fa2-e6d0-ef11-8ee9-000d3a68cce9",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello Colin,\nThere is no confirmation yet from the service agent about visiting today. It is most likely that the visit will not happen today. We will inform you of the date and time once we receive any updates from him.\nWe thank you for your time and patience in advance.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-12T13:10:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "15f385db-86d1-ef11-8ee9-000d3ab41b62",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Please advise on situation asap this morning please on getting the charger back online urgently. We are 60 hours offline.\nColin Barry\nBrite EV charging",
+            "date": "2025-01-13T08:17:48Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3aeca843-8dd1-ef11-8ee9-002248a2b1bd",
+            "subject": "RE: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hi Support, Colin,\nThe Charger is offline on our servers (SCB) – however it is online with Fuuse (OCPP), and the SCB connection does <not> affect charging behaviour – we just can’t currently see logs from the charger, but otherwise it is operational.\nAll my Irish chargers have been offline to our SCB servers since Friday, and we suspect there’s a problem with Vodafone IE – this is under investigation. All are, however, online with Fuuse.\nLooking at Fuuse, I can see the charger has sessions with RFID and Mobile App over the weekend – so this seems to be a contactless terminal issue.\n@Colin Barry\n– have you raised a support request with Fuuse on their terminal? I will follow up with them.\nThanks,\nJason",
+            "date": "2025-01-13T09:03:38Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ffa20ad9-8ed1-ef11-8ee9-000d3ab009dd",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hi Jason,\nThe charges you saw with RFID were my test charges and worked fine.\nThe payter terminal is working / online and has been online all weekend. The backlit payter screen is showing the correct text. I did a hard reset from the power cabinet on Saturday myself as Fuuse could not access the charger.\nWe then tested the driver Fuuse app, which showed all chargers online, tried to start a charge as a customer, my customer card payment was accepted via the Payter, the payment was logged in my bank, the charge would not start. Same situation with tap, the card machine beeps, nothing happens. If you can see on Saturday one customer managed four mastercard payments successfully without a charge starting.\nPlease advise,\nregards\nColin\nOn Mon, Jan 13, 2025 at 9:03 AM Stonier, Jason <\njason.stonier@siemens.com\n> wrote:\nHi Support, Colin,\nThe Charger is offline on our servers (SCB) – however it is online with Fuuse (OCPP), and the SCB connection does <not> affect charging behaviour – we just can’t currently see logs from the charger, but otherwise it is operational.\nAll my Irish chargers have been offline to our SCB servers since Friday, and we suspect there’s a problem with Vodafone IE – this is under investigation. All are, however, online with Fuuse.\nLooking at Fuuse, I can see the charger has sessions with RFID and Mobile App over the weekend – so this seems to be a contactless terminal issue.\n@Colin Barry\n– have you raised a support request with Fuuse on their terminal? I will follow up with them.\nThanks,\nJason",
+            "date": "2025-01-13T09:15:00Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5c1087db-91d1-ef11-8ee9-000d3ab009dd",
+            "subject": "RE: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hi Colin,\nI’ve raised a request with Fuuse to look at this, as it looks to me like a Payter issue – and I have also organised our service partner to attend the site to try and understand why our modem is offline. Once I have log access to the charger I should be able to understand a lot more of what’s happening.\nThanks,\nJason",
+            "date": "2025-01-13T09:36:33Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3a0a6604-98d1-ef11-8ee9-6045bde1171e",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hi Jason\nI have been on with Payter. They are investigating on their side and will revert in about an hour. They did do an update on the terminal and I have checked if the update worked on site, it did not. The Payter is on, online, beeping when you touch your card to it but nothing happens then.\nWhat time will the maintenance team be on site please?\nC\nColin Barry\nBrite EV charging",
+            "date": "2025-01-13T10:20:39Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a729d742-bad1-ef11-8eea-7c1e5235e725",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "All,\nWe urgently need an update here please\nThe site is still offline and closed.\nWe are losing money here and need to understand what is going on\nColin\nColin Barry\nBrite EV charging",
+            "date": "2025-01-13T14:25:49Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "76b860dc-cbd1-ef11-8eea-7c1e5235e725",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello Colin,\nGreetings of the day!\nWe sincerely apologize for the inconvenience and understand the urgency of the situation.\nOur team is actively investigating the issue, and we’re working to resolve it as quickly as possible.\nPlease note that the service person will be onsite on Wednesday.\nYour patience is greatly appreciated, and we are committed to minimizing the impact on your business.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-13T16:31:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d4633da-cfd1-ef11-8ee9-000d3ab9a120",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "This is totally unacceptable that we must wait until Wednesday for an investigation that we don’t know is even going to be fixed. The charger has been broken since Friday. Who will compensate us for lost revenue for the period of time the charger is offline? There should have been someone on site by lunch time today for a critical event like this.\nColin Barry\nBrite EV charging",
+            "date": "2025-01-13T17:00:22Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5533b655-9fd4-a8a1-b72c-4f7c8ec6ba8a",
+            "subject": "Notes for L2",
+            "body": "Contacted Jason via teams and told to prioritize the case. He will be talking with the customer from his end.",
+            "date": "2025-01-13T17:04:39Z",
+            "extra": {}
+        },
+        {
+            "id": "15fa8ba1-1f2f-bfc0-b484-799c998a4b8b",
+            "subject": "Update from Jason",
+            "body": "We will do - we have an engineer going out in Wednesday - there are two separate issuse here\nThe NOC team did a firmware update to v6 last week, and the charger has not reported into SCB since then\nWe have problems on other Irish chargers, which <may> affect this one, or it may still be the issues after the v6 update\nI know for sure that the charger has been working since the update - this seems to be a new problem - however I do <not> trust firmware updates until they have been operating on other chargers for at least a month - this one should not have been updated to v6 without my regional testing first.\nFuuse has been unreliable - but we can't prove anything without the charger on SCB...!",
+            "date": "2025-01-13T17:23:16Z",
+            "extra": {}
+        },
+        {
+            "id": "6f599684-d4d1-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hi Colin,\nThere are two things at play here.\nFirstly, I don’t have access to charger logs (common with all the Irish chargers at the moment) which we believe is a Vodafone IE issue which is being investigated. Without that access, I can’t begin to work out why your charger isn’t taking contactless payments. An engineer has been requested and will be at the site as early as possible to try and understand the issues with our modem / Vodafone IE.\nSecondly, I see a number of successful transactions over the weekend – what appears not to be working is the contactless transactions – and there is no integration between the charger and the terminal – that side is all handled by Payter Cloud and Fuuse. With what I know at the moment, I do not believe it is a charger issue, but to help identify the true cause, I need to see logs.\nWe will know more about why I have lost logging access when the engineer arrives – hopefully tomorrow but at the latest Wednesday. But, as stated, I believe it is an issue with Vodafone since I have lost access to all my chargers in Ireland.\nUntil we and/or Fuuse prove otherwise, I do not believe this is a charger issue - I believe this is a contactless terminal issue, or a processing issue at Fuuse.\nThanks,\nJason",
+            "date": "2025-01-13T17:33:41Z",
+            "extra": {
+                "sender": "jason.stonier@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d61fc841-dcd1-ef11-8ee9-6045bde1171e",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Adam / Jason,\n4 hour guaranteed response by the 24/7 Indian office has been achieved to date with the two incidents but as usual, when it comes to local service we are let down. We are faced with a further long delay and customer impact.\nYour critical infrastructure modem is offline. The Payter terminal is online, Payter have pushed updates to their unit and it is working.\nWhether you think this is a Fuuse issue or not, there is no way to find out until you get the charger online.\nNo one in the UK office is available at the weekends so for a Level 1 incident such as this, its not acceptable to be telling us we have to\nwait\nuntil Wednesday.\nAs a critical event (no remote access / no successful customer charges) someone should have been on site on Saturday within hours of being notified, irrespective of what you say about Vodafone.\nSupport ultimately relies on resolution and not response. We want to see resolution of critical problems given an adequate resolution time going forwards.\nRegards,\nColin\nColin Barry\nBrite EV charging",
+            "date": "2025-01-13T18:29:08Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e4a54aaf-58d2-ef11-8ee9-6045bde1171e",
+            "subject": "A new case manager was assigned to 0399431 CRM:00225148192",
+            "body": "Reetesh Kumar Sharma was assigned as new Case Manager for case 0399431 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fd7fbe2-cbd0-ef11-8ee9-7c1e5235925f",
+            "date": "2025-01-14T09:19:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eeb29c49-5cd2-ef11-8ee9-000d3ab009dd",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Good morning Mr. Colin,\nThe service engineer is visiting today to address this issue anytime soon.\nHi Jason, I have Saurav available on standby for any remote support.\nAlso, I am merging the case #\n0397739 - ID0397739-DC/Si-D/IE-[MP / S2 170003301]\nBRITE- Not starting charge sessions, with this case for ease of communication and tracking, also to avoid multiple communication channel and reporting.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T09:45:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "060c4a67-5fd2-ef11-8ee9-000d3a691687",
+            "subject": "A new case manager was assigned to 0399431 CRM:00225148238",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0399431 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9fd7fbe2-cbd0-ef11-8ee9-7c1e5235925f",
+            "date": "2025-01-14T10:07:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1ecbf78-9a47-53e2-9091-76385b60935e",
+            "subject": "Site intervention on 1/14/2025",
+            "body": "Checked all the settings of Router1. Scanned the operators (found Vodafone to be forbidden). Restarted connection.\nSuspect either SIM or Router is not working.\nTo confirm the same, we need to check with spare SIM and/or spare Router.\nNo spare SIM was available with RC. Hence t\nried swapping the SIM from Router 2 in Router1, but that SIM (Vodafone) didn't worked in Router 1 as it was M2M.\nWe changed the APN setting to auto for testing.\nWhile concluding today's activity RC rebooted charger from OCPP, after that charger was stuck on Hello Screen and were offline on OCPP as well.\nWe tried to ping all the components and were able to ping all.\nConsulted ES team, they confirmed issue with CFAST card.",
+            "date": "2025-01-14T14:33:19Z",
+            "extra": {}
+        },
+        {
+            "id": "5febd389-85d2-ef11-8ee9-000d3ab009dd",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello Jason,\nGreetings of the day!\nWith reference to today's site intervention, we need to check if the issue is with sim or router.\nHence kindly carry the spare sim and router, Ethernet cable, Laptop with Admin access and the Companion Tool in next site visit.\nPart number is as below:\nKindly, Collect dump logs to find root cause of this issue before doing any further activity.\nThen Restore config, if issue did not resolve by restoring config then need to FLASH Cfast card also.\nDo let us know, if you have any query.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T14:40:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0150cce5-91d2-ef11-8ee9-7c1e52378e9b",
+            "subject": "Re: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Hello,\nWe are now a full four days offline with zero revenue and no update as to the status of the outage.\nJust to put some context on this for those that may not understand the gravity of this situation,\nthis is currently our only site\n. The negative impact to the Brite brand, as\na business that is currently closed\n, is not good. A considerable number of our customers are daily repeat. The repeat customers will not come back if we have outages like this.\nCan we please have an accurate estimate as to when exactly we can reopen our business?\nThank you,\nColin\nOn Tue, Jan 14, 2025 at 10:00 AM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nGood morning Mr. Colin,\nThe service engineer is visiting today to address this issue anytime soon.\nHi Jason, I have Saurav available on standby for any remote support.\nAlso, I am merging the case #\n0397739 - ID0397739-DC/Si-D/IE-[MP / S2 170003301]\nBRITE- Not starting charge sessions, with this case for ease of communication and tracking, also to avoid multiple communication channel and reporting.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-14T16:09:19Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bbbba8f8-a7a1-6fbf-a934-b1d45fe30d2d",
+            "subject": "Action Item for Next Visit",
+            "body": "Carry 1 spare router and spare SIM to troubleshoot SCB offline issue.\nCollect dump logs to find root cause of this issue before doing any further activity.\nRestore config, if issue did not resolve by restoring config then\nFLASH Cfast card also.",
+            "date": "2025-01-14T16:41:47Z",
+            "extra": {}
+        },
+        {
+            "id": "efc517c1-98d2-ef11-8ee9-6045bde1171e",
+            "subject": "Automatic reply: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "﻿\nI am out of office due to illness and will get back to you on my return. For all urgent matters please contact  Kevin.costigan@siemens.com.",
+            "date": "2025-01-14T16:58:22Z",
+            "extra": {
+                "sender": "lucas.adam@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "21e62b40-acd2-ef11-8eea-000d3addcd64",
+            "subject": "RE: ID0399431-DC/Si-D/IE-[MP / S2 170003301] Unable to charge with card CRM:00579001400",
+            "body": "Good Evening Colin,\nOur service partner has been on site today investigating the reported issue with Jason’s support.\nThey will be back on site in the morning to continue and we will keep you posted on progress tomorrow.\nBest Regards\nGareth Marshall\nBEng MSc CEng ChPP\nHead of Operations and Service Delivery\nSiemens Smart Infrastructure\n– eMobility\nSir William Siemens House\nPrincess Road\nManchester, M20 2UR\nUnited Kingdom\nPhone\n(\n+44 (0)7808 823 061\nEmail\n*\ngareth.marshall@siemens.com\nThis communication contains information which is confidential and may also be privileged. It is for the exclusive use of the addressee. If you are not the addressee please note that any distribution, reproduction, copying, publication or use of this communication or the information is prohibited. If you have received this communication in error, please contact us immediately and also delete the communication from your computer.",
+            "date": "2025-01-14T19:18:02Z",
+            "extra": {
+                "sender": "gareth.marshall@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "90b602b6-64d3-ef11-8ee9-000d3a691687",
+            "subject": "ID0399431-DC/Si-D/IE-[MP / S2 170003301] BRITE- Unable to charge with card CRM:00579001416",
+            "body": "Hello team,\nWith reference to trailing mail, I am writing to formally inform that we are moving case 0399431 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-GB SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nyes\nOnsite Troubleshooting\nyes\nEnd Customer Communication\nyes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-GB SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-15T17:18:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "incident_id": "d92edd86-69c3-4256-a9fb-6335ae7849d0",
+    "ticket_number": "0410838",
+    "title": "ID0410084-DC/Si-D/IL-[MP / P4 170000450] Smoke & Equipment Damage(C1)",
+    "created_on": "2025-03-05T15:36:15Z",
+    "last_activity": "2025-05-22T12:02:03Z",
+    "age": "9543",
+    "description": "Reported behavior/issue\n: T\nhe customer saw smoke coming from the charging socket. After the session was paused, the customer attempted to restart charging multiple times, but the vehicle did not respond. When unsuccessful, they tried to disconnect the charging cable from the vehicle but were unable to do so. A technician from the vehicle importer arrived at the scene and disassembled the vehicle’s charging port. According to him, both the vehicle’s charging port and the charging cable plug had melted.(customer already replaced the cable).\nRequest for Assistance From end customer:\nCould such an incident\noccur due to a charger malfunction\n?\nWas the damage\ncaused by the charger or by the vehicle\n?\nDo the transaction logs match the vehicle that attempted to charge until 11:40 (Israel Time)?\nSolution: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "YB7uye",
+    "stage": null,
+    "serial_number": "MP / P4 170000450,MP / P4 170000450",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "3cdc4c97-d7f9-ef11-bae2-6045bddf319c",
+            "subject": "A new case manager was assigned to 0410838 CRM:00225173504",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0410838 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d92edd86-69c3-4256-a9fb-6335ae7849d0",
+            "date": "2025-03-05T15:36:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86d68a38-221f-dc98-ad1e-f3fda096277f",
+            "subject": null,
+            "body": "Problem Description:\nSmoke & Equipment Damage\n•\nAction Performed:\nLog analysis,collected EcoG logs. The charger was not delivering power after the initial stages, I am unable to pinpoint the exact cause of this interruption. Got the EcoG logs but the reason is unclear.\n•\nCharger SW Version:\n6.0.3\n•\nReason for Handover:\nFurther analysis\n•\nLog analysis with timestamp:\n1 March 9:17 AM (UTC) Log attached",
+            "date": "2025-03-05T15:47:35Z",
+            "extra": {}
+        },
+        {
+            "id": "ea6c90a7-975a-1afd-aaad-20ac9e6a0d52",
+            "subject": "Note to L3",
+            "body": "Logs attached in Attachments",
+            "date": "2025-03-05T16:02:35Z",
+            "extra": {}
+        },
+        {
+            "id": "37a97558-6afa-ef11-bae2-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0410838 CRM:00225173890",
+            "body": "Sambath KS was assigned as new Case Manager for case 0410838 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d92edd86-69c3-4256-a9fb-6335ae7849d0",
+            "date": "2025-03-06T09:06:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2d3134c-882c-50c2-9b58-cf60c550b916",
+            "subject": "Notes from ES to NOC [ 12/03/2025]",
+            "body": "Problem Description\n:\n-\nCharging cable welded to the EV during charging session\nSuspected Root Cause\n: Unknown\nAction Performed:\nNote from Ankita : “\nLog analysis,collected EcoG logs. The charger was not delivering power after the initial stages, I am unable to pinpoint the exact cause of this interruption. Got the EcoG logs but the reason is unclear.”\nActually charger delivered power during the process-\nProof:\nSuspected issue -→ power contacts might be not contacted and therefore no current flow, At 2025-03-01T09:19:57.878676 there is a current flow started & lead to a welded mating suface\nProof:\n2025-03-01T09:20:00.928321 --> |Outlet=DC2|CableName=EV-T2M4CC-DC|EventType=Warn|Tdiff(degC)=12.2|\nContact1(degC)=11.6\n|Contact2(degC)=23.8|Power(kW)=0.0|Current(A)=0.0|Energy(kWh)=0.0|\n2025-03-01T09:20:09.000000 --> pt1000_1_R\":1435,\"\npt1000_1_T\":112.7234878540039\nCharger SW Version\n: 6.0.3\nFault history: DC2 was giving plausibilty error for a long time & attaching the summary ( Suspected Root Cause )\nProof:\nLog analysis with timestamp:\n2025-03-01T09:20:00.928321+00:00\nAttachment:\nNA\nNote to NOC: Closing the child case as the charger is out of warranty and request to proceed the ticket with standard procedure",
+            "date": "2025-03-12T06:31:44Z",
+            "extra": {}
+        }
+    ]
+}

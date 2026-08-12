@@ -1,0 +1,123 @@
+{
+    "incident_id": "067d6b23-376e-4387-92bb-4fa3407404fd",
+    "ticket_number": "0402783",
+    "title": "ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order",
+    "created_on": "2025-01-29T09:12:43Z",
+    "last_activity": "2025-12-16T14:01:37Z",
+    "age": "11712",
+    "description": "Reported behavior/issue:\nCharging issue arises when another outlet is engaged. (28/01/2025)\nRoot cause:\nSolution:\nNo response from the region.\nOn DAMEX Sanctioned List:\nWarranty Status: Expired",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "MSMnXv",
+    "stage": null,
+    "serial_number": "MP / R1 170001423",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ad3f7a35-21de-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0402783 CRM:00225155255",
+            "body": "Martin Koch Pedersen was assigned as new Case Manager for case 0402783 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=067d6b23-376e-4387-92bb-4fa3407404fd",
+            "date": "2025-01-29T09:12:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fc6c3aef-26de-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0402783 CRM:00225155295",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0402783 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=067d6b23-376e-4387-92bb-4fa3407404fd",
+            "date": "2025-01-29T09:53:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cec6c1ac-2bde-ef11-8eea-0022489bcff4",
+            "subject": "ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Dear Martin Koch Pedersen,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001423\nChargerID/Serial No.\n:\nMSMnXv\nProblem Description\n: Outlet out of order\nPlease allow us some time to analyse the issue and we will get back to you shortly with an update.\nFor future reference, your case number is\n0402783\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-29T10:27:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "69d23e07-4cde-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Hi Martin,\nWe have analyzed the logs and found that the charging session fails when the DC plug is not properly connected to the EV socket. While this issue may also be related to the EcoG, it is not very frequent. We do not recommend replacing the EcoG right away. However, I have observed that the charger works on both outlets after this issue occurs. Please ensure the DC plug is properly connected to the EV socket, and check if the cable lock on the EV side is fully engaged.\nUpon reviewing our asset database, we found that the product is no longer under warranty since [07/01/2025] as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-01-29T14:19:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "daae7a43-b7ce-fd06-8ea9-85bfe702d06a",
+            "subject": null,
+            "body": "But it doesn't make any sense, that the other outlet goes of order, when it is not in use.\nWe see the same problem on the customers other charger\n170001422",
+            "date": "2025-01-30T08:30:54Z",
+            "extra": {}
+        },
+        {
+            "id": "b548f7e2-cfdf-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Hi Martin,\nI see your notes in the ticket ISP and the charger is working on the older firmware version 4.0 and currently we have version 6.0.3 and I checked the logs and it was due to SECC Coap Polling error which means that the EcoG will communicate with the PLC within every 5 seconds and if it fails it will triggers the message and the outlet goes out of order for few seconds then it will came back online. We can try updating the charger to the latest firmware version and then we will monitor the charger. Please let me know the date & time for the update.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T12:35:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0bc69ded-dde2-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Hi Martin,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-04T09:53:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "62763cad-b0e3-ef11-8eea-0022489fb3e7",
+            "subject": "RE: ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Hi Martin,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-05T11:02:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d07ff0cd-84e4-ef11-8eea-000d3a68cce9",
+            "subject": "RE: ID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order CRM:00643001237",
+            "body": "Dear Martin Koch Pedersen,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0402783\nbut have not received a response.\nAs we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0402783\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-06T12:20:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4e1a1bff-84e4-ef11-8eea-000d3a68cce9",
+            "subject": "Ticket 0402783 has been closed. Are you satisfied with our provided solution? CRM:00643001265",
+            "body": "Dear Martin,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0402783\nwith the title:\nID0402783-DC/Si-D/DK-[MP / R1 170001423] Outlet out of order\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-06T12:22:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

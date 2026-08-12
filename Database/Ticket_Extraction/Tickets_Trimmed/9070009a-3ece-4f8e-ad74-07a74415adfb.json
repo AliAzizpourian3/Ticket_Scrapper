@@ -1,0 +1,138 @@
+{
+    "incident_id": "9070009a-3ece-4f8e-ad74-07a74415adfb",
+    "ticket_number": "0392232",
+    "title": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26",
+    "created_on": "2024-11-27T10:40:55Z",
+    "last_activity": "2025-12-16T14:03:41Z",
+    "age": "10127",
+    "description": "Reported behaviour/issue:\nPLC Communication Error\nSafetyRelay_QA26\nEmergencyStopButton_SF2\nDC4 didn't charge for 2 times with weird EcoG behavior\nRoot cause:\nPLC Communication Error → Ethernet cable is damaged or faulty\nSafetyRelay_QA26 + EmergencyStopButton_SF2→ Dispenser door switch is a bit damaged due to transport?\nSolution:\nReplace Ethernet cable\nClose door “harder”\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "8qgG8Z",
+    "stage": null,
+    "serial_number": "Y2 / S9 313875948001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1055391e-acac-ef11-b8e8-000d3ab11939",
+            "subject": "A new case manager was assigned to 0392232 CRM:00225130406",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0392232 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9070009a-3ece-4f8e-ad74-07a74415adfb",
+            "date": "2024-11-27T10:41:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f5d7fc46-acac-ef11-b8e8-7c1e5277f55b",
+            "subject": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Dear Johannes,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S9 313875948001\nChargerID/Serial No.\n:\n8qgG8Z\nProblem Description\n: Charger is not operational\nTroubleshooting\n:\nAfter 2 long days we were able to bring back the charger to 99% operation. It seems there is still a pending issue but it's not critical. I will describe it afterwards.\nWhen the dispenser was installed there was an error\nDispenser_PLC_A_KF201 - PLC Communication Error\n,\nSafetyRelay_QA26\nand\nEmergencyStopButton_SF2\n.\nFor the communication error, I tried to reupload the TIA firmware to the PLC but it was not possible as it was not reachable due to a supposed QA210. Since that was not possible, you moved to site we tried to activate QA210. It was not possible because there was no problem with the TIA firmware, it was already toggled.\nWe moved on to the\nmost problematic error of the SafetyRelay+Estop\n, we checked the whole circuit from the 24V emergency until we reached the FA12, on the part that we are connected to the dispenser we lost the 24V and as such we searched on the Dispenser door sensor, when we opened the sensor, the door sensor went back to operational and we lost the error flags. As such this must be due to the damaged that we found on the dispenser, caused the contacts to not be correct. So\nthis problem was fixed with closing the door with more force\n.\nFor the\nPLC Communication Error\n, we could ping all the addresses via SSH but there were some packets lost. As such, we proceed to check via Network Scanner, from dispenser Switch → all okay we can see all the devices, and when we checked via main SiD, we couldn't see any of the dispenser IPs, which means that the problem is from the dispenser's switch to main charger.\nAfter we replaced the Ethernet cable from SiD to dispenser the error was gone and we could charge in all outlets.\nIn the end you were able to notice one failed session in DC4. I couldn't get the full detailed information as I was busy with other tasks and couldn't fetch the DebugStation video.\nLet's align on a schedule with the customer to trial again this Outlet as it's hard to proactively check the sessions. From what I see in the logs there were 2 successfull charging sessions followed by 2 that didn't work. We need to reproduce this error and what was the difference, is it possible that the cables could be also damaged in the transport and we can have a bad contact when plugging in.\nFor future reference, your ticket number is\n0392232\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-27T10:42:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2f7008cb-48ae-ef11-b8e8-000d3ab009dd",
+            "subject": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hello Johannes,\nCan you tell me if the customer complained again?\nIf not, we can close the ticket for the PLC Comms error and reopen for the failed sessions if necessary.\nLet me know what you think it's best.\nBest regards,\nFrancisco",
+            "date": "2024-11-29T11:55:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bb9586a-4aae-ef11-b8e9-0022489bcff4",
+            "subject": "AW: ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Francisco,\nThe customer has unfortunately not yet test there new trucks.\nTherefore, please keep the ticket open as the DC4 port still has a problem.\nI would also like to mention that the door sensor issue was not resolved by closing the door more firmly from the dispenser, but by manually adjusting the locking mechanism (hook on the inside of the door).\nAs can be seen in the photo, the gap at the top is larger than at the bottom. Multiple attempts were made to close the door at the top, but the door could never be locked into place.\nAdditionally, I was informed by the factory that the issue with the LED strip (brightness inconsistency) should be reported to LV3.\nThe problem seems to be known.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 29. November 2024 12:56\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nCc:\nKaiblinger, Daniel (RC-AT SI E) <daniel.kaiblinger@siemens.com>\nBetreff:\nID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111\nHello Johannes,\nCan you tell me if the customer complained again?\nIf not, we can close the ticket for the PLC Comms error and reopen for the failed sessions if necessary.\nLet me know what you think it's best.\nBest regards,\nFrancisco",
+            "date": "2024-11-29T12:06:53Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c9310ea4-8db0-ef11-b8e8-000d3a68cce9",
+            "subject": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Johannes, good morning. I hope you are doing well.\nPlease let me know about the LED strip email from the factory, otherwise we need to test it before sending to L3. In any case this LED problem should be a separate ticket, when you have the\nRegarding the DC4 outlet there is not much I can do if the customer cannot go there and test. We can close the ticket and continue when you are ready.\nLet me know your thoughts.\nBest regards,\nFrancisco",
+            "date": "2024-12-02T09:13:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4de7c1b-a5b0-ef11-b8e8-000d3ab009dd",
+            "subject": "AW: ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Francisco,\nAnuj told me that LV3 has been informed.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 2. Dezember 2024 10:22\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nCc:\nKaiblinger, Daniel (RC-AT SI E) <daniel.kaiblinger@siemens.com>; Kaiblinger, Daniel (RC-AT SI E) <daniel.kaiblinger@siemens.com>\nBetreff:\nID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111\nHi Johannes, good morning. I hope you are doing well.\nPlease let me know about the LED strip email from the factory, otherwise we need to test it before sending to L3. In any case this LED problem should be a separate ticket, when you have the\nRegarding the DC4 outlet there is not much I can do if the customer cannot go there and test. We can close the ticket and continue when you are ready.\nLet me know your thoughts.\nBest regards,\nFrancisco",
+            "date": "2024-12-02T12:01:16Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "88a2238c-a6b0-ef11-b8e8-000d3ab009dd",
+            "subject": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Johannes,\nPlease raise the new ticket and the colleagues will follow up with L3.\nFor this ticket let's focus on the DC4 not charging. There are 3 options here:\nClose the ticket and continue when customer is available\nSend ticket to RC-AT\nIf the customer is available during this week I can keep the ticket open\nPlease let me know what is best for you as I cannot keep the ticket with myself if there is no activities being performed.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-12-02T12:11:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "45310cc4-31b2-ef11-b8e8-000d3ab41b62",
+            "subject": "ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Johannes,\nSince we solved this issue regarding the PLC communication, I will close the ticket. As I understood, the customer raised a new ticket for the QA26 error.\nPlease follow up on that ticket. For the LED issue raise a new one with the email in attachment saying to send to L3 from factory.\nThank you\nBest regards,\nFrancisco",
+            "date": "2024-12-04T11:20:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f4a4838-32b2-ef11-b8e8-000d3ab41b62",
+            "subject": "Ticket 0392232 has been closed. Are you satisfied with our provided solution? CRM:00315002143",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0392232\nwith the title:\nID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-04T11:23:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3e591100-39b2-ef11-b8e8-000d3ade3245",
+            "subject": "AW: ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111",
+            "body": "Hi Franciso,\nnext week on 12.11.2024 we are on site and can test together with you the DC4.\nAt 10:30 we have first test with our customer and maybe with the new trucks.\nSo before it would be nice to test DC4 with our Cubra Born.\nDo you have time 12.11.2024 8:30 or 9h to test together with you DC4?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 2. Dezember 2024 13:14\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nCc:\nKaiblinger, Daniel (RC-AT SI E) <daniel.kaiblinger@siemens.com>; Kaiblinger, Daniel (RC-AT SI E) <daniel.kaiblinger@siemens.com>\nBetreff:\nID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 CRM:00315002111\nHi Johannes,\nPlease raise the new ticket and the colleagues will follow up with L3.\nFor this ticket let's focus on the DC4 not charging. There are 3 options here:\nClose the ticket and continue when customer is available\nSend ticket to RC-AT\nIf the customer is available during this week I can keep the ticket open\nPlease let me know what is best for you as I cannot keep the ticket with myself if there is no activities being performed.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-12-04T12:12:19Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3afce107-39b2-ef11-b8e9-7c1e5237dbeb",
+            "subject": "Email sent to a closed case 'ID0392232-DC/Si-D/AT[8qgG8Z] - PLC Communication Error + SafetyRelay_QA26 (0392232)' CRM:00225133826",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0392232\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-12-04T12:12:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

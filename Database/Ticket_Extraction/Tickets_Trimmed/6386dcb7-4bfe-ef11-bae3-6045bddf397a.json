@@ -1,0 +1,100 @@
+{
+    "incident_id": "6386dcb7-4bfe-ef11-bae3-6045bddf397a",
+    "ticket_number": "0411854",
+    "title": "ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session",
+    "created_on": "2025-03-11T07:37:44Z",
+    "last_activity": "2025-03-31T03:02:10Z",
+    "age": "28525",
+    "description": "Reported behavior/issue:\n0kWh charging session\nRoot cause: bug related to 6.1.2, fixed in 6.1.3",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "524226b0-4bfe-ef11-bae3-000d3adc93d1",
+            "subject": "Webform_incident_SiCharge D_11-03-2025_SN: MP / S5 170003620 ",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S5 170003620\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S5 170003620\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-11T07:37:35Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ecc2cd2b-a984-cc42-bddc-75334dca8388",
+            "subject": "Logs attached",
+            "body": "",
+            "date": "2025-03-11T09:07:54Z",
+            "extra": {}
+        },
+        {
+            "id": "56adec5b-58fe-ef11-bae3-6045bde0265d",
+            "subject": "ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00643001346",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S5 170003620\nChargerID/Serial No.\n:\nASl07a\nProblem Description\n:\n0kWh charging\nsession\nPlease allow us some time to analyse the issue and we will get back to you shortly.\nFor future reference, your case number is\n0411854\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T09:08:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95917c00-d6b1-ee59-a9ff-eb4e096ce09a",
+            "subject": "Start Transaction and stop transaction show same meter value",
+            "body": "",
+            "date": "2025-03-11T10:32:37Z",
+            "extra": {}
+        },
+        {
+            "id": "a2f3e9b0-ef9d-322e-a3fe-7b166e202e34",
+            "subject": "meter value being sent is updating regularly, only start and stop values match",
+            "body": "",
+            "date": "2025-03-11T10:34:12Z",
+            "extra": {}
+        },
+        {
+            "id": "f151d1d3-7efe-ef11-bae3-7c1e52350ea5",
+            "subject": "RE: ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00643001346",
+            "body": "Dear Johannes Dissauer,\nWe can see that this charger is updated on the beta release FW 6.1.2. Due to this we are transferring this case to the expert services, to work with R&D as we do not have the necessary information on the release notes and bug fixes of FW 6.1.2.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T13:43:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fd15a2b7-5b10-0817-a9ae-a732c3e1f430",
+            "subject": "Handover to ES",
+            "body": "a) Problem Description: 0kW charging session seen. Session seen only once on 03/03/25. In the OCPP logs on SCB, we see that the meterStart and meterStop transcation values are exactly the same 29587869 for the charging session.\nb) Suspected Root Cause: Charger FW on 6.1.2, also we see that just before the charging session ended. We saw an LEM related log, which is suspected to be the reason for the 0kW session:\n{\"stack\":\"Error: PUT\nhttp://10.20.17.20/v2/legal?transactionId=92674d2640ec4177\nreturned: 412 - Precondition Failed\\n at /dist/services/lem-meter.js:418:19\\n at Generator.next (<anonymous>)\\n at fulfilled (/dist/services/lem-meter.js:5:58)\\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\"}\nc) Action Performed: Log analysis\nd) Charger SW Version: 6.1.2\ne) Reason for Handover: Troubleshooting / We dont have enough information to process cases on 6.1.2 issues.\nf) Fault history: NA\ng) Log analysis with timestamp:\n2025-03-03, 10:56:41 For meterStart\n2025-03-03, 11:15:56 for meterStop\nand LEM error.\nh) Action Required: Troublshooting.\ni) Attachment: log screenshots in the agent notes.",
+            "date": "2025-03-11T14:02:07Z",
+            "extra": {}
+        },
+        {
+            "id": "71116d6d-81fe-ef11-bae3-7c1e52350ea5",
+            "subject": "RE: ID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session CRM:00643001346",
+            "body": "Dear Johannes Dissauer,\nA small correction, the previous email was sent by Shreyas Sathe, not Shrey Sharma.\nWith best regards,\neMobility Tech Support Team -\nShreyas Sathe\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T14:02:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0c34557-d90d-f011-998a-7c1e5236cda4",
+            "subject": "Ticket 0411854 has been closed. Are you satisfied with our provided solution? CRM:01410001586",
+            "body": "Dear Johannes Dissauer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0411854\nwith the title:\nID0411854-DC/Si-D/AT-[MP / S5 170003620] 0kWh charging session\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShreyas Sathe\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-31T02:39:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

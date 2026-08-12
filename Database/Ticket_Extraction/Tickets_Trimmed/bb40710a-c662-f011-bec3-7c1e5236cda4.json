@@ -1,0 +1,101 @@
+{
+    "incident_id": "bb40710a-c662-f011-bec3-7c1e5236cda4",
+    "ticket_number": "0438145",
+    "title": "ID0438145-DC/Si-D/NZ-[MP / P3 170000341] Estop released,charger still offline",
+    "created_on": "2025-07-17T04:25:18Z",
+    "last_activity": "2025-12-02T08:37:45Z",
+    "age": "467",
+    "description": "Reported behavior/issue: Estop released,charger still offline\nSolution: NA\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "VWGT8i",
+    "stage": null,
+    "serial_number": "MP / P3 170000341",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "f3fe8401-c662-f011-bec2-7c1e5236eee4",
+            "subject": "Webform_incident_SiCharge D_17-07-2025_SN: 170000341",
+            "body": "Dear Liz Hatton ,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000341\nThank you\neMobility Technical Support Team\nSehr geehrte/r Liz Hatton ,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000341\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-07-17T04:25:12Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cdfd69b1-c762-f011-bec2-7c1e52206585",
+            "subject": "A new case manager was assigned to 0438145 CRM:00225229724",
+            "body": "Anit Mukherjee was assigned as new Case Manager for case 0438145 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bb40710a-c662-f011-bec3-7c1e5236cda4",
+            "date": "2025-07-17T04:37:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "26b8bdf2-54b9-e5f5-9cf4-69e27ac0344b",
+            "subject": null,
+            "body": "",
+            "date": "2025-07-17T04:50:11Z",
+            "extra": {}
+        },
+        {
+            "id": "7655c8c4-ca62-f011-bec3-7c1e52faf3c6",
+            "subject": "ID0438145-DC/Si-D/NZ-[MP / P3 170000341] Estop released,charger still offline CRM:02888000153",
+            "body": "Dear Liz Hatton,\nThank you for reaching\nout\nto eMobility Support. My name is\nAnit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P3 170000341\nChargerID/Serial No.\n:\nVWGT8i\nProblem Description\n:\nEstop released, charger still offline\nFor future reference, your case number is\n0438145\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAnit Mukherjee\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-07-17T04:59:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0b792147-e862-f011-bec2-7ced8d490791",
+            "subject": "A new case manager was assigned to 0438145 CRM:00225229905",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0438145 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=bb40710a-c662-f011-bec3-7c1e5236cda4",
+            "date": "2025-07-17T08:30:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cf5927e6-f962-f011-bec4-6045bdde4786",
+            "subject": "RE: ID0438145-DC/Si-D/NZ-[MP / P3 170000341] Estop released,charger still offline CRM:02888000153",
+            "body": "Good evening Liz,\nI am reaching out from the Expert Team in regards of ticket\nID0438145.\nThe ticket was opened today for a loss of connectivity to the OCPP Backend for charger\n170000341\n, after the Emergency Stop button was pressed.\nFrom both a HW and FW point of view, there is no correlation between pressing/releasing the emergency stop button and the wired connectivity of XF4 to the OCPP Backend.\nIn the logs it is possible to notice that the connection to the OCPP Backend fell at 2025-07-16T19:17:51, while the emergency stop button was pressed at 2025-07-16T19:23:37.\nWhen I received the ticket this morning, I connected via SSH to the router and verified that the wired connection was fine. I rebooted the charger (triggering a boot notification) and now the charger is connected again to the OCPP Backend.\nSince the issue is solved, I will proceed to close this ticket. Please do not hesitate to open a new ticket in case this behavior happens more frequently, or if a reboot does not re-establish the communication to the Backend.\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank you\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-07-17T10:36:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3d5c929a-4463-f011-bec3-000d3adc93d1",
+            "subject": "RE: ID0438145-DC/Si-D/NZ-[MP / P3 170000341] Estop released,charger still offline CRM:02888000153",
+            "body": "Hi Anit\nThe charger is back online this morning. Can you let us know if you did anything or do you have any indication from the logs as to why it dropped off?\nRegards\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2025-07-17T19:31:16Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bd64d399-4463-f011-bec3-7c1e5236cda4",
+            "subject": "Email sent to a closed case 'ID0438145-DC/Si-D/NZ-[MP / P3 170000341] Estop released,charger still offline (0438145)' CRM:00225230302",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0438145\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-07-17T19:31:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

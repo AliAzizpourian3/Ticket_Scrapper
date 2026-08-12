@@ -1,0 +1,38 @@
+{
+    "incident_id": "6f4f285e-8379-44e5-a39d-30d63b3d5eb2",
+    "ticket_number": "0418846",
+    "title": "ID0418767-DC/Si-D/AT-[MP / S2 170003381] OMV- ELMS connectivity issue (C1)",
+    "created_on": "2025-04-14T20:04:59Z",
+    "last_activity": "2025-06-04T04:11:36Z",
+    "age": "72487",
+    "description": "Reported behavior/issue:\nA ticket is already open for the Charger. However, this has nothing to do with the 0kW sessions. The problem is that the charger is connected to an ELMS and as soon as the ELMS controller restarts, the charger cannot be reached for some time. It takes several hours until the connection is re-established. At the same time, the connection to other Alpitronic chargers is reestablished a few seconds after the reboot. So the fault lies with our charger and not with the ELMS controller. see e.g. 04.04.2025",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "pHAdNC",
+    "stage": null,
+    "serial_number": "MP / S2 170003381,MP / S2 170003381",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "29988fdf-259d-2bec-b1d8-27d57084e5ab",
+            "subject": "Note to L3",
+            "body": "Problem Description:\nThe charger is connected to an ELMS backend. Following a restart of the ELMS controller, the charger becomes temporarily unreachable.\nAction Performed (L2):\nN/A\nCharger Software Version:\nv6.1.3\nReason for Handover to L3:\nFurther investigation required.\nFault History:\nN/A\nLog Analysis (Date):\n04/04/2025,\n2025-04-03T14:02:50 (Logs attached)\nAction Required by HQ:\nNeed to investigate the root cause of why the charger fails to reconnect to the ELMS backend immediately after the ELMS controller restarts.",
+            "date": "2025-04-14T20:15:01Z",
+            "extra": {}
+        },
+        {
+            "id": "34db9744-ef27-e3d8-bca7-3926f7af9410",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Planned to check the issue with different RC by next week.",
+            "date": "2025-04-25T05:48:29Z",
+            "extra": {}
+        },
+        {
+            "id": "9340ed4b-4851-cf53-91e6-89da53edd04d",
+            "subject": "Notes from ES to NOC [ 04/06/2025]",
+            "body": "Problem Description\n:\nELMS issue\nSuspected Root Cause\n:Unknown\nAction Performed:\nNA- Unable to reproduce the error\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-06-04T03:38:25Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "incident_id": "22334fc3-417e-467c-b4c2-0445b3bac5f3",
+    "ticket_number": "0449451",
+    "title": "ID0449451-DC/Si-D/TR-[Y2 / R7 313065117135] emergencystop button is pressed",
+    "created_on": "2025-09-12T09:04:42Z",
+    "last_activity": "2026-01-16T11:10:59Z",
+    "age": "5950",
+    "description": "Reported behaviour: \"\nemergencystop button is pressed\n\" but it is not physically pressed.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "yk59l5",
+    "stage": null,
+    "serial_number": "Y2 / R7 313065117135",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "a17ba089-b78f-f011-b4cc-7c1e5220bf23",
+            "subject": "A new case manager was assigned to 0449451 CRM:00225255968",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0449451 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=22334fc3-417e-467c-b4c2-0445b3bac5f3",
+            "date": "2025-09-12T09:04:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ecb930bc-bd8f-f011-b4cc-7ced8d4263ef",
+            "subject": "A new case manager was assigned to 0449451 CRM:00225255993",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0449451 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=22334fc3-417e-467c-b4c2-0445b3bac5f3",
+            "date": "2025-09-12T09:49:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b7e1370d-be8f-f011-b4cc-7c1e52768c07",
+            "subject": "ID0449451-DC/Si-D/TR-[Y2 / R7 313065117135] emergencystop button is pressed CRM:02678000387",
+            "body": "Dear\nFurkan Ahmet Goren\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n: {\nAnkamall-5\nChargerID/Serial No.\n:\nyk59l5\nProblem Description\n: emergency stop button is pressed\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0449451\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAniket Sharma\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-12T09:51:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7aa008b-d48f-f011-b4cc-7c1e5287f582",
+            "subject": "A new case manager was assigned to 0449451 CRM:00225256150",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0449451 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=22334fc3-417e-467c-b4c2-0445b3bac5f3",
+            "date": "2025-09-12T12:32:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e2735246-e392-f011-b4cb-6045bddf319c",
+            "subject": "RE: ID0449451-DC/Si-D/TR-[Y2 / R7 313065117135] emergencystop button is pressed CRM:02678000387",
+            "body": "Hello Furkan,\nI am reaching out in regards of ticket\nID0449451.\nLast Friday 12.09.2025 I supported you for your onsite visit to troubleshoot the charger.\nThe charger had the error flags for QA26 and SF2 on, stating \"emergency stop button pressed\", while the emergency stop button was released.\nWe checked the 24V emergency trip line and it was okay, then we focused on the QA26:\nThe input IN1 to QA26 was not present, as well as the signal on 24V3.6.\nThe attention moved to the FC15 and XD3, and it was noticed that the FC15 had no 24 output, therefore the 24V3 signal was off:\nThe issue was solved by retriggering the EcoGs via FC15, and the emergency stop button error flag disappeared.\nAs there is no correlation between EcoGs and emergency stop button, I suspect the issue was really the FC15 not providing any output. While we measured some signals on XD3 having 24V, I believe this could be a wrong setting of the red bridges on XD3, or some of the connectors are actually short-circuited to the next ones.\nAs the issue was identified, being FC15 now providing 24V to the safety relais, I will forward you the ticket so to attach the work order.\nWith kind regards,\nFosco Servidei\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-09-16T09:55:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9150b4b4-e992-f011-b4cb-7ced8d772875",
+            "subject": "A new case manager was assigned to 0449451 CRM:00225257581",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0449451 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=22334fc3-417e-467c-b4c2-0445b3bac5f3",
+            "date": "2025-09-16T10:41:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a379c19f-f692-f011-b4cb-7c1e5236eee4",
+            "subject": "Ticket 0449451 has been closed. Are you satisfied with our provided solution? CRM:00225257641",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0449451\nwith the title:\nID0449451-DC/Si-D/TR-[Y2 / R7 313065117135] emergencystop button is pressed\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-16T12:14:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

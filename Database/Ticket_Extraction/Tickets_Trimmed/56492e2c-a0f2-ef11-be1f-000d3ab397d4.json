@@ -1,0 +1,72 @@
+{
+    "incident_id": "56492e2c-a0f2-ef11-be1f-000d3ab397d4",
+    "ticket_number": "0408795",
+    "title": "ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder",
+    "created_on": "2025-02-24T11:12:09Z",
+    "last_activity": "2025-03-13T09:40:23Z",
+    "age": "20029",
+    "description": "Reported behavior/issue:\nEmergencyStopButton_SF2 & SafetyRelay_QA26\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: NO\nWarranty Status: 08/08/2024 (Out of Warranty)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "sXGeRr",
+    "stage": null,
+    "serial_number": "MP / P8 170000848",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1b617928-a0f2-ef11-be1f-6045bddd5690",
+            "subject": "Webform_incident_SiCharge D_24-02-2025_SN: MP/P8 170000848",
+            "body": "Dear DSC,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/P8 170000848\nThank you\neMobility Technical Support Team\nSehr geehrte/r DSC,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/P8 170000848\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-24T11:12:05Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "378e0af3-a6f2-ef11-be1f-6045bddd5690",
+            "subject": "ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder CRM:00921001569",
+            "body": "Dear Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P8 170000848\nChargerID/Serial No.\n:\nsXGeRr\nProblem Description\n: Outlets outoforder\nTroubleshooting\n:\nBased on the logs from the SCB, we observed active error flags: EmergencyStopButton_SF2 and SafetyRelay_QA26 are still active. After analyzing the logs, we determined that the door was opened, which caused the fuse to trip.\nPlease confirm this information, otherwise if the door was not open then maybe the sensor is not working properly.\nPlease check all fuses and connections, as there may be a loose wiring connection.\nFor the HMI-related issue, please perform the following troubleshooting steps:\nCheck the XD24:4 for 24V (input point for 24V HMI)\nNext, measure on the connector that provides the 24V to the HMI :\nBefore we open the metal plate to directly verify the PCB (which takes some time and effort), try replacing the USB and DP cables. Measure the output of the connector and check for 24V. Try removing and reinserting the connector, as well as turning the FC14 OFF and ON—then check the result.\nIf the problem persists, it may not be with the FC14, but could be related to components such as the routers. Additionally, the connector has been tested from both sides to ensure it's not a connector issue. Check the LED on the HMI to confirm whether it is turning ON as expected.\nAlso, please refer the KA if the fuse is tripping-\nKnowledge Article: Knowledge Article for ISP: Emobility_SID_HW_HMI Turn off and FC 14 tripping - Dynamics 365\nFor future reference, your case number is\n0408795\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-24T12:00:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31ac08e7-adf2-ef11-be1f-6045bddd5690",
+            "subject": "RE: ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder CRM:00921001569",
+            "body": "Hello Team,\nHope you are doing well.\nI am writing to formally inform that we are moving case 0408795 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nUpon reviewing our asset database, we found that the product is no longer under warranty since 08/08/2024, as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-24T12:50:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d55407b9-3ef4-ef11-be1f-7c1e523508ba",
+            "subject": "RE: ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder CRM:00921001569",
+            "body": "Bonjour,\nAllez-vous intervenir directement sur cette borne ? Si oui, pouvez-vous me communiquer la date et l’heure pour que je puisse en informer le client ?\nWith best regards,\nFATIMA-ZAHRA SOBRANI\nSiemens SAS\nSI B SER DSC COP LCB-FR DSC-FR CS\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 616994453\nmailto:fatima-zahra.sobrani@siemens.com\nwww.siemens.com\nHead office: Siemens SAS - Tour CB21 - 16 place de l’Iris - CS 60351 - 92040 Paris La Défense Cedex - RCS Nanterre 562 016 774\nDe :\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 24 février 2025 13:54\nÀ :\nRC-FR Services Digitaux <servicesdigitaux.fr@siemens.com>\nObjet :\nRE: ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder CRM:00921001569\nHello Team,\nHope you are doing well.\nI am writing to formally inform that we are moving case 0408795 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nFR\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nFR\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nUpon reviewing our asset database, we found that the product is no longer under warranty since 08/08/2024, as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Beerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T12:39:34Z",
+            "extra": {
+                "sender": "servicesdigitaux.fr@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e8cebe35-8efd-ef11-bae2-7c1e5220255c",
+            "subject": "0408795 - ID0408795-DC/Si-D/FR-[MP / P8 170000848] Outlets outoforder CRM:00296000280",
+            "body": "Bonjour,\nVous trouverez ci-joint le rapport d'intervention.\nCordialement,\nAntoine Brua\nLvl 2 Support Engineer E-mobility France\nSiemens SAS\nRC-FR SI E\nParc Technologique de Lyon\n743, Allée des Parcs\n69800 Saint-Priest, France\nTél : +33 6 18 29 28 21\nmail: antoine.brua@siemens.com\nwww.siemens.com",
+            "date": "2025-03-10T09:01:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

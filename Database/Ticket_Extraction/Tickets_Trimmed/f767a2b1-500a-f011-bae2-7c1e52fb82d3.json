@@ -1,0 +1,405 @@
+{
+    "incident_id": "f767a2b1-500a-f011-bae2-7c1e52fb82d3",
+    "ticket_number": "0415249",
+    "title": "ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping",
+    "created_on": "2025-03-26T14:43:42Z",
+    "last_activity": "2025-11-10T12:36:05Z",
+    "age": "100367",
+    "description": "Reported behaviour/issue: Fuse FC14 is constantly tripping. Error occurs even after powering on of the fuse almost daily\nSolution:",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R8 170002537",
+    "case_nature_code": 580000001,
+    "chargerID": "slXH8I",
+    "additional_info": [
+        {
+            "id": "0686ffad-500a-f011-bae2-000d3ab7ac53",
+            "subject": "Webform_incident_SiCharge D_26-03-2025_SN: MP/R8170002537",
+            "body": "Dear Tobias Pesch,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP/R8170002537\nThank you\neMobility Technical Support Team\nSehr geehrte/r Tobias Pesch,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP/R8170002537\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-26T14:43:36Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d19d2ce3-5a0a-f011-bae3-7c1e52350ea5",
+            "subject": "ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hallo ﻿Tobias Pesch\nVielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Tanmay und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center - ERK\nHauptanlage\n: MP / R8 170002537\nProblembeschreibung\n:\nSicherung FC14 löst ständig aus\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0415249\n,\nbitte beziehen Sie sich bei allen\nweiteren Mitteilungen zu dies\nem Problem darauf.\nWir danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team -\n﻿\nTanmay Bahl\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.",
+            "date": "2025-03-26T15:56:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5fd1b781-7f0a-f011-bae3-7c1e52350ea5",
+            "subject": "RE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hello Tobias,\nHope you are doing great.\nWe are handing over this case to our local service team to visit the site and resolve this issue as soon as possible.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-26T20:18:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "575e64e0-7f0a-f011-bae3-7c1e52350ea5",
+            "subject": "ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00642002181",
+            "body": "Hello Team,\nHope you are doing great.\nWe have received this case from an end customer. Based on the reported issue, we need to perform the following checks on the site.\nFC14 tripping is an indicator for a short circuit (phase or ground)\nFC14 is unfortunately a fuse for a lot of devices à complete door, cooling pump (depending on configuration, etc.), so if it is tripping the routers are off\nTrack it down to XD21 and more specifically to the display itself\nAt the displaycontroller there is a 3-pin connector for the 24 V\nThe same 24V are also routed through the board to a 10 pin connector for the RFID and credit card device\nSo there might be a short circuit somewhere in this chain à I would suggest to disconnect (all!) plugs of of RFID and CC in order to isolate the display\nIf FC14 is still stripping: the display controller or the connection from XD21 to the 3 pin controller is screwed up à metal sleeve falling of and short circuiting the board\nAttached you can find more documents (Datasheet and wiring of the display, rework instruction for the display with a lot of detailed pictures\nI am writing to formally inform that we are moving case 0415249 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDE\nSI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDE\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Mohini Patil\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-26T20:21:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eaa3eec8-7f0f-f011-998a-7c1e5236eee4",
+            "subject": "ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Bahl,\nwie ist denn der aktuelle Status zu unserem Ticket?\nBei Fragen stehe ich gerne zur Verfügung\nFreundliche Grüße\nTobias Pesch\nTechnischer Projektplaner Elektrotechnik\nElektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1720\nT.Pesch@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 26. März 2025 16:59\nAn:\nPesch, Tobias <T.Pesch@netze-solingen.de>\nBetreff:\nID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nHallo ﻿Tobias Pesch\nVielen Dank, dass Sie sich an eMobility Support wenden. Mein Name ist Tanmay und ich werde Ihnen heute bei Ihrer folgenden Anfrage behilflich sein:\nProdukt\n: Sicharge D - Charging Center - ERK\nHauptanlage\n: MP / R8 170002537\nProblembeschreibung\n:\nSicherung FC14 löst ständig aus\nFür zukünftige Referenzen lautet Ihre Ticketnummer 0415249, bitte beziehen Sie sich bei allen weiteren Mitteilungen zu diesem Problem darauf.\nWir danken Ihnen im Voraus für Ihre Zeit und Geduld.\nMit freundlichen Grüßen\neMobility Tech Support Team -\n﻿\nTanmay Bahl\nBitte ändern Sie die Betreffzeile nicht, wenn Sie auf diese E-Mail antworten.\nSWS Netze Solingen GmbH\nEin Unternehmen der Stadtwerke Solingen\nGeschäftsführer: Peter Sossna\nSitz der Gesellschaft: Solingen\nAmtsgericht Wuppertal HRB 19371\n******************************************\nDiese Information ist ausschließlich für die adressierte Person oder Organisation bestimmt und könnte vertrauliches und/oder privilegiertes Material enthalten. Personen oder Organisationen, für die diese Information nicht bestimmt ist, ist es nicht gestattet, diese zu lesen, erneut zu übertragen, zu verbreiten, anderweitig zu verwenden oder sich durch sie veranlasst zu sehen, Maßnahmen irgendeiner Art zu ergreifen. Sollten Sie diese Nachricht irrtümlich erhalten haben, bitten wir Sie, sich mit dem Absender in Verbindung zu setzen und das Material von Ihrem Computer zu löschen. Sie haben uns gebeten, mit Ihnen über das Internet per E-Mail zu korrespondieren. Unbeschadet dessen ist allein die von uns unterzeichnete schriftliche Fassung verbindlich. Wir weisen darauf hin, dass derartige Nachrichten mit und ohne Zutun von Dritten verloren gehen, verändert oder verfälscht werden können. Herkömmliche E-Mails sind nicht gegen den Zugriff von Dritten geschützt und deshalb ist auch die Vertraulichkeit unter Umständen nicht gewahrt. Wir haften deshalb nicht für die Unversehrtheit von E-Mails nachdem sie unseren Herrschaftsbereich verlassen haben und können Ihnen hieraus entstehende Schäden nicht ersetzen. Sollte trotz der von uns verwendeten Virus-Schutz-Programme durch die Zusendung von E-Mails ein Virus in Ihre Systeme gelangen, haften wir nicht für eventuell hieraus entstehende Schäden. Dieser Haftungsausschluss gilt nur soweit gesetzlich zulässig.",
+            "date": "2025-04-02T05:03:16Z",
+            "extra": {
+                "sender": "t.pesch@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5c6e3975-1411-f011-998a-6045bde0265d",
+            "subject": "ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Good morning,\nhope you are doing great too.\nWhat is the current status of the matter? So far, nothing has happened and the problem still persists.\nThank you and best regards\nTobias Pesch\nTechnischer Projektplaner Elektrotechnik\nElektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1720\nT.Pesch@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 26. März 2025 21:21\nAn:\nPesch, Tobias <T.Pesch@netze-solingen.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nHello Tobias,\nHope you are doing great.\nWe are handing over this case to our local service team to visit the site and resolve this issue as soon as possible.\nThank you\nBest Regards\neMobility Tech Support Team - Mohini\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-04T05:20:08Z",
+            "extra": {
+                "sender": "t.pesch@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9e7dc288-4811-f011-9989-7ced8d2cb6af",
+            "subject": "0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000487",
+            "body": "Hi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Solingen\nMLFB / Bezeichnung\n5SK9108-1 Sicherung FC14\n8EM5903-0AA05-7AA5 Router XF3\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse Ramona\nSiemens NL Hannover\nz.Hdn. Ramona Hilse\nWerner-von-Siemens-Str. 1\n30880 Hannover-Laatzen\nx\nLieferadresse Jan\nJan Leverenz\nSchnuckentrift 17\n29328 Faßberg\nLieferadresse Carsten\nCarsten Mentzen\nAm Schimmelsbusch 7\n41517 Grevenbroich\nLieferadresse Yunex\nSilbermannstr. 6\n28217 Bremen\nMartener Hellweg 42\n44379 Dortmund\nHeinrich-Lanz-Str. 4\n70825 Korntal-Münchingen\nThurn-und-Taxis-Str. 12\n90411 Nürnberg\nGWL?\nja\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-04T11:32:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd358ee6-5ad6-2a70-8cc1-3b159eda1e01",
+            "subject": "Work Order für Ramona erstellt",
+            "body": "",
+            "date": "2025-04-04T11:38:34Z",
+            "extra": {}
+        },
+        {
+            "id": "fff076a7-4911-f011-9989-7ced8d2cb6af",
+            "subject": "RE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hallo Herr Pesch,\nentschuldigen Sie bitte die verspätete Rückmeldung. Da es sich hier um ein eher unübliches Fehlerbild handelt, hat die Abstimmung mit unserem zentralen Support leider etwas länger gedauert.\nNachdem das allerdings abgeschlossen ist, konnte ich bereits die notwendigen Ersatzteile bestellen und zu meiner Technikerin schicken.\nSie wird sich zeitnah bei Ihnen melden, sobald  die Ersatzteile bei ihr eingetroffen sind und sie einen konkreten Termin mit Ihnen vereinbaren kann.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-04T11:40:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e66e3cf6-4911-f011-998a-7c1e52350ea5",
+            "subject": "RE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hallo Herr Pesch,\nentschuldigen Sie bitte die verspätete Rückmeldung. Da es sich hier um ein eher unübliches Fehlerbild handelt, hat die Abstimmung mit unserem zentralen Support leider etwas länger gedauert.\nNachdem das allerdings abgeschlossen ist, konnte ich bereits die notwendigen Ersatzteile bestellen und zu meiner Technikerin schicken.\nSie wird sich zeitnah bei Ihnen melden, sobald  die Ersatzteile bei ihr eingetroffen sind und sie einen konkreten Termin mit Ihnen vereinbaren kann.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-04T11:43:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "52d9e70c-6d13-f011-9989-7c1e5236eee4",
+            "subject": "AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Theil,\nbesten Dank für Ihre Mühen und die Info.\nBei Fragen stehe ich gerne zur Verfügung\nFreundliche Grüße\nTobias Pesch\nTechnischer Projektplaner Elektrotechnik\nElektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1720\nT.Pesch@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 4. April 2025 13:42\nAn:\nPesch, Tobias <T.Pesch@netze-solingen.de>; emobility_support.si@siemens.com; emobility_support.si@siemens.com\nBetreff:\nRE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nHallo Herr Pesch,\nentschuldigen Sie bitte die verspätete Rückmeldung. Da es sich hier um ein eher unübliches Fehlerbild handelt, hat die Abstimmung mit unserem zentralen Support leider etwas länger gedauert.\nNachdem das allerdings abgeschlossen ist, konnte ich bereits die notwendigen Ersatzteile bestellen und zu meiner Technikerin schicken.\nSie wird sich zeitnah bei Ihnen melden, sobald  die Ersatzteile bei ihr eingetroffen sind und sie einen konkreten Termin mit Ihnen vereinbaren kann.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-07T04:59:23Z",
+            "extra": {
+                "sender": "t.pesch@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3ddfa4fb-7513-f011-998a-6045bddf3f78",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000487",
+            "body": "HI Sascha,\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr. 0415249\\06_SV-Lieferant\\3314241162.PDF\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 4. April 2025 13:35\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000487\nHi Denise,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nStadtwerke Solingen\nMLFB / Bezeichnung\n5SK9108-1 Sicherung FC14\n8EM5903-0AA05-7AA5 Router XF3\nAuftragsnummer\nmuss bitte noch angelegt werden\nTicketnummer\nsiehe oben\nLieferadresse Ramona\nSiemens NL Hannover\nz.Hdn. Ramona Hilse\nWerner-von-Siemens-Str. 1\n30880 Hannover-Laatzen\nx\nLieferadresse Jan\nJan Leverenz\nSchnuckentrift 17\n29328 Faßberg\nLieferadresse Carsten\nCarsten Mentzen\nAm Schimmelsbusch 7\n41517 Grevenbroich\nLieferadresse Yunex\nSilbermannstr. 6\n28217 Bremen\nMartener Hellweg 42\n44379 Dortmund\nHeinrich-Lanz-Str. 4\n70825 Korntal-Münchingen\nThurn-und-Taxis-Str. 12\n90411 Nürnberg\nGWL?\nja\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-07T06:03:19Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8c3cd88b-d721-f011-9989-6045bde0265d",
+            "subject": "0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531",
+            "body": "Hi Xenia,\nkannst Du bitte nach der Lieferung von folgendem Ersatzteil schauen?\nLaut Ramona ist das noch nicht angekommen, obwohl das schon hätte der Fall sein sollen.\n5SK9108\nGrüße & Danke Sascha",
+            "date": "2025-04-25T13:16:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "24ca0a31-e721-f011-998a-6045bde12d6b",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531",
+            "body": "Hallo zusammen,\nkönnt ihr bitte in der POD schauen, wohin die Lieferung erfolgte? KA7819685\nLaut DHL und Sitris bereits geliefert.\nDanke\nVG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 25. April 2025 15:17\nAn:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\n0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531\nHi Xenia,\nkannst Du bitte nach der Lieferung von folgendem Ersatzteil schauen?\nLaut Ramona ist das noch nicht angekommen, obwohl das schon hätte der Fall sein sollen.\n5SK9108\nGrüße & Danke Sascha",
+            "date": "2025-04-25T15:08:55Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c7b24bb-ec23-f011-8c4e-000d3adc93d1",
+            "subject": "AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Theil,\nwie ist denn der aktuelle Stand? Von Ihrer Technikerin habe ich leider bisher noch nichts gehört. Das ist sehr ärgerlich, da wir jeden Tag Umsatzeinbuße haben, da der DC-Charger so nicht funktionsfähig ist.\nBei Fragen stehe ich gerne zur Verfügung\nFreundliche Grüße\nTobias Pesch\nTechnischer Projektplaner Elektrotechnik\nElektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1720\nT.Pesch@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 4. April 2025 13:42\nAn:\nPesch, Tobias <T.Pesch@netze-solingen.de>; emobility_support.si@siemens.com; emobility_support.si@siemens.com\nBetreff:\nRE: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nHallo Herr Pesch,\nentschuldigen Sie bitte die verspätete Rückmeldung. Da es sich hier um ein eher unübliches Fehlerbild handelt, hat die Abstimmung mit unserem zentralen Support leider etwas länger gedauert.\nNachdem das allerdings abgeschlossen ist, konnte ich bereits die notwendigen Ersatzteile bestellen und zu meiner Technikerin schicken.\nSie wird sich zeitnah bei Ihnen melden, sobald  die Ersatzteile bei ihr eingetroffen sind und sie einen konkreten Termin mit Ihnen vereinbaren kann.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-28T04:53:40Z",
+            "extra": {
+                "sender": "t.pesch@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "310ac977-0224-f011-8c4d-7c1e52768c07",
+            "subject": "RE: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Pesch,\nentschuldigen Sie bitte die Verzögerung. Meine Technikerin und ich warten leider immer noch auf die Lieferung des Ersatzteils.\nDa die Wartezeit ungewöhnlich lange ist, habe ich bereits unsere Kollegen aus dem SCM gebeten dem noch mal nachzugehen.\nTut mir sehr Leid, dass sich dieser Einsatz so lange zieht, ich hoffe aber, dass wir den Einsatz zeitnah fahren können.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-28T07:29:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4cb69007-0324-f011-8c4d-7c1e523508ba",
+            "subject": "RE: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Pesch,\nentschuldigen Sie bitte die Verzögerung. Meine Technikerin und ich warten leider immer noch auf die Lieferung des Ersatzteils.\nDa die Wartezeit ungewöhnlich lange ist, habe ich bereits unsere Kollegen aus dem SCM gebeten dem noch mal nachzugehen.\nTut mir sehr Leid, dass sich dieser Einsatz so lange zieht, ich hoffe aber, dass wir den Einsatz zeitnah fahren können.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-28T07:33:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c73d1fec-1024-f011-8c4d-7c1e52350ea5",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531",
+            "body": "Hallo zusammen,\nanbei der Abliefernachweis von DHL zu der u.g. Sendung, die am 9.April geliefert wurde.\nVG\nKatrin\nMit freundlichen Grüßen\nKatrin Adam\nSiemens AG\nSmart Infrastructure\neMobility\nOrder Management\nSI E SCM LPZ FIN OM\nSüdstr. 74\n04178 Leipzig, Deutschland\nmailto:katrin.adam@siemens.com\nwww.siemens.com\nVon:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nGesendet:\nFreitag, 25. April 2025 17:09\nAn:\nSI E SCM LPZ OPC <fg_order_management_lpz.infra@siemens.com>\nCc:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nAW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531\nHallo zusammen,\nkönnt ihr bitte in der POD schauen, wohin die Lieferung erfolgte? KA7819685\nLaut DHL und Sitris bereits geliefert.\nDanke\nVG\nXenia\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 25. April 2025 15:17\nAn:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <\nxenia.nikitina@siemens.com\n>\nBetreff:\n0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531\nHi Xenia,\nkannst Du bitte nach der Lieferung von folgendem Ersatzteil schauen?\nLaut Ramona ist das noch nicht angekommen, obwohl das schon hätte der Fall sein sollen.\n5SK9108\nGrüße & Danke Sascha",
+            "date": "2025-04-28T09:12:37Z",
+            "extra": {
+                "sender": "fg_order_management_lpz.infra@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "68237ee7-3924-f011-8c4d-7c1e5236eee4",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531",
+            "body": "Hi Sascha, anbei der Abliefernachweis.\nWurde bei Coto abgegeben ^^\nLG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 25. April 2025 15:17\nAn:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\n0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000531\nHi Xenia,\nkannst Du bitte nach der Lieferung von folgendem Ersatzteil schauen?\nLaut Ramona ist das noch nicht angekommen, obwohl das schon hätte der Fall sein sollen.\n5SK9108\nGrüße & Danke Sascha",
+            "date": "2025-04-28T14:06:04Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cbb8fe04-8125-f011-8c4d-7c1e523508ba",
+            "subject": "WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hallo Herr Schäfer,\nseit über einem Monat ist der DC Charger offline und es gibt bisher kein Datum wann er voraussichtlich wieder online gehen werden.\nBitte teilen Sie mir ein konkretes Datum mit, wann die Techniker den Defekt behoben haben.\nAktuell planen wir die Beschaffung einer größeren Anzahl DC Charger.\nNach der aktuellen Erfahrungen bin ich mir nicht sicher ob Siemens noch der richtige Partner ist.\nFür Rückfragen stehe ich selbstverständlich zur Verfügung.\nFreundliche Grüße\ni.V. Bastian Beier\nAbteilungsleitung Elektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1701\nTelefax +49 (212) 295 85 1701\nb.beier@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nGesendet:\nMontag, 28. April 2025 09:32\nAn:\nPesch, Tobias <\nT.Pesch@netze-solingen.de\n>;\nemobility_support.si@siemens.com\nBetreff:\nRE: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nGuten Morgen Herr Pesch,\nentschuldigen Sie bitte die Verzögerung. Meine Technikerin und ich warten leider immer noch auf die Lieferung des Ersatzteils.\nDa die Wartezeit ungewöhnlich lange ist, habe ich bereits unsere Kollegen aus dem SCM gebeten dem noch mal nachzugehen.\nTut mir sehr Leid, dass sich dieser Einsatz so lange zieht, ich hoffe aber, dass wir den Einsatz zeitnah fahren können.\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-30T05:07:39Z",
+            "extra": {
+                "sender": "b.beier@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1b4771d5-9a25-f011-8c4d-7c1e523508ba",
+            "subject": "0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Hi Rudi,\nkannst Du für diesen Einsatz bitte Yunex bestellen? Habe gerade schon mit Steffen telefoniert, er könnte Anfang kommender Woche kurzfristig jemanden schicken, vorausgesetzt die Teile kommen rechtzeitig an.\nProblem bei dem Einsatz: der ist leider schon eine Weile offen, da die dafür notwendigen Ersatzteile offenbar in der Niederlassung Hannover verloren gegangen sind.\nKann aktuell auch Ramona nicht mehr bitten dem nachzugehen, da sie schon auf dem Weg in den Urlaub ist.\nIch bitte daher Xenia im folgenden, die Teile neu zu bestellen.\nParallel dazu telefoniere ich mit dem Kunden um ihm die Situation zu erklären.\n@Steffen: Euer Techniker soll sich gerne bei Semih Sentürk melden. Das scheint mir hier kein Standardticket zu sein. Ich warne ihn schon mal vor.\nHi Xenia,\nkannst Du mir bitte den Gefallen tun und folgende Ersatzteile bestellen?\nKunde\nSW Solingen\nMLFB / Bezeichnung\n5SK9108-1 (Sicherung FC14),\n8EM5903-0AA05-7AA5 (Router XF3)\nAuftragsnummer\n30751790\nLieferadresse Yunex Dortmund\nMartener Hellweg 42\n44379 Dortmund\nGWL?\nja\nErgänzend dazu müssten wir bitte eine Entstörung bei Yunex bestellen i.H.v 344EUR.\nDanke Dir!\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-30T08:12:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a63b2f9d-9c25-f011-8c4d-7c1e523508ba",
+            "subject": "RE: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Hallo Herr Beier,\nhier wie gerade schon telefonisch besprochen noch mal die kurze Info, dass unser Service Partner Yunex Traffic Anfang kommender Woche zu Ihnen kommen wird, sobald die erneut von mir bestellten Ersatzteile in Dortmund eingetroffen sind.\nHier erneut vielmals die Bitte um Entschuldigung für die Verzögerung. Leider ist alles zusammen gekommen, was den Einsatz hätte verhindern können.\nMeine Hoffnung ist, dass das ein Einzelfall war und wir uns ab sofort wieder für weitere Aufträge empfehlen können.\n@Steffen: in der Ladesäule ist nicht mehr die Standardschließe verbaut, insofern müsste sich bitte Euer Techniker direkt bei Herrn Beier melden zwecks Terminvereinbarung.\nTelefon +49 (212) 295 1701\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-04-30T08:25:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ebf76b7b-8629-f011-8c4d-6045bddefe85",
+            "subject": "RE: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Hi Xenia,\nhast du das Material und Yunex schon bestellt?\nVG Rudi",
+            "date": "2025-05-05T07:56:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d31e3eb-8629-f011-8c4d-000d3ad97a58",
+            "subject": "RE: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Hi Xenia,\nhast du das Material und Yunex schon bestellt?\nVG Rudi",
+            "date": "2025-05-05T07:59:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "85f5ea35-8d29-f011-8c4d-7c1e52350ea5",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Halo Rudi,\nMaterialbestellung :\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr.\n0415249\\06_SV-Lieferant\\3314249183.PDF\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr. 0415249\\06_SV-Lieferant\\3314249184.PDF\nYunex:\n@Haack, Leonard (FT FDS FIN)\nHast du einen Workflow dazu bekommen?\nIch kann keine Bestellung bei Yunex anlegen. Hatte bisher nie diese Meldung.\nVG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nMontag, 5. Mai 2025 09:59\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nCc:\nHoch, Steffen (YU GER CS P EVCI) <steffen.hoch@yunextraffic.com>; Sentuerk, Semih (SI E CS TS) <semih.sentuerk@siemens.com>; Artes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>\nBetreff:\nRE: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537\nHi Xenia,\nhast du das Material und Yunex schon bestellt?\nVG Rudi",
+            "date": "2025-05-05T08:45:00Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1f2f7a0b-4435-f011-8c4d-7c1e52768c07",
+            "subject": "AW: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Morgen Herr Schäfer,\ndie Reparatur hat leider nicht funktioniert. Der Charger ist noch am selben Nachmittag (Freitag, 16.05.) wieder ausgefallen. Das Display ist wieder aus und zusätzlich ist der Charger jetzt sogar offline gegangen. Herr Keller vermutete bereits, dass der Display-Controller das Problem sein könnte. Ich würde hier nochmal um einen Termin zur Instandsetzung bitten.\nIm Anhang habe ich Ihnen ein Foto des aktuellen Zustands beigefügt.\nBei Fragen stehe ich gerne zur Verfügung\nFreundliche Grüße\nTobias Pesch\nTechnischer Projektplaner Elektrotechnik\nElektro- und Kommunikationstechnik\nSWS Netze Solingen GmbH\nBeethovenstraße 210\n42655 Solingen\nTelefon +49 (212) 295 1720\nT.Pesch@netze-solingen.de\nwww.netze-solingen.de\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 30. April 2025 10:29\nAn:\nBeier, Bastian <B.Beier@netze-solingen.de>; Schaefer, DIRK <dirk.schaefer@siemens.com>\nCc:\nPesch, Tobias <T.Pesch@netze-solingen.de>; steffen.hoch@yunextraffic.com; Artes, Rudi <rudolf.artes@siemens.com>\nBetreff:\nRE: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020\nHallo Herr Beier,\nhier wie gerade schon telefonisch besprochen noch mal die kurze Info, dass unser Service Partner Yunex Traffic Anfang kommender Woche zu Ihnen kommen wird, sobald die erneut von mir bestellten Ersatzteile in Dortmund eingetroffen sind.\nHier erneut vielmals die Bitte um Entschuldigung für die Verzögerung. Leider ist alles zusammen gekommen, was den Einsatz hätte verhindern können.\nMeine Hoffnung ist, dass das ein Einzelfall war und wir uns ab sofort wieder für weitere Aufträge empfehlen können.\n@Steffen: in der Ladesäule ist nicht mehr die Standardschließe verbaut, insofern müsste sich bitte Euer Techniker direkt bei Herrn Beier melden zwecks Terminvereinbarung.\nTelefon +49 (212) 295 1701\nMit freundlichen Grüßen\nSascha Theil",
+            "date": "2025-05-20T06:31:30Z",
+            "extra": {
+                "sender": "t.pesch@netze-solingen.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f01d149e-5635-f011-8c4e-000d3adc93d1",
+            "subject": "0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00755000250",
+            "body": "Hallo Xenia,\nkönntest du auf die Nummer 30751790 bitte folgendes Ersatzteil bestellen?\nIst eine dringliche Lieferung da Kunde schon verärgert weil der Charger schon lange offline ist\n1 x 8EM5902-1AA00-6AA1\n1 x 8EM5902-1AA02-0AA8\n1 x 6XV1870-3QH20\nLieferadresse:\nYunex Gmbh\nz.H. EVCI\nMartener Hellweg 42,\n44379 Dortmund\nGWL: ja\nVG Rudi",
+            "date": "2025-05-20T08:44:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6518e0b7-7235-f011-8c4d-7c1e5287c7df",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00755000250",
+            "body": "Hi Rudi ,\nanbei\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr. 0415249\\06_SV-Lieferant\\3314255120.PDF\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr. 0415249\\06_SV-Lieferant\\3314255121.PDF\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\SW Solingen\\A-30751790-Ticketnr. 0415249\\06_SV-Lieferant\\3314255119.PDF\nVG\nXenia\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 20. Mai 2025 10:45\nAn:\nNikitina, Xenia (SI E SCM LPZ FIN OM) <xenia.nikitina@siemens.com>\nBetreff:\n0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00755000250\nHallo Xenia,\nkönntest du auf die Nummer 30751790 bitte folgendes Ersatzteil bestellen?\nIst eine dringliche Lieferung da Kunde schon verärgert weil der Charger schon lange offline ist\n1 x 8EM5902-1AA00-6AA1\n1 x 8EM5902-1AA02-0AA8\n1 x 6XV1870-3QH20\nLieferadresse:\nYunex Gmbh\nz.H. EVCI\nMartener Hellweg 42,\n44379 Dortmund\nGWL: ja\nVG Rudi",
+            "date": "2025-05-20T12:05:36Z",
+            "extra": {
+                "sender": "xenia.nikitina@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bdcd59f4-7335-f011-8c4d-7c1e52350ea5",
+            "subject": "0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00755000252",
+            "body": "Hallo Team Yunex / Jonas,\nanbei ein Folgeauftrag nachdem der erste Einsatz in Solingen nicht erfolgreich war.\nDisplay ist bestllt\nDAnke Euch und VG\nRudi",
+            "date": "2025-05-20T12:14:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1a07f306-7435-f011-8c4d-7c1e52350ea5",
+            "subject": "RE: AW: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Tag Herr Pesch,\ntut mir Leid, dass der Einsatz nicht erfolgreich war. Wir haben die Störung intern nochmal besprochen und werden das gesamte Display austauschen.\nDas neue Display haben wir bestellt und den neuen Termin sollten Sie zeitnah erhalten.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com",
+            "date": "2025-05-20T12:14:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e285b66f-7435-f011-8c4d-7c1e5277a368",
+            "subject": "RE: AW: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "Guten Tag Herr Pesch,\ntut mir Leid, dass der Einsatz nicht erfolgreich war. Wir haben die Störung intern nochmal besprochen und werden das gesamte Display austauschen.\nDas neue Display haben wir bestellt und den neuen Termin sollten Sie zeitnah erhalten.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com",
+            "date": "2025-05-20T12:17:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "87802772-7435-f011-8c4e-6045bdde4786",
+            "subject": "Automatische Antwort: AW: WG: AW: ID0415249-DC/Si-D/DE- [MP / R8 170002537] Sicherung FC14 löst ständig aus. CRM:02680000020",
+            "body": "﻿\nSehr geehrte Damen und Herren\nich bin bis 21.05.2025 auf Dienstreise.\nMails werden in dieser Zeit nicht bearbeitet oder weitergeleitet.\nMit freundlichen Grüßen\nSteffen Hoch",
+            "date": "2025-05-20T12:17:50Z",
+            "extra": {
+                "sender": "steffen.hoch@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b42f10be-d83a-f011-b4cb-7ced8d40e4a4",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Hallo zusammen,\nanbei der passend EB zum Ticket.\nLiebe Grüße\nAylin\nVon:\nArtes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>\nGesendet:\nMontag, 5. Mai 2025 15:23\nAn:\nYU e-Mobility Germany <e-mobility.de@yunextraffic.com>\nBetreff:\nAW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537\nHallo Team Yunex,\nanbei ein Auftrag für Solingen.\nVG Rudi\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nMontag, 5. Mai 2025 09:59\nAn:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <\nxenia.nikitina@siemens.com\n>\nCc:\nHoch, Steffen (YU GER CS P EVCI) <\nsteffen.hoch@yunextraffic.com\n>; Sentuerk, Semih (SI E CS TS) <\nsemih.sentuerk@siemens.com\n>; Artes, Rudi (RC-DE SI E CS) <\nrudolf.artes@siemens.com\n>\nBetreff:\nRE: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537\nHi Xenia,\nhast du das Material und Yunex schon bestellt?\nVG Rudi",
+            "date": "2025-05-27T08:58:24Z",
+            "extra": {
+                "sender": "e-mobility.de@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1a91621e-7142-e02f-adaf-3174b2f4f889",
+            "subject": null,
+            "body": "",
+            "date": "2025-06-10T13:48:56Z",
+            "extra": {}
+        },
+        {
+            "id": "383fd128-c750-f011-877a-7c1e5277712f",
+            "subject": "AW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537",
+            "body": "Hallo zusammen,\nanbei der zweite EB zum Ticket.\nLG Aylin\nVon:\nArtes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>\nGesendet:\nMontag, 5. Mai 2025 15:23\nAn:\nYU e-Mobility Germany <e-mobility.de@yunextraffic.com>\nBetreff:\nAW: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537\nHallo Team Yunex,\nanbei ein Auftrag für Solingen.\nVG Rudi\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nMontag, 5. Mai 2025 09:59\nAn:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>; Nikitina, Xenia (SI E SCM LPZ FIN OM) <\nxenia.nikitina@siemens.com\n>\nCc:\nHoch, Steffen (YU GER CS P EVCI) <\nsteffen.hoch@yunextraffic.com\n>; Sentuerk, Semih (SI E CS TS) <\nsemih.sentuerk@siemens.com\n>; Artes, Rudi (RC-DE SI E CS) <\nrudolf.artes@siemens.com\n>\nBetreff:\nRE: 0415249 - ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping CRM:00373000537\nHi Xenia,\nhast du das Material und Yunex schon bestellt?\nVG Rudi",
+            "date": "2025-06-24T06:47:59Z",
+            "extra": {
+                "sender": "e-mobility.de@yunextraffic.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "072ab128-c750-f011-877a-7c1e52341ae9",
+            "subject": "Email sent to a closed case 'ID0415249-DC/Si-D/DE- [MP / R8 170002537] Fuse FC14 is constantly tripping (0415249)' CRM:00225219118",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0415249\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-06-24T06:48:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

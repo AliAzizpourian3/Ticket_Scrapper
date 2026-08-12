@@ -1,0 +1,194 @@
+{
+    "incident_id": "faa6a2db-9792-ef11-8a6a-7c1e5235e725",
+    "ticket_number": "0386436",
+    "title": "ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi",
+    "created_on": "2024-10-25T06:10:46Z",
+    "last_activity": "2025-12-16T14:04:43Z",
+    "age": "14690",
+    "description": "Reported behaviour/issue:\nXF3 to connect to WiFi\nRoot cause: Dual Mobile APN visible in router\nSolution: using command line, changed WAN 1, WAN 2 and WAN 3 as Ethernet, mobile and Wi-Fi\nOn DAMEX Sanctioned List: NO\nWarranty Valid: Yes",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "Dpyqsh",
+    "stage": null,
+    "serial_number": "MP / R4 170001684",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "deb24bd2-9792-ef11-8a69-000d3ab9a120",
+            "subject": "Sicharge D XF3 to connect to WiFi ",
+            "body": "Dear Helpdesk\nProduct: Sicharge D\nSerial Number: MP / R4 170001684\nEnd Customer: Total Energies\nCountry: Singapore\nXF3 connection: SIM Card\nXF4 connection: LAN to external 4G (sim card) router\nProblem statement:\nCustomer only want to use 1 SIM card which is on the external 4G router.\nWe would like to create a local hotspot on XF4 and request XF3 to connect to the WiFi hotspot of the XF4.\nWe are able to setup the hotspot on XF4.\nIssue:\nUpon checking XF3 on the WLAN option, we cannot find the WIFI option for WLAN\nI am not sure if it is due to the router firmware or what.\nPlease kindly help\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2024-10-25T06:10:32Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c5a46848-9992-ef11-8a69-000d3ab9a120",
+            "subject": "A new case manager was assigned to 0386436 CRM:00225114679",
+            "body": "Reetesh Kumar Sharma was assigned as new Case Manager for case 0386436 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=faa6a2db-9792-ef11-8a6a-7c1e5235e725",
+            "date": "2024-10-25T06:21:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "35211d0c-9f92-ef11-8a6a-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 51 minutes and 24 seconds.",
+            "date": "2024-10-25T07:02:12Z",
+            "extra": {}
+        },
+        {
+            "id": "e67d25f6-9f92-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Dear Edna,\nThank you for reaching out to eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R4 170001684\nChargerID/Serial No.\n:\nDpyqsh\nProblem Description\n: XF3 to connect to WiFi\nTroubleshooting\n: we will remotely connect to charger and try to modify the settings.\nHowever, please note connecting XF3 (router1) to XF4 (Wi-Fi) is not a good idea, because if the secondary router or OCPP connection is lost, the algorithm will reboot the modem of XF4, and that will make XF3 offline, and if for any reason XF3 doesn't connect back to XF4 wi-fi, it will make charger offline on SCB.\nIn case you have DCLEM in this charger, and if there is no internet connection, the outlet will go out of order.\nLet me know your thoughts on this, do you still want to go with the XF3 connection to XF4 Wifi?\nFor future reference, your ticket number is\n0386436\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-25T07:08:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b5f9a9dc-a092-ef11-8a6a-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 13 minutes and 1 second.",
+            "date": "2024-10-25T07:15:12Z",
+            "extra": {}
+        },
+        {
+            "id": "fbf9a9dc-a092-ef11-8a6a-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 4 seconds.",
+            "date": "2024-10-25T07:15:16Z",
+            "extra": {}
+        },
+        {
+            "id": "01a2e08b-a392-ef11-8a6a-000d3a6610b3",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Hi Reetesh,\nWe can do the reverse too as customer objective is to just use 1 SIM card.\nCan we try this way of having the SIM card on XF3 with hotspot connection enabled and XF4 connecting to the hotspot of XF3?\nThank you\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2024-10-25T07:34:21Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4b571a8b-a392-ef11-8a6a-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 19 minutes and 13 seconds.",
+            "date": "2024-10-25T07:34:29Z",
+            "extra": {}
+        },
+        {
+            "id": "3c31d974-a892-ef11-8a6a-6045bdde0ce3",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Hi Edna,\nI am not sure, if that will work seamlessly or not, and even if we should change the standard setting of router1 (XF3).\nI must validate it from product care team. I will check and get back to you.\nFor now, I have fixed the issue of missing Wi-Fi (WAN2/3) in both routers. Attached screenshot for your reference.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-25T08:09:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f0a741b-bf92-ef11-8a6a-6045bdde0ce3",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Hi Edna,\nHere is the update.\nInserting SIM in one router (eitherXF4 or XF3) and creating hotspot out of it and connecting another router (XF3 or XF4) to it, can work.\nHowever, please not this solution is not tested by R&D and reliability cannot be confirmed, especially because the changes have to be done by WebUI of the route and is someone changes other parameters or router settings by SCB, there is a risk that the configuration will be over written.\nThe best method is to have 2 individual SIM card in both routers, and let them run separately, however if customer is very reluctant about it, you can give it a try observe performance for some time.\nLet me know, if you need further information.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-25T10:51:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a21e957c-cc92-ef11-8a6a-6045bdde0ce3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Feedback Required after 4 hours, 52 minutes and 56 seconds.",
+            "date": "2024-10-25T12:27:25Z",
+            "extra": {}
+        },
+        {
+            "id": "4b111902-ce95-ef11-8a6a-002248a2b1bd",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Hi Edna,\nI look forward to your feedback as mentioned in the email below.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.\n​​​​​​​",
+            "date": "2024-10-29T08:15:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2850bf04-8a9a-ef11-8a69-0022489fb3e7",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Hi Edna,\nIf there are no more question, shall I close this case. Awaiting your kind feedback.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-04T08:51:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "920c4e18-8b9a-ef11-8a6a-0022489ec7b5",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Dear Reetesh,\nWe are currently consulting with Customer on this.\nYou may close this case first while we finalise the decision with customer\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2024-11-04T08:59:30Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e5fcd019-8b9a-ef11-8a69-002248a407cc",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 9 days, 20 hours, 32 minutes and 14 seconds.",
+            "date": "2024-11-04T08:59:39Z",
+            "extra": {}
+        },
+        {
+            "id": "0f8c6d08-909a-ef11-8a69-0022489fb3e7",
+            "subject": "RE: ID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi CRM:00251000370",
+            "body": "Dear Edna,\nThanks for the confirmation, as your query is answered, and you are awaiting confirmation from the customer, we will be proceeding with closing the service ticket#\n0386436\n.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\nand referring this case number.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Reetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-04T09:34:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ecc16d15-929a-ef11-8a69-0022489fb3e7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Answer Provided after 49 minutes and 57 seconds.",
+            "date": "2024-11-04T09:49:36Z",
+            "extra": {}
+        },
+        {
+            "id": "7611ce2c-929a-ef11-8a69-0022489fb3e7",
+            "subject": "Ticket 0386436 has been closed. Are you satisfied with our provided solution? CRM:00251000371",
+            "body": "Dear Edna,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0386436\nwith the title:\nID0386436-DC/Si-D/SG-[MP / R4 170001684] XF3 to connect to WiFi\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-04T09:50:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e46843fb-9b9a-ef11-8a69-0022489fb3e7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Answer Provided to Incident Solved Via Remote (L2) after 1 hour, 10 minutes and 45 seconds.",
+            "date": "2024-11-04T11:00:21Z",
+            "extra": {}
+        }
+    ]
+}

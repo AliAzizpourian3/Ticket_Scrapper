@@ -1,0 +1,101 @@
+{
+    "incident_id": "4a1211c4-44b2-488b-a9ea-5ff64146e499",
+    "ticket_number": "0405567",
+    "title": "ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing",
+    "created_on": "2025-02-10T09:13:26Z",
+    "last_activity": "2026-01-20T12:57:56Z",
+    "age": "10511",
+    "description": "Reported behaviour/issue:\nStuck in Preparing\nRoot cause:\nBus driver is not connecting plug correctly and doesn't establish SLAC communication as such when they leave the bus in B1/B2 it will stay in preparing until they plug out\nSolution:\nInform the bus drivers and replug\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "bucVuF",
+    "stage": null,
+    "serial_number": "MP / S0 170004167",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f30a254d-8fe7-ef11-9341-0022489a2456",
+            "subject": "A new case manager was assigned to 0405567 CRM:00225161663",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0405567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4a1211c4-44b2-488b-a9ea-5ff64146e499",
+            "date": "2025-02-10T09:13:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1f3db568-8fe7-ef11-9341-0022489bc8e2",
+            "subject": "A new case manager was assigned to 0405567 CRM:00225161668",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0405567 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4a1211c4-44b2-488b-a9ea-5ff64146e499",
+            "date": "2025-02-10T09:14:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f9d712eb-f6e9-ef11-9342-000d3aba081f",
+            "subject": "ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing CRM:00315002345",
+            "body": "Dear Simen,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nALN 222\nChargerID/Serial No.\n:\nbucVuF\nProblem Description\n: Charger stuck in Preparing\nTroubleshooting\n: Sorry for the delay in replying to this email. I checked the logs from the date you provided for bucVuF and found that there was some kind of problem created in the EcoG following an incorrect end session. After a ERR36 during the finishing of the session, when there was a new attempt to charge it was not successfull for several times, but it was not stuck in preparing.\nAfter the session goes from A to B2, it fails without any error. I will check if there is any solution to this topic or if I need to open a ticket to EcoG.\nFor future reference, your case number is\n0405567\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-13T10:40:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a7276783-09ed-ef11-9341-002248a28911",
+            "subject": "ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing CRM:00315002345",
+            "body": "Hi Simen, good morning.\nDo you perhaps know when this happened again? I would need an occurrence as fast as possible so that I can grab the EcoG logs, otherwise I cannot open a ticket to them. Is it possible to ask Depot360?\nThank you very much.\nBest regards,\nFrancisco",
+            "date": "2025-02-17T08:31:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d16e929d-0bed-ef11-9341-0022489bc8e2",
+            "subject": "RE: ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing CRM:00315002345",
+            "body": "Hi,\nI sent an email to D360, you are on CC.\nI have not heard of any chargers stuck in preparing so let’s see what they say.\n/Simen",
+            "date": "2025-02-17T08:46:07Z",
+            "extra": {
+                "sender": "simen.aarre@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "280334b1-851b-4ab9-939c-a4ecce14f7f9",
+            "subject": null,
+            "body": "Depot\nCharger Sr No\nConnector\nCharger Name\nCharger Type (SiD/HLX)\nDate\nTimestamp in UTC(When issue occured)\nTimestamp in UTC(When issue resolved)\nAlnabru\n170004165\n2\nALN 101\nSID\n14-Feb-25\n10:41 AM\nAlnabru\n170004167\n2\nALN 222\nSID\n15-Feb-25\n11:31 AM\n1:12 PM\nAlnabru\n170004203\n2\nALN 120\nSID\n15-Feb-25\n1:30 PM\n3:22 PM\nAlnabru\naln211.1 [HE9821002-01-241205687]\n1\nALN 211.1\nHLX\n15-Feb-25\n15/02/2025 5:25:26 PM UTC\nAlnabru\nALN 221.1[HE9821002-01-241205691]\n1\nALN 221.1\nHLX\n15-Feb-25\n15/02/2025 8:22 PM UTC\nAlnabru\nALN 221.2[HE9821002-01-241205691]\n2\nALN 221.2\nHLX\n15-Feb-25\n15/02/2025 8:31 PM UTC\nAlnabru\nALN 221.3[HE9821002-01-241205691]\n3\nALN 221.23\nHLX\n15-Feb-25\n15/02/2025 8:32 PM UTC\nAlnabru\n170004203\n1\nALN 120\nSID\n15-Feb-25\n15/02/2025 9:20:14 PM UTC\nAlnabru\n170004180\n1\nALN 105\nSID\n15-Feb-25\n2025-02-15 9:57:14 PM UTC\nAlnabru\n170004168\n2\nALN 103\nSID\n16-Feb-25\n2025-02-16 7:54:17 AM UTC",
+            "date": "2025-02-17T08:54:21Z",
+            "extra": {}
+        },
+        {
+            "id": "042a551a-1fed-ef11-9342-6045bdde1b10",
+            "subject": "ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing CRM:00315002345",
+            "body": "Just for documentation:\nStuck in Preparing\nI checked all the sessions you provided (except Heliox chargers) and the main root cause on why it’s getting “stuck” is because the customer is plugging in the EV, it fails to start the session properly, and as they leave the truck there unattended, it keeps sending the Preparing status until they plug out, if you check when the PilotState goes from B2->A, B1->A, E->A you will see that the Status will be Available and not preparing anymore.\nThe secondary root causes are:\nFrom the SECC side we get that the EV is closing the TCP connection during Parameter Discovery\nWorking case\nNon-working\nAs you can see, the EV didn’t send the PilotState C and as such we didn’t start the session.\nWhen customer plugs in, it doesn’t plug in properly and fails to establish the SLAC communication (CP and PP), we see the A->B2 but it doesn’t go to the next phase with the following error:\nAs you can see it didn’t even share the EVCCID.\nThis one we could get the MAC but not the CCID\nRegarding this SLAC communication there shouldn’t be any problem from the charger, I will bring the topic regarding the failing during Parameter Discovery for further investigation.",
+            "date": "2025-02-17T11:05:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8a1e44f1-49ed-ef11-9341-002248a2968e",
+            "subject": "ID0405567-DC/Si-D/NO-[bucVuF] Charger sending OCPP preparing CRM:00315002345",
+            "body": "Hi Simen,\nI'm closing this ticket since we have already 2 tickets opened for the root causes that I found. One is the fail in P02 and the other is fail on P04. Regarding the SLAC communication failure there is not much we can do\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-02-17T16:12:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

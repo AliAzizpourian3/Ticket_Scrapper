@@ -1,0 +1,235 @@
+{
+    "incident_id": "671b0a49-8cf3-ef11-be1f-6045bddf319c",
+    "ticket_number": "0409207",
+    "title": "ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power",
+    "created_on": "2025-02-25T15:22:20Z",
+    "last_activity": "2025-03-27T19:41:18Z",
+    "age": "21813",
+    "description": "Reported behavior/issue:\nOutlet 1 delivered less power\nRoot cause: NA\nSolution: DPA explained\nOn DAMEX Sanctioned List:\nSiemens Employee",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "VgqMht",
+    "stage": null,
+    "serial_number": "Y2 / S7 313782532001",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "de0dcb44-8cf3-ef11-be1f-7c1e52768372",
+            "subject": "Webform_incident_SiCharge D_25-02-2025_SN: Y2/S7 313782532001",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/S7 313782532001\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/S7 313782532001\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-25T15:22:10Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "26d0e22c-dcd9-6dbf-9886-1959fbc652da",
+            "subject": "Reported issue ",
+            "body": "Why we could see with 3 active charging cars that we have for every outlet EVSE_NowPwr max 40kW? Shouldn't we provide 80kW for one of the three outlets? At Outlet 1, I noticed that the car requested a voltage of 423V, but we only delivered 386.5V. Why wasn't the full power of 40kW utilized?\nError Date & Time: 21-02-2025 11:12",
+            "date": "2025-02-25T19:43:31Z",
+            "extra": {}
+        },
+        {
+            "id": "4804c01b-b1f3-ef11-be1f-6045bddd5690",
+            "subject": "0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nVikas\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / S7 313782532001\nCharger ID/Serial No.\n:\nVgqMht\nProblem Description\n:  Outlet 1 delivered less power\nTroubleshooting\n: Kindly allow us some time to review the logs. We will respond to you after thoroughly analyzing them.\nFor future reference, your case number is\n0409207\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-25T19:45:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "673b961e-11e0-c8d7-82df-38e1bafed8f6",
+            "subject": "Timestamps shared by RC & Images",
+            "body": "",
+            "date": "2025-02-25T23:23:47Z",
+            "extra": {}
+        },
+        {
+            "id": "b1ff8030-95f4-ef11-be1f-7c1e5236ec45",
+            "subject": "RE: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nI hope you're doing well.\nThank you for your patience as we continue to address the issue you reported. We are actively investigating the matter, but we require some additional time to ensure a complete resolution.\nCould you please let me know which outlet the EV was connected to first? I noticed that the charger configuration uses the First in, First Served DPA strategy.\nWe will consult with our expert colleagues and get back to you shortly.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-26T22:58:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "97ed0312-7546-3021-856f-d9ac7d5d30f6",
+            "subject": "Analysis",
+            "body": "Charger is High flex 160KW and using First in First Served DPA Strategy.\nMax power limit is 160KW for all DC2, DC3 & DC4.\nOn DC2& DC4 outlet session was already going on\nDC2 connected first on\n2025-02-21, 09:04:44\nDC4 connected on\n2025-02-21, 09:31:37\nDC1 connected on\n2025-02-21, 10:10:56\nDC3 connected on\n2025-02-21, 10:28:43\nEV Max V is 423 but EVSE now V is 382.5 need to understand why this deviation is there?\n2025-02-21, 10:11:05\n2025-02-21T10:11:05.583985+00:00 swcpu [user:debug] [4021] [DCC] |2025-02-21T10:10:27|DC1: |EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=126|EVSE_NowPwr[kW]=37.3|EVSE_NowCur[A]=97|EVSE_NowVol[V]=382.5|EV_TarCur[A]=98|EV_TarVol[V]=423|EV_SOC[%]=65|EVSE_DESpwr[kW]=160|Pilot=4\nFri, 21 Feb 2025 10:10:56 GMT\n2025-02-21, 10:10:56\n2025-02-21T10:10:56.969680+00:00 swcpu [user:debug] [4021] [DES] [00218] DC1(Session#221): Active CG Constellation type changed: CG(p) -> CG(p+s1), Max Sourcing Power(kW): 0 -> 80\nFri, 21 Feb 2025 10:10:56 GMT\n2025-02-21, 10:10:56\n2025-02-21T10:10:56.949729+00:00 swcpu [user:debug] [4021] [DES] [00217] DC1(Session#221): CG Allocation to outlet max power limit source changed: None -> SCB Limit, Limit(kW): 160 -> 160",
+            "date": "2025-02-26T23:35:42Z",
+            "extra": {}
+        },
+        {
+            "id": "3c095a24-4645-bfc4-a525-5497d5a9e1fa",
+            "subject": "Notes to L2",
+            "body": "I will discuss this case with Sambath and then work accordingly",
+            "date": "2025-02-26T23:36:25Z",
+            "extra": {}
+        },
+        {
+            "id": "3a78e02f-e9f4-ef11-be1f-7c1e5287675d",
+            "subject": "AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Hi Vikas,\nsince you are responsible for service please check it in the logs.\nI was not on site when customer tried to charge every time.\nOutet 1\nOutlet2\nOutlet 4\nKind regards,\njohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 27. Februar 2025 00:07\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524\nDear Johannes Dissauer,\nI hope you're doing well.\nThank you for your patience as we continue to address the issue you reported. We are actively investigating the matter, but we require some additional time to ensure a complete resolution.\nCould you please let me know which outlet the EV was connected to first? I noticed that the charger configuration uses the First in, First Served DPA strategy.\nWe will consult with our expert colleagues and get back to you shortly.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T08:59:52Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a22c543e-19f5-ef11-be1f-6045bde0265d",
+            "subject": "RE: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nThank you for your patients and response.\nRegarding your first query, please find below the relevant log message:\n2025-02-21, 10:12:04\n2025-02-21T10:12:04.592223+00:00 swcpu [user: debug] [4021] [DCC] |2025-02-21T10:10:27|DC1: |EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=126|EVSE_NowPwr[kW]=37.9|EVSE_NowCur[A]=99|EVSE_NowVol[V]=384.9|EV_TarCur[A]=99|EV_TarVol[V]=423|EV_SOC[%]=66|EVSE_DESpwr[kW]=160|Pilot=4\nAs indicated in the log, the power was initially allocated to 80 kW. However, the EV requested less power, leading the charger to automatically reduce the power to 40 kW. Please see the message below for reference:\nActive CG Constellation type changed: CG(p+s1) -> CG(p), Max Sourcing Power(kW):\n80 -> 40\nFor your second query regarding the target voltage, the voltage reflected in the logs represents the maximum battery voltage of the EV. As the state of charge (SOC) of the EV increases, the charger gradually increases the voltage to match the battery’s requirements.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T14:43:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "06b28d23-1af5-ef11-be1f-7c1e5236cda4",
+            "subject": "RE: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nThank you for your patients and response.\nRegarding your first query, please find below the relevant log message:\n2025-02-21, 10:12:04\n2025-02-21T10:12:04.592223+00:00 swcpu [user: debug] [4021] [DCC] |2025-02-21T10:10:27|DC1: |EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=126|EVSE_NowPwr[kW]=37.9|EVSE_NowCur[A]=99|EVSE_NowVol[V]=384.9|EV_TarCur[A]=99|EV_TarVol[V]=423|EV_SOC[%]=66|EVSE_DESpwr[kW]=160|Pilot=4\nAs indicated in the log, the power was initially allocated to 80 kW. However, the EV requested less power, leading the charger to automatically reduce the power to 40 kW. Please see the message below for reference:\nActive CG Constellation type changed: CG(p+s1) -> CG(p), Max Sourcing Power(kW):\n80 -> 40\nFor your second query regarding the target voltage, the voltage reflected in the logs represents the maximum battery voltage of the EV. As the state of charge (SOC) of the EV increases, the charger gradually increases the voltage to match the battery’s requirements.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T14:50:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "10a2deed-1af5-ef11-be1f-7c1e52fb544d",
+            "subject": "AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Hi,\ndo you also checked my screenshots I send you in my first Mail?\nAt this timeframe you can see all three outlets which are used only supports max 40kW.\nWhy non of them had 80kW?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 27. Februar 2025 15:49\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>; SI Emobility Technical Support <emobility_support.si@siemens.com>\nBetreff:\nRE: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524\nDear Johannes Dissauer,\nThank you for your patients and response.\nRegarding your first query, please find below the relevant log message:\n2025-02-21, 10:12:04\n2025-02-21T10:12:04.592223+00:00 swcpu [user: debug] [4021] [DCC] |2025-02-21T10:10:27|DC1: |EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=126|EVSE_NowPwr[kW]=37.9|EVSE_NowCur[A]=99|EVSE_NowVol[V]=384.9|EV_TarCur[A]=99|EV_TarVol[V]=423|EV_SOC[%]=66|EVSE_DESpwr[kW]=160|Pilot=4\nAs indicated in the log, the power was initially allocated to 80 kW. However, the EV requested less power, leading the charger to automatically reduce the power to 40 kW. Please see the message below for reference:\nActive CG Constellation type changed: CG(p+s1) -> CG(p), Max Sourcing Power(kW):\n80 -> 40\nFor your second query regarding the target voltage, the voltage reflected in the logs represents the maximum battery voltage of the EV. As the state of charge (SOC) of the EV increases, the charger gradually increases the voltage to match the battery’s requirements.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T14:55:51Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b64ba69e-f218-fb96-ae5b-5bca8616362a",
+            "subject": null,
+            "body": "Customer is very angry why he don't get the full power eaven if 3 cars are plugged in with low SOC.",
+            "date": "2025-02-28T07:34:07Z",
+            "extra": {}
+        },
+        {
+            "id": "06a9fa30-c1f5-ef11-be1f-6045bddf319c",
+            "subject": "RE: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nThank you for your time, following our discussion on the MS Teams call with Francisco, please review the scenario with the customer and let me know if you require any assistance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-28T10:46:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "56330ab4-c1f5-ef11-be1f-6045bde0265d",
+            "subject": "RE: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Dear Johannes Dissauer,\nThank you for your time, following our discussion on the MS Teams call with Francisco, please review the scenario with the customer and let me know if you require any assistance.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-28T10:49:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "919cbbb4-801d-aef0-b3a6-00e14ab94a13",
+            "subject": "Notes to L2",
+            "body": "Case Background:\nA Teams call was conducted with RC and Francisco on 28/02/2025, during which the log analysis, SMC process, and CG allocation based on the SOC in the logs were explained. RC will contact the end customer and inform us if there are any further queries.\nAction Items:\nWait for RC's response and proceed as needed.",
+            "date": "2025-03-02T07:10:41Z",
+            "extra": {}
+        },
+        {
+            "id": "d7f377e0-6ef7-ef11-bae2-7c1e52350ea5",
+            "subject": "A new case manager was assigned to 0409207 CRM:00225171596",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0409207 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=671b0a49-8cf3-ef11-be1f-6045bddf319c",
+            "date": "2025-03-02T14:01:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95d3b7f0-fef8-ef11-bae2-7c1e523508ba",
+            "subject": "RE: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Hello Johannes,\nGreetings of the day!\nWith reference to trailing mail and to your communication with Vikas and Francisco, hope your queries are cleared.\nCould you please confirm the same and let us know if we should proceed with the closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-04T13:45:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f319cfb1-04f9-ef11-bae2-6045bde0265d",
+            "subject": "AW: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "From what I understand, the issue lies with our switching matrix. Our customer is dissatisfied because the system is supposed to be dynamic, and they are questioning why they can't use this dynamic system for DC3 when no one is charging at D2.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 4. März 2025 14:54\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>; Dissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524\nHello Johannes,\nGreetings of the day!\nWith reference to trailing mail and to your communication with Vikas and Francisco, hope your queries are cleared.\nCould you please confirm the same and let us know if we should proceed with the closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-04T14:26:52Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d38d9550-28fc-ef11-bae3-6045bddf319c",
+            "subject": "RE: AW: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Hello Johannes,\nGreetings of the day!\nWith reference to your below query, please refer the image below, it is self-explanatory:\nDo let us know, if you have any queries on this or should we proceed to close this case?\nLooking forward to your response.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-08T14:19:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "31a7329e-b3fd-ef11-bae3-6045bddf319c",
+            "subject": "AW: AW: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524",
+            "body": "Customer is unhappy about our dynamic load balancing.\nWe can close the ticket.\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nSamstag, 8. März 2025 15:28\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: AW: 0409207 - ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:02023000524\nHello Johannes,\nGreetings of the day!\nWith reference to your below query, please refer the image below, it is self-explanatory:\nDo let us know, if you have any queries on this or should we proceed to close this case?\nLooking forward to your response.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T13:29:06Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "40c7e5fb-72ff-ef11-bae3-6045bddf319c",
+            "subject": "ID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power CRM:00579001587",
+            "body": "Dear Johannes Dissauer,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0409207, the case is now closed.\nProblem Description\n: Outlet 1 delivered less power\nResolution\n: DPA explained\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-12T18:51:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f06c1246-73ff-ef11-bae3-6045bddf319c",
+            "subject": "Ticket 0409207 has been closed. Are you satisfied with our provided solution? CRM:00579001588",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0409207\nwith the title:\nID0409207-DC/Si-D/AT- [Y2/S7 313782532001] Outlet 1 delivered less power\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-12T18:53:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

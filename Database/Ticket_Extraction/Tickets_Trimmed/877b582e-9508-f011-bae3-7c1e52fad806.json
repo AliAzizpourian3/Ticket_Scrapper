@@ -1,0 +1,104 @@
+{
+    "incident_id": "877b582e-9508-f011-bae3-7c1e52fad806",
+    "ticket_number": "0414550",
+    "title": "ID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0",
+    "created_on": "2025-03-24T09:48:50Z",
+    "last_activity": "2026-03-03T13:27:39Z",
+    "age": "24507",
+    "description": "Reported behavior/issue:\nThe charging station in StartTransaction (MeterSatrt) sent a summed rather than a value of 0. The value “0” was standard for software up to 6.0.3. The summed value was only sent for stations with DC LEM meters. Actually this messes up communication in the backend connection.\nRoot cause:\nSolution:\nThe reported behavior is intended and compliant to the OCPP standard. Charger cannot change this\nOn DAMEX Sanctioned List: No\nWarranty Status: Active\nChild case created-\n0414690-→Updated",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "PWnLON",
+    "stage": null,
+    "serial_number": "MP / P9 170000982",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "95eae427-9508-f011-bae3-6045bde0265d",
+            "subject": "Webform_incident_SiCharge D_24-03-2025_SN: All with 6.1.3 sofwear in Poland",
+            "body": "Dear Szymon Brodowicz,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nAll with 6.1.3 sofwear in Poland\nThank you\neMobility Technical Support Team\nSehr geehrte/r Szymon Brodowicz,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nAll with 6.1.3 sofwear in Poland\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-24T09:48:46Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "29ab768d-a408-f011-bae2-000d3ad990ba",
+            "subject": "ID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0 CRM:00921001649",
+            "body": "Dear Poland Service Team,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P9 170000982\nChargerID/Serial No.\n:\nPWnLON\nProblem Description\n: StartTransaction sent a summed rather than a value of 0\nTroubleshooting\n: Please allow us sometime to analyze the logs and will get back to you soon.\nFor future reference, your case number is\n0414550\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-24T11:38:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a4c100bb-b708-f011-bae3-7c1e52350ea5",
+            "subject": "RE: ID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0 CRM:00921001649",
+            "body": "Hi,\nThis topic was rightfully analyzed by Ingo. Can you please pass it on to Ingo's bottom?\nI am attaching a screen shot of the group.\nBR Szymon",
+            "date": "2025-03-24T13:56:08Z",
+            "extra": {
+                "sender": "serwis.emobility.pl@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "684bfd50-c408-f011-bae2-000d3ad990ba",
+            "subject": "RE: ID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0 CRM:00921001649",
+            "body": "Hello Team,\nHope you are doing well.\nWe are analyzing this issue with the expert team, and once we receive an update, we will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-24T15:26:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b9c169dd-322b-ec4d-b59b-a8e72beb5f55",
+            "subject": "Note to L2",
+            "body": "As discussed with ES-\nIt is a standard  conformance behaviour. Energy consumption of a Transaction must be calculated from the difference between MeterStop - MeterStart.\nAlso created child ticket-0414690",
+            "date": "2025-03-24T15:47:47Z",
+            "extra": {}
+        },
+        {
+            "id": "f6d731aa-ef16-47cc-a52c-9fb0ef6749af",
+            "subject": "Note from child case",
+            "body": "Konrad Frach confirmed the Backend is now able to process the metervalues correctly. No activities on charger side",
+            "date": "2025-04-10T06:58:56Z",
+            "extra": {}
+        },
+        {
+            "id": "fab72dc2-f315-f011-9989-000d3ab60b7a",
+            "subject": "RE: ID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0 CRM:00921001649",
+            "body": "Dear Poland Service Team,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0414550, the case is now closed.\nProblem Description\n: StartTransaction sent a summed rather than a value of 0\nResolution\n:\nInformation about the Standard provided.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-10T10:08:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9d7e783-ce17-6286-bb32-c0711ddbad05",
+            "subject": "Note to L2",
+            "body": "",
+            "date": "2025-04-10T10:12:19Z",
+            "extra": {}
+        },
+        {
+            "id": "a3ab9968-f415-f011-9989-000d3ab60b7a",
+            "subject": "Ticket 0414550 has been closed. Are you satisfied with our provided solution? CRM:00921001677",
+            "body": "Dear Team,\nYou are receiving this survey invite, because you recently requested our technical support services. We are keen to hear what you thought of our services we offered you in the ticket\n0414550\nwith the title:\nID0414550-DC/Si-D/PL-[Multiple] StartTransaction sent a summed rather than a value of 0\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-10T10:13:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "incident_id": "beae127f-70f0-ef11-a81b-002248a12796",
+    "ticket_number": "0408546",
+    "title": "ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue",
+    "created_on": "2025-02-21T16:25:44Z",
+    "last_activity": "2025-12-16T14:01:04Z",
+    "age": "9358",
+    "description": "Reported issue:  Unstable OCPP Connection\nSolution: Continue discussion on case #0409748",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "JjxZSo",
+    "stage": null,
+    "serial_number": "MP / R9 170002644",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "27504b56-72f0-ef11-9341-7c1e52372dd0",
+            "subject": "Note created on 2/21/2025 4:39:00 PM UTC by Luigi Iodice [contact:1fd59796-8cbb-ef11-b8e8-6045bddccb26]",
+            "body": "*WEB*",
+            "date": "2025-02-21T16:39:00Z",
+            "extra": {}
+        },
+        {
+            "id": "2e28f84d-9aaf-f19d-ac0d-efb37e292f37",
+            "subject": "Case Notes",
+            "body": "Hello, the charge has an issue: in our backend we see that every minute the CU send a diagnostic message (\"CU up again\"). In addition, a consumer tried to charge 11 times from 4:04PM to 4:14PM (Italian Time Zone), 10 of them were not authorized by the CU, 1 authorized, but the linked recharge was pending for more than 1 hour and closed by us from remote (0 kWh).\nCould you check if the CU is in health?\nSoftware Version: v6.0.3-0-g215cb74\nOCPP Backend Connection: No",
+            "date": "2025-02-22T04:47:35Z",
+            "extra": {}
+        },
+        {
+            "id": "fc5c8062-daf0-ef11-9341-0022489bc8e2",
+            "subject": "ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue CRM:00251000488",
+            "body": "Dear Luigi Iodice,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002644\nChargerID/Serial No.\n:\nJjxZSo\nProblem Description\n: Start Charging Issue on 21/Feb 2024 between 16:00 - 16:14 CET\nAt first I will apologies for not responding within 4 hours of creation of the ticket, the issue is caused by duplicate Assets in our system. The Asset “\nMP / R9 170002644” was having duplicate entries and while creation of ticket, show how you selected the assets which was not linked to the service contract and hence the SLA was not reflecting at our end, thus causing delay in prioritizing your case.\nI have fixed the issue for this asset and will also check the other assets for such errors.\nNow, coming to the technical explanation of failed start charging at the mentioned time, upon checking the logs for this charger I could see loads of connection and disconnection between charger and the server. The server was giving error 404, hence charger was closing the websocket and trying to reconnect after 30 sec. see below (\nThe time mentioned in the logs are UTC time\n)\n2025-02-21T15:00:22.098753+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: Connecting to OCPP-Central-System \"ws://cu.mindcharge-nttdata.com:60500/ocpp1.6//170002644\n2025-02-21T15:00:27.139504+00:00 sicharge-cp [local0:err] sicharge-cp-backend/0c665299a260[737]: OCPP-Central-System connection error: Unexpected server response: 404\nLater charger rebooted the modem to establise the connection\n2025-02-21 15:03:27.655,\"2025-02-21T15:03:27.321312+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: [ensureOCPPConnection] router2 - router is mobile disconnected, router reset initiated\"\nJjxZSo,2025-02-21 15:03:27.655,\"2025-02-21T15:03:27.322095+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: [ensureOCPPConnection] router2 - router is disconnected, performing actions...\"\nat 15:09 we could see first RemoteStartTransaction  from the user, which was accepted\nJjxZSo,2025-02-21 15:09:28.232,\"2025-02-21T15:09:27.803203+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP: Received command: RemoteStartTransaction (30826989) - {\"\"connectorId\"\":2,\"\"idTag\"\":\"\"IT-BEC-CT9I0TDN8-I\"\"}\"\nJjxZSo,2025-02-21 15:09:28.232,\"2025-02-21T15:09:27.809461+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP: Send result: RemoteStartTransaction (30826989) - {\"\"status\"\":\"\"Accepted\"\"}\"\nhowever, immeditaley the charger was offline,\nJjxZSo,2025-02-21 15:09:53.298,2025-02-21T15:09:52.822028+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP connection:\nOFFLINE\nJjxZSo,2025-02-21 15:09:53.298,2025-02-21T15:09:52.822256+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP reconnect to ws://cu.mindcharge-nttdata.com:60500/ocpp1.6/ in 30 seconds\nAnd this caused the session to fail.\nThe connection between charger and the backend was not stable for a long time. and also, at present I can see few connections drop see below:\n05:11:36 GMT\n2025-02-22, 05:11:30\n2025-02-22T05:11:30.784952+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: Connecting to OCPP-Central-System \"ws://cu.mindcharge-nttdata.com:60500/ocpp1.6//170002644\"\nSat, 22 Feb 2025 05:11:36 GMT\n2025-02-22, 05:11:35\n2025-02-22T05:11:35.826753+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP connection: OFFLINE\nSat, 22 Feb 2025 05:11:36 GMT\n2025-02-22, 05:11:35\n2025-02-22T05:11:35.828605+00:00 sicharge-cp [local0:err] sicharge-cp-backend/0c665299a260[737]: OCPP-Central-System connection error: Unexpected server response: 404\nSat, 22 Feb 2025 05:11:36 GMT\n2025-02-22, 05:11:35\n2025-02-22T05:11:35.829644+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP-Central-System connection closed.\nSat, 22 Feb 2025 05:11:41 GMT\n2025-02-22, 05:11:35\n2025-02-22T05:11:35.830224+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP connection: OFFLINE\nSat, 22 Feb 2025 05:12:01 GMT\n2025-02-22, 05:12:00\n2025-02-22T05:12:00.785294+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: Connecting to OCPP-Central-System \"ws://cu.mindcharge-nttdata.com:60500/ocpp1.6//170002644\"\nSat, 22 Feb 2025 05:12:01 GMT\n2025-02-22, 05:12:00\n2025-02-22T05:12:00.857959+00:00 sicharge-cp [local0:info] sicharge-cp-backend/0c665299a260[737]: OCPP-Central-System connection established\nCan you please check the at the backend why the websocket is getting frequently disconnected with the charger.?\nIf required, we will ask the field service team to check and inspect the SIM card and/or router.\nAdditional information, this charger has the SIM and Wired connection (Wired as Failover enabled), one of the reason for the connection failure can be No -Internet on Wired.\nCan you also check the wired internet connectivity on this site?\nFor now I have disabled the Failover and forced Ethernet for connection, let's observe it for a day to see if this brings stability to the conenction or not.\nFor future reference, your case number is\n0408546\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-22T05:03:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cda7faee-18f5-ef11-be1f-7c1e52768c07",
+            "subject": "RE: ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue CRM:00251000488",
+            "body": "Hello Luigi\nTrust all is well.\nHope the information shared in the trailing email is helpful to you.\nPlease let me know if you need further information or support, I can still the OCPP connection on this charger is not very stable.\nWe really need to investigate the ethernet connection and fallback settings?\n@Luca, can you help with the information about the intenet connection and correct settings on this charger?\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-27T14:41:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "76658846-23f5-ef11-be1f-7c1e523508ba",
+            "subject": "Re: ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue CRM:00251000488",
+            "body": "Dear All,\nWe went on site today to doublecheck the Internet connection with the service provider, but unfortunately we were not able to do it.\nThen we opened a ticket to adjust the Router connection from wired to Sim.\nWhenever the team is performing that, the charger became available fighting immediately.\nBr\nLuca\nDa:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nInviato:\ngiovedì, febbraio 27, 2025 3:45 PM\nA:\nLuigi Iodice <luigi.a.iodice@accenture.com>; RIZZI, Luca (RC-IT SI E CS) <luca.rizzi@siemens.com>\nCc:\nRC-IT Emobility Technical Support <emobility.customerservice.rc-it@siemens.com>\nOggetto:\nRE: ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue CRM:00251000488\nHello Luigi\nTrust all is well.\nHope the information shared in the trailing email is helpful to you.\nPlease let me know if you need further information or support, I can still the OCPP connection on this charger is not very stable.\nWe really need to investigate the ethernet connection and fallback settings?\n@Luca, can you help with the information about the intenet connection and correct settings on this charger?\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T15:55:39Z",
+            "extra": {
+                "sender": "luca.rizzi@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cf4ea327-8bf5-ef11-be1f-7c1e52768c07",
+            "subject": "Re: ID0408546-DC/Si-D/IT [MP / R9 170002644] Start Charging Issue CRM:00251000488",
+            "body": "Hello Lucca,\nThanks for the information. To avoid multiple people working on this issue.\nI will close this case now and will loop Luigi on case#0409748.\nI will disable the ethernet and switch the connection to Cellular.\nThis case is now closed.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-28T04:19:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e86bbb7-1b70-cc69-8710-bf842fd0b04f",
+            "subject": "Skipping Survey email, as the issue will be discussed on case #0409748",
+            "body": "Skipping Survey email, as the issue will be discussed on case #0409748",
+            "date": "2025-02-28T04:23:12Z",
+            "extra": {}
+        }
+    ]
+}

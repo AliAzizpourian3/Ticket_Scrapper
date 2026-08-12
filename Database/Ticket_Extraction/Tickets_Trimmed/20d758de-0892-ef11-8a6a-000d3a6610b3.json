@@ -1,0 +1,187 @@
+{
+    "incident_id": "20d758de-0892-ef11-8a6a-000d3a6610b3",
+    "ticket_number": "0386357",
+    "title": "ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline",
+    "created_on": "2024-10-24T13:07:12Z",
+    "last_activity": "2025-12-16T14:04:44Z",
+    "age": "7191",
+    "description": "Reported behavior/issue:\nOCPP offline\nRoot cause: Wrong router settings\nSolution: Changed router settings\nOn DAMEX Sanctioned List: no\nWarranty Status: 5/19/2026",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "62D3qS",
+    "stage": null,
+    "serial_number": "MP / S3 170003313",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7cf6f7d7-0892-ef11-8a6a-7c1e5237dbeb",
+            "subject": "OCPP offline on charger 170003313 (62D3qS)",
+            "body": "Hi colleagues,\nCharger 170003313 has lost connection with its OCPP back-end. I already performed a reboot, but without any result. The OCPP connectivity has worked before.\nCould you check via the SSH connection whether the router is configured correctly, and whether the SIM card is inserted well?\nAnother question; is it possible to configure the charger in such a way that it allows charging without authorization in case OCPP connectivity is lost?\nCould you please keep\n@Veen, Dick van\nin the loop.\nThomas",
+            "date": "2024-10-24T13:07:02Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e01e380b-0b92-ef11-8a6a-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0386357 CRM:00225114490",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0386357 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=20d758de-0892-ef11-8a6a-000d3a6610b3",
+            "date": "2024-10-24T13:22:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "245385b7-1192-ef11-8a6a-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 3 minutes and 19 seconds.",
+            "date": "2024-10-24T14:10:32Z",
+            "extra": {}
+        },
+        {
+            "id": "f6105a64-1492-ef11-8a6a-000d3ab4d5d3",
+            "subject": "ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001245",
+            "body": "Hi Thomas,\nThank you for reaching out to eMobility Support. My name is\nVaishnavi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S3 170003313\nChargerID/Serial No.\n:\n62D3qS\nProblem Description\n: OCPP offline\nTroubleshooting\n: Please note that, currently we can see charger online on OCPP.\nRegarding your query, we will get back to you shortly on that.\nFor future reference, your ticket number is\n0386357\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-24T14:29:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e712835d-1592-ef11-ac20-000d3ab655d3",
+            "subject": "Automatisch antwoord: ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001245",
+            "body": "﻿\nDear sender,\nThank you for your email. I will be out of office until 21-10-2024.\nAll the best,\nThomas Boersma",
+            "date": "2024-10-24T14:36:41Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "60b6fb5f-1592-ef11-8a6a-000d3ab4d5d3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 26 minutes and 14 seconds.",
+            "date": "2024-10-24T14:36:46Z",
+            "extra": {}
+        },
+        {
+            "id": "3b8d9b50-e888-7cd7-be1c-519bc6834674",
+            "subject": "Update for L2",
+            "body": "Need to check via SSH. Waiting for the same.",
+            "date": "2024-10-24T17:38:54Z",
+            "extra": {}
+        },
+        {
+            "id": "01e37e34-cf92-ef11-8a6a-0022489bcff4",
+            "subject": "RE: ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001245",
+            "body": "Hello Thomas,\nGreetings of the day!\nPlease note that, we changed the certain settings on the router to make the stable OCPP connection.\nThe OCPP was toggling between offline and online. Hence we checked via SSH and found-\nConnection type was 2G. So we enabled -> force LTE network to be  4G(LTE)\nAlso,\nIt was Showing 2 Mobile (WAN) options in Main WAN section on Teltonika WebUI.\nNo Wi-Fi (WAN) option in Main WAN section on Teltonika WebUI.\nIt should show 3 different WAN options in the list.s\n- Mobile (WAN)\n- Wi-Fi (WAN)\n- Wired (WAN)\nHence, we corrected it.\nPlease refer image below, for Router settings and SIM card.\nWe monitored the charger and found to be stable OCPP connection now.\nRegarding your query-\nis it possible to configure the charger in such a way that it allows charging without authorization in case OCPP connectivity is lost?\nYes, it is possible to configure the charger in such a way. But the Authorization has to be there by RFID.\nThe CPO should set the following OCPP configuration key to True.\nAuthorizationCacheEnabled\nLocalAuthorizeOffline\nLocalAuthListEnabled\nHope this answers your queries.\nDo let us know if you have any other queries. We are happy to assist you further.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-25T12:46:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d163d42-d892-ef11-8a6a-7c1e5237dbeb",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 23 hours, 14 minutes and 58 seconds.",
+            "date": "2024-10-25T13:51:44Z",
+            "extra": {}
+        },
+        {
+            "id": "1155d6f4-5695-ef11-8a69-7c1e5236e404",
+            "subject": "RE: ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001245",
+            "body": "Hello Thomas,\nGreetings of the day!\nCould you please let us know if you have any further queries, or should we proceed with closure of this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-28T18:03:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ce6d38ff-db95-ef11-8a6a-002248a2ad51",
+            "subject": "RE: ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001245",
+            "body": "Thanks for your help! You can close the case\n😊",
+            "date": "2024-10-29T09:56:02Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8eaa3301-dc95-ef11-8a69-000d3ab9a120",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 3 days, 20 hours, 4 minutes and 26 seconds.",
+            "date": "2024-10-29T09:56:10Z",
+            "extra": {}
+        },
+        {
+            "id": "172d7dfe-f395-ef11-8a6a-0022489ec7b5",
+            "subject": "ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001261",
+            "body": "Hello Thomas,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0386357.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-29T12:47:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2154ebe5-f495-ef11-8a6a-0022489ec7b5",
+            "subject": "Ticket 0386357 has been closed. Are you satisfied with our provided solution? CRM:00579001262",
+            "body": "Hello Thomas,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0386357\nwith the title:\nID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2024-10-29T12:54:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fadcf54f-f595-ef11-8a6a-0022489ec7b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 3 hours, 1 minute and 10 seconds.",
+            "date": "2024-10-29T12:57:21Z",
+            "extra": {}
+        },
+        {
+            "id": "f15a4d82-f595-ef11-8a6a-0022489ec7b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 1 minute and 22 seconds.",
+            "date": "2024-10-29T12:58:43Z",
+            "extra": {}
+        },
+        {
+            "id": "723ec0ec-649b-ef11-8a6a-000d3a682fc5",
+            "subject": "RE: ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline CRM:00579001261",
+            "body": "Hi Vaishnavi,\nThe customer reports that the OCPP connection of this charger is still not stable, could you look into this?\nThomas",
+            "date": "2024-11-05T10:58:55Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "151a31f0-649b-ef11-8a69-000d3ab655d3",
+            "subject": "Email sent to a closed case 'ID0386357-DC/Si-D/NL-[MP / S3 170003313] OCPP offline (0386357)' CRM:00225119328",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0386357\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2024-11-05T10:58:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

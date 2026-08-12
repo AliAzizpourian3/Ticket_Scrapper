@@ -1,0 +1,182 @@
+{
+    "incident_id": "382e402a-5d27-f011-8c4d-000d3a6663a4",
+    "ticket_number": "0422101",
+    "title": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\"",
+    "created_on": "2025-05-02T13:56:00Z",
+    "last_activity": "2025-06-04T10:41:11Z",
+    "age": "34592",
+    "description": "Reported issue: Customer has this problem on several terminals: \"VendorErrorCode\": \"secc is offline\"\nSolution:\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "mPKJuo",
+    "stage": null,
+    "serial_number": "Y2 / R9 313202799090",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b6774826-5d27-f011-8c4d-000d3ad97a58",
+            "subject": "Webform_incident_SiCharge D_02-05-2025_SN: Y2/R9 313202799090",
+            "body": "Dear SCHOEPFF,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/R9 313202799090\nThank you\neMobility Technical Support Team\nSehr geehrte/r SCHOEPFF,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/R9 313202799090\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-02T13:55:49Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5a98fe34-5e27-f011-8c4d-7c1e523508ba",
+            "subject": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Dear Cedric Schoepff,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R9 313202799090\nChargerID/Serial No.\n:\nmPKJuo\nProblem Description\n: Facing an error on several terminals: \"VendorErrorCode\": \"secc is offline\nFor future reference, your case number is\n0422101\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-02T14:03:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "144e9296-ba29-f011-8c4e-000d3adc93d1",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello Cedric,\nGreetings of the day!\nCurrently we can see the charger is healthy and is online on both backends.\nWe observed following in logs -\nSun, 04 May 2025 12:00:14 GMT\n2025-05-04, 12:00:14\n2025-05-04T12:00:14.022846+00:00 [FW060103G1] sicharge-cp [local0:err] ecog-secc-adapter/8a147c1060bf[638]:\nError polling coap://10.20.17.100\n:5683/state Error: No reply in 4.25s\nSun, 04 May 2025 12:00:15 GMT\n2025-05-04, 12:00:15\n2025-05-04T12:00:15.353520+00:00 [FW060103G1] sicharge-cp [local0:info] sicharge-cp-backend/b1abc37f7d48[638]: OCPP: Send command: StatusNotification (eb675aa4-afc9-4984-b264-bd84fecc8d1d) - {\"connectorId\":2,\"errorCode\":\"OtherError\",\"status\":\"Faulted\",\"vendorId\":\"SICHARGE D\",\"vendorErrorCode\":\"\nsecc is offline\"\n}\nThe\n\"VendorErrorCode\": “secc is offline”\nis due to Error polling coap.\nError polling coap indicates -Internal communication to SECC (Ecog) lost for small interval of time.\nSiC D will reconnect to SECC within 5 seconds. While SECC is not reachable, an \"Outlet out of order\" flag will be active and will be cleared out as soon as the SiC D reconnects to SECC.\nKindly let us know if the same error appears again. We will then inform our service to take appropriate action accordingly.\nDo let us know if you have any other queries?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T14:09:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1ead7d72-bb2c-f011-8c4d-000d3ad97a58",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello Cedric,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nCould you please let us know if you have any further queries or should we proceed to close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T09:53:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c2863c4-cd2c-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello,\nI'm still seeing “secc is offline” faults and there's also another “modbus0 is not connected” fault.\nThese errors may not affect the terminal's operation, but as far as I'm concerned, a fault is still a fault and should not occur unless there's a real problem.\nThis penalizes the percentage of availability of our network.\nThank you for considering my request and if you make corrections “hotfix” or new version of software. Once validated over a few weeks, please deploy on the other terminals in our network.\nBest regards.\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos informations nominatives sont exploitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité “Gestion de la messagerie professionnelle d’entreprise”. Conformément à la Loi n°1.165 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression en écrivant au Délégué à la protection des données de la SMEG, 10 avenue de Fontvieille, 98000 Monaco.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 9 mai 2025 11:55\nÀ :\nSCHOEPFF Cedric (SMEG) <cedric.schoepff@smeg.mc>\nCc :\nemobility_support.si.fr@siemens.com; antoine.brua <antoine.brua@siemens.com>\nObjet :\nRE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193\nHello Cedric, Greetings of the day! Awaiting your response on the trailing mail. Could you please let us know if you have any further queries or should we proceed to close this case? Thank you Best Regards eMobility Tech Support Team - Vaishnavi\nHello Cedric,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nCould you please let us know if you have any further queries or should we proceed to close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-09T12:04:33Z",
+            "extra": {
+                "sender": "cedric.schoepff@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "402cbfda-262f-f011-8c4d-6045bde0265d",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello,\nOn 10/05/25 at 15:50:58 and 15:45:38, I notice a fault “secc pilot is E” which puts me in fault on side 2.\nThe previous fault on 10/05/25 at 10:45:35 there is a “secc is initializing” fault.\nAfter reboot on 12/05/25, the fault disappeared.\nCan you tell me where this problem comes from and find a solution so that it no longer appears if this is a non-blocking default.\nThank you very much.\nThank you.\nTranslated with DeepL.com (free version)\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos informations nominatives sont exploitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité “Gestion de la messagerie professionnelle d’entreprise”. Conformément à la Loi n°1.165 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression en écrivant au Délégué à la protection des données de la SMEG, 10 avenue de Fontvieille, 98000 Monaco.\nDe :\nSCHOEPFF Cedric (SMEG)\nEnvoyé :\nvendredi 9 mai 2025 14:04\nÀ :\nemobility_support.si@siemens.com\nCc :\nemobility_support.si.fr@siemens.com; antoine.brua <antoine.brua@siemens.com>\nObjet :\nRE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193\nHello,\nI'm still seeing “secc is offline” faults and there's also another “modbus0 is not connected” fault.\nThese errors may not affect the terminal's operation, but as far as I'm concerned, a fault is still a fault and should not occur unless there's a real problem.\nThis penalizes the percentage of availability of our network.\nThank you for considering my request and if you make corrections “hotfix” or new version of software. Once validated over a few weeks, please deploy on the other terminals in our network.\nBest regards.\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos informations nominatives sont exploitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité “Gestion de la messagerie professionnelle d’entreprise”. Conformément à la Loi n°1.165 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression en écrivant au Délégué à la protection des données de la SMEG, 10 avenue de Fontvieille, 98000 Monaco.\nDe :\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n>\nEnvoyé :\nvendredi 9 mai 2025 11:55\nÀ :\nSCHOEPFF Cedric (SMEG) <\ncedric.schoepff@smeg.mc\n>\nCc :\nemobility_support.si.fr@siemens.com\n; antoine.brua <\nantoine.brua@siemens.com\n>\nObjet :\nRE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193\nHello Cedric, Greetings of the day! Awaiting your response on the trailing mail. Could you please let us know if you have any further queries or should we proceed to close this case? Thank you Best Regards eMobility Tech Support Team - Vaishnavi\nHello Cedric,\nGreetings of the day!\nAwaiting your response on the trailing mail.\nCould you please let us know if you have any further queries or should we proceed to close this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-12T11:47:20Z",
+            "extra": {
+                "sender": "cedric.schoepff@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d19978ed-c82f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello Cedric, good morning. I hope you are doing well.\nWe have a hotfix for this specific issue that my colleague mentioned.\nIf you allow me, I can update it as soon as no one is charging and it usually take around 10mins.\nLet me know your feedback before proceeding.\nThank you and have a nice day.\nBest regards,\nFrancisco",
+            "date": "2025-05-13T07:07:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "46a6dd9b-cc2f-f011-8c4d-000d3ab07fc1",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello,\nI can confirm that I'm willing to update the bollard to fix this defect. However, can this hotfix be deployed on all our bollards?\nWe look forward to hearing from you.\nThank you\nBest regards.\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos informations nominatives sont exploitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité “Gestion de la messagerie professionnelle d’entreprise”. Conformément à la Loi n°1.165 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression en écrivant au Délégué à la protection des données de la SMEG, 10 avenue de Fontvieille, 98000 Monaco.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 13 mai 2025 09:12\nÀ :\nSCHOEPFF Cedric (SMEG) <cedric.schoepff@smeg.mc>\nCc :\nantoine.brua <antoine.brua@siemens.com>; emobility_support.si.fr@siemens.com; antoine.brua <antoine.brua@siemens.com>; antoine.brua <antoine.brua@siemens.com>\nObjet :\nID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193\nHello Cedric, good morning. I hope you are doing well.\nWe have a hotfix for this specific issue that my colleague mentioned.\nIf you allow me, I can update it as soon as no one is charging and it usually take around 10mins.\nLet me know your feedback before proceeding.\nThank you and have a nice day.\nBest regards,\nFrancisco",
+            "date": "2025-05-13T07:33:51Z",
+            "extra": {
+                "sender": "cedric.schoepff@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "095820d5-cc2f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hi Cedric,\nThank you for the feedback. I see that you have many chargers, unfortunately for me, that is not easily done.\nSince this hotfix is not officially released, we install it only on the affected chargers.\nIf you have a list of chargers where you see the same behaviour please reply to this email and my colleague will do the analysis and I will do the hotfix for the chargers that have the reported error.\nI will start installing the hotfix right now on the charger reported for this ticket.\nThank you very much.\nBest regards,\nFrancisco",
+            "date": "2025-05-13T07:35:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "031ed8dd-ce2f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello again,\nHotfix install in the charger. Will wait for your feedback for the next ones.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-05-13T07:50:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d9f839f7-6335-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello Cedric,\nGreetings of the day!\nWith reference to the previous email, could you please now confirm whether the error is still occurring on this charger?\nIf not, may we proceed with closing this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-20T10:19:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0f5c4991-1736-f011-8c4e-6045bde117fc",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello,\nI no longer have the error and I'm delighted. I have another error that happens much more rarely, but I'll make another ticket for that unless you'd like to correct it here. Let me know if I should create a ticket or not.\nFor information it is :\n“VendorErrorCode\": ”modbus0 is not connected”\nThis error returns a Faulted status, which is not allowed if it's a false fault.\nThanks\nBest regards\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos informations nominatives sont exploitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité “Gestion de la messagerie professionnelle d’entreprise”. Conformément à la Loi n°1.165 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression en écrivant au Délégué à la protection des données de la SMEG, 10 avenue de Fontvieille, 98000 Monaco.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmardi 20 mai 2025 12:27\nÀ :\nSCHOEPFF Cedric (SMEG) <cedric.schoepff@smeg.mc>\nCc :\nantoine.brua <antoine.brua@siemens.com>; emobility_support.si.fr@siemens.com; antoine.brua <antoine.brua@siemens.com>; SPANO Yan (SMEG) <yan.spano@smeg.mc>; antoine.brua <antoine.brua@siemens.com>\nObjet :\nRE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193\nHello Cedric, Greetings of the day! With reference to the previous email, could you please now confirm whether the error is still occurring on this charger? If not, may we proceed with closing this case? Thank you Best Regards eMobility Tech\nHello Cedric,\nGreetings of the day!\nWith reference to the previous email, could you please now confirm whether the error is still occurring on this charger?\nIf not, may we proceed with closing this case?\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-21T07:45:34Z",
+            "extra": {
+                "sender": "cedric.schoepff@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4f6a0187-f437-f011-8c4e-6045bdde4786",
+            "subject": "RE: ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:02684000193",
+            "body": "Hello Cedric,\nGreetings of the day!\nSince the issue for which this ticket was raised has been resolved, we will proceed to close this ticket.\nIf you encounter any new issues, please feel free to create a new ticket.\nThank you\nBest Regards\neMobility Tech Support Team - Vaishnavi Raut\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-23T16:39:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f79191f-3d3a-f011-b4cb-7c1e52768c07",
+            "subject": "ID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\" CRM:00579001637",
+            "body": "Dear Cedric Schoepff,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0422101, the case is now closed.\nProblem Description\n:  \"VendorErrorCode\": \"secc is offline\"\nResolution\n: Hotfix applied\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-26T14:24:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7a342275-3d3a-f011-b4cb-7c1e52768c07",
+            "subject": "Ticket 0422101 has been closed. Are you satisfied with our provided solution? CRM:00579001638",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0422101\nwith the title:\nID0422101-DC/Si-D/MC-[ Y2/R9 313202799090 ] \"VendorErrorCode\": \"secc is offline\"\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-26T14:26:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

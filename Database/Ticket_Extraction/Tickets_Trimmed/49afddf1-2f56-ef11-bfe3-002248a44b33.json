@@ -1,0 +1,79 @@
+{
+    "incident_id": "49afddf1-2f56-ef11-bfe3-002248a44b33",
+    "ticket_number": "0373507",
+    "title": "ID0373507-DC/Si-D/UA[YKGwB5] - Wrong SCB config + Documents",
+    "created_on": "2024-08-09T09:15:44Z",
+    "last_activity": "2025-12-16T14:06:47Z",
+    "age": "34",
+    "description": "Reported behaviour/issue:\nAC Bauer Meter was enabled without this meter and the Technical document is incorrect it says 2 CCS but it has 1 Chademo\nRoot cause:\nFactory error?\nSolution:\nReport to QM and close since it's not a service topic\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "YKGwB5",
+    "stage": null,
+    "serial_number": "MP / R9 170002580",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "736f91eb-2f56-ef11-bfe3-000d3a687981",
+            "subject": "Webform_incident_SiCharge D_09-08-2024_SN: MP / R9 170002580",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R9 170002580\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R9 170002580\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-08-09T09:15:39Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6f96fc30-3056-ef11-bfe2-0022489e9c81",
+            "subject": "A new case manager was assigned to 0373507 CRM:00225081292",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0373507 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=49afddf1-2f56-ef11-bfe3-002248a44b33",
+            "date": "2024-08-09T09:17:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3b2d956e-3156-ef11-bfe3-0022489a2913",
+            "subject": "ID0373507-DC/Si-D/UA[YKGwB5] - Wrong SCB config + Documents CRM:00315001684",
+            "body": "Hello ﻿Johannes,﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002580\nChargerID/Serial No.\n:\nYKGwB5\nProblem Description\n: AC Bauer was enabled from factory since it's reported that no one changed the configuration prior to commissioning, when there is no Bauer meter in this charger → Caused confusion since no outlet was able to charge.\nSecond is that the Technical document is incorrect, has a Chademo outlet and it's mentioned CCS.\nI will forward this information to QM and proceed to close the ticket since it's not Service related.\nFor future reference, your ticket number is\n0373507\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-08-09T09:26:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b41d9333-3256-ef11-bfe3-0022489a2913",
+            "subject": "ID0373507-DC/Si-D/UA[YKGwB5] - Wrong SCB config + Documents CRM:00315001684",
+            "body": "Hi Christian, good morning.\nI received a ticket from RC-AT regarding a charger that has wrong documents and wrong configuration in the Outlet section:\nFirst the SCB configuration, for\nALL\noutlets, this configuration was enabled:\nAs you can read here, it says\nIF an AC Bauer Meter\nis in the charger and even if it was in the charger it's\nONLY for AC\n, as such, these configs can never be enabled in DC outlets.\nBut here is also different case, we don't even have a Bauer Meter, the IP for this device is 10.20.17.40 and when I accessed the charger remotely, I could confirm that we don't have an IP in the network:\nSecond, the schematic is wrong, it mentions 2 CCS outlets but we have 1 Chademo here:\nAccording to schematic:\nThird, on the Technical+data+complete.rtf:\nAnd according to SCB config:\nPlease align with the colleagues and check why all of these mistakes were done. For the RC, it was very bad experience because no outlets were working right after comissioning.\nI will close this ticket since it's not Service related, if you need please reach out to me directly via Teams or reply to this email since I'm in CC.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-08-09T09:31:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ddd63c9b-3456-ef11-bfe3-0022489a2913",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Incident Solved Via Remote (L2) after 33 minutes and 25 seconds.",
+            "date": "2024-08-09T09:49:11Z",
+            "extra": {}
+        },
+        {
+            "id": "22ea80a7-3456-ef11-bfe3-0022489a2913",
+            "subject": "Ticket 0373507 has been closed. Are you satisfied with our provided solution? CRM:00315001685",
+            "body": "Dear  Johannes, the email has been sent to the QM. He will contact me soon.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0373507\nwith the title:\nID0373507-DC/Si-D/UA[YKGwB5] - Wrong SCB config + Documents\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-08-09T09:49:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

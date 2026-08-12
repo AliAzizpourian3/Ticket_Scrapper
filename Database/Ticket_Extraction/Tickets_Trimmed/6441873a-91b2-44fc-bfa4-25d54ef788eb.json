@@ -1,0 +1,45 @@
+{
+    "incident_id": "6441873a-91b2-44fc-bfa4-25d54ef788eb",
+    "ticket_number": "0415289",
+    "title": "ID0410152-DC/Si-D/BE-[MP / R1 170001387]Charging issue.(C1)",
+    "created_on": "2025-03-26T20:11:56Z",
+    "last_activity": "2026-01-30T07:54:40Z",
+    "age": "32283",
+    "description": "Reported behaviour/issue:Charging Issue\nRoot cause: NA\nSolution: NA\nNote: Issue in both the chargers\nMP / R2 170001528\nMP / R1 170001387\nNote: Ecog to be updated for charger MP / R2 170001528 only",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / R1 170001387,MP / R2 170001528,MP / R1 170001387,MP / R1 170001387",
+    "case_nature_code": null,
+    "chargerID": "QAqGBn & Vod1LW",
+    "additional_info": [
+        {
+            "id": "1e50ec92-0b7a-6b84-9b14-279fc530858e",
+            "subject": "Note form L2 to ES",
+            "body": "Suspected Root Cause :\nEcog Or Voltage transducer\nProblem Description : Charging issue.\nAction Performed (L2) :\nfor charger\nMP / R2 170001528, Charging session in DC1 is getting timeout every time in Cable check state as charger is not developing voltage , as per log in cable check max voltage of 18V is getting developed.\nI have also checked the charger using debug station no issue observed in Converter grouping or O/P contactor.\nIt is also observed that Ecog Version is old V1.4.5 may be after updating the Ecog problem might be resolved or there could be issue with TF.\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) : Update Ecog to V1.4.11\nFault history :\nIn DC1 session is getting timeout in cable check state every time\nLog analysis with timestamp : Checked logs  of 03/03/25 from 11:00 UTC for DC1\nAction Required\nAction by HQ :\nUpdate Ecog to V1.4.11",
+            "date": "2025-03-26T20:32:39Z",
+            "extra": {}
+        },
+        {
+            "id": "cdeeb487-fec2-a824-b204-a9c65de8cbf5",
+            "subject": "Status Update : 18/04/2025",
+            "body": "Awaiting for site intervention .\nCommunications are via parent case\nStatus : shared the spare part details with Sunil",
+            "date": "2025-04-18T05:22:53Z",
+            "extra": {}
+        },
+        {
+            "id": "a786a197-7c01-43f0-81d2-838919bcfc5e",
+            "subject": "Status Update : 25/04/2025",
+            "body": "Awaiting for site intervention .\nCommunications are via parent case",
+            "date": "2025-04-25T05:19:34Z",
+            "extra": {}
+        },
+        {
+            "id": "86a66fce-fff2-8872-a182-17e7c0da3235",
+            "subject": "Notes from ES to NOC [ 13/05/2025]",
+            "body": "Problem Description\n: Charging Issue\nSuspected Root Cause\n: NA\nAction Performed: Closing the ticket as parent case moved to RC queue\nCharger SW Version\n: NA\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:\nNA",
+            "date": "2025-05-13T09:45:16Z",
+            "extra": {}
+        }
+    ]
+}

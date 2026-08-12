@@ -1,0 +1,196 @@
+{
+    "incident_id": "97d6cafd-b4ea-ef11-9341-000d3add0e90",
+    "ticket_number": "0406790",
+    "title": "ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB",
+    "created_on": "2025-02-14T09:21:02Z",
+    "last_activity": "2025-02-26T09:24:38Z",
+    "age": "17283",
+    "description": "Reported behavior/issue:\nCharging station indicates a fault, we should contact support, LED color is RED\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status:\nExpired 3/8/2024",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "mW8Dro",
+    "stage": null,
+    "serial_number": "MP / P3 170000362",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "be8027fe-b4ea-ef11-9341-6045bddd1864",
+            "subject": "Webform_incident_SiCharge D_14-02-2025_SN: 170000362",
+            "body": "Dear Daniel Metzler,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000362\nThank you\neMobility Technical Support Team\nSehr geehrte/r Daniel Metzler,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000362\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-14T09:20:57Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "87ee20df-b6ea-ef11-9341-000d3ab1a06e",
+            "subject": "A new case manager was assigned to 0406790 CRM:00225164537",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0406790 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=97d6cafd-b4ea-ef11-9341-000d3add0e90",
+            "date": "2025-02-14T09:34:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "875c3735-6715-4e0a-969f-c3e47cb22dfc",
+            "subject": "Case Creation Notes",
+            "body": "Charging station indicates a fault, we should contact support, LED color is RED Unfortunately I cannot tell you what I should fill in the field: OCPP backend connection / connection (Si-D), I have selected no for now",
+            "date": "2025-02-14T09:55:13Z",
+            "extra": {}
+        },
+        {
+            "id": "c539e01f-beea-ef11-9341-000d3aba98df",
+            "subject": "0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:02023000510",
+            "body": "Dear Daniel Metzler,\nThank you for reaching out to eMobility Support. We acknowledge the receipt of your inquiry regarding Charger offline on SCB. Rest assured that a regional representative will promptly contact you to provide further information.\nBelow, you will find the relevant asset details:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P3 170000362\nCharger ID/Serial No.:\nmW8Dro\nProblem Description:\nCharger offline on SCB.\nFor future reference, your case number is\n0406790\n. Please refer to this number in all further communication related to this issue.\nWe appreciate your time and patience.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-02-14T10:26:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dd62f69d-c7ea-ef11-9341-000d3aba98df",
+            "subject": "RE: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:02023000510",
+            "body": "Hello Team,\nI trust this email finds you in good health. We have received a technical support request from\nElektro Vieweg GmbH & Co. KG\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / P3 170000362\nCharger ID/Serial No.:\nmW8Dro\nProblem Description:\nCharger offline on SCB\nUnfortunately, we cannot do much remotely when there is no SCB connection. The best approach would be to have someone on-site to check:\nWhether the router is connected to the internet.\nWhether the charger is powered on.\nAdditionally, please refer to the following points that might be causing the charger to go offline on SCB:\nPossible Causes:\n1. Internet Issues with Siemens Router\nDue to failover functionality, the WAN may have switched from Cellular to Ethernet.\n2. Mobile Network Issues\nData service of the mobile network operator may not be available.\nThe SIM card might be disabled or expired. (Please check by reinserting it into the XF3 and XF4 router after cleaning.)\nMonthly data volume may have been exhausted.\nSignal strength may have weakened due to changes in radio transmission conditions.\nFor M2M contracts, IP functionality may not be enabled.\n3. Backend-Related Issues\nThe backend may have changed settings for the affected charger.\nThe OCPP server on the backend may be unavailable.\n4. Teltonika Router Issues\nThe router may have switched to an incorrect network service (e.g., 3G instead of 4G).\nHardware failure of the router.\nRouter software crash.\nRecommended Actions:\nDuring the intervention, please carry a spare router, Ethernet cable, and SIM card in case replacements are needed.\nUpon reviewing our asset database, we found that the product is no longer under warranty since [\n3/8/2024\n], as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nVikas Khiladkar\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-02-14T11:34:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bcad3c9-caea-ef11-9341-6045bddfbfba",
+            "subject": "0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Sehr geehrte Damen und Herren,\num den Serviceeinsatz durchführen zu können, müssten Sie bitte vorab im Anhang befindliches Störschreiben zur Kenntnis nehmen und kurz bestätigen.\nDer Charger befindet sich seit dem 08.03.2024 außerhalb der Gewährleistung.\nOhne dies ist leider kein Technikereinsatz möglich.\nMit der Bitte um Verständnis & kurze Rückmeldung\nIhr eMobility Services Deutschland Team",
+            "date": "2025-02-14T11:57:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "11d8cc45-cbea-ef11-9341-6045bdddf14a",
+            "subject": "A new case manager was assigned to 0406790 CRM:00225164663",
+            "body": "Rudolf Artes was assigned as new Case Manager for case 0406790 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=97d6cafd-b4ea-ef11-9341-000d3add0e90",
+            "date": "2025-02-14T12:00:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa301390-d8ea-ef11-9342-0022489fb3e7",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Sehr geehrte Damen und Herren,\nvielen Dank für Ihre Nachricht.\nLeider ist unsere Ladesäule trotzdem ohne Funktion und wir benötigen Ihre Unterstützung.\nDie  Kenntnisnahme befindet sich bestätigt im Anhang.\n--\n... freundliche Grüsse ....\nDaniel Metzler\nWerkstattmeister\nChemnitzer Auto-Salon Zentrum GmbH\nWinklhoferstr. 13\nD-09116 Chemnitz\nwww.kia-chemnitz.de\ndaniel.metzler@chemnitzer-autosalon.de\nTel.0371/2814416\nFax 0371/2814417\nGeschäftsführer: Daniel Metzler, Sebastian Metzler\nVertretungsberechtigt: Sylvia Metzler, Daniel Metzler, Sebastian Metzler, André Orgis\nRegistergericht: Amtsgericht Chemnitz\nRegisternummer: HRB-Nr. 2817\nUmsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE 140849367",
+            "date": "2025-02-14T13:35:36Z",
+            "extra": {
+                "sender": "daniel.metzler@chemnitzer-autosalon.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "505e5c55-dbed-ef11-9341-0022489a5359",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Hallo Herr Metzler,\nvielen Dank für die Bestätigung - wir haben einen Techniker in der Nähe, er wird sich bei IHnen mit einem Termin melden.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland",
+            "date": "2025-02-18T09:33:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2c1f669a-dbed-ef11-9341-7c1e52fb452c",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Hallo Herr Metzler,\nvielen Dank für die Bestätigung - wir haben einen Techniker in der Nähe, er wird sich bei IHnen mit einem Termin melden.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland",
+            "date": "2025-02-18T09:34:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ab3236b5-dced-ef11-9341-0022489a5359",
+            "subject": "0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000194",
+            "body": "Hi Denise,\nkönntest du für Zeile 500 eine Nummer erstellen und folgendes Ersatzteil bestellen:\n1 x 8EM5903-0AA01-3AA8 (Router)\n1x 8EM5903-0AA01-7AA6 (SIM)\nLieferung bitte zu Martin\nDAnke dir!\nRMA nicht notwendig da außerhalb GWL\nVG Rudi",
+            "date": "2025-02-18T09:42:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2098f3b3-f6ed-ef11-9341-002248a28911",
+            "subject": "AW: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000194",
+            "body": "Hi Rudi,\nAuftrag\n30742203 ist angelegt.\nMaterial ist bestellt, Lieferzeit lt PMD 2 Tage.\n\\\\ad001.siemens.net\\dfs001\\File\\DE\\DE_SI_E_A\\Elektro Vieweg\\A-30742203-Ticketnr. 0406790\\06_SV-Lieferant\\3314224672.PDF\nMit freundlichen Grüßen\nDenise Sommerer\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nSiemenspromenade 2\n91058 Erlangen, Deutschland\nMobil: +491735990846\nmailto:denise.sommerer@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 18. Februar 2025 10:43\nAn:\nSommerer, Denise (RC-DE SI E CS) <denise.sommerer@siemens.com>\nBetreff:\n0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000194\nHi Denise,\nkönntest du für Zeile 500 eine Nummer erstellen und folgendes Ersatzteil bestellen:\n1 x 8EM5903-0AA01-3AA8 (Router)\n1x 8EM5903-0AA01-7AA6 (SIM)\nLieferung bitte zu Martin\nDAnke dir!\nRMA nicht notwendig da außerhalb GWL\nVG Rudi",
+            "date": "2025-02-18T12:48:55Z",
+            "extra": {
+                "sender": "denise.sommerer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "61846185-fef0-ef11-9341-0022489a2456",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Sehr geehrte Damen und Herren,\nleider hat sich noch niemend bei uns gemeldet, zwecks der Reparatur unserer Ladesäule.\nWir sind ein Autohaus welches , wie sollte es anders sein, auch E-Fahrzeuge im Programm hat und diese auch von Mitarbeitern gefahren werden und auch unsere Mietwagen sind zum teil rein elektrisch .\nDa unsere Ladestation seit knapp 2 Wochen ohne Funktion ist, und wir noch nichtmals einen Termin haben wann der Techniker kommt, möchte ich mit dieser Email nochmals die dringlichkeit betonen und höfflich nachfragen wann der Techniker sich das Problem anschaut.\nBitte entschuldigen Sie nochmals das ich mich melde, aber so langsam ensteht eine gewisse dringlichkeit für das Problem.\n--\n... freundliche Grüsse ....\nDaniel Metzler\nWerkstattmeister\nChemnitzer Auto-Salon Zentrum GmbH\nWinklhoferstr. 13\nD-09116 Chemnitz\nwww.kia-chemnitz.de\ndaniel.metzler@chemnitzer-autosalon.de\nTel.0371/2814416\nFax 0371/2814417\nGeschäftsführer: Daniel Metzler, Sebastian Metzler\nVertretungsberechtigt: Sylvia Metzler, Daniel Metzler, Sebastian Metzler, André Orgis\nRegistergericht: Amtsgericht Chemnitz\nRegisternummer: HRB-Nr. 2817\nUmsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE 140849367",
+            "date": "2025-02-22T09:22:33Z",
+            "extra": {
+                "sender": "daniel.metzler@chemnitzer-autosalon.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bb798838-70f3-ef11-be1f-7c1e52fb544d",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Hallo Metzler,\nentschuldigen Sie, ich wollte mich noch bei Ihnen melden sobald mir ein Termin bekannt wurde.\nDer Ersatzrouter ist gestern beim Techniker angekommen und unser Techniker Herr Frank wird morgen Ihren Charger anfahren.\nEr wird sich noch bei Ihnen telefonisch ankündigen mit genauen Termin.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com",
+            "date": "2025-02-25T12:01:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "69344d3a-71f3-ef11-be1f-6045bddd5690",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Hallo Metzler,\nentschuldigen Sie, ich wollte mich noch bei Ihnen melden sobald mir ein Termin bekannt wurde.\nDer Ersatzrouter ist gestern beim Techniker angekommen und unser Techniker Herr Frank wird morgen Ihren Charger anfahren.\nEr wird sich noch bei Ihnen telefonisch ankündigen mit genauen Termin.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com",
+            "date": "2025-02-25T12:08:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "345efd7c-74f3-ef11-be1f-7c1e52fb539c",
+            "subject": "Re: 0406790 - ID0406790-DC/Si-D/DE- [MP / P3 170000362] Charger offline on SCB CRM:00755000190",
+            "body": "Hallo Herr Artes,\nvielen Dank für die Info.\n... freundliche Grüsse ....\nDaniel Metzler\nWerkstattmeister\nChemnitzer Auto-Salon Zentrum GmbH\nWinklhoferstr. 13\nD-09116 Chemnitz\nwww.kia-chemnitz.de\ndaniel.metzler@chemnitzer-autosalon.de\nTel.0371/2814416\nFax 0371/2814417\nGeschäftsführer: Daniel Metzler, Sebastian Metzler\nVertretungsberechtigt: Sylvia Metzler, Daniel Metzler, Sebastian Metzler, André Orgis\nRegistergericht: Amtsgericht Chemnitz\nRegisternummer: HRB-Nr. 2817\nUmsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE 140849367",
+            "date": "2025-02-25T12:31:56Z",
+            "extra": {
+                "sender": "daniel.metzler@chemnitzer-autosalon.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a41edaa8-acfd-9ca4-99f7-1d16f3141c66",
+            "subject": "Charger vor Ort war wieder okay",
+            "body": "Router wurde nicht gebraucht, bei Martin auf Lager - nur Arbeitskosten abrechnen",
+            "date": "2025-02-26T09:24:01Z",
+            "extra": {}
+        }
+    ]
+}

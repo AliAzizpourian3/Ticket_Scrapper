@@ -1,0 +1,309 @@
+{
+    "incident_id": "58641913-a102-f011-bae3-000d3adc93d1",
+    "ticket_number": "0412935",
+    "title": "ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available",
+    "created_on": "2025-03-16T19:58:49Z",
+    "last_activity": "2025-03-25T21:56:49Z",
+    "age": "12462",
+    "description": "Reported behavior/issue:\nThe charger is frequently switch between unavailable and available\nRoot cause:\nChild case-:0413550, it has been closed by resolving the issue",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "oiCW7u",
+    "stage": null,
+    "serial_number": "MP / P3 170000343,MP / P3 170000340",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "87372610-a102-f011-bae3-6045bde0265d",
+            "subject": "Webform_incident_SiCharge D_16-03-2025_SN: 170000343",
+            "body": "Dear Mark Wilson,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000343\nThank you\neMobility Technical Support Team\nSehr geehrte/r Mark Wilson,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000343\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-16T19:58:45Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2c8dcb38-8aa7-9c50-b868-d9b4f75ee6ab",
+            "subject": "Issue reported from the customer",
+            "body": "The charger is frequently switch between unavailable and available throughout the day. This behaviour appears the same as when the charger was losing communications with the Siemens portal. The OCPP connection is not dropping out during the periods when the charger is unavailable.",
+            "date": "2025-03-16T20:08:40Z",
+            "extra": {}
+        },
+        {
+            "id": "5804afda-a202-f011-bae3-6045bddf319c",
+            "subject": "ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Dear Mark Wilson,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P3 170000343\nChargerID/Serial No.\n:\noiCW7u\nProblem Description\n: The charger is frequently switch between unavailable and available\nFor future reference, your case number is\n0412935\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-16T20:11:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8c55afc7-6303-f011-bae3-6045bddf319c",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Dear Mark Wilson,\nHope you are doing well.\nAs per the reported timestamp, we have checked the logs and identified that the charger is frequently switching between\nunavailable\nand\navailable\ndue to a\nPLC communication error\nand an\ninvalid insulation monitor state\n.\nWe’d like to inform you that the\nCOAP error\nyou’ve encountered is caused by an interruption in the internal communication between the\nSiC D\nand the\nSECC\n. Please rest assured that this is a temporary issue, and the SiC D will automatically reconnect to the SECC within approximately\n5 seconds\n.\nHere we can see the charger outlet came back online within\n3 seconds.\n2025-03-17T03:00:01.251704+00:00 sicharge-cp [local0:err] ecog-secc-adapter/2a341b55c9d7[704]: Error polling coap://10.20.17.100:5683/state Error: No reply in 4.25s\n2025-03-17T03:00:01.587392+00:00 sicharge-cp [local0:info] sicharge-cp-backend/830817e762d6[704]: setOutletLedState outoforder 2\n2025-03-17T03:00:03.594353+00:00 sicharge-cp [local0:info] sicharge-cp-backend/830817e762d6[704]: OCPP: Send command: StatusNotification (651068f4-72ae-43f0-9d5e-9fd2f787be81) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Available\"}\nAnd about the IMD it occurred once, and cleared as well\n2025-03-16T04:57:48.050272+00:00 sicharge-cp [local0:err] sicharge-cp-backend/830817e762d6[704]: PLC-Error-Flag 'IMD_BC2' changed to true - (MB-Er:0 IsoWarn/Fail/PEConn:0 Capa:0 RlyConn:1 Init:1 SIS:2)\n2025-03-16T04:57:48.056227+00:00 swcpu [user:debug] [ONR] DC2 : Outlet not ready - standby insulation monitor state is not valid\n2025-03-16T04:57:49.100418+00:00 sicharge-cp [local0:info] sicharge-cp-backend/830817e762d6[704]: setOutletLedState outoforder 2\n2025-03-16T04:57:49.315349+00:00 sicharge-cp [local0:info] sicharge-cp-backend/830817e762d6[704]: OCPP: Send command: StatusNotification (ec8c993f-7902-4ced-80d0-db4d091f578f) - {\"connectorId\":2,\"errorCode\":\"NoError\",\"status\":\"Unavailable\"\n2025-03-16T04:57:58.131796+00:00 sicharge-cp [local0:info] sicharge-cp-backend/830817e762d6[704]: setOutletLedState ready 2\nUpon reviewing the logs, I noticed that the charger is running on an older firmware version. We recommend upgrading your charger’s firmware, as these updates typically include\nbug fixes\n,\nperformance enhancements\n, and\nimproved compatibility\nwith electric vehicle communication protocols. By doing so, you can mitigate the errors you’ve been facing.\nSo can we closed the case as query has been solved with this analysis.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T19:12:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "457ccb34-7c03-f011-bae3-000d3addf8ce",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Abhinav and Ferdinand\nIs this fault related to the PLC runtime issue noted in the bug fix for the version 6.0.3 firmware.\n@Reisch, Ferdinand\nhow are you placed to perform the update later this week?\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-17T22:07:27Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "70cb01bc-7f03-f011-bae3-000d3adc93d1",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nThursday is looking ideal currently.\nLet me know what you decide so we can lock in the time.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-17T22:32:50Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "27bb0d0c-8803-f011-bae3-000d3addf8ce",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Ferdinand\nLet’s do Thursday 13:00 NZT, I think that is about 10:00am in Brisbane\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-17T23:32:16Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bbb5de8d-8903-f011-bae3-6045bde0265d",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nExcellent, I have some meetings during that time, but we can chat via the team’s meeting if I’m unavailable.\nI’ve sent out a team’s meeting for all interested.\nJust to confirm, this is for both chargers 170000343 and 170000340?\nWe will be updating from version 4.x -> 5.x -> 6.1.3.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-17T23:42:58Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dc5b4113-8e03-f011-bae3-000d3ad97a58",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Thanks, Ferdinand\nYes I would like both chargers updated.\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-18T00:15:20Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f5f75824-c59d-402f-9400-bac07bad82dd",
+            "subject": "Internal note",
+            "body": "Internal discussion is going on with Mr. Ferdinand for further course of action.",
+            "date": "2025-03-18T20:34:57Z",
+            "extra": {}
+        },
+        {
+            "id": "58500416-4b04-f011-bae3-7c1e5236e32d",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey All,\nUpdate on the FW process for these chargers.\nWe can begin the rollout at any time the charger is online (even if it is charging), this is the process of downloading the image onto the charger.\nThe activation is the stage where the new image is then applied to the charger, during which the charger should not be charging and the charger should remain on.\nI started today (as part of our normal workflow) rolling out version 5.0.23 ready for tomorrow’s activation ahead of time.\nFor charger 170000343, this is happening now, however for 170000340, it already has a previous image loaded onto it (version 4.0.11), this is not allowing me to download the image 5.0.23 now.\nI have raised this with the case agent and he is taking this to the development team, as it is not within out access rights to perform the clearing of an already downloaded image (normally it gets activated and all is good).\nGiven the short notice, it might be unlikely the product team can attend to this tonight.\nThis then gives us the following options, which I would like you to consider and advise us which you think is best:\n1) Proceed to update charger 170000343 only to version 6.1.3 tomorrow, leaving 170000340 with 4.0.11\n2) Postpone the FW update for both chargers until 170000340 is able to be updated as well.\nI apologies about this inconvenience.\nIf you have any further questions, please don’t hesitate to contact me directly about it.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-18T22:48:21Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "221bd422-f104-f011-bae3-6045bddf397a",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Ferdinand\nLets roll out the firmware update on 343 to resolve the PLC issue today. Do you have any update on 340 and a possible cause? This was the charger that had the RUT replaced.\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-19T18:37:00Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae0c5180-6da8-30c8-9834-a73d5bf4d29d",
+            "subject": "Internal Note",
+            "body": "We have forwarded our line of action to the\nexpert team\n, and they are currently working on it.\nOnce they have an update, they will reach out",
+            "date": "2025-03-19T21:42:32Z",
+            "extra": {}
+        },
+        {
+            "id": "cb2d67f7-1c05-f011-bae3-7c1e52fad806",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nThanks for the feedback, we will progress charger 170000343 to 6.0.3.\nFor Charger 170000340, the case has been escalated to the Expert services team but has not progressed yet.\nThe possible cause is because an image of 4.0.11 is already preloaded onto the charger, when this was downloaded to the charger I am unsure.\nBased off the process flow, at our service level access, we can activate firmware that has been downloaded to the charger, but we cannot delete images that have been downloaded.\nBecause an image is already loaded onto the charger it is not allowing another image to be loaded onto it (in this case 5.0.23).\nIn short, we can not rollout version 5.0.23 on this charger, because it already has version 4.0.11 rolled out (and ready for activation), even though it already has 4.0.11.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-19T23:50:46Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "08b49138-33cf-0905-8161-7e2e755311ca",
+            "subject": "Internal Note",
+            "body": "\"We have reported the concern to our expert as requested. Once we receive an update, we will inform to Mr. Ferdinand shortly.\"",
+            "date": "2025-03-20T00:07:38Z",
+            "extra": {}
+        },
+        {
+            "id": "29dfb47f-cb05-f011-bae2-7c1e52768c07",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Good Morning Mark\nHope you are doing well.\nReviewing the charger this morning it appears that it is ready to be updated to version 6.0.3 (currently sitting on version 5.0.23, as it appears the global team were able to resolve the upgrade).\nWould you be able to advise when we can undertake the update to 6.0.3 to ensure both chargers are on the same version?\nThank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-20T20:40:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "866f2e08-cc05-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Good Morning Mark\nHope you are doing well.\nReviewing the charger this morning it appears that it is ready to be updated to version 6.0.3 (currently sitting on version 5.0.23, as it appears the global team were able to resolve the upgrade).\nWould you be able to advise when we can undertake the update to 6.0.3 to ensure both chargers are on the same version?\nThank you.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-20T20:43:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c047ba01-e308-f011-bae3-7c1e52768372",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Ferdinand\nSorry for the slow response I have been working on site. When I was onsite last Thursday I did note that the touch screen was significantly out of alignment with the display on the CHAdeMO/CCS charger. I rebooted the charger and it corrected the issue, not sure if this was a symptom of the charger hanging firmware update.\nIt is ok to proceed with the  update, I can make the charger unavailable before the update starts.\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-24T19:05:59Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3106e4af-0209-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nThanks for getting back to us, I understand you are maintaining many chargers.\nRegarding the touch screen, this appears to be on the charger 170000340, which has not yet been updated to version 6.0.3.\nIf after updating to version 6.0.3 this fault still occurs, I would suggest raising a separate technical support request for this to be investigated in more detail.\nWhen would it suit you for the firmware update to be completed on this charger?\nIt is ready for activation (rollout has already been completed).\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-24T22:52:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "74dabace-0309-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nThanks for getting back to us, I understand you are maintaining many chargers.\nRegarding the touch screen, this appears to be on the charger 170000340, which has not yet been updated to version 6.0.3.\nIf after updating to version 6.0.3 this fault still occurs, I would suggest raising a separate technical support request for this to be investigated in more detail.\nWhen would it suit you for the firmware update to be completed on this charger?\nIt is ready for activation (rollout has already been completed).\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-24T23:00:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5330f3c8-0409-f011-bae2-7c1e52fb82d3",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Ferdinand\nThe screen issue was resolved by restarting the charger. The reason I mentioned it is because it may have been a symptom of the firmware update issue.\nWhen would it suit you for the firmware update to be completed on this charger?\nIf I make the charger unavailable @ 2pm NZT today could you rollout the update at 2:05pm?\nRegards\nMark Wilson\n|  Project Engineer\nM:\n021 546\n926   |   E:\nmark.wilson@we-ev.co.nz",
+            "date": "2025-03-24T23:07:47Z",
+            "extra": {
+                "sender": "mark.wilson@we-ev.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a785b672-0f09-f011-bae3-6045bde117fc",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nYes, I can conduct the update then.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-25T00:24:06Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6f87310b-2409-f011-bae3-000d3ad97a58",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hey Mark,\nThanks for the time window, the charger has completed the update to 6.0.3 now and should be ready for use again.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone: +61 499 701 794\nEmail: ferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-25T02:51:28Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "aa959d37-6d09-f011-bae3-7c1e523508ba",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Dear Mark Wilson,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0412935, the case is now closed.\nProblem Description\n: The charger is frequently switch between unavailable and available CRM:00641001218\nResolution\n: Firmware upgraded to the latest one\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-25T11:35:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "02f1f102-bd09-f011-bae3-7c1e52fad806",
+            "subject": "RE: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Hi Ferdi\nCan you let us know when you can do this upgrade please so we can book this in.\nThanks\nLiz\nLiz Hatton\nProduct & Technical Services, YHI Energy\n(+64\n9) 279 5329\n(+64\n21) 572 864\nliz@yhi.co.nz\nwww.yhienergy.co.nz\n|\nwww.yhiautomotive.co.nz\n17 Ha Crescent, Wiri, Auckland 2104, New Zealand\nLinkedIn\nFacebook\nYouTube\nInstagram\nInformation in this electronic communication is confidential and may be subject to legal privilege. If you are not the intended recipient, you must not use, disclose, distribute, copy or retain this communication. If you have received this communication in error, please delete it and inform us immediately by e-mail or telephone.",
+            "date": "2025-03-25T21:06:26Z",
+            "extra": {
+                "sender": "energy.sales4@yhi.co.nz",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "645bfc03-bd09-f011-bae3-7c1e5236eee4",
+            "subject": "Email sent to a closed case 'ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available (0412935)' CRM:00225181073",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0412935\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-25T21:06:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "65482a01-c409-f011-bae3-7c1e5236cda4",
+            "subject": "Re: ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available CRM:00641001218",
+            "body": "Good Morning Liz,\nMark and I coordinated the update yesterday and the charger is now on 6.0.3.\nWith regards to the original issue raised, if you could please monitor it Mark and provide us feedback within the week how it is looking so far.\nThanks.\nWith Kind Regards,\nFerdinand Reisch\nSiemens Ltd.\nApplication Service Engineer\nPhone:\n+61 499 701 794\nEmail:\nferdinand.reisch@siemens.com\nwww.siemens.com.au/emobility",
+            "date": "2025-03-25T21:56:38Z",
+            "extra": {
+                "sender": "ferdinand.reisch@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3b394e0b-c409-f011-bae3-7c1e523508ba",
+            "subject": "Email sent to a closed case 'ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available (0412935)' CRM:00225181075",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0412935\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-25T21:56:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

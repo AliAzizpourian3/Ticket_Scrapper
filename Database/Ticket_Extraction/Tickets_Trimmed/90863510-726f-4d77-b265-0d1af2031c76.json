@@ -1,0 +1,126 @@
+{
+    "incident_id": "90863510-726f-4d77-b265-0d1af2031c76",
+    "ticket_number": "0393033",
+    "title": "ID0393033-DC/Si-D/TR-[MP / R1 170001401] Device went offline after v4.0.11 fw downgrade",
+    "created_on": "2024-12-02T11:32:18Z",
+    "last_activity": "2026-02-09T10:28:19Z",
+    "age": "68364",
+    "description": "Reported behavior/issue:\nDevice went offline after v4.0.11 fw downgrade. We will install cfast and linux config file\nOpen Ticket:\nNo\nRoot cause: NA\nSolution:\ncFast Flashing\nOn DAMEX Sanctioned List:\nSiemens Employee\nWarranty Status:\nActive (2/23/2025)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "vQvYOL",
+    "stage": null,
+    "serial_number": "MP / R1 170001401",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f249de1b-a1b0-ef11-b8e8-000d3a691687",
+            "subject": "A new case manager was assigned to 0393033 CRM:00225132311",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0393033 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90863510-726f-4d77-b265-0d1af2031c76",
+            "date": "2024-12-02T11:32:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ec410435-a1b0-ef11-b8e9-002248a2b1bd",
+            "subject": "Uploaded document Özdilek.JPG.",
+            "body": "",
+            "date": "2024-12-02T11:33:17Z",
+            "extra": {}
+        },
+        {
+            "id": "bed43dbc-adb0-ef11-b8e9-000d3aba081f",
+            "subject": "A new case manager was assigned to 0393033 CRM:00225132400",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0393033 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90863510-726f-4d77-b265-0d1af2031c76",
+            "date": "2024-12-02T13:02:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "eb16dd1b-b8b0-ef11-b8e8-7c1e5221104a",
+            "subject": "ID0393033-DC/Si-D/TR-[MP / R1 170001401] Device went offline after v4.0.11 fw downgrade CRM:00797001509",
+            "body": "Dear Yunus,\nThank you for reaching out to eMobility Support. My name is\nSominath\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R1 170001401\nChargerID/Serial No.\n:\nvQvYOL\nProblem Description\n: Device went offline after v4.0.11 fw downgrade\nTroubleshooting\n:\nIt seems that you attempted to downgrade from SCB in the same way as a regular upgrade. However, downgrading from 5.x.x to v4.0.11 can only be performed by R&D or L3 via SSH.\nAt this point, we need to check the charger onsite to determine if it is operational. If the issue is related to the connection of Router1, we will need to address and rectify the Router1 issue to resolve it.\nIf the charger has crashed or is boot looping after the downgrade, you can perform the downgrade onsite by flashing the CFast card with FW 4.0.11 and using the Live Linux USB to restore the configuration.\nWe will share the configuration for the Live Linux USB shortly to assist with this restoration.\nFor future reference, your ticket number is\n0393033\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-02T14:17:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5182f732-dd39-0f60-921d-694e17e54be5",
+            "subject": null,
+            "body": "Configuration file requested from Lukas.",
+            "date": "2024-12-02T16:29:20Z",
+            "extra": {}
+        },
+        {
+            "id": "30c42133-70b1-ef11-b8e8-000d3a691687",
+            "subject": "RE: ID0393033-DC/Si-D/TR-[MP / R1 170001401] Device went offline after v4.0.11 fw downgrade CRM:00797001509",
+            "body": "Dear Yunus,\nWe have sent the configuration file for the Live Linux USB flash for this case 0393033 and also for the case 0393029 via SecuFex.\nPlease refer the KA for reference:\nKnowledge Article: Knowledge Article for ISP: Emobility_SICD_SW_CfastCard_Corupted - Dynamics 365\nI am writing to formally inform that we are moving case 0393033 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-TR SI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-TR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nIf you need our remote support while doing onsite activity, please let us know in advance.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sominath Nagalgaon\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-12-03T12:14:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b6e246fb-b8c9-ef11-b8e8-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0393033 CRM:00225143970",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0393033 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90863510-726f-4d77-b265-0d1af2031c76",
+            "date": "2025-01-03T09:56:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78e37148-7fa6-be63-a671-870afd6938ba",
+            "subject": "Field Service Report",
+            "body": "Work Order 0393033 DBE Enerji.pdf",
+            "date": "2025-01-18T22:40:15Z",
+            "extra": {}
+        },
+        {
+            "id": "46b5cbf1-eed5-ef11-8eea-000d3a691687",
+            "subject": "ID0393033-DC/Si-D/TR-[MP / R1 170001401] Device went offline after v4.0.11 fw downgrade CRM:00579001424",
+            "body": "Hello Yunus,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0393033, and the case is now closed.\nProblem Description\n: Device went offline after v4.0.11 fw downgrade\nResolution\n:\nupdated Cfast card and linux config data to charger.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nVaishnavi Raut\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-18T22:53:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9a833841-efd5-ef11-8eea-000d3a691687",
+            "subject": "A new case manager was assigned to 0393033 CRM:00225150368",
+            "body": "Vaishnavi Raut was assigned as new Case Manager for case 0393033 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=90863510-726f-4d77-b265-0d1af2031c76",
+            "date": "2025-01-18T22:55:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c170464f-efd5-ef11-8eea-000d3a691687",
+            "subject": "Ticket 0393033 has been closed. Are you satisfied with our provided solution? CRM:00579001425",
+            "body": "Hello Yunus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0393033\nwith the title:\nID0393033-DC/Si-D/TR-[MP / R1 170001401] Device went offline after v4.0.11 fw downgrade\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVaishnavi Raut\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-18T22:55:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

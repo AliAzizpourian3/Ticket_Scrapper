@@ -1,0 +1,112 @@
+{
+    "incident_id": "49f315b7-f102-f011-bae3-7c1e52350ea5",
+    "ticket_number": "0412978",
+    "title": "ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request",
+    "created_on": "2025-03-17T05:36:07Z",
+    "last_activity": "2025-03-19T01:58:36Z",
+    "age": "2662",
+    "description": "Reported behavior/issue:\nOCPP parameter change request\nRoot cause:\nCorrect one is :\nPowerPathClosed",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "bgN0gm",
+    "stage": null,
+    "serial_number": "MP / P2 170000123",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "3510e4b0-f102-f011-bae3-6045bddf3f78",
+            "subject": "Webform_incident_SiCharge D_17-03-2025_SN:  170000123",
+            "body": "Dear Björn Grun,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170000123\nThank you\neMobility Technical Support Team\nSehr geehrte/r Björn Grun,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170000123\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-17T05:36:02Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2f039bab-f402-f011-bae3-7c1e5236eee4",
+            "subject": "ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Dear Bjoern Grun,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P2 170000123 ERK\nChargerID/Serial No.\n:\nbgN0gm\nProblem Description\n: OCPP parameter change request\nPlease allow us some time to analyse the issue and we will get back to you with our findings.\nFor future reference, your case number is\n0412978\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T05:57:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cf57fb66-6dbe-37d3-a8e9-0c742f6d5831",
+            "subject": "Case opening remark",
+            "body": "An attempt was made to change the OCPP parameter TxStopPoint from \"EnergyTransfer\" to \"PowerPatchClosed.\"\nThe control unit reports \"Configuration change in the control unit rejected.\"\nThe change should be made directly via the Chargecloud backend; the parameter has the status \"changeable.\"",
+            "date": "2025-03-17T06:00:01Z",
+            "extra": {}
+        },
+        {
+            "id": "bd2dfe1b-f602-f011-bae3-7c1e5236eee4",
+            "subject": "RE: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Hi Grun,\nCould you please confirm whether the TxStopPoint you’re mentioning refers to the StopTransaction.req as per the OCPP 1.6J protocol, which includes MeterStop (containing the meter value in Wh for the connector at the end of the transaction)? Or are you referring to MeterValues.req as per the OCPP 1.6J protocol, which includes sampled meter values with timestamps? Please share a snapshot showing where the changes are being rejected, and note that this should be done via the Chargecloud backend.\nAwaiting your feedback\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T06:07:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b76b9e6e-fa02-f011-bae3-7c1e5236eee4",
+            "subject": "AW: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Hallo,\nbeiliegend 2 Screenshots aus dem Backend Chargecloud.\nDie Kommunikation läuft über OCPP 1.6 JSON.\nAls Meldung kommt\nDer Befehl der laut OCPP Logs versendet wird lautet\nAls Rückmeldung kommt\nMit freundlichen Grüßen\nBjörn Grun\nBjörn Grun\nKVE\nProjektmanager Elektromobilität\nTelefon 0431 594-3185\nbjoern.grun@stadtwerke-kiel.de\nFrische Energie für die Zukunft.\nFolgen Sie uns:\nDie gesetzlichen Pflichtangaben sowie die Informationen über die Verarbeitung Ihrer personenbezogenen Daten finden Sie unter\nwww.stadtwerke-kiel.de/pflichtangaben\nund\nwww.stadtwerke-kiel.de/datenschutz\n. Diese E-Mail könnte vertrauliche und/ oder rechtlich geschützte Informationen enthalten. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese E-Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser E-Mail ist nicht gestattet.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 17. März 2025 07:17\nAn:\nGrun, Björn, KVE, SWK <bjoern.grun@stadtwerke-kiel.de>\nCc:\nservice-emobility.si.de@siemens.com\nBetreff:\nRE: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354\nHi Grun,\nCould you please confirm whether the TxStopPoint you’re mentioning refers to the StopTransaction.req as per the OCPP 1.6J protocol, which includes MeterStop (containing the meter value in Wh for the connector at the end of the transaction)? Or are you referring to MeterValues.req as per the OCPP 1.6J protocol, which includes sampled meter values with timestamps? Please share a snapshot showing where the changes are being rejected, and note that this should be done via the Chargecloud backend.\nAwaiting your feedback\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T06:38:28Z",
+            "extra": {
+                "sender": "bjoern.grun@stadtwerke-kiel.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "89eb7707-0903-f011-bae3-7c1e5236eee4",
+            "subject": "RE: AW: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Hi Grun,\nWe have checked the charger and the logs and it looks like the parameter that you're entering are wrong. Please refer the below snapshot.\nCorrect one is :\nPowerPathClosed\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-17T08:23:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9794b015-9c03-f011-bae3-7c1e5236eee4",
+            "subject": "RE: AW: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Hi Grun,\nWe will close this ticket by EOD as the query is now resolved as the correct parameter is not entered as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-18T01:55:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d2b3339-6504-f011-bae3-000d3adc93d1",
+            "subject": "RE: AW: ID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request CRM:00643001354",
+            "body": "Dear Bjoern Grun,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0412978, the case is now closed.\nProblem Description\n: OCPP parameter change request\nResolution\n:\nCorrect one is :\nPowerPathClosed\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-19T01:55:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1cbb685-6504-f011-bae3-000d3adc93d1",
+            "subject": "Ticket 0412978 has been closed. Are you satisfied with our provided solution? CRM:00643001357",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0412978\nwith the title:\nID0412978-DC/Si-D/DE-[MP / P2 170000123] OCPP parameter change request\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-19T01:57:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

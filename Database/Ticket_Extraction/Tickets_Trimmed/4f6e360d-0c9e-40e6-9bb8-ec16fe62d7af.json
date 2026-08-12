@@ -1,0 +1,112 @@
+{
+    "incident_id": "4f6e360d-0c9e-40e6-9bb8-ec16fe62d7af",
+    "ticket_number": "0474763",
+    "title": "ID0474763-DC/Si-D/IT-[Y2 / S1 313508370017] CU logs' check",
+    "created_on": "2026-01-27T14:57:15Z",
+    "last_activity": "2026-01-27T16:44:08Z",
+    "age": "107",
+    "description": "Reported behavior/issue-\nCU logs' check\nSolution: Log check",
+    "type": 1,
+    "priority": 1,
+    "stage": "Resolved",
+    "serial_number": "Y2 / S1 313508370017",
+    "case_nature_code": 580000001,
+    "chargerID": "CZP4MY",
+    "additional_info": [
+        {
+            "id": "41b71ec7-90fb-f011-8407-7ced8d44df3f",
+            "subject": "A new case manager was assigned to 0474763 CRM:00225325782",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0474763 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4f6e360d-0c9e-40e6-9bb8-ec16fe62d7af",
+            "date": "2026-01-27T14:59:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0743a4a4-807e-0dad-879f-12999484a21a",
+            "subject": "Case notes",
+            "body": "Hello,\nIs it possible to check logs on charger 313508370017 on today 27 of January?\nBetween 2:25:14 p.m. and 2:28:31 p.m. (CU Time).\nA customer tried to charge, but it was a 0 recharge.\nThank you in advance.\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2026-01-27T15:02:46Z",
+            "extra": {}
+        },
+        {
+            "id": "0e071680-91fb-f011-8407-7ced8d44ddd4",
+            "subject": "A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Harun Ar Rashid was assigned as new Case Manager for case 0474763 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=4f6e360d-0c9e-40e6-9bb8-ec16fe62d7af",
+            "date": "2026-01-27T15:04:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "06b8c676-97fb-f011-8407-000d3ab12a39",
+            "subject": "RE: A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Dear Filomena,\nI hope you are doing well.\nThank you for raising the issue.\nAfter checking thoroughly the timestamp you provided, I find out that: there is no session started after handshake.\n1. This means the\nPower Line Communication (PLC) link never formed\n,\nso the EV and charger could not start the CCS charging session.\n\"SLAC\": {\"link\": \"PLC link no SLAC\"}\n2.\nThe session ended immediately after handshake failure\n\"type\": \"SeccSessionStop\"\n\"curr_ses_active\": false\n3.\nEV did not provide any parameters:\nevmaxc: 0\n,\nevmaxv: 0\n,\npilot: 2\n(State B),\n\"EVReady\": 0\n4.\nCableCheck, Auth, ParameterDiscovery all stayed in “Idle\n”:\nThis confirms\nthe charging sequence never progressed beyond the initial PLC link step\n.\nLet me know do you have further question about this issue, please?\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T15:47:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8e46224b-9bfb-f011-8407-000d3ab12a39",
+            "subject": "RE: A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Hello,\nThank you for the feedback.\nSo, do you mean the problem was due to the EV?\nThank you,\nFilomena",
+            "date": "2026-01-27T16:14:47Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c6f1ce13-9cfb-f011-8407-000d3ab12a39",
+            "subject": "RE: A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Hello Mrs. Filomena,\nThank you for quick reply.\nAs I see from log. EV was not communicating after handshake. It is not providing any parameter.\n( Please check no. 3 in my last answer)\nLet me know, if you have further question please. Otherwise a quick feedback will be very helpful to close the ticket.\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T16:20:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8b954e5c-9efb-f011-8407-7ced8d44d2c4",
+            "subject": "RE: A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Thank you.\nThe ticket can be closed.\nRegards,\nFilomena",
+            "date": "2026-01-27T16:36:49Z",
+            "extra": {
+                "sender": "filomena.carusone@accenture.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a60df71d-9ffb-f011-8406-7ced8d466cdb",
+            "subject": "RE: A new case manager was assigned to 0474763 CRM:00225325787",
+            "body": "Dear\nFilomena Carusone\nI would like to inform you that your support case\n0474763\nhas been resolved.\nHere is a summary of the actions taken:\nLog checked ( A previous incident)\nSince the reported issue has been resolved, I will proceed to close this case.\nThank you for your cooperation, and please don’t hesitate to reach out through our support form for any future requests:\nwww.siemens.com/emobility-service-request\nMit Freundlichen Grüßen/ Melhores Cumprimentos/ Best Regards\nHarun Ar Rashid\nTechnical Support Specialist (eMobility)\nAv. 25 de Abril 201, 2845-547, Corroios, Portugal.\nEmail: harun.ar-rashid.ext@siemens.com",
+            "date": "2026-01-27T16:42:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6185f25c-9ffb-f011-8406-0022489c2407",
+            "subject": "Ticket 0474763 has been closed. Are you satisfied with our provided solution? CRM:00225325874",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0474763\nwith the title:\nID0474763-DC/Si-D/IT-[Y2 / S1 313508370017] CU logs' check\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-27T16:44:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

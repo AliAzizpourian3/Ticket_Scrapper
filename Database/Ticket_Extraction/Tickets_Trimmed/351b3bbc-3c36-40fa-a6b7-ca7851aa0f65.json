@@ -1,0 +1,137 @@
+{
+    "incident_id": "351b3bbc-3c36-40fa-a6b7-ca7851aa0f65",
+    "ticket_number": "0387292",
+    "title": "ID0387292-DC/Si-D/FI[qHGJgs] - Incorrect OCPP connector ID",
+    "created_on": "2024-10-30T11:30:18Z",
+    "last_activity": "2025-12-16T14:04:35Z",
+    "age": "11336",
+    "description": "Reported behaviour/issue:\nAccording to customer, charging socket 22312 worked last time 25.10. When checking all sessions in AWS, I see numerous 0 session on every socket.\nRoot cause:\nIncorrect OCPP connector ID\nSolution:\ncorrect\nOCPP connector ID\nin Backend",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "qHGJgs",
+    "stage": null,
+    "serial_number": "MP / P9 170001025",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "5eb3a568-b296-ef11-8a69-000d3ab009dd",
+            "subject": "A new case manager was assigned to 0387292 CRM:00225116849",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0387292 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=351b3bbc-3c36-40fa-a6b7-ca7851aa0f65",
+            "date": "2024-10-30T11:30:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac176874-b296-ef11-8a6a-002248a2b1bd",
+            "subject": "A new case manager was assigned to 0387292 CRM:00225116850",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387292 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=351b3bbc-3c36-40fa-a6b7-ca7851aa0f65",
+            "date": "2024-10-30T11:31:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8b21fd9-b296-ef11-8a6a-002248a29667",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 3 minutes and 38 seconds.",
+            "date": "2024-10-30T11:33:57Z",
+            "extra": {}
+        },
+        {
+            "id": "f3fe17df-b296-ef11-8a6a-002248a29667",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 15 seconds.",
+            "date": "2024-10-30T11:34:13Z",
+            "extra": {}
+        },
+        {
+            "id": "40faea0d-b496-ef11-8a6a-002248a29667",
+            "subject": "ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nRauma\nChargerID/Serial No.\n: qHGJgs\nProblem Description\n: Several 0 sessions\nTroubleshooting\n:\nUsing your AWS query, I followed all the sessions and here are my findings:\nAll the 0-sessions that are not related to Outlet 2 are due to this problem:\nThe authentication is not performed correctly, this is what we see in the logs, if there is another problem let's align on a date to check remotely, since the site is very far away from your home.\nThe DC2 is indeed not working due to coap polling error. You already rebooted the charger.\nI will proactively check charging sessions to see if there is any problem.\nI will provide you feedback.\nFor future reference, your ticket number is\n0387292\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-30T11:42:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3053672f-5f97-ef11-8a69-000d3ab655d3",
+            "subject": "RE: ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Good morning Francisco!\nLooks like the reboot didn’t fix the issue.\nMarkus",
+            "date": "2024-10-31T08:07:37Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "382e64b8-6497-ef11-8a69-0022489dc6eb",
+            "subject": "ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Hello Markus,\nAs we checked today, there seems to be a problem with the OCPP backend regarding the ConnectorIDs\n22318 is connector ID 1 in config but is asked for ID 3\n22319 is connector ID 2 in config but is asked for ID 4\n22311 is connector ID 3 in config but is asked for ID 1\n22312 is connector ID 4 in config but is asked for ID 2\nPlease check with the backend and let me know what you find.\nBest regards,\nFrancisco",
+            "date": "2024-10-31T08:47:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3a1a62f5-8d9a-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Hi Markus, good morning.\nAny news regarding this topic?\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-11-04T09:20:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "94f46251-299c-ef11-8a69-000d3ab655d3",
+            "subject": "ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Hi Markus,\nI checked the sessions and DC2 is working:\nAll outlets were working during the 5th/Nov\nFor me we can close the ticket, what do you think?\nBest regards,\nFrancisco",
+            "date": "2024-11-06T10:24:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fbbbf67f-669c-ef11-8a69-7c1e5236c031",
+            "subject": "RE: ID0387292-DC/Si-D/FI[qHGJgs] - Numerous 0 sessions. CRM:00315001980",
+            "body": "Hi,\nI agree. Represent of customer confirmed that socket numbers (stickers) were mixed.\nTicket can be closed.\nMarkus",
+            "date": "2024-11-06T17:42:41Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f92c50f2-e09c-ef11-8a6a-000d3a6610b3",
+            "subject": "Ticket 0387292 has been closed. Are you satisfied with our provided solution? CRM:00315002016",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0387292\nwith the title:\nID0387292-DC/Si-D/FI[qHGJgs] - Incorrect OCPP connector ID\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-11-07T08:19:04Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9877eee9-e19c-ef11-8a6a-000d3a6610b3",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 7 days, 20 hours, 51 minutes and 48 seconds.",
+            "date": "2024-11-07T08:26:01Z",
+            "extra": {}
+        }
+    ]
+}

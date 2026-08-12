@@ -1,0 +1,116 @@
+{
+    "incident_id": "302b4bee-75fa-ef11-bae2-000d3ade6663",
+    "ticket_number": "0411013",
+    "title": "ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable",
+    "created_on": "2025-03-06T10:29:49Z",
+    "last_activity": "2026-01-30T07:54:37Z",
+    "age": "7078",
+    "description": "Reported behavior/issue: We see cases coming in daily of plugs going offline and not coming back online unless we perform a soft reboot.\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: No\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "3kvEXP",
+    "stage": null,
+    "serial_number": "MP / R6 170002180,MP / PD 170001192,MP / R6 170002124,MP / R4 170001623,MP / R4 170001621,MP / R4 170001620,MP / R6 170002180",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "6e51f0e1-75fa-ef11-bae2-000d3ad97a58",
+            "subject": "Webform_incident_SiCharge D_06-03-2025_SN: 170002180",
+            "body": "Dear Chloë D'hose,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170002180\nThank you\neMobility Technical Support Team\nSehr geehrte/r Chloë D'hose,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170002180\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-03-06T10:29:38Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9d240697-7efa-ef11-bae2-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0411013 CRM:00225174037",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0411013 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=302b4bee-75fa-ef11-bae2-000d3ade6663",
+            "date": "2025-03-06T11:31:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3d6638c-80fa-ef11-bae2-6045bdde4786",
+            "subject": "ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Dear Chloë D'hose,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002180\nChargerID/Serial No.\n:\n3kvEXP\nProblem Description\n: Connectors unavailable multiple time\nTroubleshooting\n: Please allow us sometime to analyze the logs and we will get back to you soon.\nFor future reference, your case number is\n0411013\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-06T11:45:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e4af8a4a-6dfd-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Hi\nChloë D'hose,\nWe have analyzed the logs for all the chargers mentioned in the webform, and the outlets are out of order due to an 'Error Polling CoAP,' which means the internal communication with SECC was lost for a brief period of time. Our charger will reconnect to SECC within 5 seconds. While SECC is not reachable, an 'Outlet Out of Order' flag will be active and will be cleared once the charger reconnects to SECC. We have observed that this issue does not occur frequently, for example, within a 3-hour period, it happens only once or twice. If this issue persists for longer duration of time or continuous of day or two, we recommend updating the EcoG firmware if it is not already updated to the latest version. The concerned team is already addressing this issue, and it will be fixed in the upcoming firmware versions of the Sicharge charger.\nI hope there are no further queries related to this. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T05:05:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "005ee21d-b0fd-ef11-bae3-7c1e52768c07",
+            "subject": "RE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Hi Shrey\nThanks for the update.\nWhen will the update be available?\nWith kind regards\nChloë D’hose\nSUPPORT SERVICES\nPhone\n+32 493 76 62 39\nOffice\n+32 78  486  777\nE-mail\nchloe@sparki.be\nURL\nsparki.be\nAntwerp office\nMichel de Braeystraat 52\n2000 Antwerpen\nGhent office\nFraterstraat 129\n9820 Merelbeke\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\nmaandag 10 maart 2025 6:14\nAan:\nSiemensticket <siemensticket@sparki.be>\nCC:\nBruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609\nHi\nChloë D'hose,\nWe have analyzed the logs for all the chargers mentioned in the webform, and the outlets are out of order due to an 'Error Polling CoAP,' which means the internal communication with SECC was lost for a brief period of time. Our charger will reconnect to SECC within 5 seconds. While SECC is not reachable, an 'Outlet Out of Order' flag will be active and will be cleared once the charger reconnects to SECC. We have observed that this issue does not occur frequently, for example, within a 3-hour period, it happens only once or twice. If this issue persists for longer duration of time or continuous of day or two, we recommend updating the EcoG firmware if it is not already updated to the latest version. The concerned team is already addressing this issue, and it will be fixed in the upcoming firmware versions of the Sicharge charger.\nI hope there are no further queries related to this. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-10T13:03:55Z",
+            "extra": {
+                "sender": "siemensticket@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "90afa878-17fe-ef11-bae3-7c1e52fad806",
+            "subject": "RE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Hi\nChloë D'hose,\nThe update is tentatively available in the 1st week of May. Please let me know if I can assist you with any other queries. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T01:23:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0a68386c-4efe-ef11-bae3-7c1e52774092",
+            "subject": "RE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Hi Shrey\nThanks, i will contact you in May to ask if the update is available.\nYou can close this ticket for now.\nMet vriendelijke groeten\nChloë D’hose\nSUPPORT SERVICES\nPhone\n+32 493 76 62 39\nOffice\n+32 78  486  777\nE-mail\nchloe@sparki.be\nURL\nsparki.be\nAntwerp office\nMichel de Braeystraat 52\n2000 Antwerpen\nGhent office\nFraterstraat 129\n9820 Merelbeke\nVan:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nVerzonden:\ndinsdag 11 maart 2025 2:29\nAan:\nSiemensticket <siemensticket@sparki.be>\nCC:\nRoy de Voogt <roy@sparki.be>; Bruin, Erik <erik.bruin@siemens.com>; Iovine, Monica <monica.iovine@siemens.com>\nOnderwerp:\nRE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609\nHi\nChloë D'hose,\nThe update is tentatively available in the 1st week of May. Please let me know if I can assist you with any other queries. If not, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-11T07:57:15Z",
+            "extra": {
+                "sender": "siemensticket@sparki.be",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d4a2ed46-52fe-ef11-bae3-6045bde0265d",
+            "subject": "RE: ID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable CRM:00921001609",
+            "body": "Dear\nChloë D'hose,\n,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0411013, the case is now closed.\nProblem Description\n:\nConnectors unavailable\nResolution\n: Due to SECC Coap Polling Error the connectors are unavailable, and the fix will be implemented in the upcoming firmware versions.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-11T08:24:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4e88cb97-52fe-ef11-bae3-6045bde0265d",
+            "subject": "Ticket 0411013 has been closed. Are you satisfied with our provided solution? CRM:00643001345",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0411013\nwith the title:\nID0411013-DC/Si-D/BE-[MP / R6 170002180] Connectors unavailable\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-11T08:27:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

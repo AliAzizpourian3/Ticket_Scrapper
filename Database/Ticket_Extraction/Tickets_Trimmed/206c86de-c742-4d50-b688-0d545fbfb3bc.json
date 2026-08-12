@@ -1,0 +1,31 @@
+{
+    "incident_id": "206c86de-c742-4d50-b688-0d545fbfb3bc",
+    "ticket_number": "0417024",
+    "title": "ID0417001-DC/Si-D/TR-[MP / S4 170003523] FW update is not possible (C1)",
+    "created_on": "2025-04-04T11:56:11Z",
+    "last_activity": "2025-04-08T10:38:08Z",
+    "age": "5682",
+    "description": "Reported behavior/issue: Fw update is not possible\nOpen Ticket: No\nRoot cause:\nSolution:\nWarranty Status: Active\n08.04.2025: Notes",
+    "type": 3,
+    "priority": 3,
+    "chargerID": "8yL3vI",
+    "stage": null,
+    "serial_number": "MP/S4170003523,MP/S4170003523",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "187982bc-887b-1d21-af8d-3f4a62c8ba52",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nSeems\nhawkbit\nfile is missing in config.\nProblem Description:\nT\nhere is an issue with the charger not updating: the download triggered earlier is still showing as \"already initiated\" on the SCB, even though we are attempting to trigger the rollout.\nAction Performed (L2):\nWe verified the charger’s online status by loading the router password.\nCharger SW Version:\n4.0.11\nReason for Handover (L3):\nNeed to check the configuration file via SSH access and make the necessary adjustments through SSH. And update the charger to FW v6.1.3",
+            "date": "2025-04-04T11:57:43Z",
+            "extra": {}
+        },
+        {
+            "id": "dc5a57a3-92e7-9a2c-a9dd-c93d66ac8631",
+            "subject": "Note",
+            "body": "Hawkbit.conf file uploaded to the charger config.\nv5.0.23 is rolled out and ready to be updated (to coordinate with region)",
+            "date": "2025-04-08T10:37:14Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "incident_id": "aeb94e92-7c31-4697-89bf-69d2d73c8438",
+    "ticket_number": "0413550",
+    "title": "ID0412935-DC/Si-D/NZ-[MP / P3 170000343] The charger is frequently switch between unavailable and available [C1]",
+    "created_on": "2025-03-18T23:08:27Z",
+    "last_activity": "2025-03-20T08:43:27Z",
+    "age": "2015",
+    "description": "Reported behavior/issue:\nThe charger is frequently switch between unavailable and available\nRoot cause: Fw Bug",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "oiCW7u",
+    "stage": null,
+    "serial_number": "MP / P3 170000343,MP / P3 170000343,MP / P3 170000340",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "1dbc3eec-4f25-0824-9fcd-0ef131a27c9f",
+            "subject": "Case handed over from L2 NOC->>L3 expert",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nThe charger is frequently switching between unavailable and available. (Follow-up query from the customer-unable to update the firmware version 5.0.23)\nAction Performed (L2):\nThe charger already has a previous image loaded onto it (version 4.0.11), which is preventing the download of the new image (version 5.0.23).\nCharger SW Version:\nV4.0.11\nReason for Handover (L3):\nNeed to remove the previous image loaded onto it (version 4.0.11).\nAction Required:\nAction by HQ:\nNeed to remove the previous image loaded onto it (version 4.0.11).\nCharger no-:\nMP / P3 170000340 - oGWeFq",
+            "date": "2025-03-18T23:15:06Z",
+            "extra": {}
+        },
+        {
+            "id": "140c3a59-bc09-11e6-8dcb-c3e42b5cdb78",
+            "subject": "Notes from ES to NOC [ 20/03/2025]",
+            "body": "Problem Description\n: FW update from 4.0.11\nSuspected Root Cause\n: FW Bug\nAction Performed: Updated the FW to v5.0.23\nCharger SW Version\n: 5.0.23\nFault history:\nNA\nLog analysis with timestamp:\nNA\nAttachment:Yes",
+            "date": "2025-03-20T08:40:56Z",
+            "extra": {}
+        }
+    ]
+}

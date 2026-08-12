@@ -1,0 +1,193 @@
+{
+    "incident_id": "b57ed566-edde-ef11-8eea-7c1e52378e9b",
+    "ticket_number": "0403090",
+    "title": "ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power",
+    "created_on": "2025-01-30T09:34:36Z",
+    "last_activity": "2025-12-16T14:01:34Z",
+    "age": "20147",
+    "description": "Reported behavior/issue:\nCharger delivers less power\nRoot cause:\nSolution: Query addressed, no response from region.\nOn DAMEX Sanctioned List:\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "ba32b962-edde-ef11-8eea-6045bdde0ce3",
+            "subject": "Webform_incident_SiCharge D_30-01-2025_SN: MP / S5 170003620",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S5 170003620\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S5 170003620\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-01-30T09:34:30Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "31e20c2a-f5de-ef11-8ee9-0022489affb0",
+            "subject": "A new case manager was assigned to 0403090 CRM:00225156029",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0403090 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=b57ed566-edde-ef11-8eea-7c1e52378e9b",
+            "date": "2025-01-30T10:30:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "29fbf3a7-fade-ef11-8eea-0022489bcff4",
+            "subject": "ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S5 170003620\nChargerID/Serial No.\n:\nASl07a\nProblem Description\n: Charger delivers less power\nPlease allow us some time to analyse the issue and we will get back to you shortly with an update.\nFor future reference, your case number is\n0403090\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-30T11:09:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9440e785-fdde-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi\nJohannes,\nWe have analysed the complete logs and the below are the analysis.\nThe logs snapshot that I’ve shared below demonstrate that the EV functions as the Master & charger functions as Slave. The charger provided the current and voltage that the EV demanded. As you can see from the multiple instances, the EV’s target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to certain SOC using CC, and then it switches to CV mode gradually based on EV requirements. During this phase, the EV's target current drops to protect the battery from thermal runaway and to ensure proper cell balancing.\nAs you can see the highlighted ones as the EV changes its current, the charger automatically adjusted the current and in the second snapshot you can see the EV demands around 300A and yet again over delivers it.\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this addresses your concerns. If there are no further questions, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-30T11:30:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "828feaa5-0edf-ef11-8eea-000d3ab41b62",
+            "subject": "AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi,\nthank you.\ni will inform our customer.\nkind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 30. Jänner 2025 12:39\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242\nHi\nJohannes,\nWe have analysed the complete logs and the below are the analysis.\nThe logs snapshot that I’ve shared below demonstrate that the EV functions as the Master & charger functions as Slave. The charger provided the current and voltage that the EV demanded. As you can see from the multiple instances, the EV’s target current changed, and the EVSE current adjusted accordingly. EV charging operates on the principles of Constant Current (CC) and Constant Voltage (CV). Initially, the EV charges up to certain SOC using CC, and then it switches to CV mode gradually based on EV requirements. During this phase, the EV's target current drops to protect the battery from thermal runaway and to ensure proper cell balancing.\nAs you can see the highlighted ones as the EV changes its current, the charger automatically adjusted the current and in the second snapshot you can see the EV demands around 300A and yet again over delivers it.\nBased on this analysis, we conclude that there is no issue with the EVSE. I hope this addresses your concerns. If there are no further questions, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-30T13:32:37Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0a389490-cfdf-ef11-8eea-000d3ab4d5d3",
+            "subject": "RE: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi\nJohannes,\nDid you receive any feedback from the customer regarding this ticket, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T12:33:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa512e16-dedf-ef11-8eea-0022489fb3e7",
+            "subject": "AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi,\nAre you shure that the truck was the problem.\nBecause customer got ~280kW that means we are missing a Powermodul.\nWhy do we have PLC-Error for Powerconverter?\nKind regards,\njohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 31. Jänner 2025 13:35\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242\nHi\nJohannes,\nDid you receive any feedback from the customer regarding this ticket, shall we proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-31T14:17:27Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d734b4fe-dce2-ef11-8eea-000d3a68cce9",
+            "subject": "RE: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi Johannes,\nI'm not saying that the truck is the problem. What I meant to say is that the charger is delivering power as the EV demands, and the logs show no indication that the EV is requesting more power than the charger is providing. Regarding the power converter schema in the charger logs, this is an additional log introduced in the latest firmware version that our charger is running. You can see that the PLC error flag is not true, it is simply set from False to False.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-04T09:47:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2a2d91d1-b0e3-ef11-8eea-0022489fb3e7",
+            "subject": "RE: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi Johannes,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-05T11:03:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5e099c7e-3de5-ef11-8eea-000d3a67d7cb",
+            "subject": "RE: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi Johannes,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-07T10:23:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a5b41e25-45e5-ef11-8eea-000d3a682fc5",
+            "subject": "AW: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi,\nwhere can i find the max power from our SID even if one or two powermoduls didn’t work?\nThe available power should be reduced.\nin your log you can see that we hat Error Flag F:1 which should mean “Module PowerOff DueTo Fault”.\nWhy do you think everything is fine since F:0 mean “No Error”??\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 7. Februar 2025 11:23\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242\nHi Johannes,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-07T11:17:47Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9eeda6f0-5ce5-ef11-9341-7c1e528745b1",
+            "subject": "RE: AW: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi\nJohannes,\nThanks for the update. Regarding your query, if you review the logs again, you'll notice a parameter called EVSE_DESpwr, which indicates the allotment power to that outlet. As per the logs, it shows around 373kW, while our charger is rated for 400kW. The power will only increase if the EV demands more current, which is why we're seeing only 373kW of power. If any power module had failed, it would be reflected in the EVSE_DESpwr parameter with reduced power and would result in a power converter error in SCB as well as in the charger logs. Additionally, the power converter F:1 indicates that a fast shutdown was performed successfully, and the \"Module PowerOff DueTo Fault\" error you mentioned appears in the error flags of the power converter after the 'F' state, with either E01 or EXX.\nI hope this answers your query. If there are no further questions, may I proceed with closing this ticket?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-07T14:08:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c9a382f-b1e7-ef11-9341-000d3add0e90",
+            "subject": "RE: AW: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi Johannes,\nAwaiting your feedback as per the trailing email.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-10T13:16:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb08698d-61e8-ef11-9341-7c1e527622e8",
+            "subject": "RE: AW: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Hi Johannes,\nI hope this email finds you well.\nI’m reaching out to follow up on our recent communications. We appreciate the input and feedback you have provided thus far.\nPlease be advised that if we do not receive a response from you by tomorrow, we will proceed with closing the case. If you have any further questions or concerns that require attention before the closure, please feel free to reach out. Your prompt attention to this matter is crucial, and we value your cooperation.\nThank you for your time and consideration throughout the course of this case. We look forward to receiving your response before the specified deadline.\nWith best regards,\neMobility Tech Support Team - Shrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-11T10:18:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e932af8b-ebe9-ef11-9341-000d3ab1a06e",
+            "subject": "RE: AW: AW: AW: ID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power CRM:00643001242",
+            "body": "Dear Johannes,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0403090\nbut have not received a response.\nAs we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0403090\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-13T09:18:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78f2f1c1-ebe9-ef11-9341-000d3ab1a06e",
+            "subject": "Ticket 0403090 has been closed. Are you satisfied with our provided solution? CRM:00643001288",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0403090\nwith the title:\nID0403090-DC/Si-D/AT-[MP / S5 170003620] Charger delivers less power\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-13T09:20:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

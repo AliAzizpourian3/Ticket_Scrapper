@@ -1,0 +1,497 @@
+{
+    "incident_id": "b7705b57-b700-f011-bae3-7c1e52768c07",
+    "ticket_number": "0412756",
+    "title": "ID0412756-DC/Si-D/DE[Energu] - IVECO trucks",
+    "created_on": "2025-03-14T09:33:17Z",
+    "last_activity": "2025-06-26T15:28:22Z",
+    "age": "150115",
+    "description": "Reported behaviour/issue:\nIVECO not charging properly?\nSolution:\nUpdate 14/Mar/2025 - Catalina is already working on this, ticket opened for documentation purposes only\nUpdate 17/Mar/2025 - Tomorrow 18th March, we will test on-site with IVECO trucks in Energu with the assistance of IVECO and customer.\nUpdate 28/Mar/2025 - Call with IVECO this week shows that there might be something wrong with the EV. The reported “previous versions were working” turned out to be false, we downgraded the version to v5.0.23 and even though we could reach CableCheck in the first 5 sessions, the ones after all failed in the same manner as the ones in v6.\nUpdate 31/Mar/2025  Call with Iveco tomorrow 1st April to follow up on both sides' progress . Waiting for R&D to provide us a reply for the IMD\nUpdate 2/Apr/2025 - Call with IVECO revealed that for the CableCheck problems it's a very sensitive problem on their side where they close the session. We will check with RC-DE to go on site to perform measurements with the osciloscope\nUpdate 4/Apr/2025 - HQ & RC will go to site on the 10th Apr to do osciloscope tests, IVECO will also participate?\nUpdate from site intervention - We did not see the voltage spikes as IVECO mentioned and the SDP request is still missing\nUpdate from 16/Apr - Why is it working in charger jERN9L in Munchen but not in Mauersteten? Collected the logs and investigation started\nUpdate from 12/May - IVECO R&D is in discussions with EcoG directly\nUpdate from 13/May - IVECO R&D acknowledged that the EVCC is shutting down - no root cause yet.\nUpdate from 20/May - installed v7.0.5 with EcoG 1.4.12 - IVECO doesnt see any problem\nUpdate from 6/june - Ecog to have a final discussion with IVECO, looks like EV issue so nothing for us to, final answer on 12/Jun\nUpdate from 17/June -\nSo far we haven’t received any update from Iveco side about the root cause of the EVCC shutting down.\nUpdate from 25/June -\nI just received this feedback from Iveco colleagues:\n“ Unfortunately, we didn’t receive any further insights about that from our previous EVCC supplier, except what I already told you.\nAt the moment, we’ve decided to upload another calibration on the two EVCC of our customer which own the Siemens charger with that issue and the charging seems working.”",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "Jozhsr",
+    "stage": null,
+    "serial_number": "MP / R6 170002000",
+    "case_nature_code": 580000000,
+    "additional_info": [
+        {
+            "id": "2469b352-b700-f011-bae3-000d3addf8ce",
+            "subject": "AW: Regarding Charging Tests in V-Markt",
+            "body": "benjamin.narten@siemens.com\n;\nemobility_support.si@siemens.com\nadded to the loop!\nMit freundlichen Grüßen/ Kind regards\nLukas Junke\nTruck BU QU& PB – Team ZEV Current Product Quality\nEVCO GmbH\nNicolaus-Otto-Str.\n27, 89079 Ulm - Germany\nmob: +49 (0) 160 90452144\n–\nlukas.junke@ivecogroup.com\nSitz der Gesellschaft: Ulm\nRegistergericht: Amtsgericht Ulm\nNr. des Handelsregisters: HRB 740737\nVAT REG No.: DE 334756137\nGeschäftsführer: Christian Sulser, Sascha Breitscheidel\n­\nVon:\nJUNKE Lukas (Iveco Group) <lukas.junke@ivecogroup.com>\nGesendet:\nFreitag, 14. März 2025 09:49\nAn:\nLASCIATO Leandro (Iveco Group) <leandro.lasciato@ivecogroup.com>; Ingo.Oldenburg@siemens.com; PACUCCI Domenico (Iveco Group) <domenico.pacucci@ivecogroup.com>\nCc:\nKIRSCHENHOFER Lars (IVECO) <Lars.KIRSCHENHOFER@iveco.com>; DE ABREU Iaponaira (Iveco Group) <iaponaira.deabreu@ivecogroup.com>; Glöckner Martin <mgloeckner@v-markt.de>\nBetreff:\nAW: Regarding Charging Tests in V-Markt\nPriorität:\nHoch\nDear Mr. Oldenburg,\nwe are looking forward to your feedback.\nCurrently we have both trucks in the workshop with charging problems!\nWe are stucking with our analysis due to the missing information’s!\nPlease provide us the requested traces until today EOB, thank you in advance.\nMit freundlichen Grüßen/ Kind regards\nLukas Junke\nTruck BU QU& PB – Team ZEV Current Product Quality\nEVCO GmbH\nNicolaus-Otto-Str.\n27, 89079 Ulm - Germany\nmob: +49 (0) 160 90452144\n–\nlukas.junke@ivecogroup.com\nSitz der Gesellschaft: Ulm\nRegistergericht: Amtsgericht Ulm\nNr. des Handelsregisters: HRB 740737\nVAT REG No.: DE 334756137\nGeschäftsführer: Christian Sulser, Sascha Breitscheidel\n­\nVon:\nLASCIATO Leandro (Iveco Group) <\nleandro.lasciato@ivecogroup.com\n>\nGesendet:\nMittwoch, 5. März 2025 16:35\nAn:\nIngo.Oldenburg@siemens.com\n; PACUCCI Domenico (Iveco Group) <\ndomenico.pacucci@ivecogroup.com\n>\nCc:\nJUNKE Lukas (Iveco Group) <\nlukas.junke@ivecogroup.com\n>; KIRSCHENHOFER Lars (IVECO) <\nLars.KIRSCHENHOFER@iveco.com\n>; DE ABREU Iaponaira (Iveco Group) <\niaponaira.deabreu@ivecogroup.com\n>\nBetreff:\nRegarding Charging Tests in V-Markt\nDear Mr. Oldenburg,\nnice to meet you, I work in IVECO as HV&H2 Field Analysts Team. Scope of the team I am part of is to collect claims from Field and Customers that can be solved by Engineering for what concerns HV components. So, we also have particular attention on Charging topics for our BEV trucks.\nWe received the info by Lars that on 27/02 you performed together a Charging Session with one of the Charging Station of our shared customer V-Markt and that you experienced a charging interruption consequent to a Power derating due to high temperatures.\nI am aware regarding a test with the Siemens SiCharge, its label is attached in the email. I am unaware if other tests in other charging stations have been done.\nWe had the chance to review one log on vehicle side, depicting the event previously described, but we still have some doubts that we need to clarify regarding the whole event to understand if we have the chance to improve something on our side.\nFor this reason, I kindly ask if you can share with us traces of Charging Station (or also of other Charging Stations if tested) during the test. It would be very helpful. They can be in .pcap or .blf.\nI add to the loop\n@PACUCCI Domenico (Iveco Group)\nthat can support with the analysis on EVSE side and add further details if necessary.\nThank you very much in advance,\nHave a nice day,\nLeandro Lasciato",
+            "date": "2025-03-14T09:33:10Z",
+            "extra": {
+                "sender": "lukas.junke@ivecogroup.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1e476ffe-d400-f011-bae3-7c1e52768c07",
+            "subject": "0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442",
+            "body": "Dear Lukas, good afternoon.\nThank you for reaching out to Siemens Emobility support.\nMy name is Francisco and I will be assisting you today.\nIt has come to my attention that this issue has been addressed by the Vehicle Integration team colleague, Catalina Mora.\nPlease\nfollow the necessary instructions shared by Catalina\nin order to have a smooth collaboration.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-03-14T13:05:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "27493799-d500-f011-bae3-7c1e52768c07",
+            "subject": "0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442",
+            "body": "Hi Benjamin, good afternoon.\nSorry for the late email, as this came to our queue just now. I already aligned with Catalina for the next steps but I would require some extra inputs from your side in order to exclude some root causes.\nDo these chargers in Energu have CMS?\nDo you have an idea of how many times this has happened?\nIf yes, do you have any timestamps that you are able to share?\nFor us, it's hard to search in the logs for sessions that are working and suddenly just have a drop of power without a proper date.\nDo you have a photo of the DC pins of the trucks and of the DC plugs from the charger?\nThis would also help us push the problem to IVECO in case our DC pins look good or find a hardware problem with our charger and still provide a solution.\nThank you very much for your support and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-03-14T13:09:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e1c05915-0a03-f011-bae3-000d3ad97a58",
+            "subject": "AW: 0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442",
+            "body": "Hallo Francisoco,\nunfortunately, I have no further information\nabout the process but maybe Rudi?\nMit freundlichen Grüßen\nBenjamin Narten\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nE-Car Germany\nRC-DE SI E C EC\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nMobil: +49 (1522) 6843056\nmailto:benjamin.narten@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 14. März 2025 14:16\nAn:\nNarten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nBetreff:\n0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442\nHi Benjamin, good afternoon.\nSorry for the late email, as this came to our queue just now. I already aligned with Catalina for the next steps but I would require some extra inputs from your side in order to exclude some root causes.\nDo these chargers in Energu have CMS?\nDo you have an idea of how many times this has happened?\nIf yes, do you have any timestamps that you are able to share?\nFor us, it's hard to search in the logs for sessions that are working and suddenly just have a drop of power without a proper date.\nDo you have a photo of the DC pins of the trucks and of the DC plugs from the charger?\nThis would also help us push the problem to IVECO in case our DC pins look good or find a hardware problem with our charger and still provide a solution.\nThank you very much for your support and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-03-17T08:30:30Z",
+            "extra": {
+                "sender": "benjamin.narten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "85d33b12-1103-f011-bae3-7c1e5236cda4",
+            "subject": "AW: 0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442",
+            "body": "Hello Francisco,\nthey have CMS, but I don’t have further information, sorry.\nMit freundlichen Grüßen\nRudi Artes\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nCustomer Service\nRC-DE SI E CS\nNiederlassung München\nOtto-Hahn-Ring 6, NL\n81739 München, Deutschland\nmailto:rudolf.artes@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nNarten, Benjamin (RC-DE SI E C EC) <benjamin.narten@siemens.com>\nGesendet:\nMontag, 17. März 2025 09:30\nAn:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nCc:\nArtes, Rudi (RC-DE SI E CS) <rudolf.artes@siemens.com>\nBetreff:\nAW: 0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442\nHallo Francisoco,\nunfortunately, I have no further information\nabout the process but maybe Rudi?\nMit freundlichen Grüßen\nBenjamin Narten\nSiemens AG\nSiemens Deutschland\nSmart Infrastructure\nE-Car Germany\nRC-DE SI E C EC\nNiederlassung Hannover\nWerner-von-Siemens-Str. 1\n30880 Laatzen, Deutschland\nMobil: +49 (1522) 6843056\nmailto:benjamin.narten@siemens.com\nwww.siemens.com\nSiemens Aktiengesellschaft: Vorsitzender des Aufsichtsrats: Jim Hagemann Snabe; Vorstand: Roland Busch, Vorsitzender; Veronika Bienert, Peter Körte, Cedrik Neike, Matthias Rebellius, Ralf P. Thomas, Judith Wiese; Sitz der Gesellschaft: Berlin und München, Deutschland; Registergericht: Berlin-Charlottenburg, HRB 12300, München, HRB 6684; WEEE-Reg.-Nr. DE 23691322\nVon:\nSI Emobility Technical Support <\nemobility_support.si@siemens.com\n>\nGesendet:\nFreitag, 14. März 2025 14:16\nAn:\nNarten, Benjamin (RC-DE SI E C EC) <\nbenjamin.narten@siemens.com\n>\nBetreff:\n0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442\nHi Benjamin, good afternoon.\nSorry for the late email, as this came to our queue just now. I already aligned with Catalina for the next steps but I would require some extra inputs from your side in order to exclude some root causes.\nDo these chargers in Energu have CMS?\nDo you have an idea of how many times this has happened?\nIf yes, do you have any timestamps that you are able to share?\nFor us, it's hard to search in the logs for sessions that are working and suddenly just have a drop of power without a proper date.\nDo you have a photo of the DC pins of the trucks and of the DC plugs from the charger?\nThis would also help us push the problem to IVECO in case our DC pins look good or find a hardware problem with our charger and still provide a solution.\nThank you very much for your support and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-03-17T09:20:36Z",
+            "extra": {
+                "sender": "rudolf.artes@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "352620cf-1903-f011-bae3-6045bddf319c",
+            "subject": "0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002442",
+            "body": "Hi Rudi! good morning.\nThank you for the answer. I just need one last answer, if you can answer, which is, was there any change of CCS in this charger 170002000? Either DC1 or DC2.\nThanks a lot for the support.\nBest regards,\nFrancisco",
+            "date": "2025-03-17T10:23:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0b6bca3-683b-d6f2-8a91-4c1b66cf08bf",
+            "subject": "NOTE FROM L2 - Trend of emails with Customer",
+            "body": "",
+            "date": "2025-03-18T08:54:57Z",
+            "extra": {}
+        },
+        {
+            "id": "71fe8cc1-c404-f011-bae3-6045bde0265d",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Dear Leandro,\nI wanted to share with you our overview of the results from the tests you conducted yesterday with the IVECO trucks and the SiCharge D chargers at the customer V Markt site, accompanied by a Siemens expert remotely.\nThe vehicle used was the IVECO LKW S-eWAY, brought to the customer site from the IVECO Workshop in Memmingen.\nThe vehicle was tested with the SiCharge D300 (FW v6.1.3 - EcoG Layer 1.4.11 (with hot fix)) and SiCharge D160 (FW v6.1.3 - EcoG Layer 1.4.5 (without hot fix)).\nUnfortunately, all charging attempts failed. The failures occurred at different stages, but all during the initialization.\nSeveral observations were made, which were present in both chargers (with and without the hot-fix):\nWe observed the average attenuation of the frequency carrier groups is too high in some cases.\nNo SLAC PARAM RES\nNo SLAC MATCH\nNo SDP Request\nNo TCP handshake\nThe root cause for these failed charging sessions is not yet clear to us. We are currently investigating this together with our R&D team and would be happy to get input from your side based on your ongoing investigations as well.\nThe situation is indeed very special because, as you and the customer have already reported, the trucks were able to charge at other charging stations (Alpitronic and ABB).\nHowever, we have the situation that Volvo trucks from the same customer can charge without problems at both their SiCharge D charging stations.\nMoreover, I would like to add that the issue is present on both chargers, therefore the theory that the issues were brought up by the latest update (hot fix) cannot be confirmed.\nI wanted to take this opportunity to ask you about a situation we identified at another customer site. We have identified another customer in Germany which also has IVECO trucks with MAC addresses\n5c.cc.a0.02.62.9d, 5c.cc.a0.02.62.a5\n&\n5c.cc.a0.02.63.17\nand is using SiCharge D to charge the trucks. The chargers have the same FW version as the SiCharge D300 at V Markt; however, at this other site, the issue discussed here is not occurring, and there are many successful charging sessions.\nThe question is whether you would be able to cross-check the FW version or technical specifications of those trucks and if there might be some difference to the trucks at V Markt that could be playing a role in the issues we have.\nWe will also be intersted in checking the Physical connection of the cable connector to the vehicle inlet. We would like to test the integrity of the CP line and PP line and connection when the truck is plugged in to discard any possible HW issues. let us know your thought on this and if we could organize a join onsit session for this purpose.\nI look forward to your feedback and further collaboration on resolving this challenge.\nAttached you can find the PLC traces of some of the tests sessions captured at the Sicharge D300 charger.\nKind regards\nCatalina Mora",
+            "date": "2025-03-19T13:19:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "208a35f7-d204-f011-bae3-7c1e52faf3c6",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Dear Leandro,\nI wanted to share with you our overview of the results from the tests you conducted yesterday with the IVECO trucks and the SiCharge D chargers at the customer V Markt site, accompanied by a Siemens expert remotely.\nThe vehicle used was the IVECO LKW S-eWAY, brought to the customer site from the IVECO Workshop in Memmingen.\nThe vehicle was tested with the SiCharge D300 (FW v6.1.3 - EcoG Layer 1.4.11 (with hot fix)) and SiCharge D160 (FW v6.1.3 - EcoG Layer 1.4.5 (without hot fix)).\nUnfortunately, all charging attempts failed. The failures occurred at different stages, but all during the initialization.\nSeveral observations were made, which were present in both chargers (with and without the hot-fix):\nWe observed the average attenuation of the frequency carrier groups is too high in some cases.\nNo SLAC PARAM RES\nNo SLAC MATCH\nNo SDP Request\nNo TCP handshake\nThe root cause for these failed charging sessions is not yet clear to us. We are currently investigating this together with our R&D team and would be happy to get input from your side based on your ongoing investigations as well.\nThe situation is indeed very special because, as you and the customer have already reported, the trucks were able to charge at other charging stations (Alpitronic and ABB).\nHowever, we have the situation that Volvo trucks from the same customer can charge without problems at both their SiCharge D charging stations.\nMoreover, I would like to add that the issue is present on both chargers, therefore the theory that the issues were brought up by the latest update (hot fix) cannot be confirmed.\nI wanted to take this opportunity to ask you about a situation we identified at another customer site. We have identified another customer in Germany which also has IVECO trucks with MAC addresses\n5c.cc.a0.02.62.9d, 5c.cc.a0.02.62.a5\n&\n5c.cc.a0.02.63.17\nand is using SiCharge D to charge the trucks. The chargers have the same FW version as the SiCharge D300 at V Markt; however, at this other site, the issue discussed here is not occurring, and there are many successful charging sessions.\nThe question is whether you would be able to cross-check the FW version or technical specifications of those trucks and if there might be some difference to the trucks at V Markt that could be playing a role in the issues we have.\nWe will also be intersted in checking the Physical connection of the cable connector to the vehicle inlet. We would like to test the integrity of the CP line and PP line and connection when the truck is plugged in to discard any possible HW issues. let us know your thought on this and if we could organize a join onsit session for this purpose.\nI look forward to your feedback and further collaboration on resolving this challenge.\nAttached you can find the PLC traces of some of the tests sessions captured at the Sicharge D300 charger.\nKind regards\nCatalina Mora",
+            "date": "2025-03-19T15:01:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b87847fb-d204-f011-bae3-7c1e5236cda4",
+            "subject": "Automatische Antwort: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Sehr geehrte Damen und Herren,\nam Montag, den 24.03.2025, bin ich wieder im Büro erreichbar. Ihre E-Mail wird nicht gelesen oder weiter geleitet.  Bei wichtigen Themen wenden Sie sich bitte an die Kollegen in der Abteilung.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in unseren\nDatenschutzhinweisen\nauf unserer Webseite.",
+            "date": "2025-03-19T15:01:11Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "470a99ec-da04-f011-bae3-7c1e52768c07",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Dear Leandro,\nI wanted to share with you our overview of the results from the tests you conducted yesterday with the IVECO trucks and the SiCharge D chargers at the customer V Markt site, accompanied by a Siemens expert remotely.\nThe vehicle used was the IVECO LKW S-eWAY, brought to the customer site from the IVECO Workshop in Memmingen.\nThe vehicle was tested with the SiCharge D300 (FW v6.1.3 - EcoG Layer 1.4.11 (with hot fix)) and SiCharge D160 (FW v6.1.3 - EcoG Layer 1.4.5 (without hot fix)).\nUnfortunately, all charging attempts failed. The failures occurred at different stages, but all during the initialization.\nSeveral observations were made, which were present in both chargers (with and without the hot-fix):\nWe observed the average attenuation of the frequency carrier groups is too high in some cases.\nNo SLAC PARAM RES\nNo SLAC MATCH\nNo SDP Request\nNo TCP handshake\nThe root cause for these failed charging sessions is not yet clear to us. We are currently investigating this together with our R&D team and would be happy to get input from your side based on your ongoing investigations as well.\nThe situation is indeed very special because, as you and the customer have already reported, the trucks were able to charge at other charging stations (Alpitronic and ABB).\nHowever, we have the situation that Volvo trucks from the same customer can charge without problems at both their SiCharge D charging stations.\nMoreover, I would like to add that the issue is present on both chargers, therefore the theory that the issues were brought up by the latest update (hot fix) cannot be confirmed.\nI wanted to take this opportunity to ask you about a situation we identified at another customer site. We have identified another customer in Germany which also has IVECO trucks with MAC addresses\n5c.cc.a0.02.62.9d, 5c.cc.a0.02.62.a5\n&\n5c.cc.a0.02.63.17\nand is using SiCharge D to charge the trucks. The chargers have the same FW version as the SiCharge D300 at V Markt; however, at this other site, the issue discussed here is not occurring, and there are many successful charging sessions.\nThe question is whether you would be able to cross-check the FW version or technical specifications of those trucks and if there might be some difference to the trucks at V Markt that could be playing a role in the issues we have.\nWe will also be intersted in checking the Physical connection of the cable connector to the vehicle inlet. We would like to test the integrity of the CP line and PP line and connection when the truck is plugged in to discard any possible HW issues. let us know your thought on this and if we could organize a join onsit session for this purpose.\nI look forward to your feedback and further collaboration on resolving this challenge.\nAttached you can find the PLC traces of some of the tests sessions captured at the Sicharge D300 charger.\nKind regards\nCatalina Mora",
+            "date": "2025-03-19T15:58:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58397f29-db04-f011-bae3-6045bde0265d",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Dear Leandro,\nI wanted to share with you our overview of the results from the tests you conducted yesterday with the IVECO trucks and the SiCharge D chargers at the customer V Markt site, accompanied by a Siemens expert remotely.\nThe vehicle used was the IVECO LKW S-eWAY, brought to the customer site from the IVECO Workshop in Memmingen.\nThe vehicle was tested with the SiCharge D300 (FW v6.1.3 - EcoG Layer 1.4.11 (with hot fix)) and SiCharge D160 (FW v6.1.3 - EcoG Layer 1.4.5 (without hot fix)).\nUnfortunately, all charging attempts failed. The failures occurred at different stages, but all during the initialization.\nSeveral observations were made, which were present in both chargers (with and without the hot-fix):\nWe observed the average attenuation of the frequency carrier groups is too high in some cases.\nNo SLAC PARAM RES\nNo SLAC MATCH\nNo SDP Request\nNo TCP handshake\nThe root cause for these failed charging sessions is not yet clear to us. We are currently investigating this together with our R&D team and would be happy to get input from your side based on your ongoing investigations as well.\nThe situation is indeed very special because, as you and the customer have already reported, the trucks were able to charge at other charging stations (Alpitronic and ABB).\nHowever, we have the situation that Volvo trucks from the same customer can charge without problems at both their SiCharge D charging stations.\nMoreover, I would like to add that the issue is present on both chargers, therefore the theory that the issues were brought up by the latest update (hot fix) cannot be confirmed.\nI wanted to take this opportunity to ask you about a situation we identified at another customer site. We have identified another customer in Germany which also has IVECO trucks with MAC addresses\n5c.cc.a0.02.62.9d, 5c.cc.a0.02.62.a5\n&\n5c.cc.a0.02.63.17\nand is using SiCharge D to charge the trucks. The chargers have the same FW version as the SiCharge D300 at V Markt; however, at this other site, the issue discussed here is not occurring, and there are many successful charging sessions.\nThe question is whether you would be able to cross-check the FW version or technical specifications of those trucks and if there might be some difference to the trucks at V Markt that could be playing a role in the issues we have.\nWe will also be intersted in checking the Physical connection of the cable connector to the vehicle inlet. We would like to test the integrity of the CP line and PP line and connection when the truck is plugged in to discard any possible HW issues. let us know your thought on this and if we could organize a join onsit session for this purpose.\nI look forward to your feedback and further collaboration on resolving this challenge.\nAttached you can find the PLC traces of some of the tests sessions captured at the Sicharge D300 charger.\nKind regards\nCatalina Mora",
+            "date": "2025-03-19T15:59:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "85f51a71-9a05-f011-bae3-7c1e52350ea5",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Good morning, Catalina,\nAdding\n@ZDANOWICZ Pawel (Iveco Group)\nbecause he was present on Tuesday, his insights can be useful.\nThanks a lot for the very good description. Our investigations are ongoing, and I hope to give you useful feedback for both of us for the end of the week.\nSome requests from my side:\nYou inserted a very useful info.\nCan you share with us the location of the charger that you are mentioning in the statement below? In this way we can somehow climb back and find the customer, check if there are some basic differences respect to V-Markt trucks, and come to you also with some other insights to distinguish the differences.\n“\nI wanted to take this opportunity to ask you about a situation we identified at another customer site. We have identified another customer in Germany which also has IVECO trucks with MAC addresses 5c.cc.a0.02.62.9d, 5c.cc.a0.02.62.a5 & 5c.cc.a0.02.63.17 and is using SiCharge D to charge the trucks. The chargers have the same FW version as the SiCharge D300 at V Markt; however, at this other site, the issue discussed here is not occurring, and there are many successful charging sessions.”\n“Attached you can find the PLC traces of some of the tests sessions captured at the Sicharge D300 charger.”\nUnfortunately I am not seeing the attachments, can you share again?\nHave a nice day,\nLeandro Lasciato",
+            "date": "2025-03-20T14:48:58Z",
+            "extra": {
+                "sender": "leandro.lasciato@ivecogroup.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "01220d0c-a705-f011-bae3-6045bddf319c",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Good afternoon, Leandro\nYes, here are the files. I know I missed them in my first email but I thought I send them afterwards in a separate email. Anyway, here they are.\nWould you have a number where I can locate you. I could give you tomorrow a call and we could check the topic regarding the other IVECO trucks at the other customer location if that works for you.\nThanks a lot for your collaboration\nBest regards\nCatalina",
+            "date": "2025-03-20T16:19:17Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c5caa3f2-9f08-f011-bae3-7c1e52fad806",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nany progress yet? We already have one Iveco in our yard, and the second one is coming back this week. With 1-2 charging sessions per day, external charging at €0.59 per kWh is unaffordable. Due to construction work in Kaufbeuren, the only EnBW charging station is inaccessible to us.\nWould a downgrade be possible on the D300? Unfortunately, I don't know which working version we were using. I found a screenshot with V5.0.21-0g33832fc from the beginning of December 2024.\nOur idea: an older firmware on the D300 – hopefully, this would allow our Ivecos to charge without any hassle – and hopefully, the Volvos would continue to do so. The D160 would have the latest firmware for the Volvos.\nThis also gives us an A/B testing option.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nDonnerstag, 20. März 2025 17:19\nAn:\nLASCIATO Leandro (Iveco Group) <leandro.lasciato@ivecogroup.com>; emobility_support.si@siemens.com; Glöckner Martin <mgloeckner@v-markt.de>; PACUCCI Domenico (Iveco Group) <domenico.pacucci@ivecogroup.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; JUNKE Lukas (Iveco Group) <lukas.junke@ivecogroup.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; ZDANOWICZ Pawel (Iveco Group) <pawel.zdanowicz@external.ivecogroup.com>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nGood afternoon, Leandro\nYes, here are the files. I know I missed them in my first email but I thought I send them afterwards in a separate email. Anyway, here they are.\nWould you have a number where I can locate you. I could give you tomorrow a call and we could check the topic regarding the other IVECO trucks at the other customer location if that works for you.\nThanks a lot for your collaboration\nBest regards\nCatalina",
+            "date": "2025-03-24T11:05:52Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9d9bf0dc-a208-f011-bae2-7ced8d2ef274",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nWe are investigating on our side, and I understand IVECO is doing the same on theirs. We will having an exchange of information for further discussion when more information is available.\nI also would like to propose you to have the opportunity to go onsite (myself and/or Mr Oldenburg) to carry out measurements to the PLC communication.\n@LASCIATO Leandro (Iveco Group)\nmaybe if you (or someone from your team) is also able to be onsite we can conduct the tests together. I think end of next week will work for us. Let me know if you see it possible.\nI was checking with the team, and we could downgrade D300 to FW version V5.0.21 while the investigation is ongoing, and we find a solution. Hopefully, that will provide you a temporary measure to charger the IVECO truck with charger D300 while you continue to charge the Volvo trucks with the D160 including BCB toggle hot fix.\nLet me know if this will be ok for you, we can downgrade the charger remotely as soon as we receive your confirmation.\nBest regards\nCatalina",
+            "date": "2025-03-24T11:26:47Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0b34368d-b208-f011-bae3-6045bde0265d",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nwe will try our luck by an downgrade on our D300 (SN: MP R6 / 17000 2000)\nTomorrow you can do it:\n·\nTimeslot in the morning: 05:00 a.m. to 08:00 a.m. or\n·\nTimeslot during lunch: 01:30 p.m. to 02:00 p.m.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nMontag, 24. März 2025 12:27\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; LASCIATO Leandro (Iveco Group) <leandro.lasciato@ivecogroup.com>\nCc:\nemobility_support.si@siemens.com; PACUCCI Domenico (Iveco Group) <domenico.pacucci@ivecogroup.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; JUNKE Lukas (Iveco Group) <lukas.junke@ivecogroup.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; ZDANOWICZ Pawel (Iveco Group) <pawel.zdanowicz@external.ivecogroup.com>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nWe are investigating on our side, and I understand IVECO is doing the same on theirs. We will having an exchange of information for further discussion when more information is available.\nI also would like to propose you to have the opportunity to go onsite (myself and/or Mr Oldenburg) to carry out measurements to the PLC communication.\n@LASCIATO Leandro (Iveco Group)\nmaybe if you (or someone from your team) is also able to be onsite we can conduct the tests together. I think end of next week will work for us. Let me know if you see it possible.\nI was checking with the team, and we could downgrade D300 to FW version V5.0.21 while the investigation is ongoing, and we find a solution. Hopefully, that will provide you a temporary measure to charger the IVECO truck with charger D300 while you continue to charge the Volvo trucks with the D160 including BCB toggle hot fix.\nLet me know if this will be ok for you, we can downgrade the charger remotely as soon as we receive your confirmation.\nBest regards\nCatalina",
+            "date": "2025-03-24T13:19:12Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "94a06ea6-cf08-f011-bae3-000d3ad97a58",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hallo Martin,\nPerfect thanks you. we will proceed tomorrow during lunch with the update. In agreement with IVECO, this will also allow them to update the data logger remotely.\nAfter the update, will it be possible to make a test attempt directly after with the IVECO truck?\nThank you\nCatalina",
+            "date": "2025-03-24T16:47:26Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "51c526cc-5909-f011-bae3-7c1e52350ea5",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nUnfortunately, there won't be any trucks on site during the update. After the update, we'll, of course, be testing Volvos and Ivecos from a user perspective.\nThis afternoon around 2 p.m. we'll pick up the second Iveco from the garage. Then we'll plug it and, of course, report back.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nMontag, 24. März 2025 17:47\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; leandro.lasciato@ivecogroup.com\nCc:\nemobility_support.si@siemens.com; domenico.pacucci@ivecogroup.com; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; JUNKE Lukas (Iveco Group) <lukas.junke@ivecogroup.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; pawel.zdanowicz@external.ivecogroup.com\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHallo Martin,\nPerfect thanks you. we will proceed tomorrow during lunch with the update. In agreement with IVECO, this will also allow them to update the data logger remotely.\nAfter the update, will it be possible to make a test attempt directly after with the IVECO truck?\nThank you\nCatalina",
+            "date": "2025-03-25T09:16:22Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ffd30bcf-7c09-f011-bae3-7c1e5236e32d",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin, good afternoon.\nWe got a problem with the downgrade because it’s not really supposed to be a supported task, we are taking a look at it right now and will provide you feedback as soon as we have an answer.\nDo you prefer to have the downgrade scheduled for another day or can I do it as long as no one is charging? I do not have an exact time on how long it should take but less than 1 hour is a good estimate.\nThank you for your patience and support. I will wait for your feedback.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-25T13:27:00Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cbc17ab0-7d09-f011-bae3-7c1e5236e32d",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Francisco,\nyou can go one to try the downgrade now. I will hang up an notice to do not use this charger.\nPerhaps in next 1-2 hour it’s finished. Than we will load our trucks later.\nViele Grüße\nMartin Glöckner\nVon:\nde Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nGesendet:\nDienstag, 25. März 2025 14:27\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; Mora, Catalina <maria-catalina.mora-suarez@siemens.com>\nCc:\nemobility_support.si@siemens.com; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good afternoon.\nWe got a problem with the downgrade because it’s not really supposed to be a supported task, we are taking a look at it right now and will provide you feedback as soon as we have an answer.\nDo you prefer to have the downgrade scheduled for another day or can I do it as long as no one is charging? I do not have an exact time on how long it should take but less than 1 hour is a good estimate.\nThank you for your patience and support. I will wait for your feedback.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-25T13:33:19Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2e80bd21-8b09-f011-bae3-000d3ad97a58",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nI’m really sorry, today we were not able to perform the downgrade. Since this is a version that was removed from operations due to a bug, I am unable to downgrade it via normal-way.\nMe and Catalina will escalate this in order to get a fast and proper solution and come back to you.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-25T15:09:25Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0c4773b9-9409-f011-bae3-6045bddf3f78",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nWe were able to perform the downgrade of the SECC only, instead of the full version. This is the big difference between v5.0.21 and v6.0.3/v6.1.3.\nPlease test the D300 and see if we get improved results for the IVECO trucks.\nLet me know your feedback and thank you for your patience.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-25T16:18:12Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8a4f5da6-9b09-f011-bae3-6045bde0265d",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hello Francisco,\nI've just tried charging an IVECO on the D300 several times, but unfortunately it doesn't work.\nMit freundlichen Grüßen\nAndreas Spannagl\nFuhrparkleitung | Zentrallager Mauerstetten\nTel:        +49 8341 807253\nFax:       +49 8341 807316\ne-mail:\naspannagl@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nde Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nGesendet:\nDienstag, 25. März 2025 17:18\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nemobility_support.si@siemens.com; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Mora, Catalina <maria-catalina.mora-suarez@siemens.com>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nWe were able to perform the downgrade of the SECC only, instead of the full version. This is the big difference between v5.0.21 and v6.0.3/v6.1.3.\nPlease test the D300 and see if we get improved results for the IVECO trucks.\nLet me know your feedback and thank you for your patience.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-25T17:07:41Z",
+            "extra": {
+                "sender": "aspannagl@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a79e5a09-0d0a-f011-bae3-7c1e523508ba",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Francisco,\nin addition just two loading summaries.\nIveco OAL VM 888: didn’t work on D300 outlet 2. …4 attemps between 17:44 and 17:56\nVolvo OAL VM 69: successful on D300 outlet 2 during the night beginning at 18:20\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nSpannagl Andreas <aspannagl@v-markt.de>\nGesendet:\nDienstag, 25. März 2025 18:07\nAn:\nde Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Glöckner Martin <mgloeckner@v-markt.de>\nCc:\nemobility_support.si@siemens.com; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Mora, Catalina <maria-catalina.mora-suarez@siemens.com>\nBetreff:\nAW: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nHello Francisco,\nI've just tried charging an IVECO on the D300 several times, but unfortunately it doesn't work.\nMit freundlichen Grüßen\nAndreas Spannagl\nFuhrparkleitung | Zentrallager Mauerstetten\nTel:        +49 8341 807253\nFax:       +49 8341 807316\ne-mail:\naspannagl@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nde Matos Joaquim, Francisco <\nfrancisco.joaquim@siemens.com\n>\nGesendet:\nDienstag, 25. März 2025 17:18\nAn:\nGlöckner Martin <\nmgloeckner@v-markt.de\n>\nCc:\nemobility_support.si@siemens.com\n; Narten, Benjamin <\nbenjamin.narten@siemens.com\n>; Artes, Rudi <\nrudolf.artes@siemens.com\n>; Spannagl Andreas <\naspannagl@v-markt.de\n>; Oldenburg, Ingo <\nIngo.Oldenburg@siemens.com\n>; Mora, Catalina <\nmaria-catalina.mora-suarez@siemens.com\n>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nWe were able to perform the downgrade of the SECC only, instead of the full version. This is the big difference between v5.0.21 and v6.0.3/v6.1.3.\nPlease test the D300 and see if we get improved results for the IVECO trucks.\nLet me know your feedback and thank you for your patience.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-26T06:39:22Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "24e2c448-2a0a-f011-bae3-7c1e5236cda4",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nThank you for the reply. Unfortunately, it didn’t work as you mentioned.\nI have already identified the root cause. Since it’s a non-official FW, it needs a special permission to be accepted, I have already performed this request and waiting for feedback.\nAs soon as it’s ready to begin I will, again, confirm with you when it’s best to perform the update.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-26T10:08:41Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "93e8c1e6-5b0a-f011-bae2-7c1e52768c07",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin, good afternoon.\nI’m sorry that things are not going as fast as we hoped. The downgrade is ready and being currently downloaded to the charger. As soon as it’s ready, I can install it.\nPlease keep in mind that IVECO mentioned that, before the hotfix installation, it was working and that turned out to be wrong. We really hope that this version works for you, but in theory, the biggest change from v5 to v6 was the downgrade of the SECC, which I already performed yesterday, and it’s not working.\nWith best regards,\nFrancisco de Matos Joaquim – Support Engineer\nSiemens S.A.\nSI E CS SD ICD\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:francisco.joaquim@siemens.com\nwww.siemens.com\nSiemens, S.A. with head office at Rua Irmãos Siemens, 1-1A, 2720-093 Amadora, Portugal; registered at the Commercial Registry of Amadora, fiscal and legal identification number 500 247 480; with a share capital of 63.435.000,00 EUR.",
+            "date": "2025-03-26T16:03:53Z",
+            "extra": {
+                "sender": "francisco.joaquim@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7b69a279-bf0f-f011-998a-7c1e52350ea5",
+            "subject": "0412756 - ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00315002504",
+            "body": "Hi colleagues, good afternoon. I hope you are doing well today.\nIn case you were not aware, there is a problem in V-markt (Energu) related to IVECO trucks. We had some discussions since the past month with the IVECO colleagues, also, and we want to plan a site visit to confirm our findings.\nThe customer complained that the IVECOs were no longer charging after the update to v6.0.3 or after updating the EcoG with the latest version (wakeup function for Volvos).\nThe common issue is that the IVECO trucks are not sending the SLAC requests properly and as such we cannot even go to Authentication and fails.\nWe downgraded the charger D300 (170002000) to v5.0.23 and we still found the same issues as before. So in theory, it's not a problem with the FW since we tested all these scenarios: v5.0.23, v6.0.3 with and without hotfix, v6.1.3 with and without hotfix.\nThey also complained that they were seeing some voltage raises on their circuit but we already aligned with R&D and the voltage that we are introducing in the circuit from the IMD, is not sufficient enough for their values. To be 100% clear, we are introducing this voltage from DC+ to PE and DC- to PE, not between DC+ and DC-, this is confirmed with the Voltage transducer readings.\nHere is a image from the technical data sheet from the supplier.\nIVECO is complaining that they are seeing values in the range of 60V and we are only applying at most 45V.\nFrom our side, it's clear that the FW is not the answer.\nWe checked in a different customer (Janssen), where they also use the same EV model and software (reported by IVECO) and it's somewhat working, so we are able to pass the SLAC but there are still some failures in CableCheck.\nBoth these issues have been already acknowledged by IVECO and they are working towards a solution, both 60V issue and CableCheck.\nThe product is working as expected and correctly, based on the investigations performed so far, with the assistance of R&D themselves.\nThe idea here is that RC-DE goes to site with an osciloscope and measure the IMD and Voltage transducer readings, to prove that the issue lies on the IVECO-side or at worst case scenario, something in this particular location.\nWe are in discussion with the IVECO colleagues to align on a date to perform this task. At first, the proposed date would be on next Thursday, 10th April, please be free to share your agenda and if you want to change this date, we can align later.\nThis case is a priority since customer warned that he could replace the charger if we cannot find a solution fast enough, since he is using competitors' chargers to charge the IVECOs.\nWhat equipment do you have to do these measurements?\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-04-02T12:39:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "23d13013-2511-f011-9989-6045bddf3f78",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nWe wanted to give you a short update on the meeting we had with IVECO this week.\nBoth IVECO and ourselves are currently analyzing the data gathered from our previous test. IVECO has some promising investigative work ongoing, looking at the voltage measurements they take at their charging port and the way they perform the CableCheck.\nOn our side, we have conducted measurements on the IMD signal in our lab using a COMEMSO box and a Tesla vehicle. In our charger (which has the same firmware version as the Charge D160 at V-Markt), we observed the correct IMD signal followed by successful charging sessions.\nDuring the discussion with IVECO, it was suggested that we perform a joint test at your charger to repeat the measurements we did in the lab environment, but this time using the IVECO truck to confirm our hypothesis about the root cause of the issues you are experiencing.\nWe would like to be onsite from the Siemens side on Thursday, April 10th. My colleagues Ingo Oldenburg and Domenico Dolce will travel and conduct the test.\nWould this be possible from your side? We would like to perform the test on both the D160 and D300 chargers using your IVECO truck. We estimate the testing will take around 2 hours per charger.\nIf this works for you, could you please let us know your preferred start time for the test?\nWe understand the IVECO team is also planning to be onsite the same day, and they mentioned they will contact you directly on this matter.\nThank you very much. We look forward to your feedback.\nKind regards\nCatalina Mora",
+            "date": "2025-04-04T07:19:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c8c45bb-3111-f011-998a-000d3addf8ce",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nWe wanted to give you a short update on the meeting we had with IVECO this week.\nBoth IVECO and ourselves are currently analyzing the data gathered from our previous test. IVECO has some promising investigative work ongoing, looking at the voltage measurements they take at their charging port and the way they perform the CableCheck.\nOn our side, we have conducted measurements on the IMD signal in our lab using a COMEMSO box and a Tesla vehicle. In our charger (which has the same firmware version as the Charge D160 at V-Markt), we observed the correct IMD signal followed by successful charging sessions.\nDuring the discussion with IVECO, it was suggested that we perform a joint test at your charger to repeat the measurements we did in the lab environment, but this time using the IVECO truck to confirm our hypothesis about the root cause of the issues you are experiencing.\nWe would like to be onsite from the Siemens side on Thursday, April 10th. My colleagues Ingo Oldenburg and Domenico Dolce will travel and conduct the test.\nWould this be possible from your side? We would like to perform the test on both the D160 and D300 chargers using your IVECO truck. We estimate the testing will take around 2 hours per charger.\nIf this works for you, could you please let us know your preferred start time for the test?\nWe understand the IVECO team is also planning to be onsite the same day, and they mentioned they will contact you directly on this matter.\nThank you very much. We look forward to your feedback.\nKind regards\nCatalina Mora",
+            "date": "2025-04-04T08:49:44Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e3dfce48-4d11-f011-998a-7c1e52fad806",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nwe saved the date: 10 April 2025\nWe'll reserve both Iveco trucks for you for an intensive A/B test.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nFreitag, 4. April 2025 10:50\nAn:\nde Matos Joaquim, Francisco <francisco.joaquim@siemens.com>; Glöckner Martin <mgloeckner@v-markt.de>\nCc:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; emobility_support.si@siemens.com; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Dolce, Domenico <domenico.dolce@siemens.com>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nWe wanted to give you a short update on the meeting we had with IVECO this week.\nBoth IVECO and ourselves are currently analyzing the data gathered from our previous test. IVECO has some promising investigative work ongoing, looking at the voltage measurements they take at their charging port and the way they perform the CableCheck.\nOn our side, we have conducted measurements on the IMD signal in our lab using a COMEMSO box and a Tesla vehicle. In our charger (which has the same firmware version as the Charge D160 at V-Markt), we observed the correct IMD signal followed by successful charging sessions.\nDuring the discussion with IVECO, it was suggested that we perform a joint test at your charger to repeat the measurements we did in the lab environment, but this time using the IVECO truck to confirm our hypothesis about the root cause of the issues you are experiencing.\nWe would like to be onsite from the Siemens side on Thursday, April 10th. My colleagues Ingo Oldenburg and Domenico Dolce will travel and conduct the test.\nWould this be possible from your side? We would like to perform the test on both the D160 and D300 chargers using your IVECO truck. We estimate the testing will take around 2 hours per charger.\nIf this works for you, could you please let us know your preferred start time for the test?\nWe understand the IVECO team is also planning to be onsite the same day, and they mentioned they will contact you directly on this matter.\nThank you very much. We look forward to your feedback.\nKind regards\nCatalina Mora",
+            "date": "2025-04-04T12:06:57Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9fb986c8-5711-f011-998a-6045bde0265d",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Thank you so much Martin.\nAny requirements regarding the time available for testing?\nBR\nCatalina",
+            "date": "2025-04-04T13:22:05Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "27979c59-9913-f011-998a-7c1e52350ea5",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nI think we should test during normal hours. Most trucks are finished charging by 9 a.m. (10 Apr 2025). At 11 a.m. first trucks come back. This would allow us to start with the D300, than we can continue with the D160.\nWe had an interesting observation with the Iveco OAL VM 300:\nFriday:                  Charging in Munich 2 = successful\nSaturday:            Charging in Mauerstetten = not successful (on both D160 + D300)\nMonday:             Charging in Pentling = successful\nMonday:             Charging in Munich 2 = so la la. We have several logs, perhaps no performance. We have to ask our driver later for details.\nAttached you will find the charging messages and charging points for all three processes.\nNow you only have to analyze what’s going wrong in Mauerstetten :-)\n@ Kaes Logistik: bitte wie besprochen beide Ivecos hier behalten. Ziel/Wunsch/Traum: Wir möchten am Ende des Tages 100% Erfolg bei beiden LKWs sehen.\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nFreitag, 4.\nApril 2025 15:22\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; emobility_support.si@siemens.com; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nCc:\nArtes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Dolce, Domenico <domenico.dolce@siemens.com>; Logistik <logistik@v-markt.de>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nThank you so much Martin.\nAny requirements regarding the time available for testing?\nBR\nCatalina",
+            "date": "2025-04-07T10:16:29Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9f6c8f6b-b813-f011-9989-7c1e52361323",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nThanks a lot for the very insightful information you shared.\nWe have had a look at the timestamps of the successful versus the failed sessions. It gave us a better idea what exactly to focus on the test we will conduct on Thursday.\nFrom the events you mention the test onsite together with IVECO are more relevant than ever. We are looking forward to having the chance to test together with IVECO onsite.\nWe will be also preparing with some spare parts that can be replace in case we see it can help us.\nHave you received confirmation from IVECO if they will be on site as well on Thursday? My Colleagues Ingo Oldenburg and Domenico Dolce will arrive on site around 10am. They will start preparing the test setup to be ready to start testing as soon as the truck comes back.\nRegards\nCatalina",
+            "date": "2025-04-07T13:58:46Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f431c2e3-bf13-f011-9989-7c1e52361323",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina,\nYes, the guys from Iveco will be there too. ...after I just told them about the on-site meeting in Mauerstetten on Thursday.\nViele Grüße\nMartin Glöckner\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nMontag, 7. April 2025 15:59\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; emobility_support.si@siemens.com; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nCc:\nArtes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Dolce, Domenico <domenico.dolce@siemens.com>; Logistik <logistik@v-markt.de>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nThanks a lot for the very insightful information you shared.\nWe have had a look at the timestamps of the successful versus the failed sessions. It gave us a better idea what exactly to focus on the test we will conduct on Thursday.\nFrom the events you mention the test onsite together with IVECO are more relevant than ever. We are looking forward to having the chance to test together with IVECO onsite.\nWe will be also preparing with some spare parts that can be replace in case we see it can help us.\nHave you received confirmation from IVECO if they will be on site as well on Thursday? My Colleagues Ingo Oldenburg and Domenico Dolce will arrive on site around 10am. They will start preparing the test setup to be ready to start testing as soon as the truck comes back.\nRegards\nCatalina",
+            "date": "2025-04-07T14:52:19Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4733ff87-1115-f011-998a-7c1e5236cda4",
+            "subject": "RE: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Martin,\nGreat, thanks for the information. One more question, do you know for how long do we have for testing after 11am?\nBR\nCatalina",
+            "date": "2025-04-09T07:09:13Z",
+            "extra": {
+                "sender": "maria-catalina.mora-suarez@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f11092f7-1215-f011-998a-7c1e52768372",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Good Morning Catalina,\nit’s difficult to say due to traffic jam and so on.\nWith luck, we'll only have two trucks in the yard at the same time. So if one Sicharge is working, it’s ok. In the afternoon, we'll take our time until everything is running :-)\nViele Grüße\nMartin Glöckner\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nMittwoch, 9. April 2025 09:09\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; emobility_support.si@siemens.com; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nCc:\nArtes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Dolce, Domenico <domenico.dolce@siemens.com>; Logistik <logistik@v-markt.de>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nGreat, thanks for the information. One more question, do you know for how long do we have for testing after 11am?\nBR\nCatalina",
+            "date": "2025-04-09T07:19:27Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "63452276-101a-f011-9989-000d3addf8ce",
+            "subject": "AW: AW: Regarding Charging Tests in V-Markt CRM:00583000005",
+            "body": "Hi Catalina and Pawel,\nas discussed last time, we send the timestamps when the Ivecos were able to charge at our – outside –  Siemens charging stations.\nThis morning, the OAL VM 300 was able to charge successfully twice in Munich, at the same D300, each time at a different outlet. Of course, route planning is still a challenge.\nSN MPR6 17 000 1959\nOutlet1 Start:    2025-04-15 08:26:29  = 228 kWh\nOutlet2 Start:    2025-04-15 04:30:44 = 193 kWh\nMit freundlichen Grüßen\nMartin Glöckner\nAssistent der Geschäftsleitung | Organisation\nTel:        +49 8341 807330\nFax:       +49 8341 807205\ne-mail:\nmgloeckner@v-markt.de\nGeorg Jos. Kaes GmbH\nV-Markt\n|\nV-Baumarkt\n|\nChristl´s Modemarkt\n|\nC&C\n|\nSchuhprofi\n|\n1865\n|\nV-mini\nAm Ring 15 | 87665 Mauerstetten\nwww.georgjoskaes.de\nSitz: Mauerstetten, Registergericht Kempten HRB 2348\nGeschäftsführer: Horst Hermann, Christoph Hermann, Michael Stöckle\nSteuer-Nr.: 125/115/80240 : UST.ID-Nr.: DE 128 659 085\nHinweis:\nEine ausführliche Belehrung über Ihre Rechte nach Art. 13 DSGVO finden Sie in\nunseren\nDatenschutzhinweisen\nauf unserer Webseite.\nVon:\nMora, Catalina <maria-catalina.mora-suarez@siemens.com>\nGesendet:\nMontag, 7. April 2025 15:59\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>; emobility_support.si@siemens.com; de Matos Joaquim, Francisco <francisco.joaquim@siemens.com>\nCc:\nArtes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Narten, Benjamin <benjamin.narten@siemens.com>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Spannagl Andreas <aspannagl@v-markt.de>; Artes, Rudi <rudolf.artes@siemens.com>; Oldenburg, Ingo <Ingo.Oldenburg@siemens.com>; Dolce, Domenico <domenico.dolce@siemens.com>; Logistik <logistik@v-markt.de>\nBetreff:\nRE: AW: Regarding Charging Tests in V-Markt CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin,\nThanks a lot for the very insightful information you shared.\nWe have had a look at the timestamps of the successful versus the failed sessions. It gave us a better idea what exactly to focus on the test we will conduct on Thursday.\nFrom the events you mention the test onsite together with IVECO are more relevant than ever. We are looking forward to having the chance to test together with IVECO onsite.\nWe will be also preparing with some spare parts that can be replace in case we see it can help us.\nHave you received confirmation from IVECO if they will be on site as well on Thursday? My Colleagues Ingo Oldenburg and Domenico Dolce will arrive on site around 10am. They will start preparing the test setup to be ready to start testing as soon as the truck comes back.\nRegards\nCatalina",
+            "date": "2025-04-15T15:44:13Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "55878127-352f-f011-8c4d-7c1e52361e39",
+            "subject": "ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005",
+            "body": "Hi Martin, good afternoon.\nQuick feedback from our side regarding this IVECO trucks issue:\nThere is a protocol called Home Plug AV which is responsible for certain parts of the PLC communication.\nWe found that the IVECO truck has a variable timeout for this protocol which sometimes causes the sessions to fail. We could see that some sessions that worked, had a bigger timeout (of around 200ms) and the ones that failed had a very small timeout (of around 3ms). This is an unusual behaviour.\nThis is being currently investigated between IVECO's R&D team and EcoG (which is our SECC supplier).\nThis Thursday, we have a short meeting with the EcoG team and hopefully we will have more information to provide you.\nThank you for your patience and helpfulness so far.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T13:29:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5ecf569b-372f-f011-8c4d-7c1e5236e32d",
+            "subject": "AW: ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005",
+            "body": "Hi Francisco,\nthank’s so far. Please keep us up-to-date with latest news.\nViele Grüße\nMartin Glöckner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 12. Mai 2025 15:38\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nLogistik <logistik@v-markt.de>\nBetreff:\nID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good afternoon.\nQuick feedback from our side regarding this IVECO trucks issue:\nThere is a protocol called Home Plug AV which is responsible for certain parts of the PLC communication.\nWe found that the IVECO truck has a variable timeout for this protocol which sometimes causes the sessions to fail. We could see that some sessions that worked, had a bigger timeout (of around 200ms) and the ones that failed had a very small timeout (of around 3ms). This is an unusual behaviour.\nThis is being currently investigated between IVECO's R&D team and EcoG (which is our SECC supplier).\nThis Thursday, we have a short meeting with the EcoG team and hopefully we will have more information to provide you.\nThank you for your patience and helpfulness so far.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T13:47:15Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "38707681-7331-f011-8c4d-7c1e52768c07",
+            "subject": "AW: ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005",
+            "body": "Hi Francisco,\nI hope, that the call today with ecoG is successful….a result and solution is important for us. Next Monday (19.05.2025) Iveco will change one diesel-truck to an E-truck. So we will have 3 E-Ivecos in Mauerstetten - and no possibilities to load. Last days we tried to use one truck, scenario loading on tour. Next to expensive €/kWh we have a time problem…too much overtime of our drivers .\nSo please keep us updated\nViele Grüße\nMartin Glöckner\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 12. M\nai 2025 15:38\nAn:\nGlöckner Martin <mgloeckner@v-markt.de>\nCc:\nLogistik <logistik@v-markt.de>\nBetreff:\nID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005\nDiese Nachricht wurde Ihnen von außerhalb unseres Unternehmens gesendet - behandeln Sie Inhalte, Links und Anhänge daher mit erhöhter Vorsicht.\nWenn Ihnen der Absender nicht bekannt ist, dürfen Links und Anhänge nicht geklickt bzw. geöffnet werden. Bei verdächtigen Mails wenden Sie sich bitte umgehend an den IT-Support (DW -379).\nHi Martin, good afternoon.\nQuick feedback from our side regarding this IVECO trucks issue:\nThere is a protocol called Home Plug AV which is responsible for certain parts of the PLC communication.\nWe found that the IVECO truck has a variable timeout for this protocol which sometimes causes the sessions to fail. We could see that some sessions that worked, had a bigger timeout (of around 200ms) and the ones that failed had a very small timeout (of around 3ms). This is an unusual behaviour.\nThis is being currently investigated between IVECO's R&D team and EcoG (which is our SECC supplier).\nThis Thursday, we have a short meeting with the EcoG team and hopefully we will have more information to provide you.\nThank you for your patience and helpfulness so far.\nBest regards,\nFrancisco",
+            "date": "2025-05-15T10:01:04Z",
+            "extra": {
+                "sender": "mgloeckner@v-markt.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "2fbdcc6c-7431-f011-8c4e-6045bdddca9c",
+            "subject": "ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005",
+            "body": "Hi Martin, good afternoon. I hope you are doing well.\nI apologise in the delay. Me and Catalina just concluded all the information necessary to send to IVECO.\nFrom the meeting with EcoG we got the information that our SECC is in direct contact with IVECO R&D to discuss this case.\nOur SECC provided to us that their discussed with the supplier of the modem and that the root cause lies on a reset from IVECO side.\nThey had a meeting and IVECO confirmed that their EVCC is shutting down but so far not root cause.\nWe already sent an email to the IVECO colleagues that we were in contact since the beginning and hopefully they will provide an answer soon.\nAs always we will keep in touch for any updates to get this fixed as soon as possible.\nThanks for sending the reminder and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2025-05-15T10:07:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "069ddeaa-bb51-f011-877b-6045bddf319c",
+            "subject": "ID0412756-DC/Si-D/DE[Energu] - IVECO trucks CRM:00583000005",
+            "body": "Hi Martin, good afternoon. Long time no see, I hope everything is well there.\nWe just got an email from our SECC supplier saying that they discussed with IVECO.\nWhat IVECO told them was that: \"\nAt the moment, we’ve decided to upload another calibration on the two EVCC of our customer which own the Siemens charger with that issue and the charging seems working\n\"\nFrom our side, I believe everything was cleared up and we can finally close this ticket.\nLet me know if there is anything that you need from us before closing the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-06-25T11:58:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4f1795a7-a052-f011-877b-7c1e52faf3c6",
+            "subject": "Ticket 0412756 has been closed. Are you satisfied with our provided solution? CRM:00315002757",
+            "body": "Dear Martin, from our side, everything is explained. If need anything else, just raise a ticket and we will support.\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0412756\nwith the title:\nID0412756-DC/Si-D/DE[Energu] - IVECO trucks\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-06-26T15:17:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "incident_id": "1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+    "ticket_number": "0458981",
+    "title": "ID0458981-DC/Si-D/FR-[Y2 / P7 312547889/02] MeterValues don't match",
+    "created_on": "2025-10-31T10:41:37Z",
+    "last_activity": "2026-03-13T11:52:09Z",
+    "age": "191591",
+    "description": "Reported behavior/issue- LEM meter values and SCB/OCPP don't match\nSolution: To be provided by R&D\nR&D ticket created:\nhttps://si-emobility.atlassian.net/browse/TS2RD-39\nWhy did the meter reset the value to 0?\n2025-07-18T11:17:28.000193+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/40323b4bb40b[738]: OCPP: Send command: MeterValues (1ac408ac-57ab-4a77-a75a-5c16331a31b6) - {\"connectorId\":1,\"transactionId\":53887630,\"meterValue\":[{\"timestamp\":\"2025-07-18T11:17:27.998Z\",\"sampledValue\":[{\"value\":\"92\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\",\"context\":\"Sample.Periodic\"},{\"value\":\"60000\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Offered\",\"context\":\"Sample.Periodic\"},{\"value\":\"87\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Offered\",\"context\":\"Sample.Periodic\"},{\"value\":\"12898511\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"measurand\":\"Energy.Active.Import.Register\",\"context\":\"Sample.Periodic\"},{\"value\":\"20504\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\",\"context\":\"Sample.Periodic\"},{\"value\":\"44\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Import\",\"context\":\"Sample.Periodic\"},{\"value\":\"466\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\",\"context\":\"Sample.Periodic\"}]}]}\n2025-07-18T11:45:46.695038+00:00 [FW070005G1] sicharge-cp [local0:err] sicharge-cp-backend/40323b4bb40b[738]: property \"startSessionEnergyActiveImportRegisterWh\" not set.\n2025-07-18T12:39:42.530302+00:00 [FW070005G1] sicharge-cp [local0:info] sicharge-cp-backend/40323b4bb40b[738]: OCPP: Send command: MeterValues (cb1ed8bf-cdc7-4678-b06e-fbbea285985a) - {\"connectorId\":2,\"transactionId\":53897583,\"meterValue\":[{\"timestamp\":\"2025-07-18T12:39:42.527Z\",\"sampledValue\":[{\"value\":\"54\",\"location\":\"EV\",\"unit\":\"Percent\",\"measurand\":\"SoC\",\"context\":\"Sample.Periodic\"},{\"value\":\"195000\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Offered\",\"context\":\"Sample.Periodic\"},{\"value\":\"356\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Offered\",\"context\":\"Sample.Periodic\"},{\"value\":\"2213\",\"location\":\"Outlet\",\"unit\":\"Wh\",\"measurand\":\"Energy.Active.Import.Register\",\"context\":\"Sample.Periodic\"},{\"value\":\"141264\",\"location\":\"Outlet\",\"unit\":\"W\",\"measurand\":\"Power.Active.Import\",\"context\":\"Sample.Periodic\"},{\"value\":\"324\",\"location\":\"Outlet\",\"unit\":\"A\",\"measurand\":\"Current.Import\",\"context\":\"Sample.Periodic\"},{\"value\":\"436\",\"location\":\"Outlet\",\"unit\":\"V\",\"measurand\":\"Voltage\",\"context\":\"Sample.Periodic\"}]}]}",
+    "type": 1,
+    "priority": 2,
+    "stage": "Resolved",
+    "serial_number": "Y2 / P7 312547889/02",
+    "case_nature_code": 580000001,
+    "chargerID": "uPJK3O",
+    "additional_info": [
+        {
+            "id": "7f1a0b26-46b6-f011-bbd2-7c1e52885af9",
+            "subject": "Webform_incident_SiCharge D_31-10-2025_SN: uPJK3O",
+            "body": "Dear BASTIEN BONHOMME,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nuPJK3O\nThank you\neMobility Technical Support Team\nSehr geehrte/r BASTIEN BONHOMME,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nuPJK3O\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-31T10:41:31Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7d401d91-48b6-f011-bbd2-7c1e52885af9",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225280850",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-10-31T10:58:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "03534b15-49b6-f011-bbd2-7c1e52880f76",
+            "subject": "ID0458981-DC/Si-D/FR-[Y2 / P7 312547889/02] SCB and Greenflux issue CRM:03056000380",
+            "body": "Dear\nBastien\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / P7 312547889/02\nChargerID\n:\nuPJK3O\nProblem Description\n: SCB and Greenflux issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0458981\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-31T11:02:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e6480f8c-61b6-f011-bbd2-7c1e52362b38",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225280938",
+            "body": "Younes Baroudi was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-10-31T13:57:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bd464f6-94b8-f011-bbd2-6045bddfa04d",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225281519",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-11-03T09:10:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b9e2c34c-f0d0-f011-bbd3-7ced8d425bfe",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225298253",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-12-04T09:04:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bbd3954-a8d5-f011-8543-7ced8d2e001a",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225301077",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-12-10T09:12:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "67e7da64-2ee0-f011-8544-7c1e52362ec6",
+            "subject": "A new case manager was assigned to 0458981 CRM:00225309491",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0458981 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1c1ad62c-46b6-f011-bbd2-7ced8d425bfe",
+            "date": "2025-12-23T18:37:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f11226ff-3ce2-f011-8543-7c1e52880fe1",
+            "subject": "ID0458981-DC/Si-D/FR-[Y2 / P7 312547889/02] SCB and Greenflux issue CRM:03056000380",
+            "body": "Hello Bastien, good morning. I hope you are doing well.\nI apologise for the lack of response.\nWe have acknowledged the error and it's currently under investigation from the R&D team.\nAs soon as we have an update, I will provide it to you.\nThank you and have a lovely holiday season.\nBest regards,\nFrancisco",
+            "date": "2025-12-26T09:26:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0a4cebf6-cbe4-f011-8544-7c1e523628c9",
+            "subject": "ID0458981-DC/Si-D/FR-[Y2 / P7 312547889/02] SCB and Greenflux issue CRM:03056000380",
+            "body": "Hello Bastien, good afternoon.\nSince we are in holiday season, it will take longer to have root cause and analysis performed.\nI will close the ticket but keep in mind that the R&D is investigating, even if the ticket is closed, once we have an answer I will reply again to this email and keep you updated.\nThank you for your understanding and have a Happy New Year!\nBest regards,\nFrancisco",
+            "date": "2025-12-29T15:35:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "978c717f-d21e-f111-8342-000d3ab12a27",
+            "subject": "Ticket 0458981 has been closed. How did we do? CRM:00225352348",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-13T11:48:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

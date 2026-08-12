@@ -1,0 +1,290 @@
+{
+    "incident_id": "118f516a-ef95-ef11-8a6a-000d3aba081f",
+    "ticket_number": "0387064",
+    "title": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4",
+    "created_on": "2024-10-29T12:15:00Z",
+    "last_activity": "2025-07-08T17:42:15Z",
+    "age": "352774",
+    "description": "Reported behaviour/issue:\nNoConverters_CGp_DC4\nRoot cause:\nPossible wiring issue or QA40\nSolution:\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive\n-------------------//---------------\nReported behaviour/issue:\nSCB offline and customer reports charger is RED → possible Failsafemode due to Router 1 behavior\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "R7VjM6",
+    "stage": null,
+    "serial_number": "MP / S7 170003820",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c71f5564-ef95-ef11-8a6a-000d3addcd64",
+            "subject": "R7VjM6 - error flags after commissioning",
+            "body": "Hi colleagues,\nWe recently commissioned charger R7VjM6, and the customer wanted to put it to use today, but encountered some problems.\nThe error flags persisted after a reboot. Could you please check?\nThomas",
+            "date": "2024-10-29T12:14:53Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b2c15c8b-fa95-ef11-8a6a-000d3a697eb1",
+            "subject": "A new case manager was assigned to 0387064 CRM:00225116401",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387064 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=118f516a-ef95-ef11-8a6a-000d3aba081f",
+            "date": "2024-10-29T13:34:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49bbe4f6-fa95-ef11-8a69-002248a2fe80",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 22 minutes and 42 seconds.",
+            "date": "2024-10-29T13:37:43Z",
+            "extra": {}
+        },
+        {
+            "id": "a1c1182d-fb95-ef11-8a69-002248a2fe80",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001977",
+            "body": "Dear Thomas, welcome back. I hope all is well.\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S7 170003820\nChargerID/Serial No.\n:\nR7VjM6\nProblem Description\n: No converters in group 4\nTroubleshooting\n:\nIt seems like the converters are not turned on at all, from my point of view, it seems that the fastshutdown signal is constantly ON in this group.\nWhat we need to do is check if QA40 is indeed closed or opened. My feeling that we have 11-14 closed when it shouldn't. Measure if we have continuity between 11-14 or 12V.\nOtherwise we need to check why the converters are not turned ON. We can try 2 things, either swap QA40 with for example QA42 and see the result and afterwards swap converter from DC4 with another group and see.\nWhat are your thoughts?\nFor future reference, your ticket number is\n0387064\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-29T13:39:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b320bf5-0496-ef11-8a69-000d3ab655d3",
+            "subject": "RE: ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001977",
+            "body": "Thank you sir!\nIncluding our colleagues from Belgium in the chain as well, since they did the initial commissioning.\n@Wojtowski, Lorenz (RC-BE SI E)\n@Segers, Marnic (RC-BE SI E)\n, would this have been something you would have noticed during the initial commissioning? Any thoughts on your end?",
+            "date": "2024-10-29T14:49:13Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5ffaaeee-0696-ef11-8a6a-000d3aba081f",
+            "subject": "RE: ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001977",
+            "body": "Hello All\nI noticed after the first startup that the charger stayed blue but after a while it became green, contactor problem? Possible but after this I had a successful charging session so didn’t noticed anything and left the charger in a working state.\nBr.",
+            "date": "2024-10-29T15:03:25Z",
+            "extra": {
+                "sender": "marnic.segers@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "11913c8c-0c96-ef11-8a69-002248a2fe80",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001977",
+            "body": "Hi guys, thanks for the feedback.\nYes, fortunately, this error doesn't make the outlets out of order, only that it proves less 2 converters worth of power.\nMy suggestion goes as the first email, I already mentioned this to Lorenz as well as he reached out to me before opening the ticket.\nYou can also take a spare QA40 in case it's actually faulty.\nLet me know if you have more questions and doubts.\nBest regards,\nFrancisco",
+            "date": "2024-10-29T15:43:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f32f692a-8097-ef11-8a69-0022489dc6eb",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001977",
+            "body": "Hi guys,\nWho should take this over? Should I send this to RC-NL queue or RC-BE?\nI cannot do anything else remotely. My suggestion is as per the first email:\nWhat we need to do is check if QA40 is indeed closed or opened. My feeling that we have 11-14 closed when it shouldn't. Measure if we have continuity between 11-14 or 12V.\nOtherwise we need to check why the converters are not turned ON. We can try 2 things, either swap QA40 with for example QA42 and see the result and afterwards swap converter from DC4 with another group and see.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2024-10-31T12:03:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "262d89fe-8c9a-ef11-8a6a-6045bdde0ce3",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001992",
+            "body": "Dear colleagues,\nPlease order a new QA40 in case it needs replacement and follow my previous instructions.\nI am writing to formally inform that we are moving case 0387064 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nNL\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nNL\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-04T09:13:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa29917b-e685-4594-8adb-5a5b00b5eead",
+            "subject": null,
+            "body": "Together with Francisco I checked the QA40 (seems fine) and fast shutdown cables (also seem fine) please advise on next steps",
+            "date": "2024-11-08T12:53:51Z",
+            "extra": {}
+        },
+        {
+            "id": "f50f464a-10a0-ef11-8a6a-0022489bcff4",
+            "subject": "A new case manager was assigned to 0387064 CRM:00225122288",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387064 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=118f516a-ef95-ef11-8a6a-000d3aba081f",
+            "date": "2024-11-11T09:35:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9f3326ca-38a0-ef11-8a6a-000d3ab4d5d3",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001992",
+            "body": "Hi Thomas,\nYou can just send the ticket to me as I was the one taking care of it :)\nWe need to continue with the tests that we were to do last week. Changing QA40 and then if it persists try the converter swap.\nWhat is your opinion?\nBest regards\nFrancisco",
+            "date": "2024-11-11T14:25:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a0527e51-cfa0-ef11-8a6a-000d3a67d7cb",
+            "subject": "RE: ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001992",
+            "body": "Hi Francisco,\nThe QA40 shouldn’t be the problem right? We swapped it, but without result.\nMy guess would be to swap the converters instead. Would it also work to only swap the connections of the converters (the two smaller cables), to see if it changes DC groups?\nThomas",
+            "date": "2024-11-12T08:22:57Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d9f51759-d6a0-ef11-8a6a-0022489ec7b5",
+            "subject": "ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00315001992",
+            "body": "Hi Thomas!\nI didn't understand correctly that you swapped it.\nYes, then let's please see if there is anything wrong with the converters. We can test changing the fast shutdown cables but we would also need to change the CAN as well otherwise it will do the process for the wrong converters.\nI would suggest swapping the whole converter with a working one, this way we know for sure.\nBest regards,\nFrancisco",
+            "date": "2024-11-12T09:13:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "954241d4-8d91-028e-88ce-8f4d4ce36110",
+            "subject": "NOTE TO L3",
+            "body": "1. Problem Description : NoConverters_CGp_DC4 → CAN allocation is done but no grouping  F:0. I couldn't check why this is happening as I didn't have SSH for the first intervention.\n2. Action Performed (L2) :\nWe made 2 interventions so far:\n1st intervention: RC was not prepared nor had time, we tried swapping QA42 with QA40, but it didn't work. Also checked for any loose connections in the DC4 converters in the fastshutdown.\n2nd intervention: as soon as\ncustomer\n(RC was not on site) opened the charger we lost SCB connection, we were supposed to make ELMS work, the configurations are done, there is only one thing to agree which is the IP in the Router 1 config, they need to agree on an IP which is not used in the network where they will ping from their controller.\nIt seems like the router was connected to the network but we had <2kB data transfer\n3. Charger SW Version:4.0.11 → SiD400\n4. Reason for Handover (L3) : Post comissioning issue, SSH already available even though charger is offline\n5. Fault history : none\n6. Log analysis with timestamp : in attach\n7. Action Required\nAttachement : refer attched logs",
+            "date": "2024-11-18T08:45:42Z",
+            "extra": {}
+        },
+        {
+            "id": "11f1197a-8ca5-ef11-b8e9-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0387064 CRM:00225125498",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0387064 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=118f516a-ef95-ef11-8a6a-000d3aba081f",
+            "date": "2024-11-18T09:07:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fe97a40a-3da6-ef11-b8e9-7c1e5237dbeb",
+            "subject": "0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000268",
+            "body": "Good Morning Thomas,\nAs the Charger is currently not online, could you tell me why it is offline and bring it back online so I can further troubleshoot the Charger?\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-11-19T06:11:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e1d75a15-55a6-ef11-b8e9-000d3addcd64",
+            "subject": "RE: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000268",
+            "body": "Hi Lukas,\nWe don’t know\n😊\nI’ll go there tomorrow to check on site. I’ll contact you via Teams when I’m there\nThomas",
+            "date": "2024-11-19T09:03:07Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b393cb11-ae0f-7bb7-9124-69f333efb206",
+            "subject": "Onside summary",
+            "body": "20.11:\nRC has been Onside we repaired the Router by resetting it afterwards the Charger came back in SCB.\nWe still have some open issues with the Charger and are waiting fro the RC to go onside again.",
+            "date": "2024-11-26T07:42:55Z",
+            "extra": {}
+        },
+        {
+            "id": "eeaaa8fb-a4be-ef11-b8e8-7c1e52378e9b",
+            "subject": "0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Good Morning Colleagues,\nYesterday we had an intervention on the Charger R7VjM6.\nOn the Charger we checked the whole cabling together with Peter onside. it seems to be that KF14 has an issue an needs to be replaced.\nOrder Number (8EM5903-0AA03-2AA6) please order the spare part and plan to install it.\nSecond Problem with the ELMS Communication has been solved. But still Cars can not be charged as currently the ELMS operator has set the Powerlimit to 0KW.\nPlease get in contact with them to coordinate if they can set the limit higher. As option B we could deactivate the ELMS and set a static Powerlimit according to the Power that can be delivered from the Grid side until their ELMS Software is ready. then People can at least Charge in this Time Frame.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-12-20T07:35:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1aff17c7-54d2-ef11-8ee9-7c1e5235925f",
+            "subject": "RE: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Hello Colleges,\nHave you already ordered the spare Parts and exchanged it?\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-14T08:51:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "47bdb000-55d2-ef11-8ee9-000d3a691687",
+            "subject": "Automatic reply: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Dear colleague,\nI'm out of office due to illness.\nI will reply upon my return.\nKind regards,\nErik Bruin",
+            "date": "2025-01-14T08:53:28Z",
+            "extra": {
+                "sender": "erik.bruin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "8177bb46-3fd3-ef11-8eea-7c1e5237dbeb",
+            "subject": "RE: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Hi everybody,\nI do not know who is in charge for this – for Heliox, I as FSE would order the parts and ask planner (Monica) to replan the visit. For Siemens I do not know the process.\nKind regards,\nPeter",
+            "date": "2025-01-15T12:50:27Z",
+            "extra": {
+                "sender": "peter.kulla@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "91c35f10-41d3-ef11-8eea-0022489bcff4",
+            "subject": "RE: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Hello Peter,\nI had a chat with Lousine our\nregional service manager,\nshe mentioned to me that @Erik Bruin is the Service coordinator for the RC-NL.\nHe should can tell you how to proceed in this case with ordering the spareparts. And sending out somebody to install and test it onside.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-15T13:03:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "53d9d30b-45d3-ef11-8ee9-000d3ab66b74",
+            "subject": "RE: 0387064 - ID0387064-DC/Si-D/NL[R7VjM6] - NoConverters_CGp_DC4 CRM:00440000280",
+            "body": "Hello Peter,\nI had a chat with Lousine our\nregional service manager,\nshe mentioned to me that @Erik Bruin is the Service coordinator for the RC-NL.\nHe should can tell you how to proceed in this case with ordering the spareparts. And sending out somebody to install and test it onside.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-01-15T13:31:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c2d1f4e2-b3bc-7e89-95cc-33cde4cf0cd4",
+            "subject": "8EM5903-0AA03-2AA6 ordered. ETA 28.02.25",
+            "body": "",
+            "date": "2025-02-26T09:58:00Z",
+            "extra": {}
+        },
+        {
+            "id": "4c70eb1b-6564-992f-b3bb-04d2f012e436",
+            "subject": "Sudeep on site 05.03.25 WO1951 ID0387064",
+            "body": "",
+            "date": "2025-03-03T12:56:57Z",
+            "extra": {}
+        }
+    ]
+}

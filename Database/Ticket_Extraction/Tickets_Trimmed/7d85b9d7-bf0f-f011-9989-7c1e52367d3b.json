@@ -1,0 +1,148 @@
+{
+    "incident_id": "7d85b9d7-bf0f-f011-9989-7c1e52367d3b",
+    "ticket_number": "0416512",
+    "title": "ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop",
+    "created_on": "2025-04-02T12:41:51Z",
+    "last_activity": "2025-07-03T06:37:41Z",
+    "age": "132116",
+    "description": "Reported behavior/issue: Hi, EVSE 01 is available but it is not working, charging session is always stopped few seconds after start.\nIn the logs I can read this error on our last charging session :\n38MmqA 1743527392064 2025-04-01T17:09:51.908630+00:00\nswcpu [user:debug] [4021] [DCC] DC1: Iso fault by IMD output\nrelay.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "38MmqA",
+    "stage": null,
+    "serial_number": "MP / P5 170000502",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "bb1490d2-bf0f-f011-9989-6045bddf319c",
+            "subject": "Webform_incident_SiCharge D_02-04-2025_SN: P5 17000050",
+            "body": "Dear florent nicolas,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nP5 17000050\nThank you\neMobility Technical Support Team\nSehr geehrte/r florent nicolas,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nP5 17000050\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-04-02T12:41:42Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e9330699-c30f-f011-9989-7c1e5277fc4a",
+            "subject": "ID0416512-DC/Si-D/FR-[MP / P5 170000500] Charging session stop CRM:02682000025",
+            "body": "Dear Florent Nicolas,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P5 170000500\nChargerID/Serial No.\n: MP / P5 170000500\nProblem Description\n:\nHi, EVSE 01 is available but it is not working, charging session is\nalways stopped few seconds after start. In the logs I can read this error on our last charging session :\n38MmqA 1743527392064 2025-04-01T17:09:51.908630+00:00\nswcpu [user:debug] [4021] [DCC] DC1: Iso fault by IMD output\nrelay.\nKindly validate the charger serial number.\nFor future reference, your case number is\n0416512\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-02T13:08:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c5d6e12f-7dca-d088-890b-200c5d74d61a",
+            "subject": "Note",
+            "body": "zqpceG\n2025-04-03T02:09:13.768882+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T01:37:47|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=26|EVSE_NowPwr[kW]=4.8|EVSE_NowCur[A]=11|EVSE_NowVol[V]=451.5|EV_TarCur[A]=0|EV_TarVol[V]=472|EV_SOC[%]=80|EVSE_DESpwr[kW]=180|Pilot=4\n2025-04-03T02:09:14.032494+00:00 sicharge-cp [local0:info] ecog-secc-adapter/3c23cd4343aa[730]: {\"type\":\"stop_charging\",\"timestamp\":1743646152958,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":{\"source\":\"EV\",\"user\":\"internal\"}}\n2025-04-03T05:38:08.133603+00:00 swcpu [user:debug] [4021] [MBC] DC1: SECC: no communication for 750ms\n2025-04-03T05:38:08.150157+00:00 swcpu [user:debug] [4021] [MBC] DC2: SECC: no communication for 750ms\n2025-04-03T05:38:08.166574+00:00 swcpu [user:debug] [4021] [MBC] AC1: SECC: no communication for 750ms\n025-04-03T05:38:10.976233+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b0d7adab4b0b[730]: PLC-Error-Flag\n'SECC_KF11_AC1_MB_Problem'\nchanged from false - ('loss of communication AC1 and SECC') to true - ('loss of communication AC1 and SECC')\n2025-04-03T06:12:00.802824+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T05:49:23|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=153|EVSE_NowPwr[kW]=54.8|EVSE_NowCur[A]=129|EVSE_NowVol[V]=425.3|EV_TarCur[A]=129.2|EV_TarVol[V]=434|EV_SOC[%]=81|EVSE_DESpwr[kW]=174|Pilot=4\n2025-04-03T06:12:10.000000+00:00 secc [daemon:notice] SECC[838]: {\"type\":\"stop_charging\",\"timestamp\":1743660730137,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":{\"source\":\"EV\",\"user\":\"internal\"}}\nAs per analysis it is observed that communication between Controller & SECC is breaking so Coap polling error for which outlet is becoming deactivated, But outets beacomes healthy after sometime\nCharging session is also performed in DC2  on 03/04.2025 for 2 times but was stopped from EV side .\nFor last 24 hr Coap polling as appered 16 times.",
+            "date": "2025-04-03T10:05:51Z",
+            "extra": {}
+        },
+        {
+            "id": "d7198153-7710-f011-9989-7c1e5276b0e4",
+            "subject": "RE: ID0416512-DC/Si-D/FR-[MP / P5 170000500] Charging session stop CRM:02682000025",
+            "body": "Dear Florent Nicolas,\nAs checked in logs of the charger , charging session is performed in DC 3, 2 time session was stopped from EV Side only .\nzqpceG\n2025-04-03T02:09:13.768882+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T01:37:47|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=26|EVSE_NowPwr[kW]=4.8|EVSE_NowCur[A]=11|EVSE_NowVol[V]=451.5|EV_TarCur[A]=0|EV_TarVol[V]=472|EV_SOC[%]=80|EVSE_DESpwr[kW]=180|Pilot=4\n2025-04-03T02:09:14.032494+00:00 sicharge-cp [local0:info] ecog-secc-adapter/3c23cd4343aa[730]: {\"type\":\"stop_charging\",\"timestamp\":1743646152958,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"source\":\"EV\",\"user\":\"internal\"}}\n2025-04-03T05:38:08.133603+00:00 swcpu [user:debug] [4021] [MBC] DC1: SECC: no communication for 750ms\n2025-04-03T05:38:08.150157+00:00 swcpu [user:debug] [4021] [MBC] DC2: SECC: no communication for 750ms\n2025-04-03T05:38:08.166574+00:00 swcpu [user:debug] [4021] [MBC] AC1: SECC: no communication for 750ms\n025-04-03T05:38:10.976233+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b0d7adab4b0b[730]: PLC-Error-Flag\n'SECC_KF11_AC1_MB_Problem'\nchanged from false - ('loss of communication AC1 and SECC') to true - ('loss of communication AC1 and SECC')\n2025-04-03T06:12:00.802824+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T05:49:23|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=153|EVSE_NowPwr[kW]=54.8|EVSE_NowCur[A]=129|EVSE_NowVol[V]=425.3|EV_TarCur[A]=129.2|EV_TarVol[V]=434|EV_SOC[%]=81|EVSE_DESpwr[kW]=174|Pilot=4\n2025-04-03T06:12:10.621328+00:00 sicharge-cp [local0:info] ecog-secc-adapter/3c23cd4343aa[730]: {\"type\":\"stop_charging\",\"timestamp\":1743660730137,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"source\":\"EV\",\"user\":\"internal\"}}\nAll outlets are healthy now, Please do perform charging session & let us know if you face any issue.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-03T10:35:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ff1595f1-9210-f011-9989-7c1e52768c07",
+            "subject": "RE: ID0416512-DC/Si-D/FR-[MP / P5 170000500] Charging session stop CRM:02682000025",
+            "body": "Hello,\nSorry there is a mistake on the charger :\nI am talking about this one :\n38MmqA\nP5 170000502\nAire de Nauze Vert - A20 , 82710, BRESSOLS, FRA\nAll charging session on EVSE 1 are very short.\nCordialement,\nFlorent NICOLAS\nResponsable supervision plaque sud\nENGIE Mobilités Électriques\nflorent.nicolas@engie.com\n+33 7 87 84 21 41\nengie-vianeo.com\nUrban Garden\n6 Rue Alexander Fleming\n69007 Lyon\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\njeudi 3 avril 2025 12:43\nÀ :\nNICOLAS Florent (ENGIE Mobilités Electriques) <florent.nicolas@engie.com>\nCc :\nantoine.brua <antoine.brua@siemens.com>\nObjet :\nRE: ID0416512-DC/Si-D/FR-[MP / P5 170000500] Charging session stop CRM:02682000025\nDear Florent Nicolas, As checked in logs of the charger , charging session is performed in DC 3, 2 time session was stopped from EV Side only . zqpceG 2025-04-03T02:\n09:\n13.\n768882+00:\n00 swcpu [user:\ndebug] [4021] [DCC] |2025-04-03T01:\n37:\n47|DC2:\nDear Florent Nicolas,\nAs checked in logs of the charger , charging session is performed in DC 3, 2 time session was stopped from EV Side only .\nzqpceG\n2025-04-03T02:09:13.768882+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T01:37:47|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=26|EVSE_NowPwr[kW]=4.8|EVSE_NowCur[A]=11|EVSE_NowVol[V]=451.5|EV_TarCur[A]=0|EV_TarVol[V]=472|EV_SOC[%]=80|EVSE_DESpwr[kW]=180|Pilot=4\n2025-04-03T02:09:14.032494+00:00 sicharge-cp [local0:info] ecog-secc-adapter/3c23cd4343aa[730]: {\"type\":\"stop_charging\",\"timestamp\":1743646152958,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"source\":\"EV\",\"user\":\"internal\"}}\n2025-04-03T05:38:08.133603+00:00 swcpu [user:debug] [4021] [MBC] DC1: SECC: no communication for 750ms\n2025-04-03T05:38:08.150157+00:00 swcpu [user:debug] [4021] [MBC] DC2: SECC: no communication for 750ms\n2025-04-03T05:38:08.166574+00:00 swcpu [user:debug] [4021] [MBC] AC1: SECC: no communication for 750ms\n025-04-03T05:38:10.976233+00:00 sicharge-cp [local0:info] sicharge-cp-backend/b0d7adab4b0b[730]: PLC-Error-Flag\n'SECC_KF11_AC1_MB_Problem'\nchanged from false - ('loss of communication AC1 and SECC') to true - ('loss of communication AC1 and SECC')\n2025-04-03T06:12:00.802824+00:00 swcpu [user:debug] [4021] [DCC] |2025-04-03T05:49:23|DC2: |EVSE_MaxPwr[kW]=180|EVSE_MaxCur[A]=153|EVSE_NowPwr[kW]=54.8|EVSE_NowCur[A]=129|EVSE_NowVol[V]=425.3|EV_TarCur[A]=129.2|EV_TarVol[V]=434|EV_SOC[%]=81|EVSE_DESpwr[kW]=174|Pilot=4\n2025-04-03T06:12:10.621328+00:00 sicharge-cp [local0:info] ecog-secc-adapter/3c23cd4343aa[730]: {\"type\":\"stop_charging\",\"timestamp\":1743660730137,\"chargerId\":\"secc2300-01647\",\"outlet\":\"3\",\"outletType\":\"CCS\",\"payload\":\n{\"source\":\"EV\",\"user\":\"internal\"}}\nAll outlets are healthy now, Please do perform charging session & let us know if you face any issue.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-03T13:53:02Z",
+            "extra": {
+                "sender": "florent.nicolas@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "402bab4d-ba07-b3f9-a87c-2617de399d13",
+            "subject": "NOte",
+            "body": "Customer asset modified :\nfrom MP / P5 170000500 to\nMP / P5 170000502\nfrom\nzqpceG to 38MmqA",
+            "date": "2025-04-04T03:12:08Z",
+            "extra": {}
+        },
+        {
+            "id": "13136825-f49d-ad98-8e97-c6e6f6c2b193",
+            "subject": "nOTE",
+            "body": "Isolation fault Observed\nInsulation Value dropping below 1KOhm\nFollowing points needs to be checked\n1) IMD Setting\n2) IMD Modbus communication\n3) CCs2 PLUG (Any crack or damaged in DC+/DC-\n4) IMD Connections as per SLD",
+            "date": "2025-04-08T03:28:03Z",
+            "extra": {}
+        },
+        {
+            "id": "25f9c37a-3014-f011-998a-6045bddf319c",
+            "subject": "RE: ID0416512-DC/Si-D/FR-[MP / P5 170000500] Charging session stop CRM:02682000025",
+            "body": "Dear Florent Nicolas,\nAs checked in logs for the charger , it is observed in DC1 there is a Isolation Issue.\nSo we will be informing the region for the site intervention to check the charger.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T04:18:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c2349338-3214-f011-998a-6045bddf319c",
+            "subject": "ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop CRM:01251001323",
+            "body": "Dear Team,\nI am writing to formally inform that we are moving case 0416512 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nx(may be)\nOnsite Troubleshooting\nx\nEnd Customer Communication\nx\nSpare Part Ordering\nx(May be)\nPerformance monitoring by RC\nNote: As checked in logs for DC1 there is isolation fault appearing & Resistance value is dropping below 1KOhm.\nso need to check blow points:\n1) IMD Setting\n2) IMD Modbus communication\n3) CCs2 PLUG (Any crack or damaged in DC+/DC-\n4) IMD Connections as per SLD\n5) Please carry spare IMD :qty1\nSpare part detail:\n+F04-BC1:\n8EM5903-0AA00-0AA\n:ISOLATIONSÜBERWACHUNGSGERÄT MIT AGH420-1\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-08T04:30:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7fd35187-522a-f011-8c4d-7c1e52361e39",
+            "subject": "0416512 - ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop CRM:00568000273",
+            "body": "Bonjour,\nSuite à l'intervention de notre partenaire pour analyser le problème, veuillez trouver ci joint le rapport d'intervention pour ce diagnostique.\nA noter Prévoir remplacement des câbles du module de puissance TB14.\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-05-06T08:17:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5e39057-9a2a-f011-8c4d-7c1e52361e39",
+            "subject": "0416512 - ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop CRM:00568000275",
+            "body": "Bonjour,\nSuite a l'anlayse réalisée ce jour entre Fabien ( Engie)  et moi, la rootcause a été identifiée et traitée par Fabien ( proximité cosse de puissance négative avec chassis chargeur au niveau de la barre de raccordement du groupe 1 de la borne.\nFabien a décaler les cosses pour qu'elles ne soient plus en contact avec le chassis et rajouter du scotch isolant ( distance 5 mm) .\n@Antoine, Il faudrait faire  intervenir Resonance pour mise en place gaine thermo sur la cosse afin de proteger de façon durable la proximité.\nBorne sous surveillance coté Fabien pour voir si le défaut a disparu, test de charge ok après intervention.\nWith best regards,\nSEBASTIEN COLLET\nSiemens SAS\nRC-FR SI E\n15-17 avenue Morane Saulnier\n78140 Velizy-Villacoublay, France\nMobile: +33 784539786\nmailto:sebastien.collet@siemens.com\nwww.siemens.com",
+            "date": "2025-05-06T16:51:28Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8d691972-ba55-f011-877a-7c1e52768c07",
+            "subject": "0416512 - ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop CRM:00362000038",
+            "body": "Dear Antoine,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-06-30T13:59:42Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "75502b1d-d857-f011-877b-6045bde0265d",
+            "subject": "0416512 - ID0416512-DC/Si-D/FR-[MP / P5 170000502] Charging session stop CRM:00752000941",
+            "body": "Bonjour,\nVeuillez trouver ci joint le rapport d'intervention.\nLa borne est opérationnelle.\nCordialement,\nFranck Le Gal\nSiemens SAS\nRC-FR SI DS EMOB\n47, avenue du General Leclerc\n76120 Le Grand-Quevilly, France\nTéléphone: +33 272205671\nMobile: +33 621912750\nmailto:franck.legal@siemens.com\nwww.siemens.com",
+            "date": "2025-07-03T06:37:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

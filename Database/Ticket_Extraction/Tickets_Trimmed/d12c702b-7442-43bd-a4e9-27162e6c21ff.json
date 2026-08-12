@@ -1,0 +1,105 @@
+{
+    "incident_id": "d12c702b-7442-43bd-a4e9-27162e6c21ff",
+    "ticket_number": "0430425",
+    "title": "ID0430425-DC/Si-D/EE-[MP / R2 170001453] Charging stopped",
+    "created_on": "2025-06-11T07:21:44Z",
+    "last_activity": "2025-06-13T12:25:58Z",
+    "age": "3184",
+    "description": "Reported behaviour/issue:\nOCPP Request payload:\n{\n\"connectorId\": 1,\n\"errorCode\": \"OtherError\",\n\"status\": \"Faulted\",\n\"vendorId\": \"SICHARGE D\",\n\"vendorErrorCode\": \"modbus0 is not connected\"\n}\nThe client had charged for about 20 minutes before the fault happened.\nThe same fault also appeared at 2025-06-07 19:44:18 and again at 2025-06-08 10:17:08. Both times without a car charging.\nCan we check what went wrong.\nSolution:\nN/A\nyyyy-mm-dd:\nN/A",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "XDflzG",
+    "stage": null,
+    "serial_number": "MP / R2 170001453",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "fde9aebe-9446-f011-877a-6045bdde4786",
+            "subject": "A new case manager was assigned to 0430425 CRM:00225213495",
+            "body": "Sakari Harjunpaeae was assigned as new Case Manager for case 0430425 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d12c702b-7442-43bd-a4e9-27162e6c21ff",
+            "date": "2025-06-11T07:22:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6127fce8-ad46-f011-877a-7c1e5287f582",
+            "subject": "A new case manager was assigned to 0430425 CRM:00225213664",
+            "body": "Jagmeet Singh was assigned as new Case Manager for case 0430425 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d12c702b-7442-43bd-a4e9-27162e6c21ff",
+            "date": "2025-06-11T10:22:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6f2186b7-ae46-f011-877a-7c1e5236e32d",
+            "subject": "ID0430425-DC/Si-D/EE-[MP / R2 170001453] Charging stopped CRM:02681000294",
+            "body": "Dear Sakari Harjunpää,\nThank you for reaching\nout\nto eMobility Support. My name is\nJagmeet\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nOtepää\nCharger ID/Serial No.\n:\nXDflzG\nProblem Description\n:\nCharging stopped\nFor future reference, your case number is\n0430425\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJagmeet Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-11T10:27:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bd92060a-c346-f011-8779-7c1e5276e9c5",
+            "subject": "A new case manager was assigned to 0430425 CRM:00225213828",
+            "body": "Ankita Khobare was assigned as new Case Manager for case 0430425 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d12c702b-7442-43bd-a4e9-27162e6c21ff",
+            "date": "2025-06-11T12:53:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6bc85cb0-d346-f011-877a-7c1e5236cda4",
+            "subject": "RE: ID0430425-DC/Si-D/EE-[MP / R2 170001453] Charging stopped CRM:02681000294",
+            "body": "Dear Sakari Harjunpää,\nI hope you are doing well.\nRegarding the “modbus0 is not connected” message, I’ve reviewed the logs, and it appears that the SECC lost communication for a few microseconds at that time.\nIf there’s a brief loss of communication with the SECC, the SiC D will reconnect within 5 seconds. During this time, an \"SECC is offline\" flag may appear on your backend, but it will be cleared once the reconnection is successful.\nIn this charger, I observed that the issue is resolved within a few seconds, and there is no impact on the ongoing session.\nIf you have any further questions, please don’t hesitate to reach out.\nLooking forward to your feedback.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-11T14:52:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04147d4c-7d47-f011-877a-7c1e52faf3c6",
+            "subject": "RE: ID0430425-DC/Si-D/EE-[MP / R2 170001453] Charging stopped CRM:02681000294",
+            "body": "Dear Sakari Harjunpää,\nWe will continue to monitor the situation for next 24 hours. If the issue does not reoccur during this period, we will proceed with the case closure.\nPlease let us know if you observe any anomalies or if further assistance is required in the meantime.\nWith best regards,\neMobility Tech Support Team -\nAnkita\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-12T11:06:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cd573af9-5048-f011-877a-7c1e52faf3c6",
+            "subject": "RE: ID0430425-DC/Si-D/EE-[MP / R2 170001453] Charging stopped CRM:02681000294",
+            "body": "Dear Sakari Harjunpää,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0430425, the case is now closed.\nProblem Description\n: Charging stopped\nResolution\n: Query answered\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAnkita Khobare\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-06-13T12:21:53Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7e670a5b-5148-f011-877a-7c1e52faf3c6",
+            "subject": "Ticket 0430425 has been closed. Are you satisfied with our provided solution? CRM:01811000782",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0430425\nwith the title:\nID0430425-DC/Si-D/EE-[MP / R2 170001453]\nCharging stopped\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick\non the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nAnkita Khobare\nSiemens eMobility Technical Support Team",
+            "date": "2025-06-13T12:24:40Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

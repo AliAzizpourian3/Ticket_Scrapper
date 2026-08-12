@@ -1,0 +1,127 @@
+{
+    "incident_id": "776736fa-7ca8-43ca-b24d-0983fa2994ef",
+    "ticket_number": "0471378",
+    "title": "ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger",
+    "created_on": "2026-01-09T12:01:51Z",
+    "last_activity": "2026-03-17T10:19:16Z",
+    "age": "96378",
+    "description": "Reported behavior/issue: The end customer stopped the session with backends app but the session didn't stop and they couldn't remove the cable. When end customer contacted backend support it says stopped there so the couldn't stop it again. They charge for 30 minuts more before the rebooted the charger and then they could remove the cable.\nSession started Mon, 01 Dec 2025 15:08:03 and ended bu OCPP Mon, 01 Dec 2025 15:12:22 but not stopped until Mon, 01 Dec 2025 15:52:37\nPlease send it to\nde Matos Joaquim, Francisco (SI E EU CS TS) because it requires ssh access.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "AlB9kt",
+    "stage": "Resolved",
+    "serial_number": "MP/RD170003000",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "b3831802-53ed-f011-8544-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0471378 CRM:00225315442",
+            "body": "Magnus Hellberg was assigned as new Case Manager for case 0471378 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=776736fa-7ca8-43ca-b24d-0983fa2994ef",
+            "date": "2026-01-09T12:02:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e6bd4a53-53ed-f011-8406-000d3ab4eb52",
+            "subject": "A new case manager was assigned to 0471378 CRM:00225315444",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0471378 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=776736fa-7ca8-43ca-b24d-0983fa2994ef",
+            "date": "2026-01-09T12:04:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c498b86a-53ed-f011-8544-7c1e52880f76",
+            "subject": "ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Dear\nMagnus\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP/RD 170003000\nChargerID\n:\nAlB9kt\nProblem Description\n: Backend sent stop session but not stopped in charger\nFor your reference, this support request has been assigned the following case number:\n0471378\n, please include this number in any future correspondence regarding this issue.\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps.\nWe want to inform you that our average turnaround time is longer than expected, currently 7 days.\nIf we can make it sooner, we will inform you in a timely manner.\nThank you in advance for your understanding.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-09T12:05:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86a3c4bc-95ef-f011-8406-7ced8d44e3ee",
+            "subject": "A new case manager was assigned to 0471378 CRM:00225316234",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0471378 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=776736fa-7ca8-43ca-b24d-0983fa2994ef",
+            "date": "2026-01-12T09:04:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f179f6c9-c1f2-f011-8406-000d3ab1199b",
+            "subject": "RE: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Dear Magnus,\nI am reaching out in regards of ticket\nID0471378.\nI took over the ticket to analyze the issue of the charging session not being stopped from Backend.\nI analyzed the two subsequent charging sessions, and I can see many things not working “normally”:\nFirst session starts at 2025-12-01T15:04:05. It is authorized via RemoteStartTransaction, but after Charging Phase P06 there is no “OCPP send command: StartTransaction”. After 5 seconds we see an outage of communication from the EcoG and a StatusNotification of “secc is offline”. The session is then ended internally by the charger.\nThe second session starts at 2025-12-01T15:08:26. In this case the OCPP StartTransaction is sent, and at 2025-12-01T15:08:41 we see the first signs of communication outage with EcoG: Outlet is still considered online, comm outage: 5000 ms, max: 5000 ms.\nAt 2025-12-01T15:12:10 starts the abnormal behavior:\nOutlet is offline due to comm outage with EcoG\nOutlet is set outoforder and there is a StopCharging event form SECC\nStatusNotifications to OCPP are subsequentially sent as Faulted-Unavailable-Charging\nDue to the communication outage, we get a timeout error from LEM\nHere the abnormal behavior: We send a OCPP StopTransaction, but the reply is just acknowledged form Backend, instead of accepted.\nAt this point, the charging session is not stopped, even though we had a StopCharging event from SECC, a timeout error from LEM and sent a OCPP StopTransaction.\nThe customer stated that he tried to stop the session from the Backend app, but in the logs we have no proof of any received RemoteStopTransaction. Customer then called the Backend support, and at 2025-12-01T15:46:44 the Backend sent a Reboot command in order to stop the session.\nI believe the original issue is the outage of communication with EcoG. In my eyes, it seems that this communication outage with EcoG affected the sicharge-cp-backend communication with the OCPP Backend: missing StartTransaction in first session, missing confirmation of StopTransaction, RemoteStopTransaction not reaching the charger.\nI just opened a R&D ticket to get further analysis of this incorrect behavior. It might be the case that the EcoG KF11 has to be replaced, but I would wait for R&D and EcoG's feedback, in case something else has to be checked from their side.\nI will follow up with you as soon as I have feedback.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-01-16T09:57:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "29b001ef-0821-f111-8342-7ced8d44ddde",
+            "subject": "RE: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Hi Fosco\nHave you received any feedback from R&D or should we close the ticket?\nKind regards Magnus",
+            "date": "2026-03-16T07:22:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0c309a69-0921-f111-8342-000d3ab124a4",
+            "subject": "RE: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Hi Fosco\nHave you received any feedback from R&D or should we close the ticket?\nKind regards Magnus",
+            "date": "2026-03-16T07:26:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6fbb39fb-e221-f111-8342-7ced8d44dfaf",
+            "subject": "RE: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Hello Magnus,\nApologies for the late reply on this ticket.\nAs per my previous analysis, the root cause of the session not being stopped was identified in a communication outage of the EcoG, triggering an incorrect behavior of the charger. R&D has been working on this topic together with EcoG. A permanent fix will be included in the upcoming\nFW v9.0 (expected release CW15)\n.\nIn the meanwhile, R&D released an Hotfix (EcoG layer version 1.4.20) which should solve the origin of the communication outage. This Hotfix has been released via SCB: it is based either on v8.0.5 or v8.1.4, and can be updated via SCB as a normal FW update. This Hotfix installation will only update the EcoG layer, it will not change anything in terms of charger's FW.\nPlease let me know if you would like to install the Hotfix based on v8.0.5, or would like to wait for FW v9.0.\nI will then proceed to close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-03-17T09:23:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4ae133e8-e521-f111-8342-000d3ab12cfa",
+            "subject": "Sv: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914",
+            "body": "Hi Fosco\nThanks for your respons. We can wait for the fw 9.\nYou can close the ticket.\nWith best regards,\nMagnus Hellberg\nProduct specialist eMobility\nSiemens AB\nStridsvagnsvägen 14\n291 39 Kristianstad, Sweden\nPhone: +46 447803136\nMobile: +46 708719836\nmailto:magnus.hellberg@siemens.com\nwww.siemens.se\nSiemens Aktiebolag, styrelsens säte: Stockholm, Organisationsnr: 556003-2921\nFrån:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nSkickat:\nden 17 mars 2026 10:39\nTill:\nHellberg, Magnus (SI E EU SE) <magnus.hellberg@siemens.com>\nÄmne:\nRE: ID0471378-DC/Si-D/SE-[MP/RD170003000] Backend sent stop session but not stopped in charger CRM:03056000914\nHello Magnus,\nApologies for the late reply on this ticket.\nAs per my previous analysis, the root cause of the session not being stopped was identified in a communication outage of the EcoG, triggering an incorrect behavior of the charger. R&D has been working on this topic together with EcoG. A permanent fix will be included in the upcoming\nFW v9.0 (expected release CW15)\n.\nIn the meanwhile, R&D released an Hotfix (EcoG layer version 1.4.20) which should solve the origin of the communication outage. This Hotfix has been released via SCB: it is based either on v8.0.5 or v8.1.4, and can be updated via SCB as a normal FW update. This Hotfix installation will only update the EcoG layer, it will not change anything in terms of charger's FW.\nPlease let me know if you would like to install the Hotfix based on v8.0.5, or would like to wait for FW v9.0.\nI will then proceed to close the ticket.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-03-17T09:44:39Z",
+            "extra": {
+                "sender": "magnus.hellberg@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "eddf1cb4-ea21-f111-8342-000d3ab12cfa",
+            "subject": "Ticket 0471378 has been closed. How did we do? CRM:00225353858",
+            "body": "Dear Customer,\nYour 30-second feedback helps us improve - we’d love to hear from you.\nShare it here:\nClick on the link to start the survey\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-03-17T10:19:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

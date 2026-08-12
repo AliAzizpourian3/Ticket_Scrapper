@@ -1,0 +1,89 @@
+{
+    "incident_id": "0309c29b-824f-4ee2-a0eb-0f546a5dd3dc",
+    "ticket_number": "0410190",
+    "title": "ID0404379-DC/Si-D/AE-[MP / R5 170001908] Charging Session interrupted [C1]",
+    "created_on": "2025-03-03T10:12:56Z",
+    "last_activity": "2025-03-31T08:50:41Z",
+    "age": "40238",
+    "description": "Reported behaviour/issue: Multiple Charging Session getting interrupted after 2 minutes, OCCP reporting that the stop command is from the EVC.\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List: no\nWarranty Status:06/21/2025\nExisting case-0402308\nTesla model-3-→ 05:00hrs utc",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "JHrezS",
+    "stage": null,
+    "serial_number": "MP / R5 170001908,MP / R5 170001908",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "65c86617-18f8-ef11-bae2-7c1e523508ba",
+            "subject": "A new case manager was assigned to 0410190 CRM:00225171897",
+            "body": "Abhinav Malokar was assigned as new Case Manager for case 0410190 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0309c29b-824f-4ee2-a0eb-0f546a5dd3dc",
+            "date": "2025-03-03T10:13:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "51fbfeae-8a68-9c1a-bd7d-6fb4c3698206",
+            "subject": "Note for the expert",
+            "body": "Internal discussion is going on with Mr. Joao as he is already working on same charger with same issue\nTesla Model 3 2021 model-->As we checked the logs in given timestamp-19/02, 04:09hrs (UTC)-->DC2\nCharging Cable Sensor Validation Error--->\nCharging session interruption due to plausibility check on the temperature sensors inside the plug. This could be related to poor contact between the plug and car socket, which can cause one DC pin to reach a higher temperature than the other, especially during high-current sessions.\n2025-02-19T04:11:18.397653+00:00 sicharge-cp [local0:info] sicharge-cp-backend/347f0452b778[737]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay') to false - ('temperature sensors okay KON:1')\n2025-02-19T04:11:21.000000+00:00 secc [daemon:notice] SECC[847]: {\"type\":\"stop_charging\",\"timestamp\":1739938281340,\"chargerId\":\"secc2300-07429\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"source\":\"EV\",\"user\":\"internal\"}}\n2025-02-19T04:11:21.373132+00:00 swcpu [user:debug] [4021] [CSV] DC2: Charging Cable Sensor Plausibility Contact Temperatures: 48.8, 33.2 deg C\n2025-02-19T04:11:21.400089+00:00 sicharge-cp [local0:info] sicharge-cp-backend/347f0452b778[737]: PLC-Error-Flag 'DC2_CableTempSensor_XD101' changed from false - ('temperature sensors okay KON:1') to true - ('VIV:0 PLE:1 KON:1')\n2025-02-19T04:11:21.636077+00:00 sicharge-cp [local0:info] ecog-secc-adapter/bbb4a6d8bd82[737]: {\"type\":\"stop_charging\",\"timestamp\":1739938281340,\"chargerId\":\"secc2300-07429\",\"outlet\":\"2\",\"outletType\":\"CCS\",\"payload\":{\"source\":\"EV\",\"user\":\"internal\"}}",
+            "date": "2025-03-03T10:15:12Z",
+            "extra": {}
+        },
+        {
+            "id": "c7e347b3-f602-740d-9445-054e9ce7da3f",
+            "subject": "Case handed over to L3 expert",
+            "body": "Suspected Root Cause:\nNA\nProblem Description:\nCharging session was interrupted.\nAction Performed (L2):\nLogs have been analyzed and attached to the ticket.\nCharger SW Version:\nV 6.0.3\nReason for Handover (L3):\nAs discussed with Mr. Joao, transferring to the L3 expert. He has already been in discussions with Eric regarding the type of plugs that need replacement.\nLog Analysis with Timestamp:\nVehicle: Tesla Model 3 (2021 model)\nLogs reviewed for the given timestamp: 19/02, 04:09 hrs (UTC)\nAffected Component: DC2 Charging Cable\nAction Required:\nAction by HQ:\nFurther analysis is needed, and discussions with Eric should continue for the next steps.",
+            "date": "2025-03-03T10:15:55Z",
+            "extra": {}
+        },
+        {
+            "id": "179d3f6e-d8f8-ef11-bae2-000d3ad97a58",
+            "subject": "A new case manager was assigned to 0410190 CRM:00225172489",
+            "body": "Sambath KS was assigned as new Case Manager for case 0410190 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=0309c29b-824f-4ee2-a0eb-0f546a5dd3dc",
+            "date": "2025-03-04T09:09:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d185f6a-17c8-610e-abb3-eb937f4b272a",
+            "subject": "Note from the RC ",
+            "body": "Customer attempted to charge a different EV yesterday, but the session was automatically terminated. Please find the session details below:",
+            "date": "2025-03-06T13:45:14Z",
+            "extra": {}
+        },
+        {
+            "id": "7f01a87d-7e08-f011-bae3-7c1e52350ea5",
+            "subject": "0410190 - ID0404379-DC/Si-D/AE-[MP / R5 170001908] Charging Session interrupted [C1] CRM:00646000028",
+            "body": "Dear Sadek,\nI hope all is well with you. I'm Sambath, and I'll be supporting you on this case from expert team. As we discussed, I am requesting you to update the charger FW version to v6.1.3 as it having a higher plausibility limit (25-degree Celsius). In case the issue persists after that let us plan to replace the charging cable.\nAdding Basheer in Loop.\nWith best regards,\neMobility Tech Support Team -\nSambath.K.S",
+            "date": "2025-03-24T07:06:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d2de8ded-c00a-f011-bae3-000d3ad97a58",
+            "subject": "RE: 0410190 - ID0404379-DC/Si-D/AE-[MP / R5 170001908] Charging Session interrupted [C1] CRM:00646000028",
+            "body": "Hello Sadek,\nI am writing to formally inform that we are moving case 0404379 ﻿from the eMobility HQ DC Queue (Level 3) to the eMobility RC-AE SI E Queue (Level 2), due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nYes\nKindly pick up the case using \"Pick\" option in the queue, or manually using the \"Assign\" function from the eMobility RC-AE SI E Queue (Level 2) and work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sambath KS\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-27T04:07:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "78bb4ba0-adea-f441-b0f0-e420945753cc",
+            "subject": "Internal Note",
+            "body": "As discussed with Mr. Sambath, the troubleshooting steps have been provided to RC. Therefore, we are closing this child case and will forward the parent case for further action.\"",
+            "date": "2025-03-31T08:49:36Z",
+            "extra": {}
+        }
+    ]
+}

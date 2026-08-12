@@ -1,0 +1,133 @@
+{
+    "incident_id": "1ec1fdc9-7f2c-43d3-8f24-38cd498dcf40",
+    "ticket_number": "0390636",
+    "title": "ID0390636-DC/Si-D/NO-[FJ9wqF]- DC2 \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\"",
+    "created_on": "2024-11-19T10:17:23Z",
+    "last_activity": "2025-12-16T14:03:57Z",
+    "age": "75216",
+    "description": "Location:\nNorway Lødingen\nReported behaviour/issue:\nDC2 socket fails always during\nP02_PARAMETER_DISCOVERY. Overal success rate on both sockets are very poor based on AWS data.\nRoot cause: Cable faulty\nSolution:\n17.12.2024 DC2 ccs2 cable replaced and problem solved.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "FJ9wqF",
+    "stage": null,
+    "serial_number": "MP / S1 170003263",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9d7c797c-5fa6-ef11-b8e9-002248a29667",
+            "subject": "A new case manager was assigned to 0390636 CRM:00225126210",
+            "body": "Markus Roiha was assigned as new Case Manager for case 0390636 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1ec1fdc9-7f2c-43d3-8f24-38cd498dcf40",
+            "date": "2024-11-19T10:17:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5a9b321b-e01b-1f6b-af01-cd2dd6902bf5",
+            "subject": "AWS logs",
+            "body": "",
+            "date": "2024-11-19T10:17:45Z",
+            "extra": {}
+        },
+        {
+            "id": "b37eb1a7-5fa6-ef11-b8e9-000d3a6610b3",
+            "subject": "A new case manager was assigned to 0390636 CRM:00225126212",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0390636 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1ec1fdc9-7f2c-43d3-8f24-38cd498dcf40",
+            "date": "2024-11-19T10:18:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "07a17deb-e006-24f6-9905-4008a18c3a32",
+            "subject": "SCB log regarding to phase P02 failure",
+            "body": "",
+            "date": "2024-11-19T10:19:17Z",
+            "extra": {}
+        },
+        {
+            "id": "1c5a7a56-22a7-ef11-b8e9-002248a2b1bd",
+            "subject": "ID0390636-DC/Si-D/NO-[FJ9wqF]- DC2 \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\" CRM:00315002079",
+            "body": "Dear Markus,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / S1 170003263\nChargerID/Serial No.\n:\nFJ9wqF\nProblem Description\n: Charging stops in Parameter_Discovery\nTroubleshooting\n:\nAs we already aligned, we don't see a PilotState change from B to C:\nThis is what a good session looks like:\nFrom these logs alone I cannot say if it's the cables or the EcoGs. I would recommend going to site and do the checks regarding the CP and PP voltage.\nWhen we connect the car if we are stuck in 9V from the cable, the problem should be the cable or contacts. If we can see the 6V PilotState coming from the cable, we need to see downstream if there is a problem with any connector and if this value is reaching the EcoG. If there is 6V at the input of EcoG, then it's possible that there is an error with it.\nMy suggestion would be to take only 1 spare CCS cable and 1 set of KF11, KF12 and KF14. There are connections from CP to KF11 and KF14 and for second outlet to KF12 and KF14.\nSince the problem is in both outlets it might be just the KF14, let's hope so. Fingers crossed.\nI will move this to the RC-NO queue, just reach out to me in case you need support.\nFor future reference, your ticket number is\n0390636\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T09:32:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e0538e29-26a7-ef11-b8e9-002248a2b1bd",
+            "subject": "ID0390636-DC/Si-D/NO-[FJ9wqF]- DC2 \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\" CRM:00315002080",
+            "body": "Dear Markus,\nI am writing to formally inform that we are moving case 0390636 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nNO\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nX\nOnsite Troubleshooting\nX\nEnd Customer Communication\nSpare Part Ordering\nX\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nNO\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-20T09:59:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ea5c437b-6eb4-460d-821e-12533e39fdc7",
+            "subject": null,
+            "body": "",
+            "date": "2024-12-17T16:00:58Z",
+            "extra": {}
+        },
+        {
+            "id": "fe10b66e-baf7-bcd7-b86c-9a5db732623c",
+            "subject": "Close",
+            "body": "",
+            "date": "2025-01-06T15:19:08Z",
+            "extra": {}
+        },
+        {
+            "id": "a7666e18-9cce-ef11-b8e9-0022489bcff4",
+            "subject": "A new case manager was assigned to 0390636 CRM:00225146597",
+            "body": "Simen Aarre was assigned as new Case Manager for case 0390636 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1ec1fdc9-7f2c-43d3-8f24-38cd498dcf40",
+            "date": "2025-01-09T15:12:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7288ea86-5ecf-ef11-b8e9-000d3ab4d5d3",
+            "subject": "A new case manager was assigned to 0390636 CRM:00225147114",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0390636 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=1ec1fdc9-7f2c-43d3-8f24-38cd498dcf40",
+            "date": "2025-01-10T14:24:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3d84dd3d-6acf-ef11-8ee9-7c1e5235ee6e",
+            "subject": "RE: ID0390636-DC/Si-D/NO-[FJ9wqF]- DC2 \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\" CRM:00315002080",
+            "body": "Dear Markus Roiha,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0390636, and the case is now closed.\nProblem Description: Cable issue\nResolution\n: Cable replaced\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nSaurav Kumar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-01-10T15:47:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "114dfab1-6acf-ef11-8ee9-7c1e5235ee6e",
+            "subject": "Ticket 0390636 has been closed. Are you satisfied with our provided solution? CRM:00658000840",
+            "body": "Dear Markus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0390636\nwith the title:\nID0390636-DC/Si-D/NO-[FJ9wqF]- DC2 \"P02_PARAMETER_DISCOVERY\" --> \"P00_UNKNOWN\"\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nSaurav Kumar\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-10T15:51:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

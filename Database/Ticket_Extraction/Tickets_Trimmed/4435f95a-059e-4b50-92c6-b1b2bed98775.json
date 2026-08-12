@@ -1,0 +1,105 @@
+{
+    "incident_id": "4435f95a-059e-4b50-92c6-b1b2bed98775",
+    "ticket_number": "0409884",
+    "title": "ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON in position 3686",
+    "created_on": "2025-02-28T07:46:09Z",
+    "last_activity": "2025-03-05T12:10:58Z",
+    "age": "7464",
+    "description": "Reported behaviour/issue:\nStopTransactions are failing -\nSyntaxError: Unexpected token I in JSON\nWorkaround:\nReboot charger/reboot EcoG\nFinal Solution\n: TBD - R&D and EcoG involvement needed - Possible v8 fix only.\nThis charger has the same “SyntaxError: Unexpected token I in JSON”. We see the same symptoms that a reboot of the charger will fix the issue for some time, however it will return.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "PgPzOp",
+    "stage": null,
+    "serial_number": "MP / R3 170001648",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "9aada4fd-aef5-ef11-be1f-7c1e52fb539c",
+            "subject": "ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Dear Rasmus,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R3 170001648\nChargerID/Serial No.\n:\nPgPzOp\nProblem Description\n: EcoG SyntaxError: Unexpected token I in JSON\nTroubleshooting\n: Before I align with L3, I need to understand what kind of code did you use in AWS.\nDid you use just for general “Syntax Error”? Or with “Unexpected token I in Json?”\nHow does this affect operations?\nAre the outlets out of order?\nBecause from the field we have noticed that there are several different tokens in different positions that can be cause issues or not. I need to understand in which position yours is at. If it's exactly the \"SyntaxError: Unexpected token I in JSON at position 3390\" as you reported before then we can proceed with replacing the EcoG as a fix is not coming out in the next weeks.\nPlease let me know this information.\nFor future reference, your case number is\n0409884\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-28T08:35:50Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2cdbe2f3-b9f5-ef11-be1f-6045bde0265d",
+            "subject": "RE: ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Hi Francisco\nI do a scan of JSON errors on all DK chargers every morning.\nSo, I do not specific look for the 3390 error.\nThe charger does not have the 3390 error. It is 3686..\nCompared to the other case it do not look like the chargers fails when this happens.\nHowever as it is only this single charger in DK that have this issue, there must be some kind of error related to the particular charger.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-02-28T09:54:09Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fd0bd403-d0f5-ef11-be1f-7c1e52fb544d",
+            "subject": "ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Hi Rasmus,\nThanks a lot for the message.\nUnfortunately, if there is no issues during operation I cannot offer you the okay to replace the EcoG.\nFor now this topic is under investigation from R&D with EcoG so we need to wait for their reply.\nI will provide you an update on Monday as we have the SID weekly call.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-02-28T12:32:05Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1bf08403-cbf8-ef11-bae2-6045bddf3f78",
+            "subject": "RE: ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Today the charger has the JSON error again. I have rebooted it.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-04T07:33:59Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cfed42c8-9cf9-ef11-bae2-6045bddf319c",
+            "subject": "ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Hi Rasmus,\nThank you for the update.\nSince the error is not disruptive to operations, for now, all I can do is report that this specific message in this specific position.\nIf you want to replace the EcoG, that is completely up to you. From our side, there is nothing we can do for now.\nIf this error becomes a real issue to the charging processes\n, then you can you replace the EcoG, but we still need proof.\nWhat do you want to do here? From my side, I can keep you updated if there is any news from R&D/EcoG and close the ticket.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-03-05T08:35:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c6f779e7-a4f9-ef11-bae2-6045bddf319c",
+            "subject": "RE: ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Hi\nFine by me. I will just continue to report the issue every time I see it.\nI hope you will forward the report it to the responsible each time also.\nWith best regards,\nRasmus Eksten\nSiemens A/S\nDenmark\nSmart Infrastructure\neMobility - Denmark\nRC-DK SI E\nBorupvang 9\n2750 Ballerup, Denmark\nmailto:rasmus.eksten@siemens.com\nwww.linkedin.com/company/siemens\nwww.siemens.com\nSiemens A/S. Headquarters: Borupvang 9, 2750 Ballerup, Denmark.\nTel: +45 4477 4477 CVR-no. 16 99 30 85\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-03-05T09:33:37Z",
+            "extra": {
+                "sender": "rasmus.eksten@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ec135576-b9f9-ef11-bae2-6045bddf319c",
+            "subject": "ID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON CRM:00315002409",
+            "body": "Hi Rasmus,\nTicket to R&D is created.\nI request from you to create tickets when you see these errors.\nOnly those that are causing problems, will have a recomendation of replacement.\nIf you are not having problems with charging, please indicate to in the ticket to add for tracking purposes in EVC3-8832.\nIf you are facing issues with charging, please refer the EVC3-8443.\nAs such I will close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-03-05T12:00:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0aa39a9-baf9-ef11-bae2-6045bddf319c",
+            "subject": "Ticket 0409884 has been closed. Are you satisfied with our provided solution? CRM:00315002412",
+            "body": "Dear Rasmus,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0409884\nwith the title:\nID0409884-DC/Si-D/DK[PgPzOp] - EcoG SyntaxError: Unexpected token I in JSON in position 3686\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-05T12:09:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

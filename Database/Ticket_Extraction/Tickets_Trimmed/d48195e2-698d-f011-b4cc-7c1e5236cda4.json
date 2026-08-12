@@ -1,0 +1,171 @@
+{
+    "incident_id": "d48195e2-698d-f011-b4cc-7c1e5236cda4",
+    "ticket_number": "0448732",
+    "title": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue",
+    "created_on": "2025-09-09T10:44:05Z",
+    "last_activity": "2025-09-12T10:56:08Z",
+    "age": "3158",
+    "description": "Reported issue:\nOne of our drivers reports that he connected his Scania to the LS10 at around 2:45 p.m. with a charge level of 31%, and this morning shortly after 5:00 a.m., he found his truck with a charge level of 27%. Scanias are usually unproblematic. The so-called “wake-up charging” should have kicked in here, right?\n08-09-2025 10:45\nSolution: Change TxStopPoint to PowerPathClosed\nyyyy-mm-dd: NA",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "8dl3G0",
+    "stage": null,
+    "serial_number": "MP / R0 170002838",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "fe9220e3-698d-f011-b4cc-6045bddece8c",
+            "subject": "Webform_incident_SiCharge D_09-09-2025_SN: MP / R0 170002838",
+            "body": "Dear Ralph Lindner,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R0 170002838\nThank you\neMobility Technical Support Team\nSehr geehrte/r Ralph Lindner,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R0 170002838\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-09-09T10:43:58Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9a4b4e8d-6d8d-f011-b4cc-6045bdde4786",
+            "subject": "A new case manager was assigned to 0448732 CRM:00225254207",
+            "body": "Aniket Sharma was assigned as new Case Manager for case 0448732 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d48195e2-698d-f011-b4cc-7c1e5236cda4",
+            "date": "2025-09-09T11:10:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4bbdd32a-6e8d-f011-b4cc-7c1e5220bf23",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Dear\nRalph Lindner\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center - ERK\nMain Asset\n: {\nMP / R0 170002838\nChargerID/Serial No.\n:\n8dl3G0\nProblem Description\n: Charging issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0448732\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nAniket Sharma\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-09-09T11:14:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1d982e26-1d8e-f011-b4cc-7c1e5236cda4",
+            "subject": "A new case manager was assigned to 0448732 CRM:00225254643",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0448732 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d48195e2-698d-f011-b4cc-7c1e5236cda4",
+            "date": "2025-09-10T08:07:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "58cd46ba-348e-f011-b4cc-7ced8d4263ef",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Ralph, good afternoon. I hope you are doing well today.\nI checked this session and here are my findings:\nAs you can see, the EV indeed stopped the session on it's own volition. The Wake-up function didn't start because the configuration wasn't changed.\nPlease let me know if I should check all of your chargers and have the configuration changed. But to have this wake-up function I need to install the latest v8.0.5 version.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-10T10:55:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e9fb6490-4f8e-f011-b4cc-000d3adc93d1",
+            "subject": "AW: ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Francisco, we just installed the latest version last week. See the image below. Why isn't the wake-up function automatically activated?\nBest regards,\nRalph Lindner\nVon:\nemobility_support.si@siemens.com [mailto:emobility_support.si@siemens.com]\nGesendet:\nMittwoch, 10. September 2025 15:52\nAn:\nRalph Lindner <r.lindner@elektro-breilmann.de>\nBetreff:\nID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362\nHello Ralph, good afternoon. I hope you are doing well today.\nI checked this session and here are my findings:\nAs you can see, the EV indeed stopped the session on it's own volition. The Wake-up function didn't start because the configuration wasn't changed.\nPlease let me know if I should check all of your chargers and have the configuration changed. But to have this wake-up function I need to install the latest v8.0.5 version.\nI will wait for your feedback.\nBest regards,\nFrancisco",
+            "date": "2025-09-10T14:08:07Z",
+            "extra": {
+                "sender": "r.lindner@elektro-breilmann.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d138734e-538e-f011-b4cc-7ced8d4263ef",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Ralph,\nThank you for the feedback.\nThe wake-up function can only be enabled starting with version 8.0.5. However, for this function to work properly, a configuration value needs to be set on our backend. After I set this configuration once, it is no longer required to change ever again.\nOnly in brand new chargers this comes configuration is by default.\nPlease let me know if you want me to apply this configuration to all the chargers.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-10T14:34:57Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b639917e-d48e-f011-b4cb-7c1e5236eee4",
+            "subject": "AW: ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Francisco,\nthank you for your quick response. If the wake-up function isn't already enabled, please enable it for all 10 chargers at Zinnstr. 19, 26789 Leer.\nBest regards,\nRalph Lindner\nVon:\nemobility_support.si@siemens.com [mailto:emobility_support.si@siemens.com]\nGesendet:\nMittwoch, 10. September 2025 16:50\nAn:\nRalph Lindner <r.lindner@elektro-breilmann.de>\nBetreff:\nID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362\nHello Ralph,\nThank you for the feedback.\nThe wake-up function can only be enabled starting with version 8.0.5. However, for this function to work properly, a configuration value needs to be set on our backend. After I set this configuration once, it is no longer required to change ever again.\nOnly in brand new chargers this comes configuration is by default.\nPlease let me know if you want me to apply this configuration to all the chargers.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-11T05:59:39Z",
+            "extra": {
+                "sender": "r.lindner@elektro-breilmann.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cba7b450-0c8f-f011-b4cb-7ced8d41ec51",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Ralph, good afternoon.\nI configured all the chargers and all of them must do the wake-up function.\nPlease let me know if I can close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-11T12:39:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "172e911f-238f-f011-b4cb-7c1e5236eee4",
+            "subject": "Ticket 0448732 has been closed. Are you satisfied with our provided solution? CRM:00225255617",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0448732\nwith the title:\nID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-09-11T15:22:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f6e7b90c-c58f-f011-b4cc-7c1e5287f582",
+            "subject": "AW: ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Francisco,\nAs I mentioned yesterday, I ran a few tests. The fact that wake-up charging was subsequently activated was particularly interesting. Unfortunately, I can't report any success.\nLS3:\neActros, started at 3:18 p.m., aborted after 63 kWh (must have been shortly before 4 p.m.), SOC 67%. Hasn't charged again on its own since then. The plug is still plugged in.\nLS5:\neActros, started at 4:30 p.m., aborted after approximately 99 kWh, SOC 67%. Charging isn't initiated automatically either. The plug is still plugged in.\nAlso:\nLS3:\neDAF, start time unclear, but it aborted around 2:30 p.m. with SOC 72%.\nLS9:\nMG (car), tried charging 5 times, unsuccessful. Started over each time after the first two steps.\nSo much for the feedback. In general, everything is running very bumpy at the pillars.\nBest regards,\nRalph Lindner\nVon:\nemobility_support.si@siemens.com [mailto:emobility_support.si@siemens.com]\nGesendet:\nDonnerstag, 11. September 2025 14:40\nAn:\nRalph Lindner <r.lindner@elektro-breilmann.de>\nCc:\nBerger, Lukas <berger.lukas@siemens.com>\nBetreff:\nID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362\nHello Ralph, good afternoon.\nI configured all the chargers and all of them must do the wake-up function.\nPlease let me know if I can close the ticket.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-09-12T10:41:38Z",
+            "extra": {
+                "sender": "r.lindner@elektro-breilmann.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "916e6e0e-c58f-f011-b4cc-000d3addd6a9",
+            "subject": "Email sent to a closed case 'ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue (0448732)' CRM:00225256031",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0448732\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-09-12T10:41:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "71bc8a67-c58f-f011-b4cc-000d3addf8ce",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Ralph,\nThank you for the feedback.\nlet me check and I will come back to you.\nThanks!\nBest regards,\nFrancisco",
+            "date": "2025-09-12T10:44:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "89bc870e-c78f-f011-b4cc-000d3addf8ce",
+            "subject": "ID0448732-DC/Si-D/DE[MP / R0 170002838] Charging issue CRM:02678000362",
+            "body": "Hello Ralph,\nI checked the sessions and I find that the eActross is not doing the wake-up function itself:\nFor LS3\nAs you can see, we start the session with A -> B2 (connected and ready) and the last E -> B1 is when the session is stopped.\nHow the wake-up function works is 100% on the EV side, in software terms, we need to see after the E -> B1 something like B1 -> B2 or B1  -> C2, followed by a C2 -> B2, and this makes the charger start again, but since the EV didn't send this communication, we are not going to start again.\nFor LS5 is the same behaviour:\nWe stopped the session in the E -> B1 and the EV never send us the request again.\nFor the LS3 with SoC=72% I couldn't find any session that stopped yesterday for LS3 at 72%, can you please confirm if it was really in LS3?\nFor the LS9, I see the problem and we will convey this information to the Field service team for support and solution.\nFor the eActros, it is required to need a statement from Daimler as this falls entirely on the EV to restart the sessions.\nI will create a new ticket since this one has been already closed. They will follow up in the new ticket which I will send the email soon.\nThank you and have a nice weekend.\nBest regards,\nFrancisco",
+            "date": "2025-09-12T10:56:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "incident_id": "079303eb-8d29-f011-8c4d-7c1e52768c07",
+    "ticket_number": "0422267",
+    "title": "ID0422267-DC/Si-D/FR-[MP / R3 170001705] DC2 out of order, converter not found",
+    "created_on": "2025-05-05T08:49:59Z",
+    "last_activity": "2025-07-23T12:29:13Z",
+    "age": "12970",
+    "description": "Reported behavior/issue: DC2 out of order, converter not found.\nWe are encountering a recurring issue on one of our chargers with\nthe following error message:\nError Source: DC2\nError Code: 8\nDescription: No active converters found\nThis error is preventing the charger from operating correctly. Could\nyou please investigate the root cause and advise on the necessary\ncorrective actions?\nIf additional diagnostics are needed from our side, feel free to let\nus know.",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "V1AYem",
+    "stage": null,
+    "serial_number": "MP / R3 170001705",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "e228b7db-8d29-f011-8c4d-6045bddf319c",
+            "subject": "Webform_incident_SiCharge D_05-05-2025_SN: MP / R3 170001705",
+            "body": "Dear florian mura,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R3 170001705\nThank you\neMobility Technical Support Team\nSehr geehrte/r florian mura,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R3 170001705\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-05T08:49:33Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fb1bc5c1-8f29-f011-8c4d-000d3ad97a58",
+            "subject": "ID0422267-DC/Si-D/FR-[MP / R3 170001705] Technical Error CRM:02679000214",
+            "body": "Dear Mura Florian,\nThank you for reaching\nout\nto eMobility Support. My name is\nAmit\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R3 170001705\nChargerID/Serial No.\n:\nV1AYem\nProblem Description\n: error message on screen\nFor future reference, your case number is\n0422267\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAmit Deswal\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T09:03:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "370280cc-ad29-f011-8c4e-7c1e52faf3c6",
+            "subject": "RE: ID0422267-DC/Si-D/FR-[MP / R3 170001705] Technical Error CRM:02679000214",
+            "body": "Dear Colleagues,\nI am writing to formally inform that we are moving case 0422267 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nMaybe\nEnd Customer Communication\nYes\nSpare Part Ordering\nMaybe\nPerformance monitoring by RC\nCould you please follow the below troubleshooting steps as mentioned below.\n1\n. Please check if the power converter are properly connection to its shelf case.\n2\n. Check for any loose connection of any power cable or CAN communication cables of the converter and measured the voltage across it with the help of multimeter. Check the resistance across CAN communication cables.\n3\n. Please see to the display of the power converter whether it is OFF state or ON?\n4\n. Try swapping the power converter with the good one and if the error flag was changed to the replaced one then we can suspect that the converter is faulty.\n5\n. If all the steps are performed and you still see the power converter are faulty, we suggest you to replace it as we can't rework to it. Apart from it, please check the power housing of the power converter, there might be chances that the wiring is defective.\nMLFB :  8EM5903-0AA01-0AA2 (Power Converter AC/DC 20kW)\nPlease check the Fast shutdown wirings as well, as at the end of the power converter error flag, E52 means fast shutdown failed.\nLink to RMA Request Sheet :\nhttps://forms.office.com/pages/responsepage.aspx?id=zTuuOHmV1E-t2rQuFJXVWmj9a-TsNwNBlbUVnW64LEtUNU5QSU5XUjA2VkpPUTJJTzJENDhaSTZMMi4u\nShipping of defective parts (RC to QM)\nThe consignment shipped from RC to QM must include the following data:\nISP ticket number\nSerial number of charger\nDefective part name/MLFB\nReporting a defective part, These information should include:\nDefective part name/MLFB :\nComponent serial number :\nLogs with marked error (CSV format preferred) :\nActive error flags before replacement\nDevice-specific error code (if applicable)\nOutcome of wiring checkup\nCommissioning checklist\nCommissioning date\nField service report\nDate of failure\nPls. ensure the electrical safety and follow the PPE guidelines\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Shrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T12:38:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "783aa084-0f2f-f011-8c4e-000d3adc93d1",
+            "subject": "RE: ID0422267-DC/Si-D/FR-[MP / R3 170001705] Technical Error CRM:02679000214",
+            "body": "Dear Amit,\nI hope this message finds you well.\nI am writing to follow up on the support case 0422267 regarding the Sicharge D - Charging Center (ChargerID: V1AYem). I have not received any updates since my initial request, and the issue is still ongoing.\nCould you kindly provide me with the current status of this case or let me know if any additional information is required from my side?\nThank you in advance for your support, and I look forward to your prompt response.\nBest regards,\nFlorian MURA\nIngénieur Exploitation IRVE\nENGIE Mobilités Électriques\nflorian.mura@engie.com\n+33 7 88 44 89 95",
+            "date": "2025-05-12T09:00:18Z",
+            "extra": {
+                "sender": "florian.mura@engie.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

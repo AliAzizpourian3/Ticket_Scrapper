@@ -1,0 +1,136 @@
+{
+    "incident_id": "63ab38ad-afd4-4b57-9884-a8f255d42a48",
+    "ticket_number": "0402796",
+    "title": "ID0402796-DC/Si-D/DK-[gCL8GH] PLC-Error-Flag CableTempSensor error",
+    "created_on": "2025-01-29T09:34:22Z",
+    "last_activity": "2025-03-11T11:38:17Z",
+    "age": "59164",
+    "description": "Reported behavior/issue:\nPLC-Error-Flag CableTempSensor error\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:  Siemens Employee\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "gCL8GH",
+    "stage": null,
+    "serial_number": "MP / R5 170001802",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "9840e63c-24de-ef11-8eea-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0402796 CRM:00225155277",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0402796 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=63ab38ad-afd4-4b57-9884-a8f255d42a48",
+            "date": "2025-01-29T09:34:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "1b550f61-27de-ef11-8eea-000d3a68cce9",
+            "subject": "A new case manager was assigned to 0402796 CRM:00225155301",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0402796 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=63ab38ad-afd4-4b57-9884-a8f255d42a48",
+            "date": "2025-01-29T09:57:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "877eb378-ece8-270a-afbf-3f0963a964d6",
+            "subject": null,
+            "body": "I just looked at all customers chargers and found the following data for just 14 days log:",
+            "date": "2025-01-29T10:22:06Z",
+            "extra": {}
+        },
+        {
+            "id": "e43bc1e0-37de-ef11-8eea-000d3a67d7cb",
+            "subject": "A new case manager was assigned to 0402796 CRM:00225155422",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0402796 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=63ab38ad-afd4-4b57-9884-a8f255d42a48",
+            "date": "2025-01-29T11:55:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fba954c2-6743-f593-afee-3729e7bba08f",
+            "subject": "Notes",
+            "body": "The charger is having many CableTempSensor errors.\nThis is on serval plugs.\nIn the last two weeks there have been 57 times CableTempSensor errors across 3 plugs. 21 times on DC1, 25 times on DC2 and 11 times on DC3. The issue is not unique to this charger we also see this on other chargers.\nHowever this is the most extreme case.",
+            "date": "2025-01-30T04:43:03Z",
+            "extra": {}
+        },
+        {
+            "id": "58aec779-70df-f82d-9a2c-7a950635d11d",
+            "subject": "Over Period of 3w",
+            "body": "Error on DC1\nPLC-Error-Flag 'DC1_CableTempSensor_XD100' changed to true - (VIV:0 PLE:1 KON:1)\nError on DC2\nPLC-Error-Flag 'DC2_CableTempSensor_XD101' changed to true - (VIV:0 PLE:1 KON:1)",
+            "date": "2025-01-30T09:04:52Z",
+            "extra": {}
+        },
+        {
+            "id": "869d538a-cb57-2cb1-a622-d716b8579438",
+            "subject": null,
+            "body": "VIV:0 → in case of an invalid sensor reading\nPLE:1→ in case of an plausibility error (temperature difference between +/- too high)\nKON:1: → in case the contact temperature sensors are not okay\nWe need to check the state monitor KF13 since it is common for DC1 and DC2.\nElse we need to check the connection from Sensor of plud (XD100 & XD101) to the KF13 module.\nLOGO FW is fine : LOGO connected. FW-Version: 2.6.0",
+            "date": "2025-01-30T09:13:58Z",
+            "extra": {}
+        },
+        {
+            "id": "808811b5-b7df-ef11-8eea-0022489bcff4",
+            "subject": "A new case manager was assigned to 0402796 CRM:00225156579",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0402796 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=63ab38ad-afd4-4b57-9884-a8f255d42a48",
+            "date": "2025-01-31T09:42:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2473736f-16e3-ef11-8eea-0022489bcff4",
+            "subject": "ID0402796-DC/Si-D/DK-[gCL8GH] PLC-Error-Flag CableTempSensor error CRM:00798001841",
+            "body": "Dear Rasmus Eksten,\nThank you for reaching\nout\nto eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R5 170001802\nChargerID/Serial No.\n:\ngCL8GH\nProblem Description\n: PLC-Error-Flag CableTempSensor error\nWe have observed the charger, Charger seems to be fine.\nWe have observed the active charging sessions over all the outlets.\nAdditionally, We have observed the Charger is on old FW v4.0.11, We recommend having the charger at latest FW v6.0.3.\nDo let us know, if you want to update the Charger.\nFor future reference, your case number is\n0402796\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-04T16:38:18Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6fd72c65-3d3c-2d69-91f9-ab1f30afc549",
+            "subject": null,
+            "body": "Charger will be updated and followed for errors after..",
+            "date": "2025-02-05T14:41:50Z",
+            "extra": {}
+        },
+        {
+            "id": "1a76ff1a-8de4-ef11-8eea-000d3a697eb1",
+            "subject": "ID0402796-DC/Si-D/DK-[gCL8GH] PLC-Error-Flag CableTempSensor error CRM:00798001847",
+            "body": "Dear Rasmus,\nForwarding the case to your queue for FW update and Performance monitoring of charger.\nI am writing to formally inform that we are moving case 0402796 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-\nDK\nSI E Queue (Level 2)\n, due to one or more following reason (s) :\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nEnd Customer Communication\nYes\nSpare Part Ordering\nPerformance monitoring by RC\nYes\nKindly pick up the case using \"\nPick\n\" option in the queue, or manually using the \"\nAssign\n\" function from the\neMobility RC-\nDK\nSI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline on ISP.\nLater assign the case to\neMobility DC Queue (Level 2) Team\n, using \"\nAssign\n\" function and then move the case to\neMobility DC Queue (Level 2)\nusing \"\nAdd to Queue\n\".\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-06T13:20:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d71d2bf-2fe5-ef11-8eea-000d3aba081f",
+            "subject": "A new case manager was assigned to 0402796 CRM:00225160706",
+            "body": "Rasmus Hedegaard Eksten was assigned as new Case Manager for case 0402796 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=63ab38ad-afd4-4b57-9884-a8f255d42a48",
+            "date": "2025-02-07T08:44:41Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7276e60e-bd64-d266-8470-4e4f69655260",
+            "subject": null,
+            "body": "Closing the ticket.",
+            "date": "2025-03-11T11:37:33Z",
+            "extra": {}
+        }
+    ]
+}

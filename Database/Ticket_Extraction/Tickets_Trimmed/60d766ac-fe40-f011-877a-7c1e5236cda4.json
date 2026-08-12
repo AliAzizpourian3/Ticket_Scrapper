@@ -1,0 +1,116 @@
+{
+    "incident_id": "60d766ac-fe40-f011-877a-7c1e5236cda4",
+    "ticket_number": "0428974",
+    "title": "ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service",
+    "created_on": "2025-06-04T04:45:07Z",
+    "last_activity": "2025-08-08T09:25:12Z",
+    "age": "93880",
+    "description": "Reported Issue : Outlets out of Service.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "AP1DUJ",
+    "stage": null,
+    "serial_number": "MP / R8 170002536",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "382260a1-fe40-f011-877a-6045bddf3f78",
+            "subject": "URGENT – Level 3 Support Request – Sicharge D MPR8170002536 – TER Transports Courthézon",
+            "body": "Dear all,\nWe are facing a critical malfunction on Sicharge D charger MPR8170002536, installed at the TER Transports site in Courthézon.\nPlease open a Level 3 support ticket and include the relevant Siemens France and Siemens Germany teams in copy.\nIssue observed – June 3rd, 2025, between 08:15 and 08:30:\nA etruck was connected to CCS2 (right connector), but the charger displayed “Out of Service”.\nAt the same time, CCS2 (left connector) showed “Charging complete – 100%” while no eTruck was connected.\nA first reboot made both connectors unavailable.\nA second reboot was necessary to restore full functionality.\nSupervision interface (e-Autonomh) showed connector 2 stuck in “Preparing” status since 08:26:23, despite active communication.\nAttached screenshots:\nChrome crash error (Error code: 5)\nFalse 100% charge displayed on CCS2 (right)\nSupervision status showing connector 2 (\nright)\nstuck in “Preparing”\nAdditional context:\nOther chargers on site show similar unstable behavior: ignored commands, interrupted sessions, memory saturation.\nA firmware issue may be involved.\nPreventive maintenance (filter replacement) is ongoing, managed by Siemens.\nNo feedback has been received yet from Siemens France regarding our warranty extension request.\nWe request:\nImmediate escalation to Level 3\nRoot cause analysis\nFirmware and software version check\nClear corrective actions to prevent recurrence\nThank you for your urgent support.\nBest regards,\nMalek DRIF | Head of Operations | Mob:\n+33 650 370 485\nSAS AUTORECHARGE |\nWWW.AUTORECHARGE.FR\n|\n+33 970 755 400\nDesign and installation of EV charging equipment and infrastructure\n.",
+            "date": "2025-06-04T04:44:44Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cc3c7c29-0441-f011-8779-7c1e5220bf23",
+            "subject": "ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00251000552",
+            "body": "Good morning Mr. Malek,\nThank you for reaching\nout\nto eMobility Support. My name is\nReetesh\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R8 170002536\nChargerID/Serial No.\n:\nAP1DUJ\nProblem Description\n: Outlets Out of Service, Issue observed on 3rd June 08:15 - 08:30 AM\nWe are on your request and have started the analysis. Please allow us some time to thoroughly analyze the logs, we will get back to you soon.\nFor future reference, your case number is\n0428974\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-06-04T05:24:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "479870c3-0441-f011-877a-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0428974 CRM:00225210357",
+            "body": "Francois Winckel was assigned as new Case Manager for case 0428974 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60d766ac-fe40-f011-877a-7c1e5236cda4",
+            "date": "2025-06-04T05:28:46Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1ab5115-0a41-f011-877a-7c1e52768372",
+            "subject": "RE: ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00251000552",
+            "body": "Bonjour Malek,\nJ’ai pris en charge le ticket et je constate que le problème provient du fusible de commande du ventilateur principal. Nous allons envoyer un technicien sur site pour le remplacer dès que possible.\nConcernant les problèmes logiciels, je peux te proposer une mise à jour vers la version supérieure (V6.1 au lieu de V6.0).Les arrêts de session peuvent être dus à une température excessive (dérating pendant la charge, suivi d’un arrêt automatique).\nAntoine, peux-tu me donner les rapports de maintenance si vous les avez et si non, me donnéer les dates. Le problème vient peut etre aussi des filtres non changés et des arrivés de cables non fermés.\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-06-04T06:06:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a6cf3310-0c41-f011-877a-7c1e52768372",
+            "subject": "0428974 - ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00271000901",
+            "body": "Hello,\nPouvez vous envoyer raisonnance en urgence sur ce chargeur avec des filtres (si ils n'ont pas été changé), et des fusibles .\nLe problème vient surment du FC20 :\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease d\no not change the subject of this email when replying to it.",
+            "date": "2025-06-04T06:20:58Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "fa405630-0c41-f011-8779-6045bde12d6b",
+            "subject": "A new case manager was assigned to 0428974 CRM:00225210409",
+            "body": "Ramdane CHERGUI was assigned as new Case Manager for case 0428974 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=60d766ac-fe40-f011-877a-7c1e5236cda4",
+            "date": "2025-06-04T06:21:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6acc177b-5145-f011-8779-7ced8d2e0165",
+            "subject": "RE: ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00251000552",
+            "body": "Bonjour François,\nJe te confirme que la possibilité de basculer vers la version V6.1. sur le chargeur concerné afin de constaté les améliorations.\nPour mémo, sur ce site, nous avons 2 SID :  Le MP / R8 170002536\n(AP1DUJ)\net le MP / R8 170002535\nBien à toi,\nMalek\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nmercredi 4 juin 2025 08:16\nÀ :\nMalek DRIF <m.drif@autorecharge.fr>\nCc :\nCorentin Lecerf <corentin.lecerf@ter84.com>; emobility_support.si.fr@siemens.com; BRUA, ANTOINE <antoine.brua@siemens.com>; BRUA, ANTOINE <antoine.brua@siemens.com>; COLLET, SEBASTIEN <sebastien.collet@siemens.com>\nObjet :\nRE: ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00251000552\nImportance :\nHaute\nBonjour Malek,\nJ’ai pris en charge le ticket et je constate que le problème provient du fusible de commande du ventilateur principal. Nous allons envoyer un technicien sur site pour le remplacer dès que possible.\nConcernant les problèmes logiciels, je peux te proposer une mise à jour vers la version supérieure (V6.1 au lieu de V6.0).Les arrêts de session peuvent être dus à une température excessive (dérating pendant la charge, suivi d’un arrêt automatique).\nAntoine, peux-tu me donner les rapports de maintenance si vous les avez et si non, me donnéer les dates. Le problème vient peut etre aussi des filtres non changés et des arrivés de cables non fermés.\nMit freundlichen Grüßen/ Best regards,Francois WINCKEL\nPlease do not change the subject of this email when replying to it.",
+            "date": "2025-06-09T16:47:57Z",
+            "extra": {
+                "sender": "m.drif@autorecharge.fr",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e7127995-b56e-f011-b4cc-6045bde12d6b",
+            "subject": "Global ISP Backlog Cleanup initiative - Help Us Update Your ISP Ticket Status CRM:00362000093",
+            "body": "Dear Ramdane,\nI hope this email finds you well!\nAs part of our Customer Service team's global initiative to clean up our ticketing backlog, we're reaching out to help streamline our open cases.\nDuring a recent review of our ISP ticketing system, we noticed several aging tickets that need a quick status check. We're here to help make this process as smooth as possible for you.\nWould you be able to help us confirm:\nIf the repair/resolution has been completed\nWhether any follow-up actions are still pending\nAny relevant comments about the current situation\nDon't worry about the administrative part - our central Customer Service team will take care of closing the tickets once you confirm their status.\nIf you could add any brief comments that might be helpful for documentation and provide your confirmation by replying to this email, that would be great!\nThanks so much for your help with this initiative! If you need any assistance or have questions, please don't hesitate to reach out to us.\nWith best regards,\nMichele Sambiagio\nSiCharge D Product Champion\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:michele.sambiagio@siemens.com\nwww.siemens.com",
+            "date": "2025-08-01T08:57:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e8ca7656-3974-f011-b4cc-7c1e523508ba",
+            "subject": "0428974 - ID0428974-DC/SI-D/FR [MP / R8 170002536] Outlets Out of Service CRM:00296000394",
+            "body": "Bonjour,\nCi-joint le rapport d'intervention.\nCordialement,\nAntoine Brua\nLvl 2 Support Engineer E-mobility France\nSiemens SAS\nRC-FR SI E\nParc Technologique de Lyon\n743, Allée des Parcs\n69800 Saint-Priest, France\nTél : +33 6 18 29 28 21\nmail: antoine.brua@siemens.com\nwww.siemens.com",
+            "date": "2025-08-08T09:23:31Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

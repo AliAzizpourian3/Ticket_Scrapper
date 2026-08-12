@@ -1,0 +1,105 @@
+{
+    "incident_id": "6ea1b4b0-08f5-f011-8406-000d3ab12a27",
+    "ticket_number": "0473030",
+    "title": "ID0473030-DC/Si-D/FR-[Y2 / R9 313202799123] SECC Initialization Error",
+    "created_on": "2026-01-19T07:30:17Z",
+    "last_activity": "2026-01-30T13:58:49Z",
+    "age": "16228",
+    "description": "Reported Behavior/ Issue: SECC Initialization Error",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "TyfSto",
+    "stage": "Resolved",
+    "serial_number": "Y2 / R9 313202799123",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "07f7adaa-08f5-f011-8406-000d3ab1239a",
+            "subject": "Webform_incident_SiCharge D_19-01-2026_SN: Y2 / R9 313202799123",
+            "body": "Dear SCHOEPFF,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2 / R9 313202799123\nThank you\neMobility Technical Support Team\nSehr geehrte/r SCHOEPFF,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2 / R9 313202799123\nVielen Dank\neMobility Technical Support Team",
+            "date": "2026-01-19T07:30:08Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0eb2891d-09f5-f011-8406-000d3ab1149f",
+            "subject": "A new case manager was assigned to 0473030 CRM:00225320550",
+            "body": "Sumit Kumar was assigned as new Case Manager for case 0473030 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6ea1b4b0-08f5-f011-8406-000d3ab12a27",
+            "date": "2026-01-19T07:33:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b0c0bc0f-0af5-f011-8406-000d3ab12e50",
+            "subject": "ID0473030-DC/Si-UC/FR-[Y2 / R9 313202799123] SECC Initialization Error CRM:03055000531",
+            "body": "Dear\nCedric\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / R9 313202799123\nChargerID\n: TyfSto\nProblem Description\n: SECC Initialization Error\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0473030\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2026-01-19T07:40:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7c23e81b-dff5-f011-8406-7ced8d44ddde",
+            "subject": "A new case manager was assigned to 0473030 CRM:00225321520",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0473030 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=6ea1b4b0-08f5-f011-8406-000d3ab12a27",
+            "date": "2026-01-20T09:05:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9fad1113-c6fd-f011-8406-000d3ab1199b",
+            "subject": "RE: ID0473030-DC/Si-UC/FR-[Y2 / R9 313202799123] SECC Initialization Error CRM:03055000531",
+            "body": "Dear Mr. Shcoepff,\nI am reaching out form the Technical Support Team in regards of ticket\nID0473030.\nThe ticket was opened for vendorErrorCode \"secc is initializing\" on charger\nY2/R9 313202799123.\nFirst of all, it is important to know that this error is not a bug, but a \"normal\" error message that states that the EcoG is initializing after a communication outage with the charger.\nI had a look at the logs and the charger, and here is what I found:\nThe real issue happened two days before, on 2026-01-16, when outlet 1 when outoforder to due a communication outage between the PLC and the EcoG:\nBecause of this, the outlet status on Sifinity was set as \"Faulted/Unavailable\"\nUnfortunately, there was a problem on the outlet status detection on Sifinity:\nThe outlet status on Sifinity was not updated to \"Available\" once the outage finished\nThe outlet status remained on \"Faulted/Unavailable\"\nOn 2026-01-18T22:11:31, the connection to OCPP Backend went offline for 30 seconds. It was automatically restored thanks to the websocket ping interval of 30 seconds.\nOnce the charger went back online on OCPP Backend, it communicated the status of the outlets, including the \"wrong\" status of outlet DC1, which for Sifinity was still \"Faulted/Unavailable\"\nCorrective actions:\nI asked R&D and they acted on the syncing between SCB and Sifinity to solve the outlet status visualization. It is now solved ad the outlets are correctly seen as Available.\nThe vendorErrorCode \"secc is initializing\" is a correct error message that appears after a loss of communication with EcoG.\nIn regards of the loss of communication and \"outlet is offline\", R&D and EcoG are working on hardening patches to avoid this behavior to happen again in the future. These communication hardening patches will be included in the next FW release v9.0.X (expected release: CW10)\nPlease let me know if further analysis or support is required, otherwise I will proceed to close the ticket as no further action is pending on service side.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-01-30T10:26:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "86c260cc-dffd-f011-8406-000d3adbd3a6",
+            "subject": "RE: ID0473030-DC/Si-UC/FR-[Y2 / R9 313202799123] SECC Initialization Error CRM:03055000531",
+            "body": "Hello, and thank you for this very detailed analysis, which I greatly appreciate.\nI have nothing further to add, as you have been working on this issue and are aware that a problem exists.\nPlease note that all the tickets I submit are for two reasons: firstly, to ensure the highest possible availability of my terminals, and secondly, to provide feedback on issues that will enable you to improve your products.\nCédric SCHOEPFF\nTechnicien d'Exploitation Mobilités Electriques\n+33 6 43 91 92 26\nwww.smeg.mc\nVos données personnelles sont traitées par le groupe SMEG, dans le cadre du traitement ayant pour finalité\n\"Gestion de la messagerie professionnelle d’entreprise\". Conformément\nà\nla Loi n°\n1.565 du 3 décembre 2024 relative\nà\nla protection des données personnelles, vous disposez d’un droit d’accès, de rectification, de suppression de vos données, ainsi que d’un droit d’opposition, le cas\néchéant, et de limitation au traitement, en\nécrivant au Délégué\nà\nla protection des données du groupe SMEG aux coordonnées suivantes : 10 avenue de Fontvieille\n–\n98000 Monaco, ou dpo@smeg.mc.\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nvendredi 30 janvier 2026 14:22\nÀ :\nSCHOEPFF Cedric (SMEG) <cedric.schoepff@smeg.mc>\nCc :\nemobility_support.si.fr@siemens.com\nObjet :\nRE: ID0473030-DC/Si-UC/FR-[Y2 / R9 313202799123] SECC Initialization Error CRM:03055000531\nDear Mr. Shcoepff, I am reaching out form the Technical Support Team in regards of ticket ID0473030. The ticket was opened for vendorErrorCode \"secc is initializing\" on charger Y2/R9 313202799123. First of all, it is important to know\nDear Mr. Shcoepff,\nI am reaching out form the Technical Support Team in regards of ticket\nID0473030.\nThe ticket was opened for vendorErrorCode \"secc is initializing\" on charger\nY2/R9 313202799123.\nFirst of all, it is important to know that this error is not a bug, but a \"normal\" error message that states that the EcoG is initializing after a communication outage with the charger.\nI had a look at the logs and the charger, and here is what I found:\nThe real issue happened two days before, on 2026-01-16, when outlet 1 when outoforder to due a communication outage between the PLC and the EcoG:\nBecause of this, the outlet status on Sifinity was set as \"Faulted/Unavailable\"\nUnfortunately, there was a problem on the outlet status detection on Sifinity:\nThe outlet status on Sifinity was not updated to \"Available\" once the outage finished\nThe outlet status remained on \"Faulted/Unavailable\"\nOn 2026-01-18T22:11:31, the connection to OCPP Backend went offline for 30 seconds. It was automatically restored thanks to the websocket ping interval of 30 seconds.\nOnce the charger went back online on OCPP Backend, it communicated the status of the outlets, including the \"wrong\" status of outlet DC1, which for Sifinity was still \"Faulted/Unavailable\"\nCorrective actions:\nI asked R&D and they acted on the syncing between SCB and Sifinity to solve the outlet status visualization. It is now solved ad the outlets are correctly seen as Available.\nThe vendorErrorCode \"secc is initializing\" is a correct error message that appears after a loss of communication with EcoG.\nIn regards of the loss of communication and \"outlet is offline\", R&D and EcoG are working on hardening patches to avoid this behavior to happen again in the future. These communication hardening patches will be included in the next FW release v9.0.X (expected release: CW10)\nPlease let me know if further analysis or support is required, otherwise I will proceed to close the ticket as no further action is pending on service side.\nLooking forward to hearing feedback from you.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-01-30T13:30:18Z",
+            "extra": {
+                "sender": "cedric.schoepff@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d54c831f-e3fd-f011-8406-000d3ab1199b",
+            "subject": "RE: ID0473030-DC/Si-UC/FR-[Y2 / R9 313202799123] SECC Initialization Error CRM:03055000531",
+            "body": "Dear Mr. Schoepff,\nThank you very much for your email and for proactively reporting these issues. Your reports play an important role in helping us improve the reliability and performance of our Sicharge Ds, and they directly contribute to ensuring the highest availability for your chargers.\nAs mentioned, I will proceed with closing the ticket since no further action is required at this stage. The RC-FR team will get in contact with you to inform once the next FW release will be available.\nPlease don’t hesitate to reach out again anytime. Thanks again for your collaboration and ongoing support.\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2026-01-30T13:53:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bb83b4ba-e3fd-f011-8407-7ced8d44dfaf",
+            "subject": "Ticket 0473030 has been closed. Are you satisfied with our provided solution? CRM:00225328180",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0473030\nwith the title:\nID0473030-DC/Si-D/FR-[Y2 / R9 313202799123] SECC Initialization Error\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2026-01-30T13:58:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

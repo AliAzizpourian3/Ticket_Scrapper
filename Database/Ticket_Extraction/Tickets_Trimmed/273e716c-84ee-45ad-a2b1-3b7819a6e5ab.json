@@ -1,0 +1,71 @@
+{
+    "incident_id": "273e716c-84ee-45ad-a2b1-3b7819a6e5ab",
+    "ticket_number": "0420335",
+    "title": "ID0420335 - DC/Si-D/FI - [7LqY8C] - Charger in failsafe",
+    "created_on": "2025-04-23T07:02:29Z",
+    "last_activity": "2025-05-04T19:14:54Z",
+    "age": "7878",
+    "description": "Charger\nY2 / R6 313099394001\nin failsafe OoO.\nReboot did not fix the problem.\nSolution: -KF12 replacement fixed the issue 28.4.2024.",
+    "type": 1,
+    "priority": 596630000,
+    "chargerID": "7LqY8C",
+    "stage": null,
+    "serial_number": "Y2 / R6 313099394001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "add70491-2b15-fca8-9663-3f10b2af404b",
+            "subject": null,
+            "body": "Charger\nY2 / R6 313099394001\nin failsafe OoO.\nReboot did not fix the problem.",
+            "date": "2025-04-23T11:14:53Z",
+            "extra": {}
+        },
+        {
+            "id": "bab2f0f6-c320-f011-998a-000d3ab07fc1",
+            "subject": "ID0420335 - DC/Si-D/FI - [7LqY8C] - Charger in failsafe CRM:00643001400",
+            "body": "Dear Harjunpaa, Sakari (RC-FI SI E),\nThank you for reaching\nout\nto eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nLapua\nChargerID/Serial No.\n:\n7LqY8C\nProblem Description\n: Charger in failsafe\nTroubleshooting\n:\nDispenser_SelfTest_Error :\nEarly warning of possible Dispenser PLC cooling fans malfunctioning,\nNote: The self-test is performed at each boot-up of the dispenser where the cooling fans are power-cycled on-off from dispenser-PLC for multiple times in short duration cycles. If the ok signal reported by fan is lost even after a delay of ON command to the fan, it denotes self test error\npossible solutions:\ncheck electrical wiring of cooling circuit for tightness\ncheck if cooling air filters are clean and not blocking\nperform preventive maintenance and check by multiple reboots if the self test is failing, then it could be early sign that the cooling fan may fail later and it is recommended to start thinking about spares\nDC1_StateMonitor_KF13\nIt could be that the wires between SiD and Dispenser are wrongly wired or broken.\nOn SiD FA11:1 and Dispenser XD202:3A, Dispenser XD207:7B and Dispenser KF214:J1.SuC you should be able to measure 12V.\nOn SiD FA11:2 and Dispenser XD202:4C, Dispenser XD207:8D and Dispenser KF214:J1.SuO you should be able to measure 12V if the door switcḣ is open.\nPlease check the correct installation of the fast shutdown wires for DC3\nI am writing to formally inform that we are moving case 0420335 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-FI SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nSpare Part Ordering\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-FI SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nFor future reference, your case number is\n0420335\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-24T04:24:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b31956d3-f220-f011-998a-000d3ab07fc1",
+            "subject": "RE: ID0420335 - DC/Si-D/FI - [7LqY8C] - Charger in failsafe CRM:00643001400",
+            "body": "Hello,\nThank you for the info.\nUnfortunately I don’t see why the two issues you stated are related to a charger going into failsafe.\nThese should not cause it.\nWe would like to know what caused the charger to go on Failsafe.\nBest regards\nSakari Harjunpää\nCustomer Service Engineer\nSiemens Osakeyhtiö,\nSmart Infrastructure\nTarvonsalmenkatu 19\n02600 Espoo, Finland\nTel: +358 50 430 3634",
+            "date": "2025-04-24T09:59:43Z",
+            "extra": {
+                "sender": "sakari.harjunpaa@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "903c8373-5c23-f011-8c4d-7c1e523508ba",
+            "subject": "RE: ID0420335 - DC/Si-D/FI - [7LqY8C] - Charger in failsafe CRM:00643001400",
+            "body": "Hi,\nPlease address this for person who has SSH access.\nThank you,\nMarkus",
+            "date": "2025-04-27T11:40:51Z",
+            "extra": {
+                "sender": "markus.roiha@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "868f4261-cbc4-0558-8fd5-2a3e516956dc",
+            "subject": "Status Update",
+            "body": "Suspected root cause: EcoG not acessible leads to failsafe mode\nProof:\n2025-04-27T20:15:53.121957+00 -→ecog-update-le: Check SECC with IP: 10.20.17.101\n2025-04-27T20:15:56.882511 →  ● ecog-update-le.service loaded failed failed ecog-update-le.service",
+            "date": "2025-04-28T06:56:44Z",
+            "extra": {}
+        },
+        {
+            "id": "c544851a-a699-81a0-9e96-153415e77bb3",
+            "subject": "Work order defective -KF12",
+            "body": "",
+            "date": "2025-04-28T18:16:19Z",
+            "extra": {}
+        }
+    ]
+}

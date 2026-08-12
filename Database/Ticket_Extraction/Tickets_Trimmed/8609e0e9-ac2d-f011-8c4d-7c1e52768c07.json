@@ -1,0 +1,94 @@
+{
+    "incident_id": "8609e0e9-ac2d-f011-8c4d-7c1e52768c07",
+    "ticket_number": "0423590",
+    "title": "ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2",
+    "created_on": "2025-05-10T14:41:54Z",
+    "last_activity": "2025-07-10T19:37:20Z",
+    "age": "12596",
+    "description": "Reported issue: >> secc pilot is E << On Connector 2\nSolution: User error\nyyyy-mm-dd:",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "mPKJuo",
+    "stage": null,
+    "serial_number": "Y2 / R9 313202799090",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "f3e4efdf-ac2d-f011-8c4d-000d3ad97a58",
+            "subject": "Webform_incident_SiCharge D_10-05-2025_SN: Y2/R9 313202799090",
+            "body": "Dear Yan SPANO,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nY2/R9 313202799090\nThank you\neMobility Technical Support Team\nSehr geehrte/r Yan SPANO,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nY2/R9 313202799090\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-05-10T14:41:41Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7f1c1f87-af2d-f011-8c4d-7c1e5236eee4",
+            "subject": "ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227",
+            "body": "Dear Yan. Spano,\nThank you for reaching\nout\nto eMobility Support. My name is\nDeepanshi\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R9 313202799090\nChargerID/Serial No.\n:\nmPKJuo\nProblem Description\n: Facing an error >> secc pilot is E << On Connector 2\nFor future reference, your case number is\n0423590\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nDeepanshi Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-10T15:00:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70604bcf-0c2f-f011-8c4d-000d3ad97a58",
+            "subject": "ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227",
+            "body": "Hi Yan, good morning. I hope you are doing well.\nI will explain a bit more in detail why this error occurred, be aware of the time difference:\nThis is when the customer plugged in the EV and goes from Available to Preparing:\nUsually, what we see afterwards is the Authentication process but before the authentication, there is a process called SLAC which is the first communication process between EV and Charger.\nIn this process, it's only used the connectors from the plug.\nAfter 5 secs, the customer plugged out resulting in a failed session\nSince the process shouldn't be from B2 to A, the charger sent out a message of Error because afterwards, and the controller was unusable until a reboot:\nFrom our side, this is clearly a interaction issue:\nWhen we go from A → B2, the authentication is usually requested within 10-20sec see example below from your charger:\n13sec\nHere I can only say that the customer didn't wait long enough and the controller entered faulty state as it went through a process that is not supposed to.\nIf I answered to all your needs, let me know if I can close the ticket.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T08:40:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b7d95d1-362f-f011-8c4d-7c1e5236eee4",
+            "subject": "RE: ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227",
+            "body": "Dear Support,\nThanks for the rich feedback you give me today!!\nThere may be something I don't understand, and I'm sorry about that...\nI personnaly had the customer by phone and straight behind he launched a charge quick and easy on a closeby Siemens Charger\nFrom my side :\nI see in OCPP Secc initializing as soon as gone in preparing, then faulted, and finally finishing 3 mins after\nI do have a doubt on the user bad use, maybe a Cable issue, can it be? regularly this charger sends Secc's faulty messages\nLet's consider the user did wrong (It may happen, we are only humans)\nHow can we track those faults?\nIt doesn't make sense to me, as on customer side, that a simple ineraction issue must occur in a charger reboot!!!!\nfor instance\n1 car is charging\nI try to plus and I miss, the second becomes faulty / Unavailable\nHave I to wait the first car to finish charging, then reboot (mostly 10mins), then try again to charge?\nSorry if you feel my sentences rough, it is only a feeling, I do try to understand as max as possible the way chargers work\nThanks for understanding.\nVery best regards\nYan\nDe :\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nEnvoyé :\nlundi 12 mai 2025 11:17\nÀ :\nSPANO Yan (SMEG) <yan.spano@smeg.mc>\nObjet :\nID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227\nHi Yan, good morning. I hope you are doing well. I will explain a bit more in detail why this error occurred, be aware of the time difference: This is when the customer plugged in the EV and goes from Available to Preparing: Usually, what we\nHi Yan, good morning. I hope you are doing well.\nI will explain a bit more in detail why this error occurred, be aware of the time difference:\nThis is when the customer plugged in the EV and goes from Available to Preparing:\nUsually, what we see afterwards is the Authentication process but before the authentication, there is a process called SLAC which is the first communication process between EV and Charger.\nIn this process, it's only used the connectors from the plug.\nAfter 5 secs, the customer plugged out resulting in a failed session\nSince the process shouldn't be from B2 to A, the charger sent out a message of Error because afterwards, and the controller was unusable until a reboot:\nFrom our side, this is clearly a interaction issue:\nWhen we go from A → B2, the authentication is usually requested within 10-20sec see example below from your charger:\n13sec\nHere I can only say that the customer didn't wait long enough and the controller entered faulty state as it went through a process that is not supposed to.\nIf I answered to all your needs, let me know if I can close the ticket.\nBest regards,\nFrancisco",
+            "date": "2025-05-12T13:41:43Z",
+            "extra": {
+                "sender": "yan.spano@smeg.mc",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e9958805-3d2f-f011-8c4d-7c1e52361e39",
+            "subject": "ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227",
+            "body": "Hello Yan,\nThank you for sharing your concerns. I will try to answer the best I can.\nI see in OCPP Secc initializing as soon as gone in preparing, then faulted, and finally finishing 3 mins after\nI do have a doubt on the user bad use, maybe a Cable issue, can it be? regularly this charger sends Secc's faulty messages\nI don't believe it's a cable issue, I can see from our backend that there were ~100 sessions done in this charger with only the DC2 which is the one we are analyzing.\nI also cannot confirm if it's a hardware issue since the communication was not established, the EV was plugged out too soon. If the EV plugged in and after 30sec it didn't work, I could confirm the possibility of a hardware issue, even though very unlikely since we have so many good sessions.\nThe Finishing came 3mins afterwards because the SECC didn't acknowledge as a session since the communication was not successfully established.\nLet's consider the user did wrong (It may happen, we are only humans)\nHow can we track those faults?\nUnfortunately, the error codes you see, are the only tracking you can do. Just like us, I don't just follow the error flag, I search throughout the whole session to understand start-to-finish and provide the best detailed answer as I can. You can also try to do that from your side, You see the Preparing and then Faulted, which means that an error occurred before the start charging.\nIt doesn't make sense to me, as on customer side, that a simple ineraction issue must occur in a charger reboot!!!!\nI understand you are unhappy with this situation, this is not your usual fault, but I cannot confirm where the root cause lies since the logs are incomplete due to the crash of the session midway, which caused a possible firmware corruption and needed a restart.\nfor instance\n1 car is charging\nI try to plus and I miss, the second becomes faulty / Unavailable\nHave I to wait the first car to finish charging, then reboot (mostly 10mins), then try again to charge?\nTo explain you a little bit more how the SECC works is the following:\nIt changes PilotState to the next one and when it either succeeds in ending a session or failing, it should always end in Error state. This is how the SECC is designed to work, to acknowledge that the session is over, only when there is an actual fail of the session, you get that SECC is in Pilot E, when the session ends successfully, you don't get it even though it's there.\nSo in this failed session that we currently discussing, we should've waited for the PilotState to change from B2 to E and not to A, so that the SECC could acknowledge a failed session.\nYou should always follow what the screen shows and from the logs, the screen should've been showing, communication establishing please wait 30sec. And if the session were a failure, it would ask please unplug and try again.\nIn this case, you wouldn't need to do a reboot.\nLet me know if my answers were clear and please let me know your follow up questions :)\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-05-12T14:26:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5df95c99-ae30-f011-8c4d-7c1e523508ba",
+            "subject": "ID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2 CRM:02684000227",
+            "body": "Hi Yan, good afternoon :)\nPlease let me know your feedback or if I can close the ticket.\nThanks a lot!\nBest regards,\nFrancisco",
+            "date": "2025-05-14T10:31:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dcd69ea7-8b34-f011-8c4d-6045bddf319c",
+            "subject": "Ticket 0423590 has been closed. Are you satisfied with our provided solution? CRM:00315002657",
+            "body": "Dear Yan,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0423590\nwith the title:\nID0423590-DC/Si-D/MC-[ Y2/R9 313202799090] >> secc pilot is E << On Connector 2\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-19T08:31:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

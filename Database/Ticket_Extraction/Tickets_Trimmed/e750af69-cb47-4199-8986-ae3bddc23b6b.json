@@ -1,0 +1,79 @@
+{
+    "incident_id": "e750af69-cb47-4199-8986-ae3bddc23b6b",
+    "ticket_number": "0454435",
+    "title": "ID0454435-DC/Si-D/IT-[Y2 / S1 313508370049] Log Control issues",
+    "created_on": "2025-10-08T12:49:49Z",
+    "last_activity": "2025-10-14T08:49:24Z",
+    "age": "8400",
+    "description": "Reported behavior/issue - Log control issues\nSolution: Wrong authorization sequence from end user.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "Y2 / S1 313508370049",
+    "case_nature_code": 580000001,
+    "chargerID": "Px9aAf",
+    "additional_info": [
+        {
+            "id": "7b11a362-45a4-f011-bbd3-7c1e5236eee4",
+            "subject": "A new case manager was assigned to 0454435 CRM:00225268316",
+            "body": "Yashveer Ahlawat was assigned as new Case Manager for case 0454435 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e750af69-cb47-4199-8986-ae3bddc23b6b",
+            "date": "2025-10-08T12:50:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dee85fcb-9bba-970b-b2e7-b9f706530c18",
+            "subject": "Case description",
+            "body": "Hello,\nCan you check logs on the charger n.  Y2 / S1 313508370049 on the 7th of October, beetween\n4:19:27 PM and 4:19:49 PM (CU Time)\n4\n:21:29 PM and 4:23:00 PM. ( CU Time);\n4:29:47 PM and\n4:30:14 PM ( CU Time) .\nA customer tried to charge 3 times, but he had three 0 recharges.\nThank you in advance\nsoftware version\n: v5.0.23-0-ga7b036a",
+            "date": "2025-10-08T12:53:47Z",
+            "extra": {}
+        },
+        {
+            "id": "117eb11f-46a4-f011-bbd3-7c1e52faf3c6",
+            "subject": "ID0454435-DC/Si-D/IT-[Y2 / S1 313508370049] Log Control issues CRM:03056000126",
+            "body": "Dear\nBartolomeo\n,\nthank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nY2 / S1 313508370049\nChargerID\n:\nPx9aAf\nProblem Description\n: Log Control issues\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0454435\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nYashveer Ahlawat\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-08T12:55:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6bc24744-e8a4-f011-bbd3-7c1e52faf3c6",
+            "subject": "A new case manager was assigned to 0454435 CRM:00225268678",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0454435 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=e750af69-cb47-4199-8986-ae3bddc23b6b",
+            "date": "2025-10-09T08:16:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d0886d8a-41a8-f011-bbd2-002248a2be92",
+            "subject": "RE: ID0454435-DC/Si-D/IT-[Y2 / S1 313508370049] Log Control issues CRM:03056000126",
+            "body": "Good afternoon Bartolomeo,\nI am reaching out in regards of ticket\nID0454435.\nThe ticket was opened for a logs analysis request on charger Y2 / S1 313508370049 on 07.10.2025.\nI analyzed the logs, and these is the outcome:\nAt 2025-10-07T16:19:27, a RemoteStartTransaction is done via APP for outlet DC1, but subsequently DC2 is connected. Session of course fails.\nAt 2025-10-07T16:21:29, a RemoteStartTransaction is done via APP for outlet DC2, but subsequently DC1 is connected. Session of course fails.\nAt 2025-10-07T16:29:47, a RemoteStartTransaction is done via APP for outlet DC1, but subsequently DC2 is connected. Session of course fails.\nI checked the outlet configuration on SCB, and everything looks normal:\nAlso on the HMI, there should be no confusion on the outlet ID:\nIn conclusion, the sessions failed due to a misbehavior of the end customer while charging, or there might be an issue with the outlet IDs on the 3rd party app.\nIf there are no further questions, since no issue on the charger has been identified, and no further points are pending on service side, I would proceed to close the ticket.\nLooking forward to hearing form you soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-10-13T14:33:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f60813a2-daa8-f011-bbd2-7ced8d2f655a",
+            "subject": "Ticket 0454435 has been closed. Are you satisfied with our provided solution? CRM:00225271170",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0454435\nwith the title:\nID0454435-DC/Si-D/IT-[Y2 / S1 313508370049] Log Control issues\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-14T08:49:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

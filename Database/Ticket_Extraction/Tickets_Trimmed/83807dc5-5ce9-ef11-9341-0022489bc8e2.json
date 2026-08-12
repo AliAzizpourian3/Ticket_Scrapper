@@ -1,0 +1,185 @@
+{
+    "incident_id": "83807dc5-5ce9-ef11-9341-0022489bc8e2",
+    "ticket_number": "0406379",
+    "title": "ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted (OMV)",
+    "created_on": "2025-02-12T16:16:56Z",
+    "last_activity": "2025-04-07T16:51:51Z",
+    "age": "53122",
+    "description": "Reported behaviour/issue:\nConnector availability update with faulted messages\nRoot cause:\nSolution: Answer provided & No feedback received\nOn DAMEX Sanctioned List: no\nWarranty Status: Active",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "ASl07a",
+    "stage": null,
+    "serial_number": "MP / S5 170003620",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "fc61d3c3-5ce9-ef11-9341-002248a28911",
+            "subject": "Webform_incident_SiCharge D_12-02-2025_SN: MP / S5 170003620",
+            "body": "Dear Johannes Dissauer,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / S5 170003620\nThank you\neMobility Technical Support Team\nSehr geehrte/r Johannes Dissauer,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / S5 170003620\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-02-12T16:16:51Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "70a34232-6de9-ef11-9341-000d3add0e90",
+            "subject": "A new case manager was assigned to 0406379 CRM:00225163597",
+            "body": "Beerpal Singh was assigned as new Case Manager for case 0406379 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=83807dc5-5ce9-ef11-9341-0022489bc8e2",
+            "date": "2025-02-12T18:14:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9a12ef2e-76e9-ef11-9341-000d3a6717e6",
+            "subject": "ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Dear Johannes Dissauer,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / S5 170003620\nChargerID/Serial No.\n:\nASl07a\nProblem Description\n: Connector availability update with faulted\nTroubleshooting\n: Please allow us some time to analyze the logs and we will get back to you soon.\nFor future reference, your case number is\n0406379\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T19:18:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "4adf7633-cab9-2d61-88c2-2dc1d14b38fe",
+            "subject": "Note to L2",
+            "body": "During reboot the charger logs-",
+            "date": "2025-02-13T10:52:26Z",
+            "extra": {}
+        },
+        {
+            "id": "e36479f4-63ea-ef11-9341-000d3aba36fc",
+            "subject": "RE: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hello\nJohannes Dissauer,\nHope you are doing well.\nWe apologies for delayed reply. We have checked the logs in the given timestamp.\nTo your queries-\nThe initial reboot was triggered from the OCPP Backend:\n2.\nIn the logs i could see a lot of \"shutdownservice[712]: 2025-02-12 14:58:45,807 [IN\nFO]:tcp reader: poweroff requested again, ignored...\" messages.?\nI checked the SCB Logs of 170003620 there are no SCB entries at this time stamp.\n3.Why i can also see \"s7_cpu_control returned with error code: 255\" and \"CPU IP not reachable or wrong IP entered\", \"FAILED to send command to SWCPU\" (2025-02-12, 14:58:43)?\nI checked the SCB Logs of 170003620 There are no entries at this time stamp.\n4.\nCan you also please tell me why we can see a lot of \"Connector Availability Update\n\" with Faulted declarated? Our customer also had SC access and is wondering why there are so many errors.?\nThe are no such messages in the SCB logs. Not sure what you are referring.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-13T23:40:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b239faab-d5ed-ef11-9341-6045bddfbfba",
+            "subject": "RE: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hello\nJohannes Dissauer,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-18T08:52:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "94518a46-19ee-ef11-9341-6045bde1756e",
+            "subject": "AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hi,\nEnclosed you will find my answers in\nred\n.\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 18. Februar 2025 09:55\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540\nHello Johannes Dissauer,\nHope you are doing well.\nWe hope you received our previous email. Unfortunately, we did not receive any response from you.\nDo let us know if you have any queries or concerns regarding your ticket.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-18T16:56:29Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "39b086c8-59ef-ef11-9341-6045bddfbfba",
+            "subject": "RE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hello Johannes,\nThanks for the response.\nAs we reviewed the photos you shared, the messages in the logs are common during a reboot. Regarding the SCC-related messages, I am approaching the concerned team for discussion and will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-20T07:10:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5630374c-05f9-ef11-bae2-7c1e523508ba",
+            "subject": "RE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hello Johannes,\nHope you are doing well.\nWe apologize for the delayed reply. As we checked the logs on both SCC and SCB, we correlated them with the given timestamp and observed that...\nAs we checked the logs for the timestamp 15:38:56 (UTC), it showed as faulted on\nSCB\n, and the same fault was recorded in the SCC logs. The fault event was triggered due to an authorization issue. Maybe the ID tag is not whitelisted.\n2025-02-18T15:38:56.768346+00:00 sicharge-cp [local0:info] sicharge-cp-backend/f5a51e691eb6[733]: OCPP: Send command: StatusNotification (763fa22b-5cc7-44af-9df2-aa365cbaf4b2) - {\"connectorId\":2,\"errorCode\":\"InternalError\",\"status\":\"Faulted\"}\n2.In this case, when the connector availability became faulted on SCC at 02:30:09 PM (local time), we checked the logs on SCB, where it showed as suspended and we could not find any fault message during that time. We are further investigating with the concerned team and will get back to you soon with an update.\nIf you have any further queries, please do notify us.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-04T14:31:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9661ee9b-ee98-2e2c-adbc-59739b5a0444",
+            "subject": "Note to L2",
+            "body": "The charger under Beta testing.\nSoftware Version\nv6.1.2-0-gbf2a5a9",
+            "date": "2025-03-11T15:53:53Z",
+            "extra": {}
+        },
+        {
+            "id": "0ad0d3e0-7804-f011-bae3-7c1e52350ea5",
+            "subject": "RE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hello Johannes,\nHope you are doing well.\nAs discussed previously, could you please confirm whether the issue is still persisting? We reviewed the logs from the previous day, which indicate that the Connector Availability Update faulted during the reboot.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-19T04:16:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6bbfd152-ad05-f011-bae2-7c1e5220284b",
+            "subject": "RE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Dear Johannes Dissauer,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0406379\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-20T17:04:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5821c0ef-5806-f011-bae2-000d3ad97a58",
+            "subject": "RE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Dear Johannes Dissauer,\nI hope this email finds you well.\nWe have made several attempts to reach you regarding your\ncase#\n0406379\nbut have not received a response. As we strive to provide timely and efficient service, we must close your ticket due to the lack of communication.\nIf you still require assistance on this matter or have any questions, please submit a new request at\nwww.siemens.com/emobility-service-request\nwith reference to case#\n0406379\nand we shall be happy to assist you again.\nPlease do not reply back to this email, as once closed, responses to the ticket are no longer monitored.\nThank you for your understanding.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-21T13:32:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "128e6757-5906-f011-bae2-000d3ad97a58",
+            "subject": "Ticket 0406379 has been closed. Are you satisfied with our provided solution? CRM:00921001646",
+            "body": "Dear Johannes,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0406379\nwith the title:\nID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted (OMV)\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-03-21T13:35:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d9e47be-a809-f011-bae3-6045bddf319c",
+            "subject": "AW: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540",
+            "body": "Hi,\ndo you found the bug.\nWhy do we had this problem?\nKind regards,\nJohannes\nVon:\nSI Emobility Technical Support <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 20. März 2025 18:06\nAn:\nDissauer, Johannes (RC-AT SI E C) <johannes.dissauer@siemens.com>\nBetreff:\nRE: AW: ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted CRM:00921001540\nDear Johannes Dissauer,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0406379\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-03-25T18:41:21Z",
+            "extra": {
+                "sender": "johannes.dissauer@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ac5905c3-a809-f011-bae2-7c1e52768c07",
+            "subject": "Email sent to a closed case 'ID0406379-DC/Si-D/AT-[MP / S5 170003620] Connector availability update with faulted (OMV) (0406379)' CRM:00225181061",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0406379\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-03-25T18:41:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

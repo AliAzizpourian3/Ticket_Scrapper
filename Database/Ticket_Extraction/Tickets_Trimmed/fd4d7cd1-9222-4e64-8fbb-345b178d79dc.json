@@ -1,0 +1,104 @@
+{
+    "incident_id": "fd4d7cd1-9222-4e64-8fbb-345b178d79dc",
+    "ticket_number": "0424710",
+    "title": "ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1)",
+    "created_on": "2025-05-15T13:06:57Z",
+    "last_activity": "2026-03-26T20:18:39Z",
+    "age": "38949",
+    "description": "We kindly request your support for the firmware upload on the following chargers.\nUnfortunately, we were not able to perform the upload via SCB.\nChargers:\npTCY0P →\nRollout completed\nyiNLRg →\nRollout completed\nBdnoyM →\nRollout completed\ndYN5JP →\nRollout completed\nrDmPhU →\nDoing the normal Rollout\nAdditionally:\ngB248j\n→ Only Rollout of v7.0.5 should be done. Do not click it to Active. →\nRollout completed\nhYzzx3\n→ Only Rollout of v7.0.5 should be done. Do not click it to Active. →\nRollout completed\nOOM41m\n→ Only Rollout of v7.0.5 should be done. Do not click it to Active. →\nRollout completed\ncgUUly\n→ Will update v6.1.3. Also, Rollout v7.0.5 but do not click it to Active.→\nRollout completed",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "pTCY0P",
+    "stage": null,
+    "serial_number": "Y2 / R7 313065117130,MP / PN 170001119,MP / R1 170001247,MP / S4 1700034891,MP / PN 170001131,Y2/S0 313971733008,Y2 / RN 3134059510091,Y2/RN 313392372001,Y2/S3 300000004072,MP / PN 170001131",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "51d7f66e-8593-1e17-b182-998739331830",
+            "subject": "Note to L3",
+            "body": "Suspected Root Cause:\nSeems\nhawkbit\nfile is missing in config.\nProblem Description:\nT\nhere is an issue with the charger not updating: the download triggered earlier is still showing as \"already initiated\" on the SCB, even though we are attempting to trigger the rollout.\nAction Performed (L2):\nWe verified the charger’s online status by loading the router password.\nCharger SW Version:\nMultiple\nReason for Handover (L3):\nNeed to check the configuration file via SSH access and make the necessary adjustments. Once the changes are made, please update the charger as per the list above. Alternatively, let me know once the necessary changes are done, and I will trigger the update accordingly on all units.",
+            "date": "2025-05-15T13:33:10Z",
+            "extra": {}
+        },
+        {
+            "id": "faf46dc0-01cc-c296-a7c5-42e8416c54cc",
+            "subject": "Individual unit wise note",
+            "body": "The following units should be updated to\nFW v7.0.5\n:\npTCY0P\n– Issue: Showing as \"already initiated\" on SCB\nyiNLRg\n– Issue: Update failing after activation\nBdnoyM\n– Issue: Showing as \"already initiated\" on SCB\ndYN5JP\n– Issue: Showing as \"already initiated\" on SCB\nrDmPhU\n– Issue: Update failing after activation\nThe following units should be updated to\nFW v6.1.3 only\n:\nPlease also\nroll out v7.0.5\n, but\ndo not activate it\n.\ngB248j\n– Issue: Showing as \"already initiated\" on SCB\ncgUUly\n– Issue: Showing as \"already initiated\" on SCB",
+            "date": "2025-05-15T13:44:09Z",
+            "extra": {}
+        },
+        {
+            "id": "9edee88f-d634-f011-8c4e-6045bdde4786",
+            "subject": "0424710 - ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00472000297",
+            "body": "Hello Emre,\nI have forced manually the rollout for all the chargers. Please confirm if it's all correct and no other ID is missing.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-05-19T17:27:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "04d61399-7936-f011-8c4d-7c1e52350ea5",
+            "subject": "Re: 0424710 - ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00472000297",
+            "body": "Hi Joao,\nI saw the rollout, and when I activated it, some of the chargers still didn’t update. For example, charger ID:\nyiNLRg\ndid not update.\nCould you please check the chargers\nWith best regards,\nYunus Emre Temel\nSI Emobility Technical Support <emobility_support.si@siemens.com> şunları yazdı (19 May 2025 20:28):\n﻿\nHello Emre,\nI have forced manually the rollout for all the chargers. Please confirm if it's all correct and no other ID is missing.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com\n<image.png>",
+            "date": "2025-05-21T19:27:23Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c94a3e13-8936-f011-8c4e-6045bde0265d",
+            "subject": "RE: 0424710 - ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00472000297",
+            "body": "Hi Joao,\nThe update still cannot be done on the following devices...\npTCY0P\nyiNLRg\ndYN5JP\nrDmPhU\nBdnoyM >> updated\ngB248j >> OK\nhYzzx3 >> OK\nOOM41m>> OK\ncgUUly → Will update v6.1.3. Also, Rollout v7.0.5 but do not click it to Active.\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-21T21:18:04Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "dadde9f6-f53a-f011-b4cc-000d3ad97a58",
+            "subject": "RE: 0424710 - ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00472000297",
+            "body": "Hi Joao,\nDid you check the chargers?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-05-27T12:27:41Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "41dc547f-f074-f406-a106-1d2e34d20c49",
+            "subject": "Status:",
+            "body": "pTCY0P- updated to v7\nRCD_FB1_or_MCB_FC5_AC_Charging - TRUE\nyiNLRg - Stuck in v5 not possible to update to v6\ndYN5JP - done\nrDmPhU - offline",
+            "date": "2025-05-30T14:03:02Z",
+            "extra": {}
+        },
+        {
+            "id": "2620be57-ce46-f011-8779-7c1e5236c42c",
+            "subject": "0424710 - ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00472000309",
+            "body": "Hello Emre,\nAll chargers were updated. I will proceed to close this ticket.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-06-11T14:14:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7de5edf4-5029-f111-8342-000d3ab1199b",
+            "subject": "CASE CLOSED: ID0424570-DC/Si-D/TR-[MP / PN 170001131,+Multiple] Firmware Update (C1) CRM:00225359630",
+            "body": "Dear Yunus Emre Temel,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0424710, the case is now closed. We hope that we have responded to your request in a timely and professional manner.\nIf the issue is not resolved, please click the button\nReactivate the Ticket\nIf you need further assistance later, you can always submit a new request via our support form:\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Technical Support Team",
+            "date": "2026-03-26T20:18:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

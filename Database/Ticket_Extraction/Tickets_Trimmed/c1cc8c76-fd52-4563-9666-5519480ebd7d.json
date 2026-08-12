@@ -1,0 +1,52 @@
+{
+    "incident_id": "c1cc8c76-fd52-4563-9666-5519480ebd7d",
+    "ticket_number": "0415008",
+    "title": "ID0414984-DC/Si-D/FR-[Y2 / P7 312547889/08] Terminal remains disconnected (C1)",
+    "created_on": "2025-03-25T23:09:57Z",
+    "last_activity": "2025-04-03T08:25:04Z",
+    "age": "12076",
+    "description": "Reported behavior/issue:\nthe terminal remains disconnected from the charger and does not reconnect even after a reboot. No transactions have been made for a while. Do you know what the issue could be? Should the temrinal be replaced?\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:  no\nWarranty Status: Out of warranty since 10/20/2024\n27.03.2025: Note to NOC\n03.04.2025: Handover from ES to NOC",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "sPWpLI",
+    "stage": null,
+    "serial_number": "Y2 / P7 312547889/08,Y2 / P7 312547889/08",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "f667feaf-0fad-9d2c-b018-0c85a41208a3",
+            "subject": "Analysis",
+            "body": "Error\nTue, 25 Mar 2025 08:18:35 GMT\n2025-03-25, 08:18:31\n2025-03-25T08:18:31.835973+00:00 sicharge-cp [local0:err] sicharge-cp-backend/205b7ca1f6d5[733]: Payment-Terminal-Error-Flag 'PaymentTerminalUnreachable_PZx' changed to false\nTue, 25 Mar 2025 08:18:21 GMT\n2025-03-25, 08:18:16\n2025-03-25T08:18:16.816573+00:00 sicharge-cp [local0:err] sicharge-cp-ccv/0f2635742468[733]: Payment Terminal error: {\"errno\":-111,\"code\":\"ECONNREFUSED\",\"syscall\":\"connect\",\"address\":\"10.20.17.50\",\"port\":20007,\"stack\":\"Error: connect ECONNREFUSED 10.20.17.50:20007\\n at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)\"}\nTue, 25 Mar 2025 08:18:08 GMT\n2025-03-25, 08:18:08\n2025-03-25T08:18:08.446290+00:00 sicharge-cp [daemon:debug] swupdate-start-daemon.sh[8854]: [TRACE] : SWUPDATE running : [channel_log_effective_url] : Channel's effective URL resolved to https://hawkbit.sicharge.technology/default/controller/v1/arn:aws:iot:eu-central-1:689117314700:thing_sPWpLI\nTue, 25 Mar 2025 08:18:08 GMT\n2025-03-25, 08:18:08\n2025-03-25T08:18:08.446290+00:00 sicharge-cp [daemon:debug] swupdate-start-daemon.sh[8854]: [TRACE] : SWUPDATE running : [server_set_config_data] : ConfigData: https://hawkbit.sicharge.technology/default/controller/v1/arn:aws:iot:eu-central-1:689117314700:thing_sPWpLI/configData\nTue, 25 Mar 2025 08:18:13 GMT\n2025-03-25, 08:18:08\n2025-03-25T08:18:08.446290+00:00 sicharge-cp [daemon:debug] swupdate-start-daemon.sh[8854]: [TRACE] : SWUPDATE running : [server_get_deployment_info] : No pending action on server.\nTue, 25 Mar 2025 08:18:08 GMT\n2025-03-25, 08:18:07\n2025-03-25T08:18:07.785673+00:00 sicharge-cp [daemon:debug] swupdate-start-daemon.sh[8854]: [TRACE] : SWUPDATE running : [start_suricatta] : Suricatta awakened.\nTue, 25 Mar 2025 08:18:08 GMT\n2025-03-25, 08:18:06\n2025-03-25T08:18:06.811409+00:00 sicharge-cp [local0:err] sicharge-cp-backend/205b7ca1f6d5[733]: Payment-Terminal-Error-Flag 'PaymentTerminalUnreachable_PZx' changed to true - (Connection to payment terminal cannot be established.)\nTue, 25 Mar 2025 08:18:07 GMT\n2025-03-25, 08:18:06\n2025-03-25T08:18:06.807459+00:00 sicharge-cp [local0:info] sicharge-cp-backend/205b7ca1f6d5[733]: Couldn't set PT language to en set lanuage to fallback language en\nTue, 25 Mar 2025 08:18:07 GMT\n2025-03-25, 08:18:06\n2025-03-25T08:18:06.802939+00:00 sicharge-cp [local0:err] sicharge-cp-ccv/0f2635742468[733]: Payment Terminal error: {\"errno\":-104,\"code\":\"ECONNRESET\",\"syscall\":\"read\",\"stack\":\"Error: read ECONNRESET\\n at TCP.onStreamRead (node:internal/stream_base_commons:217:20)\"}",
+            "date": "2025-03-25T23:11:35Z",
+            "extra": {}
+        },
+        {
+            "id": "b8fc44af-e1a9-9f80-9b16-8b70583ea2c8",
+            "subject": "Notes for L3",
+            "body": "Suspected Root Cause :\n\"errno\":-111,\"code\":\"ECONNREFUSED\"\nProblem Description :\nthe terminal remains disconnected from the charger and does not reconnect even after a reboot. No transactions have been made for a while\nAction Performed (L2) :\nAnalysis\nCharger SW Version:\nV6.0.3\nReason for Handover (L3) :\nDeeper analysis\nLog analysis with timestamp :\nMentioned in timeline\nAction Required\nAction by HQ : To check further if terminal needs to be replaced.\nAttachement\n: refer attched logs",
+            "date": "2025-03-25T23:13:59Z",
+            "extra": {}
+        },
+        {
+            "id": "990d2d36-3412-3a9b-81f6-b43ade56ca6d",
+            "subject": "Note to NOC",
+            "body": "The “Terminal ID” of the payment terminal is missing. It is needed by ES to discuss the case and proceed further.\nPlease collect the Terminal ID from the end customer/RC-FR and move the ticket back to ES.",
+            "date": "2025-03-27T09:17:01Z",
+            "extra": {}
+        },
+        {
+            "id": "a14f3066-0d5b-daf7-a839-d09263cc1c74",
+            "subject": "Notes for L3",
+            "body": "The TID for this terminal is\n40800689\n.",
+            "date": "2025-03-28T20:38:48Z",
+            "extra": {}
+        },
+        {
+            "id": "07798242-6d89-f50d-8812-02ea5edf5175",
+            "subject": "Handover from ES to NOC",
+            "body": "Onsite visit from the region is required, no further action can be done remotely.\nThe payment terminal shows the error flag:\nPaymentTerminalInitialisationRequired_PZx\nsicharge-cp\nSYSTEM\ntrue\nPayment Terminal requires \"initialisation\"\nAn onsite visit is required, to connect to the terminal and initialize it with the terminal ID provided (TID:\n40800689).\nIf initialization onsite is not successful, please advise the region to bring a spare terminal unit and replace it. Then initialize the new one with the same TID.\nPlease inform also that the case is related to an out of warranty charger.\nI am closing this child case so you can handover the ticket to the region",
+            "date": "2025-04-03T08:12:58Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "incident_id": "66eee464-80e9-ef11-9342-000d3a697eb1",
+    "ticket_number": "0406404",
+    "title": "ID0406404-DC/Si-D/IL-[6o3kMH]- SCB offline, Scrambled HMI, Cfast issue",
+    "created_on": "2025-02-12T20:32:02Z",
+    "last_activity": "2025-12-16T14:01:13Z",
+    "age": "8082",
+    "description": "Reported behavior/issue:\nSCB offline + Scrambled screen + CFast issue\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "6o3kMH",
+    "stage": null,
+    "serial_number": "Y2 / R2 312900727010",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "8e899651-80e9-ef11-9341-7c1e52372dd0",
+            "subject": "Y2 / R2 312900727010- Software problem",
+            "body": "Dear Team,\nWe have a problem with the charging station, I think it's a software problem or configuration files.\nThe charging station has lost communication for the last two days, and today it turned out when I got to the website, the main screen of the charging station was under Hello/Hallo, I checked the routers, and both were connected.\nIn addition, there was no connection with the charging station in SCB, but strange logs appeared, please search the logs from today.\nThe charging station was under the latest software update v6.0.3-0 and I performed a flash operation for the C-fast card with the latest update, along with the configuration files corresponding to this charging station.\nAfter two attempts, and each flash attempt that took at least an hour and a half, I encountered a failure.\nThroughout the flash procedure, the screen was scrambled, and nothing seemed to progress.\nIn the third and final attempt, I tried to downgrade the update to V4.011 and encountered the same failure.\nI am attaching 2 pictures and a video from a charging station.\nPlease help us find a solution as soon as possible, this is a very critical station.\nBr,\nOrel.",
+            "date": "2025-02-12T20:31:24Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b824255f-82e9-ef11-9341-000d3ab1a06e",
+            "subject": "A new case manager was assigned to 0406404 CRM:00225163636",
+            "body": "Vishal Dhiman was assigned as new Case Manager for case 0406404 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=66eee464-80e9-ef11-9342-000d3a697eb1",
+            "date": "2025-02-12T20:46:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7f28bf92-85e9-ef11-9342-000d3a67d7cb",
+            "subject": "ID0406404-DC/Si-D/IL-[6o3kMH]- SCB offline, Scrambled HMI, Cfast issue CRM:00645000961",
+            "body": "Dear Orel Lachiani,\nThank you for reaching\nout\nto eMobility Support. My name is\nVishal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nY2 / R2 312900727010\nChargerID/Serial No.\n:\n6o3kMH\nProblem Description\n: SCB offline, Scrambled HMI, Cfast issue\nTroubleshooting\n: We checked the logs from February 10th and found that after the charging session finished around 06:30 AM UTC, the charger's door was opened at approximately 06:54 AM UTC. The logs indicate a 'door open' message at that time, with the last recorded log at 06:55 AM UTC. However, these logs are not sufficient to determine the root cause of the issue.\nCould you confirm whether the DP cable is properly connected to the PLC and the HMI DLogic controller?\nAdditionally, please plan a site visit to inspect the HMI wiring and investigate further. Kindly carry the following items during the visit:\nSpare display/monitor to check if the HMI is faulty\n32GB USB drive with Live Linux\nCFast reader\nSiemens laptop with local admin rights\nCompanion tool\nPlease let us know 1 day prior to the site visit to arrange someone to assist you remotely during the site visit.\nFor future reference, your case number is\n0406404\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nVishal Dhiman\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-12T21:09:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "bbc8497a-5af6-969b-952c-586564e0fb58",
+            "subject": "Site visit planned for Feb 16th, 09:00 AM Israel time (~12:30 PM IST)",
+            "body": "Inputs from the Service Team:\nThe charger HMI got stuck. The RC rebooted the charger, but the issue persisted.\nThe RC attempted a CFast flash multiple times using v6.0.3 and v4.0.11, but it failed.\nDuring the configuration restore process, the charger HMI displayed scrambled screen.\nAction Items:\nBefore attempting the CFast flash,\ncheck the HMI connections, especially the DP cable.\nreset the router passwords to “admin01”.\nIf all connections are proper, proceed with the CFast flash and restore_config.",
+            "date": "2025-02-13T22:13:24Z",
+            "extra": {}
+        },
+        {
+            "id": "7f056a22-1628-0b33-893f-357acd255199",
+            "subject": "Config files",
+            "body": "6o3kMH-v4.0.11.zip\n6o3kMH-v6.0.3.zip",
+            "date": "2025-02-13T22:20:28Z",
+            "extra": {}
+        },
+        {
+            "id": "618d5a01-a7ea-ef11-9341-000d3a6717e6",
+            "subject": "RE: ID0406404-DC/Si-D/IL-[6o3kMH]- SCB offline, Scrambled HMI, Cfast issue CRM:00645000961",
+            "body": "Dear Vishal,\nFollowing our conversation, please send us 2 configuration files for this charging station for the purpose of the flashing process with Linux.\nFiles for FW 4.0.11\nFiles for FW 6.0.3\nWe are scheduled to arrive at the site on Sunday at 9:00 AM Israel time.\nHave a nice weekend.\nOrel.",
+            "date": "2025-02-14T07:40:53Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "232bd627-0eeb-ef11-9342-6045bdde1b10",
+            "subject": "RE: ID0406404-DC/Si-D/IL-[6o3kMH]- SCB offline, Scrambled HMI, Cfast issue CRM:00645000961",
+            "body": "Hi Orel,\nPlease find attached config files for the charger.\nThank you\nBest Regards,\nVishal Dhiman\neMobility Support Team\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-02-14T19:59:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f3f95857-14d7-7bde-bc0d-e6406df86787",
+            "subject": "Notes for NOC",
+            "body": "Site visit planned for Feb 16th, 09:00 AM Israel time (~12:30 PM IST)\nInputs from the Service Team:\nThe charger HMI got stuck. The RC rebooted the charger, but the issue persisted.\nThe RC attempted a CFast flash multiple times using v6.0.3 and v4.0.11, but it failed.\nDuring the configuration restore process, the charger HMI displayed scrambled screen.\nAction Items:\nBefore attempting the CFast flash,\ncheck the HMI connections, especially the DP cable.\nreset the router passwords to “admin01”.\nIf all connections are proper, proceed with the CFast flash and restore_config.",
+            "date": "2025-02-15T02:15:01Z",
+            "extra": {}
+        },
+        {
+            "id": "14f79d2a-8f4d-8124-bdf6-b77f03d17abe",
+            "subject": "Site intervention on 16 Feb 2025",
+            "body": "Checked DP cable and connections. Everything seems fine. But still there was scramble image on HMI.\nThen we tried flashing Cfast, PLC(KF1) was unable to detect Cfast card. There was no command to insert Cfast card.\nCharger was rebooting at 6% many times.\nChecked LED on PLC- RN led was orange at first, after that no led. PWR led was green.\nTried getting dump data as well, but was unable to extract.\nWe suspected that, it can be the issue with KF1. Hence, tried with the new one.\nAfter changing PLC, we were able to receive commands/instructions on HMI and restore config worked well. Which means there was no issue with live linux USB or CFast card.\nCharger was online on SCB and Outlets were available.",
+            "date": "2025-02-16T13:41:04Z",
+            "extra": {}
+        },
+        {
+            "id": "d7f94aad-22a2-ef6d-9f94-95a635bf651b",
+            "subject": "Update",
+            "body": "After replacing KF1, the charger worked fine, but then XF4 became faulty (IP lost, Eth. port LED blinking without an Eth. connection). XF4 also needs replacement. The charger is down again, and RC will plan another site visit (date not confirmed)",
+            "date": "2025-02-17T02:07:09Z",
+            "extra": {}
+        },
+        {
+            "id": "b39f0836-9fbc-9023-adc7-e5e4334136cb",
+            "subject": "Site intervention on 17 Feb 2025",
+            "body": "Replaced router XF4.\nCharging is working now- SCB & OCPP both are online, both outlets available.",
+            "date": "2025-02-18T02:17:16Z",
+            "extra": {}
+        },
+        {
+            "id": "52b4858c-d9ed-ef11-9341-7c1e5237e811",
+            "subject": "RE: ID0406404-DC/Si-D/IL-[6o3kMH]- SCB offline, Scrambled HMI, Cfast issue CRM:00645000961",
+            "body": "Dear Team,\nI am attaching the warranty claim for the replaced components in the charging station\nPlease close this ticket.\nMany thanks for your support!\nBr,\nOrel.",
+            "date": "2025-02-18T09:20:11Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

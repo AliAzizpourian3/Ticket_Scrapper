@@ -1,0 +1,45 @@
+{
+    "incident_id": "d3696e96-0e33-4316-bcdb-0194be16212a",
+    "ticket_number": "0408615",
+    "title": "ID0407467-DC/Si-D/BE-[MP / PD 170001360] plug stucks when stopping a session (C1)",
+    "created_on": "2025-02-22T21:16:42Z",
+    "last_activity": "2026-01-30T07:54:40Z",
+    "age": "16274",
+    "description": "Reported behavior/issue:\nOn both the Sicharge D and the Dispencer, charging sessions are started successfully. However, there are issues when stopping a charging session. The plug then gets stuck with the customer, preventing the customer from leaving.\nRoot cause: Unknown\nSolution:\nDocker restart\nOn DAMEX Sanctioned List: no\nWarranty Status: Out of warranty since 12/7/2024\nNotes from ES to NOC [ 06/03/2025]\nNote:\nAs the charger is Out of warranty, remote activities where limited from my side (Example - EcoG FW update, SECC reboot & etc) - to avoid the risk associated with a hardware failure or site intervention",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "v4AX1J",
+    "stage": null,
+    "serial_number": "MP / PD 170001360,MP / PD 170001360,MP / PD 170001360",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "7ea1cfe5-f5f5-2f9a-a066-a721c6837501",
+            "subject": "Notes for L3",
+            "body": "Suspected Root Cause\n:\nNA\nProblem Description :\nplug stucks when stopping a session\nAction Performed (L2) :\nLog analysis. In the logs found that session was stopped by SECC. Also there was error code\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected.\nCharger SW Version:\nv6.\n0\n.3\nReason for Handover (L3) :\nKindly check in Ecog logs why the session was stopped. And require further analysis on why the plug is stuck in “Preparing” and “Finishing” modes.\nFault history : NA\nLog analysis with timestamp :\nMon, 17 Feb 2025 18:38:44 GMT\n2025-02-17, 18:38:39\n2025-02-17T18:38:39.548916+00:00 sicharge-cp [local0:info] ecog-secc-adapter/5fb6bf86b1ce[734]: {\"type\":\"stop_charging\",\"timestamp\":1739817520147,\"chargerId\":\"secc2300-07916\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"\nsource\":\"SECC\n\",\"user\":\"\"}}\nMon, 17 Feb 2025 18:38:40 GMT\n2025-02-17, 18:38:39\n2025-02-17T18:38:39.535317+00:00 sicharge-cp [local0:info] ecog-secc-adapter/5fb6bf86b1ce[734]: {\"type\":\"alert\",\"timestamp\":1739817520143,\"chargerId\":\"secc2300-07916\",\"outlet\":\"1\",\"outletType\":\"CCS\",\"payload\":{\"src\":\"stack\",\"\ncode\":54,\"msg\":\"ERR_EVCOM, EV communication problem detected\n\"}}\nAction Required\nAction by HQ : Further analysis\nAttachement\n: refer attched logs",
+            "date": "2025-02-22T21:19:03Z",
+            "extra": {}
+        },
+        {
+            "id": "ca05969d-0576-a6f6-b33f-09d9c5ec5a7d",
+            "subject": "Status Update: ",
+            "body": "Dc1 -→ Pilot state - B2\nAction taken - Restarted the ecog-secc-adapter -→ Issue still persist\nNeed to understand whether a EV is physically connected to EVSE\nRC support is required & Charger is out of warranty",
+            "date": "2025-02-27T08:28:27Z",
+            "extra": {}
+        },
+        {
+            "id": "9cb168b9-c4c9-e8b1-a2f9-22182fe0b8b6",
+            "subject": "Status Update: 06/03/2025",
+            "body": "Observed issue did not repeat after docker restart\nIssue timestamp:",
+            "date": "2025-03-06T04:21:32Z",
+            "extra": {}
+        },
+        {
+            "id": "d94c82e8-a221-3dbb-9afb-9ec700a5b583",
+            "subject": " Notes from ES to NOC [ 06/03/2025]",
+            "body": "Problem Description\n: Charger stuck in finishing state\nSuspected Root Cause\n: Unknown\nAction Performed:\nDocker restart\nCharger SW Version\n: v6.0.3\nFault history:\nNA\nLog analysis with timestamp:\n2025-02-20 16:39:39.096,\"2025-02-20T16:39:38.541785\nAttachment:\nScreenshot",
+            "date": "2025-03-06T04:26:01Z",
+            "extra": {}
+        }
+    ]
+}

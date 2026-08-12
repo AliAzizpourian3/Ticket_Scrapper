@@ -1,0 +1,101 @@
+{
+    "incident_id": "de3196fc-f8e6-4cff-b212-dd08297cf522",
+    "ticket_number": "0463506",
+    "title": "ID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge",
+    "created_on": "2025-11-23T13:03:41Z",
+    "last_activity": "2025-11-26T13:09:52Z",
+    "age": "4326",
+    "description": "Reported behavior/Issue: Check Logs - Pending Charge\nSolution: Logs analysis provided. Sessions authenticated but EV not connected.",
+    "type": 1,
+    "priority": 1,
+    "stage": null,
+    "serial_number": "MP / R9 170002655",
+    "case_nature_code": 580000001,
+    "chargerID": "uCckxF",
+    "additional_info": [
+        {
+            "id": "d2c4dff9-3241-780c-a019-e1194babdaa0",
+            "subject": "Description",
+            "body": "Hi\nOn charger n.\n170002655 (I can't find it in the asset) there is a pending charge started on Nov, 23rd\n09:34:29 (UTC) but charge has never been started, since no cable ha been really connected to the vehicle.\nPlease, check the log.\nThank you in advance\nsoftware version\n: v8.0.5-0-g33a6c1d+APN",
+            "date": "2025-11-23T13:19:06Z",
+            "extra": {}
+        },
+        {
+            "id": "65ca2976-6fc8-f011-bbd3-7ced8d4258c6",
+            "subject": "A new case manager was assigned to 0463506 CRM:00225292304",
+            "body": "Sajid Hussain was assigned as new Case Manager for case 0463506 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de3196fc-f8e6-4cff-b212-dd08297cf522",
+            "date": "2025-11-23T13:22:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "93e22a90-6fc8-f011-bbd3-7c1e5236229d",
+            "subject": "ID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge CRM:03097000231",
+            "body": "Dear\nMaria\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / R9 170002655\nChargerID\n:\nuCckxF\nProblem Description\n: Check Logs - Pending Charge\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0463506\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSajid Hussain\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-23T13:23:22Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "93fdfe51-7ac8-f011-bbd3-7c1e523628c9",
+            "subject": "ID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge CRM:00263000205",
+            "body": "Dear\nMaria Borrelli\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002655\nwhich led to the opened ticket:\n0463506\n.\nThe error description is:\n\"pending charge started on Nov, 23rd\n09:34:29 (UTC) but charge has never been started, since no cable ha been really connected to the vehicle.\"\nWe have checked the logs between 2025-11-23T08:00:01 and 2025-11-23T10:59:20:\nIt was possible to found CP Changes at this times:\n2025-11-23T10:16:35.064409+00:00 [FW080005G1]\n2025-11-23T10:21:50.038769+00:00 [FW080005G1]\n2025-11-23T10:23:19.150688+00:00 [FW080005G1]\nAt\n09:34:29 it was possible to observe a attempt, however the plug was never connected:\n2025-11-23T09:34:29.284781+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Received command: RemoteStartTransaction (34830128) - {\"connectorId\":2,\"idTag\":\"6WA3-PT6S-W7KV-2B7X\"}\n2025-11-23T09:34:29.286627+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Send result: RemoteStartTransaction (34830128) - {\"status\":\"Accepted\"}\n2025-11-23T09:34:29.287721+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: RemoteStartTransaction: cable not yet connected\nPlease let me know  if more clarifications are needed. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-23T14:40:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "49a197d9-7bc8-f011-bbd3-7c1e5236229d",
+            "subject": "ID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge CRM:00263000205",
+            "body": "Dear\nMaria Borrelli\n,\nWe are sending this email regarding a problem with your charger:\nMP / R9 170002655\nwhich led to the opened ticket:\n0463506\n.\nThe error description is:\n\"pending charge started on Nov, 23rd\n09:34:29 (UTC) but charge has never been started, since no cable ha been really connected to the vehicle.\"\nWe have checked the logs between 2025-11-23T08:00:01 and 2025-11-23T10:59:20:\nIt was possible to found CP Changes at this times:\n2025-11-23T10:16:35.064409+00:00 [FW080005G1]\n2025-11-23T10:21:50.038769+00:00 [FW080005G1]\n2025-11-23T10:23:19.150688+00:00 [FW080005G1]\nAt\n09:34:29 it was possible to observe a attempt, however the plug was never connected:\n2025-11-23T09:34:29.284781+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Received command: RemoteStartTransaction (34830128) - {\"connectorId\":2,\"idTag\":\"6WA3-PT6S-W7KV-2B7X\"}\n2025-11-23T09:34:29.286627+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Send result: RemoteStartTransaction (34830128) - {\"status\":\"Accepted\"}\n2025-11-23T09:34:29.287721+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: RemoteStartTransaction: cable not yet connected\nPlease let me know  if more clarifications are needed. We really appreciate your help and look forward to getting this sorted out soon!\nThank you.\nWith best regards,\neMobility Technical Support Team –\nGuilherme Andre De Verissimo Dias\nPlease do not change the subject line when replying to this email.",
+            "date": "2025-11-23T14:51:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "985d99ad-14c9-f011-bbd2-7ced8d425658",
+            "subject": "A new case manager was assigned to 0463506 CRM:00225292618",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0463506 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=de3196fc-f8e6-4cff-b212-dd08297cf522",
+            "date": "2025-11-24T09:05:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9b9ee300-f1c9-f011-bbd2-7c1e52362ec6",
+            "subject": "RE: ID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge CRM:00263000205",
+            "body": "Dear Maria,\nI am reaching out in regards of ticket\nID0463506.\nAs per the analysis provided by my colleague Guilherme, two RemoteStartTransactions were requested an accepted on 23.11.2025 on charger\nMP / R9 170002655\n, but no EV was ever connected.\n2025-11-23T09:33:33.839498+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Received command: RemoteStartTransaction (34827432) - {\"connectorId\":2,\"idTag\":\"6WA3-PT6S-W7KV-2B7X\"}\n2025-11-23T09:34:29.284781+00:00 [FW080005G1] sicharge-cp [local0:info] sicharge-cp-backend/025c1a24f49a[2906]: OCPP: Received command: RemoteStartTransaction (34830128) - {\"connectorId\":2,\"idTag\":\"6WA3-PT6S-W7KV-2B7X\"}\nPlease let me know if you require further support for this ticket. I will proceed to close it if no further support is required.\nLooking forward to hearing your feedback soon!\nWith kind regards,\nFosco Servidei\nSiemens AG\neMobility Customer Service\nTechnical Support Engineer\nSI E EU CS TS\nNonnendammallee 101\n13629 Berlin, Germany\nmailto:fosco.servidei@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2025-11-25T11:22:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9e38c72b-c9ca-f011-bbd2-7c1e52377f66",
+            "subject": "Ticket 0463506 has been closed. Are you satisfied with our provided solution? CRM:00225294276",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0463506\nwith the title:\nID0463506-DC/Si-D/IT-[MP / R9 170002655] Check Logs - Pending Charge\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-26T13:09:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

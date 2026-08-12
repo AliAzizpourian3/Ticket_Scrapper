@@ -1,0 +1,147 @@
+{
+    "incident_id": "a2800b7e-0395-ef11-8a6a-000d3a697eb1",
+    "ticket_number": "0386773",
+    "title": "ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session",
+    "created_on": "2024-10-28T08:06:21Z",
+    "last_activity": "2026-01-15T10:02:37Z",
+    "age": "4666",
+    "description": "Reported behavior/issue:\nConnector Faulted after every charging session\nRoot cause:\nSolution: Information provided & backend also verified .\nOn DAMEX Sanctioned List:\nWarranty Status: 07/16/2026",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "kZjnVL",
+    "stage": null,
+    "serial_number": "Y2 / S5 313688776001",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "056d8c77-0395-ef11-8a6a-0022489bcff4",
+            "subject": "FW: '[EXT]'Faulted connector: 300kW Emmen Center at 300kW charger Emmen Center",
+            "body": "Dear Support,\nCould you check the following error on the following Sicharge D?\nSicharge D mit Serial n. Y2 / S5 313688 776001\nDispenser mit Serial n. F2S3431779\nWe observed the following issues on EMP Backend Switch-ev. Can you have a look at our SCB?\nRegularly the charger transmits fault messages that are immediately resolved.\nComparing with the loads, it seems that the error is triggered at the end of each session.\nThank you.\nBr, José Martin\nWith best regards,\nJosé Martin\nSiemens Switzerland Ltd\neMobility\nFreilagerstrasse 38\n8047 Zürich, Suisse\njose.martin@siemens.com\nMobile +41 79 363 93 53\nwww.siemens.ch",
+            "date": "2024-10-28T08:06:08Z",
+            "extra": {
+                "sender": "jose.martin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "0a6c174a-0b95-ef11-8a6a-7c1e5235e725",
+            "subject": "A new case manager was assigned to 0386773 CRM:00225115448",
+            "body": "Shrey Sharma was assigned as new Case Manager for case 0386773 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2800b7e-0395-ef11-8a6a-000d3a697eb1",
+            "date": "2024-10-28T09:02:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6beb00cb-0b95-ef11-8a6a-002248a2b1bd",
+            "subject": "ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session CRM:00643001034",
+            "body": "Dear Jose,\nThank you for reaching out to eMobility Support. My name is\nShrey\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nManor Emmen\nChargerID/Serial No.\n:\nkZjnVL\nProblem Description\n: Outlets out of order after charging session\nTroubleshooting\n: Please allow us some time to analyse the issue after charging sessions and we will get back to you shortly with an update.\nFor future reference, your ticket number is\n0386773\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-28T09:05:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "293d291a-0c95-ef11-8a6a-002248a2b1bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 1 hour, 1 minute and 34 seconds.",
+            "date": "2024-10-28T09:07:56Z",
+            "extra": {}
+        },
+        {
+            "id": "6dc93b20-0c95-ef11-8a6a-002248a2b1bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 4 seconds.",
+            "date": "2024-10-28T09:08:00Z",
+            "extra": {}
+        },
+        {
+            "id": "7ea3c6e8-9995-ef11-8a6a-002248a2b1bd",
+            "subject": "RE: ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session CRM:00643001034",
+            "body": "Hi Jose\nI hope this email finds you well.\nRegarding the issue with the outlets being set to \"Faulted\" after attempted charging sessions, we have analyzed the logs from the past day. On multiple occasions, we observed that when the charging session started during the authorization phase, the status of the scanned ID tag from the backend was marked as \"Invalid.\"\nPlease check with the backend to confirm whether the customer is using the correct ID tag. If the ID tag is correct, ensure that it is included in the authorization list.\nBelow are some charger logs for your reference, where you can see the status.\n2024-10-28, 07:37:55 Session_Stop\nOCPP: Send command: Authorize (7fdc099f-bc59-489b-9fd4-f0fef1d84037) - {\"idTag\":\"F0A0BB93\"}\nOCPP: Received result: Authorize (7fdc099f-bc59-489b-9fd4-f0fef1d84037) - {\"idTagInfo\":{\"status\":\"Invalid\"}}\n2024-10-28, 07:39:40 Session_Stop\nOCPP: Send command: Authorize (457c8e56-29fd-479f-a6c6-05423090faf4) - {\"idTag\":\"F0A0BB93\"}\nOCPP: Received result: Authorize (457c8e56-29fd-479f-a6c6-05423090faf4) - {\"idTagInfo\":{\"status\":\"Invalid\"}}\n2024-10-28, 07:39:48 Sesion_Stop\nNo Authorization done for this session\n2024-10-28, 17:08:26 Session+Stop\nOCPP: Send command: Authorize (0eb6d0b4-a470-4df0-8917-c97abad74d70) - {\"idTag\":\"048F6EFAE96F80\"}\nOCPP: Received result: Authorize (0eb6d0b4-a470-4df0-8917-c97abad74d70) - {\"idTagInfo\":{\"status\":\"Invalid\"}}\n2024-10-28, 17:11:54 Session_Stop\nOCPP: Send command: Authorize (d9ede1d8-2217-4208-9f8f-22e6b99e79df) - {\"idTag\":\"048F6EFAE96F80\"}\nOCPP: Received result: Authorize (d9ede1d8-2217-4208-9f8f-22e6b99e79df) - {\"idTagInfo\":{\"status\":\"Invalid\"}}\n2024-10-28, 17:29:10 Session_Stop\nNo Authorization done for this session\nI hope your queries have been addressed. If there are no further questions, shall we proceed with closing this case?\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-29T02:03:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0206fbf8-9b95-ef11-8a6a-002248a2b1bd",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 17 hours, 9 minutes and 44 seconds.",
+            "date": "2024-10-29T02:17:45Z",
+            "extra": {}
+        },
+        {
+            "id": "aea745c2-d695-ef11-8a6a-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0386773 CRM:00225116196",
+            "body": "Sunil Sharma was assigned as new Case Manager for case 0386773 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=a2800b7e-0395-ef11-8a6a-000d3a697eb1",
+            "date": "2024-10-29T09:18:32Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2b4fc6ce-a696-ef11-8a69-0022489fb3e7",
+            "subject": "RE: ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session CRM:00643001034",
+            "body": "Hi Jose,\nCould you please confirm if we can proceed with closing the ticket,\nWith best regards,\neMobility Tech Support Team -\nSunil Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-10-30T10:07:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b69f3aa8-b996-ef11-8a6a-0022489bcff4",
+            "subject": "RE: ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session CRM:00643001034",
+            "body": "Dear Sunil\nHere the response from the backend switch-ev. I think you can close the ticket.\nBest regards\nJosé\nHi Jose,\nMy colleague has had a look at the logs and those \"invalid\" results for the authorizations are correct behaviour, I can see that the requests went all the way to Hubject and which then returned NotAuthorized to the platform.\nIn addition to this the identifiers are not saved in the platform so they won't be white labelled there:\n- F0A0BB93\n- 048F6EFAE96F80\nSo if the charger is starting the session that is not correct, because the tokens have not been authorized.\nHope this helps.\nKind regards,\nHugo",
+            "date": "2024-10-30T12:22:50Z",
+            "extra": {
+                "sender": "jose.martin@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "900246ae-b996-ef11-8a6a-0022489bcff4",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 10 hours, 5 minutes and 13 seconds.",
+            "date": "2024-10-30T12:22:57Z",
+            "extra": {}
+        },
+        {
+            "id": "a4ccdff9-8e97-ef11-8a6a-0022489ec7b5",
+            "subject": "0386773 - ID0386773-DC/Si-D/CH-[Y2 / S5 313688776001] Outlets out of order after charging session CRM:01251000964",
+            "body": "Dear Jose,\nSince your technical query has been answered & verified by backend , we will be proceeding with closing the service ticket# 0386773.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Sunil Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-10-31T13:49:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "326c8b45-8f97-ef11-8a6a-0022489ec7b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 1 day, 1 hour, 28 minutes and 54 seconds.",
+            "date": "2024-10-31T13:51:51Z",
+            "extra": {}
+        },
+        {
+            "id": "496f2c5a-8f97-ef11-8a6a-0022489ec7b5",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 33 seconds.",
+            "date": "2024-10-31T13:52:25Z",
+            "extra": {}
+        }
+    ]
+}

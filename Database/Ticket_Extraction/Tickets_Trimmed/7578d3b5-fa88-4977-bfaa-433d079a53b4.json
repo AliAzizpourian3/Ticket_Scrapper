@@ -1,0 +1,31 @@
+{
+    "incident_id": "7578d3b5-fa88-4977-bfaa-433d079a53b4",
+    "ticket_number": "0423808",
+    "title": "ID0423808-DC/Si-D/FI-[MP / R6 170002026]-Columbus converter E17",
+    "created_on": "2025-05-12T10:51:11Z",
+    "last_activity": "2025-09-28T15:51:07Z",
+    "age": "200460",
+    "description": "Reported behavior/issue:\nConverter is in error E17 and reboot doesn't fix the issue.\nSolution:\nAction:\nRC-FI will continue by checking CAN connector and if needed, will replace converter unit (non-warranty). Dispenser roll cross ends will be replaced if needed (sharp edges - warranty case)",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "kXnNip",
+    "stage": null,
+    "serial_number": "MP / R6 170002026",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "af0be650-7f43-da7d-9f20-d24ac90bf838",
+            "subject": "AWS query",
+            "body": "#konvertteri\nfields\n@timestamp\n,\n@message\n|\nfilter\n@message\nlike\n/PowerConverter/\nand\n@message\nlike\n/to true/\n|\nfilter\n@logStream\nlike\n/kXnNip/\n|\nparse\n@message\n'to true -*'\nas\ncode\n|\nstats\ncount\n(*)\nas\nCount\nby\ncode,\n@logStream\n|\nsort\nby\nCount\ndesc\n|\nlimit\n10000",
+            "date": "2025-05-12T10:52:31Z",
+            "extra": {}
+        },
+        {
+            "id": "5ef67e87-7499-d521-a30e-81864afef0e5",
+            "subject": "Notes",
+            "body": "Hi Markus,\nIs there any update on this case.?",
+            "date": "2025-08-14T13:43:59Z",
+            "extra": {}
+        }
+    ]
+}

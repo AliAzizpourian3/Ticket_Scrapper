@@ -1,0 +1,97 @@
+{
+    "incident_id": "93ddc325-8725-f011-8c4d-7c1e5236e32d",
+    "ticket_number": "0421675",
+    "title": "ID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6",
+    "created_on": "2025-04-30T05:51:30Z",
+    "last_activity": "2025-11-26T05:54:21Z",
+    "age": "8614",
+    "description": "Reported behaviour/issue:\nThe vehicle was charging ok on V6.0.3 before his vehicle service date of 23rd April 2025 where the vehicle firmware is updated.\nSolution : reduce the remote start delay to less than 60 sec",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "R1G8Ft",
+    "stage": null,
+    "serial_number": "MP / R3 170001681",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "1f808e23-8725-f011-8c4d-7c1e52768372",
+            "subject": "Sicharge D MP / R3 170001681: Unable to charge BYD E6",
+            "body": "Dear Helpdesk\nSicharge D\nSerial No: MP / R3 170001681\nCharger ID: R1G8Ft\nFW: V6.0.3\nVehicle Brand and Model: BYD E6\nIssue:\nThe vehicle was charging ok on V6.0.3 before his vehicle service date of 23\nrd\nApril 2025 where the vehicle firmware is updated.\n@Jadhav, Nilesh (RC-SG SI B SU)\nplease kindly help to share the photo of the FW version number from the vehicle dashboard.\nToday 30\nth\nApril 2025, he attempted to charge on Sicharge D on V6.0.3, he is facing EV communication error.\nPlease kindly see the logs attached.\nWe will try to attempt the charging again next week to test. However, previously there was no issue in the EV communication to Sicharge D.\nHis vehicle was charging fine with ABB AC charger and Starcharge AC charger (with the updated vehicle firmware version).\nPlease let us know if the L2 need to be online supporting when we attempt the charging again.\nThank you\nEdna Seah\nSI E LC-SG\nSiemens Pte Ltd.",
+            "date": "2025-04-30T05:51:25Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "a9233fb3-8b25-f011-8c4d-6045bde0265d",
+            "subject": "ID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6 CRM:02682000077",
+            "body": "Dear Edna Seah,\nThank you for reaching\nout\nto eMobility Support. My name is\nJyoti\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R3 170001681\nChargerID/Serial No.\n:\nMP / R3 170001681\nProblem Description\n:\nThe vehicle was charging ok on V6.0.3 before his vehicle service date of 23rd\nApril 2025 where the vehicle firmware is updated.\n@Jadhav, Nilesh (RC-SG SI B SU) [nileshjadhav@siemens.com]please kindly help to\nshare the photo of the FW version number from the vehicle dashboard.\nToday 30th April 2025, he attempted to charge on Sicharge D on V6.0.3, he is\nfacing EV communication error.\nPlease kindly see the logs attached.\nWe will try to attempt the charging again next week to test. However, previously\nthere was no issue in the EV communication to Sicharge D.\nHis vehicle was charging fine with ABB AC charger and Starcharge AC charger\n(with the updated vehicle firmware version).\nFor future reference, your case number is\n0421675\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nJyoti Yadav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-04-30T06:23:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c1d88591-6fdc-b410-b90f-b8bba019cdb9",
+            "subject": "NOte",
+            "body": "",
+            "date": "2025-05-02T07:39:45Z",
+            "extra": {}
+        },
+        {
+            "id": "749bc297-7529-f011-8c4d-7c1e52350ea5",
+            "subject": "RE: ID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6 CRM:02682000077",
+            "body": "Hello Edna,\nUpon analyzing the logs, prima facia it appears to be a delay in Authentication. See below\nVehicle Plugged in at\n2025-04-30T01:49:08\n.390236+00:00 swcpu [user:debug] [4021] [DCC] DC1: PilotState \"A\" --> \"B2\"\nRemoteStartTransaction at\n2025-04-30T01:50:20\n.\n283922+00:00 sicharge-cp [local0:info] sicharge-cp-backend/510a6e79286b[736]: OCPP: Received command: RemoteStartTransaction (8926dd05-2499-4b6d-8ef8-bd7e48a59cd1) - {\"idTag\":\"OXbGJzDhbJ\",\"connectorId\":1}\nThere was more than more than\n1 min delay between connecting vehicle and authorizing the session\n, which led to the communication timeout between EV-EVSE.\nI would suggest starting another charging session with same EV. If you need us to monitor the session, please let us know the date and time.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Sharma\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-05-05T05:55:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2078d723-f1a5-f301-aff5-bb22e2ed9255",
+            "subject": "BYD EV was charged with 60A",
+            "body": "EV demand is limited in this session to Max 60 A.\n2025-05-06T04:02:12.879172+00:00 swcpu [user:debug] [4021] [DCC] |2025-05-06T03:25:11|DC1: |EVSE_MaxPwr[kW]=40|EVSE_MaxCur[A]=70|EVSE_NowPwr[kW]=33.9|EVSE_NowCur[A]=60|EVSE_NowVol[V]=566.8|EV_TarCur[A]=60|EV_TarVol[V]=597|EV_SOC[%]=91|EVSE_DESpwr[kW]=33.5|Pilot=4",
+            "date": "2025-05-06T04:32:40Z",
+            "extra": {}
+        },
+        {
+            "id": "f971c77c-362a-f011-8c4d-7c1e52768372",
+            "subject": "RE: ID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6 CRM:02682000077",
+            "body": "Dear Reetesh,\nThank you for the response.\nWe had checked that the vehicle can charge when the Sicharge D is on free charging.\nThe user will try on other chargers and repeat charging in some other time this week to investigate on the  lower charging power.\nYou may close this case.\nThank you\nEdna",
+            "date": "2025-05-06T04:56:39Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d06d13b0-392a-f011-8c4d-7c1e523508ba",
+            "subject": "ID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6 CRM:00251000539",
+            "body": "Dear Edna Seah,\nThanks for your the confirmation, as your query has been answered for case # 0421675, the case is now closed.\nProblem Description\n: Unable to charge BYD E6\nResolution\n: Due to more than 60 sec delays in RemoteStartTransaction. Vehicle successfully charged in free mode.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nReetesh Kumar Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-05-06T05:19:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e5e02833-3a2a-f011-8c4d-7c1e523508ba",
+            "subject": "Ticket 0421675 has been closed. Are you satisfied with our provided solution? CRM:00251000540",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0421675\nwith the title:\nID0421675-DC/Si-D/SG-[MP/R3 170001681] Unable to charge BYD E6\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nReetesh Kumar Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-05-06T05:23:12Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

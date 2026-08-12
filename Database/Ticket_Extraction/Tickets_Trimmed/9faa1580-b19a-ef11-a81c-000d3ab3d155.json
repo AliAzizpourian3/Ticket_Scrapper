@@ -1,0 +1,257 @@
+{
+    "incident_id": "9faa1580-b19a-ef11-a81c-000d3ab3d155",
+    "ticket_number": "0387906",
+    "title": "ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions",
+    "created_on": "2024-11-04T13:34:23Z",
+    "last_activity": "2025-12-16T14:04:28Z",
+    "age": "60374",
+    "description": "Reported behaviour/issue: 0-session after authentication is provided and accepted\nRoot cause:\nNot clear, the authentication only runs for <10sec and stops\nSolution:\nOn DAMEX Sanctioned List:\nNo\nWarranty Status:\nActive\nNOTE TO OCPP In timeline",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "k6Nk5M",
+    "stage": null,
+    "serial_number": "MP / R0 170002550",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "4874e4e0-b39a-ef11-8a69-000d3aba0c96",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Active/Draft to New Enquiry after 17 minutes and 8 seconds.",
+            "date": "2024-11-04T13:51:33Z",
+            "extra": {}
+        },
+        {
+            "id": "9e40e6e6-b39a-ef11-8a69-000d3aba0c96",
+            "subject": "Note created on 11/4/2024 1:51:34 PM UTC by Marius Schneider [contact:698d91f6-5322-ee11-9967-0022489de400]",
+            "body": "*WEB*",
+            "date": "2024-11-04T13:51:34Z",
+            "extra": {}
+        },
+        {
+            "id": "5449635a-ba9a-ef11-8a6a-6045bdde0ce3",
+            "subject": "A new case manager was assigned to 0387906 CRM:00225118638",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0387906 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9faa1580-b19a-ef11-a81c-000d3ab3d155",
+            "date": "2024-11-04T14:37:45Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "cdcded15-bb9a-ef11-8a69-002248a407cc",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 51 minutes and 33 seconds.",
+            "date": "2024-11-04T14:43:04Z",
+            "extra": {}
+        },
+        {
+            "id": "960a89ec-bc9a-ef11-8a69-002248a407cc",
+            "subject": "ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315001996",
+            "body": "Dear Marius,\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nAH5057DC001\nChargerID/Serial No.\n:\nk6Nk5M\nProblem Description\n: Several 0-sessions\nTroubleshooting\n:\nCan you please confirm that the charger is the\nAH5057DC001? From the document you shared there are no sessions on those Hours. I can see multiple failed sessions and here are my findings from 1 single day.\nFor the first session I see, there seems to be something wrong with communication EV→Charger we can see the PilotState change but it's possible that the matching PP signal is not established correctly.\nFor the second session I see that the idTag was invalid and the authentication didn't go through\nFor the third session it works:\nFor the fourth session it also works:\nIn the fifth session it doesn't work because there was no authentication/authorization from OCPP server.\nNext session also works.\nPlease let me know your thoughts and questions.\nFor future reference, your ticket number is\n0387906\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-11-04T14:56:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d6bb5aa3-4d9c-ef11-8a69-7c1e5236c031",
+            "subject": "ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014",
+            "body": "Dear Marius,\nHope you are doing well. We haven't heard back from you on ticket# 0387906 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-06T14:44:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ac66a5f4-d49c-ef11-8a6a-0022489bcff4",
+            "subject": "AW: ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014",
+            "body": "Hello Francisco.\nThanks for the information, that's what we've nearly already figuered out as well. The question is why this error occurs more often than average compared to other charging points (approx. 30 times)?\nKind regards\nAlexandra Becker\nOperations Manager E-Mobility\nt +49 (0) 228-922-3335\nm +49 (0) 151-15191549\ne\nalexandra.becker@tank.rast.de\nAutobahn Tank & Rast Gruppe GmbH & Co. KG, Andreas-Hermes-Str. 7-9, 53175 Bonn,\nwww.tank.rast.de\n,\nSitz der Gesellschaft: Bonn, Amtsgericht Bonn HRA 8655,\nPersönlich haftende Gesellschafterin Autobahn Tank & Rast Management GmbH mit Sitz in Bonn, Amtsgericht Bonn, HRB 21964, Geschäftsführung: Peter M. Löw (Vors.), Lutz Scharpe, Peter Krosta\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMittwoch, 6. November 2024 15:45\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nBetreff:\nID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014\nDear Marius,\nHope you are doing well. We haven't heard back from you on ticket# 0387906 as of yet.\nWe look forward to resolving your issue at the earliest, however, we do require the requested information from your end to proceed.\nLooking forward to assisting you further.\nThank you.\nWith best regards,\neMobility Tech Support Team - Francisco de Matos Joaquim\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-11-07T06:53:15Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "e9f02eb1-e49c-ef11-8a6a-000d3a6610b3",
+            "subject": "ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014",
+            "body": "Hello Alexandra, good morning. I hope you are doing well.\nI did some research on the last month for the charger's performance and here are my findings:\n315 successful charging sessions in connector 1 and 2\n105 unsuccessful authentications:\n77 invalid idTags which lead to an unsuccessful charging session\nThe invalid idTag is not a unsuccesful charging session as it's due to the backend not accepting this idTag. The backend either needs to accept these tags or check if they are using the wrong RFIDs.\nFor the authentication failed, we need to understand locally if the customer is indeed taking too long to apply or if there is any problem with the RFID reader. From our side it's hard to ascertain the root cause since we only get this log mentioning that authentication was not possible.\nWhat is your opinion? I would like to know your thoughts and questions to move forward.\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-11-07T08:46:01Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "890e148d-029d-ef11-8a6a-000d3addcd64",
+            "subject": "AW: ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014",
+            "body": "Hi Francisco,\nthanks for your in-depth research on the charger! We’ve also monitored the behavior of unsuccessful authentications and charging sessions.\nBut the issue lies on the zero kWh sessions, which are both successfully authenticated and successfully accomplished (meaning CDR written). They should therefore not be included in your data underneath.\nPlease take a look at the following charge detail records, which show two specific days:\nCDR ID\nStart\nStop\nVolume\nDuration\nEVSE ID\n3AAE270B77F14DAE819EC7395CDC04AC\n18.10.2024 @ 11:25:26 +02:00\n18.10.2024 @ 11:25:41 +02:00\n0,0000 kWh\n00:00:14\nDE-MBY-EAH5057DC001-2\n51F3E08AAADB470CBF0883ED2C5C2070\n18.10.2024 @ 11:24:36 +02:00\n18.10.2024 @ 11:24:54 +02:00\n0,0000 kWh\n00:00:17\nDE-MBY-EAH5057DC001-2\n9377A9FE6D7B43738136A85576576A2D\n18.10.2024 @ 11:23:52 +02:00\n18.10.2024 @ 11:24:04 +02:00\n0,0000 kWh\n00:00:12\nDE-MBY-EAH5057DC001-2\n388AD3BC80C54859B9849FAC1F43A3F2\n18.10.2024 @ 11:23:13 +02:00\n18.10.2024 @ 11:23:20 +02:00\n0,0000 kWh\n00:00:07\nDE-MBY-EAH5057DC001-2\nB65625D623794B56A0A346A4D790636E\n17.10.2024 @ 17:37:11 +02:00\n17.10.2024 @ 17:37:22 +02:00\n0,0000 kWh\n00:00:10\nDE-MBY-EAH5057DC001-2\n055C6C384E8544B89A324C3FFCC60F23\n17.10.2024 @ 17:36:21 +02:00\n17.10.2024 @ 17:36:35 +02:00\n0,0000 kWh\n00:00:14\nDE-MBY-EAH5057DC001-2\nFE5F5731DAEE4916922F206C4A3E7486\n17.10.2024 @ 17:35:08 +02:00\n17.10.2024 @ 17:35:21 +02:00\n0,0000 kWh\n00:00:12\nDE-MBY-EAH5057DC001-2\n40F1C4B0C77C4526A588FFF5D6011465\n17.10.2024 @ 17:34:37 +02:00\n17.10.2024 @ 17:34:49 +02:00\n0,0000 kWh\n00:00:11\nDE-MBY-EAH5057DC001-2\n5DAE2D9F822948F88584FC94ABC5FFCE\n17.10.2024 @ 17:13:40 +02:00\n17.10.2024 @ 17:13:50 +02:00\n0,0000 kWh\n00:00:09\nDE-MBY-EAH5057DC001-2\nWhat we see for these sessions is that the charger went from Authentication mode to Start and then immediately Stop (the screenshot shows exactly the four sessions from 18/10/2024):\nOur question is: Why does the charger behaves like it does here? Why does the charger not initiate a connection to the vehicle?\nKind regards,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 7. November 2024 10:35\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nBecker, Alexandra (Tank&Rast) <Alexandra.Becker@tank.rast.de>\nBetreff:\nID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00315002014\nHello Alexandra, good morning. I hope you are doing well.\nI did some research on the last month for the charger's performance and here are my findings:\n315 successful charging sessions in connector 1 and 2\n105 unsuccessful authentications:\n77 invalid idTags which lead to an unsuccessful charging session\nThe invalid idTag is not a unsuccesful charging session as it's due to the backend not accepting this idTag. The backend either needs to accept these tags or check if they are using the wrong RFIDs.\nFor the authentication failed, we need to understand locally if the customer is indeed taking too long to apply or if there is any problem with the RFID reader. From our side it's hard to ascertain the root cause since we only get this log mentioning that authentication was not possible.\nWhat is your opinion? I would like to know your thoughts and questions to move forward.\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-11-07T12:19:38Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "c63b415a-24d6-364b-9602-44bd0743e142",
+            "subject": "NOTE TO OCPP",
+            "body": "1. Problem Description :  0 sessions after successfull session\n2. Action Performed (L2) : Collect all logs\n3. Charger SW Version: 4.0.11\n4. Reason for Handover (L3) : Couldn't understand where the root cause lies in.\n5. Fault history :N/A\n6. Log analysis with timestamp : Attachment\nTimers -2h (11:25 = 09:25)\nStart\n18.10.2024 @ 11:25:26 +02:00\n18.10.2024 @ 11:24:36 +02:00\n18.10.2024 @ 11:23:52 +02:00\n18.10.2024 @ 11:23:13 +02:00\n17.10.2024 @ 17:37:11 +02:00\n17.10.2024 @ 17:36:21 +02:00\n17.10.2024 @ 17:35:08 +02:00\n17.10.2024 @ 17:34:37 +02:00\n17.10.2024 @ 17:13:40 +02:00",
+            "date": "2024-11-07T13:33:05Z",
+            "extra": {}
+        },
+        {
+            "id": "eb9c0af4-379e-ef11-8a6a-000d3a6610b3",
+            "subject": "A new case manager was assigned to 0387906 CRM:00225121874",
+            "body": "Saurav Kumar was assigned as new Case Manager for case 0387906 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9faa1580-b19a-ef11-a81c-000d3ab3d155",
+            "date": "2024-11-09T01:14:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5b51e37f-b143-2faa-97b3-a24c97472a7e",
+            "subject": "Handover Note",
+            "body": "Problem Description :  0 sessions after successful session\n2. Action Performed (L2) : Collect all logs and analyzed\n3. Charger SW Version: 4.0.11 downgraded from 5.0.21 on 23rd Oct\n4. Reason for Handover (L3) : Couldn't understand where the root cause lies in.\n5. Fault history :N/A\n6. Log analysis with timestamp : Attachment",
+            "date": "2024-11-13T09:10:05Z",
+            "extra": {}
+        },
+        {
+            "id": "e2936f5a-67a2-ef11-8a6a-7c1e5235925f",
+            "subject": "A new case manager was assigned to 0387906 CRM:00225124269",
+            "body": "Fosco Servidei was assigned as new Case Manager for case 0387906 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9faa1580-b19a-ef11-a81c-000d3ab3d155",
+            "date": "2024-11-14T09:03:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dffb5cee-67a2-ef11-8a6a-002248a29667",
+            "subject": "A new case manager was assigned to 0387906 CRM:00225124276",
+            "body": "Lukas Berger was assigned as new Case Manager for case 0387906 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9faa1580-b19a-ef11-a81c-000d3ab3d155",
+            "date": "2024-11-14T09:07:54Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3694cbfb-6ea2-ef11-8a6a-7c1e5237dbeb",
+            "subject": "0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267",
+            "body": "Guten Tag Herr Schneider,\nKonnten sie das Verhalten seit dem 23.10.24 noch feststellen?\nAn diesem Tag wurde die FW aufgrund einer fehlerhaften neuen FW auf eine ältere stabile Version zurückgespielt.\nSollten sie das Problem seitdem nicht mehr feststellen würde ich auf de Fehlerhafte FW schließen.\nWenn dies nicht der fall ist. Teilen sie mir bitte einen aktuelleren fall mit, da an den mir aktuell übermittelten letzten Zeitstempeln (18.10.24) leider nicht mehr alle Daten Sätze zur Verfügung stehen und so eine genaue analyse nicht mehr möglich ist.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Germany",
+            "date": "2024-11-14T09:58:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3537749f-92a2-ef11-8a69-000d3ab41b62",
+            "subject": "AW: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267",
+            "body": "Hallo Herr Berger,\ndas Problem tritt mittlerweile hauptsächlich an Charger\n17xsOj auf, insbesondere der rechte Ladepunkt.\nWir können an Charger k6Nk5M nur noch eine akzeptable Häufigkeit feststellen.\nWir haben seit dem 01.11.2024 bis 13.11.2024 insgesamt 152 fehlerhafte Sessions festgestellt – das sind unserer Ansicht nach viel zu viele.\nDazu die Übersicht an Sessions=0kWh im benannten Zeitraum.\nEVSE-ID\nAnzahl von Session=0\nDE-MBY-EAH5020DC001-2\n1\nDE-MBY-EAH5020DC002-1\n1\nDE-MBY-EAH5034DC001-1\n16\nDE-MBY-EAH5034DC001-2\n11\nDE-MBY-EAH5036DC001-1\n1\nDE-MBY-EAH5036DC001-2\n3\nDE-MBY-EAH5036DC002-1\n1\nDE-MBY-EAH5036DC003-1\n1\nDE-MBY-EAH5036DC003-2\n4\nDE-MBY-EAH5036DC004-1\n1\nDE-MBY-EAH5052DC001-1\n1\nDE-MBY-EAH5052DC001-2\n2\nDE-MBY-EAH5052DC002-1\n3\nDE-MBY-EAH5052DC002-2\n8\nDE-MBY-EAH5057DC001-1\n15\nDE-MBY-EAH5057DC001-2\n7\nDE-MBY-EAH5057DC002-1\n7\nDE-MBY-EAH5057DC002-2\n152\nDE-MBY-EAH5057DC003-1\n13\nDE-MBY-EAH5057DC003-2\n20\nGesamtergebnis\n268\nWir beobachten die Mengen nun wöchentlich, aber die Häufigkeiten sind schon extrem an diesem Ladepunkt. Insbesondere sieht man im angehangenen Screenshot eine aktuellere Beispiel-Session. Der Charger wechselt nach Autorisierung nicht in einen Preparing bzw. Charging Modus und beendet die Session.\nLaut Siemens Sifinity Control wurde vom Charger zum Zeitpunkt 10.11.2024 13:17:10 und 13:39:38 ein Fehler gemeldet, den wir aber so nicht in unserem OCPP-Backend sehen bzw. vom Charger nicht gemeldet wurde.\nDanke und LG,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDonnerstag, 14. November 2024 10:58\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nBetreff:\n0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267\nGuten Tag Herr Schneider,\nKonnten sie das Verhalten seit dem 23.10.24 noch feststellen?\nAn diesem Tag wurde die FW aufgrund einer fehlerhaften neuen FW auf eine ältere stabile Version zurückgespielt.\nSollten sie das Problem seitdem nicht mehr feststellen würde ich auf de Fehlerhafte FW schließen.\nWenn dies nicht der fall ist. Teilen sie mir bitte einen aktuelleren fall mit, da an den mir aktuell übermittelten letzten Zeitstempeln (18.10.24) leider nicht mehr alle Daten Sätze zur Verfügung stehen und so eine genaue analyse nicht mehr möglich ist.\nMit freundlichen Grüßen\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility\nExpert Services\nSI E CS SD ES\nSiemenspromenade 10\n91058 Erlangen, Germany",
+            "date": "2024-11-14T14:13:34Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "5e0752f8-3ea6-ef11-b8e9-6045bdde0ce3",
+            "subject": "RE: AW: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267",
+            "body": "Guten Tag Herr Schneider,\nViele Dank für ihre Detaillierte Übersicht.\nIch habe mir den betroffenen Charger (17xsOj) angesehen. Er weißt den selben Fehlercode wir auch der Charger (k6Nk5M) auf.\nLaut meinen Daten ist der Fehler am Charger (17xsOj) nur bis zum 12.11.24 ausfällig gewesen.\nDer Fehlercode beschreibt eine Kommunikationsstörung zwischen Ladegerät und Fahrzeug.\nMeine Vermutung aufgrund der Häufungen nur in einem begrenzten Zeitraum ist eine Verschmutzung des Kommunikations Kontakts an den Betroffenen Steckern.\nKönnen sie aus ihren Daten bestätigen das sie den Fehler al Charger (17xsOj) auch nur bis zum 12.11.24 auffällig beobachtet haben?\nIch habe mir ebenfalls mit dem selben Filter den rest ihrer Chagerflotte die Online ist angesehen.\nIch konnte aktuell keinen finden an dem der Fehler aktuell auftritt. Meine Idee wäre Sobald ein Charger wieder das selbe Fehler Bild zeigt einen Service Techniker vor Ort zu schicken und die Kommunikation pins zu überprüfen.\nKönnen sie mir aktuell bestätigen das sie keine Häufung an einzelnen Ladepunkten sehen können?\nZu ihrem Letzten Punkt an dem ein Fehler nicht übermittelt worden ist.\nDas ist ein Fehler der bei uns in der Automatisierung in der Aktuellen FW noch falsch getriggert wird.\nDer Fehler wird absichtlich unterdrückt um ihre OCPP daten nicht vollzumüllen.\nEr wird ihnen jedoch in unserem Backend (SC) weiterhin angezeigt.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-11-19T06:24:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9acd7ade-65a6-ef11-b8e9-000d3ab4d5d3",
+            "subject": "AW: AW: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267",
+            "body": "Hallo Herr Berger,\nich kann bestätigen, dass der Fehler am Charger 17xsOj bis zum 12.11. stark auffällig war (siehe Anhang).\nEine Verschmutzung des Steckers ist durchaus denkbar.\nIch kann auch bestätigen, dass andere Charger derzeit den Fehler nicht aufweisen.\nWir beobachten das Verhalten aller Charger weiterhin im Detail.\nZur Fehlermeldung:\nWir benötigen aber unbedingt eine Meldung in unserem Backend, wenn es beim Aufbau der Kommunikation zwischen EVSE und EV zu einem Fehler gekommen ist.\nSolche Informationen sind für uns als CPO fundamental und sollten nicht herausgefiltert werden.\nDanke und LG,\nMarius Schneider\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nDienstag, 19. November 2024 10:04\nAn:\nSchneider, Marius (Tank&Rast) <marius.schneider@tank.rast.de>\nCc:\nBecker, Alexandra (Tank&Rast) <alexandra.becker@tank.rast.de>; Zimmermann, Oliver (Tank&Rast) <oliver.zimmermann@tank.rast.de>\nBetreff:\nRE: AW: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267\nGuten Tag Herr Schneider,\nViele Dank für ihre Detaillierte Übersicht.\nIch habe mir den betroffenen Charger (17xsOj) angesehen. Er weißt den selben Fehlercode wir auch der Charger (k6Nk5M) auf.\nLaut meinen Daten ist der Fehler am Charger (17xsOj) nur bis zum 12.11.24 ausfällig gewesen.\nDer Fehlercode beschreibt eine Kommunikationsstörung zwischen Ladegerät und Fahrzeug.\nMeine Vermutung aufgrund der Häufungen nur in einem begrenzten Zeitraum ist eine Verschmutzung des Kommunikations Kontakts an den Betroffenen Steckern.\nKönnen sie aus ihren Daten bestätigen das sie den Fehler al Charger (17xsOj) auch nur bis zum 12.11.24 auffällig beobachtet haben?\nIch habe mir ebenfalls mit dem selben Filter den rest ihrer Chagerflotte die Online ist angesehen.\nIch konnte aktuell keinen finden an dem der Fehler aktuell auftritt. Meine Idee wäre Sobald ein Charger wieder das selbe Fehler Bild zeigt einen Service Techniker vor Ort zu schicken und die Kommunikation pins zu überprüfen.\nKönnen sie mir aktuell bestätigen das sie keine Häufung an einzelnen Ladepunkten sehen können?\nZu ihrem Letzten Punkt an dem ein Fehler nicht übermittelt worden ist.\nDas ist ein Fehler der bei uns in der Automatisierung in der Aktuellen FW noch falsch getriggert wird.\nDer Fehler wird absichtlich unterdrückt um ihre OCPP daten nicht vollzumüllen.\nEr wird ihnen jedoch in unserem Backend (SC) weiterhin angezeigt.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-11-19T11:03:14Z",
+            "extra": {
+                "sender": "marius.schneider@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ec3b704a-69a6-ef11-b8e9-7c1e5237dbeb",
+            "subject": "RE: AW: AW: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000267",
+            "body": "Hallo Herr Schneider,\nDiese Info wird ihnen auch grundsätzlich übermittelt.\nEs gibt jedoch den fall das Fahrzeuge mit 100% geladen angesteckt bleiben.\nHier haben wir eine Fehlerhafte Meldung durch unsere Steuerung.\nNur dieser Falsch interpretierte Fehler der eigentlich keiner ist wird Herausgefiltert.\nDas Problem ist erkannt und wird in einer der nächsten FW Versionen behoben. Danach werden sie auch keine Abweichungen mehr zwischen Sinfinity Control und ihrem Backend sehen.\nSobald ihnen bezüglich des anderen Fehlers weitere Ladepunkte auffallen Informieren sie mich gerne und ich werde sie Prüfen.\nWith kind regards,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-11-19T11:27:43Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d1d3a25-f3b2-ef11-b8e9-0022489bcff4",
+            "subject": "0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000273",
+            "body": "Guten Tag Herr Schneider,\nIch habe die Lader noch einmal geprüft und konnte keine Auffälligkeiten feststellen.\nDa ich von ihnen auch keine Mail bekommen habe gehe ich davon aus das ihnen auch nichts weiter aufgefallen ist.\nWir werden das Ticket nun schließen.\nMit freundlichen Grüßen,\nLukas Berger\nSiemens AG\nSmart Infrastructure\neMobility Service Delivery\nSI E CS SD L3\nSiemenspromenade 10\n91058 Erlangen, Germany\nmailto:berger.lukas@siemens.com\nwww.siemens.com\nImportant notice: This e-mail and any attachment thereof contain corporate proprietary information. If you have received it by mistake, please notify us immediately by reply e-mail and delete this e-mail and its attachments from your system.\nThank you.",
+            "date": "2024-12-05T10:24:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "8a8c6a4a-9429-1cda-a73b-0d2a868060c1",
+            "subject": "ES --> NOC",
+            "body": "Task from ES: Analysed and probably dirt in the Plug could be the rootcause so far the issue isn´t persistant anymore\nTask for NOC: Please close the Ticket",
+            "date": "2024-12-12T12:18:04Z",
+            "extra": {}
+        },
+        {
+            "id": "2dffa96a-88bb-ef11-b8e9-000d3a697eb1",
+            "subject": "A new case manager was assigned to 0387906 CRM:00225138758",
+            "body": "Vikas Khiladkar was assigned as new Case Manager for case 0387906 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=9faa1580-b19a-ef11-a81c-000d3ab3d155",
+            "date": "2024-12-16T08:33:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "23c4f06d-a1bb-ef11-b8e8-7c1e528843d2",
+            "subject": "RE: 0387906 - ID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions CRM:00440000273",
+            "body": "Dear Customer,\nSince your issue has been resolved, we will be proceeding with closing the service ticket# 0387906.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team - Vikas Khiladkar\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2024-12-16T11:32:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c76f8e28-a2bb-ef11-b8e8-7c1e528843d2",
+            "subject": "Ticket 0387906 has been closed. Are you satisfied with our provided solution? CRM:02023000378",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0387906\nwith the title:\nID0387906-DC/Si-D/DE[k6Nk5M] - Zero-sessions\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nVikas Khiladkar\nSiemens eMobility Technical Support Team",
+            "date": "2024-12-16T11:37:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

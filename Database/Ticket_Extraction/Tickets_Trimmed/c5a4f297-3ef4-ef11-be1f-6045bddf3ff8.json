@@ -1,0 +1,145 @@
+{
+    "incident_id": "c5a4f297-3ef4-ef11-be1f-6045bddf3ff8",
+    "ticket_number": "0409429",
+    "title": "ID0409429-DC/Si-D/IL-[multiple] High power consumption in Standby",
+    "created_on": "2025-02-26T12:38:41Z",
+    "last_activity": "2025-05-22T12:02:07Z",
+    "age": "61324",
+    "description": "Reported behavior/issue:\nHigh current/power consumption from charging stations in\nStandby mode\nRoot cause:\nMonitoring / calculation issue from customer side\nSolution:\nRC clarified the abnormal connection and cleared the issue\nOn DAMEX Sanctioned List: No\nWarranty Status: Active\nChild case#0411807 -→3/25 (NA)",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "dIa2Ty",
+    "stage": null,
+    "serial_number": "MP / R6 170002067,MP / R6 170002070,MP / R6 170002066,MP / R6 170002068",
+    "case_nature_code": 580000001,
+    "additional_info": [
+        {
+            "id": "92f24396-3ef4-ef11-be1f-7c1e52fb539c",
+            "subject": "High current/power consumption from charging stations",
+            "body": "Dear Support,\nToday we received a very angry email from one of our customers for higher power consumption than what is indicated in the Datasheet for charging in Standby mode, i.e. without load/charging.\nAccording to the Sicharge D Datasheet, the power consumption in standby mode should be approximately 260W, as indicated:\nAccording to the Sicharge D DataSheet, the power consumption in Standby mode should be about 260Wh according to the specification:\nThat is, the current that should be received in this mode is 1.13A in an ideal state.\nBut in practice, they attach a measurement from a charging station that shows at least 10A in each phase, which is almost 10 times what is specified.\nI would be happy to explain this as soon as possible, the customer is very angry, and we need to provide answers accordingly soon.\nI attach pictures of the measurement; it is important to say that he checked it on all his charging stations and in all of them the consumption is the same and higher than what is specified in the Datasheet.\nThe customer's name is: Nofar Energy\nThe charging stations he owns are:\nWe ask for your support to provide answers as soon as possible.\nBr,\nOrel.",
+            "date": "2025-02-26T12:38:37Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "841150c5-3ef4-ef11-be1f-7c1e523508ba",
+            "subject": "RE: High current/power consumption from charging stations",
+            "body": "I am attaching the photos to this email.",
+            "date": "2025-02-26T12:39:56Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "9c48db1e-50f4-ef11-be1f-6045bde0265d",
+            "subject": "ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Dear Orel Lachiani,\nThank you for reaching\nout\nto eMobility Support. My name is\nBeerpal\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / R6 170002067\nChargerID/Serial No.\n:\ndIa2Ty\nProblem Description\n: High current/power consumption\nTroubleshooting\n: Please allow us sometime to analyze the logs in details. Could you kindly provide detailed information regarding the measurement setup? Specifically, could you clarify where the probe was connected during the measurement phase (e.g., R, Y, B phases)?\nAdditionally, please confirm if there were any loads connected during the measurement and whether they were energized (powered on) during the testing.\nFurthermore, could you provide a brief overview of the issue? According to the standard, the active power (KW) consumption should be lower than the reactive power (KVAR). Please refer to the table, which details the power consumption with emission class B.\nAdditionally, could you specify how many devices were turned off during testing (e.g., EMC filter, fan, heater, etc.)?\nFor future reference, your case number is\n0409429\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T14:44:06Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a030056f-4df5-ef11-be1f-7c1e52768c07",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Dear Orel Lachiani,\nI hope this email finds you well.\nI am writing to follow up on my previous request for the information needed to proceed with\nCase#\n0409429\n.\nYour prompt response would be greatly appreciated to ensure we can continue without any delays.\nThank you for your attention to this matter. We look forward to hearing from you\n.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-27T20:57:24Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0d0381d3-b4f5-ef11-be1f-7c1e52350ea5",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Dear Singh,\nThey claim they receive a high electricity bill, so they came to a charging station to check the charging station's consumption in Standby mode. The test was done in all phases R, S, T without any load, meaning no vehicle was connected during the current measurement.\nAll devices were turned off, fan, heater, etc., the weather is 21 degrees continuously.\nWhat is indicated in the 260W Datasheet refers to the situation where the converters do not work?\nWe need to provide them with detailed information on the subject, I would appreciate your support.\nBr,\nOrel.",
+            "date": "2025-02-28T09:17:27Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "cf37969a-01fa-ef11-bae2-7c1e5236e32d",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Hello Orel,\nThanks for the response.\nWe are analyzing the issue with our expert team and once receive an update will get back to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-05T20:37:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "70b86ec5-5efb-ef11-bae2-7c1e52774092",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Hello Orel,\nThanks for the response.\nAs suggested by our expert team, could you please confirm if you want to enable\nPower Saving Mode\nto reduce the consumption of reactive power?\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-07T14:16:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b2fc2f33-a700-9505-b356-894c85757af5",
+            "subject": "Note to L2",
+            "body": "Already in discussion with ES @ Joao",
+            "date": "2025-03-07T16:40:19Z",
+            "extra": {}
+        },
+        {
+            "id": "1165fce9-affc-ef11-bae3-7c1e5236eee4",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Dear Singh,\nWe understand the meaning of the Power Saving Mode and know that it will reduce the self-consumption of the charging stand but note that the datasheet of the charging stand is stated at 260W in Standby mode even before the latest version update was released.\nWe want to know and provide an answer to the customer accordingly. Is the self-consumption of the charging stand not in charging/load mode? Is the measurement they took of 10 amps per phase the consumption? If so, it is a lot and does not match the datasheet\nBr,\nOrel.",
+            "date": "2025-03-09T06:30:00Z",
+            "extra": {
+                "sender": "orel.lachiani@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fd672b3f-25fe-ef11-bae3-7c1e5220bf23",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Hello Orel,\nThanks for the response.\nWe are forwarding this ticket to our expert queue for further analysis and they will reach out to you soon.\nRegards,\nBeerpal Singh\neMobility Support\nPlease do not change the subject line with replying back to this email.",
+            "date": "2025-03-11T03:02:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a1b2d2d2-b315-f011-998a-6045bde12d6b",
+            "subject": "RE: ID0409429-DC/Si-D/IL-[multiple] High current/power consumption CRM:00921001582",
+            "body": "Dear Orel Lachiani,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0409429, the case is now closed.\nProblem Description\n: High current/power consumption\nResolution\n:\nMonitoring / calculation issue from customer side and clarification provided on child case.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nBeerpal Singh\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-04-10T02:30:59Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "accfd749-b515-f011-998a-6045bde12d6b",
+            "subject": "Ticket 0409429 has been closed. Are you satisfied with our provided solution? CRM:00921001675",
+            "body": "Dear Orel Lachiani,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0409429\nwith the title:\nID0409429-DC/Si-D/IL-[multiple] High power consumption in Standby\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nBeerpal Singh\nSiemens eMobility Technical Support Team",
+            "date": "2025-04-10T02:41:23Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

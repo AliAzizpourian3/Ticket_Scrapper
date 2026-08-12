@@ -1,0 +1,126 @@
+{
+    "incident_id": "921aa2f5-9e3a-ef11-8409-6045bdddacb7",
+    "ticket_number": "0367334",
+    "title": "ID0367334-DC/Si-D/DE[170002551] - OCPP offline",
+    "created_on": "2024-07-05T07:19:49Z",
+    "last_activity": "2025-12-16T14:07:37Z",
+    "age": "5816",
+    "description": "Reported behaviour/issue:\nOCPP offline\nRoot cause:\nDisconnected in WebUI\nSolution:\nRestart Mobile Connection in Status→Network\nTesting new Solution: Add PingReboot every 5mins in Router2\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nActive",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "C4RAaL",
+    "stage": null,
+    "serial_number": "MP / R0 170002551",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "d33f4ef3-9e3a-ef11-840a-002248a11eba",
+            "subject": "Webform_incident_SiCharge D_05-07-2024_SN: MP R0 170002551",
+            "body": "Dear Oliver Zimmermann,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP R0 170002551\nThank you\neMobility Technical Support Team\nSehr geehrte/r Oliver Zimmermann,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP R0 170002551\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-07-05T07:19:44Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "544e33ef-a33a-ef11-8409-002248a2918b",
+            "subject": "A new case manager was assigned to 0367334 CRM:00225065898",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0367334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=921aa2f5-9e3a-ef11-8409-6045bdddacb7",
+            "date": "2024-07-05T07:55:30Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f8d6710e-a43a-ef11-8409-000d3ab8394b",
+            "subject": "A new case manager was assigned to 0367334 CRM:00225065898",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0367334 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=921aa2f5-9e3a-ef11-8409-6045bdddacb7",
+            "date": "2024-07-05T07:56:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "00240594-a53a-ef11-8409-0022489bbd8f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 47 minutes and 22 seconds.",
+            "date": "2024-07-05T08:07:12Z",
+            "extra": {}
+        },
+        {
+            "id": "59240594-a53a-ef11-8409-0022489bbd8f",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 3 seconds.",
+            "date": "2024-07-05T08:07:15Z",
+            "extra": {}
+        },
+        {
+            "id": "3cab049a-a53a-ef11-8409-0022489bbd8f",
+            "subject": "ID0367334-DC/Si-D/DE[170002551] - OCPP offline CRM:00315001557",
+            "body": "Hello Oliver﻿, I hope you are doing fine.﻿\nThank you for reaching out to eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R0 170002551\nChargerID/Serial No.\n: C4RAaL\nProblem Description\n: OCPP is offline\nTroubleshooting\n:\nI have accessed the charger remotely and restarted the connection to OCPP.\nCan you please confirm that everything is working fine?\nIf yes, then I can close the ticket.\nBefore I close the ticket, I would like to offer you a configuration change on the router and here is how it works:\nThe router pings 8.8.8.8 (DNS google), every 5mins, and if the ping doesn't return after 2 attempts (retry count), it will Restart the mobile connection, which is what I did to recover the connection right now.\nI will wait for your feedback before I do any change. I already tested with this configuration change with a few selected routers and the connection was improved, or at least the downtime was reduced.\nFor future reference, your ticket number is\n0367334\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-07-05T08:07:27Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9877ac3a-003d-ef11-8409-0022489bbd8f",
+            "subject": "ID0367334-DC/Si-D/DE[170002551] - OCPP offline CRM:00315001557",
+            "body": "Hallo Oliver,\nCan you please let me know if you want to do the config change or should I close the ticket?\nThank you.\nBest regards,\nFrancisco",
+            "date": "2024-07-08T08:01:14Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6e0aca44-c43d-ef11-8409-6045bdddacb7",
+            "subject": "AW: ID0367334-DC/Si-D/DE[170002551] - OCPP offline CRM:00315001557",
+            "body": "Hello Francisco,\nPlease change the configuration on this particular charger.\nRegards,\nOliver\nVon:\nemobility_support.si@siemens.com <emobility_support.si@siemens.com>\nGesendet:\nMontag, 8. Juli 2024 11:03\nAn:\nCPO <cpo@tank.rast.de>\nBetreff:\nID0367334-DC/Si-D/DE[170002551] - OCPP offline CRM:00315001557\nHallo Oliver,\nCan you please let me know if you want to do the config change or should I close the ticket?\nThank you.\nBest regards,\nFrancisco",
+            "date": "2024-07-09T07:24:34Z",
+            "extra": {
+                "sender": "cpo@tank.rast.de",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "6423c1a9-c63d-ef11-8409-6045bdddacb7",
+            "subject": "ID0367334-DC/Si-D/DE[170002551] - OCPP offline CRM:00315001557",
+            "body": "Hallo Oliver,\nThe configuration change has been applied.\nSince the OCPP connection is now stable I will close the ticket.\nWhat I request of you is to make an evaluation on the performance from now on. Check the performance 30 days before, until today and compare with the next 30 days.\nThank you and have a nice day!\nBest regards,\nFrancisco",
+            "date": "2024-07-09T07:41:35Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2588b0e2-c73d-ef11-8409-6045bdddacb7",
+            "subject": "Ticket 0367334 has been closed. Are you satisfied with our provided solution? CRM:00315001570",
+            "body": "Dear  Oliver\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0367334\nwith the title:\nID0367334-DC/Si-D/DE[170002551] - OCPP offline\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2024-07-09T07:50:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9c219661-cb3d-ef11-8409-6045bdddacb7",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Incident Solved Via Remote (L2) after 4 days, 8 minutes and 9 seconds.",
+            "date": "2024-07-09T08:15:24Z",
+            "extra": {}
+        }
+    ]
+}

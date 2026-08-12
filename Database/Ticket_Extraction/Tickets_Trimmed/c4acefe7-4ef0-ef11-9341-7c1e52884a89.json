@@ -1,0 +1,61 @@
+{
+    "incident_id": "c4acefe7-4ef0-ef11-9341-7c1e52884a89",
+    "ticket_number": "0408469",
+    "title": "ID0408469-DC/Si-D/NL-[JLKpZW] Issue with Outlet 1 Charging",
+    "created_on": "2025-02-21T12:25:25Z",
+    "last_activity": "2025-07-21T12:19:07Z",
+    "age": "41",
+    "description": "Reported behavior/issue:\nIssue with Outlet 1 Charging\nRoot cause:\nSolution:\nRemoved the Tx profile and then the charger is back operational.",
+    "type": 1,
+    "priority": 3,
+    "stage": null,
+    "serial_number": "Y2 / RD 300000004022",
+    "case_nature_code": null,
+    "chargerID": "JLKpZW",
+    "additional_info": [
+        {
+            "id": "624534e3-4ef0-ef11-9341-0022489a2456",
+            "subject": "Assistance Needed with Charger (JLKpZW) – Issue with Outlet 1 Charging",
+            "body": "Good day,\nWe need assistance with Charger (JLKpZW). During testing of the EMS system based on a customer request, we made changes to the OCPP link. We updated it twice, first successfully, but the second attempt did not work. As a result, we decided to revert the charger settings back to the original configuration.\nCurrently, we are testing the charger, and Outlet 2 is charging properly without any issues. However, Outlet 1 is charging, but only at 0 amps. It appears to be limited, but we are unsure of the source of the limitation. I’ve attached a picture for your reference.\nWe were working under Case ID: 0405667 and Charger ID: JLKpZW.\nCould you kindly assist us in identifying and resolving the issue?\nThank you for your time and support.\nMet vriendelijke groet | Kind regards | Med venlig hilsen | s pozdravom\n|\n亲切的问\n候\nblob:https://teams.microsoft.com/c6917c76-119c-40b3-907c-2891072a6a18\nSudeep Sewkaransing\nFieldservice Engineer\nDe Run 4315\n|\n5503 LP Veldhoven\n|\nThe Netherlands\nM:\n+31 6 15 65 72 15\n|\nE:\nsudeep.sewkaransing@siemens.com\n|\nO:\nwww.heliox-energy.com",
+            "date": "2025-02-21T12:25:14Z",
+            "extra": {
+                "sender": "sudeep.sewkaransing@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "7a7064a3-52f0-ef11-9341-000d3ab1a06e",
+            "subject": "RE: Assistance Needed with Charger (JLKpZW) – Issue with Outlet 1 Charging",
+            "body": "Hi all,\nWe can close this ticket. I had a look with Ingo. The charger was online in the Maxem backend for a short time, Maxem then set a default profile of 0kW. They change that when starting a transaction.\nWe brought it back to e-Flux, but they have a different approach and don’t change the TxProfile, so the 0kW default profile was stuck. Ingo removed it manually and the charger works fine again\n😊\nThomas",
+            "date": "2025-02-21T12:52:06Z",
+            "extra": {
+                "sender": "thomas.boersma@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "06272444-54f0-ef11-9341-002248a28911",
+            "subject": "ID0408469-DC/Si-D/NL-[JLKpZW] Issue with Outlet 1 Charging CRM:00643001314",
+            "body": "Dear Sudeep Sewkaransing,\nThanks for your support and patience, according to our records your issue/query has been resolved for case # 0408469, the case is now closed.\nProblem Description\n:\nIssue with Outlet 1 Charging\nResolution\n: Removed the Tx profile and then the charger is back operational.\nIf you need any further assistance, please do reach back out to us by submitting a new request at\nwww.siemens.com/emobility-service-request\nKindly note that email responses to closed tickets are not monitored.\nThank you.\nWith best regards,\neMobility Tech Support Team -\nShrey Sharma\nPlease do not change the subject of this Email when replying to it.",
+            "date": "2025-02-21T13:03:48Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "846f7798-54f0-ef11-9341-002248a28911",
+            "subject": "Ticket 0408469 has been closed. Are you satisfied with our provided solution? CRM:00643001315",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0408469\nwith the title:\nID0408469-DC/Si-D/NL-[JLKpZW] Issue with Outlet 1 Charging\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nShrey Sharma\nSiemens eMobility Technical Support Team",
+            "date": "2025-02-21T13:06:03Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

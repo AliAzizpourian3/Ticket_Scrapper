@@ -1,0 +1,147 @@
+{
+    "incident_id": "8644a942-f86a-ef11-bfe2-0022489d464a",
+    "ticket_number": "0377789",
+    "title": "ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves",
+    "created_on": "2024-09-04T20:00:00Z",
+    "last_activity": "2025-12-16T14:06:08Z",
+    "age": "3007",
+    "description": "Reported behaviour/issue:  Strange Charging Curves\nRoot cause: Charging parameters were fluctuating from Vehicle side\nSolution: Duly Answered\nOn DAMEX Sanctioned List: Siemens Employee\nWarranty Status: Active",
+    "type": 1,
+    "priority": 2,
+    "chargerID": "cLymeL",
+    "stage": null,
+    "serial_number": "MP / R4 170001723",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "f6cd383a-f86a-ef11-bfe2-000d3ab26cb1",
+            "subject": "Webform_incident_SiCharge D_04-09-2024_SN: MP / R4 170001723",
+            "body": "Dear Daniel Kaiblinger,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\nMP / R4 170001723\nThank you\neMobility Technical Support Team\nSehr geehrte/r Daniel Kaiblinger,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\nMP / R4 170001723\nVielen Dank\neMobility Technical Support Team",
+            "date": "2024-09-04T19:59:51Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "f27915b1-fd6a-ef11-bfe2-000d3a69a8a0",
+            "subject": "A new case manager was assigned to 0377789 CRM:00225092077",
+            "body": "Boddeda Giridhar was assigned as new Case Manager for case 0377789 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=8644a942-f86a-ef11-bfe2-0022489d464a",
+            "date": "2024-09-04T20:38:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c7e1b16f-fe6a-ef11-bfe2-000d3ab26cb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from New Enquiry to Allocated after 44 minutes and 9 seconds.",
+            "date": "2024-09-04T20:44:11Z",
+            "extra": {}
+        },
+        {
+            "id": "1ad3a289-fe6a-ef11-bfe2-000d3ab26cb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Allocated to Technical Clarification after 49 seconds.",
+            "date": "2024-09-04T20:44:59Z",
+            "extra": {}
+        },
+        {
+            "id": "7f6fa98f-fe6a-ef11-bfe2-000d3ab26cb1",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Technical Clarification to Feedback Required after 6 seconds.",
+            "date": "2024-09-04T20:45:05Z",
+            "extra": {}
+        },
+        {
+            "id": "cbe642e0-036b-ef11-bfe2-000d3ab26cb1",
+            "subject": "ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves CRM:00798001245",
+            "body": "Hello ﻿Daniel Kaiblinger,﻿\nThank you for reaching out to eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center - ERK\nMain Asset\n:\nMP / R4 170001723\nChargerID/Serial No.\n:\ncLymeL\nProblem Description\n: Strange Charging Curves\nTroubleshooting\n: Could you pls provide the Tenant name of the Chargers.\nFor future reference, your ticket number is\n0377789\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-04T21:23:17Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "b6c55e29-086b-ef11-bfe2-000d3ab26cb1",
+            "subject": "RE: ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves CRM:00798001245",
+            "body": "Hi Daniel,\nGreetings of the Day,\nWe have investigated the logs and We have following observations:\nHere, We could see that Target Current from Vehicle side (EV_TarCur) is fluctuating,\nAnd Charger Parameters (Voltage/Current) follows the Parameters requested by the Vehicle.\nVehicle acts as Master and Charger acts Slave in Master Slave configuration.\nHence, We conclude that It is usual behavior of the charger, No issue with the charger.\nAlso, We could see that there is already Active ticket (ID0375823) for same charger. So, You can seek information on the Previous Ticket Itself.\nDo let us know, If you have any other query, Or can we proceed with closure of the case.\nLooking forward to hear back from you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-04T21:53:51Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "dcadbcab-aa6b-ef11-bfe2-002248a155a0",
+            "subject": "RE: ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves CRM:00798001245",
+            "body": "Hi Daniel.\nHope your query have been answered.\nDo let us know if Have any other query.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-05T17:17:11Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3f74cba3-246c-ef11-bfe2-0022489d464a",
+            "subject": "RE: ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves CRM:00798001245",
+            "body": "Hello Gary,\nI apologise for the late reply, I was away all day yesterday.\nThanks for the clarification. I will pass this on to the customer. The ticket can therefore be closed.\nBR\nDaniel",
+            "date": "2024-09-06T07:50:12Z",
+            "extra": {
+                "sender": "daniel.kaiblinger@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "3d15bfa5-246c-ef11-bfe2-7c1e5233f636",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Required to Feedback Received after 1 day, 11 hours, 5 minutes and 14 seconds.",
+            "date": "2024-09-06T07:50:19Z",
+            "extra": {}
+        },
+        {
+            "id": "84216194-9b6c-ef11-bfe2-000d3ab3b6ad",
+            "subject": "ID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves CRM:00798001265",
+            "body": "Hi Daniel,\nThanks for confirmation on closure of case.\nSince your Query has been Answered, we will be proceeding with closing the service ticket# 0377789.\nIf you need any further assistance, please do reach back out to us by sending a new email to\nemobility_support.si@siemens.com\n.\nKindly note that email responses to closed tickets are not monitored.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T22:01:37Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "224b170e-9c6c-ef11-bfe2-000d3ab3b6ad",
+            "subject": "Ticket 0377789 has been closed. Are you satisfied with our provided solution? CRM:00798001266",
+            "body": "Dear Daniel Kaiblinger,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0377789\nwith the title:\nID0377789-DC/Si-D/AT-[cLymeL] Strange Charging Curves\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2024-09-06T22:05:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a5880b41-9c6c-ef11-bfe2-000d3ab3b6ad",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Feedback Received to Repair Ongoing after 14 hours, 16 minutes and 6 seconds.",
+            "date": "2024-09-06T22:06:26Z",
+            "extra": {}
+        },
+        {
+            "id": "28c73755-9c6c-ef11-bfe2-000d3ab3b6ad",
+            "subject": "New Status Change",
+            "body": "The Status was changed from Repair Ongoing to Incident Solved Via Remote (L2) after 35 seconds.",
+            "date": "2024-09-06T22:07:00Z",
+            "extra": {}
+        }
+    ]
+}

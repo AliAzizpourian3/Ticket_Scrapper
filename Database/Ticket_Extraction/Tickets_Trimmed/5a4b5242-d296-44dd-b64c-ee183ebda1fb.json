@@ -1,0 +1,101 @@
+{
+    "incident_id": "5a4b5242-d296-44dd-b64c-ee183ebda1fb",
+    "ticket_number": "0409113",
+    "title": "ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest",
+    "created_on": "2025-02-25T10:33:15Z",
+    "last_activity": "2025-07-11T07:26:28Z",
+    "age": "24483",
+    "description": "Reported behavior/issue:\nDC_Coils_MG1-MG4_SelfTest\nRoot cause:",
+    "type": 3,
+    "priority": 1,
+    "chargerID": "ZfA6ox",
+    "stage": null,
+    "serial_number": "MP / PN 170001126",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "042f3434-841e-ae87-b97d-86600800f629",
+            "subject": "Issue reported from the customer",
+            "body": "There is “DC_Coils_MG1-MG4_SelfTest” error flag on the charger..\nThe customer stated that the vehicle cut off charging and gave an energy system error due to the Pilot Voltage increase in the two charging processes. You can see log data from these charging process at the attachment.",
+            "date": "2025-02-25T11:08:43Z",
+            "extra": {}
+        },
+        {
+            "id": "dd4661f8-6af3-ef11-be1f-7c1e5220b93f",
+            "subject": "ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Dear Yunus Emre Temel,\nThank you for reaching\nout\nto eMobility Support. My name is\nAbhinav\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / PN 170001126\nChargerID/Serial No.\n:\nZfA6ox\nProblem Description\n: DC_Coils_MG1-MG4_SelfTest\nTroubleshooting\n:\nWe have reviewed the logs, and during our initial analysis, we identified some abnormalities related to the switching matrix, likely due to a contactor issue.\nFor future reference, your case number is\n0409113\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nAbhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-25T11:23:47Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "95fb277c-a0f3-ef11-be1f-6045bddd5690",
+            "subject": "RE: ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Dear Yunus,\nPlease allow us some time to respond as we are currently reviewing the complete logs. Once we have an update, we will reach out to you shortly.\nThank you for your patience.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-25T17:46:49Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "e90ecc1e-43f4-ef11-be1f-7c1e52768c07",
+            "subject": "RE: ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Dear Yunus,\nI hope you are doing well.\nWe have reviewed the logs, and our initial analysis indicates abnormalities related to the switching matrix, likely due to a contactor issue.\nPlease check the error flag on SCB first to confirm which component has failed. As of now, the error has been cleared on SCB, so the decision on further action is up to you. However, if the issue reoccurs, please follow below the necessary troubleshooting steps to resolve it.\nfor IN detail how test is performed please follow the link in wiki:\nMatrix Contactors/Coils Self Test - EV Charger Development - Confluence (siemens.cloud)\nContactors in group 0 failed the test & Group 1,2,3 test was skipped.\nFrom <\nhttps://isp.crm4.dynamics.com/%7b638408754500000190%7d/webresources/msdyn_/RichTextEditorControl/Preview/browserPreviewFrame.html\n>\nadding to the below information provided earlier\nstatus: failed, reason: smc[0,1,2,3]-[states]-[results]\nstatus: failed, reason: smc[0,1,2,3]-[P,P,P,S]-[0,0,0,0] : in charger\nSo SMC0 : QA9/QA10\nSMC1: QA11/QA12\nSMC2: QA17/QA18\nSMC3: QA15/QA16\nIn error code status [F,S,S,S]: denotes SMC0 contactor check  failed & SMC1,2,3 is skipped\n[0,0,0,0]: denotes Contactor QA9/QA10 feedback is not received\nSteps to Check DC Contactor Operation (24V Supply)\n1. Power Supply Verification\n🔹 Ensure a stable\n24V DC supply\nis available and correctly connected to the contactor coil terminals.\n🔹 Use a\nmultimeter\nto measure the voltage at the coil terminals before energizing.\n2. Contactor Pick-Up Test (Engagement Check)\n✅ Apply\n24V DC\nto the coil and observe if the contactor\npulls in (engages)\nproperly.\n✅ Listen for a\nclear clicking sound\n, indicating proper engagement.\n✅ Measure the\ncoil current\nto ensure it is within the rated specifications.\n3. Contactor Drop-Out Test (Release Check)\n✅ Remove the\n24V supply\nand check if the contactor\ndrops out (de-energizes)\ncorrectly.\n✅ Ensure there is no delay or\nsticking\nin the contacts.\n✅ Listen for the\nrelease click\nsound when the coil is de-energized.\n4. Contact Status Verification\n✅ Check\nNO (Normally Open)\nand\nNC (Normally Closed)\ncontacts using a multimeter in\ncontinuity mode\n:\nWhen\nenergized\n, NO contacts should\nclose\n, and NC contacts should\nopen\n.\nWhen\nde-energized\n, NO contacts should\nopen\n, and NC contacts should\nclose\n.\nDuring the site intervention, please carry a spare contactor in case a replacement is needed.\nhope this would clear your query.\nSpare part contactor-: 8EM5903-0AA00-7AA8\nThank you.\nWith best regards,\neMobility Tech Support Team -\nAbhinav\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T13:11:02Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "941d511c-46f4-ef11-be1f-7c1e52768c07",
+            "subject": "RE: ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Dear Yunus,\nI am writing to formally inform that we are moving case 0409113 ﻿from the\neMobility DC Queue (Level 2)\nto the\neMobility RC-TR SI E Queue (Level 2)\n, due to one or more following reason (s):\nReason\nApplicable\nOnsite Repair (Component Exchange)\nYes\nOnsite Troubleshooting\nYes\nEnd Customer Communication\nYes\nSpare Part Ordering\nYes\nPerformance monitoring by RC\nKindly pick up the case using \"\nPick\n\" option in the queue or manually using the \"\nAssign\n\" function from the\neMobility RC-TR SI E Queue (Level 2)\nand work on it & document the activity (Logs/Field Service Report) and attach it to the Notes in the case timeline or under documents Tab on ISP.\nIn case you require expert support, kindly create Work-order as per\nunified service process\n.\nIf you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nKindly close the case post resolution and send survey email to the customer.\nThank you.\nWith best regards,\neMobility Tech Support Team - Abhinav Malokar\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-02-26T13:32:29Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "7d3f490c-4ff4-ef11-be1f-000d3adf7e20",
+            "subject": "RE: ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Hi Abhinav,\nWe will monitor the device for 1 week. If the error doesn’t reappear, we willn’t perform field service intervention. If it reappears, we will perform field service intervention to replace the contactors. Is it ok?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-02-26T14:36:32Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4cb95df5-10f8-ef11-bae2-000d3adc93d1",
+            "subject": "A new case manager was assigned to 0409113 CRM:00225171833",
+            "body": "Furkan Ahmet Goren was assigned as new Case Manager for case 0409113 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=5a4b5242-d296-44dd-b64c-ee183ebda1fb",
+            "date": "2025-03-03T09:22:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6d0f8340-91fb-ef11-bae3-6045bddece8c",
+            "subject": "RE: ID0409113-DC/Si-D/TR-[MP / PN 170001126] DC_Coils_MG1-MG4_SelfTest CRM:00641001153",
+            "body": "Hi Abhinav,\nThere is a QA9-10 error in the show error flag today. There seems to be a problem at this station. Can you please review in detail?\nAlso, The customer stated that the vehicle cut off charging and gave an energy system error due to the Pilot Voltage increase in the two charging processes.\nCan you state what is the reason for this pilot voltage error in the reviews?\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-03-07T20:17:57Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        }
+    ]
+}

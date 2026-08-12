@@ -1,0 +1,94 @@
+{
+    "incident_id": "d2d8a4eb-7089-4121-b250-1a8a98e28100",
+    "ticket_number": "0400394",
+    "title": "ID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting",
+    "created_on": "2025-01-16T10:42:28Z",
+    "last_activity": "2025-12-16T14:02:02Z",
+    "age": "5834",
+    "description": "Reported behaviour/issue:\nSession not starting\nRoot cause:\nCustomer is using wrong connector in Start Transaction, using ID3 for DC1 and ID1 for DC3 (it's swapped)\nSolution:\nProvide information to RC\nOn DAMEX Sanctioned List:\nSiemens\nWarranty Status:\nExpired",
+    "type": 1,
+    "priority": 3,
+    "chargerID": "vK6bNu",
+    "stage": null,
+    "serial_number": "MP / P1 170000412",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "c453ec97-f6d3-ef11-8ee9-7c1e52378e9b",
+            "subject": "A new case manager was assigned to 0400394 CRM:00225149484",
+            "body": "Yunus Emre Temel was assigned as new Case Manager for case 0400394 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d2d8a4eb-7089-4121-b250-1a8a98e28100",
+            "date": "2025-01-16T10:42:38Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5155c22b-fad3-ef11-8eea-7c1e5237dbeb",
+            "subject": "A new case manager was assigned to 0400394 CRM:00225149506",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0400394 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=d2d8a4eb-7089-4121-b250-1a8a98e28100",
+            "date": "2025-01-16T11:08:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3bdaf55a-fad3-ef11-8ee9-000d3a691687",
+            "subject": "ID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting CRM:00315002260",
+            "body": "Dear Emre-abi,\nThank you for reaching\nout\nto eMobility Support. My name is\nFrancisco\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nMP / P1 170000412\nChargerID/Serial No.\n:\nvK6bNu\nProblem Description\n: Charging is not starting\nTroubleshooting\n: Is it possible to provide me a timestamp? There was a session working just 1 h ago.\nFor future reference, your case number is\n0400394\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nWith best regards,\neMobility Tech Support Team -\nFrancisco de Matos Joaquim\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-01-16T11:09:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a753d6e7-ead5-ef11-8eea-7c1e52378e9b",
+            "subject": "RE: ID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting CRM:00315002260",
+            "body": "Hi Francisco,\nThe customer side states that this problem has been happening for the last week. When I get data from AWS for the last week, I see many 0kW charging processes. I would be glad if you could examine it in detail.\nYou can see AWS log data as excell at the attachment\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-01-18T22:24:02Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "71c82f68-1ed7-ef11-8ee9-000d3ab4a366",
+            "subject": "ID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting CRM:00315002260",
+            "body": "hi Emre-abi, good morning.\nThank you for the reply, indeed this is easier to troubleshoot. I will go one by one\n2025-01-18T12:49:22.513Z :\n2025-01-18T19:25:39.747Z :\n2025-01-16T13:26:44.639Z\n2025-01-16T13:16:08.884Z\n2025-01-16T13:31:39.723Z\n2025-01-16T13:30:10.227Z\nNo Start Transaction log, car plugged, A→B2 and failed authentication.\n2025-01-18T19:30:01.863Z :\nI've checked this random 7 sessions and I found that they are Starting the transaction in the wrong connector. For the other one there was no authentication provided. Since there are so many sessions that work and this charger is out of warranty, let me know if this answer is enough for you.\nBest regards,\nFrancisco",
+            "date": "2025-01-20T11:05:15Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f0a735a8-24d7-ef11-8eea-0022489bcff4",
+            "subject": "RE: ID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting CRM:00315002260",
+            "body": "Thank you\nFrancisco\n😊\nWith best regards,\nYunus Emre Temel\nSiemens Sanayi ve Ticaret Anonim Sirketi\nRC-TR SI E CS\nYakacik Caddesi No 111\n34870 Istanbul, Türkiye\nMobile: +90 5300504719\nmailto:emre.temel@siemens.com\nwww.siemens.com",
+            "date": "2025-01-20T11:49:55Z",
+            "extra": {
+                "sender": "emre.temel@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "1fddfd84-25d7-ef11-8ee9-000d3ab4a366",
+            "subject": "Ticket 0400394 has been closed. Are you satisfied with our provided solution? CRM:00315002270",
+            "body": "Dear Emre,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0400394\nwith the title:\nID0400394-DC/Si-D/TR-[MP / P1 170000412] Charging process not starting\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards\nFrancisco de Matos Joaquim\nSiemens eMobility Technical Support Team",
+            "date": "2025-01-20T11:56:09Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

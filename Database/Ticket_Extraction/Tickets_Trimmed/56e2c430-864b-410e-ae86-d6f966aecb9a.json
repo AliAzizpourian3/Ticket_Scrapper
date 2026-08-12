@@ -1,0 +1,67 @@
+{
+    "incident_id": "56e2c430-864b-410e-ae86-d6f966aecb9a",
+    "ticket_number": "0415983",
+    "title": "ID0415983-DC/Si-D/FI-[ZgwY7b] - Kalajoki Q2303 contactor pair QA17-18 and QA11-12",
+    "created_on": "2025-03-31T14:35:06Z",
+    "last_activity": "2025-04-29T04:56:27Z",
+    "age": "41181",
+    "description": "Reported behavior/issue: Q2303 coil pair QA17-18 and  QA11-12 failure\nRoot cause: Faulty contactor\nSolution: Replace contactor\nDone 22.4.2025 and repair report added in timeline",
+    "type": 1,
+    "priority": 1,
+    "chargerID": "ZgwY7b",
+    "stage": null,
+    "serial_number": "MP / P7 170000678",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "799a72b8-6d1f-9157-a660-e82c003c4cd7",
+            "subject": "AWS querie 2 week backward",
+            "body": "fields\n@timestamp\n,\n@message\n,\n@logStream\n|\nfilter\n@message\nlike\n/coontactor stuck at ON feedback, waiting for reset/\nand\n@message\nlike\n/to true/\nor\n@message\nlike\n/primary converter group has error, reason: One or more connected SMC have feedback faults/\n|\nparse\n@message\n'_* '\nas\ncoil\n|\nparse\n@message\n'DC* : Outlet'\nas\nDC\n|\nfilter\n@logStream\nlike\n/ZgwY7b/\n#| stats count(*) as Count by @logStream, coil, DC\n|\nsort\nby\n@logStream\ndesc\n,\nCount\ndesc\n, coil\ndesc\n|\nlimit\n10000",
+            "date": "2025-03-31T14:35:49Z",
+            "extra": {}
+        },
+        {
+            "id": "dea2c985-b707-c45e-ac71-a4299ef28ab0",
+            "subject": null,
+            "body": "",
+            "date": "2025-03-31T14:37:14Z",
+            "extra": {}
+        },
+        {
+            "id": "16b8983c-4c0e-f011-9989-7c1e52878e80",
+            "subject": "ID0415983-DC/Si-D/FI-[ZgwY7b] - Kalajoki Q2303 contactor pair QA17-18 and QA11-12 CRM:00798002080",
+            "body": "Dear Markus Roiha,\nThank you for reaching\nout\nto eMobility Support. My name is\nGiridhar\n, and I will be assisting you with your following query today:\nProduct\n: Sicharge D - Charging Center\nMain Asset\n:\nKalajoki\nChargerID/Serial No.\n:\nZgwY7b\nProblem Description\n: Kalajoki Q2303 contactor pair QA17-18 and QA11-12\nAllow us some time.\nFor future reference, your case number is\n0415983\n, please do refer to this in all further communication regarding this issue.\nWe thank you for your time and patience in advance.\nThank and Best Regards,\neMobility Tech Support Team -\nGiridhar \"Gary\"\nPlease do not\nchange\nthe\nsubject of this Email when\nreplying\nto it.",
+            "date": "2025-03-31T16:21:52Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3ebd43cc-a387-e2ab-a6a1-ca2189663664",
+            "subject": "Notes",
+            "body": "Need to validate the AWS analysis as reported by RC.",
+            "date": "2025-04-02T19:47:51Z",
+            "extra": {}
+        },
+        {
+            "id": "e4451786-6f10-f011-998a-000d3adc93d1",
+            "subject": "ID0415983-DC/Si-D/FI-[ZgwY7b] - Kalajoki Q2303 contactor pair QA17-18 and QA11-12 CRM:00798002080",
+            "body": "Hi Markus,\nPlease proceed with the replacement of the contactors. I will send this ticket to your queue.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-04-03T09:39:33Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "d81486b5-6fd5-4bbd-839b-34e6be10b820",
+            "subject": "Repair report",
+            "body": "",
+            "date": "2025-04-29T04:55:02Z",
+            "extra": {}
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "incident_id": "c37034d1-a9a9-f011-bbd2-7c1e52880532",
+    "ticket_number": "0455767",
+    "title": "ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue",
+    "created_on": "2025-10-15T09:32:13Z",
+    "last_activity": "2026-03-23T11:41:18Z",
+    "age": "20306",
+    "description": "Reported Behavior/Issue: Charging Issue",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S5 170003652",
+    "case_nature_code": 580000001,
+    "chargerID": "delXft",
+    "additional_info": [
+        {
+            "id": "11bd73b9-a9a9-f011-bbd2-7c1e52880f76",
+            "subject": "Webform_incident_SiCharge D_15-10-2025_SN: 170003652",
+            "body": "Dear Milan Klempay,\nthank you for contacting Siemens eMobility Technical Support.\nOur Technical Support team will create an official case in our ticketing system shortly and will inform you accordingly through email, including the official  case number of the incident.\nPlease wait till you get the offical reply from us and do not reply to this email, since it will not be monitored\nIf you are reporting an incident from  charger operating  at a Siemens location, you will not be notified futher. The incident will be forwarded to the Siemens location manager.\nThe reported incident is for charger type:\nSiCharge D\nSerial number:\n170003652\nThank you\neMobility Technical Support Team\nSehr geehrte/r Milan Klempay,\nvielen Dank dass Sie sich bei Siemens eMobility Technical Support gemeldet haben.\nUnser Technischer Support  erstellt  ein offizielles Ticket und schickt Ihnen eine erste Rückmeldung in Kürze.\nBitte warten Sie auf die offizielle Ticket Antwort und antworten Sie nicht auf diese E-Mail. Diese Mailbox wird nicht überwacht.\nFalls Sie eine Störmeldung  für eine Ladestation auf einem Siemens Betriebsgelände abgesetzt haben,  werden wir diese an den Verantwortlichen des Betriebsgeländes weiterleiten. Sie erhalten keine weiteren Rückmeldungen.\nDie Störungsmeldung betrifft  folgende Ladestation:\nSiCharge D\nSeriennummer:\n170003652\nVielen Dank\neMobility Technical Support Team",
+            "date": "2025-10-15T09:31:30Z",
+            "extra": {
+                "sender": "noreply@moreapp.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "bea0b6ff-a9a9-f011-bbd2-7ced8d425bfe",
+            "subject": "A new case manager was assigned to 0455767 CRM:00225272028",
+            "body": "Nikhil Pratap Singh was assigned as new Case Manager for case 0455767 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c37034d1-a9a9-f011-bbd2-7c1e52880532",
+            "date": "2025-10-15T09:33:36Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "35cd41c2-aaa9-f011-bbd2-000d3a668a5e",
+            "subject": "ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue CRM:03098000035",
+            "body": "Dear\nMilan\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S5 170003652\nChargerID\n:\ndelXft\nProblem Description\n: Charging Issue\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0455767\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nNikhil Pratap Singh\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-10-15T09:39:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "3fc5e46b-b5a9-f011-bbd2-7c1e52880532",
+            "subject": "A new case manager was assigned to 0455767 CRM:00225272106",
+            "body": "Marcelo Kuester was assigned as new Case Manager for case 0455767 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c37034d1-a9a9-f011-bbd2-7c1e52880532",
+            "date": "2025-10-15T10:55:20Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "915f0ecc-b5ad-f011-bbd2-7ced8d4259cd",
+            "subject": "RE: ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue CRM:03098000035",
+            "body": "Dear support team,\nLooking into the logs I spotted following.\nWe get maximum power limit from OCPP backend via parameter SetCharging profile at value\n118472\nW. SetChargingProfile value changes but it is never smaller than 80 kW throughout the transaction.\n2025-10-15T07:29:21.845275+00:00 [FW080005G2] sicharge-cp [local0:info] sicharge-cp-backend/bf7de88a7536[794]: OCPP: Received command: SetChargingProfile (fd851915-3423-42bf-9337-321f58cd7f77) - {\"connectorId\":1,\"csChargingProfiles\":{\"chargingProfileId\":37035239,\"stackLevel\":0,\"chargingProfilePurpose\":\"TxDefaultProfile\",\"chargingProfileKind\":\"Absolute\",\"validFrom\":\"2025-10-15T07:29:21Z\",\"chargingSchedule\":{\"chargingRateUnit\":\"W\",\"chargingSchedulePeriod\":[{\"startPeriod\":0,\"limit\":\n118472\n,\"numberPhases\":3}],\"startSchedule\":\"2025-10-15T07:29:21Z\",\"minChargingRate\":0}}}\nVehicle parameters\n2025-10-15T07:29:23.130251+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: EV connected: V_Max: 825[V], I_Max:350[A], P_Max:288[kW], SoC:65[%]\nAfter we start charging only QA21 and QA22 are on.\n2025-10-15T07:29:44.194371+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: Charging Phase \"P04_PRE_CHARGE\" --> \"P05_START_CHARGE\"\n2025-10-15T07:29:44.212012+00:00 [FW080005G2] swcpu [user:debug] [4322] [SCO]  OGC[0]: DC1-DC1_QA21-22, COMMAND: on, FEEDBACK: on, BLOCKING: yes, OPRSTATE: Normal(all ok), CHRGOPRMODE: 6, CTRL_DC_UNIT: DC1\n2025-10-15T07:29:44.597701+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: Charging Phase \"P05_START_CHARGE\" --> \"P06_CHARGE\"\nAnd that does not change even when we reach 80 kW and car is requesting higher power (is able to charge with higher power at this SoC).\n2025-10-15T07:30:27.625503+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  |ID=281|DC1: |EVSE_MaxPwr[kW]=\n80\n|EVSE_MaxCur[A]=106|EVSE_NowPwr[kW]=\n80\n|EVSE_NowCur[A]=106|EVSE_NowVol[V]=757.2|EV_TarCur[A]=106.6|EV_TarVol[V]=825|EV_SOC[%]=66|EVSE_DESpwr[kW]=118|Cable_Max[A]=500|Phase=6\nAt that time, the most recent OCPP command specified a power limit of 118472 watts\n.\nTherefore, the cause of the observed 80 kW limitation must originate from another source.\n2025-10-15T07:29:21.845275+00:00 [FW080005G2] sicharge-cp [local0:info] sicharge-cp-backend/bf7de88a7536[794]: OCPP: Received command: SetChargingProfile (fd851915-3423-42bf-9337-321f58cd7f77) - {\"connectorId\":1,\"csChargingProfiles\":{\"chargingProfileId\":37035239,\"stackLevel\":0,\"chargingProfilePurpose\":\"TxDefaultProfile\",\"chargingProfileKind\":\"Absolute\",\"validFrom\":\"2025-10-15T07:29:21Z\",\"chargingSchedule\":{\"chargingRateUnit\":\"W\",\"chargingSchedulePeriod\":[{\"startPeriod\":0,\"limit\":\n118472\n,\"numberPhases\":3}],\"startSchedule\":\"2025-10-15T07:29:21Z\",\"minChargingRate\":0}}}\n2nd case. Working accordingly.I checked the other charging session on 400V architecture. There we connect another converter group once the limit of one charger group is reached. Please see example\nParameter discovery\n2025-10-15T08:13:06.051431+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  DC1: EV connected: V_Max: 408[V], I_Max:500[A], P_Max:204[kW], SoC:57[%]\nStart charge with DC1-DC1_QA21-22, COMMAND: on, FEEDBACK: on, BLOCKING: yes, OPRSTATE: Normal(all ok)\n2025-10-15T08:13:24.435882+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  |ID=282|DC1: |EVSE_MaxPwr[kW]=80|EVSE_MaxCur[A]=44|EVSE_NowPwr[kW]=3.5|EVSE_NowCur[A]=10|EVSE_NowVol[V]=365.9|EV_TarCur[A]=16.8|EV_TarVol[V]=408|EV_SOC[%]=55|EVSE_DESpwr[kW]=204|Cable_Max[A]=500|Phase=6\nBut after we reach certain power QA09-10 turns on and EVSE_MaxPwr[kW] reaches higher value 204 kW\n2025-10-15T08:13:32.468216+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  |ID=282|DC1: |EVSE_MaxPwr[kW]=\n80\n|EVSE_MaxCur[A]=198|EVSE_NowPwr[kW]=\n60.5\n|EVSE_NowCur[A]=161|EVSE_NowVol[V]=376.2|EV_TarCur[A]=169.7|EV_TarVol[V]=408|EV_SOC[%]=55|EVSE_DESpwr[kW]=204|Cable_Max[A]=500|Phase=6\n2025-10-15T08:13:32.784343+00:00 [FW080005G2] swcpu [user:debug] [4322] [SCO]  SMC[0]: MG1-MG2_QA09-10, COMMAND: on, FEEDBACK: off, BLOCKING: no, OPRSTATE: Normal(all ok), CHRGOPRMODE: 6, CTRL_DC_UNIT: DC1\n2025-10-15T08:13:32.971595+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  |ID=282|DC1: |EVSE_MaxPwr[kW]=\n204\n|EVSE_MaxCur[A]=198|EVSE_NowPwr[kW]=63.1|EVSE_NowCur[A]=168|EVSE_NowVol[V]=376.2|EV_TarCur[A]=179.2|EV_TarVol[V]=408|EV_SOC[%]=55|EVSE_DESpwr[kW]=204|Cable_Max[A]=500|Phase=6\nThen the power changes from OCPP command to\n153027\nwatts.\n2025-10-15T08:17:07.199412+00:00 [FW080005G2] sicharge-cp [local0:info] sicharge-cp-backend/bf7de88a7536[794]: OCPP: Received command: SetChargingProfile (ed35ad6d-27f5-468d-a3de-4bdab640716f) - {\"connectorId\":1,\"csChargingProfiles\":{\"chargingProfileId\":37036924,\"stackLevel\":0,\"chargingProfilePurpose\":\"TxProfile\",\"chargingProfileKind\":\"Absolute\",\"validFrom\":\"2025-10-15T08:17:06Z\",\"chargingSchedule\":{\"chargingRateUnit\":\"W\",\"chargingSchedulePeriod\":[{\"startPeriod\":0,\"limit\":\n153027\n,\"numberPhases\":3}],\"startSchedule\":\"2025-10-15T08:17:06Z\",\"minChargingRate\":0},\"transactionId\":5726328}}\n2025-10-15T08:17:07.244072+00:00 [FW080005G2] swcpu [user:debug] [4322] [DCC]  |ID=282|DC1: |EVSE_MaxPwr[kW]=153|EVSE_MaxCur[A]=286|EVSE_NowPwr[kW]=99.1|EVSE_NowCur[A]=253|EVSE_NowVol[V]=391.2|EV_TarCur[A]=251.7|EV_TarVol[V]=408|EV_SOC[%]=63|EVSE_DESpwr[kW]=199|Cable_Max[A]=500|Phase=6\nThank you for your reaction.\nKind regards,\nMilan",
+            "date": "2025-10-20T13:08:02Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "edcb898d-80ae-f011-bbd2-7c1e52880fe1",
+            "subject": "A new case manager was assigned to 0455767 CRM:00225275150",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0455767 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c37034d1-a9a9-f011-bbd2-7c1e52880532",
+            "date": "2025-10-21T13:19:25Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "c9cf7a7f-82ae-f011-bbd2-7c1e52880288",
+            "subject": "A new case manager was assigned to 0455767 CRM:00225275168",
+            "body": "Joao Francisco Louro Cardoso was assigned as new Case Manager for case 0455767 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=c37034d1-a9a9-f011-bbd2-7c1e52880532",
+            "date": "2025-10-21T13:33:21Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "0cf9be87-7bf4-b663-8834-9e70a09ff1f4",
+            "subject": "Status:",
+            "body": "",
+            "date": "2025-10-21T13:34:11Z",
+            "extra": {}
+        },
+        {
+            "id": "01c9dac7-9bae-f011-bbd2-7c1e5236229d",
+            "subject": "0455767 - ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue CRM:00472000425",
+            "body": "Hello Milan,\nThe power is limited to the primary DC group available power because when addressing the second DC group, it fails on the Precharge voltage check.\nWe don't know why is this happening, I have opened an R&D ticket to investigate the root cause.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-10-21T16:34:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ad0d34e9-bbb4-f011-bbd2-7ced8d76daaf",
+            "subject": "RE: 0455767 - ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue CRM:00472000425",
+            "body": "Hello Milan,\nThank you for reporting this issue.\nI wanted to provide you with an update: the topic you raised is currently being processed by R&D. While they are actively working on a resolution, we do not yet have a confirmed timeline for when the fix will be available or implemented.\nDetails regarding the fix will be shared in a future release note, rather than in the immediate next firmware versions.\nSince there are no further actions pending from the service side at this time, I will proceed with closing this ticket.\nWe truly appreciate you bringing this problem to our attention.\nWith best regards,\nJoao Francisco Louro Cardoso\nSiemens S.A.\nSI E CS SD L3\n201, Avenida 25 de Abril\n2845-547 Corroios, Portugal\nmailto:joao.louro-cardoso@siemens.com\nwww.siemens.com",
+            "date": "2025-10-29T11:39:26Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f81f1d88-beb4-f011-bbd2-7c1e52880288",
+            "subject": "Ticket 0455767 has been closed. Are you satisfied with our provided solution? CRM:00225279493",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0455767\nwith the title:\nID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-10-29T11:58:10Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "87d62cb6-b2b9-f011-bbd2-7c1e52880fe1",
+            "subject": "RE: 0455767 - ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue CRM:00472000425",
+            "body": "Hello Francisco,\nThank you for the reply.\nWhen should we expect release notes regarding the slow power ramp-up?\nI found out that this delay does not seem to happen on 400V architecture. See transaction ID\n5746211\nin\n20251104_delXft-logs_gradualRampUp400V\n.\nOn the other side, in transaction with ID\n5746211\n20251016_delXft-logs_slowRampUp800V\npower ramp up does not react on time to the requested EV power. Compared to the 400V architecture session, there is a significant delay before a new converter group is added to the total power.\nThank you for the update.\nKind regards,\nMilan",
+            "date": "2025-11-04T19:16:12Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "b331eeba-b2b9-f011-bbd2-7c1e52362ec6",
+            "subject": "Email sent to a closed case 'ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue (0455767)' CRM:00225282800",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0455767\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2025-11-04T19:16:19Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "08415a30-ad26-f111-8341-6045bde0c971",
+            "subject": "RE: Email sent to a closed case 'ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue (0455767)' CRM:00225282800",
+            "body": "Dear Francisco,\nIs there a known resolution with the release notes available to the issue we were addressing in ID0455767?\nShort description. Slow power ramp-up of the next power group stage when charging on 800 V architecture.\nKind regards,\nMilan Klempay",
+            "date": "2026-03-23T11:41:13Z",
+            "extra": {
+                "sender": "milan.klempay@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "4d7eeb32-ad26-f111-8342-000d3ab12a39",
+            "subject": "Email sent to a closed case 'ID0455767-DC/Si-D/CZ-[MP / S5 170003652] Charging Issue (0455767)' CRM:00225356797",
+            "body": "Dear Customer,\nWe received an e-mail to an already closed case with number\n0455767\nEmails to already closed cases are not monitored nor followed up and the case stays closed.\nPlease use any of the links below to initiate a new case and do not reply to this e-mail.\nOpen\nhere\na new service request or call our\nHotline\nThanks and best regards\nYour Siemens eMobility Support Team",
+            "date": "2026-03-23T11:41:16Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}

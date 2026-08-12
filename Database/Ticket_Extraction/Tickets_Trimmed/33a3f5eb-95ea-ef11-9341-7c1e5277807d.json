@@ -1,0 +1,57 @@
+{
+    "incident_id": "33a3f5eb-95ea-ef11-9341-7c1e5277807d",
+    "ticket_number": "0406718",
+    "title": "ID0406718-DC/Si-D/MY-[MP / ND 170000121] V2G Error with MG4",
+    "created_on": "2025-02-14T05:38:36Z",
+    "last_activity": "2025-11-26T05:54:23Z",
+    "age": "117966",
+    "description": "Reported behavior/issue:\nV2G Error with MG4\nOpen Ticket:\nYes, with RC- 0396977 but different issue\nRoot cause:\nSolution:\nOn DAMEX Sanctioned List:\nSiemens Employee\nWarranty Status:\nInactive (12/7/2023)",
+    "type": 3,
+    "priority": 2,
+    "chargerID": "sruJwD",
+    "stage": null,
+    "serial_number": "MP / ND 170000121",
+    "case_nature_code": null,
+    "additional_info": [
+        {
+            "id": "928c71e5-95ea-ef11-9341-6045bddd1864",
+            "subject": "Sicharge D: V2G Error with MG4 ",
+            "body": "Dear Helpdesk,\nSicharge D\nSerial Number:\nMP / ND 170000121\nChargerID: sruJwD\nCountry: Malaysia\nCustomer: KVC/TNB\nIssue Date and Time: 13\nth\nFeb 2025 11.10am to 11.15am (GMT+8)\nVehicle involved: MG4\nIssue Description: MG4 was unable to charge\nBasic troubleshooting: Shows that the charging session was not able to move to the P02 Parameter Discovery state as there is an error on V2G as showed in the attached logs.\nPlease kindly advise in accordance to ISO 15118, should the charger be capable to inform the vehicle that we are initiating a charging session instead of being assume as a load or V2G backwards flow to the charger?\nThank you\nWith best regards,\nEdna Seah\nSiemens Pte Ltd\nRC-SG SI E\n60 MacPherson Road\n348615 Singapore, Singapore\nMobile: +65 9816 9400\nmailto:edna.seah@siemens.com\nwww.twitter.com/siemens\nwww.siemens.com",
+            "date": "2025-02-14T05:38:27Z",
+            "extra": {
+                "sender": "edna.seah@siemens.com",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "d3a285c7-a5ea-ef11-9341-000d3a6717e6",
+            "subject": "A new case manager was assigned to 0406718 CRM:00225164412",
+            "body": "Sominath Nagalgaon was assigned as new Case Manager for case 0406718 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=33a3f5eb-95ea-ef11-9341-7c1e5277807d",
+            "date": "2025-02-14T07:32:07Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "ef8630d1-adea-ef11-9341-000d3ab1a06e",
+            "subject": "ID0406718-DC/Si-D/MY-[MP / ND 170000121] V2G Error with MG4 CRM:00797001729",
+            "body": "Hello RC-MY Team,\nI trust this email finds you in good health. We have received a technical support request from\nSiemens Pte Ltd\nin your region regarding the following product:\nProduct:\nSicharge D - Charging Center\nMain Asset:\nMP / ND 170000121\nCharger ID/Serial No.:\nsruJwD\nProblem Description:\nV2G Error with MG4\nAccording to\nISO 15118\n, the charger should indeed be capable of informing the vehicle when a charging session is being initiated. This standard facilitates seamless communication between the electric vehicle (EV) and the charging station, ensuring the EV recognizes the start of a charging session rather than mistakenly assuming it is a load or a Vehicle-to-Grid (V2G) backward flow.\nRegarding the specific timestamp you provided, we have checked the V2G logs, and communication was established according to the\nDIN 70121\nprotocol. It appears that the charging session was unable to progress to the\nP02 Parameter Discovery\nstate because the EV did not send the required parameter data within the allotted time. As a result, the session was terminated.\nIn the protocol, the charging session passes through various stages, one of which is the\nP02 Parameter Discovery\nstate. During this stage, the charger (EVSE) requests the vehicle to send essential charging parameters, such as the maximum current, voltage, and available power. If the EV does not respond with the necessary data within the expected timeframe, the charger cannot continue with the session, leading to an aborted or terminated session.\nUpon reviewing our asset database, we found that the product is no longer under warranty since\n7th Dec. 2023\n, as a result, we are transferring the case to the regional queue.\nKindly communicate with the customer and provide the necessary service support and/or offer. We have already informed the customer that a regional representative will be in touch shortly.\nShould you require further remote or expert support, please order it via PMD.\nFor additional information, please visit the Service Collaboration SharePoint. If you need assistance with ordering Expert Support, feel free to reach out to Sousa, Afonso (SI E CS SD) at\nafonso-sousa@siemens.com\nor Teodoso, Rui (SI E CS SD ES) at\nrui.teodoso@siemens.com\n.\nWith best regards,\neMobility Tech Support Team -\nSominath Nagalgaon\nPlease do not change the subject of this Email when replying to it",
+            "date": "2025-02-14T08:29:39Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "5995b266-67d4-fa45-98a3-c175582c7e71",
+            "subject": null,
+            "body": "V2G Logs",
+            "date": "2025-02-14T09:56:57Z",
+            "extra": {}
+        }
+    ]
+}

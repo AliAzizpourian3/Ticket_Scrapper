@@ -1,0 +1,116 @@
+{
+    "incident_id": "26e79a6b-46c1-f011-bbd2-7c1e52880b1b",
+    "ticket_number": "0461823",
+    "title": "ID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2",
+    "created_on": "2025-11-14T10:41:14Z",
+    "last_activity": "2025-11-14T15:25:11Z",
+    "age": "284",
+    "description": "Reported Behaviour/ Issue: Control-layer failure on Connector 2\nSolution: Customer started a transaction in DC1 while plug-in DC2, also backend sent a reboot -> Not charger problem, check with backend and inform the customer how to use the app.",
+    "type": 1,
+    "priority": 2,
+    "stage": null,
+    "serial_number": "MP / S2 170003301",
+    "case_nature_code": 580000001,
+    "chargerID": "3g38Q6",
+    "additional_info": [
+        {
+            "id": "6ad66461-46c1-f011-bbd3-7ced8d425d60",
+            "subject": "Roaming authorisations repeatedly rejected - causing failure",
+            "body": "Hi Francisco / Siemens Support,\nWe need to escalate a stability issue that occurred at Galway Retail Park on\n13 November\n, the day after the firmware patch was applied to address the control-layer failure on Connector 2.\nPlease review the following sequence from the GreenFlux logs between\n13:04:06 and 13:09:24\non Charger\n170003301\n:\nRoaming authorisations repeatedly rejected (Hubject Invalid)\nTokenResponse:\n\"Unsuccessful authentication via hubject: Invalid\"\nThese attempts did not start sessions, but indicate repeated failed authentication attempts on a normally stable connector.\nImmediate charger-side failure events\nThe unit then entered an error state and triggered a\nPerformingCollaboratedReboot\n:\nVendorErrorCode:\n\"PerformingCollaboratedReboot\"\nStatus:\nUnavailable /\nError\nThis reboot was not remotely initiated by us or GreenFlux.\nMain breaker fault message\nImmediately after this reboot, the charger reported:\nVendorErrorCode:\n\"Mainbreaker_QA1\"\nStatus:\nUnavailable /\nError\nThis implies the unit tripped its main breaker or detected an internal condition that required the breaker to be opened.\nSECC re-initialisation error\nOnce the reboot completed, the SECC reported:\nVendorErrorCode:\n\"secc is initializing\"\nConnectorStatus:\nUnavailable\nThe entire system remained Unavailable until the SECC recovered.\nTo be clear, this is\nnot\nthe same behaviour as the 10 November incident (which involved the charger continuing to deliver energy after the backend session had stopped). On 13 November, the charger instead fell into a full error state, dropped offline, rebooted, and temporarily disabled all four connectors.\nHowever, both issues appear to originate from the same control-layer / SECC integration zone that the firmware patch was intended to stabilise.\nGiven this, we require Siemens to review:\nIs a collaborated reboot with a Mainbreaker_QA1 fault expected behaviour after the firmware update?\nIf this is normal during the first stabilisation cycle post-update, please confirm formally.\nIf not expected, does this sequence indicate an ongoing instability in the SECC ↔ main controller communication layer?\nThe pattern—reboot, main breaker event, SECC re-initialisation—suggests a deeper system-level issue.\nIs further firmware or on-site diagnostic work planned or required?\nWe need Siemens to confirm whether this was a one-off recovery behaviour or whether it represents something that requires investigation.\nImpact on site operations\nUCC (GreenFlux’s contractor) escalated to us because all four connectors were reported unavailable by a customer, and the unit required manual attention. Please treat this as an operational-impact incident.\nGiven that this occurred the day after the firmware fix for the control-layer charging fault, we need to be certain the system is stable and that no residual risk exists of either:\n• uncontrolled energy flow (10 November issue), or\n• spontaneous system shutdowns (13 November issue).\nPlease acknowledge and provide Siemens’ assessment of the logs above, and confirm whether any additional corrective actions are required.\nRegards,\nColin Barry",
+            "date": "2025-11-14T10:40:57Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "ae63d3bc-47c1-f011-bbd3-7c1e523625c2",
+            "subject": "A new case manager was assigned to 0461823 CRM:00225288241",
+            "body": "Sumit Kumar was assigned as new Case Manager for case 0461823 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=26e79a6b-46c1-f011-bbd2-7c1e52880b1b",
+            "date": "2025-11-14T10:50:34Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "f45ab13d-48c1-f011-bbd3-7c1e523628c9",
+            "subject": "ID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2 CRM:03055000346",
+            "body": "Dear\nColin\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID\n: 3g38Q6\nProblem Description\n: Control-layer failure on Connector 2\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0461823\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request",
+            "date": "2025-11-14T10:54:13Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "a2e8cfdd-49c1-f011-bbd2-7c1e5236229d",
+            "subject": "A new case manager was assigned to 0461823 CRM:00225288253",
+            "body": "Raphael Loesch was assigned as new Case Manager for case 0461823 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=26e79a6b-46c1-f011-bbd2-7c1e52880b1b",
+            "date": "2025-11-14T11:05:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2104d549-4ac1-f011-bbd2-000d3adc2fde",
+            "subject": "A new case manager was assigned to 0461823 CRM:00225288257",
+            "body": "Francisco de Matos Joaquim was assigned as new Case Manager for case 0461823 .\nLink to Case:\nhttps://isp.crm4.dynamics.com/main.aspx?appid=582042be-d464-ed11-9562-000d3ab780dd&pagetype=entityrecord&etn=incident&id=26e79a6b-46c1-f011-bbd2-7c1e52880b1b",
+            "date": "2025-11-14T11:08:56Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "9ef78945-4bc1-f011-bbd2-7c1e52880b1b",
+            "subject": "ID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2 CRM:03055000346",
+            "body": "------------------- Original Message -------------------\nFrom:\neMobility Support Queue <emobility_support.si@siemens.com>;\nReceived:\nFri Nov 14 2025 10:55:05 GMT+0000 (Western European Standard Time)\nTo:\nColin Barry <colin@brite.ie>;\nSubject:\nID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2 CRM:03055000346\nDear\nColin\n,\nThank you for contacting our eMobility Support.\nWe have received your request regarding the following:\nProduct\n:\nSicharge D - Charging Center\nMain Asset\n:\nMP / S2 170003301\nChargerID\n: 3g38Q6\nProblem Description\n: Control-layer failure on Connector 2\nWe appreciate the details you have shared so far. We are currently reviewing your case and will provide you with an update or next steps shortly.\nFor your reference, this support request has been assigned the following case number:\n0461823\n, please include this number in any future correspondence regarding this issue.\nWe are committed to resolving this issue quickly and appreciate your patience.\nWith best regards,\neMobility Technical Support Team –\nSumit Kumar\nPlease do not change the subject line when replying to this email.\nSubmit a new request here:\nwww.siemens.com/emobility-service-request\n------------------- Original Message -------------------\nFrom:\nColin Barry <colin@brite.ie>;\nReceived:\nFri Nov 14 2025 16:10:55 GMT+0530 (India Standard Time)\nTo:\nSI Emobility Technical Support <emobility_support.si@siemens.com>; eMobility Support Queue <emobility_support.si@siemens.com>;\nSubject:\nRoaming authorisations repeatedly rejected - causing failure\nHi Francisco / Siemens Support,\nWe need to escalate a stability issue that occurred at Galway Retail Park on\n13 November\n, the day after the firmware patch was applied to address the control-layer failure on Connector 2.\nPlease review the following sequence from the GreenFlux logs between\n13:04:06 and 13:09:24\non Charger\n170003301\n:\nRoaming authorisations repeatedly rejected (Hubject Invalid)\nTokenResponse:\n\"Unsuccessful authentication via hubject: Invalid\"\nThese attempts did not start sessions, but indicate repeated failed authentication attempts on a normally stable connector.\nImmediate charger-side failure events\nThe unit then entered an error state and triggered a\nPerformingCollaboratedReboot\n:\nVendorErrorCode:\n\"PerformingCollaboratedReboot\"\nStatus:\nUnavailable /\nError\nThis reboot was not remotely initiated by us or GreenFlux.\nMain breaker fault message\nImmediately after this reboot, the charger reported:\nVendorErrorCode:\n\"Mainbreaker_QA1\"\nStatus:\nUnavailable /\nError\nThis implies the unit tripped its main breaker or detected an internal condition that required the breaker to be opened.\nSECC re-initialisation error\nOnce the reboot completed, the SECC reported:\nVendorErrorCode:\n\"secc is initializing\"\nConnectorStatus:\nUnavailable\nThe entire system remained Unavailable until the SECC recovered.\nTo be clear, this is\nnot\nthe same behaviour as the 10 November incident (which involved the charger continuing to deliver energy after the backend session had stopped). On 13 November, the charger instead fell into a full error state, dropped offline, rebooted, and temporarily disabled all four connectors.\nHowever, both issues appear to originate from the same control-layer / SECC integration zone that the firmware patch was intended to stabilise.\nGiven this, we require Siemens to review:\nIs a collaborated reboot with a Mainbreaker_QA1 fault expected behaviour after the firmware update?\nIf this is normal during the first stabilisation cycle post-update, please confirm formally.\nIf not expected, does this sequence indicate an ongoing instability in the SECC ↔ main controller communication layer?\nThe pattern—reboot, main breaker event, SECC re-initialisation—suggests a deeper system-level issue.\nIs further firmware or on-site diagnostic work planned or required?\nWe need Siemens to confirm whether this was a one-off recovery behaviour or whether it represents something that requires investigation.\nImpact on site operations\nUCC (GreenFlux’s contractor) escalated to us because all four connectors were reported unavailable by a customer, and the unit required manual attention. Please treat this as an operational-impact incident.\nGiven that this occurred the day after the firmware fix for the control-layer charging fault, we need to be certain the system is stable and that no residual risk exists of either:\n• uncontrolled energy flow (10 November issue), or\n• spontaneous system shutdowns (13 November issue).\nPlease acknowledge and provide Siemens’ assessment of the logs above, and confirm whether any additional corrective actions are required.\nRegards,\nColin Barry",
+            "date": "2025-11-14T11:15:55Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "6b804373-50c1-f011-bbd2-7c1e52880b1b",
+            "subject": "ID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2 CRM:03055000346",
+            "body": "Hello Colin,\nThanks for reporting this.\nI checked the logs and here is what I find:\n1. At 12:54 customer plugged-in connector 2:\nWhen authentication was requested:\nAnd here is the Remote Authentication:\nHe started a transaction for\nconnector 1\nand not connector 2. Which is still accepted, but from the top log you can see that the charger is reporting back \"there is no cable connected\"\n30 seconds later, the customer must've thought, ok why is my charging not starting? And tried again the same authentication for the same\nconnector 1\n.\nHere, the OCPP backend is conveying back to us, I already have started a session for this connector 30 secs ago, so I do not allow a new session to be created until the first one is cleared or finished.\nThese attempts all failed since they chose the wrong connector.\n2. Regarding the reboot, I see that someone from the backend performed the reboot:\nSo you need to check with your backend who did it.\nRegarding your questions:\nIs a collaborated reboot with a Mainbreaker_QA1 fault expected behaviour after the firmware update?\nThis is normal in any version of the SiD, when you do a reboot, we must open the Mainbreaker to unsure we are according to safety norms\nIf not expected, does this sequence indicate an ongoing instability in the SECC ↔ main controller communication layer?\nThis is not related to SECC\nIs further firmware or on-site diagnostic work planned or required?\nNo since the problem seems to be user and backend generated\nImpact on site operations\nSince the charger performed a reboot, then the outlets are unavailable until the boot up is fully finished.\nPlease let me know if I answered all your questions. Since the problem is not charger related, I will wait for your feedback.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T11:53:00Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        },
+        {
+            "id": "2d8cf09f-5ac1-f011-bbd2-7c1e52362ec6",
+            "subject": "Re: ID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2 CRM:03055000346",
+            "body": "Hi Francisco,\nthanks for the detailed analysis again. We can close this off and we have reported the details to Greenflux's support team.\nregards\nColin\nOn Fri, Nov 14, 2025 at 12:27 PM\nemobility_support.si@siemens.com\n<\nemobility_support.si@siemens.com\n> wrote:\nHello Colin,\nThanks for reporting this.\nI checked the logs and here is what I find:\n1. At 12:54 customer plugged-in connector 2:\nWhen authentication was requested:\nAnd here is the Remote Authentication:\nHe started a transaction for\nconnector 1\nand not connector 2. Which is still accepted, but from the top log you can see that the charger is reporting back \"there is no cable connected\"\n30 seconds later, the customer must've thought, ok why is my charging not starting? And tried again the same authentication for the same\nconnector 1\n.\nHere, the OCPP backend is conveying back to us, I already have started a session for this connector 30 secs ago, so I do not allow a new session to be created until the first one is cleared or finished.\nThese attempts all failed since they chose the wrong connector.\n2. Regarding the reboot, I see that someone from the backend performed the reboot:\nSo you need to check with your backend who did it.\nRegarding your questions:\nIs a collaborated reboot with a Mainbreaker_QA1 fault expected behaviour after the firmware update?\nThis is normal in any version of the SiD, when you do a reboot, we must open the Mainbreaker to unsure we are according to safety norms\nIf not expected, does this sequence indicate an ongoing instability in the SECC ↔ main controller communication layer?\nThis is not related to SECC\nIs further firmware or on-site diagnostic work planned or required?\nNo since the problem seems to be user and backend generated\nImpact on site operations\nSince the charger performed a reboot, then the outlets are unavailable until the boot up is fully finished.\nPlease let me know if I answered all your questions. Since the problem is not charger related, I will wait for your feedback.\nThank you!\nBest regards,\nFrancisco",
+            "date": "2025-11-14T13:05:52Z",
+            "extra": {
+                "sender": "colin@brite.ie",
+                "to": null,
+                "directioncode": false
+            }
+        },
+        {
+            "id": "fbc34417-6ec1-f011-bbd2-7ced8d75d5a5",
+            "subject": "Ticket 0461823 has been closed. Are you satisfied with our provided solution? CRM:00225288412",
+            "body": "Dear Customer,\nYou are receiving this survey invite, because you recently requested our technical support services.\nWe are keen to hear what you thought of our services we offered you in the ticket\n0461823\nwith the title:\nID0461823-DC/Si-D/IE-[MP / S2 170003301] Control-layer failure on Connector 2\nWe actively use feedback to constantly improve our Technical Support offerings in order to provide you with the best possible services.\nTypically it takes only 1 min to complete the survey.\nClick on the link to start the survey\nThank you for providing your feedback. We appreciate the time you have taken and will actively use it to improve our services to you.\nYour feedback is anonymous if not decided otherwise by you.\nWith best regards,\nSiemens eMobility Technical Support Team",
+            "date": "2025-11-14T15:25:08Z",
+            "extra": {
+                "sender": "emobility_support.si@siemens.com",
+                "to": null,
+                "directioncode": true
+            }
+        }
+    ]
+}
