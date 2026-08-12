@@ -1,4 +1,4 @@
-# charger-condition-indicator
+# Ticket_Scrapper
 
 This repository contains all the source code used during the data analysis of Electrical Vehicle charger data.
 
